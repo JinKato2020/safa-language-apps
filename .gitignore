@@ -2,6 +2,9 @@
 # 言語パックの音声「元mp3」(配信はzipのみ。元はbuild-*-audio.mjsで再生成可)
 packs/audio/
 packs-nepali/audio/
+# App A 統一音声レイアウト: audio/ne=学習対象(同梱, 追跡) / audio/{ja,en}=母語パック源(zipが配信物, 非追跡)
+聞いて話せるネパール語/audio/ja/
+聞いて話せるネパール語/audio/en/
 # Node / npm
 node_modules/
 **/node_modules/
