@@ -1,7 +1,7 @@
 {
   "name": "safa-ja-dictionary",
-  "version": "93b5d29b3d7f",
-  "syncedAt": "2026-06-24",
+  "version": "a4c723ec9ff5",
+  "syncedAt": "2026-06-25",
   "source": "JLPTアプリ/data-build/dict (JMdict / KANJIDIC2 / 日本語WordNet)",
   "counts": {
     "vocab": 8033,
@@ -14,8 +14,8 @@
     },
     "kanji": 1974,
     "synonyms": 2317,
-    "examples": 7528,
-    "kanjiExamples": 1946
+    "examples": 8019,
+    "kanjiExamples": 1969
   },
   "files": [
     "ja-vocab.json",
