@@ -15,7 +15,9 @@ from PIL import Image
 
 GENBA = r"C:\Users\jwpsa\Documents\desktop\claude\多言語教材"
 PROD = os.path.join(GENBA, "02_ネパール語教材")
-POSTER_SRC = os.path.join(PROD, "02_ポスター")               # <L1>/<NN_和名>[_pageN]_広告なし_<L1>.png
+POSTER_SRC = os.path.join(PROD, "02_ポスター")               # <L1>/<NN_和名>[_pageN]_広告なし_<L1>.png(枠付き=box検出用)
+POSTER_PLAIN = os.path.join(PROD, "05_ポスターアプリ用")      # 日本語/英語: <NN_和名>_plain_<ja|en>.png(枠無し=アプリ表示用)
+PLAINDIR = {"ja": "日本語", "en": "英語"}
 KYO = os.path.join(GENBA, "00_共通", "音声", "_正規化")        # <LANGDIR>/<theme>(/pageN)/<MM>_<l>.mp3
 GU = os.path.join(PROD, "00_固有", "音声", "_正規化")          # 固有9テーマの上書き音声
 APP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -32,12 +34,17 @@ def cols_for(W):
     return [(round(a * W), round(b * W)) for a, b in COLF]
 
 # (key, 和名フォルダ)。キーは安定英語スラッグ(出荷後改名禁止)。
-# 【ポスターモードはテーマ1〜10まで】(2026-06-19 ユーザー指示)。他モード(フラッシュカード等)は全テーマで別系統(WORD_CATEGORIES)。
-# 11〜30(家具家電〜副詞)はポスター素材は揃っているが、ポスターモードには載せない(将来解放可能)。
+# 【ポスターモード=全30テーマ】(2026-10-24 ユーザー指示で 11〜30 を解放)。表示画像はプレーン版(POSTER_PLAIN)。
 THEMES = [
     ("family", "01_家族"), ("numbers", "02_数字"), ("body", "03_体"), ("colors", "04_色と形"),
     ("food", "05_食べ物"), ("emotions", "06_感情"), ("buildings", "07_建物"), ("animals", "08_動物"),
     ("stationery", "09_文房具"), ("vehicles", "10_乗り物"),
+    ("furniture", "11_家具家電"), ("weather", "12_天気季節"), ("time", "13_時曜日"), ("clothing", "14_衣服"),
+    ("household", "15_生活用品"), ("plants", "16_植物"), ("drinks", "17_飲み物"), ("instruments", "18_楽器"),
+    ("vegetables", "19_野菜"), ("meat_fish", "20_肉・魚"),
+    ("verbs1", "21_動詞1"), ("verbs2", "22_動詞2"), ("verbs3", "23_動詞3"), ("verbs4", "24_動詞4"), ("verbs5", "25_動詞5"),
+    ("adjectives1", "26_形容詞1"), ("adjectives2", "27_形容詞2"), ("adjectives3", "28_形容詞3"), ("adjectives4", "29_形容詞4"),
+    ("adverbs", "30_副詞"),
 ]
 GUYU = {"05_食べ物", "07_建物", "08_動物", "15_生活用品", "16_植物", "17_飲み物", "18_楽器", "20_肉・魚", "30_副詞"}
 MULTIPAGE = {"02_数字": 5}    # 複数ページテーマ: 和名→ページ数
@@ -46,7 +53,13 @@ TARGET_ONLY = {"02_数字"}     # ターゲット言語音声のみ再生(母語
 # 母語別テーマ名。ja=和名(jp_title)、en=英語名。一覧/タイトル音声の表示に使う。
 EN_TITLE = {"family": "Family", "numbers": "Numbers", "body": "Body", "colors": "Colors & Shapes",
             "food": "Food", "emotions": "Emotions", "buildings": "Buildings", "animals": "Animals",
-            "stationery": "Stationery", "vehicles": "Vehicles"}
+            "stationery": "Stationery", "vehicles": "Vehicles",
+            "furniture": "Furniture & Appliances", "weather": "Weather & Seasons", "time": "Time & Days",
+            "clothing": "Clothing", "household": "Household Goods", "plants": "Plants", "drinks": "Drinks",
+            "instruments": "Instruments", "vegetables": "Vegetables", "meat_fish": "Meat & Fish",
+            "verbs1": "Verbs 1", "verbs2": "Verbs 2", "verbs3": "Verbs 3", "verbs4": "Verbs 4", "verbs5": "Verbs 5",
+            "adjectives1": "Adjectives 1", "adjectives2": "Adjectives 2", "adjectives3": "Adjectives 3",
+            "adjectives4": "Adjectives 4", "adverbs": "Adverbs"}
 def title_for(L1, key, jp):   # ja=和名 / en=英語名(無ければ和名)
     return EN_TITLE.get(key, jp) if L1 == "en" else jp
 
@@ -112,6 +125,18 @@ def boxes_for(png, n):
 def jp_title(folder):
     return re.sub(r"^\d+_", "", folder)
 
+def save_optimized_png(src, dst):
+    """表示用ポスターを最適化して保存。フラットなイラストは256色パレット化が近似無劣化なら採用、
+    そうでなければRGBのままロスレス再圧縮。いずれも optimize=True。"""
+    im = Image.open(src).convert("RGB")
+    arr = np.asarray(im).astype(int)
+    q = im.quantize(colors=256, method=Image.MEDIANCUT, dither=Image.Dither.NONE)
+    err = float(np.abs(arr - np.asarray(q.convert("RGB")).astype(int)).mean())
+    if err < 3.0:                       # 1チャンネル平均誤差<3/255 = 目視ほぼ無劣化
+        q.save(dst, format="PNG", optimize=True)
+    else:
+        im.save(dst, format="PNG", optimize=True)
+
 def build_page(key, folder, sub, png, dst_dir, tasks):
     """1ページ分を構築。sub='' は単一ページ、'page1' 等は数字。戻り: page dict。"""
     abase = audio_base(folder)
@@ -145,9 +170,13 @@ def build_page(key, folder, sub, png, dst_dir, tasks):
     #    (→英語で真っ白)。ディレクトリも母語別に組み立てて確実にコピーする。
     base = f"{folder}_{sub}_広告なし" if sub else f"{folder}_広告なし"
     for L1 in L1S:
-        src_png = os.path.join(POSTER_SRC, L1, f"{base}_{L1}.png")
+        framed_png = os.path.join(POSTER_SRC, L1, f"{base}_{L1}.png")
+        # 表示画像はプレーン版(枠無し)を優先。box座標は枠付き(framed)から検出済で同一レイアウト(実測1-2px)。
+        # 複数ページ(数字)はプレーン版が無いので従来どおり枠付きを使う。
+        plain_png = None if sub else os.path.join(POSTER_PLAIN, PLAINDIR[L1], f"{folder}_plain_{L1}.png")
+        src_png = plain_png if (plain_png and os.path.exists(plain_png)) else framed_png
         if os.path.exists(src_png):
-            shutil.copyfile(src_png, os.path.join(dst_dir, f"poster_{L1}.png"))
+            save_optimized_png(src_png, os.path.join(dst_dir, f"poster_{L1}.png"))
         elif L1 == DETECT_L1:
             raise RuntimeError(f"{key}/{folder}/{sub}: 代表母語画像なし {src_png}")
     return {"pref": pref, "n": n, "boxes": bx, "W": W, "H": H, "has_title": has_title}
