@@ -290,8 +290,8 @@ const splashStyles = StyleSheet.create({
 
 // ─── AppShell: VideoSplash → MainTabs ──────────────────
 export type AppShellProps = {
-  /** 各アプリの assets から渡してもらうスプラッシュ動画 (require('./assets/safa-splash.mp4')) */
-  splashSource: number;
+  /** 各アプリの assets から渡してもらうスプラッシュ動画 (require('./assets/safa-splash.mp4'))。未指定ならスプラッシュ無しで直接起動。 */
+  splashSource?: number;
   /** (旧) ヘッダーアイコン。現在はテキストタイトルに置き換えたため未使用 (互換のため任意で受け取る) */
   headerIconSource?: number;
   /** ポスター音声学習レッスン (供給時のみ単語モードに「音声朗読」分岐を表示) */
@@ -316,7 +316,7 @@ export type AppShellProps = {
 let splashShownOnce = false;
 
 export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData }: AppShellProps) {
-  const [splashDone, setSplashDone] = useState(splashShownOnce);
+  const [splashDone, setSplashDone] = useState(splashShownOnce || splashSource == null);
   const defaultStackOptions = useRef(makeDefaultStackOptions(HeaderTitle)).current;
   const { themeMode } = useSettings();
   const sys = useColorScheme();
@@ -341,7 +341,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
     }
   }, []);
 
-  if (!splashDone) {
+  if (!splashDone && splashSource != null) {
     return <VideoSplash source={splashSource} onDone={() => { splashShownOnce = true; setSplashDone(true); }} />;
   }
 

@@ -21,7 +21,6 @@ import { bundledPack, loadPack, getPackDownloadInfo } from './src/packLoader';
 import { POSTER_LESSONS } from './src/posterLessons';
 import { posterUri, ensurePosterPack } from './src/posterPackLoader';
 
-const splashSource = require('./assets/safa-splash.mp4');
 const headerIconSource = require('./assets/icon.png');
 
 // DLパックになり得る言語は en のみ。ja/ne は同梱(ja内容)を使う。
@@ -230,7 +229,7 @@ export default function App() {
       >
         <FirstRunGate>
           <PackGate>
-            <AppShell splashSource={splashSource} headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" />
+            <AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['conversation', 'grammar', 'listening', 'vocabulary']} />
           </PackGate>
         </FirstRunGate>
       </SettingsProvider>
