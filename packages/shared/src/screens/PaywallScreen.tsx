@@ -25,8 +25,8 @@ type Copy = {
 const COPY: Record<string, Copy> = {
   ja: {
     title: '全テーマを解放',
-    lead: 'テーマ3まで無料でお試しいただけます。買い切りで全30テーマ(会話・文法・聞き流し・単語)をロック解除。',
-    bullets: ['全30テーマを永久に解放', '一度の購入で追加課金なし', '同じApple IDの端末で復元可能'],
+    lead: 'テーマ3まで無料でお試しいただけます。買い切りで全テーマ(会話・文法・聞き流し・単語)をロック解除。',
+    bullets: ['全テーマを永久に解放', '一度の購入で追加課金なし', '同じApple IDの端末で復元可能'],
     buy: '購入する',
     restore: '購入を復元',
     close: '閉じる',
@@ -35,8 +35,8 @@ const COPY: Record<string, Copy> = {
   },
   en: {
     title: 'Unlock all themes',
-    lead: 'Themes 1–3 are free to try. Unlock all 30 themes (conversation, grammar, listening, vocabulary) with a one-time purchase.',
-    bullets: ['Unlock all 30 themes forever', 'One-time purchase, no subscription', 'Restorable on devices with the same Apple ID'],
+    lead: 'Themes 1–3 are free to try. Unlock all themes (conversation, grammar, listening, vocabulary) with a one-time purchase.',
+    bullets: ['Unlock all themes forever', 'One-time purchase, no subscription', 'Restorable on devices with the same Apple ID'],
     buy: 'Purchase',
     restore: 'Restore purchase',
     close: 'Close',
@@ -45,8 +45,8 @@ const COPY: Record<string, Copy> = {
   },
   ne: {
     title: 'सबै विषय खोल्नुहोस्',
-    lead: 'विषय ३ सम्म निःशुल्क प्रयास गर्न सकिन्छ। एक पटकको किनमेलले सबै ३० विषय (कुराकानी, व्याकरण, सुनाइ, शब्दावली) खोल्नुहोस्।',
-    bullets: ['सबै ३० विषय सधैंका लागि खोल्ने', 'एक पटक किन्दा थप शुल्क छैन', 'उही Apple ID भएका यन्त्रमा पुनःप्राप्ति सम्भव'],
+    lead: 'विषय ३ सम्म निःशुल्क प्रयास गर्न सकिन्छ। एक पटकको किनमेलले सबै विषय (कुराकानी, व्याकरण, सुनाइ, शब्दावली) खोल्नुहोस्।',
+    bullets: ['सबै विषय सधैंका लागि खोल्ने', 'एक पटक किन्दा थप शुल्क छैन', 'उही Apple ID भएका यन्त्रमा पुनःप्राप्ति सम्भव'],
     buy: 'किन्नुहोस्',
     restore: 'किनमेल पुनःप्राप्ति',
     close: 'बन्द गर्नुहोस्',

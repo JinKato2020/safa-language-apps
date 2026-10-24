@@ -12,6 +12,8 @@ import { useI18n, type Lang } from '../i18n';
 import { L1_REGISTRY, langOrderRank } from '../l1';
 import { useAppData } from '../AppDataContext';
 import * as Application from 'expo-application';
+import { useNavigation } from '@react-navigation/native';
+import { useEntitlement } from '../entitlement';
 
 function Icon({ children, size = 16 }: { children: React.ReactNode; size?: number }) {
   return (
@@ -28,6 +30,7 @@ function CapIcon() { return <Icon><Path d="M22 10 12 5 2 10l10 5 10-5z" /><Path 
 function DataIcon() { return <Icon><Ellipse cx={12} cy={5} rx={9} ry={3} /><Path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" /><Path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" /></Icon>; }
 function InfoIcon() { return <Icon><Circle cx={12} cy={12} r={10} /><Line x1={12} y1={16} x2={12} y2={12} /><Line x1={12} y1={8} x2={12.01} y2={8} /></Icon>; }
 function LangIcon() { return <Icon><Circle cx={12} cy={12} r={10} /><Line x1={2} y1={12} x2={22} y2={12} /><Path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></Icon>; }
+function StarIcon() { return <Icon><Polygon points="12 2 15 9 22 9 16 14 18 21 12 17 6 21 8 14 2 9 9 9 12 2" /></Icon>; }
 
 // Pill (ピル選択)
 function PillGroup<T extends string | number>({ items, value, onChange, ss }: {
@@ -75,6 +78,13 @@ function Section({ title, icon, children, ss }: { title: string; icon: React.Rea
   );
 }
 
+// 課金導線の文言(設定画面用)。App A の母語UI=ja/en。ne はフォールバック。
+const PREMIUM_L: Record<string, { title: string; unlock: string; unlockDesc: string; unlockBtn: string; purchased: string; restore: string; restoreBtn: string }> = {
+  ja: { title: 'プレミアム', unlock: '全テーマを解放', unlockDesc: 'テーマ4以降をすべて利用できます(買い切り)', unlockBtn: '解放する', purchased: '購入済み(全テーマ解放)', restore: '購入を復元', restoreBtn: '復元' },
+  en: { title: 'Premium', unlock: 'Unlock all themes', unlockDesc: 'Use every theme from 4 onward (one-time purchase)', unlockBtn: 'Unlock', purchased: 'Purchased (all themes unlocked)', restore: 'Restore purchases', restoreBtn: 'Restore' },
+  ne: { title: 'प्रिमियम', unlock: 'सबै विषय खोल्नुहोस्', unlockDesc: 'विषय ४ देखि सबै प्रयोग गर्नुहोस् (एकपटक किन्ने)', unlockBtn: 'खोल्नुहोस्', purchased: 'किनिसकेको (सबै विषय खुला)', restore: 'खरिद पुनर्स्थापना', restoreBtn: 'पुनर्स्थापना' },
+};
+
 export default function SettingsScreen() {
   const s = useSettings();
   const { t, lang, setLang, langs } = useI18n();
@@ -85,6 +95,10 @@ export default function SettingsScreen() {
   // 言語選択UI: 全アプリ共通でドロップダウン(ユーザー確定 2026-06-19。言語が多いため/UI統一)。
   const useLangDropdown = true;
   const isJaUI = lang === 'ja';
+  const nav = useNavigation<any>();
+  const ent = useEntitlement();
+  const showPurchase = Number.isFinite(ent.freeThemes); // App A のみ true(B/C は Infinity=非表示)
+  const prem = PREMIUM_L[lang] ?? PREMIUM_L.ja;
 
   // 利用可能な言語から動的にピルを生成 (ja=日本語 / その他は L1 レジストリの自称表示)
   const langLabel = (code: Lang): string =>
@@ -165,6 +179,25 @@ export default function SettingsScreen() {
         <Text style={styles.title}>{t('settings.title')}</Text>
         <Text style={styles.desc}>{t('settings.desc')}</Text>
       </View>
+
+      {showPurchase && (
+        <Section title={prem.title} icon={<StarIcon />} ss={ss}>
+          {ent.isPro ? (
+            <Row label={prem.purchased} ss={ss}><Text style={styles.valueText}>✓</Text></Row>
+          ) : (
+            <Row label={prem.unlock} desc={prem.unlockDesc} ss={ss}>
+              <Pressable style={[styles.btn, styles.btnPrimary]} onPress={() => nav.navigate('Paywall')}>
+                <Text style={styles.btnTextPrimary}>{prem.unlockBtn}</Text>
+              </Pressable>
+            </Row>
+          )}
+          <Row label={prem.restore} ss={ss}>
+            <Pressable style={styles.btn} disabled={ent.busy} onPress={() => { ent.restore(); }}>
+              <Text style={styles.btnText}>{ent.busy ? '…' : prem.restoreBtn}</Text>
+            </Pressable>
+          </Row>
+        </Section>
+      )}
 
       <Section title={t('settings.sectionLang')} icon={<LangIcon />} ss={ss}>
         <Row label={t('settings.language')} desc={langDescText} ss={ss}>
@@ -334,6 +367,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.line, borderRadius: radius.sm,
   },
   btnText: { fontSize: 13, fontWeight: '500', color: colors.ink },
+  btnPrimary: { backgroundColor: colors.ink, borderColor: colors.ink },
+  btnTextPrimary: { fontSize: 13, fontWeight: '600', color: '#fff' },
   btnDanger: { borderColor: '#fecaca' },
   btnTextDanger: { fontSize: 13, fontWeight: '500', color: '#dc2626' },
   valueText: { fontFamily: 'Courier', fontSize: 13, color: colors.inkMute },
