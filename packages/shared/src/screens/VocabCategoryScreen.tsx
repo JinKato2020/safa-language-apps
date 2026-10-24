@@ -9,6 +9,7 @@ import { useI18n } from '../i18n';
 import { useScaleStyle } from '../SettingsContext';
 import { useAppData } from '../AppDataContext';
 import { usePosterLessons } from '../PosterContext';
+import { useEntitlement, isLockedAt, LockBadge } from '../entitlement';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'VocabCategory'>;
 const GOLD = '#b08746';
@@ -16,6 +17,7 @@ const GOLD = '#b08746';
 export default function VocabCategoryScreen() {
   const { WORD_CATEGORIES } = useAppData();
   const lessons = usePosterLessons();
+  const ent = useEntitlement();
   const navigation = useNavigation<Nav>();
   const route = useRoute<any>();
   // App B: 聞き流しタブ経由は posterOnly=true で単語カード(flash)を出さずポスターのみ
@@ -51,15 +53,19 @@ export default function VocabCategoryScreen() {
         ListHeaderComponent={Header}
         data={lessons}
         keyExtractor={(l) => l.id}
-        renderItem={({ item }) => (
-          <Pressable
-            style={({ pressed }) => [styles.card, pressed && styles.cardPressed]}
-            onPress={() => (navigation as any).navigate('PosterAudio', { lessonId: item.id })}
-          >
-            <Text style={[styles.posterJa, { flex: 1 }]}>{titleOf(item)}</Text>
-            <Text style={styles.count}>{t('common.wordsCount', { count: item.cards?.length ?? (item.pages?.reduce((s: number, p: any) => s + (p.cards?.length ?? 0), 0) ?? 0) })}</Text>
-          </Pressable>
-        )}
+        renderItem={({ item, index }) => {
+          const locked = isLockedAt(ent, index);
+          return (
+            <Pressable
+              style={({ pressed }) => [styles.card, pressed && styles.cardPressed, locked && styles.cardLocked]}
+              onPress={() => (locked ? navigation.navigate('Paywall') : (navigation as any).navigate('PosterAudio', { lessonId: item.id }))}
+            >
+              <Text style={[styles.posterJa, { flex: 1 }]}>{titleOf(item)}</Text>
+              <Text style={styles.count}>{t('common.wordsCount', { count: item.cards?.length ?? (item.pages?.reduce((s: number, p: any) => s + (p.cards?.length ?? 0), 0) ?? 0) })}</Text>
+              {locked && <LockBadge />}
+            </Pressable>
+          );
+        }}
       />
     );
   }
@@ -70,16 +76,18 @@ export default function VocabCategoryScreen() {
       ListHeaderComponent={Header}
       data={WORD_CATEGORIES}
       keyExtractor={(item) => String(item.id)}
-      renderItem={({ item }) => {
+      renderItem={({ item, index }) => {
         const catName = t(`vocabCategories.${item.id}`);
+        const locked = isLockedAt(ent, index);
         return (
           <Pressable
-            style={({ pressed }) => [styles.card, pressed && styles.cardPressed]}
-            onPress={() => { navigation.navigate('Flashcard', { categoryId: item.id, direction: 'ne2ja' }); }}
+            style={({ pressed }) => [styles.card, pressed && styles.cardPressed, locked && styles.cardLocked]}
+            onPress={() => (locked ? navigation.navigate('Paywall') : navigation.navigate('Flashcard', { categoryId: item.id, direction: 'ne2ja' }))}
           >
             <Text style={styles.num}>{String(item.id).padStart(2, '0')}</Text>
             <Text style={styles.name}>{catName}</Text>
             <Text style={styles.count}>{t('common.wordsCount', { count: item.wordCount })}</Text>
+            {locked && <LockBadge />}
           </Pressable>
         );
       }}
@@ -100,6 +108,7 @@ const styles = StyleSheet.create({
   segTxOn: { color: '#fff' },
   card: { flexDirection: 'row', alignItems: 'center', gap: spacing.md, backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.line, borderRadius: radius.md, paddingVertical: spacing.md, paddingHorizontal: spacing.md, marginBottom: spacing.sm },
   cardPressed: { backgroundColor: colors.bgSoft, borderColor: colors.ink },
+  cardLocked: { opacity: 0.55 },
   num: { fontFamily: 'Courier', fontSize: 11, color: colors.inkFaint, width: 24 },
   name: { flex: 1, fontSize: 14, fontWeight: '500', color: colors.ink },
   count: { fontFamily: 'Courier', fontSize: 11, color: colors.inkFaint, paddingHorizontal: spacing.sm, paddingVertical: 3, borderWidth: 1, borderColor: colors.line, borderRadius: 99 },

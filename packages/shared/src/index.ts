@@ -40,6 +40,12 @@ export type {
   RootStackParamList, RootTabParamList,
 } from './types';
 
+// ── 課金エンタイトルメント (アプリ側が value を注入。未注入なら全開放=後方互換) ──
+export {
+  EntitlementProvider, useEntitlement, isLockedAt, LockBadge,
+  type Entitlement,
+} from './entitlement';
+
 // ── AppShell (Provider 群で包んでマウントする) ──
 export { AppShell, type AppShellProps } from './AppShell';
 
@@ -54,3 +60,4 @@ export { default as VocabCategoryScreen } from './screens/VocabCategoryScreen';
 export { default as VocabDirectionScreen } from './screens/VocabDirectionScreen';
 export { default as FlashcardScreen } from './screens/FlashcardScreen';
 export { default as SettingsScreen } from './screens/SettingsScreen';
+export { default as PaywallScreen } from './screens/PaywallScreen';

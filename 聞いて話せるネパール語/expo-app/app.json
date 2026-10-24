@@ -53,7 +53,8 @@
     "extra": {
       "eas": {
         "projectId": "f7a978ac-d672-46e5-9a16-1350a0e889a2"
-      }
+      },
+      "revenueCatApiKeyIos": ""
     },
     "owner": "jinkato1914"
   }

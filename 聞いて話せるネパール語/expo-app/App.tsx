@@ -20,6 +20,7 @@ import en from './src/i18n/en.json';
 import { bundledPack, loadPack, getPackDownloadInfo } from './src/packLoader';
 import { POSTER_LESSONS } from './src/posterLessons';
 import { posterUri, ensurePosterPack } from './src/posterPackLoader';
+import { PurchasesProvider } from './src/PurchasesProvider';
 
 const headerIconSource = require('./assets/icon.png');
 
@@ -217,22 +218,26 @@ function FirstRunGate({ children }: { children: ReactNode }) {
 
 export default function App() {
   return (
-    <I18nProvider
-      translations={{ ja, ne, en }}
-      fallbackLang="ja"
-      selectableLangs={['en', 'ja']}
-      storageKey="@nepali_app/lang_v1"
-    >
-      <SettingsProvider
-        defaults={{ practiceDirection: 'ja2ne', listenDirection: 'ja2ne' }}
-        storageKey="@nepali_app/settings_v2"
+    // PurchasesProvider は最外側(RC 初期化を1回だけ・言語/パック切替で再マウントしない)。
+    // 未注入のアプリ(App B/C)では shared 既定=全開放。App A はここで買い切り判定を注入する。
+    <PurchasesProvider>
+      <I18nProvider
+        translations={{ ja, ne, en }}
+        fallbackLang="ja"
+        selectableLangs={['en', 'ja']}
+        storageKey="@nepali_app/lang_v1"
       >
-        <FirstRunGate>
-          <PackGate>
-            <AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['conversation', 'grammar', 'listening', 'vocabulary']} />
-          </PackGate>
-        </FirstRunGate>
-      </SettingsProvider>
-    </I18nProvider>
+        <SettingsProvider
+          defaults={{ practiceDirection: 'ja2ne', listenDirection: 'ja2ne' }}
+          storageKey="@nepali_app/settings_v2"
+        >
+          <FirstRunGate>
+            <PackGate>
+              <AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['conversation', 'grammar', 'listening', 'vocabulary']} />
+            </PackGate>
+          </FirstRunGate>
+        </SettingsProvider>
+      </I18nProvider>
+    </PurchasesProvider>
   );
 }

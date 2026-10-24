@@ -8,12 +8,14 @@ import type { RootStackParamList } from '../types';
 import { useScaleStyle } from '../SettingsContext';
 import { useI18n } from '../i18n';
 import { useAppData } from '../AppDataContext';
+import { useEntitlement, isLockedAt, LockBadge } from '../entitlement';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'Theme'>;
 type R = RouteProp<RootStackParamList, 'Theme'>;
 
 export default function ThemeScreen() {
   const { THEMES, GRAMMAR_THEMES, LEVELS } = useAppData();
+  const ent = useEntitlement();
   const navigation = useNavigation<Nav>();
   const { t } = useI18n();
   const ss = useScaleStyle();
@@ -130,19 +132,25 @@ export default function ThemeScreen() {
       }
       data={items}
       keyExtractor={(item) => String(item.id)}
-      renderItem={({ item, index }) => (
-        <Pressable
-          style={({ pressed }) => [
-            styles.card,
-            pressed && styles.cardPressed,
-          ]}
-          onPress={() => onPressItem(item.id)}
-        >
-          {/* 表示番号はリスト上の位置(=テーマ並び順)。データキーは item.id を維持。 */}
-          <Text style={styles.num}>{String(index + 1).padStart(2, '0')}</Text>
-          <Text style={[styles.name, ss(14)]}>{getThemeDisplayName(item.id)}</Text>
-        </Pressable>
-      )}
+      renderItem={({ item, index }) => {
+        // 表示番号(index+1)が無料枠を超えたらロック。タップでペイウォールへ。
+        const locked = isLockedAt(ent, index);
+        return (
+          <Pressable
+            style={({ pressed }) => [
+              styles.card,
+              pressed && styles.cardPressed,
+              locked && styles.cardLocked,
+            ]}
+            onPress={() => (locked ? navigation.navigate('Paywall') : onPressItem(item.id))}
+          >
+            {/* 表示番号はリスト上の位置(=テーマ並び順)。データキーは item.id を維持。 */}
+            <Text style={styles.num}>{String(index + 1).padStart(2, '0')}</Text>
+            <Text style={[styles.name, ss(14)]}>{getThemeDisplayName(item.id)}</Text>
+            {locked && <LockBadge />}
+          </Pressable>
+        );
+      }}
     />
   );
 }
@@ -193,6 +201,7 @@ const styles = StyleSheet.create({
     marginBottom: spacing.sm,
   },
   cardPressed: { backgroundColor: colors.bgSoft, borderColor: colors.ink },
+  cardLocked: { opacity: 0.55 },
   num: { fontFamily: 'Courier', fontSize: 11, color: colors.inkFaint, width: 24 },
   name: { flex: 1, fontSize: 14, fontWeight: '500', color: colors.ink },
 });

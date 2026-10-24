@@ -37,9 +37,11 @@ import ShortHubScreen from './screens/ShortHubScreen';
 import SakubunScreen from './screens/SakubunScreen';
 import ScaffoldScreen from './screens/ScaffoldScreen';
 import DictScreen, { type DictData } from './screens/DictScreen';
+import PaywallScreen from './screens/PaywallScreen';
 import { DesignThemeProvider } from './design';
 
 const Tab = createBottomTabNavigator();
+const RootStack = createNativeStackNavigator();
 const ConvStack = createNativeStackNavigator();
 const ShortStack = createNativeStackNavigator();
 const GramStack = createNativeStackNavigator();
@@ -352,7 +354,15 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
         <PosterProvider lessons={posterLessons || []} resolveUri={posterResolveUri} ensure={posterEnsure}>
           <ListeningAudioProvider>
             <DesignThemeProvider scheme={scheme}>
-              <MainTabs defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} />
+              {/* ルートスタック: タブ本体 + ペイウォール(モーダル)。
+                  ロックされたテーマのタップから navigation.navigate('Paywall') で
+                  どのタブ配下からでもここへ到達する(課金を使わないアプリでも無害な登録)。 */}
+              <RootStack.Navigator screenOptions={{ headerShown: false }}>
+                <RootStack.Screen name="MainTabs">
+                  {() => <MainTabs defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} />}
+                </RootStack.Screen>
+                <RootStack.Screen name="Paywall" component={PaywallScreen} options={{ presentation: 'modal' }} />
+              </RootStack.Navigator>
             </DesignThemeProvider>
           </ListeningAudioProvider>
         </PosterProvider>

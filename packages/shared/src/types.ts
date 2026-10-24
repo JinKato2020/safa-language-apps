@@ -72,4 +72,5 @@ export type RootStackParamList = {
   VocabDirection: { categoryId: number };
   Flashcard: { categoryId: number; direction: 'ne2ja' | 'ja2ne' };
   SettingsMain: undefined;
+  Paywall: undefined;
 };
