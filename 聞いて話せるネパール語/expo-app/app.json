@@ -2,7 +2,7 @@
   "expo": {
     "name": "聞いて話せるネパール語",
     "slug": "LearningNepali",
-    "version": "1.7.16",
+    "version": "1.7.17",
     "runtimeVersion": {
       "policy": "appVersion"
     },
@@ -54,7 +54,7 @@
       "eas": {
         "projectId": "f7a978ac-d672-46e5-9a16-1350a0e889a2"
       },
-      "revenueCatApiKeyIos": ""
+      "revenueCatApiKeyIos": "appl_btCQGNqzHIexFdluSOeEuulJUVj"
     },
     "owner": "jinkato1914"
   }
