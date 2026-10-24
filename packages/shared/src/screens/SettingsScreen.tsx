@@ -80,9 +80,9 @@ function Section({ title, icon, children, ss }: { title: string; icon: React.Rea
 
 // 課金導線の文言(設定画面用)。App A の母語UI=ja/en。ne はフォールバック。
 const PREMIUM_L: Record<string, { title: string; unlock: string; unlockDesc: string; unlockBtn: string; purchased: string; restore: string; restoreBtn: string }> = {
-  ja: { title: 'プレミアム', unlock: '全テーマを解放', unlockDesc: 'テーマ4以降をすべて利用できます(買い切り)', unlockBtn: '解放する', purchased: '購入済み(全テーマ解放)', restore: '購入を復元', restoreBtn: '復元' },
-  en: { title: 'Premium', unlock: 'Unlock all themes', unlockDesc: 'Use every theme from 4 onward (one-time purchase)', unlockBtn: 'Unlock', purchased: 'Purchased (all themes unlocked)', restore: 'Restore purchases', restoreBtn: 'Restore' },
-  ne: { title: 'प्रिमियम', unlock: 'सबै विषय खोल्नुहोस्', unlockDesc: 'विषय ४ देखि सबै प्रयोग गर्नुहोस् (एकपटक किन्ने)', unlockBtn: 'खोल्नुहोस्', purchased: 'किनिसकेको (सबै विषय खुला)', restore: 'खरिद पुनर्स्थापना', restoreBtn: 'पुनर्स्थापना' },
+  ja: { title: 'プレミアム', unlock: '全テーマを解放', unlockDesc: 'テーマ6以降をすべて利用できます(買い切り)', unlockBtn: '解放する', purchased: '購入済み(全テーマ解放)', restore: '購入を復元', restoreBtn: '復元' },
+  en: { title: 'Premium', unlock: 'Unlock all themes', unlockDesc: 'Use every theme from 6 onward (one-time purchase)', unlockBtn: 'Unlock', purchased: 'Purchased (all themes unlocked)', restore: 'Restore purchases', restoreBtn: 'Restore' },
+  ne: { title: 'प्रिमियम', unlock: 'सबै विषय खोल्नुहोस्', unlockDesc: 'विषय ६ देखि सबै प्रयोग गर्नुहोस् (एकपटक किन्ने)', unlockBtn: 'खोल्नुहोस्', purchased: 'किनिसकेको (सबै विषय खुला)', restore: 'खरिद पुनर्स्थापना', restoreBtn: 'पुनर्स्थापना' },
 };
 
 export default function SettingsScreen() {

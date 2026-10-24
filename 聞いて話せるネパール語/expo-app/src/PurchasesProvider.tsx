@@ -11,7 +11,7 @@ import { EntitlementProvider, type Entitlement } from '@safa/shared';
 
 const ENTITLEMENT_ID = 'all_themes';
 const OFFERING_ID = 'default';
-const FREE_THEMES = 3;
+const FREE_THEMES = 5;
 
 const API_KEY_IOS: string = ((Constants.expoConfig?.extra as any)?.revenueCatApiKeyIos as string) || '';
 
