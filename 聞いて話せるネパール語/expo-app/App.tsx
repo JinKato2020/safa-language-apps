@@ -132,8 +132,36 @@ function PackGate({ children }: { children: ReactNode }) {
     const cached = sessionPackCache[packLang];
     if (cached && !error) { setData(cached); dataLangRef.current = packLang; shownLangRef.current = lang; setLoading(false); setConfirm(null); return; }
     setError(false); setErrMsg(''); setConfirm(null);
+
+    // 既存キャッシュがあれば通信せず即起動(「ダウンロード中」を一切出さない)。
+    // 成功したら裏で更新確認し、新規/更新分があれば黙ってDLして差し替える。
+    const startFromCache = async (): Promise<boolean> => {
+      let d: AppData;
+      try { d = await loadPack(packLang, undefined, true, /*cacheOnly*/ true); }
+      catch { return false; } // キャッシュ未整備(初回等) → 通常DLフローへ
+      // コア本文が欠けた部分キャッシュ(空)なら即起動せず通常DLへ回す。
+      if (!(d as any)?.THEMES?.length) return false;
+      if (!alive) return true;
+      sessionPackCache[packLang] = d; setData(d); dataLangRef.current = packLang; shownLangRef.current = lang; setLoading(false);
+      // バックグラウンド更新(進捗UIなし=黙って)。「後で」で見送った言語は確認しない。
+      if (skipUpdateLangRef.current !== packLang) {
+        (async () => {
+          let info; try { info = await getPackDownloadInfo(packLang); } catch { return; }
+          if (!alive || !info.needsDownload) return;
+          try {
+            const nd = await loadPack(packLang); // 通常DL(オーバーレイ無し)
+            if (!alive) return;
+            sessionPackCache[packLang] = nd; setData(nd);
+          } catch {}
+        })();
+      }
+      return true;
+    };
+
     (async () => {
-      // まずDL要否とサイズを確認。DLが必要で未同意の言語なら、サイズ開示+同意画面を出してから。
+      if (await startFromCache()) return;
+      if (!alive) return;
+      // --- 初回(キャッシュ無し): サイズ開示+同意→進捗DL(従来フロー) ---
       let info: { needsDownload: boolean; bytes: number; canSkip: boolean };
       try { info = await getPackDownloadInfo(packLang); } catch { info = { needsDownload: true, bytes: 0, canSkip: false }; }
       if (!alive) return;

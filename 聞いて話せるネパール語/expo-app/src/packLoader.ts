@@ -224,13 +224,18 @@ export async function getPackDownloadInfo(lang: string): Promise<{ needsDownload
 }
 
 /** L1パックを解決。ja=同梱。en=オーバーレイ+英語音声zipをFS/DLし neCore と結合。 */
-export async function loadPack(lang: string, onProgress?: ProgressFn, skipUpdate?: boolean): Promise<AppData> {
+export async function loadPack(lang: string, onProgress?: ProgressFn, skipUpdate?: boolean, cacheOnly?: boolean): Promise<AppData> {
   const bundled = BUNDLED[lang];
   if (bundled) return bundled;
 
+  // cacheOnly=true: catalog取得(ネット更新確認)をせず、ディスクのキャッシュのみで即compose。
+  //  起動時の「ダウンロード中」一瞬表示を無くすため。キャッシュ未整備(初回等)は getOverlay が throw
+  //  → 呼び出し側(PackGate)で従来の同意+進捗DLフローへフォールバックする。
   let catalog: any = null, catalogErr = '';
-  try { catalog = await withRetry(() => fetchJson(CATALOG_URL)); }
-  catch (e: any) { catalogErr = String(e?.message ?? e); }
+  if (!cacheOnly) {
+    try { catalog = await withRetry(() => fetchJson(CATALOG_URL)); }
+    catch (e: any) { catalogErr = String(e?.message ?? e); }
+  }
   const entry = catalog?.packs?.find((p: any) => p.l1 === lang);
 
   const overlayJson = await getOverlay(lang, entry, { catalog, catalogErr }, skipUpdate);
