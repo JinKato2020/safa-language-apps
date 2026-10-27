@@ -44,6 +44,8 @@ function toOverlay(json: any): L1Overlay {
     wordsL1: json.wordsL1 ?? {},
     convVocab: json.convVocab,
     grammarVocab: json.grammarVocab,
+    grammarGuide: json.grammarGuide,
+    grammarThemeNames: json.grammarThemeNames,
     vocab: json.vocab,
   };
 }

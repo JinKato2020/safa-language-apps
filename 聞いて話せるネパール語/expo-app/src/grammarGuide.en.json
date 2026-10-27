@@ -3448,10 +3448,6 @@
   {
    "type": "note",
    "text": "Distinguish **हो and छ in the present** (negative होइन／छैन), but remember that **both share थियो in the past** (negative थिएन). The respectful forms, **present हुनुहुन्छ and past हुनुहुन्थ्यो**, are shared by हो/छ."
-  },
-  {
-   "type": "p",
-   "text": "<!-- English version: all 34 themes + Appendix A (गर्नु, all persons) + Appendix B (हो/छ/थियो, all persons). Translated from the Japanese v2 master; its Nepali and romanization are retained. Based on CD Express. Next: conversion to app JSON. -->"
   }
  ]
 }

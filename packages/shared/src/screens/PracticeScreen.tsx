@@ -298,9 +298,9 @@ export default function PracticeScreen() {
           // 既定: L1文(ex.ne)を空白分割。文脈依存辞書 → なければ既存 VOCAB へフォールバック。
           items = tokenize(ex.ne).filter(w => !isPunct(w)).map(word => {
             const gctxEntry = ctxDict?.[word];
-            const matchedCtx = gctxEntry?.contexts?.find(c => c.sentence_id === sentenceId) ?? gctxEntry?.contexts?.[0];
+            const matchedCtx = gctxEntry?.contexts?.find(c => c.sentence_id === sentenceId);
             const fallback = VOCAB[word] ?? {};
-            return { word, jaTrans: matchedCtx?.ja || fallback.ja || '', rom: gctxEntry?.rom || fallback.rom || '', pos: matchedCtx?.pos, note: matchedCtx?.note };
+            return { word, jaTrans: matchedCtx?.ja || gctxEntry?.base_meaning || fallback.ja || '', rom: gctxEntry?.rom || fallback.rom || '', pos: matchedCtx?.pos, note: matchedCtx?.note };
           });
         }
         return (
