@@ -38,6 +38,8 @@ import SakubunScreen from './screens/SakubunScreen';
 import ScaffoldScreen from './screens/ScaffoldScreen';
 import DictScreen, { type DictData } from './screens/DictScreen';
 import PaywallScreen from './screens/PaywallScreen';
+import GrammarGuideScreen from './screens/GrammarGuideScreen';
+import { GrammarGuideProvider, type GrammarGuideByLang } from './grammarGuide';
 import { DesignThemeProvider } from './design';
 
 const Tab = createBottomTabNavigator();
@@ -310,6 +312,8 @@ export type AppShellProps = {
   posterInListening?: boolean;
   /** 辞書タブ用データ(JLPT同期の共有辞書 ja-vocab/ja-kanji)。アプリ固有(各 data/dict)なので注入する。未注入なら辞書は空。 */
   dictData?: DictData;
+  /** 文法モードの「教材(ルール解説)」データ(母語別)。未注入なら教材ボタン非表示(App B/C は出さない)。 */
+  grammarGuide?: GrammarGuideByLang | null;
 };
 
 // スプラッシュは「アプリ起動時の1回だけ」。言語切替で PackGate が data=null にして
@@ -317,7 +321,7 @@ export type AppShellProps = {
 // (毎回スプラッシュ動画が再生されて白画面で固まって見えるのを防ぐ)。
 let splashShownOnce = false;
 
-export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData }: AppShellProps) {
+export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData, grammarGuide }: AppShellProps) {
   const [splashDone, setSplashDone] = useState(splashShownOnce || splashSource == null);
   const defaultStackOptions = useRef(makeDefaultStackOptions(HeaderTitle)).current;
   const { themeMode } = useSettings();
@@ -354,15 +358,19 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
         <PosterProvider lessons={posterLessons || []} resolveUri={posterResolveUri} ensure={posterEnsure}>
           <ListeningAudioProvider>
             <DesignThemeProvider scheme={scheme}>
-              {/* ルートスタック: タブ本体 + ペイウォール(モーダル)。
+              {/* ルートスタック: タブ本体 + ペイウォール(モーダル) + 文法教材。
                   ロックされたテーマのタップから navigation.navigate('Paywall') で
-                  どのタブ配下からでもここへ到達する(課金を使わないアプリでも無害な登録)。 */}
-              <RootStack.Navigator screenOptions={{ headerShown: false }}>
-                <RootStack.Screen name="MainTabs">
-                  {() => <MainTabs defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} />}
-                </RootStack.Screen>
-                <RootStack.Screen name="Paywall" component={PaywallScreen} options={{ presentation: 'modal' }} />
-              </RootStack.Navigator>
+                  どのタブ配下からでもここへ到達する(課金を使わないアプリでも無害な登録)。
+                  文法教材(GrammarGuide)も同様にどのタブからでも開ける。 */}
+              <GrammarGuideProvider value={grammarGuide}>
+                <RootStack.Navigator screenOptions={{ headerShown: false }}>
+                  <RootStack.Screen name="MainTabs">
+                    {() => <MainTabs defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} />}
+                  </RootStack.Screen>
+                  <RootStack.Screen name="Paywall" component={PaywallScreen} options={{ presentation: 'modal' }} />
+                  <RootStack.Screen name="GrammarGuide" component={GrammarGuideScreen} />
+                </RootStack.Navigator>
+              </GrammarGuideProvider>
             </DesignThemeProvider>
           </ListeningAudioProvider>
         </PosterProvider>

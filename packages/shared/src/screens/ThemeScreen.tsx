@@ -9,6 +9,7 @@ import { useScaleStyle } from '../SettingsContext';
 import { useI18n } from '../i18n';
 import { useAppData } from '../AppDataContext';
 import { useEntitlement, isLockedAt, LockBadge } from '../entitlement';
+import { useGrammarGuide } from '../grammarGuide';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'Theme'>;
 type R = RouteProp<RootStackParamList, 'Theme'>;
@@ -16,6 +17,7 @@ type R = RouteProp<RootStackParamList, 'Theme'>;
 export default function ThemeScreen() {
   const { THEMES, GRAMMAR_THEMES, LEVELS } = useAppData();
   const ent = useEntitlement();
+  const grammarGuide = useGrammarGuide();
   const navigation = useNavigation<Nav>();
   const { t } = useI18n();
   const ss = useScaleStyle();
@@ -135,6 +137,8 @@ export default function ThemeScreen() {
       renderItem={({ item, index }) => {
         // 表示番号(index+1)が無料枠を超えたらロック。タップでペイウォールへ。
         const locked = isLockedAt(ent, index);
+        // 文法モードで、ロックされておらず、このテーマの教材(解説)がある時だけ「教材」ボタンを右に表示。
+        const showGuide = isGrammarMode && !locked && !!grammarGuide && !!grammarGuide[String(item.id)];
         return (
           <Pressable
             style={({ pressed }) => [
@@ -148,6 +152,15 @@ export default function ThemeScreen() {
             <Text style={styles.num}>{String(index + 1).padStart(2, '0')}</Text>
             <Text style={[styles.name, ss(14)]}>{getThemeDisplayName(item.id)}</Text>
             {locked && <LockBadge />}
+            {showGuide && (
+              <Pressable
+                style={({ pressed }) => [styles.guideBtn, pressed && styles.guideBtnPressed]}
+                onPress={() => navigation.navigate('GrammarGuide', { themeId: item.id, title: getThemeDisplayName(item.id) })}
+                hitSlop={6}
+              >
+                <Text style={[styles.guideBtnText, ss(12)]}>教材</Text>
+              </Pressable>
+            )}
           </Pressable>
         );
       }}
@@ -204,4 +217,14 @@ const styles = StyleSheet.create({
   cardLocked: { opacity: 0.55 },
   num: { fontFamily: 'Courier', fontSize: 11, color: colors.inkFaint, width: 24 },
   name: { flex: 1, fontSize: 14, fontWeight: '500', color: colors.ink },
+  guideBtn: {
+    paddingHorizontal: spacing.md,
+    paddingVertical: 6,
+    borderRadius: 99,
+    borderWidth: 1,
+    borderColor: colors.accentJa,
+    backgroundColor: colors.surface,
+  },
+  guideBtnPressed: { backgroundColor: colors.bgSoft },
+  guideBtnText: { fontSize: 12, fontWeight: '700', color: colors.accentJa },
 });

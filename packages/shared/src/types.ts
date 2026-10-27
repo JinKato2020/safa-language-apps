@@ -68,6 +68,7 @@ export type RootStackParamList = {
   ListeningHub: undefined;
   ShortHub: undefined;
   Sakubun: { themeId: number; levelId: number; startIndex?: number };
+  GrammarGuide: { themeId: number; title: string };
   VocabCategory: { posterOnly?: boolean } | undefined;
   VocabDirection: { categoryId: number };
   Flashcard: { categoryId: number; direction: 'ne2ja' | 'ja2ne' };

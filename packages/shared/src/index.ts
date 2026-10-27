@@ -46,6 +46,12 @@ export {
   type Entitlement,
 } from './entitlement';
 
+// ── 文法「教材」(ルール解説。アプリ側が母語別データを注入。未注入=非表示) ──
+export {
+  GrammarGuideProvider, useGrammarGuide,
+  type GuideBlock, type GrammarGuideData, type GrammarGuideByLang,
+} from './grammarGuide';
+
 // ── AppShell (Provider 群で包んでマウントする) ──
 export { AppShell, type AppShellProps } from './AppShell';
 
@@ -61,3 +67,4 @@ export { default as VocabDirectionScreen } from './screens/VocabDirectionScreen'
 export { default as FlashcardScreen } from './screens/FlashcardScreen';
 export { default as SettingsScreen } from './screens/SettingsScreen';
 export { default as PaywallScreen } from './screens/PaywallScreen';
+export { default as GrammarGuideScreen } from './screens/GrammarGuideScreen';
