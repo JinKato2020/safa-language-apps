@@ -186,7 +186,12 @@ function PackGate({ children }: { children: ReactNode }) {
 
   if (!data) {
     if (confirm) return <ConfirmDownloadView bytes={confirm.bytes} lang={lang} onConfirm={onConfirm} canSkip={confirm.canSkip} onSkipUpdate={onSkipUpdate} />;
-    return <DownloadView done={progress.done} total={progress.total} label={progress.label} step={progress.step} steps={progress.steps} lang={lang} error={error} errMsg={errMsg} onRetry={() => setAttempt(a => a + 1)} />;
+    // 実際のDL中/エラー時だけ進捗画面を出す。キャッシュ確認中(data未取得・loading前)は
+    // 白画面にして「ダウンロード中」を出さない=即起動感を保つ(キャッシュ有りなら一瞬で本体へ)。
+    if (loading || error) {
+      return <DownloadView done={progress.done} total={progress.total} label={progress.label} step={progress.step} steps={progress.steps} lang={lang} error={error} errMsg={errMsg} onRetry={() => setAttempt(a => a + 1)} />;
+    }
+    return <View style={{ flex: 1, backgroundColor: '#fff' }} />;
   }
   return (
     <AppDataProvider data={data}>
