@@ -1143,7 +1143,7 @@
       },
       {
         "sentence_id": "35-66",
-        "ja": "that person (respectful)"
+        "ja": "she; that person"
       },
       {
         "sentence_id": "35-74",
@@ -1175,7 +1175,7 @@
       },
       {
         "sentence_id": "36-67",
-        "ja": "that person (respectful)"
+        "ja": "she; that person"
       }
     ]
   },
@@ -1947,6 +1947,26 @@
       {
         "sentence_id": "26-2",
         "ja": "notebook"
+      },
+      {
+        "sentence_id": "36-61",
+        "ja": "notebook"
+      },
+      {
+        "sentence_id": "36-62",
+        "ja": "notebook"
+      },
+      {
+        "sentence_id": "36-63",
+        "ja": "notebook"
+      },
+      {
+        "sentence_id": "36-64",
+        "ja": "notebook"
+      },
+      {
+        "sentence_id": "36-66",
+        "ja": "notebook"
       }
     ]
   },
@@ -2510,314 +2530,6 @@
       {
         "sentence_id": "34-11",
         "ja": "work"
-      },
-      {
-        "sentence_id": "35-1",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-2",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-3",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-4",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-5",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-6",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-7",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-8",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-9",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-10",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-11",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-12",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-13",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-14",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-15",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-16",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-17",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-18",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-19",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-20",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-21",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-22",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-23",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-24",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-25",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-26",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-27",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-28",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-29",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-30",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-31",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-32",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-33",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-34",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-35",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-36",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-37",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-38",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-39",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-40",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-41",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-42",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-43",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-44",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-45",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-46",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-47",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-48",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-49",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-50",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-51",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-52",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-53",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-54",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-55",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-56",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-57",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-58",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-59",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-60",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-61",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-62",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-63",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-64",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-65",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-66",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-67",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-68",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-69",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-70",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-71",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-72",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-73",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-74",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-75",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-76",
-        "ja": "work"
-      },
-      {
-        "sentence_id": "35-77",
-        "ja": "work"
       }
     ]
   },
@@ -2950,26 +2662,6 @@
       },
       {
         "sentence_id": "33-3",
-        "ja": "book"
-      },
-      {
-        "sentence_id": "36-61",
-        "ja": "book"
-      },
-      {
-        "sentence_id": "36-62",
-        "ja": "book"
-      },
-      {
-        "sentence_id": "36-63",
-        "ja": "book"
-      },
-      {
-        "sentence_id": "36-64",
-        "ja": "book"
-      },
-      {
-        "sentence_id": "36-66",
         "ja": "book"
       }
     ]
@@ -3768,11 +3460,6 @@
         "sentence_id": "30-9",
         "ja": "do; please do",
         "pos": "Verb: imperative/request"
-      },
-      {
-        "sentence_id": "35-62",
-        "ja": "do; please do",
-        "pos": "Verb: imperative/request"
       }
     ]
   },
@@ -3802,11 +3489,6 @@
         "sentence_id": "12-11",
         "ja": "did not do",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-31",
-        "ja": "did not do",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -3824,11 +3506,6 @@
         "sentence_id": "12-14",
         "ja": "did not do",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-37",
-        "ja": "did not do",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -3839,11 +3516,6 @@
     "contexts": [
       {
         "sentence_id": "12-2",
-        "ja": "did not do",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-32",
         "ja": "did not do",
         "pos": "Verb: गर्नु"
       }
@@ -3861,11 +3533,6 @@
       },
       {
         "sentence_id": "11-14",
-        "ja": "did",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-27",
         "ja": "did",
         "pos": "Verb: गर्नु"
       }
@@ -3897,11 +3564,6 @@
         "sentence_id": "11-2",
         "ja": "did",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-22",
-        "ja": "did",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -3914,11 +3576,6 @@
         "sentence_id": "18-5",
         "ja": "shall I do",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-64",
-        "ja": "shall I do",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -3929,16 +3586,6 @@
     "contexts": [
       {
         "sentence_id": "11-10",
-        "ja": "did",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-30",
-        "ja": "did",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-67",
         "ja": "did",
         "pos": "Verb: गर्नु"
       }
@@ -3958,11 +3605,6 @@
         "sentence_id": "11-11",
         "ja": "did",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-21",
-        "ja": "did",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -3978,11 +3620,6 @@
       },
       {
         "sentence_id": "16-10",
-        "ja": "done",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-50",
         "ja": "done",
         "pos": "Verb: गर्नु"
       }
@@ -4010,11 +3647,6 @@
       },
       {
         "sentence_id": "16-14",
-        "ja": "done",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-47",
         "ja": "done",
         "pos": "Verb: गर्नु"
       }
@@ -4114,36 +3746,6 @@
         "sentence_id": "16-15",
         "ja": "done",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-41",
-        "ja": "done",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-42",
-        "ja": "done",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-43",
-        "ja": "done",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-44",
-        "ja": "done",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-46",
-        "ja": "done",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-49",
-        "ja": "done",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4156,11 +3758,6 @@
         "sentence_id": "12-6",
         "ja": "did not do",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-36",
-        "ja": "did not do",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4171,11 +3768,6 @@
     "contexts": [
       {
         "sentence_id": "12-10",
-        "ja": "did not do",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-40",
         "ja": "did not do",
         "pos": "Verb: गर्नु"
       }
@@ -4200,16 +3792,6 @@
         "sentence_id": "12-12",
         "ja": "did not do",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-33",
-        "ja": "did not do",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-34",
-        "ja": "did not do",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4225,11 +3807,6 @@
       },
       {
         "sentence_id": "12-15",
-        "ja": "did not do",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-39",
         "ja": "did not do",
         "pos": "Verb: गर्नु"
       }
@@ -4256,11 +3833,6 @@
         "sentence_id": "18-11",
         "ja": "let us do",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-65",
-        "ja": "let us do",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4271,11 +3843,6 @@
     "contexts": [
       {
         "sentence_id": "17-12",
-        "ja": "do; please do",
-        "pos": "Verb: imperative/request"
-      },
-      {
-        "sentence_id": "35-61",
         "ja": "do; please do",
         "pos": "Verb: imperative/request"
       }
@@ -4305,16 +3872,6 @@
         "sentence_id": "26-5",
         "ja": "do; does",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-6",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-73",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4335,21 +3892,6 @@
       },
       {
         "sentence_id": "13-10",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-10",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-66",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-77",
         "ja": "do; does",
         "pos": "Verb: गर्नु"
       }
@@ -4377,16 +3919,6 @@
       },
       {
         "sentence_id": "13-2",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-2",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-69",
         "ja": "do; does",
         "pos": "Verb: गर्नु"
       }
@@ -4426,16 +3958,6 @@
         "sentence_id": "27-4",
         "ja": "do; does",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-7",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-74",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4466,16 +3988,6 @@
       },
       {
         "sentence_id": "13-1",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-1",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-68",
         "ja": "do; does",
         "pos": "Verb: गर्नु"
       }
@@ -4535,26 +4047,6 @@
         "sentence_id": "27-12",
         "ja": "do; does",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-3",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-4",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-70",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-71",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4597,16 +4089,6 @@
         "sentence_id": "34-11",
         "ja": "do; does",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-9",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-76",
-        "ja": "do; does",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4617,11 +4099,6 @@
     "contexts": [
       {
         "sentence_id": "14-7",
-        "ja": "used to do",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-57",
         "ja": "used to do",
         "pos": "Verb: गर्नु"
       }
@@ -4636,11 +4113,6 @@
         "sentence_id": "14-2",
         "ja": "used to do",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-52",
-        "ja": "used to do",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4651,11 +4123,6 @@
     "contexts": [
       {
         "sentence_id": "14-10",
-        "ja": "used to do",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-60",
         "ja": "used to do",
         "pos": "Verb: गर्नु"
       }
@@ -4670,11 +4137,6 @@
         "sentence_id": "14-1",
         "ja": "used to do",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-51",
-        "ja": "used to do",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4685,11 +4147,6 @@
     "contexts": [
       {
         "sentence_id": "14-6",
-        "ja": "used to do",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-56",
         "ja": "used to do",
         "pos": "Verb: गर्नु"
       }
@@ -4714,16 +4171,6 @@
         "sentence_id": "14-12",
         "ja": "used to do",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-53",
-        "ja": "used to do",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-54",
-        "ja": "used to do",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4739,11 +4186,6 @@
       },
       {
         "sentence_id": "14-20",
-        "ja": "used to do",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-59",
         "ja": "used to do",
         "pos": "Verb: गर्नु"
       }
@@ -4766,11 +4208,6 @@
       },
       {
         "sentence_id": "13-11",
-        "ja": "do not; does not",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-11",
         "ja": "do not; does not",
         "pos": "Verb: गर्नु"
       }
@@ -4817,11 +4254,6 @@
       },
       {
         "sentence_id": "13-14",
-        "ja": "do not; does not",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-17",
         "ja": "do not; does not",
         "pos": "Verb: गर्नु"
       }
@@ -4957,11 +4389,6 @@
         "sentence_id": "9-6",
         "ja": "do not; does not",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-16",
-        "ja": "do not; does not",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -4986,11 +4413,6 @@
         "sentence_id": "9-10",
         "ja": "do not; does not",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-20",
-        "ja": "do not; does not",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -5001,11 +4423,6 @@
     "contexts": [
       {
         "sentence_id": "9-2",
-        "ja": "do not; does not",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-12",
         "ja": "do not; does not",
         "pos": "Verb: गर्नु"
       }
@@ -5028,16 +4445,6 @@
       },
       {
         "sentence_id": "9-12",
-        "ja": "do not; does not",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-13",
-        "ja": "do not; does not",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-14",
         "ja": "do not; does not",
         "pos": "Verb: गर्नु"
       }
@@ -5065,11 +4472,6 @@
       },
       {
         "sentence_id": "24-8",
-        "ja": "do not; does not",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-19",
         "ja": "do not; does not",
         "pos": "Verb: गर्नु"
       }
@@ -5197,16 +4599,6 @@
         "sentence_id": "16-13",
         "ja": "done (respectful perfect participle)",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-45",
-        "ja": "done (respectful perfect participle)",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-48",
-        "ja": "done (respectful perfect participle)",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -5229,16 +4621,6 @@
         "sentence_id": "12-13",
         "ja": "did not do (respectful)",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-35",
-        "ja": "did not do (respectful)",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-38",
-        "ja": "did not do (respectful)",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -5259,16 +4641,6 @@
       },
       {
         "sentence_id": "11-13",
-        "ja": "did (respectful)",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-25",
-        "ja": "did (respectful)",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-28",
         "ja": "did (respectful)",
         "pos": "Verb: गर्नु"
       }
@@ -5338,26 +4710,6 @@
         "sentence_id": "28-14",
         "ja": "do; does (respectful)",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-5",
-        "ja": "do; does (respectful)",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-8",
-        "ja": "do; does (respectful)",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-72",
-        "ja": "do; does (respectful)",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-75",
-        "ja": "do; does (respectful)",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -5385,16 +4737,6 @@
         "sentence_id": "34-15",
         "ja": "used to do (respectful)",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-55",
-        "ja": "used to do (respectful)",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-58",
-        "ja": "used to do (respectful)",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -5417,16 +4759,6 @@
         "sentence_id": "9-13",
         "ja": "do not; does not (respectful)",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-15",
-        "ja": "do not; does not (respectful)",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-18",
-        "ja": "do not; does not (respectful)",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -5447,11 +4779,6 @@
       },
       {
         "sentence_id": "29-15",
-        "ja": "do; please do",
-        "pos": "Verb: imperative/request"
-      },
-      {
-        "sentence_id": "35-63",
         "ja": "do; please do",
         "pos": "Verb: imperative/request"
       }
@@ -5505,11 +4832,6 @@
         "sentence_id": "11-6",
         "ja": "did",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-26",
-        "ja": "did",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -5532,16 +4854,6 @@
         "sentence_id": "11-12",
         "ja": "did",
         "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-23",
-        "ja": "did",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-24",
-        "ja": "did",
-        "pos": "Verb: गर्नु"
       }
     ]
   },
@@ -5557,11 +4869,6 @@
       },
       {
         "sentence_id": "11-15",
-        "ja": "did",
-        "pos": "Verb: गर्नु"
-      },
-      {
-        "sentence_id": "35-29",
         "ja": "did",
         "pos": "Verb: गर्नु"
       }
@@ -5743,166 +5050,6 @@
       },
       {
         "sentence_id": "31-8",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-21",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-22",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-23",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-24",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-25",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-26",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-27",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-28",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-29",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-30",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-31",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-32",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-33",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-34",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-35",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-36",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-37",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-38",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-39",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-40",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-41",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-42",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-43",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-44",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-45",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-46",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-47",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-48",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-49",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-50",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-51",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-52",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-53",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-54",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-55",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-56",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-57",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-58",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-59",
-        "ja": "at home"
-      },
-      {
-        "sentence_id": "36-60",
         "ja": "at home"
       }
     ]
@@ -6138,6 +5285,314 @@
       },
       {
         "sentence_id": "33-8",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-1",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-2",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-3",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-4",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-5",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-6",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-7",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-8",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-9",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-10",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-11",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-12",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-13",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-14",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-15",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-16",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-17",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-18",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-19",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-20",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-21",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-22",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-23",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-24",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-25",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-26",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-27",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-28",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-29",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-30",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-31",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-32",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-33",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-34",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-35",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-36",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-37",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-38",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-39",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-40",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-41",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-42",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-43",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-44",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-45",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-46",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-47",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-48",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-49",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-50",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-51",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-52",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-53",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-54",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-55",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-56",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-57",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-58",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-59",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-60",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-61",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-62",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-63",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-64",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-65",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-66",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-67",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-68",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-69",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-70",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-71",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-72",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-73",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-74",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-75",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-76",
+        "ja": "letter"
+      },
+      {
+        "sentence_id": "35-77",
         "ja": "letter"
       }
     ]
@@ -6530,33 +5985,23 @@
       },
       {
         "sentence_id": "35-45",
-        "ja": "have; has (perfect auxiliary)",
-        "pos": "Verb: हुनु",
-        "note": "Perfect auxiliary with the preceding participle."
+        "ja": "have; has (perfect auxiliary)"
       },
       {
         "sentence_id": "35-46",
-        "ja": "have; has (perfect auxiliary)",
-        "pos": "Verb: हुनु",
-        "note": "Perfect auxiliary with the preceding participle."
+        "ja": "have; has (perfect auxiliary)"
       },
       {
         "sentence_id": "35-48",
-        "ja": "have; has (perfect auxiliary)",
-        "pos": "Verb: हुनु",
-        "note": "Perfect auxiliary with the preceding participle."
+        "ja": "have; has (perfect auxiliary)"
       },
       {
         "sentence_id": "36-26",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location)"
       },
       {
         "sentence_id": "36-63",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location)"
       }
     ]
   },
@@ -6591,21 +6036,15 @@
       },
       {
         "sentence_id": "35-50",
-        "ja": "have; has (perfect auxiliary)",
-        "pos": "Verb: हुनु",
-        "note": "Perfect auxiliary with the preceding participle."
+        "ja": "have; has (perfect auxiliary)"
       },
       {
         "sentence_id": "36-30",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location)"
       },
       {
         "sentence_id": "36-67",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location)"
       }
     ]
   },
@@ -6628,15 +6067,11 @@
       },
       {
         "sentence_id": "35-42",
-        "ja": "have; has (perfect auxiliary)",
-        "pos": "Verb: हुनु",
-        "note": "Perfect auxiliary with the preceding participle."
+        "ja": "have; has (perfect auxiliary)"
       },
       {
         "sentence_id": "36-22",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location)"
       }
     ]
   },
@@ -6694,15 +6129,11 @@
       },
       {
         "sentence_id": "35-47",
-        "ja": "have; has (perfect auxiliary)",
-        "pos": "Verb: हुनु",
-        "note": "Perfect auxiliary with the preceding participle."
+        "ja": "have; has (perfect auxiliary)"
       },
       {
         "sentence_id": "36-27",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location)"
       }
     ]
   },
@@ -6755,15 +6186,11 @@
       },
       {
         "sentence_id": "35-41",
-        "ja": "have; has (perfect auxiliary)",
-        "pos": "Verb: हुनु",
-        "note": "Perfect auxiliary with the preceding participle."
+        "ja": "have; has (perfect auxiliary)"
       },
       {
         "sentence_id": "36-21",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location)"
       }
     ]
   },
@@ -6858,15 +6285,11 @@
       },
       {
         "sentence_id": "36-36",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location)"
       },
       {
         "sentence_id": "36-64",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location)"
       }
     ]
   },
@@ -6883,9 +6306,7 @@
       },
       {
         "sentence_id": "36-31",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location)"
       }
     ]
   },
@@ -6908,15 +6329,11 @@
       },
       {
         "sentence_id": "36-37",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location)"
       },
       {
         "sentence_id": "36-40",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location)"
       }
     ]
   },
@@ -6933,9 +6350,7 @@
       },
       {
         "sentence_id": "36-32",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location)"
       }
     ]
   },
@@ -6964,15 +6379,11 @@
       },
       {
         "sentence_id": "36-33",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location)"
       },
       {
         "sentence_id": "36-34",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location)"
       }
     ]
   },
@@ -6989,9 +6400,7 @@
       },
       {
         "sentence_id": "36-39",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location)"
       }
     ]
   },
@@ -7062,27 +6471,19 @@
       },
       {
         "sentence_id": "35-43",
-        "ja": "have; has (perfect auxiliary)",
-        "pos": "Verb: हुनु",
-        "note": "Perfect auxiliary with the preceding participle."
+        "ja": "have; has (perfect auxiliary)"
       },
       {
         "sentence_id": "35-44",
-        "ja": "have; has (perfect auxiliary)",
-        "pos": "Verb: हुनु",
-        "note": "Perfect auxiliary with the preceding participle."
+        "ja": "have; has (perfect auxiliary)"
       },
       {
         "sentence_id": "36-23",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location)"
       },
       {
         "sentence_id": "36-24",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location)"
       }
     ]
   },
@@ -7117,15 +6518,11 @@
       },
       {
         "sentence_id": "35-49",
-        "ja": "have; has (perfect auxiliary)",
-        "pos": "Verb: हुनु",
-        "note": "Perfect auxiliary with the preceding participle."
+        "ja": "have; has (perfect auxiliary)"
       },
       {
         "sentence_id": "36-29",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location)"
       }
     ]
   },
@@ -8642,6 +8039,10 @@
       {
         "sentence_id": "5-2",
         "ja": "your"
+      },
+      {
+        "sentence_id": "36-64",
+        "ja": "your"
       }
     ]
   },
@@ -8789,14 +8190,6 @@
       {
         "sentence_id": "36-62",
         "ja": "that"
-      },
-      {
-        "sentence_id": "36-64",
-        "ja": "that"
-      },
-      {
-        "sentence_id": "36-66",
-        "ja": "that"
       }
     ]
   },
@@ -8854,9 +8247,7 @@
       },
       {
         "sentence_id": "36-51",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not"
       }
     ]
   },
@@ -8873,9 +8264,7 @@
       },
       {
         "sentence_id": "36-57",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not"
       }
     ]
   },
@@ -8886,9 +8275,7 @@
     "contexts": [
       {
         "sentence_id": "36-52",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not"
       }
     ]
   },
@@ -8911,9 +8298,7 @@
       },
       {
         "sentence_id": "36-47",
-        "ja": "was; were (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was; were"
       }
     ]
   },
@@ -8930,9 +8315,7 @@
       },
       {
         "sentence_id": "36-42",
-        "ja": "was; were (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was; were"
       }
     ]
   },
@@ -8949,9 +8332,7 @@
       },
       {
         "sentence_id": "36-50",
-        "ja": "was; were (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was; were"
       }
     ]
   },
@@ -8980,9 +8361,7 @@
       },
       {
         "sentence_id": "36-41",
-        "ja": "was; were (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was; were"
       }
     ]
   },
@@ -8999,15 +8378,11 @@
       },
       {
         "sentence_id": "36-56",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not"
       },
       {
         "sentence_id": "36-66",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not"
       }
     ]
   },
@@ -9018,9 +8393,7 @@
     "contexts": [
       {
         "sentence_id": "36-60",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not"
       }
     ]
   },
@@ -9031,15 +8404,11 @@
     "contexts": [
       {
         "sentence_id": "36-53",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not"
       },
       {
         "sentence_id": "36-54",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not"
       }
     ]
   },
@@ -9056,9 +8425,7 @@
       },
       {
         "sentence_id": "36-59",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not"
       }
     ]
   },
@@ -9105,15 +8472,11 @@
       },
       {
         "sentence_id": "36-46",
-        "ja": "was; were (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was; were"
       },
       {
         "sentence_id": "36-65",
-        "ja": "was; were",
-        "pos": "Verb: हुनु",
-        "note": "Respectful identity copula."
+        "ja": "was (former identity)"
       }
     ]
   },
@@ -9142,15 +8505,11 @@
       },
       {
         "sentence_id": "36-43",
-        "ja": "was; were (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was; were"
       },
       {
         "sentence_id": "36-44",
-        "ja": "was; were (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was; were"
       }
     ]
   },
@@ -9167,9 +8526,7 @@
       },
       {
         "sentence_id": "36-49",
-        "ja": "was; were (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was; were"
       }
     ]
   },
@@ -9549,6 +8906,10 @@
       },
       {
         "sentence_id": "23-13",
+        "ja": "new"
+      },
+      {
+        "sentence_id": "36-61",
         "ja": "new"
       }
     ]
@@ -10546,6 +9907,10 @@
       {
         "sentence_id": "28-1",
         "ja": "library"
+      },
+      {
+        "sentence_id": "36-65",
+        "ja": "library"
       }
     ]
   },
@@ -11112,6 +10477,10 @@
       },
       {
         "sentence_id": "33-12",
+        "ja": "outside"
+      },
+      {
+        "sentence_id": "36-67",
         "ja": "outside"
       }
     ]
@@ -12541,6 +11910,18 @@
       {
         "sentence_id": "29-1",
         "ja": "my"
+      },
+      {
+        "sentence_id": "36-62",
+        "ja": "my"
+      },
+      {
+        "sentence_id": "36-63",
+        "ja": "my"
+      },
+      {
+        "sentence_id": "36-66",
+        "ja": "my"
       }
     ]
   },
@@ -12843,19 +12224,7 @@
         "ja": "here"
       },
       {
-        "sentence_id": "36-63",
-        "ja": "here"
-      },
-      {
-        "sentence_id": "36-64",
-        "ja": "here"
-      },
-      {
         "sentence_id": "36-66",
-        "ja": "here"
-      },
-      {
-        "sentence_id": "36-67",
         "ja": "here"
       }
     ]
@@ -13228,10 +12597,6 @@
       },
       {
         "sentence_id": "36-61",
-        "ja": "this"
-      },
-      {
-        "sentence_id": "36-63",
         "ja": "this"
       },
       {
@@ -13634,6 +12999,16 @@
         "sentence_id": "5-13",
         "ja": "write",
         "pos": "Verb: लेख्नु"
+      },
+      {
+        "sentence_id": "35-1",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-68",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
       }
     ]
   },
@@ -13646,6 +13021,26 @@
         "sentence_id": "26-4",
         "ja": "write",
         "pos": "Verb: लेख्नु"
+      },
+      {
+        "sentence_id": "35-3",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-4",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-70",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-71",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
       }
     ]
   },
@@ -13658,6 +13053,11 @@
         "sentence_id": "9-16",
         "ja": "do not write",
         "pos": "Verb: लेख्नु"
+      },
+      {
+        "sentence_id": "35-11",
+        "ja": "do not write; does not write",
+        "pos": "Verb: form of लेख्नु"
       }
     ]
   },
@@ -13694,6 +13094,11 @@
         "sentence_id": "17-6",
         "ja": "please write",
         "pos": "Verb: लेख्नु"
+      },
+      {
+        "sentence_id": "35-63",
+        "ja": "please write",
+        "pos": "Verb: form of लेख्नु"
       }
     ]
   },
@@ -13772,86 +13177,6 @@
       },
       {
         "sentence_id": "34-4",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-1",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-2",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-3",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-4",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-5",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-6",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-7",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-8",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-9",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-10",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-11",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-12",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-13",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-14",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-15",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-16",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-17",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-18",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-19",
-        "ja": "student"
-      },
-      {
-        "sentence_id": "36-20",
         "ja": "student"
       }
     ]
@@ -14836,10 +14161,6 @@
       {
         "sentence_id": "29-4",
         "ja": "school"
-      },
-      {
-        "sentence_id": "36-65",
-        "ja": "school"
       }
     ]
   },
@@ -15588,90 +14909,6 @@
       {
         "sentence_id": "35-67",
         "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-41",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-42",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-43",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-44",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-45",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-46",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-47",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-48",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-49",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-50",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-51",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-52",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-53",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-54",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-55",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-56",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-57",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-58",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-59",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-60",
-        "ja": "yesterday"
-      },
-      {
-        "sentence_id": "36-66",
-        "ja": "yesterday"
       }
     ]
   },
@@ -15711,9 +14948,7 @@
       },
       {
         "sentence_id": "36-1",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "be (identification)"
       }
     ]
   },
@@ -15920,27 +15155,19 @@
       },
       {
         "sentence_id": "36-5",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Respectful identity copula."
+        "ja": "be (identity, respectful)"
       },
       {
         "sentence_id": "36-8",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Respectful identity copula."
+        "ja": "be (identity, respectful)"
       },
       {
         "sentence_id": "36-25",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location, respectful)"
       },
       {
         "sentence_id": "36-28",
-        "ja": "is; are (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "be (location, respectful)"
       }
     ]
   },
@@ -15951,15 +15178,11 @@
     "contexts": [
       {
         "sentence_id": "36-45",
-        "ja": "was; were (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was; were (respectful)"
       },
       {
         "sentence_id": "36-48",
-        "ja": "was; were (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was; were (respectful)"
       }
     ]
   },
@@ -15976,27 +15199,19 @@
       },
       {
         "sentence_id": "36-15",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Respectful identity copula."
+        "ja": "not be (identity, respectful)"
       },
       {
         "sentence_id": "36-18",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Respectful identity copula."
+        "ja": "not be (identity, respectful)"
       },
       {
         "sentence_id": "36-35",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location, respectful)"
       },
       {
         "sentence_id": "36-38",
-        "ja": "is not; are not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "not be (location, respectful)"
       }
     ]
   },
@@ -16007,15 +15222,11 @@
     "contexts": [
       {
         "sentence_id": "36-55",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not (respectful)"
       },
       {
         "sentence_id": "36-58",
-        "ja": "was not; were not (existence)",
-        "pos": "Verb: हुनु",
-        "note": "Expresses location, existence or possession."
+        "ja": "was not; were not (respectful)"
       }
     ]
   },
@@ -16056,15 +15267,11 @@
       },
       {
         "sentence_id": "36-7",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "be (identification)"
       },
       {
         "sentence_id": "36-10",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "be (identification)"
       }
     ]
   },
@@ -16337,15 +15544,11 @@
       },
       {
         "sentence_id": "36-6",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "be (identification)"
       },
       {
         "sentence_id": "36-61",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "be (identification)"
       }
     ]
   },
@@ -16392,15 +15595,11 @@
       },
       {
         "sentence_id": "36-16",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "not be (identification)"
       },
       {
         "sentence_id": "36-62",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "not be (identification)"
       }
     ]
   },
@@ -16417,9 +15616,7 @@
       },
       {
         "sentence_id": "36-11",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "not be (identification)"
       }
     ]
   },
@@ -16436,15 +15633,11 @@
       },
       {
         "sentence_id": "36-17",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "not be (identification)"
       },
       {
         "sentence_id": "36-20",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "not be (identification)"
       }
     ]
   },
@@ -16461,9 +15654,7 @@
       },
       {
         "sentence_id": "36-12",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "not be (identification)"
       }
     ]
   },
@@ -16474,15 +15665,11 @@
     "contexts": [
       {
         "sentence_id": "36-13",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "not be (identification)"
       },
       {
         "sentence_id": "36-14",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "not be (identification)"
       }
     ]
   },
@@ -16493,9 +15680,7 @@
     "contexts": [
       {
         "sentence_id": "36-19",
-        "ja": "am not; is not; are not",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "not be (identification)"
       }
     ]
   },
@@ -16546,9 +15731,7 @@
       },
       {
         "sentence_id": "36-2",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "be (identification)"
       }
     ]
   },
@@ -16583,15 +15766,11 @@
       },
       {
         "sentence_id": "36-3",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "be (identification)"
       },
       {
         "sentence_id": "36-4",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "be (identification)"
       }
     ]
   },
@@ -16608,9 +15787,1041 @@
       },
       {
         "sentence_id": "36-9",
-        "ja": "am; is; are",
-        "pos": "Verb: हुनु",
-        "note": "Copula for identity."
+        "ja": "be (identification)"
+      }
+    ]
+  },
+  "लेख्छस्": {
+    "rom": "lekhchas",
+    "base_form": "लेख्नु",
+    "base_meaning": "write; writes",
+    "contexts": [
+      {
+        "sentence_id": "35-2",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-69",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्नुहुन्छ": {
+    "rom": "lekhnuhuncha",
+    "base_form": "लेख्नु",
+    "base_meaning": "write; writes",
+    "contexts": [
+      {
+        "sentence_id": "35-5",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-8",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-72",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-75",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्छ": {
+    "rom": "lekhcha",
+    "base_form": "लेख्नु",
+    "base_meaning": "write; writes",
+    "contexts": [
+      {
+        "sentence_id": "35-6",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-73",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्छिन्": {
+    "rom": "lekhchin",
+    "base_form": "लेख्नु",
+    "base_meaning": "write; writes",
+    "contexts": [
+      {
+        "sentence_id": "35-7",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-74",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्छौं": {
+    "rom": "lekhchaũ",
+    "base_form": "लेख्नु",
+    "base_meaning": "write; writes",
+    "contexts": [
+      {
+        "sentence_id": "35-9",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-76",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्छन्": {
+    "rom": "lekhchan",
+    "base_form": "लेख्नु",
+    "base_meaning": "write; writes",
+    "contexts": [
+      {
+        "sentence_id": "35-10",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-66",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-77",
+        "ja": "write; writes",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्दैनस्": {
+    "rom": "lekhdainas",
+    "base_form": "लेख्नु",
+    "base_meaning": "do not write; does not write",
+    "contexts": [
+      {
+        "sentence_id": "35-12",
+        "ja": "do not write; does not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्दैनौ": {
+    "rom": "lekhdainau",
+    "base_form": "लेख्नु",
+    "base_meaning": "do not write; does not write",
+    "contexts": [
+      {
+        "sentence_id": "35-13",
+        "ja": "do not write; does not write",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-14",
+        "ja": "do not write; does not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्नुहुन्न": {
+    "rom": "lekhnuhunna",
+    "base_form": "लेख्नु",
+    "base_meaning": "do not write; does not write",
+    "contexts": [
+      {
+        "sentence_id": "35-15",
+        "ja": "do not write; does not write",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-18",
+        "ja": "do not write; does not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्दैन": {
+    "rom": "lekhdaina",
+    "base_form": "लेख्नु",
+    "base_meaning": "do not write; does not write",
+    "contexts": [
+      {
+        "sentence_id": "35-16",
+        "ja": "do not write; does not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्दिनन्": {
+    "rom": "lekhdinan",
+    "base_form": "लेख्नु",
+    "base_meaning": "do not write; does not write",
+    "contexts": [
+      {
+        "sentence_id": "35-17",
+        "ja": "do not write; does not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्दैनौं": {
+    "rom": "lekhdainaũ",
+    "base_form": "लेख्नु",
+    "base_meaning": "do not write; does not write",
+    "contexts": [
+      {
+        "sentence_id": "35-19",
+        "ja": "do not write; does not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्दैनन्": {
+    "rom": "lekhdainan",
+    "base_form": "लेख्नु",
+    "base_meaning": "do not write; does not write",
+    "contexts": [
+      {
+        "sentence_id": "35-20",
+        "ja": "do not write; does not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखेँ": {
+    "rom": "lekhẽ",
+    "base_form": "लेख्नु",
+    "base_meaning": "wrote",
+    "contexts": [
+      {
+        "sentence_id": "35-21",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखिस्": {
+    "rom": "lekhis",
+    "base_form": "लेख्नु",
+    "base_meaning": "wrote",
+    "contexts": [
+      {
+        "sentence_id": "35-22",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्यौ": {
+    "rom": "lekhyau",
+    "base_form": "लेख्नु",
+    "base_meaning": "wrote",
+    "contexts": [
+      {
+        "sentence_id": "35-23",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-24",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्नुभयो": {
+    "rom": "lekhnubhayo",
+    "base_form": "लेख्नु",
+    "base_meaning": "wrote",
+    "contexts": [
+      {
+        "sentence_id": "35-25",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-28",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्यो": {
+    "rom": "lekhyo",
+    "base_form": "लेख्नु",
+    "base_meaning": "wrote",
+    "contexts": [
+      {
+        "sentence_id": "35-26",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखिन्": {
+    "rom": "lekhin",
+    "base_form": "लेख्नु",
+    "base_meaning": "wrote",
+    "contexts": [
+      {
+        "sentence_id": "35-27",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्यौं": {
+    "rom": "lekhyaũ",
+    "base_form": "लेख्नु",
+    "base_meaning": "wrote",
+    "contexts": [
+      {
+        "sentence_id": "35-29",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखे": {
+    "rom": "lekhe",
+    "base_form": "लेख्नु",
+    "base_meaning": "wrote",
+    "contexts": [
+      {
+        "sentence_id": "35-30",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-67",
+        "ja": "wrote",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखिनँ": {
+    "rom": "lekhinã",
+    "base_form": "लेख्नु",
+    "base_meaning": "did not write",
+    "contexts": [
+      {
+        "sentence_id": "35-31",
+        "ja": "did not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखिनस्": {
+    "rom": "lekhinas",
+    "base_form": "लेख्नु",
+    "base_meaning": "did not write",
+    "contexts": [
+      {
+        "sentence_id": "35-32",
+        "ja": "did not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखेनौ": {
+    "rom": "lekhenau",
+    "base_form": "लेख्नु",
+    "base_meaning": "did not write",
+    "contexts": [
+      {
+        "sentence_id": "35-33",
+        "ja": "did not write",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-34",
+        "ja": "did not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्नुभएन": {
+    "rom": "lekhnubhaena",
+    "base_form": "लेख्नु",
+    "base_meaning": "did not write",
+    "contexts": [
+      {
+        "sentence_id": "35-35",
+        "ja": "did not write",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-38",
+        "ja": "did not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखेन": {
+    "rom": "lekhena",
+    "base_form": "लेख्नु",
+    "base_meaning": "did not write",
+    "contexts": [
+      {
+        "sentence_id": "35-36",
+        "ja": "did not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखिनन्": {
+    "rom": "lekhinan",
+    "base_form": "लेख्नु",
+    "base_meaning": "did not write",
+    "contexts": [
+      {
+        "sentence_id": "35-37",
+        "ja": "did not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखेनौं": {
+    "rom": "lekhenaũ",
+    "base_form": "लेख्नु",
+    "base_meaning": "did not write",
+    "contexts": [
+      {
+        "sentence_id": "35-39",
+        "ja": "did not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखेनन्": {
+    "rom": "lekhenan",
+    "base_form": "लेख्नु",
+    "base_meaning": "did not write",
+    "contexts": [
+      {
+        "sentence_id": "35-40",
+        "ja": "did not write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखेको": {
+    "rom": "lekheko",
+    "base_form": "लेख्नु",
+    "base_meaning": "written",
+    "contexts": [
+      {
+        "sentence_id": "35-41",
+        "ja": "written",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-42",
+        "ja": "written",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-43",
+        "ja": "written",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-44",
+        "ja": "written",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-46",
+        "ja": "written",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-49",
+        "ja": "written",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्नुभएको": {
+    "rom": "lekhnubhaeko",
+    "base_form": "लेख्नु",
+    "base_meaning": "written",
+    "contexts": [
+      {
+        "sentence_id": "35-45",
+        "ja": "written",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-48",
+        "ja": "written",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखेकी": {
+    "rom": "lekhekī",
+    "base_form": "लेख्नु",
+    "base_meaning": "written",
+    "contexts": [
+      {
+        "sentence_id": "35-47",
+        "ja": "written",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखेका": {
+    "rom": "lekhekā",
+    "base_form": "लेख्नु",
+    "base_meaning": "written",
+    "contexts": [
+      {
+        "sentence_id": "35-50",
+        "ja": "written",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्थें": {
+    "rom": "lekhthẽ",
+    "base_form": "लेख्नु",
+    "base_meaning": "used to write",
+    "contexts": [
+      {
+        "sentence_id": "35-51",
+        "ja": "used to write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्थिस्": {
+    "rom": "lekhthis",
+    "base_form": "लेख्नु",
+    "base_meaning": "used to write",
+    "contexts": [
+      {
+        "sentence_id": "35-52",
+        "ja": "used to write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्थ्यौ": {
+    "rom": "lekhthyau",
+    "base_form": "लेख्नु",
+    "base_meaning": "used to write",
+    "contexts": [
+      {
+        "sentence_id": "35-53",
+        "ja": "used to write",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-54",
+        "ja": "used to write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्नुहुन्थ्यो": {
+    "rom": "lekhnuhunthyo",
+    "base_form": "लेख्नु",
+    "base_meaning": "used to write",
+    "contexts": [
+      {
+        "sentence_id": "35-55",
+        "ja": "used to write",
+        "pos": "Verb: form of लेख्नु"
+      },
+      {
+        "sentence_id": "35-58",
+        "ja": "used to write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्थ्यो": {
+    "rom": "lekhthyo",
+    "base_form": "लेख्नु",
+    "base_meaning": "used to write",
+    "contexts": [
+      {
+        "sentence_id": "35-56",
+        "ja": "used to write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्थिन्": {
+    "rom": "lekhthin",
+    "base_form": "लेख्नु",
+    "base_meaning": "used to write",
+    "contexts": [
+      {
+        "sentence_id": "35-57",
+        "ja": "used to write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्थ्यौं": {
+    "rom": "lekhthyaũ",
+    "base_form": "लेख्नु",
+    "base_meaning": "used to write",
+    "contexts": [
+      {
+        "sentence_id": "35-59",
+        "ja": "used to write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्थे": {
+    "rom": "lekhthe",
+    "base_form": "लेख्नु",
+    "base_meaning": "used to write",
+    "contexts": [
+      {
+        "sentence_id": "35-60",
+        "ja": "used to write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख्": {
+    "rom": "lekh",
+    "base_form": "लेख्नु",
+    "base_meaning": "write (request or suggestion)",
+    "contexts": [
+      {
+        "sentence_id": "35-61",
+        "ja": "write (intimate request)",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेख": {
+    "rom": "lekh",
+    "base_form": "लेख्नु",
+    "base_meaning": "write (request or suggestion)",
+    "contexts": [
+      {
+        "sentence_id": "35-62",
+        "ja": "write (request)",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखूँ": {
+    "rom": "lekhũ",
+    "base_form": "लेख्नु",
+    "base_meaning": "write (request or suggestion)",
+    "contexts": [
+      {
+        "sentence_id": "35-64",
+        "ja": "shall I write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखौं": {
+    "rom": "lekhaũ",
+    "base_form": "लेख्नु",
+    "base_meaning": "write (request or suggestion)",
+    "contexts": [
+      {
+        "sentence_id": "35-65",
+        "ja": "let us write",
+        "pos": "Verb: form of लेख्नु"
+      }
+    ]
+  },
+  "लेखक": {
+    "rom": "lekhak",
+    "base_form": "लेखक",
+    "base_meaning": "author",
+    "contexts": [
+      {
+        "sentence_id": "36-1",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-2",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-3",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-4",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-5",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-6",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-8",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-9",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-10",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-11",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-12",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-13",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-14",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-15",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-16",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-18",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-19",
+        "ja": "author"
+      },
+      {
+        "sentence_id": "36-20",
+        "ja": "author"
+      }
+    ]
+  },
+  "लेखिका": {
+    "rom": "lekhikā",
+    "base_form": "लेखिका",
+    "base_meaning": "author (female)",
+    "contexts": [
+      {
+        "sentence_id": "36-7",
+        "ja": "author (female)"
+      },
+      {
+        "sentence_id": "36-17",
+        "ja": "author (female)"
+      }
+    ]
+  },
+  "पुस्तकालयमा": {
+    "rom": "pustakālayamā",
+    "base_form": "पुस्तकालयमा",
+    "base_meaning": "at the library",
+    "contexts": [
+      {
+        "sentence_id": "36-21",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-22",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-23",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-24",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-25",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-26",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-27",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-28",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-29",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-30",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-31",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-32",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-33",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-34",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-35",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-36",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-37",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-38",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-39",
+        "ja": "at the library"
+      },
+      {
+        "sentence_id": "36-40",
+        "ja": "at the library"
+      }
+    ]
+  },
+  "अस्ति": {
+    "rom": "asti",
+    "base_form": "अस्ति",
+    "base_meaning": "the day before yesterday",
+    "contexts": [
+      {
+        "sentence_id": "36-41",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-42",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-43",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-44",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-45",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-46",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-47",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-48",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-49",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-50",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-51",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-52",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-53",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-54",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-55",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-56",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-57",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-58",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-59",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-60",
+        "ja": "the day before yesterday"
+      },
+      {
+        "sentence_id": "36-66",
+        "ja": "the day before yesterday"
+      }
+    ]
+  },
+  "बजारमा": {
+    "rom": "bajārmā",
+    "base_form": "बजारमा",
+    "base_meaning": "at the market",
+    "contexts": [
+      {
+        "sentence_id": "36-41",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-42",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-43",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-44",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-45",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-46",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-47",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-48",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-49",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-50",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-51",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-52",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-53",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-54",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-55",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-56",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-57",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-58",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-59",
+        "ja": "at the market"
+      },
+      {
+        "sentence_id": "36-60",
+        "ja": "at the market"
+      }
+    ]
+  },
+  "झोलामा": {
+    "rom": "jholāmā",
+    "base_form": "झोलामा",
+    "base_meaning": "in the bag",
+    "contexts": [
+      {
+        "sentence_id": "36-63",
+        "ja": "in the bag"
+      },
+      {
+        "sentence_id": "36-64",
+        "ja": "in the bag"
       }
     ]
   }

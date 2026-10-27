@@ -1,5 +1,6 @@
 import { useLayoutEffect, useState } from 'react';
 import { FlatList, Pressable, StyleSheet, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ModeHero, useHeroImage } from '../heroImages';
 import { Text } from '../Text';
 import { useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
@@ -24,6 +25,7 @@ export default function ThemeScreen() {
   const ss = useScaleStyle();
   const { mode, source } = useRoute<R>().params;
   const heroSrc = useHeroImage(mode);
+  const { top } = useSafeAreaInsets();
   const isListening = mode === 'listening';
   // 聞き流しモードでは画面内トグルで会話/文法を切り替える（route param は初期値として尊重）
   const [listenSource, setListenSource] = useState<'conversation' | 'grammar'>(
@@ -97,6 +99,7 @@ export default function ThemeScreen() {
 
   return (
     <FlatList
+      style={heroSrc != null ? { marginTop: top } : undefined}
       contentContainerStyle={styles.container}
       ListHeaderComponent={
         <>

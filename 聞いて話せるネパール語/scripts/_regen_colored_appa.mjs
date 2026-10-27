@@ -18,7 +18,7 @@ const ssml = fs.existsSync(_sp) ? rd(_sp) : { ja: {}, en: {} };
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 function ssmlBody(text, lang) { const picks = (ssml[lang] || {})[text]; let s = esc(text); if (picks && picks.length) for (const p of picks) { const w = esc(p.word); s = s.split(w).join(`<sub alias="${esc(p.reading)}">${w}</sub>`); } return { body: s, hasPicks: !!(picks && picks.length) }; }
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const GVOICE = { ja: { languageCode: 'ja-JP', name: 'ja-JP-Neural2-B' }, en: { languageCode: 'en-US', name: 'en-US-Neural2-F' } };
+const GVOICE = { ja: { languageCode: 'ja-JP', name: 'ja-JP-Neural2-B' }, en: { languageCode: 'en-US', name: process.env.EN_VOICE || 'en-US-Neural2-F' } };
 async function gSyn(text, lang) {
   const { body, hasPicks } = ssmlBody(text, lang);
   const input = hasPicks ? { ssml: `<speak>${body}</speak>` } : { text };
@@ -30,7 +30,7 @@ async function gSyn(text, lang) {
   } catch (e) { if (a < 6) await sleep(2500 * a); else throw e; } }
 }
 async function aSyn(text) {
-  const x = `<speak version="1.0" xml:lang="ne-NP"><voice name="ne-NP-HemkalaNeural"><prosody rate="-5%">${esc(text)}</prosody></voice></speak>`;
+  const x = `<speak version="1.0" xml:lang="ne-NP"><voice name="ne-NP-HemkalaNeural"><prosody rate="${esc(process.env.NE_RATE || '-5%')}">${esc(text)}</prosody></voice></speak>`;
   for (let a = 1; a <= 6; a++) { try {
     const r = await fetch(AEP, { method: 'POST', headers: { 'Ocp-Apim-Subscription-Key': AKEY, 'Content-Type': 'application/ssml+xml', 'X-Microsoft-OutputFormat': 'audio-24khz-48kbitrate-mono-mp3', 'User-Agent': 'safa-tts' }, body: x });
     if (r.status === 429 || r.status === 400) { await sleep(3000 * a); continue; }
@@ -43,6 +43,14 @@ const COLORED = {
   conv: { ja: ['3-1-13','4-1-20','5-1-9','15-1-14','19-1-5','30-1-15','30-1-17'], ne: ['3-1-13','8-1-14','16-1-15','26-1-3'], en: ['1-1-7','1-3-8','1-3-10','1-3-11'] },
   gram: { ja: ['9-2','12-2','12-8','16-12'], ne: ['17-3'], en: [] },
 };
+// Reuse this generator for a reviewed list of changed sentence IDs.
+const idsArg = process.argv.indexOf('--ids');
+if (idsArg >= 0) {
+  const selected = rd(path.resolve(process.argv[idsArg + 1]));
+  for (const mode of ['conv', 'gram']) for (const lang of ['ne', 'ja', 'en']) {
+    COLORED[mode][lang] = selected[mode]?.[lang] ?? [];
+  }
+}
 function getText(id, lang, mode) {
   if (mode === 'conv') { const p = id.split('-'); const key = `${p[0]}-${p[1]}`; const i = +p[2] - 1;
     if (lang === 'en') return ovEn.examplesL1[key]?.[i];
@@ -66,3 +74,4 @@ for (const mode of ['conv', 'gram']) for (const lang of ['ne', 'ja', 'en']) {
   }
 }
 console.log(`\n再生成完了: ${ok}成功 / ${fail}失敗`);
+if (fail) process.exitCode = 1;

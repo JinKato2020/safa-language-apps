@@ -1,1034 +1,971 @@
-# Listen and Speak Nepali — Grammar Guide (Redesigned v2 · English · Draft)
-
-All 34 themes. **Based on the organization, terminology, and examples of CD Express Nepali**, this guide separates the copula (हो/छ/हुन्छ) into three uses and organizes postpositions, aspect, and participles step by step.
-Romanization gives an approximate pronunciation. ā/ī/ū = long vowels; ã/ũ/ẽ/õ = nasal vowels.
-
----
-
-## Theme 1「हो: A is B (identity / equation)」
-
-🎯 **Goal**: Say what a person or thing is with “A is B” (and “is not”).
-
-### 1. हो connects two things: A = B
-It links a noun to another noun. Nepali does not make the same plain-versus-polite distinction in this word as Japanese does, but its form changes with the subject.
-| Subject | Form of हो | Romanized |
-|---|---|---|
-| I म | हुँ | hũ |
-| You तिमी | हौ | hau |
-| He / this उ／यो | हो | ho |
-| You / that person (respectful) तपाईं／उहाँ | हुनुहुन्छ | hunuhuncha |
-
-### 2. Demonstratives: this and that
-| Nepali | Romanized | Meaning |
-|---|---|---|
-| यो | yo | This; this … (near the speaker) |
-| त्यो | tyo | That; that … (farther away) |
-
-### 3. Affirmative and negative: the negative is होइन
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| यो सुन्तला **हो**। | yo suntalā ho | This is an orange. |
-| यो किताब **हो**। | yo kitāb ho | This is a book. |
-| यो किताब **होइन**। | yo kitāb hoina | This is not a book. |
-| म डाक्टर **होइनँ**। | ma ḍākṭar hoinã | I am not a doctor. |
+# Nepali Grammar Workbook — Original Lessons
 
-### 4. Yes, no, and questions
-- **Raise your voice at the end to ask a question**: यो सुन्तला **हो?** (Is this an orange?)
-- You can answer directly with **हो (yes) / होइन (no)**.
+Work through a situation, say short sentences aloud, and adapt them to your own life.
 
-### 5. जी: a respectful addition to a name
-Use it to show respect to the person you are addressing or talking about. It can follow a first name or a family name: **कार्कीजी** (Mr./Ms. Karki).
+## テーマ1「हो: A is B (identity / equation)」
 
-⚠️ हो is for **identity or membership: A = B**. For existence, location, and adjective descriptions, use **छ**, introduced next. Keep the pairs together: हो → **होइन**; छ → **छैन**.
-
----
-
-## Theme 2「छ: there is / have (existence, location, possession)」
-
-🎯 **Goal**: Say that something exists, say where someone or something is, and say what you have.
-
-### 1. छ expresses existence and location; the negative is छैन
-Of the three forms of हुनु introduced here, **छ** expresses “there is / there are.” Its negative is **छैन**.
-| Subject | छ | Romanized |
-|---|---|---|
-| I म | छु | chu |
-| He / this उ／यो | छ | cha |
-| She (respectful) उनी | छिन् | chin |
-| We हामी | छौं | chaũ |
-
-### 2. Place words: here, there, and where
-These words **already function as adverbs**, so **do not add -मा**.
-| Nepali | Romanized | Meaning |
-|---|---|---|
-| यहाँ | yahā̃ | Here |
-| त्यहाँ | tyahā̃ | There / over there |
-| कहाँ | kahā̃ | Where |
+Goal: Identify a person or an object
 
-With a **noun**, however, add the place postposition **-मा (in / at / on)**: टेबल**मा** (on the table), घर**मा** (at home).
+### Situation and meaning
 
-### 3. Examples of existence and location
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| त्यहाँ कापी **छ**। | tyahā̃ kāpī cha | There is a notebook there. |
-| टेबलमा किताब **छैन**। | ṭebalmā kitāb chaina | There is no book on the table. |
-| म घरमा **छु**। | ma gharmā chu | I am at home. |
-
-### 4. Possession: “-सँग … छ”
-Nepali expresses “have” with **-सँग (with) + छ**, rather than a separate verb meaning “have” in this pattern.
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| तपाईंसँग किताब **छ?** | tapāī̃sã̄ga kitāb cha? | Do you have a book? |
-| मसँग पैसा **छैन**। | masã̄ga paisā chaina | I do not have any money. |
-
-⚠️ **Choosing between हो and छ is a key step**: identity (“A is B”) = **हो** (negative होइन); existence, location, and state = **छ** (negative छैन).
-
----
-
-## Theme 3「छ: is ~ (adjective / state)」
-
-🎯 **Goal**: Describe a quality or state with an adjective: “Something is …”.
-
-### 1. Adjective + छ describes something
-**With an adjective, छ/छैन means “is / is not,” rather than “exists / does not exist”** (the distinction used in CD Express).
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| यो फूल सुन्दर **छ**。 | yo phūl sundar cha | This flower is beautiful. |
-| त्यो किताब पुरानो **छ**。 | tyo kitāb purāno cha | That book is old. |
-| यो खाना पिरो **छैन**。 | yo khānā piro chaina | This food is not spicy. |
-
-### 2. Common adjectives
-| Nepali | Romanized | Meaning | Nepali | Romanized | Meaning |
-|---|---|---|---|---|---|
-| सानो | sāno | Small | ठूलो | ṭhūlo | Big |
-| नयाँ | nayā̃ | New | पुरानो | purāno | Old |
-| राम्रो | rāmro | Good | नराम्रो | narāmro | Bad |
+Use this pattern to introduce your role or identify an object. It connects a subject with a noun description. Keep it separate from statements about location or a temporary condition.
 
-⚠️ Use **हो** from Theme 1 to connect a noun to a noun, and **छ** here to describe something with an adjective. Remember: **हो** = identity; **छ** = existence or state.
+### Examples to say aloud
 
----
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू विद्यार्थी हौ। | timīharū vidyārthī hau | You are students. |
+| यो सुन्तला हो। | yo suntalā ho | This is an orange. |
+| त्यो मेरो झोला होइन। | tyo mero jholā hoina | That is not my bag. |
 
-## Theme 4「हुन्छ: becomes / generally is (habitual, change)」
+Check: The ending changes with the subject. Identity statements use the होइन family for negatives, not the छैन family.
 
-🎯 **Goal**: Talk about change and general facts with “becomes” and “generally is.”
+### Make it your own
 
-### 1. The third form of हुनु is हुन्छ
-Although all three belong to the same verb हुनु, **हो (identity)** and **छ (a current state)** differ from **हुन्छ**, which expresses what **generally happens or becomes true**. It conjugates **like other verbs**; हुन्छ is the third-person singular form.
-| Use | Example | Meaning |
-|---|---|---|
-| Change: “becomes” | सस्तो **हुन्छ** | Becomes cheaper |
-| Beginning / a general event | काम शुरू **हुन्छ** | Work starts |
-| A change over time | चाँडै रात **हुन्छ** | It will be night soon. |
-
-### 2. भयो is the past: “became”
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| चिसो **भयो**。 | ciso bhayo | It became cold. |
-| उहाँ डाक्टर **बन्नुभयो**。 | uhā̃ ḍākṭar bannubhayo | He became a doctor. (For becoming something by role, use बन्नु.) |
-
-⚠️ Keep the three uses separate: **हो** = what something is (identity); **छ** = its current existence or state; **हुन्छ** = what generally happens or changes. Use **बन्नु** for becoming something by role.
-
----
-
-## Theme 5「Postpositions (the "particles")」
-
-🎯 **Goal**: Use Nepali postpositions to show how words relate to each other. These work much like Japanese particles; English usually uses prepositions instead.
-
-### 1. Put a postposition after a noun and write it attached to that word
-| Postposition | Romanized | Meaning / function | Example |
-|---|---|---|---|
-| -को | -ko | Of / belonging to | किताब**को** (of the book) |
-| -मा | -mā | In / at / on (place or time) | घर**मा** (at home) |
-| -लाई | -lāī | To; marks a person or object affected | साथी**लाई** (to a friend / a friend as object) |
-| -बाट | -bāṭa | From | काठमाडौं**बाट** (from Kathmandu) |
-| -सँग | -sã̄ga | With / together with | साथी**सँग** (with a friend) |
-| -ले | -le | Marks the doer (ergative); with / by (means) | कलम**ले** (with a pen) |
-
-### 2. Possessive forms change with the pronoun
-| My | Your (familiar) | His | Of this | Of that | Our | Your (respectful) |
-|---|---|---|---|---|---|---|
-| मेरो | तिम्रो | उसको | यसको | त्यसको | हाम्रो | तपाईंको |
-| mero | timro | usko | yesko | tyesko | hāmro | tapāī̃ko |
-
-Note: For **तपाईं／उहाँ**, add -को directly (तपाईंको).
-
-### 3. Examples in sentences
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| म साथी**सँग** घर**मा** बस्छु। | ma sāthīsã̄ga gharmā baschu | I live at home with a friend. |
-| **मलाई** पानी देऊ। | malāī pānī deu | Give me some water. |
-
-⚠️ **The place adverbs यहाँ/त्यहाँ/कहाँ do not take -मा** (Theme 2). **-ले (ergative)** is needed for past transitive actions (Theme 11). **-लाई** can mark both a recipient (“to someone”) and a person as an object.
-
----
-
-## Theme 6「Question words」
-
-🎯 **Goal**: Ask “what,” “where,” “how much,” “when,” “why,” and “who.”
-
-### 1. Question words begin with क
-These words form a related group, rather like English “wh-” words. Leave the question word in the position where the answer would go, as in Japanese.
-| Question word | Romanized | Meaning |
-|---|---|---|
-| के | ke | What |
-| कहाँ | kahā̃ | Where |
-| कति | kati | How many / how much |
-| कहिले | kahile | When |
-| किन | kina | Why |
-| को | ko | Who |
-| कसरी | kasarī | How |
-
-### 2. Examples
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| यो **के** हो? | yo ke ho? | What is this? |
-| शौचालय **कहाँ** छ? | śaucālaya kahā̃ cha? | Where is the toilet? |
-| यो **कति** पर्छ? | yo kati parcha? | How much does this cost? |
-| तिमी **किन** आयौ? | timī kina āyau? | Why did you come? |
-
-### 3. Question intonation
-- In a yes/no question **without a question word**, **raise your voice at the end** (यो सुन्तला हो?).
-- With a **question word**, you do not need to force a rise at the end. A slight rise can sound gentler.
-
-⚠️ Unlike English, **do not move the question word to the beginning**. Choose the copula (हो/छ) using Themes 1 and 2.
-
----
-
-## Theme 7「Pronouns & politeness (three levels)」
-
-🎯 **Goal**: Choose the right subject and level of politeness. **The verb form also changes** with your relationship to the person.
-
-### 1. First person
-म (ma = I) / हामी (hāmī = we)
-
-### 2. Three levels of “you,” plus the highest level
-| Nepali | Romanized | Politeness | Who it is used with |
-|---|---|---|---|
-| तँ | tã | Very intimate / to someone lower in status | Small children or very close relationships (**can be rude if used with the wrong person**) |
-| तिमी | timī | Familiar | Friends, family, younger people |
-| तपाईं | tapāī̃ | Polite | Seniors and people you have just met (**the safest choice when unsure**) |
-| हजुर | hajur | Most respectful | People of much higher status; customer service |
-
-### 3. “He,” “she,” and “that person” also change with respect
-| Nepali | Romanized | Nuance |
-|---|---|---|
-| उ／ऊ | u | He / she (neutral or somewhat casual) |
-| उनी | unī | That person (some respect) |
-| उहाँ | uhā̃ | That person (respectful) |
-| यो／त्यो | yo／tyo | This person / that person, when pointing; also used for things |
-
-### 4. The subject changes the verb ending: all persons, present गर्नु (“do”)
-| Subject | Present affirmative | Romanized |
-|---|---|---|
-| म (I) | गर्छु | garchu |
-| तँ (you, very intimate / lower status) | गर्छस् | garchas |
-| तिमी (you, familiar) | गर्छौ | garchau |
-| तपाईं／उहाँ (respectful) | गर्नुहुन्छ | garnuhuncha |
-| उ (he / she) | गर्छ | garcha |
-| उनी (she, with respect) | गर्छिन् | garchin |
-| हामी (we) | गर्छौं | garchaũ |
-| उनीहरू (they) | गर्छन् | garchan |
-
-⚠️ When unsure, use **तपाईं** for “you.” **तँ** is only for very close relationships or someone lower in status and can be rude. For the verb themes that follow, start with **तपाईं (respectful) and म/उ (non-honorific)**, then add **तँ/तिमी** when ready.
+Change the occupation or nationality, then make a matching introduction and question.
 
----
+## テーマ2「छ: there is / have (existence, location, possession)」
 
-## Theme 8「Action verbs: present (do ~)」
+Goal: Say where someone is and what they have
 
-🎯 **Goal**: Talk about habits, general facts, and the near future with the present form.
-
-### 1. Start with the dictionary form and stem
-The dictionary form of a verb ends in **-नु** (the dictionary form, or nu-infinitive): गर्नु (do), लेख्नु (write).
-Remove **-नु** to find the **stem**: गर् / लेख्.
-
-### 2. The present covers both habits and the near future
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| म बिहान ७ बजे **उठ्छु**। | ma bihāna sāt baje uṭhchu | I get up at seven in the morning. (Habit) |
-| म भोलि ७ बजे **उठ्छु**। | ma bholi sāt baje uṭhchu | I will get up at seven tomorrow. (Future) |
-
-### 3. Conjugation across persons: stem + छ-family endings, using गर्नु (“do”)
-| Subject | Form | Romanized |
-|---|---|---|
-| म (I) | गर्**छु** | garchu |
-| तँ (you, very intimate / lower status) | गर्**छस्** | garchas |
-| तिमी (you, familiar) | गर्**छौ** | garchau |
-| उ (he / she) | गर्**छ** | garcha |
-| उनी (she, with respect) | गर्**छिन्** | garchin |
-| हामी (we) | गर्**छौं** | garchaũ |
-| उनीहरू (they) | गर्**छन्** | garchan |
-
-Note: Verbs with a vowel-final stem, such as पिउनु (drink), use **ँछ**: म **पिउँछु** (piũchu), हामी **पिउँछौं**.
-
-### 4. Respectful तपाईं／उहाँ: dictionary form + हुन्छ
-Attach it directly to the dictionary form rather than adding the ordinary stem endings.
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| कार्कीजी भात **खानुहुन्छ**। | kārkījī bhāt khānuhuncha | Mr./Ms. Karki eats rice. |
-| तपाईं नेपाली **बोल्नुहुन्छ**। | tapāī̃ nepālī bolnuhuncha | You speak Nepali. |
-
-### 5. The versatile verb गर्नु (“do”): noun + गर्नु
-Like Japanese “noun + do,” this pattern makes many useful verbs: काम **गर्नु** (work), माया **गर्नु** (love), शुरू **गर्नु** (start).
-
-⚠️ The present form can mean both “usually do” and “will do soon.” Make the future meaning **clear** by adding a time word such as **भोलि (tomorrow)** (Theme 13).
-
----
-
-## Theme 9「Present negative (don't ~)」
-
-🎯 **Goal**: Say that you or someone else does not do something.
-
-### 1. Negative conjugation: गर्नु (“do”), all persons
-The affirmative **छ-family** endings change to the **दिन／दैन family** in the negative.
-| Subject | Affirmative | Negative | Romanized |
-|---|---|---|---|
-| म (I) | गर्छु | गर्**दिनँ** | gardinã |
-| तँ (you, very intimate / lower status) | गर्छस् | गर्**दैनस्** | gardainas |
-| तिमी (you, familiar) | गर्छौ | गर्**दैनौ** | gardainau |
-| तपाईं (respectful) | गर्नुहुन्छ | गर्**नुहुन्न** | garnuhunna |
-| उ (he) | गर्छ | गर्**दैन** | gardaina |
-| उनी (she, with respect) | गर्छिन् | गर्**दिनन्** | gardinan |
-| हामी (we) | गर्छौं | गर्**दैनौं** | gardainaũ |
-| उनीहरू (they) | गर्छन् | गर्**दैनन्** | gardainan |
-
-### 2. The respectful negative is dictionary form + हुन्न
-कार्कीजी भात **खानुहुन्न**। (karkījī bhāt khānuhunna = Mr./Ms. Karki does not eat rice.)
-
-### 3. Examples
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| म चिट्ठी **लेख्दिनँ**। | ma ciṭṭhī lekhdinã | I do not write letters. |
-| उ अंग्रेजी **बोल्दैन**। | u aṅgrejī boldaina | He does not speak English. |
-
-⚠️ To say “do not,” **change the verb itself to its negative form**; do not add a separate word for “not.” The first-person singular uses **-दिनँ**; the third person uses **-दैन**.
-
----
-
-## Theme 10「Present progressive (~ing)」
-
-🎯 **Goal**: Say that an action is happening right now.
-
-### 1. Pattern: progressive participle -दै + छ (“be doing”)
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| श्याम अहिले खाना **खाँदैछ**। | śyām ahile khānā khā̃daicha | Shyam is eating now. |
-| म पानी **पिउँदैछु**। | ma pānī piũdaichu | I am drinking water. |
-
-### 2. It can also describe the near future
-म भोलि नेपाल **जाँदैछु**। (ma bholi nepāl jā̃daichu = I am going to Nepal tomorrow.)
-
-### 3. For “not doing,” this guide uses a perfect negative
-This guide treats a negative ongoing situation as no longer in progress and uses the **present perfect negative** (〜पढेको छैन) rather than a progressive negative (Theme 15).
-रामले अहिले किताब **पढेको छैन**। (Ram is not reading a book now.)
-
-### 4. “Keep doing” is different: -इरहनु
-**पढिरहन्छ** (paḍhirahancha = keeps reading) is a compound verb for continuation, distinct from the progressive (-दैछ).
-
-⚠️ The progressive uses **-दै + छ** (खाँदैछ). Do **not add -ले** to the doer even in a past progressive; ले belongs to the past completed transitive pattern covered in Theme 11.
-
----
-
-## Theme 11「The ergative ले & the past (did ~)」
-
-🎯 **Goal**: Say what happened in the past. **Here comes -ले, one of the biggest steps in learning Nepali.**
-
-### 1. Making the past: stem (or alternate past stem) + past endings
-| Subject | Past ending | Example (do / read) | Romanized |
-|---|---|---|---|
-| म (I) | -**एँ** | गरेँ／पढेँ | garẽ／paḍhẽ |
-| तँ (you, very intimate / lower status) | -**इस्** | गरिस् | garis |
-| तिमी (you, familiar) | -**यौ** | गर्यौ | garyau |
-| उ (he) | -**यो** | गर्यो／सुत्यो | garyo／sutyo |
-| उनी (she, with respect) | -**इन्** | गरिन्／गइन् | garin／gain |
-| हामी (we) | -**यौं** | गर्यौं／हेर्यौं | garyaũ／heryaũ |
-| तपाईं/उहाँ (respectful) | -**नुभयो** | गर्नुभयो | garnubhayo |
+### Situation and meaning
 
-### 2. Essential: add -ले to the doer of a transitive action
-For a past action with a verb that **takes an object**, such as eat, read, write, or do, add **-ले** to the subject. Do not add it with intransitive verbs such as sleep, go, or come. Pronouns change form.
-| Subject | +ले | Romanized |
-|---|---|---|
-| I म | **मैले** | maile |
-| He उ | **उसले** | usle |
-| Who को | **कसले** | kasle |
+For a lost item or a meeting, decide what is located where. Place nouns take मा, while यहाँ, त्यहाँ and कहाँ already function as place expressions. Use सँग to identify the person who has something.
 
-| Sentence | Romanized | Meaning | -ले |
-|---|---|---|---|
-| **मैले** किताब पढेँ। | maile kitāb paḍhẽ | I read a book. (Past) | Transitive |
-| **उसले** उत्तर दियो। | usle uttar diyo | He answered. | Transitive |
-| उ सुत्यो। | u sutyo | He slept. | Intransitive (none) |
-| उनी स्कूल गइन्। | unī skūl gain | She went to school. | Intransitive (none) |
-
-### 3. “Was / were / there was”: थियो, the shared past of ho and छ
-The present distinguishes हो from छ, but **both use थियो (thiyo) in the past**.
-| Present | Past | Meaning |
-|---|---|---|
-| राम डाक्टर **हो**। | राम डाक्टर **थियो**। | Ram was a doctor. |
-| पैसा **छ**। | पैसा **थियो**。 | There was money. |
-| आकाश नीलो **छ**。 | आकाश नीलो **थियो**。 | The sky was blue. |
-
-⚠️ A common beginner mistake is **forgetting -ले**. For this past transitive pattern, remember “action with an object = subject + -ले.” Some verbs have an alternate past stem (for example, जानु→ग, हुनु→भ/थि).
+### Examples to say aloud
 
----
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू घरमा छौ। | timīharū gharmā chau | You are at home. |
+| यहाँ किताब छ। | yahā̃ kitāb cha | There is a book here. |
+| तिमीहरू कहाँ छौ? | timīharū kahā̃ chau? | Where are you? |
 
-## Theme 12「Past negative (didn't ~)」
+Check: In a possession statement, the possessed item determines the construction. Distinguish मसँग ... छ from म ... छु.
 
-🎯 **Goal**: Say that an action did not happen.
+### Make it your own
 
-### 1. Negative past endings
-| Subject | Affirmative | Negative | Romanized |
-|---|---|---|---|
-| I म | पढेँ | पढ्**इनँ**→पढिनँ | paḍhinã |
-| He उ | आयो | **आएन** | āena |
-| We हामी | हेर्यौं | हेर्**एनौं** | herenaũ |
-| Respectful | गर्नुभयो | गर्**नुभएन** | garnubhaena |
+Ask and answer about home, school or the market. Then ask the same person about one possession.
 
-### 2. The negative of “was” is थिएन
-पैसा **थिएन**। (paisā thiena = There was no money.)
+## テーマ3「छ: is ~ (adjective / state)」
 
-### 3. Examples: keep -ले in negative sentences too
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| **मैले** किताब पढिनँ। | maile kitāb paḍhinã | I did not read a book. |
-| उ **आएन**। | u āena | He did not come. |
+Goal: Describe a present condition
 
-⚠️ **Keep -ले on the subject of a transitive verb** in the negative. Do not remove it.
+### Situation and meaning
 
----
+Use an adjective to describe taste, size or mood. Name the subject, give the description and finish with a form from the छ family. This makes the quality or condition the focus of the sentence.
 
-## Theme 13「Future (will ~)」
+### Examples to say aloud
 
-🎯 **Goal**: Say what you will do. **You can use the present form you already know.**
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| के यो पानी चिसो छ? | ke yo pānī ciso cha? | Is this water cold? |
+| तँ खुसी छस्? | tã khusī chas? | Are you happy? |
+| हामी तयार छौं। | hāmī tayār chaũ | We are ready. |
 
-### 1. Express the future with a present form + a time word
-You do not need a separate future conjugation for this pattern. Add a word such as “tomorrow” to the present form from Theme 8.
-| Time word | Example | Meaning |
-|---|---|---|
-| भोलि (bholi) tomorrow | म भोलि स्कूल **जान्छु**। | I will go to school tomorrow. |
-| अर्को हप्ता (arko haptā) next week | उनी अर्को हप्ता **आउँछिन्**। | She will come next week. |
-| भविष्यमा (bhaviṣyamā) in the future | म **बन्छु**। | I will become … (in the future). |
+Check: With a person as subject, choose the appropriate form of छ. Do not confuse an adjective description with a noun identity such as being a doctor.
 
-### 2. For a prediction, add होला at the end
-भोलि पानी पर्छ **होला**। (bholi pānī parcha holā = It will probably rain tomorrow.)
+### Make it your own
 
-⚠️ The verb form is the same as the present in Theme 8. Put a time expression toward the beginning. For a prediction you are not certain about, add **होला** at the end (Theme 31).
+Describe two qualities of one dish, then try the opposite descriptions.
 
----
+## テーマ4「हुन्छ: becomes / generally is (habitual, change)」
 
-## Theme 14「Habitual past (used to ~)」
+Goal: Distinguish regular situations from changes
 
-🎯 **Goal**: Describe something you used to do regularly.
+### Situation and meaning
 
-### 1. Pattern: stem + थ्यो-family endings (थ्यो is a contraction of थियो)
-This means “used to” or “would regularly.” Attach it to the stem in a similar way to the present endings.
-| Subject | Form | Romanized |
-|---|---|---|
-| I म | -**थें** | garthe（गर्थे） |
-| He उ | -**थ्यो** | runthyo（रुन्थ्यो） |
-| Respectful | Dictionary form + **हुन्थ्यो** | āunuhunthyo（आउनुहुन्थ्यो） |
+Compare a condition right now with something that happens regularly in a season or on a weekday. हुन्छ can describe a change or a general outcome. बन्नु is also used for becoming a profession or taking on a role.
 
-Negative: present third-person negative -दैन + थ्यो → “-दैनथ्यो” (first-person singular: -दिनथें).
+### Examples to say aloud
 
-### 2. Examples: no -ले, even with transitive verbs in the habitual past
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| राम सानो हुँदा धेरै **रुन्थ्यो**। | rām sāno hũdā dherai runthyo | Ram used to cry a lot when he was little. |
-| ढकालजी मेरो घरमा **आउनुहुन्थ्यो**। | ḍhakāljī mero gharmā āunuhunthyo | Mr./Ms. Dhakal used to visit my home. |
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| आइतबार बजार बन्द हुन्छ। | āitabār bajār banda huncha | The market is closed on Sundays. |
+| सबै दिन उस्तै हुँदैनन्। | sabai din ustai hũdainan | Not every day is the same. |
+| उहाँ शिक्षक बन्नुभयो। | uhā̃ śikṣak bannubhayo | He became a teacher. |
 
-### 3. Another pattern: present participle -ने + गर्नु (“do regularly”)
-For a past habit, use **-ने गर्थे**.
-सिनेमा **हेर्ने गर्थे**। (sinemā herne garthe = I used to watch films.)
+Check: Being cold now and getting cold in winter take different perspectives. भयो is one form used for a change that has happened.
 
-⚠️ Unlike a single past action (Theme 11), **the habitual past describes repeated or regular actions**. Notice that it does not use -ले.
+### Make it your own
 
----
+Contrast now with generally for the same condition, then describe one change since yesterday.
 
-## Theme 15「Present perfect / experience (have done ~)」
+## テーマ5「Postpositions (the "particles")」
 
-🎯 **Goal**: Say that something is already done, that you have had an experience, or that a result is still true now.
+Goal: Show relationships with postpositions
 
-### 1. Pattern: past participle -एको + छ
-Add **-एको** to the verb stem to make a past participle, then add **छ** to make the present perfect.
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| मैले भात **खाएको छु**। | maile bhāt khāeko chu | I have eaten rice. (I have already eaten.) |
-| म **थाकेको छु**。 | ma thākeko chu | I am tired. (I became tired and still am.) |
+### Situation and meaning
 
-### 2. Three uses
-| Use | Example | Meaning |
-|---|---|---|
-| ① Completed action with a present effect | खाना **पाकेको छ** | The food is cooked. |
-| ② Experience: “have done before” | मैले सगरमाथा **चढेको छु** | I have climbed Mount Everest. |
-| ③ Resulting state | ढोका **खुलेको छ** | The door is open. |
+Use location, recipient, starting point and means as separate building blocks. Nepali marks these relationships after a noun or pronoun. Practice one relationship in a short sentence before combining several.
 
-### 3. Add -ले to the subject with a transitive verb (the participle pattern also takes ले)
-**मैले** सुशी **खाएको छु**। (maile suśī khāeko chu = I have eaten sushi before.)
+### Examples to say aloud
 
-### 4. Negative: -एको छैन (“have not done yet”)
-मैले अझै खाना **खाएको छैन**। (maile ajhai khānā khāeko chaina = I have not eaten yet.)
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| हाम्रो स्कूल यहाँ छ। | hāmro skūl yahā̃ cha | Our school is here. |
+| म नेपालबाट आएँ। | ma nepālbāṭa āẽ | I came from Nepal. |
+| यो बस काठमाडौं जान्छ। | yo bas kāṭhmāḍaũ jāncha | This bus goes to Kathmandu. |
 
-⚠️ The progressive (Theme 10) describes an action in progress. This perfect pattern means **it is already done, or its result is true now**. For “have not done yet,” use **-एको छैन**, rather than the simple past negative.
+Check: Some pronouns change shape before a postposition. Distinguish म, मेरो, मलाई and मैले by their roles.
 
----
+### Make it your own
 
-## Theme 16「Past perfect (had done ~)」
+Start with a short sentence and add who with, where and by what means, using a friend, home and a pen.
 
-🎯 **Goal**: Say that something had already happened by a particular time in the past.
+## テーマ6「Question words」
 
-### 1. Pattern: past participle -एको + थियो
-Simply replace the present-perfect **छ** with past **थियो**.
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| म त्यहाँ **गएको थिएँ**। | ma tyahā̃ gaeko thiẽ | I had been there / had gone there. |
-| उसले किताब **पढेको थियो**। | usle kitāb paḍheko thiyo | He had already finished reading the book. |
+Goal: Ask for the information you need
 
-### 2. Negative: -एको थिएन
-राम त्यस बेला किताब **पढेको थिएन**। (rām tyes belā kitāb paḍheko thiena = Ram had not read the book at that time.)
+### Situation and meaning
 
-⚠️ Keep the time reference clear: **present perfect (-एको छ)** = completed by now; **past perfect (-एको थियो)** = completed by a point in the past.
+Decide what information you need: an object, a person or a place. Choose a question word such as के, को or कहाँ and put it where that information belongs. Do not rearrange the sentence into English question order.
 
----
+### Examples to say aloud
 
-## Theme 17「Requests & commands (three politeness levels)」
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमी कहिले आउँछौ? | timī kahile āũchau? | When will you come? |
+| तिमीहरू कसरी जान्छौ? | timīharū kasarī jānchau? | How will you go? |
+| हामी कहाँ बसौं? | hāmī kahā̃ basaũ? | Where shall we sit? |
 
-🎯 **Goal**: Ask someone to do something using an appropriate level of politeness.
+Check: At the beginning of a sentence, के can mark a yes/no question rather than ask what an object is.
 
-### 1. Three levels of politeness
-| Person addressed | How to form it | Example (हेर्नु, look) | Romanized |
-|---|---|---|---|
-| तपाईं (polite) | Dictionary form + **होस्** (= **-नुहोस्**) | हेर्**नुहोस्** | hernuhos |
-| तिमी (familiar) | Stem (+ **ऊ**) | हेर／खा**ऊ** | her／khāū |
-| तँ (lower status / very intimate) | Stem only | हेर्／**गर्** | her／gar |
+### Make it your own
 
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| माथि **हेर्नुहोस्**। | māthi hernuhos | Please look up. |
-| चाँडो **खाऊ**। | cā̃ḍo khāū | Eat quickly. (तिमी) |
-| ढोका बन्द **गर**। | ḍhokā banda gar | Close the door. (तँ) |
+For one shopping situation, ask separately about price, ownership, location and reason.
 
-### 2. Add a small word after the command to change its tone
-| Word added | Nuance | Example |
-|---|---|---|
-| त (ta) | “Go on, try …” (to someone lower in status) | आउनुहोस् **त** |
-| न (na) | “Please do …” (urging or asking insistently) | आउनुहोस् **न** |
-| है (hai) | “Do …, okay?” (a reminder) | आउनुहोस् **है** |
-| ल (la) | “Do …, all right?” (affectionate) | आउनुहोस् **ल** |
+## テーマ7「Pronouns & politeness (three levels)」
 
-### 3. Pronunciation note
-In conversation, **-नुहोस्** may be shortened to something like **-नुस्**, but **write -नुहोस्**.
+Goal: Match your wording to the person
 
-⚠️ When unsure, use **-नुहोस् (तपाईं)**. For “do not,” see Theme 19.
+### Situation and meaning
 
----
+The same message takes different subject–verb combinations with a friend and with someone you have just met. Learn the whole pattern rather than changing only the pronoun.
 
-## Theme 18「Hortative / volitional (let's ~ / shall I ~)」
+### Examples to say aloud
 
-🎯 **Goal**: Say “Shall I …?” and “Let's …”.
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू काम गर्छौ। | timīharū kām garchau | You work. |
+| म हरेक दिन व्यायाम गर्छु। | ma harek din vyāyām garchu | I exercise every day. |
+| उहाँ मेरो शिक्षक हुनुहुन्छ। | uhā̃ mero śikṣak hunuhuncha | He is my teacher. |
 
-### 1. Pattern: first-person wish / suggestion forms
-| Subject | How to form it | Example | Meaning |
-|---|---|---|---|
-| म (I) | Stem + **ूँ** | म **बसूँ?** | Shall I sit? / May I sit? |
-| हामी (we) | Stem + **औं** | **जाऔं** | Let's go. |
+Check: तँ is appropriate only in particular relationships. When unsure, use तपाईं and match it with a respectful verb form.
 
-### 2. Examples
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| म यहाँ **बसूँ?** | ma yahā̃ basũ? | May I sit here? |
-| टेनिस **नखेलौं**, फुटबल **खेलौं**। | ṭenis nakhelaũ, phuṭbal khelaũ | Let's not play tennis; let's play football. |
+### Make it your own
 
-⚠️ Raise your voice at the end to ask permission: “May I …?” Put **न** before the verb to make it negative (नखेलौं = let's not play).
+Make two versions of one question: one for a friend and one for a new acquaintance.
 
----
+## テーマ8「Action verbs: present (do ~)」
 
-## Theme 19「Prohibition (must not ~ / don't ~)」
+Goal: Describe everyday actions
 
-🎯 **Goal**: Say “You must not …” and “Please do not …”.
+### Situation and meaning
 
-### 1. Two patterns
-| Use | How to form it | Meaning |
-|---|---|---|
-| ① Polite request to stop / avoid an action | **न** + verb + **-नुहोस्** | Please do not … |
-| ② Rule / prohibition | Verb + **-नु हुँदैन** | Must not … |
+Use the present form for routines such as getting up, eating and working. Dictionary forms and sentence forms differ, so practice each verb with a subject.
 
-### 2. Examples
-| Sentence | Romanized | Meaning | Pattern |
-|---|---|---|---|
-| तल **नहेर्नुहोस्**। | tal nahernuhos | Please do not look down. | ① |
-| यहाँ फोटो **खिच्नुहुँदैन**। | yahā̃ phoṭo khicnuhũdaina | You must not take photographs here. | ② |
+### Examples to say aloud
 
-⚠️ In pattern ①, place **न** before the verb (न + हेर्नुहोस् → **न**हेर्नुहोस्).
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू काम गर्छौ। | timīharū kām garchau | You work. |
+| म हरेक दिन व्यायाम गर्छु। | ma harek din vyāyām garchu | I exercise every day. |
+| उनी किताब पढ्छिन्। | unī kitāb paḍhchin | She reads books. |
 
----
+Check: Respectful forms follow a different pattern from ordinary endings. Remember to change the ending when you change the subject.
 
-## Theme 20「Ability (can ~)」
+### Make it your own
 
-🎯 **Goal**: Say what you can and cannot do.
+Describe three parts of your morning, then say the same things about a friend or family member.
 
-### 1. Pattern: stem + न सक्नु
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| म नेपाली **बोल्न सक्छु**। | ma nepālī bolna sakchu | I can speak Nepali. |
-| तपाईं खाना **पकाउन सक्नुहुन्छ?** | tapāī̃ khānā pakāuna saknuhuncha? | Can you cook? (Respectful) |
-| म साइकल चलाउन **सक्दिनँ**। | ma sāikal calāuna sakdinã | I cannot ride a bicycle. (Negative) |
+## テーマ9「Present negative (don't ~)」
 
-⚠️ **सक्नु** means “can.” The preceding verb takes stem + **न**. The negative shown here is **सक्दिनँ**.
+Goal: Say what someone does not do
 
----
+### Situation and meaning
 
-## Theme 21「Obligation & permission (must ~ / may ~)」
+To negate a present action, change the verb form. Rather than adding an English-style not, learn the affirmative and negative as a pair for each subject.
 
-🎯 **Goal**: Say “must / have to” and “may / be allowed to.”
+### Examples to say aloud
 
-### 1. Obligation: dictionary form + पर्छ (पर्नु stays in third-person singular)
-| Tense | Form | Meaning |
-|---|---|---|
-| Present | **पर्छ** / negative **पर्दैन** | Must / do not have to |
-| Past | **पर्यो** / **परेन** | Had to / did not have to |
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू आज काम गर्दैनौ। | timīharū āja kām gardainau | You do not work today. |
+| म राति काम गर्दिनँ। | ma rāti kām gardinã | I do not work at night. |
+| तिमी मासु खाँदैनौ? | timī māsu khā̃dainau? | Do you not eat meat? |
 
-Use **-ले** on the subject for a felt personal duty, or **-लाई** for a need imposed by circumstances.
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| **मैले** भोलि अफिस **जानु पर्छ**। | maile bholi aphis jānu parcha | I have to go to the office tomorrow. |
-| **मलाई** चाँडै **उठ्नु पर्यो**। | malāī cā̃ḍai uṭhnu paryo | I had to get up early. |
+Check: An action negative is different from छैन for nonexistence. Check the respectful negative forms as well.
 
-### 2. Permission: stem + न हुन्छ／मिल्छ／सकिन्छ (“may / be allowed to”)
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| यहाँ **बस्न हुन्छ?** | yahā̃ basna huncha? | May I sit here? |
-| फोटो **खिच्न मिल्छ?** | phoṭo khicna milcha? | May I take a photograph? |
+### Make it your own
 
-⚠️ In this obligation pattern, **पर्नु takes पर्छ regardless of the subject**. The negative **पर्दैन** means “do not have to,” not “must not.”
+Say one thing you usually do and one you do not do, then ask someone about both.
 
----
+## テーマ10「Present progressive (~ing)」
 
-## Theme 22「Desire (want to ~)」
+Goal: Describe an action in progress
 
-🎯 **Goal**: Say what you want to do.
+### Situation and meaning
 
-### 1. Two patterns
-| Pattern | Formula | Nuance |
-|---|---|---|
-| ① Intention / desire | Stem + **न चाहनु** | Want to … |
-| ② Feeling / inclination | **मलाई** + stem + **न मन छ／मन लाग्छ** | Feel like … |
+Use a progressive form containing दै for an action happening at the moment. Adding अहिले helps distinguish it from a daily routine.
 
-### 2. Examples
-| Sentence | Romanized | Meaning | Pattern |
-|---|---|---|---|
-| म अहिले **सुत्न चाहन्छु**। | ma ahile sutna cāhanchu | I want to sleep now. | ① |
-| तपाईं के **गर्न चाहनुहुन्छ?** | tapāī̃ ke garna cāhanuhuncha? | What do you want to do? (Respectful) | ① |
-| मलाई सिनेमा **हेर्न मन छ**। | malāī sinemā herna man cha | I feel like watching a film. | ② |
-| मलाई घर **फर्कन मन लाग्यो**। | malāī ghar pharkana man lāgyo | I felt like going home. | ② |
+### Examples to say aloud
 
-⚠️ Pattern ① uses **म**; pattern ② uses **मलाई** (literally “to me”). Pattern ② emphasizes how you feel. Do not confuse it with **मन पर्छ**, “like” (related to the patterns in Theme 2).
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू अहिले काम गर्दैछौ। | timīharū ahile kām gardaichau | You are working now. |
+| म व्यायाम गर्दैछु। | ma vyāyām gardaichu | I am exercising. |
+| तिमीहरू के पढ्दैछौ? | timīharū ke paḍhdaichau? | What are you reading? |
 
----
+Check: Distinguish an ongoing action from a state left by a completed action. Do not add ले merely because the action verb is transitive.
 
-## Theme 23「Adjective agreement & position」
+### Make it your own
 
-🎯 **Goal**: Use adjectives in the right form and position.
+Describe two actions happening around you, then turn one into a question.
 
-### 1. Position: before the noun, directly before what is being described
-ठूलो घर (a big house), पुरानो किताब (an old book).
+## テーマ11「The ergative ले & the past (did ~)」
 
-### 2. Adjectives ending in -ो change for gender and number
-| Form | Used with | Example (राम्रो, good) |
-|---|---|---|
-| -ो | Masculine singular | **राम्रो** केटा (a good boy) |
-| -ी | Feminine singular | **राम्री** केटी (a good girl) |
-| -ा | Plural / honorific | **राम्रा** केटाहरू (good boys) |
+Goal: Report a completed event
 
-Note: Adjectives with other endings, such as a consonant, do not change; for example, ठिक्क (“just right”).
+### Situation and meaning
 
-### 3. Adjectives can also describe the subject: review of Theme 3
-घर सानो **छ**。 (The house is small.)
+Use the past form to report yesterday's actions or a single completed event. First check whether the verb takes an object. With completed transitive actions such as reading or writing, practice the agent marked with ले.
 
-⚠️ Adjectives in **-ो** take **-ो/-ी/-ा** to match the gender and number of the following noun. Put the adjective before the noun.
+### Examples to say aloud
 
----
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरूले हिजो काम गर्यौ। | timīharūle hijo kām garyau | You worked yesterday. |
+| मैले हिजो व्यायाम गरेँ। | maile hijo vyāyām garẽ | I exercised yesterday. |
+| उनी स्कूल गइन्। | unī skūl gain | She went to school. |
 
-## Theme 24「Adverbs & exclamations」
+Check: Do not mark an intransitive subject like the agent of a transitive action. Some verbs also change their stem in the past.
 
-🎯 **Goal**: Describe actions with words such as “quickly,” “very,” and “always,” and make exclamations such as “How …!”.
+### Make it your own
 
-### 1. Put an adverb before the verb
-| Adverb | Romanized | Meaning |
-|---|---|---|
-| छिटो | chiṭo | Quickly |
-| बिस्तारै | bistārai | Slowly |
-| धेरै | dherai | Very |
-| सधैं | sadhaĩ | Always |
-| प्रायः | prāyaḥ | Usually |
+Make one sentence about who did what and another about who went where. Compare the subject forms.
 
-Examples: ऊ धेरै **छिटो** दौड्छ। (He runs very quickly.) / म **बिस्तारै** हिँड्छु। (I walk slowly.)
+## テーマ12「Past negative (didn't ~)」
 
-### 2. Exclamations: कति／एकदमै／साँच्चै + adjective + !
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| **कति** सुन्दर! | kati sundar! | How beautiful! |
-| **एकदमै** मिठो! | ekdamai miṭho! | So delicious! |
-| **साँच्चै?** | sā̃ccai? | Really? |
+Goal: Report an event that did not happen
 
-⚠️ **कति** means “how much?” in a question and “how …!” in an exclamation. Punctuation and tone show the difference.
+### Situation and meaning
 
----
+Use a past negative when an intended event did not happen. Changing the past verb to a negative does not change the roles of the people, objects or places in the sentence.
 
-## Theme 25「Comparison & superlative」
+### Examples to say aloud
 
-🎯 **Goal**: Say “A is more … than B” and “the most …”.
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरूले हिजो काम गरेनौ। | timīharūle hijo kām garenau | You did not work yesterday. |
+| मैले हिजो व्यायाम गरिनँ। | maile hijo vyāyām garinã | I did not exercise yesterday. |
+| हामीले त्यो फिल्म हेरेनौं। | hāmīle tyo philma herenaũ | We did not watch that film. |
 
-### 1. Comparison: B + भन्दा + adjective (“more … than B”)
-As a postposition, it is written attached to the preceding word. The order of the compared items can vary.
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| काठमाडौं पाटन**भन्दा** ठूलो छ। | kāṭhmāḍaũ pāṭanbhandā ṭhūlo cha | Kathmandu is bigger than Patan. |
-| स्याउ केरा**भन्दा** गुलियो छ। | syāu kerābhandā guliyo cha | Apples are sweeter than bananas. |
+Check: The agent keeps ले in a negative completed transitive sentence. This differs from saying something has not happened yet.
 
-Note: To compare actions, use dictionary form + भन्दा: बाँच्नु**भन्दा** मर्नु निको (It is better to die than to live).
+### Make it your own
 
-### 2. Superlative: सबभन्दा (“more than all” = “the most”)
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| काठमाडौं **सबभन्दा** ठूलो शहर हो। | kāṭhmāḍaũ sabbhandā ṭhūlo śahar ho | Kathmandu is the biggest city. |
-| **सबभन्दा** पहिले | sabbhandā pahile | First of all |
+Imagine two plans for yesterday. Report one as completed and the other as not completed.
 
-⚠️ Do not add comparative or superlative endings like English **-er / -est**. Add “the comparison item + **भन्दा**” or **सबभन्दा**; the adjective does not change to mark degree.
+## テーマ13「Future (will ~)」
 
----
+Goal: Make future plans clear
 
-## Theme 26「Conjunctions (and / so / but)」
+### Situation and meaning
 
-🎯 **Goal**: Connect words and sentences.
+Combine a present form with tomorrow, next week or another future time. Making the time explicit distinguishes a plan from a routine.
 
-### 1. Common connecting words
-| Word | Romanized | Meaning |
-|---|---|---|
-| र | ra | And (joining items) |
-| अनि | ani | And / and then |
-| तर | tara | But / however |
-| ~(भए)कोले | (bhae)kole | Because / since (reason) |
-| पनि | pani | Also / too |
+### Examples to say aloud
 
-### 2. In a list, use र／अनि only before the final item; use commas elsewhere
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| यो छिटो, सस्तो **अनि** मिठो छ। | yo chiṭo, sasto ani miṭho cha | This is quick, cheap, and delicious. |
-| मलाई चिया **र** कफी मन पर्छ। | malāī ciyā ra kaphī man parcha | I like tea and coffee. |
-| ऊ विद्यार्थी हो **तर** काम गर्छ। | ū vidyārthī ho tara kām garcha | He is a student, but he works. |
-| थकित **भएकोले**, चाँडो सुतेँ। | thakit bhaekole, cā̃ḍo sutẽ | I went to bed early because I was tired. |
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू भोलि काम गर्छौ। | timīharū bholi kām garchau | You will work tomorrow. |
+| म भोलि व्यायाम गर्दिनँ। | ma bholi vyāyām gardinã | I will not exercise tomorrow. |
+| हामी आज राति घरमा खान्छौं। | hāmī āja rāti gharmā khānchaũ | We will eat at home tonight. |
 
-⚠️ Repeat **पनि** for “both … and … / … too, and … too.” Put **कोले／भएकोले** at the end of the clause giving the reason.
+Check: A definite plan and an uncertain prediction are different. Practice ways to soften predictions in the inference lesson.
 
----
+### Make it your own
 
-## Theme 27「While ~ (-दै) / after ~ (-एपछि)」
+Say one thing you will do tomorrow and one you will not do. Add when and where.
 
-🎯 **Goal**: Link two actions to show that they happen at the same time or one after the other.
+## テーマ14「Habitual past (used to ~)」
 
-### 1. While doing: stem + दै
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| संगीत **सुन्दै** पढ्छु। | saṅgīt sundai paḍhchu | I study while listening to music. |
-| टेलिभिजन **हेर्दै** खान्छु। | ṭelibhijan herdai khānchu | I eat while watching television. |
+Goal: Talk about former habits
 
-### 2. After doing: past participle + पछि (-एपछि)
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| हात **धोएपछि**, खान्छु। | hāt dhoepachi, khānchu | I eat after washing my hands. |
-| **उठेपछि**, अनुहार धुन्छु। | uṭhepachi, anuhār dhuncha | I wash my face after getting up. |
+### Situation and meaning
 
-⚠️ **-दै = at the same time** (“while doing”); **-एपछि = in sequence** (“after doing”). The ending changes the relationship between the actions.
+Use a habitual past form for repeated actions in childhood or an earlier period of life. Contrast it with the past of a single event.
 
----
+### Examples to say aloud
 
-## Theme 28「In order to ~ (-नको लागि)」
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू पहिले यहाँ काम गर्थ्यौ। | timīharū pahile yahā̃ kām garthyau | You used to work here. |
+| म पहिले व्यायाम गर्दिनथें। | ma pahile vyāyām gardinathẽ | I did not use to exercise. |
+| तिमी पहिले यहाँ बस्थ्यौ? | timī pahile yahā̃ basthyau? | Did you use to live here? |
 
-🎯 **Goal**: Say “in order to do …” and “for …”.
+Check: Do not automatically copy the ले marking of a single completed transitive event into a habitual past pattern.
 
-### 1. Two patterns
-| Pattern | Formula | Example |
-|---|---|---|
-| ① Verb | Stem + **नको लागि** | पढ्**नको लागि** (in order to study) |
-| ② Noun | Noun + **को लागि** | स्वास्थ्य**को लागि** (for health) |
+### Make it your own
 
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| खाना **खानको लागि** आउनुहोस्। | khānā khānako lāgi āunuhos | Please come to eat. |
-| **पढ्नको लागि** पुस्तकालय जान्छु। | paḍhnako lāgi pustakālaya jānchu | I go to the library to study. |
+Name two former habits and then explain whether you still have them.
 
-⚠️ Use **नको लागि** with a verb and **को लागि** with a noun. Put the purpose before the main action.
+## テーマ15「Present perfect / experience (have done ~)」
 
----
+Goal: Describe experience and a present result
 
-## Theme 29「Relative clauses: the one who ~ (-ने)」
+### Situation and meaning
 
-🎯 **Goal**: Describe a noun with an action, as in “the person who reads.”
+Use a past participle with a form of छ to connect an earlier event with now: having eaten, having visited a place or being tired after an event.
 
-### 1. Pattern: stem + ने + noun
-Adding **-ने** to a verb stem makes a present participle. Put it before the noun to mean “the person / thing that does …”.
-| Phrase | Romanized | Meaning |
-|---|---|---|
-| **पढ्ने** मान्छे | paḍhne mānche | A person who reads |
-| **खाने** कुरा | khāne kurā | Food (things to eat) |
-| काठमाडौं **जाने** बाटो | kāṭhmāḍaũ jāne bāṭo | The road to Kathmandu |
+### Examples to say aloud
 
-### 2. Extension: -ने बित्तिकै (“as soon as”)
-पैसा **पाउने बित्तिकै** हरि पोखरा गयो। (paisā pāune bittikai hari pokharā gayo = As soon as Hari got the money, he went to Pokhara.)
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरूले यो काम गरेको छौ। | timīharūle yo kām gareko chau | You have done this work. |
+| मैले यो काम गरेको छैनँ। | maile yo kām gareko chainã | I have not done this work yet. |
+| ढोका खुलेको छ। | ḍhokā khuleko cha | The door is open. |
 
-⚠️ The action describing the noun comes **before the noun**, as in Japanese. This is the reverse of an English “noun + who / that …” relative clause.
+Check: Context distinguishes experience, completion and a resulting state. A negative can express not yet.
 
----
+### Make it your own
 
-## Theme 30「Conditionals (if ~)」
+Choose eating, travel or work and practice experience, completion and not-yet completion.
 
-🎯 **Goal**: Say “If …, then …”.
+## テーマ16「Past perfect (had done ~)」
 
-### 1. Pattern: condition + भने, then the result
-Put **भने** (“if”) after the condition. You can add **यदि (“if”) at the beginning, but it is optional**.
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| राम **आयो भने**, श्याम जान्छ। | rām āyo bhane, śyām jāncha | If Ram comes, Shyam will go. |
-| राम **आउँछ भने**, श्याम जान्छ। | rām āũcha bhane, śyām jāncha | If Ram is coming, Shyam will go. |
-| यदि सस्तो छ **भने**, किन्छु। | yadi sasto cha bhane, kinchu | If it is cheap, I will buy it. |
+Goal: Describe completion before a past moment
 
-⚠️ **Keep भने**; यदि is optional. The condition can use a past form (आयो भने) or a present form (आउँछ भने).
+### Situation and meaning
 
----
+Explain what had already happened by a past moment. A reference such as when I arrived makes the order of events clear.
 
-## Theme 31「Inference / opinion / possibility (I think / probably / might / must be)」
+### Examples to say aloud
 
-🎯 **Goal**: Say “probably” and “I think,” with different degrees of certainty.
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरूले यो काम गरेको थियौ। | timīharūle yo kām gareko thiyau | You had done this work. |
+| मैले यो काम गरेको थिइनँ। | maile yo kām gareko thiinã | I had not done this work at that time. |
+| त्यस बेला मैले खाना खाएको थिइनँ। | tyas belā maile khānā khāeko thiinã | I had not eaten at that time. |
 
-### 1. “It seems / I think”: sentence + जस्तो लाग्छ
-भोलि पानी पर्छ **जस्तो लाग्छ**। (bholi pānī parcha jasto lāgcha = I think it will rain tomorrow.)
+Check: Distinguish an action that was in progress then from one already completed then. This pattern combines a past participle with a past copula.
 
-### 2. “Probably”: होला at the end
-भोलि पानी पर्छ **होला**। (bholi pānī parcha holā = It will probably rain tomorrow.)
-Note: **सायद (“perhaps / probably”)** goes at the beginning and is often used with होला.
+### Make it your own
 
-### 3. “Must have / must be”: past participle + हुनु पर्छ
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| श्याम युरोप **गएको हुनु पर्छ**। | śyām yurop gaeko hunu parcha | Shyam must have gone to Europe. |
-| रामसँग धेरै पैसा **हुनु पर्छ**। | rāmsã̄ga dherai paisā hunu parcha | Ram must have a lot of money. |
+Imagine a meeting and describe one thing already completed and one not yet completed when you arrived.
 
-### 4. “Might / may”: हुनसक्छ／न सक्छ
-भोलि पानी **पर्न सक्छ**। (bholi pānī parna sakcha = It might rain tomorrow.)
+## テーマ17「Requests & commands (three politeness levels)」
 
-⚠️ The certainty scale introduced here is **जस्तो लाग्छ** (impression / opinion) < **होला／न सक्छ** (possibility) < **हुनु पर्छ** (strong inference: “must”).
+Goal: Make a request that fits the relationship
 
----
+### Situation and meaning
 
-## Theme 32「Passive (be ~ed)」
+Ask someone to do something. Start with a respectful request, then compare it with the shorter form used with a friend. The ending signals the relationship even when the subject is omitted.
 
-🎯 **Goal**: Say that something “is done” or “was done.”
+### Examples to say aloud
 
-### 1. Pattern: stem + इयो (“was done”)
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| ढोका **खोलियो**। | ḍhokā kholiyo | The door was opened. |
-| चिठी **लेखियो**। | ciṭhī lekhiyo | The letter was written. |
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| फेरि भन्नुहोस्। | pheri bhannuhos | Please say it again. |
+| तिमी यहाँ बस। | timī yahā̃ basa | Sit here. |
+| आउनुहोस् न। | āunuhos na | Please do come. |
 
-### 2. To mention the doer, use -ले (“by”)
-यो किताब धेरै मानिस**ले** **पढिन्छ**। (yo kitāb dherai mānisle paḍhincha = This book is read by many people.)
+Check: A short form can sound forceful with the wrong person. Small particles after a request can also change its tone.
 
-### 3. An impersonal use: saying a lot was done without naming the doer
-आज धेरै **हिंडियो**! (āja dherai hiḍiyo = There was a lot of walking today! / We walked a lot today!) / खूब **खाइयो**! (There was plenty of eating! / We ate a lot!)
+### Make it your own
 
-⚠️ “Was done” uses stem + **इयो**. The doer takes **-ले**.
+Say the same request to a friend and to a new acquaintance, then compare the wording.
 
----
+## テーマ18「Hortative / volitional (let's ~ / shall I ~)」
 
-## Theme 33「Causative (make someone ~)」
+Goal: Suggest an action together
 
-🎯 **Goal**: Say that someone makes or has another person do something.
+### Situation and meaning
 
-### 1. Many verbs form a causative with an ending in -आउनु
-| Original verb | Causative verb | Meaning |
-|---|---|---|
-| खानु (eat) | **खुवाउनु** | Feed / make someone eat |
-| सिक्नु (learn) | **सिकाउनु** | Teach |
-| उठ्नु (get up) | **उठाउनु** | Wake someone / get someone up |
-| देख्नु (see) | **देखाउनु** | Show |
-| गर्नु (do) | **गराउनु** | Make someone do |
+Distinguish an offer to do something yourself from an invitation to act together. Short verb forms are useful when discussing food or going out.
 
-### 2. For a verb without a causative form: stem + न लगाउनु
-गर्न **लगाउनु** (make someone do).
+### Examples to say aloud
 
-### 3. The person made to act takes -लाई; the subject takes -ले
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| आमाले बच्चालाई औषधि **खुवाउनुहुन्छ**। | āmāle baccālāī auṣadhi khuvāunuhuncha | Mother gives the child medicine. |
-| बुबाले मलाई कार **चलाउन लगाउनुभयो**। | bubāle malāī kār calāuna lagāunubhayo | Father made me drive the car. |
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| म पहिले बोलूँ? | ma pahile bolũ? | Shall I speak first? |
+| चिया पिऔं। | ciyā piaũ | Let us have some tea. |
+| टेनिस नखेलौं, फुटबल खेलौं। | ṭenis nakhelaũ, phuṭbal khelaũ | Let us play football, not tennis. |
 
-⚠️ In this causative pattern, remember the pair: **the person causing the action = subject + -ले**; **the person made to act = -लाई**.
+Check: Shall I and let us use different persons. A suggestion not to do something places न before the verb.
 
----
+### Make it your own
 
-## Theme 34「Reported speech (said that ~)」
+Make one offer to help and one suggestion to do something together.
 
-🎯 **Goal**: Report what someone said.
+## テーマ19「Prohibition (must not ~ / don't ~)」
 
-### 1. Pattern: what was said + भन्यो／भनिन्／भन्नुभयो (“said”)
-In this pattern, there is no separate word corresponding to English “that.” **Put the spoken words first and “said” at the end**.
-| Speaker | “Said” | Romanized |
-|---|---|---|
-| He | भन्यो | bhanyo |
-| She | भनिन् | bhanin |
-| Someone addressed with respect | भन्नुभयो | bhannubhayo |
+Goal: Ask someone not to do something
 
-### 2. Examples
-| Sentence | Romanized | Meaning |
-|---|---|---|
-| उसले **आउँछु भन्यो**। | usle āũchu bhanyo | He said, “I will come.” |
-| उसले **जाँदिनँ भनिन्**। | usle jā̃dinã bhanin | She said, “I will not go.” |
-| शिक्षकले **भोलि परीक्षा छ भन्नुभयो**। | śikṣakle bholi parīkṣā cha bhannubhayo | The teacher said there would be an exam the next day. |
+### Situation and meaning
 
-### 3. Extension: भन्ने गर्नु (“say regularly”)
-आमाले सधैं भन्ने **गर्नुहुन्थ्यो**। (Mother used to say it all the time.)
+Distinguish a polite request to stop from a rule for a place. Choose between please do not and must not according to the situation.
 
-⚠️ You do not need a word corresponding to English “that” in this pattern. **Put the spoken words directly before भन्यो**.
+### Examples to say aloud
 
----
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| चिन्ता नगर्नुहोस्। | cintā nagarnuhos | Please do not worry. |
+| यहाँ धूम्रपान गर्नु हुँदैन। | yahā̃ dhūmrapān garnu hũdaina | You must not smoke here. |
+| के यहाँ फोटो खिच्नु हुँदैन? | ke yahā̃ phoṭo khicnu hũdaina? | Is taking photos prohibited here? |
 
-## Summary: the main learning milestones
-1. **The three copula uses हो/छ/हुन्छ** (Themes 1–4), with **थियो as the shared past** (Theme 11).
-2. **Postpositions, like Japanese particles** (Theme 5), and **ergative -ले** (Theme 11).
-3. **Person and politeness** (Theme 7): तँ/तिमी/तपाईं change the verb endings.
-4. **Linking clauses with participles and related forms**: -दै (while) / -एपछि (after) / -नको लागि (in order to) / -ने (relative clause).
-5. **Sentence endings**: जस्तो लाग्छ (opinion) / होला (probably) / भन्यो (said).
+Check: Keep a negative request separate from a prohibition with हुँदैन. Neither is the same as saying an action is unnecessary.
 
----
+### Make it your own
 
-## Appendix A「Full verb conjugation (गर्नु, all persons)」
+Imagine a library or classroom. State one rule and make one polite request not to do something.
 
-🎯 **Goal**: Look up **every person** using the representative verb **गर्नु (do; stem गर्)**. Other consonant-stem verbs, such as लेख्नु (write) and बोल्नु (speak), follow the same pattern.
+## テーマ20「Ability (can ~)」
 
-### 0. Person and pronouns: the groups that determine conjugation
-| Person | Pronoun | Politeness |
-|---|---|---|
-| First-person singular | म (ma) | — |
-| First-person plural | हामी (hāmī) | — |
-| Second person, lower status / very intimate | तँ (tã) | Most casual |
-| Second person, familiar | तिमी (timī) | Middle level |
-| Second / third person, respectful | तपाईं／उहाँ | Polite |
-| Third-person singular | उ／यो／त्यो | Neutral |
-| Third person, feminine / respectful | उनी | Some respect |
-| Third-person plural | उनीहरू／तिनीहरू | — |
+Goal: Explain ability and inability
 
-### 1. Present: affirmative and negative
-| Pronoun | Affirmative | Romanized | Negative | Romanized |
-|---|---|---|---|---|
-| म | गर्छु | garchu | गर्दिनँ | gardinã |
-| तँ | गर्छस् | garchas | गर्दैनस् | gardainas |
-| तिमी | गर्छौ | garchau | गर्दैनौ | gardainau |
-| तपाईं／उहाँ | गर्नुहुन्छ | garnuhuncha | गर्नुहुन्न | garnuhunna |
-| उ | गर्छ | garcha | गर्दैन | gardaina |
-| उनी | गर्छिन्(feminine)/गर्छन्(respectful) | garchin/garchan | गर्दिनन् | gardinan |
-| हामी | गर्छौं | garchaũ | गर्दैनौं | gardainaũ |
-| उनीहरू | गर्छन् | garchan | गर्दैनन् | gardainan |
+### Situation and meaning
 
-### 2. Past: affirmative and negative; add -ले to the subject because this verb is transitive
-| Pronoun + ले | Affirmative | Romanized | Negative | Romanized |
-|---|---|---|---|---|
-| मैले | गरेँ | garẽ | गरिनँ | garinã |
-| तैंले | गरिस् | garis | गरिनस् | garinas |
-| तिमीले | गर्यौ | garyau | गरेनौ | garenau |
-| तपाईंले | गर्नुभयो | garnubhayo | गर्नुभएन | garnubhaena |
-| उसले | गर्यो | garyo | गरेन | garena |
-| उनले | गरिन्(feminine)/गरे(respectful) | garin/gare | गरिनन् | garinan |
-| हामीले | गर्यौं | garyaũ | गरेनौं | garenaũ |
-| उनीहरूले | गरे | gare | गरेनन् | garenan |
+Combine an action with सक्नु to express ability or practical possibility. Put the action first and inflect सक्नु for the subject.
 
-### 3. Present perfect (-एको छ): transitive verbs take +ले; the participle varies as -एको/-एकी/-एका
-| Pronoun | Form | Romanized |
-|---|---|---|
-| मैले | गरेको छु | gareko chu |
-| तैंले | गरेको छस् | gareko chas |
-| तिमीले | गरेको छौ | gareko chau |
-| तपाईंले | गर्नुभएको छ | garnubhaeko cha |
-| उसले | गरेको छ | gareko cha |
-| उनले | गरेकी छिन्(feminine) | garekī chin |
-| हामीले | गरेको छौं | gareko chaũ |
-| उनीहरूले | गरेका छन् | garekā chan |
+### Examples to say aloud
 
-### 4. Habitual past (थ्यो): no -ले, even with transitive verbs
-| Pronoun | Form | Romanized |
-|---|---|---|
-| म | गर्थें | garthẽ |
-| तँ | गर्थिस् | garthis |
-| तिमी | गर्थ्यौ | garthyau |
-| तपाईं | गर्नुहुन्थ्यो | garnuhunthyo |
-| उ | गर्थ्यो | garthyo |
-| उनी | गर्थिन् | garthin |
-| हामी | गर्थ्यौं | garthyaũ |
-| उनीहरू | गर्थे | garthe |
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू नेपाली बोल्न सक्छौ। | timīharū nepālī bolna sakchau | You can speak Nepali. |
+| उहाँ नेपाली बोल्न सक्नुहुन्छ? | uhā̃ nepālī bolna saknuhuncha? | Can he speak Nepali? |
+| उनी साइकल चलाउन सक्दिनन्। | unī sāikal calāuna sakdinan | She cannot ride a bicycle. |
 
-### 5. Commands and suggestions
-| Type | Pronoun | Form | Romanized |
-|---|---|---|---|
-| Command | तँ | गर् | gar |
-| Command | तिमी | गर | gara |
-| Command (respectful) | तपाईं | गर्नुहोस् | garnuhos |
-| Volitional: “shall I” | म | गरूँ | garũ |
-| Suggestion: “let's” | हामी | गरौं | garaũ |
+Check: The action's ordinary present form differs from a can construction. Negate सक्नु to say cannot.
 
-### 6. Future
-This guide uses **the present form (section 1) + a time word**, rather than a dedicated future conjugation: म **भोलि** गर्छु (I will do it tomorrow).
+### Make it your own
 
-### 7. Note: some verbs use an alternate stem in the past
-गर्नु follows the regular pattern here, but vowel-stem and irregular verbs can change their stem in the past.
-| Verb | Present stem | Past (I) | Note |
-|---|---|---|---|
-| खानु (eat) | खा | मैले खाएँ | Vowel stem |
-| जानु (go) | जा | म गएँ | Irregular (ग-) |
-| हुनु (become / be) | हु | म भएँ／थिएँ | Irregular (भ-／थि-) |
+Choose language, transport or cooking and explain one ability and one inability.
 
-⚠️ Start with **म (-छु), तपाईं (-नुहुन्छ), and उ (-छ)**, then expand to **तँ/तिमी/उनी/हामी/उनीहरू**. Learn affirmative and negative forms in pairs: negatives use the **दिन/दैन family** in the present and the **न family** in the past.
+## テーマ21「Obligation & permission (must ~ / may ~)」
 
----
+Goal: Check obligations and permission
 
-## Appendix B「Copula conjugation (हो / छ / थियो, all persons)」
+### Situation and meaning
 
-🎯 **Goal**: Check every person for the three “be / exist” patterns: **हो (identity), छ (existence / state), and थियो (past)**.
+Separate obligation, lack of necessity and permission. Use पर्छ for an obligation and पर्दैन for no obligation. Ask permission with an action followed by हुन्छ or मिल्छ.
 
-### 1. हो: present identity, “A is B”
-| Pronoun | Affirmative | Romanized | Negative (होइन) | Romanized |
-|---|---|---|---|---|
-| म | हुँ | hũ | होइनँ | hoinã |
-| तँ | होस् | hos | होइनस् | hoinas |
-| तिमी | हौ | hau | होइनौ | hoinau |
-| तपाईं／उहाँ | हुनुहुन्छ | hunuhuncha | हुनुहुन्न | hunuhunna |
-| उ／यो／त्यो | हो | ho | होइन | hoina |
-| उनी | हुन्(feminine / respectful) | hun | होइनन् | hoinan |
-| हामी | हौं | haũ | होइनौं | hoinaũ |
-| उनीहरू | हुन् | hun | होइनन् | hoinan |
+### Examples to say aloud
 
-### 2. छ: present existence, location, or state
-| Pronoun | Affirmative | Romanized | Negative (छैन) | Romanized |
-|---|---|---|---|---|
-| म | छु | chu | छैनँ | chainã |
-| तँ | छस् | chas | छैनस् | chainas |
-| तिमी | छौ | chau | छैनौ | chainau |
-| तपाईं／उहाँ | हुनुहुन्छ | hunuhuncha | हुनुहुन्न | hunuhunna |
-| उ／यो／त्यो | छ | cha | छैन | chaina |
-| उनी | छिन्(feminine)/छन्(respectful) | chin/chan | छैनन् | chainan |
-| हामी | छौं | chaũ | छैनौं | chainaũ |
-| उनीहरू | छन् | chan | छैनन् | chainan |
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| उसले औषधि खानु पर्छ। | usle auṣadhi khānu parcha | He has to take medicine. |
+| तिमीहरूले पैसा तिर्नु पर्दैन। | timīharūle paisā tirnu pardaina | You do not have to pay. |
+| यो कलम लिन मिल्छ? | yo kalam lina milcha? | May I take this pen? |
 
-### 3. थियो: past “was / were / existed,” shared by हो and छ
-| Pronoun | Affirmative | Romanized | Negative (थिएन) | Romanized |
-|---|---|---|---|---|
-| म | थिएँ | thiẽ | थिइनँ | thiinã |
-| तँ | थिइस् | thiis | थिइनस् | thiinas |
-| तिमी | थियौ | thiyau | थिएनौ | thienau |
-| तपाईं／उहाँ | हुनुहुन्थ्यो | hunuhunthyo | हुनुहुन्नथ्यो | hunuhunnathyo |
-| उ／यो／त्यो | थियो | thiyo | थिएन | thiena |
-| उनी | थिइन्(feminine / respectful) | thiin | थिइनन् | thiinan |
-| हामी | थियौं | thiyaũ | थिएनौं | thienaũ |
-| उनीहरू | थिए | thie | थिएनन् | thienan |
+Check: Do not have to does not mean must not. In this obligation pattern, पर्छ does not change for the subject's person.
 
-### 4. हुन्छ: “becomes / generally is”
-This is a present form of हुनु and **follows the conjugation pattern of गर्नु in Appendix A**. For general or habitual statements, do not start with म हुन्छु…; focus on third-person **हुन्छ**. The past of “become” is **भयो**.
+### Make it your own
 
-⚠️ Distinguish **हो and छ in the present** (negative होइन／छैन), but remember that **both share थियो in the past** (negative थिएन). The respectful forms, **present हुनुहुन्छ and past हुनुहुन्थ्यो**, are shared by हो/छ.
+For a workday, state an obligation, something unnecessary and a request for permission.
 
-<!-- English version: all 34 themes + Appendix A (गर्नु, all persons) + Appendix B (हो/छ/थियो, all persons). Translated from the Japanese v2 master; its Nepali and romanization are retained. Based on CD Express. Next: conversion to app JSON. -->
+## テーマ22「Desire (want to ~)」
+
+Goal: Describe a wish or a passing desire
+
+### Situation and meaning
+
+Compare a wish with a present inclination. A sentence with चाहनु and a मन construction with मलाई use different subject patterns.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू नेपाल जान चाहन्छौ। | timīharū nepāl jāna cāhanchau | You want to go to Nepal. |
+| उहाँ नेपाल जान चाहनुहुन्छ। | uhā̃ nepāl jāna cāhanuhuncha | He wants to go to Nepal. |
+| हामीलाई सँगै बस्न मन लाग्छ। | hāmīlāī sãgai basna man lāgcha | We feel like spending time together. |
+
+Check: Keep liking something separate from wanting to do it. Distinguish मन पर्छ from मन छ and मन लाग्छ.
+
+### Make it your own
+
+Name one travel wish and one thing you feel like doing now, then add a short reason.
+
+## テーマ23「Adjective agreement & position」
+
+Goal: Make a noun description more specific
+
+### Situation and meaning
+
+Place an adjective before a noun to identify a particular person or thing. For adjectives that inflect, practice agreement in gender and number along with word order.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| यी राम्रा केटाहरू हुन्। | yī rāmrā keṭāharū hun | These are good boys. |
+| यो नयाँ किताब हो? | yo nayā̃ kitāb ho? | Is this a new book? |
+| यो फूल सुन्दर छ। | yo phūl sundar cha | This flower is beautiful. |
+
+Check: Not every adjective changes in the same way. Learn feminine, plural and respectful patterns with actual nouns.
+
+### Make it your own
+
+Choose one person noun and one object noun and describe each with two qualities.
+
+## テーマ24「Adverbs & exclamations」
+
+Goal: Add manner, degree and surprise
+
+### Situation and meaning
+
+Speed and frequency add information to an action. Notice which verb or adjective an adverb modifies, then compare ordinary descriptions with exclamations.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीहरू बिस्तारै बोल। | timīharū bistārai bola | Speak slowly. |
+| हामी राति काम गर्दैनौं। | hāmī rāti kām gardainaũ | We do not work at night. |
+| बिस्तारै खानुहोस्। | bistārai khānuhos | Please eat slowly. |
+
+Check: कति can be used for an exclamation as well as a question. Consider the purpose of the sentence, not just its punctuation.
+
+### Make it your own
+
+Describe one action with slowly, always and very, then add an exclamation.
+
+## テーマ25「Comparison & superlative」
+
+Goal: Compare options and choose
+
+### Situation and meaning
+
+When shopping or choosing a route, make the two options clear. Place भन्दा after the comparison standard. For a superlative, identify the group being compared when useful.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| चिया कफीभन्दा सस्तो छ। | ciyā kaphībhandā sasto cha | Tea is cheaper than coffee. |
+| उ आफ्नो भाइभन्दा होचो छ। | u āphno bhāibhandā hoco cha | He is shorter than his younger brother. |
+| यो सबभन्दा राम्रो किताब हो। | yo sabbhandā rāmro kitāb ho | This is the best book. |
+
+Check: The best or biggest should have a clear comparison group. Do not add an English-style comparative ending to the adjective.
+
+### Make it your own
+
+Compare two bags by price and size and briefly explain which you would choose.
+
+## テーマ26「Conjunctions (and / so / but)」
+
+Goal: Connect ideas and give reasons
+
+### Situation and meaning
+
+Choose a connector according to whether you are listing, sequencing, contrasting or giving a reason. Decide how two short statements relate before combining them.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमी पढ्छौ अनि लेख्छौ। | timī paḍhchau ani lekhchau | You read and then write. |
+| हामी पनि जान्छौं। | hāmī pani jānchaũ | We are going too. |
+| समय नभएकोले, उहाँ आउनुभएन। | samay nabhaekole, uhā̃ āunubhaena | He did not come because he had no time. |
+
+Check: Confusing but with because changes the relationship between events. With पनि, also check what the word too applies to.
+
+### Make it your own
+
+List two actions from today, then connect them as a contrast or as a reason and result.
+
+## テーマ27「While ~ (-दै) / after ~ (-एपछि)」
+
+Goal: Distinguish simultaneous actions from sequence
+
+### Situation and meaning
+
+Reading while listening and eating after washing have different time relationships. Compare a दै form with a form containing पछि and decide which action comes first.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| उनी गीत गाउँदै काम गर्छिन्। | unī gīt gāũdai kām garchin | She works while singing. |
+| हात धोएपछि, म खान्छु। | hāt dhoepachi, ma khānchu | I eat after washing my hands. |
+| चिया पिएपछि, उनी जान्छिन्। | ciyā piepachi, unī jānchin | She leaves after drinking tea. |
+
+Check: Translating a sequence as while changes the action. Begin with two actions performed by the same subject.
+
+### Make it your own
+
+Choose two simultaneous morning actions and two sequential ones and make sentences.
+
+## テーマ28「In order to ~ (-नको लागि)」
+
+Goal: Explain the purpose of an action
+
+### Situation and meaning
+
+Explain not only where you are going but what you intend to do there. Distinguish a purpose expressed with an action from a purpose involving a person or health.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| उ नेपाली सिक्नको लागि नेपाल जान्छ। | u nepālī siknako lāgi nepāl jāncha | He goes to Nepal to learn Nepali. |
+| उहाँ आराम गर्नको लागि घर जानुहुन्छ। | uhā̃ ārām garnako lāgi ghar jānuhuncha | He goes home to rest. |
+| तपाईं कसको लागि काम गर्नुहुन्छ? | tapāĩ kasko lāgi kām garnuhuncha? | Who do you work for? |
+
+Check: Purpose and cause are different. Check whether you mean an intended action or an existing circumstance.
+
+### Make it your own
+
+Choose a library, a market or a friend's home and make two reasons for going there expressed as purposes.
+
+## テーマ29「Relative clauses: the one who ~ (-ने)」
+
+Goal: Identify a person or thing with an action
+
+### Situation and meaning
+
+Place an action description before a noun to identify a person or thing, such as the person who lives here or the road to school. Read the ने form together with the noun it modifies.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| यो स्कूल जाने बाटो हो। | yo skūl jāne bāṭo ho | This is the road to school. |
+| काम गर्ने समय भयो। | kām garne samay bhayo | It is time to work. |
+| पैसा पाउने बित्तिकै, उसले किताब किन्यो। | paisā pāune bittikai, usle kitāb kinyo | He bought a book as soon as he got the money. |
+
+Check: Distinguish a finite present statement from a noun-modifying form. Adding बित्तिकै can express as soon as.
+
+### Make it your own
+
+Choose a place, an action and a person and make a description that identifies which person you mean.
+
+## テーマ30「Conditionals (if ~)」
+
+Goal: Make an action depend on a condition
+
+### Situation and meaning
+
+Use this pattern to plan around weather or available time. Separate the condition from the action that follows and connect them with भने.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तपाईं व्यस्त हुनुहुन्छ भने, म पर्खन्छु। | tapāĩ vyasta hunuhuncha bhane, ma parkhanchu | If you are busy, I will wait. |
+| भोक लाग्यो भने, खाना खानुहोस्। | bhok lāgyo bhane, khānā khānuhos | If you get hungry, please eat. |
+| यो पिरो छ भने, म खाँदिनँ। | yo piro cha bhane, ma khā̃dinã | If this is spicy, I will not eat it. |
+
+Check: भने can mark the condition even without यदि. Practice what happens when the condition is not met as well.
+
+### Make it your own
+
+Use rain, time or price as a condition and contrast what you will and will not do.
+
+## テーマ31「Inference / opinion / possibility (I think / probably / might / must be)」
+
+Goal: Show how certain you are
+
+### Situation and meaning
+
+Distinguish an impression, a tentative prediction, a possibility and a strong deduction. Let the ending show how sure you are instead of stating uncertain information as a fact.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तपाईंलाई के लाग्छ? | tapāĩlāī ke lāgcha? | What do you think? |
+| उहाँ घरमा हुनुहुन्छ होला। | uhā̃ gharmā hunuhuncha holā | He is probably at home. |
+| उनी घर गएकी हुनु पर्छ। | unī ghar gaekī hunu parcha | She must have gone home. |
+
+Check: पर्छ has different roles in obligation and deduction. Check whether the whole construction means must do or must be.
+
+### Make it your own
+
+Describe tomorrow's weather or a friend's plans as both a tentative prediction and a strong deduction.
+
+## テーマ32「Passive (be ~ed)」
+
+Goal: Focus on what receives an action
+
+### Situation and meaning
+
+Use a passive when the window being closed or the letter being written matters more than the doer. Compare leaving the doer unstated with explicitly identifying the doer.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| खाना पकाइयो। | khānā pakāiyo | The food was cooked. |
+| ढोका खोलिएन। | ḍhokā kholiena | The door was not opened. |
+| आज धेरै हिँडियो। | āja dherai hĩḍiyo | We did a lot of walking today. |
+
+Check: Do not interpret an impersonal expression such as having done a lot of walking as being forced to walk by someone.
+
+### Make it your own
+
+Choose an everyday object and report what was done to it without naming the doer.
+
+## テーマ33「Causative (make someone ~)」
+
+Goal: Describe causing someone to act
+
+### Situation and meaning
+
+Use verbs for teaching, showing, waking and otherwise causing an action or state. Identify the initiator and the person affected as separate participants.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तिमीले भाइलाई उठायौ? | timīle bhāilāī uṭhāyau? | Did you wake your younger brother? |
+| उनले मलाई चिठी लेख्न लगाइन्। | unle malāī ciṭhī lekhna lagāin | She made me write a letter. |
+| बुबाले मलाई काम गर्न लगाउनुभएन। | bubāle malāī kām garna lagāunubhaena | Father did not make me work. |
+
+Check: Seeing and showing, or learning and teaching, are different. Learn causative verbs by meaning rather than adding an ending mechanically.
+
+### Make it your own
+
+Use a family member or teacher as the initiator and explain whom they caused to do what.
+
+## テーマ34「Reported speech (said that ~)」
+
+Goal: Report what someone said
+
+### Situation and meaning
+
+Separate the speaker from the message. Quoted content may retain the speaker's original person, so check whose perspective is represented when translating.
+
+### Examples to say aloud
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| मैले म विद्यार्थी हुँ भनेँ। | maile ma vidyārthī hũ bhanẽ | I said I was a student. |
+| हामीले तयार छौं भन्यौं। | hāmīle tayār chaũ bhanyaũ | We said we were ready. |
+| उनले पैसा छैन भनिन्। | unle paisā chaina bhanin | She said she had no money. |
+
+Check: Said they would come and did not say they would come differ in the scope of negation. Match the reporting verb to the speaker.
+
+### Make it your own
+
+Quote a friend's plan and practice reporting it to someone else.
+
+## 付録A「Verb forms through writing: लेख्नु」
+
+Goal: Change the person and time while talking about writing a letter.
+
+This appendix uses लेख्नु, to write. Starting from the stem लेख्, compare who writes, who wrote and who has written. The practice examples use the everyday situation of writing letters.
+
+### A writing routine
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| म चिठी लेख्छु। | ma ciṭhī lekhchu | I write letters. |
+| तँ चिठी लेख्छस्। | tã ciṭhī lekhchas | You write letters. |
+| तिमी चिठी लेख्छौ। | timī ciṭhī lekhchau | You write letters. |
+| तिमीहरू चिठी लेख्छौ। | timīharū ciṭhī lekhchau | You write letters. |
+| तपाईं चिठी लेख्नुहुन्छ। | tapāĩ ciṭhī lekhnuhuncha | You write letters. |
+| उ चिठी लेख्छ। | u ciṭhī lekhcha | He writes letters. |
+| उनी चिठी लेख्छिन्। | unī ciṭhī lekhchin | She writes letters. |
+| उहाँ चिठी लेख्नुहुन्छ। | uhā̃ ciṭhī lekhnuhuncha | He writes letters. |
+| हामी चिठी लेख्छौं। | hāmī ciṭhī lekhchaũ | We write letters. |
+| उनीहरू चिठी लेख्छन्। | unīharū ciṭhī lekhchan | They write letters. |
+
+### Not writing
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| म चिठी लेख्दिनँ। | ma ciṭhī lekhdinã | I do not write letters. |
+| तँ चिठी लेख्दैनस्। | tã ciṭhī lekhdainas | You do not write letters. |
+| तिमी चिठी लेख्दैनौ। | timī ciṭhī lekhdainau | You do not write letters. |
+| तिमीहरू चिठी लेख्दैनौ। | timīharū ciṭhī lekhdainau | You do not write letters. |
+| तपाईं चिठी लेख्नुहुन्न। | tapāĩ ciṭhī lekhnuhunna | You do not write letters. |
+| उ चिठी लेख्दैन। | u ciṭhī lekhdaina | He does not write letters. |
+| उनी चिठी लेख्दिनन्। | unī ciṭhī lekhdinan | She does not write letters. |
+| उहाँ चिठी लेख्नुहुन्न। | uhā̃ ciṭhī lekhnuhunna | He does not write letters. |
+| हामी चिठी लेख्दैनौं। | hāmī ciṭhī lekhdainaũ | We do not write letters. |
+| उनीहरू चिठी लेख्दैनन्। | unīharū ciṭhī lekhdainan | They do not write letters. |
+
+### A completed writing event
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| मैले हिजो चिठी लेखेँ। | maile hijo ciṭhī lekhẽ | I wrote a letter yesterday. |
+| तैंले हिजो चिठी लेखिस्। | taĩle hijo ciṭhī lekhis | You wrote a letter yesterday. |
+| तिमीले हिजो चिठी लेख्यौ। | timīle hijo ciṭhī lekhyau | You wrote a letter yesterday. |
+| तिमीहरूले हिजो चिठी लेख्यौ। | timīharūle hijo ciṭhī lekhyau | You wrote a letter yesterday. |
+| तपाईंले हिजो चिठी लेख्नुभयो। | tapāĩle hijo ciṭhī lekhnubhayo | You wrote a letter yesterday. |
+| उसले हिजो चिठी लेख्यो। | usle hijo ciṭhī lekhyo | He wrote a letter yesterday. |
+| उनले हिजो चिठी लेखिन्। | unle hijo ciṭhī lekhin | She wrote a letter yesterday. |
+| उहाँले हिजो चिठी लेख्नुभयो। | uhā̃le hijo ciṭhī lekhnubhayo | He wrote a letter yesterday. |
+| हामीले हिजो चिठी लेख्यौं। | hāmīle hijo ciṭhī lekhyaũ | We wrote a letter yesterday. |
+| उनीहरूले हिजो चिठी लेखे। | unīharūle hijo ciṭhī lekhe | They wrote a letter yesterday. |
+
+### A writing event that did not happen
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| मैले हिजो चिठी लेखिनँ। | maile hijo ciṭhī lekhinã | I did not write a letter yesterday. |
+| तैंले हिजो चिठी लेखिनस्। | taĩle hijo ciṭhī lekhinas | You did not write a letter yesterday. |
+| तिमीले हिजो चिठी लेखेनौ। | timīle hijo ciṭhī lekhenau | You did not write a letter yesterday. |
+| तिमीहरूले हिजो चिठी लेखेनौ। | timīharūle hijo ciṭhī lekhenau | You did not write a letter yesterday. |
+| तपाईंले हिजो चिठी लेख्नुभएन। | tapāĩle hijo ciṭhī lekhnubhaena | You did not write a letter yesterday. |
+| उसले हिजो चिठी लेखेन। | usle hijo ciṭhī lekhena | He did not write a letter yesterday. |
+| उनले हिजो चिठी लेखिनन्। | unle hijo ciṭhī lekhinan | She did not write a letter yesterday. |
+| उहाँले हिजो चिठी लेख्नुभएन। | uhā̃le hijo ciṭhī lekhnubhaena | He did not write a letter yesterday. |
+| हामीले हिजो चिठी लेखेनौं। | hāmīle hijo ciṭhī lekhenaũ | We did not write a letter yesterday. |
+| उनीहरूले हिजो चिठी लेखेनन्। | unīharūle hijo ciṭhī lekhenan | They did not write a letter yesterday. |
+
+### Completion connected with now
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| मैले चिठी लेखेको छु। | maile ciṭhī lekheko chu | I have done the write letters. |
+| तैंले चिठी लेखेको छस्। | taĩle ciṭhī lekheko chas | You have done the write letters. |
+| तिमीले चिठी लेखेको छौ। | timīle ciṭhī lekheko chau | You have done the write letters. |
+| तिमीहरूले चिठी लेखेको छौ। | timīharūle ciṭhī lekheko chau | You have done the write letters. |
+| तपाईंले चिठी लेख्नुभएको छ। | tapāĩle ciṭhī lekhnubhaeko cha | You have done the write letters. |
+| उसले चिठी लेखेको छ। | usle ciṭhī lekheko cha | He has done the write letters. |
+| उनले चिठी लेखेकी छिन्। | unle ciṭhī lekhekī chin | She has done the write letters. |
+| उहाँले चिठी लेख्नुभएको छ। | uhā̃le ciṭhī lekhnubhaeko cha | He has done the write letters. |
+| हामीले चिठी लेखेको छौं। | hāmīle ciṭhī lekheko chaũ | We have done the write letters. |
+| उनीहरूले चिठी लेखेका छन्। | unīharūle ciṭhī lekhekā chan | They have done the write letters. |
+
+### Former writing habits
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| म पहिले चिठी लेख्थें। | ma pahile ciṭhī lekhthẽ | I used to write letters. |
+| तँ पहिले चिठी लेख्थिस्। | tã pahile ciṭhī lekhthis | You used to write letters. |
+| तिमी पहिले चिठी लेख्थ्यौ। | timī pahile ciṭhī lekhthyau | You used to write letters. |
+| तिमीहरू पहिले चिठी लेख्थ्यौ। | timīharū pahile ciṭhī lekhthyau | You used to write letters. |
+| तपाईं पहिले चिठी लेख्नुहुन्थ्यो। | tapāĩ pahile ciṭhī lekhnuhunthyo | You used to write letters. |
+| उ पहिले चिठी लेख्थ्यो। | u pahile ciṭhī lekhthyo | He used to write letters. |
+| उनी पहिले चिठी लेख्थिन्। | unī pahile ciṭhī lekhthin | She used to write letters. |
+| उहाँ पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃ pahile ciṭhī lekhnuhunthyo | He used to write letters. |
+| हामी पहिले चिठी लेख्थ्यौं। | hāmī pahile ciṭhī lekhthyaũ | We used to write letters. |
+| उनीहरू पहिले चिठी लेख्थे। | unīharū pahile ciṭhī lekhthe | They used to write letters. |
+
+### Requests and offers
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| तँ यो चिठी लेख्। | tã yo ciṭhī lekh | Write this letter. |
+| तिमी यो चिठी लेख। | timī yo ciṭhī lekh | Write this letter. |
+| तपाईं यो चिठी लेख्नुहोस्। | tapāĩ yo ciṭhī lekhnuhos | Please write this letter. |
+| म यो चिठी लेखूँ? | ma yo ciṭhī lekhũ? | Shall I write this letter? |
+| हामी यो चिठी लेखौं। | hāmī yo ciṭhī lekhaũ | Let us write this letter. |
+
+### Respect and plans
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| उनी चिठी लेख्छन्। | unī ciṭhī lekhchan | That person writes letters. |
+| उनले हिजो चिठी लेखे। | unle hijo ciṭhī lekhe | That person wrote a letter yesterday. |
+| म भोलि चिठी लेख्छु। | ma bholi ciṭhī lekhchu | I will write a letter tomorrow. |
+| तँ भोलि चिठी लेख्छस्। | tã bholi ciṭhī lekhchas | You will write a letter tomorrow. |
+| तिमी भोलि चिठी लेख्छौ। | timī bholi ciṭhī lekhchau | You will write a letter tomorrow. |
+| तिमीहरू भोलि चिठी लेख्छौ। | timīharū bholi ciṭhī lekhchau | You will write a letter tomorrow. |
+| तपाईं भोलि चिठी लेख्नुहुन्छ। | tapāĩ bholi ciṭhī lekhnuhuncha | You will write a letter tomorrow. |
+| उ भोलि चिठी लेख्छ। | u bholi ciṭhī lekhcha | He will write a letter tomorrow. |
+| उनी भोलि चिठी लेख्छिन्। | unī bholi ciṭhī lekhchin | She will write a letter tomorrow. |
+| उहाँ भोलि चिठी लेख्नुहुन्छ। | uhā̃ bholi ciṭhī lekhnuhuncha | He will write a letter tomorrow. |
+| हामी भोलि चिठी लेख्छौं। | hāmī bholi ciṭhī lekhchaũ | We will write a letter tomorrow. |
+| उनीहरू भोलि चिठी लेख्छन्। | unīharū bholi ciṭhī lekhchan | They will write a letter tomorrow. |
+
+Check: Check the agent marker ले with completed transitive actions. Choose short imperative forms only when the relationship makes them appropriate.
+
+## 付録B「Copulas through identity and location」
+
+Goal: Contrast identity, present location and a past outing in affirmative and negative statements.
+
+Choose a form of हुनु according to what you mean. Compare being an author, being at the library and having been at the market the day before yesterday. Practice the subject and ending together as a short sentence.
+
+### Identifying someone
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| म लेखक हुँ। | ma lekhak hũ | I am an author. |
+| तँ लेखक होस्। | tã lekhak hos | You are an author. |
+| तिमी लेखक हौ। | timī lekhak hau | You are an author. |
+| तिमीहरू लेखक हौ। | timīharū lekhak hau | You are authors. |
+| तपाईं लेखक हुनुहुन्छ। | tapāĩ lekhak hunuhuncha | You are an author. |
+| उ लेखक हो। | u lekhak ho | He is an author. |
+| उनी लेखिका हुन्। | unī lekhikā hun | She is an author. |
+| उहाँ लेखक हुनुहुन्छ। | uhā̃ lekhak hunuhuncha | He is an author. |
+| हामी लेखक हौं। | hāmī lekhak haũ | We are authors. |
+| उनीहरू लेखक हुन्। | unīharū lekhak hun | They are authors. |
+| म लेखक होइनँ। | ma lekhak hoinã | I am not an author. |
+| तँ लेखक होइनस्। | tã lekhak hoinas | You are not an author. |
+| तिमी लेखक होइनौ। | timī lekhak hoinau | You are not an author. |
+| तिमीहरू लेखक होइनौ। | timīharū lekhak hoinau | You are not authors. |
+| तपाईं लेखक हुनुहुन्न। | tapāĩ lekhak hunuhunna | You are not an author. |
+| उ लेखक होइन। | u lekhak hoina | He is not an author. |
+| उनी लेखिका होइनन्। | unī lekhikā hoinan | She is not an author. |
+| उहाँ लेखक हुनुहुन्न। | uhā̃ lekhak hunuhunna | He is not an author. |
+| हामी लेखक होइनौं। | hāmī lekhak hoinaũ | We are not authors. |
+| उनीहरू लेखक होइनन्। | unīharū lekhak hoinan | They are not authors. |
+
+### Present location
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| म पुस्तकालयमा छु। | ma pustakālayamā chu | I am at the library. |
+| तँ पुस्तकालयमा छस्। | tã pustakālayamā chas | You are at the library. |
+| तिमी पुस्तकालयमा छौ। | timī pustakālayamā chau | You are at the library. |
+| तिमीहरू पुस्तकालयमा छौ। | timīharū pustakālayamā chau | You are at the library. |
+| तपाईं पुस्तकालयमा हुनुहुन्छ। | tapāĩ pustakālayamā hunuhuncha | You are at the library. |
+| उ पुस्तकालयमा छ। | u pustakālayamā cha | He is at the library. |
+| उनी पुस्तकालयमा छिन्। | unī pustakālayamā chin | She is at the library. |
+| उहाँ पुस्तकालयमा हुनुहुन्छ। | uhā̃ pustakālayamā hunuhuncha | He is at the library. |
+| हामी पुस्तकालयमा छौं। | hāmī pustakālayamā chaũ | We are at the library. |
+| उनीहरू पुस्तकालयमा छन्। | unīharū pustakālayamā chan | They are at the library. |
+| म पुस्तकालयमा छैनँ। | ma pustakālayamā chainã | I am not at the library. |
+| तँ पुस्तकालयमा छैनस्। | tã pustakālayamā chainas | You are not at the library. |
+| तिमी पुस्तकालयमा छैनौ। | timī pustakālayamā chainau | You are not at the library. |
+| तिमीहरू पुस्तकालयमा छैनौ। | timīharū pustakālayamā chainau | You are not at the library. |
+| तपाईं पुस्तकालयमा हुनुहुन्न। | tapāĩ pustakālayamā hunuhunna | You are not at the library. |
+| उ पुस्तकालयमा छैन। | u pustakālayamā chaina | He is not at the library. |
+| उनी पुस्तकालयमा छैनन्। | unī pustakālayamā chainan | She is not at the library. |
+| उहाँ पुस्तकालयमा हुनुहुन्न। | uhā̃ pustakālayamā hunuhunna | He is not at the library. |
+| हामी पुस्तकालयमा छैनौं। | hāmī pustakālayamā chainaũ | We are not at the library. |
+| उनीहरू पुस्तकालयमा छैनन्। | unīharū pustakālayamā chainan | They are not at the library. |
+
+### Past location
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| म अस्ति बजारमा थिएँ। | ma asti bajārmā thiẽ | I was at the market the day before yesterday. |
+| तँ अस्ति बजारमा थिइस्। | tã asti bajārmā thiis | You were at the market the day before yesterday. |
+| तिमी अस्ति बजारमा थियौ। | timī asti bajārmā thiyau | You were at the market the day before yesterday. |
+| तिमीहरू अस्ति बजारमा थियौ। | timīharū asti bajārmā thiyau | You were at the market the day before yesterday. |
+| तपाईं अस्ति बजारमा हुनुहुन्थ्यो। | tapāĩ asti bajārmā hunuhunthyo | You were at the market the day before yesterday. |
+| उ अस्ति बजारमा थियो। | u asti bajārmā thiyo | He was at the market the day before yesterday. |
+| उनी अस्ति बजारमा थिइन्। | unī asti bajārmā thiin | She was at the market the day before yesterday. |
+| उहाँ अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃ asti bajārmā hunuhunthyo | He was at the market the day before yesterday. |
+| हामी अस्ति बजारमा थियौं। | hāmī asti bajārmā thiyaũ | We were at the market the day before yesterday. |
+| उनीहरू अस्ति बजारमा थिए। | unīharū asti bajārmā thie | They were at the market the day before yesterday. |
+| म अस्ति बजारमा थिइनँ। | ma asti bajārmā thiinã | I was not at the market the day before yesterday. |
+| तँ अस्ति बजारमा थिइनस्। | tã asti bajārmā thiinas | You were not at the market the day before yesterday. |
+| तिमी अस्ति बजारमा थिएनौ। | timī asti bajārmā thienau | You were not at the market the day before yesterday. |
+| तिमीहरू अस्ति बजारमा थिएनौ। | timīharū asti bajārmā thienau | You were not at the market the day before yesterday. |
+| तपाईं अस्ति बजारमा हुनुहुन्नथ्यो। | tapāĩ asti bajārmā hunuhunnathyo | You were not at the market the day before yesterday. |
+| उ अस्ति बजारमा थिएन। | u asti bajārmā thiena | He was not at the market the day before yesterday. |
+| उनी अस्ति बजारमा थिइनन्। | unī asti bajārmā thiinan | She was not at the market the day before yesterday. |
+| उहाँ अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃ asti bajārmā hunuhunnathyo | He was not at the market the day before yesterday. |
+| हामी अस्ति बजारमा थिएनौं। | hāmī asti bajārmā thienaũ | We were not at the market the day before yesterday. |
+| उनीहरू अस्ति बजारमा थिएनन्। | unīharū asti bajārmā thienan | They were not at the market the day before yesterday. |
+
+### An object and its location
+
+| Nepali | Reading | Meaning |
+| --- | --- | --- |
+| यो नयाँ कापी हो। | yo nayā̃ kāpī ho | This is a new notebook. |
+| त्यो मेरो कापी होइन। | tyo mero kāpī hoina | That is not my notebook. |
+| मेरो कापी झोलामा छ। | mero kāpī jholāmā cha | My notebook is in the bag. |
+| तिम्रो कापी झोलामा छैन। | timro kāpī jholāmā chaina | Your notebook is not in the bag. |
+| यो पहिले पुस्तकालय थियो। | yo pahile pustakālaya thiyo | This used to be a library. |
+| मेरो कापी अस्ति यहाँ थिएन। | mero kāpī asti yahā̃ thiena | My notebook was not here the day before yesterday. |
+| उनी बाहिर छन्। | unī bāhira chan | That person is outside. |
+
+Check: Use the हो family for present identity and the छ family for present existence. Past statements use the थियो family while retaining person, number and respect distinctions.

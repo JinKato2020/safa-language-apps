@@ -274,7 +274,7 @@ export default function App() {
         >
           <FirstRunGate>
             <PackGate>
-              <AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['grammar', 'conversation', 'listening', 'vocabulary']} heroImages={HERO_IMAGES} />
+              <AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['grammar', 'conversation', 'listening', 'vocabulary', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders />
             </PackGate>
           </FirstRunGate>
         </SettingsProvider>

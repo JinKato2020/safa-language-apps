@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FlatList, Pressable, StyleSheet, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text } from '../Text';
 import { ModeHero, useHeroImage } from '../heroImages';
 import { useNavigation, useRoute } from '@react-navigation/native';
@@ -30,6 +31,7 @@ export default function VocabCategoryScreen() {
   const hasPoster = lessons.length > 0;
   const showPoster = hasPoster && (posterOnly || mode === 'poster');
   const heroSrc = useHeroImage('vocabulary');
+  const { top } = useSafeAreaInsets();
 
   const Header = (
     <View style={styles.head}>
@@ -52,6 +54,7 @@ export default function VocabCategoryScreen() {
   if (showPoster) {
     return (
       <FlatList
+        style={!posterOnly && heroSrc != null ? { marginTop: top } : undefined}
         contentContainerStyle={styles.container}
         ListHeaderComponent={Header}
         data={lessons}
@@ -75,6 +78,7 @@ export default function VocabCategoryScreen() {
 
   return (
     <FlatList
+      style={!posterOnly && heroSrc != null ? { marginTop: top } : undefined}
       contentContainerStyle={styles.container}
       ListHeaderComponent={Header}
       data={WORD_CATEGORIES}

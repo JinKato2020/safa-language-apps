@@ -8,7 +8,7 @@ import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Animated, Dimensions, Pressable, StyleSheet, Text, View, useColorScheme } from 'react-native';
 import Svg, { Circle, Line, Path, Rect } from 'react-native-svg';
 import * as ScreenOrientation from 'expo-screen-orientation';
@@ -106,7 +106,7 @@ function HeaderTitle() {
 }
 
 // ─── 各タブのスタック ─────────────────────────
-function makeDefaultStackOptions(HeaderTitle: () => ReactElement) {
+function makeDefaultStackOptions(HeaderTitle: () => ReactElement, hideModeHeaders = false) {
   return {
     headerStyle: { backgroundColor: colors.bg },
     headerTitleStyle: { fontWeight: '600' as const },
@@ -116,8 +116,8 @@ function makeDefaultStackOptions(HeaderTitle: () => ReactElement) {
     // 戻るボタンは全言語で「＜」のみ (前画面タイトル文字を出さない)
     headerBackButtonDisplayMode: 'minimal' as const,
     contentStyle: { backgroundColor: colors.bg },
-    headerTitle: () => <HeaderTitle />,
-    headerRight: () => <HeaderGearButton />,
+    headerTitle: hideModeHeaders ? undefined : () => <HeaderTitle />,
+    headerRight: hideModeHeaders ? undefined : () => <HeaderGearButton />,
   };
 }
 
@@ -201,24 +201,32 @@ function DictIcon({ color, focused }: { color: string; focused: boolean }) {
 }
 
 // アプリ別タブ構成。tabs 未指定なら現状の5タブ(App A/C はこのまま=無改修)。
-export type TabKey = 'home' | 'conversation' | 'grammar' | 'listening' | 'vocabulary' | 'vocation' | 'short' | 'long' | 'dict';
+export type TabKey = 'home' | 'conversation' | 'grammar' | 'listening' | 'vocabulary' | 'vocation' | 'short' | 'long' | 'dict' | 'settings';
 const DEFAULT_TABS: TabKey[] = ['home', 'conversation', 'grammar', 'listening', 'vocabulary'];
 
-function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListening, dictData }: { defaultStackOptions: any; progressStorageKey: string; tabs?: TabKey[]; posterInListening?: boolean; dictData?: DictData }) {
+function SettingsIcon({ color, focused }: { color: string; focused: boolean }) {
+  return <TabIcon color={color} focused={focused}><Circle cx={12} cy={12} r={3} /><Path d="m9 3-.5 2-2 1-2-.5-2 3 1.5 1.5v3L2.5 15l2 3 2-.5 2 1 .5 2h4l.5-2 2-1 2 .5 2-3-1.5-1.5v-3L20 9l-2-3-2 .5-2-1-.5-2z" /></TabIcon>;
+}
+
+function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListening, dictData, hideModeHeaders }: { defaultStackOptions: any; progressStorageKey: string; tabs?: TabKey[]; posterInListening?: boolean; dictData?: DictData; hideModeHeaders?: boolean }) {
   const { bottom } = useSafeAreaInsets();
   const { t } = useI18n();
   const ss = useGlobalScaleStyle();
   const list = tabs && tabs.length ? tabs : DEFAULT_TABS;
+  const modeStackOptions = hideModeHeaders
+    ? ({ route }: { route: { name: string } }) => ({ ...defaultStackOptions, headerShown: route.name !== 'Theme' && route.name !== 'VocabCategory' })
+    : defaultStackOptions;
   const defs = {
     home:         { name: 'HomeTab',         title: t('nav.home'),         icon: HomeIcon,       render: () => <HomeScreen storageKey={progressStorageKey} /> },
-    conversation: { name: 'ConversationTab', title: t('nav.conversation'), icon: ChatIcon,       render: () => <ConversationStackNav defaultStackOptions={defaultStackOptions} /> },
-    grammar:      { name: 'GrammarTab',      title: t('nav.grammar'),      icon: GrammarIcon,    render: () => <GrammarStackNav defaultStackOptions={defaultStackOptions} /> },
-    listening:    { name: 'ListeningTab',    title: t('nav.listening'),    icon: HeadphonesIcon, render: () => <ListeningStackNav defaultStackOptions={defaultStackOptions} posterInListening={posterInListening} /> },
-    vocabulary:   { name: 'VocabularyTab',   title: t('nav.vocabulary'),   icon: CardsIcon,      render: () => <VocabularyStackNav defaultStackOptions={defaultStackOptions} /> },
+    conversation: { name: 'ConversationTab', title: t('nav.conversation'), icon: ChatIcon,       render: () => <ConversationStackNav defaultStackOptions={modeStackOptions} /> },
+    grammar:      { name: 'GrammarTab',      title: t('nav.grammar'),      icon: GrammarIcon,    render: () => <GrammarStackNav defaultStackOptions={modeStackOptions} /> },
+    listening:    { name: 'ListeningTab',    title: t('nav.listening'),    icon: HeadphonesIcon, render: () => <ListeningStackNav defaultStackOptions={modeStackOptions} posterInListening={posterInListening} /> },
+    vocabulary:   { name: 'VocabularyTab',   title: t('nav.vocabulary'),   icon: CardsIcon,      render: () => <VocabularyStackNav defaultStackOptions={modeStackOptions} /> },
     short:        { name: 'ShortTab',        title: t('nav.short'),        icon: ShortIcon,      render: () => <ShortStackNav defaultStackOptions={defaultStackOptions} /> },
     long:         { name: 'LongTab',         title: t('nav.long'),         icon: LongIcon,       render: () => <ScaffoldScreen area="chobun" /> },
     vocation:     { name: 'VocationTab',     title: t('nav.vocation'),     icon: VocationIcon,   render: () => <ScaffoldScreen area="vocation" /> },
     dict:         { name: 'DictTab',         title: t('nav.dict'),         icon: DictIcon,       render: () => <DictScreen data={dictData} /> },
+    settings:     { name: 'SettingsTab',     title: t('settings.title'),   icon: SettingsIcon,   render: () => <SafeAreaView edges={['top']} style={{ flex: 1, backgroundColor: colors.bg }}><SettingsScreen /></SafeAreaView> },
   };
   return (
     <Tab.Navigator
@@ -314,6 +322,8 @@ export type AppShellProps = {
   dictData?: DictData;
   /** 文法モードの「教材(ルール解説)」データ(母語別)。未注入なら教材ボタン非表示(App B/C は出さない)。 */
   heroImages?: HeroImages | null;
+  /** モード一覧のヘッダーを隠し、アプリ名・歯車を外す。詳細画面の戻る操作は保持。 */
+  hideModeHeaders?: boolean;
 };
 
 // スプラッシュは「アプリ起動時の1回だけ」。言語切替で PackGate が data=null にして
@@ -321,9 +331,9 @@ export type AppShellProps = {
 // (毎回スプラッシュ動画が再生されて白画面で固まって見えるのを防ぐ)。
 let splashShownOnce = false;
 
-export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData, heroImages }: AppShellProps) {
+export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData, heroImages, hideModeHeaders = false }: AppShellProps) {
   const [splashDone, setSplashDone] = useState(splashShownOnce || splashSource == null);
-  const defaultStackOptions = useRef(makeDefaultStackOptions(HeaderTitle)).current;
+  const defaultStackOptions = useRef(makeDefaultStackOptions(HeaderTitle, hideModeHeaders)).current;
   const { themeMode } = useSettings();
   const sys = useColorScheme();
   const scheme = themeMode === 'system' ? (sys ?? 'light') : themeMode;
@@ -365,7 +375,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                <HeroImagesProvider value={heroImages}>
                 <RootStack.Navigator screenOptions={{ headerShown: false }}>
                   <RootStack.Screen name="MainTabs">
-                    {() => <MainTabs defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} />}
+                    {() => <MainTabs defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} hideModeHeaders={hideModeHeaders} />}
                   </RootStack.Screen>
                   <RootStack.Screen name="Paywall" component={PaywallScreen} options={{ presentation: 'modal' }} />
                   <RootStack.Screen name="GrammarGuide" component={GrammarGuideScreen} />

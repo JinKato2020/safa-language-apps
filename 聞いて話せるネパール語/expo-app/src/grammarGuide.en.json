@@ -2,3452 +2,2787 @@
  "1": [
   {
    "type": "goal",
-   "text": "Say what a person or thing is with “A is B” (and “is not”)."
+   "text": "Identify a person or an object"
   },
   {
    "type": "h",
-   "text": "1. हो connects two things: A = B"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "It links a noun to another noun. Nepali does not make the same plain-versus-polite distinction in this word as Japanese does, but its form changes with the subject."
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Subject",
-    "Form of हो",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "I म",
-     "हुँ",
-     "hũ"
-    ],
-    [
-     "You तिमी",
-     "हौ",
-     "hau"
-    ],
-    [
-     "He / this उ／यो",
-     "हो",
-     "ho"
-    ],
-    [
-     "You / that person (respectful) तपाईं／उहाँ",
-     "हुनुहुन्छ",
-     "hunuhuncha"
-    ]
-   ]
+   "text": "Use this pattern to introduce your role or identify an object. It connects a subject with a noun description. Keep it separate from statements about location or a temporary condition."
   },
   {
    "type": "h",
-   "text": "2. Demonstratives: this and that"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
     "Nepali",
-    "Romanized",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "यो",
-     "yo",
-     "This; this … (near the speaker)"
+     "तिमीहरू विद्यार्थी हौ।",
+     "timīharū vidyārthī hau",
+     "You are students."
     ],
     [
-     "त्यो",
-     "tyo",
-     "That; that … (farther away)"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "3. Affirmative and negative: the negative is होइन"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "यो सुन्तला **हो**।",
+     "यो सुन्तला हो।",
      "yo suntalā ho",
      "This is an orange."
     ],
     [
-     "यो किताब **हो**।",
-     "yo kitāb ho",
-     "This is a book."
-    ],
-    [
-     "यो किताब **होइन**।",
-     "yo kitāb hoina",
-     "This is not a book."
-    ],
-    [
-     "म डाक्टर **होइनँ**।",
-     "ma ḍākṭar hoinã",
-     "I am not a doctor."
+     "त्यो मेरो झोला होइन।",
+     "tyo mero jholā hoina",
+     "That is not my bag."
     ]
    ]
   },
   {
-   "type": "h",
-   "text": "4. Yes, no, and questions"
-  },
-  {
-   "type": "p",
-   "text": "- **Raise your voice at the end to ask a question**: यो सुन्तला **हो?** (Is this an orange?)"
-  },
-  {
-   "type": "p",
-   "text": "- You can answer directly with **हो (yes) / होइन (no)**."
-  },
-  {
-   "type": "h",
-   "text": "5. जी: a respectful addition to a name"
-  },
-  {
-   "type": "p",
-   "text": "Use it to show respect to the person you are addressing or talking about. It can follow a first name or a family name: **कार्कीजी** (Mr./Ms. Karki)."
-  },
-  {
    "type": "note",
-   "text": "हो is for **identity or membership: A = B**. For existence, location, and adjective descriptions, use **छ**, introduced next. Keep the pairs together: हो → **होइन**; छ → **छैन**."
+   "text": "The ending changes with the subject. Identity statements use the होइन family for negatives, not the छैन family."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Change the occupation or nationality, then make a matching introduction and question."
   }
  ],
  "2": [
   {
    "type": "goal",
-   "text": "Say that something exists, say where someone or something is, and say what you have."
+   "text": "Say where someone is and what they have"
   },
   {
    "type": "h",
-   "text": "1. छ expresses existence and location; the negative is छैन"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "Of the three forms of हुनु introduced here, **छ** expresses “there is / there are.” Its negative is **छैन**."
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Subject",
-    "छ",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "I म",
-     "छु",
-     "chu"
-    ],
-    [
-     "He / this उ／यो",
-     "छ",
-     "cha"
-    ],
-    [
-     "She (respectful) उनी",
-     "छिन्",
-     "chin"
-    ],
-    [
-     "We हामी",
-     "छौं",
-     "chaũ"
-    ]
-   ]
+   "text": "For a lost item or a meeting, decide what is located where. Place nouns take मा, while यहाँ, त्यहाँ and कहाँ already function as place expressions. Use सँग to identify the person who has something."
   },
   {
    "type": "h",
-   "text": "2. Place words: here, there, and where"
-  },
-  {
-   "type": "p",
-   "text": "These words **already function as adverbs**, so **do not add -मा**."
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
     "Nepali",
-    "Romanized",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "यहाँ",
-     "yahā̃",
-     "Here"
+     "तिमीहरू घरमा छौ।",
+     "timīharū gharmā chau",
+     "You are at home."
     ],
     [
-     "त्यहाँ",
-     "tyahā̃",
-     "There / over there"
+     "यहाँ किताब छ।",
+     "yahā̃ kitāb cha",
+     "There is a book here."
     ],
     [
-     "कहाँ",
-     "kahā̃",
-     "Where"
-    ]
-   ]
-  },
-  {
-   "type": "p",
-   "text": "With a **noun**, however, add the place postposition **-मा (in / at / on)**: टेबल**मा** (on the table), घर**मा** (at home)."
-  },
-  {
-   "type": "h",
-   "text": "3. Examples of existence and location"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "त्यहाँ कापी **छ**।",
-     "tyahā̃ kāpī cha",
-     "There is a notebook there."
-    ],
-    [
-     "टेबलमा किताब **छैन**।",
-     "ṭebalmā kitāb chaina",
-     "There is no book on the table."
-    ],
-    [
-     "म घरमा **छु**।",
-     "ma gharmā chu",
-     "I am at home."
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "4. Possession: “-सँग … छ”"
-  },
-  {
-   "type": "p",
-   "text": "Nepali expresses “have” with **-सँग (with) + छ**, rather than a separate verb meaning “have” in this pattern."
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "तपाईंसँग किताब **छ?**",
-     "tapāī̃sã̄ga kitāb cha?",
-     "Do you have a book?"
-    ],
-    [
-     "मसँग पैसा **छैन**।",
-     "masã̄ga paisā chaina",
-     "I do not have any money."
+     "तिमीहरू कहाँ छौ?",
+     "timīharū kahā̃ chau?",
+     "Where are you?"
     ]
    ]
   },
   {
    "type": "note",
-   "text": "**Choosing between हो and छ is a key step**: identity (“A is B”) = **हो** (negative होइन); existence, location, and state = **छ** (negative छैन)."
+   "text": "In a possession statement, the possessed item determines the construction. Distinguish मसँग ... छ from म ... छु."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Ask and answer about home, school or the market. Then ask the same person about one possession."
   }
  ],
  "3": [
   {
    "type": "goal",
-   "text": "Describe a quality or state with an adjective: “Something is …”."
+   "text": "Describe a present condition"
   },
   {
    "type": "h",
-   "text": "1. Adjective + छ describes something"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "**With an adjective, छ/छैन means “is / is not,” rather than “exists / does not exist”** (the distinction used in CD Express)."
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "यो फूल सुन्दर **छ**。",
-     "yo phūl sundar cha",
-     "This flower is beautiful."
-    ],
-    [
-     "त्यो किताब पुरानो **छ**。",
-     "tyo kitāb purāno cha",
-     "That book is old."
-    ],
-    [
-     "यो खाना पिरो **छैन**。",
-     "yo khānā piro chaina",
-     "This food is not spicy."
-    ]
-   ]
+   "text": "Use an adjective to describe taste, size or mood. Name the subject, give the description and finish with a form from the छ family. This makes the quality or condition the focus of the sentence."
   },
   {
    "type": "h",
-   "text": "2. Common adjectives"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
     "Nepali",
-    "Romanized",
-    "Meaning",
-    "Nepali",
-    "Romanized",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "सानो",
-     "sāno",
-     "Small",
-     "ठूलो",
-     "ṭhūlo",
-     "Big"
+     "के यो पानी चिसो छ?",
+     "ke yo pānī ciso cha?",
+     "Is this water cold?"
     ],
     [
-     "नयाँ",
-     "nayā̃",
-     "New",
-     "पुरानो",
-     "purāno",
-     "Old"
+     "तँ खुसी छस्?",
+     "tã khusī chas?",
+     "Are you happy?"
     ],
     [
-     "राम्रो",
-     "rāmro",
-     "Good",
-     "नराम्रो",
-     "narāmro",
-     "Bad"
+     "हामी तयार छौं।",
+     "hāmī tayār chaũ",
+     "We are ready."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "Use **हो** from Theme 1 to connect a noun to a noun, and **छ** here to describe something with an adjective. Remember: **हो** = identity; **छ** = existence or state."
+   "text": "With a person as subject, choose the appropriate form of छ. Do not confuse an adjective description with a noun identity such as being a doctor."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Describe two qualities of one dish, then try the opposite descriptions."
   }
  ],
  "4": [
   {
    "type": "goal",
-   "text": "Talk about change and general facts with “becomes” and “generally is.”"
+   "text": "Distinguish regular situations from changes"
   },
   {
    "type": "h",
-   "text": "1. The third form of हुनु is हुन्छ"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "Although all three belong to the same verb हुनु, **हो (identity)** and **छ (a current state)** differ from **हुन्छ**, which expresses what **generally happens or becomes true**. It conjugates **like other verbs**; हुन्छ is the third-person singular form."
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Use",
-    "Example",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "Change: “becomes”",
-     "सस्तो **हुन्छ**",
-     "Becomes cheaper"
-    ],
-    [
-     "Beginning / a general event",
-     "काम शुरू **हुन्छ**",
-     "Work starts"
-    ],
-    [
-     "A change over time",
-     "चाँडै रात **हुन्छ**",
-     "It will be night soon."
-    ]
-   ]
+   "text": "Compare a condition right now with something that happens regularly in a season or on a weekday. हुन्छ can describe a change or a general outcome. बन्नु is also used for becoming a profession or taking on a role."
   },
   {
    "type": "h",
-   "text": "2. भयो is the past: “became”"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "चिसो **भयो**。",
-     "ciso bhayo",
-     "It became cold."
+     "आइतबार बजार बन्द हुन्छ।",
+     "āitabār bajār banda huncha",
+     "The market is closed on Sundays."
     ],
     [
-     "उहाँ डाक्टर **बन्नुभयो**。",
-     "uhā̃ ḍākṭar bannubhayo",
-     "He became a doctor. (For becoming something by role, use बन्नु.)"
+     "सबै दिन उस्तै हुँदैनन्।",
+     "sabai din ustai hũdainan",
+     "Not every day is the same."
+    ],
+    [
+     "उहाँ शिक्षक बन्नुभयो।",
+     "uhā̃ śikṣak bannubhayo",
+     "He became a teacher."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "Keep the three uses separate: **हो** = what something is (identity); **छ** = its current existence or state; **हुन्छ** = what generally happens or changes. Use **बन्नु** for becoming something by role."
+   "text": "Being cold now and getting cold in winter take different perspectives. भयो is one form used for a change that has happened."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Contrast now with generally for the same condition, then describe one change since yesterday."
   }
  ],
  "5": [
   {
    "type": "goal",
-   "text": "Use Nepali postpositions to show how words relate to each other. These work much like Japanese particles; English usually uses prepositions instead."
+   "text": "Show relationships with postpositions"
   },
   {
    "type": "h",
-   "text": "1. Put a postposition after a noun and write it attached to that word"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Postposition",
-    "Romanized",
-    "Meaning / function",
-    "Example"
-   ],
-   "rows": [
-    [
-     "-को",
-     "-ko",
-     "Of / belonging to",
-     "किताब**को** (of the book)"
-    ],
-    [
-     "-मा",
-     "-mā",
-     "In / at / on (place or time)",
-     "घर**मा** (at home)"
-    ],
-    [
-     "-लाई",
-     "-lāī",
-     "To; marks a person or object affected",
-     "साथी**लाई** (to a friend / a friend as object)"
-    ],
-    [
-     "-बाट",
-     "-bāṭa",
-     "From",
-     "काठमाडौं**बाट** (from Kathmandu)"
-    ],
-    [
-     "-सँग",
-     "-sã̄ga",
-     "With / together with",
-     "साथी**सँग** (with a friend)"
-    ],
-    [
-     "-ले",
-     "-le",
-     "Marks the doer (ergative); with / by (means)",
-     "कलम**ले** (with a pen)"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. Possessive forms change with the pronoun"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "My",
-    "Your (familiar)",
-    "His",
-    "Of this",
-    "Of that",
-    "Our",
-    "Your (respectful)"
-   ],
-   "rows": [
-    [
-     "मेरो",
-     "तिम्रो",
-     "उसको",
-     "यसको",
-     "त्यसको",
-     "हाम्रो",
-     "तपाईंको"
-    ],
-    [
-     "mero",
-     "timro",
-     "usko",
-     "yesko",
-     "tyesko",
-     "hāmro",
-     "tapāī̃ko"
-    ]
-   ]
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "Note: For **तपाईं／उहाँ**, add -को directly (तपाईंको)."
+   "text": "Use location, recipient, starting point and means as separate building blocks. Nepali marks these relationships after a noun or pronoun. Practice one relationship in a short sentence before combining several."
   },
   {
    "type": "h",
-   "text": "3. Examples in sentences"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "म साथी**सँग** घर**मा** बस्छु।",
-     "ma sāthīsã̄ga gharmā baschu",
-     "I live at home with a friend."
+     "हाम्रो स्कूल यहाँ छ।",
+     "hāmro skūl yahā̃ cha",
+     "Our school is here."
     ],
     [
-     "**मलाई** पानी देऊ।",
-     "malāī pānī deu",
-     "Give me some water."
+     "म नेपालबाट आएँ।",
+     "ma nepālbāṭa āẽ",
+     "I came from Nepal."
+    ],
+    [
+     "यो बस काठमाडौं जान्छ।",
+     "yo bas kāṭhmāḍaũ jāncha",
+     "This bus goes to Kathmandu."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "**The place adverbs यहाँ/त्यहाँ/कहाँ do not take -मा** (Theme 2). **-ले (ergative)** is needed for past transitive actions (Theme 11). **-लाई** can mark both a recipient (“to someone”) and a person as an object."
+   "text": "Some pronouns change shape before a postposition. Distinguish म, मेरो, मलाई and मैले by their roles."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Start with a short sentence and add who with, where and by what means, using a friend, home and a pen."
   }
  ],
  "6": [
   {
    "type": "goal",
-   "text": "Ask “what,” “where,” “how much,” “when,” “why,” and “who.”"
+   "text": "Ask for the information you need"
   },
   {
    "type": "h",
-   "text": "1. Question words begin with क"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "These words form a related group, rather like English “wh-” words. Leave the question word in the position where the answer would go, as in Japanese."
+   "text": "Decide what information you need: an object, a person or a place. Choose a question word such as के, को or कहाँ and put it where that information belongs. Do not rearrange the sentence into English question order."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Question word",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "के",
-     "ke",
-     "What"
+     "तिमी कहिले आउँछौ?",
+     "timī kahile āũchau?",
+     "When will you come?"
     ],
     [
-     "कहाँ",
-     "kahā̃",
-     "Where"
+     "तिमीहरू कसरी जान्छौ?",
+     "timīharū kasarī jānchau?",
+     "How will you go?"
     ],
     [
-     "कति",
-     "kati",
-     "How many / how much"
-    ],
-    [
-     "कहिले",
-     "kahile",
-     "When"
-    ],
-    [
-     "किन",
-     "kina",
-     "Why"
-    ],
-    [
-     "को",
-     "ko",
-     "Who"
-    ],
-    [
-     "कसरी",
-     "kasarī",
-     "How"
+     "हामी कहाँ बसौं?",
+     "hāmī kahā̃ basaũ?",
+     "Where shall we sit?"
     ]
    ]
-  },
-  {
-   "type": "h",
-   "text": "2. Examples"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "यो **के** हो?",
-     "yo ke ho?",
-     "What is this?"
-    ],
-    [
-     "शौचालय **कहाँ** छ?",
-     "śaucālaya kahā̃ cha?",
-     "Where is the toilet?"
-    ],
-    [
-     "यो **कति** पर्छ?",
-     "yo kati parcha?",
-     "How much does this cost?"
-    ],
-    [
-     "तिमी **किन** आयौ?",
-     "timī kina āyau?",
-     "Why did you come?"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "3. Question intonation"
-  },
-  {
-   "type": "p",
-   "text": "- In a yes/no question **without a question word**, **raise your voice at the end** (यो सुन्तला हो?)."
-  },
-  {
-   "type": "p",
-   "text": "- With a **question word**, you do not need to force a rise at the end. A slight rise can sound gentler."
   },
   {
    "type": "note",
-   "text": "Unlike English, **do not move the question word to the beginning**. Choose the copula (हो/छ) using Themes 1 and 2."
+   "text": "At the beginning of a sentence, के can mark a yes/no question rather than ask what an object is."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "For one shopping situation, ask separately about price, ownership, location and reason."
   }
  ],
  "7": [
   {
    "type": "goal",
-   "text": "Choose the right subject and level of politeness. **The verb form also changes** with your relationship to the person."
+   "text": "Match your wording to the person"
   },
   {
    "type": "h",
-   "text": "1. First person"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "म (ma = I) / हामी (hāmī = we)"
+   "text": "The same message takes different subject–verb combinations with a friend and with someone you have just met. Learn the whole pattern rather than changing only the pronoun."
   },
   {
    "type": "h",
-   "text": "2. Three levels of “you,” plus the highest level"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
     "Nepali",
-    "Romanized",
-    "Politeness",
-    "Who it is used with"
+    "Reading",
+    "Meaning"
    ],
    "rows": [
     [
-     "तँ",
-     "tã",
-     "Very intimate / to someone lower in status",
-     "Small children or very close relationships (**can be rude if used with the wrong person**)"
+     "तिमीहरू काम गर्छौ।",
+     "timīharū kām garchau",
+     "You work."
     ],
     [
-     "तिमी",
-     "timī",
-     "Familiar",
-     "Friends, family, younger people"
+     "म हरेक दिन व्यायाम गर्छु।",
+     "ma harek din vyāyām garchu",
+     "I exercise every day."
     ],
     [
-     "तपाईं",
-     "tapāī̃",
-     "Polite",
-     "Seniors and people you have just met (**the safest choice when unsure**)"
-    ],
-    [
-     "हजुर",
-     "hajur",
-     "Most respectful",
-     "People of much higher status; customer service"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "3. “He,” “she,” and “that person” also change with respect"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Nepali",
-    "Romanized",
-    "Nuance"
-   ],
-   "rows": [
-    [
-     "उ／ऊ",
-     "u",
-     "He / she (neutral or somewhat casual)"
-    ],
-    [
-     "उनी",
-     "unī",
-     "That person (some respect)"
-    ],
-    [
-     "उहाँ",
-     "uhā̃",
-     "That person (respectful)"
-    ],
-    [
-     "यो／त्यो",
-     "yo／tyo",
-     "This person / that person, when pointing; also used for things"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "4. The subject changes the verb ending: all persons, present गर्नु (“do”)"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Subject",
-    "Present affirmative",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "म (I)",
-     "गर्छु",
-     "garchu"
-    ],
-    [
-     "तँ (you, very intimate / lower status)",
-     "गर्छस्",
-     "garchas"
-    ],
-    [
-     "तिमी (you, familiar)",
-     "गर्छौ",
-     "garchau"
-    ],
-    [
-     "तपाईं／उहाँ (respectful)",
-     "गर्नुहुन्छ",
-     "garnuhuncha"
-    ],
-    [
-     "उ (he / she)",
-     "गर्छ",
-     "garcha"
-    ],
-    [
-     "उनी (she, with respect)",
-     "गर्छिन्",
-     "garchin"
-    ],
-    [
-     "हामी (we)",
-     "गर्छौं",
-     "garchaũ"
-    ],
-    [
-     "उनीहरू (they)",
-     "गर्छन्",
-     "garchan"
+     "उहाँ मेरो शिक्षक हुनुहुन्छ।",
+     "uhā̃ mero śikṣak hunuhuncha",
+     "He is my teacher."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "When unsure, use **तपाईं** for “you.” **तँ** is only for very close relationships or someone lower in status and can be rude. For the verb themes that follow, start with **तपाईं (respectful) and म/उ (non-honorific)**, then add **तँ/तिमी** when ready."
+   "text": "तँ is appropriate only in particular relationships. When unsure, use तपाईं and match it with a respectful verb form."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Make two versions of one question: one for a friend and one for a new acquaintance."
   }
  ],
  "8": [
   {
    "type": "goal",
-   "text": "Talk about habits, general facts, and the near future with the present form."
+   "text": "Describe everyday actions"
   },
   {
    "type": "h",
-   "text": "1. Start with the dictionary form and stem"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "The dictionary form of a verb ends in **-नु** (the dictionary form, or nu-infinitive): गर्नु (do), लेख्नु (write)."
-  },
-  {
-   "type": "p",
-   "text": "Remove **-नु** to find the **stem**: गर् / लेख्."
+   "text": "Use the present form for routines such as getting up, eating and working. Dictionary forms and sentence forms differ, so practice each verb with a subject."
   },
   {
    "type": "h",
-   "text": "2. The present covers both habits and the near future"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "म बिहान ७ बजे **उठ्छु**।",
-     "ma bihāna sāt baje uṭhchu",
-     "I get up at seven in the morning. (Habit)"
+     "तिमीहरू काम गर्छौ।",
+     "timīharū kām garchau",
+     "You work."
     ],
     [
-     "म भोलि ७ बजे **उठ्छु**।",
-     "ma bholi sāt baje uṭhchu",
-     "I will get up at seven tomorrow. (Future)"
+     "म हरेक दिन व्यायाम गर्छु।",
+     "ma harek din vyāyām garchu",
+     "I exercise every day."
+    ],
+    [
+     "उनी किताब पढ्छिन्।",
+     "unī kitāb paḍhchin",
+     "She reads books."
     ]
    ]
-  },
-  {
-   "type": "h",
-   "text": "3. Conjugation across persons: stem + छ-family endings, using गर्नु (“do”)"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Subject",
-    "Form",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "म (I)",
-     "गर्**छु**",
-     "garchu"
-    ],
-    [
-     "तँ (you, very intimate / lower status)",
-     "गर्**छस्**",
-     "garchas"
-    ],
-    [
-     "तिमी (you, familiar)",
-     "गर्**छौ**",
-     "garchau"
-    ],
-    [
-     "उ (he / she)",
-     "गर्**छ**",
-     "garcha"
-    ],
-    [
-     "उनी (she, with respect)",
-     "गर्**छिन्**",
-     "garchin"
-    ],
-    [
-     "हामी (we)",
-     "गर्**छौं**",
-     "garchaũ"
-    ],
-    [
-     "उनीहरू (they)",
-     "गर्**छन्**",
-     "garchan"
-    ]
-   ]
-  },
-  {
-   "type": "p",
-   "text": "Note: Verbs with a vowel-final stem, such as पिउनु (drink), use **ँछ**: म **पिउँछु** (piũchu), हामी **पिउँछौं**."
-  },
-  {
-   "type": "h",
-   "text": "4. Respectful तपाईं／उहाँ: dictionary form + हुन्छ"
-  },
-  {
-   "type": "p",
-   "text": "Attach it directly to the dictionary form rather than adding the ordinary stem endings."
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "कार्कीजी भात **खानुहुन्छ**।",
-     "kārkījī bhāt khānuhuncha",
-     "Mr./Ms. Karki eats rice."
-    ],
-    [
-     "तपाईं नेपाली **बोल्नुहुन्छ**।",
-     "tapāī̃ nepālī bolnuhuncha",
-     "You speak Nepali."
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "5. The versatile verb गर्नु (“do”): noun + गर्नु"
-  },
-  {
-   "type": "p",
-   "text": "Like Japanese “noun + do,” this pattern makes many useful verbs: काम **गर्नु** (work), माया **गर्नु** (love), शुरू **गर्नु** (start)."
   },
   {
    "type": "note",
-   "text": "The present form can mean both “usually do” and “will do soon.” Make the future meaning **clear** by adding a time word such as **भोलि (tomorrow)** (Theme 13)."
+   "text": "Respectful forms follow a different pattern from ordinary endings. Remember to change the ending when you change the subject."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Describe three parts of your morning, then say the same things about a friend or family member."
   }
  ],
  "9": [
   {
    "type": "goal",
-   "text": "Say that you or someone else does not do something."
+   "text": "Say what someone does not do"
   },
   {
    "type": "h",
-   "text": "1. Negative conjugation: गर्नु (“do”), all persons"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "The affirmative **छ-family** endings change to the **दिन／दैन family** in the negative."
+   "text": "To negate a present action, change the verb form. Rather than adding an English-style not, learn the affirmative and negative as a pair for each subject."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Subject",
-    "Affirmative",
-    "Negative",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "म (I)",
-     "गर्छु",
-     "गर्**दिनँ**",
-     "gardinã"
-    ],
-    [
-     "तँ (you, very intimate / lower status)",
-     "गर्छस्",
-     "गर्**दैनस्**",
-     "gardainas"
-    ],
-    [
-     "तिमी (you, familiar)",
-     "गर्छौ",
-     "गर्**दैनौ**",
-     "gardainau"
-    ],
-    [
-     "तपाईं (respectful)",
-     "गर्नुहुन्छ",
-     "गर्**नुहुन्न**",
-     "garnuhunna"
-    ],
-    [
-     "उ (he)",
-     "गर्छ",
-     "गर्**दैन**",
-     "gardaina"
-    ],
-    [
-     "उनी (she, with respect)",
-     "गर्छिन्",
-     "गर्**दिनन्**",
-     "gardinan"
-    ],
-    [
-     "हामी (we)",
-     "गर्छौं",
-     "गर्**दैनौं**",
-     "gardainaũ"
-    ],
-    [
-     "उनीहरू (they)",
-     "गर्छन्",
-     "गर्**दैनन्**",
-     "gardainan"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. The respectful negative is dictionary form + हुन्न"
-  },
-  {
-   "type": "p",
-   "text": "कार्कीजी भात **खानुहुन्न**। (karkījī bhāt khānuhunna = Mr./Ms. Karki does not eat rice.)"
-  },
-  {
-   "type": "h",
-   "text": "3. Examples"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "म चिट्ठी **लेख्दिनँ**।",
-     "ma ciṭṭhī lekhdinã",
-     "I do not write letters."
+     "तिमीहरू आज काम गर्दैनौ।",
+     "timīharū āja kām gardainau",
+     "You do not work today."
     ],
     [
-     "उ अंग्रेजी **बोल्दैन**।",
-     "u aṅgrejī boldaina",
-     "He does not speak English."
+     "म राति काम गर्दिनँ।",
+     "ma rāti kām gardinã",
+     "I do not work at night."
+    ],
+    [
+     "तिमी मासु खाँदैनौ?",
+     "timī māsu khā̃dainau?",
+     "Do you not eat meat?"
     ]
    ]
   },
   {
    "type": "note",
-   "text": "To say “do not,” **change the verb itself to its negative form**; do not add a separate word for “not.” The first-person singular uses **-दिनँ**; the third person uses **-दैन**."
+   "text": "An action negative is different from छैन for nonexistence. Check the respectful negative forms as well."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Say one thing you usually do and one you do not do, then ask someone about both."
   }
  ],
  "10": [
   {
    "type": "goal",
-   "text": "Say that an action is happening right now."
+   "text": "Describe an action in progress"
   },
   {
    "type": "h",
-   "text": "1. Pattern: progressive participle -दै + छ (“be doing”)"
+   "text": "Situation and meaning"
+  },
+  {
+   "type": "p",
+   "text": "Use a progressive form containing दै for an action happening at the moment. Adding अहिले helps distinguish it from a daily routine."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "श्याम अहिले खाना **खाँदैछ**।",
-     "śyām ahile khānā khā̃daicha",
-     "Shyam is eating now."
+     "तिमीहरू अहिले काम गर्दैछौ।",
+     "timīharū ahile kām gardaichau",
+     "You are working now."
     ],
     [
-     "म पानी **पिउँदैछु**।",
-     "ma pānī piũdaichu",
-     "I am drinking water."
+     "म व्यायाम गर्दैछु।",
+     "ma vyāyām gardaichu",
+     "I am exercising."
+    ],
+    [
+     "तिमीहरू के पढ्दैछौ?",
+     "timīharū ke paḍhdaichau?",
+     "What are you reading?"
     ]
    ]
   },
   {
-   "type": "h",
-   "text": "2. It can also describe the near future"
-  },
-  {
-   "type": "p",
-   "text": "म भोलि नेपाल **जाँदैछु**। (ma bholi nepāl jā̃daichu = I am going to Nepal tomorrow.)"
-  },
-  {
-   "type": "h",
-   "text": "3. For “not doing,” this guide uses a perfect negative"
-  },
-  {
-   "type": "p",
-   "text": "This guide treats a negative ongoing situation as no longer in progress and uses the **present perfect negative** (〜पढेको छैन) rather than a progressive negative (Theme 15)."
-  },
-  {
-   "type": "p",
-   "text": "रामले अहिले किताब **पढेको छैन**। (Ram is not reading a book now.)"
-  },
-  {
-   "type": "h",
-   "text": "4. “Keep doing” is different: -इरहनु"
-  },
-  {
-   "type": "p",
-   "text": "**पढिरहन्छ** (paḍhirahancha = keeps reading) is a compound verb for continuation, distinct from the progressive (-दैछ)."
-  },
-  {
    "type": "note",
-   "text": "The progressive uses **-दै + छ** (खाँदैछ). Do **not add -ले** to the doer even in a past progressive; ले belongs to the past completed transitive pattern covered in Theme 11."
+   "text": "Distinguish an ongoing action from a state left by a completed action. Do not add ले merely because the action verb is transitive."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Describe two actions happening around you, then turn one into a question."
   }
  ],
  "11": [
   {
    "type": "goal",
-   "text": "Say what happened in the past. **Here comes -ले, one of the biggest steps in learning Nepali.**"
+   "text": "Report a completed event"
   },
   {
    "type": "h",
-   "text": "1. Making the past: stem (or alternate past stem) + past endings"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Subject",
-    "Past ending",
-    "Example (do / read)",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "म (I)",
-     "-**एँ**",
-     "गरेँ／पढेँ",
-     "garẽ／paḍhẽ"
-    ],
-    [
-     "तँ (you, very intimate / lower status)",
-     "-**इस्**",
-     "गरिस्",
-     "garis"
-    ],
-    [
-     "तिमी (you, familiar)",
-     "-**यौ**",
-     "गर्यौ",
-     "garyau"
-    ],
-    [
-     "उ (he)",
-     "-**यो**",
-     "गर्यो／सुत्यो",
-     "garyo／sutyo"
-    ],
-    [
-     "उनी (she, with respect)",
-     "-**इन्**",
-     "गरिन्／गइन्",
-     "garin／gain"
-    ],
-    [
-     "हामी (we)",
-     "-**यौं**",
-     "गर्यौं／हेर्यौं",
-     "garyaũ／heryaũ"
-    ],
-    [
-     "तपाईं/उहाँ (respectful)",
-     "-**नुभयो**",
-     "गर्नुभयो",
-     "garnubhayo"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. Essential: add -ले to the doer of a transitive action"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "For a past action with a verb that **takes an object**, such as eat, read, write, or do, add **-ले** to the subject. Do not add it with intransitive verbs such as sleep, go, or come. Pronouns change form."
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Subject",
-    "+ले",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "I म",
-     "**मैले**",
-     "maile"
-    ],
-    [
-     "He उ",
-     "**उसले**",
-     "usle"
-    ],
-    [
-     "Who को",
-     "**कसले**",
-     "kasle"
-    ]
-   ]
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning",
-    "-ले"
-   ],
-   "rows": [
-    [
-     "**मैले** किताब पढेँ।",
-     "maile kitāb paḍhẽ",
-     "I read a book. (Past)",
-     "Transitive"
-    ],
-    [
-     "**उसले** उत्तर दियो।",
-     "usle uttar diyo",
-     "He answered.",
-     "Transitive"
-    ],
-    [
-     "उ सुत्यो।",
-     "u sutyo",
-     "He slept.",
-     "Intransitive (none)"
-    ],
-    [
-     "उनी स्कूल गइन्।",
-     "unī skūl gain",
-     "She went to school.",
-     "Intransitive (none)"
-    ]
-   ]
+   "text": "Use the past form to report yesterday's actions or a single completed event. First check whether the verb takes an object. With completed transitive actions such as reading or writing, practice the agent marked with ले."
   },
   {
    "type": "h",
-   "text": "3. “Was / were / there was”: थियो, the shared past of ho and छ"
-  },
-  {
-   "type": "p",
-   "text": "The present distinguishes हो from छ, but **both use थियो (thiyo) in the past**."
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Present",
-    "Past",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "राम डाक्टर **हो**।",
-     "राम डाक्टर **थियो**।",
-     "Ram was a doctor."
+     "तिमीहरूले हिजो काम गर्यौ।",
+     "timīharūle hijo kām garyau",
+     "You worked yesterday."
     ],
     [
-     "पैसा **छ**।",
-     "पैसा **थियो**。",
-     "There was money."
+     "मैले हिजो व्यायाम गरेँ।",
+     "maile hijo vyāyām garẽ",
+     "I exercised yesterday."
     ],
     [
-     "आकाश नीलो **छ**。",
-     "आकाश नीलो **थियो**。",
-     "The sky was blue."
+     "उनी स्कूल गइन्।",
+     "unī skūl gain",
+     "She went to school."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "A common beginner mistake is **forgetting -ले**. For this past transitive pattern, remember “action with an object = subject + -ले.” Some verbs have an alternate past stem (for example, जानु→ग, हुनु→भ/थि)."
+   "text": "Do not mark an intransitive subject like the agent of a transitive action. Some verbs also change their stem in the past."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Make one sentence about who did what and another about who went where. Compare the subject forms."
   }
  ],
  "12": [
   {
    "type": "goal",
-   "text": "Say that an action did not happen."
+   "text": "Report an event that did not happen"
   },
   {
    "type": "h",
-   "text": "1. Negative past endings"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Subject",
-    "Affirmative",
-    "Negative",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "I म",
-     "पढेँ",
-     "पढ्**इनँ**→पढिनँ",
-     "paḍhinã"
-    ],
-    [
-     "He उ",
-     "आयो",
-     "**आएन**",
-     "āena"
-    ],
-    [
-     "We हामी",
-     "हेर्यौं",
-     "हेर्**एनौं**",
-     "herenaũ"
-    ],
-    [
-     "Respectful",
-     "गर्नुभयो",
-     "गर्**नुभएन**",
-     "garnubhaena"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. The negative of “was” is थिएन"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "पैसा **थिएन**। (paisā thiena = There was no money.)"
+   "text": "Use a past negative when an intended event did not happen. Changing the past verb to a negative does not change the roles of the people, objects or places in the sentence."
   },
   {
    "type": "h",
-   "text": "3. Examples: keep -ले in negative sentences too"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "**मैले** किताब पढिनँ।",
-     "maile kitāb paḍhinã",
-     "I did not read a book."
+     "तिमीहरूले हिजो काम गरेनौ।",
+     "timīharūle hijo kām garenau",
+     "You did not work yesterday."
     ],
     [
-     "उ **आएन**।",
-     "u āena",
-     "He did not come."
+     "मैले हिजो व्यायाम गरिनँ।",
+     "maile hijo vyāyām garinã",
+     "I did not exercise yesterday."
+    ],
+    [
+     "हामीले त्यो फिल्म हेरेनौं।",
+     "hāmīle tyo philma herenaũ",
+     "We did not watch that film."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "**Keep -ले on the subject of a transitive verb** in the negative. Do not remove it."
+   "text": "The agent keeps ले in a negative completed transitive sentence. This differs from saying something has not happened yet."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Imagine two plans for yesterday. Report one as completed and the other as not completed."
   }
  ],
  "13": [
   {
    "type": "goal",
-   "text": "Say what you will do. **You can use the present form you already know.**"
+   "text": "Make future plans clear"
   },
   {
    "type": "h",
-   "text": "1. Express the future with a present form + a time word"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "You do not need a separate future conjugation for this pattern. Add a word such as “tomorrow” to the present form from Theme 8."
+   "text": "Combine a present form with tomorrow, next week or another future time. Making the time explicit distinguishes a plan from a routine."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Time word",
-    "Example",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "भोलि (bholi) tomorrow",
-     "म भोलि स्कूल **जान्छु**।",
-     "I will go to school tomorrow."
+     "तिमीहरू भोलि काम गर्छौ।",
+     "timīharū bholi kām garchau",
+     "You will work tomorrow."
     ],
     [
-     "अर्को हप्ता (arko haptā) next week",
-     "उनी अर्को हप्ता **आउँछिन्**।",
-     "She will come next week."
+     "म भोलि व्यायाम गर्दिनँ।",
+     "ma bholi vyāyām gardinã",
+     "I will not exercise tomorrow."
     ],
     [
-     "भविष्यमा (bhaviṣyamā) in the future",
-     "म **बन्छु**।",
-     "I will become … (in the future)."
+     "हामी आज राति घरमा खान्छौं।",
+     "hāmī āja rāti gharmā khānchaũ",
+     "We will eat at home tonight."
     ]
    ]
   },
   {
+   "type": "note",
+   "text": "A definite plan and an uncertain prediction are different. Practice ways to soften predictions in the inference lesson."
+  },
+  {
    "type": "h",
-   "text": "2. For a prediction, add होला at the end"
+   "text": "Make it your own"
   },
   {
    "type": "p",
-   "text": "भोलि पानी पर्छ **होला**। (bholi pānī parcha holā = It will probably rain tomorrow.)"
-  },
-  {
-   "type": "note",
-   "text": "The verb form is the same as the present in Theme 8. Put a time expression toward the beginning. For a prediction you are not certain about, add **होला** at the end (Theme 31)."
+   "text": "Say one thing you will do tomorrow and one you will not do. Add when and where."
   }
  ],
  "14": [
   {
    "type": "goal",
-   "text": "Describe something you used to do regularly."
+   "text": "Talk about former habits"
   },
   {
    "type": "h",
-   "text": "1. Pattern: stem + थ्यो-family endings (थ्यो is a contraction of थियो)"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "This means “used to” or “would regularly.” Attach it to the stem in a similar way to the present endings."
+   "text": "Use a habitual past form for repeated actions in childhood or an earlier period of life. Contrast it with the past of a single event."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Subject",
-    "Form",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "I म",
-     "-**थें**",
-     "garthe（गर्थे）"
-    ],
-    [
-     "He उ",
-     "-**थ्यो**",
-     "runthyo（रुन्थ्यो）"
-    ],
-    [
-     "Respectful",
-     "Dictionary form + **हुन्थ्यो**",
-     "āunuhunthyo（आउनुहुन्थ्यो）"
-    ]
-   ]
-  },
-  {
-   "type": "p",
-   "text": "Negative: present third-person negative -दैन + थ्यो → “-दैनथ्यो” (first-person singular: -दिनथें)."
-  },
-  {
-   "type": "h",
-   "text": "2. Examples: no -ले, even with transitive verbs in the habitual past"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "राम सानो हुँदा धेरै **रुन्थ्यो**।",
-     "rām sāno hũdā dherai runthyo",
-     "Ram used to cry a lot when he was little."
+     "तिमीहरू पहिले यहाँ काम गर्थ्यौ।",
+     "timīharū pahile yahā̃ kām garthyau",
+     "You used to work here."
     ],
     [
-     "ढकालजी मेरो घरमा **आउनुहुन्थ्यो**।",
-     "ḍhakāljī mero gharmā āunuhunthyo",
-     "Mr./Ms. Dhakal used to visit my home."
+     "म पहिले व्यायाम गर्दिनथें।",
+     "ma pahile vyāyām gardinathẽ",
+     "I did not use to exercise."
+    ],
+    [
+     "तिमी पहिले यहाँ बस्थ्यौ?",
+     "timī pahile yahā̃ basthyau?",
+     "Did you use to live here?"
     ]
    ]
   },
   {
-   "type": "h",
-   "text": "3. Another pattern: present participle -ने + गर्नु (“do regularly”)"
-  },
-  {
-   "type": "p",
-   "text": "For a past habit, use **-ने गर्थे**."
-  },
-  {
-   "type": "p",
-   "text": "सिनेमा **हेर्ने गर्थे**। (sinemā herne garthe = I used to watch films.)"
-  },
-  {
    "type": "note",
-   "text": "Unlike a single past action (Theme 11), **the habitual past describes repeated or regular actions**. Notice that it does not use -ले."
+   "text": "Do not automatically copy the ले marking of a single completed transitive event into a habitual past pattern."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Name two former habits and then explain whether you still have them."
   }
  ],
  "15": [
   {
    "type": "goal",
-   "text": "Say that something is already done, that you have had an experience, or that a result is still true now."
+   "text": "Describe experience and a present result"
   },
   {
    "type": "h",
-   "text": "1. Pattern: past participle -एको + छ"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "Add **-एको** to the verb stem to make a past participle, then add **छ** to make the present perfect."
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "मैले भात **खाएको छु**।",
-     "maile bhāt khāeko chu",
-     "I have eaten rice. (I have already eaten.)"
-    ],
-    [
-     "म **थाकेको छु**。",
-     "ma thākeko chu",
-     "I am tired. (I became tired and still am.)"
-    ]
-   ]
+   "text": "Use a past participle with a form of छ to connect an earlier event with now: having eaten, having visited a place or being tired after an event."
   },
   {
    "type": "h",
-   "text": "2. Three uses"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Use",
-    "Example",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "① Completed action with a present effect",
-     "खाना **पाकेको छ**",
-     "The food is cooked."
+     "तिमीहरूले यो काम गरेको छौ।",
+     "timīharūle yo kām gareko chau",
+     "You have done this work."
     ],
     [
-     "② Experience: “have done before”",
-     "मैले सगरमाथा **चढेको छु**",
-     "I have climbed Mount Everest."
+     "मैले यो काम गरेको छैनँ।",
+     "maile yo kām gareko chainã",
+     "I have not done this work yet."
     ],
     [
-     "③ Resulting state",
-     "ढोका **खुलेको छ**",
+     "ढोका खुलेको छ।",
+     "ḍhokā khuleko cha",
      "The door is open."
     ]
    ]
   },
   {
-   "type": "h",
-   "text": "3. Add -ले to the subject with a transitive verb (the participle pattern also takes ले)"
-  },
-  {
-   "type": "p",
-   "text": "**मैले** सुशी **खाएको छु**। (maile suśī khāeko chu = I have eaten sushi before.)"
-  },
-  {
-   "type": "h",
-   "text": "4. Negative: -एको छैन (“have not done yet”)"
-  },
-  {
-   "type": "p",
-   "text": "मैले अझै खाना **खाएको छैन**। (maile ajhai khānā khāeko chaina = I have not eaten yet.)"
-  },
-  {
    "type": "note",
-   "text": "The progressive (Theme 10) describes an action in progress. This perfect pattern means **it is already done, or its result is true now**. For “have not done yet,” use **-एको छैन**, rather than the simple past negative."
+   "text": "Context distinguishes experience, completion and a resulting state. A negative can express not yet."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Choose eating, travel or work and practice experience, completion and not-yet completion."
   }
  ],
  "16": [
   {
    "type": "goal",
-   "text": "Say that something had already happened by a particular time in the past."
+   "text": "Describe completion before a past moment"
   },
   {
    "type": "h",
-   "text": "1. Pattern: past participle -एको + थियो"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "Simply replace the present-perfect **छ** with past **थियो**."
+   "text": "Explain what had already happened by a past moment. A reference such as when I arrived makes the order of events clear."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "म त्यहाँ **गएको थिएँ**।",
-     "ma tyahā̃ gaeko thiẽ",
-     "I had been there / had gone there."
+     "तिमीहरूले यो काम गरेको थियौ।",
+     "timīharūle yo kām gareko thiyau",
+     "You had done this work."
     ],
     [
-     "उसले किताब **पढेको थियो**।",
-     "usle kitāb paḍheko thiyo",
-     "He had already finished reading the book."
+     "मैले यो काम गरेको थिइनँ।",
+     "maile yo kām gareko thiinã",
+     "I had not done this work at that time."
+    ],
+    [
+     "त्यस बेला मैले खाना खाएको थिइनँ।",
+     "tyas belā maile khānā khāeko thiinã",
+     "I had not eaten at that time."
     ]
    ]
   },
   {
+   "type": "note",
+   "text": "Distinguish an action that was in progress then from one already completed then. This pattern combines a past participle with a past copula."
+  },
+  {
    "type": "h",
-   "text": "2. Negative: -एको थिएन"
+   "text": "Make it your own"
   },
   {
    "type": "p",
-   "text": "राम त्यस बेला किताब **पढेको थिएन**। (rām tyes belā kitāb paḍheko thiena = Ram had not read the book at that time.)"
-  },
-  {
-   "type": "note",
-   "text": "Keep the time reference clear: **present perfect (-एको छ)** = completed by now; **past perfect (-एको थियो)** = completed by a point in the past."
+   "text": "Imagine a meeting and describe one thing already completed and one not yet completed when you arrived."
   }
  ],
  "17": [
   {
    "type": "goal",
-   "text": "Ask someone to do something using an appropriate level of politeness."
+   "text": "Make a request that fits the relationship"
   },
   {
    "type": "h",
-   "text": "1. Three levels of politeness"
+   "text": "Situation and meaning"
+  },
+  {
+   "type": "p",
+   "text": "Ask someone to do something. Start with a respectful request, then compare it with the shorter form used with a friend. The ending signals the relationship even when the subject is omitted."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Person addressed",
-    "How to form it",
-    "Example (हेर्नु, look)",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "तपाईं (polite)",
-     "Dictionary form + **होस्** (= **-नुहोस्**)",
-     "हेर्**नुहोस्**",
-     "hernuhos"
-    ],
-    [
-     "तिमी (familiar)",
-     "Stem (+ **ऊ**)",
-     "हेर／खा**ऊ**",
-     "her／khāū"
-    ],
-    [
-     "तँ (lower status / very intimate)",
-     "Stem only",
-     "हेर्／**गर्**",
-     "her／gar"
-    ]
-   ]
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "माथि **हेर्नुहोस्**।",
-     "māthi hernuhos",
-     "Please look up."
+     "फेरि भन्नुहोस्।",
+     "pheri bhannuhos",
+     "Please say it again."
     ],
     [
-     "चाँडो **खाऊ**।",
-     "cā̃ḍo khāū",
-     "Eat quickly. (तिमी)"
+     "तिमी यहाँ बस।",
+     "timī yahā̃ basa",
+     "Sit here."
     ],
     [
-     "ढोका बन्द **गर**।",
-     "ḍhokā banda gar",
-     "Close the door. (तँ)"
+     "आउनुहोस् न।",
+     "āunuhos na",
+     "Please do come."
     ]
    ]
-  },
-  {
-   "type": "h",
-   "text": "2. Add a small word after the command to change its tone"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Word added",
-    "Nuance",
-    "Example"
-   ],
-   "rows": [
-    [
-     "त (ta)",
-     "“Go on, try …” (to someone lower in status)",
-     "आउनुहोस् **त**"
-    ],
-    [
-     "न (na)",
-     "“Please do …” (urging or asking insistently)",
-     "आउनुहोस् **न**"
-    ],
-    [
-     "है (hai)",
-     "“Do …, okay?” (a reminder)",
-     "आउनुहोस् **है**"
-    ],
-    [
-     "ल (la)",
-     "“Do …, all right?” (affectionate)",
-     "आउनुहोस् **ल**"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "3. Pronunciation note"
-  },
-  {
-   "type": "p",
-   "text": "In conversation, **-नुहोस्** may be shortened to something like **-नुस्**, but **write -नुहोस्**."
   },
   {
    "type": "note",
-   "text": "When unsure, use **-नुहोस् (तपाईं)**. For “do not,” see Theme 19."
+   "text": "A short form can sound forceful with the wrong person. Small particles after a request can also change its tone."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Say the same request to a friend and to a new acquaintance, then compare the wording."
   }
  ],
  "18": [
   {
    "type": "goal",
-   "text": "Say “Shall I …?” and “Let's …”."
+   "text": "Suggest an action together"
   },
   {
    "type": "h",
-   "text": "1. Pattern: first-person wish / suggestion forms"
+   "text": "Situation and meaning"
+  },
+  {
+   "type": "p",
+   "text": "Distinguish an offer to do something yourself from an invitation to act together. Short verb forms are useful when discussing food or going out."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Subject",
-    "How to form it",
-    "Example",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "म (I)",
-     "Stem + **ूँ**",
-     "म **बसूँ?**",
-     "Shall I sit? / May I sit?"
+     "म पहिले बोलूँ?",
+     "ma pahile bolũ?",
+     "Shall I speak first?"
     ],
     [
-     "हामी (we)",
-     "Stem + **औं**",
-     "**जाऔं**",
-     "Let's go."
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. Examples"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "म यहाँ **बसूँ?**",
-     "ma yahā̃ basũ?",
-     "May I sit here?"
+     "चिया पिऔं।",
+     "ciyā piaũ",
+     "Let us have some tea."
     ],
     [
-     "टेनिस **नखेलौं**, फुटबल **खेलौं**।",
+     "टेनिस नखेलौं, फुटबल खेलौं।",
      "ṭenis nakhelaũ, phuṭbal khelaũ",
-     "Let's not play tennis; let's play football."
+     "Let us play football, not tennis."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "Raise your voice at the end to ask permission: “May I …?” Put **न** before the verb to make it negative (नखेलौं = let's not play)."
+   "text": "Shall I and let us use different persons. A suggestion not to do something places न before the verb."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Make one offer to help and one suggestion to do something together."
   }
  ],
  "19": [
   {
    "type": "goal",
-   "text": "Say “You must not …” and “Please do not …”."
+   "text": "Ask someone not to do something"
   },
   {
    "type": "h",
-   "text": "1. Two patterns"
+   "text": "Situation and meaning"
+  },
+  {
+   "type": "p",
+   "text": "Distinguish a polite request to stop from a rule for a place. Choose between please do not and must not according to the situation."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Use",
-    "How to form it",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "① Polite request to stop / avoid an action",
-     "**न** + verb + **-नुहोस्**",
-     "Please do not …"
+     "चिन्ता नगर्नुहोस्।",
+     "cintā nagarnuhos",
+     "Please do not worry."
     ],
     [
-     "② Rule / prohibition",
-     "Verb + **-नु हुँदैन**",
-     "Must not …"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. Examples"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning",
-    "Pattern"
-   ],
-   "rows": [
-    [
-     "तल **नहेर्नुहोस्**।",
-     "tal nahernuhos",
-     "Please do not look down.",
-     "①"
+     "यहाँ धूम्रपान गर्नु हुँदैन।",
+     "yahā̃ dhūmrapān garnu hũdaina",
+     "You must not smoke here."
     ],
     [
-     "यहाँ फोटो **खिच्नुहुँदैन**।",
-     "yahā̃ phoṭo khicnuhũdaina",
-     "You must not take photographs here.",
-     "②"
+     "के यहाँ फोटो खिच्नु हुँदैन?",
+     "ke yahā̃ phoṭo khicnu hũdaina?",
+     "Is taking photos prohibited here?"
     ]
    ]
   },
   {
    "type": "note",
-   "text": "In pattern ①, place **न** before the verb (न + हेर्नुहोस् → **न**हेर्नुहोस्)."
+   "text": "Keep a negative request separate from a prohibition with हुँदैन. Neither is the same as saying an action is unnecessary."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Imagine a library or classroom. State one rule and make one polite request not to do something."
   }
  ],
  "20": [
   {
    "type": "goal",
-   "text": "Say what you can and cannot do."
+   "text": "Explain ability and inability"
   },
   {
    "type": "h",
-   "text": "1. Pattern: stem + न सक्नु"
+   "text": "Situation and meaning"
+  },
+  {
+   "type": "p",
+   "text": "Combine an action with सक्नु to express ability or practical possibility. Put the action first and inflect सक्नु for the subject."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "म नेपाली **बोल्न सक्छु**।",
-     "ma nepālī bolna sakchu",
-     "I can speak Nepali."
+     "तिमीहरू नेपाली बोल्न सक्छौ।",
+     "timīharū nepālī bolna sakchau",
+     "You can speak Nepali."
     ],
     [
-     "तपाईं खाना **पकाउन सक्नुहुन्छ?**",
-     "tapāī̃ khānā pakāuna saknuhuncha?",
-     "Can you cook? (Respectful)"
+     "उहाँ नेपाली बोल्न सक्नुहुन्छ?",
+     "uhā̃ nepālī bolna saknuhuncha?",
+     "Can he speak Nepali?"
     ],
     [
-     "म साइकल चलाउन **सक्दिनँ**।",
-     "ma sāikal calāuna sakdinã",
-     "I cannot ride a bicycle. (Negative)"
+     "उनी साइकल चलाउन सक्दिनन्।",
+     "unī sāikal calāuna sakdinan",
+     "She cannot ride a bicycle."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "**सक्नु** means “can.” The preceding verb takes stem + **न**. The negative shown here is **सक्दिनँ**."
+   "text": "The action's ordinary present form differs from a can construction. Negate सक्नु to say cannot."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Choose language, transport or cooking and explain one ability and one inability."
   }
  ],
  "21": [
   {
    "type": "goal",
-   "text": "Say “must / have to” and “may / be allowed to.”"
+   "text": "Check obligations and permission"
   },
   {
    "type": "h",
-   "text": "1. Obligation: dictionary form + पर्छ (पर्नु stays in third-person singular)"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Tense",
-    "Form",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "Present",
-     "**पर्छ** / negative **पर्दैन**",
-     "Must / do not have to"
-    ],
-    [
-     "Past",
-     "**पर्यो** / **परेन**",
-     "Had to / did not have to"
-    ]
-   ]
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "Use **-ले** on the subject for a felt personal duty, or **-लाई** for a need imposed by circumstances."
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "**मैले** भोलि अफिस **जानु पर्छ**।",
-     "maile bholi aphis jānu parcha",
-     "I have to go to the office tomorrow."
-    ],
-    [
-     "**मलाई** चाँडै **उठ्नु पर्यो**।",
-     "malāī cā̃ḍai uṭhnu paryo",
-     "I had to get up early."
-    ]
-   ]
+   "text": "Separate obligation, lack of necessity and permission. Use पर्छ for an obligation and पर्दैन for no obligation. Ask permission with an action followed by हुन्छ or मिल्छ."
   },
   {
    "type": "h",
-   "text": "2. Permission: stem + न हुन्छ／मिल्छ／सकिन्छ (“may / be allowed to”)"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "यहाँ **बस्न हुन्छ?**",
-     "yahā̃ basna huncha?",
-     "May I sit here?"
+     "उसले औषधि खानु पर्छ।",
+     "usle auṣadhi khānu parcha",
+     "He has to take medicine."
     ],
     [
-     "फोटो **खिच्न मिल्छ?**",
-     "phoṭo khicna milcha?",
-     "May I take a photograph?"
+     "तिमीहरूले पैसा तिर्नु पर्दैन।",
+     "timīharūle paisā tirnu pardaina",
+     "You do not have to pay."
+    ],
+    [
+     "यो कलम लिन मिल्छ?",
+     "yo kalam lina milcha?",
+     "May I take this pen?"
     ]
    ]
   },
   {
    "type": "note",
-   "text": "In this obligation pattern, **पर्नु takes पर्छ regardless of the subject**. The negative **पर्दैन** means “do not have to,” not “must not.”"
+   "text": "Do not have to does not mean must not. In this obligation pattern, पर्छ does not change for the subject's person."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "For a workday, state an obligation, something unnecessary and a request for permission."
   }
  ],
  "22": [
   {
    "type": "goal",
-   "text": "Say what you want to do."
+   "text": "Describe a wish or a passing desire"
   },
   {
    "type": "h",
-   "text": "1. Two patterns"
+   "text": "Situation and meaning"
+  },
+  {
+   "type": "p",
+   "text": "Compare a wish with a present inclination. A sentence with चाहनु and a मन construction with मलाई use different subject patterns."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Pattern",
-    "Formula",
-    "Nuance"
+    "Nepali",
+    "Reading",
+    "Meaning"
    ],
    "rows": [
     [
-     "① Intention / desire",
-     "Stem + **न चाहनु**",
-     "Want to …"
+     "तिमीहरू नेपाल जान चाहन्छौ।",
+     "timīharū nepāl jāna cāhanchau",
+     "You want to go to Nepal."
     ],
     [
-     "② Feeling / inclination",
-     "**मलाई** + stem + **न मन छ／मन लाग्छ**",
-     "Feel like …"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. Examples"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning",
-    "Pattern"
-   ],
-   "rows": [
-    [
-     "म अहिले **सुत्न चाहन्छु**।",
-     "ma ahile sutna cāhanchu",
-     "I want to sleep now.",
-     "①"
+     "उहाँ नेपाल जान चाहनुहुन्छ।",
+     "uhā̃ nepāl jāna cāhanuhuncha",
+     "He wants to go to Nepal."
     ],
     [
-     "तपाईं के **गर्न चाहनुहुन्छ?**",
-     "tapāī̃ ke garna cāhanuhuncha?",
-     "What do you want to do? (Respectful)",
-     "①"
-    ],
-    [
-     "मलाई सिनेमा **हेर्न मन छ**।",
-     "malāī sinemā herna man cha",
-     "I feel like watching a film.",
-     "②"
-    ],
-    [
-     "मलाई घर **फर्कन मन लाग्यो**।",
-     "malāī ghar pharkana man lāgyo",
-     "I felt like going home.",
-     "②"
+     "हामीलाई सँगै बस्न मन लाग्छ।",
+     "hāmīlāī sãgai basna man lāgcha",
+     "We feel like spending time together."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "Pattern ① uses **म**; pattern ② uses **मलाई** (literally “to me”). Pattern ② emphasizes how you feel. Do not confuse it with **मन पर्छ**, “like” (related to the patterns in Theme 2)."
+   "text": "Keep liking something separate from wanting to do it. Distinguish मन पर्छ from मन छ and मन लाग्छ."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Name one travel wish and one thing you feel like doing now, then add a short reason."
   }
  ],
  "23": [
   {
    "type": "goal",
-   "text": "Use adjectives in the right form and position."
+   "text": "Make a noun description more specific"
   },
   {
    "type": "h",
-   "text": "1. Position: before the noun, directly before what is being described"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "ठूलो घर (a big house), पुरानो किताब (an old book)."
+   "text": "Place an adjective before a noun to identify a particular person or thing. For adjectives that inflect, practice agreement in gender and number along with word order."
   },
   {
    "type": "h",
-   "text": "2. Adjectives ending in -ो change for gender and number"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Form",
-    "Used with",
-    "Example (राम्रो, good)"
+    "Nepali",
+    "Reading",
+    "Meaning"
    ],
    "rows": [
     [
-     "-ो",
-     "Masculine singular",
-     "**राम्रो** केटा (a good boy)"
+     "यी राम्रा केटाहरू हुन्।",
+     "yī rāmrā keṭāharū hun",
+     "These are good boys."
     ],
     [
-     "-ी",
-     "Feminine singular",
-     "**राम्री** केटी (a good girl)"
+     "यो नयाँ किताब हो?",
+     "yo nayā̃ kitāb ho?",
+     "Is this a new book?"
     ],
     [
-     "-ा",
-     "Plural / honorific",
-     "**राम्रा** केटाहरू (good boys)"
+     "यो फूल सुन्दर छ।",
+     "yo phūl sundar cha",
+     "This flower is beautiful."
     ]
    ]
   },
   {
-   "type": "p",
-   "text": "Note: Adjectives with other endings, such as a consonant, do not change; for example, ठिक्क (“just right”)."
+   "type": "note",
+   "text": "Not every adjective changes in the same way. Learn feminine, plural and respectful patterns with actual nouns."
   },
   {
    "type": "h",
-   "text": "3. Adjectives can also describe the subject: review of Theme 3"
+   "text": "Make it your own"
   },
   {
    "type": "p",
-   "text": "घर सानो **छ**。 (The house is small.)"
-  },
-  {
-   "type": "note",
-   "text": "Adjectives in **-ो** take **-ो/-ी/-ा** to match the gender and number of the following noun. Put the adjective before the noun."
+   "text": "Choose one person noun and one object noun and describe each with two qualities."
   }
  ],
  "24": [
   {
    "type": "goal",
-   "text": "Describe actions with words such as “quickly,” “very,” and “always,” and make exclamations such as “How …!”."
+   "text": "Add manner, degree and surprise"
   },
   {
    "type": "h",
-   "text": "1. Put an adverb before the verb"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Adverb",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "छिटो",
-     "chiṭo",
-     "Quickly"
-    ],
-    [
-     "बिस्तारै",
-     "bistārai",
-     "Slowly"
-    ],
-    [
-     "धेरै",
-     "dherai",
-     "Very"
-    ],
-    [
-     "सधैं",
-     "sadhaĩ",
-     "Always"
-    ],
-    [
-     "प्रायः",
-     "prāyaḥ",
-     "Usually"
-    ]
-   ]
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "Examples: ऊ धेरै **छिटो** दौड्छ। (He runs very quickly.) / म **बिस्तारै** हिँड्छु। (I walk slowly.)"
+   "text": "Speed and frequency add information to an action. Notice which verb or adjective an adverb modifies, then compare ordinary descriptions with exclamations."
   },
   {
    "type": "h",
-   "text": "2. Exclamations: कति／एकदमै／साँच्चै + adjective + !"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "**कति** सुन्दर!",
-     "kati sundar!",
-     "How beautiful!"
+     "तिमीहरू बिस्तारै बोल।",
+     "timīharū bistārai bola",
+     "Speak slowly."
     ],
     [
-     "**एकदमै** मिठो!",
-     "ekdamai miṭho!",
-     "So delicious!"
+     "हामी राति काम गर्दैनौं।",
+     "hāmī rāti kām gardainaũ",
+     "We do not work at night."
     ],
     [
-     "**साँच्चै?**",
-     "sā̃ccai?",
-     "Really?"
+     "बिस्तारै खानुहोस्।",
+     "bistārai khānuhos",
+     "Please eat slowly."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "**कति** means “how much?” in a question and “how …!” in an exclamation. Punctuation and tone show the difference."
+   "text": "कति can be used for an exclamation as well as a question. Consider the purpose of the sentence, not just its punctuation."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Describe one action with slowly, always and very, then add an exclamation."
   }
  ],
  "25": [
   {
    "type": "goal",
-   "text": "Say “A is more … than B” and “the most …”."
+   "text": "Compare options and choose"
   },
   {
    "type": "h",
-   "text": "1. Comparison: B + भन्दा + adjective (“more … than B”)"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "As a postposition, it is written attached to the preceding word. The order of the compared items can vary."
+   "text": "When shopping or choosing a route, make the two options clear. Place भन्दा after the comparison standard. For a superlative, identify the group being compared when useful."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "काठमाडौं पाटन**भन्दा** ठूलो छ।",
-     "kāṭhmāḍaũ pāṭanbhandā ṭhūlo cha",
-     "Kathmandu is bigger than Patan."
+     "चिया कफीभन्दा सस्तो छ।",
+     "ciyā kaphībhandā sasto cha",
+     "Tea is cheaper than coffee."
     ],
     [
-     "स्याउ केरा**भन्दा** गुलियो छ।",
-     "syāu kerābhandā guliyo cha",
-     "Apples are sweeter than bananas."
-    ]
-   ]
-  },
-  {
-   "type": "p",
-   "text": "Note: To compare actions, use dictionary form + भन्दा: बाँच्नु**भन्दा** मर्नु निको (It is better to die than to live)."
-  },
-  {
-   "type": "h",
-   "text": "2. Superlative: सबभन्दा (“more than all” = “the most”)"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "काठमाडौं **सबभन्दा** ठूलो शहर हो।",
-     "kāṭhmāḍaũ sabbhandā ṭhūlo śahar ho",
-     "Kathmandu is the biggest city."
+     "उ आफ्नो भाइभन्दा होचो छ।",
+     "u āphno bhāibhandā hoco cha",
+     "He is shorter than his younger brother."
     ],
     [
-     "**सबभन्दा** पहिले",
-     "sabbhandā pahile",
-     "First of all"
+     "यो सबभन्दा राम्रो किताब हो।",
+     "yo sabbhandā rāmro kitāb ho",
+     "This is the best book."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "Do not add comparative or superlative endings like English **-er / -est**. Add “the comparison item + **भन्दा**” or **सबभन्दा**; the adjective does not change to mark degree."
+   "text": "The best or biggest should have a clear comparison group. Do not add an English-style comparative ending to the adjective."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Compare two bags by price and size and briefly explain which you would choose."
   }
  ],
  "26": [
   {
    "type": "goal",
-   "text": "Connect words and sentences."
+   "text": "Connect ideas and give reasons"
   },
   {
    "type": "h",
-   "text": "1. Common connecting words"
+   "text": "Situation and meaning"
+  },
+  {
+   "type": "p",
+   "text": "Choose a connector according to whether you are listing, sequencing, contrasting or giving a reason. Decide how two short statements relate before combining them."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Word",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "र",
-     "ra",
-     "And (joining items)"
+     "तिमी पढ्छौ अनि लेख्छौ।",
+     "timī paḍhchau ani lekhchau",
+     "You read and then write."
     ],
     [
-     "अनि",
-     "ani",
-     "And / and then"
+     "हामी पनि जान्छौं।",
+     "hāmī pani jānchaũ",
+     "We are going too."
     ],
     [
-     "तर",
-     "tara",
-     "But / however"
-    ],
-    [
-     "~(भए)कोले",
-     "(bhae)kole",
-     "Because / since (reason)"
-    ],
-    [
-     "पनि",
-     "pani",
-     "Also / too"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. In a list, use र／अनि only before the final item; use commas elsewhere"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "यो छिटो, सस्तो **अनि** मिठो छ।",
-     "yo chiṭo, sasto ani miṭho cha",
-     "This is quick, cheap, and delicious."
-    ],
-    [
-     "मलाई चिया **र** कफी मन पर्छ।",
-     "malāī ciyā ra kaphī man parcha",
-     "I like tea and coffee."
-    ],
-    [
-     "ऊ विद्यार्थी हो **तर** काम गर्छ।",
-     "ū vidyārthī ho tara kām garcha",
-     "He is a student, but he works."
-    ],
-    [
-     "थकित **भएकोले**, चाँडो सुतेँ।",
-     "thakit bhaekole, cā̃ḍo sutẽ",
-     "I went to bed early because I was tired."
+     "समय नभएकोले, उहाँ आउनुभएन।",
+     "samay nabhaekole, uhā̃ āunubhaena",
+     "He did not come because he had no time."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "Repeat **पनि** for “both … and … / … too, and … too.” Put **कोले／भएकोले** at the end of the clause giving the reason."
+   "text": "Confusing but with because changes the relationship between events. With पनि, also check what the word too applies to."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "List two actions from today, then connect them as a contrast or as a reason and result."
   }
  ],
  "27": [
   {
    "type": "goal",
-   "text": "Link two actions to show that they happen at the same time or one after the other."
+   "text": "Distinguish simultaneous actions from sequence"
   },
   {
    "type": "h",
-   "text": "1. While doing: stem + दै"
+   "text": "Situation and meaning"
+  },
+  {
+   "type": "p",
+   "text": "Reading while listening and eating after washing have different time relationships. Compare a दै form with a form containing पछि and decide which action comes first."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "संगीत **सुन्दै** पढ्छु।",
-     "saṅgīt sundai paḍhchu",
-     "I study while listening to music."
+     "उनी गीत गाउँदै काम गर्छिन्।",
+     "unī gīt gāũdai kām garchin",
+     "She works while singing."
     ],
     [
-     "टेलिभिजन **हेर्दै** खान्छु।",
-     "ṭelibhijan herdai khānchu",
-     "I eat while watching television."
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. After doing: past participle + पछि (-एपछि)"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "हात **धोएपछि**, खान्छु।",
-     "hāt dhoepachi, khānchu",
+     "हात धोएपछि, म खान्छु।",
+     "hāt dhoepachi, ma khānchu",
      "I eat after washing my hands."
     ],
     [
-     "**उठेपछि**, अनुहार धुन्छु।",
-     "uṭhepachi, anuhār dhuncha",
-     "I wash my face after getting up."
+     "चिया पिएपछि, उनी जान्छिन्।",
+     "ciyā piepachi, unī jānchin",
+     "She leaves after drinking tea."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "**-दै = at the same time** (“while doing”); **-एपछि = in sequence** (“after doing”). The ending changes the relationship between the actions."
+   "text": "Translating a sequence as while changes the action. Begin with two actions performed by the same subject."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Choose two simultaneous morning actions and two sequential ones and make sentences."
   }
  ],
  "28": [
   {
    "type": "goal",
-   "text": "Say “in order to do …” and “for …”."
+   "text": "Explain the purpose of an action"
   },
   {
    "type": "h",
-   "text": "1. Two patterns"
+   "text": "Situation and meaning"
+  },
+  {
+   "type": "p",
+   "text": "Explain not only where you are going but what you intend to do there. Distinguish a purpose expressed with an action from a purpose involving a person or health."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Pattern",
-    "Formula",
-    "Example"
-   ],
-   "rows": [
-    [
-     "① Verb",
-     "Stem + **नको लागि**",
-     "पढ्**नको लागि** (in order to study)"
-    ],
-    [
-     "② Noun",
-     "Noun + **को लागि**",
-     "स्वास्थ्य**को लागि** (for health)"
-    ]
-   ]
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "खाना **खानको लागि** आउनुहोस्।",
-     "khānā khānako lāgi āunuhos",
-     "Please come to eat."
+     "उ नेपाली सिक्नको लागि नेपाल जान्छ।",
+     "u nepālī siknako lāgi nepāl jāncha",
+     "He goes to Nepal to learn Nepali."
     ],
     [
-     "**पढ्नको लागि** पुस्तकालय जान्छु।",
-     "paḍhnako lāgi pustakālaya jānchu",
-     "I go to the library to study."
+     "उहाँ आराम गर्नको लागि घर जानुहुन्छ।",
+     "uhā̃ ārām garnako lāgi ghar jānuhuncha",
+     "He goes home to rest."
+    ],
+    [
+     "तपाईं कसको लागि काम गर्नुहुन्छ?",
+     "tapāĩ kasko lāgi kām garnuhuncha?",
+     "Who do you work for?"
     ]
    ]
   },
   {
    "type": "note",
-   "text": "Use **नको लागि** with a verb and **को लागि** with a noun. Put the purpose before the main action."
+   "text": "Purpose and cause are different. Check whether you mean an intended action or an existing circumstance."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Choose a library, a market or a friend's home and make two reasons for going there expressed as purposes."
   }
  ],
  "29": [
   {
    "type": "goal",
-   "text": "Describe a noun with an action, as in “the person who reads.”"
+   "text": "Identify a person or thing with an action"
   },
   {
    "type": "h",
-   "text": "1. Pattern: stem + ने + noun"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "Adding **-ने** to a verb stem makes a present participle. Put it before the noun to mean “the person / thing that does …”."
+   "text": "Place an action description before a noun to identify a person or thing, such as the person who lives here or the road to school. Read the ने form together with the noun it modifies."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Phrase",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "**पढ्ने** मान्छे",
-     "paḍhne mānche",
-     "A person who reads"
+     "यो स्कूल जाने बाटो हो।",
+     "yo skūl jāne bāṭo ho",
+     "This is the road to school."
     ],
     [
-     "**खाने** कुरा",
-     "khāne kurā",
-     "Food (things to eat)"
+     "काम गर्ने समय भयो।",
+     "kām garne samay bhayo",
+     "It is time to work."
     ],
     [
-     "काठमाडौं **जाने** बाटो",
-     "kāṭhmāḍaũ jāne bāṭo",
-     "The road to Kathmandu"
+     "पैसा पाउने बित्तिकै, उसले किताब किन्यो।",
+     "paisā pāune bittikai, usle kitāb kinyo",
+     "He bought a book as soon as he got the money."
     ]
    ]
   },
   {
+   "type": "note",
+   "text": "Distinguish a finite present statement from a noun-modifying form. Adding बित्तिकै can express as soon as."
+  },
+  {
    "type": "h",
-   "text": "2. Extension: -ने बित्तिकै (“as soon as”)"
+   "text": "Make it your own"
   },
   {
    "type": "p",
-   "text": "पैसा **पाउने बित्तिकै** हरि पोखरा गयो। (paisā pāune bittikai hari pokharā gayo = As soon as Hari got the money, he went to Pokhara.)"
-  },
-  {
-   "type": "note",
-   "text": "The action describing the noun comes **before the noun**, as in Japanese. This is the reverse of an English “noun + who / that …” relative clause."
+   "text": "Choose a place, an action and a person and make a description that identifies which person you mean."
   }
  ],
  "30": [
   {
    "type": "goal",
-   "text": "Say “If …, then …”."
+   "text": "Make an action depend on a condition"
   },
   {
    "type": "h",
-   "text": "1. Pattern: condition + भने, then the result"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "Put **भने** (“if”) after the condition. You can add **यदि (“if”) at the beginning, but it is optional**."
+   "text": "Use this pattern to plan around weather or available time. Separate the condition from the action that follows and connect them with भने."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "राम **आयो भने**, श्याम जान्छ।",
-     "rām āyo bhane, śyām jāncha",
-     "If Ram comes, Shyam will go."
+     "तपाईं व्यस्त हुनुहुन्छ भने, म पर्खन्छु।",
+     "tapāĩ vyasta hunuhuncha bhane, ma parkhanchu",
+     "If you are busy, I will wait."
     ],
     [
-     "राम **आउँछ भने**, श्याम जान्छ।",
-     "rām āũcha bhane, śyām jāncha",
-     "If Ram is coming, Shyam will go."
+     "भोक लाग्यो भने, खाना खानुहोस्।",
+     "bhok lāgyo bhane, khānā khānuhos",
+     "If you get hungry, please eat."
     ],
     [
-     "यदि सस्तो छ **भने**, किन्छु।",
-     "yadi sasto cha bhane, kinchu",
-     "If it is cheap, I will buy it."
+     "यो पिरो छ भने, म खाँदिनँ।",
+     "yo piro cha bhane, ma khā̃dinã",
+     "If this is spicy, I will not eat it."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "**Keep भने**; यदि is optional. The condition can use a past form (आयो भने) or a present form (आउँछ भने)."
+   "text": "भने can mark the condition even without यदि. Practice what happens when the condition is not met as well."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Use rain, time or price as a condition and contrast what you will and will not do."
   }
  ],
  "31": [
   {
    "type": "goal",
-   "text": "Say “probably” and “I think,” with different degrees of certainty."
+   "text": "Show how certain you are"
   },
   {
    "type": "h",
-   "text": "1. “It seems / I think”: sentence + जस्तो लाग्छ"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "भोलि पानी पर्छ **जस्तो लाग्छ**। (bholi pānī parcha jasto lāgcha = I think it will rain tomorrow.)"
+   "text": "Distinguish an impression, a tentative prediction, a possibility and a strong deduction. Let the ending show how sure you are instead of stating uncertain information as a fact."
   },
   {
    "type": "h",
-   "text": "2. “Probably”: होला at the end"
-  },
-  {
-   "type": "p",
-   "text": "भोलि पानी पर्छ **होला**। (bholi pānī parcha holā = It will probably rain tomorrow.)"
-  },
-  {
-   "type": "p",
-   "text": "Note: **सायद (“perhaps / probably”)** goes at the beginning and is often used with होला."
-  },
-  {
-   "type": "h",
-   "text": "3. “Must have / must be”: past participle + हुनु पर्छ"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "श्याम युरोप **गएको हुनु पर्छ**।",
-     "śyām yurop gaeko hunu parcha",
-     "Shyam must have gone to Europe."
+     "तपाईंलाई के लाग्छ?",
+     "tapāĩlāī ke lāgcha?",
+     "What do you think?"
     ],
     [
-     "रामसँग धेरै पैसा **हुनु पर्छ**।",
-     "rāmsã̄ga dherai paisā hunu parcha",
-     "Ram must have a lot of money."
+     "उहाँ घरमा हुनुहुन्छ होला।",
+     "uhā̃ gharmā hunuhuncha holā",
+     "He is probably at home."
+    ],
+    [
+     "उनी घर गएकी हुनु पर्छ।",
+     "unī ghar gaekī hunu parcha",
+     "She must have gone home."
     ]
    ]
   },
   {
+   "type": "note",
+   "text": "पर्छ has different roles in obligation and deduction. Check whether the whole construction means must do or must be."
+  },
+  {
    "type": "h",
-   "text": "4. “Might / may”: हुनसक्छ／न सक्छ"
+   "text": "Make it your own"
   },
   {
    "type": "p",
-   "text": "भोलि पानी **पर्न सक्छ**। (bholi pānī parna sakcha = It might rain tomorrow.)"
-  },
-  {
-   "type": "note",
-   "text": "The certainty scale introduced here is **जस्तो लाग्छ** (impression / opinion) < **होला／न सक्छ** (possibility) < **हुनु पर्छ** (strong inference: “must”)."
+   "text": "Describe tomorrow's weather or a friend's plans as both a tentative prediction and a strong deduction."
   }
  ],
  "32": [
   {
    "type": "goal",
-   "text": "Say that something “is done” or “was done.”"
+   "text": "Focus on what receives an action"
   },
   {
    "type": "h",
-   "text": "1. Pattern: stem + इयो (“was done”)"
+   "text": "Situation and meaning"
+  },
+  {
+   "type": "p",
+   "text": "Use a passive when the window being closed or the letter being written matters more than the doer. Compare leaving the doer unstated with explicitly identifying the doer."
+  },
+  {
+   "type": "h",
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "ढोका **खोलियो**।",
-     "ḍhokā kholiyo",
-     "The door was opened."
+     "खाना पकाइयो।",
+     "khānā pakāiyo",
+     "The food was cooked."
     ],
     [
-     "चिठी **लेखियो**।",
-     "ciṭhī lekhiyo",
-     "The letter was written."
+     "ढोका खोलिएन।",
+     "ḍhokā kholiena",
+     "The door was not opened."
+    ],
+    [
+     "आज धेरै हिँडियो।",
+     "āja dherai hĩḍiyo",
+     "We did a lot of walking today."
     ]
    ]
   },
   {
-   "type": "h",
-   "text": "2. To mention the doer, use -ले (“by”)"
-  },
-  {
-   "type": "p",
-   "text": "यो किताब धेरै मानिस**ले** **पढिन्छ**। (yo kitāb dherai mānisle paḍhincha = This book is read by many people.)"
-  },
-  {
-   "type": "h",
-   "text": "3. An impersonal use: saying a lot was done without naming the doer"
-  },
-  {
-   "type": "p",
-   "text": "आज धेरै **हिंडियो**! (āja dherai hiḍiyo = There was a lot of walking today! / We walked a lot today!) / खूब **खाइयो**! (There was plenty of eating! / We ate a lot!)"
-  },
-  {
    "type": "note",
-   "text": "“Was done” uses stem + **इयो**. The doer takes **-ले**."
+   "text": "Do not interpret an impersonal expression such as having done a lot of walking as being forced to walk by someone."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Choose an everyday object and report what was done to it without naming the doer."
   }
  ],
  "33": [
   {
    "type": "goal",
-   "text": "Say that someone makes or has another person do something."
+   "text": "Describe causing someone to act"
   },
   {
    "type": "h",
-   "text": "1. Many verbs form a causative with an ending in -आउनु"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Original verb",
-    "Causative verb",
-    "Meaning"
-   ],
-   "rows": [
-    [
-     "खानु (eat)",
-     "**खुवाउनु**",
-     "Feed / make someone eat"
-    ],
-    [
-     "सिक्नु (learn)",
-     "**सिकाउनु**",
-     "Teach"
-    ],
-    [
-     "उठ्नु (get up)",
-     "**उठाउनु**",
-     "Wake someone / get someone up"
-    ],
-    [
-     "देख्नु (see)",
-     "**देखाउनु**",
-     "Show"
-    ],
-    [
-     "गर्नु (do)",
-     "**गराउनु**",
-     "Make someone do"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. For a verb without a causative form: stem + न लगाउनु"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "गर्न **लगाउनु** (make someone do)."
+   "text": "Use verbs for teaching, showing, waking and otherwise causing an action or state. Identify the initiator and the person affected as separate participants."
   },
   {
    "type": "h",
-   "text": "3. The person made to act takes -लाई; the subject takes -ले"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "आमाले बच्चालाई औषधि **खुवाउनुहुन्छ**।",
-     "āmāle baccālāī auṣadhi khuvāunuhuncha",
-     "Mother gives the child medicine."
+     "तिमीले भाइलाई उठायौ?",
+     "timīle bhāilāī uṭhāyau?",
+     "Did you wake your younger brother?"
     ],
     [
-     "बुबाले मलाई कार **चलाउन लगाउनुभयो**।",
-     "bubāle malāī kār calāuna lagāunubhayo",
-     "Father made me drive the car."
+     "उनले मलाई चिठी लेख्न लगाइन्।",
+     "unle malāī ciṭhī lekhna lagāin",
+     "She made me write a letter."
+    ],
+    [
+     "बुबाले मलाई काम गर्न लगाउनुभएन।",
+     "bubāle malāī kām garna lagāunubhaena",
+     "Father did not make me work."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "In this causative pattern, remember the pair: **the person causing the action = subject + -ले**; **the person made to act = -लाई**."
+   "text": "Seeing and showing, or learning and teaching, are different. Learn causative verbs by meaning rather than adding an ending mechanically."
+  },
+  {
+   "type": "h",
+   "text": "Make it your own"
+  },
+  {
+   "type": "p",
+   "text": "Use a family member or teacher as the initiator and explain whom they caused to do what."
   }
  ],
  "34": [
   {
    "type": "goal",
-   "text": "Report what someone said."
+   "text": "Report what someone said"
   },
   {
    "type": "h",
-   "text": "1. Pattern: what was said + भन्यो／भनिन्／भन्नुभयो (“said”)"
+   "text": "Situation and meaning"
   },
   {
    "type": "p",
-   "text": "In this pattern, there is no separate word corresponding to English “that.” **Put the spoken words first and “said” at the end**."
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Speaker",
-    "“Said”",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "He",
-     "भन्यो",
-     "bhanyo"
-    ],
-    [
-     "She",
-     "भनिन्",
-     "bhanin"
-    ],
-    [
-     "Someone addressed with respect",
-     "भन्नुभयो",
-     "bhannubhayo"
-    ]
-   ]
+   "text": "Separate the speaker from the message. Quoted content may retain the speaker's original person, so check whose perspective is represented when translating."
   },
   {
    "type": "h",
-   "text": "2. Examples"
+   "text": "Examples to say aloud"
   },
   {
    "type": "table",
    "headers": [
-    "Sentence",
-    "Romanized",
+    "Nepali",
+    "Reading",
     "Meaning"
    ],
    "rows": [
     [
-     "उसले **आउँछु भन्यो**।",
-     "usle āũchu bhanyo",
-     "He said, “I will come.”"
+     "मैले म विद्यार्थी हुँ भनेँ।",
+     "maile ma vidyārthī hũ bhanẽ",
+     "I said I was a student."
     ],
     [
-     "उसले **जाँदिनँ भनिन्**।",
-     "usle jā̃dinã bhanin",
-     "She said, “I will not go.”"
+     "हामीले तयार छौं भन्यौं।",
+     "hāmīle tayār chaũ bhanyaũ",
+     "We said we were ready."
     ],
     [
-     "शिक्षकले **भोलि परीक्षा छ भन्नुभयो**।",
-     "śikṣakle bholi parīkṣā cha bhannubhayo",
-     "The teacher said there would be an exam the next day."
+     "उनले पैसा छैन भनिन्।",
+     "unle paisā chaina bhanin",
+     "She said she had no money."
     ]
    ]
   },
   {
+   "type": "note",
+   "text": "Said they would come and did not say they would come differ in the scope of negation. Match the reporting verb to the speaker."
+  },
+  {
    "type": "h",
-   "text": "3. Extension: भन्ने गर्नु (“say regularly”)"
+   "text": "Make it your own"
   },
   {
    "type": "p",
-   "text": "आमाले सधैं भन्ने **गर्नुहुन्थ्यो**। (Mother used to say it all the time.)"
-  },
-  {
-   "type": "note",
-   "text": "You do not need a word corresponding to English “that” in this pattern. **Put the spoken words directly before भन्यो**."
+   "text": "Quote a friend's plan and practice reporting it to someone else."
   }
  ],
  "35": [
   {
    "type": "goal",
-   "text": "Look up **every person** using the representative verb **गर्नु (do; stem गर्)**. Other consonant-stem verbs, such as लेख्नु (write) and बोल्नु (speak), follow the same pattern."
-  },
-  {
-   "type": "h",
-   "text": "0. Person and pronouns: the groups that determine conjugation"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Person",
-    "Pronoun",
-    "Politeness"
-   ],
-   "rows": [
-    [
-     "First-person singular",
-     "म (ma)",
-     "—"
-    ],
-    [
-     "First-person plural",
-     "हामी (hāmī)",
-     "—"
-    ],
-    [
-     "Second person, lower status / very intimate",
-     "तँ (tã)",
-     "Most casual"
-    ],
-    [
-     "Second person, familiar",
-     "तिमी (timī)",
-     "Middle level"
-    ],
-    [
-     "Second / third person, respectful",
-     "तपाईं／उहाँ",
-     "Polite"
-    ],
-    [
-     "Third-person singular",
-     "उ／यो／त्यो",
-     "Neutral"
-    ],
-    [
-     "Third person, feminine / respectful",
-     "उनी",
-     "Some respect"
-    ],
-    [
-     "Third-person plural",
-     "उनीहरू／तिनीहरू",
-     "—"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "1. Present: affirmative and negative"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Pronoun",
-    "Affirmative",
-    "Romanized",
-    "Negative",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "म",
-     "गर्छु",
-     "garchu",
-     "गर्दिनँ",
-     "gardinã"
-    ],
-    [
-     "तँ",
-     "गर्छस्",
-     "garchas",
-     "गर्दैनस्",
-     "gardainas"
-    ],
-    [
-     "तिमी",
-     "गर्छौ",
-     "garchau",
-     "गर्दैनौ",
-     "gardainau"
-    ],
-    [
-     "तपाईं／उहाँ",
-     "गर्नुहुन्छ",
-     "garnuhuncha",
-     "गर्नुहुन्न",
-     "garnuhunna"
-    ],
-    [
-     "उ",
-     "गर्छ",
-     "garcha",
-     "गर्दैन",
-     "gardaina"
-    ],
-    [
-     "उनी",
-     "गर्छिन्(feminine)/गर्छन्(respectful)",
-     "garchin/garchan",
-     "गर्दिनन्",
-     "gardinan"
-    ],
-    [
-     "हामी",
-     "गर्छौं",
-     "garchaũ",
-     "गर्दैनौं",
-     "gardainaũ"
-    ],
-    [
-     "उनीहरू",
-     "गर्छन्",
-     "garchan",
-     "गर्दैनन्",
-     "gardainan"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. Past: affirmative and negative; add -ले to the subject because this verb is transitive"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Pronoun + ले",
-    "Affirmative",
-    "Romanized",
-    "Negative",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "मैले",
-     "गरेँ",
-     "garẽ",
-     "गरिनँ",
-     "garinã"
-    ],
-    [
-     "तैंले",
-     "गरिस्",
-     "garis",
-     "गरिनस्",
-     "garinas"
-    ],
-    [
-     "तिमीले",
-     "गर्यौ",
-     "garyau",
-     "गरेनौ",
-     "garenau"
-    ],
-    [
-     "तपाईंले",
-     "गर्नुभयो",
-     "garnubhayo",
-     "गर्नुभएन",
-     "garnubhaena"
-    ],
-    [
-     "उसले",
-     "गर्यो",
-     "garyo",
-     "गरेन",
-     "garena"
-    ],
-    [
-     "उनले",
-     "गरिन्(feminine)/गरे(respectful)",
-     "garin/gare",
-     "गरिनन्",
-     "garinan"
-    ],
-    [
-     "हामीले",
-     "गर्यौं",
-     "garyaũ",
-     "गरेनौं",
-     "garenaũ"
-    ],
-    [
-     "उनीहरूले",
-     "गरे",
-     "gare",
-     "गरेनन्",
-     "garenan"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "3. Present perfect (-एको छ): transitive verbs take +ले; the participle varies as -एको/-एकी/-एका"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Pronoun",
-    "Form",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "मैले",
-     "गरेको छु",
-     "gareko chu"
-    ],
-    [
-     "तैंले",
-     "गरेको छस्",
-     "gareko chas"
-    ],
-    [
-     "तिमीले",
-     "गरेको छौ",
-     "gareko chau"
-    ],
-    [
-     "तपाईंले",
-     "गर्नुभएको छ",
-     "garnubhaeko cha"
-    ],
-    [
-     "उसले",
-     "गरेको छ",
-     "gareko cha"
-    ],
-    [
-     "उनले",
-     "गरेकी छिन्(feminine)",
-     "garekī chin"
-    ],
-    [
-     "हामीले",
-     "गरेको छौं",
-     "gareko chaũ"
-    ],
-    [
-     "उनीहरूले",
-     "गरेका छन्",
-     "garekā chan"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "4. Habitual past (थ्यो): no -ले, even with transitive verbs"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Pronoun",
-    "Form",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "म",
-     "गर्थें",
-     "garthẽ"
-    ],
-    [
-     "तँ",
-     "गर्थिस्",
-     "garthis"
-    ],
-    [
-     "तिमी",
-     "गर्थ्यौ",
-     "garthyau"
-    ],
-    [
-     "तपाईं",
-     "गर्नुहुन्थ्यो",
-     "garnuhunthyo"
-    ],
-    [
-     "उ",
-     "गर्थ्यो",
-     "garthyo"
-    ],
-    [
-     "उनी",
-     "गर्थिन्",
-     "garthin"
-    ],
-    [
-     "हामी",
-     "गर्थ्यौं",
-     "garthyaũ"
-    ],
-    [
-     "उनीहरू",
-     "गर्थे",
-     "garthe"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "5. Commands and suggestions"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Type",
-    "Pronoun",
-    "Form",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "Command",
-     "तँ",
-     "गर्",
-     "gar"
-    ],
-    [
-     "Command",
-     "तिमी",
-     "गर",
-     "gara"
-    ],
-    [
-     "Command (respectful)",
-     "तपाईं",
-     "गर्नुहोस्",
-     "garnuhos"
-    ],
-    [
-     "Volitional: “shall I”",
-     "म",
-     "गरूँ",
-     "garũ"
-    ],
-    [
-     "Suggestion: “let's”",
-     "हामी",
-     "गरौं",
-     "garaũ"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "6. Future"
+   "text": "Change the person and time while talking about writing a letter."
   },
   {
    "type": "p",
-   "text": "This guide uses **the present form (section 1) + a time word**, rather than a dedicated future conjugation: म **भोलि** गर्छु (I will do it tomorrow)."
+   "text": "This appendix uses लेख्नु, to write. Starting from the stem लेख्, compare who writes, who wrote and who has written. The practice examples use the everyday situation of writing letters."
   },
   {
    "type": "h",
-   "text": "7. Note: some verbs use an alternate stem in the past"
-  },
-  {
-   "type": "p",
-   "text": "गर्नु follows the regular pattern here, but vowel-stem and irregular verbs can change their stem in the past."
+   "text": "A writing routine"
   },
   {
    "type": "table",
    "headers": [
-    "Verb",
-    "Present stem",
-    "Past (I)",
-    "Note"
+    "Nepali",
+    "Reading",
+    "Meaning"
    ],
    "rows": [
     [
-     "खानु (eat)",
-     "खा",
-     "मैले खाएँ",
-     "Vowel stem"
+     "म चिठी लेख्छु।",
+     "ma ciṭhī lekhchu",
+     "I write letters."
     ],
     [
-     "जानु (go)",
-     "जा",
-     "म गएँ",
-     "Irregular (ग-)"
+     "तँ चिठी लेख्छस्।",
+     "tã ciṭhī lekhchas",
+     "You write letters."
     ],
     [
-     "हुनु (become / be)",
-     "हु",
-     "म भएँ／थिएँ",
-     "Irregular (भ-／थि-)"
+     "तिमी चिठी लेख्छौ।",
+     "timī ciṭhī lekhchau",
+     "You write letters."
+    ],
+    [
+     "तिमीहरू चिठी लेख्छौ।",
+     "timīharū ciṭhī lekhchau",
+     "You write letters."
+    ],
+    [
+     "तपाईं चिठी लेख्नुहुन्छ।",
+     "tapāĩ ciṭhī lekhnuhuncha",
+     "You write letters."
+    ],
+    [
+     "उ चिठी लेख्छ।",
+     "u ciṭhī lekhcha",
+     "He writes letters."
+    ],
+    [
+     "उनी चिठी लेख्छिन्।",
+     "unī ciṭhī lekhchin",
+     "She writes letters."
+    ],
+    [
+     "उहाँ चिठी लेख्नुहुन्छ।",
+     "uhā̃ ciṭhī lekhnuhuncha",
+     "He writes letters."
+    ],
+    [
+     "हामी चिठी लेख्छौं।",
+     "hāmī ciṭhī lekhchaũ",
+     "We write letters."
+    ],
+    [
+     "उनीहरू चिठी लेख्छन्।",
+     "unīharū ciṭhī lekhchan",
+     "They write letters."
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "Not writing"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म चिठी लेख्दिनँ।",
+     "ma ciṭhī lekhdinã",
+     "I do not write letters."
+    ],
+    [
+     "तँ चिठी लेख्दैनस्।",
+     "tã ciṭhī lekhdainas",
+     "You do not write letters."
+    ],
+    [
+     "तिमी चिठी लेख्दैनौ।",
+     "timī ciṭhī lekhdainau",
+     "You do not write letters."
+    ],
+    [
+     "तिमीहरू चिठी लेख्दैनौ।",
+     "timīharū ciṭhī lekhdainau",
+     "You do not write letters."
+    ],
+    [
+     "तपाईं चिठी लेख्नुहुन्न।",
+     "tapāĩ ciṭhī lekhnuhunna",
+     "You do not write letters."
+    ],
+    [
+     "उ चिठी लेख्दैन।",
+     "u ciṭhī lekhdaina",
+     "He does not write letters."
+    ],
+    [
+     "उनी चिठी लेख्दिनन्।",
+     "unī ciṭhī lekhdinan",
+     "She does not write letters."
+    ],
+    [
+     "उहाँ चिठी लेख्नुहुन्न।",
+     "uhā̃ ciṭhī lekhnuhunna",
+     "He does not write letters."
+    ],
+    [
+     "हामी चिठी लेख्दैनौं।",
+     "hāmī ciṭhī lekhdainaũ",
+     "We do not write letters."
+    ],
+    [
+     "उनीहरू चिठी लेख्दैनन्।",
+     "unīharū ciṭhī lekhdainan",
+     "They do not write letters."
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "A completed writing event"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "मैले हिजो चिठी लेखेँ।",
+     "maile hijo ciṭhī lekhẽ",
+     "I wrote a letter yesterday."
+    ],
+    [
+     "तैंले हिजो चिठी लेखिस्।",
+     "taĩle hijo ciṭhī lekhis",
+     "You wrote a letter yesterday."
+    ],
+    [
+     "तिमीले हिजो चिठी लेख्यौ।",
+     "timīle hijo ciṭhī lekhyau",
+     "You wrote a letter yesterday."
+    ],
+    [
+     "तिमीहरूले हिजो चिठी लेख्यौ।",
+     "timīharūle hijo ciṭhī lekhyau",
+     "You wrote a letter yesterday."
+    ],
+    [
+     "तपाईंले हिजो चिठी लेख्नुभयो।",
+     "tapāĩle hijo ciṭhī lekhnubhayo",
+     "You wrote a letter yesterday."
+    ],
+    [
+     "उसले हिजो चिठी लेख्यो।",
+     "usle hijo ciṭhī lekhyo",
+     "He wrote a letter yesterday."
+    ],
+    [
+     "उनले हिजो चिठी लेखिन्।",
+     "unle hijo ciṭhī lekhin",
+     "She wrote a letter yesterday."
+    ],
+    [
+     "उहाँले हिजो चिठी लेख्नुभयो।",
+     "uhā̃le hijo ciṭhī lekhnubhayo",
+     "He wrote a letter yesterday."
+    ],
+    [
+     "हामीले हिजो चिठी लेख्यौं।",
+     "hāmīle hijo ciṭhī lekhyaũ",
+     "We wrote a letter yesterday."
+    ],
+    [
+     "उनीहरूले हिजो चिठी लेखे।",
+     "unīharūle hijo ciṭhī lekhe",
+     "They wrote a letter yesterday."
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "A writing event that did not happen"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "मैले हिजो चिठी लेखिनँ।",
+     "maile hijo ciṭhī lekhinã",
+     "I did not write a letter yesterday."
+    ],
+    [
+     "तैंले हिजो चिठी लेखिनस्।",
+     "taĩle hijo ciṭhī lekhinas",
+     "You did not write a letter yesterday."
+    ],
+    [
+     "तिमीले हिजो चिठी लेखेनौ।",
+     "timīle hijo ciṭhī lekhenau",
+     "You did not write a letter yesterday."
+    ],
+    [
+     "तिमीहरूले हिजो चिठी लेखेनौ।",
+     "timīharūle hijo ciṭhī lekhenau",
+     "You did not write a letter yesterday."
+    ],
+    [
+     "तपाईंले हिजो चिठी लेख्नुभएन।",
+     "tapāĩle hijo ciṭhī lekhnubhaena",
+     "You did not write a letter yesterday."
+    ],
+    [
+     "उसले हिजो चिठी लेखेन।",
+     "usle hijo ciṭhī lekhena",
+     "He did not write a letter yesterday."
+    ],
+    [
+     "उनले हिजो चिठी लेखिनन्।",
+     "unle hijo ciṭhī lekhinan",
+     "She did not write a letter yesterday."
+    ],
+    [
+     "उहाँले हिजो चिठी लेख्नुभएन।",
+     "uhā̃le hijo ciṭhī lekhnubhaena",
+     "He did not write a letter yesterday."
+    ],
+    [
+     "हामीले हिजो चिठी लेखेनौं।",
+     "hāmīle hijo ciṭhī lekhenaũ",
+     "We did not write a letter yesterday."
+    ],
+    [
+     "उनीहरूले हिजो चिठी लेखेनन्।",
+     "unīharūle hijo ciṭhī lekhenan",
+     "They did not write a letter yesterday."
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "Completion connected with now"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "मैले चिठी लेखेको छु।",
+     "maile ciṭhī lekheko chu",
+     "I have done the write letters."
+    ],
+    [
+     "तैंले चिठी लेखेको छस्।",
+     "taĩle ciṭhī lekheko chas",
+     "You have done the write letters."
+    ],
+    [
+     "तिमीले चिठी लेखेको छौ।",
+     "timīle ciṭhī lekheko chau",
+     "You have done the write letters."
+    ],
+    [
+     "तिमीहरूले चिठी लेखेको छौ।",
+     "timīharūle ciṭhī lekheko chau",
+     "You have done the write letters."
+    ],
+    [
+     "तपाईंले चिठी लेख्नुभएको छ।",
+     "tapāĩle ciṭhī lekhnubhaeko cha",
+     "You have done the write letters."
+    ],
+    [
+     "उसले चिठी लेखेको छ।",
+     "usle ciṭhī lekheko cha",
+     "He has done the write letters."
+    ],
+    [
+     "उनले चिठी लेखेकी छिन्।",
+     "unle ciṭhī lekhekī chin",
+     "She has done the write letters."
+    ],
+    [
+     "उहाँले चिठी लेख्नुभएको छ।",
+     "uhā̃le ciṭhī lekhnubhaeko cha",
+     "He has done the write letters."
+    ],
+    [
+     "हामीले चिठी लेखेको छौं।",
+     "hāmīle ciṭhī lekheko chaũ",
+     "We have done the write letters."
+    ],
+    [
+     "उनीहरूले चिठी लेखेका छन्।",
+     "unīharūle ciṭhī lekhekā chan",
+     "They have done the write letters."
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "Former writing habits"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म पहिले चिठी लेख्थें।",
+     "ma pahile ciṭhī lekhthẽ",
+     "I used to write letters."
+    ],
+    [
+     "तँ पहिले चिठी लेख्थिस्।",
+     "tã pahile ciṭhī lekhthis",
+     "You used to write letters."
+    ],
+    [
+     "तिमी पहिले चिठी लेख्थ्यौ।",
+     "timī pahile ciṭhī lekhthyau",
+     "You used to write letters."
+    ],
+    [
+     "तिमीहरू पहिले चिठी लेख्थ्यौ।",
+     "timīharū pahile ciṭhī lekhthyau",
+     "You used to write letters."
+    ],
+    [
+     "तपाईं पहिले चिठी लेख्नुहुन्थ्यो।",
+     "tapāĩ pahile ciṭhī lekhnuhunthyo",
+     "You used to write letters."
+    ],
+    [
+     "उ पहिले चिठी लेख्थ्यो।",
+     "u pahile ciṭhī lekhthyo",
+     "He used to write letters."
+    ],
+    [
+     "उनी पहिले चिठी लेख्थिन्।",
+     "unī pahile ciṭhī lekhthin",
+     "She used to write letters."
+    ],
+    [
+     "उहाँ पहिले चिठी लेख्नुहुन्थ्यो।",
+     "uhā̃ pahile ciṭhī lekhnuhunthyo",
+     "He used to write letters."
+    ],
+    [
+     "हामी पहिले चिठी लेख्थ्यौं।",
+     "hāmī pahile ciṭhī lekhthyaũ",
+     "We used to write letters."
+    ],
+    [
+     "उनीहरू पहिले चिठी लेख्थे।",
+     "unīharū pahile ciṭhī lekhthe",
+     "They used to write letters."
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "Requests and offers"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "तँ यो चिठी लेख्।",
+     "tã yo ciṭhī lekh",
+     "Write this letter."
+    ],
+    [
+     "तिमी यो चिठी लेख।",
+     "timī yo ciṭhī lekh",
+     "Write this letter."
+    ],
+    [
+     "तपाईं यो चिठी लेख्नुहोस्।",
+     "tapāĩ yo ciṭhī lekhnuhos",
+     "Please write this letter."
+    ],
+    [
+     "म यो चिठी लेखूँ?",
+     "ma yo ciṭhī lekhũ?",
+     "Shall I write this letter?"
+    ],
+    [
+     "हामी यो चिठी लेखौं।",
+     "hāmī yo ciṭhī lekhaũ",
+     "Let us write this letter."
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "Respect and plans"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "उनी चिठी लेख्छन्।",
+     "unī ciṭhī lekhchan",
+     "That person writes letters."
+    ],
+    [
+     "उनले हिजो चिठी लेखे।",
+     "unle hijo ciṭhī lekhe",
+     "That person wrote a letter yesterday."
+    ],
+    [
+     "म भोलि चिठी लेख्छु।",
+     "ma bholi ciṭhī lekhchu",
+     "I will write a letter tomorrow."
+    ],
+    [
+     "तँ भोलि चिठी लेख्छस्।",
+     "tã bholi ciṭhī lekhchas",
+     "You will write a letter tomorrow."
+    ],
+    [
+     "तिमी भोलि चिठी लेख्छौ।",
+     "timī bholi ciṭhī lekhchau",
+     "You will write a letter tomorrow."
+    ],
+    [
+     "तिमीहरू भोलि चिठी लेख्छौ।",
+     "timīharū bholi ciṭhī lekhchau",
+     "You will write a letter tomorrow."
+    ],
+    [
+     "तपाईं भोलि चिठी लेख्नुहुन्छ।",
+     "tapāĩ bholi ciṭhī lekhnuhuncha",
+     "You will write a letter tomorrow."
+    ],
+    [
+     "उ भोलि चिठी लेख्छ।",
+     "u bholi ciṭhī lekhcha",
+     "He will write a letter tomorrow."
+    ],
+    [
+     "उनी भोलि चिठी लेख्छिन्।",
+     "unī bholi ciṭhī lekhchin",
+     "She will write a letter tomorrow."
+    ],
+    [
+     "उहाँ भोलि चिठी लेख्नुहुन्छ।",
+     "uhā̃ bholi ciṭhī lekhnuhuncha",
+     "He will write a letter tomorrow."
+    ],
+    [
+     "हामी भोलि चिठी लेख्छौं।",
+     "hāmī bholi ciṭhī lekhchaũ",
+     "We will write a letter tomorrow."
+    ],
+    [
+     "उनीहरू भोलि चिठी लेख्छन्।",
+     "unīharū bholi ciṭhī lekhchan",
+     "They will write a letter tomorrow."
     ]
    ]
   },
   {
    "type": "note",
-   "text": "Start with **म (-छु), तपाईं (-नुहुन्छ), and उ (-छ)**, then expand to **तँ/तिमी/उनी/हामी/उनीहरू**. Learn affirmative and negative forms in pairs: negatives use the **दिन/दैन family** in the present and the **न family** in the past."
+   "text": "Check the agent marker ले with completed transitive actions. Choose short imperative forms only when the relationship makes them appropriate."
   }
  ],
  "36": [
   {
    "type": "goal",
-   "text": "Check every person for the three “be / exist” patterns: **हो (identity), छ (existence / state), and थियो (past)**."
-  },
-  {
-   "type": "h",
-   "text": "1. हो: present identity, “A is B”"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Pronoun",
-    "Affirmative",
-    "Romanized",
-    "Negative (होइन)",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "म",
-     "हुँ",
-     "hũ",
-     "होइनँ",
-     "hoinã"
-    ],
-    [
-     "तँ",
-     "होस्",
-     "hos",
-     "होइनस्",
-     "hoinas"
-    ],
-    [
-     "तिमी",
-     "हौ",
-     "hau",
-     "होइनौ",
-     "hoinau"
-    ],
-    [
-     "तपाईं／उहाँ",
-     "हुनुहुन्छ",
-     "hunuhuncha",
-     "हुनुहुन्न",
-     "hunuhunna"
-    ],
-    [
-     "उ／यो／त्यो",
-     "हो",
-     "ho",
-     "होइन",
-     "hoina"
-    ],
-    [
-     "उनी",
-     "हुन्(feminine / respectful)",
-     "hun",
-     "होइनन्",
-     "hoinan"
-    ],
-    [
-     "हामी",
-     "हौं",
-     "haũ",
-     "होइनौं",
-     "hoinaũ"
-    ],
-    [
-     "उनीहरू",
-     "हुन्",
-     "hun",
-     "होइनन्",
-     "hoinan"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "2. छ: present existence, location, or state"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Pronoun",
-    "Affirmative",
-    "Romanized",
-    "Negative (छैन)",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "म",
-     "छु",
-     "chu",
-     "छैनँ",
-     "chainã"
-    ],
-    [
-     "तँ",
-     "छस्",
-     "chas",
-     "छैनस्",
-     "chainas"
-    ],
-    [
-     "तिमी",
-     "छौ",
-     "chau",
-     "छैनौ",
-     "chainau"
-    ],
-    [
-     "तपाईं／उहाँ",
-     "हुनुहुन्छ",
-     "hunuhuncha",
-     "हुनुहुन्न",
-     "hunuhunna"
-    ],
-    [
-     "उ／यो／त्यो",
-     "छ",
-     "cha",
-     "छैन",
-     "chaina"
-    ],
-    [
-     "उनी",
-     "छिन्(feminine)/छन्(respectful)",
-     "chin/chan",
-     "छैनन्",
-     "chainan"
-    ],
-    [
-     "हामी",
-     "छौं",
-     "chaũ",
-     "छैनौं",
-     "chainaũ"
-    ],
-    [
-     "उनीहरू",
-     "छन्",
-     "chan",
-     "छैनन्",
-     "chainan"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "3. थियो: past “was / were / existed,” shared by हो and छ"
-  },
-  {
-   "type": "table",
-   "headers": [
-    "Pronoun",
-    "Affirmative",
-    "Romanized",
-    "Negative (थिएन)",
-    "Romanized"
-   ],
-   "rows": [
-    [
-     "म",
-     "थिएँ",
-     "thiẽ",
-     "थिइनँ",
-     "thiinã"
-    ],
-    [
-     "तँ",
-     "थिइस्",
-     "thiis",
-     "थिइनस्",
-     "thiinas"
-    ],
-    [
-     "तिमी",
-     "थियौ",
-     "thiyau",
-     "थिएनौ",
-     "thienau"
-    ],
-    [
-     "तपाईं／उहाँ",
-     "हुनुहुन्थ्यो",
-     "hunuhunthyo",
-     "हुनुहुन्नथ्यो",
-     "hunuhunnathyo"
-    ],
-    [
-     "उ／यो／त्यो",
-     "थियो",
-     "thiyo",
-     "थिएन",
-     "thiena"
-    ],
-    [
-     "उनी",
-     "थिइन्(feminine / respectful)",
-     "thiin",
-     "थिइनन्",
-     "thiinan"
-    ],
-    [
-     "हामी",
-     "थियौं",
-     "thiyaũ",
-     "थिएनौं",
-     "thienaũ"
-    ],
-    [
-     "उनीहरू",
-     "थिए",
-     "thie",
-     "थिएनन्",
-     "thienan"
-    ]
-   ]
-  },
-  {
-   "type": "h",
-   "text": "4. हुन्छ: “becomes / generally is”"
+   "text": "Contrast identity, present location and a past outing in affirmative and negative statements."
   },
   {
    "type": "p",
-   "text": "This is a present form of हुनु and **follows the conjugation pattern of गर्नु in Appendix A**. For general or habitual statements, do not start with म हुन्छु…; focus on third-person **हुन्छ**. The past of “become” is **भयो**."
+   "text": "Choose a form of हुनु according to what you mean. Compare being an author, being at the library and having been at the market the day before yesterday. Practice the subject and ending together as a short sentence."
+  },
+  {
+   "type": "h",
+   "text": "Identifying someone"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म लेखक हुँ।",
+     "ma lekhak hũ",
+     "I am an author."
+    ],
+    [
+     "तँ लेखक होस्।",
+     "tã lekhak hos",
+     "You are an author."
+    ],
+    [
+     "तिमी लेखक हौ।",
+     "timī lekhak hau",
+     "You are an author."
+    ],
+    [
+     "तिमीहरू लेखक हौ।",
+     "timīharū lekhak hau",
+     "You are authors."
+    ],
+    [
+     "तपाईं लेखक हुनुहुन्छ।",
+     "tapāĩ lekhak hunuhuncha",
+     "You are an author."
+    ],
+    [
+     "उ लेखक हो।",
+     "u lekhak ho",
+     "He is an author."
+    ],
+    [
+     "उनी लेखिका हुन्।",
+     "unī lekhikā hun",
+     "She is an author."
+    ],
+    [
+     "उहाँ लेखक हुनुहुन्छ।",
+     "uhā̃ lekhak hunuhuncha",
+     "He is an author."
+    ],
+    [
+     "हामी लेखक हौं।",
+     "hāmī lekhak haũ",
+     "We are authors."
+    ],
+    [
+     "उनीहरू लेखक हुन्।",
+     "unīharū lekhak hun",
+     "They are authors."
+    ],
+    [
+     "म लेखक होइनँ।",
+     "ma lekhak hoinã",
+     "I am not an author."
+    ],
+    [
+     "तँ लेखक होइनस्।",
+     "tã lekhak hoinas",
+     "You are not an author."
+    ],
+    [
+     "तिमी लेखक होइनौ।",
+     "timī lekhak hoinau",
+     "You are not an author."
+    ],
+    [
+     "तिमीहरू लेखक होइनौ।",
+     "timīharū lekhak hoinau",
+     "You are not authors."
+    ],
+    [
+     "तपाईं लेखक हुनुहुन्न।",
+     "tapāĩ lekhak hunuhunna",
+     "You are not an author."
+    ],
+    [
+     "उ लेखक होइन।",
+     "u lekhak hoina",
+     "He is not an author."
+    ],
+    [
+     "उनी लेखिका होइनन्।",
+     "unī lekhikā hoinan",
+     "She is not an author."
+    ],
+    [
+     "उहाँ लेखक हुनुहुन्न।",
+     "uhā̃ lekhak hunuhunna",
+     "He is not an author."
+    ],
+    [
+     "हामी लेखक होइनौं।",
+     "hāmī lekhak hoinaũ",
+     "We are not authors."
+    ],
+    [
+     "उनीहरू लेखक होइनन्।",
+     "unīharū lekhak hoinan",
+     "They are not authors."
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "Present location"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म पुस्तकालयमा छु।",
+     "ma pustakālayamā chu",
+     "I am at the library."
+    ],
+    [
+     "तँ पुस्तकालयमा छस्।",
+     "tã pustakālayamā chas",
+     "You are at the library."
+    ],
+    [
+     "तिमी पुस्तकालयमा छौ।",
+     "timī pustakālayamā chau",
+     "You are at the library."
+    ],
+    [
+     "तिमीहरू पुस्तकालयमा छौ।",
+     "timīharū pustakālayamā chau",
+     "You are at the library."
+    ],
+    [
+     "तपाईं पुस्तकालयमा हुनुहुन्छ।",
+     "tapāĩ pustakālayamā hunuhuncha",
+     "You are at the library."
+    ],
+    [
+     "उ पुस्तकालयमा छ।",
+     "u pustakālayamā cha",
+     "He is at the library."
+    ],
+    [
+     "उनी पुस्तकालयमा छिन्।",
+     "unī pustakālayamā chin",
+     "She is at the library."
+    ],
+    [
+     "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+     "uhā̃ pustakālayamā hunuhuncha",
+     "He is at the library."
+    ],
+    [
+     "हामी पुस्तकालयमा छौं।",
+     "hāmī pustakālayamā chaũ",
+     "We are at the library."
+    ],
+    [
+     "उनीहरू पुस्तकालयमा छन्।",
+     "unīharū pustakālayamā chan",
+     "They are at the library."
+    ],
+    [
+     "म पुस्तकालयमा छैनँ।",
+     "ma pustakālayamā chainã",
+     "I am not at the library."
+    ],
+    [
+     "तँ पुस्तकालयमा छैनस्।",
+     "tã pustakālayamā chainas",
+     "You are not at the library."
+    ],
+    [
+     "तिमी पुस्तकालयमा छैनौ।",
+     "timī pustakālayamā chainau",
+     "You are not at the library."
+    ],
+    [
+     "तिमीहरू पुस्तकालयमा छैनौ।",
+     "timīharū pustakālayamā chainau",
+     "You are not at the library."
+    ],
+    [
+     "तपाईं पुस्तकालयमा हुनुहुन्न।",
+     "tapāĩ pustakālayamā hunuhunna",
+     "You are not at the library."
+    ],
+    [
+     "उ पुस्तकालयमा छैन।",
+     "u pustakālayamā chaina",
+     "He is not at the library."
+    ],
+    [
+     "उनी पुस्तकालयमा छैनन्।",
+     "unī pustakālayamā chainan",
+     "She is not at the library."
+    ],
+    [
+     "उहाँ पुस्तकालयमा हुनुहुन्न।",
+     "uhā̃ pustakālayamā hunuhunna",
+     "He is not at the library."
+    ],
+    [
+     "हामी पुस्तकालयमा छैनौं।",
+     "hāmī pustakālayamā chainaũ",
+     "We are not at the library."
+    ],
+    [
+     "उनीहरू पुस्तकालयमा छैनन्।",
+     "unīharū pustakālayamā chainan",
+     "They are not at the library."
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "Past location"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म अस्ति बजारमा थिएँ।",
+     "ma asti bajārmā thiẽ",
+     "I was at the market the day before yesterday."
+    ],
+    [
+     "तँ अस्ति बजारमा थिइस्।",
+     "tã asti bajārmā thiis",
+     "You were at the market the day before yesterday."
+    ],
+    [
+     "तिमी अस्ति बजारमा थियौ।",
+     "timī asti bajārmā thiyau",
+     "You were at the market the day before yesterday."
+    ],
+    [
+     "तिमीहरू अस्ति बजारमा थियौ।",
+     "timīharū asti bajārmā thiyau",
+     "You were at the market the day before yesterday."
+    ],
+    [
+     "तपाईं अस्ति बजारमा हुनुहुन्थ्यो।",
+     "tapāĩ asti bajārmā hunuhunthyo",
+     "You were at the market the day before yesterday."
+    ],
+    [
+     "उ अस्ति बजारमा थियो।",
+     "u asti bajārmā thiyo",
+     "He was at the market the day before yesterday."
+    ],
+    [
+     "उनी अस्ति बजारमा थिइन्।",
+     "unī asti bajārmā thiin",
+     "She was at the market the day before yesterday."
+    ],
+    [
+     "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+     "uhā̃ asti bajārmā hunuhunthyo",
+     "He was at the market the day before yesterday."
+    ],
+    [
+     "हामी अस्ति बजारमा थियौं।",
+     "hāmī asti bajārmā thiyaũ",
+     "We were at the market the day before yesterday."
+    ],
+    [
+     "उनीहरू अस्ति बजारमा थिए।",
+     "unīharū asti bajārmā thie",
+     "They were at the market the day before yesterday."
+    ],
+    [
+     "म अस्ति बजारमा थिइनँ।",
+     "ma asti bajārmā thiinã",
+     "I was not at the market the day before yesterday."
+    ],
+    [
+     "तँ अस्ति बजारमा थिइनस्।",
+     "tã asti bajārmā thiinas",
+     "You were not at the market the day before yesterday."
+    ],
+    [
+     "तिमी अस्ति बजारमा थिएनौ।",
+     "timī asti bajārmā thienau",
+     "You were not at the market the day before yesterday."
+    ],
+    [
+     "तिमीहरू अस्ति बजारमा थिएनौ।",
+     "timīharū asti bajārmā thienau",
+     "You were not at the market the day before yesterday."
+    ],
+    [
+     "तपाईं अस्ति बजारमा हुनुहुन्नथ्यो।",
+     "tapāĩ asti bajārmā hunuhunnathyo",
+     "You were not at the market the day before yesterday."
+    ],
+    [
+     "उ अस्ति बजारमा थिएन।",
+     "u asti bajārmā thiena",
+     "He was not at the market the day before yesterday."
+    ],
+    [
+     "उनी अस्ति बजारमा थिइनन्।",
+     "unī asti bajārmā thiinan",
+     "She was not at the market the day before yesterday."
+    ],
+    [
+     "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+     "uhā̃ asti bajārmā hunuhunnathyo",
+     "He was not at the market the day before yesterday."
+    ],
+    [
+     "हामी अस्ति बजारमा थिएनौं।",
+     "hāmī asti bajārmā thienaũ",
+     "We were not at the market the day before yesterday."
+    ],
+    [
+     "उनीहरू अस्ति बजारमा थिएनन्।",
+     "unīharū asti bajārmā thienan",
+     "They were not at the market the day before yesterday."
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "An object and its location"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Reading",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "यो नयाँ कापी हो।",
+     "yo nayā̃ kāpī ho",
+     "This is a new notebook."
+    ],
+    [
+     "त्यो मेरो कापी होइन।",
+     "tyo mero kāpī hoina",
+     "That is not my notebook."
+    ],
+    [
+     "मेरो कापी झोलामा छ।",
+     "mero kāpī jholāmā cha",
+     "My notebook is in the bag."
+    ],
+    [
+     "तिम्रो कापी झोलामा छैन।",
+     "timro kāpī jholāmā chaina",
+     "Your notebook is not in the bag."
+    ],
+    [
+     "यो पहिले पुस्तकालय थियो।",
+     "yo pahile pustakālaya thiyo",
+     "This used to be a library."
+    ],
+    [
+     "मेरो कापी अस्ति यहाँ थिएन।",
+     "mero kāpī asti yahā̃ thiena",
+     "My notebook was not here the day before yesterday."
+    ],
+    [
+     "उनी बाहिर छन्।",
+     "unī bāhira chan",
+     "That person is outside."
+    ]
+   ]
   },
   {
    "type": "note",
-   "text": "Distinguish **हो and छ in the present** (negative होइन／छैन), but remember that **both share थियो in the past** (negative थिएन). The respectful forms, **present हुनुहुन्छ and past हुनुहुन्थ्यो**, are shared by हो/छ."
+   "text": "Use the हो family for present identity and the छ family for present existence. Past statements use the थियो family while retaining person, number and respect distinctions."
   }
  ]
 }
