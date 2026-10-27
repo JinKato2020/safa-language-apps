@@ -1,0 +1,2373 @@
+{
+ "1": [
+  {
+   "type": "goal",
+   "text": "Say \"I am ~\" and \"I do ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Subject words"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म",
+     "ma",
+     "I"
+    ],
+    [
+     "उ",
+     "u",
+     "he"
+    ],
+    [
+     "उनी",
+     "unī",
+     "she (polite)"
+    ],
+    [
+     "यो",
+     "yo",
+     "this"
+    ],
+    [
+     "हामी",
+     "hāmī",
+     "we"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2a. \"to be\" for nouns (A is B)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Subject",
+    "\"is/am\"",
+    "Romanized"
+   ],
+   "rows": [
+    [
+     "I म",
+     "हुँ",
+     "hũ"
+    ],
+    [
+     "he / this उ／यो",
+     "हो",
+     "ho"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म विद्यार्थी **हुँ**।",
+     "ma vidyārthī **hũ**",
+     "I am a student"
+    ],
+    [
+     "उ डाक्टर **हो**।",
+     "u ḍākṭar **ho**",
+     "He is a doctor"
+    ],
+    [
+     "यो किताब **हो**।",
+     "yo kitāb **ho**",
+     "This is a book"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2b. \"do ~\" (verb + छ)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Subject",
+    "Ending",
+    "Example (eat खानु)",
+    "Romanized"
+   ],
+   "rows": [
+    [
+     "I म",
+     "~**छु**",
+     "खान्**छु**",
+     "khān**chu**"
+    ],
+    [
+     "he उ",
+     "~**छ**",
+     "खान्**छ**",
+     "khān**cha**"
+    ],
+    [
+     "she उनी",
+     "~**छिन्**",
+     "खान्**छिन्**",
+     "khān**chin**"
+    ],
+    [
+     "we हामी",
+     "~**छौं**",
+     "खान्**छौं**",
+     "khān**chaũ**"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म भात **खान्छु**।",
+     "ma bhāt khānchu",
+     "I eat rice"
+    ],
+    [
+     "उ पानी **पिउँछ**।",
+     "u pānī piũcha",
+     "He drinks water"
+    ],
+    [
+     "उनी स्कूल **जान्छिन्**।",
+     "unī skūl jānchin",
+     "She goes to school"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "3. Word order = Subject → Object → Verb"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "",
+    "Subject",
+    "Object",
+    "Verb"
+   ],
+   "rows": [
+    [
+     "Nepali",
+     "म (ma)",
+     "नेपाली (nepālī)",
+     "बोल्छु (bolchu)"
+    ],
+    [
+     "English",
+     "I",
+     "Nepali",
+     "speak"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "Use **हो/हुँ** for \"A is B\" (nouns), and **verb + छ** for actions. They are different."
+  }
+ ],
+ "2": [
+  {
+   "type": "goal",
+   "text": "Say \"I don't ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Key rule: there is no separate word for \"not\""
+  },
+  {
+   "type": "p",
+   "text": "The affirmative **छ (cha)** changes to the negative **दैन／दिन (daina／dina)** family — the verb itself becomes negative."
+  },
+  {
+   "type": "h",
+   "text": "2. Negative conjugation (eat खानु)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Subject",
+    "Affirmative",
+    "Negative",
+    "Romanized"
+   ],
+   "rows": [
+    [
+     "I म",
+     "खान्छु",
+     "**खाँदिनँ**",
+     "khā̃**dinã**"
+    ],
+    [
+     "he उ",
+     "खान्छ",
+     "**खाँदैन**",
+     "khā̃**daina**"
+    ],
+    [
+     "she उनी",
+     "खान्छिन्",
+     "**खाँदिनन्**",
+     "khā̃**dinan**"
+    ],
+    [
+     "we हामी",
+     "खान्छौं",
+     "**खाँदैनौं**",
+     "khā̃**dainaũ**"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "3. Examples (affirmative → negative)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Affirmative",
+    "Negative",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म पानी पिउँछु",
+     "म पानी **पिउँदिनँ** (piũdinã)",
+     "I don't drink water"
+    ],
+    [
+     "उ आउँछ",
+     "उ **आउँदैन** (āũdaina)",
+     "He doesn't come"
+    ],
+    [
+     "उनी स्कूल जान्छिन्",
+     "उनी स्कूल **जाँदिनन्** (jā̃dinan)",
+     "She doesn't go to school"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "4. A special pattern: \"to like\""
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Part",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "मलाई",
+     "malāī",
+     "to me"
+    ],
+    [
+     "मन पर्छ",
+     "man parcha",
+     "is liked (= like)"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "मलाई कफी मन **पर्दैनँ**।",
+     "malāī kaphī man **pardainã**",
+     "I don't like coffee"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "With \"like\", the subject is not \"I म\" but \"**to me मलाई**\". Literally: \"to me coffee is not liked\"."
+  }
+ ],
+ "3": [
+  {
+   "type": "goal",
+   "text": "Say \"I did ~\". **The biggest hurdle, \"ले (le)\", appears here.**"
+  },
+  {
+   "type": "h",
+   "text": "1. Past-tense endings"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Subject",
+    "Ending",
+    "Example",
+    "Romanized"
+   ],
+   "rows": [
+    [
+     "I",
+     "~**एँ**",
+     "खा**एँ** (ate)",
+     "khā**ẽ**"
+    ],
+    [
+     "he",
+     "~**यो**",
+     "सुत्**यो** (slept)",
+     "sut**yo**"
+    ],
+    [
+     "she",
+     "~**इन्**",
+     "ग**इन्** (went)",
+     "ga**in**"
+    ],
+    [
+     "we",
+     "~**यौं**",
+     "हेर्**यौं** (watched)",
+     "her**yaũ**"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2.【Most important】the subject of a transitive verb takes \"ले\""
+  },
+  {
+   "type": "p",
+   "text": "For verbs that act on an object — eat, read, write, do — add **ले** to the subject."
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Subject",
+    "+ले",
+    "Romanized"
+   ],
+   "rows": [
+    [
+     "I म",
+     "**मैले**",
+     "maile"
+    ],
+    [
+     "he उसले",
+     "**उसले**",
+     "usle"
+    ],
+    [
+     "she उनले",
+     "**उनले**",
+     "unle"
+    ],
+    [
+     "we हामीले",
+     "**हामीले**",
+     "hāmīle"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "**Takes ले (transitive)**"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "**मैले** किताब पढेँ।",
+     "maile kitāb paḍhẽ",
+     "I read a book"
+    ],
+    [
+     "**उसले** हिजो काम गर्यो।",
+     "usle hijo kām garyo",
+     "He worked yesterday"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "**No ले (intransitive: sleep, go)**"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "उ सुत्यो।",
+     "u sutyo",
+     "He slept"
+    ],
+    [
+     "उनी स्कूल गइन्।",
+     "unī skūl gain",
+     "She went to school"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "3. How to tell them apart"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Type",
+    "Examples",
+    "ले"
+   ],
+   "rows": [
+    [
+     "acts on an object (transitive)",
+     "eat, read, write, do, watch",
+     "**takes ले**"
+    ],
+    [
+     "just moves (intransitive)",
+     "sleep, go, come, sit",
+     "no ले"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "The #1 beginner mistake is **forgetting ले**. Remember: \"action on an object = subject + ले\"."
+  }
+ ],
+ "4": [
+  {
+   "type": "goal",
+   "text": "Say \"I didn't ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. The negative past adds \"न (na/n)\""
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Subject",
+    "Past affirmative",
+    "Past negative",
+    "Romanized"
+   ],
+   "rows": [
+    [
+     "I",
+     "खाएँ",
+     "**खाइनँ**",
+     "khā**inã**"
+    ],
+    [
+     "he",
+     "आयो",
+     "**आएन**",
+     "ā**ena**"
+    ],
+    [
+     "she",
+     "गइन्",
+     "**गइनन्**",
+     "ga**inan**"
+    ],
+    [
+     "we",
+     "हेर्यौं",
+     "**हेरेनौँ**",
+     "here**naũ**"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples (affirmative → negative)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Affirmative",
+    "Negative",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "मैले खाएँ",
+     "मैले **खाइनँ**",
+     "I didn't eat"
+    ],
+    [
+     "उ आयो",
+     "उ **आएन**",
+     "He didn't come"
+    ],
+    [
+     "म हिजो सुतेँ",
+     "म हिजो **सुतिनँ** (sutinã)",
+     "I didn't sleep yesterday"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "3. \"ले\" does not disappear in the negative"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "**उसले** त्यो किताब पढेन।",
+     "usle tyo kitāb paḍhena",
+     "He didn't read that book"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "Even in the negative, a transitive subject keeps **ले**. Don't drop it."
+  }
+ ],
+ "5": [
+  {
+   "type": "goal",
+   "text": "Say \"I will ~\". **You can reuse the Theme 1 form.**"
+  },
+  {
+   "type": "h",
+   "text": "1. Key rule: future = present form + a time word"
+  },
+  {
+   "type": "h",
+   "text": "2. Time words"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Nepali",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "भोलि",
+     "bholi",
+     "tomorrow"
+    ],
+    [
+     "अर्को हप्ता",
+     "arko haptā",
+     "next week"
+    ],
+    [
+     "भविष्यमा",
+     "bhaviṣyamā",
+     "in the future"
+    ],
+    [
+     "आज राति",
+     "āja rāti",
+     "tonight"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "3. How to build it = just add a time word"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Present",
+    "+ time word → future",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म स्कूल जान्छु",
+     "म **भोलि** स्कूल जान्छु",
+     "I'll go to school tomorrow"
+    ],
+    [
+     "म डाक्टर बन्छु",
+     "म **भविष्यमा** डाक्टर बन्छु",
+     "I'll become a doctor in the future"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "उनी **अर्को हप्ता** काठमाडौं आउँछिन्।",
+     "unī arko haptā kāṭhmāḍaũ āũchin",
+     "She'll come to Kathmandu next week"
+    ],
+    [
+     "उ **आज राति** साथीलाई फोन गर्छ।",
+     "u āja rāti sāthīlāī phon garcha",
+     "He'll call a friend tonight"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "The form is the same as Theme 1 — just place a \"when\" word near the front."
+  }
+ ],
+ "6": [
+  {
+   "type": "goal",
+   "text": "Ask \"Is it ~?\" and \"what / where / how much …?\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Yes/No questions = same word order, just rise at the end"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Statement",
+    "Question",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "यो किताब हो।",
+     "यो किताब **हो?**",
+     "Is this a book?"
+    ],
+    [
+     "तपाईं नेपाली **हुनुहुन्छ?**",
+     "tapāī̃ nepālī hunuhuncha?",
+     "Are you Nepali?"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "※ **तपाईं (tapāī̃)** = polite \"you\"; **हुनुहुन्छ (hunuhuncha)** = polite \"are/do\"."
+  },
+  {
+   "type": "h",
+   "text": "2. Question words (keep them in place)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Word",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "के",
+     "ke",
+     "what"
+    ],
+    [
+     "कहाँ",
+     "kahā̃",
+     "where"
+    ],
+    [
+     "कति",
+     "kati",
+     "how much / many"
+    ],
+    [
+     "कहिले",
+     "kahile",
+     "when"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "यो **के** हो?",
+     "yo ke ho?",
+     "What is this?"
+    ],
+    [
+     "शौचालय **कहाँ** छ?",
+     "śaucālaya kahā̃ cha?",
+     "Where is the toilet?"
+    ],
+    [
+     "यो **कति** पर्छ?",
+     "yo kati parcha?",
+     "How much does this cost?"
+    ],
+    [
+     "बस **कहिले** आउँछ?",
+     "bas kahile āũcha?",
+     "When does the bus come?"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "Unlike English, the question word is **not moved to the front** — it stays in its natural place."
+  }
+ ],
+ "7": [
+  {
+   "type": "goal",
+   "text": "Politely ask someone to \"please ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: verb root + **नुहोस् (-nuhos)**"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Verb (meaning)",
+    "Request form",
+    "Romanized"
+   ],
+   "rows": [
+    [
+     "आउनु (come)",
+     "आउ**नुहोस्**",
+     "āu**nuhos**"
+    ],
+    [
+     "बस्नु (sit)",
+     "बस्**नुहोस्**",
+     "bas**nuhos**"
+    ],
+    [
+     "सुन्नु (listen)",
+     "सुन्**नुहोस्**",
+     "sun**nuhos**"
+    ],
+    [
+     "हेर्नु (look)",
+     "हेर्**नुहोस्**",
+     "her**nuhos**"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "ढोका **खोल्नुहोस्**।",
+     "ḍhokā kholnuhos",
+     "Please open the door"
+    ],
+    [
+     "यहाँ नाम **लेख्नुहोस्**।",
+     "yahā̃ nām lekhnuhos",
+     "Please write your name here"
+    ],
+    [
+     "**पर्खनुहोस्**।",
+     "parkhanuhos",
+     "Please wait"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "Adding **नुहोस्** makes it polite — use it with elders and people you've just met."
+  }
+ ],
+ "8": [
+  {
+   "type": "goal",
+   "text": "Give commands at the right politeness level."
+  },
+  {
+   "type": "h",
+   "text": "1. Three politeness levels"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Listener",
+    "How to build",
+    "Example (get up उठ्नु)",
+    "Romanized",
+    "Nuance"
+   ],
+   "rows": [
+    [
+     "elder / polite",
+     "root + **नुहोस्**",
+     "उठ्**नुहोस्**",
+     "uṭh**nuhos**",
+     "please do ~"
+    ],
+    [
+     "equal / mid",
+     "root + **ऊ**",
+     "उठ (≒उठ्**नू**)",
+     "uṭh",
+     "do ~"
+    ],
+    [
+     "close / lower",
+     "root only",
+     "**उठ**",
+     "uṭh",
+     "do ~ (plain)"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning",
+    "Level"
+   ],
+   "rows": [
+    [
+     "यहाँ **आउनुहोस्**।",
+     "yahā̃ āunuhos",
+     "Come here",
+     "polite"
+    ],
+    [
+     "चाँडो **खाऊ**।",
+     "cā̃ḍo khāū",
+     "Eat quickly",
+     "mid"
+    ],
+    [
+     "ढोका बन्द **गर**।",
+     "ḍhokā banda gar",
+     "Close the door",
+     "plain"
+    ],
+    [
+     "चाँडो **उठ**।",
+     "cā̃ḍo uṭh",
+     "Wake up quickly",
+     "plain"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "※ **कृपया (kripayā) = please**. Adding it softens the command (e.g., कृपया चुप लाग्नुहोस् = please be quiet)."
+  },
+  {
+   "type": "note",
+   "text": "Choose the level by your relationship. When in doubt, the polite **नुहोस्** is safe."
+  }
+ ],
+ "9": [
+  {
+   "type": "goal",
+   "text": "Say \"you must not ~\" and \"please don't ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Two ways"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Way",
+    "How to build",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "① rule / prohibition",
+     "root + **नुहुँदैन** (-nuhũdaina)",
+     "must not ~"
+    ],
+    [
+     "② polite \"don't\"",
+     "**न** + root + **नुहोस्**",
+     "please don't ~"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning",
+    "Type"
+   ],
+   "rows": [
+    [
+     "यहाँ फोटो **खिच्नुहुँदैन**।",
+     "yahā̃ phoṭo khicnuhũdaina",
+     "You must not take photos here",
+     "①"
+    ],
+    [
+     "झूट **बोल्नुहुँदैन**।",
+     "jhūṭ bolnuhũdaina",
+     "You must not tell lies",
+     "①"
+    ],
+    [
+     "कृपया चुरोट **नपिउनुहोस्**।",
+     "kripayā curoṭ napiunuhos",
+     "Please don't smoke",
+     "②"
+    ],
+    [
+     "कृपया **नदौड्नुहोस्**।",
+     "kripayā nadauḍnuhos",
+     "Please don't run",
+     "②"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "For ②, put **न (na)** in front of the verb root (न + दौड्नुहोस् → **न**दौड्नुहोस्)."
+  }
+ ],
+ "10": [
+  {
+   "type": "goal",
+   "text": "Express feeling with \"how ~!\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: **कति (kati) + adjective + !**"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "**कति** सुन्दर!",
+     "kati sundar!",
+     "How beautiful!"
+    ],
+    [
+     "**कति** ठूलो घर!",
+     "kati ṭhūlo ghar!",
+     "What a big house!"
+    ],
+    [
+     "**कति** छिटो!",
+     "kati chiṭo!",
+     "So fast!"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Emphasis words"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Word",
+    "Romanized",
+    "Meaning",
+    "Example"
+   ],
+   "rows": [
+    [
+     "एकदमै",
+     "ekdamai",
+     "extremely",
+     "एकदमै मिठो! (So delicious!)"
+    ],
+    [
+     "साँच्चै",
+     "sā̃ccai",
+     "really",
+     "साँच्चै! (Really!)"
+    ],
+    [
+     "अद्भुत",
+     "adbhut",
+     "amazing",
+     "अद्भुत! (Amazing!)"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "In a question **कति** means \"how much?\", in an exclamation it means \"how ~!\". Tell them apart by the punctuation and tone."
+  }
+ ],
+ "11": [
+  {
+   "type": "goal",
+   "text": "Say \"I am ~ing right now\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: root + **इरहेको／इरहेकी छ** (-iraheko/-irahekī cha)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Subject",
+    "Form",
+    "Romanized"
+   ],
+   "rows": [
+    [
+     "I म",
+     "~इरहेको **छु**",
+     "-iraheko **chu**"
+    ],
+    [
+     "he उ",
+     "~इरहेको **छ**",
+     "-iraheko **cha**"
+    ],
+    [
+     "she उ (f)",
+     "~इरहे**की** छ",
+     "-irahe**kī** cha"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म अहिले **पढिरहेको छु**।",
+     "ma ahile paḍhiraheko chu",
+     "I am studying right now"
+    ],
+    [
+     "बच्चा **रोइरहेको छ**।",
+     "baccā roiraheko cha",
+     "The baby is crying"
+    ],
+    [
+     "उ **सुतिरहेकी छ**।",
+     "u sutirahekī cha",
+     "She is sleeping"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "3. A shorter, colloquial form: root + **दैछ** (-daicha)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "उ **खाँदैछ**।",
+     "u khā̃daicha",
+     "He is eating"
+    ],
+    [
+     "म पानी **पिउँदैछु**।",
+     "ma pānī piũdaichu",
+     "I am drinking water"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "A female subject uses **-की (kī)**, a male subject **-को (ko)** — the ending changes by gender."
+  }
+ ],
+ "12": [
+  {
+   "type": "goal",
+   "text": "Say \"become ~\" and \"got ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Two \"become\" verbs"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Verb",
+    "Romanized",
+    "Use"
+   ],
+   "rows": [
+    [
+     "हुनु",
+     "hunu",
+     "qualities, weather, time \"become ~\""
+    ],
+    [
+     "बन्नु",
+     "bannu",
+     "roles/positions \"become ~\" (doctor, friend)"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Formula: adjective/noun + हुन्छ (become) / भयो (became)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "चिसो **भयो**।",
+     "ciso bhayo",
+     "It got cold"
+    ],
+    [
+     "न्यानो **हुन्छ**।",
+     "nyāno huncha",
+     "It becomes warm"
+    ],
+    [
+     "चाँडै रात **हुन्छ**।",
+     "cā̃ḍai rāt huncha",
+     "Night falls soon"
+    ],
+    [
+     "उहाँ डाक्टर **बन्नुभयो**।",
+     "uhā̃ ḍākṭar bannubhayo",
+     "He became a doctor (polite)"
+    ],
+    [
+     "साथी **बन्न चाहन्छु**।",
+     "sāthī banna cāhanchu",
+     "I want to become a friend"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "\"became\" = **भयो (bhayo)**, \"becomes\" = **हुन्छ (huncha)**. For roles, use **बन्नु**."
+  }
+ ],
+ "13": [
+  {
+   "type": "goal",
+   "text": "Say \"~ is (adjective)\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: (subject) + adjective + **छ (cha)**"
+  },
+  {
+   "type": "p",
+   "text": "※ For qualities/states, \"is\" is **छ, not हो** (important)."
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "यो फूल सुन्दर **छ**।",
+     "yo phūl sundar cha",
+     "This flower is beautiful"
+    ],
+    [
+     "त्यो किताब पुरानो **छ**।",
+     "tyo kitāb purāno cha",
+     "That book is old"
+    ],
+    [
+     "यो पानी चिसो **छ**।",
+     "yo pānī ciso cha",
+     "This water is cold"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Common adjectives"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Ne",
+    "Rom",
+    "Meaning",
+    "Ne",
+    "Rom",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "सानो",
+     "sāno",
+     "small",
+     "ठूलो",
+     "ṭhūlo",
+     "big"
+    ],
+    [
+     "नयाँ",
+     "nayā̃",
+     "new",
+     "पुरानो",
+     "purāno",
+     "old"
+    ],
+    [
+     "अग्लो",
+     "aglo",
+     "tall",
+     "पिरो",
+     "piro",
+     "spicy"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "3. It can also go before the noun"
+  },
+  {
+   "type": "p",
+   "text": "पुरानो किताब (purāno kitāb) = an old book"
+  },
+  {
+   "type": "note",
+   "text": "\"noun = noun\" uses **हो** (Theme 1); \"~ is (adjective)\" uses **छ**. Don't mix them up."
+  }
+ ],
+ "14": [
+  {
+   "type": "goal",
+   "text": "Describe how an action is done (\"fast\", \"slowly\", \"always\")."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: put the adverb **before the verb**"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Adverb",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "छिटो",
+     "chiṭo",
+     "fast"
+    ],
+    [
+     "बिस्तारै",
+     "bistārai",
+     "slowly"
+    ],
+    [
+     "प्रायः",
+     "prāyaḥ",
+     "often / usually"
+    ],
+    [
+     "सधैँ",
+     "sadhaĩ",
+     "always"
+    ],
+    [
+     "राम्रोसँग",
+     "rāmrosã̄ga",
+     "well"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "ऊ धेरै **छिटो** दौड्छ।",
+     "ū dherai chiṭo dauḍcha",
+     "He runs very fast"
+    ],
+    [
+     "म **बिस्तारै** हिँड्छु।",
+     "ma bistārai hĩḍchu",
+     "I walk slowly"
+    ],
+    [
+     "ऊ **सधैँ** चाँडो उठ्छ।",
+     "ū sadhaĩ cā̃ḍo uṭhcha",
+     "He always wakes up early"
+    ],
+    [
+     "ऊ **राम्रोसँग** नेपाली बोल्छे।",
+     "ū rāmrosã̄ga nepālī bolche",
+     "She speaks Nepali well"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "※ **धेरै (dherai) = very** — it further strengthens an adverb."
+  },
+  {
+   "type": "note",
+   "text": "Adverbs usually go **right before the verb** (e.g., छिटो दौड्छ = run fast)."
+  }
+ ],
+ "15": [
+  {
+   "type": "goal",
+   "text": "Say \"I want to ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Two ways"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Way",
+    "Formula",
+    "Nuance"
+   ],
+   "rows": [
+    [
+     "① strong intent",
+     "root + **न चाहन्छु** (-na cāhanchu)",
+     "want to ~"
+    ],
+    [
+     "② mood / preference",
+     "**मलाई** + root + **न मन छ** (-na man cha)",
+     "feel like ~ing"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning",
+    "Way"
+   ],
+   "rows": [
+    [
+     "म पानी **पिउन चाहन्छु**।",
+     "ma pānī piuna cāhanchu",
+     "I want to drink water",
+     "①"
+    ],
+    [
+     "म घर **जान चाहन्छु**।",
+     "ma ghar jāna cāhanchu",
+     "I want to go home",
+     "①"
+    ],
+    [
+     "मलाई संगीत **सुन्न मन छ**।",
+     "malāī saṅgīt sunna man cha",
+     "I feel like listening to music",
+     "②"
+    ],
+    [
+     "मलाई साथीलाई **भेट्न मन छ**।",
+     "malāī sāthīlāī bheṭna man cha",
+     "I feel like meeting a friend",
+     "②"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "① uses the subject \"म\", ② uses the subject \"**मलाई (to me)**\". ② is softer (mood/preference)."
+  }
+ ],
+ "16": [
+  {
+   "type": "goal",
+   "text": "Say \"I can / can't ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: root + **न सक्छु** (-na sakchu)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Subject",
+    "Form",
+    "Romanized"
+   ],
+   "rows": [
+    [
+     "I म",
+     "~न **सक्छु**",
+     "sakchu"
+    ],
+    [
+     "he उ",
+     "~न **सक्छ**",
+     "sakcha"
+    ],
+    [
+     "she उनी",
+     "~न **सक्छिन्**",
+     "sakchin"
+    ],
+    [
+     "negative (I)",
+     "~न **सक्दिनँ**",
+     "sakdinã"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म नेपाली **बोल्न सक्छु**।",
+     "ma nepālī bolna sakchu",
+     "I can speak Nepali"
+    ],
+    [
+     "उनी पियानो **बजाउन सक्छिन्**।",
+     "unī piyāno bajāuna sakchin",
+     "She can play the piano"
+    ],
+    [
+     "म साइकल चलाउन **सक्दिनँ**।",
+     "ma sāikal calāuna sakdinã",
+     "I can't ride a bicycle"
+    ],
+    [
+     "के तपाईं खाना पकाउन **सक्नुहुन्छ?**",
+     "ke tapāī̃ khānā pakāuna saknuhuncha?",
+     "Can you cook? (polite)"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "\"can\" = **सक्नु (saknu)**; negative = **सक्दिनँ**. The preceding verb takes root + **न**."
+  }
+ ],
+ "17": [
+  {
+   "type": "goal",
+   "text": "Say \"I have to ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: verb (dictionary form -नु) + **पर्छ (parcha)**"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "म **जानु पर्छ**।",
+     "ma jānu parcha",
+     "I have to go"
+    ],
+    [
+     "म **सुत्नु पर्छ**。",
+     "ma sutnu parcha",
+     "I have to sleep"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Transitive verbs take \"ले\" on the subject (review of Theme 3)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "**उसले** खानु पर्छ।",
+     "usle khānu parcha",
+     "He has to eat"
+    ],
+    [
+     "**उसले** औषधि खानु पर्छ।",
+     "usle auṣadhi khānu parcha",
+     "He has to take medicine"
+    ],
+    [
+     "**हामीले** पढ्नु पर्छ।",
+     "hāmīle paḍhnu parcha",
+     "We have to study"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "Even with \"have to\", a transitive subject takes **ले** (उसले／हामीले)."
+  }
+ ],
+ "18": [
+  {
+   "type": "goal",
+   "text": "Ask \"May I ~?\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: root + **न मिल्छ？／न सकिन्छ？** (is it OK to ~?)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Word",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "मिल्छ",
+     "milcha",
+     "is fine / OK"
+    ],
+    [
+     "सकिन्छ",
+     "sakincha",
+     "is possible / allowed"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "**बस्न मिल्छ?**",
+     "basna milcha?",
+     "May I sit down?"
+    ],
+    [
+     "यहाँ फोटो **खिच्न सकिन्छ?**",
+     "yahā̃ phoṭo khicna sakincha?",
+     "May I take a photo here?"
+    ],
+    [
+     "झ्याल **खोल्न सकिन्छ?**",
+     "jhyāl kholna sakincha?",
+     "May I open the window?"
+    ],
+    [
+     "तपाईं भित्र **आउन सक्नुहुन्छ**。",
+     "tapāī̃ bhitra āuna saknuhuncha",
+     "You may come in (polite)"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "To ask permission, raise your tone into a question (मिल्छ? / सकिन्छ?)."
+  }
+ ],
+ "19": [
+  {
+   "type": "goal",
+   "text": "State your view with \"I think ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: (the statement) + **जस्तो लाग्छ** (jasto lāgcha)"
+  },
+  {
+   "type": "p",
+   "text": "\"It seems/I think ~\". The trick: **attach it at the end of the sentence**."
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "भोलि पानी पर्छ **जस्तो लाग्छ**।",
+     "bholi pānī parcha jasto lāgcha",
+     "I think it will rain tomorrow"
+    ],
+    [
+     "उ विद्यार्थी हो **जस्तो लाग्छ**।",
+     "u vidyārthī ho jasto lāgcha",
+     "I think he is a student"
+    ],
+    [
+     "यो काम गाह्रो छ **जस्तो लाग्छ**。",
+     "yo kām gāhro cha jasto lāgcha",
+     "I think this work is difficult"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "Unlike English \"I think (that) …\", in Nepali **the idea comes first, and \"जस्तो लाग्छ\" comes last** — the order is reversed."
+  }
+ ],
+ "20": [
+  {
+   "type": "goal",
+   "text": "Say \"~ might happen\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Two ways"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Way",
+    "Formula",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "① from the verb",
+     "root + **न सक्छ** ／ **हुनसक्छ**",
+     "there is a chance ~"
+    ],
+    [
+     "② with an adverb",
+     "**सायद (sāyad)** + sentence",
+     "perhaps ~"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "भोलि पानी **पर्न सक्छ**।",
+     "bholi pānī parna sakcha",
+     "It might rain tomorrow"
+    ],
+    [
+     "यो गाह्रो **हुनसक्छ**।",
+     "yo gāhro hunasakcha",
+     "This might be difficult"
+    ],
+    [
+     "**सायद** उहाँ आउनुहुन्न।",
+     "sāyad uhā̃ āunuhunna",
+     "Perhaps he won't come"
+    ],
+    [
+     "रेल ढिलो **हुनसक्छ**।",
+     "rel ḍhilo hunasakcha",
+     "The train might be late"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "The form resembles Theme 16 \"can (सक्छु)\", but here **हुनसक्छ／न सक्छ** expresses \"possibility\"."
+  }
+ ],
+ "21": [
+  {
+   "type": "goal",
+   "text": "Say \"I have (ever) done ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: root + **एको छु** (-eko chu) + ले on the subject (transitive)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "मैले सुशी **खाएको छु**।",
+     "maile suśī khāeko chu",
+     "I have eaten sushi"
+    ],
+    [
+     "मैले पोखरा **गएको छु**।",
+     "maile pokharā gaeko chu",
+     "I have been to Pokhara"
+    ],
+    [
+     "मैले हिउँ **देखेको छु**।",
+     "maile hiũ dekheko chu",
+     "I have seen snow"
+    ],
+    [
+     "मैले हवाईजहाज **चढेको छु**।",
+     "maile havāījahāj caḍheko chu",
+     "I have ridden in an airplane"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "The form resembles the progressive (Theme 11, \"~इरहेको छु\"), but this is **एको छु (experience)** — no \"इ\". Don't forget **ले** on the subject."
+  }
+ ],
+ "22": [
+  {
+   "type": "goal",
+   "text": "Say \"A is more ~ than B\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: **B + भन्दा (bhandā) + adjective** (more ~ than B)"
+  },
+  {
+   "type": "p",
+   "text": "Attach **भन्दा** to the thing you compare against."
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "स्याउ **केराभन्दा** गुलियो छ।",
+     "syāu kerābhandā guliyo cha",
+     "Apples are sweeter than bananas"
+    ],
+    [
+     "ऊ **मभन्दा** अग्लो छ।",
+     "ū mabhandā aglo cha",
+     "He is taller than me"
+    ],
+    [
+     "आज **हिजोभन्दा** चिसो छ।",
+     "āja hijobhandā ciso cha",
+     "Today is colder than yesterday"
+    ],
+    [
+     "**बसभन्दा** रेल छिटो छ।",
+     "basbhandā rel chiṭo cha",
+     "The train is faster than the bus"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "The adjective does not change (no \"-er\" form). Just add \"the other thing + भन्दा\"."
+  }
+ ],
+ "23": [
+  {
+   "type": "goal",
+   "text": "Connect words and sentences."
+  },
+  {
+   "type": "h",
+   "text": "1. Common conjunctions"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Conjunction",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "र",
+     "ra",
+     "and (list)"
+    ],
+    [
+     "तर",
+     "tara",
+     "but"
+    ],
+    [
+     "~(भए)कोले",
+     "(bhae)kole",
+     "because / so"
+    ],
+    [
+     "पनि…पनि",
+     "pani…pani",
+     "both … and"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "मलाई चिया **र** कफी मन पर्छ।",
+     "malāī ciyā ra kaphī man parcha",
+     "I like tea and coffee"
+    ],
+    [
+     "ऊ विद्यार्थी हो **तर** काम गर्छ।",
+     "ū vidyārthī ho tara kām garcha",
+     "He is a student but works"
+    ],
+    [
+     "थकित **भएकोले**, मैले चाँडो सुतेँ।",
+     "thakit bhaekole, maile cā̃ḍo sutẽ",
+     "Since I was tired, I slept early"
+    ],
+    [
+     "उनी गाउन **पनि** नाच्न **पनि** राम्री छिन्।",
+     "unī gāuna pani nācna pani rāmrī chin",
+     "She is good at both singing and dancing"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "\"because\" = **कोले／भएकोले** at the end of the reason clause. \"both … and\" = **पनि** twice."
+  }
+ ],
+ "24": [
+  {
+   "type": "goal",
+   "text": "Say \"~ while doing …\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: verb 1 root + **दै (-dai)** + verb 2"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "संगीत **सुन्दै** पढ्छु।",
+     "saṅgīt sundai paḍhchu",
+     "I study while listening to music"
+    ],
+    [
+     "**हिँड्दै** कुरा गरौँ।",
+     "hĩḍdai kurā garaũ",
+     "Let's talk while walking"
+    ],
+    [
+     "टेलिभिजन **हेर्दै** खाना खान्छु।",
+     "ṭelibhijan herdai khānā khānchu",
+     "I eat while watching television"
+    ],
+    [
+     "कफी **पिउँदै** अखबार पढ्छु।",
+     "kaphī piũdai akhbār paḍhchu",
+     "I read the newspaper while drinking coffee"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "Add **दै** to the \"while\" verb, and put the **main action last**."
+  }
+ ],
+ "25": [
+  {
+   "type": "goal",
+   "text": "Say \"after doing ~, …\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: verb 1 root + **एपछि (-epachi)** + verb 2"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "हात **धोएपछि**, खान्छु।",
+     "hāt dhoepachi, khānchu",
+     "After washing my hands, I eat"
+    ],
+    [
+     "**उठेपछि**, अनुहार धुन्छु।",
+     "uṭhepachi, anuhār dhuncha",
+     "After getting up, I wash my face"
+    ],
+    [
+     "कफी **पिएपछि**, काम सुरु गर्छु।",
+     "kaphī piepachi, kām suru garchu",
+     "After drinking coffee, I start work"
+    ],
+    [
+     "काठमाडौँ **आएपछि**, अङ्ग्रेजी पढ्न थालेँ।",
+     "kāṭhmāḍaũ āepachi, aṅgrejī paḍhna thālẽ",
+     "After coming to Kathmandu, I started studying English"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "Theme 24 \"while (दै)\" is simultaneous; this \"after (एपछि)\" is sequence. The ending changes the meaning."
+  }
+ ],
+ "26": [
+  {
+   "type": "goal",
+   "text": "Say \"in order to ~\" and \"for ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Two patterns"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Pattern",
+    "Formula",
+    "Example"
+   ],
+   "rows": [
+    [
+     "① verb",
+     "root + **नको लागि** (-nako lāgi)",
+     "पढ्नको लागि (in order to study)"
+    ],
+    [
+     "② noun",
+     "noun + **को लागि** (ko lāgi)",
+     "स्वास्थ्यको लागि (for health)"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "**पढ्नको लागि**, पुस्तकालय जान्छु।",
+     "paḍhnako lāgi, pustakālaya jānchu",
+     "To study, I go to the library"
+    ],
+    [
+     "**स्वास्थ्यको लागि**, हरेक दिन व्यायाम गर्छु।",
+     "svāsthyako lāgi, harek din vyāyām garchu",
+     "For my health, I exercise every day"
+    ],
+    [
+     "साथीलाई **भेट्नको लागि**, स्टेशनसम्म गएँ।",
+     "sāthīlāī bheṭnako lāgi, sṭeśansamma gaẽ",
+     "To meet my friend, I went to the station"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "Verbs take **नको लागि**, nouns take **को लागि**. Put the purpose part first."
+  }
+ ],
+ "27": [
+  {
+   "type": "goal",
+   "text": "Say \"if ~, then …\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: **यदि (yadi) ~ भने (bhane)**, …"
+  },
+  {
+   "type": "p",
+   "text": "Start with यदि (if), and put **भने** (then/if) after the condition."
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "**यदि** पानी पर्यो **भने**, छाता लिएर जान्छु।",
+     "yadi pānī paryo bhane, chātā lier jānchu",
+     "If it rains, I'll take an umbrella"
+    ],
+    [
+     "**यदि** फुर्सद छ **भने**, आउनुस्।",
+     "yadi phursad cha bhane, āunus",
+     "If you're free, please come"
+    ],
+    [
+     "**यदि** सस्तो छ **भने**, किन्छु।",
+     "yadi sasto cha bhane, kinchu",
+     "If it's cheap, I'll buy it"
+    ],
+    [
+     "**यदि** उ आउँछ **भने**, म पनि जान्छु।",
+     "yadi u āũcha bhane, ma pani jānchu",
+     "If he comes, I'll go too"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "**यदि** can be dropped, but keep **भने**. \"condition + भने\" = \"if ~\"."
+  }
+ ],
+ "28": [
+  {
+   "type": "goal",
+   "text": "Say \"~ is/was done\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: root + **इयो (-iyo)** (was ~ed)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "ढोका **खोलियो**।",
+     "ḍhokā kholiyo",
+     "The door was opened"
+    ],
+    [
+     "चिठी **लेखियो**।",
+     "ciṭhī lekhiyo",
+     "The letter was written"
+    ],
+    [
+     "झ्याल **फुटाइयो**。",
+     "jhyāl phuṭāiyo",
+     "The window was broken"
+    ],
+    [
+     "त्यो फिल्म गत वर्ष **बनाइयो**।",
+     "tyo philm gat varṣa banāiyo",
+     "That film was made last year"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. \"read by ~\""
+  },
+  {
+   "type": "p",
+   "text": "यो किताब धेरै मानिसहरूले **पढिन्छ**। (yo kitāb dherai mānisharūle paḍhincha = This book is read by many people)"
+  },
+  {
+   "type": "note",
+   "text": "\"was ~ed\" = root + **इयो**. To name the doer, use **~ले (by ~)**."
+  }
+ ],
+ "29": [
+  {
+   "type": "goal",
+   "text": "Say \"make/have (someone) ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Two ways"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Way",
+    "Formula",
+    "Example"
+   ],
+   "rows": [
+    [
+     "① special verb",
+     "feed = **खुवाउनु**, have-read = **पढाउनु**, put-to-sleep = **सुताउनु**",
+     "—"
+    ],
+    [
+     "② make ~",
+     "root + **न लगाउनु** (-na lagāunu)",
+     "गर्न लगाउनु (make do)"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. The person made to do it takes **~लाई**; the subject takes **~ले**"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "आमाले बच्चालाई औषधि **खुवाउनुहुन्छ**।",
+     "āmāle baccālāī auṣadhi khuvāunuhuncha",
+     "Mother feeds the child medicine"
+    ],
+    [
+     "शिक्षकले विद्यार्थीलाई किताब **पढाउनुहुन्छ**।",
+     "śikṣakle vidyārthīlāī kitāb paḍhāunuhuncha",
+     "The teacher has the students read the book"
+    ],
+    [
+     "बुबाले मलाई कार **चलाउन लगाउनुभयो**।",
+     "bubāle malāī kār calāuna lagāunubhayo",
+     "Father made me drive the car"
+    ],
+    [
+     "बुबाले मलाई स्कूल **पठाउनुभयो**।",
+     "bubāle malāī skūl paṭhāunubhayo",
+     "Father sent me to school"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "\"the one who makes\" = subject + **ले**; \"the one made to do it\" = **~लाई**. Keep both."
+  }
+ ],
+ "30": [
+  {
+   "type": "goal",
+   "text": "Say \"(someone) said that ~\"."
+  },
+  {
+   "type": "h",
+   "text": "1. Formula: (the quoted content) + **भन्यो／भनिन्／भन्नुभयो** (said)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Speaker",
+    "\"said\"",
+    "Romanized"
+   ],
+   "rows": [
+    [
+     "he",
+     "भन्यो",
+     "bhanyo"
+    ],
+    [
+     "she",
+     "भनिन्",
+     "bhanin"
+    ],
+    [
+     "polite",
+     "भन्नुभयो",
+     "bhannubhayo"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "2. Examples (content first, \"said\" last)"
+  },
+  {
+   "type": "table",
+   "headers": [
+    "Sentence",
+    "Romanized",
+    "Meaning"
+   ],
+   "rows": [
+    [
+     "उसले **आउँछु भन्यो**।",
+     "usle āũchu bhanyo",
+     "He said he will come"
+    ],
+    [
+     "उसले **जाँदिनँ भनिन्**।",
+     "usle jā̃dinã bhanin",
+     "She said she won't go"
+    ],
+    [
+     "शिक्षकले **भोलि परीक्षा छ भन्नुभयो**।",
+     "śikṣakle bholi parīkṣā cha bhannubhayo",
+     "The teacher said there is an exam tomorrow"
+    ],
+    [
+     "आमाले **चाँडो सुत भन्नुभयो**。",
+     "āmāle cā̃ḍo sut bhannubhayo",
+     "Mother said to go to sleep early"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "Nepali has no separate word for \"that\"; you **place the quote directly and put भन्यो at the end**. The order matches the idea → \"said\"."
+  }
+ ]
+}

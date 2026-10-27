@@ -16,6 +16,7 @@ import {
 } from '@safa/shared';
 
 import grammarGuideJa from './src/grammarGuide.ja.json';
+import grammarGuideEn from './src/grammarGuide.en.json';
 import ja from './src/i18n/ja.json';
 import ne from './src/i18n/ne.json';
 import en from './src/i18n/en.json';
@@ -24,8 +25,11 @@ import { POSTER_LESSONS } from './src/posterLessons';
 import { posterUri, ensurePosterPack } from './src/posterPackLoader';
 import { PurchasesProvider } from './src/PurchasesProvider';
 
-// 文法「教材」(ルール解説)。現状は日本語(ja)のみ。英語(en)は未用意=en UIでは教材ボタン非表示。
-const GRAMMAR_GUIDE: GrammarGuideByLang = { ja: grammarGuideJa as unknown as GrammarGuideByLang['ja'] };
+// 文法「教材」(ルール解説)。日本語(ja)+英語(en)。UI言語に応じて表示(ne UIでは非表示)。
+const GRAMMAR_GUIDE: GrammarGuideByLang = {
+  ja: grammarGuideJa as unknown as GrammarGuideByLang['ja'],
+  en: grammarGuideEn as unknown as GrammarGuideByLang['ja'],
+};
 
 const headerIconSource = require('./assets/icon.png');
 

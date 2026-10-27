@@ -19,7 +19,7 @@ export default function ThemeScreen() {
   const ent = useEntitlement();
   const grammarGuide = useGrammarGuide();
   const navigation = useNavigation<Nav>();
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const ss = useScaleStyle();
   const { mode, source } = useRoute<R>().params;
   const isListening = mode === 'listening';
@@ -158,7 +158,7 @@ export default function ThemeScreen() {
                 onPress={() => navigation.navigate('GrammarGuide', { themeId: item.id, title: getThemeDisplayName(item.id) })}
                 hitSlop={6}
               >
-                <Text style={[styles.guideBtnText, ss(12)]}>教材</Text>
+                <Text style={[styles.guideBtnText, ss(12)]}>{lang === 'en' ? 'Guide' : '教材'}</Text>
               </Pressable>
             )}
           </Pressable>
