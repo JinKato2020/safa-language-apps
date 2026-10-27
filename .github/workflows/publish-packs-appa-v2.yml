@@ -17,6 +17,9 @@ on:
           - 'true'
           - 'false'
 
+permissions:
+  contents: write        # Release へのアセットupload/clobberに必要(既定tokenは読取のみで403になる)
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -35,7 +38,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          set -e
+          set -eo pipefail        # tee でpython失敗が隠れないように
           SCRIPT="聞いて話せるネパール語/scripts/build_appa_packs_32k.py"
           if [ "${{ github.event.inputs.dry_run }}" = "false" ]; then
             python "$SCRIPT" --publish | tee -a "$GITHUB_STEP_SUMMARY"
