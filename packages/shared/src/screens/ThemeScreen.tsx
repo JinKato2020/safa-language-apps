@@ -1,5 +1,6 @@
 import { useLayoutEffect, useState } from 'react';
-import { FlatList, Pressable, StyleSheet, View } from 'react-native';
+import { FlatList, Image, Pressable, StyleSheet, View } from 'react-native';
+import { useHeroImage } from '../heroImages';
 import { Text } from '../Text';
 import { useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -22,6 +23,7 @@ export default function ThemeScreen() {
   const { t, lang } = useI18n();
   const ss = useScaleStyle();
   const { mode, source } = useRoute<R>().params;
+  const heroSrc = useHeroImage(mode);
   const isListening = mode === 'listening';
   // 聞き流しモードでは画面内トグルで会話/文法を切り替える（route param は初期値として尊重）
   const [listenSource, setListenSource] = useState<'conversation' | 'grammar'>(
@@ -69,7 +71,12 @@ export default function ThemeScreen() {
   }
 
   const getThemeDisplayName = (id: number): string => {
-    return useGrammarThemes ? t(`grammarThemes.${id}`) : t(`themes.${id}`);
+    if (useGrammarThemes) {
+      // 文法テーマ名はパック(GRAMMAR_THEMES[].name)から=OTA配信。i18nには依存しない。
+      const gt = GRAMMAR_THEMES.find(x => x.id === id);
+      return gt?.name ?? String(id);
+    }
+    return t(`themes.${id}`);
   };
 
   const onPressItem = (id: number) => {
@@ -92,6 +99,8 @@ export default function ThemeScreen() {
     <FlatList
       contentContainerStyle={styles.container}
       ListHeaderComponent={
+        <>
+        {heroSrc && <Image source={heroSrc} style={styles.hero} resizeMode="cover" accessibilityIgnoresInvertColors />}
         <View style={styles.head}>
           <Text style={[styles.modeTitle, ss(20)]}>{modeTitle}</Text>
           <Text style={[styles.desc, ss(14, 21)]}>{headerText}</Text>
@@ -131,6 +140,7 @@ export default function ThemeScreen() {
             </View>
           )}
         </View>
+        </>
       }
       data={items}
       keyExtractor={(item) => String(item.id)}
@@ -170,6 +180,7 @@ export default function ThemeScreen() {
 
 const styles = StyleSheet.create({
   container: { padding: spacing.lg, paddingBottom: spacing.xxl, maxWidth: 760, width: '100%', alignSelf: 'center' },
+  hero: { width: '100%', aspectRatio: 1200 / 400, borderRadius: 16, marginBottom: spacing.lg },
   head: { marginBottom: spacing.xl },
   modeTitle: { fontSize: 20, fontWeight: '700', color: colors.accentJa, letterSpacing: 0.2, marginBottom: spacing.sm, textAlign: 'center' },
   kicker: { fontSize: 11, color: colors.inkQuiet, letterSpacing: 2, textTransform: 'uppercase', marginBottom: spacing.xs },

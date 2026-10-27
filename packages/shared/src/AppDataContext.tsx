@@ -69,6 +69,8 @@ export type AppData = {
   GRAMMAR_VOCAB?: GrammarVocab;
   /** 文脈依存辞書 (会話モード用、Claude API 生成。sentence_id = テーマ-レベル-例題) */
   CONV_VOCAB?: GrammarVocab;
+  /** 文法教材(ルール解説)。composeでL1解決済み(overlay.grammarGuide)。未提供=教材ボタン非表示。OTA配信。 */
+  GRAMMAR_GUIDE?: Record<string, unknown[]> | null;
   /** 日本語文の読み補助 (かな+ローマ字)。聞き流しのネパール語UI時に使用。Claude API 生成 */
   JP_READING?: JpReading;
   /** 単語モード用 日本語語の読み (かな+ローマ字)。キー=日本語語。App B のみ提供(=単語モードでふりがな+ローマ字表示)。 */

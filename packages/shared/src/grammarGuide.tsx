@@ -1,7 +1,7 @@
 // 文法モードの「教材(ルール解説)」データ。アプリ側が母語別データを注入する。
 // 未注入(App B/C)や未対応言語では教材ボタンを出さない=影響なし。
 import { createContext, useContext, type ReactNode } from 'react';
-import { useI18n } from './i18n';
+import { useAppData } from './AppDataContext';
 
 // アプリが描画する構造化ブロック
 export type GuideBlock =
@@ -22,10 +22,9 @@ export function GrammarGuideProvider({ value, children }: { value?: GrammarGuide
   return <GrammarGuideContext.Provider value={value ?? null}>{children}</GrammarGuideContext.Provider>;
 }
 
-// 現在のUI言語に対応する教材データ(無ければ null = 教材ボタン非表示)。
+// 文法教材データ(無ければ null = 教材ボタン非表示)。
+// v2: OTA配信。composeがoverlay.grammarGuideをL1解決してAppData.GRAMMAR_GUIDEに載せる。
 export function useGrammarGuide(): GrammarGuideData | null {
-  const byLang = useContext(GrammarGuideContext);
-  const { lang } = useI18n();
-  if (!byLang) return null;
-  return byLang[lang] ?? null;
+  const d = useAppData();
+  return ((d as { GRAMMAR_GUIDE?: GrammarGuideData | null }).GRAMMAR_GUIDE) ?? null;
 }

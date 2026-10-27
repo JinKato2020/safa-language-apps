@@ -1,152 +1,182 @@
 [
-  {
-    "id": 1,
-    "name": "現在形（肯定文）",
-    "exampleCount": 20
-  },
-  {
-    "id": 2,
-    "name": "現在形（否定文）",
-    "exampleCount": 20
-  },
-  {
-    "id": 3,
-    "name": "過去形（肯定文）",
-    "exampleCount": 20
-  },
-  {
-    "id": 4,
-    "name": "過去形（否定文）",
-    "exampleCount": 20
-  },
-  {
-    "id": 5,
-    "name": "未来形",
-    "exampleCount": 20
-  },
-  {
-    "id": 6,
-    "name": "疑問文",
-    "exampleCount": 20
-  },
-  {
-    "id": 7,
-    "name": "依頼文",
-    "exampleCount": 20
-  },
-  {
-    "id": 8,
-    "name": "命令形（〜しなさい）",
-    "exampleCount": 20
-  },
-  {
-    "id": 9,
-    "name": "禁止表現（〜してはいけない）",
-    "exampleCount": 20
-  },
-  {
-    "id": 10,
-    "name": "感嘆文",
-    "exampleCount": 20
-  },
-  {
-    "id": 11,
-    "name": "〜している（進行形）",
-    "exampleCount": 20
-  },
-  {
-    "id": 12,
-    "name": "〜になる／〜くなる（状態変化）",
-    "exampleCount": 20
-  },
-  {
-    "id": 13,
-    "name": "形容詞の使い方",
-    "exampleCount": 20
-  },
-  {
-    "id": 14,
-    "name": "副詞の使い方",
-    "exampleCount": 20
-  },
-  {
-    "id": 15,
-    "name": "〜したい（願望表現）",
-    "exampleCount": 20
-  },
-  {
-    "id": 16,
-    "name": "〜できる（可能表現）",
-    "exampleCount": 20
-  },
-  {
-    "id": 17,
-    "name": "〜しなければならない（義務）",
-    "exampleCount": 20
-  },
-  {
-    "id": 18,
-    "name": "〜してもいい（許可）",
-    "exampleCount": 20
-  },
-  {
-    "id": 19,
-    "name": "〜と思う（推量・意見）",
-    "exampleCount": 20
-  },
-  {
-    "id": 20,
-    "name": "〜かもしれない（推量・可能性）",
-    "exampleCount": 20
-  },
-  {
-    "id": 21,
-    "name": "〜したことがある（経験）",
-    "exampleCount": 20
-  },
-  {
-    "id": 22,
-    "name": "比較表現",
-    "exampleCount": 20
-  },
-  {
-    "id": 23,
-    "name": "接続詞",
-    "exampleCount": 20
-  },
-  {
-    "id": 24,
-    "name": "〜ながら（同時動作）",
-    "exampleCount": 20
-  },
-  {
-    "id": 25,
-    "name": "〜てから（順序）",
-    "exampleCount": 20
-  },
-  {
-    "id": 26,
-    "name": "〜ために（目的）",
-    "exampleCount": 20
-  },
-  {
-    "id": 27,
-    "name": "条件文（もし〜なら）",
-    "exampleCount": 20
-  },
-  {
-    "id": 28,
-    "name": "受動表現",
-    "exampleCount": 20
-  },
-  {
-    "id": 29,
-    "name": "使役表現（〜させる）",
-    "exampleCount": 20
-  },
-  {
-    "id": 30,
-    "name": "間接話法",
-    "exampleCount": 20
-  }
+ {
+  "id": 1,
+  "name": "हो：AはBだ（同定・断定）",
+  "exampleCount": 20
+ },
+ {
+  "id": 2,
+  "name": "छ：ある/いる（存在・所在・所有）",
+  "exampleCount": 20
+ },
+ {
+  "id": 3,
+  "name": "छ：〜だ（形容詞・状態）",
+  "exampleCount": 15
+ },
+ {
+  "id": 4,
+  "name": "हुन्छ：〜になる／一般に〜（習慣・変化）",
+  "exampleCount": 15
+ },
+ {
+  "id": 5,
+  "name": "後置詞＝てにをは",
+  "exampleCount": 15
+ },
+ {
+  "id": 6,
+  "name": "疑問詞",
+  "exampleCount": 15
+ },
+ {
+  "id": 7,
+  "name": "人称と敬語（ていねいさの3段階）",
+  "exampleCount": 20
+ },
+ {
+  "id": 8,
+  "name": "動作動詞の現在（〜する）",
+  "exampleCount": 20
+ },
+ {
+  "id": 9,
+  "name": "現在の否定（〜しない）",
+  "exampleCount": 20
+ },
+ {
+  "id": 10,
+  "name": "現在進行（〜している）",
+  "exampleCount": 20
+ },
+ {
+  "id": 11,
+  "name": "能格 ले と過去（〜した）",
+  "exampleCount": 20
+ },
+ {
+  "id": 12,
+  "name": "過去の否定（〜しなかった）",
+  "exampleCount": 20
+ },
+ {
+  "id": 13,
+  "name": "未来（〜する・〜するつもり）",
+  "exampleCount": 20
+ },
+ {
+  "id": 14,
+  "name": "習慣過去（昔はよく〜した）",
+  "exampleCount": 20
+ },
+ {
+  "id": 15,
+  "name": "現在完了・経験（〜した・〜したことがある）",
+  "exampleCount": 20
+ },
+ {
+  "id": 16,
+  "name": "過去完了（〜していた・〜してしまっていた）",
+  "exampleCount": 20
+ },
+ {
+  "id": 17,
+  "name": "依頼・命令（ていねいさ3段階）",
+  "exampleCount": 15
+ },
+ {
+  "id": 18,
+  "name": "勧誘・意志（〜しよう／〜しましょう）",
+  "exampleCount": 15
+ },
+ {
+  "id": 19,
+  "name": "禁止（〜してはいけない／〜しないで）",
+  "exampleCount": 15
+ },
+ {
+  "id": 20,
+  "name": "可能（〜できる）",
+  "exampleCount": 15
+ },
+ {
+  "id": 21,
+  "name": "義務・許可（〜しなければ／〜してよい）",
+  "exampleCount": 15
+ },
+ {
+  "id": 22,
+  "name": "願望（〜したい）",
+  "exampleCount": 15
+ },
+ {
+  "id": 23,
+  "name": "形容詞の一致・位置",
+  "exampleCount": 15
+ },
+ {
+  "id": 24,
+  "name": "副詞＋感嘆",
+  "exampleCount": 15
+ },
+ {
+  "id": 25,
+  "name": "比較・最上級",
+  "exampleCount": 15
+ },
+ {
+  "id": 26,
+  "name": "接続（と・そして・でも・ので）",
+  "exampleCount": 15
+ },
+ {
+  "id": 27,
+  "name": "〜ながら（-दै）／〜てから（-एपछि）",
+  "exampleCount": 15
+ },
+ {
+  "id": 28,
+  "name": "〜ために（-नको लागि）",
+  "exampleCount": 15
+ },
+ {
+  "id": 29,
+  "name": "関係節：〜する人／〜するもの（現在分詞 -ने）",
+  "exampleCount": 15
+ },
+ {
+  "id": 30,
+  "name": "条件（もし〜なら）",
+  "exampleCount": 15
+ },
+ {
+  "id": 31,
+  "name": "推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）",
+  "exampleCount": 15
+ },
+ {
+  "id": 32,
+  "name": "受動（〜される）",
+  "exampleCount": 15
+ },
+ {
+  "id": 33,
+  "name": "使役（〜させる）",
+  "exampleCount": 15
+ },
+ {
+  "id": 34,
+  "name": "間接話法（〜と言った）",
+  "exampleCount": 15
+ },
+ {
+  "id": 35,
+  "name": "動詞活用 完全早見表（全人称）",
+  "exampleCount": 77
+ },
+ {
+  "id": 36,
+  "name": "繋辞 हो・छ・थियो の全人称活用",
+  "exampleCount": 67
+ }
 ]

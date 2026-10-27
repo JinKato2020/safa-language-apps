@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { FlatList, Pressable, StyleSheet, View } from 'react-native';
+import { FlatList, Image, Pressable, StyleSheet, View } from 'react-native';
 import { Text } from '../Text';
+import { useHeroImage } from '../heroImages';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { colors, spacing, radius } from '../theme';
@@ -28,9 +29,11 @@ export default function VocabCategoryScreen() {
   const [mode, setMode] = useState<'flash' | 'poster'>(posterOnly ? 'poster' : 'flash');
   const hasPoster = lessons.length > 0;
   const showPoster = hasPoster && (posterOnly || mode === 'poster');
+  const heroSrc = useHeroImage('vocabulary');
 
   const Header = (
     <View style={styles.head}>
+      {!posterOnly && heroSrc && <Image source={heroSrc} style={styles.hero} resizeMode="cover" accessibilityIgnoresInvertColors />}
       <Text style={[styles.modeTitle, ss(20)]}>{posterOnly ? t('vocab.modePoster') : t('vocab.modeTitle')}</Text>
       {hasPoster && !posterOnly && (
         <View style={styles.seg}>
@@ -98,6 +101,7 @@ export default function VocabCategoryScreen() {
 const styles = StyleSheet.create({
   container: { padding: spacing.lg, paddingBottom: spacing.xxl, maxWidth: 760, width: '100%', alignSelf: 'center' },
   head: { marginBottom: spacing.lg },
+  hero: { width: '100%', aspectRatio: 1200 / 400, borderRadius: 16, marginBottom: spacing.lg },
   modeTitle: { fontSize: 20, fontWeight: '700', color: colors.accentJa, letterSpacing: 0.2, marginBottom: spacing.sm, textAlign: 'center' },
   desc: { fontSize: 14, color: colors.inkMute, lineHeight: 21, textAlign: 'center' },
   seg: { flexDirection: 'row', gap: spacing.sm, marginBottom: spacing.md },

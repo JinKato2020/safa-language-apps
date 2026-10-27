@@ -31,6 +31,8 @@ export interface L1Overlay {
   vocab?: Record<string, VocabEntry>;
   grammarVocab?: GrammarVocab;
   convVocab?: GrammarVocab;
+  grammarGuide?: Record<string, unknown[]>;          // 文法教材(L1別)。OTA配信。
+  grammarThemeNames?: Record<string, string>;        // 文法テーマ名(L1別)。OTA配信。
   l1Audio?: Record<string, number | string>;        // → AudioBundle.japaneseAudio (母語側音声)
   l1GrammarAudio?: Record<string, number | string>;
 }
@@ -66,6 +68,12 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
     WORDS[key] = nes.map((ne, i) => ({ ja: l1s[i] ?? '', ne }));
   }
 
+  // 文法テーマ名はL1別(overlay.grammarThemeNames)でcore.grammarThemes[].nameを上書き → OTA配信。
+  const GRAMMAR_THEMES = core.grammarThemes.map(gt => ({
+    ...gt,
+    name: overlay.grammarThemeNames?.[String(gt.id)] ?? gt.name,
+  }));
+
   const EMPTY = {} as Record<string, number>;
   return {
     version: opts.version,
@@ -75,8 +83,9 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
     EXAMPLES,
     WORD_CATEGORIES: core.wordCategories,
     WORDS,
-    GRAMMAR_THEMES: core.grammarThemes,
+    GRAMMAR_THEMES,
     GRAMMAR_EXAMPLES,
+    GRAMMAR_GUIDE: overlay.grammarGuide ?? null,
     VOCAB: overlay.vocab ?? {},
     GRAMMAR_VOCAB: overlay.grammarVocab,
     CONV_VOCAB: overlay.convVocab,

@@ -12,11 +12,8 @@ import {
   AppDataProvider,
   useI18n,
   type AppData,
-  type GrammarGuideByLang,
 } from '@safa/shared';
 
-import grammarGuideJa from './src/grammarGuide.ja.json';
-import grammarGuideEn from './src/grammarGuide.en.json';
 import ja from './src/i18n/ja.json';
 import ne from './src/i18n/ne.json';
 import en from './src/i18n/en.json';
@@ -25,13 +22,15 @@ import { POSTER_LESSONS } from './src/posterLessons';
 import { posterUri, ensurePosterPack } from './src/posterPackLoader';
 import { PurchasesProvider } from './src/PurchasesProvider';
 
-// 文法「教材」(ルール解説)。日本語(ja)+英語(en)。UI言語に応じて表示(ne UIでは非表示)。
-const GRAMMAR_GUIDE: GrammarGuideByLang = {
-  ja: grammarGuideJa as unknown as GrammarGuideByLang['ja'],
-  en: grammarGuideEn as unknown as GrammarGuideByLang['ja'],
-};
-
+// 文法「教材」(ルール解説)・文法テーマ名はOTA配信(overlayパック経由)。本体にバンドルしない。
 const headerIconSource = require('./assets/icon.png');
+// 各モード(タブ)着地画面のヒーロー画像。
+const HERO_IMAGES = {
+  conversation: require('./assets/hero/conversation.jpg'),
+  grammar: require('./assets/hero/grammar.jpg'),
+  listening: require('./assets/hero/listening.jpg'),
+  vocabulary: require('./assets/hero/vocabulary.jpg'),
+};
 
 // DLパックになり得る言語は en のみ。ja/ne は同梱(ja内容)を使う。
 const toPackLang = (lang: string) => (lang === 'en' ? 'en' : 'ja');
@@ -275,7 +274,7 @@ export default function App() {
         >
           <FirstRunGate>
             <PackGate>
-              <AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['conversation', 'grammar', 'listening', 'vocabulary']} grammarGuide={GRAMMAR_GUIDE} />
+              <AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['grammar', 'conversation', 'listening', 'vocabulary']} heroImages={HERO_IMAGES} />
             </PackGate>
           </FirstRunGate>
         </SettingsProvider>

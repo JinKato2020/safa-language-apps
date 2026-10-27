@@ -85,3 +85,10 @@ credentials/
 # Listening mode 結合音声 (Android 起動不能のため v1.5.14 でロールバック、再生成可能)
 **/expo-app/assets/audio/listening/
 **/expo-app/data/listeningMetadata.json
+
+# App A v2作業の中間物(リポジトリに含めない)
+聞いて話せるネパール語/audio/v2gram/
+聞いて話せるネパール語/audio/v2conv/
+聞いて話せるネパール語/audio/比較/
+聞いて話せるネパール語/コンテンツ/
+聞いて話せるネパール語/CDエクスプレス/
