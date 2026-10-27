@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState } from 'react';
-import { FlatList, Image, Pressable, StyleSheet, View } from 'react-native';
-import { useHeroImage } from '../heroImages';
+import { FlatList, Pressable, StyleSheet, View } from 'react-native';
+import { ModeHero, useHeroImage } from '../heroImages';
 import { Text } from '../Text';
 import { useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -100,7 +100,7 @@ export default function ThemeScreen() {
       contentContainerStyle={styles.container}
       ListHeaderComponent={
         <>
-        {heroSrc && <Image source={heroSrc} style={styles.hero} resizeMode="cover" accessibilityIgnoresInvertColors />}
+        {heroSrc != null && <ModeHero source={heroSrc} />}
         <View style={styles.head}>
           <Text style={[styles.modeTitle, ss(20)]}>{modeTitle}</Text>
           <Text style={[styles.desc, ss(14, 21)]}>{headerText}</Text>
@@ -180,7 +180,6 @@ export default function ThemeScreen() {
 
 const styles = StyleSheet.create({
   container: { padding: spacing.lg, paddingBottom: spacing.xxl, maxWidth: 760, width: '100%', alignSelf: 'center' },
-  hero: { width: '100%', aspectRatio: 1200 / 400, borderRadius: 16, marginBottom: spacing.lg },
   head: { marginBottom: spacing.xl },
   modeTitle: { fontSize: 20, fontWeight: '700', color: colors.accentJa, letterSpacing: 0.2, marginBottom: spacing.sm, textAlign: 'center' },
   kicker: { fontSize: 11, color: colors.inkQuiet, letterSpacing: 2, textTransform: 'uppercase', marginBottom: spacing.xs },
