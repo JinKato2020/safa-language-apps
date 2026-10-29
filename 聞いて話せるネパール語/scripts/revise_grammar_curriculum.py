@@ -1,7 +1,7 @@
 """Build the reviewed bilingual curriculum; reuse recordings by immutable source ID.
 
-The legacy v2 release remains compatible with old apps. The v3 release requires
-the audio-reference-aware loader. This script never generates or edits audio.
+This is authoring data. package_positional_grammar_update.py pairs texts with
+theme-index audio for existing readers. This script never generates audio.
 """
 from pathlib import Path
 import csv, json, re, copy, collections
@@ -37,8 +37,8 @@ RULES = {
  '疑問詞は「誰」「何」「どこ」など、知りたい情報を示す語です。まず答えの種類を決め、その部分を疑問詞に置き換えます。文末の動詞は人称・時制に合わせます。कुनは選ぶもの、कस्तोは性質、कसरीは方法、किनは理由を尋ねます。文頭のकेによる「はい・いいえ」の質問と、物を尋ねるकेを区別しましょう。',
  'A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के.'),
 7: ('相手との関係に合う代名詞と動詞を選ぶ','Choose pronouns and verbs for the social relationship',
- '通常の練習はम・हामी・तपाईं・तपाईंहरू・उनी・उनीहरूを基本にします。तँは非常に親しい相手などに使う低い敬意の形で、相手によって失礼になります。तिमीは親しい相手への形です。तपाईंは丁寧です。相手をどう呼ぶかに合わせ、動詞も変えます。「君」を常に目下専用と考えません。',
- 'Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.'),
+ '通常の練習はम・हामी・तपाईं・तपाईंहरू・उहाँ・उहाँहरूを基本にします。तँは非常に親しい相手などに使う低い敬意の形で、相手によって失礼になります。तिमीは親しい相手への形です。तपाईंは丁寧です。相手をどう呼ぶかに合わせ、動詞も変えます。「君」を常に目下専用と考えません。',
+ 'Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.'),
 8: ('日常の行動や習慣を現在形で述べる','Describe everyday actions and routines',
  '基本語順は「誰が＋何を・いつ・どこで＋動詞」です。辞書形の-नुを外し、動詞に合う現在語幹と人称語尾を使います。गर्नु→गर्छु、पढ्नु→पढ्छु、खानु→खान्छुのように語幹ごと覚えます。時刻や毎日などを添えると習慣を説明できます。',
  'Use subject + object/time/place + verb. Replace dictionary -नु with the appropriate present stem and personal ending. Learn stems through forms such as गर्नु→गर्छु, पढ्नु→पढ्छु and खानु→खान्छु. Adding every day or a time describes a routine.'),
@@ -49,8 +49,8 @@ RULES = {
  '「動詞語幹＋दै／्दै＋छの活用」が基本です。पढ्दै छुは読んでいます、खाँदै छुは食べています、です。गर्दै छुとगरिरहेको छुはどちらも進行を表せます。否定は最後をछैन系にします。जाँदै छुは文脈によって今向かっていることや近い予定を表すため、時を示す語にも注意します。',
  'Use a verb stem with दै/्दै + a form of छ: पढ्दै छु, I am reading; खाँदै छु, I am eating. Both गर्दै छु and गरिरहेको छु can express ongoing action. Negate the final auxiliary with the छैन family. जाँदै छु can describe going now or an imminent arrangement, depending on time expressions and context.'),
 11: ('終わった行動と動作主のलेを理解する','Describe completed actions and the agent marker ले',
- '対象を取る動詞を他動詞と呼びます。本を読む・手紙を書くなどの完了した出来事では、主語がमैले・उनले等になり、動詞の一致にも注意します。行く・来る・寝るなどの自動詞は、過去でも一律にलेを付けません。गर्नु→गरेँ、जानु→गएँ、आउनु→आएँなど不規則な語幹も学びます。',
- 'Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.'),
+ '対象を取る動詞を他動詞と呼びます。本を読む・手紙を書くなどの完了した出来事では、主語がमैले・उहाँले等になり、動詞の一致にも注意します。行く・来る・寝るなどの自動詞は、過去でも一律にलेを付けません。गर्नु→गरेँ、जानु→गएँ、आउनु→आएँなど不規則な語幹も学びます。',
+ 'Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.'),
 12: ('過去にしなかったことを伝える','Say what did not happen in the past',
  '過去の否定はगरेनँ・गएनँなどで、現在のगर्दिनँとは異なります。人称・敬意によりगरेनँ・गरेनन्・गर्नुभएन等を選びます。完了した他動詞では否定でもलेの仕組みを確認します。存在の過去の否定थिएनは動作動詞の否定とは別です。',
  'Past negatives such as गरेनँ and गएनँ differ from present गर्दिनँ. Choose person/respect forms such as गरेनँ, गरेनन् and गर्नुभएन. Check agent marking even in a negated completed transitive event. Past nonexistence with थिएन is a separate copula construction.'),
@@ -118,8 +118,8 @@ RULES = {
  '使役は、人に動作をさせる・してもらう関係です。खानु→खुवाउनु、सिक्नु→सिकाउनु等、元の動詞と対にして覚えます。誰が・誰に・何を、を分けます。「-न लगाउनु」も動作をさせる形です。過去の主語やलाई等はテーマ5・11の規則を確認します。',
  'A causative expresses causing or arranging an action. Learn pairs such as खानु→खुवाउनु and सिक्नु→सिकाउनु. Separate causer, person acting and object. -न लगाउनु is another causative construction. Review लाई and completed-event agent marking in topics 5 and 11.'),
 34: ('発言内容を引用して伝える','Report what someone said',
- '「内容＋भने／भनिन्等」で発言を伝えます。引用した内容は発言者の立場からの言葉なので、म・यहाँ・भोलिの指す人・場所・日を確認します。अरे等を説明なしに追加しません。भनेनは言わなかった、भन्थिन्等は繰り返し言っていた、です。条件のभनेと、言う動詞の過去形を文の役割で区別します。',
- 'Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.'),
+ '「内容＋भन्नुभयो等」で発言を伝えます。引用した内容は発言者の立場からの言葉なので、म・यहाँ・भोलिの指す人・場所・日を確認します。अरे等を説明なしに追加しません。भन्नुभएनは言わなかった、भन्नुहुन्थ्यो等は繰り返し言っていた、です。条件のभनेと、言う動詞の過去形を文の役割で区別します。',
+ 'Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.'),
 }
 
 # Retain diverse existing recordings, not the long blocks of person-substitution drills.
@@ -260,11 +260,11 @@ POST = '''
 '''
 
 REL = '''
-जो…ऊ／उनी|jo…ū / unī|〜する人は、その人は|the person who…that person|जो यहाँ बस्छ, ऊ मेरो साथी हो।
+जो…उहाँ|jo…uhā̃|〜する人は、その人は|the person who…that person|जो यहाँ बस्छ, ऊ मेरो साथी हो।
 जुन…त्यो|jun…tyo|〜するその人・物は、それは|the entity which…that one|जुन किताब तपाईं पढ्नुहुन्छ, त्यो राम्रो छ।
 जे…त्यो／त्यही|je…tyo / tyahī|〜するもの・ことを、それを|what…that, the very thing|जे मन पर्छ, त्यही खानुहोस्।
-जसले…उसले|jasle…usle|〜した／する人が、その人が|the agent who…that agent|जसले मेहनत गर्छ, उसले सिक्छ।
-जसलाई…उसलाई|jaslāī…uslāī|〜する相手に、その相手に|the person whom/to whom…that person|जसलाई पानी चाहिन्छ, उसलाई दिनुहोस्।
+जसले…उहाँले|jasle…uhā̃le|〜した／する人が、その人が|the agent who…that agent|जसले मेहनत गर्छ, उसले सिक्छ।
+जसलाई…उहाँलाई|jaslāī…uhā̃lāī|〜する相手に、その相手に|the person whom/to whom…that person|जसलाई पानी चाहिन्छ, उसलाई दिनुहोस्।
 जसको・जसकी・जसका|jasko / jaskī / jaskā|〜の持ち主・その人の。後ろの名詞に合わせる|whose; agreement follows the possessed noun|जसको किताब हो, उसलाई दिनुहोस्।
 जसमा・जुन…मा|jasmā / jun…mā|〜が入る物・場所など|in which; choose according to the referent|जुन झोलामा किताब छ, त्यो मेरो हो।
 जहाँ…त्यहाँ|jahā̃…tyahā̃|〜する場所には、そこに|where…there|जहाँ पानी छ, त्यहाँ जीवन छ।

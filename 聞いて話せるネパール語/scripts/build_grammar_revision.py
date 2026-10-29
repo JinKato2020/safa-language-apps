@@ -1,6 +1,7 @@
 """Build curriculum v3 from reviewed content and the immutable recording registry."""
 from revise_grammar_curriculum import *
 import os
+from standard_third_person import normalize_row, lexicon_forms, PRONOUN
 
 saved_catalog = SRC/'grammar_pack_v3_catalog.json'
 PACK_REVISION = int(os.environ.get('GRAMMAR_PACK_REVISION', str(read(saved_catalog)['core']['version'] + 1 if saved_catalog.exists() else 1200)))
@@ -46,6 +47,16 @@ for line in NEW_TSV.strip().splitlines():
         ref=next((i for i,r in new_recordings.items() if all(r[f]==v for f,v in [('ne',ne),('ja',ja),('en',en)])),None)
     lessons[k].append(dict(ne=ne,roman=roman,ja=ja,en=en,audio_ref=ref))
 
+# Standard lesson subjects are respectful third person. Topic7 retains comparisons.
+for theme, rows in lessons.items():
+    if theme == '7': continue
+    for i, original in enumerate(rows):
+        row = normalize_row(original)
+        if row['ne'] != original['ne']:
+            row['audio_ref'] = next((id for id, r in {**bank, **new_recordings}.items()
+                if all(row[f] == r[f] for f in ['ne','ja','en'])), None)
+        rows[i] = row
+
 tokens=lambda ne: re.findall(r'[^\s।,?？！!：:;“”"\'‘’()]+',ne)
 unknown={}
 for k,rows in lessons.items():
@@ -83,10 +94,17 @@ REL_EXTRA = {
 }
 
 def relative_example(example,lang):
+    original=example
+    # Relative examples use the same respectful subjects as the practice.
+    source=next((dict(ne=ne,roman=roman,ja=ja,en=en) for line in NEW_TSV.strip().splitlines()
+        for k,ne,roman,ja,en in [line.split('|')] if ne==example),None)
+    if source:
+        source=normalize_row(source);example=source['ne']
     match=next((r for rs in lessons.values() for r in rs if r['ne']==example),None)
     if match:return example+'\n'+match['roman']+'\n'+match[lang]
-    roman,ja,en=REL_EXTRA[example]
-    return example+'\n'+roman+'\n'+bilingual(ja,en,lang)
+    roman,ja,en=REL_EXTRA[original]
+    row=normalize_row(dict(ne=original,roman=roman,ja=ja,en=en))
+    return row['ne']+'\n'+row['roman']+'\n'+row[lang]
 
 # Content assembly follows below; all active examples are explicitly represented
 # in the guide, with vocabulary, a structural explanation and a reconstruction task.
@@ -94,6 +112,7 @@ lexicon={}
 for line in (SRC/'grammar_v3_lexicon.tsv').read_text('utf-8').splitlines():
     if line.strip():
         ne,roman,ja,en=line.split('\t');lexicon[ne]=dict(rom=roman,ja=ja,en=en)
+lexicon.update(lexicon_forms())
 assert set(unknown)<=set(lexicon), f'Unreviewed new vocabulary: {set(unknown)-set(lexicon)}'
 
 new_vocab={lang:{} for lang in overlays}
@@ -114,6 +133,14 @@ for k,rows in lessons.items():
                 else:
                     assert v,word
                     meaning=v['base_meaning'];roman=v.get('rom','')
+                # Respectful copulas serve identity, qualities, location and
+                # progressive clauses; teach the meaning in this sentence.
+                if k != '7' and 'उहाँ' in r['ne'] and word in ['हुनुहुन्छ','हुनुहुन्न']:
+                    identity = k in ['1','3','23'] or any(n in r['ne'] for n in ['लेखक','लेखिका','मेरो साथी'])
+                    if word == 'हुनुहुन्छ':
+                        meaning = bilingual('です（敬意）' if identity else 'います（敬意）', 'is/are (respectful)' if identity else 'is/are present (respectful)', lang)
+                    else:
+                        meaning = bilingual('ではありません（敬意）' if identity else 'いません（敬意）', 'is/are not (respectful)' if identity else 'is/are not present (respectful)', lang)
                 dest=new_vocab[lang].setdefault(word,dict(rom=roman,base_form=v.get('base_form',word),base_meaning=meaning,contexts=[]))
                 dest['contexts'].append({'sentence_id':r['id'],'ja':meaning})
 for lang in new_vocab:
@@ -133,8 +160,8 @@ P_BASIC=[
  ['हामी / hāmī','हौं / haũ','होइनौं / hoinaũ','छौं / chaũ','छैनौं / chainaũ'],
  ['तपाईं / tapāĩ','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna'],
  ['तपाईंहरू / tapāĩharū','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna'],
- ['उनी / unī','हुन् / hun','होइनन् / hoinan','छन् / chan; छिन् / chin','छैनन् / chainan'],
- ['उनीहरू / unīharū','हुन् / hun','होइनन् / hoinan','छन् / chan','छैनन् / chainan'],
+ ['उहाँ / uhā̃','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna'],
+ ['उहाँहरू / uhā̃harū','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna'],
 ]
 P_NAMES=[('私','I'),('私たち','we'),('あなた','you'),('あなたたち','you plural'),('彼・彼女','he/she'),('彼ら・彼女たち','they')]
 
@@ -184,17 +211,17 @@ for lang in overlays:
         bs=[block('goal',goal),block('h',bilingual('基本の考え方と文の作り方','Meaning and sentence construction',lang)),block('p',rule)]
         if k in [1,2]:
             ix=1 if k==1 else 3
-            bs += [block('h',bilingual('基本6人称の肯定・否定','Positive and negative forms for six basic person groups',lang)),table(bilingual(['人称と読み','肯定と読み','否定と読み'],['Person and reading','Positive and reading','Negative and reading'],lang),[[bilingual(*P_NAMES[i],lang)+'\n'+r[0],r[ix],r[ix+1]] for i,r in enumerate(P_BASIC)]),block('note',bilingual('उनीは性別だけで決まる代名詞ではありません。छन्は中程度の敬意を含む形、छिन्は女性を明示する形です。詳しくはテーマ7。होइनँ・छैनँの鼻音も区別しましょう。','उनी is not selected by gender alone. छन् can express medium respect; छिन् explicitly marks a feminine form. See topic 7. Note the nasal first-person negatives होइनँ/छैनँ.',lang))]
+            bs += [block('h',bilingual('基本6人称の肯定・否定','Positive and negative forms for six basic person groups',lang)),table(bilingual(['人称と読み','肯定と読み','否定と読み'],['Person and reading','Positive and reading','Negative and reading'],lang),[[bilingual(*P_NAMES[i],lang)+'\n'+r[0],r[ix],r[ix+1]] for i,r in enumerate(P_BASIC)]),block('note',bilingual('基本の彼・彼女はउहाँ、彼ら・彼女らはउहाँहरूです。どちらも敬意のある動詞形を使い、性別で動詞を分けません。親しい関係の言い方はテーマ7で学びます。होइनँ・छैनँの鼻音も区別しましょう。','Use उहाँ for he/she and उहाँहरू for they as the basic forms. Both take respectful verb agreement without a masculine/feminine distinction. Familiar forms are taught in topic 7. Note the nasal first-person negatives होइनँ/छैनँ.',lang))]
         if k==4:
             bs += [block('h',bilingual('हुन्छの基本6人称と否定','Six basic person groups with हुन्छ and its negatives',lang)),table(bilingual(['人称','肯定と読み','否定と読み'],['Person','Positive and reading','Negative and reading'],lang),[
-             ['म / ma','हुन्छु / hunchu','हुँदिनँ / hũdinã'],['हामी / hāmī','हुन्छौं / hunchaũ','हुँदैनौं / hũdainaũ'],['तपाईं / tapāĩ','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna'],['तपाईंहरू / tapāĩharū','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna'],['उनी / unī','हुन्छन् / hunchan; हुन्छिन् / hunchin','हुँदैनन् / hũdainan; हुँदिनन् / hũdinan'],['उनीहरू / unīharū','हुन्छन् / hunchan','हुँदैनन् / hũdainan']])]
+             ['म / ma','हुन्छु / hunchu','हुँदिनँ / hũdinã'],['हामी / hāmī','हुन्छौं / hunchaũ','हुँदैनौं / hũdainaũ'],['तपाईं / tapāĩ','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna'],['तपाईंहरू / tapāĩharū','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna'],['उहाँ / uhā̃','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna'],['उहाँहरू / uhā̃harū','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna']])]
         if k==5:
             groups=collections.defaultdict(list)
             for line in POST.strip().splitlines():
                 group,rest=line.split('|',1);groups[group].append(rest)
             group_en={'基本':'Core forms','同伴と所持':'Company and possession','方向と位置':'Direction and position','範囲':'Extent','関係表現':'Further relationships'}
             for group,lines in groups.items():bs += [block('h',bilingual(group,group_en[group],lang)),inventory_table('\n'.join(lines),lang)]
-            bs += [block('note',bilingual('मसँग कलम छは「私のところにペンがある」→「私はペンを持っている」。持ち主が私でも文末をछुにしません。साथीसँग जान्छुでは一緒に行く相手を示します。','मसँग कलम छ literally places a pen with me and means I have a pen. The possessor being I does not change छ to छु. In साथीसँग जान्छु, सँग instead marks company.',lang)),block('p',bilingual('को・की・काは後ろの名詞との一致です。मेरो・हाम्रो・तपाईंकोは「私の・私たちの・あなたの」。मに後置詞が付くとमलाई・मैले等になり、उにはउसलाई・उसले、उनीにはउनलाई・उनले等があります。形と関係を一緒に覚えます。','को/की/का agree with the following noun. मेरो, हाम्रो and तपाईंको mean my, our and your. Pronouns can change before case markers: म→मलाई/मैले, उ→उसलाई/उसले, उनी→उनलाई/उनले. Learn the form with its role.',lang))]
+            bs += [block('note',bilingual('मसँग कलम छは「私のところにペンがある」→「私はペンを持っている」。持ち主が私でも文末をछुにしません。साथीसँग जान्छुでは一緒に行く相手を示します。','मसँग कलम छ literally places a pen with me and means I have a pen. The possessor being I does not change छ to छु. In साथीसँग जान्छु, सँग instead marks company.',lang)),block('p',bilingual('को・की・काは後ろの名詞との一致です。मेरो・हाम्रो・तपाईंकोは「私の・私たちの・あなたの」。मに後置詞が付くとमलाई・मैले等になり、उहाँにはउहाँलाई・उहाँले、उहाँहरूにはउहाँहरूलाई・उहाँहरूले等があります。形と関係を一緒に覚えます。','को/की/का agree with the following noun. मेरो, हाम्रो and तपाईंको mean my, our and your. Pronouns can change before case markers: म→मलाई/मैले, उहाँ→उहाँलाई/उहाँले, उहाँहरू→उहाँहरूलाई/उहाँहरूले. Learn the form with its role.',lang))]
         if k==6:
             bs.append(block('h',bilingual('基本語と、後置詞・数量語との組み合わせ','Core words and combinations with postpositions and counters',lang)))
             qrows=[line.split('|') for line in QUESTIONS.strip().splitlines()]
@@ -219,6 +246,7 @@ for lang in overlays:
             for n,jp,en in [(1,'私','I'),(9,'私たち','we'),(5,'あなた','you'),(5,'あなたたち','you plural'),(7,'彼・彼女','he/she'),(10,'彼ら・彼女たち','they')]:
                 old=bank.get(f'{k}-{n}')
                 if old:
+                    old=normalize_row(old)
                     ne=old['ne'];rom=old['roman'];meaning=old[lang]
                     if jp=='あなたたち':ne=ne.replace('तपाईं','तपाईंहरू');rom=rom.replace('tapāĩ','tapāĩharū')
                     rs.append([bilingual(jp,en,lang),ne+'\n'+rom,meaning])
@@ -227,18 +255,18 @@ for lang in overlays:
             indexes=[41,49,45,45,47,50] if k==11 else [51,59,55,55,57,60]
             prs=[]
             for i,n in enumerate(indexes):
-                r=bank[f'36-{n}'];ne=r['ne'];rom=r['roman']
+                r=normalize_row(bank[f'36-{n}']);ne=r['ne'];rom=r['roman']
                 if i==3:ne=ne.replace('तपाईं','तपाईंहरू');rom=rom.replace('tapāĩ','tapāĩharū')
                 prs.append([bilingual(*P_NAMES[i],lang),ne+'\n'+rom,r[lang]])
             bs += [block('h',bilingual('ある・いるの過去はथियो系','Past existence uses the थियो family',lang)),table(bilingual(['人称','過去の形と読み','意味'],['Person','Past form and reading','Meaning'],lang),prs)]
         if k in EXTRA_ROWS:bs += [block('h',bilingual('このテーマで扱う関連表現','Related forms taught in this topic',lang)),inventory_table(EXTRA_ROWS[k],lang)]
         if k==34:
             bs += [block('h',bilingual('そのまま引用する形と、内容を伝える形','Direct quotation and indirect reporting',lang)),table(bilingual(['方法','例と読み','意味'],['Method','Example and reading','Meaning'],lang),[
-             [bilingual('直接引用','Direct quotation',lang),'उनले “म बिरामी छु” भनिन्।\nunle “ma birāmī chu” bhanin',bilingual('彼女は「私は病気です」と言いました','She said, “I am ill.”',lang)],
-             [bilingual('間接話法','Indirect reporting',lang),'उनले आफू बिरामी भएको बताइन्।\nunle āphū birāmī bhaeko batāin',bilingual('彼女は自分が病気だと伝えました','She said that she was ill.',lang)]
-            ]),block('p',bilingual('直接引用のमは発言者本人です。間接話法ではआफू（自分）で主語を受け、बिरामी（病気の）＋भएको（そうであることを表す形）で内容をまとめています。बताइन्はबताउनु（伝える）の女性の過去形。引用した言葉をただ代名詞だけ替えるのでなく、誰の立場で何を伝えているかを確認します。','In direct speech, म refers to the original speaker. Indirect reporting uses आफू, self, to refer back to the subject and बिरामी, ill, + भएको to package the reported state. बताइन् is the feminine past of बताउनु, tell/report. Track perspective and clause structure rather than simply replacing a pronoun.',lang))]
+             [bilingual('直接引用','Direct quotation',lang),'उहाँले “म बिरामी छु” भन्नुभयो।\nuhā̃le “ma birāmī chu” bhannubhayo',bilingual('彼女は「私は病気です」と言いました','She said, “I am ill.”',lang)],
+             [bilingual('間接話法','Indirect reporting',lang),'उहाँले आफू बिरामी भएको बताउनुभयो।\nuhā̃le āphū birāmī bhaeko batāunubhayo',bilingual('彼女は自分が病気だと伝えました','She said that she was ill.',lang)]
+            ]),block('p',bilingual('直接引用のमは発言者本人です。間接話法ではआफू（自分）で主語を受け、बिरामी（病気の）＋भएको（そうであることを表す形）で内容をまとめています。बताउनुभयोはबताउनु（伝える）の敬意のある過去形。引用した言葉をただ代名詞だけ替えるのでなく、誰の立場で何を伝えているかを確認します。','In direct speech, म refers to the original speaker. Indirect reporting uses आफू, self, to refer back to the subject and बिरामी, ill, + भएको to package the reported state. बताउनुभयो is the respectful past of बताउनु, tell/report. Track perspective and clause structure rather than simply replacing a pronoun.',lang))]
         if k==29:
-            bs += [block('h',bilingual('前から説明する形と、二つの節を結ぶ形','Noun-modifying clauses and relative–correlative clauses',lang)),block('p',bilingual('ネパールへ行く人ならनेपाल जाने मान्छे、昨日来た人ならहिजो आएको मान्छेのように、説明を名詞の前に置きます。一方、जो यहाँ बस्छ, ऊ मेरो साथी होでは、जोで人を導き、後半のऊが同じ人を受けます。節は一つの出来事や状態を述べる部分です。二つの節で、それぞれの役割に合う後置詞と動詞を選びます。','Place a modifier before its noun: नेपाल जाने मान्छे, a person who goes to Nepal; हिजो आएको मान्छे, a person who came yesterday. In जो यहाँ बस्छ, ऊ मेरो साथी हो, जो introduces a person and ऊ resumes that person. A clause describes an event/state. Each clause uses the case marking and verb appropriate to its own role.',lang)),table(bilingual(['関係表現と読み','働き','短い例'],['Relative form and reading','Function','Short example'],lang),[[a[0]+'\n'+a[1],a[2 if lang=='ja' else 3],relative_example(a[4],lang)] for a in (line.split('|') for line in REL.strip().splitlines())]),block('note',bilingual('को・कहाँ・कहिले等は質問、जो・जहाँ・जब等は文をつなぐ形です。जब…तबは時の関係、यदि…भनेは条件で、常に置き換えられません。जहिलेは反復する時を導くほか、文脈により使い方が変わります。जस्तो・जत्रोの性・数の変化はテーマ23も参照。','को/कहाँ/कहिले ask questions; जो/जहाँ/जब link information. Temporal जब…तब is not always interchangeable with conditional यदि…भने. जहिले can introduce recurring times and its use depends on context. See topic 23 for agreement of जस्तो/जत्रो.',lang))]
+            bs += [block('h',bilingual('前から説明する形と、二つの節を結ぶ形','Noun-modifying clauses and relative–correlative clauses',lang)),block('p',bilingual('ネパールへ行く人ならनेपाल जाने मान्छे、昨日来た人ならहिजो आएको मान्छेのように、説明を名詞の前に置きます。一方、जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छでは、जोで人を導き、後半のउहाँが同じ人を受けます。節は一つの出来事や状態を述べる部分です。二つの節で、それぞれの役割に合う後置詞と動詞を選びます。','Place a modifier before its noun: नेपाल जाने मान्छे, a person who goes to Nepal; हिजो आएको मान्छे, a person who came yesterday. In जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ, जो introduces a person and उहाँ resumes that person. A clause describes an event/state. Each clause uses the case marking and verb appropriate to its own role.',lang)),table(bilingual(['関係表現と読み','働き','短い例'],['Relative form and reading','Function','Short example'],lang),[[a[0]+'\n'+a[1],a[2 if lang=='ja' else 3],relative_example(a[4],lang)] for a in (line.split('|') for line in REL.strip().splitlines())]),block('note',bilingual('को・कहाँ・कहिले等は質問、जो・जहाँ・जब等は文をつなぐ形です。जब…तबは時の関係、यदि…भनेは条件で、常に置き換えられません。जहिलेは反復する時を導くほか、文脈により使い方が変わります。जस्तो・जत्रोの性・数の変化はテーマ23も参照。','को/कहाँ/कहिले ask questions; जो/जहाँ/जब link information. Temporal जब…तब is not always interchangeable with conditional यदि…भने. जहिले can introduce recurring times and its use depends on context. See topic 23 for agreement of जस्तो/जत्रो.',lang))]
         # Retain the earlier cautions, now alongside explicit rules and complete exercise explanations.
         for old in old_guides[lang][key]:
             if k==2 and old.get('type')=='note':continue  # possession is taught in topic 5
@@ -253,6 +281,32 @@ for lang in overlays:
             bs += [block('h',bilingual(f'例題{n}',f'Exercise {n}',lang)),block('p',r[lang]+'\n'+r['ne']+'\n'+r['roman']),word_table(r,lang),block('p',bilingual('しくみ：','How it works: ',lang)+construction(r,k,lang))]
         bs += [block('h',bilingual('自分で組み立てる練習','Build your own sentence',lang)),block('p',bilingual('上の例題から一つ選び、日本語だけを見て文を作りましょう。次に名詞・場所・時を一つ替え、後置詞と動詞がどう変わるかを説明してください。主語だけを替えて終わらず、伝えたい内容を替えて練習します。','Choose an example and reconstruct it from the translation. Change a noun, place or time and explain any required changes to the postposition or verb. Change the intended message, not only the subject.',lang)),block('h',bilingual('復習する教材','Review topics',lang)),block('p',' / '.join(f'{n}: {titles[lang][str(n)]}' for n in REFS[k]))]
         guides[lang][key]=bs
+
+# Carry the same respectful examples into retained reference tables and notes.
+replacements = {}
+for original in bank.values():
+    revised = normalize_row(original)
+    if revised['ne'] != original['ne']:
+        replacements[original['ne']] = revised['ne']
+        replacements[original['roman']] = revised['roman']
+for line in NEW_TSV.strip().splitlines():
+    theme,ne,roman,ja,en=line.split('|')
+    if theme=='7':continue
+    original=dict(ne=ne,roman=roman,ja=ja,en=en)
+    revised=normalize_row(original)
+    if revised['ne']!=ne:
+        replacements[ne]=revised['ne'];replacements[roman]=revised['roman']
+def normalize_guide(value):
+    if isinstance(value,str):
+        for before,after in sorted(replacements.items(),key=lambda x:-len(x[0])):
+            value=value.replace(before,after)
+        return value
+    if isinstance(value,list):return [normalize_guide(v) for v in value]
+    if isinstance(value,dict):return {k:normalize_guide(v) for k,v in value.items()}
+    return value
+for lang in guides:
+    for key in guides[lang]:
+        if key!='7':guides[lang][key]=normalize_guide(guides[lang][key])
 
 rows=[];audio_refs={}
 for k,items in lessons.items():

@@ -7,6 +7,25 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
 const payloadDir=path.join(work,'publish'),catalog=read(path.join(payloadDir,'catalog.json'));
 const payload=url=>read(path.join(payloadDir,url.split('/').pop().split('?')[0]));
 const sourceCore=payload(catalog.core.url),report=read(path.join(APP,'文法教材/教材音声セット更新_検証結果.json'));
+const familiarThird=/(?<![\u0900-\u097f])(?:उनी(?:हरू)?(?:ले|लाई|को)?|उन(?:ले|लाई|को)|उस(?:ले|लाई|को)|ऊ|उ)(?![\u0900-\u097f])/u;
+function* strings(value){
+ if(typeof value==='string')yield value;
+ else if(Array.isArray(value))for(const x of value)yield* strings(x);
+ else if(value&&typeof value==='object')for(const x of Object.values(value))yield* strings(x);
+}
+for(const [theme,rows] of Object.entries(sourceCore.grammarNe))if(theme!=='7')assert(rows.every(ne=>!familiarThird.test(ne)),`Nonstandard third person in theme ${theme}`);
+assert(sourceCore.grammarNe['7'].some(ne=>familiarThird.test(ne)),'Topic7 must retain familiar-pronoun comparisons');
+for(const entry of catalog.packs){
+ const overlay=payload(entry.url);
+ for(const [theme,blocks] of Object.entries(overlay.grammarGuide))if(theme!=='7')for(const text of strings(blocks))assert(!familiarThird.test(text),`Familiar third person in guide ${entry.l1}/${theme}`);
+ for(const [theme,rows] of Object.entries(sourceCore.grammarNe))for(const [i,ne] of rows.entries()){
+  for(const word of new Set(ne.match(/[^\s।,?？！!：:;“”"'‘’()]+/gu)||[])){
+   const v=overlay.grammarVocab[word];assert(v&&v.rom,`${entry.l1}: ${word}`);
+   const contexts=v.contexts.filter(c=>c.sentence_id===`${theme}-${i+1}`);assert.equal(contexts.length,1);assert(contexts[0].ja);
+  }
+ }
+}
+console.log('PASS respectful third person throughout exercises/lessons; familiar forms in topic7; all contextual dictionary entries');
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const blobs=new Map();
 for(const entry of [catalog.core,...catalog.packs]){

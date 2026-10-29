@@ -45,20 +45,20 @@
           "हुनुहुन्न / hunuhunna"
         ],
         [
-          "he/she\nउनी / unī",
-          "हुन् / hun",
-          "होइनन् / hoinan"
+          "he/she\nउहाँ / uhā̃",
+          "हुनुहुन्छ / hunuhuncha",
+          "हुनुहुन्न / hunuhunna"
         ],
         [
-          "they\nउनीहरू / unīharū",
-          "हुन् / hun",
-          "होइनन् / hoinan"
+          "they\nउहाँहरू / uhā̃harū",
+          "हुनुहुन्छ / hunuhuncha",
+          "हुनुहुन्न / hunuhunna"
         ]
       ]
     },
     {
       "type": "note",
-      "text": "उनी is not selected by gender alone. छन् can express medium respect; छिन् explicitly marks a feminine form. See topic 7. Note the nasal first-person negatives होइनँ/छैनँ."
+      "text": "Use उहाँ for he/she and उहाँहरू for they as the basic forms. Both take respectful verb agreement without a masculine/feminine distinction. Familiar forms are taught in topic 7. Note the nasal first-person negatives होइनँ/छैनँ."
     },
     {
       "type": "note",
@@ -160,7 +160,7 @@
     },
     {
       "type": "p",
-      "text": "She is a student.\nउनी विद्यार्थी हुन्।\nunī vidyārthī hun"
+      "text": "She is a student.\nउहाँ विद्यार्थी हुनुहुन्छ।\nuhā̃ vidyārthī hunuhuncha"
     },
     {
       "type": "table",
@@ -171,9 +171,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "विद्यार्थी",
@@ -181,9 +181,9 @@
           "student"
         ],
         [
-          "हुन्",
-          "hun",
-          "am; is; are"
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are (respectful)"
         ]
       ]
     },
@@ -234,7 +234,7 @@
     },
     {
       "type": "p",
-      "text": "They are not students.\nउनीहरू विद्यार्थी होइनन्।\nunīharū vidyārthī hoinan"
+      "text": "They are not students.\nउहाँहरू विद्यार्थी हुनुहुन्न।\nuhā̃harū vidyārthī hunuhunna"
     },
     {
       "type": "table",
@@ -245,9 +245,9 @@
       ],
       "rows": [
         [
-          "उनीहरू",
-          "unīharū",
-          "they"
+          "उहाँहरू",
+          "uhā̃harū",
+          "they (respectful)"
         ],
         [
           "विद्यार्थी",
@@ -255,9 +255,9 @@
           "student"
         ],
         [
-          "होइनन्",
-          "hoinan",
-          "am not; is not; are not"
+          "हुनुहुन्न",
+          "hunuhunna",
+          "is/are not (respectful)"
         ]
       ]
     },
@@ -439,7 +439,7 @@
     },
     {
       "type": "p",
-      "text": "She is a doctor.\nउनी डाक्टर हुन्।\nunī ḍākṭar hun"
+      "text": "She is a doctor.\nउहाँ डाक्टर हुनुहुन्छ।\nuhā̃ ḍākṭar hunuhuncha"
     },
     {
       "type": "table",
@@ -450,9 +450,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "डाक्टर",
@@ -460,9 +460,9 @@
           "doctor"
         ],
         [
-          "हुन्",
-          "hun",
-          "am; is; are"
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are (respectful)"
         ]
       ]
     },
@@ -578,7 +578,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "be (respectful)"
+          "is/becomes (respectful)"
         ]
       ]
     },
@@ -649,20 +649,20 @@
           "हुनुहुन्न / hunuhunna"
         ],
         [
-          "he/she\nउनी / unī",
-          "छन् / chan; छिन् / chin",
-          "छैनन् / chainan"
+          "he/she\nउहाँ / uhā̃",
+          "हुनुहुन्छ / hunuhuncha",
+          "हुनुहुन्न / hunuhunna"
         ],
         [
-          "they\nउनीहरू / unīharū",
-          "छन् / chan",
-          "छैनन् / chainan"
+          "they\nउहाँहरू / uhā̃harū",
+          "हुनुहुन्छ / hunuhuncha",
+          "हुनुहुन्न / hunuhunna"
         ]
       ]
     },
     {
       "type": "note",
-      "text": "उनी is not selected by gender alone. छन् can express medium respect; छिन् explicitly marks a feminine form. See topic 7. Note the nasal first-person negatives होइनँ/छैनँ."
+      "text": "Use उहाँ for he/she and उहाँहरू for they as the basic forms. Both take respectful verb agreement without a masculine/feminine distinction. Familiar forms are taught in topic 7. Note the nasal first-person negatives होइनँ/छैनँ."
     },
     {
       "type": "h",
@@ -760,7 +760,7 @@
     },
     {
       "type": "p",
-      "text": "She is at home.\nउनी घरमा छिन्।\nunī gharmā chin"
+      "text": "She is at home.\nउहाँ घरमा हुनुहुन्छ।\nuhā̃ gharmā hunuhuncha"
     },
     {
       "type": "table",
@@ -771,9 +771,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "घरमा",
@@ -781,9 +781,9 @@
           "at home"
         ],
         [
-          "छिन्",
-          "chin",
-          "is; are (existence)"
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are present (respectful)"
         ]
       ]
     },
@@ -834,7 +834,7 @@
     },
     {
       "type": "p",
-      "text": "They are not at home.\nउनीहरू घरमा छैनन्।\nunīharū gharmā chainan"
+      "text": "They are not at home.\nउहाँहरू घरमा हुनुहुन्न।\nuhā̃harū gharmā hunuhunna"
     },
     {
       "type": "table",
@@ -845,9 +845,9 @@
       ],
       "rows": [
         [
-          "उनीहरू",
-          "unīharū",
-          "they"
+          "उहाँहरू",
+          "uhā̃harū",
+          "they (respectful)"
         ],
         [
           "घरमा",
@@ -855,9 +855,9 @@
           "at home"
         ],
         [
-          "छैनन्",
-          "chainan",
-          "is not; are not (existence)"
+          "हुनुहुन्न",
+          "hunuhunna",
+          "is/are not present (respectful)"
         ]
       ]
     },
@@ -1042,7 +1042,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "be (respectful)"
+          "is/becomes (respectful)"
         ]
       ]
     },
@@ -1093,7 +1093,7 @@
     },
     {
       "type": "p",
-      "text": "They are at school.\nउनीहरू विद्यालयमा छन्।\nunīharū vidyālayamā chan"
+      "text": "They are at school.\nउहाँहरू विद्यालयमा हुनुहुन्छ।\nuhā̃harū vidyālayamā hunuhuncha"
     },
     {
       "type": "table",
@@ -1104,9 +1104,9 @@
       ],
       "rows": [
         [
-          "उनीहरू",
-          "unīharū",
-          "they"
+          "उहाँहरू",
+          "uhā̃harū",
+          "they (respectful)"
         ],
         [
           "विद्यालयमा",
@@ -1114,9 +1114,9 @@
           "at school (विद्यालय + मा)"
         ],
         [
-          "छन्",
-          "chan",
-          "be; exist"
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are present (respectful)"
         ]
       ]
     },
@@ -1506,7 +1506,7 @@
     },
     {
       "type": "p",
-      "text": "She is ready.\nउनी तयार छिन्।\nunī tayār chin"
+      "text": "She is ready.\nउहाँ तयार हुनुहुन्छ।\nuhā̃ tayār hunuhuncha"
     },
     {
       "type": "table",
@@ -1517,9 +1517,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "तयार",
@@ -1527,9 +1527,9 @@
           "ready"
         ],
         [
-          "छिन्",
-          "chin",
-          "am; is; are"
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are (respectful)"
         ]
       ]
     },
@@ -1543,7 +1543,7 @@
     },
     {
       "type": "p",
-      "text": "They are busy.\nउनीहरू व्यस्त छन्।\nunīharū vyasta chan"
+      "text": "They are busy.\nउहाँहरू व्यस्त हुनुहुन्छ।\nuhā̃harū vyasta hunuhuncha"
     },
     {
       "type": "table",
@@ -1554,9 +1554,9 @@
       ],
       "rows": [
         [
-          "उनीहरू",
-          "unīharū",
-          "they"
+          "उहाँहरू",
+          "uhā̃harū",
+          "they (respectful)"
         ],
         [
           "व्यस्त",
@@ -1564,9 +1564,9 @@
           "busy"
         ],
         [
-          "छन्",
-          "chan",
-          "am; is; are"
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are (respectful)"
         ]
       ]
     },
@@ -1674,14 +1674,14 @@
           "हुनुहुन्न / hunuhunna"
         ],
         [
-          "उनी / unī",
-          "हुन्छन् / hunchan; हुन्छिन् / hunchin",
-          "हुँदैनन् / hũdainan; हुँदिनन् / hũdinan"
+          "उहाँ / uhā̃",
+          "हुनुहुन्छ / hunuhuncha",
+          "हुनुहुन्न / hunuhunna"
         ],
         [
-          "उनीहरू / unīharū",
-          "हुन्छन् / hunchan",
-          "हुँदैनन् / hũdainan"
+          "उहाँहरू / uhā̃harū",
+          "हुनुहुन्छ / hunuhuncha",
+          "हुनुहुन्न / hunuhunna"
         ]
       ]
     },
@@ -2455,7 +2455,7 @@
     },
     {
       "type": "p",
-      "text": "को/की/का agree with the following noun. मेरो, हाम्रो and तपाईंको mean my, our and your. Pronouns can change before case markers: म→मलाई/मैले, उ→उसलाई/उसले, उनी→उनलाई/उनले. Learn the form with its role."
+      "text": "को/की/का agree with the following noun. मेरो, हाम्रो and तपाईंको mean my, our and your. Pronouns can change before case markers: म→मलाई/मैले, उहाँ→उहाँलाई/उहाँले, उहाँहरू→उहाँहरूलाई/उहाँहरूले. Learn the form with its role."
     },
     {
       "type": "note",
@@ -2952,7 +2952,7 @@
     },
     {
       "type": "p",
-      "text": "She goes towards the market.\nउनी बजारतिर जान्छिन्।\nunī bajārtira jānchin"
+      "text": "She goes towards the market.\nउहाँ बजारतिर जानुहुन्छ।\nuhā̃ bajārtira jānuhuncha"
     },
     {
       "type": "table",
@@ -2963,9 +2963,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "that person; he/she (medium respect)"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "बजारतिर",
@@ -2973,9 +2973,9 @@
           "towards the market (बजार + तिर)"
         ],
         [
-          "जान्छिन्",
-          "jānchin",
-          "go; goes"
+          "जानुहुन्छ",
+          "jānuhuncha",
+          "go/goes (respectful)"
         ]
       ]
     },
@@ -3152,7 +3152,7 @@
     },
     {
       "type": "p",
-      "text": "She drinks tea without sugar.\nउनी चिनीबिना चिया पिउँछिन्।\nunī cinībinā ciyā piũchin"
+      "text": "She drinks tea without sugar.\nउहाँ चिनीबिना चिया पिउनुहुन्छ।\nuhā̃ cinībinā ciyā piunuhuncha"
     },
     {
       "type": "table",
@@ -3163,9 +3163,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "that person; he/she (medium respect)"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "चिनीबिना",
@@ -3178,9 +3178,9 @@
           "tea"
         ],
         [
-          "पिउँछिन्",
-          "piũchin",
-          "she drinks (feminine present of पिउनु)"
+          "पिउनुहुन्छ",
+          "piunuhuncha",
+          "drink/drinks (respectful)"
         ]
       ]
     },
@@ -4471,7 +4471,7 @@
         [
           "आउनुहुन्छ",
           "āunuhuncha",
-          "come; comes (respectful)"
+          "come/comes (respectful)"
         ]
       ]
     },
@@ -4508,7 +4508,7 @@
         [
           "जानुहुन्छ",
           "jānuhuncha",
-          "go; goes (respectful)"
+          "go/goes (respectful)"
         ]
       ]
     },
@@ -4550,7 +4550,7 @@
         [
           "पढ्नुहुन्छ",
           "paḍhnuhuncha",
-          "read; study (respectful present)"
+          "read/reads (respectful)"
         ]
       ]
     },
@@ -4629,7 +4629,7 @@
         [
           "आउनुहुन्छ",
           "āunuhuncha",
-          "come; comes (respectful)"
+          "come/comes (respectful)"
         ]
       ]
     },
@@ -4755,7 +4755,7 @@
         [
           "जानुहुन्छ",
           "jānuhuncha",
-          "go; goes (respectful)"
+          "go/goes (respectful)"
         ]
       ]
     },
@@ -4829,7 +4829,7 @@
         [
           "बस्नुहुन्छ",
           "basnuhuncha",
-          "live; sit (respectful)"
+          "live/lives (respectful)"
         ]
       ]
     },
@@ -4908,7 +4908,7 @@
         [
           "बस्नुहुन्छ",
           "basnuhuncha",
-          "live; sit (respectful)"
+          "live/lives (respectful)"
         ]
       ]
     },
@@ -4950,7 +4950,7 @@
         [
           "गर्नुहुन्छ",
           "garnuhuncha",
-          "do; does (respectful)"
+          "do/does (respectful)"
         ]
       ]
     },
@@ -4987,7 +4987,7 @@
         [
           "जानुहुन्छ",
           "jānuhuncha",
-          "go; goes (respectful)"
+          "go/goes (respectful)"
         ]
       ]
     },
@@ -5023,7 +5023,7 @@
     },
     {
       "type": "p",
-      "text": "Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5167,7 +5167,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5204,7 +5204,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5241,7 +5241,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5278,7 +5278,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5315,7 +5315,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5352,7 +5352,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5389,7 +5389,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5426,7 +5426,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5463,7 +5463,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5505,7 +5505,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5542,7 +5542,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
     },
     {
       "type": "h",
@@ -5579,7 +5579,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
     },
     {
       "type": "h",
@@ -5621,7 +5621,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5658,7 +5658,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
     },
     {
       "type": "h",
@@ -5695,7 +5695,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5732,7 +5732,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5753,7 +5753,7 @@
         [
           "उहाँ",
           "uhā̃",
-          "he; she (respectful)"
+          "he/she (respectful)"
         ],
         [
           "यहाँ",
@@ -5763,13 +5763,13 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "be (respectful)"
+          "is/becomes (respectful)"
         ]
       ]
     },
     {
       "type": "p",
-      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+      "text": "How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
     },
     {
       "type": "h",
@@ -5835,12 +5835,12 @@
         ],
         [
           "he/she",
-          "उनी काम गर्छिन्।\nunī kām garchin",
+          "उहाँ काम गर्नुहुन्छ।\nuhā̃ kām garnuhuncha",
           "She works."
         ],
         [
           "they",
-          "उनीहरू काम गर्छन्।\nunīharū kām garchan",
+          "उहाँहरू काम गर्छन्।\nuhā̃harū kām garchan",
           "They work."
         ]
       ]
@@ -6043,7 +6043,7 @@
     },
     {
       "type": "p",
-      "text": "She reads books.\nउनी किताब पढ्छिन्।\nunī kitāb paḍhchin"
+      "text": "She reads books.\nउहाँ किताब पढ्नुहुन्छ।\nuhā̃ kitāb paḍhnuhuncha"
     },
     {
       "type": "table",
@@ -6054,9 +6054,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "किताब",
@@ -6064,9 +6064,9 @@
           "book"
         ],
         [
-          "पढ्छिन्",
-          "paḍhchin",
-          "read; study"
+          "पढ्नुहुन्छ",
+          "paḍhnuhuncha",
+          "read/reads (respectful)"
         ]
       ]
     },
@@ -6234,7 +6234,7 @@
         [
           "गर्नुहुन्छ",
           "garnuhuncha",
-          "do; does (respectful)"
+          "do/does (respectful)"
         ]
       ]
     },
@@ -6306,12 +6306,12 @@
         ],
         [
           "he/she",
-          "उनी आज काम गर्दिनन्।\nunī āja kām gardinan",
+          "उहाँ आज काम गर्दिनन्।\nuhā̃ āja kām gardinan",
           "She does not work today."
         ],
         [
           "they",
-          "उनीहरू आज काम गर्दैनन्।\nunīharū āja kām gardainan",
+          "उहाँहरू आज काम गर्दैनन्।\nuhā̃harū āja kām gardainan",
           "They do not work today."
         ]
       ]
@@ -6509,7 +6509,7 @@
     },
     {
       "type": "p",
-      "text": "She does not eat meat.\nउनी मासु खाँदिनन्।\nunī māsu khā̃dinan"
+      "text": "She does not eat meat.\nउहाँ मासु खानुहुन्न।\nuhā̃ māsu khānuhunna"
     },
     {
       "type": "table",
@@ -6520,9 +6520,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "that person; he/she (medium respect)"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "मासु",
@@ -6530,9 +6530,9 @@
           "meat"
         ],
         [
-          "खाँदिनन्",
-          "khā̃dinan",
-          "she does not eat (present negative of खानु)"
+          "खानुहुन्न",
+          "khānuhunna",
+          "do/does not eat (respectful)"
         ]
       ]
     },
@@ -6688,12 +6688,12 @@
         ],
         [
           "he/she",
-          "उनी अहिले काम गर्दैछिन्।\nunī ahile kām gardaichin",
+          "उहाँ अहिले काम गर्दैछिन्।\nuhā̃ ahile kām gardaichin",
           "She is working now."
         ],
         [
           "they",
-          "उनीहरू अहिले काम गर्दैछन्।\nunīharū ahile kām gardaichan",
+          "उहाँहरू अहिले काम गर्दैछन्।\nuhā̃harū ahile kām gardaichan",
           "They are working now."
         ]
       ]
@@ -6844,7 +6844,7 @@
     },
     {
       "type": "p",
-      "text": "She is writing a letter.\nउनी चिट्ठी लेख्दैछिन्।\nunī ciṭṭhī lekhdaichin"
+      "text": "She is writing a letter.\nउहाँ चिट्ठी लेख्दै हुनुहुन्छ।\nuhā̃ ciṭṭhī lekhdai hunuhuncha"
     },
     {
       "type": "table",
@@ -6855,9 +6855,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "चिट्ठी",
@@ -6865,9 +6865,14 @@
           "letter"
         ],
         [
-          "लेख्दैछिन्",
-          "lekhdaichin",
-          "is writing"
+          "लेख्दै",
+          "lekhdai",
+          "writing; while writing"
+        ],
+        [
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are present (respectful)"
         ]
       ]
     },
@@ -6951,7 +6956,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "be (respectful)"
+          "is/becomes (respectful)"
         ]
       ]
     },
@@ -6965,7 +6970,7 @@
     },
     {
       "type": "p",
-      "text": "They are waiting for the bus.\nउनीहरू बस पर्खँदै छन्।\nunīharū bas parkhãdai chan"
+      "text": "They are waiting for the bus.\nउहाँहरू बस पर्खँदै हुनुहुन्छ।\nuhā̃harū bas parkhãdai hunuhuncha"
     },
     {
       "type": "table",
@@ -6976,9 +6981,9 @@
       ],
       "rows": [
         [
-          "उनीहरू",
-          "unīharū",
-          "they"
+          "उहाँहरू",
+          "uhā̃harū",
+          "they (respectful)"
         ],
         [
           "बस",
@@ -6991,9 +6996,9 @@
           "waiting (progressive form of पर्खनु)"
         ],
         [
-          "छन्",
-          "chan",
-          "be; exist"
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are present (respectful)"
         ]
       ]
     },
@@ -7029,7 +7034,7 @@
     },
     {
       "type": "p",
-      "text": "Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
+      "text": "Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
     },
     {
       "type": "h",
@@ -7065,12 +7070,12 @@
         ],
         [
           "he/she",
-          "उनले हिजो काम गरिन्।\nunle hijo kām garin",
+          "उहाँले हिजो काम गरिन्।\nuhā̃le hijo kām garin",
           "She worked yesterday."
         ],
         [
           "they",
-          "उनीहरूले हिजो काम गरे।\nunīharūle hijo kām gare",
+          "उहाँहरूले हिजो काम गरे।\nuhā̃harūle hijo kām gare",
           "They worked yesterday."
         ]
       ]
@@ -7113,12 +7118,12 @@
         ],
         [
           "he/she",
-          "उनी अस्ति बजारमा थिइन्।\nunī asti bajārmā thiin",
+          "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।\nuhā̃ asti bajārmā hunuhunthyo",
           "She was at the market the day before yesterday."
         ],
         [
           "they",
-          "उनीहरू अस्ति बजारमा थिए।\nunīharū asti bajārmā thie",
+          "उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो।\nuhā̃harū asti bajārmā hunuhunthyo",
           "They were at the market the day before yesterday."
         ]
       ]
@@ -7183,7 +7188,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
+      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
     },
     {
       "type": "h",
@@ -7225,7 +7230,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
+      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
     },
     {
       "type": "h",
@@ -7262,7 +7267,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
+      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
     },
     {
       "type": "h",
@@ -7270,7 +7275,7 @@
     },
     {
       "type": "p",
-      "text": "She went to school.\nउनी स्कूल गइन्।\nunī skūl gain"
+      "text": "She went to school.\nउहाँ स्कूल जानुभयो।\nuhā̃ skūl jānubhayo"
     },
     {
       "type": "table",
@@ -7281,9 +7286,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "स्कूल",
@@ -7291,15 +7296,15 @@
           "school"
         ],
         [
-          "गइन्",
-          "gain",
-          "went"
+          "जानुभयो",
+          "jānubhayo",
+          "went (respectful)"
         ]
       ]
     },
     {
       "type": "p",
-      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
+      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
     },
     {
       "type": "h",
@@ -7341,7 +7346,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
+      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
     },
     {
       "type": "h",
@@ -7378,7 +7383,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
+      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
     },
     {
       "type": "h",
@@ -7386,7 +7391,7 @@
     },
     {
       "type": "p",
-      "text": "She drank tea.\nउनले चिया पिइन्।\nunle ciyā piin"
+      "text": "She drank tea.\nउहाँले चिया पिउनुभयो।\nuhā̃le ciyā piunubhayo"
     },
     {
       "type": "table",
@@ -7397,9 +7402,9 @@
       ],
       "rows": [
         [
-          "उनले",
-          "unle",
-          "she (agent)"
+          "उहाँले",
+          "uhā̃le",
+          "he/she as agent (respectful)"
         ],
         [
           "चिया",
@@ -7407,15 +7412,15 @@
           "tea"
         ],
         [
-          "पिइन्",
-          "piin",
-          "she drank (past of पिउनु)"
+          "पिउनुभयो",
+          "piunubhayo",
+          "drank (respectful)"
         ]
       ]
     },
     {
       "type": "p",
-      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
+      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
     },
     {
       "type": "h",
@@ -7452,7 +7457,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
+      "text": "How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
     },
     {
       "type": "h",
@@ -7518,12 +7523,12 @@
         ],
         [
           "he/she",
-          "उनले हिजो काम गरिनन्।\nunle hijo kām garinan",
+          "उहाँले हिजो काम गरिनन्।\nuhā̃le hijo kām garinan",
           "She did not work yesterday."
         ],
         [
           "they",
-          "उनीहरूले हिजो काम गरेनन्।\nunīharūle hijo kām garenan",
+          "उहाँहरूले हिजो काम गरेनन्।\nuhā̃harūle hijo kām garenan",
           "They did not work yesterday."
         ]
       ]
@@ -7566,12 +7571,12 @@
         ],
         [
           "he/she",
-          "उनी अस्ति बजारमा थिइनन्।\nunī asti bajārmā thiinan",
+          "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।\nuhā̃ asti bajārmā hunuhunnathyo",
           "She was not at the market the day before yesterday."
         ],
         [
           "they",
-          "उनीहरू अस्ति बजारमा थिएनन्।\nunīharū asti bajārmā thienan",
+          "उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो।\nuhā̃harū asti bajārmā hunuhunnathyo",
           "They were not at the market the day before yesterday."
         ]
       ]
@@ -7849,7 +7854,7 @@
     },
     {
       "type": "p",
-      "text": "She did not drink coffee.\nउनले कफी पिइनन्।\nunle kaphī piinan"
+      "text": "She did not drink coffee.\nउहाँले कफी पिउनुभएन।\nuhā̃le kaphī piunubhaena"
     },
     {
       "type": "table",
@@ -7860,9 +7865,9 @@
       ],
       "rows": [
         [
-          "उनले",
-          "unle",
-          "she (agent)"
+          "उहाँले",
+          "uhā̃le",
+          "he/she as agent (respectful)"
         ],
         [
           "कफी",
@@ -7870,9 +7875,9 @@
           "coffee"
         ],
         [
-          "पिइनन्",
-          "piinan",
-          "she did not drink (past negative of पिउनु)"
+          "पिउनुभएन",
+          "piunubhaena",
+          "did not drink (respectful)"
         ]
       ]
     },
@@ -7944,12 +7949,12 @@
         ],
         [
           "he/she",
-          "उनी भोलि काम गर्छिन्।\nunī bholi kām garchin",
+          "उहाँ भोलि काम गर्नुहुन्छ।\nuhā̃ bholi kām garnuhuncha",
           "She will work tomorrow."
         ],
         [
           "they",
-          "उनीहरू भोलि काम गर्छन्।\nunīharū bholi kām garchan",
+          "उहाँहरू भोलि काम गर्छन्।\nuhā̃harū bholi kām garchan",
           "They will work tomorrow."
         ]
       ]
@@ -8110,7 +8115,7 @@
     },
     {
       "type": "p",
-      "text": "She will come next week.\nउनी अर्को हप्ता आउँछिन्।\nunī arko haptā āũchin"
+      "text": "She will come next week.\nउहाँ अर्को हप्ता आउनुहुन्छ।\nuhā̃ arko haptā āunuhuncha"
     },
     {
       "type": "table",
@@ -8121,9 +8126,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "अर्को",
@@ -8136,9 +8141,9 @@
           "week"
         ],
         [
-          "आउँछिन्",
-          "āũchin",
-          "come; comes"
+          "आउनुहुन्छ",
+          "āunuhuncha",
+          "come/comes (respectful)"
         ]
       ]
     },
@@ -8241,7 +8246,7 @@
     },
     {
       "type": "p",
-      "text": "They will not come tomorrow.\nउनीहरू भोलि आउँदैनन्।\nunīharū bholi āũdainan"
+      "text": "They will not come tomorrow.\nउहाँहरू भोलि आउनुहुन्न।\nuhā̃harū bholi āunuhunna"
     },
     {
       "type": "table",
@@ -8252,9 +8257,9 @@
       ],
       "rows": [
         [
-          "उनीहरू",
-          "unīharū",
-          "they"
+          "उहाँहरू",
+          "uhā̃harū",
+          "they (respectful)"
         ],
         [
           "भोलि",
@@ -8262,9 +8267,9 @@
           "tomorrow"
         ],
         [
-          "आउँदैनन्",
-          "āũdainan",
-          "do not come; does not come"
+          "आउनुहुन्न",
+          "āunuhunna",
+          "do/does not come (respectful)"
         ]
       ]
     },
@@ -8410,12 +8415,12 @@
         ],
         [
           "he/she",
-          "उनी पहिले यहाँ काम गर्थिन्।\nunī pahile yahā̃ kām garthin",
+          "उहाँ पहिले यहाँ काम गर्थिन्।\nuhā̃ pahile yahā̃ kām garthin",
           "She used to work here."
         ],
         [
           "they",
-          "उनीहरू पहिले यहाँ काम गर्थे।\nunīharū pahile yahā̃ kām garthe",
+          "उहाँहरू पहिले यहाँ काम गर्थे।\nuhā̃harū pahile yahā̃ kām garthe",
           "They used to work here."
         ]
       ]
@@ -8665,7 +8670,7 @@
     },
     {
       "type": "p",
-      "text": "She used to drink tea.\nउनी पहिले चिया पिउँथिन्।\nunī pahile ciyā piũthin"
+      "text": "She used to drink tea.\nउहाँ पहिले चिया पिउनुहुन्थ्यो।\nuhā̃ pahile ciyā piunuhunthyo"
     },
     {
       "type": "table",
@@ -8676,9 +8681,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "that person; he/she (medium respect)"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "पहिले",
@@ -8691,9 +8696,9 @@
           "tea"
         ],
         [
-          "पिउँथिन्",
-          "piũthin",
-          "she used to drink (past habitual)"
+          "पिउनुहुन्थ्यो",
+          "piunuhunthyo",
+          "used to drink (respectful)"
         ]
       ]
     },
@@ -8765,12 +8770,12 @@
         ],
         [
           "he/she",
-          "उनले यो काम गरेकी छिन्।\nunle yo kām garekī chin",
+          "उहाँले यो काम गरेकी हुनुहुन्छ।\nuhā̃le yo kām garekī hunuhuncha",
           "She has done this work."
         ],
         [
           "they",
-          "उनीहरूले यो काम गरेका छन्।\nunīharūle yo kām garekā chan",
+          "उहाँहरूले यो काम गरेका हुनुहुन्छ।\nuhā̃harūle yo kām garekā hunuhuncha",
           "They have done this work."
         ]
       ]
@@ -9199,12 +9204,12 @@
         ],
         [
           "he/she",
-          "उनले यो काम गरेकी थिइन्।\nunle yo kām garekī thiin",
+          "उहाँले यो काम गरेकी हुनुहुन्थ्यो।\nuhā̃le yo kām garekī hunuhunthyo",
           "She had done this work."
         ],
         [
           "they",
-          "उनीहरूले यो काम गरेका थिए।\nunīharūle yo kām garekā thie",
+          "उहाँहरूले यो काम गरेका हुनुहुन्थ्यो।\nuhā̃harūle yo kām garekā hunuhunthyo",
           "They had done this work."
         ]
       ]
@@ -9375,7 +9380,7 @@
     },
     {
       "type": "p",
-      "text": "She had gone home by the time we arrived.\nहामी पुग्दा, उनी घर गएकी थिइन्।\nhāmī pugdā, unī ghar gaekī thiin"
+      "text": "She had gone home by the time we arrived.\nहामी पुग्दा, उहाँ घर जानुभएको थियो।\nhāmī pugdā, uhā̃ ghar jānubhaeko thiyo"
     },
     {
       "type": "table",
@@ -9396,9 +9401,9 @@
           "when arriving"
         ],
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "घर",
@@ -9406,14 +9411,14 @@
           "home; house"
         ],
         [
-          "गएकी",
-          "gaekī",
-          "gone; been"
+          "जानुभएको",
+          "jānubhaeko",
+          "having gone (respectful)"
         ],
         [
-          "थिइन्",
-          "thiin",
-          "had (perfect auxiliary)"
+          "थियो",
+          "thiyo",
+          "was; were"
         ]
       ]
     },
@@ -11271,12 +11276,12 @@
         ],
         [
           "he/she",
-          "उनी नेपाली बोल्न सक्छिन्।\nunī nepālī bolna sakchin",
+          "उहाँ नेपाली बोल्न सक्नुहुन्छ।\nuhā̃ nepālī bolna saknuhuncha",
           "She can speak Nepali."
         ],
         [
           "they",
-          "उनीहरू नेपाली बोल्न सक्छन्।\nunīharū nepālī bolna sakchan",
+          "उहाँहरू नेपाली बोल्न सक्नुहुन्छ।\nuhā̃harū nepālī bolna saknuhuncha",
           "They can speak Nepali."
         ]
       ]
@@ -11395,7 +11400,7 @@
     },
     {
       "type": "p",
-      "text": "They can speak Nepali.\nउनीहरू नेपाली बोल्न सक्छन्।\nunīharū nepālī bolna sakchan"
+      "text": "They can speak Nepali.\nउहाँहरू नेपाली बोल्न सक्नुहुन्छ।\nuhā̃harū nepālī bolna saknuhuncha"
     },
     {
       "type": "table",
@@ -11406,14 +11411,14 @@
       ],
       "rows": [
         [
-          "उनीहरू",
-          "unīharū",
-          "they"
+          "उहाँहरू",
+          "uhā̃harū",
+          "they (respectful)"
         ],
         [
           "नेपाली",
           "nepālī",
-          "Nepali (language)"
+          "Nepali"
         ],
         [
           "बोल्न",
@@ -11421,9 +11426,9 @@
           "speak"
         ],
         [
-          "सक्छन्",
-          "sakchan",
-          "can"
+          "सक्नुहुन्छ",
+          "saknuhuncha",
+          "can (respectful)"
         ]
       ]
     },
@@ -11516,7 +11521,7 @@
     },
     {
       "type": "p",
-      "text": "She can drive a car.\nउनी गाडी चलाउन सक्छिन्।\nunī gāḍī calāuna sakchin"
+      "text": "She can drive a car.\nउहाँ गाडी चलाउन सक्नुहुन्छ।\nuhā̃ gāḍī calāuna saknuhuncha"
     },
     {
       "type": "table",
@@ -11527,9 +11532,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "that person; he/she (medium respect)"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "गाडी",
@@ -11542,9 +11547,9 @@
           "drive; ride"
         ],
         [
-          "सक्छिन्",
-          "sakchin",
-          "can"
+          "सक्नुहुन्छ",
+          "saknuhuncha",
+          "can (respectful)"
         ]
       ]
     },
@@ -11828,7 +11833,7 @@
     },
     {
       "type": "p",
-      "text": "They have to wait.\nउनीहरूले पर्खनु पर्छ।\nunīharūle parkhanu parcha"
+      "text": "They have to wait.\nउहाँहरूले पर्खनु पर्छ।\nuhā̃harūle parkhanu parcha"
     },
     {
       "type": "table",
@@ -11839,9 +11844,9 @@
       ],
       "rows": [
         [
-          "उनीहरूले",
-          "unīharūle",
-          "they (agent)"
+          "उहाँहरूले",
+          "uhā̃harūle",
+          "they as agents (respectful)"
         ],
         [
           "पर्खनु",
@@ -11851,7 +11856,7 @@
         [
           "पर्छ",
           "parcha",
-          "must; have to"
+          "have to; must"
         ]
       ]
     },
@@ -12249,12 +12254,12 @@
         ],
         [
           "he/she",
-          "उनी नेपाल जान चाहन्छिन्।\nunī nepāl jāna cāhanchin",
+          "उहाँ नेपाल जान चाहन्छिन्।\nuhā̃ nepāl jāna cāhanchin",
           "She wants to go to Nepal."
         ],
         [
           "they",
-          "उनीहरू नेपाल जान चाहँदैनन्।\nunīharū nepāl jāna cāhãdainan",
+          "उहाँहरू नेपाल जान चाहँदैनन्।\nuhā̃harū nepāl jāna cāhãdainan",
           "They do not want to go to Nepal."
         ]
       ]
@@ -12420,7 +12425,7 @@
     },
     {
       "type": "p",
-      "text": "She does not feel like talking now.\nउनलाई अहिले बोल्न मन छैन।\nunlāī ahile bolna man chaina"
+      "text": "She does not feel like talking now.\nउहाँलाई अहिले बोल्न मन छैन।\nuhā̃lāī ahile bolna man chaina"
     },
     {
       "type": "table",
@@ -12431,9 +12436,9 @@
       ],
       "rows": [
         [
-          "उनलाई",
-          "unlāī",
-          "to her"
+          "उहाँलाई",
+          "uhā̃lāī",
+          "to him/her; him/her as object (respectful)"
         ],
         [
           "अहिले",
@@ -12453,7 +12458,7 @@
         [
           "छैन",
           "chaina",
-          "do not feel like"
+          "not be; not exist"
         ]
       ]
     },
@@ -12742,7 +12747,7 @@
     },
     {
       "type": "p",
-      "text": "She is a pretty girl.\nउनी राम्री केटी हुन्।\nunī rāmrī keṭī hun"
+      "text": "She is a pretty girl.\nउहाँ राम्री केटी हुनुहुन्छ।\nuhā̃ rāmrī keṭī hunuhuncha"
     },
     {
       "type": "table",
@@ -12753,9 +12758,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "राम्री",
@@ -12768,9 +12773,9 @@
           "girl"
         ],
         [
-          "हुन्",
-          "hun",
-          "am; is; are"
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are (respectful)"
         ]
       ]
     },
@@ -13338,7 +13343,7 @@
     },
     {
       "type": "p",
-      "text": "She always sits here.\nउनी सधैं यहाँ बस्छिन्।\nunī sadhaĩ yahā̃ baschin"
+      "text": "She always sits here.\nउहाँ सधैं यहाँ बस्नुहुन्छ।\nuhā̃ sadhaĩ yahā̃ basnuhuncha"
     },
     {
       "type": "table",
@@ -13349,9 +13354,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "सधैं",
@@ -13364,9 +13369,9 @@
           "here"
         ],
         [
-          "बस्छिन्",
-          "baschin",
-          "sit; live"
+          "बस्नुहुन्छ",
+          "basnuhuncha",
+          "live/lives (respectful)"
         ]
       ]
     },
@@ -13422,7 +13427,7 @@
     },
     {
       "type": "p",
-      "text": "They do not talk much.\nउनीहरू धेरै बोल्दैनन्।\nunīharū dherai boldainan"
+      "text": "They do not talk much.\nउहाँहरू धेरै बोल्नुहुन्न।\nuhā̃harū dherai bolnuhunna"
     },
     {
       "type": "table",
@@ -13433,19 +13438,19 @@
       ],
       "rows": [
         [
-          "उनीहरू",
-          "unīharū",
-          "they"
+          "उहाँहरू",
+          "uhā̃harū",
+          "they (respectful)"
         ],
         [
           "धेरै",
           "dherai",
-          "a lot; many"
+          "much; many; very"
         ],
         [
-          "बोल्दैनन्",
-          "boldainan",
-          "does not speak; do not speak"
+          "बोल्नुहुन्न",
+          "bolnuhunna",
+          "do/does not speak (respectful)"
         ]
       ]
     },
@@ -13953,7 +13958,7 @@
     },
     {
       "type": "p",
-      "text": "She walks faster than me.\nउनी मभन्दा छिटो हिँड्छिन्।\nunī mabhandā chiṭo hĩḍchin"
+      "text": "She walks faster than me.\nउहाँ मभन्दा छिटो हिँड्नुहुन्छ।\nuhā̃ mabhandā chiṭo hiṇḍnuhuncha"
     },
     {
       "type": "table",
@@ -13964,9 +13969,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "मभन्दा",
@@ -13979,9 +13984,9 @@
           "quickly"
         ],
         [
-          "हिँड्छिन्",
-          "hĩḍchin",
-          "walk; walks"
+          "हिँड्नुहुन्छ",
+          "hiṇḍnuhuncha",
+          "walk/walks (respectful)"
         ]
       ]
     },
@@ -14240,7 +14245,7 @@
     },
     {
       "type": "p",
-      "text": "They walk faster than we do.\nउनीहरू हामीभन्दा छिटो हिँड्छन्।\nunīharū hāmībhandā chiṭo hiṇḍchan"
+      "text": "They walk faster than we do.\nउहाँहरू हामीभन्दा छिटो हिँड्नुहुन्छ।\nuhā̃harū hāmībhandā chiṭo hiṇḍnuhuncha"
     },
     {
       "type": "table",
@@ -14251,9 +14256,9 @@
       ],
       "rows": [
         [
-          "उनीहरू",
-          "unīharū",
-          "they"
+          "उहाँहरू",
+          "uhā̃harū",
+          "they (respectful)"
         ],
         [
           "हामीभन्दा",
@@ -14266,9 +14271,9 @@
           "quickly"
         ],
         [
-          "हिँड्छन्",
-          "hiṇḍchan",
-          "they walk (present of हिँड्नु)"
+          "हिँड्नुहुन्छ",
+          "hiṇḍnuhuncha",
+          "walk/walks (respectful)"
         ]
       ]
     },
@@ -15083,7 +15088,7 @@
     },
     {
       "type": "p",
-      "text": "She works while singing.\nउनी गीत गाउँदै काम गर्छिन्।\nunī gīt gāũdai kām garchin"
+      "text": "She works while singing.\nउहाँ गीत गाउँदै काम गर्नुहुन्छ।\nuhā̃ gīt gāũdai kām garnuhuncha"
     },
     {
       "type": "table",
@@ -15094,9 +15099,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "गीत",
@@ -15114,9 +15119,9 @@
           "work"
         ],
         [
-          "गर्छिन्",
-          "garchin",
-          "do; does"
+          "गर्नुहुन्छ",
+          "garnuhuncha",
+          "do/does (respectful)"
         ]
       ]
     },
@@ -15392,7 +15397,7 @@
     },
     {
       "type": "p",
-      "text": "She leaves after drinking tea.\nचिया पिएपछि, उनी जान्छिन्।\nciyā piepachi, unī jānchin"
+      "text": "She leaves after drinking tea.\nचिया पिएपछि, उहाँ जानुहुन्छ।\nciyā piepachi, uhā̃ jānuhuncha"
     },
     {
       "type": "table",
@@ -15413,14 +15418,14 @@
           "after drinking"
         ],
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
-          "जान्छिन्",
-          "jānchin",
-          "go; goes"
+          "जानुहुन्छ",
+          "jānuhuncha",
+          "go/goes (respectful)"
         ]
       ]
     },
@@ -15738,7 +15743,7 @@
     },
     {
       "type": "p",
-      "text": "She comes to meet a friend.\nउनी साथीलाई भेट्नको लागि आउँछिन्।\nunī sāthīlāī bheṭnako lāgi āũchin"
+      "text": "She comes to meet a friend.\nउहाँ साथीलाई भेट्नको लागि आउनुहुन्छ।\nuhā̃ sāthīlāī bheṭnako lāgi āunuhuncha"
     },
     {
       "type": "table",
@@ -15749,9 +15754,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "साथीलाई",
@@ -15769,9 +15774,9 @@
           "for"
         ],
         [
-          "आउँछिन्",
-          "āũchin",
-          "come; comes"
+          "आउनुहुन्छ",
+          "āunuhuncha",
+          "come/comes (respectful)"
         ]
       ]
     },
@@ -15837,7 +15842,7 @@
     },
     {
       "type": "p",
-      "text": "They go to the market to buy books.\nउनीहरू किताब किन्नको लागि बजार जान्छन्।\nunīharū kitāb kinnako lāgi bajār jānchan"
+      "text": "They go to the market to buy books.\nउहाँहरू किताब किन्नको लागि बजार जानुहुन्छ।\nuhā̃harū kitāb kinnako lāgi bajār jānuhuncha"
     },
     {
       "type": "table",
@@ -15848,9 +15853,9 @@
       ],
       "rows": [
         [
-          "उनीहरू",
-          "unīharū",
-          "they"
+          "उहाँहरू",
+          "uhā̃harū",
+          "they (respectful)"
         ],
         [
           "किताब",
@@ -15873,9 +15878,9 @@
           "market"
         ],
         [
-          "जान्छन्",
-          "jānchan",
-          "go; goes"
+          "जानुहुन्छ",
+          "jānuhuncha",
+          "go/goes (respectful)"
         ]
       ]
     },
@@ -16186,7 +16191,7 @@
     },
     {
       "type": "p",
-      "text": "Place a modifier before its noun: नेपाल जाने मान्छे, a person who goes to Nepal; हिजो आएको मान्छे, a person who came yesterday. In जो यहाँ बस्छ, ऊ मेरो साथी हो, जो introduces a person and ऊ resumes that person. A clause describes an event/state. Each clause uses the case marking and verb appropriate to its own role."
+      "text": "Place a modifier before its noun: नेपाल जाने मान्छे, a person who goes to Nepal; हिजो आएको मान्छे, a person who came yesterday. In जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ, जो introduces a person and उहाँ resumes that person. A clause describes an event/state. Each clause uses the case marking and verb appropriate to its own role."
     },
     {
       "type": "table",
@@ -16197,9 +16202,9 @@
       ],
       "rows": [
         [
-          "जो…ऊ／उनी\njo…ū / unī",
+          "जो…उहाँ\njo…uhā̃",
           "the person who…that person",
-          "जो यहाँ बस्छ, ऊ मेरो साथी हो।\njo yahā̃ bascha, ū mero sāthī ho\nThe person who lives here is my friend."
+          "जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ।\njo yahā̃ basnuhuncha, uhā̃ mero sāthī hunuhuncha\nThe person who lives here is my friend."
         ],
         [
           "जुन…त्यो\njun…tyo",
@@ -16212,19 +16217,19 @@
           "जे मन पर्छ, त्यही खानुहोस्।\nje man parcha, tyahī khānuhos\nEat what you like."
         ],
         [
-          "जसले…उसले\njasle…usle",
+          "जसले…उहाँले\njasle…uhā̃le",
           "the agent who…that agent",
-          "जसले मेहनत गर्छ, उसले सिक्छ।\njasle mehanat garcha, usle sikcha\nThe person who makes an effort learns."
+          "जसले मेहनत गर्नुहुन्छ, उहाँले सिक्नुहुन्छ।\njasle mehanat garnuhuncha, uhā̃le siknuhuncha\nThe person who makes an effort learns."
         ],
         [
-          "जसलाई…उसलाई\njaslāī…uslāī",
+          "जसलाई…उहाँलाई\njaslāī…uhā̃lāī",
           "the person whom/to whom…that person",
-          "जसलाई पानी चाहिन्छ, उसलाई दिनुहोस्।\njaslāī pānī cāhincha, uslāī dinuhos\nGive water to the person who needs it."
+          "जसलाई पानी चाहिन्छ, उहाँलाई दिनुहोस्।\njaslāī pānī cāhincha, uhā̃lāī dinuhos\nGive water to the person who needs it."
         ],
         [
           "जसको・जसकी・जसका\njasko / jaskī / jaskā",
           "whose; agreement follows the possessed noun",
-          "जसको किताब हो, उसलाई दिनुहोस्।\njasko kitāb ho, uslāī dinuhos\nGive it to the person whose book it is."
+          "जसको किताब हुनुहुन्छ, उहाँलाई दिनुहोस्।\njasko kitāb hunuhuncha, uhā̃lāī dinuhos\nGive it to the person whose book it is."
         ],
         [
           "जसमा・जुन…मा\njasmā / jun…mā",
@@ -16244,7 +16249,7 @@
         [
           "जता…त्यता／त्यतै\njatā…tyatā / tyatai",
           "in whichever direction…that way",
-          "जता उनी जान्छिन्, म पनि त्यतै जान्छु।\njatā unī jānchin, ma pani tyatai jānchu\nI go in the same direction as she does."
+          "जता उहाँ जानुहुन्छ, म पनि त्यतै जान्छु।\njatā uhā̃ jānuhuncha, ma pani tyatai jānchu\nI go in the same direction as she does."
         ],
         [
           "जब…तब\njab…tab",
@@ -16254,7 +16259,7 @@
         [
           "जहिले\njahile",
           "when, whenever, according to context",
-          "म जहिले आउँछु, उनी यहाँ हुन्छिन्।\nma jahile āũchu, unī yahā̃ hunchin\nWhenever I come, she is here."
+          "म जहिले आउँछु, उहाँ यहाँ हुनुहुन्छ।\nma jahile āũchu, uhā̃ yahā̃ hunuhuncha\nWhenever I come, she is here."
         ],
         [
           "जसरी…त्यसरी\njasarī…tyasarī",
@@ -16721,7 +16726,7 @@
     },
     {
       "type": "p",
-      "text": "The office where she works is far away.\nउनी काम गर्ने अफिस टाढा छ।\nunī kām garne aphis ṭāḍhā cha"
+      "text": "The office where she works is far away.\nउहाँ काम गर्नुहुने अफिस टाढा छ।\nuhā̃ kām garnuhune aphis ṭāḍhā cha"
     },
     {
       "type": "table",
@@ -16732,9 +16737,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "काम",
@@ -16742,9 +16747,9 @@
           "work"
         ],
         [
-          "गर्ने",
-          "garne",
-          "doing; for doing"
+          "गर्नुहुने",
+          "garnuhune",
+          "who does/works (respectful modifier)"
         ],
         [
           "अफिस",
@@ -16759,7 +16764,7 @@
         [
           "छ",
           "cha",
-          "am; is; are"
+          "be; exist"
         ]
       ]
     },
@@ -16815,7 +16820,7 @@
     },
     {
       "type": "p",
-      "text": "The person who lives here is my friend.\nजो यहाँ बस्छ, ऊ मेरो साथी हो।\njo yahā̃ bascha, ū mero sāthī ho"
+      "text": "The person who lives here is my friend.\nजो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ।\njo yahā̃ basnuhuncha, uhā̃ mero sāthī hunuhuncha"
     },
     {
       "type": "table",
@@ -16836,14 +16841,14 @@
           "here"
         ],
         [
-          "बस्छ",
-          "bascha",
-          "lives; sits (low-respect present of बस्नु)"
+          "बस्नुहुन्छ",
+          "basnuhuncha",
+          "live/lives (respectful)"
         ],
         [
-          "ऊ",
-          "ū",
-          "that person; he/she (low respect)"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "मेरो",
@@ -16856,15 +16861,15 @@
           "friend"
         ],
         [
-          "हो",
-          "ho",
-          "be (identification)"
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are (respectful)"
         ]
       ]
     },
     {
       "type": "p",
-      "text": "How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.\nजो…ऊ／उनी = the person who…that person"
+      "text": "How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.\nजो…उहाँ = the person who…that person"
     },
     {
       "type": "h",
@@ -16900,7 +16905,7 @@
         [
           "पढ्नुहुन्छ",
           "paḍhnuhuncha",
-          "read; study (respectful present)"
+          "read/reads (respectful)"
         ],
         [
           "त्यो",
@@ -17033,7 +17038,7 @@
     },
     {
       "type": "p",
-      "text": "Whenever I come, she is here.\nम जहिले आउँछु, उनी यहाँ हुन्छिन्।\nma jahile āũchu, unī yahā̃ hunchin"
+      "text": "Whenever I come, she is here.\nम जहिले आउँछु, उहाँ यहाँ हुनुहुन्छ।\nma jahile āũchu, uhā̃ yahā̃ hunuhuncha"
     },
     {
       "type": "table",
@@ -17059,9 +17064,9 @@
           "come; comes"
         ],
         [
-          "उनी",
-          "unī",
-          "that person; he/she (medium respect)"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "यहाँ",
@@ -17069,9 +17074,9 @@
           "here"
         ],
         [
-          "हुन्छिन्",
-          "hunchin",
-          "is habitually; becomes (feminine form)"
+          "हुनुहुन्छ",
+          "hunuhuncha",
+          "is/are present (respectful)"
         ]
       ]
     },
@@ -17085,7 +17090,7 @@
     },
     {
       "type": "p",
-      "text": "The person who makes an effort learns.\nजसले मेहनत गर्छ, उसले सिक्छ।\njasle mehanat garcha, usle sikcha"
+      "text": "The person who makes an effort learns.\nजसले मेहनत गर्नुहुन्छ, उहाँले सिक्नुहुन्छ।\njasle mehanat garnuhuncha, uhā̃le siknuhuncha"
     },
     {
       "type": "table",
@@ -17106,25 +17111,25 @@
           "effort; hard work"
         ],
         [
-          "गर्छ",
-          "garcha",
-          "do; does"
+          "गर्नुहुन्छ",
+          "garnuhuncha",
+          "do/does (respectful)"
         ],
         [
-          "उसले",
-          "usle",
-          "he (agent)"
+          "उहाँले",
+          "uhā̃le",
+          "he/she as agent (respectful)"
         ],
         [
-          "सिक्छ",
-          "sikcha",
-          "learns (low-respect present of सिक्नु)"
+          "सिक्नुहुन्छ",
+          "siknuhuncha",
+          "learn/learns (respectful)"
         ]
       ]
     },
     {
       "type": "p",
-      "text": "How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.\nजसले…उसले = the agent who…that agent"
+      "text": "How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.\nजसले…उहाँले = the agent who…that agent"
     },
     {
       "type": "h",
@@ -17132,7 +17137,7 @@
     },
     {
       "type": "p",
-      "text": "Give water to the person who needs it.\nजसलाई पानी चाहिन्छ, उसलाई दिनुहोस्।\njaslāī pānī cāhincha, uslāī dinuhos"
+      "text": "Give water to the person who needs it.\nजसलाई पानी चाहिन्छ, उहाँलाई दिनुहोस्।\njaslāī pānī cāhincha, uhā̃lāī dinuhos"
     },
     {
       "type": "table",
@@ -17158,9 +17163,9 @@
           "is needed"
         ],
         [
-          "उसलाई",
-          "uslāī",
-          "to that person; that person as object (low respect)"
+          "उहाँलाई",
+          "uhā̃lāī",
+          "to him/her; him/her as object (respectful)"
         ],
         [
           "दिनुहोस्",
@@ -17171,7 +17176,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.\nजसलाई…उसलाई = the person whom/to whom…that person"
+      "text": "How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.\nजसलाई…उहाँलाई = the person whom/to whom…that person"
     },
     {
       "type": "h",
@@ -17315,7 +17320,7 @@
     },
     {
       "type": "p",
-      "text": "I go in the same direction as she does.\nजता उनी जान्छिन्, म पनि त्यतै जान्छु।\njatā unī jānchin, ma pani tyatai jānchu"
+      "text": "I go in the same direction as she does.\nजता उहाँ जानुहुन्छ, म पनि त्यतै जान्छु।\njatā uhā̃ jānuhuncha, ma pani tyatai jānchu"
     },
     {
       "type": "table",
@@ -17331,14 +17336,14 @@
           "in the direction that (relative)"
         ],
         [
-          "उनी",
-          "unī",
-          "that person; he/she (medium respect)"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
-          "जान्छिन्",
-          "jānchin",
-          "go; goes"
+          "जानुहुन्छ",
+          "jānuhuncha",
+          "go/goes (respectful)"
         ],
         [
           "म",
@@ -17578,7 +17583,7 @@
     },
     {
       "type": "p",
-      "text": "If she is coming, I will come too.\nउनी आउँछिन् भने, म पनि आउँछु।\nunī āũchin bhane, ma pani āũchu"
+      "text": "If she is coming, I will come too.\nउहाँ आउनुहुन्छ भने, म पनि आउँछु।\nuhā̃ āunuhuncha bhane, ma pani āũchu"
     },
     {
       "type": "table",
@@ -17589,19 +17594,19 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
-          "आउँछिन्",
-          "āũchin",
-          "come; comes"
+          "आउनुहुन्छ",
+          "āunuhuncha",
+          "come/comes (respectful)"
         ],
         [
           "भने",
           "bhane",
-          "if"
+          "said"
         ],
         [
           "म",
@@ -18056,7 +18061,7 @@
     },
     {
       "type": "p",
-      "text": "I think she will not come today.\nउनी आज आउँदिनन् जस्तो लाग्छ।\nunī āja āũdinan jasto lāgcha"
+      "text": "I think she will not come today.\nउहाँ आज आउनुहुन्न जस्तो लाग्छ।\nuhā̃ āja āunuhunna jasto lāgcha"
     },
     {
       "type": "table",
@@ -18067,9 +18072,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "आज",
@@ -18077,19 +18082,19 @@
           "today"
         ],
         [
-          "आउँदिनन्",
-          "āũdinan",
-          "do not come; does not come"
+          "आउनुहुन्न",
+          "āunuhunna",
+          "do/does not come (respectful)"
         ],
         [
           "जस्तो",
           "jasto",
-          "as if"
+          "as if; like"
         ],
         [
           "लाग्छ",
           "lāgcha",
-          "think; seems"
+          "feel; think"
         ]
       ]
     },
@@ -18276,7 +18281,7 @@
     },
     {
       "type": "p",
-      "text": "She must have gone home.\nउनी घर गएकी हुनु पर्छ।\nunī ghar gaekī hunu parcha"
+      "text": "She must have gone home.\nउहाँ घर जानुभएको हुनु पर्छ।\nuhā̃ ghar jānubhaeko hunu parcha"
     },
     {
       "type": "table",
@@ -18287,9 +18292,9 @@
       ],
       "rows": [
         [
-          "उनी",
-          "unī",
-          "she; that person"
+          "उहाँ",
+          "uhā̃",
+          "he/she (respectful)"
         ],
         [
           "घर",
@@ -18297,9 +18302,9 @@
           "home; house"
         ],
         [
-          "गएकी",
-          "gaekī",
-          "gone; been"
+          "जानुभएको",
+          "jānubhaeko",
+          "having gone (respectful)"
         ],
         [
           "हुनु",
@@ -18309,7 +18314,7 @@
         [
           "पर्छ",
           "parcha",
-          "must (deduction)"
+          "have to; must"
         ]
       ]
     },
@@ -19155,7 +19160,7 @@
     },
     {
       "type": "p",
-      "text": "She made me write a letter.\nउनले मलाई चिठी लेख्न लगाइन्।\nunle malāī ciṭhī lekhna lagāin"
+      "text": "She made me write a letter.\nउहाँले मलाई चिठी लेख्न लगाउनुभयो।\nuhā̃le malāī ciṭhī lekhna lagāunubhayo"
     },
     {
       "type": "table",
@@ -19166,9 +19171,9 @@
       ],
       "rows": [
         [
-          "उनले",
-          "unle",
-          "she (agent)"
+          "उहाँले",
+          "uhā̃le",
+          "he/she as agent (respectful)"
         ],
         [
           "मलाई",
@@ -19186,9 +19191,9 @@
           "write"
         ],
         [
-          "लगाइन्",
-          "lagāin",
-          "made; had (someone do)"
+          "लगाउनुभयो",
+          "lagāunubhayo",
+          "caused/made someone do (respectful)"
         ]
       ]
     },
@@ -19202,7 +19207,7 @@
     },
     {
       "type": "p",
-      "text": "We showed them the room.\nहामीले उनीहरूलाई कोठा देखायौं।\nhāmīle unīharūlāī koṭhā dekhāyaũ"
+      "text": "We showed them the room.\nहामीले उहाँहरूलाई कोठा देखायौं।\nhāmīle uhā̃harūlāī koṭhā dekhāyaũ"
     },
     {
       "type": "table",
@@ -19218,9 +19223,9 @@
           "we (agent)"
         ],
         [
-          "उनीहरूलाई",
-          "unīharūlāī",
-          "to them"
+          "उहाँहरूलाई",
+          "uhā̃harūlāī",
+          "to them; them as object (respectful)"
         ],
         [
           "कोठा",
@@ -19286,7 +19291,7 @@
     },
     {
       "type": "p",
-      "text": "They made me go outside.\nउनीहरूले मलाई बाहिर जान लगाए।\nunīharūle malāī bāhira jāna lagāe"
+      "text": "They made me go outside.\nउहाँहरूले मलाई बाहिर जान लगाउनुभयो।\nuhā̃harūle malāī bāhira jāna lagāunubhayo"
     },
     {
       "type": "table",
@@ -19297,9 +19302,9 @@
       ],
       "rows": [
         [
-          "उनीहरूले",
-          "unīharūle",
-          "they (agent)"
+          "उहाँहरूले",
+          "uhā̃harūle",
+          "they as agents (respectful)"
         ],
         [
           "मलाई",
@@ -19317,9 +19322,9 @@
           "go"
         ],
         [
-          "लगाए",
-          "lagāe",
-          "made; had (someone do)"
+          "लगाउनुभयो",
+          "lagāunubhayo",
+          "caused/made someone do (respectful)"
         ]
       ]
     },
@@ -19402,7 +19407,7 @@
     },
     {
       "type": "p",
-      "text": "Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
+      "text": "Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
     },
     {
       "type": "h",
@@ -19418,19 +19423,19 @@
       "rows": [
         [
           "Direct quotation",
-          "उनले “म बिरामी छु” भनिन्।\nunle “ma birāmī chu” bhanin",
+          "उहाँले “म बिरामी छु” भन्नुभयो।\nuhā̃le “ma birāmī chu” bhannubhayo",
           "She said, “I am ill.”"
         ],
         [
           "Indirect reporting",
-          "उनले आफू बिरामी भएको बताइन्।\nunle āphū birāmī bhaeko batāin",
+          "उहाँले आफू बिरामी भएको बताउनुभयो।\nuhā̃le āphū birāmī bhaeko batāunubhayo",
           "She said that she was ill."
         ]
       ]
     },
     {
       "type": "p",
-      "text": "In direct speech, म refers to the original speaker. Indirect reporting uses आफू, self, to refer back to the subject and बिरामी, ill, + भएको to package the reported state. बताइन् is the feminine past of बताउनु, tell/report. Track perspective and clause structure rather than simply replacing a pronoun."
+      "text": "In direct speech, म refers to the original speaker. Indirect reporting uses आफू, self, to refer back to the subject and बिरामी, ill, + भएको to package the reported state. बताउनुभयो is the respectful past of बताउनु, tell/report. Track perspective and clause structure rather than simply replacing a pronoun."
     },
     {
       "type": "note",
@@ -19458,7 +19463,7 @@
     },
     {
       "type": "p",
-      "text": "She said she would not go.\nउनले जाँदिनँ भनिन्।\nunle jā̃dinã bhanin"
+      "text": "She said she would not go.\nउहाँले जाँदिनँ भन्नुभयो।\nuhā̃le jā̃dinã bhannubhayo"
     },
     {
       "type": "table",
@@ -19469,9 +19474,9 @@
       ],
       "rows": [
         [
-          "उनले",
-          "unle",
-          "she (agent)"
+          "उहाँले",
+          "uhā̃le",
+          "he/she as agent (respectful)"
         ],
         [
           "जाँदिनँ",
@@ -19479,15 +19484,15 @@
           "do not go; does not go"
         ],
         [
-          "भनिन्",
-          "bhanin",
-          "said"
+          "भन्नुभयो",
+          "bhannubhayo",
+          "said (respectful)"
         ]
       ]
     },
     {
       "type": "p",
-      "text": "How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
+      "text": "How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
     },
     {
       "type": "h",
@@ -19534,7 +19539,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
+      "text": "How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
     },
     {
       "type": "h",
@@ -19581,7 +19586,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
+      "text": "How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
     },
     {
       "type": "h",
@@ -19618,7 +19623,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
+      "text": "How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.\nThis is a question. Supply the missing information and keep person agreement on the final verb."
     },
     {
       "type": "h",
@@ -19660,7 +19665,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
+      "text": "How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
     },
     {
       "type": "h",
@@ -19668,7 +19673,7 @@
     },
     {
       "type": "p",
-      "text": "They said they would come tomorrow.\nउनीहरूले भोलि आउँछौं भने।\nunīharūle bholi āũchaũ bhane"
+      "text": "They said they would come tomorrow.\nउहाँहरूले भोलि आउँछौं भन्नुभयो।\nuhā̃harūle bholi āũchaũ bhannubhayo"
     },
     {
       "type": "table",
@@ -19679,9 +19684,9 @@
       ],
       "rows": [
         [
-          "उनीहरूले",
-          "unīharūle",
-          "they (agent)"
+          "उहाँहरूले",
+          "uhā̃harūle",
+          "they as agents (respectful)"
         ],
         [
           "भोलि",
@@ -19694,15 +19699,15 @@
           "come; comes"
         ],
         [
-          "भने",
-          "bhane",
-          "said"
+          "भन्नुभयो",
+          "bhannubhayo",
+          "said (respectful)"
         ]
       ]
     },
     {
       "type": "p",
-      "text": "How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
+      "text": "How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
     },
     {
       "type": "h",
@@ -19749,7 +19754,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
+      "text": "How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
     },
     {
       "type": "h",
@@ -19757,7 +19762,7 @@
     },
     {
       "type": "p",
-      "text": "She said she had no money.\nउनले पैसा छैन भनिन्।\nunle paisā chaina bhanin"
+      "text": "She said she had no money.\nउहाँले पैसा छैन भन्नुभयो।\nuhā̃le paisā chaina bhannubhayo"
     },
     {
       "type": "table",
@@ -19768,9 +19773,9 @@
       ],
       "rows": [
         [
-          "उनले",
-          "unle",
-          "she (agent)"
+          "उहाँले",
+          "uhā̃le",
+          "he/she as agent (respectful)"
         ],
         [
           "पैसा",
@@ -19780,18 +19785,18 @@
         [
           "छैन",
           "chaina",
-          "is not; are not (existence)"
+          "not be; not exist"
         ],
         [
-          "भनिन्",
-          "bhanin",
-          "said"
+          "भन्नुभयो",
+          "bhannubhayo",
+          "said (respectful)"
         ]
       ]
     },
     {
       "type": "p",
-      "text": "How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
+      "text": "How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
     },
     {
       "type": "h",
@@ -19843,7 +19848,7 @@
     },
     {
       "type": "p",
-      "text": "How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
+      "text": "How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
     },
     {
       "type": "h",
@@ -19913,13 +19918,13 @@
           "You write letters."
         ],
         [
-          "उ चिठी लेख्छ।",
-          "u ciṭhī lekhcha",
+          "उहाँ चिठी लेख्नुहुन्छ।",
+          "uhā̃ ciṭhī lekhnuhuncha",
           "He writes letters."
         ],
         [
-          "उनी चिठी लेख्छिन्।",
-          "unī ciṭhī lekhchin",
+          "उहाँ चिठी लेख्नुहुन्छ।",
+          "uhā̃ ciṭhī lekhnuhuncha",
           "She writes letters."
         ],
         [
@@ -19933,8 +19938,8 @@
           "We write letters."
         ],
         [
-          "उनीहरू चिठी लेख्छन्।",
-          "unīharū ciṭhī lekhchan",
+          "उहाँहरू चिठी लेख्नुहुन्छ।",
+          "uhā̃harū ciṭhī lekhnuhuncha",
           "They write letters."
         ]
       ]
@@ -19977,13 +19982,13 @@
           "You do not write letters."
         ],
         [
-          "उ चिठी लेख्दैन।",
-          "u ciṭhī lekhdaina",
+          "उहाँ चिठी लेख्नुहुन्न।",
+          "uhā̃ ciṭhī lekhnuhunna",
           "He does not write letters."
         ],
         [
-          "उनी चिठी लेख्दिनन्।",
-          "unī ciṭhī lekhdinan",
+          "उहाँ चिठी लेख्नुहुन्न।",
+          "uhā̃ ciṭhī lekhnuhunna",
           "She does not write letters."
         ],
         [
@@ -19997,8 +20002,8 @@
           "We do not write letters."
         ],
         [
-          "उनीहरू चिठी लेख्दैनन्।",
-          "unīharū ciṭhī lekhdainan",
+          "उहाँहरू चिठी लेख्नुहुन्न।",
+          "uhā̃harū ciṭhī lekhnuhunna",
           "They do not write letters."
         ]
       ]
@@ -20041,13 +20046,13 @@
           "You wrote a letter yesterday."
         ],
         [
-          "उसले हिजो चिठी लेख्यो।",
-          "usle hijo ciṭhī lekhyo",
+          "उहाँले हिजो चिठी लेख्नुभयो।",
+          "uhā̃le hijo ciṭhī lekhnubhayo",
           "He wrote a letter yesterday."
         ],
         [
-          "उनले हिजो चिठी लेखिन्।",
-          "unle hijo ciṭhī lekhin",
+          "उहाँले हिजो चिठी लेख्नुभयो।",
+          "uhā̃le hijo ciṭhī lekhnubhayo",
           "She wrote a letter yesterday."
         ],
         [
@@ -20061,8 +20066,8 @@
           "We wrote a letter yesterday."
         ],
         [
-          "उनीहरूले हिजो चिठी लेखे।",
-          "unīharūle hijo ciṭhī lekhe",
+          "उहाँहरूले हिजो चिठी लेख्नुभयो।",
+          "uhā̃harūle hijo ciṭhī lekhnubhayo",
           "They wrote a letter yesterday."
         ]
       ]
@@ -20105,13 +20110,13 @@
           "You did not write a letter yesterday."
         ],
         [
-          "उसले हिजो चिठी लेखेन।",
-          "usle hijo ciṭhī lekhena",
+          "उहाँले हिजो चिठी लेख्नुभएन।",
+          "uhā̃le hijo ciṭhī lekhnubhaena",
           "He did not write a letter yesterday."
         ],
         [
-          "उनले हिजो चिठी लेखिनन्।",
-          "unle hijo ciṭhī lekhinan",
+          "उहाँले हिजो चिठी लेख्नुभएन।",
+          "uhā̃le hijo ciṭhī lekhnubhaena",
           "She did not write a letter yesterday."
         ],
         [
@@ -20125,8 +20130,8 @@
           "We did not write a letter yesterday."
         ],
         [
-          "उनीहरूले हिजो चिठी लेखेनन्।",
-          "unīharūle hijo ciṭhī lekhenan",
+          "उहाँहरूले हिजो चिठी लेख्नुभएन।",
+          "uhā̃harūle hijo ciṭhī lekhnubhaena",
           "They did not write a letter yesterday."
         ]
       ]
@@ -20169,13 +20174,13 @@
           "You have done the write letters."
         ],
         [
-          "उसले चिठी लेखेको छ।",
-          "usle ciṭhī lekheko cha",
+          "उहाँले चिठी लेख्नुभएको छ।",
+          "uhā̃le ciṭhī lekhnubhaeko cha",
           "He has done the write letters."
         ],
         [
-          "उनले चिठी लेखेकी छिन्।",
-          "unle ciṭhī lekhekī chin",
+          "उहाँले चिठी लेख्नुभएको छिन्।",
+          "uhā̃le ciṭhī lekhnubhaeko chin",
           "She has done the write letters."
         ],
         [
@@ -20189,8 +20194,8 @@
           "We have done the write letters."
         ],
         [
-          "उनीहरूले चिठी लेखेका छन्।",
-          "unīharūle ciṭhī lekhekā chan",
+          "उहाँहरूले चिठी लेख्नुभएको छन्।",
+          "uhā̃harūle ciṭhī lekhnubhaeko chan",
           "They have done the write letters."
         ]
       ]
@@ -20233,13 +20238,13 @@
           "You used to write letters."
         ],
         [
-          "उ पहिले चिठी लेख्थ्यो।",
-          "u pahile ciṭhī lekhthyo",
+          "उहाँ पहिले चिठी लेख्नुहुन्थ्यो।",
+          "uhā̃ pahile ciṭhī lekhnuhunthyo",
           "He used to write letters."
         ],
         [
-          "उनी पहिले चिठी लेख्थिन्।",
-          "unī pahile ciṭhī lekhthin",
+          "उहाँ पहिले चिठी लेख्नुहुन्थ्यो।",
+          "uhā̃ pahile ciṭhī lekhnuhunthyo",
           "She used to write letters."
         ],
         [
@@ -20253,8 +20258,8 @@
           "We used to write letters."
         ],
         [
-          "उनीहरू पहिले चिठी लेख्थे।",
-          "unīharū pahile ciṭhī lekhthe",
+          "उहाँहरू पहिले चिठी लेख्नुहुन्थ्यो।",
+          "uhā̃harū pahile ciṭhī lekhnuhunthyo",
           "They used to write letters."
         ]
       ]
@@ -20311,13 +20316,13 @@
       ],
       "rows": [
         [
-          "उनी चिठी लेख्छन्।",
-          "unī ciṭhī lekhchan",
+          "उहाँ चिठी लेख्नुहुन्छ।",
+          "uhā̃ ciṭhī lekhnuhuncha",
           "That person writes letters."
         ],
         [
-          "उनले हिजो चिठी लेखे।",
-          "unle hijo ciṭhī lekhe",
+          "उहाँले हिजो चिठी लेख्नुभयो।",
+          "uhā̃le hijo ciṭhī lekhnubhayo",
           "That person wrote a letter yesterday."
         ],
         [
@@ -20346,13 +20351,13 @@
           "You will write a letter tomorrow."
         ],
         [
-          "उ भोलि चिठी लेख्छ।",
-          "u bholi ciṭhī lekhcha",
+          "उहाँ भोलि चिठी लेख्नुहुन्छ।",
+          "uhā̃ bholi ciṭhī lekhnuhuncha",
           "He will write a letter tomorrow."
         ],
         [
-          "उनी भोलि चिठी लेख्छिन्।",
-          "unī bholi ciṭhī lekhchin",
+          "उहाँ भोलि चिठी लेख्नुहुन्छ।",
+          "uhā̃ bholi ciṭhī lekhnuhuncha",
           "She will write a letter tomorrow."
         ],
         [
@@ -20366,8 +20371,8 @@
           "We will write a letter tomorrow."
         ],
         [
-          "उनीहरू भोलि चिठी लेख्छन्।",
-          "unīharū bholi ciṭhī lekhchan",
+          "उहाँहरू भोलि चिठी लेख्नुहुन्छ।",
+          "uhā̃harū bholi ciṭhī lekhnuhuncha",
           "They will write a letter tomorrow."
         ]
       ]
@@ -20428,13 +20433,13 @@
           "You are an author."
         ],
         [
-          "उ लेखक हो।",
-          "u lekhak ho",
+          "उहाँ लेखक हुनुहुन्छ।",
+          "uhā̃ lekhak hunuhuncha",
           "He is an author."
         ],
         [
-          "उनी लेखिका हुन्।",
-          "unī lekhikā hun",
+          "उहाँ लेखिका हुनुहुन्छ।",
+          "uhā̃ lekhikā hunuhuncha",
           "She is an author."
         ],
         [
@@ -20448,8 +20453,8 @@
           "We are authors."
         ],
         [
-          "उनीहरू लेखक हुन्।",
-          "unīharū lekhak hun",
+          "उहाँहरू लेखक हुनुहुन्छ।",
+          "uhā̃harū lekhak hunuhuncha",
           "They are authors."
         ],
         [
@@ -20478,13 +20483,13 @@
           "You are not an author."
         ],
         [
-          "उ लेखक होइन।",
-          "u lekhak hoina",
+          "उहाँ लेखक हुनुहुन्न।",
+          "uhā̃ lekhak hunuhunna",
           "He is not an author."
         ],
         [
-          "उनी लेखिका होइनन्।",
-          "unī lekhikā hoinan",
+          "उहाँ लेखिका हुनुहुन्न।",
+          "uhā̃ lekhikā hunuhunna",
           "She is not an author."
         ],
         [
@@ -20498,8 +20503,8 @@
           "We are not authors."
         ],
         [
-          "उनीहरू लेखक होइनन्।",
-          "unīharū lekhak hoinan",
+          "उहाँहरू लेखक हुनुहुन्न।",
+          "uhā̃harū lekhak hunuhunna",
           "They are not authors."
         ]
       ]
@@ -20542,13 +20547,13 @@
           "You are at the library."
         ],
         [
-          "उ पुस्तकालयमा छ।",
-          "u pustakālayamā cha",
+          "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+          "uhā̃ pustakālayamā hunuhuncha",
           "He is at the library."
         ],
         [
-          "उनी पुस्तकालयमा छिन्।",
-          "unī pustakālayamā chin",
+          "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+          "uhā̃ pustakālayamā hunuhuncha",
           "She is at the library."
         ],
         [
@@ -20562,8 +20567,8 @@
           "We are at the library."
         ],
         [
-          "उनीहरू पुस्तकालयमा छन्।",
-          "unīharū pustakālayamā chan",
+          "उहाँहरू पुस्तकालयमा हुनुहुन्छ।",
+          "uhā̃harū pustakālayamā hunuhuncha",
           "They are at the library."
         ],
         [
@@ -20592,13 +20597,13 @@
           "You are not at the library."
         ],
         [
-          "उ पुस्तकालयमा छैन।",
-          "u pustakālayamā chaina",
+          "उहाँ पुस्तकालयमा हुनुहुन्न।",
+          "uhā̃ pustakālayamā hunuhunna",
           "He is not at the library."
         ],
         [
-          "उनी पुस्तकालयमा छैनन्।",
-          "unī pustakālayamā chainan",
+          "उहाँ पुस्तकालयमा हुनुहुन्न।",
+          "uhā̃ pustakālayamā hunuhunna",
           "She is not at the library."
         ],
         [
@@ -20612,8 +20617,8 @@
           "We are not at the library."
         ],
         [
-          "उनीहरू पुस्तकालयमा छैनन्।",
-          "unīharū pustakālayamā chainan",
+          "उहाँहरू पुस्तकालयमा हुनुहुन्न।",
+          "uhā̃harū pustakālayamā hunuhunna",
           "They are not at the library."
         ]
       ]
@@ -20656,13 +20661,13 @@
           "You were at the market the day before yesterday."
         ],
         [
-          "उ अस्ति बजारमा थियो।",
-          "u asti bajārmā thiyo",
+          "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+          "uhā̃ asti bajārmā hunuhunthyo",
           "He was at the market the day before yesterday."
         ],
         [
-          "उनी अस्ति बजारमा थिइन्।",
-          "unī asti bajārmā thiin",
+          "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+          "uhā̃ asti bajārmā hunuhunthyo",
           "She was at the market the day before yesterday."
         ],
         [
@@ -20676,8 +20681,8 @@
           "We were at the market the day before yesterday."
         ],
         [
-          "उनीहरू अस्ति बजारमा थिए।",
-          "unīharū asti bajārmā thie",
+          "उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो।",
+          "uhā̃harū asti bajārmā hunuhunthyo",
           "They were at the market the day before yesterday."
         ],
         [
@@ -20706,13 +20711,13 @@
           "You were not at the market the day before yesterday."
         ],
         [
-          "उ अस्ति बजारमा थिएन।",
-          "u asti bajārmā thiena",
+          "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+          "uhā̃ asti bajārmā hunuhunnathyo",
           "He was not at the market the day before yesterday."
         ],
         [
-          "उनी अस्ति बजारमा थिइनन्।",
-          "unī asti bajārmā thiinan",
+          "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+          "uhā̃ asti bajārmā hunuhunnathyo",
           "She was not at the market the day before yesterday."
         ],
         [
@@ -20726,8 +20731,8 @@
           "We were not at the market the day before yesterday."
         ],
         [
-          "उनीहरू अस्ति बजारमा थिएनन्।",
-          "unīharū asti bajārmā thienan",
+          "उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो।",
+          "uhā̃harū asti bajārmā hunuhunnathyo",
           "They were not at the market the day before yesterday."
         ]
       ]
@@ -20775,8 +20780,8 @@
           "My notebook was not here the day before yesterday."
         ],
         [
-          "उनी बाहिर छन्।",
-          "unī bāhira chan",
+          "उहाँ बाहिर हुनुहुन्छ।",
+          "uhā̃ bāhira hunuhuncha",
           "That person is outside."
         ]
       ]

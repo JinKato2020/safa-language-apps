@@ -2735,6 +2735,3100 @@
           "channels": 1
         }
       }
+    },
+    "900-3563771793": {
+      "ne": "उहाँ विद्यार्थी हुनुहुन्छ।",
+      "roman": "uhā̃ vidyārthī hunuhuncha",
+      "ja": "彼女は学生です",
+      "en": "She is a student.",
+      "spoken": {
+        "ne": "उहाँ विद्यार्थी हुनुहुन्छ।",
+        "ja": "彼女は学生です",
+        "en": "She is a student."
+      },
+      "files": {
+        "ne": {
+          "sha256": "06012fff801a83e6c156c31496139e6a68c5ec6b387b013332b36f2e62bbda9a",
+          "bytes": 14688,
+          "duration": 2.448,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "ea018da20bdd7e86bb44b6707898bfb455462d017792ed96c90477f1c6881c06",
+          "bytes": 14592,
+          "duration": 1.824,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "31316785cac4e2af046891fe26bc09e4af1650f043ea9d2b54dda9d9bfcb546e",
+          "bytes": 11904,
+          "duration": 1.488,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-880534878": {
+      "ne": "उहाँहरू विद्यार्थी हुनुहुन्न।",
+      "roman": "uhā̃harū vidyārthī hunuhunna",
+      "ja": "彼らは学生ではありません",
+      "en": "They are not students.",
+      "spoken": {
+        "ne": "उहाँहरू विद्यार्थी हुनुहुन्न।",
+        "ja": "彼らは学生ではありません",
+        "en": "They are not students."
+      },
+      "files": {
+        "ne": {
+          "sha256": "65a944fa3196088e68a00b57e9632ff2ad9946c6be677f758eda1892293885ac",
+          "bytes": 15984,
+          "duration": 2.664,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "a787a6fcb6cab98c0037d482e9fe0d0eecddfdb96abee423bd2e3ba20ddacf1e",
+          "bytes": 20544,
+          "duration": 2.568,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "6e3a4bb2f84b44fcb7beb31b815763014df943a3854cfe2617419aa6bdb2266a",
+          "bytes": 13632,
+          "duration": 1.704,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-53682907": {
+      "ne": "उहाँ डाक्टर हुनुहुन्छ।",
+      "roman": "uhā̃ ḍākṭar hunuhuncha",
+      "ja": "彼女は医者です",
+      "en": "She is a doctor.",
+      "spoken": {
+        "ne": "उहाँ डाक्टर हुनुहुन्छ।",
+        "ja": "彼女は医者です",
+        "en": "She is a doctor."
+      },
+      "files": {
+        "ne": {
+          "sha256": "a6182cdb2ab625af1395a2337ca1e723c51f01118c26380a9fb56203cb75b98a",
+          "bytes": 13968,
+          "duration": 2.328,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "3cd5c164717b316dad8106504202c5b9a6347838dcf4094df92c5cdbd4321388",
+          "bytes": 12480,
+          "duration": 1.56,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "23e8d10faf54340b03c529b022418a09430a23a508f234b7eced870a4f3efab4",
+          "bytes": 11328,
+          "duration": 1.416,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2251975905": {
+      "ne": "उहाँ घरमा हुनुहुन्छ।",
+      "roman": "uhā̃ gharmā hunuhuncha",
+      "ja": "彼女は家にいます",
+      "en": "She is at home.",
+      "spoken": {
+        "ne": "उहाँ घरमा हुनुहुन्छ।",
+        "ja": "彼女は家にいます",
+        "en": "She is at home."
+      },
+      "files": {
+        "ne": {
+          "sha256": "ad063bd5065fc1f846491357ae8670e115b9bef64fc21627dfb6813e05f5bee1",
+          "bytes": 13680,
+          "duration": 2.28,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "dedd6842e998759d2475ed19e9912fbe9028489138625988f38112d1d7878f0c",
+          "bytes": 16128,
+          "duration": 2.016,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "23f8ef13bdb7f8e3fc55c05e70770873f0eb51abece96c1beaea16becae2934e",
+          "bytes": 10560,
+          "duration": 1.32,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3720775145": {
+      "ne": "उहाँहरू घरमा हुनुहुन्न।",
+      "roman": "uhā̃harū gharmā hunuhunna",
+      "ja": "彼らは家にいません",
+      "en": "They are not at home.",
+      "spoken": {
+        "ne": "उहाँहरू घरमा हुनुहुन्न।",
+        "ja": "彼らは家にいません",
+        "en": "They are not at home."
+      },
+      "files": {
+        "ne": {
+          "sha256": "cc700a5d71b1cb59d003d57b77b9f3f4892bb85e5f6c185058e7238e95192f94",
+          "bytes": 14976,
+          "duration": 2.496,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "871f2c3f57dabd44fd82e65e6a63d137abe4510b89b161151c65b4f843025ee2",
+          "bytes": 16896,
+          "duration": 2.112,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "a71910bdf4eb37ec63cdb95b96fcaa7b962f4c73bf83d3074cef7675a8ae4984",
+          "bytes": 12864,
+          "duration": 1.608,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2929629531": {
+      "ne": "उहाँहरू विद्यालयमा हुनुहुन्छ।",
+      "roman": "uhā̃harū vidyālayamā hunuhuncha",
+      "ja": "彼らは学校にいます",
+      "en": "They are at school.",
+      "spoken": {
+        "ne": "उहाँहरू विद्यालयमा हुनुहुन्छ।",
+        "ja": "彼らは学校にいます",
+        "en": "They are at school."
+      },
+      "files": {
+        "ne": {
+          "sha256": "cfe13e7fbae20e2542ab799b9394249588164638a5757eedba5c3731c45f780e",
+          "bytes": 16992,
+          "duration": 2.832,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "98a0bb7e6687b714400fb123d1c888cf36fbd704627abfe548c9069ff62edafa",
+          "bytes": 17664,
+          "duration": 2.208,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "7e99a3de375e27f8224137f4f3c44559708e3bfe5769f72f7ba1010210765469",
+          "bytes": 10752,
+          "duration": 1.344,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-818815859": {
+      "ne": "उहाँ तयार हुनुहुन्छ।",
+      "roman": "uhā̃ tayār hunuhuncha",
+      "ja": "彼女は準備ができています",
+      "en": "She is ready.",
+      "spoken": {
+        "ne": "उहाँ तयार हुनुहुन्छ।",
+        "ja": "彼女は準備ができています",
+        "en": "She is ready."
+      },
+      "files": {
+        "ne": {
+          "sha256": "900c8a7e7a152fd8feb7ae4baa1b70d9d7c30f360fba2064ff447bf2551935ed",
+          "bytes": 13536,
+          "duration": 2.256,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "9e520aaeb77e7719d4192a0e153c9c50c548332930013f09c651c9590ac567d2",
+          "bytes": 19392,
+          "duration": 2.424,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "59244014b84f5e3dd217034535bc048634ec46c72721f1bedd922cae5fa21f90",
+          "bytes": 9408,
+          "duration": 1.176,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2414107569": {
+      "ne": "उहाँहरू व्यस्त हुनुहुन्छ।",
+      "roman": "uhā̃harū vyasta hunuhuncha",
+      "ja": "彼らは忙しいです",
+      "en": "They are busy.",
+      "spoken": {
+        "ne": "उहाँहरू व्यस्त हुनुहुन्छ।",
+        "ja": "彼らは忙しいです",
+        "en": "They are busy."
+      },
+      "files": {
+        "ne": {
+          "sha256": "c30fe6c67f32167a6ba735cdb2beb2fbfb4491da32a23b808b0c145559f5f33d",
+          "bytes": 14976,
+          "duration": 2.496,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "434507315ccf3a9c30fc05028c458094d72b4baaae3edfbd5e26817ce96289d8",
+          "bytes": 16320,
+          "duration": 2.04,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "d2ffb8038ef582d25fe306173150e53747f042fc1a309284cd0ad22bdd5b10da",
+          "bytes": 9408,
+          "duration": 1.176,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-4264781149": {
+      "ne": "उहाँ बजारतिर जानुहुन्छ।",
+      "roman": "uhā̃ bajārtira jānuhuncha",
+      "ja": "彼女は市場の方へ行きます",
+      "en": "She goes towards the market.",
+      "spoken": {
+        "ne": "उहाँ बजारतिर जानुहुन्छ।",
+        "ja": "彼女は市場の方へ行きます",
+        "en": "She goes towards the market."
+      },
+      "files": {
+        "ne": {
+          "sha256": "a936d6282674ae1c54211988e684ed0a199750ec59947bf803c4d4ceb8d5c0af",
+          "bytes": 15984,
+          "duration": 2.664,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "e55210898df832fdd71750729ed09b98e9209ec48bf49d01b2347b86809fb2e1",
+          "bytes": 21312,
+          "duration": 2.664,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "4c71d82dc8b824da1ac84159cc2afcdd31e60e964c19d245cbf66895272844bb",
+          "bytes": 16320,
+          "duration": 2.04,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-322616705": {
+      "ne": "उहाँ चिनीबिना चिया पिउनुहुन्छ।",
+      "roman": "uhā̃ cinībinā ciyā piunuhuncha",
+      "ja": "彼女は砂糖なしでお茶を飲みます",
+      "en": "She drinks tea without sugar.",
+      "spoken": {
+        "ne": "उहाँ चिनीबिना चिया पिउनुहुन्छ।",
+        "ja": "彼女は砂糖なしでお茶を飲みます",
+        "en": "She drinks tea without sugar."
+      },
+      "files": {
+        "ne": {
+          "sha256": "0167aa36939ddf866697302d2cdf874cff31b28137e008c7ce6c41289e8a7d19",
+          "bytes": 18144,
+          "duration": 3.024,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "2268d6c12cdc140fa4cd6044b181d6397b3201a81b8ac3c1b4430275c12aff50",
+          "bytes": 23808,
+          "duration": 2.976,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "d7201f4885e6d8bd04ecbe6ca11f198aac6f869193cd68e503f4057c1106d55b",
+          "bytes": 18240,
+          "duration": 2.28,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3208714879": {
+      "ne": "उहाँ किताब पढ्नुहुन्छ।",
+      "roman": "uhā̃ kitāb paḍhnuhuncha",
+      "ja": "彼女は本を読みます",
+      "en": "She reads books.",
+      "spoken": {
+        "ne": "उहाँ किताब पढ्नुहुन्छ।",
+        "ja": "彼女は本を読みます",
+        "en": "She reads books."
+      },
+      "files": {
+        "ne": {
+          "sha256": "f91e8eea9a162c5c2d2abfdf84640aa08506a3f258583b645c1e91fbe1f4222d",
+          "bytes": 14112,
+          "duration": 2.352,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "4b1e3024a2dcf16b3493138c1df848b9f9f86c3791183002bbaa5be2d27492c3",
+          "bytes": 17280,
+          "duration": 2.16,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "3961f980f0f5db457466c5a498ab33d79c35c86f4f080e5a12aa052237770870",
+          "bytes": 12480,
+          "duration": 1.56,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3128028282": {
+      "ne": "उहाँ मासु खानुहुन्न।",
+      "roman": "uhā̃ māsu khānuhunna",
+      "ja": "彼女は肉を食べません",
+      "en": "She does not eat meat.",
+      "spoken": {
+        "ne": "उहाँ मासु खानुहुन्न।",
+        "ja": "彼女は肉を食べません",
+        "en": "She does not eat meat."
+      },
+      "files": {
+        "ne": {
+          "sha256": "d073fdd9dfdcce8001b071acb28294ad8023f9cc8f560ea74ae07040ae87a128",
+          "bytes": 14112,
+          "duration": 2.352,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "d7b86897e2b834f9b147ffa0d26a330532b834506ce5ba406a6f65d01884f5a5",
+          "bytes": 18048,
+          "duration": 2.256,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "20963e3de231bf95ef468d939b6768165c94f91c6abbbd9eb273a3b7bbcb9c14",
+          "bytes": 14208,
+          "duration": 1.776,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-355903220": {
+      "ne": "उहाँ चिट्ठी लेख्दै हुनुहुन्छ।",
+      "roman": "uhā̃ ciṭṭhī lekhdai hunuhuncha",
+      "ja": "彼女は手紙を書いています",
+      "en": "She is writing a letter.",
+      "spoken": {
+        "ne": "उहाँ चिट्ठी लेख्दै हुनुहुन्छ।",
+        "ja": "彼女は手紙を書いています",
+        "en": "She is writing a letter."
+      },
+      "files": {
+        "ne": {
+          "sha256": "7daa3a0037f5d11462505c19e3f327bda7744e764cf4d1e73b9ce077bcd08bab",
+          "bytes": 15984,
+          "duration": 2.664,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "5eb2d8a0707b875ad413c7de0090084b799b53fcc9e306cb970ac01d9f93d8b8",
+          "bytes": 19584,
+          "duration": 2.448,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "77c2cb397de53b50d664e52087aecc1560dc081c5e4d3ef298d9adf5e4630314",
+          "bytes": 14208,
+          "duration": 1.776,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-722129677": {
+      "ne": "उहाँहरू बस पर्खँदै हुनुहुन्छ।",
+      "roman": "uhā̃harū bas parkhãdai hunuhuncha",
+      "ja": "彼らはバスを待っています",
+      "en": "They are waiting for the bus.",
+      "spoken": {
+        "ne": "उहाँहरू बस पर्खँदै हुनुहुन्छ।",
+        "ja": "彼らはバスを待っています",
+        "en": "They are waiting for the bus."
+      },
+      "files": {
+        "ne": {
+          "sha256": "c863643d2bad75011be347a41824d95391fc3f925499d679499aa206f7bd6583",
+          "bytes": 17424,
+          "duration": 2.904,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "014676676c282d781b9c929d60b7baad30b8048971d712594e54ca323f3efa90",
+          "bytes": 18624,
+          "duration": 2.328,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "94bc81e07fae790c32dacd58512eacfd4f4dd56c3035a5c1b855f8bf122b1073",
+          "bytes": 15552,
+          "duration": 1.944,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3660980456": {
+      "ne": "उहाँ स्कूल जानुभयो।",
+      "roman": "uhā̃ skūl jānubhayo",
+      "ja": "彼女は学校に行きました",
+      "en": "She went to school.",
+      "spoken": {
+        "ne": "उहाँ स्कूल जानुभयो।",
+        "ja": "彼女は学校に行きました",
+        "en": "She went to school."
+      },
+      "files": {
+        "ne": {
+          "sha256": "b79a3ebe7551f4e35f7b1f32065aacb3b3ad019eb13263096bcbbca830384b62",
+          "bytes": 13824,
+          "duration": 2.304,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "3a70ad7dbb5f4c2b6865301ae11dc21aa4841c97414cb5cca632a013ef1dc21b",
+          "bytes": 19392,
+          "duration": 2.424,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "c3729d968f9fec658e32231319dea809cb07943731e1056f483bca48e5a0b58e",
+          "bytes": 11520,
+          "duration": 1.44,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-568664421": {
+      "ne": "उहाँले चिया पिउनुभयो।",
+      "roman": "uhā̃le ciyā piunubhayo",
+      "ja": "彼女はお茶を飲みました",
+      "en": "She drank tea.",
+      "spoken": {
+        "ne": "उहाँले चिया पिउनुभयो।",
+        "ja": "彼女はお茶を飲みました",
+        "en": "She drank tea."
+      },
+      "files": {
+        "ne": {
+          "sha256": "f64f5a9c7fc7b1fde949da2e6bcbf4a3c7162c71796d934f12b2d7302592e0c6",
+          "bytes": 14976,
+          "duration": 2.496,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "1b478b0a4985b0cce222ba38d0835063494dd79093b95016c5c01b17eab0f233",
+          "bytes": 18048,
+          "duration": 2.256,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "bc60e394d5890c13d03653cd0b823ea0b44b3dce047716cf8e19780cde426895",
+          "bytes": 10944,
+          "duration": 1.368,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3632722519": {
+      "ne": "उहाँले कफी पिउनुभएन।",
+      "roman": "uhā̃le kaphī piunubhaena",
+      "ja": "彼女はコーヒーを飲みませんでした",
+      "en": "She did not drink coffee.",
+      "spoken": {
+        "ne": "उहाँले कफी पिउनुभएन।",
+        "ja": "彼女はコーヒーを飲みませんでした",
+        "en": "She did not drink coffee."
+      },
+      "files": {
+        "ne": {
+          "sha256": "3ee1dc7287d97862276b44d8b446c555b9de590a2eb1387df4687be7f452c302",
+          "bytes": 14688,
+          "duration": 2.448,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "1d2ea3de404bcfc67cdf061bec4ca4520b74a9fcf204c202dfe6a01809fab4fd",
+          "bytes": 23424,
+          "duration": 2.928,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "921ecb5b917fa144b6f26c5daedc9918cd1798eaddf46b8a9227d21ab528ba7e",
+          "bytes": 16128,
+          "duration": 2.016,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3971357555": {
+      "ne": "उहाँ अर्को हप्ता आउनुहुन्छ।",
+      "roman": "uhā̃ arko haptā āunuhuncha",
+      "ja": "彼女は来週来ます",
+      "en": "She will come next week.",
+      "spoken": {
+        "ne": "उहाँ अर्को हप्ता आउनुहुन्छ।",
+        "ja": "彼女は来週来ます",
+        "en": "She will come next week."
+      },
+      "files": {
+        "ne": {
+          "sha256": "59d6c22c3033f3c2ee7951ceba99564fe2246fc1fe1404879193673f5f7b1d56",
+          "bytes": 15264,
+          "duration": 2.544,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "09313abe1b46f0683a315fe869556cbe83c6a7e35514b0b4fadc1f1bfeefb46e",
+          "bytes": 16704,
+          "duration": 2.088,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "7e47c812dbf16ab6596b7367340a63a926e03f0dcce4c1cf06123863c0b15bc4",
+          "bytes": 14976,
+          "duration": 1.872,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-783515076": {
+      "ne": "उहाँहरू भोलि आउनुहुन्न।",
+      "roman": "uhā̃harū bholi āunuhunna",
+      "ja": "彼らは明日来ません",
+      "en": "They will not come tomorrow.",
+      "spoken": {
+        "ne": "उहाँहरू भोलि आउनुहुन्न।",
+        "ja": "彼らは明日来ません",
+        "en": "They will not come tomorrow."
+      },
+      "files": {
+        "ne": {
+          "sha256": "13aae9bdf0970eb6f8473787e9b452f63d9a09b9051937994da5d3eb3eb62758",
+          "bytes": 14688,
+          "duration": 2.448,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "a36b66ef4d37de6a9100a85977a373b54619b55e7948fa2d8c61fbb528da2981",
+          "bytes": 16128,
+          "duration": 2.016,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "1badffcbbcf25fd898babfde41a0f0fff1912c5b0780d3838ed79a1ec85c021c",
+          "bytes": 15552,
+          "duration": 1.944,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2911490176": {
+      "ne": "उहाँ पहिले चिया पिउनुहुन्थ्यो।",
+      "roman": "uhā̃ pahile ciyā piunuhunthyo",
+      "ja": "彼女は以前お茶をよく飲んでいました",
+      "en": "She used to drink tea.",
+      "spoken": {
+        "ne": "उहाँ पहिले चिया पिउनुहुन्थ्यो।",
+        "ja": "彼女は以前お茶をよく飲んでいました",
+        "en": "She used to drink tea."
+      },
+      "files": {
+        "ne": {
+          "sha256": "1927001fd0391d39274dbe829e1315865881a0d9038723ed65d7716c1194c7b2",
+          "bytes": 17424,
+          "duration": 2.904,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "af97430bb9777454bc25a40bea71599db8cbfbd228d9e4ac21f3f17f109717d8",
+          "bytes": 29184,
+          "duration": 3.648,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "446835aaf6b328f8bff9de862ede148eae29b6f7c71b4819359d84e4371ff524",
+          "bytes": 14400,
+          "duration": 1.8,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1954155296": {
+      "ne": "हामी पुग्दा, उहाँ घर जानुभएको थियो।",
+      "roman": "hāmī pugdā, uhā̃ ghar jānubhaeko thiyo",
+      "ja": "私たちが着いたとき、彼女は家に帰っていました",
+      "en": "She had gone home by the time we arrived.",
+      "spoken": {
+        "ne": "हामी पुग्दा, उहाँ घर जानुभएको थियो।",
+        "ja": "私たちが着いたとき、彼女は家に帰っていました",
+        "en": "She had gone home by the time we arrived."
+      },
+      "files": {
+        "ne": {
+          "sha256": "c372b06c3ad1e0517f582c7e4eecb4b2a4d801744093e8ab9f9563a71e6523cc",
+          "bytes": 19728,
+          "duration": 3.288,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "4ac72efeb42bfbc746ea63fd8b572d7e2b3788c6d20e9e1b8d36c316f0f01fbd",
+          "bytes": 34560,
+          "duration": 4.32,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "b5a7613dee4c67d1858af9c242cd05036b9ae4e1d69043f1f45afc85818db5aa",
+          "bytes": 21312,
+          "duration": 2.664,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2023420843": {
+      "ne": "उहाँहरू नेपाली बोल्न सक्नुहुन्छ।",
+      "roman": "uhā̃harū nepālī bolna saknuhuncha",
+      "ja": "彼らはネパール語を話せます",
+      "en": "They can speak Nepali.",
+      "spoken": {
+        "ne": "उहाँहरू नेपाली बोल्न सक्नुहुन्छ।",
+        "ja": "彼らはネパール語を話せます",
+        "en": "They can speak Nepali."
+      },
+      "files": {
+        "ne": {
+          "sha256": "49ee2b00357ae5960f6d075786a74d62ca59b626ee49bf53d9fdf30aff46b3a9",
+          "bytes": 18144,
+          "duration": 3.024,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "972372b5a3188fd348f885d474d58b44e6bb8308c2fcdc6e21e2b8daa56f24cf",
+          "bytes": 21312,
+          "duration": 2.664,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "20e83a82684f3e15c4b34af3cd6f94b223be261b389a5bb5af61e106aea5bf47",
+          "bytes": 13632,
+          "duration": 1.704,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-4232391765": {
+      "ne": "उहाँ गाडी चलाउन सक्नुहुन्छ।",
+      "roman": "uhā̃ gāḍī calāuna saknuhuncha",
+      "ja": "彼女は車を運転できます",
+      "en": "She can drive a car.",
+      "spoken": {
+        "ne": "उहाँ गाडी चलाउन सक्नुहुन्छ।",
+        "ja": "彼女は車を運転できます",
+        "en": "She can drive a car."
+      },
+      "files": {
+        "ne": {
+          "sha256": "c40f36d87c0fbbe9e282c9afc8a9f904ba7b66109beffc5bb1471dbeaf3cd9e0",
+          "bytes": 16992,
+          "duration": 2.832,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "2a29506991ca4d79dab288d23300d586123b00566f5003d24cb229705e8a3113",
+          "bytes": 21696,
+          "duration": 2.712,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "4e2c307d4736de03a378d335a0490a65d3ed78b61938c79c6ae15bb6aa938e53",
+          "bytes": 13248,
+          "duration": 1.656,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2226015447": {
+      "ne": "उहाँहरूले पर्खनु पर्छ।",
+      "roman": "uhā̃harūle parkhanu parcha",
+      "ja": "彼らは待たなければなりません",
+      "en": "They have to wait.",
+      "spoken": {
+        "ne": "उहाँहरूले पर्खनु पर्छ।",
+        "ja": "彼らは待たなければなりません",
+        "en": "They have to wait."
+      },
+      "files": {
+        "ne": {
+          "sha256": "bbcc010b1a322c31440dbbd2de3984f47e9d57a893676db927ed24e5245b553e",
+          "bytes": 15264,
+          "duration": 2.544,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "97cf229ac08622306f5e82cc81c41459b6ddb10285e443102fb11d7c93d567dc",
+          "bytes": 19584,
+          "duration": 2.448,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "0f54d950c567deb82a1f129702fcffa2d1e8f7dc57289d3a32eba2c7bbe2ac7a",
+          "bytes": 10368,
+          "duration": 1.296,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-4018909276": {
+      "ne": "उहाँलाई अहिले बोल्न मन छैन।",
+      "roman": "uhā̃lāī ahile bolna man chaina",
+      "ja": "彼女は今話す気分ではありません",
+      "en": "She does not feel like talking now.",
+      "spoken": {
+        "ne": "उहाँलाई अहिले बोल्न मन छैन।",
+        "ja": "彼女は今話す気分ではありません",
+        "en": "She does not feel like talking now."
+      },
+      "files": {
+        "ne": {
+          "sha256": "b653a08227556a92adf1332912690368e913cd32ecd632a181ddd99f64c6db9f",
+          "bytes": 16272,
+          "duration": 2.712,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "ff1d93b3dd735ad5470a25227d68fa469a5f9a8c3cf0c3d67b898ae1ee38a69c",
+          "bytes": 26112,
+          "duration": 3.264,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "eeede5716e50e17aaed87e23049fb954ee6571c3cf62dfdec24ef569f1ee30d2",
+          "bytes": 18432,
+          "duration": 2.304,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3865564623": {
+      "ne": "उहाँ राम्री केटी हुनुहुन्छ।",
+      "roman": "uhā̃ rāmrī keṭī hunuhuncha",
+      "ja": "彼女はかわいい女の子です",
+      "en": "She is a pretty girl.",
+      "spoken": {
+        "ne": "उहाँ राम्री केटी हुनुहुन्छ।",
+        "ja": "彼女はかわいい女の子です",
+        "en": "She is a pretty girl."
+      },
+      "files": {
+        "ne": {
+          "sha256": "4012786611c0f097215e20509681143d4a13c1fa1f3fdd3296648de1dd619b11",
+          "bytes": 15696,
+          "duration": 2.616,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "5e74a8983e4b288d8b48f9606d4b70e4365bf1daec58352ee0188300e63d0558",
+          "bytes": 20544,
+          "duration": 2.568,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "7f3b8f828227d42ebbbadaeeb570e683a1e0e3d025de69afc3b412d4d77f6abe",
+          "bytes": 14208,
+          "duration": 1.776,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-4039811342": {
+      "ne": "उहाँ सधैं यहाँ बस्नुहुन्छ।",
+      "roman": "uhā̃ sadhaĩ yahā̃ basnuhuncha",
+      "ja": "彼女はいつもここに座ります",
+      "en": "She always sits here.",
+      "spoken": {
+        "ne": "उहाँ सधैं यहाँ बस्नुहुन्छ।",
+        "ja": "彼女はいつもここに座ります",
+        "en": "She always sits here."
+      },
+      "files": {
+        "ne": {
+          "sha256": "31e083a40ff5ae0eb3010586a88b53d5436545751d5a010e666d4e6518770af5",
+          "bytes": 15984,
+          "duration": 2.664,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "bbe41c2ea5c7f592fe596b7dfa95145f907773c4bf31d30f2f6b6b980b725fcf",
+          "bytes": 22080,
+          "duration": 2.76,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "de59f81a6cbd5eb4c4fab68888783fef313a66a02573dce6339d6ef5d4adf98d",
+          "bytes": 13248,
+          "duration": 1.656,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-4172286420": {
+      "ne": "उहाँहरू धेरै बोल्नुहुन्न।",
+      "roman": "uhā̃harū dherai bolnuhunna",
+      "ja": "彼らはあまり話しません",
+      "en": "They do not talk much.",
+      "spoken": {
+        "ne": "उहाँहरू धेरै बोल्नुहुन्न।",
+        "ja": "彼らはあまり話しません",
+        "en": "They do not talk much."
+      },
+      "files": {
+        "ne": {
+          "sha256": "7945eb6d830219cbced584f135ce5064e92712967ff1d700de7ff2fdc806d9e4",
+          "bytes": 15408,
+          "duration": 2.568,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "3fc3a314cca6143c9c65f2ab5bde4b0f50065e3deefbf450c928bbf84f90e24c",
+          "bytes": 19392,
+          "duration": 2.424,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "d38ad11fe61948fce864631d09814d4305a3778d02d2603ad986c02194c842cc",
+          "bytes": 14976,
+          "duration": 1.872,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1707274773": {
+      "ne": "उहाँ मभन्दा छिटो हिँड्नुहुन्छ।",
+      "roman": "uhā̃ mabhandā chiṭo hiṇḍnuhuncha",
+      "ja": "彼女は私より速く歩きます",
+      "en": "She walks faster than me.",
+      "spoken": {
+        "ne": "उहाँ मभन्दा छिटो हिँड्नुहुन्छ।",
+        "ja": "彼女は私より速く歩きます",
+        "en": "She walks faster than me."
+      },
+      "files": {
+        "ne": {
+          "sha256": "6ecbe5ef443986a78368e2221159d5ef656de876438e1d97bf4b0195598dc6e3",
+          "bytes": 16704,
+          "duration": 2.784,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "832bb1f29afe4f813fbfc49208935afe6efcc7212985b25f8a981a339b6a6be8",
+          "bytes": 24000,
+          "duration": 3.0,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "97983eba2c2abed4e67d9970d80f3011f1b968d2753194e3b1ba82bb378fd9dc",
+          "bytes": 15936,
+          "duration": 1.992,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2244038724": {
+      "ne": "उहाँहरू हामीभन्दा छिटो हिँड्नुहुन्छ।",
+      "roman": "uhā̃harū hāmībhandā chiṭo hiṇḍnuhuncha",
+      "ja": "彼らは私たちより速く歩きます",
+      "en": "They walk faster than we do.",
+      "spoken": {
+        "ne": "उहाँहरू हामीभन्दा छिटो हिँड्नुहुन्छ।",
+        "ja": "彼らは私たちより速く歩きます",
+        "en": "They walk faster than we do."
+      },
+      "files": {
+        "ne": {
+          "sha256": "95c8414cd29e44c885739751bc196d7428aa528a6bb8541c561ba0071ffafd3d",
+          "bytes": 19008,
+          "duration": 3.168,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "09d7d423bc1891676ab64265b6ba0ec08aba2ff25e588c84b55d71b8c16c287d",
+          "bytes": 25920,
+          "duration": 3.24,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "5368c465c4c581dc4e1b3e2c99b19b2261dd029d05033da6fe05398e65057705",
+          "bytes": 16896,
+          "duration": 2.112,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1475309305": {
+      "ne": "उहाँ गीत गाउँदै काम गर्नुहुन्छ।",
+      "roman": "uhā̃ gīt gāũdai kām garnuhuncha",
+      "ja": "彼女は歌を歌いながら働きます",
+      "en": "She works while singing.",
+      "spoken": {
+        "ne": "उहाँ गीत गाउँदै काम गर्नुहुन्छ।",
+        "ja": "彼女は歌を歌いながら働きます",
+        "en": "She works while singing."
+      },
+      "files": {
+        "ne": {
+          "sha256": "6216182d7ef3c133ddd5c1a7ce27d896d867edb1eba8b56e95cd7330b5e391c9",
+          "bytes": 17568,
+          "duration": 2.928,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "bed6e24bf097985670447d129c8c83d4a8141ce8db107aa6e698f1969bfc157b",
+          "bytes": 24768,
+          "duration": 3.096,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "f25054e2533f4c3b600a67654818fde95495d2d164d7a322acac00a185177280",
+          "bytes": 14016,
+          "duration": 1.752,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2592567768": {
+      "ne": "चिया पिएपछि, उहाँ जानुहुन्छ।",
+      "roman": "ciyā piepachi, uhā̃ jānuhuncha",
+      "ja": "お茶を飲んでから、彼女は行きます",
+      "en": "She leaves after drinking tea.",
+      "spoken": {
+        "ne": "चिया पिएपछि, उहाँ जानुहुन्छ।",
+        "ja": "お茶を飲んでから、彼女は行きます",
+        "en": "She leaves after drinking tea."
+      },
+      "files": {
+        "ne": {
+          "sha256": "37c08dc3682f1e924a7ad7d0a31ac6b76b43321d547715b2f57e21127c3f7765",
+          "bytes": 17712,
+          "duration": 2.952,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "f4c2451750b69fd373885fbc72c9181c6ba71b7192b3cad3e31d5b19a4958849",
+          "bytes": 22464,
+          "duration": 2.808,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "fc0b6c6eaa55689e98af96e1e3c1c1f5707aee5f9aa30247989cbc6aae56411c",
+          "bytes": 18048,
+          "duration": 2.256,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-247435421": {
+      "ne": "उहाँ साथीलाई भेट्नको लागि आउनुहुन्छ।",
+      "roman": "uhā̃ sāthīlāī bheṭnako lāgi āunuhuncha",
+      "ja": "彼女は友達に会うために来ます",
+      "en": "She comes to meet a friend.",
+      "spoken": {
+        "ne": "उहाँ साथीलाई भेट्नको लागि आउनुहुन्छ।",
+        "ja": "彼女は友達に会うために来ます",
+        "en": "She comes to meet a friend."
+      },
+      "files": {
+        "ne": {
+          "sha256": "9a7c982932371a23aa6f08e6752121349a91de9310cbd05b5d4ce22cfbf57626",
+          "bytes": 19584,
+          "duration": 3.264,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "1abdcc6081f06badc756c5d1c7f774ac6874da6aecfba8cbe48fd80b680b8285",
+          "bytes": 23424,
+          "duration": 2.928,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "4d1340aadf4ccc0356f29379f8cd4349881d7a453d1ecd5ceb0ef4c8b90af055",
+          "bytes": 14976,
+          "duration": 1.872,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1902430370": {
+      "ne": "उहाँहरू किताब किन्नको लागि बजार जानुहुन्छ।",
+      "roman": "uhā̃harū kitāb kinnako lāgi bajār jānuhuncha",
+      "ja": "彼らは本を買うために市場へ行きます",
+      "en": "They go to the market to buy books.",
+      "spoken": {
+        "ne": "उहाँहरू किताब किन्नको लागि बजार जानुहुन्छ।",
+        "ja": "彼らは本を買うために市場へ行きます",
+        "en": "They go to the market to buy books."
+      },
+      "files": {
+        "ne": {
+          "sha256": "46ecf0a0c3fb096511a4b81c4dda39f1f58ec0b9bc747fea32b12a9a9001f14d",
+          "bytes": 22464,
+          "duration": 3.744,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "3867b9d99a11cf2622e6d28e849b9a235029705c5f0e691b56d0a62ac585e085",
+          "bytes": 29376,
+          "duration": 3.672,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "0ef193f5881c5eef9055dc69e8233843f3ffea58c05dd61b970acf3a7b972563",
+          "bytes": 19200,
+          "duration": 2.4,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-157869680": {
+      "ne": "उहाँ काम गर्नुहुने अफिस टाढा छ।",
+      "roman": "uhā̃ kām garnuhune aphis ṭāḍhā cha",
+      "ja": "彼女が働く会社は遠いです",
+      "en": "The office where she works is far away.",
+      "spoken": {
+        "ne": "उहाँ काम गर्नुहुने अफिस टाढा छ।",
+        "ja": "彼女が働く会社は遠いです",
+        "en": "The office where she works is far away."
+      },
+      "files": {
+        "ne": {
+          "sha256": "97f9edb0d53bece6c38d2f5e32b7b41184f082bf000c6e4034004a8ba9233d80",
+          "bytes": 18144,
+          "duration": 3.024,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "d4bbc32927f46c5ecf5efda4af0f86b754949647c7a52b6962ff4e9ccf57141a",
+          "bytes": 23616,
+          "duration": 2.952,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "fa3f07fd226ac16c0975698eac67dedcdfaff3e44a1f15f140804f23ae6e0233",
+          "bytes": 21120,
+          "duration": 2.64,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1467176614": {
+      "ne": "जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ।",
+      "roman": "jo yahā̃ basnuhuncha, uhā̃ mero sāthī hunuhuncha",
+      "ja": "ここに住んでいる人は私の友達です",
+      "en": "The person who lives here is my friend.",
+      "spoken": {
+        "ne": "जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ।",
+        "ja": "ここに住んでいる人は私の友達です",
+        "en": "The person who lives here is my friend."
+      },
+      "files": {
+        "ne": {
+          "sha256": "aff577eafdd8aebb55d1bc1e79621ff16d0becfa2f8e18af511a61ade590c78e",
+          "bytes": 22608,
+          "duration": 3.768,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "e10482840441b28c8e0f4005ed2563046b46529e5dadc469f04480c442cf5299",
+          "bytes": 28032,
+          "duration": 3.504,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "a82c31dbf96f49dcf16ccd7e115e97ee6b79ebcdd61834afe00a538b34fe3d58",
+          "bytes": 19968,
+          "duration": 2.496,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-4155900848": {
+      "ne": "म जहिले आउँछु, उहाँ यहाँ हुनुहुन्छ।",
+      "roman": "ma jahile āũchu, uhā̃ yahā̃ hunuhuncha",
+      "ja": "私が来るときはいつも、彼女はここにいます",
+      "en": "Whenever I come, she is here.",
+      "spoken": {
+        "ne": "म जहिले आउँछु, उहाँ यहाँ हुनुहुन्छ।",
+        "ja": "私が来るときはいつも、彼女はここにいます",
+        "en": "Whenever I come, she is here."
+      },
+      "files": {
+        "ne": {
+          "sha256": "e39fcf411b8181be967c89132d97d22aac1067a86beb3d61b34b3c0e988ce2cf",
+          "bytes": 19440,
+          "duration": 3.24,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "e658e90f0b04084bb287215c94524dc95ba0d51ccfa3d8d76636fc923d95d8e4",
+          "bytes": 33216,
+          "duration": 4.152,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "68d9da36cc99ca411c51038d7dcb078e5a933fa824f2a28e93815bf9fee4beb0",
+          "bytes": 19392,
+          "duration": 2.424,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-530253996": {
+      "ne": "जसले मेहनत गर्नुहुन्छ, उहाँले सिक्नुहुन्छ।",
+      "roman": "jasle mehanat garnuhuncha, uhā̃le siknuhuncha",
+      "ja": "努力する人は学びます",
+      "en": "The person who makes an effort learns.",
+      "spoken": {
+        "ne": "जसले मेहनत गर्नुहुन्छ, उहाँले सिक्नुहुन्छ।",
+        "ja": "努力する人は学びます",
+        "en": "The person who makes an effort learns."
+      },
+      "files": {
+        "ne": {
+          "sha256": "703301a4e74c89f3b5270ca843f102859383e051d04e7198621cd63ae0dddded",
+          "bytes": 21744,
+          "duration": 3.624,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "c82a134b147d9f05257a3d2a6565997a139b1c26984fce90a3ce610058c28b9c",
+          "bytes": 19008,
+          "duration": 2.376,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "cf4c42d5cbde51c7ad0a289daf16c63dbd38cb19f1194cbe513176da849d282a",
+          "bytes": 20160,
+          "duration": 2.52,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3054261316": {
+      "ne": "जसलाई पानी चाहिन्छ, उहाँलाई दिनुहोस्।",
+      "roman": "jaslāī pānī cāhincha, uhā̃lāī dinuhos",
+      "ja": "水が必要な人にあげてください",
+      "en": "Give water to the person who needs it.",
+      "spoken": {
+        "ne": "जसलाई पानी चाहिन्छ, उहाँलाई दिनुहोस्।",
+        "ja": "水が必要な人にあげてください",
+        "en": "Give water to the person who needs it."
+      },
+      "files": {
+        "ne": {
+          "sha256": "db8fbd4b286957a880cb11710ec860fa9dd3d65f2594869730599e1cbd89de2b",
+          "bytes": 19584,
+          "duration": 3.264,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "2905922ac9671b7dee36bb5e0065882d303c56c8064b66e77107e7982ec628b7",
+          "bytes": 22656,
+          "duration": 2.832,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "f682a2d48ded7b43525a6fe6d499628aba3067c5146416af9e543e946f1890f2",
+          "bytes": 19584,
+          "duration": 2.448,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-4250858982": {
+      "ne": "जता उहाँ जानुहुन्छ, म पनि त्यतै जान्छु।",
+      "roman": "jatā uhā̃ jānuhuncha, ma pani tyatai jānchu",
+      "ja": "彼女が行く方へ、私も行きます",
+      "en": "I go in the same direction as she does.",
+      "spoken": {
+        "ne": "जता उहाँ जानुहुन्छ, म पनि त्यतै जान्छु।",
+        "ja": "彼女が行く方へ、私も行きます",
+        "en": "I go in the same direction as she does."
+      },
+      "files": {
+        "ne": {
+          "sha256": "970d046032a0ef6a1094a840562877d557e4a8134393924d80dd349a54864ac6",
+          "bytes": 21168,
+          "duration": 3.528,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "d6508387c54d69276482c27ba458b176dd834364b0f08fecc5f7af64dcf94e02",
+          "bytes": 25344,
+          "duration": 3.168,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "10f4d3aee867f9e46536b93f103adc413f900c45d0a4c5d822b0e418304ac853",
+          "bytes": 21696,
+          "duration": 2.712,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3376432938": {
+      "ne": "उहाँ आउनुहुन्छ भने, म पनि आउँछु।",
+      "roman": "uhā̃ āunuhuncha bhane, ma pani āũchu",
+      "ja": "彼女が来るなら、私も来ます",
+      "en": "If she is coming, I will come too.",
+      "spoken": {
+        "ne": "उहाँ आउनुहुन्छ भने, म पनि आउँछु।",
+        "ja": "彼女が来るなら、私も来ます",
+        "en": "If she is coming, I will come too."
+      },
+      "files": {
+        "ne": {
+          "sha256": "467d4a9578a4311727eac6bcac498aa76abb98d94238880f839b724bba545ada",
+          "bytes": 18720,
+          "duration": 3.12,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "e5121ecb27eab8c53517a4d95a43e5e1d62988bc7b8af9c0d7026d5c0f0c2f84",
+          "bytes": 24768,
+          "duration": 3.096,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "813993dad8892ce5a13460eba9a990d4b93e16a8a2bfbec109aba955c0a7253d",
+          "bytes": 21504,
+          "duration": 2.688,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3745710009": {
+      "ne": "उहाँ आज आउनुहुन्न जस्तो लाग्छ।",
+      "roman": "uhā̃ āja āunuhunna jasto lāgcha",
+      "ja": "彼女は今日来ないと思います",
+      "en": "I think she will not come today.",
+      "spoken": {
+        "ne": "उहाँ आज आउनुहुन्न जस्तो लाग्छ।",
+        "ja": "彼女は今日来ないと思います",
+        "en": "I think she will not come today."
+      },
+      "files": {
+        "ne": {
+          "sha256": "d5316cd6d4c02747e3af96645e06244f0cbf499dd29998baa489487abd808123",
+          "bytes": 17280,
+          "duration": 2.88,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "3067f3aee6c39d30d8634369da911979279a22d1afcec591a78dab03dfb697ad",
+          "bytes": 21504,
+          "duration": 2.688,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "59c611e574b203997b331f6de01b617f34ac59eb6b6a440c88eeed90d2aec4a1",
+          "bytes": 17280,
+          "duration": 2.16,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1042751525": {
+      "ne": "उहाँ घर जानुभएको हुनु पर्छ।",
+      "roman": "uhā̃ ghar jānubhaeko hunu parcha",
+      "ja": "彼女は家に帰ったに違いありません",
+      "en": "She must have gone home.",
+      "spoken": {
+        "ne": "उहाँ घर जानुभएको हुनु पर्छ।",
+        "ja": "彼女は家に帰ったに違いありません",
+        "en": "She must have gone home."
+      },
+      "files": {
+        "ne": {
+          "sha256": "4a054970c1203a0efbf5feb6a347ded481811508eea5046c657dcd708764b790",
+          "bytes": 17136,
+          "duration": 2.856,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "bac0c5f3c7160c69f58c3c1c5ec18c86b573bebad99adc55b324cb4031aef692",
+          "bytes": 25152,
+          "duration": 3.144,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "9d4c04a8bc1f1fba758156ac2fb3d9a78aa3cf99f1de7e82afa553a66c9e7041",
+          "bytes": 14592,
+          "duration": 1.824,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1462549315": {
+      "ne": "उहाँले मलाई चिठी लेख्न लगाउनुभयो।",
+      "roman": "uhā̃le malāī ciṭhī lekhna lagāunubhayo",
+      "ja": "彼女は私に手紙を書かせました",
+      "en": "She made me write a letter.",
+      "spoken": {
+        "ne": "उहाँले मलाई चिठी लेख्न लगाउनुभयो।",
+        "ja": "彼女は私に手紙を書かせました",
+        "en": "She made me write a letter."
+      },
+      "files": {
+        "ne": {
+          "sha256": "0ee890c58199c38a48c1743c032c1df57de1a5fc84f7206648837085c4397fdd",
+          "bytes": 19152,
+          "duration": 3.192,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "2b4138d4b5a4a4054f686d357e6f7147744763a9a9b07ec164c6d9fccde30be7",
+          "bytes": 25152,
+          "duration": 3.144,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "c267d34f0a7d52e90a8161c0d1d5c39ab35d9f50a4687144e1e9989403200c94",
+          "bytes": 14208,
+          "duration": 1.776,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2831564734": {
+      "ne": "हामीले उहाँहरूलाई कोठा देखायौं।",
+      "roman": "hāmīle uhā̃harūlāī koṭhā dekhāyaũ",
+      "ja": "私たちは彼らに部屋を見せました",
+      "en": "We showed them the room.",
+      "spoken": {
+        "ne": "हामीले उहाँहरूलाई कोठा देखायौं।",
+        "ja": "私たちは彼らに部屋を見せました",
+        "en": "We showed them the room."
+      },
+      "files": {
+        "ne": {
+          "sha256": "959d328edb8ead9eb651722fa04f5c417ba5a26b9a194c61f5a64450b46f3100",
+          "bytes": 17424,
+          "duration": 2.904,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "2589d8a4b81b9e4935ce3a6a8b1129d5a6cc463113991de4afb64c1937fa318a",
+          "bytes": 25152,
+          "duration": 3.144,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "6e3729bea41e4d1a5661f12866365c12017f628f26394863ca901bdb76402337",
+          "bytes": 13248,
+          "duration": 1.656,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1803635009": {
+      "ne": "उहाँहरूले मलाई बाहिर जान लगाउनुभयो।",
+      "roman": "uhā̃harūle malāī bāhira jāna lagāunubhayo",
+      "ja": "彼らは私を外に行かせました",
+      "en": "They made me go outside.",
+      "spoken": {
+        "ne": "उहाँहरूले मलाई बाहिर जान लगाउनुभयो।",
+        "ja": "彼らは私を外に行かせました",
+        "en": "They made me go outside."
+      },
+      "files": {
+        "ne": {
+          "sha256": "e7c0c1d50f727535243b2f447ec00b6d332bef106b97391c3c0bab9fda130b71",
+          "bytes": 20016,
+          "duration": 3.336,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "71510e5c9574cf132a95a6e29d68c7e84845553e293cd0184de807a4aaa758aa",
+          "bytes": 23616,
+          "duration": 2.952,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "9538d45e2589383f1cabf84d3b155dc9ff3a296931bf35b9df4b36ad2a7a41af",
+          "bytes": 15552,
+          "duration": 1.944,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-956735114": {
+      "ne": "उहाँले जाँदिनँ भन्नुभयो।",
+      "roman": "uhā̃le jā̃dinã bhannubhayo",
+      "ja": "彼女は「行かない」と言いました",
+      "en": "She said she would not go.",
+      "spoken": {
+        "ne": "उहाँले जाँदिनँ भन्नुभयो।",
+        "ja": "彼女は「行かない」と言いました",
+        "en": "She said she would not go."
+      },
+      "files": {
+        "ne": {
+          "sha256": "b424c79af2e13efb3c6d18c544ed1a3c99b4efdcbfa46301e3d9bcfcae21cb32",
+          "bytes": 15120,
+          "duration": 2.52,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "202ecff3a4b9394038eca6bb7ceebc63f3c5789c27e48156c24e309720468f53",
+          "bytes": 23424,
+          "duration": 2.928,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "366e4f6885f431de9f103d252f7401200f794458c13877a5653c0e6a204d9020",
+          "bytes": 16128,
+          "duration": 2.016,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2759753941": {
+      "ne": "उहाँहरूले भोलि आउँछौं भन्नुभयो।",
+      "roman": "uhā̃harūle bholi āũchaũ bhannubhayo",
+      "ja": "彼らは「明日来る」と言いました",
+      "en": "They said they would come tomorrow.",
+      "spoken": {
+        "ne": "उहाँहरूले भोलि आउँछौं भन्नुभयो।",
+        "ja": "彼らは「明日来る」と言いました",
+        "en": "They said they would come tomorrow."
+      },
+      "files": {
+        "ne": {
+          "sha256": "1c10468fb1fcc872e578a061f90be36e24125abadbc501fa4ed53be8517bd9a7",
+          "bytes": 17856,
+          "duration": 2.976,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "48caa2eea99911d559a41273209c6e3844729bf5782efa5d4026ff6308d4fa12",
+          "bytes": 24960,
+          "duration": 3.12,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "7f96099f610ca43f574d024737222b173f236dcc37286acecf94b8d82a08f09e",
+          "bytes": 16896,
+          "duration": 2.112,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-805976265": {
+      "ne": "उहाँले पैसा छैन भन्नुभयो।",
+      "roman": "uhā̃le paisā chaina bhannubhayo",
+      "ja": "彼女は「お金がない」と言いました",
+      "en": "She said she had no money.",
+      "spoken": {
+        "ne": "उहाँले पैसा छैन भन्नुभयो।",
+        "ja": "彼女は「お金がない」と言いました",
+        "en": "She said she had no money."
+      },
+      "files": {
+        "ne": {
+          "sha256": "e85a6ae8008161727b0e94743244fff45c819f4cf53abc6839988858f153d9cf",
+          "bytes": 16704,
+          "duration": 2.784,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "63ccd415b6067562b050729c53f6e240337f14f439a6daa0f73709aed7278af4",
+          "bytes": 28224,
+          "duration": 3.528,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "857a496b1ae7af78705c79bdcfabf7f8cbebc2c5a8eeef91aaf421283459c0ab",
+          "bytes": 16512,
+          "duration": 2.064,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3325261019": {
+      "ne": "उहाँ चिठी लेख्नुहुन्छ।",
+      "roman": "uhā̃ ciṭhī lekhnuhuncha",
+      "ja": "彼は手紙を書きます",
+      "en": "He writes letters.",
+      "spoken": {
+        "ne": "उहाँ चिठी लेख्नुहुन्छ।",
+        "ja": "彼は手紙を書きます",
+        "en": "He writes letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "1111a87600f9dca25199f505ccdfbd48b293a8836c6842fab9e7862c355f6922",
+          "bytes": 14400,
+          "duration": 2.4,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "ffddb8d645b80002ba2bc35079b9119752b2438a1c6cb1a5bf27ddff881ed9d3",
+          "bytes": 17664,
+          "duration": 2.208,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "581cb4e0b72a05fdc52e408da58a43f61a38735a3ca7a3f88d729e649ab17a87",
+          "bytes": 11520,
+          "duration": 1.44,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-858800940": {
+      "ne": "उहाँ चिठी लेख्नुहुन्छ।",
+      "roman": "uhā̃ ciṭhī lekhnuhuncha",
+      "ja": "彼女は手紙を書きます",
+      "en": "She writes letters.",
+      "spoken": {
+        "ne": "उहाँ चिठी लेख्नुहुन्छ।",
+        "ja": "彼女は手紙を書きます",
+        "en": "She writes letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "1111a87600f9dca25199f505ccdfbd48b293a8836c6842fab9e7862c355f6922",
+          "bytes": 14400,
+          "duration": 2.4,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "3e89ac2cd0ccc8ab50ba83b21c6105e9839551f3ef278ebd19be2a1e0dc7b2f2",
+          "bytes": 18240,
+          "duration": 2.28,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "8d247a3586ad5741a4bd96ae2b73107ac3f30e547c81930f7095c00bcb0e0e3a",
+          "bytes": 12096,
+          "duration": 1.512,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-910593029": {
+      "ne": "उहाँहरू चिठी लेख्नुहुन्छ।",
+      "roman": "uhā̃harū ciṭhī lekhnuhuncha",
+      "ja": "彼らは手紙を書きます",
+      "en": "They write letters.",
+      "spoken": {
+        "ne": "उहाँहरू चिठी लेख्नुहुन्छ।",
+        "ja": "彼らは手紙を書きます",
+        "en": "They write letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "570806b3b8cc268d1d98cd5fe17897c99bdccac95093b6d82244633a7377e610",
+          "bytes": 15696,
+          "duration": 2.616,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "c78cc1ea6b0f1fc3855565f7d958f61264ebc3cdf3ac93aaae3f657e87437d6c",
+          "bytes": 18048,
+          "duration": 2.256,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "4df6f357e8f4dd71f555379df756c964a551a7bb04613d17c7379c64bb4f2e69",
+          "bytes": 10944,
+          "duration": 1.368,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3803018035": {
+      "ne": "उहाँ चिठी लेख्नुहुन्न।",
+      "roman": "uhā̃ ciṭhī lekhnuhunna",
+      "ja": "彼は手紙を書きません",
+      "en": "He does not write letters.",
+      "spoken": {
+        "ne": "उहाँ चिठी लेख्नुहुन्न।",
+        "ja": "彼は手紙を書きません",
+        "en": "He does not write letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "ffe4f565639202b58692b26776377e7006cc98f0638b93ebbcadc1bab1df5c80",
+          "bytes": 14112,
+          "duration": 2.352,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "724611552af947317f8d5238b0d16dd4b177fb80da49851503e8db2fc0e8e104",
+          "bytes": 18240,
+          "duration": 2.28,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "085c6780a7a0c26ad9b6f860f5966ecb0cafbaeb747ca1f1ffd9a1fe915c0908",
+          "bytes": 15360,
+          "duration": 1.92,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1019946439": {
+      "ne": "उहाँ चिठी लेख्नुहुन्न।",
+      "roman": "uhā̃ ciṭhī lekhnuhunna",
+      "ja": "彼女は手紙を書きません",
+      "en": "She does not write letters.",
+      "spoken": {
+        "ne": "उहाँ चिठी लेख्नुहुन्न।",
+        "ja": "彼女は手紙を書きません",
+        "en": "She does not write letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "ffe4f565639202b58692b26776377e7006cc98f0638b93ebbcadc1bab1df5c80",
+          "bytes": 14112,
+          "duration": 2.352,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "116ef0ab90117b6289c7e0802330fbabd23842d10efa4ba7fde022c2cd7e48c7",
+          "bytes": 19200,
+          "duration": 2.4,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "3471c26322d4989b5d25c3cc83fe6df76c3a2e9e81071048ba0751a1197b0981",
+          "bytes": 15744,
+          "duration": 1.968,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1640902066": {
+      "ne": "उहाँहरू चिठी लेख्नुहुन्न।",
+      "roman": "uhā̃harū ciṭhī lekhnuhunna",
+      "ja": "彼らは手紙を書きません",
+      "en": "They do not write letters.",
+      "spoken": {
+        "ne": "उहाँहरू चिठी लेख्नुहुन्न।",
+        "ja": "彼らは手紙を書きません",
+        "en": "They do not write letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "7a2ab082d121072abd4a43a9a5534ab84d4272a5c8d51f49d7fbc3d7f1a2180b",
+          "bytes": 15552,
+          "duration": 2.592,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "66c2ac2e0dd2239f011b777a86ed5258620044d4e35b79b172aec22fbdda1f40",
+          "bytes": 19200,
+          "duration": 2.4,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "232bb941fa007176520ef477560771ae4fef4a0677253ea6ab939fbbd86233f2",
+          "bytes": 15168,
+          "duration": 1.896,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1995951243": {
+      "ne": "उहाँले हिजो चिठी लेख्नुभयो।",
+      "roman": "uhā̃le hijo ciṭhī lekhnubhayo",
+      "ja": "彼は昨日手紙を書きました",
+      "en": "He wrote a letter yesterday.",
+      "spoken": {
+        "ne": "उहाँले हिजो चिठी लेख्नुभयो।",
+        "ja": "彼は昨日手紙を書きました",
+        "en": "He wrote a letter yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "871b249af7562110f5951d618d48d902d140982c0e9af9f60edcacfb287448e8",
+          "bytes": 16704,
+          "duration": 2.784,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "4879497a89c2abbaf7d2023aef98f4c820be05b151d0b21850b012b6e620e68f",
+          "bytes": 21696,
+          "duration": 2.712,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "397fb6bb89bf8e46b28ee0631de7bf3b591bcdff94680aaf4eb27d2988de4c33",
+          "bytes": 15744,
+          "duration": 1.968,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1950678418": {
+      "ne": "उहाँले हिजो चिठी लेख्नुभयो।",
+      "roman": "uhā̃le hijo ciṭhī lekhnubhayo",
+      "ja": "彼女は昨日手紙を書きました",
+      "en": "She wrote a letter yesterday.",
+      "spoken": {
+        "ne": "उहाँले हिजो चिठी लेख्नुभयो।",
+        "ja": "彼女は昨日手紙を書きました",
+        "en": "She wrote a letter yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "871b249af7562110f5951d618d48d902d140982c0e9af9f60edcacfb287448e8",
+          "bytes": 16704,
+          "duration": 2.784,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "b5e2049d2cec2e1bff4b630c9a7e5cdf3b5d8b73a89c7c3cf2b5e15993169e76",
+          "bytes": 22656,
+          "duration": 2.832,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "1f3abceb73deff7522eb907483a14023ca9a0b175ff940b77ba8d9068a88c836",
+          "bytes": 16128,
+          "duration": 2.016,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-4207461997": {
+      "ne": "उहाँहरूले हिजो चिठी लेख्नुभयो।",
+      "roman": "uhā̃harūle hijo ciṭhī lekhnubhayo",
+      "ja": "彼らは昨日手紙を書きました",
+      "en": "They wrote a letter yesterday.",
+      "spoken": {
+        "ne": "उहाँहरूले हिजो चिठी लेख्नुभयो।",
+        "ja": "彼らは昨日手紙を書きました",
+        "en": "They wrote a letter yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "da6745460e57ba4176e74c2524d3642eb1d248c65c22f8ba22110896e07b6e4c",
+          "bytes": 18288,
+          "duration": 3.048,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "102bea25e8d68acc5f707f697b2d506ec87e6d289e9a4789ceead4503022badf",
+          "bytes": 23040,
+          "duration": 2.88,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "9264089aede92e7c725bf1f98fb8573fc94411b3becadbc20cd87ed681a75425",
+          "bytes": 15936,
+          "duration": 1.992,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-735757885": {
+      "ne": "उहाँले हिजो चिठी लेख्नुभएन।",
+      "roman": "uhā̃le hijo ciṭhī lekhnubhaena",
+      "ja": "彼は昨日手紙を書きませんでした",
+      "en": "He did not write a letter yesterday.",
+      "spoken": {
+        "ne": "उहाँले हिजो चिठी लेख्नुभएन।",
+        "ja": "彼は昨日手紙を書きませんでした",
+        "en": "He did not write a letter yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "18a6921c3680792d70b65c8fab9fed41d52938ca0cf55f4d9def492f7a80449f",
+          "bytes": 17136,
+          "duration": 2.856,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "ada46f5019e6bb3225fc43a675fd9a86b9d0ca10f47eb55c8afa952ddfb04b0f",
+          "bytes": 24576,
+          "duration": 3.072,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "36cf29a860f767cf773446a4867085b81afbddfd66d9914e2cf737fbd7258f20",
+          "bytes": 18048,
+          "duration": 2.256,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-4054693088": {
+      "ne": "उहाँले हिजो चिठी लेख्नुभएन।",
+      "roman": "uhā̃le hijo ciṭhī lekhnubhaena",
+      "ja": "彼女は昨日手紙を書きませんでした",
+      "en": "She did not write a letter yesterday.",
+      "spoken": {
+        "ne": "उहाँले हिजो चिठी लेख्नुभएन।",
+        "ja": "彼女は昨日手紙を書きませんでした",
+        "en": "She did not write a letter yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "18a6921c3680792d70b65c8fab9fed41d52938ca0cf55f4d9def492f7a80449f",
+          "bytes": 17136,
+          "duration": 2.856,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "014170eda8ee611d0bbbb0e76e2b09a7f95cc47258df4b21487087503c9da939",
+          "bytes": 25728,
+          "duration": 3.216,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "dc6cafa77166a6c4be479f60c835b86875018aed37f208a4eaba7e706dead219",
+          "bytes": 18624,
+          "duration": 2.328,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2691102374": {
+      "ne": "उहाँहरूले हिजो चिठी लेख्नुभएन।",
+      "roman": "uhā̃harūle hijo ciṭhī lekhnubhaena",
+      "ja": "彼らは昨日手紙を書きませんでした",
+      "en": "They did not write a letter yesterday.",
+      "spoken": {
+        "ne": "उहाँहरूले हिजो चिठी लेख्नुभएन।",
+        "ja": "彼らは昨日手紙を書きませんでした",
+        "en": "They did not write a letter yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "c2c8d44159ccc5e4e89a34f0452dee1c89aa64d01f9c37336d6fdb5eb91fd5a6",
+          "bytes": 18576,
+          "duration": 3.096,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "b59f1573883f8e964b87b615ae10f087fda6b1c75fba1d07e481558088c6d85c",
+          "bytes": 25920,
+          "duration": 3.24,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "6b03aa37cf215dd8000338b0cc801634bd3cab40573390c5cd664423da65ca92",
+          "bytes": 18048,
+          "duration": 2.256,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1316536233": {
+      "ne": "उहाँले चिठी लेख्नुभएको छ।",
+      "roman": "uhā̃le ciṭhī lekhnubhaeko cha",
+      "ja": "彼は手紙を書き終えています",
+      "en": "He has done the write letters.",
+      "spoken": {
+        "ne": "उहाँले चिठी लेख्नुभएको छ।",
+        "ja": "彼は手紙を書き終えています",
+        "en": "He has done the write letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "507d8d1e4fd7f0eef550298753bb93448b9cea919826b8f3fe6995d9b1ef427a",
+          "bytes": 16704,
+          "duration": 2.784,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "1fc733f0a2b52ad85c127dd783e138275d8a673e7ffc75e1c933fa4fe0d25613",
+          "bytes": 21312,
+          "duration": 2.664,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "2db341856ae9cdc04c968090da2fb4a49b7bc5ee290075074169f946a3216210",
+          "bytes": 16320,
+          "duration": 2.04,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1034107473": {
+      "ne": "उहाँले चिठी लेख्नुभएको छिन्।",
+      "roman": "uhā̃le ciṭhī lekhnubhaeko chin",
+      "ja": "彼女は手紙を書き終えています",
+      "en": "She has done the write letters.",
+      "spoken": {
+        "ne": "उहाँले चिठी लेख्नुभएको छिन्।",
+        "ja": "彼女は手紙を書き終えています",
+        "en": "She has done the write letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "ba11f423e1d51f0049138c329da6d3a13963e54f02f04ae9d85fdeaa7c290dc3",
+          "bytes": 17136,
+          "duration": 2.856,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "3cea3b085aaeb0a53141ecf2fc7c7de93896d0e54a68f72b961e2550ef639438",
+          "bytes": 22272,
+          "duration": 2.784,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "be8564b444d8cd21f68c06a8b9ffd4507549cfb4c0a9b7c551c25c82cd4adba8",
+          "bytes": 16704,
+          "duration": 2.088,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3771336986": {
+      "ne": "उहाँहरूले चिठी लेख्नुभएको छन्।",
+      "roman": "uhā̃harūle ciṭhī lekhnubhaeko chan",
+      "ja": "彼らは手紙を書き終えています",
+      "en": "They have done the write letters.",
+      "spoken": {
+        "ne": "उहाँहरूले चिठी लेख्नुभएको छन्।",
+        "ja": "彼らは手紙を書き終えています",
+        "en": "They have done the write letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "5edb4e25c36249f27d65b1fb30047ff35b9dd14df78e1d35a7afc54bf5f2c837",
+          "bytes": 18288,
+          "duration": 3.048,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "d288204b7b462e6431072f41b3ea69e5e008e621ed291e53b9cbdaacd3805db1",
+          "bytes": 22080,
+          "duration": 2.76,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "ae60ef2b3d09cbd0fd0ced99fe2708c868f6d952c784bd993609bc55b989a9b0",
+          "bytes": 15936,
+          "duration": 1.992,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3941405288": {
+      "ne": "उहाँ पहिले चिठी लेख्नुहुन्थ्यो।",
+      "roman": "uhā̃ pahile ciṭhī lekhnuhunthyo",
+      "ja": "彼は以前手紙を書いていました",
+      "en": "He used to write letters.",
+      "spoken": {
+        "ne": "उहाँ पहिले चिठी लेख्नुहुन्थ्यो।",
+        "ja": "彼は以前手紙を書いていました",
+        "en": "He used to write letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "3503efab15f82117510c6d6f8e7ce09c367216e17f04180fecaaa3a964d3008f",
+          "bytes": 17280,
+          "duration": 2.88,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "9b50d3098931aade9d96a344a21920b73c78e9c5b21def7d4a79bf7afba89c70",
+          "bytes": 23424,
+          "duration": 2.928,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "122ed97cfdcee7cb406b562925fda9d952ab1035c5dd5c451ed05e1b8b0101a5",
+          "bytes": 14976,
+          "duration": 1.872,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-162186799": {
+      "ne": "उहाँ पहिले चिठी लेख्नुहुन्थ्यो।",
+      "roman": "uhā̃ pahile ciṭhī lekhnuhunthyo",
+      "ja": "彼女は以前手紙を書いていました",
+      "en": "She used to write letters.",
+      "spoken": {
+        "ne": "उहाँ पहिले चिठी लेख्नुहुन्थ्यो।",
+        "ja": "彼女は以前手紙を書いていました",
+        "en": "She used to write letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "3503efab15f82117510c6d6f8e7ce09c367216e17f04180fecaaa3a964d3008f",
+          "bytes": 17280,
+          "duration": 2.88,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "e91afb63f99f94a04df82e84f72377671c76374abeae187650fb1898638f63d0",
+          "bytes": 24576,
+          "duration": 3.072,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "3a49c2727e7c3dd659a4c58b3fbba04eef0617f17e9ff9cf7fe0c8e03e1c3285",
+          "bytes": 15360,
+          "duration": 1.92,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1716076979": {
+      "ne": "उहाँहरू पहिले चिठी लेख्नुहुन्थ्यो।",
+      "roman": "uhā̃harū pahile ciṭhī lekhnuhunthyo",
+      "ja": "彼らは以前手紙を書いていました",
+      "en": "They used to write letters.",
+      "spoken": {
+        "ne": "उहाँहरू पहिले चिठी लेख्नुहुन्थ्यो।",
+        "ja": "彼らは以前手紙を書いていました",
+        "en": "They used to write letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "76c50cc4636594ee773ffb4ca53e3beb462d4e2c54ff40f717de02a5009ef226",
+          "bytes": 18720,
+          "duration": 3.12,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "7e7049e5701ade7551a8f1da1d9ab6885d1a01378c0f722110118a893d0c26ba",
+          "bytes": 26880,
+          "duration": 3.36,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "cc241964bf449c4bcac5c17a25d86e87e4de7cd71d30947514cfd9be0c31381d",
+          "bytes": 14976,
+          "duration": 1.872,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3217847237": {
+      "ne": "उहाँ चिठी लेख्नुहुन्छ।",
+      "roman": "uhā̃ ciṭhī lekhnuhuncha",
+      "ja": "その方は手紙を書きます",
+      "en": "That person writes letters.",
+      "spoken": {
+        "ne": "उहाँ चिठी लेख्नुहुन्छ।",
+        "ja": "その方は手紙を書きます",
+        "en": "That person writes letters."
+      },
+      "files": {
+        "ne": {
+          "sha256": "1111a87600f9dca25199f505ccdfbd48b293a8836c6842fab9e7862c355f6922",
+          "bytes": 14400,
+          "duration": 2.4,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "64a13a47df6c9055580599b2800893d6e9cfdffbfb0da06aa2f830ca9b5d2e04",
+          "bytes": 19776,
+          "duration": 2.472,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "6e06a13b1589822a23d2157fe0cf3c675175dcfb328b784a2b068e7dd85fcb21",
+          "bytes": 14976,
+          "duration": 1.872,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1150407218": {
+      "ne": "उहाँले हिजो चिठी लेख्नुभयो।",
+      "roman": "uhā̃le hijo ciṭhī lekhnubhayo",
+      "ja": "その方は昨日手紙を書きました",
+      "en": "That person wrote a letter yesterday.",
+      "spoken": {
+        "ne": "उहाँले हिजो चिठी लेख्नुभयो।",
+        "ja": "その方は昨日手紙を書きました",
+        "en": "That person wrote a letter yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "871b249af7562110f5951d618d48d902d140982c0e9af9f60edcacfb287448e8",
+          "bytes": 16704,
+          "duration": 2.784,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "c4e40cc9d30251b7a60d95815cf2e1b4418540236d4952f43313a12ffde1e9a5",
+          "bytes": 24960,
+          "duration": 3.12,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "816bc682b1456ba1c9fac2e3fa9bdd8188ed65053091880bb3c612aa9c4f0969",
+          "bytes": 19008,
+          "duration": 2.376,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1872698625": {
+      "ne": "उहाँ भोलि चिठी लेख्नुहुन्छ।",
+      "roman": "uhā̃ bholi ciṭhī lekhnuhuncha",
+      "ja": "彼は明日手紙を書きます",
+      "en": "He will write a letter tomorrow.",
+      "spoken": {
+        "ne": "उहाँ भोलि चिठी लेख्नुहुन्छ।",
+        "ja": "彼は明日手紙を書きます",
+        "en": "He will write a letter tomorrow."
+      },
+      "files": {
+        "ne": {
+          "sha256": "247f1496604118feaef2815c031c56f04bfee4a999a9ef995c57f47472b171fe",
+          "bytes": 16128,
+          "duration": 2.688,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "dc51ec41c0cb708c96a264bcb7a24ea3597c83f62a3e19eb753adbe7f0fb4b37",
+          "bytes": 20928,
+          "duration": 2.616,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "bf500fc2a6306266661fd6b3f0f8f3edd710ccf071dde89ce8b12fff517d38cb",
+          "bytes": 16320,
+          "duration": 2.04,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2852137662": {
+      "ne": "उहाँ भोलि चिठी लेख्नुहुन्छ।",
+      "roman": "uhā̃ bholi ciṭhī lekhnuhuncha",
+      "ja": "彼女は明日手紙を書きます",
+      "en": "She will write a letter tomorrow.",
+      "spoken": {
+        "ne": "उहाँ भोलि चिठी लेख्नुहुन्छ।",
+        "ja": "彼女は明日手紙を書きます",
+        "en": "She will write a letter tomorrow."
+      },
+      "files": {
+        "ne": {
+          "sha256": "247f1496604118feaef2815c031c56f04bfee4a999a9ef995c57f47472b171fe",
+          "bytes": 16128,
+          "duration": 2.688,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "1d5157a497ef0af7dad8bf7ccf3db7d26828c1a2b3cf63a61f3ea53a31c0c10e",
+          "bytes": 21888,
+          "duration": 2.736,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "cadc76344e804afa440255ceb9c7d752a995c421713f03a92426eceaad9d3829",
+          "bytes": 16704,
+          "duration": 2.088,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1208247554": {
+      "ne": "उहाँहरू भोलि चिठी लेख्नुहुन्छ।",
+      "roman": "uhā̃harū bholi ciṭhī lekhnuhuncha",
+      "ja": "彼らは明日手紙を書きます",
+      "en": "They will write a letter tomorrow.",
+      "spoken": {
+        "ne": "उहाँहरू भोलि चिठी लेख्नुहुन्छ।",
+        "ja": "彼らは明日手紙を書きます",
+        "en": "They will write a letter tomorrow."
+      },
+      "files": {
+        "ne": {
+          "sha256": "ca06555637861dd75c04bf1b6ca2ea026b14b5ea033078488da3da2ac02e496f",
+          "bytes": 17568,
+          "duration": 2.928,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "c14b882105e4cafa4797117329fb9a9cb06c72d5b10d78272a9a99a8511749a8",
+          "bytes": 21888,
+          "duration": 2.736,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "646c357091be05703939d3bdaa09d7a65fcfdf49d25b532b498ee2e22e7cd4f0",
+          "bytes": 16320,
+          "duration": 2.04,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-60696384": {
+      "ne": "उहाँ लेखक हुनुहुन्छ।",
+      "roman": "uhā̃ lekhak hunuhuncha",
+      "ja": "彼は著者です",
+      "en": "He is an author.",
+      "spoken": {
+        "ne": "उहाँ लेखक हुनुहुन्छ।",
+        "ja": "彼は著者です",
+        "en": "He is an author."
+      },
+      "files": {
+        "ne": {
+          "sha256": "62c2202ffa96129cb62315c27ce2522d076ecdcdc8c77bcc6c4f02d248d0cdf5",
+          "bytes": 13680,
+          "duration": 2.28,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "8dfc6579bc7e7297665134b2d51e3726e6ba0860967a468bb6bcc4b81fc546ef",
+          "bytes": 11712,
+          "duration": 1.464,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "30ad6a956576086d9c6909213435b5f40a2c61673e0055bee4182fa7d8ea9b3e",
+          "bytes": 10368,
+          "duration": 1.296,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-4175250358": {
+      "ne": "उहाँ लेखिका हुनुहुन्छ।",
+      "roman": "uhā̃ lekhikā hunuhuncha",
+      "ja": "彼女は著者です",
+      "en": "She is an author.",
+      "spoken": {
+        "ne": "उहाँ लेखिका हुनुहुन्छ।",
+        "ja": "彼女は著者です",
+        "en": "She is an author."
+      },
+      "files": {
+        "ne": {
+          "sha256": "582f5e9ef0a362a84f3dec9848aab3f86b738d21d509828da09482168b752c4f",
+          "bytes": 14112,
+          "duration": 2.352,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "0dfaa300d873bec6bed799f7424cee03de060fd9ae523af8333fcc674b53cf0f",
+          "bytes": 12864,
+          "duration": 1.608,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "d1bc061ac5d7ffe6bd8a3665315fc5b705ac998908a3e8cc8c862ef51f7669bd",
+          "bytes": 10944,
+          "duration": 1.368,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-545501951": {
+      "ne": "उहाँहरू लेखक हुनुहुन्छ।",
+      "roman": "uhā̃harū lekhak hunuhuncha",
+      "ja": "彼らは著者です",
+      "en": "They are authors.",
+      "spoken": {
+        "ne": "उहाँहरू लेखक हुनुहुन्छ।",
+        "ja": "彼らは著者です",
+        "en": "They are authors."
+      },
+      "files": {
+        "ne": {
+          "sha256": "254e12e34a7f9893a7343339c5ae629da5a9a42ad8b66ea15fc7f48def932fe8",
+          "bytes": 14976,
+          "duration": 2.496,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "fa97f4c26b1abe2663236ace2c1c6094c66116cce88d918990eff4ee6fdc2113",
+          "bytes": 13824,
+          "duration": 1.728,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "8e6553d19d0cf1aaf7cf22f4e4f10257593bc0a252379c619b94d79f6d0046b0",
+          "bytes": 10944,
+          "duration": 1.368,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2367452451": {
+      "ne": "उहाँ लेखक हुनुहुन्न।",
+      "roman": "uhā̃ lekhak hunuhunna",
+      "ja": "彼は著者ではありません",
+      "en": "He is not an author.",
+      "spoken": {
+        "ne": "उहाँ लेखक हुनुहुन्न।",
+        "ja": "彼は著者ではありません",
+        "en": "He is not an author."
+      },
+      "files": {
+        "ne": {
+          "sha256": "81d9953690229836dc1533fa2ac73f0b563fd3d220dbb211839e8fd93c2854dd",
+          "bytes": 13536,
+          "duration": 2.256,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "3244ede7b481f821ff77ae1ac6045bfbc7ec74aa0582b049e02d2f17a6362c6c",
+          "bytes": 17280,
+          "duration": 2.16,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "755b9364ec06399bc90306f85f341bd890f0ac0a3a8a37edb400afc7e724da56",
+          "bytes": 13824,
+          "duration": 1.728,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2291708244": {
+      "ne": "उहाँ लेखिका हुनुहुन्न।",
+      "roman": "uhā̃ lekhikā hunuhunna",
+      "ja": "彼女は著者ではありません",
+      "en": "She is not an author.",
+      "spoken": {
+        "ne": "उहाँ लेखिका हुनुहुन्न।",
+        "ja": "彼女は著者ではありません",
+        "en": "She is not an author."
+      },
+      "files": {
+        "ne": {
+          "sha256": "d5468c94974552660c7fb86497ed9f1fd266d81977c31cec84743a2244f82792",
+          "bytes": 13968,
+          "duration": 2.328,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "e8abd1600b8b89fdc2b9ee4fedf9efd9cc08cff825e0db646f728ed7b910fc9c",
+          "bytes": 18432,
+          "duration": 2.304,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "56ba04943eb2ef2d5bb16dd36ec5fa411de27cbfac3f2546140315b9cf6de2e5",
+          "bytes": 14208,
+          "duration": 1.776,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3568592549": {
+      "ne": "उहाँहरू लेखक हुनुहुन्न।",
+      "roman": "uhā̃harū lekhak hunuhunna",
+      "ja": "彼らは著者ではありません",
+      "en": "They are not authors.",
+      "spoken": {
+        "ne": "उहाँहरू लेखक हुनुहुन्न।",
+        "ja": "彼らは著者ではありません",
+        "en": "They are not authors."
+      },
+      "files": {
+        "ne": {
+          "sha256": "1215293f0018fc5b9dd1641734ca613f00754bcd50d9907a203aa6d792f10b7f",
+          "bytes": 14688,
+          "duration": 2.448,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "59aa990918ea830dbe3f03bfbc33617aacac184da4574b810db84a68d2baeada",
+          "bytes": 18240,
+          "duration": 2.28,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "0a3b099082c23639f6cc019ce8dcb1fde5a563f3e75a00408a2f28748ed2ca9f",
+          "bytes": 12288,
+          "duration": 1.536,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1776912820": {
+      "ne": "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+      "roman": "uhā̃ pustakālayamā hunuhuncha",
+      "ja": "彼は図書館にいます",
+      "en": "He is at the library.",
+      "spoken": {
+        "ne": "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+        "ja": "彼は図書館にいます",
+        "en": "He is at the library."
+      },
+      "files": {
+        "ne": {
+          "sha256": "4f3f3cd5ec5d10a033f1f0411e0763bff29e6c92c4f4763af66d5992406432fb",
+          "bytes": 16704,
+          "duration": 2.784,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "6c08ba1a00419bd419598520ed4ba2cb8367f69467ef52a025e3cd37dbe72430",
+          "bytes": 16896,
+          "duration": 2.112,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "c8ed8635f5c2ba6136f4df6a252331335b80dc43b32ad36176f973872dabb75f",
+          "bytes": 14016,
+          "duration": 1.752,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3818355539": {
+      "ne": "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+      "roman": "uhā̃ pustakālayamā hunuhuncha",
+      "ja": "彼女は図書館にいます",
+      "en": "She is at the library.",
+      "spoken": {
+        "ne": "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+        "ja": "彼女は図書館にいます",
+        "en": "She is at the library."
+      },
+      "files": {
+        "ne": {
+          "sha256": "4f3f3cd5ec5d10a033f1f0411e0763bff29e6c92c4f4763af66d5992406432fb",
+          "bytes": 16704,
+          "duration": 2.784,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "acd9096d0cff6b1689e69493cc125fd1ab768da30e0b0d8d1eab7b1c567fe20b",
+          "bytes": 18240,
+          "duration": 2.28,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "aa27f8264d6b45d6657dbc88e95f56b62297b575d71ac11cf1d3ddaf0bfe3513",
+          "bytes": 14592,
+          "duration": 1.824,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-315539900": {
+      "ne": "उहाँहरू पुस्तकालयमा हुनुहुन्छ।",
+      "roman": "uhā̃harū pustakālayamā hunuhuncha",
+      "ja": "彼らは図書館にいます",
+      "en": "They are at the library.",
+      "spoken": {
+        "ne": "उहाँहरू पुस्तकालयमा हुनुहुन्छ।",
+        "ja": "彼らは図書館にいます",
+        "en": "They are at the library."
+      },
+      "files": {
+        "ne": {
+          "sha256": "5429a35cf2f2ef15c7e5223e0b87067334c3b50aac8ba8df2d0cc5f1a93e1f82",
+          "bytes": 18000,
+          "duration": 3.0,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "3730ad3c1c2ede689432b2eced6be0feddf72215b827c3dec68a3e06493ec6a9",
+          "bytes": 17856,
+          "duration": 2.232,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "289c8fe27b887c105ff952a6b9fbd0bb9e640eaa70c290e9288248d3ed63a2f3",
+          "bytes": 13824,
+          "duration": 1.728,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3741745741": {
+      "ne": "उहाँ पुस्तकालयमा हुनुहुन्न।",
+      "roman": "uhā̃ pustakālayamā hunuhunna",
+      "ja": "彼は図書館にいません",
+      "en": "He is not at the library.",
+      "spoken": {
+        "ne": "उहाँ पुस्तकालयमा हुनुहुन्न।",
+        "ja": "彼は図書館にいません",
+        "en": "He is not at the library."
+      },
+      "files": {
+        "ne": {
+          "sha256": "35a87fcc2c04edcd9740a633ae101a56ac982a1e42ff43c6145f1ad256e3860a",
+          "bytes": 16416,
+          "duration": 2.736,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "59251e52b529dcb8700c805a5d42089fcf65018711cd3dbb9992f9171bfcb9f5",
+          "bytes": 17664,
+          "duration": 2.208,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "1027d4ec74e12edfa7bf20ed530fd45cb93d5fb708643a5da4eefd5e4868c893",
+          "bytes": 15744,
+          "duration": 1.968,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2346185344": {
+      "ne": "उहाँ पुस्तकालयमा हुनुहुन्न।",
+      "roman": "uhā̃ pustakālayamā hunuhunna",
+      "ja": "彼女は図書館にいません",
+      "en": "She is not at the library.",
+      "spoken": {
+        "ne": "उहाँ पुस्तकालयमा हुनुहुन्न।",
+        "ja": "彼女は図書館にいません",
+        "en": "She is not at the library."
+      },
+      "files": {
+        "ne": {
+          "sha256": "35a87fcc2c04edcd9740a633ae101a56ac982a1e42ff43c6145f1ad256e3860a",
+          "bytes": 16416,
+          "duration": 2.736,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "3d0f34b6704311f3bc2ba2105592dda8959acb2acfe719cc971116abfeacae33",
+          "bytes": 18816,
+          "duration": 2.352,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "64c62226d34c7c9d6e77481f3b84042307fd5338e1f6b6325f0f881a049ecf0d",
+          "bytes": 16320,
+          "duration": 2.04,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-2399866711": {
+      "ne": "उहाँहरू पुस्तकालयमा हुनुहुन्न।",
+      "roman": "uhā̃harū pustakālayamā hunuhunna",
+      "ja": "彼らは図書館にいません",
+      "en": "They are not at the library.",
+      "spoken": {
+        "ne": "उहाँहरू पुस्तकालयमा हुनुहुन्न।",
+        "ja": "彼らは図書館にいません",
+        "en": "They are not at the library."
+      },
+      "files": {
+        "ne": {
+          "sha256": "974cd1ae55299c4bb45f9bb3b4fe1ac85758cb4e3573328921273cd80645d784",
+          "bytes": 17856,
+          "duration": 2.976,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "8720ddd257564b0b831a7277aa50a3e61973a9eadb94c1795d7575a96786e518",
+          "bytes": 18432,
+          "duration": 2.304,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "cc07a551625c818952919bc2ccc9171781fc4c4e72fb0e9119cda1a029a1618f",
+          "bytes": 15552,
+          "duration": 1.944,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3562176626": {
+      "ne": "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+      "roman": "uhā̃ asti bajārmā hunuhunthyo",
+      "ja": "彼は一昨日市場にいました",
+      "en": "He was at the market the day before yesterday.",
+      "spoken": {
+        "ne": "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+        "ja": "彼は一昨日市場にいました",
+        "en": "He was at the market the day before yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "66303f62522f5baa309de49150877ddc3e98160dab8e88ea5bc712a95506ce50",
+          "bytes": 16416,
+          "duration": 2.736,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "1f7f3b11c4e9ee189baa4faa47293cd5e1e137dd4202418dab93fc3430e15ddc",
+          "bytes": 19968,
+          "duration": 2.496,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "6874b9370d0976e25d1636391b96d24dc37c1fe36eece919cec7ac47bddd70ed",
+          "bytes": 22848,
+          "duration": 2.856,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3432865602": {
+      "ne": "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+      "roman": "uhā̃ asti bajārmā hunuhunthyo",
+      "ja": "彼女は一昨日市場にいました",
+      "en": "She was at the market the day before yesterday.",
+      "spoken": {
+        "ne": "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+        "ja": "彼女は一昨日市場にいました",
+        "en": "She was at the market the day before yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "66303f62522f5baa309de49150877ddc3e98160dab8e88ea5bc712a95506ce50",
+          "bytes": 16416,
+          "duration": 2.736,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "356c470b9d691e5d15edad4235fb5480074f19121d832742854966d40f959508",
+          "bytes": 21120,
+          "duration": 2.64,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "7776388287a71acdee303742719da36d596599893672d08fcde6c8447cbbba47",
+          "bytes": 23232,
+          "duration": 2.904,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3656176254": {
+      "ne": "उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो।",
+      "roman": "uhā̃harū asti bajārmā hunuhunthyo",
+      "ja": "彼らは一昨日市場にいました",
+      "en": "They were at the market the day before yesterday.",
+      "spoken": {
+        "ne": "उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो।",
+        "ja": "彼らは一昨日市場にいました",
+        "en": "They were at the market the day before yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "ab0555822b0654d605d440ed3f7e7e7ff093df3abe96deb84d41cef35435f049",
+          "bytes": 17712,
+          "duration": 2.952,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "6de0a1225f4fdd1132624790a354311f3417cd208fe6448cb2db841a171ad3b6",
+          "bytes": 20928,
+          "duration": 2.616,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "74a2cc5cd0b292a7c91547171af0988e3ccb4c114c13f46bc13e28e718e0557e",
+          "bytes": 22464,
+          "duration": 2.808,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1493979365": {
+      "ne": "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+      "roman": "uhā̃ asti bajārmā hunuhunnathyo",
+      "ja": "彼は一昨日市場にいませんでした",
+      "en": "He was not at the market the day before yesterday.",
+      "spoken": {
+        "ne": "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+        "ja": "彼は一昨日市場にいませんでした",
+        "en": "He was not at the market the day before yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "815751386260a4130c72d5d348e0eff462e833e511250bd94ba44ad09702a4d1",
+          "bytes": 17280,
+          "duration": 2.88,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "a1d0089733672b2994468a454498b637df6ba86a99392b53e87185a2f189cb24",
+          "bytes": 22848,
+          "duration": 2.856,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "ba00e3c005f802ac6753dd62b60c56a7e65db4fe51475fbad99aba4ae9294c58",
+          "bytes": 24192,
+          "duration": 3.024,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-1639394355": {
+      "ne": "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+      "roman": "uhā̃ asti bajārmā hunuhunnathyo",
+      "ja": "彼女は一昨日市場にいませんでした",
+      "en": "She was not at the market the day before yesterday.",
+      "spoken": {
+        "ne": "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+        "ja": "彼女は一昨日市場にいませんでした",
+        "en": "She was not at the market the day before yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "815751386260a4130c72d5d348e0eff462e833e511250bd94ba44ad09702a4d1",
+          "bytes": 17280,
+          "duration": 2.88,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "e3614959683b430d3197f4bae5e51f5734d08d94812fcc4074551724ac5f525f",
+          "bytes": 23808,
+          "duration": 2.976,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "047cc9e09389b1b78a626f3a592e4c283584f26a1327217a0ea8fb5e1facc4b5",
+          "bytes": 24576,
+          "duration": 3.072,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-3341991950": {
+      "ne": "उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो।",
+      "roman": "uhā̃harū asti bajārmā hunuhunnathyo",
+      "ja": "彼らは一昨日市場にいませんでした",
+      "en": "They were not at the market the day before yesterday.",
+      "spoken": {
+        "ne": "उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो।",
+        "ja": "彼らは一昨日市場にいませんでした",
+        "en": "They were not at the market the day before yesterday."
+      },
+      "files": {
+        "ne": {
+          "sha256": "2e35a77e10827f3bcf1822d7136e1d2d6c92672e51b68a76eba624d74676aa3a",
+          "bytes": 18576,
+          "duration": 3.096,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "b724948f6303bdb281425044c2795cee762d868eb16761abdcb6ec336165f4c5",
+          "bytes": 23808,
+          "duration": 2.976,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "565421fbf894e8f9acd5ab8269c40fd8b81f285175b45294cb516398d90569ec",
+          "bytes": 24000,
+          "duration": 3.0,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
+    },
+    "900-728239404": {
+      "ne": "उहाँ बाहिर हुनुहुन्छ।",
+      "roman": "uhā̃ bāhira hunuhuncha",
+      "ja": "その方は外にいます",
+      "en": "That person is outside.",
+      "spoken": {
+        "ne": "उहाँ बाहिर हुनुहुन्छ।",
+        "ja": "その方は外にいます",
+        "en": "That person is outside."
+      },
+      "files": {
+        "ne": {
+          "sha256": "b9adf258a94638202936d3eef16fb807115f510642dbeeb99a4a5e465f9d18ef",
+          "bytes": 13824,
+          "duration": 2.304,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "ja": {
+          "sha256": "592eacf8871c5d95d5aa77418d0d80943ab576df7ba5432dae8b9ce02d1e5380",
+          "bytes": 17472,
+          "duration": 2.184,
+          "sampleRate": 24000,
+          "channels": 1
+        },
+        "en": {
+          "sha256": "a879e5be4dbcec25fd61d39e9889b0a3948e547c1b515e51c4ae10bf16fdfa05",
+          "bytes": 14784,
+          "duration": 1.848,
+          "sampleRate": 24000,
+          "channels": 1
+        }
+      }
     }
   }
 }

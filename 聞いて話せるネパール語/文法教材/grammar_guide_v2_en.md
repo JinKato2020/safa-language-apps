@@ -16,10 +16,10 @@ Use person/thing + identity noun + a form of हो. A noun names a person or th
 | we<br>हामी / hāmī | हौं / haũ | होइनौं / hoinaũ |
 | you<br>तपाईं / tapāĩ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | you plural<br>तपाईंहरू / tapāĩharū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
-| he/she<br>उनी / unī | हुन् / hun | होइनन् / hoinan |
-| they<br>उनीहरू / unīharū | हुन् / hun | होइनन् / hoinan |
+| he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
+| they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-उनी is not selected by gender alone. छन् can express medium respect; छिन् explicitly marks a feminine form. See topic 7. Note the nasal first-person negatives होइनँ/छैनँ.
+Use उहाँ for he/she and उहाँहरू for they as the basic forms. Both take respectful verb agreement without a masculine/feminine distinction. Familiar forms are taught in topic 7. Note the nasal first-person negatives होइनँ/छैनँ.
 
 The ending changes with the subject. Identity statements use the होइन family for negatives, not the छैन family.
 
@@ -62,14 +62,14 @@ How it works: Use person/thing + identity noun + a form of हो. A noun names 
 ### Exercise 3
 
 She is a student.
-उनी विद्यार्थी हुन्।
-unī vidyārthī hun
+उहाँ विद्यार्थी हुनुहुन्छ।
+uhā̃ vidyārthī hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | विद्यार्थी | vidyārthī | student |
-| हुन् | hun | am; is; are |
+| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
 
 How it works: Use person/thing + identity noun + a form of हो. A noun names a person or thing, such as student or book. In म विद्यार्थी हुँ, म means I, विद्यार्थी means student, and हुँ agrees with I. Use छ for location or condition instead. Initial के can mark a yes/no question. Use the होइन family for negatives.
 
@@ -90,14 +90,14 @@ How it works: Use person/thing + identity noun + a form of हो. A noun names 
 ### Exercise 5
 
 They are not students.
-उनीहरू विद्यार्थी होइनन्।
-unīharū vidyārthī hoinan
+उहाँहरू विद्यार्थी हुनुहुन्न।
+uhā̃harū vidyārthī hunuhunna
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरू | unīharū | they |
+| उहाँहरू | uhā̃harū | they (respectful) |
 | विद्यार्थी | vidyārthī | student |
-| होइनन् | hoinan | am not; is not; are not |
+| हुनुहुन्न | hunuhunna | is/are not (respectful) |
 
 How it works: Use person/thing + identity noun + a form of हो. A noun names a person or thing, such as student or book. In म विद्यार्थी हुँ, म means I, विद्यार्थी means student, and हुँ agrees with I. Use छ for location or condition instead. Initial के can mark a yes/no question. Use the होइन family for negatives.
 
@@ -165,14 +165,14 @@ This is a question. Supply the missing information and keep person agreement on 
 ### Exercise 10
 
 She is a doctor.
-उनी डाक्टर हुन्।
-unī ḍākṭar hun
+उहाँ डाक्टर हुनुहुन्छ।
+uhā̃ ḍākṭar hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | डाक्टर | ḍākṭar | doctor |
-| हुन् | hun | am; is; are |
+| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
 
 How it works: Use person/thing + identity noun + a form of हो. A noun names a person or thing, such as student or book. In म विद्यार्थी हुँ, म means I, विद्यार्थी means student, and हुँ agrees with I. Use छ for location or condition instead. Initial के can mark a yes/no question. Use the होइन family for negatives.
 
@@ -215,7 +215,7 @@ tapāĩharū śikṣak hunuhuncha
 | --- | --- | --- |
 | तपाईंहरू | tapāĩharū | you (respectful plural) |
 | शिक्षक | śikṣak | teacher |
-| हुनुहुन्छ | hunuhuncha | be (respectful) |
+| हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
 
 How it works: Use person/thing + identity noun + a form of हो. A noun names a person or thing, such as student or book. In म विद्यार्थी हुँ, म means I, विद्यार्थी means student, and हुँ agrees with I. Use छ for location or condition instead. Initial के can mark a yes/no question. Use the होइन family for negatives.
 
@@ -243,10 +243,10 @@ Use person/thing + location + a form of छ. घरमा means at home; यह�
 | we<br>हामी / hāmī | छौं / chaũ | छैनौं / chainaũ |
 | you<br>तपाईं / tapāĩ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | you plural<br>तपाईंहरू / tapāĩharū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
-| he/she<br>उनी / unī | छन् / chan; छिन् / chin | छैनन् / chainan |
-| they<br>उनीहरू / unīharū | छन् / chan | छैनन् / chainan |
+| he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
+| they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-उनी is not selected by gender alone. छन् can express medium respect; छिन् explicitly marks a feminine form. See topic 7. Note the nasal first-person negatives होइनँ/छैनँ.
+Use उहाँ for he/she and उहाँहरू for they as the basic forms. Both take respectful verb agreement without a masculine/feminine distinction. Familiar forms are taught in topic 7. Note the nasal first-person negatives होइनँ/छैनँ.
 
 ### Before attempting the exercises
 
@@ -288,14 +288,14 @@ This is a question. Supply the missing information and keep person agreement on 
 ### Exercise 3
 
 She is at home.
-उनी घरमा छिन्।
-unī gharmā chin
+उहाँ घरमा हुनुहुन्छ।
+uhā̃ gharmā hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | घरमा | gharmā | at home |
-| छिन् | chin | is; are (existence) |
+| हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
 
 How it works: Use person/thing + location + a form of छ. घरमा means at home; यहाँ, त्यहाँ and कहाँ mean here, there and where. Location + thing + छ introduces something present. Match a human subject in person and respect; use छन् for plural things. Possession with सँग + छ is taught in topic 5.
 
@@ -316,14 +316,14 @@ How it works: Use person/thing + location + a form of छ. घरमा means at
 ### Exercise 5
 
 They are not at home.
-उनीहरू घरमा छैनन्।
-unīharū gharmā chainan
+उहाँहरू घरमा हुनुहुन्न।
+uhā̃harū gharmā hunuhunna
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरू | unīharū | they |
+| उहाँहरू | uhā̃harū | they (respectful) |
 | घरमा | gharmā | at home |
-| छैनन् | chainan | is not; are not (existence) |
+| हुनुहुन्न | hunuhunna | is/are not present (respectful) |
 
 How it works: Use person/thing + location + a form of छ. घरमा means at home; यहाँ, त्यहाँ and कहाँ mean here, there and where. Location + thing + छ introduces something present. Match a human subject in person and respect; use छन् for plural things. Possession with सँग + छ is taught in topic 5.
 
@@ -394,7 +394,7 @@ tapāĩharū kahā̃ hunuhuncha?
 | --- | --- | --- |
 | तपाईंहरू | tapāĩharū | you (respectful plural) |
 | कहाँ | kahā̃ | where |
-| हुनुहुन्छ | hunuhuncha | be (respectful) |
+| हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
 
 How it works: Use person/thing + location + a form of छ. घरमा means at home; यहाँ, त्यहाँ and कहाँ mean here, there and where. Location + thing + छ introduces something present. Match a human subject in person and respect; use छन् for plural things. Possession with सँग + छ is taught in topic 5.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -416,14 +416,14 @@ How it works: Use person/thing + location + a form of छ. घरमा means at
 ### Exercise 12
 
 They are at school.
-उनीहरू विद्यालयमा छन्।
-unīharū vidyālayamā chan
+उहाँहरू विद्यालयमा हुनुहुन्छ।
+uhā̃harū vidyālayamā hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरू | unīharū | they |
+| उहाँहरू | uhā̃harū | they (respectful) |
 | विद्यालयमा | vidyālayamā | at school (विद्यालय + मा) |
-| छन् | chan | be; exist |
+| हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
 
 How it works: Use person/thing + location + a form of छ. घरमा means at home; यहाँ, त्यहाँ and कहाँ mean here, there and where. Location + thing + छ introduces something present. Match a human subject in person and respect; use छन् for plural things. Possession with सँग + छ is taught in topic 5.
 
@@ -576,28 +576,28 @@ This is a question. Supply the missing information and keep person agreement on 
 ### Exercise 9
 
 She is ready.
-उनी तयार छिन्।
-unī tayār chin
+उहाँ तयार हुनुहुन्छ।
+uhā̃ tayār hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | तयार | tayār | ready |
-| छिन् | chin | am; is; are |
+| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
 
 How it works: Use subject + adjective + a form of छ. Adjectives express qualities or conditions such as big, cold or busy. यो पानी चिसो छ means this water is cold. Use the छैन negative family, distinct from identity with होइन. खुसी and तयार describe being happy and ready. Weather expressions can also use nouns such as गर्मी.
 
 ### Exercise 10
 
 They are busy.
-उनीहरू व्यस्त छन्।
-unīharū vyasta chan
+उहाँहरू व्यस्त हुनुहुन्छ।
+uhā̃harū vyasta hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरू | unīharū | they |
+| उहाँहरू | uhā̃harū | they (respectful) |
 | व्यस्त | vyasta | busy |
-| छन् | chan | am; is; are |
+| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
 
 How it works: Use subject + adjective + a form of छ. Adjectives express qualities or conditions such as big, cold or busy. यो पानी चिसो छ means this water is cold. Use the छैन negative family, distinct from identity with होइन. खुसी and तयार describe being happy and ready. Weather expressions can also use nouns such as गर्मी.
 
@@ -639,8 +639,8 @@ Distinguish current state, regular situations and change
 | हामी / hāmī | हुन्छौं / hunchaũ | हुँदैनौं / hũdainaũ |
 | तपाईं / tapāĩ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | तपाईंहरू / tapāĩharū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
-| उनी / unī | हुन्छन् / hunchan; हुन्छिन् / hunchin | हुँदैनन् / hũdainan; हुँदिनन् / hũdinan |
-| उनीहरू / unīharū | हुन्छन् / hunchan | हुँदैनन् / hũdainan |
+| उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
+| उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
 Being cold now and getting cold in winter take different perspectives. भयो is one form used for a change that has happened.
 
@@ -905,7 +905,7 @@ Postpositions follow nouns and express place, participants, starting points and 
 
 मसँग कलम छ literally places a pen with me and means I have a pen. The possessor being I does not change छ to छु. In साथीसँग जान्छु, सँग instead marks company.
 
-को/की/का agree with the following noun. मेरो, हाम्रो and तपाईंको mean my, our and your. Pronouns can change before case markers: म→मलाई/मैले, उ→उसलाई/उसले, उनी→उनलाई/उनले. Learn the form with its role.
+को/की/का agree with the following noun. मेरो, हाम्रो and तपाईंको mean my, our and your. Pronouns can change before case markers: म→मलाई/मैले, उहाँ→उहाँलाई/उहाँले, उहाँहरू→उहाँहरूलाई/उहाँहरूले. Learn the form with its role.
 
 Some pronouns change shape before a postposition. Distinguish म, मेरो, मलाई and मैले by their roles.
 
@@ -1102,14 +1102,14 @@ How it works: Postpositions follow nouns and express place, participants, starti
 ### Exercise 13
 
 She goes towards the market.
-उनी बजारतिर जान्छिन्।
-unī bajārtira jānchin
+उहाँ बजारतिर जानुहुन्छ।
+uhā̃ bajārtira jānuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | that person; he/she (medium respect) |
+| उहाँ | uhā̃ | he/she (respectful) |
 | बजारतिर | bajārtira | towards the market (बजार + तिर) |
-| जान्छिन् | jānchin | go; goes |
+| जानुहुन्छ | jānuhuncha | go/goes (respectful) |
 
 How it works: Postpositions follow nouns and express place, participants, starting points and other relationships. घर + मा gives घरमा, at home; घर + बाट gives घरबाट, from home. An English preposition does not always map to one Nepali form. The sections below teach meanings, combinations and short examples.
 
@@ -1176,15 +1176,15 @@ How it works: Postpositions follow nouns and express place, participants, starti
 ### Exercise 18
 
 She drinks tea without sugar.
-उनी चिनीबिना चिया पिउँछिन्।
-unī cinībinā ciyā piũchin
+उहाँ चिनीबिना चिया पिउनुहुन्छ।
+uhā̃ cinībinā ciyā piunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | that person; he/she (medium respect) |
+| उहाँ | uhā̃ | he/she (respectful) |
 | चिनीबिना | cinībinā | without sugar (चिनी + बिना) |
 | चिया | ciyā | tea |
-| पिउँछिन् | piũchin | she drinks (feminine present of पिउनु) |
+| पिउनुहुन्छ | piunuhuncha | drink/drinks (respectful) |
 
 How it works: Postpositions follow nouns and express place, participants, starting points and other relationships. घर + मा gives घरमा, at home; घर + बाट gives घरबाट, from home. An English preposition does not always map to one Nepali form. The sections below teach meanings, combinations and short examples.
 
@@ -1605,7 +1605,7 @@ tapāĩ kahile āunuhuncha?
 | --- | --- | --- |
 | तपाईं | tapāĩ | you (respectful) |
 | कहिले | kahile | when |
-| आउनुहुन्छ | āunuhuncha | come; comes (respectful) |
+| आउनुहुन्छ | āunuhuncha | come/comes (respectful) |
 
 How it works: A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -1620,7 +1620,7 @@ tapāĩ kasarī jānuhuncha?
 | --- | --- | --- |
 | तपाईं | tapāĩ | you (respectful) |
 | कसरी | kasarī | how |
-| जानुहुन्छ | jānuhuncha | go; goes (respectful) |
+| जानुहुन्छ | jānuhuncha | go/goes (respectful) |
 
 How it works: A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -1636,7 +1636,7 @@ tapāĩ kun kitāb paḍhnuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | कुन | kun | which |
 | किताब | kitāb | book |
-| पढ्नुहुन्छ | paḍhnuhuncha | read; study (respectful present) |
+| पढ्नुहुन्छ | paḍhnuhuncha | read/reads (respectful) |
 
 How it works: A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -1667,7 +1667,7 @@ kati janā āunuhuncha?
 | --- | --- | --- |
 | कति | kati | how much; how |
 | जना | janā | counter for people |
-| आउनुहुन्छ | āunuhuncha | come; comes (respectful) |
+| आउनुहुन्छ | āunuhuncha | come/comes (respectful) |
 
 How it works: A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -1715,7 +1715,7 @@ tapāĩ kati baje jānuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | कति | kati | how much; how |
 | बजे | baje | at ... o'clock |
-| जानुहुन्छ | jānuhuncha | go; goes (respectful) |
+| जानुहुन्छ | jānuhuncha | go/goes (respectful) |
 
 How it works: A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -1745,7 +1745,7 @@ tapāĩ kosãga basnuhuncha?
 | --- | --- | --- |
 | तपाईं | tapāĩ | you (respectful) |
 | कोसँग | kosãga | with whom |
-| बस्नुहुन्छ | basnuhuncha | live; sit (respectful) |
+| बस्नुहुन्छ | basnuhuncha | live/lives (respectful) |
 
 How it works: A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के.
 सँग = company/participant or possession / This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -1776,7 +1776,7 @@ tapāĩ kati din basnuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | कति | kati | how much; how |
 | दिन | din | day |
-| बस्नुहुन्छ | basnuhuncha | live; sit (respectful) |
+| बस्नुहुन्छ | basnuhuncha | live/lives (respectful) |
 
 How it works: A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -1792,7 +1792,7 @@ tapāĩ kaslāī phon garnuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | कसलाई | kaslāī | whom; to whom |
 | फोन | phon | phone call |
-| गर्नुहुन्छ | garnuhuncha | do; does (respectful) |
+| गर्नुहुन्छ | garnuhuncha | do/does (respectful) |
 
 How it works: A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -1807,7 +1807,7 @@ tapāĩ katā jānuhuncha?
 | --- | --- | --- |
 | तपाईं | tapāĩ | you (respectful) |
 | कता | katā | which way; in which direction |
-| जानुहुन्छ | jānuhuncha | go; goes (respectful) |
+| जानुहुन्छ | jānuhuncha | go/goes (respectful) |
 
 How it works: A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -1826,7 +1826,7 @@ Choose pronouns and verbs for the social relationship
 
 ### Meaning and sentence construction
 
-Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### उ, उनी and उहाँ distinguish respect, not male versus female
 
@@ -1873,7 +1873,7 @@ ma kām garchu
 | काम | kām | work |
 | गर्छु | garchu | do; does |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 2
 
@@ -1887,7 +1887,7 @@ tã kām garchas
 | काम | kām | work |
 | गर्छस् | garchas | do; does |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 3
 
@@ -1901,7 +1901,7 @@ timī kām garchau
 | काम | kām | work |
 | गर्छौ | garchau | do; does |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 4
 
@@ -1915,7 +1915,7 @@ tapāĩ kām garnuhuncha
 | काम | kām | work |
 | गर्नुहुन्छ | garnuhuncha | do; does (respectful) |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 5
 
@@ -1929,7 +1929,7 @@ u kām garcha
 | काम | kām | work |
 | गर्छ | garcha | do; does |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 6
 
@@ -1943,7 +1943,7 @@ unī kām garchin
 | काम | kām | work |
 | गर्छिन् | garchin | do; does |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 7
 
@@ -1957,7 +1957,7 @@ uhā̃ kām garnuhuncha
 | काम | kām | work |
 | गर्नुहुन्छ | garnuhuncha | do; does (respectful) |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 8
 
@@ -1971,7 +1971,7 @@ hāmī kām garchaũ
 | काम | kām | work |
 | गर्छौं | garchaũ | do; does |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 9
 
@@ -1985,7 +1985,7 @@ unīharū kām garchan
 | काम | kām | work |
 | गर्छन् | garchan | do; does |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 10
 
@@ -2000,7 +2000,7 @@ tã mero sāthī hos
 | साथी | sāthī | friend |
 | होस् | hos | am; is; are |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 11
 
@@ -2014,7 +2014,7 @@ timī kahā̃ chau?
 | कहाँ | kahā̃ | where |
 | छौ | chau | is; are (existence) |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 This is a question. Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 12
@@ -2029,7 +2029,7 @@ tapāĩ kahā̃ hunuhuncha?
 | कहाँ | kahā̃ | where |
 | हुनुहुन्छ | hunuhuncha | is; are (existence) |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 This is a question. Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 13
@@ -2045,7 +2045,7 @@ uhā̃ mero śikṣak hunuhuncha
 | शिक्षक | śikṣak | teacher |
 | हुनुहुन्छ | hunuhuncha | am; is; are |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 14
 
@@ -2059,7 +2059,7 @@ timīharū tayār chainau?
 | तयार | tayār | ready |
 | छैनौ | chainau | am not; is not; are not |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 This is a question. Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 15
@@ -2074,7 +2074,7 @@ u yahā̃ cha
 | यहाँ | yahā̃ | here |
 | छ | cha | be; exist |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 16
 
@@ -2088,7 +2088,7 @@ unī yahā̃ chan
 | यहाँ | yahā̃ | here |
 | छन् | chan | be; exist |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Exercise 17
 
@@ -2098,11 +2098,11 @@ uhā̃ yahā̃ hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उहाँ | uhā̃ | he; she (respectful) |
+| उहाँ | uhā̃ | he/she (respectful) |
 | यहाँ | yahā̃ | here |
-| हुनुहुन्छ | hunuhuncha | be (respectful) |
+| हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
 
-How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उनी and उनीहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
+How it works: Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior.
 
 ### Build your own sentence
 
@@ -2128,8 +2128,8 @@ Use subject + object/time/place + verb. Replace dictionary -नु with the appr
 | we | हामी काम गर्छौं।<br>hāmī kām garchaũ | We work. |
 | you | तपाईं काम गर्नुहुन्छ।<br>tapāĩ kām garnuhuncha | You work. |
 | you plural | तपाईंहरू काम गर्नुहुन्छ।<br>tapāĩharū kām garnuhuncha | You work. |
-| he/she | उनी काम गर्छिन्।<br>unī kām garchin | She works. |
-| they | उनीहरू काम गर्छन्।<br>unīharū kām garchan | They work. |
+| he/she | उहाँ काम गर्नुहुन्छ।<br>uhā̃ kām garnuhuncha | She works. |
+| they | उहाँहरू काम गर्छन्।<br>uhā̃harū kām garchan | They work. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -2208,14 +2208,14 @@ This is a question. Supply the missing information and keep person agreement on 
 ### Exercise 5
 
 She reads books.
-उनी किताब पढ्छिन्।
-unī kitāb paḍhchin
+उहाँ किताब पढ्नुहुन्छ।
+uhā̃ kitāb paḍhnuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | किताब | kitāb | book |
-| पढ्छिन् | paḍhchin | read; study |
+| पढ्नुहुन्छ | paḍhnuhuncha | read/reads (respectful) |
 
 How it works: Use subject + object/time/place + verb. Replace dictionary -नु with the appropriate present stem and personal ending. Learn stems through forms such as गर्नु→गर्छु, पढ्नु→पढ्छु and खानु→खान्छु. Adding every day or a time describes a routine.
 
@@ -2275,7 +2275,7 @@ tapāĩharū kahā̃ kām garnuhuncha?
 | तपाईंहरू | tapāĩharū | you (respectful plural) |
 | कहाँ | kahā̃ | where |
 | काम | kām | work |
-| गर्नुहुन्छ | garnuhuncha | do; does (respectful) |
+| गर्नुहुन्छ | garnuhuncha | do/does (respectful) |
 
 How it works: Use subject + object/time/place + verb. Replace dictionary -नु with the appropriate present stem and personal ending. Learn stems through forms such as गर्नु→गर्छु, पढ्नु→पढ्छु and खानु→खान्छु. Adding every day or a time describes a routine.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -2304,8 +2304,8 @@ Action negatives use negative verb forms such as गर्दिनँ and ख�
 | we | हामी आज काम गर्दैनौं।<br>hāmī āja kām gardainaũ | We do not work today. |
 | you | तपाईं आज काम गर्नुहुन्न।<br>tapāĩ āja kām garnuhunna | You do not work today. |
 | you plural | तपाईंहरू आज काम गर्नुहुन्न।<br>tapāĩharū āja kām garnuhunna | You do not work today. |
-| he/she | उनी आज काम गर्दिनन्।<br>unī āja kām gardinan | She does not work today. |
-| they | उनीहरू आज काम गर्दैनन्।<br>unīharū āja kām gardainan | They do not work today. |
+| he/she | उहाँ आज काम गर्दिनन्।<br>uhā̃ āja kām gardinan | She does not work today. |
+| they | उहाँहरू आज काम गर्दैनन्।<br>uhā̃harū āja kām gardainan | They do not work today. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -2382,14 +2382,14 @@ How it works: Action negatives use negative verb forms such as गर्दि�
 ### Exercise 5
 
 She does not eat meat.
-उनी मासु खाँदिनन्।
-unī māsu khā̃dinan
+उहाँ मासु खानुहुन्न।
+uhā̃ māsu khānuhunna
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | that person; he/she (medium respect) |
+| उहाँ | uhā̃ | he/she (respectful) |
 | मासु | māsu | meat |
-| खाँदिनन् | khā̃dinan | she does not eat (present negative of खानु) |
+| खानुहुन्न | khānuhunna | do/does not eat (respectful) |
 
 How it works: Action negatives use negative verb forms such as गर्दिनँ and खाँदिनँ, not an added छैन. Match person and respect: गर्छु→गर्दिनँ, गर्नुहुन्छ→गर्नुहुन्न, गर्छन्→गर्दैनन्. First-person forms have nasal endings; an explicitly feminine form can use गर्दिनन्.
 
@@ -2447,8 +2447,8 @@ Use a verb stem with दै/्दै + a form of छ: पढ्दै छु, I
 | we | हामी अहिले काम गर्दैछौं।<br>hāmī ahile kām gardaichaũ | We are working now. |
 | you | तपाईं अहिले काम गर्दैहुनुहुन्छ।<br>tapāĩ ahile kām gardaihunuhuncha | You are working now. |
 | you plural | तपाईंहरू अहिले काम गर्दैहुनुहुन्छ।<br>tapāĩharū ahile kām gardaihunuhuncha | You are working now. |
-| he/she | उनी अहिले काम गर्दैछिन्।<br>unī ahile kām gardaichin | She is working now. |
-| they | उनीहरू अहिले काम गर्दैछन्।<br>unīharū ahile kām gardaichan | They are working now. |
+| he/she | उहाँ अहिले काम गर्दैछिन्।<br>uhā̃ ahile kām gardaichin | She is working now. |
+| they | उहाँहरू अहिले काम गर्दैछन्।<br>uhā̃harū ahile kām gardaichan | They are working now. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -2509,14 +2509,15 @@ How it works: Use a verb stem with दै/्दै + a form of छ: पढ्�
 ### Exercise 4
 
 She is writing a letter.
-उनी चिट्ठी लेख्दैछिन्।
-unī ciṭṭhī lekhdaichin
+उहाँ चिट्ठी लेख्दै हुनुहुन्छ।
+uhā̃ ciṭṭhī lekhdai hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | चिट्ठी | ciṭṭhī | letter |
-| लेख्दैछिन् | lekhdaichin | is writing |
+| लेख्दै | lekhdai | writing; while writing |
+| हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
 
 How it works: Use a verb stem with दै/्दै + a form of छ: पढ्दै छु, I am reading; खाँदै छु, I am eating. Both गर्दै छु and गरिरहेको छु can express ongoing action. Negate the final auxiliary with the छैन family. जाँदै छु can describe going now or an imminent arrangement, depending on time expressions and context.
 
@@ -2546,7 +2547,7 @@ tapāĩharū ke paḍhdai hunuhuncha?
 | तपाईंहरू | tapāĩharū | you (respectful plural) |
 | के | ke | what; question marker |
 | पढ्दै | paḍhdai | reading (progressive form of पढ्नु) |
-| हुनुहुन्छ | hunuhuncha | be (respectful) |
+| हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
 
 How it works: Use a verb stem with दै/्दै + a form of छ: पढ्दै छु, I am reading; खाँदै छु, I am eating. Both गर्दै छु and गरिरहेको छु can express ongoing action. Negate the final auxiliary with the छैन family. जाँदै छु can describe going now or an imminent arrangement, depending on time expressions and context.
 This is a question. Supply the missing information and keep person agreement on the final verb.
@@ -2554,15 +2555,15 @@ This is a question. Supply the missing information and keep person agreement on 
 ### Exercise 7
 
 They are waiting for the bus.
-उनीहरू बस पर्खँदै छन्।
-unīharū bas parkhãdai chan
+उहाँहरू बस पर्खँदै हुनुहुन्छ।
+uhā̃harū bas parkhãdai hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरू | unīharū | they |
+| उहाँहरू | uhā̃harū | they (respectful) |
 | बस | bas | sit; please sit |
 | पर्खँदै | parkhãdai | waiting (progressive form of पर्खनु) |
-| छन् | chan | be; exist |
+| हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
 
 How it works: Use a verb stem with दै/्दै + a form of छ: पढ्दै छु, I am reading; खाँदै छु, I am eating. Both गर्दै छु and गरिरहेको छु can express ongoing action. Negate the final auxiliary with the छैन family. जाँदै छु can describe going now or an imminent arrangement, depending on time expressions and context.
 
@@ -2580,7 +2581,7 @@ Describe completed actions and the agent marker ले
 
 ### Meaning and sentence construction
 
-Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
+Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
 
 ### A reference table for comparing personal forms
 
@@ -2590,8 +2591,8 @@ Transitive verbs take an object, as in read a book or write a letter. Completed 
 | we | हामीले हिजो काम गर्यौं।<br>hāmīle hijo kām garyaũ | We worked yesterday. |
 | you | तपाईंले हिजो काम गर्नुभयो।<br>tapāĩle hijo kām garnubhayo | You worked yesterday. |
 | you plural | तपाईंहरूले हिजो काम गर्नुभयो।<br>tapāĩharūle hijo kām garnubhayo | You worked yesterday. |
-| he/she | उनले हिजो काम गरिन्।<br>unle hijo kām garin | She worked yesterday. |
-| they | उनीहरूले हिजो काम गरे।<br>unīharūle hijo kām gare | They worked yesterday. |
+| he/she | उहाँले हिजो काम गरिन्।<br>uhā̃le hijo kām garin | She worked yesterday. |
+| they | उहाँहरूले हिजो काम गरे।<br>uhā̃harūle hijo kām gare | They worked yesterday. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -2603,8 +2604,8 @@ Repetition in this table is for comparing agreement. The practice below varies s
 | we | हामी अस्ति बजारमा थियौं।<br>hāmī asti bajārmā thiyaũ | We were at the market the day before yesterday. |
 | you | तपाईं अस्ति बजारमा हुनुहुन्थ्यो।<br>tapāĩ asti bajārmā hunuhunthyo | You were at the market the day before yesterday. |
 | you plural | तपाईंहरू अस्ति बजारमा हुनुहुन्थ्यो।<br>tapāĩharū asti bajārmā hunuhunthyo | You were at the market the day before yesterday. |
-| he/she | उनी अस्ति बजारमा थिइन्।<br>unī asti bajārmā thiin | She was at the market the day before yesterday. |
-| they | उनीहरू अस्ति बजारमा थिए।<br>unīharū asti bajārmā thie | They were at the market the day before yesterday. |
+| he/she | उहाँ अस्ति बजारमा हुनुहुन्थ्यो।<br>uhā̃ asti bajārmā hunuhunthyo | She was at the market the day before yesterday. |
+| they | उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो।<br>uhā̃harū asti bajārmā hunuhunthyo | They were at the market the day before yesterday. |
 
 Do not mark an intransitive subject like the agent of a transitive action. Some verbs also change their stem in the past.
 
@@ -2629,7 +2630,7 @@ maile hijo kām garẽ
 | काम | kām | work |
 | गरेँ | garẽ | did |
 
-How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
+How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
 
 ### Exercise 2
 
@@ -2644,7 +2645,7 @@ tapāĩle hijo vyāyām garnubhayo?
 | व्यायाम | vyāyām | exercise |
 | गर्नुभयो | garnubhayo | did (respectful) |
 
-How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
+How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
 This is a question. Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
@@ -2659,21 +2660,21 @@ maile kitāb paḍhẽ
 | किताब | kitāb | book |
 | पढेँ | paḍhẽ | read (past) |
 
-How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
+How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
 
 ### Exercise 4
 
 She went to school.
-उनी स्कूल गइन्।
-unī skūl gain
+उहाँ स्कूल जानुभयो।
+uhā̃ skūl jānubhayo
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | स्कूल | skūl | school |
-| गइन् | gain | went |
+| जानुभयो | jānubhayo | went (respectful) |
 
-How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
+How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
 
 ### Exercise 5
 
@@ -2688,7 +2689,7 @@ ma hijo gharmā thiẽ
 | घरमा | gharmā | at home |
 | थिएँ | thiẽ | was; were (existence) |
 
-How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
+How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
 
 ### Exercise 6
 
@@ -2702,21 +2703,21 @@ hāmī bajār gayaũ
 | बजार | bajār | market |
 | गयौं | gayaũ | we went (past of जानु) |
 
-How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
+How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
 
 ### Exercise 7
 
 She drank tea.
-उनले चिया पिइन्।
-unle ciyā piin
+उहाँले चिया पिउनुभयो।
+uhā̃le ciyā piunubhayo
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनले | unle | she (agent) |
+| उहाँले | uhā̃le | he/she as agent (respectful) |
 | चिया | ciyā | tea |
-| पिइन् | piin | she drank (past of पिउनु) |
+| पिउनुभयो | piunubhayo | drank (respectful) |
 
-How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
+How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
 
 ### Exercise 8
 
@@ -2730,7 +2731,7 @@ tapāĩharūle ke kinnubhayo?
 | के | ke | what; question marker |
 | किन्नुभयो | kinnubhayo | bought (respectful past of किन्नु) |
 
-How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उनले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
+How it works: Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ.
 This is a question. Supply the missing information and keep person agreement on the final verb.
 
 ### Build your own sentence
@@ -2757,8 +2758,8 @@ Past negatives such as गरेनँ and गएनँ differ from present ग�
 | we | हामीले हिजो काम गरेनौं।<br>hāmīle hijo kām garenaũ | We did not work yesterday. |
 | you | तपाईंले हिजो काम गर्नुभएन।<br>tapāĩle hijo kām garnubhaena | You did not work yesterday. |
 | you plural | तपाईंहरूले हिजो काम गर्नुभएन।<br>tapāĩharūle hijo kām garnubhaena | You did not work yesterday. |
-| he/she | उनले हिजो काम गरिनन्।<br>unle hijo kām garinan | She did not work yesterday. |
-| they | उनीहरूले हिजो काम गरेनन्।<br>unīharūle hijo kām garenan | They did not work yesterday. |
+| he/she | उहाँले हिजो काम गरिनन्।<br>uhā̃le hijo kām garinan | She did not work yesterday. |
+| they | उहाँहरूले हिजो काम गरेनन्।<br>uhā̃harūle hijo kām garenan | They did not work yesterday. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -2770,8 +2771,8 @@ Repetition in this table is for comparing agreement. The practice below varies s
 | we | हामी अस्ति बजारमा थिएनौं।<br>hāmī asti bajārmā thienaũ | We were not at the market the day before yesterday. |
 | you | तपाईं अस्ति बजारमा हुनुहुन्नथ्यो।<br>tapāĩ asti bajārmā hunuhunnathyo | You were not at the market the day before yesterday. |
 | you plural | तपाईंहरू अस्ति बजारमा हुनुहुन्नथ्यो।<br>tapāĩharū asti bajārmā hunuhunnathyo | You were not at the market the day before yesterday. |
-| he/she | उनी अस्ति बजारमा थिइनन्।<br>unī asti bajārmā thiinan | She was not at the market the day before yesterday. |
-| they | उनीहरू अस्ति बजारमा थिएनन्।<br>unīharū asti bajārmā thienan | They were not at the market the day before yesterday. |
+| he/she | उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।<br>uhā̃ asti bajārmā hunuhunnathyo | She was not at the market the day before yesterday. |
+| they | उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो।<br>uhā̃harū asti bajārmā hunuhunnathyo | They were not at the market the day before yesterday. |
 
 The agent keeps ले in a negative completed transitive sentence. This differs from saying something has not happened yet.
 
@@ -2876,14 +2877,14 @@ How it works: Past negatives such as गरेनँ and गएनँ differ fro
 ### Exercise 7
 
 She did not drink coffee.
-उनले कफी पिइनन्।
-unle kaphī piinan
+उहाँले कफी पिउनुभएन।
+uhā̃le kaphī piunubhaena
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनले | unle | she (agent) |
+| उहाँले | uhā̃le | he/she as agent (respectful) |
 | कफी | kaphī | coffee |
-| पिइनन् | piinan | she did not drink (past negative of पिउनु) |
+| पिउनुभएन | piunubhaena | did not drink (respectful) |
 
 How it works: Past negatives such as गरेनँ and गएनँ differ from present गर्दिनँ. Choose person/respect forms such as गरेनँ, गरेनन् and गर्नुभएन. Check agent marking even in a negated completed transitive event. Past nonexistence with थिएन is a separate copula construction.
 
@@ -2911,8 +2912,8 @@ Future forms include गर्नेछु and जानेछु: a ने stem
 | we | हामी भोलि काम गर्छौं।<br>hāmī bholi kām garchaũ | We will work tomorrow. |
 | you | तपाईं भोलि काम गर्नुहुन्छ।<br>tapāĩ bholi kām garnuhuncha | You will work tomorrow. |
 | you plural | तपाईंहरू भोलि काम गर्नुहुन्छ।<br>tapāĩharū bholi kām garnuhuncha | You will work tomorrow. |
-| he/she | उनी भोलि काम गर्छिन्।<br>unī bholi kām garchin | She will work tomorrow. |
-| they | उनीहरू भोलि काम गर्छन्।<br>unīharū bholi kām garchan | They will work tomorrow. |
+| he/she | उहाँ भोलि काम गर्नुहुन्छ।<br>uhā̃ bholi kām garnuhuncha | She will work tomorrow. |
+| they | उहाँहरू भोलि काम गर्छन्।<br>uhā̃harū bholi kām garchan | They will work tomorrow. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -2975,15 +2976,15 @@ How it works: Future forms include गर्नेछु and जानेछु:
 ### Exercise 4
 
 She will come next week.
-उनी अर्को हप्ता आउँछिन्।
-unī arko haptā āũchin
+उहाँ अर्को हप्ता आउनुहुन्छ।
+uhā̃ arko haptā āunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | अर्को | arko | next; another |
 | हप्ता | haptā | week |
-| आउँछिन् | āũchin | come; comes |
+| आउनुहुन्छ | āunuhuncha | come/comes (respectful) |
 
 How it works: Future forms include गर्नेछु and जानेछु: a ने stem with personal छ-family endings. A respectful form is गर्नुहुनेछ. Time words such as भोलि can also allow a present form to describe a plan. Distinguish the dedicated future form from other ways of expressing a future arrangement.
 
@@ -3022,14 +3023,14 @@ How it works: Future forms include गर्नेछु and जानेछु:
 ### Exercise 7
 
 They will not come tomorrow.
-उनीहरू भोलि आउँदैनन्।
-unīharū bholi āũdainan
+उहाँहरू भोलि आउनुहुन्न।
+uhā̃harū bholi āunuhunna
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरू | unīharū | they |
+| उहाँहरू | uhā̃harū | they (respectful) |
 | भोलि | bholi | tomorrow |
-| आउँदैनन् | āũdainan | do not come; does not come |
+| आउनुहुन्न | āunuhunna | do/does not come (respectful) |
 
 How it works: Future forms include गर्नेछु and जानेछु: a ने stem with personal छ-family endings. A respectful form is गर्नुहुनेछ. Time words such as भोलि can also allow a present form to describe a plan. Distinguish the dedicated future form from other ways of expressing a future arrangement.
 
@@ -3086,8 +3087,8 @@ Forms such as गर्थें and बस्थें describe former habits. 
 | we | हामी पहिले यहाँ काम गर्थ्यौं।<br>hāmī pahile yahā̃ kām garthyaũ | We used to work here. |
 | you | तपाईं पहिले यहाँ काम गर्नुहुन्थ्यो।<br>tapāĩ pahile yahā̃ kām garnuhunthyo | You used to work here. |
 | you plural | तपाईंहरू पहिले यहाँ काम गर्नुहुन्थ्यो।<br>tapāĩharū pahile yahā̃ kām garnuhunthyo | You used to work here. |
-| he/she | उनी पहिले यहाँ काम गर्थिन्।<br>unī pahile yahā̃ kām garthin | She used to work here. |
-| they | उनीहरू पहिले यहाँ काम गर्थे।<br>unīharū pahile yahā̃ kām garthe | They used to work here. |
+| he/she | उहाँ पहिले यहाँ काम गर्थिन्।<br>uhā̃ pahile yahā̃ kām garthin | She used to work here. |
+| they | उहाँहरू पहिले यहाँ काम गर्थे।<br>uhā̃harū pahile yahā̃ kām garthe | They used to work here. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -3181,15 +3182,15 @@ How it works: Forms such as गर्थें and बस्थें describe f
 ### Exercise 6
 
 She used to drink tea.
-उनी पहिले चिया पिउँथिन्।
-unī pahile ciyā piũthin
+उहाँ पहिले चिया पिउनुहुन्थ्यो।
+uhā̃ pahile ciyā piunuhunthyo
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | that person; he/she (medium respect) |
+| उहाँ | uhā̃ | he/she (respectful) |
 | पहिले | pahile | before; first |
 | चिया | ciyā | tea |
-| पिउँथिन् | piũthin | she used to drink (past habitual) |
+| पिउनुहुन्थ्यो | piunuhunthyo | used to drink (respectful) |
 
 How it works: Forms such as गर्थें and बस्थें describe former habits. Contrast a single completed गरेँ with habitual गर्थें. Negatives include गर्दिनथें; respectful forms include गर्नुहुन्थ्यो. पहिले means formerly, and सानो छँदा means when young.
 
@@ -3217,8 +3218,8 @@ Use -एको/-एकी/-एका with the छ family. गरेको छु
 | we | हामीले यो काम गरेको छौं।<br>hāmīle yo kām gareko chaũ | We have done this work. |
 | you | तपाईंले यो काम गर्नुभएको छ।<br>tapāĩle yo kām garnubhaeko cha | You have done this work. |
 | you plural | तपाईंहरूले यो काम गर्नुभएको छ।<br>tapāĩharūle yo kām garnubhaeko cha | You have done this work. |
-| he/she | उनले यो काम गरेकी छिन्।<br>unle yo kām garekī chin | She has done this work. |
-| they | उनीहरूले यो काम गरेका छन्।<br>unīharūle yo kām garekā chan | They have done this work. |
+| he/she | उहाँले यो काम गरेकी हुनुहुन्छ।<br>uhā̃le yo kām garekī hunuhuncha | She has done this work. |
+| they | उहाँहरूले यो काम गरेका हुनुहुन्छ।<br>uhā̃harūle yo kām garekā hunuhuncha | They have done this work. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -3378,8 +3379,8 @@ Use -एको and related forms with the थियो family for a result alrea
 | we | हामीले यो काम गरेको थियौं।<br>hāmīle yo kām gareko thiyaũ | We had done this work. |
 | you | तपाईंले यो काम गर्नुभएको थियो।<br>tapāĩle yo kām garnubhaeko thiyo | You had done this work. |
 | you plural | तपाईंहरूले यो काम गर्नुभएको थियो।<br>tapāĩharūle yo kām garnubhaeko thiyo | You had done this work. |
-| he/she | उनले यो काम गरेकी थिइन्।<br>unle yo kām garekī thiin | She had done this work. |
-| they | उनीहरूले यो काम गरेका थिए।<br>unīharūle yo kām garekā thie | They had done this work. |
+| he/she | उहाँले यो काम गरेकी हुनुहुन्थ्यो।<br>uhā̃le yo kām garekī hunuhunthyo | She had done this work. |
+| they | उहाँहरूले यो काम गरेका हुनुहुन्थ्यो।<br>uhā̃harūle yo kām garekā hunuhunthyo | They had done this work. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -3444,17 +3445,17 @@ How it works: Use -एको and related forms with the थियो family for 
 ### Exercise 4
 
 She had gone home by the time we arrived.
-हामी पुग्दा, उनी घर गएकी थिइन्।
-hāmī pugdā, unī ghar gaekī thiin
+हामी पुग्दा, उहाँ घर जानुभएको थियो।
+hāmī pugdā, uhā̃ ghar jānubhaeko thiyo
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
 | हामी | hāmī | we |
 | पुग्दा | pugdā | when arriving |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | घर | ghar | home; house |
-| गएकी | gaekī | gone; been |
-| थिइन् | thiin | had (perfect auxiliary) |
+| जानुभएको | jānubhaeko | having gone (respectful) |
+| थियो | thiyo | was; were |
 
 How it works: Use -एको and related forms with the थियो family for a result already established at a past time. गरेको थिएँ means I had done it. Compare present-perfect छ with past-reference थियो forms. Negatives include थिइनँ and थिएन. Identify the reference event and which event happened first.
 
@@ -4182,8 +4183,8 @@ Use the action infinitive in -न + a form of सक्नु. बोल्न �
 | we | हामी नेपाली बोल्न सक्छौं।<br>hāmī nepālī bolna sakchaũ | We can speak Nepali. |
 | you | तपाईं नेपाली बोल्न सक्नुहुन्छ?<br>tapāĩ nepālī bolna saknuhuncha? | Can you speak Nepali? |
 | you plural | तपाईंहरू नेपाली बोल्न सक्नुहुन्छ?<br>tapāĩharū nepālī bolna saknuhuncha? | Can you speak Nepali? |
-| he/she | उनी नेपाली बोल्न सक्छिन्।<br>unī nepālī bolna sakchin | She can speak Nepali. |
-| they | उनीहरू नेपाली बोल्न सक्छन्।<br>unīharū nepālī bolna sakchan | They can speak Nepali. |
+| he/she | उहाँ नेपाली बोल्न सक्नुहुन्छ।<br>uhā̃ nepālī bolna saknuhuncha | She can speak Nepali. |
+| they | उहाँहरू नेपाली बोल्न सक्नुहुन्छ।<br>uhā̃harū nepālī bolna saknuhuncha | They can speak Nepali. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -4231,15 +4232,15 @@ This is a question. Supply the missing information and keep person agreement on 
 ### Exercise 3
 
 They can speak Nepali.
-उनीहरू नेपाली बोल्न सक्छन्।
-unīharū nepālī bolna sakchan
+उहाँहरू नेपाली बोल्न सक्नुहुन्छ।
+uhā̃harū nepālī bolna saknuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरू | unīharū | they |
-| नेपाली | nepālī | Nepali (language) |
+| उहाँहरू | uhā̃harū | they (respectful) |
+| नेपाली | nepālī | Nepali |
 | बोल्न | bolna | speak |
-| सक्छन् | sakchan | can |
+| सक्नुहुन्छ | saknuhuncha | can (respectful) |
 
 How it works: Use the action infinitive in -न + a form of सक्नु. बोल्न सक्छु means I can speak; चलाउन सक्दिनँ means I cannot drive. Negation and personal/respect agreement appear on सक्नु, not on both verbs.
 
@@ -4275,15 +4276,15 @@ How it works: Use the action infinitive in -न + a form of सक्नु. ब
 ### Exercise 6
 
 She can drive a car.
-उनी गाडी चलाउन सक्छिन्।
-unī gāḍī calāuna sakchin
+उहाँ गाडी चलाउन सक्नुहुन्छ।
+uhā̃ gāḍī calāuna saknuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | that person; he/she (medium respect) |
+| उहाँ | uhā̃ | he/she (respectful) |
 | गाडी | gāḍī | car; vehicle |
 | चलाउन | calāuna | drive; ride |
-| सक्छिन् | sakchin | can |
+| सक्नुहुन्छ | saknuhuncha | can (respectful) |
 
 How it works: Use the action infinitive in -न + a form of सक्नु. बोल्न सक्छु means I can speak; चलाउन सक्दिनँ means I cannot drive. Negation and personal/respect agreement appear on सक्नु, not on both verbs.
 
@@ -4394,14 +4395,14 @@ How it works: -नु पर्छ expresses obligation; -नु पर्दै
 ### Exercise 4
 
 They have to wait.
-उनीहरूले पर्खनु पर्छ।
-unīharūle parkhanu parcha
+उहाँहरूले पर्खनु पर्छ।
+uhā̃harūle parkhanu parcha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरूले | unīharūle | they (agent) |
+| उहाँहरूले | uhā̃harūle | they as agents (respectful) |
 | पर्खनु | parkhanu | wait |
-| पर्छ | parcha | must; have to |
+| पर्छ | parcha | have to; must |
 
 How it works: -नु पर्छ expresses obligation; -नु पर्दैन means it is unnecessary, not forbidden. -न मिल्छ? asks whether an action is permitted or feasible. Some constructions use an experiencer such as मलाई; distinguish that role from the object.
 
@@ -4551,8 +4552,8 @@ Express wishes and what you feel like doing
 | we | हामी नेपाल जान चाहन्छौं।<br>hāmī nepāl jāna cāhanchaũ | We want to go to Nepal. |
 | you | तपाईं नेपाल जान चाहनुहुन्छ?<br>tapāĩ nepāl jāna cāhanuhuncha? | Do you want to go to Nepal? |
 | you plural | तपाईंहरू नेपाल जान चाहनुहुन्छ?<br>tapāĩharū nepāl jāna cāhanuhuncha? | Do you want to go to Nepal? |
-| he/she | उनी नेपाल जान चाहन्छिन्।<br>unī nepāl jāna cāhanchin | She wants to go to Nepal. |
-| they | उनीहरू नेपाल जान चाहँदैनन्।<br>unīharū nepāl jāna cāhãdainan | They do not want to go to Nepal. |
+| he/she | उहाँ नेपाल जान चाहन्छिन्।<br>uhā̃ nepāl jāna cāhanchin | She wants to go to Nepal. |
+| they | उहाँहरू नेपाल जान चाहँदैनन्।<br>uhā̃harū nepāl jāna cāhãdainan | They do not want to go to Nepal. |
 
 Repetition in this table is for comparing agreement. The practice below varies situations and content. See appendices A/B for fuller forms and topic 7 for respect.
 
@@ -4616,16 +4617,16 @@ How it works: -न चाहनु expresses a wish. An experiencer + -न म�
 ### Exercise 4
 
 She does not feel like talking now.
-उनलाई अहिले बोल्न मन छैन।
-unlāī ahile bolna man chaina
+उहाँलाई अहिले बोल्न मन छैन।
+uhā̃lāī ahile bolna man chaina
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनलाई | unlāī | to her |
+| उहाँलाई | uhā̃lāī | to him/her; him/her as object (respectful) |
 | अहिले | ahile | now |
 | बोल्न | bolna | speak |
 | मन | man | mind; desire |
-| छैन | chaina | do not feel like |
+| छैन | chaina | not be; not exist |
 
 How it works: -न चाहनु expresses a wish. An experiencer + -न मन लाग्नु expresses feeling like doing something. In मलाई चिया पिउन मन लाग्छ, मलाई marks the experiencer, पिउन is drink, and मन लाग्छ expresses inclination. Negation and tense appear mainly in the final verb.
 
@@ -4738,15 +4739,15 @@ How it works: Adjectives normally precede nouns. Some change form, as in रा�
 ### Exercise 2
 
 She is a pretty girl.
-उनी राम्री केटी हुन्।
-unī rāmrī keṭī hun
+उहाँ राम्री केटी हुनुहुन्छ।
+uhā̃ rāmrī keṭī hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | राम्री | rāmrī | pretty (feminine singular) |
 | केटी | keṭī | girl |
-| हुन् | hun | am; is; are |
+| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
 
 How it works: Adjectives normally precede nouns. Some change form, as in राम्रो, राम्री and राम्रा; others such as सुन्दर are normally invariable. Do not assign gender to objects by Japanese or English intuitions. Review genitive को/की/का agreement with topic 5.
 
@@ -4962,15 +4963,15 @@ This is a question. Supply the missing information and keep person agreement on 
 ### Exercise 3
 
 She always sits here.
-उनी सधैं यहाँ बस्छिन्।
-unī sadhaĩ yahā̃ baschin
+उहाँ सधैं यहाँ बस्नुहुन्छ।
+uhā̃ sadhaĩ yahā̃ basnuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | सधैं | sadhaĩ | always |
 | यहाँ | yahā̃ | here |
-| बस्छिन् | baschin | sit; live |
+| बस्नुहुन्छ | basnuhuncha | live/lives (respectful) |
 
 How it works: बिस्तारै means slowly, छिटो quickly/early, सधैं always, प्रायः usually, and धेरै very/much. Distinguish words describing an action from adjectives describing nouns. कति + adjective can express an exclamation as well as a question.
 
@@ -4992,14 +4993,14 @@ How it works: बिस्तारै means slowly, छिटो quickly/early,
 ### Exercise 5
 
 They do not talk much.
-उनीहरू धेरै बोल्दैनन्।
-unīharū dherai boldainan
+उहाँहरू धेरै बोल्नुहुन्न।
+uhā̃harū dherai bolnuhunna
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरू | unīharū | they |
-| धेरै | dherai | a lot; many |
-| बोल्दैनन् | boldainan | does not speak; do not speak |
+| उहाँहरू | uhā̃harū | they (respectful) |
+| धेरै | dherai | much; many; very |
+| बोल्नुहुन्न | bolnuhunna | do/does not speak (respectful) |
 
 How it works: बिस्तारै means slowly, छिटो quickly/early, सधैं always, प्रायः usually, and धेरै very/much. Distinguish words describing an action from adjectives describing nouns. कति + adjective can express an exclamation as well as a question.
 
@@ -5194,15 +5195,15 @@ How it works: A + Bभन्दा + adjective compares A against B. सबभ�
 ### Exercise 5
 
 She walks faster than me.
-उनी मभन्दा छिटो हिँड्छिन्।
-unī mabhandā chiṭo hĩḍchin
+उहाँ मभन्दा छिटो हिँड्नुहुन्छ।
+uhā̃ mabhandā chiṭo hiṇḍnuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | मभन्दा | mabhandā | than me |
 | छिटो | chiṭo | quickly |
-| हिँड्छिन् | hĩḍchin | walk; walks |
+| हिँड्नुहुन्छ | hiṇḍnuhuncha | walk/walks (respectful) |
 
 How it works: A + Bभन्दा + adjective compares A against B. सबभन्दा/सबैभन्दा express a superlative; मध्ये identifies the group selected from. जस्तै/जस्तो and related forms express similarity; जस्तो can agree with its noun. Keep the item and comparison standard distinct.
 भन्दा = standard of comparison
@@ -5297,15 +5298,15 @@ How it works: A + Bभन्दा + adjective compares A against B. सबभ�
 ### Exercise 11
 
 They walk faster than we do.
-उनीहरू हामीभन्दा छिटो हिँड्छन्।
-unīharū hāmībhandā chiṭo hiṇḍchan
+उहाँहरू हामीभन्दा छिटो हिँड्नुहुन्छ।
+uhā̃harū hāmībhandā chiṭo hiṇḍnuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरू | unīharū | they |
+| उहाँहरू | uhā̃harū | they (respectful) |
 | हामीभन्दा | hāmībhandā | than us (हामी + भन्दा) |
 | छिटो | chiṭo | quickly |
-| हिँड्छन् | hiṇḍchan | they walk (present of हिँड्नु) |
+| हिँड्नुहुन्छ | hiṇḍnuhuncha | walk/walks (respectful) |
 
 How it works: A + Bभन्दा + adjective compares A against B. सबभन्दा/सबैभन्दा express a superlative; मध्ये identifies the group selected from. जस्तै/जस्तो and related forms express similarity; जस्तो can agree with its noun. Keep the item and comparison standard distinct.
 भन्दा = standard of comparison
@@ -5605,16 +5606,16 @@ How it works: -दै expresses simultaneous actions; -एपछि orders an ac
 ### Exercise 2
 
 She works while singing.
-उनी गीत गाउँदै काम गर्छिन्।
-unī gīt gāũdai kām garchin
+उहाँ गीत गाउँदै काम गर्नुहुन्छ।
+uhā̃ gīt gāũdai kām garnuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | गीत | gīt | song |
 | गाउँदै | gāũdai | while singing |
 | काम | kām | work |
-| गर्छिन् | garchin | do; does |
+| गर्नुहुन्छ | garnuhuncha | do/does (respectful) |
 
 How it works: -दै expresses simultaneous actions; -एपछि orders an action after another. Noun + पछि means after an event such as class; it is not formed by simply adding पछि to any past finite verb. अघि/पहिले mean before, temporal भित्र means within, and पश्चात् is a more formal after. See topic 29 for जब/जहिले.
 
@@ -5714,15 +5715,15 @@ How it works: -दै expresses simultaneous actions; -एपछि orders an ac
 ### Exercise 9
 
 She leaves after drinking tea.
-चिया पिएपछि, उनी जान्छिन्।
-ciyā piepachi, unī jānchin
+चिया पिएपछि, उहाँ जानुहुन्छ।
+ciyā piepachi, uhā̃ jānuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
 | चिया | ciyā | tea |
 | पिएपछि | piepachi | after drinking |
-| उनी | unī | she; that person |
-| जान्छिन् | jānchin | go; goes |
+| उहाँ | uhā̃ | he/she (respectful) |
+| जानुहुन्छ | jānuhuncha | go/goes (respectful) |
 
 How it works: -दै expresses simultaneous actions; -एपछि orders an action after another. Noun + पछि means after an event such as class; it is not formed by simply adding पछि to any past finite verb. अघि/पहिले mean before, temporal भित्र means within, and पश्चात् is a more formal after. See topic 29 for जब/जहिले.
 
@@ -5843,16 +5844,16 @@ This is a question. Supply the missing information and keep person agreement on 
 ### Exercise 3
 
 She comes to meet a friend.
-उनी साथीलाई भेट्नको लागि आउँछिन्।
-unī sāthīlāī bheṭnako lāgi āũchin
+उहाँ साथीलाई भेट्नको लागि आउनुहुन्छ।
+uhā̃ sāthīlāī bheṭnako lāgi āunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | साथीलाई | sāthīlāī | a friend; to a friend |
 | भेट्नको | bheṭnako | to meet (purpose) |
 | लागि | lāgi | for |
-| आउँछिन् | āũchin | come; comes |
+| आउनुहुन्छ | āunuhuncha | come/comes (respectful) |
 
 How it works: Use को/का लागि for beneficiaries and -नको लागि for an intended action: छोराको लागि, for a son; पढ्नको लागि, in order to study. A motion purpose can also use a bare infinitive, as in पढ्न जान्छु. Learn synonymous निम्ति/निमित्त in actual combinations.
 
@@ -5876,17 +5877,17 @@ How it works: Use को/का लागि for beneficiaries and -नको �
 ### Exercise 5
 
 They go to the market to buy books.
-उनीहरू किताब किन्नको लागि बजार जान्छन्।
-unīharū kitāb kinnako lāgi bajār jānchan
+उहाँहरू किताब किन्नको लागि बजार जानुहुन्छ।
+uhā̃harū kitāb kinnako lāgi bajār jānuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरू | unīharū | they |
+| उहाँहरू | uhā̃harū | they (respectful) |
 | किताब | kitāb | book |
 | किन्नको | kinnako | to buy (purpose) |
 | लागि | lāgi | for |
 | बजार | bajār | market |
-| जान्छन् | jānchan | go; goes |
+| जानुहुन्छ | jānuhuncha | go/goes (respectful) |
 
 How it works: Use को/का लागि for beneficiaries and -नको लागि for an intended action: छोराको लागि, for a son; पढ्नको लागि, in order to study. A motion purpose can also use a bare infinitive, as in पढ्न जान्छु. Learn synonymous निम्ति/निमित्त in actual combinations.
 
@@ -6002,22 +6003,22 @@ Nepali can modify a noun with a -ने/-एको clause, or link clauses with 
 
 ### Noun-modifying clauses and relative–correlative clauses
 
-Place a modifier before its noun: नेपाल जाने मान्छे, a person who goes to Nepal; हिजो आएको मान्छे, a person who came yesterday. In जो यहाँ बस्छ, ऊ मेरो साथी हो, जो introduces a person and ऊ resumes that person. A clause describes an event/state. Each clause uses the case marking and verb appropriate to its own role.
+Place a modifier before its noun: नेपाल जाने मान्छे, a person who goes to Nepal; हिजो आएको मान्छे, a person who came yesterday. In जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ, जो introduces a person and उहाँ resumes that person. A clause describes an event/state. Each clause uses the case marking and verb appropriate to its own role.
 
 | Relative form and reading | Function | Short example |
 | --- | --- | --- |
-| जो…ऊ／उनी<br>jo…ū / unī | the person who…that person | जो यहाँ बस्छ, ऊ मेरो साथी हो।<br>jo yahā̃ bascha, ū mero sāthī ho<br>The person who lives here is my friend. |
+| जो…उहाँ<br>jo…uhā̃ | the person who…that person | जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ।<br>jo yahā̃ basnuhuncha, uhā̃ mero sāthī hunuhuncha<br>The person who lives here is my friend. |
 | जुन…त्यो<br>jun…tyo | the entity which…that one | जुन किताब तपाईं पढ्नुहुन्छ, त्यो राम्रो छ।<br>jun kitāb tapāĩ paḍhnuhuncha, tyo rāmro cha<br>The book you are reading is good. |
 | जे…त्यो／त्यही<br>je…tyo / tyahī | what…that, the very thing | जे मन पर्छ, त्यही खानुहोस्।<br>je man parcha, tyahī khānuhos<br>Eat what you like. |
-| जसले…उसले<br>jasle…usle | the agent who…that agent | जसले मेहनत गर्छ, उसले सिक्छ।<br>jasle mehanat garcha, usle sikcha<br>The person who makes an effort learns. |
-| जसलाई…उसलाई<br>jaslāī…uslāī | the person whom/to whom…that person | जसलाई पानी चाहिन्छ, उसलाई दिनुहोस्।<br>jaslāī pānī cāhincha, uslāī dinuhos<br>Give water to the person who needs it. |
-| जसको・जसकी・जसका<br>jasko / jaskī / jaskā | whose; agreement follows the possessed noun | जसको किताब हो, उसलाई दिनुहोस्।<br>jasko kitāb ho, uslāī dinuhos<br>Give it to the person whose book it is. |
+| जसले…उहाँले<br>jasle…uhā̃le | the agent who…that agent | जसले मेहनत गर्नुहुन्छ, उहाँले सिक्नुहुन्छ।<br>jasle mehanat garnuhuncha, uhā̃le siknuhuncha<br>The person who makes an effort learns. |
+| जसलाई…उहाँलाई<br>jaslāī…uhā̃lāī | the person whom/to whom…that person | जसलाई पानी चाहिन्छ, उहाँलाई दिनुहोस्।<br>jaslāī pānī cāhincha, uhā̃lāī dinuhos<br>Give water to the person who needs it. |
+| जसको・जसकी・जसका<br>jasko / jaskī / jaskā | whose; agreement follows the possessed noun | जसको किताब हुनुहुन्छ, उहाँलाई दिनुहोस्।<br>jasko kitāb hunuhuncha, uhā̃lāī dinuhos<br>Give it to the person whose book it is. |
 | जसमा・जुन…मा<br>jasmā / jun…mā | in which; choose according to the referent | जुन झोलामा किताब छ, त्यो मेरो हो।<br>jun jholāmā kitāb cha, tyo mero ho<br>The bag that has a book in it is mine. |
 | जहाँ…त्यहाँ<br>jahā̃…tyahā̃ | where…there | जहाँ पानी छ, त्यहाँ जीवन छ।<br>jahā̃ pānī cha, tyahā̃ jīvan cha<br>Where there is water, there is life. |
 | जहाँबाट…त्यहाँबाट<br>jahā̃bāṭa…tyahā̃bāṭa | from where…from there | जहाँबाट आउनुभयो, त्यहाँबाट फेरि आउनुहोस्।<br>jahā̃bāṭa āunubhayo, tyahā̃bāṭa pheri āunuhos<br>Come again from the place you came from. |
-| जता…त्यता／त्यतै<br>jatā…tyatā / tyatai | in whichever direction…that way | जता उनी जान्छिन्, म पनि त्यतै जान्छु।<br>jatā unī jānchin, ma pani tyatai jānchu<br>I go in the same direction as she does. |
+| जता…त्यता／त्यतै<br>jatā…tyatā / tyatai | in whichever direction…that way | जता उहाँ जानुहुन्छ, म पनि त्यतै जान्छु।<br>jatā uhā̃ jānuhuncha, ma pani tyatai jānchu<br>I go in the same direction as she does. |
 | जब…तब<br>jab…tab | when…then | जब पानी पर्छ, तब बाटो हिलो हुन्छ।<br>jab pānī parcha, tab bāṭo hilo huncha<br>When it rains, the road gets muddy. |
-| जहिले<br>jahile | when, whenever, according to context | म जहिले आउँछु, उनी यहाँ हुन्छिन्।<br>ma jahile āũchu, unī yahā̃ hunchin<br>Whenever I come, she is here. |
+| जहिले<br>jahile | when, whenever, according to context | म जहिले आउँछु, उहाँ यहाँ हुनुहुन्छ।<br>ma jahile āũchu, uhā̃ yahā̃ hunuhuncha<br>Whenever I come, she is here. |
 | जसरी…त्यसरी<br>jasarī…tyasarī | in the way…in that way | जसरी म गर्छु, त्यसरी गर्नुहोस्।<br>jasarī ma garchu, tyasarī garnuhos<br>Do it the way I do. |
 | जसो…त्यसो<br>jaso…tyaso | as things are…accordingly | जसो भन्नुहुन्छ, त्यसो गर्छु।<br>jaso bhannuhuncha, tyaso garchu<br>I will do as you say. |
 | जति…त्यति<br>jati…tyati | as much/many…that much/many | जति चाहिन्छ, त्यति लिनुहोस्।<br>jati cāhincha, tyati linuhos<br>Take as much as you need. |
@@ -6183,17 +6184,17 @@ How it works: Nepali can modify a noun with a -ने/-एको clause, or link
 ### Exercise 10
 
 The office where she works is far away.
-उनी काम गर्ने अफिस टाढा छ।
-unī kām garne aphis ṭāḍhā cha
+उहाँ काम गर्नुहुने अफिस टाढा छ।
+uhā̃ kām garnuhune aphis ṭāḍhā cha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | काम | kām | work |
-| गर्ने | garne | doing; for doing |
+| गर्नुहुने | garnuhune | who does/works (respectful modifier) |
 | अफिस | aphis | office |
 | टाढा | ṭāḍhā | far away |
-| छ | cha | am; is; are |
+| छ | cha | be; exist |
 
 How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.
 
@@ -6215,21 +6216,21 @@ How it works: Nepali can modify a noun with a -ने/-एको clause, or link
 ### Exercise 12
 
 The person who lives here is my friend.
-जो यहाँ बस्छ, ऊ मेरो साथी हो।
-jo yahā̃ bascha, ū mero sāthī ho
+जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ।
+jo yahā̃ basnuhuncha, uhā̃ mero sāthī hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
 | जो | jo | who; the person who (relative) |
 | यहाँ | yahā̃ | here |
-| बस्छ | bascha | lives; sits (low-respect present of बस्नु) |
-| ऊ | ū | that person; he/she (low respect) |
+| बस्नुहुन्छ | basnuhuncha | live/lives (respectful) |
+| उहाँ | uhā̃ | he/she (respectful) |
 | मेरो | mero | my |
 | साथी | sāthī | friend |
-| हो | ho | be (identification) |
+| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
 
 How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.
-जो…ऊ／उनी = the person who…that person
+जो…उहाँ = the person who…that person
 
 ### Exercise 13
 
@@ -6242,7 +6243,7 @@ jun kitāb tapāĩ paḍhnuhuncha, tyo rāmro cha
 | जुन | jun | which; the entity that (relative) |
 | किताब | kitāb | book |
 | तपाईं | tapāĩ | you (respectful) |
-| पढ्नुहुन्छ | paḍhnuhuncha | read; study (respectful present) |
+| पढ्नुहुन्छ | paḍhnuhuncha | read/reads (respectful) |
 | त्यो | tyo | that |
 | राम्रो | rāmro | good; nice |
 | छ | cha | be; exist |
@@ -6289,17 +6290,17 @@ How it works: Nepali can modify a noun with a -ने/-एको clause, or link
 ### Exercise 16
 
 Whenever I come, she is here.
-म जहिले आउँछु, उनी यहाँ हुन्छिन्।
-ma jahile āũchu, unī yahā̃ hunchin
+म जहिले आउँछु, उहाँ यहाँ हुनुहुन्छ।
+ma jahile āũchu, uhā̃ yahā̃ hunuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
 | म | ma | I |
 | जहिले | jahile | when; whenever (context-dependent) |
 | आउँछु | āũchu | come; comes |
-| उनी | unī | that person; he/she (medium respect) |
+| उहाँ | uhā̃ | he/she (respectful) |
 | यहाँ | yahā̃ | here |
-| हुन्छिन् | hunchin | is habitually; becomes (feminine form) |
+| हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
 
 How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.
 जहिले = when, whenever, according to context
@@ -6307,36 +6308,36 @@ How it works: Nepali can modify a noun with a -ने/-एको clause, or link
 ### Exercise 17
 
 The person who makes an effort learns.
-जसले मेहनत गर्छ, उसले सिक्छ।
-jasle mehanat garcha, usle sikcha
+जसले मेहनत गर्नुहुन्छ, उहाँले सिक्नुहुन्छ।
+jasle mehanat garnuhuncha, uhā̃le siknuhuncha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
 | जसले | jasle | who as agent (relative form with ले) |
 | मेहनत | mehanat | effort; hard work |
-| गर्छ | garcha | do; does |
-| उसले | usle | he (agent) |
-| सिक्छ | sikcha | learns (low-respect present of सिक्नु) |
+| गर्नुहुन्छ | garnuhuncha | do/does (respectful) |
+| उहाँले | uhā̃le | he/she as agent (respectful) |
+| सिक्नुहुन्छ | siknuhuncha | learn/learns (respectful) |
 
 How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.
-जसले…उसले = the agent who…that agent
+जसले…उहाँले = the agent who…that agent
 
 ### Exercise 18
 
 Give water to the person who needs it.
-जसलाई पानी चाहिन्छ, उसलाई दिनुहोस्।
-jaslāī pānī cāhincha, uslāī dinuhos
+जसलाई पानी चाहिन्छ, उहाँलाई दिनुहोस्।
+jaslāī pānī cāhincha, uhā̃lāī dinuhos
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
 | जसलाई | jaslāī | to whom; the person who needs/receives (relative) |
 | पानी | pānī | water |
 | चाहिन्छ | cāhincha | is needed |
-| उसलाई | uslāī | to that person; that person as object (low respect) |
+| उहाँलाई | uhā̃lāī | to him/her; him/her as object (respectful) |
 | दिनुहोस् | dinuhos | please give |
 
 How it works: Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where.
-जसलाई…उसलाई = the person whom/to whom…that person
+जसलाई…उहाँलाई = the person whom/to whom…that person
 
 ### Exercise 19
 
@@ -6391,14 +6392,14 @@ How it works: Nepali can modify a noun with a -ने/-एको clause, or link
 ### Exercise 22
 
 I go in the same direction as she does.
-जता उनी जान्छिन्, म पनि त्यतै जान्छु।
-jatā unī jānchin, ma pani tyatai jānchu
+जता उहाँ जानुहुन्छ, म पनि त्यतै जान्छु।
+jatā uhā̃ jānuhuncha, ma pani tyatai jānchu
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
 | जता | jatā | in the direction that (relative) |
-| उनी | unī | that person; he/she (medium respect) |
-| जान्छिन् | jānchin | go; goes |
+| उहाँ | uhā̃ | he/she (respectful) |
+| जानुहुन्छ | jānuhuncha | go/goes (respectful) |
 | म | ma | I |
 | पनि | pani | also; too |
 | त्यतै | tyatai | that way; in that direction |
@@ -6487,14 +6488,14 @@ How it works: Use condition + भने + consequence. यदि explicitly adds
 ### Exercise 4
 
 If she is coming, I will come too.
-उनी आउँछिन् भने, म पनि आउँछु।
-unī āũchin bhane, ma pani āũchu
+उहाँ आउनुहुन्छ भने, म पनि आउँछु।
+uhā̃ āunuhuncha bhane, ma pani āũchu
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
-| आउँछिन् | āũchin | come; comes |
-| भने | bhane | if |
+| उहाँ | uhā̃ | he/she (respectful) |
+| आउनुहुन्छ | āunuhuncha | come/comes (respectful) |
+| भने | bhane | said |
 | म | ma | I |
 | पनि | pani | also; too |
 | आउँछु | āũchu | come; comes |
@@ -6659,16 +6660,16 @@ This is a question. Supply the missing information and keep person agreement on 
 ### Exercise 4
 
 I think she will not come today.
-उनी आज आउँदिनन् जस्तो लाग्छ।
-unī āja āũdinan jasto lāgcha
+उहाँ आज आउनुहुन्न जस्तो लाग्छ।
+uhā̃ āja āunuhunna jasto lāgcha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | आज | āja | today |
-| आउँदिनन् | āũdinan | do not come; does not come |
-| जस्तो | jasto | as if |
-| लाग्छ | lāgcha | think; seems |
+| आउनुहुन्न | āunuhunna | do/does not come (respectful) |
+| जस्तो | jasto | as if; like |
+| लाग्छ | lāgcha | feel; think |
 
 How it works: मलाई लाग्छ introduces an impression or opinion; भन्ने can introduce its content. होला expresses a supposition and हुन सक्छ a possibility. -एको हुनु पर्छ can express an inference, unlike obligatory -नु पर्छ. Preserve the degree of certainty rather than translating a guess as a fact.
 
@@ -6737,16 +6738,16 @@ How it works: मलाई लाग्छ introduces an impression or opinion; 
 ### Exercise 9
 
 She must have gone home.
-उनी घर गएकी हुनु पर्छ।
-unī ghar gaekī hunu parcha
+उहाँ घर जानुभएको हुनु पर्छ।
+uhā̃ ghar jānubhaeko hunu parcha
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनी | unī | she; that person |
+| उहाँ | uhā̃ | he/she (respectful) |
 | घर | ghar | home; house |
-| गएकी | gaekī | gone; been |
+| जानुभएको | jānubhaeko | having gone (respectful) |
 | हुनु | hunu | be; become |
-| पर्छ | parcha | must (deduction) |
+| पर्छ | parcha | have to; must |
 
 How it works: मलाई लाग्छ introduces an impression or opinion; भन्ने can introduce its content. होला expresses a supposition and हुन सक्छ a possibility. -एको हुनु पर्छ can express an inference, unlike obligatory -नु पर्छ. Preserve the degree of certainty rather than translating a guess as a fact.
 
@@ -7082,29 +7083,29 @@ How it works: A causative expresses causing or arranging an action. Learn pairs 
 ### Exercise 3
 
 She made me write a letter.
-उनले मलाई चिठी लेख्न लगाइन्।
-unle malāī ciṭhī lekhna lagāin
+उहाँले मलाई चिठी लेख्न लगाउनुभयो।
+uhā̃le malāī ciṭhī lekhna lagāunubhayo
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनले | unle | she (agent) |
+| उहाँले | uhā̃le | he/she as agent (respectful) |
 | मलाई | malāī | to me; me |
 | चिठी | ciṭhī | letter |
 | लेख्न | lekhna | write |
-| लगाइन् | lagāin | made; had (someone do) |
+| लगाउनुभयो | lagāunubhayo | caused/made someone do (respectful) |
 
 How it works: A causative expresses causing or arranging an action. Learn pairs such as खानु→खुवाउनु and सिक्नु→सिकाउनु. Separate causer, person acting and object. -न लगाउनु is another causative construction. Review लाई and completed-event agent marking in topics 5 and 11.
 
 ### Exercise 4
 
 We showed them the room.
-हामीले उनीहरूलाई कोठा देखायौं।
-hāmīle unīharūlāī koṭhā dekhāyaũ
+हामीले उहाँहरूलाई कोठा देखायौं।
+hāmīle uhā̃harūlāī koṭhā dekhāyaũ
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
 | हामीले | hāmīle | we (agent) |
-| उनीहरूलाई | unīharūlāī | to them |
+| उहाँहरूलाई | uhā̃harūlāī | to them; them as object (respectful) |
 | कोठा | koṭhā | room |
 | देखायौं | dekhāyaũ | showed |
 
@@ -7129,16 +7130,16 @@ This is a question. Supply the missing information and keep person agreement on 
 ### Exercise 6
 
 They made me go outside.
-उनीहरूले मलाई बाहिर जान लगाए।
-unīharūle malāī bāhira jāna lagāe
+उहाँहरूले मलाई बाहिर जान लगाउनुभयो।
+uhā̃harūle malāī bāhira jāna lagāunubhayo
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरूले | unīharūle | they (agent) |
+| उहाँहरूले | uhā̃harūle | they as agents (respectful) |
 | मलाई | malāī | to me; me |
 | बाहिर | bāhira | outside |
 | जान | jāna | go |
-| लगाए | lagāe | made; had (someone do) |
+| लगाउनुभयो | lagāunubhayo | caused/made someone do (respectful) |
 
 How it works: A causative expresses causing or arranging an action. Learn pairs such as खानु→खुवाउनु and सिक्नु→सिकाउनु. Separate causer, person acting and object. -न लगाउनु is another causative construction. Review लाई and completed-event agent marking in topics 5 and 11.
 
@@ -7172,16 +7173,16 @@ Report what someone said
 
 ### Meaning and sentence construction
 
-Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
+Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
 
 ### Direct quotation and indirect reporting
 
 | Method | Example and reading | Meaning |
 | --- | --- | --- |
-| Direct quotation | उनले “म बिरामी छु” भनिन्।<br>unle “ma birāmī chu” bhanin | She said, “I am ill.” |
-| Indirect reporting | उनले आफू बिरामी भएको बताइन्।<br>unle āphū birāmī bhaeko batāin | She said that she was ill. |
+| Direct quotation | उहाँले “म बिरामी छु” भन्नुभयो।<br>uhā̃le “ma birāmī chu” bhannubhayo | She said, “I am ill.” |
+| Indirect reporting | उहाँले आफू बिरामी भएको बताउनुभयो।<br>uhā̃le āphū birāmī bhaeko batāunubhayo | She said that she was ill. |
 
-In direct speech, म refers to the original speaker. Indirect reporting uses आफू, self, to refer back to the subject and बिरामी, ill, + भएको to package the reported state. बताइन् is the feminine past of बताउनु, tell/report. Track perspective and clause structure rather than simply replacing a pronoun.
+In direct speech, म refers to the original speaker. Indirect reporting uses आफू, self, to refer back to the subject and बिरामी, ill, + भएको to package the reported state. बताउनुभयो is the respectful past of बताउनु, tell/report. Track perspective and clause structure rather than simply replacing a pronoun.
 
 Said they would come and did not say they would come differ in the scope of negation. Match the reporting verb to the speaker.
 
@@ -7196,16 +7197,16 @@ Listen to the examples to check word order and expressions, then practice saying
 ### Exercise 1
 
 She said she would not go.
-उनले जाँदिनँ भनिन्।
-unle jā̃dinã bhanin
+उहाँले जाँदिनँ भन्नुभयो।
+uhā̃le jā̃dinã bhannubhayo
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनले | unle | she (agent) |
+| उहाँले | uhā̃le | he/she as agent (respectful) |
 | जाँदिनँ | jā̃dinã | do not go; does not go |
-| भनिन् | bhanin | said |
+| भन्नुभयो | bhannubhayo | said (respectful) |
 
-How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
+How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
 
 ### Exercise 2
 
@@ -7221,7 +7222,7 @@ The teacher said there would be an exam tomorrow.
 | छ | cha | is; are (existence) |
 | भन्नुभयो | bhannubhayo | said (respectful) |
 
-How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
+How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
 
 ### Exercise 3
 
@@ -7237,7 +7238,7 @@ maile ma vidyārthī hũ bhanẽ
 | हुँ | hũ | am; is; are |
 | भनेँ | bhanẽ | said |
 
-How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
+How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
 
 ### Exercise 4
 
@@ -7251,7 +7252,7 @@ tapāĩle āũchu bhannubhayo?
 | आउँछु | āũchu | come; comes |
 | भन्नुभयो | bhannubhayo | said (respectful) |
 
-How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
+How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
 This is a question. Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 5
@@ -7267,22 +7268,22 @@ hāmīle tayār chaũ bhanyaũ
 | छौं | chaũ | am; is; are |
 | भन्यौं | bhanyaũ | said |
 
-How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
+How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
 
 ### Exercise 6
 
 They said they would come tomorrow.
-उनीहरूले भोलि आउँछौं भने।
-unīharūle bholi āũchaũ bhane
+उहाँहरूले भोलि आउँछौं भन्नुभयो।
+uhā̃harūle bholi āũchaũ bhannubhayo
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनीहरूले | unīharūle | they (agent) |
+| उहाँहरूले | uhā̃harūle | they as agents (respectful) |
 | भोलि | bholi | tomorrow |
 | आउँछौं | āũchaũ | come; comes |
-| भने | bhane | said |
+| भन्नुभयो | bhannubhayo | said (respectful) |
 
-How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
+How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
 
 ### Exercise 7
 
@@ -7298,22 +7299,22 @@ maile tyo rāmro cha bhaninã
 | छ | cha | am; is; are |
 | भनिनँ | bhaninã | did not say |
 
-How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
+How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
 
 ### Exercise 8
 
 She said she had no money.
-उनले पैसा छैन भनिन्।
-unle paisā chaina bhanin
+उहाँले पैसा छैन भन्नुभयो।
+uhā̃le paisā chaina bhannubhayo
 
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
-| उनले | unle | she (agent) |
+| उहाँले | uhā̃le | he/she as agent (respectful) |
 | पैसा | paisā | money |
-| छैन | chaina | is not; are not (existence) |
-| भनिन् | bhanin | said |
+| छैन | chaina | not be; not exist |
+| भन्नुभयो | bhannubhayo | said (respectful) |
 
-How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
+How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
 
 ### Exercise 9
 
@@ -7330,7 +7331,7 @@ Mother always used to tell me to go to bed early.
 | भन्ने | bhanne | saying |
 | गर्नुहुन्थ्यो | garnuhunthyo | used to do (respectful) |
 
-How it works: Report speech with its content followed by a form such as भने or भनिन्. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भनेन means did not say; भन्थिन् can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
+How it works: Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role.
 
 ### Build your own sentence
 
@@ -7357,11 +7358,11 @@ This appendix uses लेख्नु, to write. Starting from the stem ले�
 | तिमी चिठी लेख्छौ। | timī ciṭhī lekhchau | You write letters. |
 | तिमीहरू चिठी लेख्छौ। | timīharū ciṭhī lekhchau | You write letters. |
 | तपाईं चिठी लेख्नुहुन्छ। | tapāĩ ciṭhī lekhnuhuncha | You write letters. |
-| उ चिठी लेख्छ। | u ciṭhī lekhcha | He writes letters. |
-| उनी चिठी लेख्छिन्। | unī ciṭhī lekhchin | She writes letters. |
+| उहाँ चिठी लेख्नुहुन्छ। | uhā̃ ciṭhī lekhnuhuncha | He writes letters. |
+| उहाँ चिठी लेख्नुहुन्छ। | uhā̃ ciṭhī lekhnuhuncha | She writes letters. |
 | उहाँ चिठी लेख्नुहुन्छ। | uhā̃ ciṭhī lekhnuhuncha | He writes letters. |
 | हामी चिठी लेख्छौं। | hāmī ciṭhī lekhchaũ | We write letters. |
-| उनीहरू चिठी लेख्छन्। | unīharū ciṭhī lekhchan | They write letters. |
+| उहाँहरू चिठी लेख्नुहुन्छ। | uhā̃harū ciṭhī lekhnuhuncha | They write letters. |
 
 ### Not writing
 
@@ -7372,11 +7373,11 @@ This appendix uses लेख्नु, to write. Starting from the stem ले�
 | तिमी चिठी लेख्दैनौ। | timī ciṭhī lekhdainau | You do not write letters. |
 | तिमीहरू चिठी लेख्दैनौ। | timīharū ciṭhī lekhdainau | You do not write letters. |
 | तपाईं चिठी लेख्नुहुन्न। | tapāĩ ciṭhī lekhnuhunna | You do not write letters. |
-| उ चिठी लेख्दैन। | u ciṭhī lekhdaina | He does not write letters. |
-| उनी चिठी लेख्दिनन्। | unī ciṭhī lekhdinan | She does not write letters. |
+| उहाँ चिठी लेख्नुहुन्न। | uhā̃ ciṭhī lekhnuhunna | He does not write letters. |
+| उहाँ चिठी लेख्नुहुन्न। | uhā̃ ciṭhī lekhnuhunna | She does not write letters. |
 | उहाँ चिठी लेख्नुहुन्न। | uhā̃ ciṭhī lekhnuhunna | He does not write letters. |
 | हामी चिठी लेख्दैनौं। | hāmī ciṭhī lekhdainaũ | We do not write letters. |
-| उनीहरू चिठी लेख्दैनन्। | unīharū ciṭhī lekhdainan | They do not write letters. |
+| उहाँहरू चिठी लेख्नुहुन्न। | uhā̃harū ciṭhī lekhnuhunna | They do not write letters. |
 
 ### A completed writing event
 
@@ -7387,11 +7388,11 @@ This appendix uses लेख्नु, to write. Starting from the stem ले�
 | तिमीले हिजो चिठी लेख्यौ। | timīle hijo ciṭhī lekhyau | You wrote a letter yesterday. |
 | तिमीहरूले हिजो चिठी लेख्यौ। | timīharūle hijo ciṭhī lekhyau | You wrote a letter yesterday. |
 | तपाईंले हिजो चिठी लेख्नुभयो। | tapāĩle hijo ciṭhī lekhnubhayo | You wrote a letter yesterday. |
-| उसले हिजो चिठी लेख्यो। | usle hijo ciṭhī lekhyo | He wrote a letter yesterday. |
-| उनले हिजो चिठी लेखिन्। | unle hijo ciṭhī lekhin | She wrote a letter yesterday. |
+| उहाँले हिजो चिठी लेख्नुभयो। | uhā̃le hijo ciṭhī lekhnubhayo | He wrote a letter yesterday. |
+| उहाँले हिजो चिठी लेख्नुभयो। | uhā̃le hijo ciṭhī lekhnubhayo | She wrote a letter yesterday. |
 | उहाँले हिजो चिठी लेख्नुभयो। | uhā̃le hijo ciṭhī lekhnubhayo | He wrote a letter yesterday. |
 | हामीले हिजो चिठी लेख्यौं। | hāmīle hijo ciṭhī lekhyaũ | We wrote a letter yesterday. |
-| उनीहरूले हिजो चिठी लेखे। | unīharūle hijo ciṭhī lekhe | They wrote a letter yesterday. |
+| उहाँहरूले हिजो चिठी लेख्नुभयो। | uhā̃harūle hijo ciṭhī lekhnubhayo | They wrote a letter yesterday. |
 
 ### A writing event that did not happen
 
@@ -7402,11 +7403,11 @@ This appendix uses लेख्नु, to write. Starting from the stem ले�
 | तिमीले हिजो चिठी लेखेनौ। | timīle hijo ciṭhī lekhenau | You did not write a letter yesterday. |
 | तिमीहरूले हिजो चिठी लेखेनौ। | timīharūle hijo ciṭhī lekhenau | You did not write a letter yesterday. |
 | तपाईंले हिजो चिठी लेख्नुभएन। | tapāĩle hijo ciṭhī lekhnubhaena | You did not write a letter yesterday. |
-| उसले हिजो चिठी लेखेन। | usle hijo ciṭhī lekhena | He did not write a letter yesterday. |
-| उनले हिजो चिठी लेखिनन्। | unle hijo ciṭhī lekhinan | She did not write a letter yesterday. |
+| उहाँले हिजो चिठी लेख्नुभएन। | uhā̃le hijo ciṭhī lekhnubhaena | He did not write a letter yesterday. |
+| उहाँले हिजो चिठी लेख्नुभएन। | uhā̃le hijo ciṭhī lekhnubhaena | She did not write a letter yesterday. |
 | उहाँले हिजो चिठी लेख्नुभएन। | uhā̃le hijo ciṭhī lekhnubhaena | He did not write a letter yesterday. |
 | हामीले हिजो चिठी लेखेनौं। | hāmīle hijo ciṭhī lekhenaũ | We did not write a letter yesterday. |
-| उनीहरूले हिजो चिठी लेखेनन्। | unīharūle hijo ciṭhī lekhenan | They did not write a letter yesterday. |
+| उहाँहरूले हिजो चिठी लेख्नुभएन। | uhā̃harūle hijo ciṭhī lekhnubhaena | They did not write a letter yesterday. |
 
 ### Completion connected with now
 
@@ -7417,11 +7418,11 @@ This appendix uses लेख्नु, to write. Starting from the stem ले�
 | तिमीले चिठी लेखेको छौ। | timīle ciṭhī lekheko chau | You have done the write letters. |
 | तिमीहरूले चिठी लेखेको छौ। | timīharūle ciṭhī lekheko chau | You have done the write letters. |
 | तपाईंले चिठी लेख्नुभएको छ। | tapāĩle ciṭhī lekhnubhaeko cha | You have done the write letters. |
-| उसले चिठी लेखेको छ। | usle ciṭhī lekheko cha | He has done the write letters. |
-| उनले चिठी लेखेकी छिन्। | unle ciṭhī lekhekī chin | She has done the write letters. |
+| उहाँले चिठी लेख्नुभएको छ। | uhā̃le ciṭhī lekhnubhaeko cha | He has done the write letters. |
+| उहाँले चिठी लेख्नुभएको छिन्। | uhā̃le ciṭhī lekhnubhaeko chin | She has done the write letters. |
 | उहाँले चिठी लेख्नुभएको छ। | uhā̃le ciṭhī lekhnubhaeko cha | He has done the write letters. |
 | हामीले चिठी लेखेको छौं। | hāmīle ciṭhī lekheko chaũ | We have done the write letters. |
-| उनीहरूले चिठी लेखेका छन्। | unīharūle ciṭhī lekhekā chan | They have done the write letters. |
+| उहाँहरूले चिठी लेख्नुभएको छन्। | uhā̃harūle ciṭhī lekhnubhaeko chan | They have done the write letters. |
 
 ### Former writing habits
 
@@ -7432,11 +7433,11 @@ This appendix uses लेख्नु, to write. Starting from the stem ले�
 | तिमी पहिले चिठी लेख्थ्यौ। | timī pahile ciṭhī lekhthyau | You used to write letters. |
 | तिमीहरू पहिले चिठी लेख्थ्यौ। | timīharū pahile ciṭhī lekhthyau | You used to write letters. |
 | तपाईं पहिले चिठी लेख्नुहुन्थ्यो। | tapāĩ pahile ciṭhī lekhnuhunthyo | You used to write letters. |
-| उ पहिले चिठी लेख्थ्यो। | u pahile ciṭhī lekhthyo | He used to write letters. |
-| उनी पहिले चिठी लेख्थिन्। | unī pahile ciṭhī lekhthin | She used to write letters. |
+| उहाँ पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃ pahile ciṭhī lekhnuhunthyo | He used to write letters. |
+| उहाँ पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃ pahile ciṭhī lekhnuhunthyo | She used to write letters. |
 | उहाँ पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃ pahile ciṭhī lekhnuhunthyo | He used to write letters. |
 | हामी पहिले चिठी लेख्थ्यौं। | hāmī pahile ciṭhī lekhthyaũ | We used to write letters. |
-| उनीहरू पहिले चिठी लेख्थे। | unīharū pahile ciṭhī lekhthe | They used to write letters. |
+| उहाँहरू पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃harū pahile ciṭhī lekhnuhunthyo | They used to write letters. |
 
 ### Requests and offers
 
@@ -7452,18 +7453,18 @@ This appendix uses लेख्नु, to write. Starting from the stem ले�
 
 | Nepali | Reading | Meaning |
 | --- | --- | --- |
-| उनी चिठी लेख्छन्। | unī ciṭhī lekhchan | That person writes letters. |
-| उनले हिजो चिठी लेखे। | unle hijo ciṭhī lekhe | That person wrote a letter yesterday. |
+| उहाँ चिठी लेख्नुहुन्छ। | uhā̃ ciṭhī lekhnuhuncha | That person writes letters. |
+| उहाँले हिजो चिठी लेख्नुभयो। | uhā̃le hijo ciṭhī lekhnubhayo | That person wrote a letter yesterday. |
 | म भोलि चिठी लेख्छु। | ma bholi ciṭhī lekhchu | I will write a letter tomorrow. |
 | तँ भोलि चिठी लेख्छस्। | tã bholi ciṭhī lekhchas | You will write a letter tomorrow. |
 | तिमी भोलि चिठी लेख्छौ। | timī bholi ciṭhī lekhchau | You will write a letter tomorrow. |
 | तिमीहरू भोलि चिठी लेख्छौ। | timīharū bholi ciṭhī lekhchau | You will write a letter tomorrow. |
 | तपाईं भोलि चिठी लेख्नुहुन्छ। | tapāĩ bholi ciṭhī lekhnuhuncha | You will write a letter tomorrow. |
-| उ भोलि चिठी लेख्छ। | u bholi ciṭhī lekhcha | He will write a letter tomorrow. |
-| उनी भोलि चिठी लेख्छिन्। | unī bholi ciṭhī lekhchin | She will write a letter tomorrow. |
+| उहाँ भोलि चिठी लेख्नुहुन्छ। | uhā̃ bholi ciṭhī lekhnuhuncha | He will write a letter tomorrow. |
+| उहाँ भोलि चिठी लेख्नुहुन्छ। | uhā̃ bholi ciṭhī lekhnuhuncha | She will write a letter tomorrow. |
 | उहाँ भोलि चिठी लेख्नुहुन्छ। | uhā̃ bholi ciṭhī lekhnuhuncha | He will write a letter tomorrow. |
 | हामी भोलि चिठी लेख्छौं। | hāmī bholi ciṭhī lekhchaũ | We will write a letter tomorrow. |
-| उनीहरू भोलि चिठी लेख्छन्। | unīharū bholi ciṭhī lekhchan | They will write a letter tomorrow. |
+| उहाँहरू भोलि चिठी लेख्नुहुन्छ। | uhā̃harū bholi ciṭhī lekhnuhuncha | They will write a letter tomorrow. |
 
 Check the agent marker ले with completed transitive actions. Choose short imperative forms only when the relationship makes them appropriate.
 
@@ -7484,21 +7485,21 @@ Choose a form of हुनु according to what you mean. Compare being an autho
 | तिमी लेखक हौ। | timī lekhak hau | You are an author. |
 | तिमीहरू लेखक हौ। | timīharū lekhak hau | You are authors. |
 | तपाईं लेखक हुनुहुन्छ। | tapāĩ lekhak hunuhuncha | You are an author. |
-| उ लेखक हो। | u lekhak ho | He is an author. |
-| उनी लेखिका हुन्। | unī lekhikā hun | She is an author. |
+| उहाँ लेखक हुनुहुन्छ। | uhā̃ lekhak hunuhuncha | He is an author. |
+| उहाँ लेखिका हुनुहुन्छ। | uhā̃ lekhikā hunuhuncha | She is an author. |
 | उहाँ लेखक हुनुहुन्छ। | uhā̃ lekhak hunuhuncha | He is an author. |
 | हामी लेखक हौं। | hāmī lekhak haũ | We are authors. |
-| उनीहरू लेखक हुन्। | unīharū lekhak hun | They are authors. |
+| उहाँहरू लेखक हुनुहुन्छ। | uhā̃harū lekhak hunuhuncha | They are authors. |
 | म लेखक होइनँ। | ma lekhak hoinã | I am not an author. |
 | तँ लेखक होइनस्। | tã lekhak hoinas | You are not an author. |
 | तिमी लेखक होइनौ। | timī lekhak hoinau | You are not an author. |
 | तिमीहरू लेखक होइनौ। | timīharū lekhak hoinau | You are not authors. |
 | तपाईं लेखक हुनुहुन्न। | tapāĩ lekhak hunuhunna | You are not an author. |
-| उ लेखक होइन। | u lekhak hoina | He is not an author. |
-| उनी लेखिका होइनन्। | unī lekhikā hoinan | She is not an author. |
+| उहाँ लेखक हुनुहुन्न। | uhā̃ lekhak hunuhunna | He is not an author. |
+| उहाँ लेखिका हुनुहुन्न। | uhā̃ lekhikā hunuhunna | She is not an author. |
 | उहाँ लेखक हुनुहुन्न। | uhā̃ lekhak hunuhunna | He is not an author. |
 | हामी लेखक होइनौं। | hāmī lekhak hoinaũ | We are not authors. |
-| उनीहरू लेखक होइनन्। | unīharū lekhak hoinan | They are not authors. |
+| उहाँहरू लेखक हुनुहुन्न। | uhā̃harū lekhak hunuhunna | They are not authors. |
 
 ### Present location
 
@@ -7509,21 +7510,21 @@ Choose a form of हुनु according to what you mean. Compare being an autho
 | तिमी पुस्तकालयमा छौ। | timī pustakālayamā chau | You are at the library. |
 | तिमीहरू पुस्तकालयमा छौ। | timīharū pustakālayamā chau | You are at the library. |
 | तपाईं पुस्तकालयमा हुनुहुन्छ। | tapāĩ pustakālayamā hunuhuncha | You are at the library. |
-| उ पुस्तकालयमा छ। | u pustakālayamā cha | He is at the library. |
-| उनी पुस्तकालयमा छिन्। | unī pustakālayamā chin | She is at the library. |
+| उहाँ पुस्तकालयमा हुनुहुन्छ। | uhā̃ pustakālayamā hunuhuncha | He is at the library. |
+| उहाँ पुस्तकालयमा हुनुहुन्छ। | uhā̃ pustakālayamā hunuhuncha | She is at the library. |
 | उहाँ पुस्तकालयमा हुनुहुन्छ। | uhā̃ pustakālayamā hunuhuncha | He is at the library. |
 | हामी पुस्तकालयमा छौं। | hāmī pustakālayamā chaũ | We are at the library. |
-| उनीहरू पुस्तकालयमा छन्। | unīharū pustakālayamā chan | They are at the library. |
+| उहाँहरू पुस्तकालयमा हुनुहुन्छ। | uhā̃harū pustakālayamā hunuhuncha | They are at the library. |
 | म पुस्तकालयमा छैनँ। | ma pustakālayamā chainã | I am not at the library. |
 | तँ पुस्तकालयमा छैनस्। | tã pustakālayamā chainas | You are not at the library. |
 | तिमी पुस्तकालयमा छैनौ। | timī pustakālayamā chainau | You are not at the library. |
 | तिमीहरू पुस्तकालयमा छैनौ। | timīharū pustakālayamā chainau | You are not at the library. |
 | तपाईं पुस्तकालयमा हुनुहुन्न। | tapāĩ pustakālayamā hunuhunna | You are not at the library. |
-| उ पुस्तकालयमा छैन। | u pustakālayamā chaina | He is not at the library. |
-| उनी पुस्तकालयमा छैनन्। | unī pustakālayamā chainan | She is not at the library. |
+| उहाँ पुस्तकालयमा हुनुहुन्न। | uhā̃ pustakālayamā hunuhunna | He is not at the library. |
+| उहाँ पुस्तकालयमा हुनुहुन्न। | uhā̃ pustakālayamā hunuhunna | She is not at the library. |
 | उहाँ पुस्तकालयमा हुनुहुन्न। | uhā̃ pustakālayamā hunuhunna | He is not at the library. |
 | हामी पुस्तकालयमा छैनौं। | hāmī pustakālayamā chainaũ | We are not at the library. |
-| उनीहरू पुस्तकालयमा छैनन्। | unīharū pustakālayamā chainan | They are not at the library. |
+| उहाँहरू पुस्तकालयमा हुनुहुन्न। | uhā̃harū pustakālayamā hunuhunna | They are not at the library. |
 
 ### Past location
 
@@ -7534,21 +7535,21 @@ Choose a form of हुनु according to what you mean. Compare being an autho
 | तिमी अस्ति बजारमा थियौ। | timī asti bajārmā thiyau | You were at the market the day before yesterday. |
 | तिमीहरू अस्ति बजारमा थियौ। | timīharū asti bajārmā thiyau | You were at the market the day before yesterday. |
 | तपाईं अस्ति बजारमा हुनुहुन्थ्यो। | tapāĩ asti bajārmā hunuhunthyo | You were at the market the day before yesterday. |
-| उ अस्ति बजारमा थियो। | u asti bajārmā thiyo | He was at the market the day before yesterday. |
-| उनी अस्ति बजारमा थिइन्। | unī asti bajārmā thiin | She was at the market the day before yesterday. |
+| उहाँ अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃ asti bajārmā hunuhunthyo | He was at the market the day before yesterday. |
+| उहाँ अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃ asti bajārmā hunuhunthyo | She was at the market the day before yesterday. |
 | उहाँ अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃ asti bajārmā hunuhunthyo | He was at the market the day before yesterday. |
 | हामी अस्ति बजारमा थियौं। | hāmī asti bajārmā thiyaũ | We were at the market the day before yesterday. |
-| उनीहरू अस्ति बजारमा थिए। | unīharū asti bajārmā thie | They were at the market the day before yesterday. |
+| उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃harū asti bajārmā hunuhunthyo | They were at the market the day before yesterday. |
 | म अस्ति बजारमा थिइनँ। | ma asti bajārmā thiinã | I was not at the market the day before yesterday. |
 | तँ अस्ति बजारमा थिइनस्। | tã asti bajārmā thiinas | You were not at the market the day before yesterday. |
 | तिमी अस्ति बजारमा थिएनौ। | timī asti bajārmā thienau | You were not at the market the day before yesterday. |
 | तिमीहरू अस्ति बजारमा थिएनौ। | timīharū asti bajārmā thienau | You were not at the market the day before yesterday. |
 | तपाईं अस्ति बजारमा हुनुहुन्नथ्यो। | tapāĩ asti bajārmā hunuhunnathyo | You were not at the market the day before yesterday. |
-| उ अस्ति बजारमा थिएन। | u asti bajārmā thiena | He was not at the market the day before yesterday. |
-| उनी अस्ति बजारमा थिइनन्। | unī asti bajārmā thiinan | She was not at the market the day before yesterday. |
+| उहाँ अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃ asti bajārmā hunuhunnathyo | He was not at the market the day before yesterday. |
+| उहाँ अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃ asti bajārmā hunuhunnathyo | She was not at the market the day before yesterday. |
 | उहाँ अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃ asti bajārmā hunuhunnathyo | He was not at the market the day before yesterday. |
 | हामी अस्ति बजारमा थिएनौं। | hāmī asti bajārmā thienaũ | We were not at the market the day before yesterday. |
-| उनीहरू अस्ति बजारमा थिएनन्। | unīharū asti bajārmā thienan | They were not at the market the day before yesterday. |
+| उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃harū asti bajārmā hunuhunnathyo | They were not at the market the day before yesterday. |
 
 ### An object and its location
 
@@ -7560,6 +7561,6 @@ Choose a form of हुनु according to what you mean. Compare being an autho
 | तिम्रो कापी झोलामा छैन। | timro kāpī jholāmā chaina | Your notebook is not in the bag. |
 | यो पहिले पुस्तकालय थियो। | yo pahile pustakālaya thiyo | This used to be a library. |
 | मेरो कापी अस्ति यहाँ थिएन। | mero kāpī asti yahā̃ thiena | My notebook was not here the day before yesterday. |
-| उनी बाहिर छन्। | unī bāhira chan | That person is outside. |
+| उहाँ बाहिर हुनुहुन्छ। | uhā̃ bāhira hunuhuncha | That person is outside. |
 
 Use the हो family for present identity and the छ family for present existence. Past statements use the थियो family while retaining person, number and respect distinctions.

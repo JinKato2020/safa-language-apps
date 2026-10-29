@@ -1,29 +1,29 @@
 ﻿theme_no,theme_title,no,ne,roman,ja,en
 1,हो：AはBだ（同定・断定）,1,म विद्यार्थी हुँ।,ma vidyārthī hũ,私は学生です,I am a student.
 1,हो：AはBだ（同定・断定）,2,तपाईं विद्यार्थी हुनुहुन्छ।,tapāĩ vidyārthī hunuhuncha,あなたは学生です,You are a student.
-1,हो：AはBだ（同定・断定）,3,उनी विद्यार्थी हुन्।,unī vidyārthī hun,彼女は学生です,She is a student.
+1,हो：AはBだ（同定・断定）,3,उहाँ विद्यार्थी हुनुहुन्छ।,uhā̃ vidyārthī hunuhuncha,彼女は学生です,She is a student.
 1,हो：AはBだ（同定・断定）,4,हामी विद्यार्थी हौं।,hāmī vidyārthī haũ,私たちは学生です,We are students.
-1,हो：AはBだ（同定・断定）,5,उनीहरू विद्यार्थी होइनन्।,unīharū vidyārthī hoinan,彼らは学生ではありません,They are not students.
+1,हो：AはBだ（同定・断定）,5,उहाँहरू विद्यार्थी हुनुहुन्न।,uhā̃harū vidyārthī hunuhunna,彼らは学生ではありません,They are not students.
 1,हो：AはBだ（同定・断定）,6,यो सुन्तला हो।,yo suntalā ho,これはミカンです,This is an orange.
 1,हो：AはBだ（同定・断定）,7,त्यो किताब हो।,tyo kitāb ho,それは本です,That is a book.
 1,हो：AはBだ（同定・断定）,8,"यो कलम हो, पेन्सिल होइन।","yo kalam ho, pensil hoina",これはペンです、鉛筆ではありません,"This is a pen, not a pencil."
 1,हो：AはBだ（同定・断定）,9,के यो तपाईंको किताब हो?,ke yo tapāĩko kitāb ho?,これはあなたの本ですか？,Is this your book?
-1,हो：AはBだ（同定・断定）,10,उनी डाक्टर हुन्।,unī ḍākṭar hun,彼女は医者です,She is a doctor.
+1,हो：AはBだ（同定・断定）,10,उहाँ डाक्टर हुनुहुन्छ।,uhā̃ ḍākṭar hunuhuncha,彼女は医者です,She is a doctor.
 1,हो：AはBだ（同定・断定）,11,म जापानी हुँ।,ma jāpānī hũ,私は日本人です,I am Japanese.
 1,हो：AはBだ（同定・断定）,12,त्यो मेरो झोला होइन।,tyo mero jholā hoina,それは私のかばんではありません,That is not my bag.
 1,हो：AはBだ（同定・断定）,13,तपाईंहरू शिक्षक हुनुहुन्छ।,tapāĩharū śikṣak hunuhuncha,あなたたちは先生です,You are teachers.
 2,छ：ある・いる（存在と居場所）,1,म घरमा छु।,ma gharmā chu,私は家にいます,I am at home.
 2,छ：ある・いる（存在と居場所）,2,तपाईं घरमा हुनुहुन्छ?,tapāĩ gharmā hunuhuncha?,あなたは家にいますか？,Are you at home?
-2,छ：ある・いる（存在と居場所）,3,उनी घरमा छिन्।,unī gharmā chin,彼女は家にいます,She is at home.
+2,छ：ある・いる（存在と居場所）,3,उहाँ घरमा हुनुहुन्छ।,uhā̃ gharmā hunuhuncha,彼女は家にいます,She is at home.
 2,छ：ある・いる（存在と居場所）,4,हामी घरमा छौं।,hāmī gharmā chaũ,私たちは家にいます,We are at home.
-2,छ：ある・いる（存在と居場所）,5,उनीहरू घरमा छैनन्।,unīharū gharmā chainan,彼らは家にいません,They are not at home.
+2,छ：ある・いる（存在と居場所）,5,उहाँहरू घरमा हुनुहुन्न।,uhā̃harū gharmā hunuhunna,彼らは家にいません,They are not at home.
 2,छ：ある・いる（存在と居場所）,6,यहाँ किताब छ।,yahā̃ kitāb cha,ここに本があります,There is a book here.
 2,छ：ある・いる（存在と居場所）,7,त्यहाँ कापी छैन।,tyahā̃ kāpī chaina,そこにノートはありません,There is no notebook there.
 2,छ：ある・いる（存在と居場所）,8,शौचालय कहाँ छ?,śaucālaya kahā̃ cha?,トイレはどこですか？,Where is the toilet?
 2,छ：ある・いる（存在と居場所）,9,टेबलमा पानी छ।,ṭebalmā pānī cha,机に水があります,There is water on the table.
 2,छ：ある・いる（存在と居場所）,10,तपाईंहरू कहाँ हुनुहुन्छ?,tapāĩharū kahā̃ hunuhuncha?,あなたたちはどこにいますか？,Where are you?
 2,छ：ある・いる（存在と居場所）,11,कोठामा कुर्सी छैन।,koṭhāmā kursī chaina,部屋に椅子はありません,There is no chair in the room.
-2,छ：ある・いる（存在と居場所）,12,उनीहरू विद्यालयमा छन्।,unīharū vidyālayamā chan,彼らは学校にいます,They are at school.
+2,छ：ある・いる（存在と居場所）,12,उहाँहरू विद्यालयमा हुनुहुन्छ।,uhā̃harū vidyālayamā hunuhuncha,彼らは学校にいます,They are at school.
 3,छ：〜だ（形容詞・状態）,1,यो फूल सुन्दर छ।,yo phūl sundar cha,この花は美しいです,This flower is beautiful.
 3,छ：〜だ（形容詞・状態）,2,त्यो किताब पुरानो छ।,tyo kitāb purāno cha,その本は古いです,That book is old.
 3,छ：〜だ（形容詞・状態）,3,यो खाना पिरो छैन।,yo khānā piro chaina,この料理は辛くありません,This food is not spicy.
@@ -32,8 +32,8 @@
 3,छ：〜だ（形容詞・状態）,6,यो घर सानो छैन।,yo ghar sāno chaina,この家は小さくありません,This house is not small.
 3,छ：〜だ（形容詞・状態）,7,म व्यस्त छु।,ma vyasta chu,私は忙しいです,I am busy.
 3,छ：〜だ（形容詞・状態）,8,तपाईं सन्चै हुनुहुन्छ?,tapāĩ sancai hunuhuncha?,お元気ですか？,Are you well?
-3,छ：〜だ（形容詞・状態）,9,उनी तयार छिन्।,unī tayār chin,彼女は準備ができています,She is ready.
-3,छ：〜だ（形容詞・状態）,10,उनीहरू व्यस्त छन्।,unīharū vyasta chan,彼らは忙しいです,They are busy.
+3,छ：〜だ（形容詞・状態）,9,उहाँ तयार हुनुहुन्छ।,uhā̃ tayār hunuhuncha,彼女は準備ができています,She is ready.
+3,छ：〜だ（形容詞・状態）,10,उहाँहरू व्यस्त हुनुहुन्छ।,uhā̃harū vyasta hunuhuncha,彼らは忙しいです,They are busy.
 3,छ：〜だ（形容詞・状態）,11,हामी थाकेका छौं।,hāmī thākekā chaũ,私たちは疲れています,We are tired.
 4,हुन्छ：〜になる／一般に〜（習慣・変化）,1,जाडोमा चिसो हुन्छ।,jāḍomā ciso huncha,冬は寒くなります,It gets cold in winter.
 4,हुन्छ：〜になる／一般に〜（習慣・変化）,2,गर्मीमा दिन लामो हुन्छ।,garmīmā din lāmo huncha,夏は日が長くなります,The days get long in summer.
@@ -59,12 +59,12 @@
 5,場所・相手・関係を表す言葉（後置詞）,10,म घरबाट विद्यालयसम्म हिँड्छु।,ma gharbāṭa vidyālayasamma hiṇḍchu,私は家から学校まで歩きます,I walk from home to school.
 5,場所・相手・関係を表す言葉（後置詞）,11,म बिहानदेखि यहाँ छु।,ma bihāndekhi yahā̃ chu,私は朝からここにいます,I have been here since morning.
 5,場所・相手・関係を表す言葉（後置詞）,12,पसल पाँच बजेसम्म खुला छ।,pasal pā̃c bajesamma khulā cha,店は5時まで開いています,The shop is open until five.
-5,場所・相手・関係を表す言葉（後置詞）,13,उनी बजारतिर जान्छिन्।,unī bajārtira jānchin,彼女は市場の方へ行きます,She goes towards the market.
+5,場所・相手・関係を表す言葉（後置詞）,13,उहाँ बजारतिर जानुहुन्छ।,uhā̃ bajārtira jānuhuncha,彼女は市場の方へ行きます,She goes towards the market.
 5,場所・相手・関係を表す言葉（後置詞）,14,किताब झोलाभित्र छ।,kitāb jholābhitra cha,本はかばんの中にあります,The book is inside the bag.
 5,場所・相手・関係を表す言葉（後置詞）,15,घरको अगाडि बगैंचा छ।,gharko agāḍi bagaĩcā cha,家の前に庭があります,There is a garden in front of the house.
 5,場所・相手・関係を表す言葉（後置詞）,16,म साथीलाई पानी दिन्छु।,ma sāthīlāī pānī dinchu,私は友達に水をあげます,I give water to a friend.
 5,場所・相手・関係を表す言葉（後置詞）,17,यो रामको किताब हो।,yo rāmko kitāb ho,これはラムの本です,This is Ram's book.
-5,場所・相手・関係を表す言葉（後置詞）,18,उनी चिनीबिना चिया पिउँछिन्।,unī cinībinā ciyā piũchin,彼女は砂糖なしでお茶を飲みます,She drinks tea without sugar.
+5,場所・相手・関係を表す言葉（後置詞）,18,उहाँ चिनीबिना चिया पिउनुहुन्छ।,uhā̃ cinībinā ciyā piunuhuncha,彼女は砂糖なしでお茶を飲みます,She drinks tea without sugar.
 5,場所・相手・関係を表す言葉（後置詞）,19,आजबाहेक म सधैं यहाँ आउँछु।,ājabāhek ma sadhaĩ yahā̃ āũchu,今日以外は、私はいつもここに来ます,"Except today, I always come here."
 6,疑問詞と質問の作り方,1,यो के हो?,yo ke ho?,これは何ですか？,What is this?
 6,疑問詞と質問の作り方,2,त्यो कसको किताब हो?,tyo kasko kitāb ho?,それは誰の本ですか？,Whose book is that?
@@ -108,7 +108,7 @@
 8,動作動詞の現在（〜する）,2,तपाईं हरेक दिन व्यायाम गर्नुहुन्छ?,tapāĩ harek din vyāyām garnuhuncha?,あなたは毎日運動しますか？,Do you exercise every day?
 8,動作動詞の現在（〜する）,3,म बिहान सात बजे उठ्छु।,ma bihān sāt baje uṭhchu,私は朝7時に起きます,I get up at seven in the morning.
 8,動作動詞の現在（〜する）,4,तपाईं नेपाली बोल्नुहुन्छ?,tapāĩ nepālī bolnuhuncha?,あなたはネパール語を話しますか？,Do you speak Nepali?
-8,動作動詞の現在（〜する）,5,उनी किताब पढ्छिन्।,unī kitāb paḍhchin,彼女は本を読みます,She reads books.
+8,動作動詞の現在（〜する）,5,उहाँ किताब पढ्नुहुन्छ।,uhā̃ kitāb paḍhnuhuncha,彼女は本を読みます,She reads books.
 8,動作動詞の現在（〜する）,6,हामी घरमा खाना खान्छौं।,hāmī gharmā khānā khānchaũ,私たちは家でご飯を食べます,We eat at home.
 8,動作動詞の現在（〜する）,7,म बिहान चिया पिउँछु।,ma bihān ciyā piũchu,私は朝お茶を飲みます,I drink tea in the morning.
 8,動作動詞の現在（〜する）,8,हामी बजारमा तरकारी किन्छौं।,hāmī bajārmā tarkārī kinchaũ,私たちは市場で野菜を買います,We buy vegetables at the market.
@@ -117,23 +117,23 @@
 9,現在の否定（〜しない）,2,तपाईं राति काम गर्नुहुन्न?,tapāĩ rāti kām garnuhunna?,あなたは夜は働かないのですか？,Do you not work at night?
 9,現在の否定（〜しない）,3,म चिट्ठी लेख्दिनँ।,ma ciṭṭhī lekhdinã,私は手紙を書きません,I do not write letters.
 9,現在の否定（〜しない）,4,हामी आइतबार स्कूल जाँदैनौं।,hāmī āitabār skūl jā̃dainaũ,私たちは日曜日には学校へ行きません,We do not go to school on Sundays.
-9,現在の否定（〜しない）,5,उनी मासु खाँदिनन्।,unī māsu khā̃dinan,彼女は肉を食べません,She does not eat meat.
+9,現在の否定（〜しない）,5,उहाँ मासु खानुहुन्न।,uhā̃ māsu khānuhunna,彼女は肉を食べません,She does not eat meat.
 9,現在の否定（〜しない）,6,हामी राति कफी पिउँदैनौं।,hāmī rāti kaphī piũdainaũ,私たちは夜コーヒーを飲みません,We do not drink coffee at night.
 9,現在の否定（〜しない）,7,तपाईंहरू आइतबार काम गर्नुहुन्न।,tapāĩharū āitabār kām garnuhunna,あなたたちは日曜日には働きません,You do not work on Sundays.
 10,現在進行（〜している）,1,म अहिले काम गर्दैछु।,ma ahile kām gardaichu,私は今働いています,I am working now.
 10,現在進行（〜している）,2,तपाईं व्यायाम गर्दैहुनुहुन्छ?,tapāĩ vyāyām gardaihunuhuncha?,あなたは運動しているところですか？,Are you exercising?
 10,現在進行（〜している）,3,म पानी पिउँदैछु।,ma pānī piũdaichu,私は水を飲んでいます,I am drinking water.
-10,現在進行（〜している）,4,उनी चिट्ठी लेख्दैछिन्।,unī ciṭṭhī lekhdaichin,彼女は手紙を書いています,She is writing a letter.
+10,現在進行（〜している）,4,उहाँ चिट्ठी लेख्दै हुनुहुन्छ।,uhā̃ ciṭṭhī lekhdai hunuhuncha,彼女は手紙を書いています,She is writing a letter.
 10,現在進行（〜している）,5,हामी नेपाली सिक्दै छौं।,hāmī nepālī sikdai chaũ,私たちはネパール語を学んでいます,We are learning Nepali.
 10,現在進行（〜している）,6,तपाईंहरू के पढ्दै हुनुहुन्छ?,tapāĩharū ke paḍhdai hunuhuncha?,あなたたちは何を読んでいますか？,What are you reading?
-10,現在進行（〜している）,7,उनीहरू बस पर्खँदै छन्।,unīharū bas parkhãdai chan,彼らはバスを待っています,They are waiting for the bus.
+10,現在進行（〜している）,7,उहाँहरू बस पर्खँदै हुनुहुन्छ।,uhā̃harū bas parkhãdai hunuhuncha,彼らはバスを待っています,They are waiting for the bus.
 11,能格 ले と過去（〜した）,1,मैले हिजो काम गरेँ।,maile hijo kām garẽ,私は昨日働きました,I worked yesterday.
 11,能格 ले と過去（〜した）,2,तपाईंले हिजो व्यायाम गर्नुभयो?,tapāĩle hijo vyāyām garnubhayo?,あなたは昨日運動しましたか？,Did you exercise yesterday?
 11,能格 ले と過去（〜した）,3,मैले किताब पढेँ।,maile kitāb paḍhẽ,私は本を読みました,I read a book.
-11,能格 ले と過去（〜した）,4,उनी स्कूल गइन्।,unī skūl gain,彼女は学校に行きました,She went to school.
+11,能格 ले と過去（〜した）,4,उहाँ स्कूल जानुभयो।,uhā̃ skūl jānubhayo,彼女は学校に行きました,She went to school.
 11,能格 ले と過去（〜した）,5,म हिजो घरमा थिएँ।,ma hijo gharmā thiẽ,私は昨日家にいました,I was at home yesterday.
 11,能格 ले と過去（〜した）,6,हामी बजार गयौं।,hāmī bajār gayaũ,私たちは市場へ行きました,We went to the market.
-11,能格 ले と過去（〜した）,7,उनले चिया पिइन्।,unle ciyā piin,彼女はお茶を飲みました,She drank tea.
+11,能格 ले と過去（〜した）,7,उहाँले चिया पिउनुभयो।,uhā̃le ciyā piunubhayo,彼女はお茶を飲みました,She drank tea.
 11,能格 ले と過去（〜した）,8,तपाईंहरूले के किन्नुभयो?,tapāĩharūle ke kinnubhayo?,あなたたちは何を買いましたか？,What did you buy?
 12,過去の否定（〜しなかった）,1,मैले हिजो काम गरिनँ।,maile hijo kām garinã,私は昨日働きませんでした,I did not work yesterday.
 12,過去の否定（〜しなかった）,2,तपाईंले हिजो व्यायाम गर्नुभएन?,tapāĩle hijo vyāyām garnubhaena?,あなたは昨日運動しませんでしたか？,Did you not exercise yesterday?
@@ -141,14 +141,14 @@
 12,過去の否定（〜しなかった）,4,हामीले त्यो फिल्म हेरेनौं।,hāmīle tyo philma herenaũ,私たちはその映画を見ませんでした,We did not watch that film.
 12,過去の否定（〜しなかった）,5,हिजो यहाँ पैसा थिएन।,hijo yahā̃ paisā thiena,昨日ここにはお金がありませんでした,There was no money here yesterday.
 12,過去の否定（〜しなかった）,6,हामी हिजो बाहिर गएनौं।,hāmī hijo bāhira gaenaũ,私たちは昨日外出しませんでした,We did not go out yesterday.
-12,過去の否定（〜しなかった）,7,उनले कफी पिइनन्।,unle kaphī piinan,彼女はコーヒーを飲みませんでした,She did not drink coffee.
+12,過去の否定（〜しなかった）,7,उहाँले कफी पिउनुभएन।,uhā̃le kaphī piunubhaena,彼女はコーヒーを飲みませんでした,She did not drink coffee.
 13,未来（〜する・〜するつもり）,1,म भोलि काम गर्छु।,ma bholi kām garchu,私は明日働きます,I will work tomorrow.
 13,未来（〜する・〜するつもり）,2,तपाईं भोलि व्यायाम गर्नुहुन्छ?,tapāĩ bholi vyāyām garnuhuncha?,あなたは明日運動しますか？,Will you exercise tomorrow?
 13,未来（〜する・〜するつもり）,3,म भोलि स्कूल जान्छु।,ma bholi skūl jānchu,私は明日学校に行きます,I will go to school tomorrow.
-13,未来（〜する・〜するつもり）,4,उनी अर्को हप्ता आउँछिन्।,unī arko haptā āũchin,彼女は来週来ます,She will come next week.
+13,未来（〜する・〜するつもり）,4,उहाँ अर्को हप्ता आउनुहुन्छ।,uhā̃ arko haptā āunuhuncha,彼女は来週来ます,She will come next week.
 13,未来（〜する・〜するつもり）,5,तपाईं भोलि कहाँ जानुहुन्छ?,tapāĩ bholi kahā̃ jānuhuncha?,あなたは明日どこへ行きますか？,Where will you go tomorrow?
 13,未来（〜する・〜するつもり）,6,हामी आज राति घरमा खान्छौं।,hāmī āja rāti gharmā khānchaũ,私たちは今夜家で食べます,We will eat at home tonight.
-13,未来（〜する・〜するつもり）,7,उनीहरू भोलि आउँदैनन्।,unīharū bholi āũdainan,彼らは明日来ません,They will not come tomorrow.
+13,未来（〜する・〜するつもり）,7,उहाँहरू भोलि आउनुहुन्न।,uhā̃harū bholi āunuhunna,彼らは明日来ません,They will not come tomorrow.
 13,未来（〜する・〜するつもり）,8,हामी भोलि भेट्नेछौं।,hāmī bholi bheṭnechaũ,私たちは明日会います,We will meet tomorrow.
 13,未来（〜する・〜するつもり）,9,तपाईंहरू कहिले फर्कनुहुनेछ?,tapāĩharū kahile pharkanuhunecha?,あなたたちはいつ戻りますか？,When will you return?
 14,習慣過去（昔はよく〜した）,1,म पहिले यहाँ काम गर्थें।,ma pahile yahā̃ kām garthẽ,私は以前ここで働いていました,I used to work here.
@@ -156,7 +156,7 @@
 14,習慣過去（昔はよく〜した）,3,म पहिले चाँडै उठ्थें।,ma pahile cā̃ḍai uṭhthẽ,私は以前はよく早く起きていました,I used to get up early.
 14,習慣過去（昔はよく〜した）,4,हामी सिनेमा हेर्ने गर्थ्यौं।,hāmī sinemā herne garthyaũ,私たちはよく映画を見ていました,We used to watch films.
 14,習慣過去（昔はよく〜した）,5,हामी पहिले यहाँ बस्थ्यौं।,hāmī pahile yahā̃ basthyaũ,私たちは以前ここに住んでいました,We used to live here.
-14,習慣過去（昔はよく〜した）,6,उनी पहिले चिया पिउँथिन्।,unī pahile ciyā piũthin,彼女は以前お茶をよく飲んでいました,She used to drink tea.
+14,習慣過去（昔はよく〜した）,6,उहाँ पहिले चिया पिउनुहुन्थ्यो।,uhā̃ pahile ciyā piunuhunthyo,彼女は以前お茶をよく飲んでいました,She used to drink tea.
 15,現在完了・経験（〜した・〜したことがある）,1,मैले यो काम गरेको छु।,maile yo kām gareko chu,私はこの仕事を済ませています,I have done this work.
 15,現在完了・経験（〜した・〜したことがある）,2,तपाईंले यो काम गर्नुभएको छ?,tapāĩle yo kām garnubhaeko cha?,あなたはこの仕事をもう済ませていますか？,Have you done this work?
 15,現在完了・経験（〜した・〜したことがある）,3,मैले सुशी खाएको छु।,maile suśī khāeko chu,私は寿司を食べたことがあります,I have eaten sushi.
@@ -168,7 +168,7 @@
 16,過去完了（〜していた・〜してしまっていた）,1,मैले यो काम गरेको थिएँ।,maile yo kām gareko thiẽ,私はこの仕事を済ませていました,I had done this work.
 16,過去完了（〜していた・〜してしまっていた）,2,तपाईंले यो काम गर्नुभएको थियो?,tapāĩle yo kām garnubhaeko thiyo?,あなたはその時この仕事を済ませていましたか？,Had you done this work?
 16,過去完了（〜していた・〜してしまっていた）,3,म त्यहाँ गएको थिएँ।,ma tyahā̃ gaeko thiẽ,私はそこへ行ったことがありました,I had been there.
-16,過去完了（〜していた・〜してしまっていた）,4,"हामी पुग्दा, उनी घर गएकी थिइन्।","hāmī pugdā, unī ghar gaekī thiin",私たちが着いたとき、彼女は家に帰っていました,She had gone home by the time we arrived.
+16,過去完了（〜していた・〜してしまっていた）,4,"हामी पुग्दा, उहाँ घर जानुभएको थियो।","hāmī pugdā, uhā̃ ghar jānubhaeko thiyo",私たちが着いたとき、彼女は家に帰っていました,She had gone home by the time we arrived.
 16,過去完了（〜していた・〜してしまっていた）,5,त्यस बेला मैले खाना खाएको थिइनँ।,tyas belā maile khānā khāeko thiinã,そのとき私はまだご飯を食べていませんでした,I had not eaten at that time.
 16,過去完了（〜していた・〜してしまっていた）,6,तपाईं पहिले यहाँ आउनुभएको थियो?,tapāĩ pahile yahā̃ āunubhaeko thiyo?,あなたは以前ここに来たことがありましたか？,Had you been here before?
 16,過去完了（〜していた・〜してしまっていた）,7,हामी पुग्दा पसल बन्द भइसकेको थियो।,hāmī pugdā pasal banda bhaisakeko thiyo,私たちが着いたとき、店はすでに閉まっていました,The shop had already closed when we arrived.
@@ -214,16 +214,16 @@
 19,禁止（〜してはいけない／〜しないで）,15,तपाईं यहाँ नआउनुहोस्।,tapāĩ yahā̃ naāunuhos,あなたはここに来ないでください,Please do not come here.
 20,可能（〜できる）,1,म नेपाली बोल्न सक्छु।,ma nepālī bolna sakchu,私はネパール語を話せます,I can speak Nepali.
 20,可能（〜できる）,2,तपाईं नेपाली बोल्न सक्नुहुन्छ?,tapāĩ nepālī bolna saknuhuncha?,あなたはネパール語を話せますか？,Can you speak Nepali?
-20,可能（〜できる）,3,उनीहरू नेपाली बोल्न सक्छन्।,unīharū nepālī bolna sakchan,彼らはネパール語を話せます,They can speak Nepali.
+20,可能（〜できる）,3,उहाँहरू नेपाली बोल्न सक्नुहुन्छ।,uhā̃harū nepālī bolna saknuhuncha,彼らはネパール語を話せます,They can speak Nepali.
 20,可能（〜できる）,4,म साइकल चलाउन सक्दिनँ।,ma sāikal calāuna sakdinã,私は自転車に乗れません,I cannot ride a bicycle.
 20,可能（〜できる）,5,हामी पौडन सक्छौं।,hāmī pauḍna sakchaũ,私たちは泳げます,We can swim.
-20,可能（〜できる）,6,उनी गाडी चलाउन सक्छिन्।,unī gāḍī calāuna sakchin,彼女は車を運転できます,She can drive a car.
+20,可能（〜できる）,6,उहाँ गाडी चलाउन सक्नुहुन्छ।,uhā̃ gāḍī calāuna saknuhuncha,彼女は車を運転できます,She can drive a car.
 20,可能（〜できる）,7,तपाईंहरू यो पढ्न सक्नुहुन्छ?,tapāĩharū yo paḍhna saknuhuncha?,あなたたちはこれを読めますか？,Can you read this?
 20,可能（〜できる）,8,म आज आउन सक्दिनँ।,ma āja āuna sakdinã,私は今日来ることができません,I cannot come today.
 21,義務・許可（〜しなければ／〜してよい）,1,मैले भोलि अफिस जानु पर्छ।,maile bholi aphis jānu parcha,私は明日会社に行かなければなりません,I have to go to the office tomorrow.
 21,義務・許可（〜しなければ／〜してよい）,2,तपाईंले यो फारम भर्नु पर्छ।,tapāĩle yo phāram bharnu parcha,あなたはこの用紙に記入しなければなりません,You have to fill in this form.
 21,義務・許可（〜しなければ／〜してよい）,3,हामीले चाँडै उठ्नु पर्छ।,hāmīle cā̃ḍai uṭhnu parcha,私たちは早く起きなければなりません,We have to get up early.
-21,義務・許可（〜しなければ／〜してよい）,4,उनीहरूले पर्खनु पर्छ।,unīharūle parkhanu parcha,彼らは待たなければなりません,They have to wait.
+21,義務・許可（〜しなければ／〜してよい）,4,उहाँहरूले पर्खनु पर्छ।,uhā̃harūle parkhanu parcha,彼らは待たなければなりません,They have to wait.
 21,義務・許可（〜しなければ／〜してよい）,5,मैले आज जानु पर्दैन।,maile āja jānu pardaina,私は今日行かなくてもいいです,I do not have to go today.
 21,義務・許可（〜しなければ／〜してよい）,6,तपाईंले भोलि आउनु पर्छ?,tapāĩle bholi āunu parcha?,あなたは明日来なければなりませんか？,Do you have to come tomorrow?
 21,義務・許可（〜しなければ／〜してよい）,7,मलाई चाँडै उठ्नु पर्यो।,malāī cā̃ḍai uṭhnu paryo,私は早く起きなければならなくなりました,I had to get up early.
@@ -235,13 +235,13 @@
 22,願望（〜したい）,1,म नेपाल जान चाहन्छु।,ma nepāl jāna cāhanchu,私はネパールに行きたいです,I want to go to Nepal.
 22,願望（〜したい）,2,तपाईं नेपाल जान चाहनुहुन्छ?,tapāĩ nepāl jāna cāhanuhuncha?,あなたはネパールに行きたいですか？,Do you want to go to Nepal?
 22,願望（〜したい）,3,मलाई चिया पिउन मन छ।,malāī ciyā piuna man cha,私はお茶を飲みたい気分です,I feel like drinking tea.
-22,願望（〜したい）,4,उनलाई अहिले बोल्न मन छैन।,unlāī ahile bolna man chaina,彼女は今話す気分ではありません,She does not feel like talking now.
+22,願望（〜したい）,4,उहाँलाई अहिले बोल्न मन छैन।,uhā̃lāī ahile bolna man chaina,彼女は今話す気分ではありません,She does not feel like talking now.
 22,願望（〜したい）,5,हामीलाई सँगै बस्न मन लाग्छ।,hāmīlāī sãgai basna man lāgcha,私たちは一緒にいたい気分になります,We feel like spending time together.
 22,願望（〜したい）,6,मलाई घर फर्कन मन लाग्यो।,malāī ghar pharkana man lāgyo,私は家に帰りたくなりました,I felt like going home.
 22,願望（〜したい）,7,हामी नयाँ किताब पढ्न चाहन्छौं।,hāmī nayā̃ kitāb paḍhna cāhanchaũ,私たちは新しい本を読みたいです,We want to read a new book.
 22,願望（〜したい）,8,तपाईंहरू के खान चाहनुहुन्छ?,tapāĩharū ke khāna cāhanuhuncha?,あなたたちは何を食べたいですか？,What would you like to eat?
 23,形容詞の一致・位置,1,यो राम्रो किताब हो।,yo rāmro kitāb ho,これは良い本です,This is a good book.
-23,形容詞の一致・位置,2,उनी राम्री केटी हुन्।,unī rāmrī keṭī hun,彼女はかわいい女の子です,She is a pretty girl.
+23,形容詞の一致・位置,2,उहाँ राम्री केटी हुनुहुन्छ।,uhā̃ rāmrī keṭī hunuhuncha,彼女はかわいい女の子です,She is a pretty girl.
 23,形容詞の一致・位置,3,यी राम्रा केटाहरू हुन्।,yī rāmrā keṭāharū hun,この子たちは良い少年たちです,These are good boys.
 23,形容詞の一致・位置,4,त्यो ठूलो घर हो।,tyo ṭhūlo ghar ho,あれは大きい家です,That is a big house.
 23,形容詞の一致・位置,5,यो सानो कोठा हो।,yo sāno koṭhā ho,これは小さい部屋です,This is a small room.
@@ -254,9 +254,9 @@
 23,形容詞の一致・位置,12,यो कोठा ठूलो छैन।,yo koṭhā ṭhūlo chaina,この部屋は大きくありません,This room is not big.
 24,副詞＋感嘆,1,म बिस्तारै हिँड्छु।,ma bistārai hĩḍchu,私はゆっくり歩きます,I walk slowly.
 24,副詞＋感嘆,2,तपाईं प्रायः यहाँ आउनुहुन्छ?,tapāĩ prāyaḥ yahā̃ āunuhuncha?,あなたはたいていここに来るのですか？,Do you usually come here?
-24,副詞＋感嘆,3,उनी सधैं यहाँ बस्छिन्।,unī sadhaĩ yahā̃ baschin,彼女はいつもここに座ります,She always sits here.
+24,副詞＋感嘆,3,उहाँ सधैं यहाँ बस्नुहुन्छ।,uhā̃ sadhaĩ yahā̃ basnuhuncha,彼女はいつもここに座ります,She always sits here.
 24,副詞＋感嘆,4,हामी राति काम गर्दैनौं।,hāmī rāti kām gardainaũ,私たちは夜は働きません,We do not work at night.
-24,副詞＋感嘆,5,उनीहरू धेरै बोल्दैनन्।,unīharū dherai boldainan,彼らはあまり話しません,They do not talk much.
+24,副詞＋感嘆,5,उहाँहरू धेरै बोल्नुहुन्न।,uhā̃harū dherai bolnuhunna,彼らはあまり話しません,They do not talk much.
 24,副詞＋感嘆,6,कति सुन्दर!,kati sundar!,なんて美しい！,How beautiful!
 24,副詞＋感嘆,7,यो खाना एकदमै मिठो छ!,yo khānā ekdamai miṭho cha!,この料理はとてもおいしい！,This food is really delicious!
 24,副詞＋感嘆,8,साँच्चै?,sā̃ccai?,本当に？,Really?
@@ -267,13 +267,13 @@
 25,比較・最上級,2,यो किताब त्यो किताबभन्दा सस्तो छ।,yo kitāb tyo kitābbhandā sasto cha,この本はその本より安いです,This book is cheaper than that book.
 25,比較・最上級,3,चिया कफीभन्दा सस्तो छ।,ciyā kaphībhandā sasto cha,お茶はコーヒーより安いです,Tea is cheaper than coffee.
 25,比較・最上級,4,आज हिजोभन्दा चिसो छ।,āja hijobhandā ciso cha,今日は昨日より寒いです,It is colder today than yesterday.
-25,比較・最上級,5,उनी मभन्दा छिटो हिँड्छिन्।,unī mabhandā chiṭo hĩḍchin,彼女は私より速く歩きます,She walks faster than me.
+25,比較・最上級,5,उहाँ मभन्दा छिटो हिँड्नुहुन्छ।,uhā̃ mabhandā chiṭo hiṇḍnuhuncha,彼女は私より速く歩きます,She walks faster than me.
 25,比較・最上級,6,यो काम त्यो कामभन्दा सजिलो छैन।,yo kām tyo kāmbhandā sajilo chaina,この仕事はその仕事より簡単ではありません,This job is not easier than that one.
 25,比較・最上級,7,यीमध्ये कुन सबभन्दा सस्तो छ?,yīmadhye kun sabbhandā sasto cha?,これらの中でどれが一番安いですか？,Which of these is the cheapest?
 25,比較・最上級,8,यो झोला सबभन्दा सस्तो छ।,yo jholā sabbhandā sasto cha,このかばんが一番安いです,This bag is the cheapest.
 25,比較・最上級,9,यो सबभन्दा राम्रो किताब हो।,yo sabbhandā rāmro kitāb ho,これが一番良い本です,This is the best book.
 25,比較・最上級,10,यो बाटो त्यो बाटोभन्दा लामो छ?,yo bāṭo tyo bāṭobhandā lāmo cha?,この道はあの道より長いですか？,Is this road longer than that road?
-25,比較・最上級,11,उनीहरू हामीभन्दा छिटो हिँड्छन्।,unīharū hāmībhandā chiṭo hiṇḍchan,彼らは私たちより速く歩きます,They walk faster than we do.
+25,比較・最上級,11,उहाँहरू हामीभन्दा छिटो हिँड्नुहुन्छ।,uhā̃harū hāmībhandā chiṭo hiṇḍnuhuncha,彼らは私たちより速く歩きます,They walk faster than we do.
 25,比較・最上級,12,यीमध्ये कुन राम्रो छ?,yīmadhye kun rāmro cha?,これらの中ではどれが良いですか？,Which of these is good?
 25,比較・最上級,13,यो झोला मेरो झोलाजस्तै छ।,yo jholā mero jholājastai cha,このかばんは私のかばんによく似ています,This bag is like my bag.
 26,接続（と・そして・でも・ので）,1,मलाई चिया र कफी मन पर्छ।,malāī ciyā ra kaphī man parcha,私はお茶とコーヒーが好きです,I like tea and coffee.
@@ -288,22 +288,22 @@
 26,接続（と・そして・でも・ので）,10,वर्षाका कारण बाटो बन्द छ।,varṣākā kāraṇ bāṭo banda cha,雨のため道が通れません,The road is closed because of rain.
 26,接続（と・そして・でも・ので）,11,वर्षाका बाबजुद हामी गयौं।,varṣākā bābajud hāmī gayaũ,雨にもかかわらず私たちは行きました,We went despite the rain.
 27,〜ながら（-दै）／〜てから（-एपछि）,1,म संगीत सुन्दै पढ्छु।,ma saṅgīt sundai paḍhchu,私は音楽を聴きながら勉強します,I study while listening to music.
-27,〜ながら（-दै）／〜てから（-एपछि）,2,उनी गीत गाउँदै काम गर्छिन्।,unī gīt gāũdai kām garchin,彼女は歌を歌いながら働きます,She works while singing.
+27,〜ながら（-दै）／〜てから（-एपछि）,2,उहाँ गीत गाउँदै काम गर्नुहुन्छ।,uhā̃ gīt gāũdai kām garnuhuncha,彼女は歌を歌いながら働きます,She works while singing.
 27,〜ながら（-दै）／〜てから（-एपछि）,3,हामी कुरा गर्दै हिँड्छौं।,hāmī kurā gardai hĩḍchaũ,私たちは話しながら歩きます,We walk while chatting.
 27,〜ながら（-दै）／〜てから（-एपछि）,4,तपाईं संगीत सुन्दै काम गर्नुहुन्छ?,tapāĩ saṅgīt sundai kām garnuhuncha?,あなたは音楽を聴きながら働きますか？,Do you work while listening to music?
 27,〜ながら（-दै）／〜てから（-एपछि）,5,"हात धोएपछि, म खान्छु।","hāt dhoepachi, ma khānchu",手を洗ってから、私は食べます,I eat after washing my hands.
 27,〜ながら（-दै）／〜てから（-एपछि）,6,"उठेपछि, म अनुहार धुन्छु।","uṭhepachi, ma anuhār dhunchu",起きてから、私は顔を洗います,I wash my face after getting up.
 27,〜ながら（-दै）／〜てから（-एपछि）,7,"काम गरेपछि, हामी घर जान्छौं।","kām garepachi, hāmī ghar jānchaũ",仕事をしてから、私たちは家に帰ります,We go home after work.
 27,〜ながら（-दै）／〜てから（-एपछि）,8,"घर पुगेपछि, फोन गर्नुहोस्।","ghar pugepachi, phon garnuhos",家に着いたら、電話してください,Please call after you get home.
-27,〜ながら（-दै）／〜てから（-एपछि）,9,"चिया पिएपछि, उनी जान्छिन्।","ciyā piepachi, unī jānchin",お茶を飲んでから、彼女は行きます,She leaves after drinking tea.
+27,〜ながら（-दै）／〜てから（-एपछि）,9,"चिया पिएपछि, उहाँ जानुहुन्छ।","ciyā piepachi, uhā̃ jānuhuncha",お茶を飲んでから、彼女は行きます,She leaves after drinking tea.
 27,〜ながら（-दै）／〜てから（-एपछि）,10,म खाना खानुअघि हात धुन्छु।,ma khānā khānuaghi hāt dhunchu,私は食事の前に手を洗います,I wash my hands before eating.
 27,〜ながら（-दै）／〜てから（-एपछि）,11,कक्षापछि हामी घर जान्छौं।,kakṣāpachi hāmī ghar jānchaũ,授業の後、私たちは家に帰ります,We go home after class.
 27,〜ながら（-दै）／〜てから（-एपछि）,12,हामी दुई दिनभित्र फर्कन्छौं।,hāmī duī dinbhitra pharkanchaũ,私たちは2日以内に戻ります,We will return within two days.
 28,〜ために（-नको लागि）,1,म पढ्नको लागि पुस्तकालय जान्छु।,ma paḍhnako lāgi pustakālaya jānchu,私は勉強するために図書館に行きます,I go to the library to study.
 28,〜ために（-नको लागि）,2,तपाईं के गर्नको लागि आउनुभयो?,tapāĩ ke garnako lāgi āunubhayo?,あなたは何をするために来ましたか？,What did you come here to do?
-28,〜ために（-नको लागि）,3,उनी साथीलाई भेट्नको लागि आउँछिन्।,unī sāthīlāī bheṭnako lāgi āũchin,彼女は友達に会うために来ます,She comes to meet a friend.
+28,〜ために（-नको लागि）,3,उहाँ साथीलाई भेट्नको लागि आउनुहुन्छ।,uhā̃ sāthīlāī bheṭnako lāgi āunuhuncha,彼女は友達に会うために来ます,She comes to meet a friend.
 28,〜ために（-नको लागि）,4,हामी खाना खानको लागि यहाँ बस्छौं।,hāmī khānā khānako lāgi yahā̃ baschaũ,私たちはご飯を食べるためにここに座ります,We sit here to eat.
-28,〜ために（-नको लागि）,5,उनीहरू किताब किन्नको लागि बजार जान्छन्।,unīharū kitāb kinnako lāgi bajār jānchan,彼らは本を買うために市場へ行きます,They go to the market to buy books.
+28,〜ために（-नको लागि）,5,उहाँहरू किताब किन्नको लागि बजार जानुहुन्छ।,uhā̃harū kitāb kinnako lāgi bajār jānuhuncha,彼らは本を買うために市場へ行きます,They go to the market to buy books.
 28,〜ために（-नको लागि）,6,यो तपाईंको लागि हो।,yo tapāĩko lāgi ho,これはあなたのためのものです,This is for you.
 28,〜ために（-नको लागि）,7,यो खाना बच्चाको लागि हो।,yo khānā baccāko lāgi ho,この食べ物は子どものためのものです,This food is for the child.
 28,〜ために（-नको लागि）,8,म स्वास्थ्यको लागि हिँड्छु।,ma svāsthyako lāgi hĩḍchu,私は健康のために歩きます,I walk for my health.
@@ -319,23 +319,23 @@
 29,人・物・場所・時をつなぐ関係表現,7,काम गर्ने समय भयो।,kām garne samay bhayo,働く時間になりました,It is time to work.
 29,人・物・場所・時をつなぐ関係表現,8,म पढ्ने किताब यही हो।,ma paḍhne kitāb yahī ho,私が読む本はこれです,This is the book I read.
 29,人・物・場所・時をつなぐ関係表現,9,हामी बस्ने घर सानो छ।,hāmī basne ghar sāno cha,私たちが住む家は小さいです,The house we live in is small.
-29,人・物・場所・時をつなぐ関係表現,10,उनी काम गर्ने अफिस टाढा छ।,unī kām garne aphis ṭāḍhā cha,彼女が働く会社は遠いです,The office where she works is far away.
+29,人・物・場所・時をつなぐ関係表現,10,उहाँ काम गर्नुहुने अफिस टाढा छ।,uhā̃ kām garnuhune aphis ṭāḍhā cha,彼女が働く会社は遠いです,The office where she works is far away.
 29,人・物・場所・時をつなぐ関係表現,11,यो सुत्ने कोठा होइन।,yo sutne koṭhā hoina,ここは寝る部屋ではありません,This is not a bedroom.
-29,人・物・場所・時をつなぐ関係表現,12,"जो यहाँ बस्छ, ऊ मेरो साथी हो।","jo yahā̃ bascha, ū mero sāthī ho",ここに住んでいる人は私の友達です,The person who lives here is my friend.
+29,人・物・場所・時をつなぐ関係表現,12,"जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ।","jo yahā̃ basnuhuncha, uhā̃ mero sāthī hunuhuncha",ここに住んでいる人は私の友達です,The person who lives here is my friend.
 29,人・物・場所・時をつなぐ関係表現,13,"जुन किताब तपाईं पढ्नुहुन्छ, त्यो राम्रो छ।","jun kitāb tapāĩ paḍhnuhuncha, tyo rāmro cha",あなたが読んでいる本は良い本です,The book you are reading is good.
 29,人・物・場所・時をつなぐ関係表現,14,"जहाँ पानी छ, त्यहाँ जीवन छ।","jahā̃ pānī cha, tyahā̃ jīvan cha",水があるところには命があります,"Where there is water, there is life."
 29,人・物・場所・時をつなぐ関係表現,15,"जब पानी पर्छ, तब बाटो हिलो हुन्छ।","jab pānī parcha, tab bāṭo hilo huncha",雨が降ると、道はぬかるみます,"When it rains, the road gets muddy."
-29,人・物・場所・時をつなぐ関係表現,16,"म जहिले आउँछु, उनी यहाँ हुन्छिन्।","ma jahile āũchu, unī yahā̃ hunchin",私が来るときはいつも、彼女はここにいます,"Whenever I come, she is here."
-29,人・物・場所・時をつなぐ関係表現,17,"जसले मेहनत गर्छ, उसले सिक्छ।","jasle mehanat garcha, usle sikcha",努力する人は学びます,The person who makes an effort learns.
-29,人・物・場所・時をつなぐ関係表現,18,"जसलाई पानी चाहिन्छ, उसलाई दिनुहोस्।","jaslāī pānī cāhincha, uslāī dinuhos",水が必要な人にあげてください,Give water to the person who needs it.
+29,人・物・場所・時をつなぐ関係表現,16,"म जहिले आउँछु, उहाँ यहाँ हुनुहुन्छ।","ma jahile āũchu, uhā̃ yahā̃ hunuhuncha",私が来るときはいつも、彼女はここにいます,"Whenever I come, she is here."
+29,人・物・場所・時をつなぐ関係表現,17,"जसले मेहनत गर्नुहुन्छ, उहाँले सिक्नुहुन्छ।","jasle mehanat garnuhuncha, uhā̃le siknuhuncha",努力する人は学びます,The person who makes an effort learns.
+29,人・物・場所・時をつなぐ関係表現,18,"जसलाई पानी चाहिन्छ, उहाँलाई दिनुहोस्।","jaslāī pānī cāhincha, uhā̃lāī dinuhos",水が必要な人にあげてください,Give water to the person who needs it.
 29,人・物・場所・時をつなぐ関係表現,19,"जसरी म गर्छु, त्यसरी गर्नुहोस्।","jasarī ma garchu, tyasarī garnuhos",私がするようにしてください,Do it the way I do.
 29,人・物・場所・時をつなぐ関係表現,20,"जति चाहिन्छ, त्यति लिनुहोस्।","jati cāhincha, tyati linuhos",必要なだけ取ってください,Take as much as you need.
 29,人・物・場所・時をつなぐ関係表現,21,"जे मन पर्छ, त्यही खानुहोस्।","je man parcha, tyahī khānuhos",好きなものを食べてください,Eat what you like.
-29,人・物・場所・時をつなぐ関係表現,22,"जता उनी जान्छिन्, म पनि त्यतै जान्छु।","jatā unī jānchin, ma pani tyatai jānchu",彼女が行く方へ、私も行きます,I go in the same direction as she does.
+29,人・物・場所・時をつなぐ関係表現,22,"जता उहाँ जानुहुन्छ, म पनि त्यतै जान्छु।","jatā uhā̃ jānuhuncha, ma pani tyatai jānchu",彼女が行く方へ、私も行きます,I go in the same direction as she does.
 30,条件（もし〜なら）,1,"पानी पर्यो भने, म घरमा बस्छु।","pānī paryo bhane, ma gharmā baschu",雨が降ったら、私は家にいます,"If it rains, I will stay home."
 30,条件（もし〜なら）,2,"यदि सस्तो छ भने, म किन्छु।","yadi sasto cha bhane, ma kinchu",もし安ければ、私は買います,"If it is cheap, I will buy it."
 30,条件（もし〜なら）,3,"तपाईं व्यस्त हुनुहुन्छ भने, म पर्खन्छु।","tapāĩ vyasta hunuhuncha bhane, ma parkhanchu",あなたが忙しければ、私は待ちます,"If you are busy, I will wait."
-30,条件（もし〜なら）,4,"उनी आउँछिन् भने, म पनि आउँछु।","unī āũchin bhane, ma pani āũchu",彼女が来るなら、私も来ます,"If she is coming, I will come too."
+30,条件（もし〜なら）,4,"उहाँ आउनुहुन्छ भने, म पनि आउँछु।","uhā̃ āunuhuncha bhane, ma pani āũchu",彼女が来るなら、私も来ます,"If she is coming, I will come too."
 30,条件（もし〜なら）,5,"समय छ भने, यहाँ बस्नुहोस्।","samay cha bhane, yahā̃ basnuhos",時間があれば、ここにいてください,"If you have time, please stay here."
 30,条件（もし〜なら）,6,"भोक लाग्यो भने, खाना खानुहोस्।","bhok lāgyo bhane, khānā khānuhos",おなかがすいたら、ご飯を食べてください,"If you get hungry, please eat."
 30,条件（もし〜なら）,7,"पैसा छैन भने, नकिन्नुहोस्।","paisā chaina bhane, nakinnuhos",お金がなければ、買わないでください,"If you have no money, please do not buy it."
@@ -344,12 +344,12 @@
 31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,1,भोलि पानी पर्छ जस्तो लाग्छ।,bholi pānī parcha jasto lāgcha,明日は雨が降ると思います,I think it will rain tomorrow.
 31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,2,यो किताब राम्रो छ जस्तो लाग्छ।,yo kitāb rāmro cha jasto lāgcha,この本は良いと思います,I think this book is good.
 31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,3,तपाईंलाई के लाग्छ?,tapāĩlāī ke lāgcha?,あなたはどう思いますか？,What do you think?
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,4,उनी आज आउँदिनन् जस्तो लाग्छ।,unī āja āũdinan jasto lāgcha,彼女は今日来ないと思います,I think she will not come today.
+31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,4,उहाँ आज आउनुहुन्न जस्तो लाग्छ।,uhā̃ āja āunuhunna jasto lāgcha,彼女は今日来ないと思います,I think she will not come today.
 31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,5,भोलि चिसो हुन्छ होला।,bholi ciso huncha holā,明日は寒くなるでしょう,It will probably be cold tomorrow.
 31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,6,यो कसको किताब होला?,yo kasko kitāb holā?,これは誰の本でしょうか？,Whose book could this be?
 31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,7,भोलि पानी पर्न सक्छ।,bholi pānī parna sakcha,明日は雨が降るかもしれません,It may rain tomorrow.
 31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,8,आज पसल बन्द हुन सक्छ।,āja pasal banda huna sakcha,今日は店が閉まっているかもしれません,The shop may be closed today.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,9,उनी घर गएकी हुनु पर्छ।,unī ghar gaekī hunu parcha,彼女は家に帰ったに違いありません,She must have gone home.
+31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,9,उहाँ घर जानुभएको हुनु पर्छ।,uhā̃ ghar jānubhaeko hunu parcha,彼女は家に帰ったに違いありません,She must have gone home.
 32,受動（〜される）,1,ढोका खोलियो।,ḍhokā kholiyo,ドアが開けられました,The door was opened.
 32,受動（〜される）,2,झ्याल बन्द गरियो।,jhyāl banda gariyo,窓が閉められました,The window was closed.
 32,受動（〜される）,3,चिठी लेखियो।,ciṭhī lekhiyo,手紙が書かれました,A letter was written.
@@ -369,161 +369,161 @@
 32,受動（〜される）,17,मैले साथीमार्फत खबर पठाएँ।,maile sāthīmārphat khabar paṭhāẽ,私は友達を通して知らせを送りました,I sent a message through a friend.
 33,使役（〜させる）,1,आमाले बच्चालाई खाना खुवाउनुहुन्छ।,āmāle baccālāī khānā khuvāunuhuncha,母は子どもにご飯を食べさせます,Mother feeds the child.
 33,使役（〜させる）,2,शिक्षकले हामीलाई नेपाली सिकाउनुहुन्छ।,śikṣakle hāmīlāī nepālī sikāunuhuncha,先生は私たちにネパール語を教えます,The teacher teaches us Nepali.
-33,使役（〜させる）,3,उनले मलाई चिठी लेख्न लगाइन्।,unle malāī ciṭhī lekhna lagāin,彼女は私に手紙を書かせました,She made me write a letter.
-33,使役（〜させる）,4,हामीले उनीहरूलाई कोठा देखायौं।,hāmīle unīharūlāī koṭhā dekhāyaũ,私たちは彼らに部屋を見せました,We showed them the room.
+33,使役（〜させる）,3,उहाँले मलाई चिठी लेख्न लगाउनुभयो।,uhā̃le malāī ciṭhī lekhna lagāunubhayo,彼女は私に手紙を書かせました,She made me write a letter.
+33,使役（〜させる）,4,हामीले उहाँहरूलाई कोठा देखायौं।,hāmīle uhā̃harūlāī koṭhā dekhāyaũ,私たちは彼らに部屋を見せました,We showed them the room.
 33,使役（〜させる）,5,तपाईंले कसलाई काम गराउनुभयो?,tapāĩle kaslāī kām garāunubhayo?,あなたは誰に仕事をさせましたか？,Who did you have do the work?
-33,使役（〜させる）,6,उनीहरूले मलाई बाहिर जान लगाए।,unīharūle malāī bāhira jāna lagāe,彼らは私を外に行かせました,They made me go outside.
+33,使役（〜させる）,6,उहाँहरूले मलाई बाहिर जान लगाउनुभयो।,uhā̃harūle malāī bāhira jāna lagāunubhayo,彼らは私を外に行かせました,They made me go outside.
 33,使役（〜させる）,7,बुबाले मलाई काम गर्न लगाउनुभएन।,bubāle malāī kām garna lagāunubhaena,父は私に仕事をさせませんでした,Father did not make me work.
-34,間接話法（〜と言った）,1,उनले जाँदिनँ भनिन्।,unle jā̃dinã bhanin,彼女は「行かない」と言いました,She said she would not go.
+34,間接話法（〜と言った）,1,उहाँले जाँदिनँ भन्नुभयो।,uhā̃le jā̃dinã bhannubhayo,彼女は「行かない」と言いました,She said she would not go.
 34,間接話法（〜と言った）,2,शिक्षकले भोलि परीक्षा छ भन्नुभयो।,śikṣakle bholi parīkṣā cha bhannubhayo,先生は「明日試験がある」と言いました,The teacher said there would be an exam tomorrow.
 34,間接話法（〜と言った）,3,मैले म विद्यार्थी हुँ भनेँ।,maile ma vidyārthī hũ bhanẽ,私は「私は学生です」と言いました,I said I was a student.
 34,間接話法（〜と言った）,4,तपाईंले आउँछु भन्नुभयो?,tapāĩle āũchu bhannubhayo?,あなたは「来る」と言いましたか？,Did you say you would come?
 34,間接話法（〜と言った）,5,हामीले तयार छौं भन्यौं।,hāmīle tayār chaũ bhanyaũ,私たちは「準備ができた」と言いました,We said we were ready.
-34,間接話法（〜と言った）,6,उनीहरूले भोलि आउँछौं भने।,unīharūle bholi āũchaũ bhane,彼らは「明日来る」と言いました,They said they would come tomorrow.
+34,間接話法（〜と言った）,6,उहाँहरूले भोलि आउँछौं भन्नुभयो।,uhā̃harūle bholi āũchaũ bhannubhayo,彼らは「明日来る」と言いました,They said they would come tomorrow.
 34,間接話法（〜と言った）,7,मैले त्यो राम्रो छ भनिनँ।,maile tyo rāmro cha bhaninã,私は「それは良い」とは言いませんでした,I did not say that it was good.
-34,間接話法（〜と言った）,8,उनले पैसा छैन भनिन्।,unle paisā chaina bhanin,彼女は「お金がない」と言いました,She said she had no money.
+34,間接話法（〜と言った）,8,उहाँले पैसा छैन भन्नुभयो।,uhā̃le paisā chaina bhannubhayo,彼女は「お金がない」と言いました,She said she had no money.
 34,間接話法（〜と言った）,9,आमाले सधैं चाँडै सुत भन्ने गर्नुहुन्थ्यो।,āmāle sadhaĩ cā̃ḍai suta bhanne garnuhunthyo,母はいつも「早く寝なさい」と言っていました,Mother always used to tell me to go to bed early.
 A,書くことで覚える動詞活用（लेख्नु）,1,म चिठी लेख्छु।,ma ciṭhī lekhchu,私は手紙を書きます,I write letters.
 A,書くことで覚える動詞活用（लेख्नु）,2,तँ चिठी लेख्छस्।,tã ciṭhī lekhchas,お前は手紙を書きます,You write letters.
 A,書くことで覚える動詞活用（लेख्नु）,3,तिमी चिठी लेख्छौ।,timī ciṭhī lekhchau,君は手紙を書きます,You write letters.
 A,書くことで覚える動詞活用（लेख्नु）,4,तिमीहरू चिठी लेख्छौ।,timīharū ciṭhī lekhchau,君たちは手紙を書きます,You write letters.
 A,書くことで覚える動詞活用（लेख्नु）,5,तपाईं चिठी लेख्नुहुन्छ।,tapāĩ ciṭhī lekhnuhuncha,あなたは手紙を書きます,You write letters.
-A,書くことで覚える動詞活用（लेख्नु）,6,उ चिठी लेख्छ।,u ciṭhī lekhcha,彼は手紙を書きます,He writes letters.
-A,書くことで覚える動詞活用（लेख्नु）,7,उनी चिठी लेख्छिन्।,unī ciṭhī lekhchin,彼女は手紙を書きます,She writes letters.
+A,書くことで覚える動詞活用（लेख्नु）,6,उहाँ चिठी लेख्नुहुन्छ।,uhā̃ ciṭhī lekhnuhuncha,彼は手紙を書きます,He writes letters.
+A,書くことで覚える動詞活用（लेख्नु）,7,उहाँ चिठी लेख्नुहुन्छ।,uhā̃ ciṭhī lekhnuhuncha,彼女は手紙を書きます,She writes letters.
 A,書くことで覚える動詞活用（लेख्नु）,8,उहाँ चिठी लेख्नुहुन्छ।,uhā̃ ciṭhī lekhnuhuncha,あの方は手紙を書きます,He writes letters.
 A,書くことで覚える動詞活用（लेख्नु）,9,हामी चिठी लेख्छौं।,hāmī ciṭhī lekhchaũ,私たちは手紙を書きます,We write letters.
-A,書くことで覚える動詞活用（लेख्नु）,10,उनीहरू चिठी लेख्छन्।,unīharū ciṭhī lekhchan,彼らは手紙を書きます,They write letters.
+A,書くことで覚える動詞活用（लेख्नु）,10,उहाँहरू चिठी लेख्नुहुन्छ।,uhā̃harū ciṭhī lekhnuhuncha,彼らは手紙を書きます,They write letters.
 A,書くことで覚える動詞活用（लेख्नु）,11,म चिठी लेख्दिनँ।,ma ciṭhī lekhdinã,私は手紙を書きません,I do not write letters.
 A,書くことで覚える動詞活用（लेख्नु）,12,तँ चिठी लेख्दैनस्।,tã ciṭhī lekhdainas,お前は手紙を書きません,You do not write letters.
 A,書くことで覚える動詞活用（लेख्नु）,13,तिमी चिठी लेख्दैनौ।,timī ciṭhī lekhdainau,君は手紙を書きません,You do not write letters.
 A,書くことで覚える動詞活用（लेख्नु）,14,तिमीहरू चिठी लेख्दैनौ।,timīharū ciṭhī lekhdainau,君たちは手紙を書きません,You do not write letters.
 A,書くことで覚える動詞活用（लेख्नु）,15,तपाईं चिठी लेख्नुहुन्न।,tapāĩ ciṭhī lekhnuhunna,あなたは手紙を書きません,You do not write letters.
-A,書くことで覚える動詞活用（लेख्नु）,16,उ चिठी लेख्दैन।,u ciṭhī lekhdaina,彼は手紙を書きません,He does not write letters.
-A,書くことで覚える動詞活用（लेख्नु）,17,उनी चिठी लेख्दिनन्।,unī ciṭhī lekhdinan,彼女は手紙を書きません,She does not write letters.
+A,書くことで覚える動詞活用（लेख्नु）,16,उहाँ चिठी लेख्नुहुन्न।,uhā̃ ciṭhī lekhnuhunna,彼は手紙を書きません,He does not write letters.
+A,書くことで覚える動詞活用（लेख्नु）,17,उहाँ चिठी लेख्नुहुन्न।,uhā̃ ciṭhī lekhnuhunna,彼女は手紙を書きません,She does not write letters.
 A,書くことで覚える動詞活用（लेख्नु）,18,उहाँ चिठी लेख्नुहुन्न।,uhā̃ ciṭhī lekhnuhunna,あの方は手紙を書きません,He does not write letters.
 A,書くことで覚える動詞活用（लेख्नु）,19,हामी चिठी लेख्दैनौं।,hāmī ciṭhī lekhdainaũ,私たちは手紙を書きません,We do not write letters.
-A,書くことで覚える動詞活用（लेख्नु）,20,उनीहरू चिठी लेख्दैनन्।,unīharū ciṭhī lekhdainan,彼らは手紙を書きません,They do not write letters.
+A,書くことで覚える動詞活用（लेख्नु）,20,उहाँहरू चिठी लेख्नुहुन्न।,uhā̃harū ciṭhī lekhnuhunna,彼らは手紙を書きません,They do not write letters.
 A,書くことで覚える動詞活用（लेख्नु）,21,मैले हिजो चिठी लेखेँ।,maile hijo ciṭhī lekhẽ,私は昨日手紙を書きました,I wrote a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,22,तैंले हिजो चिठी लेखिस्।,taĩle hijo ciṭhī lekhis,お前は昨日手紙を書きました,You wrote a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,23,तिमीले हिजो चिठी लेख्यौ।,timīle hijo ciṭhī lekhyau,君は昨日手紙を書きました,You wrote a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,24,तिमीहरूले हिजो चिठी लेख्यौ।,timīharūle hijo ciṭhī lekhyau,君たちは昨日手紙を書きました,You wrote a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,25,तपाईंले हिजो चिठी लेख्नुभयो।,tapāĩle hijo ciṭhī lekhnubhayo,あなたは昨日手紙を書きました,You wrote a letter yesterday.
-A,書くことで覚える動詞活用（लेख्नु）,26,उसले हिजो चिठी लेख्यो।,usle hijo ciṭhī lekhyo,彼は昨日手紙を書きました,He wrote a letter yesterday.
-A,書くことで覚える動詞活用（लेख्नु）,27,उनले हिजो चिठी लेखिन्।,unle hijo ciṭhī lekhin,彼女は昨日手紙を書きました,She wrote a letter yesterday.
+A,書くことで覚える動詞活用（लेख्नु）,26,उहाँले हिजो चिठी लेख्नुभयो।,uhā̃le hijo ciṭhī lekhnubhayo,彼は昨日手紙を書きました,He wrote a letter yesterday.
+A,書くことで覚える動詞活用（लेख्नु）,27,उहाँले हिजो चिठी लेख्नुभयो।,uhā̃le hijo ciṭhī lekhnubhayo,彼女は昨日手紙を書きました,She wrote a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,28,उहाँले हिजो चिठी लेख्नुभयो।,uhā̃le hijo ciṭhī lekhnubhayo,あの方は昨日手紙を書きました,He wrote a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,29,हामीले हिजो चिठी लेख्यौं।,hāmīle hijo ciṭhī lekhyaũ,私たちは昨日手紙を書きました,We wrote a letter yesterday.
-A,書くことで覚える動詞活用（लेख्नु）,30,उनीहरूले हिजो चिठी लेखे।,unīharūle hijo ciṭhī lekhe,彼らは昨日手紙を書きました,They wrote a letter yesterday.
+A,書くことで覚える動詞活用（लेख्नु）,30,उहाँहरूले हिजो चिठी लेख्नुभयो।,uhā̃harūle hijo ciṭhī lekhnubhayo,彼らは昨日手紙を書きました,They wrote a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,31,मैले हिजो चिठी लेखिनँ।,maile hijo ciṭhī lekhinã,私は昨日手紙を書きませんでした,I did not write a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,32,तैंले हिजो चिठी लेखिनस्।,taĩle hijo ciṭhī lekhinas,お前は昨日手紙を書きませんでした,You did not write a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,33,तिमीले हिजो चिठी लेखेनौ।,timīle hijo ciṭhī lekhenau,君は昨日手紙を書きませんでした,You did not write a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,34,तिमीहरूले हिजो चिठी लेखेनौ।,timīharūle hijo ciṭhī lekhenau,君たちは昨日手紙を書きませんでした,You did not write a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,35,तपाईंले हिजो चिठी लेख्नुभएन।,tapāĩle hijo ciṭhī lekhnubhaena,あなたは昨日手紙を書きませんでした,You did not write a letter yesterday.
-A,書くことで覚える動詞活用（लेख्नु）,36,उसले हिजो चिठी लेखेन।,usle hijo ciṭhī lekhena,彼は昨日手紙を書きませんでした,He did not write a letter yesterday.
-A,書くことで覚える動詞活用（लेख्नु）,37,उनले हिजो चिठी लेखिनन्।,unle hijo ciṭhī lekhinan,彼女は昨日手紙を書きませんでした,She did not write a letter yesterday.
+A,書くことで覚える動詞活用（लेख्नु）,36,उहाँले हिजो चिठी लेख्नुभएन।,uhā̃le hijo ciṭhī lekhnubhaena,彼は昨日手紙を書きませんでした,He did not write a letter yesterday.
+A,書くことで覚える動詞活用（लेख्नु）,37,उहाँले हिजो चिठी लेख्नुभएन।,uhā̃le hijo ciṭhī lekhnubhaena,彼女は昨日手紙を書きませんでした,She did not write a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,38,उहाँले हिजो चिठी लेख्नुभएन।,uhā̃le hijo ciṭhī lekhnubhaena,あの方は昨日手紙を書きませんでした,He did not write a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,39,हामीले हिजो चिठी लेखेनौं।,hāmīle hijo ciṭhī lekhenaũ,私たちは昨日手紙を書きませんでした,We did not write a letter yesterday.
-A,書くことで覚える動詞活用（लेख्नु）,40,उनीहरूले हिजो चिठी लेखेनन्।,unīharūle hijo ciṭhī lekhenan,彼らは昨日手紙を書きませんでした,They did not write a letter yesterday.
+A,書くことで覚える動詞活用（लेख्नु）,40,उहाँहरूले हिजो चिठी लेख्नुभएन।,uhā̃harūle hijo ciṭhī lekhnubhaena,彼らは昨日手紙を書きませんでした,They did not write a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,41,मैले चिठी लेखेको छु।,maile ciṭhī lekheko chu,私は手紙を書き終えています,I have done the write letters.
 A,書くことで覚える動詞活用（लेख्नु）,42,तैंले चिठी लेखेको छस्।,taĩle ciṭhī lekheko chas,お前は手紙を書き終えています,You have done the write letters.
 A,書くことで覚える動詞活用（लेख्नु）,43,तिमीले चिठी लेखेको छौ।,timīle ciṭhī lekheko chau,君は手紙を書き終えています,You have done the write letters.
 A,書くことで覚える動詞活用（लेख्नु）,44,तिमीहरूले चिठी लेखेको छौ।,timīharūle ciṭhī lekheko chau,君たちは手紙を書き終えています,You have done the write letters.
 A,書くことで覚える動詞活用（लेख्नु）,45,तपाईंले चिठी लेख्नुभएको छ।,tapāĩle ciṭhī lekhnubhaeko cha,あなたは手紙を書き終えています,You have done the write letters.
-A,書くことで覚える動詞活用（लेख्नु）,46,उसले चिठी लेखेको छ।,usle ciṭhī lekheko cha,彼は手紙を書き終えています,He has done the write letters.
-A,書くことで覚える動詞活用（लेख्नु）,47,उनले चिठी लेखेकी छिन्।,unle ciṭhī lekhekī chin,彼女は手紙を書き終えています,She has done the write letters.
+A,書くことで覚える動詞活用（लेख्नु）,46,उहाँले चिठी लेख्नुभएको छ।,uhā̃le ciṭhī lekhnubhaeko cha,彼は手紙を書き終えています,He has done the write letters.
+A,書くことで覚える動詞活用（लेख्नु）,47,उहाँले चिठी लेख्नुभएको छिन्।,uhā̃le ciṭhī lekhnubhaeko chin,彼女は手紙を書き終えています,She has done the write letters.
 A,書くことで覚える動詞活用（लेख्नु）,48,उहाँले चिठी लेख्नुभएको छ।,uhā̃le ciṭhī lekhnubhaeko cha,あの方は手紙を書き終えています,He has done the write letters.
 A,書くことで覚える動詞活用（लेख्नु）,49,हामीले चिठी लेखेको छौं।,hāmīle ciṭhī lekheko chaũ,私たちは手紙を書き終えています,We have done the write letters.
-A,書くことで覚える動詞活用（लेख्नु）,50,उनीहरूले चिठी लेखेका छन्।,unīharūle ciṭhī lekhekā chan,彼らは手紙を書き終えています,They have done the write letters.
+A,書くことで覚える動詞活用（लेख्नु）,50,उहाँहरूले चिठी लेख्नुभएको छन्।,uhā̃harūle ciṭhī lekhnubhaeko chan,彼らは手紙を書き終えています,They have done the write letters.
 A,書くことで覚える動詞活用（लेख्नु）,51,म पहिले चिठी लेख्थें।,ma pahile ciṭhī lekhthẽ,私は以前手紙を書いていました,I used to write letters.
 A,書くことで覚える動詞活用（लेख्नु）,52,तँ पहिले चिठी लेख्थिस्।,tã pahile ciṭhī lekhthis,お前は以前手紙を書いていました,You used to write letters.
 A,書くことで覚える動詞活用（लेख्नु）,53,तिमी पहिले चिठी लेख्थ्यौ।,timī pahile ciṭhī lekhthyau,君は以前手紙を書いていました,You used to write letters.
 A,書くことで覚える動詞活用（लेख्नु）,54,तिमीहरू पहिले चिठी लेख्थ्यौ।,timīharū pahile ciṭhī lekhthyau,君たちは以前手紙を書いていました,You used to write letters.
 A,書くことで覚える動詞活用（लेख्नु）,55,तपाईं पहिले चिठी लेख्नुहुन्थ्यो।,tapāĩ pahile ciṭhī lekhnuhunthyo,あなたは以前手紙を書いていました,You used to write letters.
-A,書くことで覚える動詞活用（लेख्नु）,56,उ पहिले चिठी लेख्थ्यो।,u pahile ciṭhī lekhthyo,彼は以前手紙を書いていました,He used to write letters.
-A,書くことで覚える動詞活用（लेख्नु）,57,उनी पहिले चिठी लेख्थिन्।,unī pahile ciṭhī lekhthin,彼女は以前手紙を書いていました,She used to write letters.
+A,書くことで覚える動詞活用（लेख्नु）,56,उहाँ पहिले चिठी लेख्नुहुन्थ्यो।,uhā̃ pahile ciṭhī lekhnuhunthyo,彼は以前手紙を書いていました,He used to write letters.
+A,書くことで覚える動詞活用（लेख्नु）,57,उहाँ पहिले चिठी लेख्नुहुन्थ्यो।,uhā̃ pahile ciṭhī lekhnuhunthyo,彼女は以前手紙を書いていました,She used to write letters.
 A,書くことで覚える動詞活用（लेख्नु）,58,उहाँ पहिले चिठी लेख्नुहुन्थ्यो।,uhā̃ pahile ciṭhī lekhnuhunthyo,あの方は以前手紙を書いていました,He used to write letters.
 A,書くことで覚える動詞活用（लेख्नु）,59,हामी पहिले चिठी लेख्थ्यौं।,hāmī pahile ciṭhī lekhthyaũ,私たちは以前手紙を書いていました,We used to write letters.
-A,書くことで覚える動詞活用（लेख्नु）,60,उनीहरू पहिले चिठी लेख्थे।,unīharū pahile ciṭhī lekhthe,彼らは以前手紙を書いていました,They used to write letters.
+A,書くことで覚える動詞活用（लेख्नु）,60,उहाँहरू पहिले चिठी लेख्नुहुन्थ्यो।,uhā̃harū pahile ciṭhī lekhnuhunthyo,彼らは以前手紙を書いていました,They used to write letters.
 A,書くことで覚える動詞活用（लेख्नु）,61,तँ यो चिठी लेख्।,tã yo ciṭhī lekh,お前、この手紙を書いて,Write this letter.
 A,書くことで覚える動詞活用（लेख्नु）,62,तिमी यो चिठी लेख।,timī yo ciṭhī lekh,君、この手紙を書いて,Write this letter.
 A,書くことで覚える動詞活用（लेख्नु）,63,तपाईं यो चिठी लेख्नुहोस्।,tapāĩ yo ciṭhī lekhnuhos,あなたはこの手紙を書いてください,Please write this letter.
 A,書くことで覚える動詞活用（लेख्नु）,64,म यो चिठी लेखूँ?,ma yo ciṭhī lekhũ?,私がこの手紙を書きましょうか？,Shall I write this letter?
 A,書くことで覚える動詞活用（लेख्नु）,65,हामी यो चिठी लेखौं।,hāmī yo ciṭhī lekhaũ,私たちはこの手紙を書きましょう,Let us write this letter.
-A,書くことで覚える動詞活用（लेख्नु）,66,उनी चिठी लेख्छन्।,unī ciṭhī lekhchan,その方は手紙を書きます,That person writes letters.
-A,書くことで覚える動詞活用（लेख्नु）,67,उनले हिजो चिठी लेखे।,unle hijo ciṭhī lekhe,その方は昨日手紙を書きました,That person wrote a letter yesterday.
+A,書くことで覚える動詞活用（लेख्नु）,66,उहाँ चिठी लेख्नुहुन्छ।,uhā̃ ciṭhī lekhnuhuncha,その方は手紙を書きます,That person writes letters.
+A,書くことで覚える動詞活用（लेख्नु）,67,उहाँले हिजो चिठी लेख्नुभयो।,uhā̃le hijo ciṭhī lekhnubhayo,その方は昨日手紙を書きました,That person wrote a letter yesterday.
 A,書くことで覚える動詞活用（लेख्नु）,68,म भोलि चिठी लेख्छु।,ma bholi ciṭhī lekhchu,私は明日手紙を書きます,I will write a letter tomorrow.
 A,書くことで覚える動詞活用（लेख्नु）,69,तँ भोलि चिठी लेख्छस्।,tã bholi ciṭhī lekhchas,お前は明日手紙を書きます,You will write a letter tomorrow.
 A,書くことで覚える動詞活用（लेख्नु）,70,तिमी भोलि चिठी लेख्छौ।,timī bholi ciṭhī lekhchau,君は明日手紙を書きます,You will write a letter tomorrow.
 A,書くことで覚える動詞活用（लेख्नु）,71,तिमीहरू भोलि चिठी लेख्छौ।,timīharū bholi ciṭhī lekhchau,君たちは明日手紙を書きます,You will write a letter tomorrow.
 A,書くことで覚える動詞活用（लेख्नु）,72,तपाईं भोलि चिठी लेख्नुहुन्छ।,tapāĩ bholi ciṭhī lekhnuhuncha,あなたは明日手紙を書きます,You will write a letter tomorrow.
-A,書くことで覚える動詞活用（लेख्नु）,73,उ भोलि चिठी लेख्छ।,u bholi ciṭhī lekhcha,彼は明日手紙を書きます,He will write a letter tomorrow.
-A,書くことで覚える動詞活用（लेख्नु）,74,उनी भोलि चिठी लेख्छिन्।,unī bholi ciṭhī lekhchin,彼女は明日手紙を書きます,She will write a letter tomorrow.
+A,書くことで覚える動詞活用（लेख्नु）,73,उहाँ भोलि चिठी लेख्नुहुन्छ।,uhā̃ bholi ciṭhī lekhnuhuncha,彼は明日手紙を書きます,He will write a letter tomorrow.
+A,書くことで覚える動詞活用（लेख्नु）,74,उहाँ भोलि चिठी लेख्नुहुन्छ।,uhā̃ bholi ciṭhī lekhnuhuncha,彼女は明日手紙を書きます,She will write a letter tomorrow.
 A,書くことで覚える動詞活用（लेख्नु）,75,उहाँ भोलि चिठी लेख्नुहुन्छ।,uhā̃ bholi ciṭhī lekhnuhuncha,あの方は明日手紙を書きます,He will write a letter tomorrow.
 A,書くことで覚える動詞活用（लेख्नु）,76,हामी भोलि चिठी लेख्छौं।,hāmī bholi ciṭhī lekhchaũ,私たちは明日手紙を書きます,We will write a letter tomorrow.
-A,書くことで覚える動詞活用（लेख्नु）,77,उनीहरू भोलि चिठी लेख्छन्।,unīharū bholi ciṭhī lekhchan,彼らは明日手紙を書きます,They will write a letter tomorrow.
+A,書くことで覚える動詞活用（लेख्नु）,77,उहाँहरू भोलि चिठी लेख्नुहुन्छ।,uhā̃harū bholi ciṭhī lekhnuhuncha,彼らは明日手紙を書きます,They will write a letter tomorrow.
 B,人物紹介と居場所で覚える繋辞,1,म लेखक हुँ।,ma lekhak hũ,私は著者です,I am an author.
 B,人物紹介と居場所で覚える繋辞,2,तँ लेखक होस्।,tã lekhak hos,お前は著者です,You are an author.
 B,人物紹介と居場所で覚える繋辞,3,तिमी लेखक हौ।,timī lekhak hau,君は著者です,You are an author.
 B,人物紹介と居場所で覚える繋辞,4,तिमीहरू लेखक हौ।,timīharū lekhak hau,君たちは著者です,You are authors.
 B,人物紹介と居場所で覚える繋辞,5,तपाईं लेखक हुनुहुन्छ।,tapāĩ lekhak hunuhuncha,あなたは著者です,You are an author.
-B,人物紹介と居場所で覚える繋辞,6,उ लेखक हो।,u lekhak ho,彼は著者です,He is an author.
-B,人物紹介と居場所で覚える繋辞,7,उनी लेखिका हुन्।,unī lekhikā hun,彼女は著者です,She is an author.
+B,人物紹介と居場所で覚える繋辞,6,उहाँ लेखक हुनुहुन्छ।,uhā̃ lekhak hunuhuncha,彼は著者です,He is an author.
+B,人物紹介と居場所で覚える繋辞,7,उहाँ लेखिका हुनुहुन्छ।,uhā̃ lekhikā hunuhuncha,彼女は著者です,She is an author.
 B,人物紹介と居場所で覚える繋辞,8,उहाँ लेखक हुनुहुन्छ।,uhā̃ lekhak hunuhuncha,あの方は著者です,He is an author.
 B,人物紹介と居場所で覚える繋辞,9,हामी लेखक हौं।,hāmī lekhak haũ,私たちは著者です,We are authors.
-B,人物紹介と居場所で覚える繋辞,10,उनीहरू लेखक हुन्।,unīharū lekhak hun,彼らは著者です,They are authors.
+B,人物紹介と居場所で覚える繋辞,10,उहाँहरू लेखक हुनुहुन्छ।,uhā̃harū lekhak hunuhuncha,彼らは著者です,They are authors.
 B,人物紹介と居場所で覚える繋辞,11,म लेखक होइनँ।,ma lekhak hoinã,私は著者ではありません,I am not an author.
 B,人物紹介と居場所で覚える繋辞,12,तँ लेखक होइनस्।,tã lekhak hoinas,お前は著者ではありません,You are not an author.
 B,人物紹介と居場所で覚える繋辞,13,तिमी लेखक होइनौ।,timī lekhak hoinau,君は著者ではありません,You are not an author.
 B,人物紹介と居場所で覚える繋辞,14,तिमीहरू लेखक होइनौ।,timīharū lekhak hoinau,君たちは著者ではありません,You are not authors.
 B,人物紹介と居場所で覚える繋辞,15,तपाईं लेखक हुनुहुन्न।,tapāĩ lekhak hunuhunna,あなたは著者ではありません,You are not an author.
-B,人物紹介と居場所で覚える繋辞,16,उ लेखक होइन।,u lekhak hoina,彼は著者ではありません,He is not an author.
-B,人物紹介と居場所で覚える繋辞,17,उनी लेखिका होइनन्।,unī lekhikā hoinan,彼女は著者ではありません,She is not an author.
+B,人物紹介と居場所で覚える繋辞,16,उहाँ लेखक हुनुहुन्न।,uhā̃ lekhak hunuhunna,彼は著者ではありません,He is not an author.
+B,人物紹介と居場所で覚える繋辞,17,उहाँ लेखिका हुनुहुन्न।,uhā̃ lekhikā hunuhunna,彼女は著者ではありません,She is not an author.
 B,人物紹介と居場所で覚える繋辞,18,उहाँ लेखक हुनुहुन्न।,uhā̃ lekhak hunuhunna,あの方は著者ではありません,He is not an author.
 B,人物紹介と居場所で覚える繋辞,19,हामी लेखक होइनौं।,hāmī lekhak hoinaũ,私たちは著者ではありません,We are not authors.
-B,人物紹介と居場所で覚える繋辞,20,उनीहरू लेखक होइनन्।,unīharū lekhak hoinan,彼らは著者ではありません,They are not authors.
+B,人物紹介と居場所で覚える繋辞,20,उहाँहरू लेखक हुनुहुन्न।,uhā̃harū lekhak hunuhunna,彼らは著者ではありません,They are not authors.
 B,人物紹介と居場所で覚える繋辞,21,म पुस्तकालयमा छु।,ma pustakālayamā chu,私は図書館にいます,I am at the library.
 B,人物紹介と居場所で覚える繋辞,22,तँ पुस्तकालयमा छस्।,tã pustakālayamā chas,お前は図書館にいます,You are at the library.
 B,人物紹介と居場所で覚える繋辞,23,तिमी पुस्तकालयमा छौ।,timī pustakālayamā chau,君は図書館にいます,You are at the library.
 B,人物紹介と居場所で覚える繋辞,24,तिमीहरू पुस्तकालयमा छौ।,timīharū pustakālayamā chau,君たちは図書館にいます,You are at the library.
 B,人物紹介と居場所で覚える繋辞,25,तपाईं पुस्तकालयमा हुनुहुन्छ।,tapāĩ pustakālayamā hunuhuncha,あなたは図書館にいます,You are at the library.
-B,人物紹介と居場所で覚える繋辞,26,उ पुस्तकालयमा छ।,u pustakālayamā cha,彼は図書館にいます,He is at the library.
-B,人物紹介と居場所で覚える繋辞,27,उनी पुस्तकालयमा छिन्।,unī pustakālayamā chin,彼女は図書館にいます,She is at the library.
+B,人物紹介と居場所で覚える繋辞,26,उहाँ पुस्तकालयमा हुनुहुन्छ।,uhā̃ pustakālayamā hunuhuncha,彼は図書館にいます,He is at the library.
+B,人物紹介と居場所で覚える繋辞,27,उहाँ पुस्तकालयमा हुनुहुन्छ।,uhā̃ pustakālayamā hunuhuncha,彼女は図書館にいます,She is at the library.
 B,人物紹介と居場所で覚える繋辞,28,उहाँ पुस्तकालयमा हुनुहुन्छ।,uhā̃ pustakālayamā hunuhuncha,あの方は図書館にいます,He is at the library.
 B,人物紹介と居場所で覚える繋辞,29,हामी पुस्तकालयमा छौं।,hāmī pustakālayamā chaũ,私たちは図書館にいます,We are at the library.
-B,人物紹介と居場所で覚える繋辞,30,उनीहरू पुस्तकालयमा छन्।,unīharū pustakālayamā chan,彼らは図書館にいます,They are at the library.
+B,人物紹介と居場所で覚える繋辞,30,उहाँहरू पुस्तकालयमा हुनुहुन्छ।,uhā̃harū pustakālayamā hunuhuncha,彼らは図書館にいます,They are at the library.
 B,人物紹介と居場所で覚える繋辞,31,म पुस्तकालयमा छैनँ।,ma pustakālayamā chainã,私は図書館にいません,I am not at the library.
 B,人物紹介と居場所で覚える繋辞,32,तँ पुस्तकालयमा छैनस्।,tã pustakālayamā chainas,お前は図書館にいません,You are not at the library.
 B,人物紹介と居場所で覚える繋辞,33,तिमी पुस्तकालयमा छैनौ।,timī pustakālayamā chainau,君は図書館にいません,You are not at the library.
 B,人物紹介と居場所で覚える繋辞,34,तिमीहरू पुस्तकालयमा छैनौ।,timīharū pustakālayamā chainau,君たちは図書館にいません,You are not at the library.
 B,人物紹介と居場所で覚える繋辞,35,तपाईं पुस्तकालयमा हुनुहुन्न।,tapāĩ pustakālayamā hunuhunna,あなたは図書館にいません,You are not at the library.
-B,人物紹介と居場所で覚える繋辞,36,उ पुस्तकालयमा छैन।,u pustakālayamā chaina,彼は図書館にいません,He is not at the library.
-B,人物紹介と居場所で覚える繋辞,37,उनी पुस्तकालयमा छैनन्।,unī pustakālayamā chainan,彼女は図書館にいません,She is not at the library.
+B,人物紹介と居場所で覚える繋辞,36,उहाँ पुस्तकालयमा हुनुहुन्न।,uhā̃ pustakālayamā hunuhunna,彼は図書館にいません,He is not at the library.
+B,人物紹介と居場所で覚える繋辞,37,उहाँ पुस्तकालयमा हुनुहुन्न।,uhā̃ pustakālayamā hunuhunna,彼女は図書館にいません,She is not at the library.
 B,人物紹介と居場所で覚える繋辞,38,उहाँ पुस्तकालयमा हुनुहुन्न।,uhā̃ pustakālayamā hunuhunna,あの方は図書館にいません,He is not at the library.
 B,人物紹介と居場所で覚える繋辞,39,हामी पुस्तकालयमा छैनौं।,hāmī pustakālayamā chainaũ,私たちは図書館にいません,We are not at the library.
-B,人物紹介と居場所で覚える繋辞,40,उनीहरू पुस्तकालयमा छैनन्।,unīharū pustakālayamā chainan,彼らは図書館にいません,They are not at the library.
+B,人物紹介と居場所で覚える繋辞,40,उहाँहरू पुस्तकालयमा हुनुहुन्न।,uhā̃harū pustakālayamā hunuhunna,彼らは図書館にいません,They are not at the library.
 B,人物紹介と居場所で覚える繋辞,41,म अस्ति बजारमा थिएँ।,ma asti bajārmā thiẽ,私は一昨日市場にいました,I was at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,42,तँ अस्ति बजारमा थिइस्।,tã asti bajārmā thiis,お前は一昨日市場にいました,You were at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,43,तिमी अस्ति बजारमा थियौ।,timī asti bajārmā thiyau,君は一昨日市場にいました,You were at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,44,तिमीहरू अस्ति बजारमा थियौ।,timīharū asti bajārmā thiyau,君たちは一昨日市場にいました,You were at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,45,तपाईं अस्ति बजारमा हुनुहुन्थ्यो।,tapāĩ asti bajārmā hunuhunthyo,あなたは一昨日市場にいました,You were at the market the day before yesterday.
-B,人物紹介と居場所で覚える繋辞,46,उ अस्ति बजारमा थियो।,u asti bajārmā thiyo,彼は一昨日市場にいました,He was at the market the day before yesterday.
-B,人物紹介と居場所で覚える繋辞,47,उनी अस्ति बजारमा थिइन्।,unī asti bajārmā thiin,彼女は一昨日市場にいました,She was at the market the day before yesterday.
+B,人物紹介と居場所で覚える繋辞,46,उहाँ अस्ति बजारमा हुनुहुन्थ्यो।,uhā̃ asti bajārmā hunuhunthyo,彼は一昨日市場にいました,He was at the market the day before yesterday.
+B,人物紹介と居場所で覚える繋辞,47,उहाँ अस्ति बजारमा हुनुहुन्थ्यो।,uhā̃ asti bajārmā hunuhunthyo,彼女は一昨日市場にいました,She was at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,48,उहाँ अस्ति बजारमा हुनुहुन्थ्यो।,uhā̃ asti bajārmā hunuhunthyo,あの方は一昨日市場にいました,He was at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,49,हामी अस्ति बजारमा थियौं।,hāmī asti bajārmā thiyaũ,私たちは一昨日市場にいました,We were at the market the day before yesterday.
-B,人物紹介と居場所で覚える繋辞,50,उनीहरू अस्ति बजारमा थिए।,unīharū asti bajārmā thie,彼らは一昨日市場にいました,They were at the market the day before yesterday.
+B,人物紹介と居場所で覚える繋辞,50,उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो।,uhā̃harū asti bajārmā hunuhunthyo,彼らは一昨日市場にいました,They were at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,51,म अस्ति बजारमा थिइनँ।,ma asti bajārmā thiinã,私は一昨日市場にいませんでした,I was not at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,52,तँ अस्ति बजारमा थिइनस्।,tã asti bajārmā thiinas,お前は一昨日市場にいませんでした,You were not at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,53,तिमी अस्ति बजारमा थिएनौ।,timī asti bajārmā thienau,君は一昨日市場にいませんでした,You were not at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,54,तिमीहरू अस्ति बजारमा थिएनौ।,timīharū asti bajārmā thienau,君たちは一昨日市場にいませんでした,You were not at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,55,तपाईं अस्ति बजारमा हुनुहुन्नथ्यो।,tapāĩ asti bajārmā hunuhunnathyo,あなたは一昨日市場にいませんでした,You were not at the market the day before yesterday.
-B,人物紹介と居場所で覚える繋辞,56,उ अस्ति बजारमा थिएन।,u asti bajārmā thiena,彼は一昨日市場にいませんでした,He was not at the market the day before yesterday.
-B,人物紹介と居場所で覚える繋辞,57,उनी अस्ति बजारमा थिइनन्।,unī asti bajārmā thiinan,彼女は一昨日市場にいませんでした,She was not at the market the day before yesterday.
+B,人物紹介と居場所で覚える繋辞,56,उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।,uhā̃ asti bajārmā hunuhunnathyo,彼は一昨日市場にいませんでした,He was not at the market the day before yesterday.
+B,人物紹介と居場所で覚える繋辞,57,उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।,uhā̃ asti bajārmā hunuhunnathyo,彼女は一昨日市場にいませんでした,She was not at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,58,उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।,uhā̃ asti bajārmā hunuhunnathyo,あの方は一昨日市場にいませんでした,He was not at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,59,हामी अस्ति बजारमा थिएनौं।,hāmī asti bajārmā thienaũ,私たちは一昨日市場にいませんでした,We were not at the market the day before yesterday.
-B,人物紹介と居場所で覚える繋辞,60,उनीहरू अस्ति बजारमा थिएनन्।,unīharū asti bajārmā thienan,彼らは一昨日市場にいませんでした,They were not at the market the day before yesterday.
+B,人物紹介と居場所で覚える繋辞,60,उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो।,uhā̃harū asti bajārmā hunuhunnathyo,彼らは一昨日市場にいませんでした,They were not at the market the day before yesterday.
 B,人物紹介と居場所で覚える繋辞,61,यो नयाँ कापी हो।,yo nayā̃ kāpī ho,これは新しいノートです,This is a new notebook.
 B,人物紹介と居場所で覚える繋辞,62,त्यो मेरो कापी होइन।,tyo mero kāpī hoina,それは私のノートではありません,That is not my notebook.
 B,人物紹介と居場所で覚える繋辞,63,मेरो कापी झोलामा छ।,mero kāpī jholāmā cha,私のノートはかばんの中にあります,My notebook is in the bag.
 B,人物紹介と居場所で覚える繋辞,64,तिम्रो कापी झोलामा छैन।,timro kāpī jholāmā chaina,君のノートはかばんの中にありません,Your notebook is not in the bag.
 B,人物紹介と居場所で覚える繋辞,65,यो पहिले पुस्तकालय थियो।,yo pahile pustakālaya thiyo,ここは以前図書館でした,This used to be a library.
 B,人物紹介と居場所で覚える繋辞,66,मेरो कापी अस्ति यहाँ थिएन।,mero kāpī asti yahā̃ thiena,私のノートは一昨日ここにありませんでした,My notebook was not here the day before yesterday.
-B,人物紹介と居場所で覚える繋辞,67,उनी बाहिर छन्।,unī bāhira chan,その方は外にいます,That person is outside.
+B,人物紹介と居場所で覚える繋辞,67,उहाँ बाहिर हुनुहुन्छ।,uhā̃ bāhira hunuhuncha,その方は外にいます,That person is outside.
