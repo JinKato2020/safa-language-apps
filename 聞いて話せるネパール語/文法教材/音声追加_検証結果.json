@@ -1,0 +1,42 @@
+{
+  "appVersion": "2.1.4",
+  "appRebuilt": false,
+  "packVersion": 1201,
+  "recordedExercises": 528,
+  "newExamples": 80,
+  "generatedAudioFiles": 240,
+  "languages": [
+    "ne",
+    "ja",
+    "en"
+  ],
+  "audioArchives": {
+    "ne": {
+      "unchangedFiles": 2514,
+      "addedFiles": 80,
+      "totalFiles": 2594,
+      "archiveSHA256": "05b9dc6c50be128c3c97dfbf451bce0e50f6b70c82a736b2fdd249e50468cbd2"
+    },
+    "ja": {
+      "unchangedFiles": 2514,
+      "addedFiles": 80,
+      "totalFiles": 2594,
+      "archiveSHA256": "e91249975d8646b458a64cfca7850a277aa3589f5c3037af5477b945d6e36e6f"
+    },
+    "en": {
+      "unchangedFiles": 2514,
+      "addedFiles": 80,
+      "totalFiles": 2594,
+      "archiveSHA256": "1e69cc7f86b3d74b61cbf1c158ff7b2c2307400b30ce0ddfe42327d01e72b1b5"
+    }
+  },
+  "immutableAssets": {
+    "audio-core-1006.zip": "05b9dc6c50be128c3c97dfbf451bce0e50f6b70c82a736b2fdd249e50468cbd2",
+    "audio-ja-1007.zip": "e91249975d8646b458a64cfca7850a277aa3589f5c3037af5477b945d6e36e6f",
+    "audio-en-1006.zip": "1e69cc7f86b3d74b61cbf1c158ff7b2c2307400b30ce0ddfe42327d01e72b1b5",
+    "core-1201.json": "5dd7334f00842841657f8986798cd7a193527f8fecd8c0b03799cb31e1d3cac4",
+    "overlay-ja-1201.json": "624c114c30989636c5b1a630a1c72114f1c5f72256c69780ad3bcf6425256159",
+    "overlay-en-1201.json": "4c63cc8277e7bfbbd4be245e1f36756e7a01b498730831f0fc2b9e9f58a834ba"
+  },
+  "catalogSHA256": "f51451edba57f3d8fe322397c3ff29491be92bb522e0e8729b2122267e7a465c"
+}

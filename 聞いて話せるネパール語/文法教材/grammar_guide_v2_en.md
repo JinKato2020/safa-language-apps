@@ -27,7 +27,7 @@ The ending changes with the subject. Identity statements use the होइन fa
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -252,7 +252,7 @@ Use person/thing + location + a form of छ. घरमा means at home; यह�
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -449,7 +449,7 @@ With a person as subject, choose the appropriate form of छ. Do not confuse an 
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -648,7 +648,7 @@ Being cold now and getting cold in winter take different perspectives. भयो
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -913,7 +913,7 @@ Some pronouns change shape before a postposition. Distinguish म, मेरो,
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -1485,7 +1485,7 @@ At the beginning of a sentence, के can mark a yes/no question rather than as
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -1857,7 +1857,7 @@ Explicitly feminine verbs include छिन्, गर्छिन् and गइ
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -2139,7 +2139,7 @@ Respectful forms follow a different pattern from ordinary endings. Remember to c
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -2315,7 +2315,7 @@ An action negative is different from छैन for nonexistence. Check the respe
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -2458,7 +2458,7 @@ Distinguish an ongoing action from a state left by a completed action. Do not ad
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -2612,7 +2612,7 @@ Do not mark an intransitive subject like the agent of a transitive action. Some 
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -2779,7 +2779,7 @@ The agent keeps ले in a negative completed transitive sentence. This differs
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -2922,7 +2922,7 @@ A definite plan and an uncertain prediction are different. Practice ways to soft
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -3097,7 +3097,7 @@ Do not automatically copy the ले marking of a single completed transitive ev
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -3228,7 +3228,7 @@ Context distinguishes experience, completion and a resulting state. A negative c
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -3389,7 +3389,7 @@ Distinguish an action that was in progress then from one already completed then.
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -3531,7 +3531,7 @@ A short form can sound forceful with the wrong person. Small particles after a r
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -3704,7 +3704,7 @@ Shall I and let us use different persons. A suggestion not to do something place
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -3935,7 +3935,7 @@ Keep a negative request separate from a prohibition with हुँदैन. Nei
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -4193,7 +4193,7 @@ The action's ordinary present form differs from a can construction. Negate स�
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -4340,7 +4340,7 @@ Do not have to does not mean must not. In this obligation pattern, पर्छ 
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -4562,7 +4562,7 @@ Keep liking something separate from wanting to do it. Distinguish मन पर�
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -4716,7 +4716,7 @@ Not every adjective changes in the same way. Learn feminine, plural and respectf
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -4925,7 +4925,7 @@ Add manner, frequency and degree
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -5119,7 +5119,7 @@ The best or biggest should have a clear comparison group. Do not add an English-
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -5373,7 +5373,7 @@ Confusing but with because changes the relationship between events. With पन�
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -5583,7 +5583,7 @@ Translating a sequence as while changes the action. Begin with two actions perfo
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -5803,7 +5803,7 @@ Purpose and cause are different. Check whether you mean an intended action or an
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -6034,7 +6034,7 @@ Distinguish a finite present statement from a noun-modifying form. Adding बि
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -6429,7 +6429,7 @@ Use condition + भने + consequence. यदि explicitly adds if but is oft
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -6604,7 +6604,7 @@ Distinguish opinion, prediction and possibility
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -6779,7 +6779,7 @@ Do not interpret an impersonal expression such as having done a lot of walking a
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -7045,7 +7045,7 @@ Seeing and showing, or learning and teaching, are different. Learn causative ver
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 
@@ -7189,7 +7189,7 @@ Said they would come and did not say they would come differ in the scope of nega
 
 The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
 
-Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.
+Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
 
 ### Exercises, answers and how they work
 

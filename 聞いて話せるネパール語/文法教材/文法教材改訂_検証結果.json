@@ -1,10 +1,10 @@
 {
-  "version": 1200,
+  "version": 1201,
   "topics": 36,
   "examples": 528,
   "mainExamples": 384,
   "reusedRecordings": 448,
-  "textOnly": 80,
+  "textOnly": 0,
   "byTopic": {
     "1": 13,
     "2": 12,
@@ -45,15 +45,25 @@
   },
   "dictionaryWords": 617,
   "dictionaryContexts": 2005,
-  "audioZipSHA256": {
+  "plannedCoverageChecks": "passed for both languages",
+  "conversationAndWordModesUnchanged": true,
+  "runtimeTests": "actual loadPack ja/en, fresh text and old cache, mismatch rejection, null audio refs, bounded listening skip in both directions",
+  "typecheck": "npm run tsc:all passed",
+  "workbook": "528 rows match; all existing cell styles and unrelated XLSX parts preserved",
+  "generatedRecordings": 80,
+  "recordedExamples": 528,
+  "existingRecordingFilesChanged": 0,
+  "newRecordingFiles": 240,
+  "appRebuilt": false,
+  "previousAudioZipSHA256": {
     "audio-core.zip": "9f8f824c69a2423e8e6ad02759f3fb30acf08940dc6986bc22c27ed2d16202fe",
     "audio-en.zip": "448be3f43031b379ed6e2aac543cb7d3552d8baa37b7c507cedcb53919cd5660",
     "audio-ja.zip": "0ede19cbd91958cc01ba1b6ea874c9eb12bf490f9c3869fb99eaffa719f23141"
   },
-  "plannedCoverageChecks": "passed for both languages",
-  "conversationAndWordModesUnchanged": true,
-  "recordingFilesChanged": 0,
-  "runtimeTests": "actual loadPack ja/en, fresh text and old cache, mismatch rejection, null audio refs, bounded listening skip in both directions",
-  "typecheck": "npm run tsc:all passed",
-  "workbook": "528 rows match; all existing cell styles and unrelated XLSX parts preserved"
+  "audioZipSHA256": {
+    "ne": "05b9dc6c50be128c3c97dfbf451bce0e50f6b70c82a736b2fdd249e50468cbd2",
+    "ja": "e91249975d8646b458a64cfca7850a277aa3589f5c3037af5477b945d6e36e6f",
+    "en": "1e69cc7f86b3d74b61cbf1c158ff7b2c2307400b30ce0ddfe42327d01e72b1b5"
+  },
+  "audioAdditionReport": "音声追加_検証結果.json"
 }

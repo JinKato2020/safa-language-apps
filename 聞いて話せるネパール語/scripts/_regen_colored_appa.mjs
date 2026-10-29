@@ -1,5 +1,5 @@
 // App A 着色ID(音声/テキスト不一致)を「他と同じ声」で再生成 → audio/<lang>/{conv,gram}/<id>.mp3。
-// ne=Azure HemkalaNeural+prosody-5% / ja=Neural2-B@0.95 / en=Neural2-F@0.95 (+_newthemes_ssml.json 読み対策)。
+// ne=Azure HemkalaNeural標準速度 / ja=Neural2-B@0.95 / en=Wavenet-F@0.95。
 // 本文: conv=examples.json(.ne/.jp)/overlays-en examplesL1, gram=grammarExamples.json(.ne/.jp)/overlays-en grammarL1。
 import fs from 'node:fs'; import path from 'node:path'; import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -18,7 +18,7 @@ const ssml = fs.existsSync(_sp) ? rd(_sp) : { ja: {}, en: {} };
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 function ssmlBody(text, lang) { const picks = (ssml[lang] || {})[text]; let s = esc(text); if (picks && picks.length) for (const p of picks) { const w = esc(p.word); s = s.split(w).join(`<sub alias="${esc(p.reading)}">${w}</sub>`); } return { body: s, hasPicks: !!(picks && picks.length) }; }
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const GVOICE = { ja: { languageCode: 'ja-JP', name: 'ja-JP-Neural2-B' }, en: { languageCode: 'en-US', name: process.env.EN_VOICE || 'en-US-Neural2-F' } };
+const GVOICE = { ja: { languageCode: 'ja-JP', name: 'ja-JP-Neural2-B' }, en: { languageCode: 'en-US', name: process.env.EN_VOICE || 'en-US-Wavenet-F' } };
 async function gSyn(text, lang) {
   const { body, hasPicks } = ssmlBody(text, lang);
   const input = hasPicks ? { ssml: `<speak>${body}</speak>` } : { text };
@@ -30,7 +30,7 @@ async function gSyn(text, lang) {
   } catch (e) { if (a < 6) await sleep(2500 * a); else throw e; } }
 }
 async function aSyn(text) {
-  const x = `<speak version="1.0" xml:lang="ne-NP"><voice name="ne-NP-HemkalaNeural"><prosody rate="${esc(process.env.NE_RATE || '-5%')}">${esc(text)}</prosody></voice></speak>`;
+  const x = `<speak version="1.0" xml:lang="ne-NP"><voice name="ne-NP-HemkalaNeural"><prosody rate="${esc(process.env.NE_RATE || '0%')}">${esc(text)}</prosody></voice></speak>`;
   for (let a = 1; a <= 6; a++) { try {
     const r = await fetch(AEP, { method: 'POST', headers: { 'Ocp-Apim-Subscription-Key': AKEY, 'Content-Type': 'application/ssml+xml', 'X-Microsoft-OutputFormat': 'audio-24khz-48kbitrate-mono-mp3', 'User-Agent': 'safa-tts' }, body: x });
     if (r.status === 429 || r.status === 400) { await sleep(3000 * a); continue; }
@@ -45,13 +45,28 @@ const COLORED = {
 };
 // Reuse this generator for a reviewed list of changed sentence IDs.
 const idsArg = process.argv.indexOf('--ids');
+const manifestArg = process.argv.indexOf('--manifest');
+if (idsArg >= 0 && manifestArg >= 0) throw new Error('Choose --ids or --manifest, not both');
+const manifest = manifestArg >= 0 ? rd(path.resolve(process.argv[manifestArg + 1])) : null;
 if (idsArg >= 0) {
   const selected = rd(path.resolve(process.argv[idsArg + 1]));
   for (const mode of ['conv', 'gram']) for (const lang of ['ne', 'ja', 'en']) {
     COLORED[mode][lang] = selected[mode]?.[lang] ?? [];
   }
 }
+if (manifest) {
+  for (const lang of ['ne', 'ja', 'en']) {
+    COLORED.conv[lang] = [];
+    COLORED.gram[lang] = Object.keys(manifest);
+  }
+  for (const [id, texts] of Object.entries(manifest)) {
+    if (!/^900-\d+$/.test(id) || !['ne','ja','en'].every(lang => typeof texts[lang] === 'string' && texts[lang])) {
+      throw new Error('Invalid immutable recording manifest');
+    }
+  }
+}
 function getText(id, lang, mode) {
+  if (manifest) return manifest[id]?.[lang];
   if (mode === 'conv') { const p = id.split('-'); const key = `${p[0]}-${p[1]}`; const i = +p[2] - 1;
     if (lang === 'en') return ovEn.examplesL1[key]?.[i];
     return ex[key]?.[i]?.[lang === 'ne' ? 'ne' : 'jp']; }
@@ -61,8 +76,14 @@ function getText(id, lang, mode) {
 }
 const sub = mode => mode === 'conv' ? 'conv' : 'gram';
 let ok = 0, fail = 0;
-for (const mode of ['conv', 'gram']) for (const lang of ['ne', 'ja', 'en']) {
+generation: for (const mode of ['conv', 'gram']) for (const lang of ['ne', 'ja', 'en']) {
   for (const id of COLORED[mode][lang]) {
+    const target = path.join(ROOT, 'audio', lang, sub(mode), id + '.mp3');
+    // A manifest names immutable recordings. A rerun resumes rather than overwrites.
+    if (manifest && fs.existsSync(target)) {
+      if (fs.statSync(target).size < 1000) { console.error('INVALID EXISTING', mode, lang, id); fail++; continue; }
+      console.log(`KEEP ${mode}/${lang}/${id}`); ok++; continue;
+    }
     const text = getText(id, lang, mode);
     if (!text) { console.error('NO TEXT', mode, lang, id); fail++; continue; }
     try {
@@ -70,7 +91,10 @@ for (const mode of ['conv', 'gram']) for (const lang of ['ne', 'ja', 'en']) {
       const dir = path.join(ROOT, 'audio', lang, sub(mode)); fs.mkdirSync(dir, { recursive: true });
       fs.writeFileSync(path.join(dir, id + '.mp3'), buf);
       console.log(`OK ${mode}/${lang}/${id}  「${text.slice(0,30)}」`); ok++;
-    } catch (e) { console.error('FAIL', mode, lang, id, e.message); fail++; }
+    } catch (e) {
+      console.error('FAIL', mode, lang, id, e.message); fail++;
+      if (manifest) break generation;
+    }
   }
 }
 console.log(`\n再生成完了: ${ok}成功 / ${fail}失敗`);

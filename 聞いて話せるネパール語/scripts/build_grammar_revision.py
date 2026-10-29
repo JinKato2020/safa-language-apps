@@ -1,5 +1,11 @@
 """Build curriculum v3 from reviewed content and the immutable recording registry."""
 from revise_grammar_curriculum import *
+import os
+
+saved_catalog = SRC/'grammar_pack_v3_catalog.json'
+PACK_REVISION = int(os.environ.get('GRAMMAR_PACK_REVISION', str(read(saved_catalog)['core']['version'] + 1 if saved_catalog.exists() else 1200)))
+new_recording_file = SRC/'grammar_recordings_v3.json'
+new_recordings = read(new_recording_file)['recordings'] if new_recording_file.exists() else {}
 
 REGISTRY = SRC / 'grammar_recording_texts_v2.json'
 if not REGISTRY.exists():
@@ -36,6 +42,8 @@ for line in NEW_TSV.strip().splitlines():
     k,ne,roman,ja,en=line.split('|')
     # Reuse a recording only when both the Nepali and translation are identical.
     ref=next((i for i,r in bank.items() if all(r[f]==v for f,v in [('ne',ne),('ja',ja),('en',en)])),None)
+    if ref is None:
+        ref=next((i for i,r in new_recordings.items() if all(r[f]==v for f,v in [('ne',ne),('ja',ja),('en',en)])),None)
     lessons[k].append(dict(ne=ne,roman=roman,ja=ja,en=en,audio_ref=ref))
 
 tokens=lambda ne: re.findall(r'[^\s।,?？！!：:;“”"\'‘’()]+',ne)
@@ -236,7 +244,10 @@ for lang in overlays:
             if k==2 and old.get('type')=='note':continue  # possession is taught in topic 5
             if old.get('type')=='note' and old['text'] not in [x.get('text') for x in bs]:bs.append(copy.deepcopy(old))
         bs += [block('h',bilingual('例題を解く前に確認すること','Before attempting the exercises',lang)),block('p',bilingual('語順は多くの場合「誰が＋何を・どこで・いつ＋動詞」です。名詞は物や人の名前、形容詞は性質、動詞は動作・状態を表します。人称は誰について話すか、時制はいつのことか、敬意は相手への接し方です。人称・性・数・敬意で変わる形は、この教材の表とテーマ7、付録A・Bで確認できます。','The usual order is subject + object/place/time + verb. Nouns name entities, adjectives describe qualities, and verbs express actions or states. Person identifies who, tense when, and respect the social relationship. Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.',lang))]
-        bs.append(block('note',bilingual('音声は既存の録音をそのまま使用します。新規のテキスト例題には音声がありません。文と音声が一致する例題だけで再生できます。','Existing recordings are reused unchanged. New text exercises do not include audio; playback is available only where the recording matches the sentence.',lang)))
+        if any(r['audio_ref'] is None for r in lessons[key]):
+            bs.append(block('note',bilingual('音声のある例題は再生して確認できます。音声なしの例題はテキストで練習しましょう。','Play the recorded examples to check them. Exercises without a recording can be practiced as text.',lang)))
+        else:
+            bs.append(block('note',bilingual('例題の音声を聞いて語順と表現を確認し、自分でも声に出して練習しましょう。','Listen to the examples to check word order and expressions, then practice saying them aloud yourself.',lang)))
         bs.append(block('h',bilingual('例題と解答のしくみ','Exercises, answers and how they work',lang)))
         for n,r in enumerate(lessons[key],1):
             bs += [block('h',bilingual(f'例題{n}',f'Exercise {n}',lang)),block('p',r[lang]+'\n'+r['ne']+'\n'+r['roman']),word_table(r,lang),block('p',bilingual('しくみ：','How it works: ',lang)+construction(r,k,lang))]
@@ -250,15 +261,15 @@ for k,items in lessons.items():
         audio_refs[r['id']]=r['audio_ref']
         rows.append([{'35':'A','36':'B'}.get(k,k),titles['ja'][k],n,r['ne'],r['roman'],r['ja'],r['en']])
 core['grammarAudioRefs']=audio_refs
-core['curriculumRevision']=1200
+core['curriculumRevision']=PACK_REVISION
 for theme in core['grammarThemes']:
     k=str(theme['id']);theme['name']=titles['ja'][k];theme['exampleCount']=len(lessons[k])
 for lang,o in overlays.items():
-    o['curriculumRevision']=1200
+    o['curriculumRevision']=PACK_REVISION
     o['grammarL1']={k:[r[lang] for r in items] for k,items in lessons.items()}
     o['grammarAudioRefs']=audio_refs
     o['grammarTextOnlyLabel']=bilingual('テキスト練習（音声なし）','Text practice (no audio)',lang)
-    o['grammarVocab']=new_vocab[lang];o['grammarGuide']=guides[lang];o['grammarThemeNames']=titles[lang];o['version']=1200
+    o['grammarVocab']=new_vocab[lang];o['grammarGuide']=guides[lang];o['grammarThemeNames']=titles[lang];o['version']=PACK_REVISION
     write(WORK/f'release/overlay-{lang}.json',o)
     write(APP/f'expo-app/data/overlays/{lang}.json',o)
     write(APP/f'expo-app/src/grammarGuide.{lang}.json',guides[lang])
@@ -281,13 +292,15 @@ for lang,name in [('ja','文法教材_v2_ja_ドラフト.md'),('en','grammar_gui
             else:out += [('### ' if b['type']=='h' else '')+b['text']]
             out.append('')
     (SRC/name).write_text('\n'.join(out),encoding='utf-8')
-report={'version':1200,'topics':36,'examples':len(rows),'mainExamples':sum(len(v) for k,v in lessons.items() if int(k)<35),'reusedRecordings':sum(v is not None for v in audio_refs.values()),'textOnly':sum(v is None for v in audio_refs.values()),'byTopic':{k:len(v) for k,v in lessons.items()},'dictionaryWords':len(new_vocab['ja']),'dictionaryContexts':sum(len(v['contexts']) for v in new_vocab['ja'].values())}
+report={'version':PACK_REVISION,'topics':36,'examples':len(rows),'mainExamples':sum(len(v) for k,v in lessons.items() if int(k)<35),'reusedRecordings':sum(v in bank for v in audio_refs.values() if v is not None),'generatedRecordings':sum(v in new_recordings for v in audio_refs.values() if v is not None),'recordedExamples':sum(v is not None for v in audio_refs.values()),'textOnly':sum(v is None for v in audio_refs.values()),'byTopic':{k:len(v) for k,v in lessons.items()},'dictionaryWords':len(new_vocab['ja']),'dictionaryContexts':sum(len(v['contexts']) for v in new_vocab['ja'].values())}
 write(WORK/'report.json',report)
-catalog=copy.deepcopy(read(WORK/'live/catalog.json'))
+catalog=copy.deepcopy(read(saved_catalog) if saved_catalog.exists() else read(WORK/'live/catalog.json'))
 for entry in [catalog['core'],*catalog['packs']]:
-    entry['version']=1200
-    for field in ['url','audioZip']:entry[field]=entry[field].replace('/packs-appa-v2/','/packs-appa-v3/')
-    if 'sizeBytes' in entry:entry['sizeBytes']=(WORK/'release'/entry['url'].split('/')[-1]).stat().st_size
+    entry['version']=PACK_REVISION
+    filename='core.json' if entry is catalog['core'] else f"overlay-{entry['l1']}.json"
+    entry['url']='https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/'+filename.replace('.json',f'-{PACK_REVISION}.json')
+    entry['audioZip']=entry['audioZip'].replace('/packs-appa-v2/','/packs-appa-v3/')
+    if 'sizeBytes' in entry:entry['sizeBytes']=(WORK/'release'/filename).stat().st_size
 write(WORK/'release/catalog.json',catalog)
 write(SRC/'grammar_pack_v3_catalog.json',catalog)
 print(json.dumps(report,ensure_ascii=False))

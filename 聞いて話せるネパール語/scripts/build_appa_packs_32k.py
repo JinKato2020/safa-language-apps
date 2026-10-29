@@ -50,7 +50,7 @@ def enc32k(args):
     return (arcname, src) if os.path.getsize(src) <= os.path.getsize(dst) else (arcname, dst)
 
 
-def build_lang(lang):
+def build_lang(lang, base_dir=None):
     """audio/<lang>/{conv,gram}/*.mp3 を32k化しSTORED zipを作る。zipパスを返す。"""
     files = []
     for sub in ("conv", "gram"):
@@ -60,7 +60,16 @@ def build_lang(lang):
     if not files:
         raise RuntimeError(f"音源が見つからない: audio/{lang}/(conv|gram)")
     tmp = tempfile.mkdtemp(prefix=f"appa_{lang}_")
-    tasks = [(os.path.basename(f), f, tmp) for f in files]  # arcname=ファイル名(平坦)
+    # Recording IDs are immutable. Reuse published MP3 bytes and encode only new IDs.
+    # This keeps content-only updates fast and preserves the original recordings exactly.
+    cached = {}
+    if base_dir:
+        base_path = os.path.join(base_dir, LANGS[lang])
+        with zipfile.ZipFile(base_path) as base_zip:
+            base_names = set(base_zip.namelist())
+            cached = {os.path.basename(f): base_zip.read(os.path.basename(f))
+                      for f in files if os.path.basename(f) in base_names}
+    tasks = [(os.path.basename(f), f, tmp) for f in files if os.path.basename(f) not in cached]
     chosen = {}
     with ThreadPoolExecutor(max_workers=10) as ex:
         for arcname, path in ex.map(enc32k, tasks):
@@ -68,8 +77,11 @@ def build_lang(lang):
     os.makedirs(DIST, exist_ok=True)
     zpath = os.path.join(DIST, LANGS[lang])
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_STORED) as z:
-        for arcname in sorted(chosen):
-            z.write(chosen[arcname], arcname)
+        for arcname in sorted(set(chosen) | set(cached)):
+            if arcname in cached:
+                z.writestr(arcname, cached[arcname])
+            else:
+                z.write(chosen[arcname], arcname)
     shutil.rmtree(tmp, ignore_errors=True)
     insz = sum(os.path.getsize(f) for f in files)
     outsz = os.path.getsize(zpath)
@@ -97,12 +109,13 @@ def update_catalog(cat, sizes):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--publish", action="store_true", help="catalog更新+gh release uploadまで実行")
+    ap.add_argument("--base-dir", help="既存ZIP3本のフォルダ。固定録音IDのMP3を再利用し、新規IDだけを32k化")
     args = ap.parse_args()
 
     print("== build (master → 32k STORED zip) ==")
     sizes = {}
     for lang in LANGS:
-        z = build_lang(lang)
+        z = build_lang(lang, args.base_dir)
         sizes[lang] = os.path.getsize(z)
 
     if not args.publish:

@@ -4,7 +4,10 @@ const ts=require('typescript');
 const WORK=path.join(ROOT,'.work-grammar-redesign');
 const read=f=>JSON.parse(fs.readFileSync(f,'utf8').replace(/^\uFEFF/,''));
 const release={};for(const f of ['core.json','overlay-ja.json','overlay-en.json','catalog.json'])release[f]=read(path.join(WORK,'release',f));
-const bank=read(path.join(ROOT,'聞いて話せるネパール語/文法教材/grammar_recording_texts_v2.json'));
+const legacyBank=read(path.join(ROOT,'聞いて話せるネパール語/文法教材/grammar_recording_texts_v2.json'));
+const recordingLedger=path.join(ROOT,'聞いて話せるネパール語/文法教材/grammar_recordings_v3.json');
+const bank={...legacyBank,...(fs.existsSync(recordingLedger)?read(recordingLedger).recordings:{})};
+const expected=read(path.join(WORK,'report.json'));
 const compile=(file,customRequire)=>{
  const source=fs.readFileSync(file,'utf8');
  const code=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true,jsx:ts.JsxEmit.ReactJSX}}).outputText;
@@ -22,15 +25,15 @@ async function scenario(lang,cached,mismatch=false){
  const oldCatalog=read(path.join(WORK,'live/catalog.json'));
  const oldVersion=oldCatalog.packs.find(x=>x.l1===lang).audioVersion;
  const coreDir='file:///test/packs/_core/',l1Dir=`file:///test/packs/${lang}/`;
- disk.set(coreDir+'audio.version',String(oldCatalog.core.audioVersion));disk.set(l1Dir+'audio.version',String(oldVersion));
+ if(cached){disk.set(coreDir+'audio.version',String(oldCatalog.core.audioVersion));disk.set(l1Dir+'audio.version',String(oldVersion))}
  const audioIds=[...Object.keys(bank),...Object.entries(release['core.json'].examplesNe).flatMap(([k,rs])=>rs.map((_,i)=>`${k}-${i+1}`))];
- for(const id of audioIds){present.add(coreDir+`audio/${id}.mp3`);present.add(l1Dir+`audio/${id}.mp3`)}
+ if(cached)for(const id of audioIds.filter(id=>!id.startsWith('900-'))){present.add(coreDir+`audio/${id}.mp3`);present.add(l1Dir+`audio/${id}.mp3`)}
  if(cached){disk.set(coreDir+'core.json',fs.readFileSync(path.join(WORK,'live/core.json'),'utf8'));disk.set(coreDir+'core.version',String(oldCatalog.core.version));disk.set(l1Dir+'overlay.json',fs.readFileSync(path.join(WORK,`live/overlay-${lang}.json`),'utf8'))}
  let downloads=[];
- const FS={documentDirectory:'file:///test/',EncodingType:{Base64:'base64'},getInfoAsync:async u=>({exists:disk.has(u)||present.has(u)}),readAsStringAsync:async u=>{assert(disk.has(u),u);return disk.get(u)},writeAsStringAsync:async(u,t)=>disk.set(u,t),makeDirectoryAsync:async()=>{},readDirectoryAsync:async dir=>[...present].filter(x=>x.startsWith(dir)).map(x=>x.slice(dir.length)),downloadAsync:async(url,uri)=>{const name=url.split('/').pop();assert(name.endsWith('.json'),'Audio recording must not download/change in migration');disk.set(uri,JSON.stringify(release[name]));downloads.push(name);return{status:200}},deleteAsync:async()=>{},createDownloadResumable:()=>{throw Error('Existing recordings must be reused')}};
+ const FS={documentDirectory:'file:///test/',EncodingType:{Base64:'base64'},getInfoAsync:async u=>({exists:disk.has(u)||present.has(u)}),readAsStringAsync:async u=>{assert(disk.has(u),u);return disk.get(u)},writeAsStringAsync:async(u,t)=>{disk.set(u,t);if(u.endsWith('.mp3'))present.add(u)},makeDirectoryAsync:async()=>{},readDirectoryAsync:async dir=>[...present].filter(x=>x.startsWith(dir)).map(x=>x.slice(dir.length)),downloadAsync:async(url,uri)=>{const name=url.split('/').pop();assert(name.endsWith('.json'));const payload=name.replace(/-\d+(?=\.json$)/,'');assert(release[payload],name);disk.set(uri,JSON.stringify(release[payload]));downloads.push(name);return{status:200}},deleteAsync:async u=>disk.delete(u),createDownloadResumable:(url,uri)=>({downloadAsync:async()=>{assert(url.endsWith('.zip'));downloads.push(url.split('/').pop());disk.set(uri,Buffer.from('verified archive fixture').toString('base64'));return{status:200}}})};
  const loader=compile(path.join(base,'src/packLoader.ts'),name=>{
   if(name==='expo-file-system/legacy')return FS;
-  if(name==='fflate')return {unzipSync:()=>{throw Error('No audio repack is needed')}};
+  if(name==='fflate')return {unzipSync:()=>Object.fromEntries(audioIds.map(id=>[`${id}.mp3`,new Uint8Array([1])]))};
   if(name==='../app.json')return read(path.join(base,'app.json'));
   if(name==='./appData')return appData;
   if(name==='./pack/compose')return compose;
@@ -57,11 +60,12 @@ async function scenario(lang,cached,mismatch=false){
    else{voiced++;assert.equal(bank[ref].ne,r.ne);assert.equal(bank[ref][lang],r.jp);assert.equal(result.audio.nepaliGrammarAudio[id],coreDir+`audio/${ref}.mp3`);assert.equal(result.audio.japaneseGrammarAudio[id],l1Dir+`audio/${ref}.mp3`)}
   }
  }
- assert.equal(count,528);assert.equal(voiced,448);assert.equal(textOnly,80);
+ assert.equal(count,expected.examples);assert.equal(voiced,expected.recordedExamples??expected.reusedRecordings);assert.equal(textOnly,expected.textOnly);
  assert(result.grammarTextOnlyLabel);
  const offline=await loader.loadPack(lang,undefined,true,true);assert.deepEqual(offline.GRAMMAR_EXAMPLES,result.GRAMMAR_EXAMPLES);
- assert(downloads.includes('core.json')&&downloads.includes(`overlay-${lang}.json`));
- console.log('PASS actual loadPack:',lang,cached?'legacy cache -> v3':'fresh text + unchanged audio',count,'exercises;',voiced,'exact recording refs;',textOnly,'silent exercises');
+ assert(downloads.some(n=>/^core(?:-\d+)?\.json$/.test(n))&&downloads.some(n=>new RegExp(`^overlay-${lang}(?:-\\d+)?\\.json$`).test(n)));
+ assert(downloads.some(n=>/^audio-core(?:-\d+)?\.zip$/.test(n))&&downloads.some(n=>new RegExp(`^audio-${lang}(?:-\\d+)?\\.zip$`).test(n)));
+ console.log('PASS actual loadPack:',lang,cached?'old text/audio cache -> updated pack':'fresh text/audio download',count,'exercises;',voiced,'exact recording refs;',textOnly,'silent exercises');
 }
 (async()=>{
  for(const lang of ['ja','en'])for(const cached of [false,true])await scenario(lang,cached);

@@ -5,32 +5,32 @@
       "l1": "en",
       "name": "English",
       "nameJa": "English",
-      "version": 1200,
+      "version": 1201,
       "access": "free",
-      "sizeBytes": 4911883,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/overlay-en.json",
-      "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/audio-en.zip",
-      "audioVersion": 1005,
-      "audioZipBytes": 34950134
+      "sizeBytes": 4911111,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/overlay-en-1201.json",
+      "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/audio-en-1006.zip",
+      "audioVersion": 1006,
+      "audioZipBytes": 35590870
     },
     {
       "l1": "ja",
       "name": "日本語",
       "nameJa": "日本語",
-      "version": 1200,
+      "version": 1201,
       "access": "free",
-      "sizeBytes": 5133497,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/overlay-ja.json",
-      "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/audio-ja.zip",
-      "audioVersion": 1006,
-      "audioZipBytes": 38802498
+      "sizeBytes": 5131977,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/overlay-ja-1201.json",
+      "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/audio-ja-1007.zip",
+      "audioVersion": 1007,
+      "audioZipBytes": 39735842
     }
   ],
   "core": {
-    "audioVersion": 1005,
-    "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/audio-core.zip",
-    "audioZipBytes": 41140022,
-    "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/core.json",
-    "version": 1200
+    "audioVersion": 1006,
+    "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/audio-core-1006.zip",
+    "audioZipBytes": 42025654,
+    "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/core-1201.json",
+    "version": 1201
   }
 }
