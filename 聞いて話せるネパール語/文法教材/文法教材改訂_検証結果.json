@@ -1,5 +1,5 @@
 {
-  "version": 1204,
+  "version": 1205,
   "topics": 36,
   "examples": 528,
   "mainExamples": 384,
@@ -74,5 +74,17 @@
   "familiarThirdPersonTopic": 7,
   "changedExamples": 91,
   "neAudioSynthesized": 64,
-  "languageAudioFilesReused": 209
+  "languageAudioFilesReused": 209,
+  "lessonIntroductionTopics": 36,
+  "lessonIntroductionLanguages": [
+    "ja",
+    "en"
+  ],
+  "lessonIntroductionJACharacters": {
+    "minimum": 700,
+    "maximum": 1033
+  },
+  "lessonExpansionReport": "文法教材/教材解説拡充_検証結果.json",
+  "examplesChangedThisUpdate": 0,
+  "audioChangedThisUpdate": false
 }

@@ -1,6 +1,6 @@
 {
   "l1": "en",
-  "version": 1203,
+  "version": 1205,
   "examplesL1": {
     "1-1": [
       "My name is Ram.",
@@ -152002,12 +152002,141 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Use person/thing + identity noun + a form of हो. A noun names a person or thing, such as student or book. In म विद्यार्थी हुँ, म means I, विद्यार्थी means student, and हुँ agrees with I. Use छ for location or condition instead. Initial के can mark a yes/no question. Use the होइन family for negatives."
+        "text": "Use this pattern to identify or classify someone or something: I am a student; this is a book. हो is one set of forms of the dictionary verb हुनु. Conjugation means changing a verb to fit the person or situation. Do not put dictionary हुनु at the end of every sentence. This lesson uses forms such as हुँ, हो and respectful हुनुहुन्छ."
       },
       {
         "type": "h",
-        "text": "Positive and negative forms for six basic person groups"
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "The basic order is person/thing + identity + a हो-family form. The person or thing being described is the subject. Words naming people or things, such as विद्यार्थी, student, are nouns. With म use हुँ; with an ordinary thing indicated by यो use हो. Respectful तपाईं and उहाँ, including their plurals, take हुनुहुन्छ."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the subject: म, I.\n2. Add the identity noun: विद्यार्थी, student.\n3. Finish with the matching form, हुँ. The parts give म विद्यार्थी हुँ.\n4. If the subject changes, check the verb too. Respectful he/she is उहाँ, so say उहाँ विद्यार्थी हुनुहुन्छ."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म विद्यार्थी हुँ।",
+            "ma vidyārthī hũ",
+            "I am a student."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Read the parts as म, I; विद्यार्थी, student; हुँ, am. हुँ is the verb, not part of the word student. If only the occupation changes, keep हुँ with म. The table below shows what changes when the subject changes."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "For a negative choose the होइन family: होइनँ with I, होइन with an ordinary thing, or respectful हुनुहुन्न. Initial के can introduce a yes/no question. Location belongs to topic 2 and condition to topic 3. Do not define हो as something that can never change: an occupation can change and still be introduced with this identity pattern."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: do I am a student and I am at home use the same set?\nAnswer: no. Student gives identity, so use topic 1 and हुँ. घरमा gives location, so use topic 2 and छु. Choose by the information being supplied, not just by the English word am."
+      },
+      {
+        "type": "h",
+        "text": "हुनु 1: हो — identity and classification"
+      },
+      {
+        "type": "h",
+        "text": "The three sets of हुनु and where this topic fits"
+      },
+      {
+        "type": "p",
+        "text": "हुनु (hunu) is a dictionary form used for being, existing, becoming or occurring. हो, छ and हुन्छ represent related sets used for different functions, not three unrelated verbs. Choose both the intended function and the form matching the subject and respect. These sets introduce the present system; other forms include past थियो and भयो."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Form and reading",
+          "Information supplied",
+          "Corresponding lesson"
+        ],
+        "rows": [
+          [
+            "हो / ho",
+            "Identity/classification: name, occupation, category",
+            "Topic 1"
+          ],
+          [
+            "छ / cha",
+            "Existence/location or a quality/condition",
+            "Topic 2: existence/location; topic 3: qualities/conditions"
+          ],
+          [
+            "हुन्छ / huncha",
+            "Regular/conditional states, occurrences and outcomes",
+            "Topic 4; also permission in 21 and prohibition in 19"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "This topic teaches set 1, identity/classification with हो."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Compare with the same subject",
+          "Meaning",
+          "Why this set?"
+        ],
+        "rows": [
+          [
+            "म विद्यार्थी हुँ।\nma vidyārthī hũ",
+            "I am a student.",
+            "Identity, so the हो set: topic 1"
+          ],
+          [
+            "म घरमा छु।\nma gharmā chu",
+            "I am at home.",
+            "Location, so the छ set: topic 2"
+          ],
+          [
+            "म बिहान घरमा हुन्छु।\nma bihān gharmā hunchu",
+            "I am usually at home in the morning.",
+            "A regular time setting, so the हुन्छ set: topic 4"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The subject I alone does not select the form: identity, location and a regular setting give हुँ, छु and हुन्छु. Do not reduce हो versus छ to permanent versus temporary. Choose by construction and intended meaning."
+      },
+      {
+        "type": "h",
+        "text": "हो set: six basic person groups, positive and negative"
       },
       {
         "type": "table",
@@ -152048,6 +152177,15 @@
             "हुनुहुन्न / hunuhunna"
           ]
         ]
+      },
+      {
+        "type": "p",
+        "text": "Respectful you/he/she and their plurals share हुनुहुन्छ/हुनुहुन्न across the three functions. Identical spelling does not erase the difference between identity, location and a regular setting. Basic ordinary singular forms are हो/होइन, छ/छैन and हुन्छ/हुँदैन; ordinary plurals have corresponding forms too. First learn the six basic person groups shown here."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -152606,12 +152744,141 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Use person/thing + location + a form of छ. घरमा means at home; यहाँ, त्यहाँ and कहाँ mean here, there and where. Location + thing + छ introduces something present. Match a human subject in person and respect; use छन् for plural things. Possession with सँग + छ is taught in topic 5."
+        "text": "This lesson describes where someone or something is, or what is present in a place. It uses the छ set of हुनु. Imagine a book on a table or yourself at home. The information is different from topic 1, which identifies what something is. The existence/location pattern applies to both people and things."
       },
       {
         "type": "h",
-        "text": "Positive and negative forms for six basic person groups"
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "To locate a known subject, use person/thing + place + a छ-family form. घर is house; मा adds at/in, giving घरमा. The subject is the person or thing being located. Use छु with I, छौं with we, and हुनुहुन्छ with respectful you/he/she. An ordinary singular thing takes छ and plural things generally take छन्."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose what you are locating: म, I.\n2. Add a place such as घरमा, at home, or यहाँ, here.\n3. Choose the matching छ form; म takes छु.\n4. To introduce something present, a location may come first. Identify what exists before deciding its agreement."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म घरमा छु।",
+            "ma gharmā chu",
+            "I am at home."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म means I, घरमा at home, and छु am present. The sentence answers where I am, not what I am. Read घरमा as a unit, then separate घर + मा to see how house becomes at home. Topic 5 teaches such noun-following markers in detail."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Negate with the छैन family: छैनँ for I and छैन for an ordinary thing; respectful people take हुनुहुन्न. कहाँ, where, can replace the location. Both identity and location use हुनुहुन्छ with respectful people. The identical spelling does not make their functions identical: student gives identity; at home gives location."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: in मसँग कलम छ, I have a pen, should the ending be छु because I is mentioned?\nAnswer: no. The thing present is कलम, a pen. मसँग marks the possessor. Use छ for the pen; study possession in topic 5."
+      },
+      {
+        "type": "h",
+        "text": "हुनु 2: छ — existence and location"
+      },
+      {
+        "type": "h",
+        "text": "The three sets of हुनु and where this topic fits"
+      },
+      {
+        "type": "p",
+        "text": "हुनु (hunu) is a dictionary form used for being, existing, becoming or occurring. हो, छ and हुन्छ represent related sets used for different functions, not three unrelated verbs. Choose both the intended function and the form matching the subject and respect. These sets introduce the present system; other forms include past थियो and भयो."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Form and reading",
+          "Information supplied",
+          "Corresponding lesson"
+        ],
+        "rows": [
+          [
+            "हो / ho",
+            "Identity/classification: name, occupation, category",
+            "Topic 1"
+          ],
+          [
+            "छ / cha",
+            "Existence/location or a quality/condition",
+            "Topic 2: existence/location; topic 3: qualities/conditions"
+          ],
+          [
+            "हुन्छ / huncha",
+            "Regular/conditional states, occurrences and outcomes",
+            "Topic 4; also permission in 21 and prohibition in 19"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "This topic teaches existence and location within set 2, छ."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Compare with the same subject",
+          "Meaning",
+          "Why this set?"
+        ],
+        "rows": [
+          [
+            "म विद्यार्थी हुँ।\nma vidyārthī hũ",
+            "I am a student.",
+            "Identity, so the हो set: topic 1"
+          ],
+          [
+            "म घरमा छु।\nma gharmā chu",
+            "I am at home.",
+            "Location, so the छ set: topic 2"
+          ],
+          [
+            "म बिहान घरमा हुन्छु।\nma bihān gharmā hunchu",
+            "I am usually at home in the morning.",
+            "A regular time setting, so the हुन्छ set: topic 4"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The subject I alone does not select the form: identity, location and a regular setting give हुँ, छु and हुन्छु. Do not reduce हो versus छ to permanent versus temporary. Choose by construction and intended meaning."
+      },
+      {
+        "type": "h",
+        "text": "छ set: six basic person groups, positive and negative"
       },
       {
         "type": "table",
@@ -152652,6 +152919,15 @@
             "हुनुहुन्न / hunuhunna"
           ]
         ]
+      },
+      {
+        "type": "p",
+        "text": "Respectful you/he/she and their plurals share हुनुहुन्छ/हुनुहुन्न across the three functions. Identical spelling does not erase the difference between identity, location and a regular setting. Basic ordinary singular forms are हो/होइन, छ/छैन and हुन्छ/हुँदैन; ordinary plurals have corresponding forms too. First learn the six basic person groups shown here."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -153144,8 +153420,190 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Use subject + adjective + a form of छ. Adjectives express qualities or conditions such as big, cold or busy. यो पानी चिसो छ means this water is cold. Use the छैन negative family, distinct from identity with होइन. खुसी and तयार describe being happy and ready. Weather expressions can also use nouns such as गर्मी."
+        "text": "Use the छ family again, now to describe a quality or condition: a flower is beautiful; someone is busy. An adjective describes a quality such as beautiful, old or cold. Separate an identity noun such as student or book in topic 1 from a description such as beautiful or cold here."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Use subject + descriptive word + a छ-family form. यो indicates this; फूल is flower; सुन्दर is beautiful. Group यो फूल as this flower, then add सुन्दर and छ. With I use छु; with a respectful person use हुनुहुन्छ. Topic 23 compares this with an adjective placed inside a noun phrase."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the subject: यो फूल, this flower.\n2. Choose a quality: सुन्दर, beautiful.\n3. Add the matching ending; a single flower takes छ.\n4. Check whether you are describing it or identifying it with a noun. A shared translation such as is does not choose the Nepali construction."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "यो फूल सुन्दर छ।",
+            "yo phūl sundar cha",
+            "This flower is beautiful."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "यो फूल names the subject, सुन्दर describes it, and छ completes the description. You are not assigning a second identity; you are describing the flower. Although a single adjective may work as a short response in conversation, practice the complete sentence to understand the structure."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "For a negative keep the adjective and use a छैन-family ending, or respectful हुनुहुन्न. Questions about a quality can use कस्तो and its related forms; see topic 23 for agreement. Do not define छ as temporary only: it can describe a particular thing’s quality. Topic 4 contrasts this with a general statement using हुन्छ."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: compare this is a good book with this book is good.\nAnswer: the first identifies it with the noun phrase good book and uses the हो pattern. The second describes the book and uses the छ pattern. Look at the whole construction, not just the adjective."
+      },
+      {
+        "type": "h",
+        "text": "हुनु 2: छ — qualities and conditions"
+      },
+      {
+        "type": "h",
+        "text": "The three sets of हुनु and where this topic fits"
+      },
+      {
+        "type": "p",
+        "text": "हुनु (hunu) is a dictionary form used for being, existing, becoming or occurring. हो, छ and हुन्छ represent related sets used for different functions, not three unrelated verbs. Choose both the intended function and the form matching the subject and respect. These sets introduce the present system; other forms include past थियो and भयो."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Form and reading",
+          "Information supplied",
+          "Corresponding lesson"
+        ],
+        "rows": [
+          [
+            "हो / ho",
+            "Identity/classification: name, occupation, category",
+            "Topic 1"
+          ],
+          [
+            "छ / cha",
+            "Existence/location or a quality/condition",
+            "Topic 2: existence/location; topic 3: qualities/conditions"
+          ],
+          [
+            "हुन्छ / huncha",
+            "Regular/conditional states, occurrences and outcomes",
+            "Topic 4; also permission in 21 and prohibition in 19"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "This topic teaches qualities and conditions within set 2, छ."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Compare with the same subject",
+          "Meaning",
+          "Why this set?"
+        ],
+        "rows": [
+          [
+            "म विद्यार्थी हुँ।\nma vidyārthī hũ",
+            "I am a student.",
+            "Identity, so the हो set: topic 1"
+          ],
+          [
+            "म घरमा छु।\nma gharmā chu",
+            "I am at home.",
+            "Location, so the छ set: topic 2"
+          ],
+          [
+            "म बिहान घरमा हुन्छु।\nma bihān gharmā hunchu",
+            "I am usually at home in the morning.",
+            "A regular time setting, so the हुन्छ set: topic 4"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The subject I alone does not select the form: identity, location and a regular setting give हुँ, छु and हुन्छु. Do not reduce हो versus छ to permanent versus temporary. Choose by construction and intended meaning."
+      },
+      {
+        "type": "h",
+        "text": "छ set: six basic person groups, positive and negative"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Person and reading",
+          "Positive and reading",
+          "Negative and reading"
+        ],
+        "rows": [
+          [
+            "I\nम / ma",
+            "छु / chu",
+            "छैनँ / chainã"
+          ],
+          [
+            "we\nहामी / hāmī",
+            "छौं / chaũ",
+            "छैनौं / chainaũ"
+          ],
+          [
+            "you\nतपाईं / tapāĩ",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "you plural\nतपाईंहरू / tapāĩharū",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "he/she\nउहाँ / uhā̃",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "they\nउहाँहरू / uhā̃harū",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Respectful you/he/she and their plurals share हुनुहुन्छ/हुनुहुन्न across the three functions. Identical spelling does not erase the difference between identity, location and a regular setting. Basic ordinary singular forms are हो/होइन, छ/छैन and हुन्छ/हुँदैन; ordinary plurals have corresponding forms too. First learn the six basic person groups shown here."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -153631,52 +154089,190 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "छ describes a current condition; हुन्छ can express a regular situation or what happens. आज चिसो छ means it is cold today; जाडोमा चिसो हुन्छ describes winter generally. The negative is हुँदैन. भयो expresses a past change or occurrence. बन्नु is used for becoming something such as a professional. Do not translate every हुन्छ as become."
+        "text": "This lesson teaches the हुन्छ set of हुनु: what is generally true, what happens under certain conditions, or what occurs. Compare it with the छ set in topics 2–3. हुन्छ also appears with scheduled events and in an accepting response. It does not have just one translation such as become."
       },
       {
         "type": "h",
-        "text": "Six basic person groups with हुन्छ and its negatives"
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "A useful pattern is time/condition + state or event + a हुन्छ-family form. A season or repeated time often gives a regular setting, unlike a particular state described with छ. Use हुन्छु with I and हुन्छौं with we. Respectful हुनुहुन्छ overlaps in spelling with the identity and location sets, so use context and meaning to distinguish them."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Decide whether you mean one present situation or something regular, conditional or upcoming.\n2. Add a setting: जाडोमा, in winter.\n3. Add the condition: चिसो, cold.\n4. Use हुन्छ to state the general seasonal pattern. For today’s particular weather, use a today expression with the छ set."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
       },
       {
         "type": "table",
         "headers": [
-          "Person",
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "जाडोमा चिसो हुन्छ।",
+            "jāḍomā ciso huncha",
+            "It gets cold in winter."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "जाडोमा means in winter, चिसो cold, and हुन्छ presents that regular condition. The sense is winter is generally cold. Even when translated becomes cold, it need not describe one change from a previously warm state. The seasonal expression signals the general setting."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "The negative uses the हुँदैन set: हुँदिनँ for I, हुँदैनौं for we, and respectful हुनुहुन्न. भयो can describe a past change or occurrence, while becoming a professional may use बन्नु. Do not translate every हुन्छ as become. See topic 21 for permission, 19 for prohibition and 13 for future expressions."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: why distinguish it is quiet here today from it is generally quiet here in the morning?\nAnswer: the first describes that situation with छ; the second describes a regular pattern with हुन्छ. First decide what kind of time perspective you intend."
+      },
+      {
+        "type": "h",
+        "text": "हुनु 3: हुन्छ — regular situations, occurrences and change"
+      },
+      {
+        "type": "h",
+        "text": "The three sets of हुनु and where this topic fits"
+      },
+      {
+        "type": "p",
+        "text": "हुनु (hunu) is a dictionary form used for being, existing, becoming or occurring. हो, छ and हुन्छ represent related sets used for different functions, not three unrelated verbs. Choose both the intended function and the form matching the subject and respect. These sets introduce the present system; other forms include past थियो and भयो."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Form and reading",
+          "Information supplied",
+          "Corresponding lesson"
+        ],
+        "rows": [
+          [
+            "हो / ho",
+            "Identity/classification: name, occupation, category",
+            "Topic 1"
+          ],
+          [
+            "छ / cha",
+            "Existence/location or a quality/condition",
+            "Topic 2: existence/location; topic 3: qualities/conditions"
+          ],
+          [
+            "हुन्छ / huncha",
+            "Regular/conditional states, occurrences and outcomes",
+            "Topic 4; also permission in 21 and prohibition in 19"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "This topic teaches set 3, regular situations, conditions and occurrences with हुन्छ."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Compare with the same subject",
+          "Meaning",
+          "Why this set?"
+        ],
+        "rows": [
+          [
+            "म विद्यार्थी हुँ।\nma vidyārthī hũ",
+            "I am a student.",
+            "Identity, so the हो set: topic 1"
+          ],
+          [
+            "म घरमा छु।\nma gharmā chu",
+            "I am at home.",
+            "Location, so the छ set: topic 2"
+          ],
+          [
+            "म बिहान घरमा हुन्छु।\nma bihān gharmā hunchu",
+            "I am usually at home in the morning.",
+            "A regular time setting, so the हुन्छ set: topic 4"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The subject I alone does not select the form: identity, location and a regular setting give हुँ, छु and हुन्छु. Do not reduce हो versus छ to permanent versus temporary. Choose by construction and intended meaning."
+      },
+      {
+        "type": "h",
+        "text": "हुन्छ set: six basic person groups, positive and negative"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Person and reading",
           "Positive and reading",
           "Negative and reading"
         ],
         "rows": [
           [
-            "म / ma",
+            "I\nम / ma",
             "हुन्छु / hunchu",
             "हुँदिनँ / hũdinã"
           ],
           [
-            "हामी / hāmī",
+            "we\nहामी / hāmī",
             "हुन्छौं / hunchaũ",
             "हुँदैनौं / hũdainaũ"
           ],
           [
-            "तपाईं / tapāĩ",
+            "you\nतपाईं / tapāĩ",
             "हुनुहुन्छ / hunuhuncha",
             "हुनुहुन्न / hunuhunna"
           ],
           [
-            "तपाईंहरू / tapāĩharū",
+            "you plural\nतपाईंहरू / tapāĩharū",
             "हुनुहुन्छ / hunuhuncha",
             "हुनुहुन्न / hunuhunna"
           ],
           [
-            "उहाँ / uhā̃",
+            "he/she\nउहाँ / uhā̃",
             "हुनुहुन्छ / hunuhuncha",
             "हुनुहुन्न / hunuhunna"
           ],
           [
-            "उहाँहरू / uhā̃harū",
+            "they\nउहाँहरू / uhā̃harū",
             "हुनुहुन्छ / hunuhuncha",
             "हुनुहुन्न / hunuhunna"
           ]
         ]
+      },
+      {
+        "type": "p",
+        "text": "Respectful you/he/she and their plurals share हुनुहुन्छ/हुनुहुन्न across the three functions. Identical spelling does not erase the difference between identity, location and a regular setting. Basic ordinary singular forms are हो/होइन, छ/छैन and हुन्छ/हुँदैन; ordinary plurals have corresponding forms too. First learn the six basic person groups shown here."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -154209,8 +154805,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Postpositions follow nouns and express place, participants, starting points and other relationships. घर + मा gives घरमा, at home; घर + बाट gives घरबाट, from home. An English preposition does not always map to one Nepali form. The sections below teach meanings, combinations and short examples."
+        "text": "Compare at home, from home and with a friend. At, from and with show a relationship. Nepali usually marks such relationships after a noun, so these forms are called postpositions. Think of adding a relationship label after the person, place or thing."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Build subject + noun with its relationship marker + verb. घर is house, घरमा at home, and घरबाट from home. Some markers attach directly; others form phrases such as को लागि. A single English or Japanese preposition/particle can have several functions, so choose by the relationship, not by a one-word translation."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose an action, such as बस्नु, live.\n2. Separate who from where: म and घरमा.\n3. Put them before the verb and use बस्छु with I.\n4. For a starting point choose बाट; for company choose सँग. Name the relationship before choosing its marker."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म घरमा बस्छु।",
+            "ma gharmā baschu",
+            "I live in a house."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, घरमा at home, and बस्छु live. The attached मा identifies the location of living. With a coming action, बाट can instead identify the starting point. The same noun can fill different roles when its following marker changes."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Possession with सँग + छ presents an object with its possessor; the possessor alone does not determine agreement. को/की/का also depend on the following noun. ले is not a universal subject marker; see topic 11. Use the allocation table below to find comparison, time and purpose forms in topics 25–28 and elsewhere."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: can घरमा and घरबाट be exchanged because both mention a house?\nAnswer: no. One marks location; the other a starting point. Say the intended relationship aloud—where, from where, with whom—before choosing the form."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -155255,8 +155915,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "A question word identifies missing information: who, what, where and so on. Decide what kind of answer you need and replace that part of a statement with a question word. Keep the final verb appropriate to person and tense. कुन asks for a selection, कस्तो a quality, कसरी a method and किन a reason. Distinguish initial yes/no के from what के."
+        "text": "A question asks someone to supply missing information. Question words identify the type of answer: a person, place, time and so on. Before memorizing a whole question, decide what kind of information its answer must contain."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Replace a statement’s missing part with a question word: को for a person, के for a thing, कहाँ for place and कहिले for time. कुन selects which item; कस्तो asks what kind. Case-marked forms include कसलाई and कसको. A question word does not remove the need for correct person, respect and tense on the verb."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Imagine the answer pattern: this is a book.\n2. Replace the unknown identity with के.\n3. Keep यो, this, and identity हो, giving यो के हो?\n4. To answer, put the known identity back where के was. Practice questions and answers as a pair."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "यो के हो?",
+            "yo ke ho?",
+            "What is this?"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "यो means this, के what, and हो is the identity ending: what is this? के occupies the missing identity. Asking where it is instead needs a location question with कहाँ and the छ set. Choose both the question word and the kind of sentence it belongs to."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Initial के can also mark a yes/no question; that role differs from what. कति जना counts people, कति वटा objects, कति बजे asks clock time, and कति पटक counts occasions. Numerical questions still need the correct unit. Nepali does not require moving every question word to the front as English often does."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: are which book and what kind of book the same question?\nAnswer: no. कुन asks for selection; कस्तो for a quality or kind. In the table below, identify what each word asks for and where its answer fits."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -157015,8 +157739,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Ordinary practice prioritizes म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. तँ has low respect and can sound rude outside very close relationships. तिमी is familiar; तपाईं is respectful. Verb agreement changes with the form chosen. Familiar does not simply mean speaking to someone inferior."
+        "text": "Pronouns stand in for names: I, you, he/she and they. Nepali pronouns show familiarity and respect as well as person and number. The basic set in this course is म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू. This lesson explains other forms and the relationships they express."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Choose a pronoun and a matching verb together. उ and उनी are not simply male versus female pronouns; they differ in social register. Respectful उहाँ can refer to either gender. Add हरू for respectful plural उहाँहरू and retain respectful verb agreement."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose म for yourself or हामी for your group.\n2. Start with respectful तपाईं/तपाईंहरू for addressees and उहाँ/उहाँहरू for third persons.\n3. Match the verb: गर्छु with I, गर्नुहुन्छ with a respectful person.\n4. Learn familiar pronouns together with their different verb forms."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म काम गर्छु।",
+            "ma kām garchu",
+            "I work."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, काम work, and गर्छु do: I work. काम गर्नु is the combination do work. Do not use गर्नुहुन्छ simply to make your own statement sound polite. Agreement follows the subject’s person and register. Compare the endings with the same action below."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "तँ is very familiar/low-register and can be offensive; तिमी is familiar but not simply for inferiors. उनी is not female-only; explicitly feminine verb forms are a separate issue. Case markers may change a pronoun’s shape. Use the table to connect its basic, object, possessive and agent forms."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: should every she automatically become उनी?\nAnswer: no. First consider the relationship and respect. The course defaults to उहाँ for either gender. Compare उ/उनी and familiar second-person forms here; ordinary topics use the basic six groups."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -157791,8 +158579,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Use subject + object/time/place + verb. Replace dictionary -नु with the appropriate present stem and personal ending. Learn stems through forms such as गर्नु→गर्छु, पढ्नु→पढ्छु and खानु→खान्छु. Adding every day or a time describes a routine."
+        "text": "Describe everyday actions and habits such as getting up or reading. A verb expresses an action or state. A present form does not automatically mean an action is in progress at this moment; topic 10 teaches that distinction."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "The usual order is subject + object/time/place + verb. Dictionary forms include गर्नु and पढ्नु. Conjugation gives a sentence form such as गर्छु or पढ्छु for I. Learn the appropriate stem and ending; do not assume one identical letter-removal rule works for every verb."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the subject, for example म.\n2. Choose an action: काम गर्नु, do work.\n3. Conjugate it with I: काम गर्छु.\n4. Add a time or frequency expression before the verb to explain when or how regularly it happens."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म काम गर्छु।",
+            "ma kām garchu",
+            "I work."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, काम work, and गर्छु do. The noun काम supplies the activity; गर्नु is the part being conjugated. With उहाँ use गर्नुहुन्छ. If the action changes to read while the subject stays I, choose a form of पढ्नु instead."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Action negatives are taught in topic 9; do not attach identity होइन or existence छैन to every action verb. Questions retain appropriate person and respect and may use के or a question word. A present form with भोलि can also state a future plan; see topic 13."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: are I work every day and I am working now the same?\nAnswer: the first is a routine; the second an ongoing action. Decide the intended meaning before choosing this present pattern or the progressive in topic 10."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -158262,8 +159114,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Action negatives use negative verb forms such as गर्दिनँ and खाँदिनँ, not an added छैन. Match person and respect: गर्छु→गर्दिनँ, गर्नुहुन्छ→गर्नुहुन्न, गर्छन्→गर्दैनन्. First-person forms have nasal endings; an explicitly feminine form can use गर्दिनन्."
+        "text": "Say that an action does not happen: not working today or not eating meat. This is action negation, not identity or absence. Identify what is being denied before choosing the negative form."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Use subject + details + a negative action verb. Compare गर्छु with गर्दिनँ and पढ्छु with पढ्दिनँ. Respectful गर्नुहुन्छ becomes गर्नुहुन्न. The nasal sign in first-person negatives is meaningful pronunciation, not decoration."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Identify the affirmative action being denied.\n2. Check the subject.\n3. Choose its negative form: काम गर्छु becomes काम गर्दिनँ with I.\n4. Add today, at night or another setting to distinguish a particular decision from a regular habit."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म आज काम गर्दिनँ।",
+            "ma āja kām gardinã",
+            "I do not work today."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, आज today, काम work and गर्दिनँ do not do. Today limits the statement; it does not claim never to work. The basic word order remains, while the final verb carries the negative and personal agreement."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "A negative question can check whether someone does not do something; it is not automatically an invitation. Topic 18 teaches invitations. Did not do is past negative and requires the forms in topic 12, not just this present negative."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: can do not and did not be distinguished just by changing the time word?\nAnswer: no. The verb form changes too. Identify when the action fails to happen and learn present and past negatives separately."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -158644,8 +159560,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Use a verb stem with दै/्दै + a form of छ: पढ्दै छु, I am reading; खाँदै छु, I am eating. Both गर्दै छु and गरिरहेको छु can express ongoing action. Negate the final auxiliary with the छैन family. जाँदै छु can describe going now or an imminent arrangement, depending on time expressions and context."
+        "text": "A progressive presents an action in progress at a time, such as reading now. Contrast it with the routine present in topic 8. Do not choose it merely because a translation contains a continuing-looking expression; living somewhere can use an ordinary present form."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Use an action form in -दै/-्दै plus a छ-family auxiliary. गर्दै indicates doing in progress; पढ्दै reading in progress. The auxiliary matches the person: गर्दै छु with I, गर्दै हुनुहुन्छ respectfully. Whether written together or apart, identify the action part and auxiliary."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose who is doing what.\n2. Form the progressive action: गर्नु gives गर्दै.\n3. Add the matching छ auxiliary; म takes छु.\n4. Add अहिले, now, when you want to make the current setting explicit."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म अहिले काम गर्दैछु।",
+            "ma ahile kām gardaichu",
+            "I am working now."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, अहिले now, काम work, and गर्दैछु am doing. Split the ending into गर्दै + छु. The action phrase supplies what is happening; छु supplies the auxiliary agreeing with I. Recognize both jobs rather than memorizing one opaque ending."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Negate the final auxiliary with the छैन set; do not append होइन to the action. Another progressive uses a -रहेको form plus an auxiliary, as in गरिरहेको छु. जाँदै छु may describe movement in progress or an imminent plan, so check time expressions and context."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: does छु in गर्दै छु only mean being located somewhere?\nAnswer: here it is an auxiliary supporting the progressive action. The same set has different roles: location in topic 2, progressive support here."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -159026,8 +160006,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Transitive verbs take an object, as in read a book or write a letter. Completed transitive events often mark the agent with मैले or उहाँले, and verb agreement also matters. Do not add ले to every past subject: go, come and sleep are intransitive. Learn irregular past stems such as गर्नु→गरेँ, जानु→गएँ and आउनु→आएँ."
+        "text": "Describe completed actions and distinguish their actor from the object affected. Read, write and eat commonly take objects and are called transitive verbs. Go and come do not follow that same object pattern. Not every past subject takes the same marker."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "A useful pattern is agent with ले + object/time + past verb. The agent is the doer. Learn म→मैले, तपाईं→तपाईंले and उहाँ→उहाँले in completed transitive clauses. The term ergative names this marking. Agreement can also involve respect and the object; it is not a simple translation of an English subject marker."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Establish a completed past event.\n2. Identify actor and object and decide whether this is a ले pattern.\n3. Use मैले for I in this work-doing example, हिजो for yesterday, and काम for work.\n4. Finish with past गरेँ."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "मैले हिजो काम गरेँ।",
+            "maile hijo kām garẽ",
+            "I worked yesterday."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "मैले marks I as agent, हिजो yesterday, काम work and गरेँ did. Compared with म काम गर्छु, both the pronoun form and verb change. It is not enough to add yesterday. Compare object-taking actions and the occurrence of ले below."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Do not use मैले merely because a going sentence is past. Topic 12 covers past negatives, while past existence/location uses the थियो set. भयो can be a past occurrence/change form of हुनु; it is not a replacement for every other verb’s past."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: does every past sentence require ले?\nAnswer: no. Look at the verb and clause structure, not just yesterday. Identify actor, object and action before choosing the marking."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -159479,8 +160523,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Past negatives such as गरेनँ and गएनँ differ from present गर्दिनँ. Choose person/respect forms such as गरेनँ, गरेनन् and गर्नुभएन. Check agent marking even in a negated completed transitive event. Past nonexistence with थिएन is a separate copula construction."
+        "text": "Describe an action that did not happen in the past. Past means before the time of speaking. Unlike the present negatives in topic 9, the verb must express both past time and negation."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Use subject/agent + object/time + a past negative verb. Compare गरेँ with गरिनँ for I, and respectful गर्नुभयो with गर्नुभएन. In completed transitive patterns, retain appropriate agent marking such as मैले or उहाँले even when the action is denied."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Start from the affirmative past pattern.\n2. Identify the verb and its subject/agent.\n3. Keep मैले and काम in this example but replace गरेँ with गरिनँ.\n4. Add हिजो, yesterday, to locate the event being denied."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "मैले हिजो काम गरिनँ।",
+            "maile hijo kām garinã",
+            "I did not work yesterday."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "मैले marks I as agent, हिजो yesterday, काम work and गरिनँ did not do. Compare it with present गर्दिनँ. Learn the whole clause, including the subject form, rather than relying on similar-looking negative endings."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Past absence/state negatives use the थिएन family; they are not mechanically appended to read or work. Did not need to do something describes lack of necessity, not merely a denied event; compare the obligation patterns in topic 21."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: is a present negative plus yesterday enough?\nAnswer: no. Choose the matching past negative verb. Separate present action negatives, past action negatives and absence by what they deny."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -159905,8 +161013,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Future forms include गर्नेछु and जानेछु: a ने stem with personal छ-family endings. A respectful form is गर्नुहुनेछ. Time words such as भोलि can also allow a present form to describe a plan. Distinguish the dedicated future form from other ways of expressing a future arrangement."
+        "text": "Describe actions and plans after the time of speaking. Nepali can use a present form with tomorrow or next week as well as an explicit future form. Read the verb together with its time expression; the form alone does not always determine the intended time."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "A common pattern is subject + future time + details + present verb. भोलि is tomorrow; अर्को हप्ता next week. Explicit future forms include गर्नेछु and जानेछु, with respectful forms such as गर्नुहुनेछ. A plan, an intention and a prediction are not identical; topic 31 covers degrees of uncertainty."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose a future time, such as भोलि.\n2. Identify who plans to do what.\n3. Choose a present-form plan or an explicit future form.\n4. Match person and respect; tomorrow does not make म and उहाँ take the same ending."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म भोलि काम गर्छु।",
+            "ma bholi kām garchu",
+            "I will work tomorrow."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, भोलि tomorrow, काम work and गर्छु do. The verb has the form learned in topic 8, but भोलि gives a future setting. This is not an action in progress now. Look for time expressions before interpreting the whole sentence."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "A negative plan needs the negative appropriate to its pattern; tomorrow does not negate an affirmative verb. हुन्छ can describe a future occurrence such as a meeting, but does not replace all ordinary action verbs. Review its functions in topic 4."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: must गर्छु always refer to a present routine?\nAnswer: no. With a future time expression it can state a plan. Consider the verb, time words and conversational setting together."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -160371,8 +161543,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Forms such as गर्थें and बस्थें describe former habits. Contrast a single completed गरेँ with habitual गर्थें. Negatives include गर्दिनथें; respectful forms include गर्नुहुन्थ्यो. पहिले means formerly, and सानो छँदा means when young."
+        "text": "Describe repeated past actions or former routines, rather than one completed event yesterday. A habit is an action done regularly. This form presents the past pattern; whether it has completely stopped now depends on context."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Use subject + past setting + habitual-past verb. पहिले means before/formerly. With गर्नु, compare first-person गर्थें and respectful गर्नुहुन्थ्यो with single-event गरेँ. A past routine is also different from merely being at a location in the past."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose a former repeated action, not one event.\n2. Identify who did what and where.\n3. Add a past-setting word such as पहिले.\n4. Finish with the appropriate habitual-past form."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म पहिले यहाँ काम गर्थें।",
+            "ma pahile yahā̃ kām garthẽ",
+            "I used to work here."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, पहिले formerly, यहाँ here and काम गर्थें used to work. The sentence describes a former work routine. काम गरेँ instead presents a completed event. यहाँ identifies where that past pattern took place."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Learn the matching habitual-past negative rather than adding formerly to a present negative. Distinguish a repeated routine from an action in progress at a past moment and from something already completed by that moment in topic 16."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: is a former daily tea habit viewed like drinking one cup yesterday?\nAnswer: distinguish them here. This topic presents a repeated pattern; topic 11 presents a completed event."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -160726,8 +161962,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Use -एको/-एकी/-एका with the छ family. गरेको छु can describe a current result; खाएको छु can express experience in context. Distinguish these participial endings from unrelated question forms such as केको. Negate the auxiliary with the छैन family and use words such as अझै, still. थाकेको छु describes a resulting state: I am tired."
+        "text": "Connect an earlier action with the present: work already completed, or experience of eating something. Completion views the action as finished. Whether a sentence expresses experience or a present result depends on the action, time expressions and context; not every example means have ever."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "The pattern combines a completed-action participle, often in -एको, with a छ-family auxiliary. An auxiliary supports the main action’s time or state. In गरेको छु, गरेको supplies having done and छु connects it to I now. Respectful actions can use गर्नुभएको; examine both parts for agreement."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Decide what past result or experience matters now.\n2. Choose the completed-action form, such as गरेको from गर्नु.\n3. Add the subject/agent and object.\n4. Use the appropriate present auxiliary to connect that completion with the present."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "मैले यो काम गरेको छु।",
+            "maile yo kām gareko chu",
+            "I have done this work."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "मैले marks I as agent, यो काम this work, and गरेको छु have done. The past action is presented as a completion relevant now. गरेको and छु have different jobs; छु alone does not convey that the work has been completed."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Study the negative of this compound pattern below rather than mixing it with a simple past negative. Compare topic 11’s event report and topic 16’s completion before a past reference point. A shared translation such as did does not make these perspectives identical."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: what differs between the work is already finished and I did the work yesterday?\nAnswer: one foregrounds the result now; the other reports a past event. That perspective motivates the perfect construction."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -161160,8 +162460,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Use -एको and related forms with the थियो family for a result already established at a past time. गरेको थिएँ means I had done it. Compare present-perfect छ with past-reference थियो forms. Negatives include थिइनँ and थिएन. Identify the reference event and which event happened first."
+        "text": "Choose a past reference point, such as a friend’s arrival, and say something was already completed by then. Past perfect does not mean merely a very long time ago. It helps place one completion before another past situation."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Combine a completed-action participle with a past auxiliary in the थियो set. Compare गरेको छु with गरेको थिएँ: the reference shifts to the past. First-person थिएँ and other endings depend on the construction’s agreement. Separate the completed action from the auxiliary setting its time perspective."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Establish a past reference point in context.\n2. Choose an action completed before it.\n3. Use the completed-action form.\n4. Add a past auxiliary. This is different from simply listing two events in chronological order."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "मैले यो काम गरेको थिएँ।",
+            "maile yo kām gareko thiẽ",
+            "I had done this work."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "मैले marks I as agent, यो काम this work and गरेको थिएँ had done. Context supplies the past point meant by then. Compare गरेको छु: it connects completion to now, while गरेको थिएँ connects it to a past reference point."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "A translation such as was doing is not enough to choose the construction. Distinguish a former habit, an action in progress, and prior completion. A negative here concerns something not completed by that past reference point; use the compound pattern’s negative."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: what is the second time involved in a past perfect?\nAnswer: the past reference point against which completion is assessed. Locate that point in the story before forming the sentence."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -161597,8 +162961,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Start with respectful -नुहोस्: बस्नुहोस्, please sit; लेख्नुहोस्, please write. Conversational variants such as बस्नुस् also occur. Keep familiar imperatives distinct from respectful ones. कृपया adds please; it does not replace the verb ending."
+        "text": "Ask the listener to sit, look or speak. Unlike a statement that someone sits, a request directs an action to the listener. Requests and commands differ in force, and tone and setting also affect how they sound."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Start with place/object/manner + a respectful request form, such as बस्नुहोस् or हेर्नुहोस्. The listener is understood, so you is often omitted. Learn बस्नुहोस् as a request form rather than using dictionary बस्नु unchanged. Relate more familiar forms to the register distinctions in topic 7."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the requested action.\n2. Add a place or manner such as यहाँ, here.\n3. Finish with the respectful request form.\n4. Distinguish this from offering your own action in topic 18 and asking someone not to act in topic 19."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "यहाँ बस्नुहोस्।",
+            "yahā̃ basnuhos",
+            "Please sit here."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "यहाँ means here and बस्नुहोस् please sit. The listener is the understood actor, so these two parts form a request. Keep the request form when changing the location. This is an instruction to someone, not a report that you are sitting here."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Do not form every request by adding a separate please-word after an ordinary present verb. The verb itself changes. Even a respectful form can sound directive in context. Ability questions can also help soften a request; compare topic 20."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: is asking someone to sit the same as asking whether you may sit?\nAnswer: no. First identify the actor. The former is a request here; the latter uses an offer/permission-seeking pattern such as topic 18."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -162019,8 +163447,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Suggestions include जाऔं, गरौं and बसौं. हामी जाऔं means let us go. A first-person offer or question can use म जाऊँ? Distinguish these from ordinary present statements. Negative suggestions prefix न, as in नजाऔं."
+        "text": "Offer your own action or suggest doing something together. Distinguish reporting that you will open something from asking whether you should do it. A singular offer and a shared suggestion use different forms."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "First-person offers or permission-seeking questions include बसूँ? and खोलूँ? Shared suggestions use forms such as जाऔं. These are not simply ordinary present verbs plus a question mark. Learn the verb form together with its singular-offer or shared-suggestion function."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose an individual offer or a shared suggestion.\n2. Add the action and necessary details.\n3. For your own offer use the appropriate first-person proposal form.\n4. Use question intonation when seeking the other person’s response."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म यहाँ बसूँ?",
+            "ma yahā̃ basũ?",
+            "May I sit here?"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, यहाँ here, and बसूँ? asks in this setting whether I may sit. I am the actor, not the listener. Contrast topic 17’s बस्नुहोस्, which asks the listener to sit. Similar verbs can perform different conversational jobs."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Do not use your own offer form when you want the listener to act. A statement of plans belongs to topic 13; general permission rules belong to topic 21. Here focus on proposing an action within a conversation."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: why identify who opens the door?\nAnswer: offering to open it yourself and requesting that the listener open it require different forms. Decide the roles before translating an ending."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -162592,8 +164084,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "A polite negative request uses न + request form: नआउनुहोस्, please do not come. A general prohibition uses the -न infinitive + हुँदैन: यहाँ बस्न हुँदैन, sitting here is not allowed. Distinguish a prohibition from a statement that someone does not do something."
+        "text": "Ask someone not to act or state a prohibition. This directs behavior, unlike reporting that you yourself do not do something. Identify who is being addressed and which action must be avoided."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "A respectful negative request places न before the request verb: बस्नुहोस् becomes नबस्नुहोस्. A rule-like prohibition can use -नु हुँदैन. Distinguish directly asking the listener not to act from stating that an action is not allowed."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the action to prevent.\n2. Decide between a direct negative request and a prohibition rule.\n3. For a direct request place न before the respectful request form.\n4. Add place or manner to make its scope clear."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "तल नहेर्नुहोस्।",
+            "tala nahernuhos",
+            "Please do not look down."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "तल means down and नहेर्नुहोस् please do not look. न negates the requested action हेर्नुहोस्. It is an essential part of the negative request, not a denial of the place or direction."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "A negative request is not an ordinary present negative. In -नु हुँदैन, the हुनु form learned in topic 4 participates in a prohibition construction. This differs from not needing to act in topic 21; confusing the two can reverse the intended instruction."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: are need not do and must not do the same?\nAnswer: no. One removes necessity; the other prohibits. Decide whether you mean necessity, permission or prohibition."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -163232,8 +164788,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Use the action infinitive in -न + a form of सक्नु. बोल्न सक्छु means I can speak; चलाउन सक्दिनँ means I cannot drive. Negation and personal/respect agreement appear on सक्नु, not on both verbs."
+        "text": "State ability or practical possibility: speaking Nepali or being able to come today. Ability may come from skill; situational possibility from available time or conditions. सक्नु can express both, with context supplying the reason."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Use the action in its -न infinitive form before a conjugated सक्नु: बोल्नु gives बोल्न, गर्नु gives गर्न. Use सक्छु with I and सक्नुहुन्छ respectfully. The final सक्नु form carries the person and positive/negative meaning."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the action that is possible.\n2. Put it in the form used before सक्नु, such as बोल्न.\n3. Add details such as the language spoken.\n4. Finish with the सक्नु form matching the person."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म नेपाली बोल्न सक्छु।",
+            "ma nepālī bolna sakchu",
+            "I can speak Nepali."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, नेपाली Nepali, बोल्न speak and सक्छु can. Two verb-related parts appear, but both do not receive ordinary present endings. बोल्न supplies the action; सक्छु supplies ability/possibility and agreement."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Negate the सक्नु part, using forms such as सक्दिनँ or respectful सक्नुहुन्न. Do not place a finite negative action before सक्छु. Can as ability differs from may as permission in topic 21. An ability question can also serve as a request in context."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: which part of बोल्न सक्छु means can?\nAnswer: सक्छु. बोल्न specifies the possible action. Be able to explain the job of each part."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -163661,8 +165281,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "-नु पर्छ expresses obligation; -नु पर्दैन means it is unnecessary, not forbidden. -न मिल्छ? asks whether an action is permitted or feasible. Some constructions use an experiencer such as मलाई; distinguish that role from the object."
+        "text": "State necessity or permission: having to go or being allowed to wait. Obligation means an action is required; permission means it is allowed. Neither alone says whether the action actually happened."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Obligation commonly uses an action in -नु + पर्छ, as in जानु पर्छ. This course includes मैले-type forms for the person bearing the obligation; ले does not by itself mean past. Permission uses an action in -न + हुन्छ. Separate the action from the part expressing necessity or permission."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Decide between requirement and permission.\n2. Choose the relevant action.\n3. Use the obligation or permission pattern with its appropriate preceding verb form.\n4. Add the person concerned, time and place."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "मैले भोलि अफिस जानु पर्छ।",
+            "maile bholi aphis jānu parcha",
+            "I have to go to the office tomorrow."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "मैले identifies the person with the obligation, भोलि tomorrow, अफिस the office and जानु पर्छ must go. This is a future obligation, so ले cannot be treated as a past-time label. पर्छ expresses necessity and जानु supplies the required action."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "The negative पर्दैन removes necessity; it is not prohibition with हुँदैन. Ability or practical possibility belongs to topic 20. In permission expressions, हुन्छ participates in the meaning allowed; translating it mechanically as become would be misleading."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: are need not go and must not go the same instruction?\nAnswer: no. One removes the requirement while the other forbids going. The final construction changes what is being said about the action."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -164210,8 +165894,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "-न चाहनु expresses a wish. An experiencer + -न मन लाग्नु expresses feeling like doing something. In मलाई चिया पिउन मन लाग्छ, मलाई marks the experiencer, पिउन is drink, and मन लाग्छ expresses inclination. Negation and tense appear mainly in the final verb."
+        "text": "Express a wish or an inclination to act. Wanting is different from a plan to do it or the ability to do it. Identify the desired action and the person experiencing the wish."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "One pattern is subject + action infinitive in -न + a form of चाहनु, as in जान चाहन्छु. Another marks the experiencer with मलाई and uses action + मन छ or मन लाग्छ. मन means mind/feeling. These patterns organize the experiencer and final verb differently; do not mix their parts arbitrarily."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the desired action, such as जानु.\n2. Before चाहनु use जान.\n3. With I finish with चाहन्छु.\n4. If choosing the मन pattern instead, start from the experiencer form appropriate to that construction."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म नेपाल जान चाहन्छु।",
+            "ma nepāl jāna cāhanchu",
+            "I want to go to Nepal."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, नेपाल Nepal, जान go and चाहन्छु want. जान supplies the desired action; चाहन्छु expresses the wish and agreement. Unlike जान्छु as a statement of going, this reports a wish."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Negate the final verb or state appropriate to the chosen pattern. Distinguish not wanting an action from not feeling like it now. Wanting is not needing; do not replace it with topic 21’s पर्छ. Respectful subjects require agreement within the chosen construction."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: which parts of जान चाहन्छु express go and want?\nAnswer: जान supplies going and चाहन्छु wanting. Explain how the two parts work together rather than interpreting either in isolation."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -164669,8 +166417,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Adjectives normally precede nouns. Some change form, as in राम्रो, राम्री and राम्रा; others such as सुन्दर are normally invariable. Do not assign gender to objects by Japanese or English intuitions. Review genitive को/की/का agreement with topic 5."
+        "text": "Build noun phrases such as a good book. A noun names someone or something; an adjective describes a quality. Learn where the adjective goes and when its form matches the noun. Such matching is called agreement."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "The ordinary order is adjective + noun, as in राम्रो किताब. Some adjectives vary, such as राम्रो/राम्री/राम्रा; others such as सुन्दर are generally invariable. Learn Nepali agreement rather than assuming it works like English or Japanese, but do not force every adjective to change."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the noun.\n2. Put its adjective before it.\n3. If that adjective varies, choose a form appropriate to the noun.\n4. Use the complete noun phrase in an identity sentence or another construction."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "यो राम्रो किताब हो।",
+            "yo rāmro kitāb ho",
+            "This is a good book."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "यो is this, राम्रो किताब a good book, and हो the identity ending. The noun phrase supplies what this is. Contrast यो किताब राम्रो छ, which describes the book’s quality in topic 3. The arrangement changes the grammatical job."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Check adjective agreement separately from pronoun respect. Using respectful उहाँ does not remove the need to consider the noun being described. Possessive को/की/का also relate to a following noun; compare topic 5. Distinguish an adjective inside a noun phrase from a whole sentence’s description."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: which comes first inside good book?\nAnswer: adjective राम्रो precedes noun किताब. Treat the phrase as one unit when placing it into a larger sentence."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -165228,8 +167040,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "बिस्तारै means slowly, छिटो quickly/early, सधैं always, प्रायः usually, and धेरै very/much. Distinguish words describing an action from adjectives describing nouns. कति + adjective can express an exclamation as well as a question."
+        "text": "Add manner, frequency or degree: walk slowly, always come, very big. Such words are often called adverbs. Contrast an adjective describing a house with an adverb describing how someone walks."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Use subject + manner/frequency expression + verb. बिस्तारै means slowly, छिटो quickly/early, सधैं always and प्रायः usually. धेरै may mean much/many or very depending on what it modifies. Identify the action or quality the word describes."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Form a short sentence without the added description.\n2. Choose manner, frequency or degree.\n3. Put the action-description before the verb.\n4. Keep the same personal agreement if the subject and action have not changed."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म बिस्तारै हिँड्छु।",
+            "ma bistārai hĩḍchu",
+            "I walk slowly."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, बिस्तारै slowly and हिँड्छु walk. Slowly describes the manner of walking, not I as a permanent personal quality. Removing it leaves the basic sentence I walk. Build that skeleton before adding details."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "कति plus a descriptive word can express an exclamation as well as a question; use intonation and context. Distinguish frequency meanings even when words occupy similar positions. Adding an adverb does not itself make a verb progressive; retain the distinction in topics 8 and 10."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: does बिस्तारै explain who, what or how?\nAnswer: how. Identifying each word’s information type helps reveal the skeleton of longer sentences."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -165705,8 +167581,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "A + Bभन्दा + adjective compares A against B. सबभन्दा/सबैभन्दा express a superlative; मध्ये identifies the group selected from. जस्तै/जस्तो and related forms express similarity; जस्तो can agree with its noun. Keep the item and comparison standard distinct."
+        "text": "Compare things and describe differences or similarities. Separate the item being described from the standard it is compared against. Decide bigger than what, not just bigger, before arranging the sentence."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Use A + Bभन्दा + adjective + ending. A is described; B is the standard. भन्दा follows B. Superlatives use forms such as सबैभन्दा, and मध्ये can identify the comparison group. Similarity with जस्तै/जस्तो is different from an inequality with भन्दा."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose A, the item described.\n2. Choose B, the standard.\n3. Put भन्दा after B.\n4. Add the quality and an ending appropriate to A."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "यो घर त्यो घरभन्दा ठूलो छ।",
+            "yo ghar tyo gharbhandā ṭhūlo cha",
+            "This house is bigger than that house."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "यो घर is this house, त्यो घरभन्दा than that house, and ठूलो छ is bigger. The marker attaches to the standard, while the sentence describes this house. Reversing the two houses changes which one is said to be larger."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Negate the descriptive ending rather than deleting the comparison marker. Do not silently expand an unspecified superlative group to the whole world. जस्तो can vary with agreement; review topic 23 and its relative-expression uses in topic 29."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: in A is bigger than B, which item is followed by भन्दा?\nAnswer: B, the standard. First identify the item being described to avoid reversing the comparison."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -166390,8 +168330,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "र joins items; अनि marks sequence; तर marks contrast; पनि adds also. किनभने introduces a reason, and forms such as -एकोले create reason clauses. Distinguish cause phrases such as का कारण from concession with का बाबजुद. A reason is a circumstance; a purpose is an intended outcome."
+        "text": "Connect items or clauses to express addition, sequence, contrast or reason. Connecting is not merely making a sentence longer: first decide the relationship between the pieces of information."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "र coordinates items, अनि marks sequence, तर contrast, and पनि adds also. किनभने introduces a reason. A clause describes an event or state. When clauses are linked, each still needs its own appropriate subject, verb and case relationships."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Understand each piece separately.\n2. Choose addition, sequence, contrast or reason.\n3. Link them with the corresponding expression.\n4. Recheck which verb belongs to which person or thing."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "मलाई चिया र कफी मन पर्छ।",
+            "malāī ciyā ra kaphī man parcha",
+            "I like tea and coffee."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "मलाई marks the experiencer, चिया र कफी tea and coffee, and मन पर्छ liking. र joins two drinks inside one clause. It does not require repeating the experiencer and predicate for each drink."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Do not exchange र and अनि indiscriminately: coordination and sequence differ. A reason explains why; a purpose states an intended outcome, taught in topic 28. Expressions such as का बाबजुद mark a result contrary to expectation."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: are tea and coffee and go home, then sleep the same relationship?\nAnswer: one coordinates items; the other orders actions. Choose by the relationship, not a single translated conjunction."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -166976,8 +168980,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "-दै expresses simultaneous actions; -एपछि orders an action after another. Noun + पछि means after an event such as class; it is not formed by simply adding पछि to any past finite verb. अघि/पहिले mean before, temporal भित्र means within, and पश्चात् is a more formal after. See topic 29 for जब/जहिले."
+        "text": "Listening while studying overlaps two actions; drinking tea before leaving orders them. Understand each action first, then express whether they overlap or one follows the other."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "For overlap use a -दै action form with the main action; for sequence use an appropriate completed-action form with पछि before the next action. -दै also appears in topic 10, but here links simultaneous actions. The final main verb carries the sentence’s personal and temporal information."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose two actions.\n2. Decide overlap or succession.\n3. Put the background/earlier action in the appropriate linking form.\n4. Conjugate the final main action for the subject. Learn the actual linking forms through the examples."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म संगीत सुन्दै पढ्छु।",
+            "ma saṅgīt sundai paḍhchu",
+            "I study while listening to music."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, संगीत music, सुन्दै while listening and पढ्छु study. The actions overlap. सुन्दै links the background action; final पढ्छु supplies the finite ending agreeing with I. Both actions do not receive independent ordinary-present endings here."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Noun + पछि, after class, differs from a verb construction meaning after doing. Do not append पछि to every past verb unchanged. अघि/पहिले mark before, and भित्र can mark within a period. Do not assume the simple shared-actor overlap pattern fits every pair of clauses with different actors."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: which action has the final finite ending in the listening/studying example?\nAnswer: the main action पढ्छु. Separate the linking form from the final verb when reading two-action sentences."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -167584,8 +169652,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Use को/का लागि for beneficiaries and -नको लागि for an intended action: छोराको लागि, for a son; पढ्नको लागि, in order to study. A motion purpose can also use a bare infinitive, as in पढ्न जान्छु. Learn synonymous निम्ति/निमित्त in actual combinations."
+        "text": "Express an intended outcome or beneficiary: go to the library to study, buy something for a child. A purpose is what the action aims to achieve, unlike an already-existing reason. Separate going from what the person intends to do there."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Beneficiaries use noun phrases with को/का लागि; action purposes use an infinitive in -न + को लागि, as in पढ्नको लागि. Separate the intended action from the main action. A past main verb can describe going for that purpose; a purpose phrase does not by itself make the sentence future."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the main action, such as going to a library.\n2. Identify the intended action or beneficiary.\n3. Put an action purpose in the appropriate purpose form.\n4. Place it before the main verb, which carries person and tense."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म पढ्नको लागि पुस्तकालय जान्छु।",
+            "ma paḍhnako lāgi pustakālaya jānchu",
+            "I go to the library to study."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, पढ्नको लागि in order to study, पुस्तकालय the library and जान्छु go. Studying is the intended action; going is the main action. Identify the purpose phrase as a unit before reading the final verb."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Motion purposes can also use a shorter infinitive, as in पढ्न जान्छु; को लागि is not always obligatory. Related निम्ति/निमित्त expressions have their own combinations and register. Distinguish purpose from the reason constructions in topic 26."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: is going home because it rains the same relationship as going somewhere to study?\nAnswer: one gives a reason; the other an intended outcome. Choose the construction by that relationship."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -168175,8 +170307,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Nepali can modify a noun with a -ने/-एको clause, or link clauses with forms such as जो and जुन. जो commonly refers to a person, जुन selects an entity, and जे refers to content. जहाँ marks place, जता direction, जब/जहिले time, जसरी manner, and जति amount/degree. These link information rather than ask who or where."
+        "text": "Describe a person or thing with a clause, as in the person who lives here. Also link two clauses referring to the same person, place or time. Think of relative expressions as a way to specify which person or setting you mean."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "There are two useful patterns: a modifying clause, often in -ने/-एको, before a noun; or linked clauses introduced by forms such as जो, जुन, जहाँ and जब. The first builds a noun phrase; the second connects corresponding information across clauses."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the noun, such as मान्छे, person.\n2. Build its description: यहाँ बस्ने, living here.\n3. Put the description before the noun.\n4. Use the complete noun phrase as one participant in the larger sentence."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "यहाँ बस्ने मान्छे मेरो साथी हो।",
+            "yahā̃ basne mānche mero sāthī ho",
+            "The person who lives here is my friend."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "यहाँ बस्ने मान्छे means the person who lives here; मेरो साथी my friend; हो completes the identity statement. Read through बस्ने to मान्छे to recognize the entire subject phrase rather than treating बस्ने as a separate finished sentence."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Relative forms cover people, content, place, direction, time, manner and quantity. जसले, जसलाई and जसको reflect agent, object/recipient and possession within their clause. Do not simply string question words together: identify each clause’s roles. Compare questions in topic 6 and conditions in topic 30."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: do where do you live? and the place where you live do the same job?\nAnswer: one requests information; the other describes or links a place inside a statement. Decide question versus description first."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -169391,8 +171587,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Use condition + भने + consequence. यदि explicitly adds if but is often optional. Distinguish a condition about a current state, छ भने, from one about an event, भयो भने. Temporal जब…तब is not automatically interchangeable with conditional भने."
+        "text": "Imagine a condition and state what follows: if it rains, stay home. Separate if X from then Y. Also decide whether X is a current state or an event that may occur."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Use condition clause + भने + consequence clause. यदि can explicitly add if but is often optional. Each clause describes its own event or state and needs the forms appropriate to its participant and time perspective."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose the imagined situation.\n2. Form a short condition clause and add भने.\n3. Follow it with the consequence clause.\n4. Recheck which part is the condition and which is the result."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "पानी पर्यो भने, म घरमा बस्छु।",
+            "pānī paryo bhane, ma gharmā baschu",
+            "If it rains, I will stay home."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "पानी पर्यो भने gives the rain condition; म घरमा बस्छु the response. Do not interpret the first verb in isolation as necessarily reporting an already-completed event. Read it together with भने as the condition."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "A state can also be a condition, as in being busy. Temporal जब…तब is not always interchangeable with an if-condition. भने can also appear as a speech-verb form, so distinguish introducing a condition from reporting that someone said something in topic 34."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: what follows conditional भने?\nAnswer: the clause stating what happens or what someone does under that condition. Explain the relationship, not just the translation if."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -169889,8 +172149,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "मलाई लाग्छ introduces an impression or opinion; भन्ने can introduce its content. होला expresses a supposition and हुन सक्छ a possibility. -एको हुनु पर्छ can express an inference, unlike obligatory -नु पर्छ. Preserve the degree of certainty rather than translating a guess as a fact."
+        "text": "Add an opinion, inference or possibility rather than presenting something as an unquestioned fact. Separate what is known from what is judged or predicted. The expressions differ in the kind and strength of that judgment."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "A content clause followed by जस्तो लाग्छ can mean it seems/I think. मलाई लाग्छ introduces an impression. होला can express supposition and हुन सक्छ possibility. A completed-action form with हुनु पर्छ may express an inference, unlike an action in -नु + पर्छ expressing obligation."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Identify the content being judged.\n2. Choose an opinion, prediction or possibility.\n3. Combine the content with the corresponding expression.\n4. Preserve that qualification in translation rather than turning it into a fact."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "भोलि पानी पर्छ जस्तो लाग्छ।",
+            "bholi pānī parcha jasto lāgcha",
+            "I think it will rain tomorrow."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "भोलि is tomorrow, पानी पर्छ it rains, and जस्तो लाग्छ it seems/I think. The final expression comments on the whole proposition about tomorrow’s rain, not the amount or manner of rain."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Negating the content and negating the judgment are not automatically identical. Track what is being denied. In हुन सक्छ, हुन is the form of हुनु before सक्नु; there is no need to add a separate हो at the end. Compare the possibility structure in topic 20."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: are he will come and he may come equally certain?\nAnswer: no. The latter leaves it as a possibility. Preserve the speaker’s degree of commitment when interpreting the sentence."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -170342,8 +172666,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "A passive foregrounds what is affected: a written letter or opened door. Learn forms such as लेखियो and खोलियो, distinct from ordinary intransitives. लेखिन्छ means is written generally; लेखिएन means was not written. द्वारा can mark an agent; मार्फत an intermediary. Impersonal धेरै हिँडियो is not a literal passive of an object."
+        "text": "A passive presents an event from the affected participant: the door was opened rather than someone opened the door. It is useful when the actor is unknown or not central. Not every passive-looking translation fits one identical Nepali pattern."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Foreground the affected participant and choose a passive verb form, such as खोलियो or लेखियो. General/passive patterns also include लेखिन्छ. Distinguish the chosen passive construction from an ordinary intransitive change; do not identify them only through an English translation."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Identify what is affected.\n2. Identify the original action, such as opening or writing.\n3. Select a passive form appropriate to the time intended.\n4. Decide whether the actor needs to be mentioned."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "ढोका खोलियो।",
+            "ḍhokā kholiyo",
+            "The door was opened."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "ढोका is door and खोलियो was opened. The sentence foregrounds what happened to the door. A noun in subject position is not automatically the actor. Separate who did it from what was affected."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Negative लेखिएन denies the writing event; it is not simple absence with छैन. द्वारा can mark an actor and मार्फत an intermediary. Impersonal expressions such as धेरै हिँडियो do not mean a literal object was walked by someone."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: must the actor be the center of a passive sentence?\nAnswer: no. The affected participant or event is foregrounded. Identify that focus to understand why the actor may be omitted."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -171040,8 +173428,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "A causative expresses causing or arranging an action. Learn pairs such as खानु→खुवाउनु and सिक्नु→सिकाउनु. Separate causer, person acting and object. -न लगाउनु is another causative construction. Review लाई and completed-event agent marking in topics 5 and 11."
+        "text": "Describe one person causing or arranging another’s action. A causative is not always coercive: teaching or feeding can also involve causing an action. Identify all participants and their roles before forming the sentence."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Learn base/causative pairs: खानु eat and खुवाउनु feed; सिक्नु learn and सिकाउनु teach. Another pattern uses an action infinitive in -न before लगाउनु. Do not assume every causative is formed by adding the same letters."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Separate causer, person acting and object.\n2. Choose a causative verb or the लगाउनु pattern.\n3. Mark the relevant participant with forms such as लाई.\n4. Conjugate the main causative verb for the intended time and agreement."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "आमाले बच्चालाई खाना खुवाउनुहुन्छ।",
+            "āmāle baccālāī khānā khuvāunuhuncha",
+            "Mother feeds the child."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "आमाले marks mother as causer, बच्चालाई the child, खाना food and खुवाउनुहुन्छ respectfully feeds. The child eats, but the mother causes or provides that action. Identify whose main action the final causative verb describes."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Do not keep a base verb unchanged and merely translate it as causative. Review past transitive agents in topic 11 and लाई in topic 5. Complex permission/benefit meanings in Japanese are not all encoded by a single short causative form."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: in mother feeds the child, are the eater and causer the same person?\nAnswer: no. The child eats; mother feeds. Explain the role division before arranging the sentence."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -171399,8 +173851,72 @@
         "text": "Meaning and sentence construction"
       },
       {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
         "type": "p",
-        "text": "Report speech with its content followed by a respectful form such as भन्नुभयो. Words inside a quotation can retain the original speaker’s perspective: identify who म refers to, where यहाँ is and which day भोलि means. भन्नुभएन means did not say; भन्नुहुन्थ्यो can describe habitual past speech. Distinguish conditional भने from a past form of say by its role."
+        "text": "Report what someone said. Direct quotation preserves the speaker’s words; indirect reporting reorganizes the content from the reporter’s perspective. The short exercises include direct-like quotations, so separate the reported content from the outer speech verb."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "Use speaker + reported content + speech verb, such as respectful भन्नुभयो. I, here and tomorrow inside a quotation may retain the original speaker’s viewpoint. The outer respectful subject and an inner first-person verb have different roles and need not share the same ending."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Identify the original utterance.\n2. Choose quotation or indirect reporting.\n3. Add the speaker and content.\n4. Match the outer speech verb to the speaker’s register and time of speaking."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "उहाँले जाँदिनँ भन्नुभयो।",
+            "uhā̃le jā̃dinã bhannubhayo",
+            "She said she would not go."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "उहाँले marks the speaker, जाँदिनँ means I will/do not go in that speaker’s words, and भन्नुभयो reports said. The inner first-person negative belongs to the quoted utterance; the outer respectful past belongs to the report. Keep those layers separate."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Indirect reports can use आफू, self, and content-clause constructions; compare the table below. The original tomorrow may not be tomorrow at reporting time. Distinguish conditional भने in topic 30 from speech-verb forms by their role in the sentence."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: does I inside a quotation always refer to the current reader or reporter?\nAnswer: no. It can refer to the original speaker. Identify whose words you are inside before interpreting pronouns and time expressions."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "h",
@@ -171864,6 +174380,78 @@
       {
         "type": "goal",
         "text": "Change the person and time while talking about writing a letter."
+      },
+      {
+        "type": "h",
+        "text": "Meaning and sentence construction"
+      },
+      {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
+        "type": "p",
+        "text": "This appendix uses writing a letter to compare person, tense and negation. It is a reference, not a demand to memorize many near-identical sentences. Find what changes and transfer the construction principles to other verbs. Start with the basic six person groups; use topic 7 before comparing familiar forms."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "लेख्नु is the dictionary form write. Compare लेख्छु, लेख्दिनँ and लेखेँ for I write, do not write and wrote. Completed transitive clauses can also change म to मैले. Examine the whole sentence for respectful forms and object-related agreement, not only one isolated ending."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose routine, past event, completion, former habit or plan.\n2. Find that subsection.\n3. Read the subject and verb together for the intended person.\n4. Compare its positive and negative and explain the change."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म चिठी लेख्छु।",
+            "ma ciṭhī lekhchu",
+            "I write letters."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, चिठी letter and लेख्छु write. लेख्छु is the appropriate present form of लेख्नु, not an arbitrary fragment. For yesterday’s completed writing, check both मैले and the past verb. Keep track of the letter as object too."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Change one variable at a time: person first or tense first, not everything at once. Identify whether a negative means do not, did not, or had not completed by then. Topics 8–16 explain the time perspectives behind the reference forms."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: does swapping only a verb from the table always give a correct sentence?\nAnswer: no. Subject form, object, tense and respect must fit. Use the table to understand the correspondences, not just to copy endings."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
       },
       {
         "type": "note",
@@ -172381,6 +174969,284 @@
         "text": "Contrast identity, present location and a past outing in affirmative and negative statements."
       },
       {
+        "type": "h",
+        "text": "Meaning and sentence construction"
+      },
+      {
+        "type": "h",
+        "text": "What this grammar helps you say"
+      },
+      {
+        "type": "p",
+        "text": "This appendix reviews forms of हुनु through identity and location sentences. Copula is the grammatical term for a linking verb used in identification or description. Focus on choosing by function—identity, location or condition—rather than memorizing the terminology alone."
+      },
+      {
+        "type": "h",
+        "text": "Terms and sentence pattern"
+      },
+      {
+        "type": "p",
+        "text": "हुनु is the dictionary form; हो, छ and हुन्छ represent the three sets. Study identity in topic 1, location in 2, qualities/conditions in 3, and general states or occurrences in 4. The reference tables mainly compare identity/location and their past forms; use the overview and corresponding lessons for the complete picture."
+      },
+      {
+        "type": "h",
+        "text": "Build the sentence step by step"
+      },
+      {
+        "type": "p",
+        "text": "1. Choose identity, location or condition.\n2. Decide present, past or regular perspective.\n3. Find the matching person and respect level.\n4. Select positive or negative and read the whole sentence."
+      },
+      {
+        "type": "h",
+        "text": "Read an example in parts"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nepali",
+          "Reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "म लेखक हुँ।",
+            "ma lekhak hũ",
+            "I am an author."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "म is I, लेखक author and हुँ am. This uses the identity set because लेखक supplies a category. Explain that function, not just the ending. With I am at the library, a place expression and छु instead perform the location function."
+      },
+      {
+        "type": "h",
+        "text": "Negatives, questions and related patterns"
+      },
+      {
+        "type": "p",
+        "text": "Respectful तपाईं/उहाँ and their plurals can use the identical form हुनुहुन्छ across all three functions. The subject alone does not identify the set; use the rest of the construction and context. Past थियो forms and occurrence/change भयो are not interchangeable in every situation."
+      },
+      {
+        "type": "h",
+        "text": "Check your understanding: question and explained answer"
+      },
+      {
+        "type": "p",
+        "text": "Check: does हुनुहुन्छ always mean is at home?\nAnswer: no. It can support identity, condition and regular situations too. Identify the intended function and point to the corresponding lesson in topics 1–4."
+      },
+      {
+        "type": "h",
+        "text": "हुनु review: identity, location and the three sets"
+      },
+      {
+        "type": "h",
+        "text": "The three sets of हुनु and where this topic fits"
+      },
+      {
+        "type": "p",
+        "text": "हुनु (hunu) is a dictionary form used for being, existing, becoming or occurring. हो, छ and हुन्छ represent related sets used for different functions, not three unrelated verbs. Choose both the intended function and the form matching the subject and respect. These sets introduce the present system; other forms include past थियो and भयो."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Form and reading",
+          "Information supplied",
+          "Corresponding lesson"
+        ],
+        "rows": [
+          [
+            "हो / ho",
+            "Identity/classification: name, occupation, category",
+            "Topic 1"
+          ],
+          [
+            "छ / cha",
+            "Existence/location or a quality/condition",
+            "Topic 2: existence/location; topic 3: qualities/conditions"
+          ],
+          [
+            "हुन्छ / huncha",
+            "Regular/conditional states, occurrences and outcomes",
+            "Topic 4; also permission in 21 and prohibition in 19"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "This appendix reviews the three sets. Study their explanations in topics 1–4 and compare past events/negatives in topics 11–12."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Compare with the same subject",
+          "Meaning",
+          "Why this set?"
+        ],
+        "rows": [
+          [
+            "म विद्यार्थी हुँ।\nma vidyārthī hũ",
+            "I am a student.",
+            "Identity, so the हो set: topic 1"
+          ],
+          [
+            "म घरमा छु।\nma gharmā chu",
+            "I am at home.",
+            "Location, so the छ set: topic 2"
+          ],
+          [
+            "म बिहान घरमा हुन्छु।\nma bihān gharmā hunchu",
+            "I am usually at home in the morning.",
+            "A regular time setting, so the हुन्छ set: topic 4"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The subject I alone does not select the form: identity, location and a regular setting give हुँ, छु and हुन्छु. Do not reduce हो versus छ to permanent versus temporary. Choose by construction and intended meaning."
+      },
+      {
+        "type": "h",
+        "text": "हो set: six basic person groups, positive and negative"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Person and reading",
+          "Positive and reading",
+          "Negative and reading"
+        ],
+        "rows": [
+          [
+            "I\nम / ma",
+            "हुँ / hũ",
+            "होइनँ / hoinã"
+          ],
+          [
+            "we\nहामी / hāmī",
+            "हौं / haũ",
+            "होइनौं / hoinaũ"
+          ],
+          [
+            "you\nतपाईं / tapāĩ",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "you plural\nतपाईंहरू / tapāĩharū",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "he/she\nउहाँ / uhā̃",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "they\nउहाँहरू / uhā̃harū",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ]
+        ]
+      },
+      {
+        "type": "h",
+        "text": "छ set: six basic person groups, positive and negative"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Person and reading",
+          "Positive and reading",
+          "Negative and reading"
+        ],
+        "rows": [
+          [
+            "I\nम / ma",
+            "छु / chu",
+            "छैनँ / chainã"
+          ],
+          [
+            "we\nहामी / hāmī",
+            "छौं / chaũ",
+            "छैनौं / chainaũ"
+          ],
+          [
+            "you\nतपाईं / tapāĩ",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "you plural\nतपाईंहरू / tapāĩharū",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "he/she\nउहाँ / uhā̃",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "they\nउहाँहरू / uhā̃harū",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ]
+        ]
+      },
+      {
+        "type": "h",
+        "text": "हुन्छ set: six basic person groups, positive and negative"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Person and reading",
+          "Positive and reading",
+          "Negative and reading"
+        ],
+        "rows": [
+          [
+            "I\nम / ma",
+            "हुन्छु / hunchu",
+            "हुँदिनँ / hũdinã"
+          ],
+          [
+            "we\nहामी / hāmī",
+            "हुन्छौं / hunchaũ",
+            "हुँदैनौं / hũdainaũ"
+          ],
+          [
+            "you\nतपाईं / tapāĩ",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "you plural\nतपाईंहरू / tapāĩharū",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "he/she\nउहाँ / uhā̃",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ],
+          [
+            "they\nउहाँहरू / uhā̃harū",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्न / hunuhunna"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Respectful you/he/she and their plurals share हुनुहुन्छ/हुनुहुन्न across the three functions. Identical spelling does not erase the difference between identity, location and a regular setting. Basic ordinary singular forms are हो/होइन, छ/छैन and हुन्छ/हुँदैन; ordinary plurals have corresponding forms too. First learn the six basic person groups shown here."
+      },
+      {
+        "type": "p",
+        "text": "",
+        "beginnerIntroEnd": true
+      },
+      {
         "type": "note",
         "text": "This appendix is a conjugation reference. Ordinary exercises prioritize six basic person groups and varied situations. See topic 7 for respect/familiarity and topics 1–2 for हो/छ."
       },
@@ -172823,536 +175689,6 @@
     "35": "Verb forms through writing: लेख्नु",
     "36": "Copulas through identity and location"
   },
-  "curriculumRevision": 1203,
-  "grammarAudioRefs": {
-    "1-1": "1-1",
-    "1-2": "1-5",
-    "1-3": "900-3563771793",
-    "1-4": "1-9",
-    "1-5": "900-880534878",
-    "1-6": "1-11",
-    "1-7": "1-12",
-    "1-8": "1-13",
-    "1-9": "1-14",
-    "1-10": "900-53682907",
-    "1-11": "1-18",
-    "1-12": "1-19",
-    "1-13": "900-4194578853",
-    "2-1": "2-1",
-    "2-2": "2-5",
-    "2-3": "900-2251975905",
-    "2-4": "2-9",
-    "2-5": "900-3720775145",
-    "2-6": "2-11",
-    "2-7": "2-12",
-    "2-8": "2-13",
-    "2-9": "2-18",
-    "2-10": "900-2685402187",
-    "2-11": "900-269473504",
-    "2-12": "900-2929629531",
-    "3-1": "3-1",
-    "3-2": "3-2",
-    "3-3": "3-3",
-    "3-4": "3-4",
-    "3-5": "3-5",
-    "3-6": "3-6",
-    "3-7": "3-7",
-    "3-8": "3-11",
-    "3-9": "900-818815859",
-    "3-10": "900-2414107569",
-    "3-11": "900-4118859876",
-    "4-1": "4-1",
-    "4-2": "4-2",
-    "4-3": "4-3",
-    "4-4": "4-4",
-    "4-5": "4-5",
-    "4-6": "4-6",
-    "4-7": "4-7",
-    "4-8": "4-8",
-    "4-9": "4-9",
-    "4-10": "4-10",
-    "4-11": "4-11",
-    "4-12": "900-1511986367",
-    "5-1": "5-5",
-    "5-2": "5-8",
-    "5-3": "5-9",
-    "5-4": "5-10",
-    "5-5": "5-13",
-    "5-6": "5-15",
-    "5-7": "2-14",
-    "5-8": "2-15",
-    "5-9": "2-17",
-    "5-10": "900-907946125",
-    "5-11": "900-2611174658",
-    "5-12": "900-333830497",
-    "5-13": "900-4264781149",
-    "5-14": "900-805505501",
-    "5-15": "900-920209752",
-    "5-16": "900-3056502767",
-    "5-17": "900-911605372",
-    "5-18": "900-322616705",
-    "5-19": "900-93898992",
-    "6-1": "6-1",
-    "6-2": "6-2",
-    "6-3": "6-3",
-    "6-4": "6-5",
-    "6-5": "6-10",
-    "6-6": "6-11",
-    "6-7": "6-13",
-    "6-8": "900-3530452634",
-    "6-9": "900-3524768090",
-    "6-10": "900-1335643998",
-    "6-11": "900-4728873",
-    "6-12": "900-2303543899",
-    "6-13": "900-404154489",
-    "6-14": "900-984106583",
-    "6-15": "900-1776237899",
-    "6-16": "900-817590737",
-    "6-17": "900-258164609",
-    "6-18": "900-962189875",
-    "6-19": "900-2725504668",
-    "6-20": "900-1584322764",
-    "6-21": "900-2146489004",
-    "7-1": "7-1",
-    "7-2": "7-2",
-    "7-3": "7-3",
-    "7-4": "7-5",
-    "7-5": "7-6",
-    "7-6": "7-7",
-    "7-7": "7-8",
-    "7-8": "7-9",
-    "7-9": "7-10",
-    "7-10": "7-16",
-    "7-11": "7-17",
-    "7-12": "7-18",
-    "7-13": "7-19",
-    "7-14": "7-20",
-    "7-15": "900-669478811",
-    "7-16": "900-3556968788",
-    "7-17": "900-3800810876",
-    "8-1": "8-1",
-    "8-2": "8-13",
-    "8-3": "8-16",
-    "8-4": "8-17",
-    "8-5": "900-3208714879",
-    "8-6": "8-20",
-    "8-7": "900-3846926627",
-    "8-8": "900-1138708851",
-    "8-9": "900-1300638332",
-    "9-1": "9-1",
-    "9-2": "9-13",
-    "9-3": "9-16",
-    "9-4": "9-20",
-    "9-5": "900-3128028282",
-    "9-6": "900-2453640478",
-    "9-7": "900-2215353039",
-    "10-1": "10-1",
-    "10-2": "10-13",
-    "10-3": "10-16",
-    "10-4": "900-355903220",
-    "10-5": "900-1302212909",
-    "10-6": "900-180783981",
-    "10-7": "900-722129677",
-    "11-1": "11-1",
-    "11-2": "11-13",
-    "11-3": "11-16",
-    "11-4": "900-3660980456",
-    "11-5": "11-20",
-    "11-6": "900-2769988653",
-    "11-7": "900-568664421",
-    "11-8": "900-2630584124",
-    "12-1": "12-1",
-    "12-2": "12-13",
-    "12-3": "12-16",
-    "12-4": "12-19",
-    "12-5": "12-20",
-    "12-6": "900-91553556",
-    "12-7": "900-3632722519",
-    "13-1": "13-1",
-    "13-2": "13-13",
-    "13-3": "13-16",
-    "13-4": "900-3971357555",
-    "13-5": "13-18",
-    "13-6": "13-19",
-    "13-7": "900-783515076",
-    "13-8": "900-2661332147",
-    "13-9": "900-19846993",
-    "14-1": "14-1",
-    "14-2": "14-13",
-    "14-3": "14-16",
-    "14-4": "14-20",
-    "14-5": "900-226773543",
-    "14-6": "900-2911490176",
-    "15-1": "15-1",
-    "15-2": "15-13",
-    "15-3": "15-16",
-    "15-4": "15-17",
-    "15-5": "15-18",
-    "15-6": "15-19",
-    "15-7": "15-20",
-    "15-8": "900-3040102489",
-    "16-1": "16-1",
-    "16-2": "16-13",
-    "16-3": "16-16",
-    "16-4": "900-1954155296",
-    "16-5": "16-19",
-    "16-6": "16-20",
-    "16-7": "900-916430242",
-    "17-1": "17-1",
-    "17-2": "17-2",
-    "17-3": "17-3",
-    "17-4": "17-4",
-    "17-5": "17-5",
-    "17-6": "17-6",
-    "17-7": "17-7",
-    "17-8": "17-9",
-    "17-9": "17-10",
-    "17-10": "17-14",
-    "17-11": "17-15",
-    "18-1": "18-1",
-    "18-2": "18-2",
-    "18-3": "18-3",
-    "18-4": "18-4",
-    "18-5": "18-5",
-    "18-6": "18-6",
-    "18-7": "18-7",
-    "18-8": "18-8",
-    "18-9": "18-9",
-    "18-10": "18-10",
-    "18-11": "18-11",
-    "18-12": "18-13",
-    "18-13": "18-14",
-    "18-14": "18-15",
-    "19-1": "19-1",
-    "19-2": "19-2",
-    "19-3": "19-3",
-    "19-4": "19-4",
-    "19-5": "19-5",
-    "19-6": "19-6",
-    "19-7": "19-7",
-    "19-8": "19-8",
-    "19-9": "19-9",
-    "19-10": "19-10",
-    "19-11": "19-11",
-    "19-12": "19-12",
-    "19-13": "19-13",
-    "19-14": "19-14",
-    "19-15": "19-15",
-    "20-1": "20-1",
-    "20-2": "20-5",
-    "20-3": "900-2023420843",
-    "20-4": "20-11",
-    "20-5": "900-1085741042",
-    "20-6": "900-4232391765",
-    "20-7": "900-2632761530",
-    "20-8": "900-2481533291",
-    "21-1": "21-1",
-    "21-2": "21-3",
-    "21-3": "21-5",
-    "21-4": "900-2226015447",
-    "21-5": "21-7",
-    "21-6": "21-9",
-    "21-7": "21-10",
-    "21-8": "21-11",
-    "21-9": "21-12",
-    "21-10": "21-13",
-    "21-11": "21-14",
-    "21-12": "21-15",
-    "22-1": "22-1",
-    "22-2": "22-5",
-    "22-3": "22-11",
-    "22-4": "900-4018909276",
-    "22-5": "22-14",
-    "22-6": "22-15",
-    "22-7": "900-3918079571",
-    "22-8": "900-4258321735",
-    "23-1": "23-1",
-    "23-2": "900-3865564623",
-    "23-3": "23-4",
-    "23-4": "23-5",
-    "23-5": "23-6",
-    "23-6": "23-7",
-    "23-7": "23-8",
-    "23-8": "23-10",
-    "23-9": "23-12",
-    "23-10": "23-13",
-    "23-11": "23-14",
-    "23-12": "23-15",
-    "24-1": "24-1",
-    "24-2": "24-5",
-    "24-3": "900-4039811342",
-    "24-4": "24-8",
-    "24-5": "900-4172286420",
-    "24-6": "24-10",
-    "24-7": "24-11",
-    "24-8": "24-12",
-    "24-9": "24-13",
-    "24-10": "24-14",
-    "24-11": "24-15",
-    "25-1": "25-1",
-    "25-2": "25-3",
-    "25-3": "25-4",
-    "25-4": "25-5",
-    "25-5": "900-1707274773",
-    "25-6": "25-10",
-    "25-7": "25-11",
-    "25-8": "25-12",
-    "25-9": "25-14",
-    "25-10": "25-15",
-    "25-11": "900-2244038724",
-    "25-12": "900-277290216",
-    "25-13": "900-2445134450",
-    "26-1": "26-1",
-    "26-2": "26-2",
-    "26-3": "26-3",
-    "26-4": "26-6",
-    "26-5": "26-8",
-    "26-6": "26-9",
-    "26-7": "26-12",
-    "26-8": "26-13",
-    "26-9": "26-15",
-    "26-10": "900-3248800627",
-    "26-11": "900-3323517295",
-    "27-1": "27-1",
-    "27-2": "900-1475309305",
-    "27-3": "27-5",
-    "27-4": "27-6",
-    "27-5": "27-8",
-    "27-6": "27-9",
-    "27-7": "27-11",
-    "27-8": "27-13",
-    "27-9": "900-2592567768",
-    "27-10": "900-4147422487",
-    "27-11": "900-2951901527",
-    "27-12": "900-2206399684",
-    "28-1": "28-1",
-    "28-2": "28-3",
-    "28-3": "900-247435421",
-    "28-4": "28-6",
-    "28-5": "900-1902430370",
-    "28-6": "28-10",
-    "28-7": "28-11",
-    "28-8": "28-12",
-    "28-9": "28-13",
-    "28-10": "28-14",
-    "28-11": "28-15",
-    "29-1": "29-1",
-    "29-2": "29-3",
-    "29-3": "29-4",
-    "29-4": "29-5",
-    "29-5": "29-6",
-    "29-6": "29-7",
-    "29-7": "29-8",
-    "29-8": "29-10",
-    "29-9": "29-11",
-    "29-10": "900-157869680",
-    "29-11": "29-13",
-    "29-12": "900-1467176614",
-    "29-13": "900-4290365818",
-    "29-14": "900-1693450265",
-    "29-15": "900-336212754",
-    "29-16": "900-4155900848",
-    "29-17": "900-530253996",
-    "29-18": "900-3054261316",
-    "29-19": "900-2242849891",
-    "29-20": "900-2308283979",
-    "29-21": "900-1961211076",
-    "29-22": "900-4250858982",
-    "30-1": "30-1",
-    "30-2": "30-2",
-    "30-3": "30-4",
-    "30-4": "900-3376432938",
-    "30-5": "30-7",
-    "30-6": "30-8",
-    "30-7": "30-10",
-    "30-8": "30-14",
-    "30-9": "30-15",
-    "31-1": "31-1",
-    "31-2": "31-3",
-    "31-3": "31-4",
-    "31-4": "900-3745710009",
-    "31-5": "31-7",
-    "31-6": "31-9",
-    "31-7": "31-10",
-    "31-8": "31-12",
-    "31-9": "900-1042751525",
-    "32-1": "32-1",
-    "32-2": "32-2",
-    "32-3": "32-3",
-    "32-4": "32-4",
-    "32-5": "32-5",
-    "32-6": "32-6",
-    "32-7": "32-7",
-    "32-8": "32-8",
-    "32-9": "32-9",
-    "32-10": "32-10",
-    "32-11": "32-11",
-    "32-12": "32-12",
-    "32-13": "32-13",
-    "32-14": "32-14",
-    "32-15": "32-15",
-    "32-16": "900-1557581176",
-    "32-17": "900-616999093",
-    "33-1": "33-1",
-    "33-2": "33-5",
-    "33-3": "900-1462549315",
-    "33-4": "900-2831564734",
-    "33-5": "33-10",
-    "33-6": "900-1803635009",
-    "33-7": "33-14",
-    "34-1": "900-956735114",
-    "34-2": "34-3",
-    "34-3": "34-4",
-    "34-4": "34-6",
-    "34-5": "34-8",
-    "34-6": "900-2759753941",
-    "34-7": "34-13",
-    "34-8": "900-805976265",
-    "34-9": "34-15",
-    "35-1": "35-1",
-    "35-2": "35-2",
-    "35-3": "35-3",
-    "35-4": "35-4",
-    "35-5": "35-5",
-    "35-6": "900-3325261019",
-    "35-7": "900-858800940",
-    "35-8": "35-8",
-    "35-9": "35-9",
-    "35-10": "900-910593029",
-    "35-11": "35-11",
-    "35-12": "35-12",
-    "35-13": "35-13",
-    "35-14": "35-14",
-    "35-15": "35-15",
-    "35-16": "900-3803018035",
-    "35-17": "900-1019946439",
-    "35-18": "35-18",
-    "35-19": "35-19",
-    "35-20": "900-1640902066",
-    "35-21": "35-21",
-    "35-22": "35-22",
-    "35-23": "35-23",
-    "35-24": "35-24",
-    "35-25": "35-25",
-    "35-26": "900-1995951243",
-    "35-27": "900-1950678418",
-    "35-28": "35-28",
-    "35-29": "35-29",
-    "35-30": "900-4207461997",
-    "35-31": "35-31",
-    "35-32": "35-32",
-    "35-33": "35-33",
-    "35-34": "35-34",
-    "35-35": "35-35",
-    "35-36": "900-735757885",
-    "35-37": "900-4054693088",
-    "35-38": "35-38",
-    "35-39": "35-39",
-    "35-40": "900-2691102374",
-    "35-41": "35-41",
-    "35-42": "35-42",
-    "35-43": "35-43",
-    "35-44": "35-44",
-    "35-45": "35-45",
-    "35-46": "900-1316536233",
-    "35-47": "900-1034107473",
-    "35-48": "35-48",
-    "35-49": "35-49",
-    "35-50": "900-3771336986",
-    "35-51": "35-51",
-    "35-52": "35-52",
-    "35-53": "35-53",
-    "35-54": "35-54",
-    "35-55": "35-55",
-    "35-56": "900-3941405288",
-    "35-57": "900-162186799",
-    "35-58": "35-58",
-    "35-59": "35-59",
-    "35-60": "900-1716076979",
-    "35-61": "35-61",
-    "35-62": "35-62",
-    "35-63": "35-63",
-    "35-64": "35-64",
-    "35-65": "35-65",
-    "35-66": "900-3217847237",
-    "35-67": "900-1150407218",
-    "35-68": "35-68",
-    "35-69": "35-69",
-    "35-70": "35-70",
-    "35-71": "35-71",
-    "35-72": "35-72",
-    "35-73": "900-1872698625",
-    "35-74": "900-2852137662",
-    "35-75": "35-75",
-    "35-76": "35-76",
-    "35-77": "900-1208247554",
-    "36-1": "36-1",
-    "36-2": "36-2",
-    "36-3": "36-3",
-    "36-4": "36-4",
-    "36-5": "36-5",
-    "36-6": "900-60696384",
-    "36-7": "900-4175250358",
-    "36-8": "36-8",
-    "36-9": "36-9",
-    "36-10": "900-545501951",
-    "36-11": "36-11",
-    "36-12": "36-12",
-    "36-13": "36-13",
-    "36-14": "36-14",
-    "36-15": "36-15",
-    "36-16": "900-2367452451",
-    "36-17": "900-2291708244",
-    "36-18": "36-18",
-    "36-19": "36-19",
-    "36-20": "900-3568592549",
-    "36-21": "36-21",
-    "36-22": "36-22",
-    "36-23": "36-23",
-    "36-24": "36-24",
-    "36-25": "36-25",
-    "36-26": "900-1776912820",
-    "36-27": "900-3818355539",
-    "36-28": "36-28",
-    "36-29": "36-29",
-    "36-30": "900-315539900",
-    "36-31": "36-31",
-    "36-32": "36-32",
-    "36-33": "36-33",
-    "36-34": "36-34",
-    "36-35": "36-35",
-    "36-36": "900-3741745741",
-    "36-37": "900-2346185344",
-    "36-38": "36-38",
-    "36-39": "36-39",
-    "36-40": "900-2399866711",
-    "36-41": "36-41",
-    "36-42": "36-42",
-    "36-43": "36-43",
-    "36-44": "36-44",
-    "36-45": "36-45",
-    "36-46": "900-3562176626",
-    "36-47": "900-3432865602",
-    "36-48": "36-48",
-    "36-49": "36-49",
-    "36-50": "900-3656176254",
-    "36-51": "36-51",
-    "36-52": "36-52",
-    "36-53": "36-53",
-    "36-54": "36-54",
-    "36-55": "36-55",
-    "36-56": "900-1493979365",
-    "36-57": "900-1639394355",
-    "36-58": "36-58",
-    "36-59": "36-59",
-    "36-60": "900-3341991950",
-    "36-61": "36-61",
-    "36-62": "36-62",
-    "36-63": "36-63",
-    "36-64": "36-64",
-    "36-65": "36-65",
-    "36-66": "36-66",
-    "36-67": "900-728239404"
-  },
+  "curriculumRevision": 1205,
   "grammarTextOnlyLabel": "Text practice (no audio)"
 }

@@ -2,6 +2,7 @@
 from revise_grammar_curriculum import *
 import os
 from standard_third_person import normalize_row, lexicon_forms, PRONOUN
+from beginner_grammar_lessons import expand_guides
 
 saved_catalog = SRC/'grammar_pack_v3_catalog.json'
 PACK_REVISION = int(os.environ.get('GRAMMAR_PACK_REVISION', str(read(saved_catalog)['core']['version'] + 1 if saved_catalog.exists() else 1200)))
@@ -307,6 +308,11 @@ def normalize_guide(value):
 for lang in guides:
     for key in guides[lang]:
         if key!='7':guides[lang][key]=normalize_guide(guides[lang][key])
+
+guides=expand_guides(guides,
+    {k:[r['ne'] for r in rs] for k,rs in lessons.items()},
+    {k:[r['roman'] for r in rs] for k,rs in lessons.items()},
+    {lang:{k:[r[lang] for r in rs] for k,rs in lessons.items()} for lang in overlays})
 
 rows=[];audio_refs={}
 for k,items in lessons.items():
