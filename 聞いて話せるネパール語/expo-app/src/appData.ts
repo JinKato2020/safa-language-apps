@@ -10,12 +10,14 @@ export type NeAudioMaps = { conv: Record<string, number | string>; gram: Record<
 
 // core.json の形 (packLoader が取得して渡す)。
 export type NeCoreJson = {
+  curriculumRevision?: number;
   themes: any[];
   levels: any[];
   wordCategories: any[];
   grammarThemes: any[];
   examplesNe: Record<string, string[]>;
   grammarNe: Record<string, string[]>;
+  grammarAudioRefs?: Record<string, string | null>;
   wordsNe: Record<string, string[]>;
   jpReading?: any;
 };
@@ -33,6 +35,7 @@ export function makeNeCore(core: NeCoreJson = EMPTY_CORE, audio: NeAudioMaps = {
     grammarThemes: core.grammarThemes as any,
     examplesNe: core.examplesNe,
     grammarNe: core.grammarNe,
+    grammarAudioRefs: core.grammarAudioRefs,
     wordsNe: core.wordsNe,
     jpReading: core.jpReading,
     nepaliAudio: audio.conv,

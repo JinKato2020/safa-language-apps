@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "packs": [
+    {
+      "l1": "en",
+      "name": "English",
+      "nameJa": "English",
+      "version": 1200,
+      "access": "free",
+      "sizeBytes": 4911883,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/overlay-en.json",
+      "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/audio-en.zip",
+      "audioVersion": 1005,
+      "audioZipBytes": 34950134
+    },
+    {
+      "l1": "ja",
+      "name": "日本語",
+      "nameJa": "日本語",
+      "version": 1200,
+      "access": "free",
+      "sizeBytes": 5133497,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/overlay-ja.json",
+      "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/audio-ja.zip",
+      "audioVersion": 1006,
+      "audioZipBytes": 38802498
+    }
+  ],
+  "core": {
+    "audioVersion": 1005,
+    "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/audio-core.zip",
+    "audioZipBytes": 41140022,
+    "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/core.json",
+    "version": 1200
+  }
+}

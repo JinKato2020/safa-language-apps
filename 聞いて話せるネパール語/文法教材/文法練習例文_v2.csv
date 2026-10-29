@@ -1,44 +1,29 @@
-theme_no,theme_title,no,ne,roman,ja,en
+﻿theme_no,theme_title,no,ne,roman,ja,en
 1,हो：AはBだ（同定・断定）,1,म विद्यार्थी हुँ।,ma vidyārthī hũ,私は学生です,I am a student.
-1,हो：AはBだ（同定・断定）,2,तँ विद्यार्थी होइनस्।,tã vidyārthī hoinas,お前は学生ではありません,You are not a student.
-1,हो：AはBだ（同定・断定）,3,तिमी विद्यार्थी हौ।,timī vidyārthī hau,君は学生です,You are a student.
-1,हो：AはBだ（同定・断定）,4,तिमीहरू विद्यार्थी हौ।,timīharū vidyārthī hau,君たちは学生です,You are students.
-1,हो：AはBだ（同定・断定）,5,तपाईं विद्यार्थी हुनुहुन्छ।,tapāĩ vidyārthī hunuhuncha,あなたは学生です,You are a student.
-1,हो：AはBだ（同定・断定）,6,उ विद्यार्थी होइन।,u vidyārthī hoina,彼は学生ではありません,He is not a student.
-1,हो：AはBだ（同定・断定）,7,उनी विद्यार्थी हुन्।,unī vidyārthī hun,彼女は学生です,She is a student.
-1,हो：AはBだ（同定・断定）,8,उहाँ विद्यार्थी हुनुहुन्छ।,uhā̃ vidyārthī hunuhuncha,あの方は学生です,He is a student.
-1,हो：AはBだ（同定・断定）,9,हामी विद्यार्थी हौं।,hāmī vidyārthī haũ,私たちは学生です,We are students.
-1,हो：AはBだ（同定・断定）,10,उनीहरू विद्यार्थी होइनन्।,unīharū vidyārthī hoinan,彼らは学生ではありません,They are not students.
-1,हो：AはBだ（同定・断定）,11,यो सुन्तला हो।,yo suntalā ho,これはミカンです,This is an orange.
-1,हो：AはBだ（同定・断定）,12,त्यो किताब हो।,tyo kitāb ho,それは本です,That is a book.
-1,हो：AはBだ（同定・断定）,13,"यो कलम हो, पेन्सिल होइन।","yo kalam ho, pensil hoina",これはペンです、鉛筆ではありません,"This is a pen, not a pencil."
-1,हो：AはBだ（同定・断定）,14,के यो तपाईंको किताब हो?,ke yo tapāĩko kitāb ho?,これはあなたの本ですか？,Is this your book?
-1,हो：AはBだ（同定・断定）,15,के तिमी नेपाली हौ?,ke timī nepālī hau?,君はネパール人ですか？,Are you Nepali?
-1,हो：AはBだ（同定・断定）,16,उहाँ मेरो बुबा हुनुहुन्छ।,uhā̃ mero bubā hunuhuncha,あの方は私の父です,He is my father.
-1,हो：AはBだ（同定・断定）,17,उनी डाक्टर हुन्।,unī ḍākṭar hun,彼女は医者です,She is a doctor.
-1,हो：AはBだ（同定・断定）,18,म जापानी हुँ।,ma jāpānī hũ,私は日本人です,I am Japanese.
-1,हो：AはBだ（同定・断定）,19,त्यो मेरो झोला होइन।,tyo mero jholā hoina,それは私のかばんではありません,That is not my bag.
-1,हो：AはBだ（同定・断定）,20,तिमीहरू मेरा साथी हौ।,timīharū merā sāthī hau,君たちは私の友達です,You are my friends.
-2,छ：ある/いる（存在・所在・所有）,1,म घरमा छु।,ma gharmā chu,私は家にいます,I am at home.
-2,छ：ある/いる（存在・所在・所有）,2,तँ घरमा छैनस्।,tã gharmā chainas,お前は家にいません,You are not at home.
-2,छ：ある/いる（存在・所在・所有）,3,तिमी घरमा छौ?,timī gharmā chau?,君は家にいますか？,Are you at home?
-2,छ：ある/いる（存在・所在・所有）,4,तिमीहरू घरमा छौ।,timīharū gharmā chau,君たちは家にいます,You are at home.
-2,छ：ある/いる（存在・所在・所有）,5,तपाईं घरमा हुनुहुन्छ?,tapāĩ gharmā hunuhuncha?,あなたは家にいますか？,Are you at home?
-2,छ：ある/いる（存在・所在・所有）,6,उ घरमा छैन।,u gharmā chaina,彼は家にいません,He is not at home.
-2,छ：ある/いる（存在・所在・所有）,7,उनी घरमा छिन्।,unī gharmā chin,彼女は家にいます,She is at home.
-2,छ：ある/いる（存在・所在・所有）,8,उहाँ घरमा हुनुहुन्छ।,uhā̃ gharmā hunuhuncha,あの方は家にいます,He is at home.
-2,छ：ある/いる（存在・所在・所有）,9,हामी घरमा छौं।,hāmī gharmā chaũ,私たちは家にいます,We are at home.
-2,छ：ある/いる（存在・所在・所有）,10,उनीहरू घरमा छैनन्।,unīharū gharmā chainan,彼らは家にいません,They are not at home.
-2,छ：ある/いる（存在・所在・所有）,11,यहाँ किताब छ।,yahā̃ kitāb cha,ここに本があります,There is a book here.
-2,छ：ある/いる（存在・所在・所有）,12,त्यहाँ कापी छैन।,tyahā̃ kāpī chaina,そこにノートはありません,There is no notebook there.
-2,छ：ある/いる（存在・所在・所有）,13,शौचालय कहाँ छ?,śaucālaya kahā̃ cha?,トイレはどこですか？,Where is the toilet?
-2,छ：ある/いる（存在・所在・所有）,14,मसँग पैसा छैन।,masãga paisā chaina,私はお金を持っていません,I do not have any money.
-2,छ：ある/いる（存在・所在・所有）,15,तपाईंसँग कलम छ?,tapāĩsãga kalam cha?,ペンを持っていますか？,Do you have a pen?
-2,छ：ある/いる（存在・所在・所有）,16,उससँग साइकल छ।,ussãga sāikal cha,彼は自転車を持っています,He has a bicycle.
-2,छ：ある/いる（存在・所在・所有）,17,हामीसँग समय छ।,hāmīsãga samay cha,私たちには時間があります,We have time.
-2,छ：ある/いる（存在・所在・所有）,18,टेबलमा पानी छ।,ṭebalmā pānī cha,机に水があります,There is water on the table.
-2,छ：ある/いる（存在・所在・所有）,19,तिमीहरू कहाँ छौ?,timīharū kahā̃ chau?,君たちはどこにいますか？,Where are you?
-2,छ：ある/いる（存在・所在・所有）,20,उहाँ यहाँ हुनुहुन्न।,uhā̃ yahā̃ hunuhunna,あの方はここにいらっしゃいません,He is not here.
+1,हो：AはBだ（同定・断定）,2,तपाईं विद्यार्थी हुनुहुन्छ।,tapāĩ vidyārthī hunuhuncha,あなたは学生です,You are a student.
+1,हो：AはBだ（同定・断定）,3,उनी विद्यार्थी हुन्।,unī vidyārthī hun,彼女は学生です,She is a student.
+1,हो：AはBだ（同定・断定）,4,हामी विद्यार्थी हौं।,hāmī vidyārthī haũ,私たちは学生です,We are students.
+1,हो：AはBだ（同定・断定）,5,उनीहरू विद्यार्थी होइनन्।,unīharū vidyārthī hoinan,彼らは学生ではありません,They are not students.
+1,हो：AはBだ（同定・断定）,6,यो सुन्तला हो।,yo suntalā ho,これはミカンです,This is an orange.
+1,हो：AはBだ（同定・断定）,7,त्यो किताब हो।,tyo kitāb ho,それは本です,That is a book.
+1,हो：AはBだ（同定・断定）,8,"यो कलम हो, पेन्सिल होइन।","yo kalam ho, pensil hoina",これはペンです、鉛筆ではありません,"This is a pen, not a pencil."
+1,हो：AはBだ（同定・断定）,9,के यो तपाईंको किताब हो?,ke yo tapāĩko kitāb ho?,これはあなたの本ですか？,Is this your book?
+1,हो：AはBだ（同定・断定）,10,उनी डाक्टर हुन्।,unī ḍākṭar hun,彼女は医者です,She is a doctor.
+1,हो：AはBだ（同定・断定）,11,म जापानी हुँ।,ma jāpānī hũ,私は日本人です,I am Japanese.
+1,हो：AはBだ（同定・断定）,12,त्यो मेरो झोला होइन।,tyo mero jholā hoina,それは私のかばんではありません,That is not my bag.
+1,हो：AはBだ（同定・断定）,13,तपाईंहरू शिक्षक हुनुहुन्छ।,tapāĩharū śikṣak hunuhuncha,あなたたちは先生です,You are teachers.
+2,छ：ある・いる（存在と居場所）,1,म घरमा छु।,ma gharmā chu,私は家にいます,I am at home.
+2,छ：ある・いる（存在と居場所）,2,तपाईं घरमा हुनुहुन्छ?,tapāĩ gharmā hunuhuncha?,あなたは家にいますか？,Are you at home?
+2,छ：ある・いる（存在と居場所）,3,उनी घरमा छिन्।,unī gharmā chin,彼女は家にいます,She is at home.
+2,छ：ある・いる（存在と居場所）,4,हामी घरमा छौं।,hāmī gharmā chaũ,私たちは家にいます,We are at home.
+2,छ：ある・いる（存在と居場所）,5,उनीहरू घरमा छैनन्।,unīharū gharmā chainan,彼らは家にいません,They are not at home.
+2,छ：ある・いる（存在と居場所）,6,यहाँ किताब छ।,yahā̃ kitāb cha,ここに本があります,There is a book here.
+2,छ：ある・いる（存在と居場所）,7,त्यहाँ कापी छैन।,tyahā̃ kāpī chaina,そこにノートはありません,There is no notebook there.
+2,छ：ある・いる（存在と居場所）,8,शौचालय कहाँ छ?,śaucālaya kahā̃ cha?,トイレはどこですか？,Where is the toilet?
+2,छ：ある・いる（存在と居場所）,9,टेबलमा पानी छ।,ṭebalmā pānī cha,机に水があります,There is water on the table.
+2,छ：ある・いる（存在と居場所）,10,तपाईंहरू कहाँ हुनुहुन्छ?,tapāĩharū kahā̃ hunuhuncha?,あなたたちはどこにいますか？,Where are you?
+2,छ：ある・いる（存在と居場所）,11,कोठामा कुर्सी छैन।,koṭhāmā kursī chaina,部屋に椅子はありません,There is no chair in the room.
+2,छ：ある・いる（存在と居場所）,12,उनीहरू विद्यालयमा छन्।,unīharū vidyālayamā chan,彼らは学校にいます,They are at school.
 3,छ：〜だ（形容詞・状態）,1,यो फूल सुन्दर छ।,yo phūl sundar cha,この花は美しいです,This flower is beautiful.
 3,छ：〜だ（形容詞・状態）,2,त्यो किताब पुरानो छ।,tyo kitāb purāno cha,その本は古いです,That book is old.
 3,छ：〜だ（形容詞・状態）,3,यो खाना पिरो छैन।,yo khānā piro chaina,この料理は辛くありません,This food is not spicy.
@@ -46,14 +31,10 @@ theme_no,theme_title,no,ne,roman,ja,en
 3,छ：〜だ（形容詞・状態）,5,आज गर्मी छ।,āja garmī cha,今日は暑いです,It is hot today.
 3,छ：〜だ（形容詞・状態）,6,यो घर सानो छैन।,yo ghar sāno chaina,この家は小さくありません,This house is not small.
 3,छ：〜だ（形容詞・状態）,7,म व्यस्त छु।,ma vyasta chu,私は忙しいです,I am busy.
-3,छ：〜だ（形容詞・状態）,8,तँ खुसी छस्?,tã khusī chas?,お前はうれしい？,Are you happy?
-3,छ：〜だ（形容詞・状態）,9,तिमी तयार छौ?,timī tayār chau?,君は準備ができていますか？,Are you ready?
-3,छ：〜だ（形容詞・状態）,10,तिमीहरू व्यस्त छैनौ।,timīharū vyasta chainau,君たちは忙しくありません,You are not busy.
-3,छ：〜だ（形容詞・状態）,11,तपाईं सन्चै हुनुहुन्छ?,tapāĩ sancai hunuhuncha?,お元気ですか？,Are you well?
-3,छ：〜だ（形容詞・状態）,12,उ खुसी छैन।,u khusī chaina,彼はうれしくありません,He is not happy.
-3,छ：〜だ（形容詞・状態）,13,उनी तयार छिन्।,unī tayār chin,彼女は準備ができています,She is ready.
-3,छ：〜だ（形容詞・状態）,14,हामी तयार छौं।,hāmī tayār chaũ,私たちは準備ができています,We are ready.
-3,छ：〜だ（形容詞・状態）,15,उनीहरू व्यस्त छन्।,unīharū vyasta chan,彼らは忙しいです,They are busy.
+3,छ：〜だ（形容詞・状態）,8,तपाईं सन्चै हुनुहुन्छ?,tapāĩ sancai hunuhuncha?,お元気ですか？,Are you well?
+3,छ：〜だ（形容詞・状態）,9,उनी तयार छिन्।,unī tayār chin,彼女は準備ができています,She is ready.
+3,छ：〜だ（形容詞・状態）,10,उनीहरू व्यस्त छन्।,unīharū vyasta chan,彼らは忙しいです,They are busy.
+3,छ：〜だ（形容詞・状態）,11,हामी थाकेका छौं।,hāmī thākekā chaũ,私たちは疲れています,We are tired.
 4,हुन्छ：〜になる／一般に〜（習慣・変化）,1,जाडोमा चिसो हुन्छ।,jāḍomā ciso huncha,冬は寒くなります,It gets cold in winter.
 4,हुन्छ：〜になる／一般に〜（習慣・変化）,2,गर्मीमा दिन लामो हुन्छ।,garmīmā din lāmo huncha,夏は日が長くなります,The days get long in summer.
 4,हुन्छ：〜になる／一般に〜（習慣・変化）,3,यहाँ बिहान शान्त हुन्छ।,yahā̃ bihān śānta huncha,ここは朝は静かです,It is quiet here in the morning.
@@ -65,240 +46,132 @@ theme_no,theme_title,no,ne,roman,ja,en
 4,हुन्छ：〜になる／一般に〜（習慣・変化）,9,चाँडै रात हुन्छ।,cā̃ḍai rāt huncha,もうすぐ夜になります,It will be night soon.
 4,हुन्छ：〜になる／一般に〜（習慣・変化）,10,पानी चिसो भयो।,pānī ciso bhayo,水が冷たくなりました,The water got cold.
 4,हुन्छ：〜になる／一般に〜（習慣・変化）,11,आज ढिलो भयो।,āja ḍhilo bhayo,今日は遅くなりました,It got late today.
-4,हुन्छ：〜になる／一般に〜（習慣・変化）,12,किन यस्तो भयो?,kina yasto bhayo?,なぜこうなったのですか？,Why did this happen?
-4,हुन्छ：〜になる／一般に〜（習慣・変化）,13,उ डाक्टर बन्यो।,u ḍākṭar banyo,彼は医者になりました,He became a doctor.
-4,हुन्छ：〜になる／一般に〜（習慣・変化）,14,उहाँ शिक्षक बन्नुभयो।,uhā̃ śikṣak bannubhayo,あの方は先生になりました,He became a teacher.
-4,हुन्छ：〜になる／一般に〜（習慣・変化）,15,तिमी भविष्यमा के बन्छौ?,timī bhaviṣyamā ke banchau?,君は将来何になりますか？,What will you become in the future?
-5,後置詞＝てにをは,1,यो मेरो किताब हो।,yo mero kitāb ho,これは私の本です,This is my book.
-5,後置詞＝てにをは,2,तिम्रो घर कहाँ छ?,timro ghar kahā̃ cha?,君の家はどこにありますか？,Where is your house?
-5,後置詞＝てにをは,3,उहाँको नाम के हो?,uhā̃ko nām ke ho?,あの方の名前は何ですか？,What is his name?
-5,後置詞＝てにをは,4,हाम्रो स्कूल यहाँ छ।,hāmro skūl yahā̃ cha,私たちの学校はここにあります,Our school is here.
-5,後置詞＝てにをは,5,म घरमा बस्छु।,ma gharmā baschu,私は家に住んでいます,I live in a house.
-5,後置詞＝てにをは,6,उ स्कूलमा छैन।,u skūlmā chaina,彼は学校にいません,He is not at school.
-5,後置詞＝てにをは,7,तिमीहरू कहाँबाट आयौ?,timīharū kahā̃bāṭa āyau?,君たちはどこから来ましたか？,Where did you come from?
-5,後置詞＝てにをは,8,म नेपालबाट आएँ।,ma nepālbāṭa āẽ,私はネパールから来ました,I came from Nepal.
-5,後置詞＝てにをは,9,हामी साथीहरूसँग जान्छौं।,hāmī sāthīharūsãga jānchaũ,私たちは友達と一緒に行きます,We go with our friends.
-5,後置詞＝てにをは,10,तपाईं कोसँग बस्नुहुन्छ?,tapāĩ kosãga basnuhuncha?,誰と住んでいますか？,Who do you live with?
-5,後置詞＝てにをは,11,उनले मलाई पानी दिइन्।,unle malāī pānī diin,彼女は私に水をくれました,She gave me water.
-5,後置詞＝てにをは,12,तँ उसलाई बोलाऊ।,tã uslāī bolāū,お前、彼を呼んで,Call him.
-5,後置詞＝てにをは,13,म कलमले लेख्छु।,ma kalamle lekhchu,私はペンで書きます,I write with a pen.
-5,後置詞＝てにをは,14,यो बस काठमाडौं जान्छ।,yo bas kāṭhmāḍaũ jāncha,このバスはカトマンズに行きます,This bus goes to Kathmandu.
-5,後置詞＝てにをは,15,तपाईंको झोला टेबलमा छैन।,tapāĩko jholā ṭebalmā chaina,あなたのかばんは机にありません,Your bag is not on the table.
-6,疑問詞,1,यो के हो?,yo ke ho?,これは何ですか？,What is this?
-6,疑問詞,2,त्यो कसको किताब हो?,tyo kasko kitāb ho?,それは誰の本ですか？,Whose book is that?
-6,疑問詞,3,तपाईं कहाँ बस्नुहुन्छ?,tapāĩ kahā̃ basnuhuncha?,どこに住んでいますか？,Where do you live?
-6,疑問詞,4,तिमी कहिले आउँछौ?,timī kahile āũchau?,君はいつ来ますか？,When will you come?
-6,疑問詞,5,यो कति पर्छ?,yo kati parcha?,これはいくらですか？,How much does this cost?
-6,疑問詞,6,उ किन आएन?,u kina āena?,彼はなぜ来なかったのですか？,Why did he not come?
-6,疑問詞,7,तँ के गर्छस्?,tã ke garchas?,お前は何をするの？,What do you do?
-6,疑問詞,8,तिमीहरू कसरी जान्छौ?,timīharū kasarī jānchau?,君たちはどうやって行きますか？,How will you go?
-6,疑問詞,9,उहाँ को हुनुहुन्छ?,uhā̃ ko hunuhuncha?,あの方はどなたですか？,Who is he?
-6,疑問詞,10,यहाँ को छ?,yahā̃ ko cha?,ここには誰がいますか？,Who is here?
-6,疑問詞,11,कसले खाना पकायो?,kasle khānā pakāyo?,誰が料理を作りましたか？,Who cooked the food?
-6,疑問詞,12,तिमीले कसलाई भेट्यौ?,timīle kaslāī bheṭyau?,君は誰に会いましたか？,Who did you meet?
-6,疑問詞,13,तपाईंलाई के चाहिन्छ?,tapāĩlāī ke cāhincha?,何が必要ですか？,What do you need?
-6,疑問詞,14,हामी कहाँ बसौं?,hāmī kahā̃ basaũ?,私たちはどこに座りましょうか？,Where shall we sit?
-6,疑問詞,15,उनी किन बोल्दिनन्?,unī kina boldinan?,彼女はなぜ話さないのですか？,Why does she not speak?
-7,人称と敬語（ていねいさの3段階）,1,म काम गर्छु।,ma kām garchu,私は働きます,I work.
-7,人称と敬語（ていねいさの3段階）,2,तँ काम गर्छस्।,tã kām garchas,お前は働きます,You work.
-7,人称と敬語（ていねいさの3段階）,3,तिमी काम गर्छौ।,timī kām garchau,君は働きます,You work.
-7,人称と敬語（ていねいさの3段階）,4,तिमीहरू काम गर्छौ।,timīharū kām garchau,君たちは働きます,You work.
-7,人称と敬語（ていねいさの3段階）,5,तपाईं काम गर्नुहुन्छ।,tapāĩ kām garnuhuncha,あなたは働きます,You work.
-7,人称と敬語（ていねいさの3段階）,6,उ काम गर्छ।,u kām garcha,彼は働きます,He works.
-7,人称と敬語（ていねいさの3段階）,7,उनी काम गर्छिन्।,unī kām garchin,彼女は働きます,She works.
-7,人称と敬語（ていねいさの3段階）,8,उहाँ काम गर्नुहुन्छ।,uhā̃ kām garnuhuncha,あの方は働きます,He works.
-7,人称と敬語（ていねいさの3段階）,9,हामी काम गर्छौं।,hāmī kām garchaũ,私たちは働きます,We work.
-7,人称と敬語（ていねいさの3段階）,10,उनीहरू काम गर्छन्।,unīharū kām garchan,彼らは働きます,They work.
-7,人称と敬語（ていねいさの3段階）,11,म हरेक दिन व्यायाम गर्छु।,ma harek din vyāyām garchu,私は毎日運動します,I exercise every day.
-7,人称と敬語（ていねいさの3段階）,12,तिमी हरेक दिन व्यायाम गर्छौ?,timī harek din vyāyām garchau?,君は毎日運動しますか？,Do you exercise every day?
-7,人称と敬語（ていねいさの3段階）,13,तपाईं हरेक दिन व्यायाम गर्नुहुन्छ?,tapāĩ harek din vyāyām garnuhuncha?,あなたは毎日運動しますか？,Do you exercise every day?
-7,人称と敬語（ていねいさの3段階）,14,उनी हरेक दिन व्यायाम गर्छिन्।,unī harek din vyāyām garchin,彼女は毎日運動します,She exercises every day.
-7,人称と敬語（ていねいさの3段階）,15,हामी हरेक दिन व्यायाम गर्छौं।,hāmī harek din vyāyām garchaũ,私たちは毎日運動します,We exercise every day.
-7,人称と敬語（ていねいさの3段階）,16,तँ मेरो साथी होस्।,tã mero sāthī hos,お前は俺の友達だ,You are my friend.
-7,人称と敬語（ていねいさの3段階）,17,तिमी कहाँ छौ?,timī kahā̃ chau?,君はどこにいるの？,Where are you?
-7,人称と敬語（ていねいさの3段階）,18,तपाईं कहाँ हुनुहुन्छ?,tapāĩ kahā̃ hunuhuncha?,あなたはどこにいらっしゃいますか？,Where are you?
-7,人称と敬語（ていねいさの3段階）,19,उहाँ मेरो शिक्षक हुनुहुन्छ।,uhā̃ mero śikṣak hunuhuncha,あの方は私の先生です,He is my teacher.
-7,人称と敬語（ていねいさの3段階）,20,तिमीहरू तयार छैनौ?,timīharū tayār chainau?,君たちはまだ準備ができていないの？,Are you not ready?
+4,हुन्छ：〜になる／一般に〜（習慣・変化）,12,पानी तातो भयो।,pānī tāto bhayo,水がお湯になりました,The water became hot.
+5,場所・相手・関係を表す言葉（後置詞）,1,म घरमा बस्छु।,ma gharmā baschu,私は家に住んでいます,I live in a house.
+5,場所・相手・関係を表す言葉（後置詞）,2,म नेपालबाट आएँ।,ma nepālbāṭa āẽ,私はネパールから来ました,I came from Nepal.
+5,場所・相手・関係を表す言葉（後置詞）,3,हामी साथीहरूसँग जान्छौं।,hāmī sāthīharūsãga jānchaũ,私たちは友達と一緒に行きます,We go with our friends.
+5,場所・相手・関係を表す言葉（後置詞）,4,तपाईं कोसँग बस्नुहुन्छ?,tapāĩ kosãga basnuhuncha?,誰と住んでいますか？,Who do you live with?
+5,場所・相手・関係を表す言葉（後置詞）,5,म कलमले लेख्छु।,ma kalamle lekhchu,私はペンで書きます,I write with a pen.
+5,場所・相手・関係を表す言葉（後置詞）,6,तपाईंको झोला टेबलमा छैन।,tapāĩko jholā ṭebalmā chaina,あなたのかばんは机にありません,Your bag is not on the table.
+5,場所・相手・関係を表す言葉（後置詞）,7,मसँग पैसा छैन।,masãga paisā chaina,私はお金を持っていません,I do not have any money.
+5,場所・相手・関係を表す言葉（後置詞）,8,तपाईंसँग कलम छ?,tapāĩsãga kalam cha?,ペンを持っていますか？,Do you have a pen?
+5,場所・相手・関係を表す言葉（後置詞）,9,हामीसँग समय छ।,hāmīsãga samay cha,私たちには時間があります,We have time.
+5,場所・相手・関係を表す言葉（後置詞）,10,म घरबाट विद्यालयसम्म हिँड्छु।,ma gharbāṭa vidyālayasamma hiṇḍchu,私は家から学校まで歩きます,I walk from home to school.
+5,場所・相手・関係を表す言葉（後置詞）,11,म बिहानदेखि यहाँ छु।,ma bihāndekhi yahā̃ chu,私は朝からここにいます,I have been here since morning.
+5,場所・相手・関係を表す言葉（後置詞）,12,पसल पाँच बजेसम्म खुला छ।,pasal pā̃c bajesamma khulā cha,店は5時まで開いています,The shop is open until five.
+5,場所・相手・関係を表す言葉（後置詞）,13,उनी बजारतिर जान्छिन्।,unī bajārtira jānchin,彼女は市場の方へ行きます,She goes towards the market.
+5,場所・相手・関係を表す言葉（後置詞）,14,किताब झोलाभित्र छ।,kitāb jholābhitra cha,本はかばんの中にあります,The book is inside the bag.
+5,場所・相手・関係を表す言葉（後置詞）,15,घरको अगाडि बगैंचा छ।,gharko agāḍi bagaĩcā cha,家の前に庭があります,There is a garden in front of the house.
+5,場所・相手・関係を表す言葉（後置詞）,16,म साथीलाई पानी दिन्छु।,ma sāthīlāī pānī dinchu,私は友達に水をあげます,I give water to a friend.
+5,場所・相手・関係を表す言葉（後置詞）,17,यो रामको किताब हो।,yo rāmko kitāb ho,これはラムの本です,This is Ram's book.
+5,場所・相手・関係を表す言葉（後置詞）,18,उनी चिनीबिना चिया पिउँछिन्।,unī cinībinā ciyā piũchin,彼女は砂糖なしでお茶を飲みます,She drinks tea without sugar.
+5,場所・相手・関係を表す言葉（後置詞）,19,आजबाहेक म सधैं यहाँ आउँछु।,ājabāhek ma sadhaĩ yahā̃ āũchu,今日以外は、私はいつもここに来ます,"Except today, I always come here."
+6,疑問詞と質問の作り方,1,यो के हो?,yo ke ho?,これは何ですか？,What is this?
+6,疑問詞と質問の作り方,2,त्यो कसको किताब हो?,tyo kasko kitāb ho?,それは誰の本ですか？,Whose book is that?
+6,疑問詞と質問の作り方,3,तपाईं कहाँ बस्नुहुन्छ?,tapāĩ kahā̃ basnuhuncha?,どこに住んでいますか？,Where do you live?
+6,疑問詞と質問の作り方,4,यो कति पर्छ?,yo kati parcha?,これはいくらですか？,How much does this cost?
+6,疑問詞と質問の作り方,5,यहाँ को छ?,yahā̃ ko cha?,ここには誰がいますか？,Who is here?
+6,疑問詞と質問の作り方,6,कसले खाना पकायो?,kasle khānā pakāyo?,誰が料理を作りましたか？,Who cooked the food?
+6,疑問詞と質問の作り方,7,तपाईंलाई के चाहिन्छ?,tapāĩlāī ke cāhincha?,何が必要ですか？,What do you need?
+6,疑問詞と質問の作り方,8,तपाईं कहिले आउनुहुन्छ?,tapāĩ kahile āunuhuncha?,あなたはいつ来ますか？,When will you come?
+6,疑問詞と質問の作り方,9,तपाईं कसरी जानुहुन्छ?,tapāĩ kasarī jānuhuncha?,あなたはどうやって行きますか？,How will you go?
+6,疑問詞と質問の作り方,10,तपाईं कुन किताब पढ्नुहुन्छ?,tapāĩ kun kitāb paḍhnuhuncha?,あなたはどの本を読みますか？,Which book will you read?
+6,疑問詞と質問の作り方,11,यो खाना कस्तो छ?,yo khānā kasto cha?,この料理はどんな味ですか？,What is this food like?
+6,疑問詞と質問の作り方,12,कति जना आउनुहुन्छ?,kati janā āunuhuncha?,何人いらっしゃいますか？,How many people are coming?
+6,疑問詞と質問の作り方,13,तपाईंसँग कति वटा कलम छन्?,tapāĩsãga kati vaṭā kalam chan?,あなたはペンを何本持っていますか？,How many pens do you have?
+6,疑問詞と質問の作り方,14,अहिले कति बज्यो?,ahile kati bajyo?,今何時ですか？,What time is it now?
+6,疑問詞と質問の作り方,15,तपाईं कति बजे जानुहुन्छ?,tapāĩ kati baje jānuhuncha?,あなたは何時に行きますか？,At what time will you go?
+6,疑問詞と質問の作り方,16,तपाईं कहाँबाट आउनुभयो?,tapāĩ kahā̃bāṭa āunubhayo?,あなたはどこから来ましたか？,Where did you come from?
+6,疑問詞と質問の作り方,17,तपाईं कोसँग बस्नुहुन्छ?,tapāĩ kosãga basnuhuncha?,あなたは誰と住んでいますか？,Who do you live with?
+6,疑問詞と質問の作り方,18,तपाईं किन पर्खनुहुन्छ?,tapāĩ kina parkhanuhuncha?,あなたはなぜ待つのですか？,Why are you waiting?
+6,疑問詞と質問の作り方,19,तपाईं कति दिन बस्नुहुन्छ?,tapāĩ kati din basnuhuncha?,あなたは何日滞在しますか？,How many days will you stay?
+6,疑問詞と質問の作り方,20,तपाईं कसलाई फोन गर्नुहुन्छ?,tapāĩ kaslāī phon garnuhuncha?,あなたは誰に電話しますか？,Who will you call?
+6,疑問詞と質問の作り方,21,तपाईं कता जानुहुन्छ?,tapāĩ katā jānuhuncha?,あなたはどちらへ行きますか？,Which way are you going?
+7,人称・親しさ・敬意と動詞の形,1,म काम गर्छु।,ma kām garchu,私は働きます,I work.
+7,人称・親しさ・敬意と動詞の形,2,तँ काम गर्छस्।,tã kām garchas,お前は働きます,You work.
+7,人称・親しさ・敬意と動詞の形,3,तिमी काम गर्छौ।,timī kām garchau,君は働きます,You work.
+7,人称・親しさ・敬意と動詞の形,4,तपाईं काम गर्नुहुन्छ।,tapāĩ kām garnuhuncha,あなたは働きます,You work.
+7,人称・親しさ・敬意と動詞の形,5,उ काम गर्छ।,u kām garcha,彼は働きます,He works.
+7,人称・親しさ・敬意と動詞の形,6,उनी काम गर्छिन्।,unī kām garchin,彼女は働きます,She works.
+7,人称・親しさ・敬意と動詞の形,7,उहाँ काम गर्नुहुन्छ।,uhā̃ kām garnuhuncha,あの方は働きます,He works.
+7,人称・親しさ・敬意と動詞の形,8,हामी काम गर्छौं।,hāmī kām garchaũ,私たちは働きます,We work.
+7,人称・親しさ・敬意と動詞の形,9,उनीहरू काम गर्छन्।,unīharū kām garchan,彼らは働きます,They work.
+7,人称・親しさ・敬意と動詞の形,10,तँ मेरो साथी होस्।,tã mero sāthī hos,お前は俺の友達だ,You are my friend.
+7,人称・親しさ・敬意と動詞の形,11,तिमी कहाँ छौ?,timī kahā̃ chau?,君はどこにいるの？,Where are you?
+7,人称・親しさ・敬意と動詞の形,12,तपाईं कहाँ हुनुहुन्छ?,tapāĩ kahā̃ hunuhuncha?,あなたはどこにいらっしゃいますか？,Where are you?
+7,人称・親しさ・敬意と動詞の形,13,उहाँ मेरो शिक्षक हुनुहुन्छ।,uhā̃ mero śikṣak hunuhuncha,あの方は私の先生です,He is my teacher.
+7,人称・親しさ・敬意と動詞の形,14,तिमीहरू तयार छैनौ?,timīharū tayār chainau?,君たちはまだ準備ができていないの？,Are you not ready?
+7,人称・親しさ・敬意と動詞の形,15,उ यहाँ छ।,u yahā̃ cha,その人はここにいます（低い敬意）,That person is here (low respect).
+7,人称・親しさ・敬意と動詞の形,16,उनी यहाँ छन्।,unī yahā̃ chan,その人はここにいます（中程度の敬意）,That person is here (medium respect).
+7,人称・親しさ・敬意と動詞の形,17,उहाँ यहाँ हुनुहुन्छ।,uhā̃ yahā̃ hunuhuncha,あの方はここにいらっしゃいます（高い敬意）,That person is here (high respect).
 8,動作動詞の現在（〜する）,1,म काम गर्छु।,ma kām garchu,私は働きます,I work.
-8,動作動詞の現在（〜する）,2,तँ काम गर्छस्।,tã kām garchas,お前は働きます,You work.
-8,動作動詞の現在（〜する）,3,तिमी काम गर्छौ।,timī kām garchau,君は働きます,You work.
-8,動作動詞の現在（〜する）,4,तिमीहरू काम गर्छौ।,timīharū kām garchau,君たちは働きます,You work.
-8,動作動詞の現在（〜する）,5,तपाईं काम गर्नुहुन्छ।,tapāĩ kām garnuhuncha,あなたは働きます,You work.
-8,動作動詞の現在（〜する）,6,उ काम गर्छ।,u kām garcha,彼は働きます,He works.
-8,動作動詞の現在（〜する）,7,उनी काम गर्छिन्।,unī kām garchin,彼女は働きます,She works.
-8,動作動詞の現在（〜する）,8,उहाँ काम गर्नुहुन्छ।,uhā̃ kām garnuhuncha,あの方は働きます,He works.
-8,動作動詞の現在（〜する）,9,हामी काम गर्छौं।,hāmī kām garchaũ,私たちは働きます,We work.
-8,動作動詞の現在（〜する）,10,उनीहरू काम गर्छन्।,unīharū kām garchan,彼らは働きます,They work.
-8,動作動詞の現在（〜する）,11,म हरेक दिन व्यायाम गर्छु।,ma harek din vyāyām garchu,私は毎日運動します,I exercise every day.
-8,動作動詞の現在（〜する）,12,तिमी हरेक दिन व्यायाम गर्छौ?,timī harek din vyāyām garchau?,君は毎日運動しますか？,Do you exercise every day?
-8,動作動詞の現在（〜する）,13,तपाईं हरेक दिन व्यायाम गर्नुहुन्छ?,tapāĩ harek din vyāyām garnuhuncha?,あなたは毎日運動しますか？,Do you exercise every day?
-8,動作動詞の現在（〜する）,14,उनी हरेक दिन व्यायाम गर्छिन्।,unī harek din vyāyām garchin,彼女は毎日運動します,She exercises every day.
-8,動作動詞の現在（〜する）,15,हामी हरेक दिन व्यायाम गर्छौं।,hāmī harek din vyāyām garchaũ,私たちは毎日運動します,We exercise every day.
-8,動作動詞の現在（〜する）,16,म बिहान सात बजे उठ्छु।,ma bihān sāt baje uṭhchu,私は朝7時に起きます,I get up at seven in the morning.
-8,動作動詞の現在（〜する）,17,तपाईं नेपाली बोल्नुहुन्छ?,tapāĩ nepālī bolnuhuncha?,あなたはネパール語を話しますか？,Do you speak Nepali?
-8,動作動詞の現在（〜する）,18,उ पानी पिउँछ।,u pānī piũcha,彼は水を飲みます,He drinks water.
-8,動作動詞の現在（〜する）,19,उनी किताब पढ्छिन्।,unī kitāb paḍhchin,彼女は本を読みます,She reads books.
-8,動作動詞の現在（〜する）,20,हामी घरमा खाना खान्छौं।,hāmī gharmā khānā khānchaũ,私たちは家でご飯を食べます,We eat at home.
+8,動作動詞の現在（〜する）,2,तपाईं हरेक दिन व्यायाम गर्नुहुन्छ?,tapāĩ harek din vyāyām garnuhuncha?,あなたは毎日運動しますか？,Do you exercise every day?
+8,動作動詞の現在（〜する）,3,म बिहान सात बजे उठ्छु।,ma bihān sāt baje uṭhchu,私は朝7時に起きます,I get up at seven in the morning.
+8,動作動詞の現在（〜する）,4,तपाईं नेपाली बोल्नुहुन्छ?,tapāĩ nepālī bolnuhuncha?,あなたはネパール語を話しますか？,Do you speak Nepali?
+8,動作動詞の現在（〜する）,5,उनी किताब पढ्छिन्।,unī kitāb paḍhchin,彼女は本を読みます,She reads books.
+8,動作動詞の現在（〜する）,6,हामी घरमा खाना खान्छौं।,hāmī gharmā khānā khānchaũ,私たちは家でご飯を食べます,We eat at home.
+8,動作動詞の現在（〜する）,7,म बिहान चिया पिउँछु।,ma bihān ciyā piũchu,私は朝お茶を飲みます,I drink tea in the morning.
+8,動作動詞の現在（〜する）,8,हामी बजारमा तरकारी किन्छौं।,hāmī bajārmā tarkārī kinchaũ,私たちは市場で野菜を買います,We buy vegetables at the market.
+8,動作動詞の現在（〜する）,9,तपाईंहरू कहाँ काम गर्नुहुन्छ?,tapāĩharū kahā̃ kām garnuhuncha?,あなたたちはどこで働きますか？,Where do you work?
 9,現在の否定（〜しない）,1,म आज काम गर्दिनँ।,ma āja kām gardinã,私は今日は働きません,I do not work today.
-9,現在の否定（〜しない）,2,तँ आज काम गर्दैनस्।,tã āja kām gardainas,お前は今日は働きません,You do not work today.
-9,現在の否定（〜しない）,3,तिमी आज काम गर्दैनौ।,timī āja kām gardainau,君は今日は働きません,You do not work today.
-9,現在の否定（〜しない）,4,तिमीहरू आज काम गर्दैनौ।,timīharū āja kām gardainau,君たちは今日は働きません,You do not work today.
-9,現在の否定（〜しない）,5,तपाईं आज काम गर्नुहुन्न।,tapāĩ āja kām garnuhunna,あなたは今日は働きません,You do not work today.
-9,現在の否定（〜しない）,6,उ आज काम गर्दैन।,u āja kām gardaina,彼は今日は働きません,He does not work today.
-9,現在の否定（〜しない）,7,उनी आज काम गर्दिनन्।,unī āja kām gardinan,彼女は今日は働きません,She does not work today.
-9,現在の否定（〜しない）,8,उहाँ आज काम गर्नुहुन्न।,uhā̃ āja kām garnuhunna,あの方は今日は働きません,He does not work today.
-9,現在の否定（〜しない）,9,हामी आज काम गर्दैनौं।,hāmī āja kām gardainaũ,私たちは今日は働きません,We do not work today.
-9,現在の否定（〜しない）,10,उनीहरू आज काम गर्दैनन्।,unīharū āja kām gardainan,彼らは今日は働きません,They do not work today.
-9,現在の否定（〜しない）,11,म राति काम गर्दिनँ।,ma rāti kām gardinã,私は夜は働きません,I do not work at night.
-9,現在の否定（〜しない）,12,तिमी राति काम गर्दैनौ?,timī rāti kām gardainau?,君は夜は働かないのですか？,Do you not work at night?
-9,現在の否定（〜しない）,13,तपाईं राति काम गर्नुहुन्न?,tapāĩ rāti kām garnuhunna?,あなたは夜は働かないのですか？,Do you not work at night?
-9,現在の否定（〜しない）,14,उनी राति काम गर्दिनन्।,unī rāti kām gardinan,彼女は夜は働きません,She does not work at night.
-9,現在の否定（〜しない）,15,हामी राति काम गर्दैनौं।,hāmī rāti kām gardainaũ,私たちは夜は働きません,We do not work at night.
-9,現在の否定（〜しない）,16,म चिट्ठी लेख्दिनँ।,ma ciṭṭhī lekhdinã,私は手紙を書きません,I do not write letters.
-9,現在の否定（〜しない）,17,उ अंग्रेजी बोल्दैन।,u aṅgrejī boldaina,彼は英語を話しません,He does not speak English.
-9,現在の否定（〜しない）,18,उहाँ कफी पिउनुहुन्न।,uhā̃ kaphī piunuhunna,あの方はコーヒーを飲みません,He does not drink coffee.
-9,現在の否定（〜しない）,19,तिमी मासु खाँदैनौ?,timī māsu khā̃dainau?,君は肉を食べないのですか？,Do you not eat meat?
-9,現在の否定（〜しない）,20,हामी आइतबार स्कूल जाँदैनौं।,hāmī āitabār skūl jā̃dainaũ,私たちは日曜日には学校へ行きません,We do not go to school on Sundays.
+9,現在の否定（〜しない）,2,तपाईं राति काम गर्नुहुन्न?,tapāĩ rāti kām garnuhunna?,あなたは夜は働かないのですか？,Do you not work at night?
+9,現在の否定（〜しない）,3,म चिट्ठी लेख्दिनँ।,ma ciṭṭhī lekhdinã,私は手紙を書きません,I do not write letters.
+9,現在の否定（〜しない）,4,हामी आइतबार स्कूल जाँदैनौं।,hāmī āitabār skūl jā̃dainaũ,私たちは日曜日には学校へ行きません,We do not go to school on Sundays.
+9,現在の否定（〜しない）,5,उनी मासु खाँदिनन्।,unī māsu khā̃dinan,彼女は肉を食べません,She does not eat meat.
+9,現在の否定（〜しない）,6,हामी राति कफी पिउँदैनौं।,hāmī rāti kaphī piũdainaũ,私たちは夜コーヒーを飲みません,We do not drink coffee at night.
+9,現在の否定（〜しない）,7,तपाईंहरू आइतबार काम गर्नुहुन्न।,tapāĩharū āitabār kām garnuhunna,あなたたちは日曜日には働きません,You do not work on Sundays.
 10,現在進行（〜している）,1,म अहिले काम गर्दैछु।,ma ahile kām gardaichu,私は今働いています,I am working now.
-10,現在進行（〜している）,2,तँ अहिले काम गर्दैछस्।,tã ahile kām gardaichas,お前は今働いています,You are working now.
-10,現在進行（〜している）,3,तिमी अहिले काम गर्दैछौ।,timī ahile kām gardaichau,君は今働いています,You are working now.
-10,現在進行（〜している）,4,तिमीहरू अहिले काम गर्दैछौ।,timīharū ahile kām gardaichau,君たちは今働いています,You are working now.
-10,現在進行（〜している）,5,तपाईं अहिले काम गर्दैहुनुहुन्छ।,tapāĩ ahile kām gardaihunuhuncha,あなたは今働いています,You are working now.
-10,現在進行（〜している）,6,उ अहिले काम गर्दैछ।,u ahile kām gardaicha,彼は今働いています,He is working now.
-10,現在進行（〜している）,7,उनी अहिले काम गर्दैछिन्।,unī ahile kām gardaichin,彼女は今働いています,She is working now.
-10,現在進行（〜している）,8,उहाँ अहिले काम गर्दैहुनुहुन्छ।,uhā̃ ahile kām gardaihunuhuncha,あの方は今働いています,He is working now.
-10,現在進行（〜している）,9,हामी अहिले काम गर्दैछौं।,hāmī ahile kām gardaichaũ,私たちは今働いています,We are working now.
-10,現在進行（〜している）,10,उनीहरू अहिले काम गर्दैछन्।,unīharū ahile kām gardaichan,彼らは今働いています,They are working now.
-10,現在進行（〜している）,11,म व्यायाम गर्दैछु।,ma vyāyām gardaichu,私は運動しているところです,I am exercising.
-10,現在進行（〜している）,12,तिमी व्यायाम गर्दैछौ?,timī vyāyām gardaichau?,君は運動しているところですか？,Are you exercising?
-10,現在進行（〜している）,13,तपाईं व्यायाम गर्दैहुनुहुन्छ?,tapāĩ vyāyām gardaihunuhuncha?,あなたは運動しているところですか？,Are you exercising?
-10,現在進行（〜している）,14,उनी व्यायाम गर्दैछिन्।,unī vyāyām gardaichin,彼女は運動しているところです,She is exercising.
-10,現在進行（〜している）,15,हामी व्यायाम गर्दैछौं।,hāmī vyāyām gardaichaũ,私たちは運動しているところです,We are exercising.
-10,現在進行（〜している）,16,म पानी पिउँदैछु।,ma pānī piũdaichu,私は水を飲んでいます,I am drinking water.
-10,現在進行（〜している）,17,उ अहिले खाना खाँदैछ।,u ahile khānā khā̃daicha,彼は今ご飯を食べています,He is eating now.
-10,現在進行（〜している）,18,उनी चिट्ठी लेख्दैछिन्।,unī ciṭṭhī lekhdaichin,彼女は手紙を書いています,She is writing a letter.
-10,現在進行（〜している）,19,तिमीहरू के पढ्दैछौ?,timīharū ke paḍhdaichau?,君たちは何を読んでいますか？,What are you reading?
-10,現在進行（〜している）,20,म भोलि नेपाल जाँदैछु।,ma bholi nepāl jā̃daichu,私は明日ネパールへ行く予定です,I am going to Nepal tomorrow.
+10,現在進行（〜している）,2,तपाईं व्यायाम गर्दैहुनुहुन्छ?,tapāĩ vyāyām gardaihunuhuncha?,あなたは運動しているところですか？,Are you exercising?
+10,現在進行（〜している）,3,म पानी पिउँदैछु।,ma pānī piũdaichu,私は水を飲んでいます,I am drinking water.
+10,現在進行（〜している）,4,उनी चिट्ठी लेख्दैछिन्।,unī ciṭṭhī lekhdaichin,彼女は手紙を書いています,She is writing a letter.
+10,現在進行（〜している）,5,हामी नेपाली सिक्दै छौं।,hāmī nepālī sikdai chaũ,私たちはネパール語を学んでいます,We are learning Nepali.
+10,現在進行（〜している）,6,तपाईंहरू के पढ्दै हुनुहुन्छ?,tapāĩharū ke paḍhdai hunuhuncha?,あなたたちは何を読んでいますか？,What are you reading?
+10,現在進行（〜している）,7,उनीहरू बस पर्खँदै छन्।,unīharū bas parkhãdai chan,彼らはバスを待っています,They are waiting for the bus.
 11,能格 ले と過去（〜した）,1,मैले हिजो काम गरेँ।,maile hijo kām garẽ,私は昨日働きました,I worked yesterday.
-11,能格 ले と過去（〜した）,2,तैंले हिजो काम गरिस्।,taĩle hijo kām garis,お前は昨日働きました,You worked yesterday.
-11,能格 ले と過去（〜した）,3,तिमीले हिजो काम गर्यौ।,timīle hijo kām garyau,君は昨日働きました,You worked yesterday.
-11,能格 ले と過去（〜した）,4,तिमीहरूले हिजो काम गर्यौ।,timīharūle hijo kām garyau,君たちは昨日働きました,You worked yesterday.
-11,能格 ले と過去（〜した）,5,तपाईंले हिजो काम गर्नुभयो।,tapāĩle hijo kām garnubhayo,あなたは昨日働きました,You worked yesterday.
-11,能格 ले と過去（〜した）,6,उसले हिजो काम गर्यो।,usle hijo kām garyo,彼は昨日働きました,He worked yesterday.
-11,能格 ले と過去（〜した）,7,उनले हिजो काम गरिन्।,unle hijo kām garin,彼女は昨日働きました,She worked yesterday.
-11,能格 ले と過去（〜した）,8,उहाँले हिजो काम गर्नुभयो।,uhā̃le hijo kām garnubhayo,あの方は昨日働きました,He worked yesterday.
-11,能格 ले と過去（〜した）,9,हामीले हिजो काम गर्यौं।,hāmīle hijo kām garyaũ,私たちは昨日働きました,We worked yesterday.
-11,能格 ले と過去（〜した）,10,उनीहरूले हिजो काम गरे।,unīharūle hijo kām gare,彼らは昨日働きました,They worked yesterday.
-11,能格 ले と過去（〜した）,11,मैले हिजो व्यायाम गरेँ।,maile hijo vyāyām garẽ,私は昨日運動しました,I exercised yesterday.
-11,能格 ले と過去（〜した）,12,तिमीले हिजो व्यायाम गर्यौ?,timīle hijo vyāyām garyau?,君は昨日運動しましたか？,Did you exercise yesterday?
-11,能格 ले と過去（〜した）,13,तपाईंले हिजो व्यायाम गर्नुभयो?,tapāĩle hijo vyāyām garnubhayo?,あなたは昨日運動しましたか？,Did you exercise yesterday?
-11,能格 ले と過去（〜した）,14,उनले हिजो व्यायाम गरिन्।,unle hijo vyāyām garin,彼女は昨日運動しました,She exercised yesterday.
-11,能格 ले と過去（〜した）,15,हामीले हिजो व्यायाम गर्यौं।,hāmīle hijo vyāyām garyaũ,私たちは昨日運動しました,We exercised yesterday.
-11,能格 ले と過去（〜した）,16,मैले किताब पढेँ।,maile kitāb paḍhẽ,私は本を読みました,I read a book.
-11,能格 ले と過去（〜した）,17,उसले उत्तर दियो।,usle uttar diyo,彼は答えました,He gave an answer.
-11,能格 ले と過去（〜した）,18,उ सुत्यो।,u sutyo,彼は寝ました,He went to sleep.
-11,能格 ले と過去（〜した）,19,उनी स्कूल गइन्।,unī skūl gain,彼女は学校に行きました,She went to school.
-11,能格 ले と過去（〜した）,20,म हिजो घरमा थिएँ।,ma hijo gharmā thiẽ,私は昨日家にいました,I was at home yesterday.
+11,能格 ले と過去（〜した）,2,तपाईंले हिजो व्यायाम गर्नुभयो?,tapāĩle hijo vyāyām garnubhayo?,あなたは昨日運動しましたか？,Did you exercise yesterday?
+11,能格 ले と過去（〜した）,3,मैले किताब पढेँ।,maile kitāb paḍhẽ,私は本を読みました,I read a book.
+11,能格 ले と過去（〜した）,4,उनी स्कूल गइन्।,unī skūl gain,彼女は学校に行きました,She went to school.
+11,能格 ले と過去（〜した）,5,म हिजो घरमा थिएँ।,ma hijo gharmā thiẽ,私は昨日家にいました,I was at home yesterday.
+11,能格 ले と過去（〜した）,6,हामी बजार गयौं।,hāmī bajār gayaũ,私たちは市場へ行きました,We went to the market.
+11,能格 ले と過去（〜した）,7,उनले चिया पिइन्।,unle ciyā piin,彼女はお茶を飲みました,She drank tea.
+11,能格 ले と過去（〜した）,8,तपाईंहरूले के किन्नुभयो?,tapāĩharūle ke kinnubhayo?,あなたたちは何を買いましたか？,What did you buy?
 12,過去の否定（〜しなかった）,1,मैले हिजो काम गरिनँ।,maile hijo kām garinã,私は昨日働きませんでした,I did not work yesterday.
-12,過去の否定（〜しなかった）,2,तैंले हिजो काम गरिनस्।,taĩle hijo kām garinas,お前は昨日働きませんでした,You did not work yesterday.
-12,過去の否定（〜しなかった）,3,तिमीले हिजो काम गरेनौ।,timīle hijo kām garenau,君は昨日働きませんでした,You did not work yesterday.
-12,過去の否定（〜しなかった）,4,तिमीहरूले हिजो काम गरेनौ।,timīharūle hijo kām garenau,君たちは昨日働きませんでした,You did not work yesterday.
-12,過去の否定（〜しなかった）,5,तपाईंले हिजो काम गर्नुभएन।,tapāĩle hijo kām garnubhaena,あなたは昨日働きませんでした,You did not work yesterday.
-12,過去の否定（〜しなかった）,6,उसले हिजो काम गरेन।,usle hijo kām garena,彼は昨日働きませんでした,He did not work yesterday.
-12,過去の否定（〜しなかった）,7,उनले हिजो काम गरिनन्।,unle hijo kām garinan,彼女は昨日働きませんでした,She did not work yesterday.
-12,過去の否定（〜しなかった）,8,उहाँले हिजो काम गर्नुभएन।,uhā̃le hijo kām garnubhaena,あの方は昨日働きませんでした,He did not work yesterday.
-12,過去の否定（〜しなかった）,9,हामीले हिजो काम गरेनौं।,hāmīle hijo kām garenaũ,私たちは昨日働きませんでした,We did not work yesterday.
-12,過去の否定（〜しなかった）,10,उनीहरूले हिजो काम गरेनन्।,unīharūle hijo kām garenan,彼らは昨日働きませんでした,They did not work yesterday.
-12,過去の否定（〜しなかった）,11,मैले हिजो व्यायाम गरिनँ।,maile hijo vyāyām garinã,私は昨日運動しませんでした,I did not exercise yesterday.
-12,過去の否定（〜しなかった）,12,तिमीले हिजो व्यायाम गरेनौ?,timīle hijo vyāyām garenau?,君は昨日運動しませんでしたか？,Did you not exercise yesterday?
-12,過去の否定（〜しなかった）,13,तपाईंले हिजो व्यायाम गर्नुभएन?,tapāĩle hijo vyāyām garnubhaena?,あなたは昨日運動しませんでしたか？,Did you not exercise yesterday?
-12,過去の否定（〜しなかった）,14,उनले हिजो व्यायाम गरिनन्।,unle hijo vyāyām garinan,彼女は昨日運動しませんでした,She did not exercise yesterday.
-12,過去の否定（〜しなかった）,15,हामीले हिजो व्यायाम गरेनौं।,hāmīle hijo vyāyām garenaũ,私たちは昨日運動しませんでした,We did not exercise yesterday.
-12,過去の否定（〜しなかった）,16,मैले किताब पढिनँ।,maile kitāb paḍhinã,私は本を読みませんでした,I did not read the book.
-12,過去の否定（〜しなかった）,17,उ आएन।,u āena,彼は来ませんでした,He did not come.
-12,過去の否定（〜しなかった）,18,उहाँ हिजो आउनुभएन।,uhā̃ hijo āunubhaena,あの方は昨日来ませんでした,He did not come yesterday.
-12,過去の否定（〜しなかった）,19,हामीले त्यो फिल्म हेरेनौं।,hāmīle tyo philma herenaũ,私たちはその映画を見ませんでした,We did not watch that film.
-12,過去の否定（〜しなかった）,20,हिजो यहाँ पैसा थिएन।,hijo yahā̃ paisā thiena,昨日ここにはお金がありませんでした,There was no money here yesterday.
+12,過去の否定（〜しなかった）,2,तपाईंले हिजो व्यायाम गर्नुभएन?,tapāĩle hijo vyāyām garnubhaena?,あなたは昨日運動しませんでしたか？,Did you not exercise yesterday?
+12,過去の否定（〜しなかった）,3,मैले किताब पढिनँ।,maile kitāb paḍhinã,私は本を読みませんでした,I did not read the book.
+12,過去の否定（〜しなかった）,4,हामीले त्यो फिल्म हेरेनौं।,hāmīle tyo philma herenaũ,私たちはその映画を見ませんでした,We did not watch that film.
+12,過去の否定（〜しなかった）,5,हिजो यहाँ पैसा थिएन।,hijo yahā̃ paisā thiena,昨日ここにはお金がありませんでした,There was no money here yesterday.
+12,過去の否定（〜しなかった）,6,हामी हिजो बाहिर गएनौं।,hāmī hijo bāhira gaenaũ,私たちは昨日外出しませんでした,We did not go out yesterday.
+12,過去の否定（〜しなかった）,7,उनले कफी पिइनन्।,unle kaphī piinan,彼女はコーヒーを飲みませんでした,She did not drink coffee.
 13,未来（〜する・〜するつもり）,1,म भोलि काम गर्छु।,ma bholi kām garchu,私は明日働きます,I will work tomorrow.
-13,未来（〜する・〜するつもり）,2,तँ भोलि काम गर्छस्।,tã bholi kām garchas,お前は明日働きます,You will work tomorrow.
-13,未来（〜する・〜するつもり）,3,तिमी भोलि काम गर्छौ।,timī bholi kām garchau,君は明日働きます,You will work tomorrow.
-13,未来（〜する・〜するつもり）,4,तिमीहरू भोलि काम गर्छौ।,timīharū bholi kām garchau,君たちは明日働きます,You will work tomorrow.
-13,未来（〜する・〜するつもり）,5,तपाईं भोलि काम गर्नुहुन्छ।,tapāĩ bholi kām garnuhuncha,あなたは明日働きます,You will work tomorrow.
-13,未来（〜する・〜するつもり）,6,उ भोलि काम गर्छ।,u bholi kām garcha,彼は明日働きます,He will work tomorrow.
-13,未来（〜する・〜するつもり）,7,उनी भोलि काम गर्छिन्।,unī bholi kām garchin,彼女は明日働きます,She will work tomorrow.
-13,未来（〜する・〜するつもり）,8,उहाँ भोलि काम गर्नुहुन्छ।,uhā̃ bholi kām garnuhuncha,あの方は明日働きます,He will work tomorrow.
-13,未来（〜する・〜するつもり）,9,हामी भोलि काम गर्छौं।,hāmī bholi kām garchaũ,私たちは明日働きます,We will work tomorrow.
-13,未来（〜する・〜するつもり）,10,उनीहरू भोलि काम गर्छन्।,unīharū bholi kām garchan,彼らは明日働きます,They will work tomorrow.
-13,未来（〜する・〜するつもり）,11,म भोलि व्यायाम गर्दिनँ।,ma bholi vyāyām gardinã,私は明日運動しません,I will not exercise tomorrow.
-13,未来（〜する・〜するつもり）,12,तिमी भोलि व्यायाम गर्छौ?,timī bholi vyāyām garchau?,君は明日運動しますか？,Will you exercise tomorrow?
-13,未来（〜する・〜するつもり）,13,तपाईं भोलि व्यायाम गर्नुहुन्छ?,tapāĩ bholi vyāyām garnuhuncha?,あなたは明日運動しますか？,Will you exercise tomorrow?
-13,未来（〜する・〜するつもり）,14,उनी भोलि व्यायाम गर्दिनन्।,unī bholi vyāyām gardinan,彼女は明日運動しません,She will not exercise tomorrow.
-13,未来（〜する・〜するつもり）,15,हामी भोलि व्यायाम गर्दैनौं।,hāmī bholi vyāyām gardainaũ,私たちは明日運動しません,We will not exercise tomorrow.
-13,未来（〜する・〜するつもり）,16,म भोलि स्कूल जान्छु।,ma bholi skūl jānchu,私は明日学校に行きます,I will go to school tomorrow.
-13,未来（〜する・〜するつもり）,17,उनी अर्को हप्ता आउँछिन्।,unī arko haptā āũchin,彼女は来週来ます,She will come next week.
-13,未来（〜する・〜するつもり）,18,तपाईं भोलि कहाँ जानुहुन्छ?,tapāĩ bholi kahā̃ jānuhuncha?,あなたは明日どこへ行きますか？,Where will you go tomorrow?
-13,未来（〜する・〜するつもり）,19,हामी आज राति घरमा खान्छौं।,hāmī āja rāti gharmā khānchaũ,私たちは今夜家で食べます,We will eat at home tonight.
-13,未来（〜する・〜するつもり）,20,उनीहरू भोलि आउँदैनन्।,unīharū bholi āũdainan,彼らは明日来ません,They will not come tomorrow.
+13,未来（〜する・〜するつもり）,2,तपाईं भोलि व्यायाम गर्नुहुन्छ?,tapāĩ bholi vyāyām garnuhuncha?,あなたは明日運動しますか？,Will you exercise tomorrow?
+13,未来（〜する・〜するつもり）,3,म भोलि स्कूल जान्छु।,ma bholi skūl jānchu,私は明日学校に行きます,I will go to school tomorrow.
+13,未来（〜する・〜するつもり）,4,उनी अर्को हप्ता आउँछिन्।,unī arko haptā āũchin,彼女は来週来ます,She will come next week.
+13,未来（〜する・〜するつもり）,5,तपाईं भोलि कहाँ जानुहुन्छ?,tapāĩ bholi kahā̃ jānuhuncha?,あなたは明日どこへ行きますか？,Where will you go tomorrow?
+13,未来（〜する・〜するつもり）,6,हामी आज राति घरमा खान्छौं।,hāmī āja rāti gharmā khānchaũ,私たちは今夜家で食べます,We will eat at home tonight.
+13,未来（〜する・〜するつもり）,7,उनीहरू भोलि आउँदैनन्।,unīharū bholi āũdainan,彼らは明日来ません,They will not come tomorrow.
+13,未来（〜する・〜するつもり）,8,हामी भोलि भेट्नेछौं।,hāmī bholi bheṭnechaũ,私たちは明日会います,We will meet tomorrow.
+13,未来（〜する・〜するつもり）,9,तपाईंहरू कहिले फर्कनुहुनेछ?,tapāĩharū kahile pharkanuhunecha?,あなたたちはいつ戻りますか？,When will you return?
 14,習慣過去（昔はよく〜した）,1,म पहिले यहाँ काम गर्थें।,ma pahile yahā̃ kām garthẽ,私は以前ここで働いていました,I used to work here.
-14,習慣過去（昔はよく〜した）,2,तँ पहिले यहाँ काम गर्थिस्।,tã pahile yahā̃ kām garthis,お前は以前ここで働いていました,You used to work here.
-14,習慣過去（昔はよく〜した）,3,तिमी पहिले यहाँ काम गर्थ्यौ।,timī pahile yahā̃ kām garthyau,君は以前ここで働いていました,You used to work here.
-14,習慣過去（昔はよく〜した）,4,तिमीहरू पहिले यहाँ काम गर्थ्यौ।,timīharū pahile yahā̃ kām garthyau,君たちは以前ここで働いていました,You used to work here.
-14,習慣過去（昔はよく〜した）,5,तपाईं पहिले यहाँ काम गर्नुहुन्थ्यो।,tapāĩ pahile yahā̃ kām garnuhunthyo,あなたは以前ここで働いていました,You used to work here.
-14,習慣過去（昔はよく〜した）,6,उ पहिले यहाँ काम गर्थ्यो।,u pahile yahā̃ kām garthyo,彼は以前ここで働いていました,He used to work here.
-14,習慣過去（昔はよく〜した）,7,उनी पहिले यहाँ काम गर्थिन्।,unī pahile yahā̃ kām garthin,彼女は以前ここで働いていました,She used to work here.
-14,習慣過去（昔はよく〜した）,8,उहाँ पहिले यहाँ काम गर्नुहुन्थ्यो।,uhā̃ pahile yahā̃ kām garnuhunthyo,あの方は以前ここで働いていました,He used to work here.
-14,習慣過去（昔はよく〜した）,9,हामी पहिले यहाँ काम गर्थ्यौं।,hāmī pahile yahā̃ kām garthyaũ,私たちは以前ここで働いていました,We used to work here.
-14,習慣過去（昔はよく〜した）,10,उनीहरू पहिले यहाँ काम गर्थे।,unīharū pahile yahā̃ kām garthe,彼らは以前ここで働いていました,They used to work here.
-14,習慣過去（昔はよく〜した）,11,म पहिले व्यायाम गर्दिनथें।,ma pahile vyāyām gardinathẽ,私は以前は運動する習慣がありませんでした,I did not use to exercise.
-14,習慣過去（昔はよく〜した）,12,तिमी पहिले व्यायाम गर्थ्यौ?,timī pahile vyāyām garthyau?,君は以前運動していましたか？,Did you use to exercise?
-14,習慣過去（昔はよく〜した）,13,तपाईं पहिले व्यायाम गर्नुहुन्थ्यो?,tapāĩ pahile vyāyām garnuhunthyo?,あなたは以前運動していましたか？,Did you use to exercise?
-14,習慣過去（昔はよく〜した）,14,उनी पहिले व्यायाम गर्दिनथिन्।,unī pahile vyāyām gardinathin,彼女は以前は運動する習慣がありませんでした,She did not use to exercise.
-14,習慣過去（昔はよく〜した）,15,हामी पहिले व्यायाम गर्दैनथ्यौं।,hāmī pahile vyāyām gardainathyaũ,私たちは以前は運動する習慣がありませんでした,We did not use to exercise.
-14,習慣過去（昔はよく〜した）,16,म पहिले चाँडै उठ्थें।,ma pahile cā̃ḍai uṭhthẽ,私は以前はよく早く起きていました,I used to get up early.
-14,習慣過去（昔はよく〜した）,17,उ सानो हुँदा धेरै रुन्थ्यो।,u sāno hũdā dherai runthyo,彼は幼い頃よく泣いていました,He used to cry a lot when he was little.
-14,習慣過去（昔はよく〜した）,18,उहाँ हाम्रो घरमा आउनुहुन्थ्यो।,uhā̃ hāmro gharmā āunuhunthyo,あの方はよく私たちの家に来ていました,He used to visit our home.
-14,習慣過去（昔はよく〜した）,19,तिमी पहिले यहाँ बस्थ्यौ?,timī pahile yahā̃ basthyau?,君は以前ここに住んでいましたか？,Did you use to live here?
-14,習慣過去（昔はよく〜した）,20,हामी सिनेमा हेर्ने गर्थ्यौं।,hāmī sinemā herne garthyaũ,私たちはよく映画を見ていました,We used to watch films.
+14,習慣過去（昔はよく〜した）,2,तपाईं पहिले व्यायाम गर्नुहुन्थ्यो?,tapāĩ pahile vyāyām garnuhunthyo?,あなたは以前運動していましたか？,Did you use to exercise?
+14,習慣過去（昔はよく〜した）,3,म पहिले चाँडै उठ्थें।,ma pahile cā̃ḍai uṭhthẽ,私は以前はよく早く起きていました,I used to get up early.
+14,習慣過去（昔はよく〜した）,4,हामी सिनेमा हेर्ने गर्थ्यौं।,hāmī sinemā herne garthyaũ,私たちはよく映画を見ていました,We used to watch films.
+14,習慣過去（昔はよく〜した）,5,हामी पहिले यहाँ बस्थ्यौं।,hāmī pahile yahā̃ basthyaũ,私たちは以前ここに住んでいました,We used to live here.
+14,習慣過去（昔はよく〜した）,6,उनी पहिले चिया पिउँथिन्।,unī pahile ciyā piũthin,彼女は以前お茶をよく飲んでいました,She used to drink tea.
 15,現在完了・経験（〜した・〜したことがある）,1,मैले यो काम गरेको छु।,maile yo kām gareko chu,私はこの仕事を済ませています,I have done this work.
-15,現在完了・経験（〜した・〜したことがある）,2,तैंले यो काम गरेको छस्।,taĩle yo kām gareko chas,お前はこの仕事を済ませています,You have done this work.
-15,現在完了・経験（〜した・〜したことがある）,3,तिमीले यो काम गरेको छौ।,timīle yo kām gareko chau,君はこの仕事を済ませています,You have done this work.
-15,現在完了・経験（〜した・〜したことがある）,4,तिमीहरूले यो काम गरेको छौ।,timīharūle yo kām gareko chau,君たちはこの仕事を済ませています,You have done this work.
-15,現在完了・経験（〜した・〜したことがある）,5,तपाईंले यो काम गर्नुभएको छ।,tapāĩle yo kām garnubhaeko cha,あなたはこの仕事を済ませています,You have done this work.
-15,現在完了・経験（〜した・〜したことがある）,6,उसले यो काम गरेको छ।,usle yo kām gareko cha,彼はこの仕事を済ませています,He has done this work.
-15,現在完了・経験（〜した・〜したことがある）,7,उनले यो काम गरेकी छिन्।,unle yo kām garekī chin,彼女はこの仕事を済ませています,She has done this work.
-15,現在完了・経験（〜した・〜したことがある）,8,उहाँले यो काम गर्नुभएको छ।,uhā̃le yo kām garnubhaeko cha,あの方はこの仕事を済ませています,He has done this work.
-15,現在完了・経験（〜した・〜したことがある）,9,हामीले यो काम गरेको छौं।,hāmīle yo kām gareko chaũ,私たちはこの仕事を済ませています,We have done this work.
-15,現在完了・経験（〜した・〜したことがある）,10,उनीहरूले यो काम गरेका छन्।,unīharūle yo kām garekā chan,彼らはこの仕事を済ませています,They have done this work.
-15,現在完了・経験（〜した・〜したことがある）,11,मैले यो काम गरेको छैनँ।,maile yo kām gareko chainã,私はこの仕事をまだ済ませていません,I have not done this work yet.
-15,現在完了・経験（〜した・〜したことがある）,12,तिमीले यो काम गरेको छौ?,timīle yo kām gareko chau?,君はこの仕事をもう済ませていますか？,Have you done this work?
-15,現在完了・経験（〜した・〜したことがある）,13,तपाईंले यो काम गर्नुभएको छ?,tapāĩle yo kām garnubhaeko cha?,あなたはこの仕事をもう済ませていますか？,Have you done this work?
-15,現在完了・経験（〜した・〜したことがある）,14,उनले यो काम गरेकी छैनन्।,unle yo kām garekī chainan,彼女はこの仕事をまだ済ませていません,She has not done this work yet.
-15,現在完了・経験（〜した・〜したことがある）,15,हामीले यो काम गरेको छैनौं।,hāmīle yo kām gareko chainaũ,私たちはこの仕事をまだ済ませていません,We have not done this work yet.
-15,現在完了・経験（〜した・〜したことがある）,16,मैले सुशी खाएको छु।,maile suśī khāeko chu,私は寿司を食べたことがあります,I have eaten sushi.
-15,現在完了・経験（〜した・〜したことがある）,17,तपाईं नेपाल जानुभएको छ?,tapāĩ nepāl jānubhaeko cha?,あなたはネパールに行ったことがありますか？,Have you been to Nepal?
-15,現在完了・経験（〜した・〜したことがある）,18,म थाकेको छु।,ma thākeko chu,私は疲れています,I am tired.
-15,現在完了・経験（〜した・〜したことがある）,19,ढोका खुलेको छ।,ḍhokā khuleko cha,ドアが開いています,The door is open.
-15,現在完了・経験（〜した・〜したことがある）,20,खाना पाकेको छ।,khānā pākeko cha,ご飯が炊けています,The food is cooked.
+15,現在完了・経験（〜した・〜したことがある）,2,तपाईंले यो काम गर्नुभएको छ?,tapāĩle yo kām garnubhaeko cha?,あなたはこの仕事をもう済ませていますか？,Have you done this work?
+15,現在完了・経験（〜した・〜したことがある）,3,मैले सुशी खाएको छु।,maile suśī khāeko chu,私は寿司を食べたことがあります,I have eaten sushi.
+15,現在完了・経験（〜した・〜したことがある）,4,तपाईं नेपाल जानुभएको छ?,tapāĩ nepāl jānubhaeko cha?,あなたはネパールに行ったことがありますか？,Have you been to Nepal?
+15,現在完了・経験（〜した・〜したことがある）,5,म थाकेको छु।,ma thākeko chu,私は疲れています,I am tired.
+15,現在完了・経験（〜した・〜したことがある）,6,ढोका खुलेको छ।,ḍhokā khuleko cha,ドアが開いています,The door is open.
+15,現在完了・経験（〜した・〜したことがある）,7,खाना पाकेको छ।,khānā pākeko cha,ご飯が炊けています,The food is cooked.
+15,現在完了・経験（〜した・〜したことがある）,8,हामीले यो फिल्म हेरेका छौं।,hāmīle yo philm herekā chaũ,私たちはこの映画を見たことがあります,We have seen this film.
 16,過去完了（〜していた・〜してしまっていた）,1,मैले यो काम गरेको थिएँ।,maile yo kām gareko thiẽ,私はこの仕事を済ませていました,I had done this work.
-16,過去完了（〜していた・〜してしまっていた）,2,तैंले यो काम गरेको थिइस्।,taĩle yo kām gareko thiis,お前はこの仕事を済ませていました,You had done this work.
-16,過去完了（〜していた・〜してしまっていた）,3,तिमीले यो काम गरेको थियौ।,timīle yo kām gareko thiyau,君はこの仕事を済ませていました,You had done this work.
-16,過去完了（〜していた・〜してしまっていた）,4,तिमीहरूले यो काम गरेको थियौ।,timīharūle yo kām gareko thiyau,君たちはこの仕事を済ませていました,You had done this work.
-16,過去完了（〜していた・〜してしまっていた）,5,तपाईंले यो काम गर्नुभएको थियो।,tapāĩle yo kām garnubhaeko thiyo,あなたはこの仕事を済ませていました,You had done this work.
-16,過去完了（〜していた・〜してしまっていた）,6,उसले यो काम गरेको थियो।,usle yo kām gareko thiyo,彼はこの仕事を済ませていました,He had done this work.
-16,過去完了（〜していた・〜してしまっていた）,7,उनले यो काम गरेकी थिइन्।,unle yo kām garekī thiin,彼女はこの仕事を済ませていました,She had done this work.
-16,過去完了（〜していた・〜してしまっていた）,8,उहाँले यो काम गर्नुभएको थियो।,uhā̃le yo kām garnubhaeko thiyo,あの方はこの仕事を済ませていました,He had done this work.
-16,過去完了（〜していた・〜してしまっていた）,9,हामीले यो काम गरेको थियौं।,hāmīle yo kām gareko thiyaũ,私たちはこの仕事を済ませていました,We had done this work.
-16,過去完了（〜していた・〜してしまっていた）,10,उनीहरूले यो काम गरेका थिए।,unīharūle yo kām garekā thie,彼らはこの仕事を済ませていました,They had done this work.
-16,過去完了（〜していた・〜してしまっていた）,11,मैले यो काम गरेको थिइनँ।,maile yo kām gareko thiinã,私はその時この仕事を済ませていませんでした,I had not done this work at that time.
-16,過去完了（〜していた・〜してしまっていた）,12,तिमीले यो काम गरेको थियौ?,timīle yo kām gareko thiyau?,君はその時この仕事を済ませていましたか？,Had you done this work?
-16,過去完了（〜していた・〜してしまっていた）,13,तपाईंले यो काम गर्नुभएको थियो?,tapāĩle yo kām garnubhaeko thiyo?,あなたはその時この仕事を済ませていましたか？,Had you done this work?
-16,過去完了（〜していた・〜してしまっていた）,14,उनले यो काम गरेकी थिइनन्।,unle yo kām garekī thiinan,彼女はその時この仕事を済ませていませんでした,She had not done this work at that time.
-16,過去完了（〜していた・〜してしまっていた）,15,हामीले यो काम गरेको थिएनौं।,hāmīle yo kām gareko thienaũ,私たちはその時この仕事を済ませていませんでした,We had not done this work at that time.
-16,過去完了（〜していた・〜してしまっていた）,16,म त्यहाँ गएको थिएँ।,ma tyahā̃ gaeko thiẽ,私はそこへ行ったことがありました,I had been there.
-16,過去完了（〜していた・〜してしまっていた）,17,"म पुग्दा, उसले किताब पढेको थियो।","ma pugdā, usle kitāb paḍheko thiyo",私が着いたとき、彼は本を読み終えていました,He had read the book by the time I arrived.
-16,過去完了（〜していた・〜してしまっていた）,18,"हामी पुग्दा, उनी घर गएकी थिइन्।","hāmī pugdā, unī ghar gaekī thiin",私たちが着いたとき、彼女は家に帰っていました,She had gone home by the time we arrived.
-16,過去完了（〜していた・〜してしまっていた）,19,त्यस बेला मैले खाना खाएको थिइनँ।,tyas belā maile khānā khāeko thiinã,そのとき私はまだご飯を食べていませんでした,I had not eaten at that time.
-16,過去完了（〜していた・〜してしまっていた）,20,तपाईं पहिले यहाँ आउनुभएको थियो?,tapāĩ pahile yahā̃ āunubhaeko thiyo?,あなたは以前ここに来たことがありましたか？,Had you been here before?
+16,過去完了（〜していた・〜してしまっていた）,2,तपाईंले यो काम गर्नुभएको थियो?,tapāĩle yo kām garnubhaeko thiyo?,あなたはその時この仕事を済ませていましたか？,Had you done this work?
+16,過去完了（〜していた・〜してしまっていた）,3,म त्यहाँ गएको थिएँ।,ma tyahā̃ gaeko thiẽ,私はそこへ行ったことがありました,I had been there.
+16,過去完了（〜していた・〜してしまっていた）,4,"हामी पुग्दा, उनी घर गएकी थिइन्।","hāmī pugdā, unī ghar gaekī thiin",私たちが着いたとき、彼女は家に帰っていました,She had gone home by the time we arrived.
+16,過去完了（〜していた・〜してしまっていた）,5,त्यस बेला मैले खाना खाएको थिइनँ।,tyas belā maile khānā khāeko thiinã,そのとき私はまだご飯を食べていませんでした,I had not eaten at that time.
+16,過去完了（〜していた・〜してしまっていた）,6,तपाईं पहिले यहाँ आउनुभएको थियो?,tapāĩ pahile yahā̃ āunubhaeko thiyo?,あなたは以前ここに来たことがありましたか？,Had you been here before?
+16,過去完了（〜していた・〜してしまっていた）,7,हामी पुग्दा पसल बन्द भइसकेको थियो।,hāmī pugdā pasal banda bhaisakeko thiyo,私たちが着いたとき、店はすでに閉まっていました,The shop had already closed when we arrived.
 17,依頼・命令（ていねいさ3段階）,1,यहाँ बस्नुहोस्।,yahā̃ basnuhos,ここに座ってください,Please sit here.
 17,依頼・命令（ていねいさ3段階）,2,माथि हेर्नुहोस्।,māthi hernuhos,上を見てください,Please look up.
 17,依頼・命令（ていねいさ3段階）,3,बिस्तारै बोल्नुहोस्।,bistārai bolnuhos,ゆっくり話してください,Please speak slowly.
@@ -306,14 +179,10 @@ theme_no,theme_title,no,ne,roman,ja,en
 17,依頼・命令（ていねいさ3段階）,5,मलाई पानी दिनुहोस्।,malāī pānī dinuhos,私に水をください,Please give me some water.
 17,依頼・命令（ていねいさ3段階）,6,तपाईंको नाम लेख्नुहोस्।,tapāĩko nām lekhnuhos,あなたの名前を書いてください,Please write your name.
 17,依頼・命令（ていねいさ3段階）,7,ढोका बन्द गर्नुहोस्।,ḍhokā banda garnuhos,ドアを閉めてください,Please close the door.
-17,依頼・命令（ていねいさ3段階）,8,तिमी यहाँ बस।,timī yahā̃ basa,君、ここに座って,Sit here.
-17,依頼・命令（ていねいさ3段階）,9,चाँडो खाऊ।,cā̃ḍo khāū,早く食べて,Eat quickly.
-17,依頼・命令（ていねいさ3段階）,10,पानी पिऊ।,pānī piū,水を飲んで,Drink some water.
-17,依頼・命令（ていねいさ3段階）,11,तिमीहरू किताब पढ।,timīharū kitāb paḍha,君たち、本を読んで,Read your books.
-17,依頼・命令（ていねいさ3段階）,12,तँ यो काम गर्।,tã yo kām gar,お前、この仕事をして,Do this work.
-17,依頼・命令（ていねいさ3段階）,13,तँ यहाँ हेर्।,tã yahā̃ her,お前、ここを見て,Look here.
-17,依頼・命令（ていねいさ3段階）,14,आउनुहोस् न।,āunuhos na,来てくださいよ,Please do come.
-17,依頼・命令（ていねいさ3段階）,15,भोलि आउनुहोस् है।,bholi āunuhos hai,明日来てくださいね,"Please come tomorrow, okay?"
+17,依頼・命令（ていねいさ3段階）,8,चाँडो खाऊ।,cā̃ḍo khāū,早く食べて,Eat quickly.
+17,依頼・命令（ていねいさ3段階）,9,पानी पिऊ।,pānī piū,水を飲んで,Drink some water.
+17,依頼・命令（ていねいさ3段階）,10,आउनुहोस् न।,āunuhos na,来てくださいよ,Please do come.
+17,依頼・命令（ていねいさ3段階）,11,भोलि आउनुहोस् है।,bholi āunuhos hai,明日来てくださいね,"Please come tomorrow, okay?"
 18,勧誘・意志（〜しよう／〜しましょう）,1,म यहाँ बसूँ?,ma yahā̃ basũ?,ここに座ってもいいですか？,May I sit here?
 18,勧誘・意志（〜しよう／〜しましょう）,2,म ढोका खोलूँ?,ma ḍhokā kholũ?,私がドアを開けましょうか？,Shall I open the door?
 18,勧誘・意志（〜しよう／〜しましょう）,3,म पानी ल्याऊँ?,ma pānī lyāũ?,私が水を持ってきましょうか？,Shall I bring some water?
@@ -325,10 +194,9 @@ theme_no,theme_title,no,ne,roman,ja,en
 18,勧誘・意志（〜しよう／〜しましょう）,9,आज घरमा बसौं।,āja gharmā basaũ,今日は家にいましょう,Let us stay home today.
 18,勧誘・意志（〜しよう／〜しましょう）,10,नेपाली बोलौं।,nepālī bolaũ,ネパール語を話しましょう,Let us speak Nepali.
 18,勧誘・意志（〜しよう／〜しましょう）,11,हामी सँगै काम गरौं।,hāmī sãgai kām garaũ,私たちは一緒に働きましょう,Let us work together.
-18,勧誘・意志（〜しよう／〜しましょう）,12,यहाँ नबसौं।,yahā̃ nabasaũ,ここに座るのはやめましょう,Let us not sit here.
-18,勧誘・意志（〜しよう／〜しましょう）,13,आज बाहिर नजाऔं।,āja bāhira najāaũ,今日は外出をやめましょう,Let us not go out today.
-18,勧誘・意志（〜しよう／〜しましょう）,14,"टेनिस नखेलौं, फुटबल खेलौं।","ṭenis nakhelaũ, phuṭbal khelaũ",テニスはやめて、サッカーをしましょう,"Let us play football, not tennis."
-18,勧誘・意志（〜しよう／〜しましょう）,15,हामी भोलि भेटौं?,hāmī bholi bheṭaũ?,私たちは明日会いましょうか？,Shall we meet tomorrow?
+18,勧誘・意志（〜しよう／〜しましょう）,12,आज बाहिर नजाऔं।,āja bāhira najāaũ,今日は外出をやめましょう,Let us not go out today.
+18,勧誘・意志（〜しよう／〜しましょう）,13,"टेनिस नखेलौं, फुटबल खेलौं।","ṭenis nakhelaũ, phuṭbal khelaũ",テニスはやめて、サッカーをしましょう,"Let us play football, not tennis."
+18,勧誘・意志（〜しよう／〜しましょう）,14,हामी भोलि भेटौं?,hāmī bholi bheṭaũ?,私たちは明日会いましょうか？,Shall we meet tomorrow?
 19,禁止（〜してはいけない／〜しないで）,1,तल नहेर्नुहोस्।,tala nahernuhos,下を見ないでください,Please do not look down.
 19,禁止（〜してはいけない／〜しないで）,2,यहाँ नबस्नुहोस्।,yahā̃ nabasnuhos,ここに座らないでください,Please do not sit here.
 19,禁止（〜してはいけない／〜しないで）,3,ढोका नखोल्नुहोस्।,ḍhokā nakholnuhos,ドアを開けないでください,Please do not open the door.
@@ -345,185 +213,143 @@ theme_no,theme_title,no,ne,roman,ja,en
 19,禁止（〜してはいけない／〜しないで）,14,के यहाँ फोटो खिच्नु हुँदैन?,ke yahā̃ phoṭo khicnu hũdaina?,ここでは写真を撮ってはいけないのですか？,Is taking photos prohibited here?
 19,禁止（〜してはいけない／〜しないで）,15,तपाईं यहाँ नआउनुहोस्।,tapāĩ yahā̃ naāunuhos,あなたはここに来ないでください,Please do not come here.
 20,可能（〜できる）,1,म नेपाली बोल्न सक्छु।,ma nepālī bolna sakchu,私はネパール語を話せます,I can speak Nepali.
-20,可能（〜できる）,2,तँ नेपाली बोल्न सक्छस्।,tã nepālī bolna sakchas,お前はネパール語を話せます,You can speak Nepali.
-20,可能（〜できる）,3,तिमी नेपाली बोल्न सक्छौ?,timī nepālī bolna sakchau?,君はネパール語を話せますか？,Can you speak Nepali?
-20,可能（〜できる）,4,तिमीहरू नेपाली बोल्न सक्छौ।,timīharū nepālī bolna sakchau,君たちはネパール語を話せます,You can speak Nepali.
-20,可能（〜できる）,5,तपाईं नेपाली बोल्न सक्नुहुन्छ?,tapāĩ nepālī bolna saknuhuncha?,あなたはネパール語を話せますか？,Can you speak Nepali?
-20,可能（〜できる）,6,उ नेपाली बोल्न सक्छ।,u nepālī bolna sakcha,彼はネパール語を話せます,He can speak Nepali.
-20,可能（〜できる）,7,उनी नेपाली बोल्न सक्छिन्।,unī nepālī bolna sakchin,彼女はネパール語を話せます,She can speak Nepali.
-20,可能（〜できる）,8,उहाँ नेपाली बोल्न सक्नुहुन्छ?,uhā̃ nepālī bolna saknuhuncha?,あの方はネパール語を話せますか？,Can he speak Nepali?
-20,可能（〜できる）,9,हामी नेपाली बोल्न सक्छौं।,hāmī nepālī bolna sakchaũ,私たちはネパール語を話せます,We can speak Nepali.
-20,可能（〜できる）,10,उनीहरू नेपाली बोल्न सक्छन्।,unīharū nepālī bolna sakchan,彼らはネパール語を話せます,They can speak Nepali.
-20,可能（〜できる）,11,म साइकल चलाउन सक्दिनँ।,ma sāikal calāuna sakdinã,私は自転車に乗れません,I cannot ride a bicycle.
-20,可能（〜できる）,12,तँ साइकल चलाउन सक्दैनस्।,tã sāikal calāuna sakdainas,お前は自転車に乗れません,You cannot ride a bicycle.
-20,可能（〜できる）,13,तिमीहरू साइकल चलाउन सक्दैनौ।,timīharū sāikal calāuna sakdainau,君たちは自転車に乗れません,You cannot ride a bicycle.
-20,可能（〜できる）,14,उनी साइकल चलाउन सक्दिनन्।,unī sāikal calāuna sakdinan,彼女は自転車に乗れません,She cannot ride a bicycle.
-20,可能（〜できる）,15,उनीहरू साइकल चलाउन सक्दैनन्।,unīharū sāikal calāuna sakdainan,彼らは自転車に乗れません,They cannot ride a bicycle.
+20,可能（〜できる）,2,तपाईं नेपाली बोल्न सक्नुहुन्छ?,tapāĩ nepālī bolna saknuhuncha?,あなたはネパール語を話せますか？,Can you speak Nepali?
+20,可能（〜できる）,3,उनीहरू नेपाली बोल्न सक्छन्।,unīharū nepālī bolna sakchan,彼らはネパール語を話せます,They can speak Nepali.
+20,可能（〜できる）,4,म साइकल चलाउन सक्दिनँ।,ma sāikal calāuna sakdinã,私は自転車に乗れません,I cannot ride a bicycle.
+20,可能（〜できる）,5,हामी पौडन सक्छौं।,hāmī pauḍna sakchaũ,私たちは泳げます,We can swim.
+20,可能（〜できる）,6,उनी गाडी चलाउन सक्छिन्।,unī gāḍī calāuna sakchin,彼女は車を運転できます,She can drive a car.
+20,可能（〜できる）,7,तपाईंहरू यो पढ्न सक्नुहुन्छ?,tapāĩharū yo paḍhna saknuhuncha?,あなたたちはこれを読めますか？,Can you read this?
+20,可能（〜できる）,8,म आज आउन सक्दिनँ।,ma āja āuna sakdinã,私は今日来ることができません,I cannot come today.
 21,義務・許可（〜しなければ／〜してよい）,1,मैले भोलि अफिस जानु पर्छ।,maile bholi aphis jānu parcha,私は明日会社に行かなければなりません,I have to go to the office tomorrow.
-21,義務・許可（〜しなければ／〜してよい）,2,तिमीले आज काम गर्नु पर्छ।,timīle āja kām garnu parcha,君は今日働かなければなりません,You have to work today.
-21,義務・許可（〜しなければ／〜してよい）,3,तपाईंले यो फारम भर्नु पर्छ।,tapāĩle yo phāram bharnu parcha,あなたはこの用紙に記入しなければなりません,You have to fill in this form.
-21,義務・許可（〜しなければ／〜してよい）,4,उसले औषधि खानु पर्छ।,usle auṣadhi khānu parcha,彼は薬を飲まなければなりません,He has to take medicine.
-21,義務・許可（〜しなければ／〜してよい）,5,हामीले चाँडै उठ्नु पर्छ।,hāmīle cā̃ḍai uṭhnu parcha,私たちは早く起きなければなりません,We have to get up early.
-21,義務・許可（〜しなければ／〜してよい）,6,उनीहरूले पर्खनु पर्छ।,unīharūle parkhanu parcha,彼らは待たなければなりません,They have to wait.
-21,義務・許可（〜しなければ／〜してよい）,7,मैले आज जानु पर्दैन।,maile āja jānu pardaina,私は今日行かなくてもいいです,I do not have to go today.
-21,義務・許可（〜しなければ／〜してよい）,8,तिमीहरूले पैसा तिर्नु पर्दैन।,timīharūle paisā tirnu pardaina,君たちはお金を払わなくてもいいです,You do not have to pay.
-21,義務・許可（〜しなければ／〜してよい）,9,तपाईंले भोलि आउनु पर्छ?,tapāĩle bholi āunu parcha?,あなたは明日来なければなりませんか？,Do you have to come tomorrow?
-21,義務・許可（〜しなければ／〜してよい）,10,मलाई चाँडै उठ्नु पर्यो।,malāī cā̃ḍai uṭhnu paryo,私は早く起きなければならなくなりました,I had to get up early.
-21,義務・許可（〜しなければ／〜してよい）,11,हामीले हिजो काम गर्नु परेन।,hāmīle hijo kām garnu parena,私たちは昨日働かなくて済みました,We did not have to work yesterday.
-21,義務・許可（〜しなければ／〜してよい）,12,यहाँ बस्न हुन्छ?,yahā̃ basna huncha?,ここに座ってもいいですか？,May I sit here?
-21,義務・許可（〜しなければ／〜してよい）,13,फोटो खिच्न मिल्छ?,phoṭo khicna milcha?,写真を撮ってもいいですか？,May I take a photo?
-21,義務・許可（〜しなければ／〜してよい）,14,यो कलम लिन मिल्छ?,yo kalam lina milcha?,このペンを取ってもいいですか？,May I take this pen?
-21,義務・許可（〜しなければ／〜してよい）,15,यहाँ बस्न मिल्दैन।,yahā̃ basna mildaina,ここに座ることはできません,You cannot sit here.
+21,義務・許可（〜しなければ／〜してよい）,2,तपाईंले यो फारम भर्नु पर्छ।,tapāĩle yo phāram bharnu parcha,あなたはこの用紙に記入しなければなりません,You have to fill in this form.
+21,義務・許可（〜しなければ／〜してよい）,3,हामीले चाँडै उठ्नु पर्छ।,hāmīle cā̃ḍai uṭhnu parcha,私たちは早く起きなければなりません,We have to get up early.
+21,義務・許可（〜しなければ／〜してよい）,4,उनीहरूले पर्खनु पर्छ।,unīharūle parkhanu parcha,彼らは待たなければなりません,They have to wait.
+21,義務・許可（〜しなければ／〜してよい）,5,मैले आज जानु पर्दैन।,maile āja jānu pardaina,私は今日行かなくてもいいです,I do not have to go today.
+21,義務・許可（〜しなければ／〜してよい）,6,तपाईंले भोलि आउनु पर्छ?,tapāĩle bholi āunu parcha?,あなたは明日来なければなりませんか？,Do you have to come tomorrow?
+21,義務・許可（〜しなければ／〜してよい）,7,मलाई चाँडै उठ्नु पर्यो।,malāī cā̃ḍai uṭhnu paryo,私は早く起きなければならなくなりました,I had to get up early.
+21,義務・許可（〜しなければ／〜してよい）,8,हामीले हिजो काम गर्नु परेन।,hāmīle hijo kām garnu parena,私たちは昨日働かなくて済みました,We did not have to work yesterday.
+21,義務・許可（〜しなければ／〜してよい）,9,यहाँ बस्न हुन्छ?,yahā̃ basna huncha?,ここに座ってもいいですか？,May I sit here?
+21,義務・許可（〜しなければ／〜してよい）,10,फोटो खिच्न मिल्छ?,phoṭo khicna milcha?,写真を撮ってもいいですか？,May I take a photo?
+21,義務・許可（〜しなければ／〜してよい）,11,यो कलम लिन मिल्छ?,yo kalam lina milcha?,このペンを取ってもいいですか？,May I take this pen?
+21,義務・許可（〜しなければ／〜してよい）,12,यहाँ बस्न मिल्दैन।,yahā̃ basna mildaina,ここに座ることはできません,You cannot sit here.
 22,願望（〜したい）,1,म नेपाल जान चाहन्छु।,ma nepāl jāna cāhanchu,私はネパールに行きたいです,I want to go to Nepal.
-22,願望（〜したい）,2,तँ नेपाल जान चाहँदैनस्।,tã nepāl jāna cāhãdainas,お前はネパールに行きたくありません,You do not want to go to Nepal.
-22,願望（〜したい）,3,तिमी नेपाल जान चाहन्छौ?,timī nepāl jāna cāhanchau?,君はネパールに行きたいですか？,Do you want to go to Nepal?
-22,願望（〜したい）,4,तिमीहरू नेपाल जान चाहन्छौ।,timīharū nepāl jāna cāhanchau,君たちはネパールに行きたいです,You want to go to Nepal.
-22,願望（〜したい）,5,तपाईं नेपाल जान चाहनुहुन्छ?,tapāĩ nepāl jāna cāhanuhuncha?,あなたはネパールに行きたいですか？,Do you want to go to Nepal?
-22,願望（〜したい）,6,उ नेपाल जान चाहँदैन।,u nepāl jāna cāhãdaina,彼はネパールに行きたくありません,He does not want to go to Nepal.
-22,願望（〜したい）,7,उनी नेपाल जान चाहन्छिन्।,unī nepāl jāna cāhanchin,彼女はネパールに行きたいです,She wants to go to Nepal.
-22,願望（〜したい）,8,उहाँ नेपाल जान चाहनुहुन्छ।,uhā̃ nepāl jāna cāhanuhuncha,あの方はネパールに行きたいです,He wants to go to Nepal.
-22,願望（〜したい）,9,हामी नेपाल जान चाहन्छौं।,hāmī nepāl jāna cāhanchaũ,私たちはネパールに行きたいです,We want to go to Nepal.
-22,願望（〜したい）,10,उनीहरू नेपाल जान चाहँदैनन्।,unīharū nepāl jāna cāhãdainan,彼らはネパールに行きたくありません,They do not want to go to Nepal.
-22,願望（〜したい）,11,मलाई चिया पिउन मन छ।,malāī ciyā piuna man cha,私はお茶を飲みたい気分です,I feel like drinking tea.
-22,願望（〜したい）,12,तिमीलाई के खान मन छ?,timīlāī ke khāna man cha?,君は何を食べたいですか？,What do you feel like eating?
-22,願望（〜したい）,13,उनलाई अहिले बोल्न मन छैन।,unlāī ahile bolna man chaina,彼女は今話す気分ではありません,She does not feel like talking now.
-22,願望（〜したい）,14,हामीलाई सँगै बस्न मन लाग्छ।,hāmīlāī sãgai basna man lāgcha,私たちは一緒にいたい気分になります,We feel like spending time together.
-22,願望（〜したい）,15,मलाई घर फर्कन मन लाग्यो।,malāī ghar pharkana man lāgyo,私は家に帰りたくなりました,I felt like going home.
+22,願望（〜したい）,2,तपाईं नेपाल जान चाहनुहुन्छ?,tapāĩ nepāl jāna cāhanuhuncha?,あなたはネパールに行きたいですか？,Do you want to go to Nepal?
+22,願望（〜したい）,3,मलाई चिया पिउन मन छ।,malāī ciyā piuna man cha,私はお茶を飲みたい気分です,I feel like drinking tea.
+22,願望（〜したい）,4,उनलाई अहिले बोल्न मन छैन।,unlāī ahile bolna man chaina,彼女は今話す気分ではありません,She does not feel like talking now.
+22,願望（〜したい）,5,हामीलाई सँगै बस्न मन लाग्छ।,hāmīlāī sãgai basna man lāgcha,私たちは一緒にいたい気分になります,We feel like spending time together.
+22,願望（〜したい）,6,मलाई घर फर्कन मन लाग्यो।,malāī ghar pharkana man lāgyo,私は家に帰りたくなりました,I felt like going home.
+22,願望（〜したい）,7,हामी नयाँ किताब पढ्न चाहन्छौं।,hāmī nayā̃ kitāb paḍhna cāhanchaũ,私たちは新しい本を読みたいです,We want to read a new book.
+22,願望（〜したい）,8,तपाईंहरू के खान चाहनुहुन्छ?,tapāĩharū ke khāna cāhanuhuncha?,あなたたちは何を食べたいですか？,What would you like to eat?
 23,形容詞の一致・位置,1,यो राम्रो किताब हो।,yo rāmro kitāb ho,これは良い本です,This is a good book.
-23,形容詞の一致・位置,2,ऊ राम्रो केटा हो।,ū rāmro keṭā ho,彼は良い少年です,He is a good boy.
-23,形容詞の一致・位置,3,उनी राम्री केटी हुन्।,unī rāmrī keṭī hun,彼女はかわいい女の子です,She is a pretty girl.
-23,形容詞の一致・位置,4,यी राम्रा केटाहरू हुन्।,yī rāmrā keṭāharū hun,この子たちは良い少年たちです,These are good boys.
-23,形容詞の一致・位置,5,त्यो ठूलो घर हो।,tyo ṭhūlo ghar ho,あれは大きい家です,That is a big house.
-23,形容詞の一致・位置,6,यो सानो कोठा हो।,yo sāno koṭhā ho,これは小さい部屋です,This is a small room.
-23,形容詞の一致・位置,7,यो पुरानो झोला होइन।,yo purāno jholā hoina,これは古いかばんではありません,This is not an old bag.
-23,形容詞の一致・位置,8,यो नयाँ किताब हो?,yo nayā̃ kitāb ho?,これは新しい本ですか？,Is this a new book?
-23,形容詞の一致・位置,9,तिम्री बहिनी सानी छिन्।,timrī bahinī sānī chin,君の妹は小さいです,Your younger sister is little.
-23,形容詞の一致・位置,10,मेरो भाइ सानो छ।,mero bhāi sāno cha,私の弟は小さいです,My younger brother is little.
-23,形容詞の一致・位置,11,उहाँ राम्रा शिक्षक हुनुहुन्छ।,uhā̃ rāmrā śikṣak hunuhuncha,あの方は良い先生です,He is a good teacher.
-23,形容詞の一致・位置,12,ती केटीहरू राम्रा छन्।,tī keṭīharū rāmrā chan,あの女の子たちはかわいいです,Those girls are pretty.
-23,形容詞の一致・位置,13,के यी नयाँ किताबहरू हुन्?,ke yī nayā̃ kitābharū hun?,これらは新しい本ですか？,Are these new books?
-23,形容詞の一致・位置,14,यो फूल सुन्दर छ।,yo phūl sundar cha,この花は美しいです,This flower is beautiful.
-23,形容詞の一致・位置,15,यो कोठा ठूलो छैन।,yo koṭhā ṭhūlo chaina,この部屋は大きくありません,This room is not big.
+23,形容詞の一致・位置,2,उनी राम्री केटी हुन्।,unī rāmrī keṭī hun,彼女はかわいい女の子です,She is a pretty girl.
+23,形容詞の一致・位置,3,यी राम्रा केटाहरू हुन्।,yī rāmrā keṭāharū hun,この子たちは良い少年たちです,These are good boys.
+23,形容詞の一致・位置,4,त्यो ठूलो घर हो।,tyo ṭhūlo ghar ho,あれは大きい家です,That is a big house.
+23,形容詞の一致・位置,5,यो सानो कोठा हो।,yo sāno koṭhā ho,これは小さい部屋です,This is a small room.
+23,形容詞の一致・位置,6,यो पुरानो झोला होइन।,yo purāno jholā hoina,これは古いかばんではありません,This is not an old bag.
+23,形容詞の一致・位置,7,यो नयाँ किताब हो?,yo nayā̃ kitāb ho?,これは新しい本ですか？,Is this a new book?
+23,形容詞の一致・位置,8,मेरो भाइ सानो छ।,mero bhāi sāno cha,私の弟は小さいです,My younger brother is little.
+23,形容詞の一致・位置,9,ती केटीहरू राम्रा छन्।,tī keṭīharū rāmrā chan,あの女の子たちはかわいいです,Those girls are pretty.
+23,形容詞の一致・位置,10,के यी नयाँ किताबहरू हुन्?,ke yī nayā̃ kitābharū hun?,これらは新しい本ですか？,Are these new books?
+23,形容詞の一致・位置,11,यो फूल सुन्दर छ।,yo phūl sundar cha,この花は美しいです,This flower is beautiful.
+23,形容詞の一致・位置,12,यो कोठा ठूलो छैन।,yo koṭhā ṭhūlo chaina,この部屋は大きくありません,This room is not big.
 24,副詞＋感嘆,1,म बिस्तारै हिँड्छु।,ma bistārai hĩḍchu,私はゆっくり歩きます,I walk slowly.
-24,副詞＋感嘆,2,तँ छिटो दौड्छस्।,tã chiṭo dauḍchas,お前は速く走る,You run fast.
-24,副詞＋感嘆,3,तिमी सधैं चाँडै उठ्छौ?,timī sadhaĩ cā̃ḍai uṭhchau?,君はいつも早く起きますか？,Do you always get up early?
-24,副詞＋感嘆,4,तिमीहरू बिस्तारै बोल।,timīharū bistārai bola,君たちはゆっくり話して,Speak slowly.
-24,副詞＋感嘆,5,तपाईं प्रायः यहाँ आउनुहुन्छ?,tapāĩ prāyaḥ yahā̃ āunuhuncha?,あなたはたいていここに来るのですか？,Do you usually come here?
-24,副詞＋感嘆,6,उ धेरै छिटो दौड्छ।,u dherai chiṭo dauḍcha,彼はとても速く走ります,He runs very fast.
-24,副詞＋感嘆,7,उनी सधैं यहाँ बस्छिन्।,unī sadhaĩ yahā̃ baschin,彼女はいつもここに座ります,She always sits here.
-24,副詞＋感嘆,8,हामी राति काम गर्दैनौं।,hāmī rāti kām gardainaũ,私たちは夜は働きません,We do not work at night.
-24,副詞＋感嘆,9,उनीहरू धेरै बोल्दैनन्।,unīharū dherai boldainan,彼らはあまり話しません,They do not talk much.
-24,副詞＋感嘆,10,कति सुन्दर!,kati sundar!,なんて美しい！,How beautiful!
-24,副詞＋感嘆,11,यो खाना एकदमै मिठो छ!,yo khānā ekdamai miṭho cha!,この料理はとてもおいしい！,This food is really delicious!
-24,副詞＋感嘆,12,साँच्चै?,sā̃ccai?,本当に？,Really?
-24,副詞＋感嘆,13,आज धेरै चिसो छ।,āja dherai ciso cha,今日はとても寒いです,It is very cold today.
-24,副詞＋感嘆,14,बिस्तारै खानुहोस्।,bistārai khānuhos,ゆっくり食べてください,Please eat slowly.
-24,副詞＋感嘆,15,यो फूल कति राम्रो छ!,yo phūl kati rāmro cha!,この花はなんてきれいなのでしょう！,How lovely this flower is!
+24,副詞＋感嘆,2,तपाईं प्रायः यहाँ आउनुहुन्छ?,tapāĩ prāyaḥ yahā̃ āunuhuncha?,あなたはたいていここに来るのですか？,Do you usually come here?
+24,副詞＋感嘆,3,उनी सधैं यहाँ बस्छिन्।,unī sadhaĩ yahā̃ baschin,彼女はいつもここに座ります,She always sits here.
+24,副詞＋感嘆,4,हामी राति काम गर्दैनौं।,hāmī rāti kām gardainaũ,私たちは夜は働きません,We do not work at night.
+24,副詞＋感嘆,5,उनीहरू धेरै बोल्दैनन्।,unīharū dherai boldainan,彼らはあまり話しません,They do not talk much.
+24,副詞＋感嘆,6,कति सुन्दर!,kati sundar!,なんて美しい！,How beautiful!
+24,副詞＋感嘆,7,यो खाना एकदमै मिठो छ!,yo khānā ekdamai miṭho cha!,この料理はとてもおいしい！,This food is really delicious!
+24,副詞＋感嘆,8,साँच्चै?,sā̃ccai?,本当に？,Really?
+24,副詞＋感嘆,9,आज धेरै चिसो छ।,āja dherai ciso cha,今日はとても寒いです,It is very cold today.
+24,副詞＋感嘆,10,बिस्तारै खानुहोस्।,bistārai khānuhos,ゆっくり食べてください,Please eat slowly.
+24,副詞＋感嘆,11,यो फूल कति राम्रो छ!,yo phūl kati rāmro cha!,この花はなんてきれいなのでしょう！,How lovely this flower is!
 25,比較・最上級,1,यो घर त्यो घरभन्दा ठूलो छ।,yo ghar tyo gharbhandā ṭhūlo cha,この家はあの家より大きいです,This house is bigger than that house.
-25,比較・最上級,2,त्यो झोला यो झोलाभन्दा सानो छ।,tyo jholā yo jholābhandā sāno cha,そのかばんはこのかばんより小さいです,That bag is smaller than this bag.
-25,比較・最上級,3,यो किताब त्यो किताबभन्दा सस्तो छ।,yo kitāb tyo kitābbhandā sasto cha,この本はその本より安いです,This book is cheaper than that book.
-25,比較・最上級,4,चिया कफीभन्दा सस्तो छ।,ciyā kaphībhandā sasto cha,お茶はコーヒーより安いです,Tea is cheaper than coffee.
-25,比較・最上級,5,आज हिजोभन्दा चिसो छ।,āja hijobhandā ciso cha,今日は昨日より寒いです,It is colder today than yesterday.
-25,比較・最上級,6,म तिमीभन्दा अग्लो छु।,ma timībhandā aglo chu,私は君より背が高いです,I am taller than you.
-25,比較・最上級,7,तिमी मभन्दा अग्लो छौ?,timī mabhandā aglo chau?,君は私より背が高いですか？,Are you taller than me?
-25,比較・最上級,8,उ आफ्नो भाइभन्दा होचो छ।,u āphno bhāibhandā hoco cha,彼は自分の弟より背が低いです,He is shorter than his younger brother.
-25,比較・最上級,9,उनी मभन्दा छिटो हिँड्छिन्।,unī mabhandā chiṭo hĩḍchin,彼女は私より速く歩きます,She walks faster than me.
-25,比較・最上級,10,यो काम त्यो कामभन्दा सजिलो छैन।,yo kām tyo kāmbhandā sajilo chaina,この仕事はその仕事より簡単ではありません,This job is not easier than that one.
-25,比較・最上級,11,यीमध्ये कुन सबभन्दा सस्तो छ?,yīmadhye kun sabbhandā sasto cha?,これらの中でどれが一番安いですか？,Which of these is the cheapest?
-25,比較・最上級,12,यो झोला सबभन्दा सस्तो छ।,yo jholā sabbhandā sasto cha,このかばんが一番安いです,This bag is the cheapest.
-25,比較・最上級,13,हाम्रो कक्षामा उ सबभन्दा अग्लो छ।,hāmro kakṣāmā u sabbhandā aglo cha,私たちのクラスでは彼が一番背が高いです,He is the tallest in our class.
-25,比較・最上級,14,यो सबभन्दा राम्रो किताब हो।,yo sabbhandā rāmro kitāb ho,これが一番良い本です,This is the best book.
-25,比較・最上級,15,यो बाटो त्यो बाटोभन्दा लामो छ?,yo bāṭo tyo bāṭobhandā lāmo cha?,この道はあの道より長いですか？,Is this road longer than that road?
+25,比較・最上級,2,यो किताब त्यो किताबभन्दा सस्तो छ।,yo kitāb tyo kitābbhandā sasto cha,この本はその本より安いです,This book is cheaper than that book.
+25,比較・最上級,3,चिया कफीभन्दा सस्तो छ।,ciyā kaphībhandā sasto cha,お茶はコーヒーより安いです,Tea is cheaper than coffee.
+25,比較・最上級,4,आज हिजोभन्दा चिसो छ।,āja hijobhandā ciso cha,今日は昨日より寒いです,It is colder today than yesterday.
+25,比較・最上級,5,उनी मभन्दा छिटो हिँड्छिन्।,unī mabhandā chiṭo hĩḍchin,彼女は私より速く歩きます,She walks faster than me.
+25,比較・最上級,6,यो काम त्यो कामभन्दा सजिलो छैन।,yo kām tyo kāmbhandā sajilo chaina,この仕事はその仕事より簡単ではありません,This job is not easier than that one.
+25,比較・最上級,7,यीमध्ये कुन सबभन्दा सस्तो छ?,yīmadhye kun sabbhandā sasto cha?,これらの中でどれが一番安いですか？,Which of these is the cheapest?
+25,比較・最上級,8,यो झोला सबभन्दा सस्तो छ।,yo jholā sabbhandā sasto cha,このかばんが一番安いです,This bag is the cheapest.
+25,比較・最上級,9,यो सबभन्दा राम्रो किताब हो।,yo sabbhandā rāmro kitāb ho,これが一番良い本です,This is the best book.
+25,比較・最上級,10,यो बाटो त्यो बाटोभन्दा लामो छ?,yo bāṭo tyo bāṭobhandā lāmo cha?,この道はあの道より長いですか？,Is this road longer than that road?
+25,比較・最上級,11,उनीहरू हामीभन्दा छिटो हिँड्छन्।,unīharū hāmībhandā chiṭo hiṇḍchan,彼らは私たちより速く歩きます,They walk faster than we do.
+25,比較・最上級,12,यीमध्ये कुन राम्रो छ?,yīmadhye kun rāmro cha?,これらの中ではどれが良いですか？,Which of these is good?
+25,比較・最上級,13,यो झोला मेरो झोलाजस्तै छ।,yo jholā mero jholājastai cha,このかばんは私のかばんによく似ています,This bag is like my bag.
 26,接続（と・そして・でも・ので）,1,मलाई चिया र कफी मन पर्छ।,malāī ciyā ra kaphī man parcha,私はお茶とコーヒーが好きです,I like tea and coffee.
 26,接続（と・そして・でも・ので）,2,यहाँ किताब र कापी छन्।,yahā̃ kitāb ra kāpī chan,ここには本とノートがあります,There are books and notebooks here.
 26,接続（と・そして・でも・ので）,3,म घर जान्छु अनि सुत्छु।,ma ghar jānchu ani sutchu,私は家に帰って、それから寝ます,I go home and then sleep.
-26,接続（と・そして・でも・ので）,4,तिमी पढ्छौ अनि लेख्छौ।,timī paḍhchau ani lekhchau,君は読んで、それから書きます,You read and then write.
-26,接続（と・そして・でも・ので）,5,उ विद्यार्थी हो तर काम गर्छ।,u vidyārthī ho tara kām garcha,彼は学生ですが働いています,"He is a student, but he works."
-26,接続（と・そして・でも・ので）,6,यो राम्रो छ तर महँगो छ।,yo rāmro cha tara mahãgo cha,これは良いですが高いです,"This is good, but it is expensive."
-26,接続（と・そして・でも・ので）,7,म जान्छु तर उनी जाँदिनन्।,ma jānchu tara unī jā̃dinan,私は行きますが彼女は行きません,"I am going, but she is not."
-26,接続（と・そして・でも・ので）,8,हामी पनि जान्छौं।,hāmī pani jānchaũ,私たちも行きます,We are going too.
-26,接続（と・そして・でも・ので）,9,तपाईं पनि आउनुहुन्छ?,tapāĩ pani āunuhuncha?,あなたも来ますか？,Are you coming too?
-26,接続（と・そして・でも・ので）,10,म पनि उ पनि यहाँ बस्छौं।,ma pani u pani yahā̃ baschaũ,私も彼もここに住んでいます,He and I both live here.
-26,接続（と・そして・でも・ので）,11,तिमीहरू पनि तयार छैनौ?,timīharū pani tayār chainau?,君たちもまだ準備ができていませんか？,Are you not ready either?
-26,接続（と・そして・でも・ので）,12,"पानी परेकोले, हामी घरमा बस्यौं।","pānī parekole, hāmī gharmā basyaũ",雨が降ったので、私たちは家にいました,We stayed home because it rained.
-26,接続（と・そして・でも・ので）,13,"थकित भएकोले, म चाँडो सुतेँ।","thakit bhaekole, ma cā̃ḍo sutẽ",疲れていたので、私は早く寝ました,I went to bed early because I was tired.
-26,接続（と・そして・でも・ので）,14,"समय नभएकोले, उहाँ आउनुभएन।","samay nabhaekole, uhā̃ āunubhaena",時間がなかったので、あの方は来ませんでした,He did not come because he had no time.
-26,接続（と・そして・でも・ので）,15,"यो सानो, सस्तो अनि राम्रो छ।","yo sāno, sasto ani rāmro cha",これは小さくて、安くて、良いです,"This is small, cheap, and good."
+26,接続（と・そして・でも・ので）,4,यो राम्रो छ तर महँगो छ।,yo rāmro cha tara mahãgo cha,これは良いですが高いです,"This is good, but it is expensive."
+26,接続（と・そして・でも・ので）,5,हामी पनि जान्छौं।,hāmī pani jānchaũ,私たちも行きます,We are going too.
+26,接続（と・そして・でも・ので）,6,तपाईं पनि आउनुहुन्छ?,tapāĩ pani āunuhuncha?,あなたも来ますか？,Are you coming too?
+26,接続（と・そして・でも・ので）,7,"पानी परेकोले, हामी घरमा बस्यौं।","pānī parekole, hāmī gharmā basyaũ",雨が降ったので、私たちは家にいました,We stayed home because it rained.
+26,接続（と・そして・でも・ので）,8,"थकित भएकोले, म चाँडो सुतेँ।","thakit bhaekole, ma cā̃ḍo sutẽ",疲れていたので、私は早く寝ました,I went to bed early because I was tired.
+26,接続（と・そして・でも・ので）,9,"यो सानो, सस्तो अनि राम्रो छ।","yo sāno, sasto ani rāmro cha",これは小さくて、安くて、良いです,"This is small, cheap, and good."
+26,接続（と・そして・でも・ので）,10,वर्षाका कारण बाटो बन्द छ।,varṣākā kāraṇ bāṭo banda cha,雨のため道が通れません,The road is closed because of rain.
+26,接続（と・そして・でも・ので）,11,वर्षाका बाबजुद हामी गयौं।,varṣākā bābajud hāmī gayaũ,雨にもかかわらず私たちは行きました,We went despite the rain.
 27,〜ながら（-दै）／〜てから（-एपछि）,1,म संगीत सुन्दै पढ्छु।,ma saṅgīt sundai paḍhchu,私は音楽を聴きながら勉強します,I study while listening to music.
-27,〜ながら（-दै）／〜てから（-एपछि）,2,तिमी टेलिभिजन हेर्दै खान्छौ?,timī ṭelibhijan herdai khānchau?,君はテレビを見ながら食べますか？,Do you eat while watching television?
-27,〜ながら（-दै）／〜てから（-एपछि）,3,उ हाँस्दै बोल्छ।,u hā̃sdai bolcha,彼は笑いながら話します,He talks while laughing.
-27,〜ながら（-दै）／〜てから（-एपछि）,4,उनी गीत गाउँदै काम गर्छिन्।,unī gīt gāũdai kām garchin,彼女は歌を歌いながら働きます,She works while singing.
-27,〜ながら（-दै）／〜てから（-एपछि）,5,हामी कुरा गर्दै हिँड्छौं।,hāmī kurā gardai hĩḍchaũ,私たちは話しながら歩きます,We walk while chatting.
-27,〜ながら（-दै）／〜てから（-एपछि）,6,तपाईं संगीत सुन्दै काम गर्नुहुन्छ?,tapāĩ saṅgīt sundai kām garnuhuncha?,あなたは音楽を聴きながら働きますか？,Do you work while listening to music?
-27,〜ながら（-दै）／〜てから（-एपछि）,7,तिमीहरू हिँड्दै नखाऊ।,timīharū hĩḍdai nakhāū,君たちは歩きながら食べないで,Do not eat while walking.
-27,〜ながら（-दै）／〜てから（-एपछि）,8,"हात धोएपछि, म खान्छु।","hāt dhoepachi, ma khānchu",手を洗ってから、私は食べます,I eat after washing my hands.
-27,〜ながら（-दै）／〜てから（-एपछि）,9,"उठेपछि, म अनुहार धुन्छु।","uṭhepachi, ma anuhār dhunchu",起きてから、私は顔を洗います,I wash my face after getting up.
-27,〜ながら（-दै）／〜てから（-एपछि）,10,"खाना खाएपछि, उ सुत्छ।","khānā khāepachi, u sutcha",ご飯を食べてから、彼は寝ます,He sleeps after eating.
-27,〜ながら（-दै）／〜てから（-एपछि）,11,"काम गरेपछि, हामी घर जान्छौं।","kām garepachi, hāmī ghar jānchaũ",仕事をしてから、私たちは家に帰ります,We go home after work.
-27,〜ながら（-दै）／〜てから（-एपछि）,12,"किताब पढेपछि, तिमी के गर्छौ?","kitāb paḍhepachi, timī ke garchau?",本を読んでから、君は何をしますか？,What do you do after reading a book?
-27,〜ながら（-दै）／〜てから（-एपछि）,13,"घर पुगेपछि, फोन गर्नुहोस्।","ghar pugepachi, phon garnuhos",家に着いたら、電話してください,Please call after you get home.
-27,〜ながら（-दै）／〜てから（-एपछि）,14,"चिया पिएपछि, उनी जान्छिन्।","ciyā piepachi, unī jānchin",お茶を飲んでから、彼女は行きます,She leaves after drinking tea.
-27,〜ながら（-दै）／〜てから（-एपछि）,15,"काम सकेपछि, उहाँ आराम गर्नुहुन्छ।","kām sakepachi, uhā̃ ārām garnuhuncha",仕事を終えてから、あの方は休みます,He rests after finishing work.
+27,〜ながら（-दै）／〜てから（-एपछि）,2,उनी गीत गाउँदै काम गर्छिन्।,unī gīt gāũdai kām garchin,彼女は歌を歌いながら働きます,She works while singing.
+27,〜ながら（-दै）／〜てから（-एपछि）,3,हामी कुरा गर्दै हिँड्छौं।,hāmī kurā gardai hĩḍchaũ,私たちは話しながら歩きます,We walk while chatting.
+27,〜ながら（-दै）／〜てから（-एपछि）,4,तपाईं संगीत सुन्दै काम गर्नुहुन्छ?,tapāĩ saṅgīt sundai kām garnuhuncha?,あなたは音楽を聴きながら働きますか？,Do you work while listening to music?
+27,〜ながら（-दै）／〜てから（-एपछि）,5,"हात धोएपछि, म खान्छु।","hāt dhoepachi, ma khānchu",手を洗ってから、私は食べます,I eat after washing my hands.
+27,〜ながら（-दै）／〜てから（-एपछि）,6,"उठेपछि, म अनुहार धुन्छु।","uṭhepachi, ma anuhār dhunchu",起きてから、私は顔を洗います,I wash my face after getting up.
+27,〜ながら（-दै）／〜てから（-एपछि）,7,"काम गरेपछि, हामी घर जान्छौं।","kām garepachi, hāmī ghar jānchaũ",仕事をしてから、私たちは家に帰ります,We go home after work.
+27,〜ながら（-दै）／〜てから（-एपछि）,8,"घर पुगेपछि, फोन गर्नुहोस्।","ghar pugepachi, phon garnuhos",家に着いたら、電話してください,Please call after you get home.
+27,〜ながら（-दै）／〜てから（-एपछि）,9,"चिया पिएपछि, उनी जान्छिन्।","ciyā piepachi, unī jānchin",お茶を飲んでから、彼女は行きます,She leaves after drinking tea.
+27,〜ながら（-दै）／〜てから（-एपछि）,10,म खाना खानुअघि हात धुन्छु।,ma khānā khānuaghi hāt dhunchu,私は食事の前に手を洗います,I wash my hands before eating.
+27,〜ながら（-दै）／〜てから（-एपछि）,11,कक्षापछि हामी घर जान्छौं।,kakṣāpachi hāmī ghar jānchaũ,授業の後、私たちは家に帰ります,We go home after class.
+27,〜ながら（-दै）／〜てから（-एपछि）,12,हामी दुई दिनभित्र फर्कन्छौं।,hāmī duī dinbhitra pharkanchaũ,私たちは2日以内に戻ります,We will return within two days.
 28,〜ために（-नको लागि）,1,म पढ्नको लागि पुस्तकालय जान्छु।,ma paḍhnako lāgi pustakālaya jānchu,私は勉強するために図書館に行きます,I go to the library to study.
-28,〜ために（-नको लागि）,2,तिमी काम गर्नको लागि यहाँ आउँछौ?,timī kām garnako lāgi yahā̃ āũchau?,君は働くためにここに来ますか？,Do you come here to work?
-28,〜ために（-नको लागि）,3,तपाईं के गर्नको लागि आउनुभयो?,tapāĩ ke garnako lāgi āunubhayo?,あなたは何をするために来ましたか？,What did you come here to do?
-28,〜ために（-नको लागि）,4,उ नेपाली सिक्नको लागि नेपाल जान्छ।,u nepālī siknako lāgi nepāl jāncha,彼はネパール語を学ぶためにネパールに行きます,He goes to Nepal to learn Nepali.
-28,〜ために（-नको लागि）,5,उनी साथीलाई भेट्नको लागि आउँछिन्।,unī sāthīlāī bheṭnako lāgi āũchin,彼女は友達に会うために来ます,She comes to meet a friend.
-28,〜ために（-नको लागि）,6,हामी खाना खानको लागि यहाँ बस्छौं।,hāmī khānā khānako lāgi yahā̃ baschaũ,私たちはご飯を食べるためにここに座ります,We sit here to eat.
-28,〜ために（-नको लागि）,7,तिमीहरू खेल्नको लागि बाहिर जान्छौ।,timīharū khelnako lāgi bāhira jānchau,君たちは遊ぶために外に行きます,You go outside to play.
-28,〜ために（-नको लागि）,8,उहाँ आराम गर्नको लागि घर जानुहुन्छ।,uhā̃ ārām garnako lāgi ghar jānuhuncha,あの方は休むために家に帰ります,He goes home to rest.
-28,〜ために（-नको लागि）,9,उनीहरू किताब किन्नको लागि बजार जान्छन्।,unīharū kitāb kinnako lāgi bajār jānchan,彼らは本を買うために市場へ行きます,They go to the market to buy books.
-28,〜ために（-नको लागि）,10,यो तपाईंको लागि हो।,yo tapāĩko lāgi ho,これはあなたのためのものです,This is for you.
-28,〜ために（-नको लागि）,11,यो खाना बच्चाको लागि हो।,yo khānā baccāko lāgi ho,この食べ物は子どものためのものです,This food is for the child.
-28,〜ために（-नको लागि）,12,म स्वास्थ्यको लागि हिँड्छु।,ma svāsthyako lāgi hĩḍchu,私は健康のために歩きます,I walk for my health.
-28,〜ために（-नको लागि）,13,यो मेरो लागि होइन।,yo mero lāgi hoina,これは私のためのものではありません,This is not for me.
-28,〜ために（-नको लागि）,14,तपाईं कसको लागि काम गर्नुहुन्छ?,tapāĩ kasko lāgi kām garnuhuncha?,あなたは誰のために働いていますか？,Who do you work for?
-28,〜ために（-नको लागि）,15,म खेल्नको लागि आएको होइनँ।,ma khelnako lāgi āeko hoinã,私は遊ぶために来たのではありません,I did not come to play.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,1,यहाँ बस्ने मान्छे मेरो साथी हो।,yahā̃ basne mānche mero sāthī ho,ここに住む人は私の友達です,The person who lives here is my friend.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,2,नेपाली बोल्ने शिक्षक उहाँ हुनुहुन्छ।,nepālī bolne śikṣak uhā̃ hunuhuncha,ネパール語を話す先生はあの方です,He is the teacher who speaks Nepali.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,3,काठमाडौं जाने बस कहाँ छ?,kāṭhmāḍaũ jāne bas kahā̃ cha?,カトマンズに行くバスはどこですか？,Where is the bus that goes to Kathmandu?
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,4,यो स्कूल जाने बाटो हो।,yo skūl jāne bāṭo ho,これは学校に行く道です,This is the road to school.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,5,खाने कुरा छ?,khāne kurā cha?,食べるものはありますか？,Is there anything to eat?
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,6,पिउने पानी यहाँ छ।,piune pānī yahā̃ cha,飲み水はここにあります,The drinking water is here.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,7,बस्ने ठाउँ छैन।,basne ṭhāũ chaina,座る場所がありません,There is nowhere to sit.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,8,काम गर्ने समय भयो।,kām garne samay bhayo,働く時間になりました,It is time to work.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,9,तिमी आउने दिन कुन हो?,timī āune din kun ho?,君が来る日はどの日ですか？,Which day are you coming?
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,10,म पढ्ने किताब यही हो।,ma paḍhne kitāb yahī ho,私が読む本はこれです,This is the book I read.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,11,हामी बस्ने घर सानो छ।,hāmī basne ghar sāno cha,私たちが住む家は小さいです,The house we live in is small.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,12,उनी काम गर्ने अफिस टाढा छ।,unī kām garne aphis ṭāḍhā cha,彼女が働く会社は遠いです,The office where she works is far away.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,13,यो सुत्ने कोठा होइन।,yo sutne koṭhā hoina,ここは寝る部屋ではありません,This is not a bedroom.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,14,"पैसा पाउने बित्तिकै, उसले किताब किन्यो।","paisā pāune bittikai, usle kitāb kinyo",お金をもらうとすぐに、彼は本を買いました,He bought a book as soon as he got the money.
-29,関係節：〜する人／〜するもの（現在分詞 -ने）,15,"घर पुग्ने बित्तिकै, फोन गर्नुहोस्।","ghar pugne bittikai, phon garnuhos",家に着いたらすぐに、電話してください,Please call as soon as you get home.
+28,〜ために（-नको लागि）,2,तपाईं के गर्नको लागि आउनुभयो?,tapāĩ ke garnako lāgi āunubhayo?,あなたは何をするために来ましたか？,What did you come here to do?
+28,〜ために（-नको लागि）,3,उनी साथीलाई भेट्नको लागि आउँछिन्।,unī sāthīlāī bheṭnako lāgi āũchin,彼女は友達に会うために来ます,She comes to meet a friend.
+28,〜ために（-नको लागि）,4,हामी खाना खानको लागि यहाँ बस्छौं।,hāmī khānā khānako lāgi yahā̃ baschaũ,私たちはご飯を食べるためにここに座ります,We sit here to eat.
+28,〜ために（-नको लागि）,5,उनीहरू किताब किन्नको लागि बजार जान्छन्।,unīharū kitāb kinnako lāgi bajār jānchan,彼らは本を買うために市場へ行きます,They go to the market to buy books.
+28,〜ために（-नको लागि）,6,यो तपाईंको लागि हो।,yo tapāĩko lāgi ho,これはあなたのためのものです,This is for you.
+28,〜ために（-नको लागि）,7,यो खाना बच्चाको लागि हो।,yo khānā baccāko lāgi ho,この食べ物は子どものためのものです,This food is for the child.
+28,〜ために（-नको लागि）,8,म स्वास्थ्यको लागि हिँड्छु।,ma svāsthyako lāgi hĩḍchu,私は健康のために歩きます,I walk for my health.
+28,〜ために（-नको लागि）,9,यो मेरो लागि होइन।,yo mero lāgi hoina,これは私のためのものではありません,This is not for me.
+28,〜ために（-नको लागि）,10,तपाईं कसको लागि काम गर्नुहुन्छ?,tapāĩ kasko lāgi kām garnuhuncha?,あなたは誰のために働いていますか？,Who do you work for?
+28,〜ために（-नको लागि）,11,म खेल्नको लागि आएको होइनँ।,ma khelnako lāgi āeko hoinã,私は遊ぶために来たのではありません,I did not come to play.
+29,人・物・場所・時をつなぐ関係表現,1,यहाँ बस्ने मान्छे मेरो साथी हो।,yahā̃ basne mānche mero sāthī ho,ここに住む人は私の友達です,The person who lives here is my friend.
+29,人・物・場所・時をつなぐ関係表現,2,काठमाडौं जाने बस कहाँ छ?,kāṭhmāḍaũ jāne bas kahā̃ cha?,カトマンズに行くバスはどこですか？,Where is the bus that goes to Kathmandu?
+29,人・物・場所・時をつなぐ関係表現,3,यो स्कूल जाने बाटो हो।,yo skūl jāne bāṭo ho,これは学校に行く道です,This is the road to school.
+29,人・物・場所・時をつなぐ関係表現,4,खाने कुरा छ?,khāne kurā cha?,食べるものはありますか？,Is there anything to eat?
+29,人・物・場所・時をつなぐ関係表現,5,पिउने पानी यहाँ छ।,piune pānī yahā̃ cha,飲み水はここにあります,The drinking water is here.
+29,人・物・場所・時をつなぐ関係表現,6,बस्ने ठाउँ छैन।,basne ṭhāũ chaina,座る場所がありません,There is nowhere to sit.
+29,人・物・場所・時をつなぐ関係表現,7,काम गर्ने समय भयो।,kām garne samay bhayo,働く時間になりました,It is time to work.
+29,人・物・場所・時をつなぐ関係表現,8,म पढ्ने किताब यही हो।,ma paḍhne kitāb yahī ho,私が読む本はこれです,This is the book I read.
+29,人・物・場所・時をつなぐ関係表現,9,हामी बस्ने घर सानो छ।,hāmī basne ghar sāno cha,私たちが住む家は小さいです,The house we live in is small.
+29,人・物・場所・時をつなぐ関係表現,10,उनी काम गर्ने अफिस टाढा छ।,unī kām garne aphis ṭāḍhā cha,彼女が働く会社は遠いです,The office where she works is far away.
+29,人・物・場所・時をつなぐ関係表現,11,यो सुत्ने कोठा होइन।,yo sutne koṭhā hoina,ここは寝る部屋ではありません,This is not a bedroom.
+29,人・物・場所・時をつなぐ関係表現,12,"जो यहाँ बस्छ, ऊ मेरो साथी हो।","jo yahā̃ bascha, ū mero sāthī ho",ここに住んでいる人は私の友達です,The person who lives here is my friend.
+29,人・物・場所・時をつなぐ関係表現,13,"जुन किताब तपाईं पढ्नुहुन्छ, त्यो राम्रो छ।","jun kitāb tapāĩ paḍhnuhuncha, tyo rāmro cha",あなたが読んでいる本は良い本です,The book you are reading is good.
+29,人・物・場所・時をつなぐ関係表現,14,"जहाँ पानी छ, त्यहाँ जीवन छ।","jahā̃ pānī cha, tyahā̃ jīvan cha",水があるところには命があります,"Where there is water, there is life."
+29,人・物・場所・時をつなぐ関係表現,15,"जब पानी पर्छ, तब बाटो हिलो हुन्छ।","jab pānī parcha, tab bāṭo hilo huncha",雨が降ると、道はぬかるみます,"When it rains, the road gets muddy."
+29,人・物・場所・時をつなぐ関係表現,16,"म जहिले आउँछु, उनी यहाँ हुन्छिन्।","ma jahile āũchu, unī yahā̃ hunchin",私が来るときはいつも、彼女はここにいます,"Whenever I come, she is here."
+29,人・物・場所・時をつなぐ関係表現,17,"जसले मेहनत गर्छ, उसले सिक्छ।","jasle mehanat garcha, usle sikcha",努力する人は学びます,The person who makes an effort learns.
+29,人・物・場所・時をつなぐ関係表現,18,"जसलाई पानी चाहिन्छ, उसलाई दिनुहोस्।","jaslāī pānī cāhincha, uslāī dinuhos",水が必要な人にあげてください,Give water to the person who needs it.
+29,人・物・場所・時をつなぐ関係表現,19,"जसरी म गर्छु, त्यसरी गर्नुहोस्।","jasarī ma garchu, tyasarī garnuhos",私がするようにしてください,Do it the way I do.
+29,人・物・場所・時をつなぐ関係表現,20,"जति चाहिन्छ, त्यति लिनुहोस्।","jati cāhincha, tyati linuhos",必要なだけ取ってください,Take as much as you need.
+29,人・物・場所・時をつなぐ関係表現,21,"जे मन पर्छ, त्यही खानुहोस्।","je man parcha, tyahī khānuhos",好きなものを食べてください,Eat what you like.
+29,人・物・場所・時をつなぐ関係表現,22,"जता उनी जान्छिन्, म पनि त्यतै जान्छु।","jatā unī jānchin, ma pani tyatai jānchu",彼女が行く方へ、私も行きます,I go in the same direction as she does.
 30,条件（もし〜なら）,1,"पानी पर्यो भने, म घरमा बस्छु।","pānī paryo bhane, ma gharmā baschu",雨が降ったら、私は家にいます,"If it rains, I will stay home."
 30,条件（もし〜なら）,2,"यदि सस्तो छ भने, म किन्छु।","yadi sasto cha bhane, ma kinchu",もし安ければ、私は買います,"If it is cheap, I will buy it."
-30,条件（もし〜なら）,3,"तिमी आयौ भने, म खुसी हुन्छु।","timī āyau bhane, ma khusī hunchu",君が来たら、私はうれしいです,"If you come, I will be happy."
-30,条件（もし〜なら）,4,"तपाईं व्यस्त हुनुहुन्छ भने, म पर्खन्छु।","tapāĩ vyasta hunuhuncha bhane, ma parkhanchu",あなたが忙しければ、私は待ちます,"If you are busy, I will wait."
-30,条件（もし〜なら）,5,"उ आयो भने, हामी जान्छौं।","u āyo bhane, hāmī jānchaũ",彼が来たら、私たちは行きます,"If he comes, we will go."
-30,条件（もし〜なら）,6,"उनी आउँछिन् भने, म पनि आउँछु।","unī āũchin bhane, ma pani āũchu",彼女が来るなら、私も来ます,"If she is coming, I will come too."
-30,条件（もし〜なら）,7,"समय छ भने, यहाँ बस्नुहोस्।","samay cha bhane, yahā̃ basnuhos",時間があれば、ここにいてください,"If you have time, please stay here."
-30,条件（もし〜なら）,8,"भोक लाग्यो भने, खाना खानुहोस्।","bhok lāgyo bhane, khānā khānuhos",おなかがすいたら、ご飯を食べてください,"If you get hungry, please eat."
-30,条件（もし〜なら）,9,"थाक्यौ भने, आराम गर।","thākyau bhane, ārām gara",疲れたら、休んで,"If you get tired, rest."
-30,条件（もし〜なら）,10,"पैसा छैन भने, नकिन्नुहोस्।","paisā chaina bhane, nakinnuhos",お金がなければ、買わないでください,"If you have no money, please do not buy it."
-30,条件（もし〜なら）,11,"उ आएन भने, हामी के गर्छौं?","u āena bhane, hāmī ke garchaũ?",彼が来なかったら、私たちはどうしますか？,What will we do if he does not come?
-30,条件（もし〜なら）,12,"तिमीहरू तयार छौ भने, जाऔं।","timīharū tayār chau bhane, jāaũ",君たちの準備ができていれば、行きましょう,"If you are ready, let us go."
-30,条件（もし〜なら）,13,"उहाँ आउनुभयो भने, मलाई भन्नुहोस्।","uhā̃ āunubhayo bhane, malāī bhannuhos",あの方が来たら、私に教えてください,"If he comes, please tell me."
-30,条件（もし〜なら）,14,"यो पिरो छ भने, म खाँदिनँ।","yo piro cha bhane, ma khā̃dinã",これが辛ければ、私は食べません,"If this is spicy, I will not eat it."
-30,条件（もし〜なら）,15,"भोलि बिदा छ भने, हामी भेटौं।","bholi bidā cha bhane, hāmī bheṭaũ",明日休みなら、私たちは会いましょう,"If tomorrow is a holiday, let us meet."
+30,条件（もし〜なら）,3,"तपाईं व्यस्त हुनुहुन्छ भने, म पर्खन्छु।","tapāĩ vyasta hunuhuncha bhane, ma parkhanchu",あなたが忙しければ、私は待ちます,"If you are busy, I will wait."
+30,条件（もし〜なら）,4,"उनी आउँछिन् भने, म पनि आउँछु।","unī āũchin bhane, ma pani āũchu",彼女が来るなら、私も来ます,"If she is coming, I will come too."
+30,条件（もし〜なら）,5,"समय छ भने, यहाँ बस्नुहोस्।","samay cha bhane, yahā̃ basnuhos",時間があれば、ここにいてください,"If you have time, please stay here."
+30,条件（もし〜なら）,6,"भोक लाग्यो भने, खाना खानुहोस्।","bhok lāgyo bhane, khānā khānuhos",おなかがすいたら、ご飯を食べてください,"If you get hungry, please eat."
+30,条件（もし〜なら）,7,"पैसा छैन भने, नकिन्नुहोस्।","paisā chaina bhane, nakinnuhos",お金がなければ、買わないでください,"If you have no money, please do not buy it."
+30,条件（もし〜なら）,8,"यो पिरो छ भने, म खाँदिनँ।","yo piro cha bhane, ma khā̃dinã",これが辛ければ、私は食べません,"If this is spicy, I will not eat it."
+30,条件（もし〜なら）,9,"भोलि बिदा छ भने, हामी भेटौं।","bholi bidā cha bhane, hāmī bheṭaũ",明日休みなら、私たちは会いましょう,"If tomorrow is a holiday, let us meet."
 31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,1,भोलि पानी पर्छ जस्तो लाग्छ।,bholi pānī parcha jasto lāgcha,明日は雨が降ると思います,I think it will rain tomorrow.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,2,उ घरमा छ जस्तो लाग्छ।,u gharmā cha jasto lāgcha,彼は家にいると思います,I think he is at home.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,3,यो किताब राम्रो छ जस्तो लाग्छ।,yo kitāb rāmro cha jasto lāgcha,この本は良いと思います,I think this book is good.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,4,तपाईंलाई के लाग्छ?,tapāĩlāī ke lāgcha?,あなたはどう思いますか？,What do you think?
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,5,उनी आज आउँदिनन् जस्तो लाग्छ।,unī āja āũdinan jasto lāgcha,彼女は今日来ないと思います,I think she will not come today.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,6,सायद उ व्यस्त होला।,sāyad u vyasta holā,たぶん彼は忙しいのでしょう,He is probably busy.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,7,भोलि चिसो हुन्छ होला।,bholi ciso huncha holā,明日は寒くなるでしょう,It will probably be cold tomorrow.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,8,उहाँ घरमा हुनुहुन्छ होला।,uhā̃ gharmā hunuhuncha holā,あの方は家にいらっしゃるでしょう,He is probably at home.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,9,यो कसको किताब होला?,yo kasko kitāb holā?,これは誰の本でしょうか？,Whose book could this be?
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,10,भोलि पानी पर्न सक्छ।,bholi pānī parna sakcha,明日は雨が降るかもしれません,It may rain tomorrow.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,11,उ ढिलो आउन सक्छ।,u ḍhilo āuna sakcha,彼は遅く来るかもしれません,He may come late.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,12,आज पसल बन्द हुन सक्छ।,āja pasal banda huna sakcha,今日は店が閉まっているかもしれません,The shop may be closed today.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,13,उसले काम सकेको हुनु पर्छ।,usle kām sakeko hunu parcha,彼は仕事を終えたに違いありません,He must have finished his work.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,14,उनी घर गएकी हुनु पर्छ।,unī ghar gaekī hunu parcha,彼女は家に帰ったに違いありません,She must have gone home.
-31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,15,उहाँसँग धेरै किताब हुनु पर्छ।,uhā̃sãga dherai kitāb hunu parcha,あの方は本をたくさん持っているはずです,He must have a lot of books.
+31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,2,यो किताब राम्रो छ जस्तो लाग्छ।,yo kitāb rāmro cha jasto lāgcha,この本は良いと思います,I think this book is good.
+31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,3,तपाईंलाई के लाग्छ?,tapāĩlāī ke lāgcha?,あなたはどう思いますか？,What do you think?
+31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,4,उनी आज आउँदिनन् जस्तो लाग्छ।,unī āja āũdinan jasto lāgcha,彼女は今日来ないと思います,I think she will not come today.
+31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,5,भोलि चिसो हुन्छ होला।,bholi ciso huncha holā,明日は寒くなるでしょう,It will probably be cold tomorrow.
+31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,6,यो कसको किताब होला?,yo kasko kitāb holā?,これは誰の本でしょうか？,Whose book could this be?
+31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,7,भोलि पानी पर्न सक्छ।,bholi pānī parna sakcha,明日は雨が降るかもしれません,It may rain tomorrow.
+31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,8,आज पसल बन्द हुन सक्छ।,āja pasal banda huna sakcha,今日は店が閉まっているかもしれません,The shop may be closed today.
+31,推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）,9,उनी घर गएकी हुनु पर्छ।,unī ghar gaekī hunu parcha,彼女は家に帰ったに違いありません,She must have gone home.
 32,受動（〜される）,1,ढोका खोलियो।,ḍhokā kholiyo,ドアが開けられました,The door was opened.
 32,受動（〜される）,2,झ्याल बन्द गरियो।,jhyāl banda gariyo,窓が閉められました,The window was closed.
 32,受動（〜される）,3,चिठी लेखियो।,ciṭhī lekhiyo,手紙が書かれました,A letter was written.
@@ -539,36 +365,24 @@ theme_no,theme_title,no,ne,roman,ja,en
 32,受動（〜される）,13,यहाँ मासु खाइँदैन।,yahā̃ māsu khāĩdaina,ここでは肉は食べられません,Meat is not eaten here.
 32,受動（〜される）,14,आज धेरै हिँडियो।,āja dherai hĩḍiyo,今日はたくさん歩きました,We did a lot of walking today.
 32,受動（〜される）,15,हिजो खूब खाइयो।,hijo khūb khāiyo,昨日はたっぷり食べました,We ate a lot yesterday.
+32,受動（〜される）,16,यो पत्र शिक्षकद्वारा लेखिएको हो।,yo patra śikṣakdvārā lekhieko ho,この手紙は先生によって書かれたものです,This letter was written by the teacher.
+32,受動（〜される）,17,मैले साथीमार्फत खबर पठाएँ।,maile sāthīmārphat khabar paṭhāẽ,私は友達を通して知らせを送りました,I sent a message through a friend.
 33,使役（〜させる）,1,आमाले बच्चालाई खाना खुवाउनुहुन्छ।,āmāle baccālāī khānā khuvāunuhuncha,母は子どもにご飯を食べさせます,Mother feeds the child.
-33,使役（〜させる）,2,बुबाले मलाई कार चलाउन लगाउनुभयो।,bubāle malāī kār calāuna lagāunubhayo,父は私に車を運転させました,Father made me drive the car.
-33,使役（〜させる）,3,मैले उसलाई किताब देखाएँ।,maile uslāī kitāb dekhāẽ,私は彼に本を見せました,I showed him a book.
-33,使役（〜させる）,4,तिमीले भाइलाई उठायौ?,timīle bhāilāī uṭhāyau?,君は弟を起こしましたか？,Did you wake your younger brother?
-33,使役（〜させる）,5,शिक्षकले हामीलाई नेपाली सिकाउनुहुन्छ।,śikṣakle hāmīlāī nepālī sikāunuhuncha,先生は私たちにネパール語を教えます,The teacher teaches us Nepali.
-33,使役（〜させる）,6,उहाँले बच्चालाई औषधि खुवाउनुभयो।,uhā̃le baccālāī auṣadhi khuvāunubhayo,あの方は子どもに薬を飲ませました,He gave the child medicine.
-33,使役（〜させる）,7,उसले मलाई काम गर्न लगायो।,usle malāī kām garna lagāyo,彼は私に仕事をさせました,He made me work.
-33,使役（〜させる）,8,उनले मलाई चिठी लेख्न लगाइन्।,unle malāī ciṭhī lekhna lagāin,彼女は私に手紙を書かせました,She made me write a letter.
-33,使役（〜させる）,9,हामीले उनीहरूलाई कोठा देखायौं।,hāmīle unīharūlāī koṭhā dekhāyaũ,私たちは彼らに部屋を見せました,We showed them the room.
-33,使役（〜させる）,10,तपाईंले कसलाई काम गराउनुभयो?,tapāĩle kaslāī kām garāunubhayo?,あなたは誰に仕事をさせましたか？,Who did you have do the work?
-33,使役（〜させる）,11,तिमीहरूले बच्चालाई हँसायौ।,timīharūle baccālāī hãsāyau,君たちは子どもを笑わせました,You made the child laugh.
-33,使役（〜させる）,12,उनीहरूले मलाई बाहिर जान लगाए।,unīharūle malāī bāhira jāna lagāe,彼らは私を外に行かせました,They made me go outside.
-33,使役（〜させる）,13,मैले उसलाई उठाइनँ।,maile uslāī uṭhāinã,私は彼を起こしませんでした,I did not wake him.
-33,使役（〜させる）,14,बुबाले मलाई काम गर्न लगाउनुभएन।,bubāle malāī kām garna lagāunubhaena,父は私に仕事をさせませんでした,Father did not make me work.
-33,使役（〜させる）,15,कसले तिमीलाई यो सिकायो?,kasle timīlāī yo sikāyo?,誰が君にこれを教えましたか？,Who taught you this?
-34,間接話法（〜と言った）,1,उसले आउँछु भन्यो।,usle āũchu bhanyo,彼は「来る」と言いました,He said he would come.
-34,間接話法（〜と言った）,2,उनले जाँदिनँ भनिन्।,unle jā̃dinã bhanin,彼女は「行かない」と言いました,She said she would not go.
-34,間接話法（〜と言った）,3,शिक्षकले भोलि परीक्षा छ भन्नुभयो।,śikṣakle bholi parīkṣā cha bhannubhayo,先生は「明日試験がある」と言いました,The teacher said there would be an exam tomorrow.
-34,間接話法（〜と言った）,4,मैले म विद्यार्थी हुँ भनेँ।,maile ma vidyārthī hũ bhanẽ,私は「私は学生です」と言いました,I said I was a student.
-34,間接話法（〜と言った）,5,तिमीले के भन्यौ?,timīle ke bhanyau?,君は何と言いましたか？,What did you say?
-34,間接話法（〜と言った）,6,तपाईंले आउँछु भन्नुभयो?,tapāĩle āũchu bhannubhayo?,あなたは「来る」と言いましたか？,Did you say you would come?
-34,間接話法（〜と言った）,7,उहाँले आज व्यस्त छु भन्नुभयो।,uhā̃le āja vyasta chu bhannubhayo,あの方は「今日は忙しい」と言いました,He said he was busy today.
-34,間接話法（〜と言った）,8,हामीले तयार छौं भन्यौं।,hāmīle tayār chaũ bhanyaũ,私たちは「準備ができた」と言いました,We said we were ready.
-34,間接話法（〜と言った）,9,उनीहरूले भोलि आउँछौं भने।,unīharūle bholi āũchaũ bhane,彼らは「明日来る」と言いました,They said they would come tomorrow.
-34,間接話法（〜と言った）,10,तैंले जान्छु भनिस्?,taĩle jānchu bhanis?,お前は「行く」と言ったの？,Did you say you would go?
-34,間接話法（〜と言った）,11,तिमीहरूले काम गर्छौं भन्यौ।,timīharūle kām garchaũ bhanyau,君たちは「働く」と言いました,You said you would work.
-34,間接話法（〜と言った）,12,उसले आउँछु भनेन।,usle āũchu bhanena,彼は「来る」とは言いませんでした,He did not say he would come.
-34,間接話法（〜と言った）,13,मैले त्यो राम्रो छ भनिनँ।,maile tyo rāmro cha bhaninã,私は「それは良い」とは言いませんでした,I did not say that it was good.
-34,間接話法（〜と言った）,14,उनले पैसा छैन भनिन्।,unle paisā chaina bhanin,彼女は「お金がない」と言いました,She said she had no money.
-34,間接話法（〜と言った）,15,आमाले सधैं चाँडै सुत भन्ने गर्नुहुन्थ्यो।,āmāle sadhaĩ cā̃ḍai suta bhanne garnuhunthyo,母はいつも「早く寝なさい」と言っていました,Mother always used to tell me to go to bed early.
+33,使役（〜させる）,2,शिक्षकले हामीलाई नेपाली सिकाउनुहुन्छ।,śikṣakle hāmīlāī nepālī sikāunuhuncha,先生は私たちにネパール語を教えます,The teacher teaches us Nepali.
+33,使役（〜させる）,3,उनले मलाई चिठी लेख्न लगाइन्।,unle malāī ciṭhī lekhna lagāin,彼女は私に手紙を書かせました,She made me write a letter.
+33,使役（〜させる）,4,हामीले उनीहरूलाई कोठा देखायौं।,hāmīle unīharūlāī koṭhā dekhāyaũ,私たちは彼らに部屋を見せました,We showed them the room.
+33,使役（〜させる）,5,तपाईंले कसलाई काम गराउनुभयो?,tapāĩle kaslāī kām garāunubhayo?,あなたは誰に仕事をさせましたか？,Who did you have do the work?
+33,使役（〜させる）,6,उनीहरूले मलाई बाहिर जान लगाए।,unīharūle malāī bāhira jāna lagāe,彼らは私を外に行かせました,They made me go outside.
+33,使役（〜させる）,7,बुबाले मलाई काम गर्न लगाउनुभएन।,bubāle malāī kām garna lagāunubhaena,父は私に仕事をさせませんでした,Father did not make me work.
+34,間接話法（〜と言った）,1,उनले जाँदिनँ भनिन्।,unle jā̃dinã bhanin,彼女は「行かない」と言いました,She said she would not go.
+34,間接話法（〜と言った）,2,शिक्षकले भोलि परीक्षा छ भन्नुभयो।,śikṣakle bholi parīkṣā cha bhannubhayo,先生は「明日試験がある」と言いました,The teacher said there would be an exam tomorrow.
+34,間接話法（〜と言った）,3,मैले म विद्यार्थी हुँ भनेँ।,maile ma vidyārthī hũ bhanẽ,私は「私は学生です」と言いました,I said I was a student.
+34,間接話法（〜と言った）,4,तपाईंले आउँछु भन्नुभयो?,tapāĩle āũchu bhannubhayo?,あなたは「来る」と言いましたか？,Did you say you would come?
+34,間接話法（〜と言った）,5,हामीले तयार छौं भन्यौं।,hāmīle tayār chaũ bhanyaũ,私たちは「準備ができた」と言いました,We said we were ready.
+34,間接話法（〜と言った）,6,उनीहरूले भोलि आउँछौं भने।,unīharūle bholi āũchaũ bhane,彼らは「明日来る」と言いました,They said they would come tomorrow.
+34,間接話法（〜と言った）,7,मैले त्यो राम्रो छ भनिनँ।,maile tyo rāmro cha bhaninã,私は「それは良い」とは言いませんでした,I did not say that it was good.
+34,間接話法（〜と言った）,8,उनले पैसा छैन भनिन्।,unle paisā chaina bhanin,彼女は「お金がない」と言いました,She said she had no money.
+34,間接話法（〜と言った）,9,आमाले सधैं चाँडै सुत भन्ने गर्नुहुन्थ्यो।,āmāle sadhaĩ cā̃ḍai suta bhanne garnuhunthyo,母はいつも「早く寝なさい」と言っていました,Mother always used to tell me to go to bed early.
 A,書くことで覚える動詞活用（लेख्नु）,1,म चिठी लेख्छु।,ma ciṭhī lekhchu,私は手紙を書きます,I write letters.
 A,書くことで覚える動詞活用（लेख्नु）,2,तँ चिठी लेख्छस्।,tã ciṭhī lekhchas,お前は手紙を書きます,You write letters.
 A,書くことで覚える動詞活用（लेख्नु）,3,तिमी चिठी लेख्छौ।,timī ciṭhī lekhchau,君は手紙を書きます,You write letters.

@@ -87,6 +87,28 @@ function findNextGrammar(d: GramDataDeps, themeId: number, index: number, loop: 
   return { themeId, index, ended: true };
 }
 
+// Text-only curriculum exercises are valid practice, but not listening tracks.
+// Bound the search so a missing/failed audio download cannot create an endless loop.
+export function findNextRecordedGrammar(d: GramDataDeps, themeId: number, index: number, loop: boolean, hasRecording: (id: string) => boolean) {
+  const limit = d.GRAMMAR_THEMES.reduce((n, t) => n + d.getGrammarExamples(t.id).length, 0);
+  let current = { themeId, index, ended: false };
+  for (let n = 0; n <= limit; n++) {
+    current = findNextGrammar(d, current.themeId, current.index, loop);
+    if (current.ended) return current;
+    if (hasRecording(`${current.themeId}-${current.index + 1}`)) return current;
+  }
+  return { themeId, index, ended: true };
+}
+
+export function findPrevRecordedGrammar(d: GramDataDeps, themeId: number, index: number, hasRecording: (id: string) => boolean) {
+  let current = findPrevGrammar(d, themeId, index);
+  while (current) {
+    if (hasRecording(`${current.themeId}-${current.index + 1}`)) return current;
+    current = findPrevGrammar(d, current.themeId, current.index);
+  }
+  return null;
+}
+
 function findPrevConversation(d: ConvDataDeps, themeId: number, levelId: number, index: number) {
   if (index - 1 >= 0) {
     return { themeId, levelId, index: index - 1 };
@@ -139,7 +161,7 @@ export function useListeningAudio(): ListeningAudioValue {
 }
 
 export function ListeningAudioProvider({ children }: { children: ReactNode }) {
-  const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio } = useAppData();
+  const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio, grammarTextOnlyLabel } = useAppData();
   const { nepaliAudio, japaneseAudio, nepaliGrammarAudio, japaneseGrammarAudio } = audio;
   const convDeps: ConvDataDeps = { THEMES, LEVELS, getExamples };
   const gramDeps: GramDataDeps = { GRAMMAR_THEMES, getGrammarExamples };
@@ -184,6 +206,10 @@ export function ListeningAudioProvider({ children }: { children: ReactNode }) {
 
   const jaSrc = isGrammarSrc ? japaneseGrammarAudio[audioKey] : japaneseAudio[audioKey];
   const neSrc = isGrammarSrc ? nepaliGrammarAudio[audioKey] : nepaliAudio[audioKey];
+  const hasGrammarRecording = (id: string) => nepaliGrammarAudio[id] != null || japaneseGrammarAudio[id] != null;
+  const nextGrammar = (t: number, i: number, loop: boolean) => grammarTextOnlyLabel
+    ? findNextRecordedGrammar(gramDeps, t, i, loop, hasGrammarRecording)
+    : findNextGrammar(gramDeps, t, i, loop);
 
   // ★★★ 単一プレイヤー方式 ★★★
   // 初期 source なし（null）で生成し、セッション開始時に player.replace() でソースを差し替える。
@@ -280,7 +306,7 @@ export function ListeningAudioProvider({ children }: { children: ReactNode }) {
 
   const advance = () => {
     if (isGrammarSrc) {
-      const nxt = findNextGrammar(gramDeps, themeId, index, listenLoop);
+      const nxt = nextGrammar(themeId, index, listenLoop);
       if (nxt.ended) {
         clearWatchdog(); setPlaying(false); setPhase('idle'); phaseRef.current = 'idle'; return;
       }
@@ -329,6 +355,10 @@ export function ListeningAudioProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (!active || !started || !playing || !ex) return;
     if (phase !== 'idle') return;
+    if (isGrammarSrc && grammarTextOnlyLabel && jaSrc == null && neSrc == null) {
+      advanceRef.current();
+      return;
+    }
     const firstSrc = isJa2Ne ? jaSrc : neSrc;
     playSrcOrSkip(firstSrc);
     nePlayCountRef.current = 0;
@@ -501,7 +531,7 @@ export function ListeningAudioProvider({ children }: { children: ReactNode }) {
     if (delta > 0) {
       lastBackTapRef.current = 0;
       if (isGrammarSrc) {
-        const nxt = findNextGrammar(gramDeps, themeId, index, listenLoop);
+        const nxt = nextGrammar(themeId, index, listenLoop);
         if (!nxt.ended) {
           setThemeId(nxt.themeId);
           setIndex(nxt.index);
@@ -521,7 +551,9 @@ export function ListeningAudioProvider({ children }: { children: ReactNode }) {
 
       if (isQuickSecondTap) {
         if (isGrammarSrc) {
-          const prv = findPrevGrammar(gramDeps, themeId, index);
+          const prv = grammarTextOnlyLabel
+            ? findPrevRecordedGrammar(gramDeps, themeId, index, hasGrammarRecording)
+            : findPrevGrammar(gramDeps, themeId, index);
           if (prv) {
             setThemeId(prv.themeId);
             setIndex(prv.index);

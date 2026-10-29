@@ -39,7 +39,7 @@ function SpeakerIcon({ size = 18 }: { size?: number }) {
 }
 
 export default function PracticeScreen() {
-  const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio, VOCAB, GRAMMAR_VOCAB, CONV_VOCAB, JP_READING, nativeLang, vocabTokenize } = useAppData();
+  const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio, VOCAB, GRAMMAR_VOCAB, CONV_VOCAB, JP_READING, nativeLang, vocabTokenize, grammarTextOnlyLabel } = useAppData();
   const { nepaliAudio, japaneseAudio, nepaliGrammarAudio, japaneseGrammarAudio } = audio;
   const l1 = getL1(nativeLang);
   const navigation = useNavigation<Nav>();
@@ -259,11 +259,12 @@ export default function PracticeScreen() {
       {/* 音声ボタン（言語の方向は設定で変更） */}
       <View style={styles.actionRow}>
         <Pressable
-          style={({ pressed }) => [styles.actionBtn, pressed && styles.actionBtnPressed]}
+          disabled={(revealed ? answerAudioSrc : questionAudioSrc) == null}
+          style={({ pressed }) => [styles.actionBtn, pressed && styles.actionBtnPressed, (revealed ? answerAudioSrc : questionAudioSrc) == null && { opacity: 0.5 }]}
           onPress={() => playOnce(currentPlayer)}
         >
           <SpeakerIcon size={17} />
-          <Text style={[styles.actionBtnText, ss(13)]}>{t('practice.playAudio')}</Text>
+          <Text style={[styles.actionBtnText, ss(13)]}>{isGrammar && neSrc == null && jaSrc == null && grammarTextOnlyLabel ? grammarTextOnlyLabel : t('practice.playAudio')}</Text>
         </Pressable>
       </View>
 

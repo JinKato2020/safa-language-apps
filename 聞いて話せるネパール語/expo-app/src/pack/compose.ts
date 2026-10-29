@@ -16,6 +16,7 @@ export interface NeCore {
   grammarThemes: GrammarThemeMeta[];
   examplesNe: Record<string, string[]>;  // "theme-level" → ネパール語文(位置順)
   grammarNe: Record<string, string[]>;   // "theme" → ネパール語文(位置順)
+  grammarAudioRefs?: Record<string, string | null>; // immutable recording ID; null = text-only
   wordsNe: Record<string, string[]>;     // "category" → ネパール語語(位置順)
   jpReading?: JpReading;                 // 日本語読み(jp overlay時のみ有効, enでは未使用)
   nepaliAudio: Record<string, number | string>;        // DL版は file:// URI(string)
@@ -27,6 +28,8 @@ export interface L1Overlay {
   nativeLang: string;
   examplesL1: Record<string, string[]>;
   grammarL1: Record<string, string[]>;
+  grammarAudioRefs?: Record<string, string | null>;
+  grammarTextOnlyLabel?: string;
   wordsL1: Record<string, string[]>;
   vocab?: Record<string, VocabEntry>;
   grammarVocab?: GrammarVocab;
@@ -75,6 +78,18 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
   }));
 
   const EMPTY = {} as Record<string, number>;
+  // A revised exercise must never inherit audio merely because its index matches.
+  // Missing/explicit-null references stay silent; existing recordings are reused unchanged.
+  const grammarAudio = (
+    sources: Record<string, number | string>, refs?: Record<string, string | null>,
+  ): Record<string, number | string> => {
+    if (!refs) return sources;
+    const out: Record<string, number | string> = {};
+    for (const [id, sourceId] of Object.entries(refs)) {
+      if (sourceId != null && sources[sourceId] != null) out[id] = sources[sourceId];
+    }
+    return out;
+  };
   return {
     version: opts.version,
     nativeLang: overlay.nativeLang,
@@ -86,6 +101,7 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
     GRAMMAR_THEMES,
     GRAMMAR_EXAMPLES,
     GRAMMAR_GUIDE: overlay.grammarGuide ?? null,
+    grammarTextOnlyLabel: overlay.grammarTextOnlyLabel,
     VOCAB: overlay.vocab ?? {},
     GRAMMAR_VOCAB: overlay.grammarVocab,
     CONV_VOCAB: overlay.convVocab,
@@ -94,8 +110,8 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
     audio: {
       nepaliAudio: core.nepaliAudio,
       japaneseAudio: overlay.l1Audio ?? EMPTY,
-      nepaliGrammarAudio: core.nepaliGrammarAudio,
-      japaneseGrammarAudio: overlay.l1GrammarAudio ?? EMPTY,
+      nepaliGrammarAudio: grammarAudio(core.nepaliGrammarAudio, core.grammarAudioRefs),
+      japaneseGrammarAudio: grammarAudio(overlay.l1GrammarAudio ?? EMPTY, overlay.grammarAudioRefs),
     },
     getExamples: (themeId, levelId) => EXAMPLES[`${themeId}-${levelId}`] ?? [],
     getWords: (categoryId) => WORDS[String(categoryId)] ?? [],

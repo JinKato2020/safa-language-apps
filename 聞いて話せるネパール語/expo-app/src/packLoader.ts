@@ -17,7 +17,7 @@ const CORE = '_core';
 // 本番配信(改番版): GitHub Release (tag: packs-appa-v2 = themeId改番後の新キーパック)。
 // 旧 packs-appa は改番前アプリ(1.6.x)用に温存。改番版アプリ(1.7.x新コア)は v2 を参照しキー整合を取る。
 const CATALOG_URL =
-  'https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/catalog.json';
+  'https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v3/catalog.json';
 
 // 母語(ja/en)はすべて DL パック。ネパール語コアのみ同梱。
 const BUNDLED: Record<string, AppData> = {};
@@ -41,6 +41,8 @@ function toOverlay(json: any): L1Overlay {
     nativeLang: json.l1,
     examplesL1: json.examplesL1 ?? {},
     grammarL1: json.grammarL1 ?? {},
+    grammarAudioRefs: json.grammarAudioRefs,
+    grammarTextOnlyLabel: json.grammarTextOnlyLabel,
     wordsL1: json.wordsL1 ?? {},
     convVocab: json.convVocab,
     grammarVocab: json.grammarVocab,
@@ -176,7 +178,11 @@ async function buildAudioMaps(lang: string, overlayJson: any) {
     const u = `${audioDir(lang)}${id}.mp3`;
     if ((await FileSystem.getInfoAsync(u)).exists) l1Audio[id] = u;
   }
-  for (const id of collect(overlayJson.grammarL1)) {
+  const grammarIds = new Set<string>([
+    ...collect(overlayJson.grammarL1),
+    ...Object.values(overlayJson.grammarAudioRefs ?? {}).filter((id): id is string => typeof id === 'string'),
+  ]);
+  for (const id of grammarIds) {
     const u = `${audioDir(lang)}${id}.mp3`;
     if ((await FileSystem.getInfoAsync(u)).exists) l1GrammarAudio[id] = u;
   }
@@ -243,6 +249,11 @@ export async function loadPack(lang: string, onProgress?: ProgressFn, skipUpdate
   const overlayJson = await getOverlay(lang, entry, { catalog, catalogErr }, skipUpdate);
   // ターゲット(ネパール語)コア本文 core.json + 音声 をDL (全L1共通・キャッシュ済みなら即時)。
   const coreJson = await getCoreJson(catalog?.core, skipUpdate);
+  if (coreJson?.curriculumRevision !== overlayJson.curriculumRevision) {
+    throw new Error(lang === 'ja'
+      ? '教材と言語パックの版が一致しません。学習データをもう一度ダウンロードしてください。'
+      : 'Curriculum and language pack versions do not match. Please download the learning data again.');
+  }
   // この起動で実際にDLされる音声zip数を数え、各DLに「何個目/全何個」を付けて通知する(UIで 1/2 表示)。
   const coreWillDl = await audioWillDownload(audioMarkerUri(CORE), catalog?.core?.audioVersion, !!catalog?.core?.audioZip, skipUpdate);
   const l1WillDl = await audioWillDownload(audioMarkerUri(lang), entry?.audioVersion, !!entry?.audioZip, skipUpdate);

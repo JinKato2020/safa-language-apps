@@ -1,0 +1,4286 @@
+{
+  "1-1": {
+    "ne": "म विद्यार्थी हुँ।",
+    "roman": "ma vidyārthī hũ",
+    "ja": "私は学生です",
+    "en": "I am a student."
+  },
+  "1-2": {
+    "ne": "तँ विद्यार्थी होइनस्।",
+    "roman": "tã vidyārthī hoinas",
+    "ja": "お前は学生ではありません",
+    "en": "You are not a student."
+  },
+  "1-3": {
+    "ne": "तिमी विद्यार्थी हौ।",
+    "roman": "timī vidyārthī hau",
+    "ja": "君は学生です",
+    "en": "You are a student."
+  },
+  "1-4": {
+    "ne": "तिमीहरू विद्यार्थी हौ।",
+    "roman": "timīharū vidyārthī hau",
+    "ja": "君たちは学生です",
+    "en": "You are students."
+  },
+  "1-5": {
+    "ne": "तपाईं विद्यार्थी हुनुहुन्छ।",
+    "roman": "tapāĩ vidyārthī hunuhuncha",
+    "ja": "あなたは学生です",
+    "en": "You are a student."
+  },
+  "1-6": {
+    "ne": "उ विद्यार्थी होइन।",
+    "roman": "u vidyārthī hoina",
+    "ja": "彼は学生ではありません",
+    "en": "He is not a student."
+  },
+  "1-7": {
+    "ne": "उनी विद्यार्थी हुन्।",
+    "roman": "unī vidyārthī hun",
+    "ja": "彼女は学生です",
+    "en": "She is a student."
+  },
+  "1-8": {
+    "ne": "उहाँ विद्यार्थी हुनुहुन्छ।",
+    "roman": "uhā̃ vidyārthī hunuhuncha",
+    "ja": "あの方は学生です",
+    "en": "He is a student."
+  },
+  "1-9": {
+    "ne": "हामी विद्यार्थी हौं।",
+    "roman": "hāmī vidyārthī haũ",
+    "ja": "私たちは学生です",
+    "en": "We are students."
+  },
+  "1-10": {
+    "ne": "उनीहरू विद्यार्थी होइनन्।",
+    "roman": "unīharū vidyārthī hoinan",
+    "ja": "彼らは学生ではありません",
+    "en": "They are not students."
+  },
+  "1-11": {
+    "ne": "यो सुन्तला हो।",
+    "roman": "yo suntalā ho",
+    "ja": "これはミカンです",
+    "en": "This is an orange."
+  },
+  "1-12": {
+    "ne": "त्यो किताब हो।",
+    "roman": "tyo kitāb ho",
+    "ja": "それは本です",
+    "en": "That is a book."
+  },
+  "1-13": {
+    "ne": "यो कलम हो, पेन्सिल होइन।",
+    "roman": "yo kalam ho, pensil hoina",
+    "ja": "これはペンです、鉛筆ではありません",
+    "en": "This is a pen, not a pencil."
+  },
+  "1-14": {
+    "ne": "के यो तपाईंको किताब हो?",
+    "roman": "ke yo tapāĩko kitāb ho?",
+    "ja": "これはあなたの本ですか？",
+    "en": "Is this your book?"
+  },
+  "1-15": {
+    "ne": "के तिमी नेपाली हौ?",
+    "roman": "ke timī nepālī hau?",
+    "ja": "君はネパール人ですか？",
+    "en": "Are you Nepali?"
+  },
+  "1-16": {
+    "ne": "उहाँ मेरो बुबा हुनुहुन्छ।",
+    "roman": "uhā̃ mero bubā hunuhuncha",
+    "ja": "あの方は私の父です",
+    "en": "He is my father."
+  },
+  "1-17": {
+    "ne": "उनी डाक्टर हुन्।",
+    "roman": "unī ḍākṭar hun",
+    "ja": "彼女は医者です",
+    "en": "She is a doctor."
+  },
+  "1-18": {
+    "ne": "म जापानी हुँ।",
+    "roman": "ma jāpānī hũ",
+    "ja": "私は日本人です",
+    "en": "I am Japanese."
+  },
+  "1-19": {
+    "ne": "त्यो मेरो झोला होइन।",
+    "roman": "tyo mero jholā hoina",
+    "ja": "それは私のかばんではありません",
+    "en": "That is not my bag."
+  },
+  "1-20": {
+    "ne": "तिमीहरू मेरा साथी हौ।",
+    "roman": "timīharū merā sāthī hau",
+    "ja": "君たちは私の友達です",
+    "en": "You are my friends."
+  },
+  "2-1": {
+    "ne": "म घरमा छु।",
+    "roman": "ma gharmā chu",
+    "ja": "私は家にいます",
+    "en": "I am at home."
+  },
+  "2-2": {
+    "ne": "तँ घरमा छैनस्।",
+    "roman": "tã gharmā chainas",
+    "ja": "お前は家にいません",
+    "en": "You are not at home."
+  },
+  "2-3": {
+    "ne": "तिमी घरमा छौ?",
+    "roman": "timī gharmā chau?",
+    "ja": "君は家にいますか？",
+    "en": "Are you at home?"
+  },
+  "2-4": {
+    "ne": "तिमीहरू घरमा छौ।",
+    "roman": "timīharū gharmā chau",
+    "ja": "君たちは家にいます",
+    "en": "You are at home."
+  },
+  "2-5": {
+    "ne": "तपाईं घरमा हुनुहुन्छ?",
+    "roman": "tapāĩ gharmā hunuhuncha?",
+    "ja": "あなたは家にいますか？",
+    "en": "Are you at home?"
+  },
+  "2-6": {
+    "ne": "उ घरमा छैन।",
+    "roman": "u gharmā chaina",
+    "ja": "彼は家にいません",
+    "en": "He is not at home."
+  },
+  "2-7": {
+    "ne": "उनी घरमा छिन्।",
+    "roman": "unī gharmā chin",
+    "ja": "彼女は家にいます",
+    "en": "She is at home."
+  },
+  "2-8": {
+    "ne": "उहाँ घरमा हुनुहुन्छ।",
+    "roman": "uhā̃ gharmā hunuhuncha",
+    "ja": "あの方は家にいます",
+    "en": "He is at home."
+  },
+  "2-9": {
+    "ne": "हामी घरमा छौं।",
+    "roman": "hāmī gharmā chaũ",
+    "ja": "私たちは家にいます",
+    "en": "We are at home."
+  },
+  "2-10": {
+    "ne": "उनीहरू घरमा छैनन्।",
+    "roman": "unīharū gharmā chainan",
+    "ja": "彼らは家にいません",
+    "en": "They are not at home."
+  },
+  "2-11": {
+    "ne": "यहाँ किताब छ।",
+    "roman": "yahā̃ kitāb cha",
+    "ja": "ここに本があります",
+    "en": "There is a book here."
+  },
+  "2-12": {
+    "ne": "त्यहाँ कापी छैन।",
+    "roman": "tyahā̃ kāpī chaina",
+    "ja": "そこにノートはありません",
+    "en": "There is no notebook there."
+  },
+  "2-13": {
+    "ne": "शौचालय कहाँ छ?",
+    "roman": "śaucālaya kahā̃ cha?",
+    "ja": "トイレはどこですか？",
+    "en": "Where is the toilet?"
+  },
+  "2-14": {
+    "ne": "मसँग पैसा छैन।",
+    "roman": "masãga paisā chaina",
+    "ja": "私はお金を持っていません",
+    "en": "I do not have any money."
+  },
+  "2-15": {
+    "ne": "तपाईंसँग कलम छ?",
+    "roman": "tapāĩsãga kalam cha?",
+    "ja": "ペンを持っていますか？",
+    "en": "Do you have a pen?"
+  },
+  "2-16": {
+    "ne": "उससँग साइकल छ।",
+    "roman": "ussãga sāikal cha",
+    "ja": "彼は自転車を持っています",
+    "en": "He has a bicycle."
+  },
+  "2-17": {
+    "ne": "हामीसँग समय छ।",
+    "roman": "hāmīsãga samay cha",
+    "ja": "私たちには時間があります",
+    "en": "We have time."
+  },
+  "2-18": {
+    "ne": "टेबलमा पानी छ।",
+    "roman": "ṭebalmā pānī cha",
+    "ja": "机に水があります",
+    "en": "There is water on the table."
+  },
+  "2-19": {
+    "ne": "तिमीहरू कहाँ छौ?",
+    "roman": "timīharū kahā̃ chau?",
+    "ja": "君たちはどこにいますか？",
+    "en": "Where are you?"
+  },
+  "2-20": {
+    "ne": "उहाँ यहाँ हुनुहुन्न।",
+    "roman": "uhā̃ yahā̃ hunuhunna",
+    "ja": "あの方はここにいらっしゃいません",
+    "en": "He is not here."
+  },
+  "3-1": {
+    "ne": "यो फूल सुन्दर छ।",
+    "roman": "yo phūl sundar cha",
+    "ja": "この花は美しいです",
+    "en": "This flower is beautiful."
+  },
+  "3-2": {
+    "ne": "त्यो किताब पुरानो छ।",
+    "roman": "tyo kitāb purāno cha",
+    "ja": "その本は古いです",
+    "en": "That book is old."
+  },
+  "3-3": {
+    "ne": "यो खाना पिरो छैन।",
+    "roman": "yo khānā piro chaina",
+    "ja": "この料理は辛くありません",
+    "en": "This food is not spicy."
+  },
+  "3-4": {
+    "ne": "के यो पानी चिसो छ?",
+    "roman": "ke yo pānī ciso cha?",
+    "ja": "この水は冷たいですか？",
+    "en": "Is this water cold?"
+  },
+  "3-5": {
+    "ne": "आज गर्मी छ।",
+    "roman": "āja garmī cha",
+    "ja": "今日は暑いです",
+    "en": "It is hot today."
+  },
+  "3-6": {
+    "ne": "यो घर सानो छैन।",
+    "roman": "yo ghar sāno chaina",
+    "ja": "この家は小さくありません",
+    "en": "This house is not small."
+  },
+  "3-7": {
+    "ne": "म व्यस्त छु।",
+    "roman": "ma vyasta chu",
+    "ja": "私は忙しいです",
+    "en": "I am busy."
+  },
+  "3-8": {
+    "ne": "तँ खुसी छस्?",
+    "roman": "tã khusī chas?",
+    "ja": "お前はうれしい？",
+    "en": "Are you happy?"
+  },
+  "3-9": {
+    "ne": "तिमी तयार छौ?",
+    "roman": "timī tayār chau?",
+    "ja": "君は準備ができていますか？",
+    "en": "Are you ready?"
+  },
+  "3-10": {
+    "ne": "तिमीहरू व्यस्त छैनौ।",
+    "roman": "timīharū vyasta chainau",
+    "ja": "君たちは忙しくありません",
+    "en": "You are not busy."
+  },
+  "3-11": {
+    "ne": "तपाईं सन्चै हुनुहुन्छ?",
+    "roman": "tapāĩ sancai hunuhuncha?",
+    "ja": "お元気ですか？",
+    "en": "Are you well?"
+  },
+  "3-12": {
+    "ne": "उ खुसी छैन।",
+    "roman": "u khusī chaina",
+    "ja": "彼はうれしくありません",
+    "en": "He is not happy."
+  },
+  "3-13": {
+    "ne": "उनी तयार छिन्।",
+    "roman": "unī tayār chin",
+    "ja": "彼女は準備ができています",
+    "en": "She is ready."
+  },
+  "3-14": {
+    "ne": "हामी तयार छौं।",
+    "roman": "hāmī tayār chaũ",
+    "ja": "私たちは準備ができています",
+    "en": "We are ready."
+  },
+  "3-15": {
+    "ne": "उनीहरू व्यस्त छन्।",
+    "roman": "unīharū vyasta chan",
+    "ja": "彼らは忙しいです",
+    "en": "They are busy."
+  },
+  "4-1": {
+    "ne": "जाडोमा चिसो हुन्छ।",
+    "roman": "jāḍomā ciso huncha",
+    "ja": "冬は寒くなります",
+    "en": "It gets cold in winter."
+  },
+  "4-2": {
+    "ne": "गर्मीमा दिन लामो हुन्छ।",
+    "roman": "garmīmā din lāmo huncha",
+    "ja": "夏は日が長くなります",
+    "en": "The days get long in summer."
+  },
+  "4-3": {
+    "ne": "यहाँ बिहान शान्त हुन्छ।",
+    "roman": "yahā̃ bihān śānta huncha",
+    "ja": "ここは朝は静かです",
+    "en": "It is quiet here in the morning."
+  },
+  "4-4": {
+    "ne": "आइतबार बजार बन्द हुन्छ।",
+    "roman": "āitabār bajār banda huncha",
+    "ja": "日曜日は市場が閉まります",
+    "en": "The market is closed on Sundays."
+  },
+  "4-5": {
+    "ne": "काम कहिले शुरू हुन्छ?",
+    "roman": "kām kahile śurū huncha?",
+    "ja": "仕事はいつ始まりますか？",
+    "en": "When does work start?"
+  },
+  "4-6": {
+    "ne": "के यहाँ सधैं यस्तो हुन्छ?",
+    "roman": "ke yahā̃ sadhaĩ yasto huncha?",
+    "ja": "ここではいつもこうなるのですか？",
+    "en": "Does this always happen here?"
+  },
+  "4-7": {
+    "ne": "यो काम छिटो हुँदैन।",
+    "roman": "yo kām chiṭo hũdaina",
+    "ja": "この仕事はすぐには終わりません",
+    "en": "This work does not get done quickly."
+  },
+  "4-8": {
+    "ne": "सबै दिन उस्तै हुँदैनन्।",
+    "roman": "sabai din ustai hũdainan",
+    "ja": "毎日が同じというわけではありません",
+    "en": "Not every day is the same."
+  },
+  "4-9": {
+    "ne": "चाँडै रात हुन्छ।",
+    "roman": "cā̃ḍai rāt huncha",
+    "ja": "もうすぐ夜になります",
+    "en": "It will be night soon."
+  },
+  "4-10": {
+    "ne": "पानी चिसो भयो।",
+    "roman": "pānī ciso bhayo",
+    "ja": "水が冷たくなりました",
+    "en": "The water got cold."
+  },
+  "4-11": {
+    "ne": "आज ढिलो भयो।",
+    "roman": "āja ḍhilo bhayo",
+    "ja": "今日は遅くなりました",
+    "en": "It got late today."
+  },
+  "4-12": {
+    "ne": "किन यस्तो भयो?",
+    "roman": "kina yasto bhayo?",
+    "ja": "なぜこうなったのですか？",
+    "en": "Why did this happen?"
+  },
+  "4-13": {
+    "ne": "उ डाक्टर बन्यो।",
+    "roman": "u ḍākṭar banyo",
+    "ja": "彼は医者になりました",
+    "en": "He became a doctor."
+  },
+  "4-14": {
+    "ne": "उहाँ शिक्षक बन्नुभयो।",
+    "roman": "uhā̃ śikṣak bannubhayo",
+    "ja": "あの方は先生になりました",
+    "en": "He became a teacher."
+  },
+  "4-15": {
+    "ne": "तिमी भविष्यमा के बन्छौ?",
+    "roman": "timī bhaviṣyamā ke banchau?",
+    "ja": "君は将来何になりますか？",
+    "en": "What will you become in the future?"
+  },
+  "5-1": {
+    "ne": "यो मेरो किताब हो।",
+    "roman": "yo mero kitāb ho",
+    "ja": "これは私の本です",
+    "en": "This is my book."
+  },
+  "5-2": {
+    "ne": "तिम्रो घर कहाँ छ?",
+    "roman": "timro ghar kahā̃ cha?",
+    "ja": "君の家はどこにありますか？",
+    "en": "Where is your house?"
+  },
+  "5-3": {
+    "ne": "उहाँको नाम के हो?",
+    "roman": "uhā̃ko nām ke ho?",
+    "ja": "あの方の名前は何ですか？",
+    "en": "What is his name?"
+  },
+  "5-4": {
+    "ne": "हाम्रो स्कूल यहाँ छ।",
+    "roman": "hāmro skūl yahā̃ cha",
+    "ja": "私たちの学校はここにあります",
+    "en": "Our school is here."
+  },
+  "5-5": {
+    "ne": "म घरमा बस्छु।",
+    "roman": "ma gharmā baschu",
+    "ja": "私は家に住んでいます",
+    "en": "I live in a house."
+  },
+  "5-6": {
+    "ne": "उ स्कूलमा छैन।",
+    "roman": "u skūlmā chaina",
+    "ja": "彼は学校にいません",
+    "en": "He is not at school."
+  },
+  "5-7": {
+    "ne": "तिमीहरू कहाँबाट आयौ?",
+    "roman": "timīharū kahā̃bāṭa āyau?",
+    "ja": "君たちはどこから来ましたか？",
+    "en": "Where did you come from?"
+  },
+  "5-8": {
+    "ne": "म नेपालबाट आएँ।",
+    "roman": "ma nepālbāṭa āẽ",
+    "ja": "私はネパールから来ました",
+    "en": "I came from Nepal."
+  },
+  "5-9": {
+    "ne": "हामी साथीहरूसँग जान्छौं।",
+    "roman": "hāmī sāthīharūsãga jānchaũ",
+    "ja": "私たちは友達と一緒に行きます",
+    "en": "We go with our friends."
+  },
+  "5-10": {
+    "ne": "तपाईं कोसँग बस्नुहुन्छ?",
+    "roman": "tapāĩ kosãga basnuhuncha?",
+    "ja": "誰と住んでいますか？",
+    "en": "Who do you live with?"
+  },
+  "5-11": {
+    "ne": "उनले मलाई पानी दिइन्।",
+    "roman": "unle malāī pānī diin",
+    "ja": "彼女は私に水をくれました",
+    "en": "She gave me water."
+  },
+  "5-12": {
+    "ne": "तँ उसलाई बोलाऊ।",
+    "roman": "tã uslāī bolāū",
+    "ja": "お前、彼を呼んで",
+    "en": "Call him."
+  },
+  "5-13": {
+    "ne": "म कलमले लेख्छु।",
+    "roman": "ma kalamle lekhchu",
+    "ja": "私はペンで書きます",
+    "en": "I write with a pen."
+  },
+  "5-14": {
+    "ne": "यो बस काठमाडौं जान्छ।",
+    "roman": "yo bas kāṭhmāḍaũ jāncha",
+    "ja": "このバスはカトマンズに行きます",
+    "en": "This bus goes to Kathmandu."
+  },
+  "5-15": {
+    "ne": "तपाईंको झोला टेबलमा छैन।",
+    "roman": "tapāĩko jholā ṭebalmā chaina",
+    "ja": "あなたのかばんは机にありません",
+    "en": "Your bag is not on the table."
+  },
+  "6-1": {
+    "ne": "यो के हो?",
+    "roman": "yo ke ho?",
+    "ja": "これは何ですか？",
+    "en": "What is this?"
+  },
+  "6-2": {
+    "ne": "त्यो कसको किताब हो?",
+    "roman": "tyo kasko kitāb ho?",
+    "ja": "それは誰の本ですか？",
+    "en": "Whose book is that?"
+  },
+  "6-3": {
+    "ne": "तपाईं कहाँ बस्नुहुन्छ?",
+    "roman": "tapāĩ kahā̃ basnuhuncha?",
+    "ja": "どこに住んでいますか？",
+    "en": "Where do you live?"
+  },
+  "6-4": {
+    "ne": "तिमी कहिले आउँछौ?",
+    "roman": "timī kahile āũchau?",
+    "ja": "君はいつ来ますか？",
+    "en": "When will you come?"
+  },
+  "6-5": {
+    "ne": "यो कति पर्छ?",
+    "roman": "yo kati parcha?",
+    "ja": "これはいくらですか？",
+    "en": "How much does this cost?"
+  },
+  "6-6": {
+    "ne": "उ किन आएन?",
+    "roman": "u kina āena?",
+    "ja": "彼はなぜ来なかったのですか？",
+    "en": "Why did he not come?"
+  },
+  "6-7": {
+    "ne": "तँ के गर्छस्?",
+    "roman": "tã ke garchas?",
+    "ja": "お前は何をするの？",
+    "en": "What do you do?"
+  },
+  "6-8": {
+    "ne": "तिमीहरू कसरी जान्छौ?",
+    "roman": "timīharū kasarī jānchau?",
+    "ja": "君たちはどうやって行きますか？",
+    "en": "How will you go?"
+  },
+  "6-9": {
+    "ne": "उहाँ को हुनुहुन्छ?",
+    "roman": "uhā̃ ko hunuhuncha?",
+    "ja": "あの方はどなたですか？",
+    "en": "Who is he?"
+  },
+  "6-10": {
+    "ne": "यहाँ को छ?",
+    "roman": "yahā̃ ko cha?",
+    "ja": "ここには誰がいますか？",
+    "en": "Who is here?"
+  },
+  "6-11": {
+    "ne": "कसले खाना पकायो?",
+    "roman": "kasle khānā pakāyo?",
+    "ja": "誰が料理を作りましたか？",
+    "en": "Who cooked the food?"
+  },
+  "6-12": {
+    "ne": "तिमीले कसलाई भेट्यौ?",
+    "roman": "timīle kaslāī bheṭyau?",
+    "ja": "君は誰に会いましたか？",
+    "en": "Who did you meet?"
+  },
+  "6-13": {
+    "ne": "तपाईंलाई के चाहिन्छ?",
+    "roman": "tapāĩlāī ke cāhincha?",
+    "ja": "何が必要ですか？",
+    "en": "What do you need?"
+  },
+  "6-14": {
+    "ne": "हामी कहाँ बसौं?",
+    "roman": "hāmī kahā̃ basaũ?",
+    "ja": "私たちはどこに座りましょうか？",
+    "en": "Where shall we sit?"
+  },
+  "6-15": {
+    "ne": "उनी किन बोल्दिनन्?",
+    "roman": "unī kina boldinan?",
+    "ja": "彼女はなぜ話さないのですか？",
+    "en": "Why does she not speak?"
+  },
+  "7-1": {
+    "ne": "म काम गर्छु।",
+    "roman": "ma kām garchu",
+    "ja": "私は働きます",
+    "en": "I work."
+  },
+  "7-2": {
+    "ne": "तँ काम गर्छस्।",
+    "roman": "tã kām garchas",
+    "ja": "お前は働きます",
+    "en": "You work."
+  },
+  "7-3": {
+    "ne": "तिमी काम गर्छौ।",
+    "roman": "timī kām garchau",
+    "ja": "君は働きます",
+    "en": "You work."
+  },
+  "7-4": {
+    "ne": "तिमीहरू काम गर्छौ।",
+    "roman": "timīharū kām garchau",
+    "ja": "君たちは働きます",
+    "en": "You work."
+  },
+  "7-5": {
+    "ne": "तपाईं काम गर्नुहुन्छ।",
+    "roman": "tapāĩ kām garnuhuncha",
+    "ja": "あなたは働きます",
+    "en": "You work."
+  },
+  "7-6": {
+    "ne": "उ काम गर्छ।",
+    "roman": "u kām garcha",
+    "ja": "彼は働きます",
+    "en": "He works."
+  },
+  "7-7": {
+    "ne": "उनी काम गर्छिन्।",
+    "roman": "unī kām garchin",
+    "ja": "彼女は働きます",
+    "en": "She works."
+  },
+  "7-8": {
+    "ne": "उहाँ काम गर्नुहुन्छ।",
+    "roman": "uhā̃ kām garnuhuncha",
+    "ja": "あの方は働きます",
+    "en": "He works."
+  },
+  "7-9": {
+    "ne": "हामी काम गर्छौं।",
+    "roman": "hāmī kām garchaũ",
+    "ja": "私たちは働きます",
+    "en": "We work."
+  },
+  "7-10": {
+    "ne": "उनीहरू काम गर्छन्।",
+    "roman": "unīharū kām garchan",
+    "ja": "彼らは働きます",
+    "en": "They work."
+  },
+  "7-11": {
+    "ne": "म हरेक दिन व्यायाम गर्छु।",
+    "roman": "ma harek din vyāyām garchu",
+    "ja": "私は毎日運動します",
+    "en": "I exercise every day."
+  },
+  "7-12": {
+    "ne": "तिमी हरेक दिन व्यायाम गर्छौ?",
+    "roman": "timī harek din vyāyām garchau?",
+    "ja": "君は毎日運動しますか？",
+    "en": "Do you exercise every day?"
+  },
+  "7-13": {
+    "ne": "तपाईं हरेक दिन व्यायाम गर्नुहुन्छ?",
+    "roman": "tapāĩ harek din vyāyām garnuhuncha?",
+    "ja": "あなたは毎日運動しますか？",
+    "en": "Do you exercise every day?"
+  },
+  "7-14": {
+    "ne": "उनी हरेक दिन व्यायाम गर्छिन्।",
+    "roman": "unī harek din vyāyām garchin",
+    "ja": "彼女は毎日運動します",
+    "en": "She exercises every day."
+  },
+  "7-15": {
+    "ne": "हामी हरेक दिन व्यायाम गर्छौं।",
+    "roman": "hāmī harek din vyāyām garchaũ",
+    "ja": "私たちは毎日運動します",
+    "en": "We exercise every day."
+  },
+  "7-16": {
+    "ne": "तँ मेरो साथी होस्।",
+    "roman": "tã mero sāthī hos",
+    "ja": "お前は俺の友達だ",
+    "en": "You are my friend."
+  },
+  "7-17": {
+    "ne": "तिमी कहाँ छौ?",
+    "roman": "timī kahā̃ chau?",
+    "ja": "君はどこにいるの？",
+    "en": "Where are you?"
+  },
+  "7-18": {
+    "ne": "तपाईं कहाँ हुनुहुन्छ?",
+    "roman": "tapāĩ kahā̃ hunuhuncha?",
+    "ja": "あなたはどこにいらっしゃいますか？",
+    "en": "Where are you?"
+  },
+  "7-19": {
+    "ne": "उहाँ मेरो शिक्षक हुनुहुन्छ।",
+    "roman": "uhā̃ mero śikṣak hunuhuncha",
+    "ja": "あの方は私の先生です",
+    "en": "He is my teacher."
+  },
+  "7-20": {
+    "ne": "तिमीहरू तयार छैनौ?",
+    "roman": "timīharū tayār chainau?",
+    "ja": "君たちはまだ準備ができていないの？",
+    "en": "Are you not ready?"
+  },
+  "8-1": {
+    "ne": "म काम गर्छु।",
+    "roman": "ma kām garchu",
+    "ja": "私は働きます",
+    "en": "I work."
+  },
+  "8-2": {
+    "ne": "तँ काम गर्छस्।",
+    "roman": "tã kām garchas",
+    "ja": "お前は働きます",
+    "en": "You work."
+  },
+  "8-3": {
+    "ne": "तिमी काम गर्छौ।",
+    "roman": "timī kām garchau",
+    "ja": "君は働きます",
+    "en": "You work."
+  },
+  "8-4": {
+    "ne": "तिमीहरू काम गर्छौ।",
+    "roman": "timīharū kām garchau",
+    "ja": "君たちは働きます",
+    "en": "You work."
+  },
+  "8-5": {
+    "ne": "तपाईं काम गर्नुहुन्छ।",
+    "roman": "tapāĩ kām garnuhuncha",
+    "ja": "あなたは働きます",
+    "en": "You work."
+  },
+  "8-6": {
+    "ne": "उ काम गर्छ।",
+    "roman": "u kām garcha",
+    "ja": "彼は働きます",
+    "en": "He works."
+  },
+  "8-7": {
+    "ne": "उनी काम गर्छिन्।",
+    "roman": "unī kām garchin",
+    "ja": "彼女は働きます",
+    "en": "She works."
+  },
+  "8-8": {
+    "ne": "उहाँ काम गर्नुहुन्छ।",
+    "roman": "uhā̃ kām garnuhuncha",
+    "ja": "あの方は働きます",
+    "en": "He works."
+  },
+  "8-9": {
+    "ne": "हामी काम गर्छौं।",
+    "roman": "hāmī kām garchaũ",
+    "ja": "私たちは働きます",
+    "en": "We work."
+  },
+  "8-10": {
+    "ne": "उनीहरू काम गर्छन्।",
+    "roman": "unīharū kām garchan",
+    "ja": "彼らは働きます",
+    "en": "They work."
+  },
+  "8-11": {
+    "ne": "म हरेक दिन व्यायाम गर्छु।",
+    "roman": "ma harek din vyāyām garchu",
+    "ja": "私は毎日運動します",
+    "en": "I exercise every day."
+  },
+  "8-12": {
+    "ne": "तिमी हरेक दिन व्यायाम गर्छौ?",
+    "roman": "timī harek din vyāyām garchau?",
+    "ja": "君は毎日運動しますか？",
+    "en": "Do you exercise every day?"
+  },
+  "8-13": {
+    "ne": "तपाईं हरेक दिन व्यायाम गर्नुहुन्छ?",
+    "roman": "tapāĩ harek din vyāyām garnuhuncha?",
+    "ja": "あなたは毎日運動しますか？",
+    "en": "Do you exercise every day?"
+  },
+  "8-14": {
+    "ne": "उनी हरेक दिन व्यायाम गर्छिन्।",
+    "roman": "unī harek din vyāyām garchin",
+    "ja": "彼女は毎日運動します",
+    "en": "She exercises every day."
+  },
+  "8-15": {
+    "ne": "हामी हरेक दिन व्यायाम गर्छौं।",
+    "roman": "hāmī harek din vyāyām garchaũ",
+    "ja": "私たちは毎日運動します",
+    "en": "We exercise every day."
+  },
+  "8-16": {
+    "ne": "म बिहान सात बजे उठ्छु।",
+    "roman": "ma bihān sāt baje uṭhchu",
+    "ja": "私は朝7時に起きます",
+    "en": "I get up at seven in the morning."
+  },
+  "8-17": {
+    "ne": "तपाईं नेपाली बोल्नुहुन्छ?",
+    "roman": "tapāĩ nepālī bolnuhuncha?",
+    "ja": "あなたはネパール語を話しますか？",
+    "en": "Do you speak Nepali?"
+  },
+  "8-18": {
+    "ne": "उ पानी पिउँछ।",
+    "roman": "u pānī piũcha",
+    "ja": "彼は水を飲みます",
+    "en": "He drinks water."
+  },
+  "8-19": {
+    "ne": "उनी किताब पढ्छिन्।",
+    "roman": "unī kitāb paḍhchin",
+    "ja": "彼女は本を読みます",
+    "en": "She reads books."
+  },
+  "8-20": {
+    "ne": "हामी घरमा खाना खान्छौं।",
+    "roman": "hāmī gharmā khānā khānchaũ",
+    "ja": "私たちは家でご飯を食べます",
+    "en": "We eat at home."
+  },
+  "9-1": {
+    "ne": "म आज काम गर्दिनँ।",
+    "roman": "ma āja kām gardinã",
+    "ja": "私は今日は働きません",
+    "en": "I do not work today."
+  },
+  "9-2": {
+    "ne": "तँ आज काम गर्दैनस्।",
+    "roman": "tã āja kām gardainas",
+    "ja": "お前は今日は働きません",
+    "en": "You do not work today."
+  },
+  "9-3": {
+    "ne": "तिमी आज काम गर्दैनौ।",
+    "roman": "timī āja kām gardainau",
+    "ja": "君は今日は働きません",
+    "en": "You do not work today."
+  },
+  "9-4": {
+    "ne": "तिमीहरू आज काम गर्दैनौ।",
+    "roman": "timīharū āja kām gardainau",
+    "ja": "君たちは今日は働きません",
+    "en": "You do not work today."
+  },
+  "9-5": {
+    "ne": "तपाईं आज काम गर्नुहुन्न।",
+    "roman": "tapāĩ āja kām garnuhunna",
+    "ja": "あなたは今日は働きません",
+    "en": "You do not work today."
+  },
+  "9-6": {
+    "ne": "उ आज काम गर्दैन।",
+    "roman": "u āja kām gardaina",
+    "ja": "彼は今日は働きません",
+    "en": "He does not work today."
+  },
+  "9-7": {
+    "ne": "उनी आज काम गर्दिनन्।",
+    "roman": "unī āja kām gardinan",
+    "ja": "彼女は今日は働きません",
+    "en": "She does not work today."
+  },
+  "9-8": {
+    "ne": "उहाँ आज काम गर्नुहुन्न।",
+    "roman": "uhā̃ āja kām garnuhunna",
+    "ja": "あの方は今日は働きません",
+    "en": "He does not work today."
+  },
+  "9-9": {
+    "ne": "हामी आज काम गर्दैनौं।",
+    "roman": "hāmī āja kām gardainaũ",
+    "ja": "私たちは今日は働きません",
+    "en": "We do not work today."
+  },
+  "9-10": {
+    "ne": "उनीहरू आज काम गर्दैनन्।",
+    "roman": "unīharū āja kām gardainan",
+    "ja": "彼らは今日は働きません",
+    "en": "They do not work today."
+  },
+  "9-11": {
+    "ne": "म राति काम गर्दिनँ।",
+    "roman": "ma rāti kām gardinã",
+    "ja": "私は夜は働きません",
+    "en": "I do not work at night."
+  },
+  "9-12": {
+    "ne": "तिमी राति काम गर्दैनौ?",
+    "roman": "timī rāti kām gardainau?",
+    "ja": "君は夜は働かないのですか？",
+    "en": "Do you not work at night?"
+  },
+  "9-13": {
+    "ne": "तपाईं राति काम गर्नुहुन्न?",
+    "roman": "tapāĩ rāti kām garnuhunna?",
+    "ja": "あなたは夜は働かないのですか？",
+    "en": "Do you not work at night?"
+  },
+  "9-14": {
+    "ne": "उनी राति काम गर्दिनन्।",
+    "roman": "unī rāti kām gardinan",
+    "ja": "彼女は夜は働きません",
+    "en": "She does not work at night."
+  },
+  "9-15": {
+    "ne": "हामी राति काम गर्दैनौं।",
+    "roman": "hāmī rāti kām gardainaũ",
+    "ja": "私たちは夜は働きません",
+    "en": "We do not work at night."
+  },
+  "9-16": {
+    "ne": "म चिट्ठी लेख्दिनँ।",
+    "roman": "ma ciṭṭhī lekhdinã",
+    "ja": "私は手紙を書きません",
+    "en": "I do not write letters."
+  },
+  "9-17": {
+    "ne": "उ अंग्रेजी बोल्दैन।",
+    "roman": "u aṅgrejī boldaina",
+    "ja": "彼は英語を話しません",
+    "en": "He does not speak English."
+  },
+  "9-18": {
+    "ne": "उहाँ कफी पिउनुहुन्न।",
+    "roman": "uhā̃ kaphī piunuhunna",
+    "ja": "あの方はコーヒーを飲みません",
+    "en": "He does not drink coffee."
+  },
+  "9-19": {
+    "ne": "तिमी मासु खाँदैनौ?",
+    "roman": "timī māsu khā̃dainau?",
+    "ja": "君は肉を食べないのですか？",
+    "en": "Do you not eat meat?"
+  },
+  "9-20": {
+    "ne": "हामी आइतबार स्कूल जाँदैनौं।",
+    "roman": "hāmī āitabār skūl jā̃dainaũ",
+    "ja": "私たちは日曜日には学校へ行きません",
+    "en": "We do not go to school on Sundays."
+  },
+  "10-1": {
+    "ne": "म अहिले काम गर्दैछु।",
+    "roman": "ma ahile kām gardaichu",
+    "ja": "私は今働いています",
+    "en": "I am working now."
+  },
+  "10-2": {
+    "ne": "तँ अहिले काम गर्दैछस्।",
+    "roman": "tã ahile kām gardaichas",
+    "ja": "お前は今働いています",
+    "en": "You are working now."
+  },
+  "10-3": {
+    "ne": "तिमी अहिले काम गर्दैछौ।",
+    "roman": "timī ahile kām gardaichau",
+    "ja": "君は今働いています",
+    "en": "You are working now."
+  },
+  "10-4": {
+    "ne": "तिमीहरू अहिले काम गर्दैछौ।",
+    "roman": "timīharū ahile kām gardaichau",
+    "ja": "君たちは今働いています",
+    "en": "You are working now."
+  },
+  "10-5": {
+    "ne": "तपाईं अहिले काम गर्दैहुनुहुन्छ।",
+    "roman": "tapāĩ ahile kām gardaihunuhuncha",
+    "ja": "あなたは今働いています",
+    "en": "You are working now."
+  },
+  "10-6": {
+    "ne": "उ अहिले काम गर्दैछ।",
+    "roman": "u ahile kām gardaicha",
+    "ja": "彼は今働いています",
+    "en": "He is working now."
+  },
+  "10-7": {
+    "ne": "उनी अहिले काम गर्दैछिन्।",
+    "roman": "unī ahile kām gardaichin",
+    "ja": "彼女は今働いています",
+    "en": "She is working now."
+  },
+  "10-8": {
+    "ne": "उहाँ अहिले काम गर्दैहुनुहुन्छ।",
+    "roman": "uhā̃ ahile kām gardaihunuhuncha",
+    "ja": "あの方は今働いています",
+    "en": "He is working now."
+  },
+  "10-9": {
+    "ne": "हामी अहिले काम गर्दैछौं।",
+    "roman": "hāmī ahile kām gardaichaũ",
+    "ja": "私たちは今働いています",
+    "en": "We are working now."
+  },
+  "10-10": {
+    "ne": "उनीहरू अहिले काम गर्दैछन्।",
+    "roman": "unīharū ahile kām gardaichan",
+    "ja": "彼らは今働いています",
+    "en": "They are working now."
+  },
+  "10-11": {
+    "ne": "म व्यायाम गर्दैछु।",
+    "roman": "ma vyāyām gardaichu",
+    "ja": "私は運動しているところです",
+    "en": "I am exercising."
+  },
+  "10-12": {
+    "ne": "तिमी व्यायाम गर्दैछौ?",
+    "roman": "timī vyāyām gardaichau?",
+    "ja": "君は運動しているところですか？",
+    "en": "Are you exercising?"
+  },
+  "10-13": {
+    "ne": "तपाईं व्यायाम गर्दैहुनुहुन्छ?",
+    "roman": "tapāĩ vyāyām gardaihunuhuncha?",
+    "ja": "あなたは運動しているところですか？",
+    "en": "Are you exercising?"
+  },
+  "10-14": {
+    "ne": "उनी व्यायाम गर्दैछिन्।",
+    "roman": "unī vyāyām gardaichin",
+    "ja": "彼女は運動しているところです",
+    "en": "She is exercising."
+  },
+  "10-15": {
+    "ne": "हामी व्यायाम गर्दैछौं।",
+    "roman": "hāmī vyāyām gardaichaũ",
+    "ja": "私たちは運動しているところです",
+    "en": "We are exercising."
+  },
+  "10-16": {
+    "ne": "म पानी पिउँदैछु।",
+    "roman": "ma pānī piũdaichu",
+    "ja": "私は水を飲んでいます",
+    "en": "I am drinking water."
+  },
+  "10-17": {
+    "ne": "उ अहिले खाना खाँदैछ।",
+    "roman": "u ahile khānā khā̃daicha",
+    "ja": "彼は今ご飯を食べています",
+    "en": "He is eating now."
+  },
+  "10-18": {
+    "ne": "उनी चिट्ठी लेख्दैछिन्।",
+    "roman": "unī ciṭṭhī lekhdaichin",
+    "ja": "彼女は手紙を書いています",
+    "en": "She is writing a letter."
+  },
+  "10-19": {
+    "ne": "तिमीहरू के पढ्दैछौ?",
+    "roman": "timīharū ke paḍhdaichau?",
+    "ja": "君たちは何を読んでいますか？",
+    "en": "What are you reading?"
+  },
+  "10-20": {
+    "ne": "म भोलि नेपाल जाँदैछु।",
+    "roman": "ma bholi nepāl jā̃daichu",
+    "ja": "私は明日ネパールへ行く予定です",
+    "en": "I am going to Nepal tomorrow."
+  },
+  "11-1": {
+    "ne": "मैले हिजो काम गरेँ।",
+    "roman": "maile hijo kām garẽ",
+    "ja": "私は昨日働きました",
+    "en": "I worked yesterday."
+  },
+  "11-2": {
+    "ne": "तैंले हिजो काम गरिस्।",
+    "roman": "taĩle hijo kām garis",
+    "ja": "お前は昨日働きました",
+    "en": "You worked yesterday."
+  },
+  "11-3": {
+    "ne": "तिमीले हिजो काम गर्यौ।",
+    "roman": "timīle hijo kām garyau",
+    "ja": "君は昨日働きました",
+    "en": "You worked yesterday."
+  },
+  "11-4": {
+    "ne": "तिमीहरूले हिजो काम गर्यौ।",
+    "roman": "timīharūle hijo kām garyau",
+    "ja": "君たちは昨日働きました",
+    "en": "You worked yesterday."
+  },
+  "11-5": {
+    "ne": "तपाईंले हिजो काम गर्नुभयो।",
+    "roman": "tapāĩle hijo kām garnubhayo",
+    "ja": "あなたは昨日働きました",
+    "en": "You worked yesterday."
+  },
+  "11-6": {
+    "ne": "उसले हिजो काम गर्यो।",
+    "roman": "usle hijo kām garyo",
+    "ja": "彼は昨日働きました",
+    "en": "He worked yesterday."
+  },
+  "11-7": {
+    "ne": "उनले हिजो काम गरिन्।",
+    "roman": "unle hijo kām garin",
+    "ja": "彼女は昨日働きました",
+    "en": "She worked yesterday."
+  },
+  "11-8": {
+    "ne": "उहाँले हिजो काम गर्नुभयो।",
+    "roman": "uhā̃le hijo kām garnubhayo",
+    "ja": "あの方は昨日働きました",
+    "en": "He worked yesterday."
+  },
+  "11-9": {
+    "ne": "हामीले हिजो काम गर्यौं।",
+    "roman": "hāmīle hijo kām garyaũ",
+    "ja": "私たちは昨日働きました",
+    "en": "We worked yesterday."
+  },
+  "11-10": {
+    "ne": "उनीहरूले हिजो काम गरे।",
+    "roman": "unīharūle hijo kām gare",
+    "ja": "彼らは昨日働きました",
+    "en": "They worked yesterday."
+  },
+  "11-11": {
+    "ne": "मैले हिजो व्यायाम गरेँ।",
+    "roman": "maile hijo vyāyām garẽ",
+    "ja": "私は昨日運動しました",
+    "en": "I exercised yesterday."
+  },
+  "11-12": {
+    "ne": "तिमीले हिजो व्यायाम गर्यौ?",
+    "roman": "timīle hijo vyāyām garyau?",
+    "ja": "君は昨日運動しましたか？",
+    "en": "Did you exercise yesterday?"
+  },
+  "11-13": {
+    "ne": "तपाईंले हिजो व्यायाम गर्नुभयो?",
+    "roman": "tapāĩle hijo vyāyām garnubhayo?",
+    "ja": "あなたは昨日運動しましたか？",
+    "en": "Did you exercise yesterday?"
+  },
+  "11-14": {
+    "ne": "उनले हिजो व्यायाम गरिन्।",
+    "roman": "unle hijo vyāyām garin",
+    "ja": "彼女は昨日運動しました",
+    "en": "She exercised yesterday."
+  },
+  "11-15": {
+    "ne": "हामीले हिजो व्यायाम गर्यौं।",
+    "roman": "hāmīle hijo vyāyām garyaũ",
+    "ja": "私たちは昨日運動しました",
+    "en": "We exercised yesterday."
+  },
+  "11-16": {
+    "ne": "मैले किताब पढेँ।",
+    "roman": "maile kitāb paḍhẽ",
+    "ja": "私は本を読みました",
+    "en": "I read a book."
+  },
+  "11-17": {
+    "ne": "उसले उत्तर दियो।",
+    "roman": "usle uttar diyo",
+    "ja": "彼は答えました",
+    "en": "He gave an answer."
+  },
+  "11-18": {
+    "ne": "उ सुत्यो।",
+    "roman": "u sutyo",
+    "ja": "彼は寝ました",
+    "en": "He went to sleep."
+  },
+  "11-19": {
+    "ne": "उनी स्कूल गइन्।",
+    "roman": "unī skūl gain",
+    "ja": "彼女は学校に行きました",
+    "en": "She went to school."
+  },
+  "11-20": {
+    "ne": "म हिजो घरमा थिएँ।",
+    "roman": "ma hijo gharmā thiẽ",
+    "ja": "私は昨日家にいました",
+    "en": "I was at home yesterday."
+  },
+  "12-1": {
+    "ne": "मैले हिजो काम गरिनँ।",
+    "roman": "maile hijo kām garinã",
+    "ja": "私は昨日働きませんでした",
+    "en": "I did not work yesterday."
+  },
+  "12-2": {
+    "ne": "तैंले हिजो काम गरिनस्।",
+    "roman": "taĩle hijo kām garinas",
+    "ja": "お前は昨日働きませんでした",
+    "en": "You did not work yesterday."
+  },
+  "12-3": {
+    "ne": "तिमीले हिजो काम गरेनौ।",
+    "roman": "timīle hijo kām garenau",
+    "ja": "君は昨日働きませんでした",
+    "en": "You did not work yesterday."
+  },
+  "12-4": {
+    "ne": "तिमीहरूले हिजो काम गरेनौ।",
+    "roman": "timīharūle hijo kām garenau",
+    "ja": "君たちは昨日働きませんでした",
+    "en": "You did not work yesterday."
+  },
+  "12-5": {
+    "ne": "तपाईंले हिजो काम गर्नुभएन।",
+    "roman": "tapāĩle hijo kām garnubhaena",
+    "ja": "あなたは昨日働きませんでした",
+    "en": "You did not work yesterday."
+  },
+  "12-6": {
+    "ne": "उसले हिजो काम गरेन।",
+    "roman": "usle hijo kām garena",
+    "ja": "彼は昨日働きませんでした",
+    "en": "He did not work yesterday."
+  },
+  "12-7": {
+    "ne": "उनले हिजो काम गरिनन्।",
+    "roman": "unle hijo kām garinan",
+    "ja": "彼女は昨日働きませんでした",
+    "en": "She did not work yesterday."
+  },
+  "12-8": {
+    "ne": "उहाँले हिजो काम गर्नुभएन।",
+    "roman": "uhā̃le hijo kām garnubhaena",
+    "ja": "あの方は昨日働きませんでした",
+    "en": "He did not work yesterday."
+  },
+  "12-9": {
+    "ne": "हामीले हिजो काम गरेनौं।",
+    "roman": "hāmīle hijo kām garenaũ",
+    "ja": "私たちは昨日働きませんでした",
+    "en": "We did not work yesterday."
+  },
+  "12-10": {
+    "ne": "उनीहरूले हिजो काम गरेनन्।",
+    "roman": "unīharūle hijo kām garenan",
+    "ja": "彼らは昨日働きませんでした",
+    "en": "They did not work yesterday."
+  },
+  "12-11": {
+    "ne": "मैले हिजो व्यायाम गरिनँ।",
+    "roman": "maile hijo vyāyām garinã",
+    "ja": "私は昨日運動しませんでした",
+    "en": "I did not exercise yesterday."
+  },
+  "12-12": {
+    "ne": "तिमीले हिजो व्यायाम गरेनौ?",
+    "roman": "timīle hijo vyāyām garenau?",
+    "ja": "君は昨日運動しませんでしたか？",
+    "en": "Did you not exercise yesterday?"
+  },
+  "12-13": {
+    "ne": "तपाईंले हिजो व्यायाम गर्नुभएन?",
+    "roman": "tapāĩle hijo vyāyām garnubhaena?",
+    "ja": "あなたは昨日運動しませんでしたか？",
+    "en": "Did you not exercise yesterday?"
+  },
+  "12-14": {
+    "ne": "उनले हिजो व्यायाम गरिनन्।",
+    "roman": "unle hijo vyāyām garinan",
+    "ja": "彼女は昨日運動しませんでした",
+    "en": "She did not exercise yesterday."
+  },
+  "12-15": {
+    "ne": "हामीले हिजो व्यायाम गरेनौं।",
+    "roman": "hāmīle hijo vyāyām garenaũ",
+    "ja": "私たちは昨日運動しませんでした",
+    "en": "We did not exercise yesterday."
+  },
+  "12-16": {
+    "ne": "मैले किताब पढिनँ।",
+    "roman": "maile kitāb paḍhinã",
+    "ja": "私は本を読みませんでした",
+    "en": "I did not read the book."
+  },
+  "12-17": {
+    "ne": "उ आएन।",
+    "roman": "u āena",
+    "ja": "彼は来ませんでした",
+    "en": "He did not come."
+  },
+  "12-18": {
+    "ne": "उहाँ हिजो आउनुभएन।",
+    "roman": "uhā̃ hijo āunubhaena",
+    "ja": "あの方は昨日来ませんでした",
+    "en": "He did not come yesterday."
+  },
+  "12-19": {
+    "ne": "हामीले त्यो फिल्म हेरेनौं।",
+    "roman": "hāmīle tyo philma herenaũ",
+    "ja": "私たちはその映画を見ませんでした",
+    "en": "We did not watch that film."
+  },
+  "12-20": {
+    "ne": "हिजो यहाँ पैसा थिएन।",
+    "roman": "hijo yahā̃ paisā thiena",
+    "ja": "昨日ここにはお金がありませんでした",
+    "en": "There was no money here yesterday."
+  },
+  "13-1": {
+    "ne": "म भोलि काम गर्छु।",
+    "roman": "ma bholi kām garchu",
+    "ja": "私は明日働きます",
+    "en": "I will work tomorrow."
+  },
+  "13-2": {
+    "ne": "तँ भोलि काम गर्छस्।",
+    "roman": "tã bholi kām garchas",
+    "ja": "お前は明日働きます",
+    "en": "You will work tomorrow."
+  },
+  "13-3": {
+    "ne": "तिमी भोलि काम गर्छौ।",
+    "roman": "timī bholi kām garchau",
+    "ja": "君は明日働きます",
+    "en": "You will work tomorrow."
+  },
+  "13-4": {
+    "ne": "तिमीहरू भोलि काम गर्छौ।",
+    "roman": "timīharū bholi kām garchau",
+    "ja": "君たちは明日働きます",
+    "en": "You will work tomorrow."
+  },
+  "13-5": {
+    "ne": "तपाईं भोलि काम गर्नुहुन्छ।",
+    "roman": "tapāĩ bholi kām garnuhuncha",
+    "ja": "あなたは明日働きます",
+    "en": "You will work tomorrow."
+  },
+  "13-6": {
+    "ne": "उ भोलि काम गर्छ।",
+    "roman": "u bholi kām garcha",
+    "ja": "彼は明日働きます",
+    "en": "He will work tomorrow."
+  },
+  "13-7": {
+    "ne": "उनी भोलि काम गर्छिन्।",
+    "roman": "unī bholi kām garchin",
+    "ja": "彼女は明日働きます",
+    "en": "She will work tomorrow."
+  },
+  "13-8": {
+    "ne": "उहाँ भोलि काम गर्नुहुन्छ।",
+    "roman": "uhā̃ bholi kām garnuhuncha",
+    "ja": "あの方は明日働きます",
+    "en": "He will work tomorrow."
+  },
+  "13-9": {
+    "ne": "हामी भोलि काम गर्छौं।",
+    "roman": "hāmī bholi kām garchaũ",
+    "ja": "私たちは明日働きます",
+    "en": "We will work tomorrow."
+  },
+  "13-10": {
+    "ne": "उनीहरू भोलि काम गर्छन्।",
+    "roman": "unīharū bholi kām garchan",
+    "ja": "彼らは明日働きます",
+    "en": "They will work tomorrow."
+  },
+  "13-11": {
+    "ne": "म भोलि व्यायाम गर्दिनँ।",
+    "roman": "ma bholi vyāyām gardinã",
+    "ja": "私は明日運動しません",
+    "en": "I will not exercise tomorrow."
+  },
+  "13-12": {
+    "ne": "तिमी भोलि व्यायाम गर्छौ?",
+    "roman": "timī bholi vyāyām garchau?",
+    "ja": "君は明日運動しますか？",
+    "en": "Will you exercise tomorrow?"
+  },
+  "13-13": {
+    "ne": "तपाईं भोलि व्यायाम गर्नुहुन्छ?",
+    "roman": "tapāĩ bholi vyāyām garnuhuncha?",
+    "ja": "あなたは明日運動しますか？",
+    "en": "Will you exercise tomorrow?"
+  },
+  "13-14": {
+    "ne": "उनी भोलि व्यायाम गर्दिनन्।",
+    "roman": "unī bholi vyāyām gardinan",
+    "ja": "彼女は明日運動しません",
+    "en": "She will not exercise tomorrow."
+  },
+  "13-15": {
+    "ne": "हामी भोलि व्यायाम गर्दैनौं।",
+    "roman": "hāmī bholi vyāyām gardainaũ",
+    "ja": "私たちは明日運動しません",
+    "en": "We will not exercise tomorrow."
+  },
+  "13-16": {
+    "ne": "म भोलि स्कूल जान्छु।",
+    "roman": "ma bholi skūl jānchu",
+    "ja": "私は明日学校に行きます",
+    "en": "I will go to school tomorrow."
+  },
+  "13-17": {
+    "ne": "उनी अर्को हप्ता आउँछिन्।",
+    "roman": "unī arko haptā āũchin",
+    "ja": "彼女は来週来ます",
+    "en": "She will come next week."
+  },
+  "13-18": {
+    "ne": "तपाईं भोलि कहाँ जानुहुन्छ?",
+    "roman": "tapāĩ bholi kahā̃ jānuhuncha?",
+    "ja": "あなたは明日どこへ行きますか？",
+    "en": "Where will you go tomorrow?"
+  },
+  "13-19": {
+    "ne": "हामी आज राति घरमा खान्छौं।",
+    "roman": "hāmī āja rāti gharmā khānchaũ",
+    "ja": "私たちは今夜家で食べます",
+    "en": "We will eat at home tonight."
+  },
+  "13-20": {
+    "ne": "उनीहरू भोलि आउँदैनन्।",
+    "roman": "unīharū bholi āũdainan",
+    "ja": "彼らは明日来ません",
+    "en": "They will not come tomorrow."
+  },
+  "14-1": {
+    "ne": "म पहिले यहाँ काम गर्थें।",
+    "roman": "ma pahile yahā̃ kām garthẽ",
+    "ja": "私は以前ここで働いていました",
+    "en": "I used to work here."
+  },
+  "14-2": {
+    "ne": "तँ पहिले यहाँ काम गर्थिस्।",
+    "roman": "tã pahile yahā̃ kām garthis",
+    "ja": "お前は以前ここで働いていました",
+    "en": "You used to work here."
+  },
+  "14-3": {
+    "ne": "तिमी पहिले यहाँ काम गर्थ्यौ।",
+    "roman": "timī pahile yahā̃ kām garthyau",
+    "ja": "君は以前ここで働いていました",
+    "en": "You used to work here."
+  },
+  "14-4": {
+    "ne": "तिमीहरू पहिले यहाँ काम गर्थ्यौ।",
+    "roman": "timīharū pahile yahā̃ kām garthyau",
+    "ja": "君たちは以前ここで働いていました",
+    "en": "You used to work here."
+  },
+  "14-5": {
+    "ne": "तपाईं पहिले यहाँ काम गर्नुहुन्थ्यो।",
+    "roman": "tapāĩ pahile yahā̃ kām garnuhunthyo",
+    "ja": "あなたは以前ここで働いていました",
+    "en": "You used to work here."
+  },
+  "14-6": {
+    "ne": "उ पहिले यहाँ काम गर्थ्यो।",
+    "roman": "u pahile yahā̃ kām garthyo",
+    "ja": "彼は以前ここで働いていました",
+    "en": "He used to work here."
+  },
+  "14-7": {
+    "ne": "उनी पहिले यहाँ काम गर्थिन्।",
+    "roman": "unī pahile yahā̃ kām garthin",
+    "ja": "彼女は以前ここで働いていました",
+    "en": "She used to work here."
+  },
+  "14-8": {
+    "ne": "उहाँ पहिले यहाँ काम गर्नुहुन्थ्यो।",
+    "roman": "uhā̃ pahile yahā̃ kām garnuhunthyo",
+    "ja": "あの方は以前ここで働いていました",
+    "en": "He used to work here."
+  },
+  "14-9": {
+    "ne": "हामी पहिले यहाँ काम गर्थ्यौं।",
+    "roman": "hāmī pahile yahā̃ kām garthyaũ",
+    "ja": "私たちは以前ここで働いていました",
+    "en": "We used to work here."
+  },
+  "14-10": {
+    "ne": "उनीहरू पहिले यहाँ काम गर्थे।",
+    "roman": "unīharū pahile yahā̃ kām garthe",
+    "ja": "彼らは以前ここで働いていました",
+    "en": "They used to work here."
+  },
+  "14-11": {
+    "ne": "म पहिले व्यायाम गर्दिनथें।",
+    "roman": "ma pahile vyāyām gardinathẽ",
+    "ja": "私は以前は運動する習慣がありませんでした",
+    "en": "I did not use to exercise."
+  },
+  "14-12": {
+    "ne": "तिमी पहिले व्यायाम गर्थ्यौ?",
+    "roman": "timī pahile vyāyām garthyau?",
+    "ja": "君は以前運動していましたか？",
+    "en": "Did you use to exercise?"
+  },
+  "14-13": {
+    "ne": "तपाईं पहिले व्यायाम गर्नुहुन्थ्यो?",
+    "roman": "tapāĩ pahile vyāyām garnuhunthyo?",
+    "ja": "あなたは以前運動していましたか？",
+    "en": "Did you use to exercise?"
+  },
+  "14-14": {
+    "ne": "उनी पहिले व्यायाम गर्दिनथिन्।",
+    "roman": "unī pahile vyāyām gardinathin",
+    "ja": "彼女は以前は運動する習慣がありませんでした",
+    "en": "She did not use to exercise."
+  },
+  "14-15": {
+    "ne": "हामी पहिले व्यायाम गर्दैनथ्यौं।",
+    "roman": "hāmī pahile vyāyām gardainathyaũ",
+    "ja": "私たちは以前は運動する習慣がありませんでした",
+    "en": "We did not use to exercise."
+  },
+  "14-16": {
+    "ne": "म पहिले चाँडै उठ्थें।",
+    "roman": "ma pahile cā̃ḍai uṭhthẽ",
+    "ja": "私は以前はよく早く起きていました",
+    "en": "I used to get up early."
+  },
+  "14-17": {
+    "ne": "उ सानो हुँदा धेरै रुन्थ्यो।",
+    "roman": "u sāno hũdā dherai runthyo",
+    "ja": "彼は幼い頃よく泣いていました",
+    "en": "He used to cry a lot when he was little."
+  },
+  "14-18": {
+    "ne": "उहाँ हाम्रो घरमा आउनुहुन्थ्यो।",
+    "roman": "uhā̃ hāmro gharmā āunuhunthyo",
+    "ja": "あの方はよく私たちの家に来ていました",
+    "en": "He used to visit our home."
+  },
+  "14-19": {
+    "ne": "तिमी पहिले यहाँ बस्थ्यौ?",
+    "roman": "timī pahile yahā̃ basthyau?",
+    "ja": "君は以前ここに住んでいましたか？",
+    "en": "Did you use to live here?"
+  },
+  "14-20": {
+    "ne": "हामी सिनेमा हेर्ने गर्थ्यौं।",
+    "roman": "hāmī sinemā herne garthyaũ",
+    "ja": "私たちはよく映画を見ていました",
+    "en": "We used to watch films."
+  },
+  "15-1": {
+    "ne": "मैले यो काम गरेको छु।",
+    "roman": "maile yo kām gareko chu",
+    "ja": "私はこの仕事を済ませています",
+    "en": "I have done this work."
+  },
+  "15-2": {
+    "ne": "तैंले यो काम गरेको छस्।",
+    "roman": "taĩle yo kām gareko chas",
+    "ja": "お前はこの仕事を済ませています",
+    "en": "You have done this work."
+  },
+  "15-3": {
+    "ne": "तिमीले यो काम गरेको छौ।",
+    "roman": "timīle yo kām gareko chau",
+    "ja": "君はこの仕事を済ませています",
+    "en": "You have done this work."
+  },
+  "15-4": {
+    "ne": "तिमीहरूले यो काम गरेको छौ।",
+    "roman": "timīharūle yo kām gareko chau",
+    "ja": "君たちはこの仕事を済ませています",
+    "en": "You have done this work."
+  },
+  "15-5": {
+    "ne": "तपाईंले यो काम गर्नुभएको छ।",
+    "roman": "tapāĩle yo kām garnubhaeko cha",
+    "ja": "あなたはこの仕事を済ませています",
+    "en": "You have done this work."
+  },
+  "15-6": {
+    "ne": "उसले यो काम गरेको छ।",
+    "roman": "usle yo kām gareko cha",
+    "ja": "彼はこの仕事を済ませています",
+    "en": "He has done this work."
+  },
+  "15-7": {
+    "ne": "उनले यो काम गरेकी छिन्।",
+    "roman": "unle yo kām garekī chin",
+    "ja": "彼女はこの仕事を済ませています",
+    "en": "She has done this work."
+  },
+  "15-8": {
+    "ne": "उहाँले यो काम गर्नुभएको छ।",
+    "roman": "uhā̃le yo kām garnubhaeko cha",
+    "ja": "あの方はこの仕事を済ませています",
+    "en": "He has done this work."
+  },
+  "15-9": {
+    "ne": "हामीले यो काम गरेको छौं।",
+    "roman": "hāmīle yo kām gareko chaũ",
+    "ja": "私たちはこの仕事を済ませています",
+    "en": "We have done this work."
+  },
+  "15-10": {
+    "ne": "उनीहरूले यो काम गरेका छन्।",
+    "roman": "unīharūle yo kām garekā chan",
+    "ja": "彼らはこの仕事を済ませています",
+    "en": "They have done this work."
+  },
+  "15-11": {
+    "ne": "मैले यो काम गरेको छैनँ।",
+    "roman": "maile yo kām gareko chainã",
+    "ja": "私はこの仕事をまだ済ませていません",
+    "en": "I have not done this work yet."
+  },
+  "15-12": {
+    "ne": "तिमीले यो काम गरेको छौ?",
+    "roman": "timīle yo kām gareko chau?",
+    "ja": "君はこの仕事をもう済ませていますか？",
+    "en": "Have you done this work?"
+  },
+  "15-13": {
+    "ne": "तपाईंले यो काम गर्नुभएको छ?",
+    "roman": "tapāĩle yo kām garnubhaeko cha?",
+    "ja": "あなたはこの仕事をもう済ませていますか？",
+    "en": "Have you done this work?"
+  },
+  "15-14": {
+    "ne": "उनले यो काम गरेकी छैनन्।",
+    "roman": "unle yo kām garekī chainan",
+    "ja": "彼女はこの仕事をまだ済ませていません",
+    "en": "She has not done this work yet."
+  },
+  "15-15": {
+    "ne": "हामीले यो काम गरेको छैनौं।",
+    "roman": "hāmīle yo kām gareko chainaũ",
+    "ja": "私たちはこの仕事をまだ済ませていません",
+    "en": "We have not done this work yet."
+  },
+  "15-16": {
+    "ne": "मैले सुशी खाएको छु।",
+    "roman": "maile suśī khāeko chu",
+    "ja": "私は寿司を食べたことがあります",
+    "en": "I have eaten sushi."
+  },
+  "15-17": {
+    "ne": "तपाईं नेपाल जानुभएको छ?",
+    "roman": "tapāĩ nepāl jānubhaeko cha?",
+    "ja": "あなたはネパールに行ったことがありますか？",
+    "en": "Have you been to Nepal?"
+  },
+  "15-18": {
+    "ne": "म थाकेको छु।",
+    "roman": "ma thākeko chu",
+    "ja": "私は疲れています",
+    "en": "I am tired."
+  },
+  "15-19": {
+    "ne": "ढोका खुलेको छ।",
+    "roman": "ḍhokā khuleko cha",
+    "ja": "ドアが開いています",
+    "en": "The door is open."
+  },
+  "15-20": {
+    "ne": "खाना पाकेको छ।",
+    "roman": "khānā pākeko cha",
+    "ja": "ご飯が炊けています",
+    "en": "The food is cooked."
+  },
+  "16-1": {
+    "ne": "मैले यो काम गरेको थिएँ।",
+    "roman": "maile yo kām gareko thiẽ",
+    "ja": "私はこの仕事を済ませていました",
+    "en": "I had done this work."
+  },
+  "16-2": {
+    "ne": "तैंले यो काम गरेको थिइस्।",
+    "roman": "taĩle yo kām gareko thiis",
+    "ja": "お前はこの仕事を済ませていました",
+    "en": "You had done this work."
+  },
+  "16-3": {
+    "ne": "तिमीले यो काम गरेको थियौ।",
+    "roman": "timīle yo kām gareko thiyau",
+    "ja": "君はこの仕事を済ませていました",
+    "en": "You had done this work."
+  },
+  "16-4": {
+    "ne": "तिमीहरूले यो काम गरेको थियौ।",
+    "roman": "timīharūle yo kām gareko thiyau",
+    "ja": "君たちはこの仕事を済ませていました",
+    "en": "You had done this work."
+  },
+  "16-5": {
+    "ne": "तपाईंले यो काम गर्नुभएको थियो।",
+    "roman": "tapāĩle yo kām garnubhaeko thiyo",
+    "ja": "あなたはこの仕事を済ませていました",
+    "en": "You had done this work."
+  },
+  "16-6": {
+    "ne": "उसले यो काम गरेको थियो।",
+    "roman": "usle yo kām gareko thiyo",
+    "ja": "彼はこの仕事を済ませていました",
+    "en": "He had done this work."
+  },
+  "16-7": {
+    "ne": "उनले यो काम गरेकी थिइन्।",
+    "roman": "unle yo kām garekī thiin",
+    "ja": "彼女はこの仕事を済ませていました",
+    "en": "She had done this work."
+  },
+  "16-8": {
+    "ne": "उहाँले यो काम गर्नुभएको थियो।",
+    "roman": "uhā̃le yo kām garnubhaeko thiyo",
+    "ja": "あの方はこの仕事を済ませていました",
+    "en": "He had done this work."
+  },
+  "16-9": {
+    "ne": "हामीले यो काम गरेको थियौं।",
+    "roman": "hāmīle yo kām gareko thiyaũ",
+    "ja": "私たちはこの仕事を済ませていました",
+    "en": "We had done this work."
+  },
+  "16-10": {
+    "ne": "उनीहरूले यो काम गरेका थिए।",
+    "roman": "unīharūle yo kām garekā thie",
+    "ja": "彼らはこの仕事を済ませていました",
+    "en": "They had done this work."
+  },
+  "16-11": {
+    "ne": "मैले यो काम गरेको थिइनँ।",
+    "roman": "maile yo kām gareko thiinã",
+    "ja": "私はその時この仕事を済ませていませんでした",
+    "en": "I had not done this work at that time."
+  },
+  "16-12": {
+    "ne": "तिमीले यो काम गरेको थियौ?",
+    "roman": "timīle yo kām gareko thiyau?",
+    "ja": "君はその時この仕事を済ませていましたか？",
+    "en": "Had you done this work?"
+  },
+  "16-13": {
+    "ne": "तपाईंले यो काम गर्नुभएको थियो?",
+    "roman": "tapāĩle yo kām garnubhaeko thiyo?",
+    "ja": "あなたはその時この仕事を済ませていましたか？",
+    "en": "Had you done this work?"
+  },
+  "16-14": {
+    "ne": "उनले यो काम गरेकी थिइनन्।",
+    "roman": "unle yo kām garekī thiinan",
+    "ja": "彼女はその時この仕事を済ませていませんでした",
+    "en": "She had not done this work at that time."
+  },
+  "16-15": {
+    "ne": "हामीले यो काम गरेको थिएनौं।",
+    "roman": "hāmīle yo kām gareko thienaũ",
+    "ja": "私たちはその時この仕事を済ませていませんでした",
+    "en": "We had not done this work at that time."
+  },
+  "16-16": {
+    "ne": "म त्यहाँ गएको थिएँ।",
+    "roman": "ma tyahā̃ gaeko thiẽ",
+    "ja": "私はそこへ行ったことがありました",
+    "en": "I had been there."
+  },
+  "16-17": {
+    "ne": "म पुग्दा, उसले किताब पढेको थियो।",
+    "roman": "ma pugdā, usle kitāb paḍheko thiyo",
+    "ja": "私が着いたとき、彼は本を読み終えていました",
+    "en": "He had read the book by the time I arrived."
+  },
+  "16-18": {
+    "ne": "हामी पुग्दा, उनी घर गएकी थिइन्।",
+    "roman": "hāmī pugdā, unī ghar gaekī thiin",
+    "ja": "私たちが着いたとき、彼女は家に帰っていました",
+    "en": "She had gone home by the time we arrived."
+  },
+  "16-19": {
+    "ne": "त्यस बेला मैले खाना खाएको थिइनँ।",
+    "roman": "tyas belā maile khānā khāeko thiinã",
+    "ja": "そのとき私はまだご飯を食べていませんでした",
+    "en": "I had not eaten at that time."
+  },
+  "16-20": {
+    "ne": "तपाईं पहिले यहाँ आउनुभएको थियो?",
+    "roman": "tapāĩ pahile yahā̃ āunubhaeko thiyo?",
+    "ja": "あなたは以前ここに来たことがありましたか？",
+    "en": "Had you been here before?"
+  },
+  "17-1": {
+    "ne": "यहाँ बस्नुहोस्।",
+    "roman": "yahā̃ basnuhos",
+    "ja": "ここに座ってください",
+    "en": "Please sit here."
+  },
+  "17-2": {
+    "ne": "माथि हेर्नुहोस्।",
+    "roman": "māthi hernuhos",
+    "ja": "上を見てください",
+    "en": "Please look up."
+  },
+  "17-3": {
+    "ne": "बिस्तारै बोल्नुहोस्।",
+    "roman": "bistārai bolnuhos",
+    "ja": "ゆっくり話してください",
+    "en": "Please speak slowly."
+  },
+  "17-4": {
+    "ne": "फेरि भन्नुहोस्।",
+    "roman": "pheri bhannuhos",
+    "ja": "もう一度言ってください",
+    "en": "Please say it again."
+  },
+  "17-5": {
+    "ne": "मलाई पानी दिनुहोस्।",
+    "roman": "malāī pānī dinuhos",
+    "ja": "私に水をください",
+    "en": "Please give me some water."
+  },
+  "17-6": {
+    "ne": "तपाईंको नाम लेख्नुहोस्।",
+    "roman": "tapāĩko nām lekhnuhos",
+    "ja": "あなたの名前を書いてください",
+    "en": "Please write your name."
+  },
+  "17-7": {
+    "ne": "ढोका बन्द गर्नुहोस्।",
+    "roman": "ḍhokā banda garnuhos",
+    "ja": "ドアを閉めてください",
+    "en": "Please close the door."
+  },
+  "17-8": {
+    "ne": "तिमी यहाँ बस।",
+    "roman": "timī yahā̃ basa",
+    "ja": "君、ここに座って",
+    "en": "Sit here."
+  },
+  "17-9": {
+    "ne": "चाँडो खाऊ।",
+    "roman": "cā̃ḍo khāū",
+    "ja": "早く食べて",
+    "en": "Eat quickly."
+  },
+  "17-10": {
+    "ne": "पानी पिऊ।",
+    "roman": "pānī piū",
+    "ja": "水を飲んで",
+    "en": "Drink some water."
+  },
+  "17-11": {
+    "ne": "तिमीहरू किताब पढ।",
+    "roman": "timīharū kitāb paḍha",
+    "ja": "君たち、本を読んで",
+    "en": "Read your books."
+  },
+  "17-12": {
+    "ne": "तँ यो काम गर्।",
+    "roman": "tã yo kām gar",
+    "ja": "お前、この仕事をして",
+    "en": "Do this work."
+  },
+  "17-13": {
+    "ne": "तँ यहाँ हेर्।",
+    "roman": "tã yahā̃ her",
+    "ja": "お前、ここを見て",
+    "en": "Look here."
+  },
+  "17-14": {
+    "ne": "आउनुहोस् न।",
+    "roman": "āunuhos na",
+    "ja": "来てくださいよ",
+    "en": "Please do come."
+  },
+  "17-15": {
+    "ne": "भोलि आउनुहोस् है।",
+    "roman": "bholi āunuhos hai",
+    "ja": "明日来てくださいね",
+    "en": "Please come tomorrow, okay?"
+  },
+  "18-1": {
+    "ne": "म यहाँ बसूँ?",
+    "roman": "ma yahā̃ basũ?",
+    "ja": "ここに座ってもいいですか？",
+    "en": "May I sit here?"
+  },
+  "18-2": {
+    "ne": "म ढोका खोलूँ?",
+    "roman": "ma ḍhokā kholũ?",
+    "ja": "私がドアを開けましょうか？",
+    "en": "Shall I open the door?"
+  },
+  "18-3": {
+    "ne": "म पानी ल्याऊँ?",
+    "roman": "ma pānī lyāũ?",
+    "ja": "私が水を持ってきましょうか？",
+    "en": "Shall I bring some water?"
+  },
+  "18-4": {
+    "ne": "म पहिले बोलूँ?",
+    "roman": "ma pahile bolũ?",
+    "ja": "私が先に話しましょうか？",
+    "en": "Shall I speak first?"
+  },
+  "18-5": {
+    "ne": "म यो काम गरूँ?",
+    "roman": "ma yo kām garũ?",
+    "ja": "私がこの仕事をしましょうか？",
+    "en": "Shall I do this work?"
+  },
+  "18-6": {
+    "ne": "हामी अब जाऔं।",
+    "roman": "hāmī aba jāaũ",
+    "ja": "私たちはもう行きましょう",
+    "en": "Let us go now."
+  },
+  "18-7": {
+    "ne": "सँगै खाना खाऔं।",
+    "roman": "sãgai khānā khāaũ",
+    "ja": "一緒にご飯を食べましょう",
+    "en": "Let us eat together."
+  },
+  "18-8": {
+    "ne": "चिया पिऔं।",
+    "roman": "ciyā piaũ",
+    "ja": "お茶を飲みましょう",
+    "en": "Let us have some tea."
+  },
+  "18-9": {
+    "ne": "आज घरमा बसौं।",
+    "roman": "āja gharmā basaũ",
+    "ja": "今日は家にいましょう",
+    "en": "Let us stay home today."
+  },
+  "18-10": {
+    "ne": "नेपाली बोलौं।",
+    "roman": "nepālī bolaũ",
+    "ja": "ネパール語を話しましょう",
+    "en": "Let us speak Nepali."
+  },
+  "18-11": {
+    "ne": "हामी सँगै काम गरौं।",
+    "roman": "hāmī sãgai kām garaũ",
+    "ja": "私たちは一緒に働きましょう",
+    "en": "Let us work together."
+  },
+  "18-12": {
+    "ne": "यहाँ नबसौं।",
+    "roman": "yahā̃ nabasaũ",
+    "ja": "ここに座るのはやめましょう",
+    "en": "Let us not sit here."
+  },
+  "18-13": {
+    "ne": "आज बाहिर नजाऔं।",
+    "roman": "āja bāhira najāaũ",
+    "ja": "今日は外出をやめましょう",
+    "en": "Let us not go out today."
+  },
+  "18-14": {
+    "ne": "टेनिस नखेलौं, फुटबल खेलौं।",
+    "roman": "ṭenis nakhelaũ, phuṭbal khelaũ",
+    "ja": "テニスはやめて、サッカーをしましょう",
+    "en": "Let us play football, not tennis."
+  },
+  "18-15": {
+    "ne": "हामी भोलि भेटौं?",
+    "roman": "hāmī bholi bheṭaũ?",
+    "ja": "私たちは明日会いましょうか？",
+    "en": "Shall we meet tomorrow?"
+  },
+  "19-1": {
+    "ne": "तल नहेर्नुहोस्।",
+    "roman": "tala nahernuhos",
+    "ja": "下を見ないでください",
+    "en": "Please do not look down."
+  },
+  "19-2": {
+    "ne": "यहाँ नबस्नुहोस्।",
+    "roman": "yahā̃ nabasnuhos",
+    "ja": "ここに座らないでください",
+    "en": "Please do not sit here."
+  },
+  "19-3": {
+    "ne": "ढोका नखोल्नुहोस्।",
+    "roman": "ḍhokā nakholnuhos",
+    "ja": "ドアを開けないでください",
+    "en": "Please do not open the door."
+  },
+  "19-4": {
+    "ne": "चिन्ता नगर्नुहोस्।",
+    "roman": "cintā nagarnuhos",
+    "ja": "心配しないでください",
+    "en": "Please do not worry."
+  },
+  "19-5": {
+    "ne": "यो पानी नपिउनुहोस्।",
+    "roman": "yo pānī napiunuhos",
+    "ja": "この水を飲まないでください",
+    "en": "Please do not drink this water."
+  },
+  "19-6": {
+    "ne": "आज ढिलो नगर्नुहोस्।",
+    "roman": "āja ḍhilo nagarnuhos",
+    "ja": "今日は遅れないでください",
+    "en": "Please do not be late today."
+  },
+  "19-7": {
+    "ne": "यहाँ फोटो खिच्नु हुँदैन।",
+    "roman": "yahā̃ phoṭo khicnu hũdaina",
+    "ja": "ここで写真を撮ってはいけません",
+    "en": "You must not take photos here."
+  },
+  "19-8": {
+    "ne": "यहाँ धूम्रपान गर्नु हुँदैन।",
+    "roman": "yahā̃ dhūmrapān garnu hũdaina",
+    "ja": "ここでたばこを吸ってはいけません",
+    "en": "You must not smoke here."
+  },
+  "19-9": {
+    "ne": "कक्षामा ठूलो स्वरले बोल्नु हुँदैन।",
+    "roman": "kakṣāmā ṭhūlo swarle bolnu hũdaina",
+    "ja": "授業中は大声で話してはいけません",
+    "en": "You must not speak loudly in class."
+  },
+  "19-10": {
+    "ne": "यो कोठामा पस्नु हुँदैन।",
+    "roman": "yo koṭhāmā pasnu hũdaina",
+    "ja": "この部屋に入ってはいけません",
+    "en": "You must not enter this room."
+  },
+  "19-11": {
+    "ne": "यहाँ फोहोर फाल्नु हुँदैन।",
+    "roman": "yahā̃ phohor phālnu hũdaina",
+    "ja": "ここにごみを捨ててはいけません",
+    "en": "You must not throw rubbish here."
+  },
+  "19-12": {
+    "ne": "राति धेरै हल्ला गर्नु हुँदैन।",
+    "roman": "rāti dherai hallā garnu hũdaina",
+    "ja": "夜に大きな音を立ててはいけません",
+    "en": "You must not make a lot of noise at night."
+  },
+  "19-13": {
+    "ne": "के यहाँ बस्नु हुँदैन?",
+    "roman": "ke yahā̃ basnu hũdaina?",
+    "ja": "ここに座ってはいけないのですか？",
+    "en": "Is sitting here prohibited?"
+  },
+  "19-14": {
+    "ne": "के यहाँ फोटो खिच्नु हुँदैन?",
+    "roman": "ke yahā̃ phoṭo khicnu hũdaina?",
+    "ja": "ここでは写真を撮ってはいけないのですか？",
+    "en": "Is taking photos prohibited here?"
+  },
+  "19-15": {
+    "ne": "तपाईं यहाँ नआउनुहोस्।",
+    "roman": "tapāĩ yahā̃ naāunuhos",
+    "ja": "あなたはここに来ないでください",
+    "en": "Please do not come here."
+  },
+  "20-1": {
+    "ne": "म नेपाली बोल्न सक्छु।",
+    "roman": "ma nepālī bolna sakchu",
+    "ja": "私はネパール語を話せます",
+    "en": "I can speak Nepali."
+  },
+  "20-2": {
+    "ne": "तँ नेपाली बोल्न सक्छस्।",
+    "roman": "tã nepālī bolna sakchas",
+    "ja": "お前はネパール語を話せます",
+    "en": "You can speak Nepali."
+  },
+  "20-3": {
+    "ne": "तिमी नेपाली बोल्न सक्छौ?",
+    "roman": "timī nepālī bolna sakchau?",
+    "ja": "君はネパール語を話せますか？",
+    "en": "Can you speak Nepali?"
+  },
+  "20-4": {
+    "ne": "तिमीहरू नेपाली बोल्न सक्छौ।",
+    "roman": "timīharū nepālī bolna sakchau",
+    "ja": "君たちはネパール語を話せます",
+    "en": "You can speak Nepali."
+  },
+  "20-5": {
+    "ne": "तपाईं नेपाली बोल्न सक्नुहुन्छ?",
+    "roman": "tapāĩ nepālī bolna saknuhuncha?",
+    "ja": "あなたはネパール語を話せますか？",
+    "en": "Can you speak Nepali?"
+  },
+  "20-6": {
+    "ne": "उ नेपाली बोल्न सक्छ।",
+    "roman": "u nepālī bolna sakcha",
+    "ja": "彼はネパール語を話せます",
+    "en": "He can speak Nepali."
+  },
+  "20-7": {
+    "ne": "उनी नेपाली बोल्न सक्छिन्।",
+    "roman": "unī nepālī bolna sakchin",
+    "ja": "彼女はネパール語を話せます",
+    "en": "She can speak Nepali."
+  },
+  "20-8": {
+    "ne": "उहाँ नेपाली बोल्न सक्नुहुन्छ?",
+    "roman": "uhā̃ nepālī bolna saknuhuncha?",
+    "ja": "あの方はネパール語を話せますか？",
+    "en": "Can he speak Nepali?"
+  },
+  "20-9": {
+    "ne": "हामी नेपाली बोल्न सक्छौं।",
+    "roman": "hāmī nepālī bolna sakchaũ",
+    "ja": "私たちはネパール語を話せます",
+    "en": "We can speak Nepali."
+  },
+  "20-10": {
+    "ne": "उनीहरू नेपाली बोल्न सक्छन्।",
+    "roman": "unīharū nepālī bolna sakchan",
+    "ja": "彼らはネパール語を話せます",
+    "en": "They can speak Nepali."
+  },
+  "20-11": {
+    "ne": "म साइकल चलाउन सक्दिनँ।",
+    "roman": "ma sāikal calāuna sakdinã",
+    "ja": "私は自転車に乗れません",
+    "en": "I cannot ride a bicycle."
+  },
+  "20-12": {
+    "ne": "तँ साइकल चलाउन सक्दैनस्।",
+    "roman": "tã sāikal calāuna sakdainas",
+    "ja": "お前は自転車に乗れません",
+    "en": "You cannot ride a bicycle."
+  },
+  "20-13": {
+    "ne": "तिमीहरू साइकल चलाउन सक्दैनौ।",
+    "roman": "timīharū sāikal calāuna sakdainau",
+    "ja": "君たちは自転車に乗れません",
+    "en": "You cannot ride a bicycle."
+  },
+  "20-14": {
+    "ne": "उनी साइकल चलाउन सक्दिनन्।",
+    "roman": "unī sāikal calāuna sakdinan",
+    "ja": "彼女は自転車に乗れません",
+    "en": "She cannot ride a bicycle."
+  },
+  "20-15": {
+    "ne": "उनीहरू साइकल चलाउन सक्दैनन्।",
+    "roman": "unīharū sāikal calāuna sakdainan",
+    "ja": "彼らは自転車に乗れません",
+    "en": "They cannot ride a bicycle."
+  },
+  "21-1": {
+    "ne": "मैले भोलि अफिस जानु पर्छ।",
+    "roman": "maile bholi aphis jānu parcha",
+    "ja": "私は明日会社に行かなければなりません",
+    "en": "I have to go to the office tomorrow."
+  },
+  "21-2": {
+    "ne": "तिमीले आज काम गर्नु पर्छ।",
+    "roman": "timīle āja kām garnu parcha",
+    "ja": "君は今日働かなければなりません",
+    "en": "You have to work today."
+  },
+  "21-3": {
+    "ne": "तपाईंले यो फारम भर्नु पर्छ।",
+    "roman": "tapāĩle yo phāram bharnu parcha",
+    "ja": "あなたはこの用紙に記入しなければなりません",
+    "en": "You have to fill in this form."
+  },
+  "21-4": {
+    "ne": "उसले औषधि खानु पर्छ।",
+    "roman": "usle auṣadhi khānu parcha",
+    "ja": "彼は薬を飲まなければなりません",
+    "en": "He has to take medicine."
+  },
+  "21-5": {
+    "ne": "हामीले चाँडै उठ्नु पर्छ।",
+    "roman": "hāmīle cā̃ḍai uṭhnu parcha",
+    "ja": "私たちは早く起きなければなりません",
+    "en": "We have to get up early."
+  },
+  "21-6": {
+    "ne": "उनीहरूले पर्खनु पर्छ।",
+    "roman": "unīharūle parkhanu parcha",
+    "ja": "彼らは待たなければなりません",
+    "en": "They have to wait."
+  },
+  "21-7": {
+    "ne": "मैले आज जानु पर्दैन।",
+    "roman": "maile āja jānu pardaina",
+    "ja": "私は今日行かなくてもいいです",
+    "en": "I do not have to go today."
+  },
+  "21-8": {
+    "ne": "तिमीहरूले पैसा तिर्नु पर्दैन।",
+    "roman": "timīharūle paisā tirnu pardaina",
+    "ja": "君たちはお金を払わなくてもいいです",
+    "en": "You do not have to pay."
+  },
+  "21-9": {
+    "ne": "तपाईंले भोलि आउनु पर्छ?",
+    "roman": "tapāĩle bholi āunu parcha?",
+    "ja": "あなたは明日来なければなりませんか？",
+    "en": "Do you have to come tomorrow?"
+  },
+  "21-10": {
+    "ne": "मलाई चाँडै उठ्नु पर्यो।",
+    "roman": "malāī cā̃ḍai uṭhnu paryo",
+    "ja": "私は早く起きなければならなくなりました",
+    "en": "I had to get up early."
+  },
+  "21-11": {
+    "ne": "हामीले हिजो काम गर्नु परेन।",
+    "roman": "hāmīle hijo kām garnu parena",
+    "ja": "私たちは昨日働かなくて済みました",
+    "en": "We did not have to work yesterday."
+  },
+  "21-12": {
+    "ne": "यहाँ बस्न हुन्छ?",
+    "roman": "yahā̃ basna huncha?",
+    "ja": "ここに座ってもいいですか？",
+    "en": "May I sit here?"
+  },
+  "21-13": {
+    "ne": "फोटो खिच्न मिल्छ?",
+    "roman": "phoṭo khicna milcha?",
+    "ja": "写真を撮ってもいいですか？",
+    "en": "May I take a photo?"
+  },
+  "21-14": {
+    "ne": "यो कलम लिन मिल्छ?",
+    "roman": "yo kalam lina milcha?",
+    "ja": "このペンを取ってもいいですか？",
+    "en": "May I take this pen?"
+  },
+  "21-15": {
+    "ne": "यहाँ बस्न मिल्दैन।",
+    "roman": "yahā̃ basna mildaina",
+    "ja": "ここに座ることはできません",
+    "en": "You cannot sit here."
+  },
+  "22-1": {
+    "ne": "म नेपाल जान चाहन्छु।",
+    "roman": "ma nepāl jāna cāhanchu",
+    "ja": "私はネパールに行きたいです",
+    "en": "I want to go to Nepal."
+  },
+  "22-2": {
+    "ne": "तँ नेपाल जान चाहँदैनस्।",
+    "roman": "tã nepāl jāna cāhãdainas",
+    "ja": "お前はネパールに行きたくありません",
+    "en": "You do not want to go to Nepal."
+  },
+  "22-3": {
+    "ne": "तिमी नेपाल जान चाहन्छौ?",
+    "roman": "timī nepāl jāna cāhanchau?",
+    "ja": "君はネパールに行きたいですか？",
+    "en": "Do you want to go to Nepal?"
+  },
+  "22-4": {
+    "ne": "तिमीहरू नेपाल जान चाहन्छौ।",
+    "roman": "timīharū nepāl jāna cāhanchau",
+    "ja": "君たちはネパールに行きたいです",
+    "en": "You want to go to Nepal."
+  },
+  "22-5": {
+    "ne": "तपाईं नेपाल जान चाहनुहुन्छ?",
+    "roman": "tapāĩ nepāl jāna cāhanuhuncha?",
+    "ja": "あなたはネパールに行きたいですか？",
+    "en": "Do you want to go to Nepal?"
+  },
+  "22-6": {
+    "ne": "उ नेपाल जान चाहँदैन।",
+    "roman": "u nepāl jāna cāhãdaina",
+    "ja": "彼はネパールに行きたくありません",
+    "en": "He does not want to go to Nepal."
+  },
+  "22-7": {
+    "ne": "उनी नेपाल जान चाहन्छिन्।",
+    "roman": "unī nepāl jāna cāhanchin",
+    "ja": "彼女はネパールに行きたいです",
+    "en": "She wants to go to Nepal."
+  },
+  "22-8": {
+    "ne": "उहाँ नेपाल जान चाहनुहुन्छ।",
+    "roman": "uhā̃ nepāl jāna cāhanuhuncha",
+    "ja": "あの方はネパールに行きたいです",
+    "en": "He wants to go to Nepal."
+  },
+  "22-9": {
+    "ne": "हामी नेपाल जान चाहन्छौं।",
+    "roman": "hāmī nepāl jāna cāhanchaũ",
+    "ja": "私たちはネパールに行きたいです",
+    "en": "We want to go to Nepal."
+  },
+  "22-10": {
+    "ne": "उनीहरू नेपाल जान चाहँदैनन्।",
+    "roman": "unīharū nepāl jāna cāhãdainan",
+    "ja": "彼らはネパールに行きたくありません",
+    "en": "They do not want to go to Nepal."
+  },
+  "22-11": {
+    "ne": "मलाई चिया पिउन मन छ।",
+    "roman": "malāī ciyā piuna man cha",
+    "ja": "私はお茶を飲みたい気分です",
+    "en": "I feel like drinking tea."
+  },
+  "22-12": {
+    "ne": "तिमीलाई के खान मन छ?",
+    "roman": "timīlāī ke khāna man cha?",
+    "ja": "君は何を食べたいですか？",
+    "en": "What do you feel like eating?"
+  },
+  "22-13": {
+    "ne": "उनलाई अहिले बोल्न मन छैन।",
+    "roman": "unlāī ahile bolna man chaina",
+    "ja": "彼女は今話す気分ではありません",
+    "en": "She does not feel like talking now."
+  },
+  "22-14": {
+    "ne": "हामीलाई सँगै बस्न मन लाग्छ।",
+    "roman": "hāmīlāī sãgai basna man lāgcha",
+    "ja": "私たちは一緒にいたい気分になります",
+    "en": "We feel like spending time together."
+  },
+  "22-15": {
+    "ne": "मलाई घर फर्कन मन लाग्यो।",
+    "roman": "malāī ghar pharkana man lāgyo",
+    "ja": "私は家に帰りたくなりました",
+    "en": "I felt like going home."
+  },
+  "23-1": {
+    "ne": "यो राम्रो किताब हो।",
+    "roman": "yo rāmro kitāb ho",
+    "ja": "これは良い本です",
+    "en": "This is a good book."
+  },
+  "23-2": {
+    "ne": "ऊ राम्रो केटा हो।",
+    "roman": "ū rāmro keṭā ho",
+    "ja": "彼は良い少年です",
+    "en": "He is a good boy."
+  },
+  "23-3": {
+    "ne": "उनी राम्री केटी हुन्।",
+    "roman": "unī rāmrī keṭī hun",
+    "ja": "彼女はかわいい女の子です",
+    "en": "She is a pretty girl."
+  },
+  "23-4": {
+    "ne": "यी राम्रा केटाहरू हुन्।",
+    "roman": "yī rāmrā keṭāharū hun",
+    "ja": "この子たちは良い少年たちです",
+    "en": "These are good boys."
+  },
+  "23-5": {
+    "ne": "त्यो ठूलो घर हो।",
+    "roman": "tyo ṭhūlo ghar ho",
+    "ja": "あれは大きい家です",
+    "en": "That is a big house."
+  },
+  "23-6": {
+    "ne": "यो सानो कोठा हो।",
+    "roman": "yo sāno koṭhā ho",
+    "ja": "これは小さい部屋です",
+    "en": "This is a small room."
+  },
+  "23-7": {
+    "ne": "यो पुरानो झोला होइन।",
+    "roman": "yo purāno jholā hoina",
+    "ja": "これは古いかばんではありません",
+    "en": "This is not an old bag."
+  },
+  "23-8": {
+    "ne": "यो नयाँ किताब हो?",
+    "roman": "yo nayā̃ kitāb ho?",
+    "ja": "これは新しい本ですか？",
+    "en": "Is this a new book?"
+  },
+  "23-9": {
+    "ne": "तिम्री बहिनी सानी छिन्।",
+    "roman": "timrī bahinī sānī chin",
+    "ja": "君の妹は小さいです",
+    "en": "Your younger sister is little."
+  },
+  "23-10": {
+    "ne": "मेरो भाइ सानो छ।",
+    "roman": "mero bhāi sāno cha",
+    "ja": "私の弟は小さいです",
+    "en": "My younger brother is little."
+  },
+  "23-11": {
+    "ne": "उहाँ राम्रा शिक्षक हुनुहुन्छ।",
+    "roman": "uhā̃ rāmrā śikṣak hunuhuncha",
+    "ja": "あの方は良い先生です",
+    "en": "He is a good teacher."
+  },
+  "23-12": {
+    "ne": "ती केटीहरू राम्रा छन्।",
+    "roman": "tī keṭīharū rāmrā chan",
+    "ja": "あの女の子たちはかわいいです",
+    "en": "Those girls are pretty."
+  },
+  "23-13": {
+    "ne": "के यी नयाँ किताबहरू हुन्?",
+    "roman": "ke yī nayā̃ kitābharū hun?",
+    "ja": "これらは新しい本ですか？",
+    "en": "Are these new books?"
+  },
+  "23-14": {
+    "ne": "यो फूल सुन्दर छ।",
+    "roman": "yo phūl sundar cha",
+    "ja": "この花は美しいです",
+    "en": "This flower is beautiful."
+  },
+  "23-15": {
+    "ne": "यो कोठा ठूलो छैन।",
+    "roman": "yo koṭhā ṭhūlo chaina",
+    "ja": "この部屋は大きくありません",
+    "en": "This room is not big."
+  },
+  "24-1": {
+    "ne": "म बिस्तारै हिँड्छु।",
+    "roman": "ma bistārai hĩḍchu",
+    "ja": "私はゆっくり歩きます",
+    "en": "I walk slowly."
+  },
+  "24-2": {
+    "ne": "तँ छिटो दौड्छस्।",
+    "roman": "tã chiṭo dauḍchas",
+    "ja": "お前は速く走る",
+    "en": "You run fast."
+  },
+  "24-3": {
+    "ne": "तिमी सधैं चाँडै उठ्छौ?",
+    "roman": "timī sadhaĩ cā̃ḍai uṭhchau?",
+    "ja": "君はいつも早く起きますか？",
+    "en": "Do you always get up early?"
+  },
+  "24-4": {
+    "ne": "तिमीहरू बिस्तारै बोल।",
+    "roman": "timīharū bistārai bola",
+    "ja": "君たちはゆっくり話して",
+    "en": "Speak slowly."
+  },
+  "24-5": {
+    "ne": "तपाईं प्रायः यहाँ आउनुहुन्छ?",
+    "roman": "tapāĩ prāyaḥ yahā̃ āunuhuncha?",
+    "ja": "あなたはたいていここに来るのですか？",
+    "en": "Do you usually come here?"
+  },
+  "24-6": {
+    "ne": "उ धेरै छिटो दौड्छ।",
+    "roman": "u dherai chiṭo dauḍcha",
+    "ja": "彼はとても速く走ります",
+    "en": "He runs very fast."
+  },
+  "24-7": {
+    "ne": "उनी सधैं यहाँ बस्छिन्।",
+    "roman": "unī sadhaĩ yahā̃ baschin",
+    "ja": "彼女はいつもここに座ります",
+    "en": "She always sits here."
+  },
+  "24-8": {
+    "ne": "हामी राति काम गर्दैनौं।",
+    "roman": "hāmī rāti kām gardainaũ",
+    "ja": "私たちは夜は働きません",
+    "en": "We do not work at night."
+  },
+  "24-9": {
+    "ne": "उनीहरू धेरै बोल्दैनन्।",
+    "roman": "unīharū dherai boldainan",
+    "ja": "彼らはあまり話しません",
+    "en": "They do not talk much."
+  },
+  "24-10": {
+    "ne": "कति सुन्दर!",
+    "roman": "kati sundar!",
+    "ja": "なんて美しい！",
+    "en": "How beautiful!"
+  },
+  "24-11": {
+    "ne": "यो खाना एकदमै मिठो छ!",
+    "roman": "yo khānā ekdamai miṭho cha!",
+    "ja": "この料理はとてもおいしい！",
+    "en": "This food is really delicious!"
+  },
+  "24-12": {
+    "ne": "साँच्चै?",
+    "roman": "sā̃ccai?",
+    "ja": "本当に？",
+    "en": "Really?"
+  },
+  "24-13": {
+    "ne": "आज धेरै चिसो छ।",
+    "roman": "āja dherai ciso cha",
+    "ja": "今日はとても寒いです",
+    "en": "It is very cold today."
+  },
+  "24-14": {
+    "ne": "बिस्तारै खानुहोस्।",
+    "roman": "bistārai khānuhos",
+    "ja": "ゆっくり食べてください",
+    "en": "Please eat slowly."
+  },
+  "24-15": {
+    "ne": "यो फूल कति राम्रो छ!",
+    "roman": "yo phūl kati rāmro cha!",
+    "ja": "この花はなんてきれいなのでしょう！",
+    "en": "How lovely this flower is!"
+  },
+  "25-1": {
+    "ne": "यो घर त्यो घरभन्दा ठूलो छ।",
+    "roman": "yo ghar tyo gharbhandā ṭhūlo cha",
+    "ja": "この家はあの家より大きいです",
+    "en": "This house is bigger than that house."
+  },
+  "25-2": {
+    "ne": "त्यो झोला यो झोलाभन्दा सानो छ।",
+    "roman": "tyo jholā yo jholābhandā sāno cha",
+    "ja": "そのかばんはこのかばんより小さいです",
+    "en": "That bag is smaller than this bag."
+  },
+  "25-3": {
+    "ne": "यो किताब त्यो किताबभन्दा सस्तो छ।",
+    "roman": "yo kitāb tyo kitābbhandā sasto cha",
+    "ja": "この本はその本より安いです",
+    "en": "This book is cheaper than that book."
+  },
+  "25-4": {
+    "ne": "चिया कफीभन्दा सस्तो छ।",
+    "roman": "ciyā kaphībhandā sasto cha",
+    "ja": "お茶はコーヒーより安いです",
+    "en": "Tea is cheaper than coffee."
+  },
+  "25-5": {
+    "ne": "आज हिजोभन्दा चिसो छ।",
+    "roman": "āja hijobhandā ciso cha",
+    "ja": "今日は昨日より寒いです",
+    "en": "It is colder today than yesterday."
+  },
+  "25-6": {
+    "ne": "म तिमीभन्दा अग्लो छु।",
+    "roman": "ma timībhandā aglo chu",
+    "ja": "私は君より背が高いです",
+    "en": "I am taller than you."
+  },
+  "25-7": {
+    "ne": "तिमी मभन्दा अग्लो छौ?",
+    "roman": "timī mabhandā aglo chau?",
+    "ja": "君は私より背が高いですか？",
+    "en": "Are you taller than me?"
+  },
+  "25-8": {
+    "ne": "उ आफ्नो भाइभन्दा होचो छ।",
+    "roman": "u āphno bhāibhandā hoco cha",
+    "ja": "彼は自分の弟より背が低いです",
+    "en": "He is shorter than his younger brother."
+  },
+  "25-9": {
+    "ne": "उनी मभन्दा छिटो हिँड्छिन्।",
+    "roman": "unī mabhandā chiṭo hĩḍchin",
+    "ja": "彼女は私より速く歩きます",
+    "en": "She walks faster than me."
+  },
+  "25-10": {
+    "ne": "यो काम त्यो कामभन्दा सजिलो छैन।",
+    "roman": "yo kām tyo kāmbhandā sajilo chaina",
+    "ja": "この仕事はその仕事より簡単ではありません",
+    "en": "This job is not easier than that one."
+  },
+  "25-11": {
+    "ne": "यीमध्ये कुन सबभन्दा सस्तो छ?",
+    "roman": "yīmadhye kun sabbhandā sasto cha?",
+    "ja": "これらの中でどれが一番安いですか？",
+    "en": "Which of these is the cheapest?"
+  },
+  "25-12": {
+    "ne": "यो झोला सबभन्दा सस्तो छ।",
+    "roman": "yo jholā sabbhandā sasto cha",
+    "ja": "このかばんが一番安いです",
+    "en": "This bag is the cheapest."
+  },
+  "25-13": {
+    "ne": "हाम्रो कक्षामा उ सबभन्दा अग्लो छ।",
+    "roman": "hāmro kakṣāmā u sabbhandā aglo cha",
+    "ja": "私たちのクラスでは彼が一番背が高いです",
+    "en": "He is the tallest in our class."
+  },
+  "25-14": {
+    "ne": "यो सबभन्दा राम्रो किताब हो।",
+    "roman": "yo sabbhandā rāmro kitāb ho",
+    "ja": "これが一番良い本です",
+    "en": "This is the best book."
+  },
+  "25-15": {
+    "ne": "यो बाटो त्यो बाटोभन्दा लामो छ?",
+    "roman": "yo bāṭo tyo bāṭobhandā lāmo cha?",
+    "ja": "この道はあの道より長いですか？",
+    "en": "Is this road longer than that road?"
+  },
+  "26-1": {
+    "ne": "मलाई चिया र कफी मन पर्छ।",
+    "roman": "malāī ciyā ra kaphī man parcha",
+    "ja": "私はお茶とコーヒーが好きです",
+    "en": "I like tea and coffee."
+  },
+  "26-2": {
+    "ne": "यहाँ किताब र कापी छन्।",
+    "roman": "yahā̃ kitāb ra kāpī chan",
+    "ja": "ここには本とノートがあります",
+    "en": "There are books and notebooks here."
+  },
+  "26-3": {
+    "ne": "म घर जान्छु अनि सुत्छु।",
+    "roman": "ma ghar jānchu ani sutchu",
+    "ja": "私は家に帰って、それから寝ます",
+    "en": "I go home and then sleep."
+  },
+  "26-4": {
+    "ne": "तिमी पढ्छौ अनि लेख्छौ।",
+    "roman": "timī paḍhchau ani lekhchau",
+    "ja": "君は読んで、それから書きます",
+    "en": "You read and then write."
+  },
+  "26-5": {
+    "ne": "उ विद्यार्थी हो तर काम गर्छ।",
+    "roman": "u vidyārthī ho tara kām garcha",
+    "ja": "彼は学生ですが働いています",
+    "en": "He is a student, but he works."
+  },
+  "26-6": {
+    "ne": "यो राम्रो छ तर महँगो छ।",
+    "roman": "yo rāmro cha tara mahãgo cha",
+    "ja": "これは良いですが高いです",
+    "en": "This is good, but it is expensive."
+  },
+  "26-7": {
+    "ne": "म जान्छु तर उनी जाँदिनन्।",
+    "roman": "ma jānchu tara unī jā̃dinan",
+    "ja": "私は行きますが彼女は行きません",
+    "en": "I am going, but she is not."
+  },
+  "26-8": {
+    "ne": "हामी पनि जान्छौं।",
+    "roman": "hāmī pani jānchaũ",
+    "ja": "私たちも行きます",
+    "en": "We are going too."
+  },
+  "26-9": {
+    "ne": "तपाईं पनि आउनुहुन्छ?",
+    "roman": "tapāĩ pani āunuhuncha?",
+    "ja": "あなたも来ますか？",
+    "en": "Are you coming too?"
+  },
+  "26-10": {
+    "ne": "म पनि उ पनि यहाँ बस्छौं।",
+    "roman": "ma pani u pani yahā̃ baschaũ",
+    "ja": "私も彼もここに住んでいます",
+    "en": "He and I both live here."
+  },
+  "26-11": {
+    "ne": "तिमीहरू पनि तयार छैनौ?",
+    "roman": "timīharū pani tayār chainau?",
+    "ja": "君たちもまだ準備ができていませんか？",
+    "en": "Are you not ready either?"
+  },
+  "26-12": {
+    "ne": "पानी परेकोले, हामी घरमा बस्यौं।",
+    "roman": "pānī parekole, hāmī gharmā basyaũ",
+    "ja": "雨が降ったので、私たちは家にいました",
+    "en": "We stayed home because it rained."
+  },
+  "26-13": {
+    "ne": "थकित भएकोले, म चाँडो सुतेँ।",
+    "roman": "thakit bhaekole, ma cā̃ḍo sutẽ",
+    "ja": "疲れていたので、私は早く寝ました",
+    "en": "I went to bed early because I was tired."
+  },
+  "26-14": {
+    "ne": "समय नभएकोले, उहाँ आउनुभएन।",
+    "roman": "samay nabhaekole, uhā̃ āunubhaena",
+    "ja": "時間がなかったので、あの方は来ませんでした",
+    "en": "He did not come because he had no time."
+  },
+  "26-15": {
+    "ne": "यो सानो, सस्तो अनि राम्रो छ।",
+    "roman": "yo sāno, sasto ani rāmro cha",
+    "ja": "これは小さくて、安くて、良いです",
+    "en": "This is small, cheap, and good."
+  },
+  "27-1": {
+    "ne": "म संगीत सुन्दै पढ्छु।",
+    "roman": "ma saṅgīt sundai paḍhchu",
+    "ja": "私は音楽を聴きながら勉強します",
+    "en": "I study while listening to music."
+  },
+  "27-2": {
+    "ne": "तिमी टेलिभिजन हेर्दै खान्छौ?",
+    "roman": "timī ṭelibhijan herdai khānchau?",
+    "ja": "君はテレビを見ながら食べますか？",
+    "en": "Do you eat while watching television?"
+  },
+  "27-3": {
+    "ne": "उ हाँस्दै बोल्छ।",
+    "roman": "u hā̃sdai bolcha",
+    "ja": "彼は笑いながら話します",
+    "en": "He talks while laughing."
+  },
+  "27-4": {
+    "ne": "उनी गीत गाउँदै काम गर्छिन्।",
+    "roman": "unī gīt gāũdai kām garchin",
+    "ja": "彼女は歌を歌いながら働きます",
+    "en": "She works while singing."
+  },
+  "27-5": {
+    "ne": "हामी कुरा गर्दै हिँड्छौं।",
+    "roman": "hāmī kurā gardai hĩḍchaũ",
+    "ja": "私たちは話しながら歩きます",
+    "en": "We walk while chatting."
+  },
+  "27-6": {
+    "ne": "तपाईं संगीत सुन्दै काम गर्नुहुन्छ?",
+    "roman": "tapāĩ saṅgīt sundai kām garnuhuncha?",
+    "ja": "あなたは音楽を聴きながら働きますか？",
+    "en": "Do you work while listening to music?"
+  },
+  "27-7": {
+    "ne": "तिमीहरू हिँड्दै नखाऊ।",
+    "roman": "timīharū hĩḍdai nakhāū",
+    "ja": "君たちは歩きながら食べないで",
+    "en": "Do not eat while walking."
+  },
+  "27-8": {
+    "ne": "हात धोएपछि, म खान्छु।",
+    "roman": "hāt dhoepachi, ma khānchu",
+    "ja": "手を洗ってから、私は食べます",
+    "en": "I eat after washing my hands."
+  },
+  "27-9": {
+    "ne": "उठेपछि, म अनुहार धुन्छु।",
+    "roman": "uṭhepachi, ma anuhār dhunchu",
+    "ja": "起きてから、私は顔を洗います",
+    "en": "I wash my face after getting up."
+  },
+  "27-10": {
+    "ne": "खाना खाएपछि, उ सुत्छ।",
+    "roman": "khānā khāepachi, u sutcha",
+    "ja": "ご飯を食べてから、彼は寝ます",
+    "en": "He sleeps after eating."
+  },
+  "27-11": {
+    "ne": "काम गरेपछि, हामी घर जान्छौं।",
+    "roman": "kām garepachi, hāmī ghar jānchaũ",
+    "ja": "仕事をしてから、私たちは家に帰ります",
+    "en": "We go home after work."
+  },
+  "27-12": {
+    "ne": "किताब पढेपछि, तिमी के गर्छौ?",
+    "roman": "kitāb paḍhepachi, timī ke garchau?",
+    "ja": "本を読んでから、君は何をしますか？",
+    "en": "What do you do after reading a book?"
+  },
+  "27-13": {
+    "ne": "घर पुगेपछि, फोन गर्नुहोस्।",
+    "roman": "ghar pugepachi, phon garnuhos",
+    "ja": "家に着いたら、電話してください",
+    "en": "Please call after you get home."
+  },
+  "27-14": {
+    "ne": "चिया पिएपछि, उनी जान्छिन्।",
+    "roman": "ciyā piepachi, unī jānchin",
+    "ja": "お茶を飲んでから、彼女は行きます",
+    "en": "She leaves after drinking tea."
+  },
+  "27-15": {
+    "ne": "काम सकेपछि, उहाँ आराम गर्नुहुन्छ।",
+    "roman": "kām sakepachi, uhā̃ ārām garnuhuncha",
+    "ja": "仕事を終えてから、あの方は休みます",
+    "en": "He rests after finishing work."
+  },
+  "28-1": {
+    "ne": "म पढ्नको लागि पुस्तकालय जान्छु।",
+    "roman": "ma paḍhnako lāgi pustakālaya jānchu",
+    "ja": "私は勉強するために図書館に行きます",
+    "en": "I go to the library to study."
+  },
+  "28-2": {
+    "ne": "तिमी काम गर्नको लागि यहाँ आउँछौ?",
+    "roman": "timī kām garnako lāgi yahā̃ āũchau?",
+    "ja": "君は働くためにここに来ますか？",
+    "en": "Do you come here to work?"
+  },
+  "28-3": {
+    "ne": "तपाईं के गर्नको लागि आउनुभयो?",
+    "roman": "tapāĩ ke garnako lāgi āunubhayo?",
+    "ja": "あなたは何をするために来ましたか？",
+    "en": "What did you come here to do?"
+  },
+  "28-4": {
+    "ne": "उ नेपाली सिक्नको लागि नेपाल जान्छ।",
+    "roman": "u nepālī siknako lāgi nepāl jāncha",
+    "ja": "彼はネパール語を学ぶためにネパールに行きます",
+    "en": "He goes to Nepal to learn Nepali."
+  },
+  "28-5": {
+    "ne": "उनी साथीलाई भेट्नको लागि आउँछिन्।",
+    "roman": "unī sāthīlāī bheṭnako lāgi āũchin",
+    "ja": "彼女は友達に会うために来ます",
+    "en": "She comes to meet a friend."
+  },
+  "28-6": {
+    "ne": "हामी खाना खानको लागि यहाँ बस्छौं।",
+    "roman": "hāmī khānā khānako lāgi yahā̃ baschaũ",
+    "ja": "私たちはご飯を食べるためにここに座ります",
+    "en": "We sit here to eat."
+  },
+  "28-7": {
+    "ne": "तिमीहरू खेल्नको लागि बाहिर जान्छौ।",
+    "roman": "timīharū khelnako lāgi bāhira jānchau",
+    "ja": "君たちは遊ぶために外に行きます",
+    "en": "You go outside to play."
+  },
+  "28-8": {
+    "ne": "उहाँ आराम गर्नको लागि घर जानुहुन्छ।",
+    "roman": "uhā̃ ārām garnako lāgi ghar jānuhuncha",
+    "ja": "あの方は休むために家に帰ります",
+    "en": "He goes home to rest."
+  },
+  "28-9": {
+    "ne": "उनीहरू किताब किन्नको लागि बजार जान्छन्।",
+    "roman": "unīharū kitāb kinnako lāgi bajār jānchan",
+    "ja": "彼らは本を買うために市場へ行きます",
+    "en": "They go to the market to buy books."
+  },
+  "28-10": {
+    "ne": "यो तपाईंको लागि हो।",
+    "roman": "yo tapāĩko lāgi ho",
+    "ja": "これはあなたのためのものです",
+    "en": "This is for you."
+  },
+  "28-11": {
+    "ne": "यो खाना बच्चाको लागि हो।",
+    "roman": "yo khānā baccāko lāgi ho",
+    "ja": "この食べ物は子どものためのものです",
+    "en": "This food is for the child."
+  },
+  "28-12": {
+    "ne": "म स्वास्थ्यको लागि हिँड्छु।",
+    "roman": "ma svāsthyako lāgi hĩḍchu",
+    "ja": "私は健康のために歩きます",
+    "en": "I walk for my health."
+  },
+  "28-13": {
+    "ne": "यो मेरो लागि होइन।",
+    "roman": "yo mero lāgi hoina",
+    "ja": "これは私のためのものではありません",
+    "en": "This is not for me."
+  },
+  "28-14": {
+    "ne": "तपाईं कसको लागि काम गर्नुहुन्छ?",
+    "roman": "tapāĩ kasko lāgi kām garnuhuncha?",
+    "ja": "あなたは誰のために働いていますか？",
+    "en": "Who do you work for?"
+  },
+  "28-15": {
+    "ne": "म खेल्नको लागि आएको होइनँ।",
+    "roman": "ma khelnako lāgi āeko hoinã",
+    "ja": "私は遊ぶために来たのではありません",
+    "en": "I did not come to play."
+  },
+  "29-1": {
+    "ne": "यहाँ बस्ने मान्छे मेरो साथी हो।",
+    "roman": "yahā̃ basne mānche mero sāthī ho",
+    "ja": "ここに住む人は私の友達です",
+    "en": "The person who lives here is my friend."
+  },
+  "29-2": {
+    "ne": "नेपाली बोल्ने शिक्षक उहाँ हुनुहुन्छ।",
+    "roman": "nepālī bolne śikṣak uhā̃ hunuhuncha",
+    "ja": "ネパール語を話す先生はあの方です",
+    "en": "He is the teacher who speaks Nepali."
+  },
+  "29-3": {
+    "ne": "काठमाडौं जाने बस कहाँ छ?",
+    "roman": "kāṭhmāḍaũ jāne bas kahā̃ cha?",
+    "ja": "カトマンズに行くバスはどこですか？",
+    "en": "Where is the bus that goes to Kathmandu?"
+  },
+  "29-4": {
+    "ne": "यो स्कूल जाने बाटो हो।",
+    "roman": "yo skūl jāne bāṭo ho",
+    "ja": "これは学校に行く道です",
+    "en": "This is the road to school."
+  },
+  "29-5": {
+    "ne": "खाने कुरा छ?",
+    "roman": "khāne kurā cha?",
+    "ja": "食べるものはありますか？",
+    "en": "Is there anything to eat?"
+  },
+  "29-6": {
+    "ne": "पिउने पानी यहाँ छ।",
+    "roman": "piune pānī yahā̃ cha",
+    "ja": "飲み水はここにあります",
+    "en": "The drinking water is here."
+  },
+  "29-7": {
+    "ne": "बस्ने ठाउँ छैन।",
+    "roman": "basne ṭhāũ chaina",
+    "ja": "座る場所がありません",
+    "en": "There is nowhere to sit."
+  },
+  "29-8": {
+    "ne": "काम गर्ने समय भयो।",
+    "roman": "kām garne samay bhayo",
+    "ja": "働く時間になりました",
+    "en": "It is time to work."
+  },
+  "29-9": {
+    "ne": "तिमी आउने दिन कुन हो?",
+    "roman": "timī āune din kun ho?",
+    "ja": "君が来る日はどの日ですか？",
+    "en": "Which day are you coming?"
+  },
+  "29-10": {
+    "ne": "म पढ्ने किताब यही हो।",
+    "roman": "ma paḍhne kitāb yahī ho",
+    "ja": "私が読む本はこれです",
+    "en": "This is the book I read."
+  },
+  "29-11": {
+    "ne": "हामी बस्ने घर सानो छ।",
+    "roman": "hāmī basne ghar sāno cha",
+    "ja": "私たちが住む家は小さいです",
+    "en": "The house we live in is small."
+  },
+  "29-12": {
+    "ne": "उनी काम गर्ने अफिस टाढा छ।",
+    "roman": "unī kām garne aphis ṭāḍhā cha",
+    "ja": "彼女が働く会社は遠いです",
+    "en": "The office where she works is far away."
+  },
+  "29-13": {
+    "ne": "यो सुत्ने कोठा होइन।",
+    "roman": "yo sutne koṭhā hoina",
+    "ja": "ここは寝る部屋ではありません",
+    "en": "This is not a bedroom."
+  },
+  "29-14": {
+    "ne": "पैसा पाउने बित्तिकै, उसले किताब किन्यो।",
+    "roman": "paisā pāune bittikai, usle kitāb kinyo",
+    "ja": "お金をもらうとすぐに、彼は本を買いました",
+    "en": "He bought a book as soon as he got the money."
+  },
+  "29-15": {
+    "ne": "घर पुग्ने बित्तिकै, फोन गर्नुहोस्।",
+    "roman": "ghar pugne bittikai, phon garnuhos",
+    "ja": "家に着いたらすぐに、電話してください",
+    "en": "Please call as soon as you get home."
+  },
+  "30-1": {
+    "ne": "पानी पर्यो भने, म घरमा बस्छु।",
+    "roman": "pānī paryo bhane, ma gharmā baschu",
+    "ja": "雨が降ったら、私は家にいます",
+    "en": "If it rains, I will stay home."
+  },
+  "30-2": {
+    "ne": "यदि सस्तो छ भने, म किन्छु।",
+    "roman": "yadi sasto cha bhane, ma kinchu",
+    "ja": "もし安ければ、私は買います",
+    "en": "If it is cheap, I will buy it."
+  },
+  "30-3": {
+    "ne": "तिमी आयौ भने, म खुसी हुन्छु।",
+    "roman": "timī āyau bhane, ma khusī hunchu",
+    "ja": "君が来たら、私はうれしいです",
+    "en": "If you come, I will be happy."
+  },
+  "30-4": {
+    "ne": "तपाईं व्यस्त हुनुहुन्छ भने, म पर्खन्छु।",
+    "roman": "tapāĩ vyasta hunuhuncha bhane, ma parkhanchu",
+    "ja": "あなたが忙しければ、私は待ちます",
+    "en": "If you are busy, I will wait."
+  },
+  "30-5": {
+    "ne": "उ आयो भने, हामी जान्छौं।",
+    "roman": "u āyo bhane, hāmī jānchaũ",
+    "ja": "彼が来たら、私たちは行きます",
+    "en": "If he comes, we will go."
+  },
+  "30-6": {
+    "ne": "उनी आउँछिन् भने, म पनि आउँछु।",
+    "roman": "unī āũchin bhane, ma pani āũchu",
+    "ja": "彼女が来るなら、私も来ます",
+    "en": "If she is coming, I will come too."
+  },
+  "30-7": {
+    "ne": "समय छ भने, यहाँ बस्नुहोस्।",
+    "roman": "samay cha bhane, yahā̃ basnuhos",
+    "ja": "時間があれば、ここにいてください",
+    "en": "If you have time, please stay here."
+  },
+  "30-8": {
+    "ne": "भोक लाग्यो भने, खाना खानुहोस्।",
+    "roman": "bhok lāgyo bhane, khānā khānuhos",
+    "ja": "おなかがすいたら、ご飯を食べてください",
+    "en": "If you get hungry, please eat."
+  },
+  "30-9": {
+    "ne": "थाक्यौ भने, आराम गर।",
+    "roman": "thākyau bhane, ārām gara",
+    "ja": "疲れたら、休んで",
+    "en": "If you get tired, rest."
+  },
+  "30-10": {
+    "ne": "पैसा छैन भने, नकिन्नुहोस्।",
+    "roman": "paisā chaina bhane, nakinnuhos",
+    "ja": "お金がなければ、買わないでください",
+    "en": "If you have no money, please do not buy it."
+  },
+  "30-11": {
+    "ne": "उ आएन भने, हामी के गर्छौं?",
+    "roman": "u āena bhane, hāmī ke garchaũ?",
+    "ja": "彼が来なかったら、私たちはどうしますか？",
+    "en": "What will we do if he does not come?"
+  },
+  "30-12": {
+    "ne": "तिमीहरू तयार छौ भने, जाऔं।",
+    "roman": "timīharū tayār chau bhane, jāaũ",
+    "ja": "君たちの準備ができていれば、行きましょう",
+    "en": "If you are ready, let us go."
+  },
+  "30-13": {
+    "ne": "उहाँ आउनुभयो भने, मलाई भन्नुहोस्।",
+    "roman": "uhā̃ āunubhayo bhane, malāī bhannuhos",
+    "ja": "あの方が来たら、私に教えてください",
+    "en": "If he comes, please tell me."
+  },
+  "30-14": {
+    "ne": "यो पिरो छ भने, म खाँदिनँ।",
+    "roman": "yo piro cha bhane, ma khā̃dinã",
+    "ja": "これが辛ければ、私は食べません",
+    "en": "If this is spicy, I will not eat it."
+  },
+  "30-15": {
+    "ne": "भोलि बिदा छ भने, हामी भेटौं।",
+    "roman": "bholi bidā cha bhane, hāmī bheṭaũ",
+    "ja": "明日休みなら、私たちは会いましょう",
+    "en": "If tomorrow is a holiday, let us meet."
+  },
+  "31-1": {
+    "ne": "भोलि पानी पर्छ जस्तो लाग्छ।",
+    "roman": "bholi pānī parcha jasto lāgcha",
+    "ja": "明日は雨が降ると思います",
+    "en": "I think it will rain tomorrow."
+  },
+  "31-2": {
+    "ne": "उ घरमा छ जस्तो लाग्छ।",
+    "roman": "u gharmā cha jasto lāgcha",
+    "ja": "彼は家にいると思います",
+    "en": "I think he is at home."
+  },
+  "31-3": {
+    "ne": "यो किताब राम्रो छ जस्तो लाग्छ।",
+    "roman": "yo kitāb rāmro cha jasto lāgcha",
+    "ja": "この本は良いと思います",
+    "en": "I think this book is good."
+  },
+  "31-4": {
+    "ne": "तपाईंलाई के लाग्छ?",
+    "roman": "tapāĩlāī ke lāgcha?",
+    "ja": "あなたはどう思いますか？",
+    "en": "What do you think?"
+  },
+  "31-5": {
+    "ne": "उनी आज आउँदिनन् जस्तो लाग्छ।",
+    "roman": "unī āja āũdinan jasto lāgcha",
+    "ja": "彼女は今日来ないと思います",
+    "en": "I think she will not come today."
+  },
+  "31-6": {
+    "ne": "सायद उ व्यस्त होला।",
+    "roman": "sāyad u vyasta holā",
+    "ja": "たぶん彼は忙しいのでしょう",
+    "en": "He is probably busy."
+  },
+  "31-7": {
+    "ne": "भोलि चिसो हुन्छ होला।",
+    "roman": "bholi ciso huncha holā",
+    "ja": "明日は寒くなるでしょう",
+    "en": "It will probably be cold tomorrow."
+  },
+  "31-8": {
+    "ne": "उहाँ घरमा हुनुहुन्छ होला।",
+    "roman": "uhā̃ gharmā hunuhuncha holā",
+    "ja": "あの方は家にいらっしゃるでしょう",
+    "en": "He is probably at home."
+  },
+  "31-9": {
+    "ne": "यो कसको किताब होला?",
+    "roman": "yo kasko kitāb holā?",
+    "ja": "これは誰の本でしょうか？",
+    "en": "Whose book could this be?"
+  },
+  "31-10": {
+    "ne": "भोलि पानी पर्न सक्छ।",
+    "roman": "bholi pānī parna sakcha",
+    "ja": "明日は雨が降るかもしれません",
+    "en": "It may rain tomorrow."
+  },
+  "31-11": {
+    "ne": "उ ढिलो आउन सक्छ।",
+    "roman": "u ḍhilo āuna sakcha",
+    "ja": "彼は遅く来るかもしれません",
+    "en": "He may come late."
+  },
+  "31-12": {
+    "ne": "आज पसल बन्द हुन सक्छ।",
+    "roman": "āja pasal banda huna sakcha",
+    "ja": "今日は店が閉まっているかもしれません",
+    "en": "The shop may be closed today."
+  },
+  "31-13": {
+    "ne": "उसले काम सकेको हुनु पर्छ।",
+    "roman": "usle kām sakeko hunu parcha",
+    "ja": "彼は仕事を終えたに違いありません",
+    "en": "He must have finished his work."
+  },
+  "31-14": {
+    "ne": "उनी घर गएकी हुनु पर्छ।",
+    "roman": "unī ghar gaekī hunu parcha",
+    "ja": "彼女は家に帰ったに違いありません",
+    "en": "She must have gone home."
+  },
+  "31-15": {
+    "ne": "उहाँसँग धेरै किताब हुनु पर्छ।",
+    "roman": "uhā̃sãga dherai kitāb hunu parcha",
+    "ja": "あの方は本をたくさん持っているはずです",
+    "en": "He must have a lot of books."
+  },
+  "32-1": {
+    "ne": "ढोका खोलियो।",
+    "roman": "ḍhokā kholiyo",
+    "ja": "ドアが開けられました",
+    "en": "The door was opened."
+  },
+  "32-2": {
+    "ne": "झ्याल बन्द गरियो।",
+    "roman": "jhyāl banda gariyo",
+    "ja": "窓が閉められました",
+    "en": "The window was closed."
+  },
+  "32-3": {
+    "ne": "चिठी लेखियो।",
+    "roman": "ciṭhī lekhiyo",
+    "ja": "手紙が書かれました",
+    "en": "A letter was written."
+  },
+  "32-4": {
+    "ne": "खाना पकाइयो।",
+    "roman": "khānā pakāiyo",
+    "ja": "料理が作られました",
+    "en": "The food was cooked."
+  },
+  "32-5": {
+    "ne": "यो किताब पढियो।",
+    "roman": "yo kitāb paḍhiyo",
+    "ja": "この本が読まれました",
+    "en": "This book was read."
+  },
+  "32-6": {
+    "ne": "पानी ल्याइयो।",
+    "roman": "pānī lyāiyo",
+    "ja": "水が持ってこられました",
+    "en": "Water was brought."
+  },
+  "32-7": {
+    "ne": "काम शुरू गरियो।",
+    "roman": "kām śurū gariyo",
+    "ja": "仕事が始められました",
+    "en": "The work was started."
+  },
+  "32-8": {
+    "ne": "ढोका खोलिएन।",
+    "roman": "ḍhokā kholiena",
+    "ja": "ドアは開けられませんでした",
+    "en": "The door was not opened."
+  },
+  "32-9": {
+    "ne": "चिठी लेखिएन।",
+    "roman": "ciṭhī lekhiena",
+    "ja": "手紙は書かれませんでした",
+    "en": "The letter was not written."
+  },
+  "32-10": {
+    "ne": "के खाना पकाइयो?",
+    "roman": "ke khānā pakāiyo?",
+    "ja": "料理は作られましたか？",
+    "en": "Was the food cooked?"
+  },
+  "32-11": {
+    "ne": "यो किताब धेरै मानिसले पढिन्छ।",
+    "roman": "yo kitāb dherai mānisle paḍhincha",
+    "ja": "この本は多くの人に読まれます",
+    "en": "This book is read by many people."
+  },
+  "32-12": {
+    "ne": "यहाँ नेपाली बोलिन्छ।",
+    "roman": "yahā̃ nepālī bolincha",
+    "ja": "ここではネパール語が話されます",
+    "en": "Nepali is spoken here."
+  },
+  "32-13": {
+    "ne": "यहाँ मासु खाइँदैन।",
+    "roman": "yahā̃ māsu khāĩdaina",
+    "ja": "ここでは肉は食べられません",
+    "en": "Meat is not eaten here."
+  },
+  "32-14": {
+    "ne": "आज धेरै हिँडियो।",
+    "roman": "āja dherai hĩḍiyo",
+    "ja": "今日はたくさん歩きました",
+    "en": "We did a lot of walking today."
+  },
+  "32-15": {
+    "ne": "हिजो खूब खाइयो।",
+    "roman": "hijo khūb khāiyo",
+    "ja": "昨日はたっぷり食べました",
+    "en": "We ate a lot yesterday."
+  },
+  "33-1": {
+    "ne": "आमाले बच्चालाई खाना खुवाउनुहुन्छ।",
+    "roman": "āmāle baccālāī khānā khuvāunuhuncha",
+    "ja": "母は子どもにご飯を食べさせます",
+    "en": "Mother feeds the child."
+  },
+  "33-2": {
+    "ne": "बुबाले मलाई कार चलाउन लगाउनुभयो।",
+    "roman": "bubāle malāī kār calāuna lagāunubhayo",
+    "ja": "父は私に車を運転させました",
+    "en": "Father made me drive the car."
+  },
+  "33-3": {
+    "ne": "मैले उसलाई किताब देखाएँ।",
+    "roman": "maile uslāī kitāb dekhāẽ",
+    "ja": "私は彼に本を見せました",
+    "en": "I showed him a book."
+  },
+  "33-4": {
+    "ne": "तिमीले भाइलाई उठायौ?",
+    "roman": "timīle bhāilāī uṭhāyau?",
+    "ja": "君は弟を起こしましたか？",
+    "en": "Did you wake your younger brother?"
+  },
+  "33-5": {
+    "ne": "शिक्षकले हामीलाई नेपाली सिकाउनुहुन्छ।",
+    "roman": "śikṣakle hāmīlāī nepālī sikāunuhuncha",
+    "ja": "先生は私たちにネパール語を教えます",
+    "en": "The teacher teaches us Nepali."
+  },
+  "33-6": {
+    "ne": "उहाँले बच्चालाई औषधि खुवाउनुभयो।",
+    "roman": "uhā̃le baccālāī auṣadhi khuvāunubhayo",
+    "ja": "あの方は子どもに薬を飲ませました",
+    "en": "He gave the child medicine."
+  },
+  "33-7": {
+    "ne": "उसले मलाई काम गर्न लगायो।",
+    "roman": "usle malāī kām garna lagāyo",
+    "ja": "彼は私に仕事をさせました",
+    "en": "He made me work."
+  },
+  "33-8": {
+    "ne": "उनले मलाई चिठी लेख्न लगाइन्।",
+    "roman": "unle malāī ciṭhī lekhna lagāin",
+    "ja": "彼女は私に手紙を書かせました",
+    "en": "She made me write a letter."
+  },
+  "33-9": {
+    "ne": "हामीले उनीहरूलाई कोठा देखायौं।",
+    "roman": "hāmīle unīharūlāī koṭhā dekhāyaũ",
+    "ja": "私たちは彼らに部屋を見せました",
+    "en": "We showed them the room."
+  },
+  "33-10": {
+    "ne": "तपाईंले कसलाई काम गराउनुभयो?",
+    "roman": "tapāĩle kaslāī kām garāunubhayo?",
+    "ja": "あなたは誰に仕事をさせましたか？",
+    "en": "Who did you have do the work?"
+  },
+  "33-11": {
+    "ne": "तिमीहरूले बच्चालाई हँसायौ।",
+    "roman": "timīharūle baccālāī hãsāyau",
+    "ja": "君たちは子どもを笑わせました",
+    "en": "You made the child laugh."
+  },
+  "33-12": {
+    "ne": "उनीहरूले मलाई बाहिर जान लगाए।",
+    "roman": "unīharūle malāī bāhira jāna lagāe",
+    "ja": "彼らは私を外に行かせました",
+    "en": "They made me go outside."
+  },
+  "33-13": {
+    "ne": "मैले उसलाई उठाइनँ।",
+    "roman": "maile uslāī uṭhāinã",
+    "ja": "私は彼を起こしませんでした",
+    "en": "I did not wake him."
+  },
+  "33-14": {
+    "ne": "बुबाले मलाई काम गर्न लगाउनुभएन।",
+    "roman": "bubāle malāī kām garna lagāunubhaena",
+    "ja": "父は私に仕事をさせませんでした",
+    "en": "Father did not make me work."
+  },
+  "33-15": {
+    "ne": "कसले तिमीलाई यो सिकायो?",
+    "roman": "kasle timīlāī yo sikāyo?",
+    "ja": "誰が君にこれを教えましたか？",
+    "en": "Who taught you this?"
+  },
+  "34-1": {
+    "ne": "उसले आउँछु भन्यो।",
+    "roman": "usle āũchu bhanyo",
+    "ja": "彼は「来る」と言いました",
+    "en": "He said he would come."
+  },
+  "34-2": {
+    "ne": "उनले जाँदिनँ भनिन्।",
+    "roman": "unle jā̃dinã bhanin",
+    "ja": "彼女は「行かない」と言いました",
+    "en": "She said she would not go."
+  },
+  "34-3": {
+    "ne": "शिक्षकले भोलि परीक्षा छ भन्नुभयो।",
+    "roman": "śikṣakle bholi parīkṣā cha bhannubhayo",
+    "ja": "先生は「明日試験がある」と言いました",
+    "en": "The teacher said there would be an exam tomorrow."
+  },
+  "34-4": {
+    "ne": "मैले म विद्यार्थी हुँ भनेँ।",
+    "roman": "maile ma vidyārthī hũ bhanẽ",
+    "ja": "私は「私は学生です」と言いました",
+    "en": "I said I was a student."
+  },
+  "34-5": {
+    "ne": "तिमीले के भन्यौ?",
+    "roman": "timīle ke bhanyau?",
+    "ja": "君は何と言いましたか？",
+    "en": "What did you say?"
+  },
+  "34-6": {
+    "ne": "तपाईंले आउँछु भन्नुभयो?",
+    "roman": "tapāĩle āũchu bhannubhayo?",
+    "ja": "あなたは「来る」と言いましたか？",
+    "en": "Did you say you would come?"
+  },
+  "34-7": {
+    "ne": "उहाँले आज व्यस्त छु भन्नुभयो।",
+    "roman": "uhā̃le āja vyasta chu bhannubhayo",
+    "ja": "あの方は「今日は忙しい」と言いました",
+    "en": "He said he was busy today."
+  },
+  "34-8": {
+    "ne": "हामीले तयार छौं भन्यौं।",
+    "roman": "hāmīle tayār chaũ bhanyaũ",
+    "ja": "私たちは「準備ができた」と言いました",
+    "en": "We said we were ready."
+  },
+  "34-9": {
+    "ne": "उनीहरूले भोलि आउँछौं भने।",
+    "roman": "unīharūle bholi āũchaũ bhane",
+    "ja": "彼らは「明日来る」と言いました",
+    "en": "They said they would come tomorrow."
+  },
+  "34-10": {
+    "ne": "तैंले जान्छु भनिस्?",
+    "roman": "taĩle jānchu bhanis?",
+    "ja": "お前は「行く」と言ったの？",
+    "en": "Did you say you would go?"
+  },
+  "34-11": {
+    "ne": "तिमीहरूले काम गर्छौं भन्यौ।",
+    "roman": "timīharūle kām garchaũ bhanyau",
+    "ja": "君たちは「働く」と言いました",
+    "en": "You said you would work."
+  },
+  "34-12": {
+    "ne": "उसले आउँछु भनेन।",
+    "roman": "usle āũchu bhanena",
+    "ja": "彼は「来る」とは言いませんでした",
+    "en": "He did not say he would come."
+  },
+  "34-13": {
+    "ne": "मैले त्यो राम्रो छ भनिनँ।",
+    "roman": "maile tyo rāmro cha bhaninã",
+    "ja": "私は「それは良い」とは言いませんでした",
+    "en": "I did not say that it was good."
+  },
+  "34-14": {
+    "ne": "उनले पैसा छैन भनिन्।",
+    "roman": "unle paisā chaina bhanin",
+    "ja": "彼女は「お金がない」と言いました",
+    "en": "She said she had no money."
+  },
+  "34-15": {
+    "ne": "आमाले सधैं चाँडै सुत भन्ने गर्नुहुन्थ्यो।",
+    "roman": "āmāle sadhaĩ cā̃ḍai suta bhanne garnuhunthyo",
+    "ja": "母はいつも「早く寝なさい」と言っていました",
+    "en": "Mother always used to tell me to go to bed early."
+  },
+  "35-1": {
+    "ne": "म चिठी लेख्छु।",
+    "roman": "ma ciṭhī lekhchu",
+    "ja": "私は手紙を書きます",
+    "en": "I write letters."
+  },
+  "35-2": {
+    "ne": "तँ चिठी लेख्छस्।",
+    "roman": "tã ciṭhī lekhchas",
+    "ja": "お前は手紙を書きます",
+    "en": "You write letters."
+  },
+  "35-3": {
+    "ne": "तिमी चिठी लेख्छौ।",
+    "roman": "timī ciṭhī lekhchau",
+    "ja": "君は手紙を書きます",
+    "en": "You write letters."
+  },
+  "35-4": {
+    "ne": "तिमीहरू चिठी लेख्छौ।",
+    "roman": "timīharū ciṭhī lekhchau",
+    "ja": "君たちは手紙を書きます",
+    "en": "You write letters."
+  },
+  "35-5": {
+    "ne": "तपाईं चिठी लेख्नुहुन्छ।",
+    "roman": "tapāĩ ciṭhī lekhnuhuncha",
+    "ja": "あなたは手紙を書きます",
+    "en": "You write letters."
+  },
+  "35-6": {
+    "ne": "उ चिठी लेख्छ।",
+    "roman": "u ciṭhī lekhcha",
+    "ja": "彼は手紙を書きます",
+    "en": "He writes letters."
+  },
+  "35-7": {
+    "ne": "उनी चिठी लेख्छिन्।",
+    "roman": "unī ciṭhī lekhchin",
+    "ja": "彼女は手紙を書きます",
+    "en": "She writes letters."
+  },
+  "35-8": {
+    "ne": "उहाँ चिठी लेख्नुहुन्छ।",
+    "roman": "uhā̃ ciṭhī lekhnuhuncha",
+    "ja": "あの方は手紙を書きます",
+    "en": "He writes letters."
+  },
+  "35-9": {
+    "ne": "हामी चिठी लेख्छौं।",
+    "roman": "hāmī ciṭhī lekhchaũ",
+    "ja": "私たちは手紙を書きます",
+    "en": "We write letters."
+  },
+  "35-10": {
+    "ne": "उनीहरू चिठी लेख्छन्।",
+    "roman": "unīharū ciṭhī lekhchan",
+    "ja": "彼らは手紙を書きます",
+    "en": "They write letters."
+  },
+  "35-11": {
+    "ne": "म चिठी लेख्दिनँ।",
+    "roman": "ma ciṭhī lekhdinã",
+    "ja": "私は手紙を書きません",
+    "en": "I do not write letters."
+  },
+  "35-12": {
+    "ne": "तँ चिठी लेख्दैनस्।",
+    "roman": "tã ciṭhī lekhdainas",
+    "ja": "お前は手紙を書きません",
+    "en": "You do not write letters."
+  },
+  "35-13": {
+    "ne": "तिमी चिठी लेख्दैनौ।",
+    "roman": "timī ciṭhī lekhdainau",
+    "ja": "君は手紙を書きません",
+    "en": "You do not write letters."
+  },
+  "35-14": {
+    "ne": "तिमीहरू चिठी लेख्दैनौ।",
+    "roman": "timīharū ciṭhī lekhdainau",
+    "ja": "君たちは手紙を書きません",
+    "en": "You do not write letters."
+  },
+  "35-15": {
+    "ne": "तपाईं चिठी लेख्नुहुन्न।",
+    "roman": "tapāĩ ciṭhī lekhnuhunna",
+    "ja": "あなたは手紙を書きません",
+    "en": "You do not write letters."
+  },
+  "35-16": {
+    "ne": "उ चिठी लेख्दैन।",
+    "roman": "u ciṭhī lekhdaina",
+    "ja": "彼は手紙を書きません",
+    "en": "He does not write letters."
+  },
+  "35-17": {
+    "ne": "उनी चिठी लेख्दिनन्।",
+    "roman": "unī ciṭhī lekhdinan",
+    "ja": "彼女は手紙を書きません",
+    "en": "She does not write letters."
+  },
+  "35-18": {
+    "ne": "उहाँ चिठी लेख्नुहुन्न।",
+    "roman": "uhā̃ ciṭhī lekhnuhunna",
+    "ja": "あの方は手紙を書きません",
+    "en": "He does not write letters."
+  },
+  "35-19": {
+    "ne": "हामी चिठी लेख्दैनौं।",
+    "roman": "hāmī ciṭhī lekhdainaũ",
+    "ja": "私たちは手紙を書きません",
+    "en": "We do not write letters."
+  },
+  "35-20": {
+    "ne": "उनीहरू चिठी लेख्दैनन्।",
+    "roman": "unīharū ciṭhī lekhdainan",
+    "ja": "彼らは手紙を書きません",
+    "en": "They do not write letters."
+  },
+  "35-21": {
+    "ne": "मैले हिजो चिठी लेखेँ।",
+    "roman": "maile hijo ciṭhī lekhẽ",
+    "ja": "私は昨日手紙を書きました",
+    "en": "I wrote a letter yesterday."
+  },
+  "35-22": {
+    "ne": "तैंले हिजो चिठी लेखिस्।",
+    "roman": "taĩle hijo ciṭhī lekhis",
+    "ja": "お前は昨日手紙を書きました",
+    "en": "You wrote a letter yesterday."
+  },
+  "35-23": {
+    "ne": "तिमीले हिजो चिठी लेख्यौ।",
+    "roman": "timīle hijo ciṭhī lekhyau",
+    "ja": "君は昨日手紙を書きました",
+    "en": "You wrote a letter yesterday."
+  },
+  "35-24": {
+    "ne": "तिमीहरूले हिजो चिठी लेख्यौ।",
+    "roman": "timīharūle hijo ciṭhī lekhyau",
+    "ja": "君たちは昨日手紙を書きました",
+    "en": "You wrote a letter yesterday."
+  },
+  "35-25": {
+    "ne": "तपाईंले हिजो चिठी लेख्नुभयो।",
+    "roman": "tapāĩle hijo ciṭhī lekhnubhayo",
+    "ja": "あなたは昨日手紙を書きました",
+    "en": "You wrote a letter yesterday."
+  },
+  "35-26": {
+    "ne": "उसले हिजो चिठी लेख्यो।",
+    "roman": "usle hijo ciṭhī lekhyo",
+    "ja": "彼は昨日手紙を書きました",
+    "en": "He wrote a letter yesterday."
+  },
+  "35-27": {
+    "ne": "उनले हिजो चिठी लेखिन्।",
+    "roman": "unle hijo ciṭhī lekhin",
+    "ja": "彼女は昨日手紙を書きました",
+    "en": "She wrote a letter yesterday."
+  },
+  "35-28": {
+    "ne": "उहाँले हिजो चिठी लेख्नुभयो।",
+    "roman": "uhā̃le hijo ciṭhī lekhnubhayo",
+    "ja": "あの方は昨日手紙を書きました",
+    "en": "He wrote a letter yesterday."
+  },
+  "35-29": {
+    "ne": "हामीले हिजो चिठी लेख्यौं।",
+    "roman": "hāmīle hijo ciṭhī lekhyaũ",
+    "ja": "私たちは昨日手紙を書きました",
+    "en": "We wrote a letter yesterday."
+  },
+  "35-30": {
+    "ne": "उनीहरूले हिजो चिठी लेखे।",
+    "roman": "unīharūle hijo ciṭhī lekhe",
+    "ja": "彼らは昨日手紙を書きました",
+    "en": "They wrote a letter yesterday."
+  },
+  "35-31": {
+    "ne": "मैले हिजो चिठी लेखिनँ।",
+    "roman": "maile hijo ciṭhī lekhinã",
+    "ja": "私は昨日手紙を書きませんでした",
+    "en": "I did not write a letter yesterday."
+  },
+  "35-32": {
+    "ne": "तैंले हिजो चिठी लेखिनस्।",
+    "roman": "taĩle hijo ciṭhī lekhinas",
+    "ja": "お前は昨日手紙を書きませんでした",
+    "en": "You did not write a letter yesterday."
+  },
+  "35-33": {
+    "ne": "तिमीले हिजो चिठी लेखेनौ।",
+    "roman": "timīle hijo ciṭhī lekhenau",
+    "ja": "君は昨日手紙を書きませんでした",
+    "en": "You did not write a letter yesterday."
+  },
+  "35-34": {
+    "ne": "तिमीहरूले हिजो चिठी लेखेनौ।",
+    "roman": "timīharūle hijo ciṭhī lekhenau",
+    "ja": "君たちは昨日手紙を書きませんでした",
+    "en": "You did not write a letter yesterday."
+  },
+  "35-35": {
+    "ne": "तपाईंले हिजो चिठी लेख्नुभएन।",
+    "roman": "tapāĩle hijo ciṭhī lekhnubhaena",
+    "ja": "あなたは昨日手紙を書きませんでした",
+    "en": "You did not write a letter yesterday."
+  },
+  "35-36": {
+    "ne": "उसले हिजो चिठी लेखेन।",
+    "roman": "usle hijo ciṭhī lekhena",
+    "ja": "彼は昨日手紙を書きませんでした",
+    "en": "He did not write a letter yesterday."
+  },
+  "35-37": {
+    "ne": "उनले हिजो चिठी लेखिनन्।",
+    "roman": "unle hijo ciṭhī lekhinan",
+    "ja": "彼女は昨日手紙を書きませんでした",
+    "en": "She did not write a letter yesterday."
+  },
+  "35-38": {
+    "ne": "उहाँले हिजो चिठी लेख्नुभएन।",
+    "roman": "uhā̃le hijo ciṭhī lekhnubhaena",
+    "ja": "あの方は昨日手紙を書きませんでした",
+    "en": "He did not write a letter yesterday."
+  },
+  "35-39": {
+    "ne": "हामीले हिजो चिठी लेखेनौं।",
+    "roman": "hāmīle hijo ciṭhī lekhenaũ",
+    "ja": "私たちは昨日手紙を書きませんでした",
+    "en": "We did not write a letter yesterday."
+  },
+  "35-40": {
+    "ne": "उनीहरूले हिजो चिठी लेखेनन्।",
+    "roman": "unīharūle hijo ciṭhī lekhenan",
+    "ja": "彼らは昨日手紙を書きませんでした",
+    "en": "They did not write a letter yesterday."
+  },
+  "35-41": {
+    "ne": "मैले चिठी लेखेको छु।",
+    "roman": "maile ciṭhī lekheko chu",
+    "ja": "私は手紙を書き終えています",
+    "en": "I have done the write letters."
+  },
+  "35-42": {
+    "ne": "तैंले चिठी लेखेको छस्।",
+    "roman": "taĩle ciṭhī lekheko chas",
+    "ja": "お前は手紙を書き終えています",
+    "en": "You have done the write letters."
+  },
+  "35-43": {
+    "ne": "तिमीले चिठी लेखेको छौ।",
+    "roman": "timīle ciṭhī lekheko chau",
+    "ja": "君は手紙を書き終えています",
+    "en": "You have done the write letters."
+  },
+  "35-44": {
+    "ne": "तिमीहरूले चिठी लेखेको छौ।",
+    "roman": "timīharūle ciṭhī lekheko chau",
+    "ja": "君たちは手紙を書き終えています",
+    "en": "You have done the write letters."
+  },
+  "35-45": {
+    "ne": "तपाईंले चिठी लेख्नुभएको छ।",
+    "roman": "tapāĩle ciṭhī lekhnubhaeko cha",
+    "ja": "あなたは手紙を書き終えています",
+    "en": "You have done the write letters."
+  },
+  "35-46": {
+    "ne": "उसले चिठी लेखेको छ।",
+    "roman": "usle ciṭhī lekheko cha",
+    "ja": "彼は手紙を書き終えています",
+    "en": "He has done the write letters."
+  },
+  "35-47": {
+    "ne": "उनले चिठी लेखेकी छिन्।",
+    "roman": "unle ciṭhī lekhekī chin",
+    "ja": "彼女は手紙を書き終えています",
+    "en": "She has done the write letters."
+  },
+  "35-48": {
+    "ne": "उहाँले चिठी लेख्नुभएको छ।",
+    "roman": "uhā̃le ciṭhī lekhnubhaeko cha",
+    "ja": "あの方は手紙を書き終えています",
+    "en": "He has done the write letters."
+  },
+  "35-49": {
+    "ne": "हामीले चिठी लेखेको छौं।",
+    "roman": "hāmīle ciṭhī lekheko chaũ",
+    "ja": "私たちは手紙を書き終えています",
+    "en": "We have done the write letters."
+  },
+  "35-50": {
+    "ne": "उनीहरूले चिठी लेखेका छन्।",
+    "roman": "unīharūle ciṭhī lekhekā chan",
+    "ja": "彼らは手紙を書き終えています",
+    "en": "They have done the write letters."
+  },
+  "35-51": {
+    "ne": "म पहिले चिठी लेख्थें।",
+    "roman": "ma pahile ciṭhī lekhthẽ",
+    "ja": "私は以前手紙を書いていました",
+    "en": "I used to write letters."
+  },
+  "35-52": {
+    "ne": "तँ पहिले चिठी लेख्थिस्।",
+    "roman": "tã pahile ciṭhī lekhthis",
+    "ja": "お前は以前手紙を書いていました",
+    "en": "You used to write letters."
+  },
+  "35-53": {
+    "ne": "तिमी पहिले चिठी लेख्थ्यौ।",
+    "roman": "timī pahile ciṭhī lekhthyau",
+    "ja": "君は以前手紙を書いていました",
+    "en": "You used to write letters."
+  },
+  "35-54": {
+    "ne": "तिमीहरू पहिले चिठी लेख्थ्यौ।",
+    "roman": "timīharū pahile ciṭhī lekhthyau",
+    "ja": "君たちは以前手紙を書いていました",
+    "en": "You used to write letters."
+  },
+  "35-55": {
+    "ne": "तपाईं पहिले चिठी लेख्नुहुन्थ्यो।",
+    "roman": "tapāĩ pahile ciṭhī lekhnuhunthyo",
+    "ja": "あなたは以前手紙を書いていました",
+    "en": "You used to write letters."
+  },
+  "35-56": {
+    "ne": "उ पहिले चिठी लेख्थ्यो।",
+    "roman": "u pahile ciṭhī lekhthyo",
+    "ja": "彼は以前手紙を書いていました",
+    "en": "He used to write letters."
+  },
+  "35-57": {
+    "ne": "उनी पहिले चिठी लेख्थिन्।",
+    "roman": "unī pahile ciṭhī lekhthin",
+    "ja": "彼女は以前手紙を書いていました",
+    "en": "She used to write letters."
+  },
+  "35-58": {
+    "ne": "उहाँ पहिले चिठी लेख्नुहुन्थ्यो।",
+    "roman": "uhā̃ pahile ciṭhī lekhnuhunthyo",
+    "ja": "あの方は以前手紙を書いていました",
+    "en": "He used to write letters."
+  },
+  "35-59": {
+    "ne": "हामी पहिले चिठी लेख्थ्यौं।",
+    "roman": "hāmī pahile ciṭhī lekhthyaũ",
+    "ja": "私たちは以前手紙を書いていました",
+    "en": "We used to write letters."
+  },
+  "35-60": {
+    "ne": "उनीहरू पहिले चिठी लेख्थे।",
+    "roman": "unīharū pahile ciṭhī lekhthe",
+    "ja": "彼らは以前手紙を書いていました",
+    "en": "They used to write letters."
+  },
+  "35-61": {
+    "ne": "तँ यो चिठी लेख्।",
+    "roman": "tã yo ciṭhī lekh",
+    "ja": "お前、この手紙を書いて",
+    "en": "Write this letter."
+  },
+  "35-62": {
+    "ne": "तिमी यो चिठी लेख।",
+    "roman": "timī yo ciṭhī lekh",
+    "ja": "君、この手紙を書いて",
+    "en": "Write this letter."
+  },
+  "35-63": {
+    "ne": "तपाईं यो चिठी लेख्नुहोस्।",
+    "roman": "tapāĩ yo ciṭhī lekhnuhos",
+    "ja": "あなたはこの手紙を書いてください",
+    "en": "Please write this letter."
+  },
+  "35-64": {
+    "ne": "म यो चिठी लेखूँ?",
+    "roman": "ma yo ciṭhī lekhũ?",
+    "ja": "私がこの手紙を書きましょうか？",
+    "en": "Shall I write this letter?"
+  },
+  "35-65": {
+    "ne": "हामी यो चिठी लेखौं।",
+    "roman": "hāmī yo ciṭhī lekhaũ",
+    "ja": "私たちはこの手紙を書きましょう",
+    "en": "Let us write this letter."
+  },
+  "35-66": {
+    "ne": "उनी चिठी लेख्छन्।",
+    "roman": "unī ciṭhī lekhchan",
+    "ja": "その方は手紙を書きます",
+    "en": "That person writes letters."
+  },
+  "35-67": {
+    "ne": "उनले हिजो चिठी लेखे।",
+    "roman": "unle hijo ciṭhī lekhe",
+    "ja": "その方は昨日手紙を書きました",
+    "en": "That person wrote a letter yesterday."
+  },
+  "35-68": {
+    "ne": "म भोलि चिठी लेख्छु।",
+    "roman": "ma bholi ciṭhī lekhchu",
+    "ja": "私は明日手紙を書きます",
+    "en": "I will write a letter tomorrow."
+  },
+  "35-69": {
+    "ne": "तँ भोलि चिठी लेख्छस्।",
+    "roman": "tã bholi ciṭhī lekhchas",
+    "ja": "お前は明日手紙を書きます",
+    "en": "You will write a letter tomorrow."
+  },
+  "35-70": {
+    "ne": "तिमी भोलि चिठी लेख्छौ।",
+    "roman": "timī bholi ciṭhī lekhchau",
+    "ja": "君は明日手紙を書きます",
+    "en": "You will write a letter tomorrow."
+  },
+  "35-71": {
+    "ne": "तिमीहरू भोलि चिठी लेख्छौ।",
+    "roman": "timīharū bholi ciṭhī lekhchau",
+    "ja": "君たちは明日手紙を書きます",
+    "en": "You will write a letter tomorrow."
+  },
+  "35-72": {
+    "ne": "तपाईं भोलि चिठी लेख्नुहुन्छ।",
+    "roman": "tapāĩ bholi ciṭhī lekhnuhuncha",
+    "ja": "あなたは明日手紙を書きます",
+    "en": "You will write a letter tomorrow."
+  },
+  "35-73": {
+    "ne": "उ भोलि चिठी लेख्छ।",
+    "roman": "u bholi ciṭhī lekhcha",
+    "ja": "彼は明日手紙を書きます",
+    "en": "He will write a letter tomorrow."
+  },
+  "35-74": {
+    "ne": "उनी भोलि चिठी लेख्छिन्।",
+    "roman": "unī bholi ciṭhī lekhchin",
+    "ja": "彼女は明日手紙を書きます",
+    "en": "She will write a letter tomorrow."
+  },
+  "35-75": {
+    "ne": "उहाँ भोलि चिठी लेख्नुहुन्छ।",
+    "roman": "uhā̃ bholi ciṭhī lekhnuhuncha",
+    "ja": "あの方は明日手紙を書きます",
+    "en": "He will write a letter tomorrow."
+  },
+  "35-76": {
+    "ne": "हामी भोलि चिठी लेख्छौं।",
+    "roman": "hāmī bholi ciṭhī lekhchaũ",
+    "ja": "私たちは明日手紙を書きます",
+    "en": "We will write a letter tomorrow."
+  },
+  "35-77": {
+    "ne": "उनीहरू भोलि चिठी लेख्छन्।",
+    "roman": "unīharū bholi ciṭhī lekhchan",
+    "ja": "彼らは明日手紙を書きます",
+    "en": "They will write a letter tomorrow."
+  },
+  "36-1": {
+    "ne": "म लेखक हुँ।",
+    "roman": "ma lekhak hũ",
+    "ja": "私は著者です",
+    "en": "I am an author."
+  },
+  "36-2": {
+    "ne": "तँ लेखक होस्।",
+    "roman": "tã lekhak hos",
+    "ja": "お前は著者です",
+    "en": "You are an author."
+  },
+  "36-3": {
+    "ne": "तिमी लेखक हौ।",
+    "roman": "timī lekhak hau",
+    "ja": "君は著者です",
+    "en": "You are an author."
+  },
+  "36-4": {
+    "ne": "तिमीहरू लेखक हौ।",
+    "roman": "timīharū lekhak hau",
+    "ja": "君たちは著者です",
+    "en": "You are authors."
+  },
+  "36-5": {
+    "ne": "तपाईं लेखक हुनुहुन्छ।",
+    "roman": "tapāĩ lekhak hunuhuncha",
+    "ja": "あなたは著者です",
+    "en": "You are an author."
+  },
+  "36-6": {
+    "ne": "उ लेखक हो।",
+    "roman": "u lekhak ho",
+    "ja": "彼は著者です",
+    "en": "He is an author."
+  },
+  "36-7": {
+    "ne": "उनी लेखिका हुन्।",
+    "roman": "unī lekhikā hun",
+    "ja": "彼女は著者です",
+    "en": "She is an author."
+  },
+  "36-8": {
+    "ne": "उहाँ लेखक हुनुहुन्छ।",
+    "roman": "uhā̃ lekhak hunuhuncha",
+    "ja": "あの方は著者です",
+    "en": "He is an author."
+  },
+  "36-9": {
+    "ne": "हामी लेखक हौं।",
+    "roman": "hāmī lekhak haũ",
+    "ja": "私たちは著者です",
+    "en": "We are authors."
+  },
+  "36-10": {
+    "ne": "उनीहरू लेखक हुन्।",
+    "roman": "unīharū lekhak hun",
+    "ja": "彼らは著者です",
+    "en": "They are authors."
+  },
+  "36-11": {
+    "ne": "म लेखक होइनँ।",
+    "roman": "ma lekhak hoinã",
+    "ja": "私は著者ではありません",
+    "en": "I am not an author."
+  },
+  "36-12": {
+    "ne": "तँ लेखक होइनस्।",
+    "roman": "tã lekhak hoinas",
+    "ja": "お前は著者ではありません",
+    "en": "You are not an author."
+  },
+  "36-13": {
+    "ne": "तिमी लेखक होइनौ।",
+    "roman": "timī lekhak hoinau",
+    "ja": "君は著者ではありません",
+    "en": "You are not an author."
+  },
+  "36-14": {
+    "ne": "तिमीहरू लेखक होइनौ।",
+    "roman": "timīharū lekhak hoinau",
+    "ja": "君たちは著者ではありません",
+    "en": "You are not authors."
+  },
+  "36-15": {
+    "ne": "तपाईं लेखक हुनुहुन्न।",
+    "roman": "tapāĩ lekhak hunuhunna",
+    "ja": "あなたは著者ではありません",
+    "en": "You are not an author."
+  },
+  "36-16": {
+    "ne": "उ लेखक होइन।",
+    "roman": "u lekhak hoina",
+    "ja": "彼は著者ではありません",
+    "en": "He is not an author."
+  },
+  "36-17": {
+    "ne": "उनी लेखिका होइनन्।",
+    "roman": "unī lekhikā hoinan",
+    "ja": "彼女は著者ではありません",
+    "en": "She is not an author."
+  },
+  "36-18": {
+    "ne": "उहाँ लेखक हुनुहुन्न।",
+    "roman": "uhā̃ lekhak hunuhunna",
+    "ja": "あの方は著者ではありません",
+    "en": "He is not an author."
+  },
+  "36-19": {
+    "ne": "हामी लेखक होइनौं।",
+    "roman": "hāmī lekhak hoinaũ",
+    "ja": "私たちは著者ではありません",
+    "en": "We are not authors."
+  },
+  "36-20": {
+    "ne": "उनीहरू लेखक होइनन्।",
+    "roman": "unīharū lekhak hoinan",
+    "ja": "彼らは著者ではありません",
+    "en": "They are not authors."
+  },
+  "36-21": {
+    "ne": "म पुस्तकालयमा छु।",
+    "roman": "ma pustakālayamā chu",
+    "ja": "私は図書館にいます",
+    "en": "I am at the library."
+  },
+  "36-22": {
+    "ne": "तँ पुस्तकालयमा छस्।",
+    "roman": "tã pustakālayamā chas",
+    "ja": "お前は図書館にいます",
+    "en": "You are at the library."
+  },
+  "36-23": {
+    "ne": "तिमी पुस्तकालयमा छौ।",
+    "roman": "timī pustakālayamā chau",
+    "ja": "君は図書館にいます",
+    "en": "You are at the library."
+  },
+  "36-24": {
+    "ne": "तिमीहरू पुस्तकालयमा छौ।",
+    "roman": "timīharū pustakālayamā chau",
+    "ja": "君たちは図書館にいます",
+    "en": "You are at the library."
+  },
+  "36-25": {
+    "ne": "तपाईं पुस्तकालयमा हुनुहुन्छ।",
+    "roman": "tapāĩ pustakālayamā hunuhuncha",
+    "ja": "あなたは図書館にいます",
+    "en": "You are at the library."
+  },
+  "36-26": {
+    "ne": "उ पुस्तकालयमा छ।",
+    "roman": "u pustakālayamā cha",
+    "ja": "彼は図書館にいます",
+    "en": "He is at the library."
+  },
+  "36-27": {
+    "ne": "उनी पुस्तकालयमा छिन्।",
+    "roman": "unī pustakālayamā chin",
+    "ja": "彼女は図書館にいます",
+    "en": "She is at the library."
+  },
+  "36-28": {
+    "ne": "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+    "roman": "uhā̃ pustakālayamā hunuhuncha",
+    "ja": "あの方は図書館にいます",
+    "en": "He is at the library."
+  },
+  "36-29": {
+    "ne": "हामी पुस्तकालयमा छौं।",
+    "roman": "hāmī pustakālayamā chaũ",
+    "ja": "私たちは図書館にいます",
+    "en": "We are at the library."
+  },
+  "36-30": {
+    "ne": "उनीहरू पुस्तकालयमा छन्।",
+    "roman": "unīharū pustakālayamā chan",
+    "ja": "彼らは図書館にいます",
+    "en": "They are at the library."
+  },
+  "36-31": {
+    "ne": "म पुस्तकालयमा छैनँ।",
+    "roman": "ma pustakālayamā chainã",
+    "ja": "私は図書館にいません",
+    "en": "I am not at the library."
+  },
+  "36-32": {
+    "ne": "तँ पुस्तकालयमा छैनस्।",
+    "roman": "tã pustakālayamā chainas",
+    "ja": "お前は図書館にいません",
+    "en": "You are not at the library."
+  },
+  "36-33": {
+    "ne": "तिमी पुस्तकालयमा छैनौ।",
+    "roman": "timī pustakālayamā chainau",
+    "ja": "君は図書館にいません",
+    "en": "You are not at the library."
+  },
+  "36-34": {
+    "ne": "तिमीहरू पुस्तकालयमा छैनौ।",
+    "roman": "timīharū pustakālayamā chainau",
+    "ja": "君たちは図書館にいません",
+    "en": "You are not at the library."
+  },
+  "36-35": {
+    "ne": "तपाईं पुस्तकालयमा हुनुहुन्न।",
+    "roman": "tapāĩ pustakālayamā hunuhunna",
+    "ja": "あなたは図書館にいません",
+    "en": "You are not at the library."
+  },
+  "36-36": {
+    "ne": "उ पुस्तकालयमा छैन।",
+    "roman": "u pustakālayamā chaina",
+    "ja": "彼は図書館にいません",
+    "en": "He is not at the library."
+  },
+  "36-37": {
+    "ne": "उनी पुस्तकालयमा छैनन्।",
+    "roman": "unī pustakālayamā chainan",
+    "ja": "彼女は図書館にいません",
+    "en": "She is not at the library."
+  },
+  "36-38": {
+    "ne": "उहाँ पुस्तकालयमा हुनुहुन्न।",
+    "roman": "uhā̃ pustakālayamā hunuhunna",
+    "ja": "あの方は図書館にいません",
+    "en": "He is not at the library."
+  },
+  "36-39": {
+    "ne": "हामी पुस्तकालयमा छैनौं।",
+    "roman": "hāmī pustakālayamā chainaũ",
+    "ja": "私たちは図書館にいません",
+    "en": "We are not at the library."
+  },
+  "36-40": {
+    "ne": "उनीहरू पुस्तकालयमा छैनन्।",
+    "roman": "unīharū pustakālayamā chainan",
+    "ja": "彼らは図書館にいません",
+    "en": "They are not at the library."
+  },
+  "36-41": {
+    "ne": "म अस्ति बजारमा थिएँ।",
+    "roman": "ma asti bajārmā thiẽ",
+    "ja": "私は一昨日市場にいました",
+    "en": "I was at the market the day before yesterday."
+  },
+  "36-42": {
+    "ne": "तँ अस्ति बजारमा थिइस्।",
+    "roman": "tã asti bajārmā thiis",
+    "ja": "お前は一昨日市場にいました",
+    "en": "You were at the market the day before yesterday."
+  },
+  "36-43": {
+    "ne": "तिमी अस्ति बजारमा थियौ।",
+    "roman": "timī asti bajārmā thiyau",
+    "ja": "君は一昨日市場にいました",
+    "en": "You were at the market the day before yesterday."
+  },
+  "36-44": {
+    "ne": "तिमीहरू अस्ति बजारमा थियौ।",
+    "roman": "timīharū asti bajārmā thiyau",
+    "ja": "君たちは一昨日市場にいました",
+    "en": "You were at the market the day before yesterday."
+  },
+  "36-45": {
+    "ne": "तपाईं अस्ति बजारमा हुनुहुन्थ्यो।",
+    "roman": "tapāĩ asti bajārmā hunuhunthyo",
+    "ja": "あなたは一昨日市場にいました",
+    "en": "You were at the market the day before yesterday."
+  },
+  "36-46": {
+    "ne": "उ अस्ति बजारमा थियो।",
+    "roman": "u asti bajārmā thiyo",
+    "ja": "彼は一昨日市場にいました",
+    "en": "He was at the market the day before yesterday."
+  },
+  "36-47": {
+    "ne": "उनी अस्ति बजारमा थिइन्।",
+    "roman": "unī asti bajārmā thiin",
+    "ja": "彼女は一昨日市場にいました",
+    "en": "She was at the market the day before yesterday."
+  },
+  "36-48": {
+    "ne": "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+    "roman": "uhā̃ asti bajārmā hunuhunthyo",
+    "ja": "あの方は一昨日市場にいました",
+    "en": "He was at the market the day before yesterday."
+  },
+  "36-49": {
+    "ne": "हामी अस्ति बजारमा थियौं।",
+    "roman": "hāmī asti bajārmā thiyaũ",
+    "ja": "私たちは一昨日市場にいました",
+    "en": "We were at the market the day before yesterday."
+  },
+  "36-50": {
+    "ne": "उनीहरू अस्ति बजारमा थिए।",
+    "roman": "unīharū asti bajārmā thie",
+    "ja": "彼らは一昨日市場にいました",
+    "en": "They were at the market the day before yesterday."
+  },
+  "36-51": {
+    "ne": "म अस्ति बजारमा थिइनँ।",
+    "roman": "ma asti bajārmā thiinã",
+    "ja": "私は一昨日市場にいませんでした",
+    "en": "I was not at the market the day before yesterday."
+  },
+  "36-52": {
+    "ne": "तँ अस्ति बजारमा थिइनस्।",
+    "roman": "tã asti bajārmā thiinas",
+    "ja": "お前は一昨日市場にいませんでした",
+    "en": "You were not at the market the day before yesterday."
+  },
+  "36-53": {
+    "ne": "तिमी अस्ति बजारमा थिएनौ।",
+    "roman": "timī asti bajārmā thienau",
+    "ja": "君は一昨日市場にいませんでした",
+    "en": "You were not at the market the day before yesterday."
+  },
+  "36-54": {
+    "ne": "तिमीहरू अस्ति बजारमा थिएनौ।",
+    "roman": "timīharū asti bajārmā thienau",
+    "ja": "君たちは一昨日市場にいませんでした",
+    "en": "You were not at the market the day before yesterday."
+  },
+  "36-55": {
+    "ne": "तपाईं अस्ति बजारमा हुनुहुन्नथ्यो।",
+    "roman": "tapāĩ asti bajārmā hunuhunnathyo",
+    "ja": "あなたは一昨日市場にいませんでした",
+    "en": "You were not at the market the day before yesterday."
+  },
+  "36-56": {
+    "ne": "उ अस्ति बजारमा थिएन।",
+    "roman": "u asti bajārmā thiena",
+    "ja": "彼は一昨日市場にいませんでした",
+    "en": "He was not at the market the day before yesterday."
+  },
+  "36-57": {
+    "ne": "उनी अस्ति बजारमा थिइनन्।",
+    "roman": "unī asti bajārmā thiinan",
+    "ja": "彼女は一昨日市場にいませんでした",
+    "en": "She was not at the market the day before yesterday."
+  },
+  "36-58": {
+    "ne": "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+    "roman": "uhā̃ asti bajārmā hunuhunnathyo",
+    "ja": "あの方は一昨日市場にいませんでした",
+    "en": "He was not at the market the day before yesterday."
+  },
+  "36-59": {
+    "ne": "हामी अस्ति बजारमा थिएनौं।",
+    "roman": "hāmī asti bajārmā thienaũ",
+    "ja": "私たちは一昨日市場にいませんでした",
+    "en": "We were not at the market the day before yesterday."
+  },
+  "36-60": {
+    "ne": "उनीहरू अस्ति बजारमा थिएनन्।",
+    "roman": "unīharū asti bajārmā thienan",
+    "ja": "彼らは一昨日市場にいませんでした",
+    "en": "They were not at the market the day before yesterday."
+  },
+  "36-61": {
+    "ne": "यो नयाँ कापी हो।",
+    "roman": "yo nayā̃ kāpī ho",
+    "ja": "これは新しいノートです",
+    "en": "This is a new notebook."
+  },
+  "36-62": {
+    "ne": "त्यो मेरो कापी होइन।",
+    "roman": "tyo mero kāpī hoina",
+    "ja": "それは私のノートではありません",
+    "en": "That is not my notebook."
+  },
+  "36-63": {
+    "ne": "मेरो कापी झोलामा छ।",
+    "roman": "mero kāpī jholāmā cha",
+    "ja": "私のノートはかばんの中にあります",
+    "en": "My notebook is in the bag."
+  },
+  "36-64": {
+    "ne": "तिम्रो कापी झोलामा छैन।",
+    "roman": "timro kāpī jholāmā chaina",
+    "ja": "君のノートはかばんの中にありません",
+    "en": "Your notebook is not in the bag."
+  },
+  "36-65": {
+    "ne": "यो पहिले पुस्तकालय थियो।",
+    "roman": "yo pahile pustakālaya thiyo",
+    "ja": "ここは以前図書館でした",
+    "en": "This used to be a library."
+  },
+  "36-66": {
+    "ne": "मेरो कापी अस्ति यहाँ थिएन।",
+    "roman": "mero kāpī asti yahā̃ thiena",
+    "ja": "私のノートは一昨日ここにありませんでした",
+    "en": "My notebook was not here the day before yesterday."
+  },
+  "36-67": {
+    "ne": "उनी बाहिर छन्।",
+    "roman": "unī bāhira chan",
+    "ja": "その方は外にいます",
+    "en": "That person is outside."
+  }
+}
