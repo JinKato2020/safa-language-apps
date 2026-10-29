@@ -1,6 +1,6 @@
 {
-  "packVersion": 1206,
-  "previousVersion": 1205,
+  "packVersion": 1207,
+  "previousVersion": 1206,
   "topics": 36,
   "languages": [
     "ja",
@@ -8,8 +8,11 @@
   ],
   "examplesUnchanged": 528,
   "audioChanged": false,
-  "clientCodeChanged": false,
+  "clientCodeChanged": true,
   "appRebuilt": false,
+  "appBuildRequired": true,
+  "colorRendererMinimumVersion": "2.1.5",
+  "olderReaderFallback": "existing plain layout; same examples and audio",
   "hunuTopicMapping": {
     "हो": [
       1
@@ -230,13 +233,31 @@
       "When you want to know more"
     ]
   },
+  "layout": {
+    "existingNativeBlocksOnly": true,
+    "boldLearningAnchors": true,
+    "yellowWarningCards": false,
+    "warningSymbols": false,
+    "detailedExplanationPosition": "after quick learning sequence",
+    "repeatedRules": "sentence-specific comments retained; duplicated full rules removed",
+    "semanticColors": true,
+    "presetTones": [
+      "blue",
+      "green",
+      "violet",
+      "rose",
+      "teal"
+    ],
+    "numberBadges": true,
+    "largeExampleText": true
+  },
   "audioReferencesPreserved": {
     "core": {
       "audioVersion": 1009,
       "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-core-1009.zip",
       "audioZipBytes": 39289890,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1205.json",
-      "version": 1205
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1206.json",
+      "version": 1206
     },
     "en": {
       "audioVersion": 1009,
@@ -245,10 +266,10 @@
       "l1": "en",
       "name": "English",
       "nameJa": "English",
-      "version": 1205,
+      "version": 1206,
       "access": "free",
-      "sizeBytes": 5013085,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1205.json"
+      "sizeBytes": 5002404,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1206.json"
     },
     "ja": {
       "audioVersion": 1010,
@@ -257,17 +278,17 @@
       "l1": "ja",
       "name": "日本語",
       "nameJa": "日本語",
-      "version": 1205,
+      "version": 1206,
       "access": "free",
-      "sizeBytes": 5260733,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1205.json"
+      "sizeBytes": 5236910,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1206.json"
     }
   },
   "payloadSHA256": {
-    "catalog.json": "5492f41400436af0f9d0553b1cec8121b5d92419a7f0c2414ecb02f01bde0579",
-    "core-1206.json": "1a7cd9447275573cb0121f27403250f8c77c4ed1f98a4ccc17c1f2533c939428",
-    "overlay-en-1206.json": "6926843e8ac9e17cd7d0a179384fa5a9af1f0edc8e98b2d14f6e62078c3210a4",
-    "overlay-ja-1206.json": "7e75b9fe8d6853c3ba3f430d03a2fe1d6e79e7bac330d1e031eaf4cd545408e8"
+    "catalog.json": "1d2e349558e7495e1dbf961e842a949f6c4cf11d41a098a6082d02650c3e0f2c",
+    "core-1207.json": "7eb6fb72e90f8a3fbb5b940a31cde11c03f1300522e824ff7bf28188c8ae62fa",
+    "overlay-en-1207.json": "948833488b56c2a4cad5a1303f1461b80dd959645ea1c58816f30f590b5c3c91",
+    "overlay-ja-1207.json": "cdaf5defbb11385d8d4ad085ae02f380cd30d107ad5cb8e591570a170326c7f7"
   },
   "verificationSources": [
     "https://pressbooks.bccampus.ca/nepali/chapter/chapter-5-unit-4-grammar-focus/",
@@ -275,30 +296,24 @@
     "https://pressbooks.bccampus.ca/nepali/chapter/chapter-13-unit-4-grammar-focus/",
     "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1979%20Intermediate%20Nepali%20Structure%20by%20Verma%20s.pdf"
   ],
-  "layout": {
-    "existingNativeBlocksOnly": true,
-    "boldLearningAnchors": true,
-    "yellowWarningCards": false,
-    "warningSymbols": false,
-    "detailedExplanationPosition": "after quick learning sequence",
-    "repeatedRules": "sentence-specific comments retained; duplicated full rules removed"
-  },
   "runtimeVerification": {
     "passed": true,
     "readers": [
       "2.1.3@89c0982a",
-      "2.1.4"
+      "2.1.4@62f7b756",
+      "2.1.5"
     ],
     "languages": [
       "ja",
       "en"
     ],
-    "all36GuidesUpdated": true,
-    "all528ExamplesPreserved": true,
-    "cachedAudioDownloads": 0,
-    "balancedBoldMarkup": true,
-    "yellowWarningCards": 0,
-    "warningSymbols": 0,
-    "browserPreview": "390px content columns using current native typography/spacing; themes1/5/29 inspected; this is a browser layout preview, not device verification"
+    "scenarios": [
+      "fresh download",
+      "old cache with zero audio downloads",
+      "offline reload"
+    ],
+    "nativeRendererUnitAndContrastChecks": true,
+    "typescriptAllAppsPassed": true,
+    "colorReport": "文法教材/教材カラー表示_検証結果.json"
   }
 }

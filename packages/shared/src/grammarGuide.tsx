@@ -2,14 +2,16 @@
 // 未注入(App B/C)や未対応言語では教材ボタンを出さない=影響なし。
 import { createContext, useContext, type ReactNode } from 'react';
 import { useAppData } from './AppDataContext';
+import type { GuidePresentation } from './grammarPresentation';
 
 // アプリが描画する構造化ブロック
-export type GuideBlock =
+export type GuideBlock = (
   | { type: 'goal'; text: string }
   | { type: 'h'; text: string }
   | { type: 'p'; text: string }
   | { type: 'note'; text: string }
-  | { type: 'table'; headers: string[]; rows: string[][] };
+  | { type: 'table'; headers: string[]; rows: string[][] }
+) & { presentation?: GuidePresentation };
 
 // テーマid("1".."30") → ブロック列
 export type GrammarGuideData = Record<string, GuideBlock[]>;

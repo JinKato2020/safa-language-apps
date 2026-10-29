@@ -165,3 +165,48 @@ def make_lesson(theme,lang,example,roman,translation,fields,deep_hunu):
         bs.append(h(labels[i]));bs.extend(short_paragraphs(fields[i][0 if ja else 1],lang))
     bs.extend(detail_blocks(deep_hunu,lang))
     return bs
+
+def color_blocks(blocks,lang):
+    """Optional semantic presentation; older readers safely ignore metadata."""
+    result=copy.deepcopy(blocks)
+    section='details'
+    for b in result:
+        text=b.get('text','')
+        if b.get('beginnerIntroEnd'):continue
+        if b['type']=='goal':
+            b['presentation']={'tone':'blue','role':'body'};continue
+        if b['type']=='h':
+            if text.startswith('① '):section='example'
+            elif text.startswith('② '):section='steps'
+            elif text in ['まちがい注意','Watch out']:section='caution'
+            elif text.startswith('③ '):section='check'
+            elif text.startswith(('हुनुの地図','Your हुनु map')):section='map'
+            else:section='details'
+            tone={'example':'green','steps':'violet','caution':'rose','check':'teal','map':'blue','details':'blue'}[section]
+            if 'छ系：' in text or 'छ set:' in text:tone='green'
+            if 'हुन्छ系：' in text or 'हुन्छ set:' in text:tone='violet'
+            b['presentation']={'tone':tone,'role':'plain'}
+        elif b['type']=='table':
+            b['presentation']={'tone':'blue'}
+            first=[str(r[0]).replace('**','') for r in b['rows']]
+            if len(first)==3 and all(any(s.startswith(form) for s in first) for form in ['हो','छ','हुन्छ']):
+                b['presentation']['rowTones']=['blue','green','violet']
+        elif b['type']=='p' and text:
+            tone={'example':'green','steps':'violet','caution':'rose','check':'teal','map':'blue','details':'blue'}[section]
+            role='body' if section in ['example','caution','check','map'] else 'plain'
+            if section=='example':role='example' if text.startswith('**') else 'reading'
+            if section=='steps' and re.match(r'^\*\*\d+\*\*\s',text):role='step'
+            b['presentation']={'tone':tone,'role':role}
+    # Connect consecutive example lines and check answers into one visual card.
+    i=0
+    while i<len(result):
+        b=result[i];pres=b.get('presentation',{})
+        if b['type']=='p' and pres.get('tone') in ['green','teal'] and pres.get('role')!='plain':
+            j=i+1
+            while j<len(result) and result[j]['type']=='p' and result[j].get('presentation',{}).get('tone')==pres['tone'] and result[j].get('presentation',{}).get('role')!='plain':j+=1
+            if j-i>1:
+                for n in range(i,j):result[n]['presentation']['join']='start' if n==i else 'end' if n==j-1 else 'middle'
+                if pres['tone']=='green':result[j-1]['presentation']['role']='translation'
+            i=j
+        else:i+=1
+    return result

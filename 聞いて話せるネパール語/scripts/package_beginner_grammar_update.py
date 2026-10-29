@@ -39,6 +39,7 @@ def main():
     p.add_argument('--previous-dir', type=Path, required=True)
     p.add_argument('--output-dir', type=Path, required=True)
     p.add_argument('--revision', type=int, required=True)
+    p.add_argument('--renderer-update', action='store_true', help='This release also changes the app renderer; ordinary content updates leave this off')
     a=p.parse_args()
     old=read(a.previous_dir/'catalog.json'); cat=copy.deepcopy(old)
     assert a.revision>old['core']['version']
@@ -79,7 +80,8 @@ def main():
                     'teachingSections':len(fields)} for k,fields in LESSONS.items()}
     report={'packVersion':a.revision,'previousVersion':old['core']['version'],'topics':36,
             'languages':['ja','en'],'examplesUnchanged':sum(map(len,core['grammarNe'].values())),
-            'audioChanged':False,'clientCodeChanged':False,'appRebuilt':False,
+            'audioChanged':False,'clientCodeChanged':a.renderer_update,'appRebuilt':False,
+            'appBuildRequired':a.renderer_update,'colorRendererMinimumVersion':'2.1.5','olderReaderFallback':'existing plain layout; same examples and audio',
             'hunuTopicMapping':{'हो':[1],'छ':[2,3],'हुन्छ':[4],'review':[36]},
             'basicThirdPerson':['उहाँ','उहाँहरू'],'familiarThirdPersonTopic':7,
             'lessonIntroductions':stats,'sections':{'ja':['ここだけ覚えよう','例文1つ','3ステップ','まちがい注意','できたかチェック','もっと知りたいときに'], 'en':['Remember this','One example','3 steps','Watch out','Quick check','When you want to know more']},

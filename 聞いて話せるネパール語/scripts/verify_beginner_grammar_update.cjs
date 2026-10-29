@@ -41,7 +41,7 @@ for(const lang of ['ja','en']){
 }
 console.log('PASS all36 teaching sequences in ja/en, worked examples, question/answer, hunu map/paradigms and supported blocks; existing text/dictionary/audio unchanged');
 const ids=[...Object.entries(core.examplesNe).flatMap(([key,rows])=>rows.map((_,i)=>`${key}-${i+1}`)),...Object.entries(core.grammarNe).flatMap(([key,rows])=>rows.map((_,i)=>`${key}-${i+1}`))];
-function source(version,name){const p=`聞いて話せるネパール語/expo-app/src/${name}.ts`;return version==='2.1.3'?cp.execFileSync('git',['show',`89c0982a:${p}`],{cwd:ROOT,encoding:'utf8'}):fs.readFileSync(path.join(ROOT,p),'utf8')}
+function source(version,name){const p=`聞いて話せるネパール語/expo-app/src/${name}.ts`;return ['2.1.3','2.1.4'].includes(version)?cp.execFileSync('git',['show',`${version==='2.1.3'?'89c0982a':'62f7b756'}:${p}`],{cwd:ROOT,encoding:'utf8'}):fs.readFileSync(path.join(ROOT,p),'utf8')}
 function compile(code,customRequire){
  const module={exports:{}};const js=ts.transpileModule(code,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText;
  vm.runInNewContext(`(function(require,module,exports){${js}\n})`,{fetch:async()=>({ok:true,json:async()=>catalog}),setTimeout,clearTimeout,global,console,Buffer,Uint8Array})(customRequire,module,module.exports);return module.exports;
@@ -76,4 +76,4 @@ async function scenario(version,lang,cached){
  const offline=await loader.loadPack(lang,undefined,true,true);assert.deepEqual(offline.GRAMMAR_GUIDE,out.GRAMMAR_GUIDE);
  console.log(`PASS ${version} ${lang} ${cached?'existing cache: zero audio downloads':'fresh: unchanged audio assets'}; all36 guides,528 audio paths, offline reload`);
 }
-(async()=>{for(const v of ['2.1.3','2.1.4'])for(const l of ['ja','en'])for(const cached of [false,true])await scenario(v,l,cached)})().catch(e=>{console.error(e);process.exit(1)});
+(async()=>{for(const v of ['2.1.3','2.1.4','2.1.5'])for(const l of ['ja','en'])for(const cached of [false,true])await scenario(v,l,cached)})().catch(e=>{console.error(e);process.exit(1)});

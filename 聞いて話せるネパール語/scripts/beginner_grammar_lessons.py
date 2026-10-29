@@ -112,8 +112,8 @@ def expand_guides(guides, examples, readings, translations):
             intro=lesson_blocks(theme,lang,examples[key][0],readings[key][0],translations[lang][key][0])
             # A zero-length paragraph is the saved, invisible insertion boundary.
             # Its index is stored in the teacher's source, not shown as a label.
-            from friendly_grammar_layout import detail_blocks
-            topics[key]=intro+[{'type':'p','text':'','beginnerIntroEnd':True}]+detail_blocks(filtered,lang)
+            from friendly_grammar_layout import detail_blocks, color_blocks
+            topics[key]=color_blocks(intro+[{'type':'p','text':'','beginnerIntroEnd':True}]+detail_blocks(filtered,lang),lang)
     return result
 
 # idea, pattern, steps, worked example, contrasts, question and explained answer.
