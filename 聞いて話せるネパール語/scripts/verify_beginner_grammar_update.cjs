@@ -14,8 +14,8 @@ for(const entry of [catalog.core,...catalog.packs]){
  for(const key of ['audioZip','audioVersion','audioZipBytes'])assert.equal(entry[key],old[key]);
  if(entry.l1)assert.deepEqual(without(payload(entry.url),['grammarGuide','version','curriculumRevision']),without(oldPayload(old.url),['grammarGuide','version','curriculumRevision']));
 }
-const headings={ja:['何を伝えるための文法か','言葉の意味と文の型','文を作る順番','例文を分けて読む','否定・疑問と、似た言い方との違い','自分で確かめる：問題と理由付きの答え'],
- en:['What this grammar helps you say','Terms and sentence pattern','Build the sentence step by step','Read an example in parts','Negatives, questions and related patterns','Check your understanding: question and explained answer']};
+const headings={ja:['ここだけ覚えよう','① 例文でつかもう','② **3ステップ**で作ろう','まちがい注意','③ できたかチェック','もっと知りたいときに：くわしい説明'],
+ en:['Remember this','① Start with one example','② Build it in **3 steps**','Watch out','③ Quick check','When you want to know more']};
 const familiar=/(?<![\u0900-\u097f])(?:उनी(?:हरू)?(?:ले|लाई|को)?|उन(?:ले|लाई|को)|उस(?:ले|लाई|को)|ऊ|उ)(?![\u0900-\u097f])/u;
 for(const lang of ['ja','en']){
  const overlay=payload(catalog.packs.find(x=>x.l1===lang).url);
@@ -23,14 +23,18 @@ for(const lang of ['ja','en']){
  for(const [key,blocks] of Object.entries(overlay.grammarGuide)){
   const boundary=blocks.findIndex(b=>b.beginnerIntroEnd);assert(boundary>10,key);
   const intro=JSON.stringify(blocks.slice(0,boundary));
+  assert.equal(blocks.filter(b=>b.type==='note').length,0,'No yellow warning cards');
+  assert(!JSON.stringify(blocks).includes('⚠'),'No warning symbols');
+  assert.equal(blocks.slice(0,boundary).filter(b=>b.type==='goal').length,1,'One clear takeaway card');
+  for(const b of blocks)for(const text of b.type==='table'?[...b.headers,...b.rows.flat()]:[b.text||''])assert.equal((text.match(/\*\*/g)||[]).length%2,0,'Balanced emphasis');
   for(const h of headings[lang])assert(intro.includes(h),key+' '+h);
   assert(intro.includes(core.grammarNe[key][0]),'Worked exercise missing '+key);
   if(key!=='7')assert(!familiar.test(JSON.stringify(blocks)),key);
   for(const b of blocks){assert(['h','p','table','note','goal'].includes(b.type));if(b.type==='table')for(const row of b.rows)assert.equal(row.length,b.headers.length)}
-  for(const sentence of core.grammarNe[key])assert(JSON.stringify(blocks).includes(sentence),'Practice missing '+key);
+  for(const sentence of core.grammarNe[key])assert(JSON.stringify(blocks).replaceAll('**','').includes(sentence),'Practice missing '+key);
  }
  for(const key of ['1','2','3','4','36']){
-  const text=JSON.stringify(overlay.grammarGuide[key]);
+  const text=JSON.stringify(overlay.grammarGuide[key]).replaceAll('**','');
   for(const form of ['हुनु','हो / ho','छ / cha','हुन्छ / huncha','हुनुहुन्छ / hunuhuncha','हुनुहुन्न / hunuhunna'])assert(text.includes(form),key+' '+form);
   const first=({'1':'हुँ / hũ','2':'छु / chu','3':'छु / chu','4':'हुन्छु / hunchu','36':'हुँ / hũ'})[key];assert(text.includes(first));
  }

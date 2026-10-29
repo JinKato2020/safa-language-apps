@@ -82,7 +82,8 @@ def main():
             'audioChanged':False,'clientCodeChanged':False,'appRebuilt':False,
             'hunuTopicMapping':{'हो':[1],'छ':[2,3],'हुन्छ':[4],'review':[36]},
             'basicThirdPerson':['उहाँ','उहाँहरू'],'familiarThirdPersonTopic':7,
-            'lessonIntroductions':stats,'sections':{'ja':[x[0] for x in HEADINGS],'en':[x[1] for x in HEADINGS]},
+            'lessonIntroductions':stats,'sections':{'ja':['ここだけ覚えよう','例文1つ','3ステップ','まちがい注意','できたかチェック','もっと知りたいときに'], 'en':['Remember this','One example','3 steps','Watch out','Quick check','When you want to know more']},
+            'layout':{'existingNativeBlocksOnly':True,'boldLearningAnchors':True,'yellowWarningCards':False,'warningSymbols':False,'detailedExplanationPosition':'after quick learning sequence','repeatedRules':'sentence-specific comments retained; duplicated full rules removed'},
             'audioReferencesPreserved':{'core':old['core'],**{e['l1']:e for e in old['packs']}},
             'payloadSHA256':{x.name:sha(x) for x in a.output_dir.iterdir() if x.is_file()},
             'verificationSources':[

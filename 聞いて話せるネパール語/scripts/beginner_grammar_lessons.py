@@ -79,17 +79,10 @@ def hunu_blocks(theme, lang):
     return bs
 
 def lesson_blocks(theme, lang, example, roman, translation):
-    assert len(LESSONS[theme]) == 6
-    bs = [heading(pick(('基本の考え方と文の作り方', 'Meaning and sentence construction'),lang))]
-    for index,pair in enumerate(LESSONS[theme]):
-        bs.append(heading(pick(HEADINGS[index],lang)))
-        if index==3:
-            bs.append(table(pick((['ネパール語','読み','意味'],['Nepali','Reading','Meaning']),lang),[[example,roman,translation]]))
-        bs.append(paragraph(pick(pair,lang)))
-    if theme in [1,2,3,4,36]:
-        bs.append(heading(pick(TITLES[str(theme)],lang)))
-        bs.extend(hunu_blocks(theme,lang))
-    return bs
+    from friendly_grammar_layout import make_lesson
+    return make_lesson(theme,lang,example,roman,translation,LESSONS[theme],
+        hunu_blocks(theme,lang) if theme in [1,2,3,4,36] else [])
+
 
 def expand_guides(guides, examples, readings, translations):
     """Replace only the short intro; preserve existing inventories and analyses."""
@@ -119,7 +112,8 @@ def expand_guides(guides, examples, readings, translations):
             intro=lesson_blocks(theme,lang,examples[key][0],readings[key][0],translations[lang][key][0])
             # A zero-length paragraph is the saved, invisible insertion boundary.
             # Its index is stored in the teacher's source, not shown as a label.
-            topics[key]=([goal] if goal else [])+intro+[{'type':'p','text':'','beginnerIntroEnd':True}]+filtered
+            from friendly_grammar_layout import detail_blocks
+            topics[key]=intro+[{'type':'p','text':'','beginnerIntroEnd':True}]+detail_blocks(filtered,lang)
     return result
 
 # idea, pattern, steps, worked example, contrasts, question and explained answer.
