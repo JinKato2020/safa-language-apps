@@ -1615,11 +1615,8 @@
     }
   },
   "payloadSHA256": {
-    "audio-core-1008.zip": "4c9a913a4749eb8aa93c8a4c06aef6ea99fde592a30b8327ae61241bcd53cf7c",
     "audio-core-1009.zip": "dd36f63ba8d5ebe20f0ae952a18540ae6a1afed1a7975ba8906fc4521dfe9172",
-    "audio-en-1008.zip": "3eb59bd820bfd80cddcb183193dbc1e4c08e2eb72147e9c92d8ed5aaeeeefb96",
     "audio-en-1009.zip": "5be661730493bfb7b9cd45090c4bd5db49541c5bbef56e2554611f9d8db29d54",
-    "audio-ja-1009.zip": "90faa23dfc219e7bd52690792e5a5bfac130dbbe5564d70fc479f24647ee005e",
     "audio-ja-1010.zip": "691e3ed777d4d9af062ee5e6d0ba0929bb14b947bf4afae51b6e4e50023b1362",
     "catalog.json": "ca200c9ff62ee839c3eeb1e7a2ae200542bd1ca85f23f76ef2c0880f4045c5c0",
     "core-1204.json": "6411be019a2300878c33f2bb2ec8732896c968b5027d57733d7c49ecb9876558",

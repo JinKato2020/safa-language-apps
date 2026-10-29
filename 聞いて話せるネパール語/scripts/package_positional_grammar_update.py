@@ -97,9 +97,12 @@ def main():
         checks[lang] = {'grammarFiles': len(ids), 'conversationFilesUnchanged': len(conv_ids), 'audioVersion': version,
                         'positionalAudioSHA256': audio_hashes}
     write(a.output_dir / 'catalog.json', cat)
+    asset_names = {'catalog.json'}
+    for entry in [cat['core'], *cat['packs']]:
+        asset_names.update([entry['url'].rsplit('/', 1)[1], entry['audioZip'].rsplit('/', 1)[1]])
     report = {'packVersion': a.revision, 'compatibleAppVersions': ['2.1.3', '2.1.4'], 'appRebuilt': False,
               'clientCodeChanged': False, 'grammarExamples': len(ids), 'languages': checks,
-              'payloadSHA256': {x.name: sha(x.read_bytes()) for x in a.output_dir.iterdir() if x.is_file()},
+              'payloadSHA256': {x.name: sha(x.read_bytes()) for x in a.output_dir.iterdir() if x.name in asset_names},
               'readerSourceCommit': '89c0982a', 'format': 'theme-index.mp3; no shipped grammarAudioRefs'}
     write(APP / '文法教材/教材音声セット更新_検証結果.json', report)
     write(APP / '文法教材/grammar_pack_v2_catalog.json', cat)

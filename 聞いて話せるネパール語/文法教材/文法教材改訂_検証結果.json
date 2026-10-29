@@ -61,9 +61,9 @@
     "audio-ja.zip": "0ede19cbd91958cc01ba1b6ea874c9eb12bf490f9c3869fb99eaffa719f23141"
   },
   "audioZipSHA256": {
-    "ne": "4c9a913a4749eb8aa93c8a4c06aef6ea99fde592a30b8327ae61241bcd53cf7c",
-    "ja": "90faa23dfc219e7bd52690792e5a5bfac130dbbe5564d70fc479f24647ee005e",
-    "en": "3eb59bd820bfd80cddcb183193dbc1e4c08e2eb72147e9c92d8ed5aaeeeefb96"
+    "ne": "dd36f63ba8d5ebe20f0ae952a18540ae6a1afed1a7975ba8906fc4521dfe9172",
+    "en": "5be661730493bfb7b9cd45090c4bd5db49541c5bbef56e2554611f9d8db29d54",
+    "ja": "691e3ed777d4d9af062ee5e6d0ba0929bb14b947bf4afae51b6e4e50023b1362"
   },
   "audioAdditionReport": "音声追加_検証結果.json",
   "authoringRevision": 1203,
