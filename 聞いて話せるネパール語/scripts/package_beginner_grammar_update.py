@@ -7,6 +7,7 @@ import hashlib
 import json
 from beginner_grammar_lessons import LESSONS, expand_guides
 from nepali_rule_lessons import rules
+from nepali_lesson_glosses import numbered_title
 
 ROOT = Path(__file__).resolve().parents[2]
 APP = ROOT / '聞いて話せるネパール語'
@@ -25,7 +26,7 @@ def sha(path):
 def markdown(guides, titles, lang):
     lines=['# '+('ネパール語文法教材：基礎から分かる解説' if lang=='ja' else 'Nepali grammar: explanations from the basics'),'']
     for key,blocks in guides.items():
-        lines.extend(['## '+key+' '+titles[key],''])
+        lines.extend(['## '+titles[key],''])
         for block in blocks:
             if block['type']=='table':
                 lines.extend(['| '+' | '.join(block['headers'])+' |','| '+' | '.join('---' for _ in block['headers'])+' |'])
@@ -52,17 +53,18 @@ def main():
     with (SRC/'文法練習例文_v2.csv').open(encoding='utf-8-sig',newline='') as f:
         for row in csv.DictReader(f):
             readings[{'A':'35','B':'36'}.get(row['theme_no'],row['theme_no'])].append(row['roman'])
+    titles={l:{k:numbered_title(int(k),v,l) for k,v in o['grammarThemeNames'].items()} for l,o in overlays.items()}
     guides=expand_guides({l:o['grammarGuide'] for l,o in overlays.items()}, core['grammarNe'], readings,
-                         {l:o['grammarL1'] for l,o in overlays.items()})
+                         {l:o['grammarL1'] for l,o in overlays.items()},titles)
     # Expanding a saved lesson twice must not duplicate its introduction.
-    assert guides==expand_guides(guides,core['grammarNe'],readings,{l:o['grammarL1'] for l,o in overlays.items()})
+    assert guides==expand_guides(guides,core['grammarNe'],readings,{l:o['grammarL1'] for l,o in overlays.items()},titles)
     prefix='https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/'
     a.output_dir.mkdir(parents=True,exist_ok=True)
     core['curriculumRevision']=a.revision
     name=f'core-{a.revision}.json';write(a.output_dir/name,core)
     cat['core'].update(version=a.revision,url=prefix+name)
     for lang,o in overlays.items():
-        o.update(grammarGuide=guides[lang],version=a.revision,curriculumRevision=a.revision)
+        o.update(grammarGuide=guides[lang],grammarThemeNames=titles[lang],version=a.revision,curriculumRevision=a.revision)
         name=f'overlay-{lang}-{a.revision}.json';write(a.output_dir/name,o)
         e=next(e for e in cat['packs'] if e['l1']==lang)
         e.update(version=a.revision,url=prefix+name,sizeBytes=(a.output_dir/name).stat().st_size)

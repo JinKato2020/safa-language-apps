@@ -1,0 +1,62 @@
+{
+  "packVersion": 1209,
+  "topics": 36,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "distinctIllustrativePhrases": 327,
+  "bilingualOccurrenceChecks": 756,
+  "numberedTitles": 72,
+  "requestedThreeExamplesTranslated": true,
+  "incorrectExamplesExplicitlyLabelled": true,
+  "titleSource": "overlay.grammarThemeNames used by ThemeScreen -> GrammarGuide route.title",
+  "fullTitleInBody": true,
+  "appendices": "35=Appendix A,36=Appendix B",
+  "uxChanges": [
+    "inline L1 translations",
+    "short takeaway before worked example",
+    "all rules numbered from1",
+    "sentence breaks keep examples/glosses together",
+    "dekhi/bata comparison2columns"
+  ],
+  "nativeCodeChanged": false,
+  "appRebuilt": false,
+  "examplesAudioDictionaryUnchanged": true,
+  "actualReaders": [
+    "2.1.3",
+    "2.1.4",
+    "2.1.5"
+  ],
+  "readerScenarios": 12,
+  "offlineReload": true,
+  "cachedAudioDownloads": 0,
+  "all72ColorLayoutsPass": true,
+  "layoutMeasurements": [
+    {
+      "width": 390,
+      "overflow": 0,
+      "outside": 0
+    },
+    {
+      "width": 320,
+      "overflow": 0,
+      "outside": 0
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "outside": 0
+    }
+  ],
+  "previewMethod": "actual native Block TSX with DOM adapters in isolated headless Edge; not native device verification",
+  "preview": "docs/previews/nepali-lesson-ux-1209.png",
+  "nativeDeviceVerified": false,
+  "publicationVerified": true,
+  "catalogSHA256": "81884f8e533ea770f431478bdeb42eba6193fce238d8165b6a9a49ffcab478ff",
+  "payloadSHA256Verified": true,
+  "catalogs": [
+    "packs-appa-v2",
+    "packs-appa-v3"
+  ]
+}

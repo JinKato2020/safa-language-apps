@@ -12,7 +12,11 @@ assert.deepEqual(without(core,['curriculumRevision']),without(oldCore,['curricul
 for(const entry of [catalog.core,...catalog.packs]){
  const old=entry===catalog.core?oldCatalog.core:oldCatalog.packs.find(x=>x.l1===entry.l1);
  for(const key of ['audioZip','audioVersion','audioZipBytes'])assert.equal(entry[key],old[key]);
- if(entry.l1)assert.deepEqual(without(payload(entry.url),['grammarGuide','version','curriculumRevision']),without(oldPayload(old.url),['grammarGuide','version','curriculumRevision']));
+ if(entry.l1){
+  assert.deepEqual(without(payload(entry.url),['grammarGuide','grammarThemeNames','version','curriculumRevision']),without(oldPayload(old.url),['grammarGuide','grammarThemeNames','version','curriculumRevision']));
+  const strip=s=>s.replace(/^(?:テーマ|Theme)\s*\d+\s*(?:[（(](?:付録|Appendix )?[AB][）)])?\s*[｜|:：—–-]\s*/,'');
+  for(const [k,name] of Object.entries(payload(entry.url).grammarThemeNames))assert.equal(strip(name),strip(oldPayload(old.url).grammarThemeNames[k]),'Only theme number/appendix label added to the title');
+ }
 }
 const headings={ja:['文の型と使い分け','① 例文でつかもう','② ネパール語のルール'],
  en:['Pattern and choice','① Start with one example','② Nepali grammar rules']};
@@ -23,6 +27,9 @@ for(const lang of ['ja','en']){
  for(const [key,blocks] of Object.entries(overlay.grammarGuide)){
   const boundary=blocks.findIndex(b=>b.beginnerIntroEnd);assert(boundary>=14,key);
   const intro=JSON.stringify(blocks.slice(0,boundary));
+  assert(blocks[0].lessonTitle,'Full title at the top of the lesson');
+  assert.equal(blocks[0].text,overlay.grammarThemeNames[key],'Header and body use the same numbered title');
+  assert(overlay.grammarThemeNames[key].startsWith((lang==='ja'?'テーマ':'Theme ')+key),'Theme number in route title');
   assert.equal(blocks.filter(b=>b.type==='note').length,0,'No yellow warning cards');
   assert(!JSON.stringify(blocks).includes('⚠'),'No warning symbols');
   assert.equal(blocks.slice(0,boundary).filter(b=>b.type==='goal').length,1,'One clear takeaway card');
@@ -89,6 +96,7 @@ async function scenario(version,lang,cached){
  const info=await loader.getPackDownloadInfo(lang);assert(info.needsDownload);
  if(cached)assert.equal(info.bytes,entry.sizeBytes,'Existing audio must not be charged as a new download');
  const out=await loader.loadPack(lang);assert.deepEqual(JSON.parse(JSON.stringify(out.GRAMMAR_GUIDE)),payload(entry.url).grammarGuide);
+ for(const theme of out.GRAMMAR_THEMES)assert.equal(theme.name,payload(entry.url).grammarThemeNames[String(theme.id)],'Numbered title reaches actual app navigation data');
  let count=0;for(const [key,rows] of Object.entries(core.grammarNe))for(const [i,ne] of rows.entries()){
   const id=`${key}-${i+1}`;count++;assert.equal(out.getGrammarExamples(Number(key))[i].ne,ne);assert.equal(out.audio.nepaliGrammarAudio[id],cd+`audio/${id}.mp3`);assert.equal(out.audio.japaneseGrammarAudio[id],ld+`audio/${id}.mp3`);
  }assert.equal(count,528);

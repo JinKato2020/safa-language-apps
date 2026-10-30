@@ -1,6 +1,6 @@
 {
-  "packVersion": 1208,
-  "previousVersion": 1207,
+  "packVersion": 1209,
+  "previousVersion": 1208,
   "topics": 36,
   "languages": [
     "ja",
@@ -1086,8 +1086,8 @@
       "audioVersion": 1009,
       "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-core-1009.zip",
       "audioZipBytes": 39289890,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1207.json",
-      "version": 1207
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1208.json",
+      "version": 1208
     },
     "en": {
       "audioVersion": 1009,
@@ -1096,10 +1096,10 @@
       "l1": "en",
       "name": "English",
       "nameJa": "English",
-      "version": 1207,
+      "version": 1208,
       "access": "free",
-      "sizeBytes": 5433358,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1207.json"
+      "sizeBytes": 5064758,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1208.json"
     },
     "ja": {
       "audioVersion": 1010,
@@ -1108,17 +1108,17 @@
       "l1": "ja",
       "name": "日本語",
       "nameJa": "日本語",
-      "version": 1207,
+      "version": 1208,
       "access": "free",
-      "sizeBytes": 5671796,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1207.json"
+      "sizeBytes": 5262571,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1208.json"
     }
   },
   "payloadSHA256": {
-    "catalog.json": "f0e93fceba6c478554647f1782156010751657dd85c7f6f9493f669fd8c598e5",
-    "core-1208.json": "d22ae12d376010ab0b9d9dbada8e301a9f5a964a33ee35b836821fccc2473e7f",
-    "overlay-en-1208.json": "4f9ba279c12011c274b7344da8feb93b99d8ab6237239191683d76b34b6feb99",
-    "overlay-ja-1208.json": "c2591a2edea7fdccbadcac85ecd8a705a0c293c8617eebd00e2ad06d702a904f"
+    "catalog.json": "81884f8e533ea770f431478bdeb42eba6193fce238d8165b6a9a49ffcab478ff",
+    "core-1209.json": "a6250097c4c61dbded0c843c2d7288e6535b926c1f0866477271b38eca90333b",
+    "overlay-en-1209.json": "c829a7eca3d6e8d1dd5197b7c21f1d549a6849f35fa9c39c0860f8375824fd00",
+    "overlay-ja-1209.json": "13611816f46246b20ad7cc2450b3f9af5520d1f570f371bd7346026d9fe0a565"
   },
   "verificationSources": [
     "https://pressbooks.bccampus.ca/nepali/chapter/chapter-6-unit-4-grammar-focus/",
@@ -1130,48 +1130,75 @@
     "https://madhavpokharel.com.np/noun-class-agreement-in-nepali/"
   ],
   "reviewLimit": "Original bilingual explanations with source checks and automated consistency checks; not a native-speaker certification",
-  "verification": {
-    "actualReaders": [
-      "2.1.3@89c0982a",
-      "2.1.4@62f7b756",
-      "2.1.5 current"
-    ],
-    "runtimeScenarios": 12,
+  "uxReview": {
+    "packVersion": 1209,
+    "topics": 36,
     "languages": [
       "ja",
       "en"
     ],
-    "freshCachedOffline": true,
+    "distinctIllustrativePhrases": 327,
+    "bilingualOccurrenceChecks": 756,
+    "numberedTitles": 72,
+    "requestedThreeExamplesTranslated": true,
+    "incorrectExamplesExplicitlyLabelled": true,
+    "titleSource": "overlay.grammarThemeNames used by ThemeScreen -> GrammarGuide route.title",
+    "fullTitleInBody": true,
+    "appendices": "35=Appendix A,36=Appendix B",
+    "uxChanges": [
+      "inline L1 translations",
+      "short takeaway before worked example",
+      "all rules numbered from1",
+      "sentence breaks keep examples/glosses together",
+      "dekhi/bata comparison2columns"
+    ],
+    "nativeCodeChanged": false,
+    "appRebuilt": false,
+    "examplesAudioDictionaryUnchanged": true,
+    "actualReaders": [
+      "2.1.3",
+      "2.1.4",
+      "2.1.5"
+    ],
+    "readerScenarios": 12,
+    "offlineReload": true,
     "cachedAudioDownloads": 0,
-    "all528ExercisesTranslationsAndWordTablesPreserved": true,
-    "allConversationDictionaryAndReadingsPreserved": true,
-    "authoringIdempotent": true,
-    "all72ColorLayouts": true,
-    "paletteContrastAtLeast4_5": true,
-    "allPersonalComparisonTablesRespectfulAgreement": true,
-    "dekhiBataContrastTable": true,
-    "nativeDeviceChecked": false
-  },
-  "publication": {
-    "verified": true,
+    "all72ColorLayoutsPass": true,
+    "layoutMeasurements": [
+      {
+        "width": 390,
+        "overflow": 0,
+        "outside": 0
+      },
+      {
+        "width": 320,
+        "overflow": 0,
+        "outside": 0
+      },
+      {
+        "width": 390,
+        "overflow": 0,
+        "outside": 0
+      }
+    ],
+    "previewMethod": "actual native Block TSX with DOM adapters in isolated headless Edge; not native device verification",
+    "preview": "docs/previews/nepali-lesson-ux-1209.png",
+    "nativeDeviceVerified": false,
+    "publicationVerified": true,
+    "catalogSHA256": "81884f8e533ea770f431478bdeb42eba6193fce238d8165b6a9a49ffcab478ff",
     "payloadSHA256Verified": true,
     "catalogs": [
       "packs-appa-v2",
       "packs-appa-v3"
-    ],
-    "catalogSHA256": "f0e93fceba6c478554647f1782156010751657dd85c7f6f9493f669fd8c598e5",
-    "catalogsUpdatedAfterPayloadVerification": true,
-    "audioAssetsUploaded": 0,
-    "buildDispatched": false
+    ]
   },
-  "blockCounts": {
-    "ja": {
-      "before": 4768,
-      "after": 2784
-    },
-    "en": {
-      "before": 4727,
-      "after": 2775
-    }
+  "publication": {
+    "verified": true,
+    "catalogSHA256": "81884f8e533ea770f431478bdeb42eba6193fce238d8165b6a9a49ffcab478ff",
+    "payloadSHA256Verified": true,
+    "catalogs": [
+      "packs-appa-v2",
+      "packs-appa-v3"
+    ]
   }
 }

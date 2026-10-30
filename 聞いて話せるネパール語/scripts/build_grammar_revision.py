@@ -312,7 +312,10 @@ for lang in guides:
 guides=expand_guides(guides,
     {k:[r['ne'] for r in rs] for k,rs in lessons.items()},
     {k:[r['roman'] for r in rs] for k,rs in lessons.items()},
-    {lang:{k:[r[lang] for r in rs] for k,rs in lessons.items()} for lang in overlays})
+    {lang:{k:[r[lang] for r in rs] for k,rs in lessons.items()} for lang in overlays},titles)
+
+from nepali_lesson_glosses import numbered_title
+titles={lang:{k:numbered_title(int(k),v,lang) for k,v in names.items()} for lang,names in titles.items()}
 
 rows=[];audio_refs={}
 for k,items in lessons.items():

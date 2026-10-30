@@ -1,9 +1,12 @@
 # Nepali grammar: explanations from the basics
 
-## 1 हो: A is B (identity / equation)
+## Theme 1｜हो: A is B (identity / equation)
+
+### Theme 1｜हो: A is B (identity / equation)
 
 **Pattern and choice**
-**म + विद्यार्थी + हुँ** identifies the speaker as a student. Use the हो family with an identity noun. No article is needed before an occupation. Replacing विद्यार्थी with शिक्षक leaves हुँ unchanged with म.
+Identity noun + हो
+**म + विद्यार्थी + हुँ** (I + student + am → I am a student)
 
 ### ① Start with one example
 
@@ -15,21 +18,34 @@ I am a student.
 
 ### ② Nepali grammar rules
 
+### 1. Identity noun + हो
+
+**म + विद्यार्थी + हुँ** (I + student + am → I am a student) identifies the speaker as a student.
+ Use the हो family with an identity noun.
+ No article is needed before an occupation.
+ Replacing विद्यार्थी with शिक्षक leaves हुँ unchanged with म.
+
 ### 2. Personal forms
 
-Compare **म हुँ / हामी हौं / यो हो**. Respectful तपाईं, तपाईंहरू, उहाँ and उहाँहरू take **हुनुहुन्छ**; this honorific verb form does not change for gender or number.
+Compare **म हुँ** (I am…, an identity ending) / **हामी हौं** (we are…, an identity ending) / **यो हो** (this is…, an identity ending).
+ Respectful तपाईं, तपाईंहरू, उहाँ and उहाँहरू take **हुनुहुन्छ**; this honorific verb form does not change for gender or number.
 
 ### 3. Negation with होइन
 
-Replace हो with **होइन**: यो किताब होइन. Use **होइनँ** with I, **होइनौं** with we and **हुनुहुन्न** with a respectful subject. Do not form this negative by combining हो and छैन.
+Replace हो with **होइन**: यो किताब होइन (this is not a book).
+ Use **होइनँ** with I, **होइनौं** with we and **हुनुहुन्न** with a respectful subject.
+ Do not form this negative by combining हो and छैन.
 
 ### 4. Position of के and answers
 
-Initial के in **के यो किताब हो?** introduces a yes/no question. In **यो के हो?**, के asks what. Answer the first with हो/होइन; answer the second with an identity such as यो किताब हो.
+Initial के in **के यो किताब हो?** (is this a book) introduces a yes/no question.
+ In **यो के हो?** (what is this), के asks what.
+ Answer the first with हो/होइन; answer the second with an identity such as यो किताब हो (this is a book).
 
 ### 5. Choosing हो or छ
 
-**यो राम्रो किताब हो** identifies this as a good book. **यो किताब राम्रो छ** describes the book as good. The distinction is grammatical function, not simply permanent versus temporary.
+**यो राम्रो किताब हो** (this is a good book) identifies this as a good book. **यो किताब राम्रो छ** (this book is good) describes the book as good.
+ The distinction is grammatical function, not simply permanent versus temporary.
 
 ### हुनु: three sets and matching forms
 
@@ -250,10 +266,13 @@ tapāĩharū śikṣak hunuhuncha
 | शिक्षक | śikṣak | teacher |
 | हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
 
-## 2 छ: existence and location
+## Theme 2｜छ: existence and location
+
+### Theme 2｜छ: existence and location
 
 **Pattern and choice**
-Compare **म घरमा छु / किताब घरमा छ**. मा marks the location; the final verb matches the entity located. Choose among **छु, छौं, छ, छन्** and respectful हुनुहुन्छ.
+Location + छ
+**म घरमा छु** (I am at home) / **किताब घरमा छ** (the book is at home)
 
 ### ① Start with one example
 
@@ -265,21 +284,33 @@ I am at home.
 
 ### ② Nepali grammar rules
 
+### 1. Location + छ
+
+Compare **म घरमा छु** (I am at home) / **किताब घरमा छ** (the book is at home). मा marks the location; the final verb matches the entity located.
+ Choose among **छु, छौं, छ, छन्** and respectful हुनुहुन्छ.
+
 ### 2. Locating and introducing
 
-**किताब टेबलमा छ** locates the book; **टेबलमा किताब छ** introduces a book on the table. Word order varies with information structure. The location marked by मा does not control the verb agreement.
+**किताब टेबलमा छ** (the book is on the table) locates the book; **टेबलमा किताब छ** (there is a book on the table) introduces a book on the table.
+ Word order varies with information structure.
+ The location marked by मा does not control the verb agreement.
 
 ### 3. मा versus यहाँ/त्यहाँ
 
-Nouns combine with मा: **घरमा, नेपालमा**. **यहाँ, त्यहाँ and कहाँ** already function as here, there and where. Do not routinely add मा again in a basic location sentence.
+Nouns combine with मा: **घरमा, नेपालमा**. **यहाँ, त्यहाँ and कहाँ** already function as here, there and where.
+ Do not routinely add मा again in a basic location sentence.
 
 ### 4. Agreement in possession
 
-In **मसँग कलम छ**, मसँग marks the possessor and कलम is what exists, so use छ rather than छु. This differs from the subject म in **म घरमा छु**. See topic 5 for possessive सँग.
+In **मसँग कलम छ** (I have a pen), मसँग marks the possessor and कलम is what exists, so use छ rather than छु.
+ This differs from the subject म in **म घरमा छु** (I am at home).
+ See topic 5 for possessive सँग.
 
 ### 5. छैन versus होइन
 
-**घरमा छैन** denies presence at home; **घर होइन** denies that something is a house. Location/existence uses the छैन family; identity uses होइन. In **उहाँ घरमा हुनुहुन्न**, घरमा identifies the location construction despite the shared honorific ending.
+**घरमा छैन** (is not at home) denies presence at home; **घर होइन** (it is not a house) denies that something is a house.
+ Location/existence uses the छैन family; identity uses होइन.
+ In **उहाँ घरमा हुनुहुन्न** (he/she is not at home, respectful), घरमा identifies the location construction despite the shared honorific ending.
 
 ### हुनु: three sets and matching forms
 
@@ -483,10 +514,13 @@ uhā̃harū vidyālayamā hunuhuncha
 
 1: **हो**: A is B (identity / equation) / 5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement
 
-## 3 छ: is ~ (adjective / state)
+## Theme 3｜छ: is ~ (adjective / state)
+
+### Theme 3｜छ: is ~ (adjective / state)
 
 **Pattern and choice**
-In **पानी चिसो छ**, चिसो describes coldness. A basic current description is **subject + adjective + छ-family verb**. Inflecting adjectives such as राम्रो and ठूलो also follow the agreement patterns in topic 23.
+Adjective + छ
+**पानी चिसो छ** (the water is cold)
 
 ### ① Start with one example
 
@@ -498,21 +532,32 @@ This flower is beautiful.
 
 ### ② Nepali grammar rules
 
+### 1. Adjective + छ
+
+In **पानी चिसो छ** (the water is cold), चिसो describes coldness.
+ A basic current description is **subject + adjective + छ-family verb**.
+ Inflecting adjectives such as राम्रो and ठूलो also follow the agreement patterns in topic 23.
+
 ### 2. With I, use छु
 
-Compare **म व्यस्त छु / हामी व्यस्त छौं / उहाँ व्यस्त हुनुहुन्छ**. व्यस्त stays unchanged; the ending marks person and respect. An invariable adjective does not make the verb invariably छ.
+Compare **म व्यस्त छु** (I am busy) / **हामी व्यस्त छौं** (we are busy) / **उहाँ व्यस्त हुनुहुन्छ** (he/she is busy, respectful). व्यस्त stays unchanged; the ending marks person and respect.
+ An invariable adjective does not make the verb invariably छ.
 
 ### 3. म versus मलाई
 
-**म खुसी छु** uses म as subject plus a condition. **मलाई जाडो लाग्छ** uses an experiencer in मलाई and the sensation construction जाडो लाग्नु. The translated subject I does not determine Nepali case or verb form.
+**म खुसी छु** (I am happy) uses म as subject plus a condition. **मलाई जाडो लाग्छ** (I feel cold) uses an experiencer in मलाई and the sensation construction जाडो लाग्नु (to feel cold).
+ The translated subject I does not determine Nepali case or verb form.
 
-### 4. राम्रो छ versus राम्रो हुन्छ
+### 4. राम्रो छ (is good, current description) versus राम्रो हुन्छ (is generally good/becomes good)
 
-**यहाँको मौसम राम्रो छ** describes the weather in the present context. **वसन्तमा यहाँको मौसम राम्रो हुन्छ** gives a regular springtime tendency. An adjective does not force छ when a habitual/general perspective is intended.
+**यहाँको मौसम राम्रो छ** (the weather here is good) describes the weather in the present context. **वसन्तमा यहाँको मौसम राम्रो हुन्छ** (the weather here is generally good in spring) gives a regular springtime tendency.
+ An adjective does not force छ when a habitual/general perspective is intended.
 
 ### 5. Where negation goes
 
-In **पानी चिसो छैन**, retain the adjective and negate the copula. Compare **म व्यस्त छैनँ / उहाँ व्यस्त हुनुहुन्न**. This is different from a prohibition using न before a request verb.
+In **पानी चिसो छैन** (the water is not cold), retain the adjective and negate the copula.
+ Compare **म व्यस्त छैनँ** (I am not busy) / **उहाँ व्यस्त हुनुहुन्न** (he/she is not busy, respectful).
+ This is different from a prohibition using न before a request verb.
 
 ### हुनु: three sets and matching forms
 
@@ -706,10 +751,13 @@ hāmī thākekā chaũ
 
 1: **हो**: A is B (identity / equation) / 2: छ: existence and location / 23: Adjective agreement & position
 
-## 4 हुन्छ: becomes / generally is (habitual, change)
+## Theme 4｜हुन्छ: becomes / generally is (habitual, change)
+
+### Theme 4｜हुन्छ: becomes / generally is (habitual, change)
 
 **Pattern and choice**
-**आज चिसो छ** describes today's condition; **जाडोमा चिसो हुन्छ** describes winter generally. हुन्छ can express a regular or conditional state, not only a change translated as become.
+छ versus हुन्छ
+**आज चिसो छ** (it is cold today)
 
 ### ① Start with one example
 
@@ -721,21 +769,30 @@ It gets cold in winter.
 
 ### ② Nepali grammar rules
 
+### 1. छ versus हुन्छ
+
+**आज चिसो छ** (it is cold today) describes today's condition; **जाडोमा चिसो हुन्छ** (it is cold in winter generally) describes winter generally. हुन्छ can express a regular or conditional state, not only a change translated as become.
+
 ### 2. Habitual location
 
-Compare **म अहिले घरमा छु** with **म बिहान घरमा हुन्छु**. अहिले anchors now; बिहान can supply a recurring morning setting. I takes **हुन्छु**, we **हुन्छौं**, rather than invariant हुन्छ.
+Compare **म अहिले घरमा छु** (I am at home now) with **म बिहान घरमा हुन्छु** (I am usually at home in the morning). अहिले anchors now; बिहान can supply a recurring morning setting.
+ I takes **हुन्छु**, we **हुन्छौं**, rather than invariant हुन्छ.
 
 ### 3. हुँदैन versus छैन
 
-**यहाँ हल्ला हुँदैन** can describe the usual absence of noise; **अहिले हल्ला छैन** describes the present situation. Negate the हुन्छ family with **हुँदैन, हुँदिनँ, हुँदैनौं**, or respectful हुनुहुन्न.
+**यहाँ हल्ला हुँदैन** (there is usually no noise here) can describe the usual absence of noise; **अहिले हल्ला छैन** (there is no noise now) describes the present situation.
+ Negate the हुन्छ family with **हुँदैन, हुँदिनँ, हुँदैनौं**, or respectful हुनुहुन्न.
 
 ### 4. भयो versus थियो
 
-**काम भयो** presents work as completed/accomplished; **काम थियो** says there was work. Distinguish the past state थियो from the occurrence/change भयो rather than substituting भयो for every past छ.
+**काम भयो** (the work was done/accomplished) presents work as completed/accomplished; **काम थियो** (there was work) says there was work.
+ Distinguish the past state थियो from the occurrence/change भयो rather than substituting भयो for every past छ.
 
 ### 5. बन्नु and permissive हुन्छ
 
-**डाक्टर बन्नु** uses बन्नु for becoming a doctor. In **जान हुन्छ?**, हुन्छ belongs to a permission construction, not a description of regular conditions. Compare permission and prohibition in topic 21.
+**डाक्टर बन्नु** (to become a doctor) uses बन्नु for becoming a doctor.
+ In **जान हुन्छ?** (it is permissible to go), हुन्छ belongs to a permission construction, not a description of regular conditions.
+ Compare permission and prohibition in topic 21.
 
 ### हुनु: three sets and matching forms
 
@@ -945,10 +1002,14 @@ pānī tāto bhayo
 
 2: **छ**: existence and location / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~)
 
-## 5 Postpositions: place, participants and relationships
+## Theme 5｜Postpositions: place, participants and relationships
+
+### Theme 5｜Postpositions: place, participants and relationships
 
 **Pattern and choice**
-**देखि (dekhi)** marks a starting point in time or space. **बाट (bāṭa)** marks departure/source and can mark route or transport. **घरदेखि विद्यालयसम्म** frames a range from home to school; **घरबाट आएँ** names where the speaker came from. Spatial starting points allow overlap: देखि is not exclusively temporal.
+**देखि/बाट = from**
+Their starting-point uses overlap.
+ Use बाट for transport.
 
 ### ① Start with one example
 
@@ -960,34 +1021,45 @@ I live in a house.
 
 ### ② Nepali grammar rules
 
+### 1. देखि and बाट: shared source meanings
+
+**देखि (dekhi)** marks a starting point in time or space. **बाट (bāṭa)** marks departure/source and can mark route or transport. **घरदेखि विद्यालयसम्म** (from home to school) frames a range from home to school; **घरबाट आएँ** (I came from home) names where the speaker came from.
+ Spatial starting points allow overlap: देखि is not exclusively temporal.
+
 ### 2. Choose by time or means
 
-**बिहानदेखि काम गर्दै छु** describes working since morning. **भोलिदेखि** starts tomorrow, so देखि need not mean continuation up to now. बाट also occurs with temporal starts; learn देखि as the basic starting-point pattern. **बसबाट जान्छु** means go by bus. Replacing बाट with देखि does not preserve the transport meaning.
+**बिहानदेखि काम गर्दै छु** (I have been working since morning) describes working since morning. **भोलिदेखि** starts tomorrow, so देखि need not mean continuation up to now. बाट also occurs with temporal starts; learn देखि as the basic starting-point pattern. **बसबाट जान्छु** (I go by bus) means go by bus.
+ Replacing बाट with देखि does not preserve the transport meaning.
 
 ### 3. मा versus लाई: location or participant
 
-**विद्यालयमा** marks a location; **शिक्षकलाई** marks a recipient or object. लाई can mark a specific personal object, but is not obligatory on every object: basic **किताब पढ्छु** has none. In **मलाई जाडो लाग्छ**, लाई marks the experiencer.
+**विद्यालयमा** marks a location; **शिक्षकलाई** marks a recipient or object. लाई can mark a specific personal object, but is not obligatory on every object: basic **किताब पढ्छु** (I read a book) has none.
+ In **मलाई जाडो लाग्छ** (I feel cold), लाई marks the experiencer.
 
 ### 4. सँग versus को in possession
 
-**मसँग किताब छ** asserts possession/availability; **यो मेरो किताब हो** identifies ownership. सँग also marks company in **साथीसँग जान्छु**. Select **को/की/का** by the following noun/construction, not the owner's gender: compare **मेरो छोरा / मेरी छोरी / मेरा साथीहरू**.
+**मसँग किताब छ** (I have a book) asserts possession/availability; **यो मेरो किताब हो** (this is my book) identifies ownership. सँग also marks company in **साथीसँग जान्छु** (I go with a friend).
+ Select **को/की/का** by the following noun/construction, not the owner's gender: compare **मेरो छोरा** (my son) / **मेरी छोरी** (my daughter) / **मेरा साथीहरू** (my friends).
 
 ### 5. ले versus बाट: instrument and transport
 
-**कलमले लेख्छु** marks a writing instrument; **बसबाट जान्छु** marks transport; **बसमा छु** gives location inside a bus. ले also marks an agent in **मैले पढेँ**. The instrument कलमले is not the writer.
+**कलमले लेख्छु** (I write with a pen) marks a writing instrument; **बसबाट जान्छु** (I go by bus) marks transport; **बसमा छु** (I am on the bus) gives location inside a bus. ले also marks an agent in **मैले पढेँ** (I read/studied, past).
+ The instrument कलमले is not the writer.
 
 ### 6. सम्म, तिर and attachment order
 
-**पाँच बजेसम्म** means until five; **पाँच बजेतिर** around five. **घरमा** locates at home; **घरतिर** points towards home. Plural precedes the marker: **साथी + हरू + सँग**. Learn pronoun combinations **मलाई, मैले, मसँग, मेरो**, rather than mechanically stacking markers.
+**पाँच बजेसम्म** (until/by five o'clock, depending on the verb) means until five; **पाँच बजेतिर** (around five o'clock) around five. **घरमा** locates at home; **घरतिर** points towards home.
+ Plural precedes the marker: **साथी + हरू + सँग**.
+ Learn pronoun combinations **मलाई, मैले, मसँग, मेरो**, rather than mechanically stacking markers.
 
 ### देखि/बाट: choose by construction
 
-| Context | Basic combination | Effect of substitution |
-| --- | --- | --- |
-| Temporal start | बिहानदेखि / bihāndekhi | Since morning. बाट also occurs temporally; learn देखि as the basic start marker. |
-| Coming from a place | घरबाट आएँ / gharbāṭa āẽ | Came from home. देखि also marks spatial starting points; there is overlap. |
-| Start-to-end range | घरदेखि विद्यालयसम्म / ghardekhi vidyālayasamma | From home to school. बाट…सम्म is also possible, not categorically wrong. |
-| Transport | बसबाट / basbāṭa | By bus. बसदेखि treats the bus as a starting point, not transport. |
+| Context and form | Meaning and choice |
+| --- | --- |
+| Temporal start<br>बिहानदेखि / bihāndekhi | Since morning. बाट also occurs temporally; learn देखि as the basic start marker. |
+| Coming from a place<br>घरबाट आएँ / gharbāṭa āẽ | Came from home. देखि also marks spatial starting points; there is overlap. |
+| Start-to-end range<br>घरदेखि विद्यालयसम्म / ghardekhi vidyālayasamma | From home to school. बाट…सम्म is also possible, not categorically wrong. |
+| Transport<br>बसबाट / basbāṭa | By bus. बसदेखि treats the bus as a starting point, not transport. |
 
 
 ### Core forms
@@ -1047,11 +1119,11 @@ I live in a house.
 | विरुद्ध・विपरीत<br>viruddha / viparīt | against, contrary to; context determines use | नियमविरुद्ध / niyamviruddha |
 | मार्फत<br>mārphat | through, via; compare agent vs intermediary in 32 | साथीमार्फत / sāthīmārphat |
 
-मसँग कलम **छ** literally places a pen with me and means I have a pen.
+मसँग कलम (a pen with me, part of a possession pattern) **छ** literally places a pen with me and means I have a pen.
 
 The possessor being I does not change **छ** to छु.
 
-In साथीसँग जान्छु, सँग instead marks company.
+In साथीसँग जान्छु (I go with a friend), सँग instead marks company.
 
 को/की/का agree with the following noun. मेरो, हाम्रो and तपाईंको mean my, our and your.
 
@@ -1358,12 +1430,15 @@ Except today, I always come here.
 
 ### Review topics
 
-2: **छ**: existence and location / 6: Question words and how to ask / 7: Pronouns, familiarity, respect and verb agreement / 11: The ergative ले & the past (did ~) / 25: Comparison & superlative / 26: Conjunctions (and / so / but) / 27: While ~ (-दै) / after ~ (-एपछि) / 28: In order to ~ (-नको लागि) / 32: Passive (be ~ed)
+2: **छ**: existence and location / 6: Question words and how to ask / 7: Pronouns, familiarity, respect and verb agreement / 11: The ergative ले & the past (did ~) / 25: Comparison & superlative / 26: Conjunctions (and / so / but) / 27: While ~ (-दै) / after ~ (-एपछि) / 28: In order to ~ (-नको लागि (in order to do, with a preceding verb base)) / 32: Passive (be ~ed)
 
-## 6 Question words and how to ask
+## Theme 6｜Question words and how to ask
+
+### Theme 6｜Question words and how to ask
 
 **Pattern and choice**
-Compare **उहाँ घरमा हुनुहुन्छ → उहाँ कहाँ हुनुहुन्छ?**. A question word need not move to the front. In **कहाँबाट आउनुभयो?**, retain बाट; an answer such as नेपालबाट preserves the source relationship.
+Question words stay in their role
+**उहाँ घरमा हुनुहुन्छ** (he/she is at home, respectful) → **उहाँ कहाँ हुनुहुन्छ** (where is he/she, respectful)?
 
 ### ① Start with one example
 
@@ -1375,21 +1450,31 @@ What is this?
 
 ### ② Nepali grammar rules
 
+### 1. Question words stay in their role
+
+Compare **उहाँ घरमा हुनुहुन्छ** (he/she is at home, respectful) → **उहाँ कहाँ हुनुहुन्छ** (where is he/she, respectful)?.
+ A question word need not move to the front.
+ In **कहाँबाट आउनुभयो?** (where did you come from, respectful), retain बाट; an answer such as नेपालबाट preserves the source relationship.
+
 ### 2. को, कसले, कसलाई and कसको
 
-Who **को** changes to agent **कसले**, recipient/object **कसलाई**, or possessive **कसको/कसकी/कसका**. **कसले लेख्नुभयो?** asks who wrote; **कसलाई लेख्नुभयो?** asks to whom. The marker changes the question's participant.
+Who **को** changes to agent **कसले**, recipient/object **कसलाई**, or possessive **कसको/कसकी/कसका**. **कसले लेख्नुभयो?** (who wrote it, respectful) asks who wrote; **कसलाई लेख्नुभयो?** (to whom did you write, respectful) asks to whom.
+ The marker changes the question's participant.
 
 ### 3. कुन versus कस्तो versus कसरी
 
-**कुन किताब?** selects which book; **कस्तो किताब?** asks its type/quality. **कसरी जानुहुन्छ?** asks how someone goes. कस्तो has forms **कस्ती/कस्ता**; कुन does not have this gender/number alternation.
+**कुन किताब?** (which book) selects which book; **कस्तो किताब?** (what kind of book) asks its type/quality. **कसरी जानुहुन्छ?** (how do you go, respectful) asks how someone goes. कस्तो has forms **कस्ती/कस्ता**; कुन does not have this gender/number alternation.
 
 ### 4. Quantity and time questions
 
-**कति बजे?** asks clock time, **कति दिन?** a number of days, **कहिले?** when. **कहिलेदेखि?/कहिलेसम्म?** ask starting/end points. Use **कति जना?** for people and **कति वटा?** for countable items.
+**कति बजे?** (what time) asks clock time, **कति दिन?** (how many days) a number of days, **कहिले?** when. **कहिलेदेखि?/कहिलेसम्म?** ask starting/end points.
+ Use **कति जना?** (how many people) for people and **कति वटा?** (how many items) for countable items.
 
 ### 5. Answering के and किन
 
-**के खानुहुन्छ?** requests a food; **किन खानुहुन्न?** requests a reason. Initial के in **के तपाईं खानुहुन्छ?** instead introduces a yes/no question. Question formation retains the appropriate respectful verb.
+**के खानुहुन्छ?** (what do you eat, respectful) requests a food; **किन खानुहुन्न?** (why do you not eat, respectful) requests a reason.
+ Initial के in **के तपाईं खानुहुन्छ?** (do you eat, a yes/no question) instead introduces a yes/no question.
+ Question formation retains the appropriate respectful verb.
 
 
 ### Core words and combinations with postpositions and counters
@@ -1428,7 +1513,7 @@ Who **को** changes to agent **कसले**, recipient/object **कसल�
 | कति टाढा<br>kati ṭāḍhā | how far away |
 | कुनचाहिँ・कुन-कुन<br>kuncāhĩ / kun-kun | which one in particular, which ones |
 
-कसलाई, कसले and कसको are case forms related to who; कोसँग means with whom. कति जना counts people, कति वटा objects, कति बजे asks clock time, and कति पटक counts occasions. कस्तो asks for a quality and कुन a selection; they are not interchangeable.
+कसलाई, कसले and कसको are case forms related to who; कोसँग means with whom. कति जना (how many people) counts people, कति वटा (how many items) objects, कति बजे (what time) asks clock time, and कति पटक (how many times) counts occasions. कस्तो asks for a quality and कुन a selection; they are not interchangeable.
 
 ### को
 
@@ -1542,7 +1627,7 @@ Who **को** changes to agent **कसले**, recipient/object **कसल�
 | Question | तपाईं कोसँग बस्नुहुन्छ?<br>tapāĩ kosãga basnuhuncha? | Who do you live with? |
 | Answer | म परिवारसँग बस्छु।<br>ma parivārsãga baschu | I live with my family. |
 
-### कसका लागि・कसको लागि
+### कसका लागि (for whom)・कसको लागि (for whom)
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
@@ -1556,7 +1641,7 @@ Who **को** changes to agent **कसले**, recipient/object **कसल�
 | Question | यो पत्र कसबाट आयो?<br>yo patra kasbāṭa āyo? | Who did this letter come from? |
 | Answer | यो पत्र रामबाट आयो।<br>yo patra rāmbāṭa āyo | It came from Ram. |
 
-### कसको बारेमा
+### कसको बारेमा (about whom)
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
@@ -1570,7 +1655,7 @@ Who **को** changes to agent **कसले**, recipient/object **कसल�
 | Question | तपाईं केले लेख्नुहुन्छ?<br>tapāĩ kele lekhnuhuncha? | What do you write with? |
 | Answer | म कलमले लेख्छु।<br>ma kalamle lekhchu | I write with a pen. |
 
-### केका लागि・केको
+### केका लागि (for what purpose)・केको
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
@@ -1591,49 +1676,49 @@ Who **को** changes to agent **कसले**, recipient/object **कसल�
 | Question | पसल कहिलेसम्म खुला **छ**?<br>pasal kahilesamma khulā cha? | Until when is the shop open? |
 | Answer | पसल पाँच बजेसम्म खुला छ।<br>pasal pā̃c bajesamma khulā cha | It is open until five. |
 
-### कति वटा
+### कति वटा (how many items)
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
 | Question | तपाईंसँग कति वटा कलम छन्?<br>tapāĩsãga kati vaṭā kalam chan? | How many pens do you have? |
 | Answer | मसँग दुई वटा कलम छन्।<br>masãga duī vaṭā kalam chan | I have two pens. |
 
-### कति जना
+### कति जना (how many people)
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
 | Question | कति जना आउनुहुन्छ?<br>kati janā āunuhuncha? | How many people are coming? |
 | Answer | दुई जना आउनुहुन्छ।<br>duī janā āunuhuncha | Two people are coming. |
 
-### कति बजे・कति बज्यो
+### कति बजे (what time)・कति बज्यो (what time is it)
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
 | Question | अहिले कति बज्यो?<br>ahile kati bajyo? | What time is it now? |
 | Answer | अहिले पाँच बज्यो।<br>ahile pā̃c bajyo | It is five now. |
 
-### कति बेर・कति समय
+### कति बेर (how long)・कति समय (how much time)
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
 | Question | तपाईं कति बेर बस्नुहुन्छ?<br>tapāĩ kati ber basnuhuncha? | How long will you stay? |
 | Answer | म एक घण्टा बस्छु।<br>ma ek ghaṇṭā baschu | I will stay for one hour. |
 
-### कति दिन・कति वर्ष
+### कति दिन (how many days)・कति वर्ष (how many years; how old)
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
 | Question | तपाईं कति दिन बस्नुहुन्छ?<br>tapāĩ kati din basnuhuncha? | How many days will you stay? |
 | Answer | म दुई दिन बस्छु।<br>ma duī din baschu | I will stay for two days. |
 
-### कति पटक
+### कति पटक (how many times)
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
 | Question | तपाईं कति पटक आउनुभयो?<br>tapāĩ kati paṭak āunubhayo? | How many times have you come? |
 | Answer | म दुई पटक आएँ।<br>ma duī paṭak āẽ | I came twice. |
 
-### कति टाढा
+### कति टाढा (how far)
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
@@ -1647,9 +1732,9 @@ Who **को** changes to agent **कसले**, recipient/object **कसल�
 | Question | तपाईं कुनचाहिँ लिनुहुन्छ?<br>tapāĩ kuncāhĩ linuhuncha? | Which one will you take? |
 | Answer | म यो लिन्छु।<br>ma yo linchu | I will take this one. |
 
-Compare कति बज्यो? (what time now) with कति बजे जानुहुन्छ? (at what time will you go).
+Compare कति बज्यो (what time is it)? (what time now) with कति बजे जानुहुन्छ (at what time do you go, respectful)? (at what time will you go).
 
-Age can be asked as तपाईंको उमेर कति वर्ष भयो?
+Age can be asked as तपाईंको उमेर कति वर्ष भयो (how old are you)?
 
 Forms such as भयो/आउनुभयो are past forms; see topic 11.
 
@@ -1965,12 +2050,15 @@ tapāĩ katā jānuhuncha?
 
 ### Review topics
 
-1: **हो**: A is B (identity / equation) / 2: छ: existence and location / 5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement / 11: The ergative ले & the past (did ~) / 23: Adjective agreement & position / 27: While ~ (-दै) / after ~ (-एपछि) / 28: In order to ~ (-नको लागि)
+1: **हो**: A is B (identity / equation) / 2: छ: existence and location / 5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement / 11: The ergative ले & the past (did ~) / 23: Adjective agreement & position / 27: While ~ (-दै) / after ~ (-एपछि) / 28: In order to ~ (-नको लागि (in order to do, with a preceding verb base))
 
-## 7 Pronouns, familiarity, respect and verb agreement
+## Theme 7｜Pronouns, familiarity, respect and verb agreement
+
+### Theme 7｜Pronouns, familiarity, respect and verb agreement
 
 **Pattern and choice**
-Use **म, हामी, तपाईं, तपाईंहरू, उहाँ, उहाँहरू** as the basic set. Respectful तपाईं/उहाँ take **हुनुहुन्छ/गर्नुहुन्छ**; adding plural हरू does not change these honorific endings.
+Six basic person groups
+**म, हामी, तपाईं, तपाईंहरू, उहाँ, उहाँहरू**
 
 ### ① Start with one example
 
@@ -1982,21 +2070,30 @@ I work.
 
 ### ② Nepali grammar rules
 
+### 1. Six basic person groups
+
+Use **म, हामी, तपाईं, तपाईंहरू, उहाँ, उहाँहरू** as the basic set.
+ Respectful तपाईं/उहाँ take **हुनुहुन्छ/गर्नुहुन्छ**; adding plural हरू does not change these honorific endings.
+
 ### 2. उ/ऊ versus उनी
 
 **उ/ऊ** is a familiar singular third-person pronoun, with low-grade **छ/गर्छ** forms. **उनी** can refer to one person with a more considerate grade, taking **छन्/गर्छन्**. उनी alone does not guarantee a plural referent.
 
 ### 3. उनीहरू versus उहाँहरू
 
-**उनीहरू** is plural and commonly takes **छन्/गर्छन्**. Respectful plural **उहाँहरू** takes **हुनुहुन्छ/गर्नुहुन्छ**. Translation as they does not encode which Nepali respect grade is intended.
+**उनीहरू** is plural and commonly takes **छन्/गर्छन्**.
+ Respectful plural **उहाँहरू** takes **हुनुहुन्छ/गर्नुहुन्छ**.
+ Translation as they does not encode which Nepali respect grade is intended.
 
 ### 4. तँ, तिमी and तपाईं
 
-Compare **तँ गर्छस् / तिमी गर्छौ / तपाईं गर्नुहुन्छ**. तँ is restricted to very close relationships and can offend; तिमी is familiar. Plural **तिमीहरू** still takes गर्छौ, not third-person गर्छन्.
+Compare **तँ गर्छस्** (you do it, intimate/low respect) / **तिमी गर्छौ** (you do it, familiar) / **तपाईं गर्नुहुन्छ** (you do it, respectful). तँ is restricted to very close relationships and can offend; तिमी is familiar.
+ Plural **तिमीहरू** still takes गर्छौ, not third-person गर्छन्.
 
 ### 5. Pronouns with case markers
 
-Learn **म→मैले/मलाई/मेरो**, **उ/ऊ→उसले/उसलाई/उसको**, **उनी→उनले/उनलाई/उनको**, and respectful **उहाँले/उहाँलाई/उहाँको**. Case-marked pronouns are not always formed by attaching a marker to the citation form unchanged.
+Learn **म→मैले/मलाई/मेरो**, **उ/ऊ→उसले/उसलाई/उसको**, **उनी→उनले/उनलाई/उनको**, and respectful **उहाँले/उहाँलाई/उहाँको**.
+ Case-marked pronouns are not always formed by attaching a marker to the citation form unchanged.
 
 
 ### उ, उनी and उहाँ distinguish respect, not male versus female
@@ -2272,10 +2369,13 @@ uhā̃ yahā̃ hunuhuncha
 
 1: **हो**: A is B (identity / equation) / 2: छ: existence and location / 5: Postpositions: place, participants and relationships / 8: Action verbs: present (do ~)
 
-## 8 Action verbs: present (do ~)
+## Theme 8｜Action verbs: present (do ~)
+
+### Theme 8｜Action verbs: present (do ~)
 
 **Pattern and choice**
-Compare **पढ्नु→पढ्छु / गर्नु→गर्छु / खानु→खान्छु**, plus **जानु→जान्छु / आउनु→आउँछु**. Form the present from the appropriate stem; sound changes mean that mechanically adding छ to every dictionary form is insufficient.
+From -नु to the present
+**पढ्नु→पढ्छु / गर्नु→गर्छु / खानु→खान्छु**
 
 ### ① Start with one example
 
@@ -2287,21 +2387,30 @@ I work.
 
 ### ② Nepali grammar rules
 
+### 1. From -नु to the present
+
+Compare **पढ्नु→पढ्छु / गर्नु→गर्छु / खानु→खान्छु**, plus **जानु→जान्छु / आउनु→आउँछु**.
+ Form the present from the appropriate stem; sound changes mean that mechanically adding छ to every dictionary form is insufficient.
+
 ### 2. I, we and respectful forms
 
-Compare **म पढ्छु / हामी पढ्छौं / तपाईं पढ्नुहुन्छ / उहाँहरू पढ्नुहुन्छ**. Respectful forms contain **-नुहुन्छ**; do not append हुन्छ to a complete पढ्छु.
+Compare **म पढ्छु** (I read/study) / **हामी पढ्छौं** (we read/study) / **तपाईं पढ्नुहुन्छ** (you read, respectful) / **उहाँहरू पढ्नुहुन्छ** (they read, respectful).
+ Respectful forms contain **-नुहुन्छ**; do not append हुन्छ to a complete पढ्छु.
 
 ### 3. Objects and लाई
 
-**म किताब पढ्छु** has basic subject–object–verb order. An indefinite thing need not take लाई; a particular person as object can, as in **उहाँलाई भेट्छु**.
+**म किताब पढ्छु** (I read a book) has basic subject–object–verb order.
+ An indefinite thing need not take लाई; a particular person as object can, as in **उहाँलाई भेट्छु** (I meet him/her, respectful object).
 
 ### 4. Habitual versus progressive
 
-**म बिहान पढ्छु** describes a morning routine; **म अहिले पढ्दै छु** an action in progress. पढ्छु is not limited to right now; frequent combinations include **सधैं, हरेक दिन, प्रायः**.
+**म बिहान पढ्छु** (I study in the morning) describes a morning routine; **म अहिले पढ्दै छु** (I am reading now) an action in progress. पढ्छु is not limited to right now; frequent combinations include **सधैं, ****हरेक दिन** (every day)**, प्रायः**.
 
 ### 5. Present forms for plans
 
-**भोलि म जान्छु** describes a future plan using a present form plus भोलि. Dedicated future जानेछु is another option. Compare negative **जान्छु→जाँदिनँ** and question **कहिले जानुहुन्छ?**.
+**भोलि म जान्छु** (I will go tomorrow) describes a future plan using a present form plus भोलि.
+ Dedicated future जानेछु is another option.
+ Compare negative **जान्छु→जाँदिनँ** and question **कहिले जानुहुन्छ?** (when do you go, respectful).
 
 
 ### A reference table for comparing personal forms
@@ -2449,10 +2558,13 @@ tapāĩharū kahā̃ kām garnuhuncha?
 | काम | kām | work |
 | गर्नुहुन्छ | garnuhuncha | do/does (respectful) |
 
-## 9 Present negative (don't ~)
+## Theme 9｜Present negative (don't ~)
+
+### Theme 9｜Present negative (don't ~)
 
 **Pattern and choice**
-Compare **गर्छु→गर्दिनँ / पढ्छु→पढ्दिनँ**, and with we **गर्दैनौं/पढ्दैनौं**. Habitual action negatives are not made by appending होइन or छैन to a complete affirmative verb.
+Ordinary negative stems
+**गर्छु→गर्दिनँ / पढ्छु→पढ्दिनँ**
 
 ### ① Start with one example
 
@@ -2464,21 +2576,31 @@ I do not work today.
 
 ### ② Nepali grammar rules
 
+### 1. Ordinary negative stems
+
+Compare **गर्छु→गर्दिनँ / पढ्छु→पढ्दिनँ**, and with we **गर्दैनौं/पढ्दैनौं**.
+ Habitual action negatives are not made by appending होइन or छैन to a complete affirmative verb.
+
 ### 2. Negatives with nasalization
 
-Learn the nasalized shapes **खान्छु→खाँदिनँ / जान्छु→जाँदिनँ / आउँछु→आउँदिनँ**. Final nasalization in **गर्दिनँ** belongs to the first-person form, distinct from ordinary third-person गर्दैन.
+Learn the nasalized shapes **खान्छु→खाँदिनँ / जान्छु→जाँदिनँ / आउँछु→आउँदिनँ**.
+ Final nasalization in **गर्दिनँ** belongs to the first-person form, distinct from ordinary third-person गर्दैन.
 
 ### 3. Respectful -नुहुन्न
 
-Use **तपाईं गर्नुहुन्न / उहाँ पढ्नुहुन्न / उहाँहरू जानुहुन्न**. Respectful affirmative -नुहुन्छ contrasts with negative **-नुहुन्न**. Translating उहाँ as she does not license a lower-grade feminine verb.
+Use **तपाईं गर्नुहुन्न** (you do not do it, respectful) / **उहाँ पढ्नुहुन्न** (he/she does not read, respectful) / **उहाँहरू जानुहुन्न** (they do not go, respectful).
+ Respectful affirmative -नुहुन्छ contrasts with negative **-नुहुन्न**.
+ Translating उहाँ as she does not license a lower-grade feminine verb.
 
 ### 4. Present versus past negative
 
-**म जाँदिनँ** means I do not/will not go; **म गएनँ** means I did not go. Negative past forms have variants; use the गरेनँ-series forms taught in the tables here. A time word alone does not convert one tense to another.
+**म जाँदिनँ** (I do not/will not go) means I do not/will not go; **म गएनँ** (I did not go) means I did not go.
+ Negative past forms have variants; use the गरेनँ-series forms taught in the tables here.
+ A time word alone does not convert one tense to another.
 
 ### 5. कहिल्यै with negation
 
-**म कहिल्यै चुरोट खाँदिनँ** gives a never statement. कहिल्यै combines with a negative for never and can mean ever in a question; the word alone does not supply the entire negative meaning.
+**म कहिल्यै चुरोट खाँदिनँ** (I never smoke) gives a never statement. कहिल्यै combines with a negative for never and can mean ever in a question; the word alone does not supply the entire negative meaning.
 
 
 ### A reference table for comparing personal forms
@@ -2597,10 +2719,13 @@ tapāĩharū āitabār kām garnuhunna
 | काम | kām | work |
 | गर्नुहुन्न | garnuhunna | do not; does not (respectful) |
 
-## 10 Present progressive (~ing)
+## Theme 10｜Present progressive (~ing)
+
+### Theme 10｜Present progressive (~ing)
 
 **Pattern and choice**
-Compare **पढ्दै छु / गर्दै छु / खाँदै छु / जाँदै छु**. A progressive combines the action form with a **छ-family auxiliary**. Spelling and nasalization depend on the stem; learn actual shapes such as पढ्दै and खाँदै.
+The -दै form and auxiliary
+**पढ्दै छु** (I am reading) / **गर्दै छु** (I am doing it) / **खाँदै छु** (I am eating) / **जाँदै छु** (I am going)
 
 ### ① Start with one example
 
@@ -2612,21 +2737,34 @@ I am working now.
 
 ### ② Nepali grammar rules
 
+### 1. The -दै form and auxiliary
+
+Compare **पढ्दै छु** (I am reading) / **गर्दै छु** (I am doing it) / **खाँदै छु** (I am eating) / **जाँदै छु** (I am going).
+ A progressive combines the action form with a **छ-family auxiliary**.
+ Spelling and nasalization depend on the stem; learn actual shapes such as पढ्दै and खाँदै.
+
 ### 2. Agreement on the auxiliary
 
-**म पढ्दै छु / हामी पढ्दै छौं / उहाँ पढ्दै हुनुहुन्छ** share पढ्दै. The final auxiliary marks person/respect. Do not invent a progressive by mixing pieces of a finite present form.
+**म पढ्दै छु** (I am reading) / **हामी पढ्दै छौं** (we are reading) / **उहाँ पढ्दै हुनुहुन्छ** (he/she is reading, respectful) share पढ्दै.
+ The final auxiliary marks person/respect.
+ Do not invent a progressive by mixing pieces of a finite present form.
 
 ### 3. Comparing -रहेको
 
-Both **गर्दै छु** and **गरिरहेको छु** can describe ongoing action. The latter combines **गरि + रहेको + छु**. Forms such as रहेकी/रहेका occur according to agreement; रहेको is not a universally invariant piece.
+Both **गर्दै छु** (I am doing it) and **गरिरहेको छु** (I am doing it) can describe ongoing action.
+ The latter combines **गरि + रहेको + छु**.
+ Forms such as रहेकी/रहेका occur according to agreement; रहेको is not a universally invariant piece.
 
 ### 4. Negative and past progressive
 
-**पढ्दै छैनँ** denies reading in progress; **पढ्दै थिएँ** locates it in the past. The auxiliary carries polarity/time while पढ्दै remains. **पढ्दिनँ** is instead a habitual/intentional negative.
+**पढ्दै छैनँ** (I am not reading) denies reading in progress; **पढ्दै थिएँ** (I was reading) locates it in the past.
+ The auxiliary carries polarity/time while पढ्दै remains. **पढ्दिनँ** is instead a habitual/intentional negative.
 
 ### 5. Progressive noun modifiers
 
-**पढिरहेको मान्छे** is a person reading; **मान्छे पढिरहेको छ** is a complete clause. Do not retain the finite छ inside the modifier before मान्छे. See topic 29 for noun modification.
+**पढिरहेको मान्छे** (the person who is reading) is a person reading; **मान्छे पढिरहेको छ** (the person is reading) is a complete clause.
+ Do not retain the finite छ inside the modifier before मान्छे.
+ See topic 29 for noun modification.
 
 
 ### A reference table for comparing personal forms
@@ -2749,10 +2887,13 @@ uhā̃harū bas parkhãdai hunuhuncha
 
 2: **छ**: existence and location / 7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~)
 
-## 11 The ergative ले & the past (did ~)
+## Theme 11｜The ergative ले & the past (did ~)
+
+### Theme 11｜The ergative ले & the past (did ~)
 
 **Pattern and choice**
-Compare **म पढ्छु→मैले पढेँ**. Completed transitive clauses mark the agent with ले; म becomes **मैले**. Other forms include **तपाईंले, उहाँले, हामीले**. ले does not mark the object in this construction.
+Transitive past and ले
+**म पढ्छु** (I read/study)→**मैले पढेँ** (I read/studied, past)
 
 ### ① Start with one example
 
@@ -2764,21 +2905,34 @@ I worked yesterday.
 
 ### ② Nepali grammar rules
 
+### 1. Transitive past and ले
+
+Compare **म पढ्छु** (I read/study)→**मैले पढेँ** (I read/studied, past).
+ Completed transitive clauses mark the agent with ले; म becomes **मैले**.
+ Other forms include **तपाईंले, उहाँले, हामीले**. ले does not mark the object in this construction.
+
 ### 2. Not every past needs ले
 
-**म गएँ / उहाँ आउनुभयो** use intransitive go/come. Contrast the object-taking **मैले किताब पढेँ**. Past time by itself does not require changing every म to मैले.
+**म गएँ** (I went) / **उहाँ आउनुभयो** (he/she came, respectful) use intransitive go/come.
+ Contrast the object-taking **मैले किताब पढेँ** (I read the book, past).
+ Past time by itself does not require changing every म to मैले.
 
 ### 3. Past stems and respect
 
-Learn **गर्नु→गरेँ / जानु→गएँ / आउनु→आएँ** and respectful **गर्नुभयो/जानुभयो/आउनुभयो**. Both उहाँ and उहाँहरू retain the honorific form rather than switching to गरिन् or गरे on the basis of translation.
+Learn **गर्नु→गरेँ / जानु→गएँ / आउनु→आएँ** and respectful **गर्नुभयो/जानुभयो/आउनुभयो**.
+ Both उहाँ and उहाँहरू retain the honorific form rather than switching to गरिन् or गरे on the basis of translation.
 
 ### 4. Agreement and construction
 
-A ले-marked agent does not force one invariant ending. Compare first-person **मैले गरेँ** and respectful **उहाँले गर्नुभयो**. Other third-person constructions can show agreement related to the object. Use the six basic person-group examples as the starting pattern.
+A ले-marked agent does not force one invariant ending.
+ Compare first-person **मैले गरेँ** (I did it) and respectful **उहाँले गर्नुभयो** (he/she did it, respectful).
+ Other third-person constructions can show agreement related to the object.
+ Use the six basic person-group examples as the starting pattern.
 
 ### 5. Past थियो versus भयो
 
-**म घरमा थिएँ** gives past location; **म घर गएँ** a completed movement. **काम थियो** says there was work; **काम भयो** presents accomplishment/occurrence. Similar translated past tenses do not make these predicates interchangeable.
+**म घरमा थिएँ** (I was at home) gives past location; **म घर गएँ** (I went home) a completed movement. **काम थियो** (there was work) says there was work; **काम भयो** (the work was done/accomplished) presents accomplishment/occurrence.
+ Similar translated past tenses do not make these predicates interchangeable.
 
 
 ### A reference table for comparing personal forms
@@ -2918,10 +3072,13 @@ tapāĩharūle ke kinnubhayo?
 | के | ke | what; question marker |
 | किन्नुभयो | kinnubhayo | bought (respectful past of किन्नु) |
 
-## 12 Past negative (didn't ~)
+## Theme 12｜Past negative (didn't ~)
+
+### Theme 12｜Past negative (didn't ~)
 
 **Pattern and choice**
-**मैले काम गरेनँ** denies a past action, unlike present **काम गर्दिनँ**. Compare **गएँ→गएनँ / आएँ→आएनँ**; past negatives use their respective past stems.
+गर्दिनँ versus गरेनँ
+**मैले काम गरेनँ** (I did not work)
 
 ### ① Start with one example
 
@@ -2933,21 +3090,32 @@ I did not work yesterday.
 
 ### ② Nepali grammar rules
 
+### 1. गर्दिनँ versus गरेनँ
+
+**मैले काम गरेनँ** (I did not work) denies a past action, unlike present **काम गर्दिनँ** (I do not work).
+ Compare **गएँ→गएनँ / आएँ→आएनँ**; past negatives use their respective past stems.
+
 ### 2. Respectful past -नुभएन
 
-Compare **गर्नुभयो→गर्नुभएन / जानुभयो→जानुभएन** with respectful subjects. **गर्नुहुन्न** is present negative; **गर्नुभएन** past negative. The हुन्न/भएन contrast changes the time reference.
+Compare **गर्नुभयो→गर्नुभएन / जानुभयो→जानुभएन** with respectful subjects. **गर्नुहुन्न** is present negative; **गर्नुभएन** past negative.
+ The हुन्न/भएन contrast changes the time reference.
 
 ### 3. ले in a denied event
 
-A denied transitive event can retain **मैले**, as in **मैले किताब पढिनँ/पढेनँ**. Intransitive **म गएनँ** instead has म. Negation does not automatically remove every agent marker.
+A denied transitive event can retain **मैले**, as in **मैले किताब पढिनँ** (I did not read the book)**/पढेनँ**.
+ Intransitive **म गएनँ** (I did not go) instead has म.
+ Negation does not automatically remove every agent marker.
 
 ### 4. थिएन versus गरेन
 
-**पानी थिएन** denies past existence; **पानी पिएनँ** denies drinking. Past absence with I uses **म थिइनँ**; a respectful past-state negative can use **हुनुहुन्थेन**. These are not action negatives.
+**पानी थिएन** (there was no water) denies past existence; **पानी पिएनँ** (I did not drink water) denies drinking.
+ Past absence with I uses **म थिइनँ** (I was not there); a respectful past-state negative can use **हुनुहुन्थेन**.
+ These are not action negatives.
 
 ### 5. Not yet versus did not
 
-**अझै गरेको छैन** expresses not yet completed, while **हिजो गरेनँ** denies yesterday's event. A present-perfect negative uses **-एको + छैन-family auxiliary**; adding अझै alone does not change a past negative into that construction.
+**अझै गरेको छैन** (has not done it yet) expresses not yet completed, while **हिजो गरेनँ** (I did not do it yesterday) denies yesterday's event.
+ A present-perfect negative uses **-एको + छैन-family auxiliary**; adding अझै alone does not change a past negative into that construction.
 
 
 ### A reference table for comparing personal forms
@@ -3081,10 +3249,13 @@ uhā̃le kaphī piunubhaena
 
 9: Present negative (don't ~) / 11: The ergative ले & the past (did ~)
 
-## 13 Future (will ~)
+## Theme 13｜Future (will ~)
+
+### Theme 13｜Future (will ~)
 
 **Pattern and choice**
-Compare **गर्नु→गर्नेछु / जानु→जानेछु / पढ्नु→पढ्नेछु** and we **गर्नेछौं**. These combine a -ने form with future personal endings. Respectful **गर्नुहुनेछ** has a different honorific construction from ordinary गर्नेछ.
+The -नेछ future
+**गर्नु→गर्नेछु / जानु→जानेछु / पढ्नु→पढ्नेछु**
 
 ### ① Start with one example
 
@@ -3096,21 +3267,31 @@ I will work tomorrow.
 
 ### ② Nepali grammar rules
 
+### 1. The -नेछ future
+
+Compare **गर्नु→गर्नेछु / जानु→जानेछु / पढ्नु→पढ्नेछु** and we **गर्नेछौं**.
+ These combine a -ने form with future personal endings.
+ Respectful **गर्नुहुनेछ** has a different honorific construction from ordinary गर्नेछ.
+
 ### 2. Negative future
 
-Use **म जानेछैनँ / हामी जानेछैनौं / उहाँ जानुहुनेछैन**. Compare present respectful negative **जानुहुन्न** with explicit future **जानुहुनेछैन**.
+Use **म जानेछैनँ** (I will not go) / **हामी जानेछैनौं** (we will not go) / **उहाँ जानुहुनेछैन** (he/she will not go, respectful).
+ Compare present respectful negative **जानुहुन्न** with explicit future **जानुहुनेछैन**.
 
 ### 3. जान्छु versus जानेछु
 
-Both **भोलि जान्छु** and **भोलि जानेछु** can express tomorrow's action. The present is common for conversational plans; the future makes future reference explicit. A translated intention does not mandate only one tense form.
+Both **भोलि जान्छु** (I will go tomorrow, a present-form plan) and **भोलि जानेछु** (I will go tomorrow, future form) can express tomorrow's action.
+ The present is common for conversational plans; the future makes future reference explicit.
+ A translated intention does not mandate only one tense form.
 
 ### 4. Distinguish -ने from -नेछ
 
-**जाने बस** is a bus that goes; **बस जानेछ** is a future clause. -ने alone is not necessarily a complete future predicate: check whether it modifies a following noun.
+**जाने बस** (the bus that goes) is a bus that goes; **बस जानेछ** (the bus will go) is a future clause. -ने alone is not necessarily a complete future predicate: check whether it modifies a following noun.
 
 ### 5. Other plans and intention forms
 
-**म जान्छु** can state a plan/intention; **म जाऊँ?** offers to go; **हामी जाऔं** proposes going together. Future tense, an offer and a suggestion are distinct constructions.
+**म जान्छु** (I go; I will go) can state a plan/intention; **म जाऊँ?** (shall I go, an offer) offers to go; **हामी जाऔं** (let us go) proposes going together.
+ Future tense, an offer and a suggestion are distinct constructions.
 
 
 ### A reference table for comparing personal forms
@@ -3257,10 +3438,13 @@ tapāĩharū kahile pharkanuhunecha?
 | कहिले | kahile | when |
 | फर्कनुहुनेछ | pharkanuhunecha | will return (respectful future of फर्कनु) |
 
-## 14 Habitual past (used to ~)
+## Theme 14｜Habitual past (used to ~)
+
+### Theme 14｜Habitual past (used to ~)
 
 **Pattern and choice**
-**म पहिले यहाँ बस्थें** describes former habitual residence; **म हिजो यहाँ बसेँ** locates a completed stay/sitting event yesterday. Contrast habitual **गर्थें/बस्थें** with simple past **गरेँ/बसेँ**.
+गर्थें versus गरेँ
+**म पहिले यहाँ बस्थें** (I used to live here)
 
 ### ① Start with one example
 
@@ -3272,21 +3456,31 @@ I used to work here.
 
 ### ② Nepali grammar rules
 
+### 1. गर्थें versus गरेँ
+
+**म पहिले यहाँ बस्थें** (I used to live here) describes former habitual residence; **म हिजो यहाँ बसेँ** (I stayed/sat here yesterday) locates a completed stay/sitting event yesterday.
+ Contrast habitual **गर्थें/बस्थें** with simple past **गरेँ/बसेँ**.
+
 ### 2. Stem and person
 
-Compare first-person **गर्थें**, we **गर्थ्यौं**, and respectful **गर्नुहुन्थ्यो**. Nasalization can also be written as in गर्थेँ. The ending -थ्यो is not invariant across all persons.
+Compare first-person **गर्थें**, we **गर्थ्यौं**, and respectful **गर्नुहुन्थ्यो**.
+ Nasalization can also be written as in गर्थेँ.
+ The ending -थ्यो is not invariant across all persons.
 
 ### 3. Negative habitual past
 
-Compare **म गर्दिनथें / हामी गर्दैनथ्यौं** and respectful **गर्नुहुन्थेन**. Simple past **गरेनँ** denies a completed event, unlike a former habitual negative.
+Compare **म गर्दिनथें** (I did not use to do it) / **हामी गर्दैनथ्यौं** (we did not use to do it) and respectful **गर्नुहुन्थेन**.
+ Simple past **गरेनँ** denies a completed event, unlike a former habitual negative.
 
 ### 4. Habitual versus past progressive
 
-**पढ्थें** describes former reading habits; **पढ्दै थिएँ** describes reading in progress at a past point. Backgrounds such as **पहिले/सानो छँदा** support habitual readings, but the predicate still matters.
+**पढ्थें** describes former reading habits; **पढ्दै थिएँ** (I was reading) describes reading in progress at a past point.
+ Backgrounds such as **पहिले/****सानो छँदा** (when young/a child) support habitual readings, but the predicate still matters.
 
 ### 5. Habitual versus थियो
 
-**यहाँ विद्यालय थियो** describes a past state of existence. **उहाँ यहाँ आउनुहुन्थ्यो** describes repeated visits. A past-state translation does not by itself select habitual action morphology.
+**यहाँ विद्यालय थियो** (there was a school here) describes a past state of existence. **उहाँ यहाँ आउनुहुन्थ्यो** (he/she used to come here, respectful) describes repeated visits.
+ A past-state translation does not by itself select habitual action morphology.
 
 
 ### A reference table for comparing personal forms
@@ -3397,10 +3591,13 @@ uhā̃ pahile ciyā piunuhunthyo
 
 7: Pronouns, familiarity, respect and verb agreement / 11: The ergative ले & the past (did ~)
 
-## 15 Present perfect / experience (have done ~)
+## Theme 15｜Present perfect / experience (have done ~)
+
+### Theme 15｜Present perfect / experience (have done ~)
 
 **Pattern and choice**
-**गरेको छु / पढेको छु / गएको छु** connect a completed action with a present result or experience. Compare simple completed **गरेँ** with the compound **गरेको छु**.
+The -एको + छ pattern
+**गरेको छु** (I have done it) / **पढेको छु** (I have read it) / **गएको छु** (I have gone; I have been there)
 
 ### ① Start with one example
 
@@ -3412,21 +3609,31 @@ I have done this work.
 
 ### ② Nepali grammar rules
 
+### 1. The -एको + छ pattern
+
+**गरेको छु** (I have done it) / **पढेको छु** (I have read it) / **गएको छु** (I have gone; I have been there) connect a completed action with a present result or experience.
+ Compare simple completed **गरेँ** with the compound **गरेको छु** (I have done it).
+
 ### 2. Respectful -नुभएको
 
-Compare **उहाँले पढ्नुभएको छ / उहाँ जानुभएको छ**. Respect is marked in **-नुभएको**; the basic respectful perfect here ends in छ. This is not formed by inserting the finite present जानुहुन्छ.
+Compare **उहाँले पढ्नुभएको छ** (he/she has read it, respectful) / **उहाँ जानुभएको छ** (he/she has gone; has been there, respectful).
+ Respect is marked in **-नुभएको**; the basic respectful perfect here ends in छ.
+ This is not formed by inserting the finite present जानुहुन्छ.
 
 ### 3. Agent marking
 
-**मैले किताब पढेको छु** has a transitive agent; **म नेपाल गएको छु** has an intransitive subject. Compound completion preserves the distinction in subject marking.
+**मैले किताब पढेको छु** (I have read the book) has a transitive agent; **म नेपाल गएको छु** (I have been to/gone to Nepal) has an intransitive subject.
+ Compound completion preserves the distinction in subject marking.
 
 ### 4. Experience and frequency
 
-**पहिले, एक पटक, धेरै पटक** can specify experience/frequency. **नेपाल गएको छु** can express experience or a present-relevant result; it does not invariably assert that the speaker is currently in Nepal.
+**पहिले, ****एक पटक** (once), **धेरै पटक** (many times) can specify experience/frequency. **नेपाल गएको छु** (I have been to/gone to Nepal) can express experience or a present-relevant result; it does not invariably assert that the speaker is currently in Nepal.
 
 ### 5. Not yet and never
 
-**अझै गरेको छैन** means not yet completed; **कहिल्यै गरेको छैन** means never done. Negate the auxiliary with the **छैन family**, keeping the participle. Personal forms include **गरेको छैनँ**.
+**अझै गरेको छैन** (has not done it yet) means not yet completed; **कहिल्यै गरेको छैन** (has never done it) means never done.
+ Negate the auxiliary with the **छैन family**, keeping the participle.
+ Personal forms include **गरेको छैनँ** (I have not done it).
 
 
 ### A reference table for comparing personal forms
@@ -3564,10 +3771,13 @@ hāmīle yo philm herekā chaũ
 
 2: **छ**: existence and location / 11: The ergative ले & the past (did ~) / 23: Adjective agreement & position
 
-## 16 Past perfect (had done ~)
+## Theme 16｜Past perfect (had done ~)
+
+### Theme 16｜Past perfect (had done ~)
 
 **Pattern and choice**
-**गरेको थिएँ / पढेको थिएँ / गएको थिएँ** describe prior completion relative to a past point. Compare present-relevant **गरेको छु** with past auxiliary **थिएँ**.
+-एको + a past auxiliary
+**गरेको थिएँ** (I had done it) / **पढेको थिएँ** (I had read it) / **गएको थिएँ** (I had gone)
 
 ### ① Start with one example
 
@@ -3579,21 +3789,31 @@ I had done this work.
 
 ### ② Nepali grammar rules
 
+### 1. -एको + a past auxiliary
+
+**गरेको थिएँ** (I had done it) / **पढेको थिएँ** (I had read it) / **गएको थिएँ** (I had gone) describe prior completion relative to a past point.
+ Compare present-relevant **गरेको छु** (I have done it) with past auxiliary **थिएँ**.
+
 ### 2. Marking the past reference point
 
-In **उहाँ आउँदा मैले काम सकेको थिएँ**, the work was finished before the arrival. **आउँदा** supplies the reference time; **सकेको थिएँ** gives prior completion. The morphology, not word order alone, expresses this relationship.
+In **उहाँ आउँदा मैले काम सकेको थिएँ** (I had finished the work when he/she arrived), the work was finished before the arrival. **आउँदा** supplies the reference time; **सकेको थिएँ** (I had finished) gives prior completion.
+ The morphology, not word order alone, expresses this relationship.
 
 ### 3. Personal and respectful forms
 
-Compare **म गएको थिएँ / हामी गएका थियौं / उहाँ जानुभएको थियो**. Ordinary participles can also show agreement, as in एका. Learn respectful **-नुभएको थियो**, not invariant गएको थियो for every subject.
+Compare **म गएको थिएँ** (I had gone) / **हामी गएका थियौं** (we had gone) / **उहाँ जानुभएको थियो** (he/she had gone, respectful).
+ Ordinary participles can also show agreement, as in एका.
+ Learn respectful -**नुभएको थियो** (had done, part of a respectful perfect form), not invariant गएको थियो (had gone, basic third-person form) for every subject.
 
 ### 4. Negative past auxiliaries
 
-**मैले काम सकेको थिइनँ** denies completion by the past point; **सक्नुभएको थिएन** is respectful. A simple negative such as **सकिनँ** presents a different finite-event construction.
+**मैले काम सकेको थिइनँ** (I had not finished the work) denies completion by the past point; **सक्नुभएको थिएन** (had not finished, respectful) is respectful.
+ A simple negative such as **सकिनँ** presents a different finite-event construction.
 
 ### 5. Compare progressive and habitual past
 
-**पढ्दै थिएँ** describes ongoing reading, **पढेको थिएँ** prior completion, and **पढ्थें** a former routine. A translation such as was reading does not collapse these three Nepali patterns.
+**पढ्दै थिएँ** (I was reading) describes ongoing reading, **पढेको थिएँ** (I had read it) prior completion, and **पढ्थें** a former routine.
+ A translation such as was reading does not collapse these three Nepali patterns.
 
 
 ### A reference table for comparing personal forms
@@ -3725,10 +3945,13 @@ hāmī pugdā pasal banda bhaisakeko thiyo
 
 11: The ergative ले & the past (did ~) / 15: Present perfect / experience (have done ~) / 27: While ~ (-दै) / after ~ (-एपछि)
 
-## 17 Requests & commands (three politeness levels)
+## Theme 17｜Requests & commands (three politeness levels)
+
+### Theme 17｜Requests & commands (three politeness levels)
 
 **Pattern and choice**
-Compare **बस्नु→बस्नुहोस् / गर्नु→गर्नुहोस् / हेर्नु→हेर्नुहोस्**. Respectful present **गर्नुहुन्छ** states an action; **गर्नुहोस्** requests it. These endings are not interchangeable.
+Respectful requests in -नुहोस्
+**बस्नु→बस्नुहोस् / गर्नु→गर्नुहोस् / हेर्नु→हेर्नुहोस्**
 
 ### ① Start with one example
 
@@ -3740,21 +3963,33 @@ Please sit here.
 
 ### ② Nepali grammar rules
 
+### 1. Respectful requests in -नुहोस्
+
+Compare **बस्नु→बस्नुहोस् / गर्नु→गर्नुहोस् / हेर्नु→हेर्नुहोस्**.
+ Respectful present **गर्नुहुन्छ** states an action; **गर्नुहोस्** requests it.
+ These endings are not interchangeable.
+
 ### 2. Common request verbs
 
-**दिनुहोस्** requests giving; **लिनुहोस्** taking; **आउनुहोस्** coming. Add a place/item: **यहाँ आउनुहोस् / यो लिनुहोस्**. A separate word equivalent to please is not obligatory in every polite request.
+**दिनुहोस्** requests giving; **लिनुहोस्** taking; **आउनुहोस्** coming.
+ Add a place/item: **यहाँ आउनुहोस्** (please come here) / **यो लिनुहोस्** (please take this).
+ A separate word equivalent to please is not obligatory in every polite request.
 
 ### 3. -दिनु for an action done for someone
 
-**लेखिदिनुहोस्/गरिदिनुहोस्** request an action for someone. Compare **लेख्नुहोस्** with **लेखि + दिनुहोस्**; the latter adds a benefactive sense. दिनु need not refer to giving a physical object.
+**लेखिदिनुहोस्/गरिदिनुहोस्** request an action for someone.
+ Compare **लेख्नुहोस्** with **लेखि + दिनुहोस्**; the latter adds a benefactive sense. दिनु need not refer to giving a physical object.
 
 ### 4. Familiar versus respectful requests
 
-Contrast low-grade **बस** with respectful **बस्नुहोस्**. Familiar requests can use forms such as **बस/बस न**; consult topic 7 and the tables for the appropriate relationship. Use respectful requests as the default with strangers.
+Contrast low-grade **बस** with respectful **बस्नुहोस्**.
+ Familiar requests can use forms such as **बस/****बस न** (do sit down, familiar request); consult topic 7 and the tables for the appropriate relationship.
+ Use respectful requests as the default with strangers.
 
 ### 5. A request versus an offer
 
-**गर्नुहोस्** requests the listener's action; **गरूँ?** offers the speaker's action; **गरौं** proposes shared action. These participant differences are encoded in the verb form.
+**गर्नुहोस्** requests the listener's action; **गरूँ?** offers the speaker's action; **गरौं** proposes shared action.
+ These participant differences are encoded in the verb form.
 
 
 ### Exercise 1
@@ -3904,10 +4139,13 @@ bholi āunuhos hai
 | आउनुहोस् | āunuhos | please come |
 | है | hai | okay? (gentle reminder) |
 
-## 18 Hortative / volitional (let's ~ / shall I ~)
+## Theme 18｜Hortative / volitional (let's ~ / shall I ~)
+
+### Theme 18｜Hortative / volitional (let's ~ / shall I ~)
 
 **Pattern and choice**
-**म गरूँ? / म जाऊँ? / म ल्याऊँ?** offer to do, go or bring something. **गर्छु** instead states an action/intention; it is not the same offering form.
+First-person offers
+**म गरूँ** (shall I do it, an offer)? / **म जाऊँ** (shall I go, an offer)? / **म ल्याऊँ** (shall I bring it, an offer)?
 
 ### ① Start with one example
 
@@ -3919,21 +4157,29 @@ May I sit here?
 
 ### ② Nepali grammar rules
 
+### 1. First-person offers
+
+**म गरूँ** (shall I do it, an offer)? / **म जाऊँ** (shall I go, an offer)? / **म ल्याऊँ** (shall I bring it, an offer)? offer to do, go or bring something. **गर्छु** instead states an action/intention; it is not the same offering form.
+
 ### 2. -औं for shared suggestions
 
-**गरौं / जाऔं / बसौं / खाऔं** propose shared action. Compare singular offer **जाऊँ** with plural suggestion **जाऔं**, rather than assuming the same ending for both.
+**गरौं / जाऔं / बसौं / खाऔं** propose shared action.
+ Compare singular offer **जाऊँ** with plural suggestion **जाऔं**, rather than assuming the same ending for both.
 
 ### 3. Not an honorific request
 
-**यहाँ बसौं** proposes sitting here together; **यहाँ बस्नुहोस्** asks the listener to sit. This changes participants, not merely the degree of politeness.
+**यहाँ बसौं** (let us sit here) proposes sitting here together; **यहाँ बस्नुहोस्** (please sit here) asks the listener to sit.
+ This changes participants, not merely the degree of politeness.
 
 ### 4. न + suggestion versus request
 
-**नजाऔं** means let's not go; **नजानुहोस्** asks someone not to go. Prefix न negates these proposal/request forms, while the following morphology identifies the participants.
+**नजाऔं** means let's not go; **नजानुहोस्** asks someone not to go.
+ Prefix न negates these proposal/request forms, while the following morphology identifies the participants.
 
 ### 5. Compare a future statement
 
-**म जानेछु** states future action; **म जाऊँ?** offers it for consideration. Likewise **हामी जानेछौं** states a plan, whereas **हामी जाऔं** proposes one.
+**म जानेछु** (I will go) states future action; **म जाऊँ?** (shall I go, an offer) offers it for consideration.
+ Likewise **हामी जानेछौं** (we will go) states a plan, whereas **हामी जाऔं** (let us go) proposes one.
 
 
 A suggestion not to do something places न before the verb.
@@ -4139,10 +4385,13 @@ hāmī bholi bheṭaũ?
 | भोलि | bholi | tomorrow |
 | भेटौं | bheṭaũ | let us meet |
 
-## 19 Prohibition (must not ~ / don't ~)
+## Theme 19｜Prohibition (must not ~ / don't ~)
+
+### Theme 19｜Prohibition (must not ~ / don't ~)
 
 **Pattern and choice**
-Prefix **न** to a request form: **नगर्नुहोस्, नजानुहोस्, नखानुहोस्**. Do not form a negative request by appending छैन to the affirmative imperative.
+न + request form
+**न**
 
 ### ① Start with one example
 
@@ -4154,21 +4403,30 @@ Please do not look down.
 
 ### ② Nepali grammar rules
 
+### 1. न + request form
+
+Prefix **न** to a request form: **नगर्नुहोस्, नजानुहोस्, नखानुहोस्**.
+ Do not form a negative request by appending छैन to the affirmative imperative.
+
 ### 2. Statement versus negative request
 
-**उहाँ जानुहुन्न** reports that the person does not go; **नजानुहोस्** requests not going. Contrast **-नुहुन्न** with **न-…-नुहोस्** in both form and function.
+**उहाँ जानुहुन्न** (he/she does not go, respectful) reports that the person does not go; **नजानुहोस्** requests not going.
+ Contrast **-नुहुन्न** with **न-…-नुहोस्** in both form and function.
 
 ### 3. Negative न versus softening न
 
-**नबस्नुहोस्** means please do not sit. Sentence-final न in **बस्नुहोस् न** softens or urges a request and is not negation. Position changes the function of न.
+**नबस्नुहोस्** means please do not sit.
+ Sentence-final न in **बस्नुहोस् न** (please do sit down) softens or urges a request and is not negation.
+ Position changes the function of न.
 
-### 4. Prohibition with -नु हुँदैन
+### 4. Prohibition with -नु हुँदैन (must not do, with a preceding verb base)
 
-**यहाँ धूम्रपान गर्नु हुँदैन** states a prohibition. **नगर्नुहोस्** directly requests non-action; **गर्नु हुँदैन** describes an action as disallowed. हुन्न is also used as a shorter form.
+**यहाँ धूम्रपान गर्नु हुँदैन** (smoking is not allowed here) states a prohibition. **नगर्नुहोस्** directly requests non-action; **गर्नु हुँदैन** (must not do it) describes an action as disallowed. हुन्न is also used as a shorter form.
 
 ### 5. Prohibition versus no obligation
 
-**जानु हुँदैन** prohibits going; **जानु पर्दैन** removes the need to go. Negating permission हुन्छ and necessity पर्छ gives different meanings.
+**जानु हुँदैन** (must not go) prohibits going; **जानु पर्दैन** (do not need to go) removes the need to go.
+ Negating permission हुन्छ and necessity पर्छ gives different meanings.
 
 
 Keep a negative request separate from a prohibition with हुँदैन.
@@ -4390,10 +4648,13 @@ tapāĩ yahā̃ naāunuhos
 | यहाँ | yahā̃ | here |
 | नआउनुहोस् | naāunuhos | please do not come |
 
-## 20 Ability (can ~)
+## Theme 20｜Ability (can ~)
+
+### Theme 20｜Ability (can ~)
 
 **Pattern and choice**
-Use **पढ्न सक्छु / गर्न सक्छु / जान सक्छु** for ability/possibility. The preceding verb is the -न infinitive, such as **पढ्न**, not unchanged dictionary पढ्नु.
+Infinitive -न + सक्नु
+**पढ्न सक्छु** (I can read) / **गर्न सक्छु** (I can do it) / **जान सक्छु** (I can go)
 
 ### ① Start with one example
 
@@ -4405,21 +4666,31 @@ I can speak Nepali.
 
 ### ② Nepali grammar rules
 
+### 1. Infinitive -न + सक्नु
+
+Use **पढ्न सक्छु** (I can read) / **गर्न सक्छु** (I can do it) / **जान सक्छु** (I can go) for ability/possibility.
+ The preceding verb is the -न infinitive, such as **पढ्न**, not unchanged dictionary पढ्नु.
+
 ### 2. Conjugate सक्नु
 
-Compare **म गर्न सक्छु / हामी गर्न सक्छौं / उहाँ गर्न सक्नुहुन्छ**. Keep गर्न while conjugating the final सक्नु for person/respect; do not combine two finite presents such as गर्छु सक्छु.
+Compare **म गर्न सक्छु** (I can do it) / **हामी गर्न सक्छौं** (we can do it) / **उहाँ गर्न सक्नुहुन्छ** (he/she can do it, respectful).
+ Keep गर्न while conjugating the final सक्नु for person/respect; do not combine two finite presents such as गर्छु सक्छु (incorrect combination; use गर्न सक्छु for ability).
 
 ### 3. Negative and past ability
 
-Compare **सक्छु→सक्दिनँ**, past **सकेँ**, and negative past **सकिनँ**. Respectful forms include **सक्नुहुन्न/सक्नुभयो/सक्नुभएन**. Keep the preceding action in the -न form.
+Compare **सक्छु→सक्दिनँ**, past **सकेँ**, and negative past **सकिनँ**.
+ Respectful forms include **सक्नुहुन्न/सक्नुभयो/सक्नुभएन**.
+ Keep the preceding action in the -न form.
 
 ### 4. Ability versus learned know-how
 
-**नेपाली बोल्न सक्छु** expresses ability; **नेपाली बोल्न जान्छु** emphasizes learned know-how. जान्नु means know and जानु go; the same-looking finite जान्छु must be interpreted in its construction.
+**नेपाली बोल्न सक्छु** (I can speak Nepali) expresses ability; **नेपाली बोल्न जान्छु** (I know how to speak Nepali) emphasizes learned know-how. जान्नु means know and जानु go; the same-looking finite जान्छु must be interpreted in its construction.
 
 ### 5. Can, may and want
 
-**जान सक्छु** expresses ability, **जान हुन्छ?** asks permission, and **जान मन पर्छ** expresses a desire. Ability does not entail permission. See topic 31 for epistemic possibility with **हुन सक्छ**.
+**जान सक्छु** (I can go) expresses ability, **जान हुन्छ?** (it is permissible to go) asks permission, and **जान मन पर्छ** (want/like to go, depending on context) expresses a desire.
+ Ability does not entail permission.
+ See topic 31 for epistemic possibility with **हुन सक्छ** (may be; can be).
 
 
 ### A reference table for comparing personal forms
@@ -4554,10 +4825,13 @@ ma āja āuna sakdinã
 | आउन | āuna | come |
 | सक्दिनँ | sakdinã | cannot |
 
-## 21 Obligation & permission (must ~ / may ~)
+## Theme 21｜Obligation & permission (must ~ / may ~)
+
+### Theme 21｜Obligation & permission (must ~ / may ~)
 
 **Pattern and choice**
-**मलाई जानु पर्छ** states that I need to go. With a लाई-marked experiencer, the predicate is **पर्छ**, not first-person पर्छु. The spelling **-नुपर्छ** also occurs.
+Necessity with -नु पर्छ (need to do, with a preceding verb base)
+**मलाई जानु पर्छ** (I need to go)
 
 ### ① Start with one example
 
@@ -4569,21 +4843,32 @@ I have to go to the office tomorrow.
 
 ### ② Nepali grammar rules
 
+### 1. Necessity with -नु पर्छ (need to do, with a preceding verb base)
+
+**मलाई जानु पर्छ** (I need to go) states that I need to go.
+ With a लाई-marked experiencer, the predicate is **पर्छ**, not first-person पर्छु.
+ The spelling **-नुपर्छ** also occurs.
+
 ### 2. पर्दैन versus हुँदैन
 
-**जानु पर्दैन** removes necessity; **जानु हुँदैन** prohibits going. Affirmative **पर्छ** expresses obligation/need; permission constructions with **हुन्छ** express acceptability. Keep their negatives distinct.
+**जानु पर्दैन** (do not need to go) removes necessity; **जानु हुँदैन** (must not go) prohibits going.
+ Affirmative **पर्छ** expresses obligation/need; permission constructions with **हुन्छ** express acceptability.
+ Keep their negatives distinct.
 
 ### 3. Permission patterns
 
-**यहाँ बस्न हुन्छ?** asks permission to sit. Permission uses patterns with **-न हुन्छ** or **-नु हुन्छ**; learn prohibition with **-नु हुँदैन**. This differs from one-word respectful present **बस्नुहुन्छ**.
+**यहाँ बस्न हुन्छ?** (it is permissible to sit here) asks permission to sit.
+ Permission uses patterns with -**न हुन्छ** (may do, with a preceding verb base) or -**नु हुन्छ** (may do, a permission pattern); learn prohibition with -**नु हुँदैन** (must not do, with a preceding verb base).
+ This differs from one-word respectful present **बस्नुहुन्छ**.
 
 ### 4. Past necessity
 
-**मलाई जानु पर्यो** expresses a need that arose/had to be met; **जानु पर्दैनथ्यो** past lack of necessity. **जानुभएन** instead denies that a respectful person went.
+**मलाई जानु पर्यो** (I had to go) expresses a need that arose/had to be met; **जानु पर्दैनथ्यो** (did not need to go) past lack of necessity. **जानुभएन** instead denies that a respectful person went.
 
 ### 5. चाहिन्छ versus पर्छ
 
-**मलाई पानी चाहिन्छ** expresses need for water; **मलाई जानु पर्छ** need to perform an action. चाहिन्छ commonly takes a needed item/quantity; पर्छ combines with verbal -नु for obligation. Both can have मलाई as experiencer.
+**मलाई पानी चाहिन्छ** (I need water) expresses need for water; **मलाई जानु पर्छ** (I need to go) need to perform an action. चाहिन्छ commonly takes a needed item/quantity; पर्छ combines with verbal -नु for obligation.
+ Both can have मलाई as experiencer.
 
 
 In this obligation pattern, पर्छ does not change for the subject's person.
@@ -4767,10 +5052,13 @@ yahā̃ basna mildaina
 | बस्न | basna | sit; stay |
 | मिल्दैन | mildaina | may not; be not allowed to |
 
-## 22 Desire (want to ~)
+## Theme 22｜Desire (want to ~)
+
+### Theme 22｜Desire (want to ~)
 
 **Pattern and choice**
-Use **म जान चाहन्छु / उहाँ जान चाहनुहुन्छ**. The desired action is a -न infinitive; चाहनु agrees with the subject who wants it. Do not mix patterns as मलाई जान चाहन्छु.
+-न + चाहनु
+**म जान चाहन्छु** (I want to go) / **उहाँ जान चाहनुहुन्छ** (he/she wants to go, respectful)
 
 ### ① Start with one example
 
@@ -4782,21 +5070,33 @@ I want to go to Nepal.
 
 ### ② Nepali grammar rules
 
-### 2. Desire with मन लाग्नु
+### 1. -न + चाहनु
 
-**मलाई जान मन लाग्छ** expresses feeling like going. The experiencer is मलाई and the predicate लाग्छ. Its meaning overlaps with **म जान चाहन्छु**, but its case and verb construction differ.
+Use **म जान चाहन्छु** (I want to go) / **उहाँ जान चाहनुहुन्छ** (he/she wants to go, respectful).
+ The desired action is a -न infinitive; चाहनु agrees with the subject who wants it.
+ Do not mix patterns as मलाई जान चाहन्छु (incorrect construction; use म जान चाहन्छु for wanting to go).
 
-### 3. मन पर्नु and liking
+### 2. Desire with मन लाग्नु (to feel like doing)
 
-**मलाई चिया मन पर्छ** expresses liking tea. **मलाई चिया खान मन पर्छ** can describe liking/wanting the action, depending on context. A present urge can be made explicit with **अहिले…मन लागेको छ**.
+**मलाई जान मन लाग्छ** (I feel like going) expresses feeling like going.
+ The experiencer is मलाई and the predicate लाग्छ.
+ Its meaning overlaps with **म जान चाहन्छु** (I want to go), but its case and verb construction differ.
+
+### 3. मन पर्नु (to like; to find pleasing) and liking
+
+**मलाई चिया मन पर्छ** (I like tea) expresses liking tea. **मलाई चिया खान मन पर्छ** (I like/want to drink tea, depending on context) can describe liking/wanting the action, depending on context.
+ A present urge can be made explicit with **अहिले…मन लागेको छ** (right now, feel like doing…).
 
 ### 4. Negating desire
 
-Compare **म जान चाहन्नँ** with **मलाई जान मन लाग्दैन**. One negates चाहनु, the other लाग्नु. Preserve each construction's experiencer/subject marking when forming the negative.
+Compare **म जान चाहन्नँ** (I do not want to go) with **मलाई जान मन लाग्दैन** (I do not feel like going).
+ One negates चाहनु, the other लाग्नु.
+ Preserve each construction's experiencer/subject marking when forming the negative.
 
 ### 5. Desire, need and ability
 
-**जान चाहन्छु**, **जानु पर्छ** and **जान सक्छु** express desire, necessity and ability. Even the preceding form differs, **जान/जानु**; they are not one universal pattern with a freely replaceable final word.
+**जान चाहन्छु** (I want to go), **जानु पर्छ** (need to go) and **जान सक्छु** (I can go) express desire, necessity and ability.
+ Even the preceding form differs, **जान/जानु**; they are not one universal pattern with a freely replaceable final word.
 
 
 ### A reference table for comparing personal forms
@@ -4810,7 +5110,7 @@ Compare **म जान चाहन्नँ** with **मलाई जान �
 | he/she | उहाँ नेपाल जान चाहन्छिन्।<br>uhā̃ nepāl jāna cāhanchin | She wants to go to Nepal. |
 | they | उहाँहरू नेपाल जान चाहँदैनन्।<br>uhā̃harū nepāl jāna cāhãdainan | They do not want to go to Nepal. |
 
-Distinguish मन पर्छ from मन **छ** and मन लाग्छ.
+Distinguish मन पर्छ (like; find pleasing) from मन **छ** and मन लाग्छ (feel like doing).
 
 ### Exercise 1
 
@@ -4939,10 +5239,13 @@ tapāĩharū ke khāna cāhanuhuncha?
 | खान | khāna | eat |
 | चाहनुहुन्छ | cāhanuhuncha | want to (respectful) |
 
-## 23 Adjective agreement & position
+## Theme 23｜Adjective agreement & position
+
+### Theme 23｜Adjective agreement & position
 
 **Pattern and choice**
-**राम्रो किताब** is a good book; **किताब राम्रो छ** states that the book is good. Compare noun phrase + हो in **यो राम्रो किताब हो** with adjective + छ in **यो किताब राम्रो छ**.
+Attributive versus predicative
+**राम्रो किताब** (a good book)
 
 ### ① Start with one example
 
@@ -4954,21 +5257,33 @@ This is a good book.
 
 ### ② Nepali grammar rules
 
+### 1. Attributive versus predicative
+
+**राम्रो किताब** (a good book) is a good book; **किताब राम्रो छ** (the book is good) states that the book is good.
+ Compare noun phrase + हो in **यो राम्रो किताब हो** (this is a good book) with adjective + छ in **यो किताब राम्रो छ** (this book is good).
+
 ### 2. The -ओ/-ई/-आ pattern
 
-Compare **राम्रो छोरा / राम्री छोरी / राम्रा साथीहरू**. This adjective class alternates ओ/ई/आ according to agreement. A noun ending in आ is not automatically feminine; learn the actual noun–adjective combinations.
+Compare **राम्रो छोरा** (a good son) / **राम्री छोरी** (a good daughter) / **राम्रा साथीहरू** (good friends).
+ This adjective class alternates ओ/ई/आ according to agreement.
+ A noun ending in आ is not automatically feminine; learn the actual noun–adjective combinations.
 
 ### 3. Invariable adjectives
 
-**सुन्दर, सफा, व्यस्त** do not follow the राम्रो alternation. Compare **सुन्दर घर / सुन्दर फूल**. Invariance of the adjective does not remove verb agreement: **म व्यस्त छु / हामी व्यस्त छौं**.
+**सुन्दर, सफा, व्यस्त** do not follow the राम्रो alternation.
+ Compare **सुन्दर घर** (a beautiful house) / **सुन्दर फूल** (a beautiful flower).
+ Invariance of the adjective does not remove verb agreement: **म व्यस्त छु** (I am busy) / **हामी व्यस्त छौं** (we are busy).
 
 ### 4. Related agreeing forms
 
-Compare **मेरो छोरा / मेरी छोरी / मेरा साथीहरू**, **कस्तो/कस्ती/कस्ता**, and **जस्तो/जस्ती/जस्ता**. Possession, interrogation and similarity also show agreement. मेरी is not selected because the possessor is female.
+Compare **मेरो छोरा** (my son) / **मेरी छोरी** (my daughter) / **मेरा साथीहरू** (my friends), **कस्तो/कस्ती/कस्ता**, and **जस्तो/जस्ती/जस्ता**.
+ Possession, interrogation and similarity also show agreement. मेरी is not selected because the possessor is female.
 
 ### 5. Honorific and plural-looking agreement
 
-Honorific noun phrases can use forms resembling plural agreement. Learn complete combinations, including basic **उहाँ राम्रो हुनुहुन्छ** and noun modifiers such as **राम्रा शिक्षक**. The ending आ alone does not establish the number of people.
+Honorific noun phrases can use forms resembling plural agreement.
+ Learn complete combinations, including basic **उहाँ राम्रो हुनुहुन्छ** (he/she is a good person, respectful) and noun modifiers such as **राम्रा शिक्षक** (good teachers/a respected good teacher, depending on context).
+ The ending आ alone does not establish the number of people.
 
 
 ### Exercise 1
@@ -5156,10 +5471,13 @@ yo koṭhā ṭhūlo chaina
 
 1: **हो**: A is B (identity / equation) / 3: छ: is ~ (adjective / state) / 5: Postpositions: place, participants and relationships
 
-## 24 Adverbs & exclamations
+## Theme 24｜Adverbs & exclamations
+
+### Theme 24｜Adverbs & exclamations
 
 **Pattern and choice**
-**बिस्तारै बोल्नुहोस् / राम्ररी पढ्नुहोस्** modify the action. Compare adjective **राम्रो** in राम्रो किताब with adverb **राम्ररी** in राम्ररी पढ्नु.
+Manner before the action
+**बिस्तारै बोल्नुहोस्** (please speak slowly) / **राम्ररी पढ्नुहोस्** (please read/study carefully)
 
 ### ① Start with one example
 
@@ -5171,21 +5489,30 @@ I walk slowly.
 
 ### ② Nepali grammar rules
 
-### 2. धेरै versus धेरै पटक
+### 1. Manner before the action
 
-**धेरै पानी** gives a large amount of water; **धेरै पढ्छु** much reading; **धेरै पटक पढ्छु** many repetitions. The modified expression and presence of पटक distinguish amount from frequency.
+**बिस्तारै बोल्नुहोस्** (please speak slowly) / **राम्ररी पढ्नुहोस्** (please read/study carefully) modify the action.
+ Compare adjective **राम्रो** in राम्रो किताब (a good book) with adverb **राम्ररी** in राम्ररी पढ्नु (to read/study properly).
+
+### 2. धेरै versus धेरै पटक (many times)
+
+**धेरै पानी** (a lot of water) gives a large amount of water; **धेरै पढ्छु** (I read a lot) much reading; **धेरै पटक पढ्छु** (I read many times) many repetitions.
+ The modified expression and presence of पटक distinguish amount from frequency.
 
 ### 3. अलि versus थोरै
 
-**अलि बिस्तारै** means a little more slowly; **थोरै पानी** a small amount of water. Their uses overlap, but अलि is also common in softened requests such as **अलि हेर्नुहोस्**.
+**अलि बिस्तारै** (a little more slowly) means a little more slowly; **थोरै पानी** (a little water) a small amount of water.
+ Their uses overlap, but अलि is also common in softened requests such as **अलि हेर्नुहोस्** (please have a look).
 
 ### 4. Frequency expressions
 
-**प्रायः** means usually, **सधैं** always, **कहिलेकाहीँ** sometimes. Compare **कहिलेकाहीँ जान्छु** with negative **कहिल्यै जाँदिनँ**. कहिल्यै receives its never reading in combination with negation.
+**प्रायः** means usually, **सधैं** always, **कहिलेकाहीँ** sometimes.
+ Compare **कहिलेकाहीँ जान्छु** (I sometimes go) with negative **कहिल्यै जाँदिनँ** (I never go). कहिल्यै receives its never reading in combination with negation.
 
 ### 5. Scope of पनि and मात्र
 
-**म पनि जान्छु** adds the speaker; **म चिया मात्र खान्छु** limits the item to tea. Scope depends on the expression before पनि/मात्र, so placement changes what is added or restricted.
+**म पनि जान्छु** (I go too) adds the speaker; **म चिया मात्र खान्छु** (I drink only tea) limits the item to tea.
+ Scope depends on the expression before पनि/मात्र, so placement changes what is added or restricted.
 
 
 कति can be used for an exclamation as well as a question.
@@ -5352,10 +5679,13 @@ yo phūl kati rāmro cha!
 
 3: **छ**: is ~ (adjective / state) / 8: Action verbs: present (do ~) / 6: Question words and how to ask
 
-## 25 Comparison & superlative
+## Theme 25｜Comparison & superlative
+
+### Theme 25｜Comparison & superlative
 
 **Pattern and choice**
-In **यो घर त्यो घरभन्दा ठूलो छ**, यो घर is the target and त्यो घरभन्दा the standard. भन्दा with ठूलो already forms the comparison; an extra word corresponding to more is not always required.
+भन्दा follows the standard
+**यो घर त्यो घरभन्दा ठूलो छ** (this house is bigger than that house)
 
 ### ① Start with one example
 
@@ -5367,21 +5697,28 @@ This house is bigger than that house.
 
 ### ② Nepali grammar rules
 
+### 1. भन्दा follows the standard
+
+In **यो घर त्यो घरभन्दा ठूलो छ** (this house is bigger than that house), यो घर (this house) is the target and त्यो घरभन्दा (than that house) the standard. भन्दा with ठूलो already forms the comparison; an extra word corresponding to more is not always required.
+
 ### 2. अझ versus धेरै
 
-**अझ राम्रो** means better/still better; **धेरै राम्रो** very good. **धेरै ठूलो** alone need not compare two items explicitly; use a standard such as **Bभन्दा** when required.
+**अझ राम्रो** (better; still better) means better/still better; **धेरै राम्रो** (very good) very good. **धेरै ठूलो** (very big) alone need not compare two items explicitly; use a standard such as **Bभन्दा** when required.
 
 ### 3. Superlative and comparison set
 
-**सबैभन्दा ठूलो** is biggest; **यीमध्ये** selects the set among these. In **यीमध्ये यो सबैभन्दा ठूलो छ**, मध्ये establishes the group and सबैभन्दा the superlative.
+**सबैभन्दा ठूलो** (the biggest) is biggest; **यीमध्ये** selects the set among these.
+ In **यीमध्ये यो सबैभन्दा ठूलो छ** (this is the biggest of these), मध्ये establishes the group and सबैभन्दा the superlative.
 
 ### 4. जस्तो versus जस्तै
 
-**तपाईंजस्तो साथी** is a friend like you. जस्तो also has **जस्ती/जस्ता** forms. **तपाईं जस्तै** expresses similarity such as just like you. Compare complete noun/adverbial constructions, not isolated translations.
+**तपाईंजस्तो साथी** (a friend like you) is a friend like you. जस्तो also has **जस्ती/जस्ता** forms. **तपाईं जस्तै** (just like you) expresses similarity such as just like you.
+ Compare complete noun/adverbial constructions, not isolated translations.
 
 ### 5. Equality versus difference
 
-**A र B बराबर छन्** states equality; **Bजति** compares an amount/degree to B; **Bभन्दा** introduces a standard for difference. The marker distinguishes equality/degree from unequal comparison.
+**A र B बराबर छन्** (A and B are equal) states equality; **Bजति** compares an amount/degree to B; **Bभन्दा** introduces a standard for difference.
+ The marker distinguishes equality/degree from unequal comparison.
 
 
 ### Related forms taught in this topic
@@ -5625,10 +5962,13 @@ yo jholā mero jholājastai cha
 
 3: **छ**: is ~ (adjective / state) / 5: Postpositions: place, participants and relationships / 23: Adjective agreement & position
 
-## 26 Conjunctions (and / so / but)
+## Theme 26｜Conjunctions (and / so / but)
+
+### Theme 26｜Conjunctions (and / so / but)
 
 **Pattern and choice**
-**चिया र पानी** coordinates two items. **खाना खाएँ अनि गएँ** explicitly sequences eating then going. र can also join clauses, but अनि foregrounds succession.
+र versus अनि
+**चिया र पानी** (tea and water)
 
 ### ① Start with one example
 
@@ -5640,21 +5980,29 @@ I like tea and coffee.
 
 ### ② Nepali grammar rules
 
+### 1. र versus अनि
+
+**चिया र पानी** (tea and water) coordinates two items. **खाना खाएँ अनि गएँ** (I ate and then went) explicitly sequences eating then going. र can also join clauses, but अनि foregrounds succession.
+
 ### 2. तर versus पनि
 
-**सानो छ तर राम्रो छ** contrasts smallness with goodness. **सानो पनि छ** adds smallness as another property. तर links contrast; पनि adds the preceding element. Their positions and roles differ.
+**सानो छ तर राम्रो छ** (it is small but good) contrasts smallness with goodness. **सानो पनि छ** (it is also small) adds smallness as another property. तर links contrast; पनि adds the preceding element.
+ Their positions and roles differ.
 
 ### 3. किनभने versus -एकोले
 
-**म गएनँ किनभने पानी पर्यो** introduces the reason after the main statement. **पानी परेकोले म गएनँ** places a **-एकोले** reason clause first. Do not attach ले directly to every finite simple-past verb.
+**म गएनँ किनभने पानी पर्यो** (I did not go because it rained) introduces the reason after the main statement. **पानी परेकोले म गएनँ** (I did not go because it rained) places a **-एकोले** reason clause first.
+ Do not attach ले directly to every finite simple-past verb.
 
 ### 4. Cause versus purpose
 
-**वर्षाका कारण** supplies a cause, rain; **पढ्नको लागि** an intended purpose, study. Cause **का कारण** and purpose **को लागि** are not interchangeable.
+**वर्षाका कारण** (because of rain) supplies a cause, rain; **पढ्नको लागि** (in order to read/study) an intended purpose, study.
+ Cause **का कारण** (because of) and purpose **को लागि** (for; in order to) are not interchangeable.
 
-### 5. Concession with भए पनि
+### 5. Concession with भए पनि (even if/although it is)
 
-**पानी परे पनि जान्छु** concedes even if it rains. **पानी पर्यो तर गएँ** contrasts two reported events. The first uses **-ए पनि**; the second uses तर. **का बाबजुद** follows a noun phrase for despite.
+**पानी परे पनि जान्छु** (I will go even if it rains) concedes even if it rains. **पानी पर्यो तर गएँ** (it rained, but I went) contrasts two reported events.
+ The first uses -**ए पनि** (even if/although, part of a linking pattern); the second uses तर. **का बाबजुद** (despite) follows a noun phrase for despite.
 
 
 ### Related forms taught in this topic
@@ -5845,10 +6193,13 @@ varṣākā bābajud hāmī gayaũ
 
 5: Postpositions: place, participants and relationships / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~)
 
-## 27 While ~ (-दै) / after ~ (-एपछि)
+## Theme 27｜While ~ (-दै) / after ~ (-एपछि)
+
+### Theme 27｜While ~ (-दै) / after ~ (-एपछि)
 
 **Pattern and choice**
-**खाँदै बोल्नु** combines simultaneous eating and speaking; **खाँदा** supplies when eating. **-दै** marks overlap/progression, while **-दा/-ँदा** forms a temporal background. A finite progressive adds a छ-family auxiliary to -दै.
+-दै versus -दा
+**खाँदै बोल्नु** (to speak while eating)
 
 ### ① Start with one example
 
@@ -5860,21 +6211,30 @@ I study while listening to music.
 
 ### ② Nepali grammar rules
 
+### 1. -दै versus -दा
+
+**खाँदै बोल्नु** (to speak while eating) combines simultaneous eating and speaking; **खाँदा** supplies when eating. **-दै** marks overlap/progression, while **-दा/-ँदा** forms a temporal background.
+ A finite progressive adds a छ-family auxiliary to -दै.
+
 ### 2. After versus at the time of
 
-**पढेपछि** means after reading; **पढेको बेला** at the time of reading. **-एपछि** establishes completed succession. Do not retain the first-person finite past ending as in पढेँपछि.
+**पढेपछि** means after reading; **पढेको बेला** (at the time of reading) at the time of reading. **-एपछि** establishes completed succession.
+ Do not retain the first-person finite past ending as in पढेँपछि.
 
 ### 3. -नुअघि for before
 
-Compare **खानुअघि** before eating with **खाएपछि** after eating: the linking forms differ, **-नु** versus **-ए**. Noun combinations such as **खानाअघि/खानापछि** follow a different construction.
+Compare **खानुअघि** before eating with **खाएपछि** after eating: the linking forms differ, **-नु** versus **-ए**.
+ Noun combinations such as **खानाअघि/खानापछि** follow a different construction.
 
 ### 4. सम्म versus भित्र versus पछि
 
-**दुई बजेसम्म** means until/by two o'clock, **दुई घण्टाभित्र** within two hours, **दुई घण्टापछि** after two hours. The unit and marker jointly express endpoint, deadline or delay.
+**दुई बजेसम्म** (until/by two o'clock, depending on the verb) means until/by two o'clock, **दुई घण्टाभित्र** (within two hours) within two hours, **दुई घण्टापछि** (after two hours) after two hours.
+ The unit and marker jointly express endpoint, deadline or delay.
 
 ### 5. बित्तिकै versus पछि
 
-**आउनेबित्तिकै** means immediately upon arrival; **आएपछि** after arrival. बित्तिकै emphasizes immediacy. See topic 29 for temporal **जब…तब/जहिले**, distinct from conditional भने.
+**आउनेबित्तिकै** means immediately upon arrival; **आएपछि** after arrival. बित्तिकै emphasizes immediacy.
+ See topic 29 for temporal **जब…तब/जहिले**, distinct from conditional भने.
 
 
 ### Related forms taught in this topic
@@ -6076,10 +6436,13 @@ hāmī duī dinbhitra pharkanchaũ
 
 5: Postpositions: place, participants and relationships / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~) / 29: Relative expressions: people, things, place and time
 
-## 28 In order to ~ (-नको लागि)
+## Theme 28｜In order to ~ (-नको लागि)
+
+### Theme 28｜In order to ~ (-नको लागि)
 
 **Pattern and choice**
-**छोराको लागि / तपाईंका लागि** mark beneficiaries. The connecting को/का depends on the noun/honorific construction. **लाई** marks a recipient; **का लागि** forms a beneficiary/purpose phrase.
+Beneficiary: को/का लागि (for; for the benefit of)
+**छोराको लागि** (for the son) / **तपाईंका लागि** (for you)
 
 ### ① Start with one example
 
@@ -6091,21 +6454,30 @@ I go to the library to study.
 
 ### ② Nepali grammar rules
 
-### 2. Action purpose: -नको लागि
+### 1. Beneficiary: को/का लागि (for; for the benefit of)
 
-Use **पढ्नको लागि / काम गर्नको लागि**. The purpose infinitive is **पढ्न**, not unchanged पढ्नु. **पढाइका लागि** instead begins with the noun study; these are different constructions.
+**छोराको लागि** (for the son) / **तपाईंका लागि** (for you) mark beneficiaries.
+ The connecting को/का depends on the noun/honorific construction. **लाई** marks a recipient; **का लागि** (for; for the benefit of) forms a beneficiary/purpose phrase.
+
+### 2. Action purpose: -नको लागि (in order to do, with a preceding verb base)
+
+Use **पढ्नको लागि** (in order to read/study) / **काम गर्नको लागि** (in order to work).
+ The purpose infinitive is **पढ्न**, not unchanged पढ्नु. **पढाइका लागि** (for study) instead begins with the noun study; these are different constructions.
 
 ### 3. Bare purpose infinitive with motion
 
-**म पढ्न जान्छु** uses **-न + motion verb** for a purpose. को लागि is not obligatory here. The same infinitive in **पढ्न सक्छु** instead complements ability, not motion.
+**म पढ्न जान्छु** (I go to study) uses **-न + motion verb** for a purpose. को लागि (for; in order to) is not obligatory here.
+ The same infinitive in **पढ्न सक्छु** (I can read) instead complements ability, not motion.
 
 ### 4. लागि, निम्ति and निमित्त
 
-**तपाईंका लागि / तपाईंका निम्ति** both mean for you. निमित्त also occurs in formal writing. Learn each complete combination including the connecting form rather than swapping isolated translated words.
+**तपाईंका लागि** (for you) / **तपाईंका निम्ति** (for you) both mean for you. निमित्त also occurs in formal writing.
+ Learn each complete combination including the connecting form rather than swapping isolated translated words.
 
 ### 5. Purpose versus reason
 
-**पढ्नको लागि आएँ** gives an intended purpose; **पानी परेकोले आएनँ** a causal circumstance. Nepali distinguishes them in the linking morphology itself.
+**पढ्नको लागि आएँ** (I came in order to study) gives an intended purpose; **पानी परेकोले आएनँ** (I did not come because it rained) a causal circumstance.
+ Nepali distinguishes them in the linking morphology itself.
 
 
 ### Related forms taught in this topic
@@ -6295,10 +6667,13 @@ ma khelnako lāgi āeko hoinã
 
 5: Postpositions: place, participants and relationships / 6: Question words and how to ask / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~)
 
-## 29 Relative expressions: people, things, place and time
+## Theme 29｜Relative expressions: people, things, place and time
+
+### Theme 29｜Relative expressions: people, things, place and time
 
 **Pattern and choice**
-**बस्ने मान्छे** describes someone who lives; **आएको मान्छे** someone who came. **-ने** often marks habitual/prospective function, **-एको** completion. जाने in **जाने बस** modifies बस; it is not the future predicate जानेछ.
+-ने versus -एको noun modifiers
+**बस्ने मान्छे** (the person who lives/sits, depending on context)
 
 ### ① Start with one example
 
@@ -6310,32 +6685,42 @@ The person who lives here is my friend.
 
 ### ② Nepali grammar rules
 
+### 1. -ने versus -एको noun modifiers
+
+**बस्ने मान्छे** (the person who lives/sits, depending on context) describes someone who lives; **आएको मान्छे** (the person who came) someone who came. **-ने** often marks habitual/prospective function, **-एको** completion. जाने in **जाने बस** (the bus that goes) modifies बस; it is not the future predicate जानेछ.
+
 ### 2. Subjects and respect inside modifiers
 
-Compare **म पढ्ने किताब** with **मैले पढेको किताब**; a completed transitive modifier can still mark its agent. Respectful modifiers include **उहाँले पढ्नुभएको किताब** and non-completed **उहाँ पढ्नुहुने किताब**.
+Compare **म पढ्ने किताब** (the book I read) with **मैले पढेको किताब** (the book I read, completed); a completed transitive modifier can still mark its agent.
+ Respectful modifiers include **उहाँले पढ्नुभएको किताब** (the book he/she has read, respectful) and non-completed **उहाँ पढ्नुहुने किताब** (the book he/she reads, respectful).
 
 ### 3. जो, जसले and जसलाई
 
-Compare **जो…उहाँ**, agentive **जसले…उहाँले**, and dative **जसलाई…उहाँलाई**. Each clause assigns its own participant role; do not copy a case ending mechanically between clauses.
+Compare **जो…उहाँ**, agentive **जसले…उहाँले**, and dative **जसलाई…उहाँलाई**.
+ Each clause assigns its own participant role; do not copy a case ending mechanically between clauses.
 
 ### 4. जुन and जे with their correlates
 
-**जुन किताब…त्यो** selects a particular book; **जे…त्यही** links whatever content/thing is intended. In **जुन किताबमा…**, the noun carries मा. Basic personal **जो** is not a universal substitute for every thing.
+**जुन किताब** (the book which…, a relative expression)**…त्यो** selects a particular book; **जे…त्यही** links whatever content/thing is intended.
+ In **जुन किताबमा** (in the book which…, a relative expression)…, the noun carries मा.
+ Basic personal **जो** is not a universal substitute for every thing.
 
 ### 5. Place, direction and time correlatives
 
-**जहाँ…त्यहाँ** links place; **जता…त्यता** direction; **जब…तब** time. **जहिले** can introduce recurring whenever contexts. Unlike interrogative **कहाँ/कहिले**, these ज-forms link clauses.
+**जहाँ…त्यहाँ** links place; **जता…त्यता** direction; **जब…तब** time. **जहिले** can introduce recurring whenever contexts.
+ Unlike interrogative **कहाँ/कहिले**, these ज-forms link clauses.
 
 ### 6. Manner, degree and -सुकै
 
-**जसरी…त्यसरी** links manner, **जति…त्यति** degree, **जस्तो…त्यस्तो** quality, **जत्रो…त्यत्रो** size. **-सुकै**, as in **जुनसुकै/जहिलेसुकै**, opens the choice to any/whenever. See topic 23 for agreeing forms.
+**जसरी…त्यसरी** links manner, **जति…त्यति** degree, **जस्तो…त्यस्तो** quality, **जत्रो…त्यत्रो** size. **-सुकै**, as in **जुनसुकै/जहिलेसुकै**, opens the choice to any/whenever.
+ See topic 23 for agreeing forms.
 
 
 ### Noun-modifying clauses and relative–correlative clauses
 
-Place a modifier before its noun: नेपाल जाने मान्छे, a person who goes to Nepal; हिजो आएको मान्छे, a person who came yesterday.
+Place a modifier before its noun: नेपाल जाने मान्छे (the person who goes to Nepal), a person who goes to Nepal; हिजो आएको मान्छे (the person who came yesterday), a person who came yesterday.
 
-In जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ, जो introduces a person and उहाँ resumes that person.
+In जो यहाँ बस्नुहुन्छ (the person who lives here, a relative clause), उहाँ मेरो साथी हुनुहुन्छ (he/she is my friend, respectful), जो introduces a person and उहाँ resumes that person.
 
 | Relative form and reading | Function | Short example |
 | --- | --- | --- |
@@ -6748,10 +7133,13 @@ jatā uhā̃ jānuhuncha, ma pani tyatai jānchu
 
 1: **हो**: A is B (identity / equation) / 2: छ: existence and location / 5: Postpositions: place, participants and relationships / 6: Question words and how to ask / 7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~) / 15: Present perfect / experience (have done ~) / 17: Requests & commands (three politeness levels) / 23: Adjective agreement & position / 25: Comparison & superlative / 27: While ~ (-दै) / after ~ (-एपछि) / 30: Conditionals (if ~)
 
-## 30 Conditionals (if ~)
+## Theme 30｜Conditionals (if ~)
+
+### Theme 30｜Conditionals (if ~)
 
 **Pattern and choice**
-**पानी पर्यो भने म जाँदिनँ** gives an if-condition. **यदि** can make if explicit but is optional. Place भने after the condition in **यदि…भने…**.
+Condition + भने
+**पानी पर्यो भने म जाँदिनँ** (if it rains, I will not go)
 
 ### ① Start with one example
 
@@ -6763,21 +7151,30 @@ If it rains, I will stay home.
 
 ### ② Nepali grammar rules
 
+### 1. Condition + भने
+
+**पानी पर्यो भने म जाँदिनँ** (if it rains, I will not go) gives an if-condition. **यदि** can make if explicit but is optional.
+ Place भने after the condition in **यदि…भने…**.
+
 ### 2. Past-looking form in a future condition
 
-**भोलि पानी पर्यो भने** can refer to rain tomorrow. The form पर्यो does not force a report that rain has already occurred; the conditional supposes the occurrence as completed.
+**भोलि पानी पर्यो भने** (if it rains tomorrow) can refer to rain tomorrow.
+ The form पर्यो does not force a report that rain has already occurred; the conditional supposes the occurrence as completed.
 
-### 3. छ भने versus भयो भने
+### 3. छ भने (if there is; if someone is) versus भयो भने (if it happens/comes about)
 
-**समय छ भने** conditions on having time; **समय भयो भने** can condition on time becoming available/the time arriving. The state/occurrence contrast survives inside a conditional.
+**समय छ भने** (if there is time) conditions on having time; **समय भयो भने** (if time becomes available/when the time comes) can condition on time becoming available/the time arriving.
+ The state/occurrence contrast survives inside a conditional.
 
-### 4. नभए versus भए पनि
+### 4. नभए versus भए पनि (even if/although it is)
 
-**समय नभए** means if there is no time; **समय भए पनि** even if there is time. Prefix न negates the condition; **-ए पनि** makes it concessive.
+**समय नभए** (if there is no time) means if there is no time; **समय भए पनि** (even if there is time) even if there is time.
+ Prefix न negates the condition; -**ए पनि** (even if/although, part of a linking pattern) makes it concessive.
 
 ### 5. Conditional versus temporal link
 
-**जब आउनुहुन्छ, तब…** links the time of arrival; **आउनुभयो भने…** conditions on an arrival. The speech verb भन्नु in **भन्नुभयो** has a separate role from conditional भने.
+**जब आउनुहुन्छ** (when you/he/she comes, respectful)**, तब…** links the time of arrival; **आउनुभयो भने** (if you/he/she comes, respectful)… conditions on an arrival.
+ The speech verb भन्नु in **भन्नुभयो** has a separate role from conditional भने.
 
 
 भने can mark the condition even without यदि.
@@ -6935,10 +7332,13 @@ bholi bidā cha bhane, hāmī bheṭaũ
 
 2: **छ**: existence and location / 3: छ: is ~ (adjective / state) / 9: Present negative (don't ~) / 11: The ergative ले & the past (did ~) / 17: Requests & commands (three politeness levels) / 18: Hortative / volitional (let's ~ / shall I ~) / 29: Relative expressions: people, things, place and time
 
-## 31 Inference / opinion / possibility (I think / probably / might / must be)
+## Theme 31｜Inference / opinion / possibility (I think / probably / might / must be)
+
+### Theme 31｜Inference / opinion / possibility (I think / probably / might / must be)
 
 **Pattern and choice**
-**मलाई लाग्छ…** marks an experiencer in मलाई and introduces an impression. **…भन्ने लाग्छ** can frame the content with भन्ने; it need not report spoken words literally.
+Opinions with मलाई लाग्छ (I think/it seems to me that…)
+**मलाई लाग्छ** (I think/it seems to me that…)…
 
 ### ① Start with one example
 
@@ -6950,21 +7350,29 @@ I think it will rain tomorrow.
 
 ### ② Nepali grammar rules
 
-### 2. हो, होला and हुन सक्छ
+### 1. Opinions with मलाई लाग्छ (I think/it seems to me that…)
 
-**यो ठीक हो** asserts correctness; **यो ठीक होला** supposes it; **यो ठीक हुन सक्छ** allows the possibility. होला and हुन सक्छ do not encode fixed numerical probabilities.
+**मलाई लाग्छ** (I think/it seems to me that…)… marks an experiencer in मलाई and introduces an impression. …**भन्ने लाग्छ** (it seems/thinks that…, following the content) can frame the content with भन्ने; it need not report spoken words literally.
+
+### 2. हो, होला and हुन सक्छ (may be; can be)
+
+**यो ठीक हो** (this is correct) asserts correctness; **यो ठीक होला** (this is probably correct) supposes it; **यो ठीक हुन सक्छ** (this may be correct) allows the possibility. होला and हुन सक्छ (may be; can be) do not encode fixed numerical probabilities.
 
 ### 3. Supposition about completion
 
-**उहाँ जानुभएको होला** supposes that the person has gone. It combines respectful perfect **-नुभएको** with होला. Removing the modal and saying **जानुभयो** instead reports the event.
+**उहाँ जानुभएको होला** (he/she has probably gone) supposes that the person has gone.
+ It combines respectful perfect **-नुभएको** with होला.
+ Removing the modal and saying **जानुभयो** instead reports the event.
 
 ### 4. Obligation versus inference
 
-**जानु पर्छ** expresses obligation; **गएको हुनु पर्छ** an inference that someone must have gone. Distinguish required **-नु** action from inferred **-एको हुनु** completion.
+**जानु पर्छ** (need to go) expresses obligation; **गएको हुनु पर्छ** (must have gone) an inference that someone must have gone.
+ Distinguish required **-नु** action from inferred -**एको हुनु** (being in a completed state, part of a compound) completion.
 
 ### 5. Scope of negation
 
-**नआएको होला** supposes non-arrival; **आउन सक्नुहुन्न** expresses inability to come; **आउनुभएको छैन** states non-arrival. Preserve both the scope of negation and the presence/absence of supposition.
+**नआएको होला** (probably has not come) supposes non-arrival; **आउन सक्नुहुन्न** (cannot come, respectful) expresses inability to come; **आउनुभएको छैन** (has not come, respectful) states non-arrival.
+ Preserve both the scope of negation and the presence/absence of supposition.
 
 
 पर्छ has different roles in obligation and deduction.
@@ -7113,10 +7521,13 @@ uhā̃ ghar jānubhaeko hunu parcha
 
 2: **छ**: existence and location / 3: छ: is ~ (adjective / state) / 11: The ergative ले & the past (did ~) / 15: Present perfect / experience (have done ~) / 21: Obligation & permission (must ~ / may ~) / 26: Conjunctions (and / so / but)
 
-## 32 Passive (be ~ed)
+## Theme 32｜Passive (be ~ed)
+
+### Theme 32｜Passive (be ~ed)
 
 **Pattern and choice**
-**ढोका खोलियो** is passive was opened, from **खोल्नु**; **ढोका खुल्यो** is intransitive opened, from **खुल्नु**. Similar translated subjects do not make them the same verb construction.
+Passive खोलियो versus intransitive खुल्यो
+**ढोका खोलियो** (the door was opened)
 
 ### ① Start with one example
 
@@ -7128,21 +7539,29 @@ The door was opened.
 
 ### ② Nepali grammar rules
 
+### 1. Passive खोलियो versus intransitive खुल्यो
+
+**ढोका खोलियो** (the door was opened) is passive was opened, from **खोल्नु**; **ढोका खुल्यो** (the door opened) is intransitive opened, from **खुल्नु**.
+ Similar translated subjects do not make them the same verb construction.
+
 ### 2. Present, past and negative passive
 
-Compare **लेखिन्छ/लेखियो/लेखिएन** for present, past and negative past passive. Active **लेख्छ** is not passive merely because its ending contains छ.
+Compare **लेखिन्छ/लेखियो/लेखिएन** for present, past and negative past passive.
+ Active **लेख्छ** is not passive merely because its ending contains छ.
 
 ### 3. Agents with द्वारा
 
-**शिक्षकद्वारा लेखिएको** names an agent in a formal passive modifier. **शिक्षकले लेख्नुभयो** is an active respectful clause. Changing perspective affects both participant marking and verb form.
+**शिक्षकद्वारा लेखिएको** (written by the teacher) names an agent in a formal passive modifier. **शिक्षकले लेख्नुभयो** (the teacher wrote it, respectful) is an active respectful clause.
+ Changing perspective affects both participant marking and verb form.
 
 ### 4. द्वारा versus मार्फत
 
-**हुलाकमार्फत** means through the post; **प्रतिनिधिमार्फत** through a representative. मार्फत highlights a channel/intermediary, whereas द्वारा can identify an agent/means. Transmission through someone does not automatically make that person the agent.
+**हुलाकमार्फत** means through the post; **प्रतिनिधिमार्फत** through a representative. मार्फत highlights a channel/intermediary, whereas द्वारा can identify an agent/means.
+ Transmission through someone does not automatically make that person the agent.
 
 ### 5. Impersonal -इयो
 
-**आज धेरै हिँडियो** is an impersonal account of much walking, not a passive of a walked object. **म धेरै हिँडेँ** instead has an explicit first-person active subject.
+**आज धेरै हिँडियो** (there was a lot of walking today) is an impersonal account of much walking, not a passive of a walked object. **म धेरै हिँडेँ** (I walked a lot) instead has an explicit first-person active subject.
 
 
 ### Related forms taught in this topic
@@ -7397,10 +7816,13 @@ maile sāthīmārphat khabar paṭhāẽ
 
 5: Postpositions: place, participants and relationships / 11: The ergative ले & the past (did ~) / 15: Present perfect / experience (have done ~)
 
-## 33 Causative (make someone ~)
+## Theme 33｜Causative (make someone ~)
+
+### Theme 33｜Causative (make someone ~)
 
 **Pattern and choice**
-Learn **खानु→खुवाउनु / सिक्नु→सिकाउनु / पढ्नु→पढाउनु**. These pairs include eat/feed and learn/teach. Causatives involve stem-specific changes, not one universally attachable ending.
+Learn causative pairs
+**खानु→खुवाउनु / सिक्नु→सिकाउनु / पढ्नु→पढाउनु**
 
 ### ① Start with one example
 
@@ -7412,21 +7834,31 @@ Mother feeds the child.
 
 ### ② Nepali grammar rules
 
+### 1. Learn causative pairs
+
+Learn **खानु→खुवाउनु / सिक्नु→सिकाउनु / पढ्नु→पढाउनु**.
+ These pairs include eat/feed and learn/teach.
+ Causatives involve stem-specific changes, not one universally attachable ending.
+
 ### 2. Causer and person acting
 
-In **आमाले बच्चालाई खाना खुवाउनुभयो**, आमाले is the causer, बच्चालाई the eater and खाना the food. Participant roles determine the marker selection.
+In **आमाले बच्चालाई खाना खुवाउनुभयो** (the mother fed the child), आमाले is the causer, बच्चालाई the eater and खाना the food.
+ Participant roles determine the marker selection.
 
-### 3. The -न लगाउनु construction
+### 3. The -न लगाउनु (to make/have someone do, with a preceding verb base) construction
 
-**लेख्न लगाउनु/काम गर्न लगाउनु** cause/arrange writing or working. Keep the first verb in **-न** and conjugate लगाउनु, as in respectful past **लगाउनुभयो**.
+**लेख्न लगाउनु** (to make/have someone write)/**काम गर्न लगाउनु** (to make/have someone work) cause/arrange writing or working.
+ Keep the first verb in **-न** and conjugate लगाउनु, as in respectful past **लगाउनुभयो**.
 
-### 4. खुवाउनु versus खान दिनु
+### 4. खुवाउनु versus खान दिनु (to let someone eat)
 
-**खुवाउनु** expresses feeding/causing eating. **खान दिनु** can mean letting or allowing someone to eat. The translation feed/let eat depends on whether the action is caused or permitted.
+**खुवाउनु** expresses feeding/causing eating. **खान दिनु** (to let someone eat) can mean letting or allowing someone to eat.
+ The translation feed/let eat depends on whether the action is caused or permitted.
 
 ### 5. Causative polarity and time
 
-Conjugate the causative itself: **सिकाउनुहुन्छ→सिकाउनुभयो→सिकाउनुभएन**. Compare ability **सिक्न सक्नुहुन्छ** learn with **सिकाउन सक्नुहुन्छ** teach; the causative stem remains essential.
+Conjugate the causative itself: **सिकाउनुहुन्छ→सिकाउनुभयो→सिकाउनुभएन**.
+ Compare ability **सिक्न सक्नुहुन्छ** (can learn, respectful) learn with **सिकाउन सक्नुहुन्छ** (can teach, respectful) teach; the causative stem remains essential.
 
 
 ### Exercise 1
@@ -7541,10 +7973,13 @@ bubāle malāī kām garna lagāunubhaena
 
 5: Postpositions: place, participants and relationships / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~) / 12: Past negative (didn't ~)
 
-## 34 Reported speech (said that ~)
+## Theme 34｜Reported speech (said that ~)
+
+### Theme 34｜Reported speech (said that ~)
 
 **Pattern and choice**
-In **उहाँले «म आउँछु» भन्नुभयो**, quoted content precedes the reporting verb. **भन्नुभयो** is respectful past, **भन्नुहुन्छ** respectful present, agreeing with outer agent उहाँले.
+Content + भन्नु
+**उहाँले «म आउँछु» भन्नुभयो** (he/she said, “I will come”)
 
 ### ① Start with one example
 
@@ -7556,21 +7991,30 @@ She said she would not go.
 
 ### ② Nepali grammar rules
 
+### 1. Content + भन्नु
+
+In **उहाँले «म आउँछु» भन्नुभयो** (he/she said, “I will come”), quoted content precedes the reporting verb. **भन्नुभयो** is respectful past, **भन्नुहुन्छ** respectful present, agreeing with outer agent उहाँले.
+
 ### 2. Pronouns inside and outside quotation
 
-म inside **«म आउँछु»** refers to the original speaker. An indirect formulation such as **उहाँ आफू आउने कुरा भन्नुहुन्छ** can use reflexive **आफू** and a nominalized content phrase.
+म inside **«म आउँछु»** (“I will come”) refers to the original speaker.
+ An indirect formulation such as **उहाँ आफू आउने कुरा भन्नुहुन्छ** (he/she says that he/she will come) can use reflexive **आफू** and a nominalized content phrase.
 
 ### 3. भनेर, भन्ने and भने
 
-**भनेर** links quoted content in **«आउँछु» भनेर भन्नुभयो**; **भन्ने** frames content in **आउने भन्ने कुरा**. **भने** in **आउनुभयो भने** is conditional. Their shared shape does not give them one identical function.
+**भनेर** links quoted content in **«आउँछु» भनेर भन्नुभयो** (said, “I will come”); **भन्ने** frames content in **आउने भन्ने कुरा** (the matter/content of coming). **भने** in **आउनुभयो भने** (if you/he/she comes, respectful) is conditional.
+ Their shared shape does not give them one identical function.
 
 ### 4. Negation inside or outside the quote
 
-**«आउँदिनँ» भन्नुभयो** reports saying I will not come. **«आउँछु» भन्नुभएन** denies saying I will come. Moving negation across the quotation boundary changes what is asserted.
+**«आउँदिनँ» भन्नुभयो** (said, “I will not come”) reports saying I will not come. **«आउँछु» भन्नुभएन** (did not say, “I will come”) denies saying I will come.
+ Moving negation across the quotation boundary changes what is asserted.
 
 ### 5. Time words and habitual reporting
 
-Quoted **भोलि** is tomorrow relative to the original speech. Contrast habitual reporting **भन्नुहुन्थ्यो** with a completed report **भन्नुभयो**. Indirect reporting follows the intended time relations rather than obligatory English-style backshift.
+Quoted **भोलि** is tomorrow relative to the original speech.
+ Contrast habitual reporting **भन्नुहुन्थ्यो** with a completed report **भन्नुभयो**.
+ Indirect reporting follows the intended time relations rather than obligatory English-style backshift.
 
 
 ### Direct quotation and indirect reporting
@@ -7726,10 +8170,13 @@ Mother always used to tell me to go to bed early.
 
 1: **हो**: A is B (identity / equation) / 5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~) / 9: Present negative (don't ~) / 11: The ergative ले & the past (did ~) / 14: Habitual past (used to ~) / 26: Conjunctions (and / so / but)
 
-## 35 Verb forms through writing: लेख्नु
+## Theme 35 (Appendix A)｜Verb forms through writing: लेख्नु
+
+### Theme 35 (Appendix A)｜Verb forms through writing: लेख्नु
 
 **Pattern and choice**
-Compare **लेख्नु→लेख्छु/लेख्दिनँ**, we **लेख्छौं/लेख्दैनौं**, and respectful **लेख्नुहुन्छ/लेख्नुहुन्न**. The common stem participates in distinct ordinary/respectful present and negative patterns.
+लेख्नु present and negative
+**लेख्नु→लेख्छु/लेख्दिनँ**
 
 ### ① Start with one example
 
@@ -7741,21 +8188,32 @@ I write letters.
 
 ### ② Nepali grammar rules
 
+### 1. लेख्नु present and negative
+
+Compare **लेख्नु→लेख्छु/लेख्दिनँ**, we **लेख्छौं/लेख्दैनौं**, and respectful **लेख्नुहुन्छ/लेख्नुहुन्न**.
+ The common stem participates in distinct ordinary/respectful present and negative patterns.
+
 ### 2. Past: include मैले
 
-Compare **म चिठी लेख्छु→मैले चिठी लेखेँ**. Transitive completion changes the subject marking too. Respectful past is **उहाँले चिठी लेख्नुभयो**; negative variants **लेखिनँ/लेखेनँ** differ from present लेख्दिनँ.
+Compare **म चिठी लेख्छु** (I write a letter)→**मैले चिठी लेखेँ** (I wrote a letter).
+ Transitive completion changes the subject marking too.
+ Respectful past is **उहाँले चिठी लेख्नुभयो** (he/she wrote a letter, respectful); negative variants **लेखिनँ/लेखेनँ** differ from present लेख्दिनँ.
 
 ### 3. Progressive and perfect compounds
 
-**लेख्दै छु / लेखेको छु / लेखेको थिएँ** express ongoing writing, present-relevant completion and prior completion at a past point. The auxiliary छु/थिएँ changes the reference time even with shared लेखेको.
+**लेख्दै छु** (I am writing) / **लेखेको छु** (I have written it) / **लेखेको थिएँ** (I had written it) express ongoing writing, present-relevant completion and prior completion at a past point.
+ The auxiliary छु/थिएँ changes the reference time even with shared लेखेको.
 
 ### 4. Habitual past and future
 
-**लेख्थें** is former habitual writing; **लेख्नेछु** future; **भोलि लेख्छु** a present-form plan. In **लेख्ने चिठी**, लेख्ने modifies a noun rather than acting as a complete future predicate.
+**लेख्थें** is former habitual writing; **लेख्नेछु** future; **भोलि लेख्छु** (I will write tomorrow) a present-form plan.
+ In **लेख्ने चिठी** (the letter to be written/that someone writes), लेख्ने modifies a noun rather than acting as a complete future predicate.
 
 ### 5. लेख्न versus लेख्नु
 
-Compare **लेख्न सक्छु / लेख्न चाहन्छु / लेख्नु पर्छ / लेख्नको लागि**. Ability/desire use लेख्न, basic necessity लेख्नु, and purpose लेख्नको लागि. The complement construction determines the preceding form.
+Compare **लेख्न सक्छु** (I can write) / **लेख्न चाहन्छु** (I want to write) / **लेख्नु पर्छ** (need to write) / **लेख्नको लागि** (in order to write).
+ Ability/desire use लेख्न, basic necessity लेख्नु, and purpose लेख्नको लागि (in order to write).
+ The complement construction determines the preceding form.
 
 
 See topic 7 for respect/familiarity and topics 1–2 for **हो**/छ.
@@ -7883,10 +8341,13 @@ Starting from the stem लेख्, compare who writes, who wrote and who has w
 
 Check the agent marker ले with completed transitive actions.
 
-## 36 Copulas through identity and location
+## Theme 36 (Appendix B)｜Copulas through identity and location
+
+### Theme 36 (Appendix B)｜Copulas through identity and location
 
 **Pattern and choice**
-Compare **म लेखक हुँ / म घरमा छु / म बिहान घरमा हुन्छु**: identity, current location and habitual setting. All belong to हुनु, but the construction and intended perspective select the set.
+Three sets with one subject
+**म लेखक हुँ** (I am an author) / **म घरमा छु** (I am at home) / **म बिहान घरमा हुन्छु** (I am usually at home in the morning)
 
 ### ① Start with one example
 
@@ -7898,21 +8359,31 @@ I am an author.
 
 ### ② Nepali grammar rules
 
+### 1. Three sets with one subject
+
+Compare **म लेखक हुँ** (I am an author) / **म घरमा छु** (I am at home) / **म बिहान घरमा हुन्छु** (I am usually at home in the morning): identity, current location and habitual setting.
+ All belong to हुनु, but the construction and intended perspective select the set.
+
 ### 2. Three negative sets
 
-Compare **हुँ→होइनँ / छु→छैनँ / हुन्छु→हुँदिनँ**, and ordinary **होइन/छैन/हुँदैन**. Respectful **हुनुहुन्न** can serve multiple functions; interpret the surrounding identity/location/habitual construction.
+Compare **हुँ→होइनँ / छु→छैनँ / हुन्छु→हुँदिनँ**, and ordinary **होइन/छैन/हुँदैन**.
+ Respectful **हुनुहुन्न** can serve multiple functions; interpret the surrounding identity/location/habitual construction.
 
 ### 3. Past state versus occurrence
 
-**म घरमा थिएँ** describes a past location; **काम भयो** accomplishment/occurrence. Distinguish **थियो** from **भयो**. Respectful past states use **हुनुहुन्थ्यो**; respectful occurrences include **हुनुभयो**.
+**म घरमा थिएँ** (I was at home) describes a past location; **काम भयो** (the work was done/accomplished) accomplishment/occurrence.
+ Distinguish **थियो** from **भयो**.
+ Respectful past states use **हुनुहुन्थ्यो**; respectful occurrences include **हुनुभयो**.
 
 ### 4. Shared honorific forms, distinct functions
 
-**उहाँ लेखक हुनुहुन्छ / उहाँ घरमा हुनुहुन्छ** share an honorific verb, but differ in identity noun versus मा-marked location. **उहाँलाई जाडो लाग्छ** is a dative-experiencer construction with लाग्नु, not an interchangeable हुनु clause.
+**उहाँ लेखक हुनुहुन्छ** (he/she is an author, respectful) / **उहाँ घरमा हुनुहुन्छ** (he/she is at home, respectful) share an honorific verb, but differ in identity noun versus मा-marked location. **उहाँलाई जाडो लाग्छ** (he/she feels cold, respectful) is a dative-experiencer construction with लाग्नु, not an interchangeable हुनु clause.
 
 ### 5. छ and थियो as auxiliaries
 
-In **पढ्दै छु / पढेको छु / पढेको थिएँ**, छु/थिएँ act as auxiliaries for progression/completion. Their preceding verb forms distinguish these from location **घरमा छु**. See topics 10, 15 and 16.
+In **पढ्दै छु** (I am reading) / **पढेको छु** (I have read it) / **पढेको थिएँ** (I had read it), छु/थिएँ act as auxiliaries for progression/completion.
+ Their preceding verb forms distinguish these from location **घरमा छु** (I am at home).
+ See topics 10, 15 and 16.
 
 ### हुनु: three sets and matching forms
 

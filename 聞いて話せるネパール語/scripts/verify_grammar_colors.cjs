@@ -61,7 +61,7 @@ for(const lang of ['ja','en']){
   assert(!html.includes('⚠'));assert(!html.includes('#fff8e1'));assert(!html.includes('**'));
  }
 }
-const samples=[['ja','1',390,1],['ja','5',320,1.4],['en','29',390,1]];
+const samples=[['ja','3',390,1],['ja','5',320,1.4],['en','3',390,1]];
 const pages=samples.map(([lang,id,width,scale])=>{
  const all=data[lang].grammarGuide[id];const end=all.findIndex(b=>b.beginnerIntroEnd);
  return `<section style="width:${width}px"><header>${lang.toUpperCase()} · ${id} · ${width}px · ${scale}×</header><main>${all.slice(0,end).map(b=>render(b,scale)).join('')}</main></section>`;

@@ -75,7 +75,7 @@ def lesson_blocks(theme, lang, example, roman, translation):
         hunu_blocks(theme,lang) if theme in [1,2,3,4,36] else [])
 
 
-def expand_guides(guides, examples, readings, translations):
+def expand_guides(guides, examples, readings, translations, theme_names=None):
     """Replace only the short intro; preserve existing inventories and analyses."""
     result=copy.deepcopy(guides)
     for lang,topics in result.items():
@@ -101,11 +101,15 @@ def expand_guides(guides, examples, readings, translations):
                     skip_table=False;continue
                 filtered.append(b)
             intro=lesson_blocks(theme,lang,examples[key][0],readings[key][0],translations[lang][key][0])
+            if theme_names is not None:
+                from nepali_lesson_glosses import numbered_title
+                intro.insert(0,{'type':'h','text':numbered_title(theme,theme_names[lang][key],lang),'lessonTitle':True})
             # A zero-length paragraph is the saved, invisible insertion boundary.
             # Its index is stored in the teacher's source, not shown as a label.
             from friendly_grammar_layout import detail_blocks
             from nepali_rule_lessons import clean_retained, presentation
-            topics[key]=presentation(intro+[{'type':'p','text':'','beginnerIntroEnd':True}]+clean_retained(detail_blocks(filtered,lang),lang),lang)
+            from nepali_lesson_glosses import support_blocks
+            topics[key]=support_blocks(presentation(intro+[{'type':'p','text':'','beginnerIntroEnd':True}]+clean_retained(detail_blocks(filtered,lang),lang),lang),lang)
     return result
 
 # Compatibility export for packaging reports; original rule text lives in one file.

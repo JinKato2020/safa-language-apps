@@ -1,12 +1,22 @@
 {
   "1": [
     {
+      "type": "h",
+      "text": "テーマ1｜हो：AはBだ（同定・断定）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**म＋विद्यार्थी＋हुँ**。職業・国籍・種類を名詞で述べるときはहो系を使います。職業名の前に冠詞を足す必要はありません。विद्यार्थीをशिक्षकに替えても、मならहुँのままです。",
+      "text": "**文の型と使い分け**\n名詞＋हो系\n**म＋विद्यार्थी＋हुँ**（私＋学生＋です → 私は学生です）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14,7 +24,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -49,7 +60,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 名詞＋हो系",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**म＋विद्यार्थी＋हुँ**（私＋学生＋です → 私は学生です）。\n職業・国籍・種類を名詞で述べるときはहो系を使います。\n職業名の前に冠詞を足す必要はありません。\nविद्यार्थीをशिक्षकに替えても、मならहुँのままです。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -57,15 +87,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म हुँ／हामी हौं／यो हो**。तपाईं・तपाईंहरू・उहाँ・उहाँहरूには**हुनुहुन्छ**を使います。敬意形では単数・複数、男性・女性でこの動詞を替えません。",
+      "text": "**म हुँ**（私は〜です〈同定の文末〉）／**हामी हौं**（私たちは〜です〈同定の文末〉）／**यो हो**（これは〜です〈同定の文末〉）。\nतपाईं・तपाईंहरू・उहाँ・उहाँहरूには**हुनुहुन्छ**を使います。\n敬意形では単数・複数、男性・女性でこの動詞を替えません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -73,15 +105,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**यो किताब होइन**ではहोをहोइनへ替えます。私なら**होइनँ**、私たちなら**होइनौं**、敬意形なら**हुनुहुन्न**です。हो छैनと二つ並べて否定を作りません。",
+      "text": "**यो किताब होइन**（これは本ではありません）ではहोをहोइनへ替えます。\n私なら**होइनँ**、私たちなら**होइनौं**、敬意形なら**हुनुहुन्न**です。\nहो छैन（誤った同定否定の例。正しくはहोइन）と二つ並べて否定を作りません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -89,15 +123,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**के यो किताब हो?**の文頭のकेは、はい・いいえを尋ねる目印です。**यो के हो?**のकेは「何」。前者にはहो／होइन、後者にはयो किताब होのように名詞を含む答えを返します。",
+      "text": "**के यो किताब हो?**（これは本ですか）の文頭のकेは、はい・いいえを尋ねる目印です。\n**यो के हो?**（これは何ですか）のकेは「何」。\n前者にはहो／होइन、後者にはयो किताब हो（これは本です）のように名詞を含む答えを返します。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -105,15 +141,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**यो राम्रो किताब हो**は「良い本」という名詞のまとまりを同定します。**यो किताब राम्रो छ**は本の性質を述べます。होを「永久」、छを「一時的」とだけ覚えると、この違いを説明できません。",
+      "text": "**यो राम्रो किताब हो**（これは良い本です）は「良い本」という名詞のまとまりを同定します。\n**यो किताब राम्रो छ**（この本は良いです）は本の性質を述べます。\nहोを「永久」、छを「一時的」とだけ覚えると、この違いを説明できません。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -121,7 +159,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -190,7 +229,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -246,7 +286,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -254,7 +295,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -262,7 +304,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -1072,12 +1115,22 @@
   ],
   "2": [
     {
+      "type": "h",
+      "text": "テーマ2｜छ：ある・いる（存在と居場所）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**म घरमा छु／किताब घरमा छ**。घरमाのमाは場所を示し、最後は存在する人・物に合わせます。**छु・छौं・छ・छन्**と敬意形हुनुहुन्छを使い分けます。",
+      "text": "**文の型と使い分け**\n場所＋छ系\n**म घरमा छु**（私は家にいます）／**किताब घरमा छ**（本は家にあります）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -1085,7 +1138,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -1120,7 +1174,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 場所＋छ系",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**म घरमा छु**（私は家にいます）／**किताब घरमा छ**（本は家にあります）。\nघरमाのमाは場所を示し、最後は存在する人・物に合わせます。\n**छु・छौं・छ・छन्**と敬意形हुनुहुन्छを使い分けます。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -1128,15 +1201,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**किताब टेबलमा छ**は本の所在、**टेबलमा किताब छ**は机上に本があることを伝える基本の並べ方です。語順には情報の置き方による幅がありますが、माの付いた場所を動詞の一致の基準にしません。",
+      "text": "**किताब टेबलमा छ**（本は机の上にあります）は本の所在、**टेबलमा किताब छ**（机の上に本があります）は机上に本があることを伝える基本の並べ方です。\n語順には情報の置き方による幅がありますが、माの付いた場所を動詞の一致の基準にしません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -1144,15 +1219,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "घर・नेपालなどには**घरमा・नेपालमा**。**यहाँ・त्यहाँ・कहाँ**は、それだけで「ここに・そこに・どこに」を表せます。基本の所在文ではयहाँमाのようにमाを重ねません。",
+      "text": "घर・नेपालなどには**घरमा・नेपालमा**。\n**यहाँ・त्यहाँ・कहाँ**は、それだけで「ここに・そこに・どこに」を表せます。\n基本の所在文ではयहाँमाのようにमाを重ねません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -1160,15 +1237,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**मसँग कलम छ**は「私の所にペンがある」という型です。मसँगは持ち主、कलमは存在する物なので、छुではなくछ。**म घरमा छु**のमとは役割が異なります。所持のसँगはテーマ5。",
+      "text": "**मसँग कलम छ**（私はペンを持っています）は「私の所にペンがある」という型です。\nमसँगは持ち主、कलमは存在する物なので、छुではなくछ。\n**म घरमा छु**（私は家にいます）のमとは役割が異なります。\n所持のसँगはテーマ5。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -1176,15 +1255,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**घरमा छैन**は「家にはいない・ない」、**घर होइन**は「家ではない」。所在・存在の否定はछैन系、同定の否定はहोइन系です。**उहाँ घरमा हुनुहुन्न**では敬意形が同じでも、घरमाが所在を示します。",
+      "text": "**घरमा छैन**（家にいません・ありません）は「家にはいない・ない」、**घर होइन**（家ではありません）は「家ではない」。\n所在・存在の否定はछैन系、同定の否定はहोइन系です。\n**उहाँ घरमा हुनुहुन्न**（彼・彼女は家にいません〈敬意〉）では敬意形が同じでも、घरमाが所在を示します。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -1192,7 +1273,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -1261,7 +1343,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -1317,7 +1400,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -1325,7 +1409,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -2053,7 +2138,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -2061,17 +2147,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "3": [
     {
+      "type": "h",
+      "text": "テーマ3｜छ：〜だ（形容詞・状態）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**पानी चिसो छ**のचिसोは冷たい状態を述べます。現在の性質・体調の基本は**対象＋形容詞＋छ系**。राम्रो・ठूलोなど、名詞により形が変わるものはテーマ23の一致も確認します。",
+      "text": "**文の型と使い分け**\n形容詞＋छ\n**पानी चिसो छ**（水は冷たいです）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -2079,7 +2176,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -2114,7 +2212,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 形容詞＋छ",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**पानी चिसो छ**（水は冷たいです）のचिसोは冷たい状態を述べます。\n現在の性質・体調の基本は**対象＋形容詞＋छ系**。\nराम्रो・ठूलोなど、名詞により形が変わるものはテーマ23の一致も確認します。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -2122,15 +2239,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म व्यस्त छु／हामी व्यस्त छौं／उहाँ व्यस्त हुनुहुन्छ**。व्यस्त自体は変えず、人称・敬意を最後に表します。形容詞が変わらなくても、動詞まで常にछになるわけではありません。",
+      "text": "**म व्यस्त छु**（私は忙しいです）／**हामी व्यस्त छौं**（私たちは忙しいです）／**उहाँ व्यस्त हुनुहुन्छ**（彼・彼女は忙しいです〈敬意〉）。\nव्यस्त自体は変えず、人称・敬意を最後に表します。\n形容詞が変わらなくても、動詞まで常にछになるわけではありません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -2138,31 +2257,35 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म खुसी छु**は主語म＋状態。**मलाई जाडो लाग्छ**は経験者मलाई＋感覚＋लाग्छです。日本語の「私は寒い」だけを手掛かりにम जाडो छुと組み立てず、जाडो लाग्नुを一つの型として覚えます。",
+      "text": "**म खुसी छु**（私はうれしいです）は主語म＋状態。\n**मलाई जाडो लाग्छ**（私は寒く感じます）は経験者मलाई＋感覚＋लाग्छです。\n日本語の「私は寒い」だけを手掛かりにम जाडो छु（誤った組み立ての例。寒いならमलाई जाडो लाग्छ）と組み立てず、जाडो लाग्नु（寒く感じる）を一つの型として覚えます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "4. राम्रो छとराम्रो हुन्छ",
+      "text": "4. राम्रो छ（良いです〈現在の状態〉）とराम्रो हुन्छ（ふだん良い・良くなる〈一般・条件〉）",
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**यहाँको मौसम राम्रो छ**はこの場での天気の説明、**वसन्तमा यहाँको मौसम राम्रो हुन्छ**は春の一般的な傾向です。単に形容詞があるからछと固定せず、反復・一般性ならहुन्छも使います。",
+      "text": "**यहाँको मौसम राम्रो छ**（ここの天気は良いです）はこの場での天気の説明、**वसन्तमा यहाँको मौसम राम्रो हुन्छ**（春はここの天気が良いものです）は春の一般的な傾向です。\n単に形容詞があるからछと固定せず、反復・一般性ならहुन्छも使います。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -2170,15 +2293,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पानी चिसो छैन**では形容詞はそのまま、छをछैनにします。**म व्यस्त छैनँ／उहाँ व्यस्त हुनुहुन्न**も同じしくみです。चिसोの前にनを置く依頼・禁止の型とは区別します。",
+      "text": "**पानी चिसो छैन**（水は冷たくありません）では形容詞はそのまま、छをछैनにします。\n**म व्यस्त छैनँ**（私は忙しくありません）／**उहाँ व्यस्त हुनुहुन्न**（彼・彼女は忙しくありません〈敬意〉）も同じしくみです。\nचिसोの前にनを置く依頼・禁止の型とは区別します。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -2186,7 +2311,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -2255,7 +2381,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -2311,7 +2438,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -3009,7 +3137,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -3017,17 +3146,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "4": [
     {
+      "type": "h",
+      "text": "テーマ4｜हुन्छ：〜になる／一般に〜（習慣・変化）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**आज चिसो छ**は今日の状態、**जाडोमा चिसो हुन्छ**は冬の一般的な状態です。हुन्छには「なる」だけでなく、条件が整うとそうなる・ふだんそうである、という用法があります。",
+      "text": "**文の型と使い分け**\nछとहुन्छを対比する\n**आज चिसो छ**（今日は寒いです）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -3035,7 +3175,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -3070,7 +3211,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. छとहुन्छを対比する",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**आज चिसो छ**（今日は寒いです）は今日の状態、**जाडोमा चिसो हुन्छ**（冬は寒いものです）は冬の一般的な状態です。\nहुन्छには「なる」だけでなく、条件が整うとそうなる・ふだんそうである、という用法があります。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -3078,15 +3238,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म अहिले घरमा छु**と**म बिहान घरमा हुन्छु**を比較します。अहिलेは今、बिहानはここでは朝の反復場面。主語が私ならहुन्छではなく**हुन्छु**、私たちなら**हुन्छौं**です。",
+      "text": "**म अहिले घरमा छु**（私は今家にいます）と**म बिहान घरमा हुन्छु**（私は朝はふだん家にいます）を比較します。\nअहिलेは今、बिहानはここでは朝の反復場面。\n主語が私ならहुन्छではなく**हुन्छु**、私たちなら**हुन्छौं**です。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -3094,15 +3256,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**यहाँ हल्ला हुँदैन**は普段騒ぎが起きない、**अहिले हल्ला छैन**は今騒がしくないこと。हुन्छ系の否定は**हुँदैन・हुँदिनँ・हुँदैनौं**、敬意形はहुनुहुन्नです。",
+      "text": "**यहाँ हल्ला हुँदैन**（ここではふだん騒ぎは起きません）は普段騒ぎが起きない、**अहिले हल्ला छैन**（今は騒がしくありません）は今騒がしくないこと。\nहुन्छ系の否定は**हुँदैन・हुँदिनँ・हुँदैनौं**、敬意形はहुनुहुन्नです。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -3110,15 +3274,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**काम भयो**は仕事が済んだ・成立したという出来事、**काम थियो**は仕事があったという過去の状態です。छの過去を機械的にすべてभयोにせず、状態のथियोと出来事・変化のभयोを分けます。",
+      "text": "**काम भयो**（仕事が済みました・仕事が成立しました）は仕事が済んだ・成立したという出来事、**काम थियो**（仕事がありました）は仕事があったという過去の状態です。\nछの過去を機械的にすべてभयोにせず、状態のथियोと出来事・変化のभयोを分けます。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -3126,15 +3292,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**डाक्टर बन्नु**は医者になること。職業への変化にはबन्नुも使います。**जान हुन्छ?**のहुन्छは「行ってよいか」という許可で、一般的状態とは別の型です。許可・禁止はテーマ21で対比します。",
+      "text": "**डाक्टर बन्नु**（医者になる）は医者になること。\n職業への変化にはबन्नुも使います。\n**जान हुन्छ?**（行ってもよい）のहुन्छは「行ってよいか」という許可で、一般的状態とは別の型です。\n許可・禁止はテーマ21で対比します。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -3142,7 +3310,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -3211,7 +3380,8 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -3267,7 +3437,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -4035,7 +4206,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -4043,17 +4215,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "5": [
     {
+      "type": "h",
+      "text": "テーマ5｜場所・相手・関係を表す言葉（後置詞）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**देखि（dekhi／デキ）**は時間・空間の始まりを起点として示します。**बाट（bāṭa／バタ）**は出発地・出所・経路や移動手段に使います。**घरदेखि विद्यालयसम्म**は家から学校までの範囲、**घरबाट आएँ**は家を出て来たことを表す基本形です。場所の起点では両方が使える文もあり、「時間専用／場所専用」とは分けられません。",
+      "text": "**文の型と使い分け**\n**देखि／बाट＝「〜から」**\n起点では用法が重なる。\n交通手段の「〜で」にはबाट。",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -4061,7 +4244,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -4096,7 +4280,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. देखिとबाट：重なる「から」",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**देखि（dekhi／デキ）**は時間・空間の始まりを起点として示します。\n**बाट（bāṭa／バタ）**は出発地・出所・経路や移動手段に使います。\n**घरदेखि विद्यालयसम्म**（家から学校まで）は家から学校までの範囲、**घरबाट आएँ**（私は家から来ました）は家を出て来たことを表す基本形です。\n場所の起点では両方が使える文もあり、「時間専用／場所専用」とは分けられません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -4104,15 +4307,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**बिहानदेखि काम गर्दै छु**は朝から継続中。**भोलिदेखि**は明日を開始点とするので、今までの継続を必ず意味するわけではありません。時の開始はबाटも使われますが、まずदेखिを基本にします。**बसबाट जान्छु**はバスを手段に行くこと。बसदेखिへ替えるとバスを起点と読む方向になり、「バスで」の意味にはなりません。",
+      "text": "**बिहानदेखि काम गर्दै छु**（私は朝からずっと働いています）は朝から継続中。\n**भोलिदेखि**は明日を開始点とするので、今までの継続を必ず意味するわけではありません。\n時の開始はबाटも使われますが、まずदेखिを基本にします。\n**बसबाट जान्छु**（私はバスで行きます）はバスを手段に行くこと。\nबसदेखिへ替えるとバスを起点と読む方向になり、「バスで」の意味にはなりません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -4120,15 +4325,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**विद्यालयमा**は学校という場所、**शिक्षकलाई**は先生という受け手・対象です。लाईは人など特定の対象にも使いますが、日本語の「を」のたびに付けません。**किताब पढ्छु**には普通लाईを足しません。**मलाई जाडो लाग्छ**のलाईは感覚を経験する人です。",
+      "text": "**विद्यालयमा**は学校という場所、**शिक्षकलाई**は先生という受け手・対象です。\nलाईは人など特定の対象にも使いますが、日本語の「を」のたびに付けません。\n**किताब पढ्छु**（私は本を読みます）には普通लाईを足しません。\n**मलाई जाडो लाग्छ**（私は寒く感じます）のलाईは感覚を経験する人です。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -4136,15 +4343,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**मसँग किताब छ**は手元に本を持つ、**यो मेरो किताब हो**はその本が私のものだという同定。सँगは同伴にも使い、**साथीसँग जान्छु**は友達と行くことです。**को・की・का**は持ち主の性別でなく、後ろの名詞や構文に合わせます。**मेरो छोरा／मेरी छोरी／मेरा साथीहरू**を比較します。",
+      "text": "**मसँग किताब छ**（私は本を持っています）は手元に本を持つ、**यो मेरो किताब हो**（これは私の本です）はその本が私のものだという同定。\nसँगは同伴にも使い、**साथीसँग जान्छु**（私は友達と行きます）は友達と行くことです。\n**को・की・का**は持ち主の性別でなく、後ろの名詞や構文に合わせます。\n**मेरो छोरा**（私の息子）／**मेरी छोरी**（私の娘）／**मेरा साथीहरू**（私の友達たち）を比較します。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -4152,15 +4361,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**कलमले लेख्छु**はペンを道具に書く、**बसबाट जान्छु**はバスを交通手段に行くこと。**बसमा छु**ならバスの中にいます。लेには**मैले पढेँ**のような動作主の用法もあります。同じलेでも、कलमलेは書き手ではありません。",
+      "text": "**कलमले लेख्छु**（私はペンで書きます）はペンを道具に書く、**बसबाट जान्छु**（私はバスで行きます）はバスを交通手段に行くこと。\n**बसमा छु**（私はバスの中にいます）ならバスの中にいます。\nलेには**मैले पढेँ**（私は読みました）のような動作主の用法もあります。\n同じलेでも、कलमलेは書き手ではありません。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -4168,15 +4379,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पाँच बजेसम्म**は5時まで、**पाँच बजेतिर**は5時ごろ。**घरमा**は家に、**घरतिर**は家の方へ。複数に後置詞を付ける順は**साथी＋हरू＋सँग**。代名詞は**म→मलाई・मैले・मसँग・मेरो**と変わるため、मलाईをमलाईमाのように積み重ねません。",
+      "text": "**पाँच बजेसम्म**（5時まで・5時までに〈動詞による〉）は5時まで、**पाँच बजेतिर**（5時ごろに）は5時ごろ。\n**घरमा**は家に、**घरतिर**は家の方へ。\n複数に後置詞を付ける順は**साथी＋हरू＋सँग**。\n代名詞は**म→मलाई・मैले・मसँग・मेरो**と変わるため、मलाईをमलाईमाのように積み重ねません。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -4184,34 +4397,30 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
       "headers": [
-        "場面",
-        "基本の形",
-        "替えたときの違い"
+        "場面・基本の形",
+        "意味と使い分け"
       ],
       "rows": [
         [
-          "時間の開始",
-          "बिहानदेखि / bihāndekhi",
+          "時間の開始\nबिहानदेखि / bihāndekhi",
           "朝から。बाटも時間に使えるが、まずदेखिを基本にする"
         ],
         [
-          "場所から来る",
-          "घरबाट आएँ / gharbāṭa āẽ",
+          "場所から来る\nघरबाट आएँ / gharbāṭa āẽ",
           "家から来た。देखिも場所の起点に使え、空間用法は重なる"
         ],
         [
-          "起点〜終点",
-          "घरदेखि विद्यालयसम्म / ghardekhi vidyālayasamma",
+          "起点〜終点\nघरदेखि विद्यालयसम्म / ghardekhi vidyālayasamma",
           "家から学校まで。बाट…सम्मも可能で、必ず誤りとはしない"
         ],
         [
-          "交通手段",
-          "बसबाट / basbāṭa",
+          "交通手段\nबसबाट / basbāṭa",
           "バスで。बसदेखिは「バスを起点に」で、交通手段を表さない"
         ]
       ],
@@ -4230,7 +4439,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -4291,7 +4501,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -4327,7 +4538,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -4403,7 +4615,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -4429,7 +4642,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -4491,11 +4705,12 @@
     },
     {
       "type": "p",
-      "text": "मसँग कलम **छ**は「私のところにペンがある」→「私はペンを持っている」。",
+      "text": "मसँग कलम（私の所にペン〈所持文の一部〉） **छ**は「私のところにペンがある」→「私はペンを持っている」。",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -4503,15 +4718,17 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "साथीसँग जान्छुでは一緒に行く相手を示します。",
+      "text": "साथीसँग जान्छु（私は友達と行きます）では一緒に行く相手を示します。",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -4519,7 +4736,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -4527,7 +4745,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -4535,7 +4754,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -4543,7 +4763,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -5826,25 +6047,37 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "2: **छ**：ある・いる（存在と居場所） / 6: 疑問詞と質問の作り方 / 7: 人称・親しさ・敬意と動詞の形 / 11: 能格 ले と過去（〜した） / 25: 比較・最上級 / 26: 接続（と・そして・でも・ので） / 27: 〜ながら（-दै）／〜てから（-एपछि） / 28: 〜ために（-नको लागि） / 32: 受動（〜される）",
+      "text": "2: **छ**：ある・いる（存在と居場所） / 6: 疑問詞と質問の作り方 / 7: 人称・親しさ・敬意と動詞の形 / 11: 能格 ले と過去（〜した） / 25: 比較・最上級 / 26: 接続（と・そして・でも・ので） / 27: 〜ながら（-दै）／〜てから（-एपछि） / 28: 〜ために（-नको लागि（〜するために〈前に動詞語幹が付く型〉）） / 32: 受動（〜される）",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "6": [
     {
+      "type": "h",
+      "text": "テーマ6｜疑問詞と質問の作り方",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**उहाँ घरमा हुनुहुन्छ→उहाँ कहाँ हुनुहुन्छ?**。疑問詞を文頭へ移動する必要はありません。**कहाँबाट आउनुभयो?**ではबाटを残し、返答でもनेपालबाटのように起点を示します。",
+      "text": "**文の型と使い分け**\n疑問詞は答えの位置へ\n**उहाँ घरमा हुनुहुन्छ**（彼・彼女は家にいます〈敬意〉）→**उहाँ कहाँ हुनुहुन्छ**（彼・彼女はどこにいますか〈敬意〉）?",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -5852,7 +6085,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -5887,7 +6121,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 疑問詞は答えの位置へ",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**उहाँ घरमा हुनुहुन्छ**（彼・彼女は家にいます〈敬意〉）→**उहाँ कहाँ हुनुहुन्छ**（彼・彼女はどこにいますか〈敬意〉）?。\n疑問詞を文頭へ移動する必要はありません。\n**कहाँबाट आउनुभयो?**（どこから来ましたか〈敬意〉）ではबाटを残し、返答でもनेपालबाटのように起点を示します。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -5895,15 +6148,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "人を尋ねる**को**は、動作主なら**कसले**、相手・対象なら**कसलाई**、所有関係なら**कसको・कसकी・कसका**へ変わります。**कसले लेख्नुभयो?**と**कसलाई लेख्नुभयो?**は「誰が」と「誰に」の違いです。",
+      "text": "人を尋ねる**को**は、動作主なら**कसले**、相手・対象なら**कसलाई**、所有関係なら**कसको・कसकी・कसका**へ変わります。\n**कसले लेख्नुभयो?**（誰が書きましたか〈敬意〉）と**कसलाई लेख्नुभयो?**（誰に書きましたか〈敬意〉）は「誰が」と「誰に」の違いです。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -5911,15 +6166,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**कुन किताब?**は候補からどの本か、**कस्तो किताब?**はどんな種類・性質の本か。**कसरी जानुहुन्छ?**はどうやって行くかです。कस्तोは**कस्ती・कस्ता**にも変化しますが、कुनはこのような性・数の変化をしません。",
+      "text": "**कुन किताब?**（どの本）は候補からどの本か、**कस्तो किताब?**（どんな本）はどんな種類・性質の本か。\n**कसरी जानुहुन्छ?**（どうやって行きますか〈敬意〉）はどうやって行くかです。\nकस्तोは**कस्ती・कस्ता**にも変化しますが、कुनはこのような性・数の変化をしません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -5927,15 +6184,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**कति बजे?**は何時、**कति दिन?**は何日、**कहिले?**はいつ。**कहिलेदेखि?／कहिलेसम्म?**は開始／終点を尋ねます。**कति जना?**で人数、**कति वटा?**で個数を尋ね、数える対象に合う助数表現を使います。",
+      "text": "**कति बजे?**（何時）は何時、**कति दिन?**（何日・何日間）は何日、**कहिले?**はいつ。\n**कहिलेदेखि?／कहिलेसम्म?**は開始／終点を尋ねます。\n**कति जना?**（何人）で人数、**कति वटा?**（いくつ・何個）で個数を尋ね、数える対象に合う助数表現を使います。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -5943,15 +6202,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**के खानुहुन्छ?**には食べ物を答え、**किन खानुहुन्न?**には理由を答えます。**के तपाईं खानुहुन्छ?**の文頭केは、食べるかどうかの質問。疑問詞を入れても最後の動詞の敬意形は保ちます。",
+      "text": "**के खानुहुन्छ?**（何を食べますか〈敬意〉）には食べ物を答え、**किन खानुहुन्न?**（なぜ食べませんか〈敬意〉）には理由を答えます。\n**के तपाईं खानुहुन्छ?**（あなたは食べますか〈はい・いいえの質問〉）の文頭केは、食べるかどうかの質問。\n疑問詞を入れても最後の動詞の敬意形は保ちます。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -5964,7 +6225,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6108,7 +6370,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -6116,15 +6379,17 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "कति जनाは人数、कति वटाは物の個数、कति बजेは時刻、कति पटकは回数です。",
+      "text": "कति जना（何人）は人数、कति वटा（いくつ・何個）は物の個数、कति बजे（何時）は時刻、कति पटक（何回）は回数です。",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -6132,7 +6397,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -6140,7 +6406,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6171,7 +6438,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6202,7 +6470,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6233,7 +6502,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6264,7 +6534,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6295,7 +6566,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6326,7 +6598,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6357,7 +6630,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6388,7 +6662,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6419,7 +6694,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6450,7 +6726,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6481,7 +6758,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6512,7 +6790,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6543,7 +6822,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6574,7 +6854,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6605,7 +6886,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6632,11 +6914,12 @@
     },
     {
       "type": "h",
-      "text": "कसका लागि・कसको लागि",
+      "text": "कसका लागि（誰のために）・कसको लागि（誰のために）",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6667,7 +6950,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6694,11 +6978,12 @@
     },
     {
       "type": "h",
-      "text": "कसको बारेमा",
+      "text": "कसको बारेमा（誰について）",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6729,7 +7014,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6756,11 +7042,12 @@
     },
     {
       "type": "h",
-      "text": "केका लागि・केको",
+      "text": "केका लागि（何のために）・केको",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6791,7 +7078,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6822,7 +7110,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6849,11 +7138,12 @@
     },
     {
       "type": "h",
-      "text": "कति वटा",
+      "text": "कति वटा（いくつ・何個）",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6880,11 +7170,12 @@
     },
     {
       "type": "h",
-      "text": "कति जना",
+      "text": "कति जना（何人）",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6911,11 +7202,12 @@
     },
     {
       "type": "h",
-      "text": "कति बजे・कति बज्यो",
+      "text": "कति बजे（何時）・कति बज्यो（何時になりましたか・今何時ですか）",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6942,11 +7234,12 @@
     },
     {
       "type": "h",
-      "text": "कति बेर・कति समय",
+      "text": "कति बेर（どのくらいの時間）・कति समय（どれだけの時間）",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -6973,11 +7266,12 @@
     },
     {
       "type": "h",
-      "text": "कति दिन・कति वर्ष",
+      "text": "कति दिन（何日・何日間）・कति वर्ष（何年・何歳）",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -7004,11 +7298,12 @@
     },
     {
       "type": "h",
-      "text": "कति पटक",
+      "text": "कति पटक（何回）",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -7035,11 +7330,12 @@
     },
     {
       "type": "h",
-      "text": "कति टाढा",
+      "text": "कति टाढा（どのくらい遠く）",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -7070,7 +7366,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -7097,19 +7394,21 @@
     },
     {
       "type": "p",
-      "text": "「今何時」はकति बज्यो?、「何時に行く」はकति बजे जानुहुन्छ?。",
+      "text": "「今何時」はकति बज्यो（何時になりましたか・今何時ですか）?、「何時に行く」はकति बजे जानुहुन्छ（何時に行きますか〈敬意〉）?。",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "年齢はतपाईंको उमेर कति वर्ष भयो?（おいくつですか）。",
+      "text": "年齢はतपाईंको उमेर कति वर्ष भयो（あなたは何歳ですか）?（おいくつですか）。",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -7117,7 +7416,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -7125,7 +7425,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -8457,25 +8758,37 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "1: **हो**：AはBだ（同定・断定） / 2: छ：ある・いる（存在と居場所） / 5: 場所・相手・関係を表す言葉（後置詞） / 7: 人称・親しさ・敬意と動詞の形 / 11: 能格 ले と過去（〜した） / 23: 形容詞の一致・位置 / 27: 〜ながら（-दै）／〜てから（-एपछि） / 28: 〜ために（-नको लागि）",
+      "text": "1: **हो**：AはBだ（同定・断定） / 2: छ：ある・いる（存在と居場所） / 5: 場所・相手・関係を表す言葉（後置詞） / 7: 人称・親しさ・敬意と動詞の形 / 11: 能格 ले と過去（〜した） / 23: 形容詞の一致・位置 / 27: 〜ながら（-दै）／〜てから（-एपछि） / 28: 〜ために（-नको लागि（〜するために〈前に動詞語幹が付く型〉））",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "7": [
     {
+      "type": "h",
+      "text": "テーマ7｜人称・親しさ・敬意と動詞の形",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**म・हामी・तपाईं・तपाईंहरू・उहाँ・उहाँहरू**を基本とします。तपाईंとउहाँの組は**हुनुहुन्छ／गर्नुहुन्छ**。हरूを付けて複数にしても、この敬意形は変わりません。",
+      "text": "**文の型と使い分け**\n基本6人称と敬意形\n**म・हामी・तपाईं・तपाईंहरू・उहाँ・उहाँहरू**",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -8483,7 +8796,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -8518,7 +8832,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 基本6人称と敬意形",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**म・हामी・तपाईं・तपाईंहरू・उहाँ・उहाँहरू**を基本とします。\nतपाईंとउहाँの組は**हुनुहुन्छ／गर्नुहुन्छ**。\nहरूを付けて複数にしても、この敬意形は変わりません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -8526,15 +8859,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**उ／ऊ**は親しい第三者の単数形で、低い敬意の**छ・गर्छ**などと組みます。**उनी**はより配慮のある呼び方として一人にも使い、**छन्・गर्छन्**などが対応します。उनीを見ただけで必ず複数と判断しません。",
+      "text": "**उ／ऊ**は親しい第三者の単数形で、低い敬意の**छ・गर्छ**などと組みます。\n**उनी**はより配慮のある呼び方として一人にも使い、**छन्・गर्छन्**などが対応します。\nउनीを見ただけで必ず複数と判断しません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -8542,15 +8877,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**उनीहरू**は複数で、基本は**छन्・गर्छन्**。**उहाँहरू**は敬意のある複数で**हुनुहुन्छ・गर्नुहुन्छ**です。英語のthey、日本語の彼らからでは敬意は決まらず、指す人との関係で選びます。",
+      "text": "**उनीहरू**は複数で、基本は**छन्・गर्छन्**。\n**उहाँहरू**は敬意のある複数で**हुनुहुन्छ・गर्नुहुन्छ**です。\n英語のthey、日本語の彼らからでは敬意は決まらず、指す人との関係で選びます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -8558,15 +8895,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**तँ गर्छस्／तिमी गर्छौ／तपाईं गर्नुहुन्छ**。तँは非常に近い関係などに限られ、場面によって失礼になります。तिमीは親しい相手向け。**तिमीहरू**も動詞はगर्छौで、हरूに合わせてगर्छन्へは替えません。",
+      "text": "**तँ गर्छस्**（お前はする〈非常に親しい・低い敬意〉）／**तिमी गर्छौ**（君はする〈親しい相手〉）／**तपाईं गर्नुहुन्छ**（あなたはします〈敬意〉）。\nतँは非常に近い関係などに限られ、場面によって失礼になります。\nतिमीは親しい相手向け。\n**तिमीहरू**も動詞はगर्छौで、हरूに合わせてगर्छन्へは替えません。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -8574,15 +8913,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म→मैले・मलाई・मेरो**、**उ／ऊ→उसले・उसलाई・उसको**、**उनी→उनले・उनलाई・उनको**。敬意形は**उहाँले・उहाँलाई・उहाँको**です。辞書の代名詞にそのまま全部の後置詞を足せるわけではありません。",
+      "text": "**म→मैले・मलाई・मेरो**、**उ／ऊ→उसले・उसलाई・उसको**、**उनी→उनले・उनलाई・उनको**。\n敬意形は**उहाँले・उहाँलाई・उहाँको**です。\n辞書の代名詞にそのまま全部の後置詞を足せるわけではありません。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -8595,7 +8936,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -8646,7 +8988,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -8654,7 +8997,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -8662,7 +9006,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -8670,7 +9015,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -8716,7 +9062,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -8724,7 +9071,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -8732,7 +9080,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -8740,7 +9089,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -9778,7 +10128,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -9786,17 +10137,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "8": [
     {
+      "type": "h",
+      "text": "テーマ8｜動作動詞の現在（〜する）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**पढ्नु→पढ्छु／गर्नु→गर्छु／खानु→खान्छु**。辞書形-नुを外した語幹に現在の形を作りますが、**जानु→जान्छु、आउनु→आउँछु**のように音の変化もあります。どの動詞も単純にछを付ける規則にはしません。",
+      "text": "**文の型と使い分け**\n-नुから現在形へ\n**पढ्नु→पढ्छु／गर्नु→गर्छु／खानु→खान्छु**",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -9804,7 +10166,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -9839,7 +10202,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. -नुから現在形へ",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**पढ्नु→पढ्छु／गर्नु→गर्छु／खानु→खान्छु**。\n辞書形-नुを外した語幹に現在の形を作りますが、**जानु→जान्छु、आउनु→आउँछु**のように音の変化もあります。\nどの動詞も単純にछを付ける規則にはしません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -9847,15 +10229,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म पढ्छु／हामी पढ्छौं／तपाईं पढ्नुहुन्छ／उहाँहरू पढ्नुहुन्छ**。敬意形は**-नुहुन्छ**を含みます。普通形のपढ्छुにहुन्छを後付けして敬意形にしません。",
+      "text": "**म पढ्छु**（私は読みます・勉強します）／**हामी पढ्छौं**（私たちは読みます・勉強します）／**तपाईं पढ्नुहुन्छ**（あなたは読みます〈敬意〉）／**उहाँहरू पढ्नुहुन्छ**（彼ら・彼女らは読みます〈敬意〉）。\n敬意形は**-नुहुन्छ**を含みます。\n普通形のपढ्छुにहुन्छを後付けして敬意形にしません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -9863,15 +10247,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म किताब पढ्छु**は基本の「私＋本＋読む」。不特定の物の目的語にलाईは必須ではありません。**उहाँलाई भेट्छु**のように特定の人を対象にする場合はलाईを使います。",
+      "text": "**म किताब पढ्छु**（私は本を読みます）は基本の「私＋本＋読む」。\n不特定の物の目的語にलाईは必須ではありません。\n**उहाँलाई भेट्छु**（私はその方に会います）のように特定の人を対象にする場合はलाईを使います。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -9879,15 +10265,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म बिहान पढ्छु**は朝の習慣、**म अहिले पढ्दै छु**は今読んでいる途中。現在形पढ्छुだけを「今している」に固定せず、**सधैं・हरेक दिन・प्रायः**と組む反復用法を押さえます。",
+      "text": "**म बिहान पढ्छु**（私は朝勉強します）は朝の習慣、**म अहिले पढ्दै छु**（私は今読んでいる途中です）は今読んでいる途中。\n現在形पढ्छुだけを「今している」に固定せず、**सधैं・हरेक दिन・प्रायः**（いつも・毎日・たいてい）と組む反復用法を押さえます。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -9895,15 +10283,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**भोलि म जान्छु**はभोलिにより明日の予定になります。**जानेछु**という未来形だけが予定の表し方ではありません。否定は**जान्छु→जाँदिनँ**、質問は**कहिले जानुहुन्छ?**のように時間部分を疑問詞にします。",
+      "text": "**भोलि म जान्छु**（私は明日行きます）はभोलिにより明日の予定になります。\n**जानेछु**という未来形だけが予定の表し方ではありません。\n否定は**जान्छु→जाँदिनँ**、質問は**कहिले जानुहुन्छ?**（いつ行きますか〈敬意〉）のように時間部分を疑問詞にします。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -9916,7 +10306,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -10544,12 +10935,22 @@
   ],
   "9": [
     {
+      "type": "h",
+      "text": "テーマ9｜現在の否定（〜しない）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**गर्छु→गर्दिनँ／पढ्छु→पढ्दिनँ**。私たちなら**गर्दैनौं・पढ्दैनौं**です。動作の現在否定は、होइनやछैनを動詞の後ろに付ける方法とは異なります。",
+      "text": "**文の型と使い分け**\n普通形の否定語幹\n**गर्छु→गर्दिनँ／पढ्छु→पढ्दिनँ**",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -10557,7 +10958,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -10592,7 +10994,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 普通形の否定語幹",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**गर्छु→गर्दिनँ／पढ्छु→पढ्दिनँ**。\n私たちなら**गर्दैनौं・पढ्दैनौं**です。\n動作の現在否定は、होइनやछैनを動詞の後ろに付ける方法とは異なります。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -10600,15 +11021,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**खान्छु→खाँदिनँ／जान्छु→जाँदिनँ／आउँछु→आउँदिनँ**。母音で終わる語幹では鼻音も含めて覚えます。**गर्दिनँ**の最後の鼻音は私に対応し、普通の三人称गर्दैनとは違います。",
+      "text": "**खान्छु→खाँदिनँ／जान्छु→जाँदिनँ／आउँछु→आउँदिनँ**。\n母音で終わる語幹では鼻音も含めて覚えます。\n**गर्दिनँ**の最後の鼻音は私に対応し、普通の三人称गर्दैनとは違います。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -10616,15 +11039,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**तपाईं गर्नुहुन्न／उहाँ पढ्नुहुन्न／उहाँहरू जानुहुन्न**。敬意の肯定-नुहुन्छに対し、否定は**-नुहुन्न**。उहाँを女性と訳しても、低い敬意のगर्दिनन्へ替えません。",
+      "text": "**तपाईं गर्नुहुन्न**（あなたはしません〈敬意〉）／**उहाँ पढ्नुहुन्न**（彼・彼女は読みません〈敬意〉）／**उहाँहरू जानुहुन्न**（彼ら・彼女らは行きません〈敬意〉）。\n敬意の肯定-नुहुन्छに対し、否定は**-नुहुन्न**。\nउहाँを女性と訳しても、低い敬意のगर्दिनन्へ替えません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -10632,15 +11057,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म जाँदिनँ**は行かない、**म गएनँ**は行かなかった。**मैले गरिनँ**などの表記・変種と混同しないよう、この教材ではगरेनँ系を表で確認します。時を表す語だけでなく否定形そのものも替わります。",
+      "text": "**म जाँदिनँ**（私は行きません）は行かない、**म गएनँ**（私は行きませんでした）は行かなかった。\n**मैले गरिनँ**（私はしませんでした〈過去否定の変種〉）などの表記・変種と混同しないよう、この教材ではगरेनँ系を表で確認します。\n時を表す語だけでなく否定形そのものも替わります。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -10648,15 +11075,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म कहिल्यै चुरोट खाँदिनँ**は一度もたばこを吸わない、という強い否定です。कहिल्यैは否定と組むとnever、疑問文ではeverに相当する使い方があるため、単語だけを常に「決して〜ない」と訳しません。",
+      "text": "**म कहिल्यै चुरोट खाँदिनँ**（私はたばこを一度も吸いません）は一度もたばこを吸わない、という強い否定です。\nकहिल्यैは否定と組むとnever、疑問文ではeverに相当する使い方があるため、単語だけを常に「決して〜ない」と訳しません。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -10669,7 +11098,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -10720,7 +11150,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11170,12 +11601,22 @@
   ],
   "10": [
     {
+      "type": "h",
+      "text": "テーマ10｜現在進行（〜している）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**पढ्दै छु／गर्दै छु／खाँदै छु／जाँदै छु**。進行形は動作部分と**छ系の補助動詞**の組です。子音・母音の語幹で綴りや鼻音が変わるため、पढ्दैとखाँदैを実際の形で比べます。",
+      "text": "**文の型と使い分け**\n-दैと補助動詞\n**पढ्दै छु**（私は読んでいる途中です）／**गर्दै छु**（私はしている途中です）／**खाँदै छु**（私は食べている途中です）／**जाँदै छु**（私は向かっているところです）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11183,7 +11624,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -11218,7 +11660,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. -दैと補助動詞",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**पढ्दै छु**（私は読んでいる途中です）／**गर्दै छु**（私はしている途中です）／**खाँदै छु**（私は食べている途中です）／**जाँदै छु**（私は向かっているところです）。\n進行形は動作部分と**छ系の補助動詞**の組です。\n子音・母音の語幹で綴りや鼻音が変わるため、पढ्दैとखाँदैを実際の形で比べます。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11226,15 +11687,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म पढ्दै छु／हामी पढ्दै छौं／उहाँ पढ्दै हुनुहुन्छ**。पढ्दैは共通で、最後の形が人称・敬意を示します。敬意形をपढ्नुहुँदै छのように現在形から推測して作りません。",
+      "text": "**म पढ्दै छु**（私は読んでいる途中です）／**हामी पढ्दै छौं**（私たちは読んでいる途中です）／**उहाँ पढ्दै हुनुहुन्छ**（彼・彼女は今読んでいます〈敬意〉）。\nपढ्दैは共通で、最後の形が人称・敬意を示します。\n敬意形をपढ्नुहुँदै छ（誤った進行形の例。敬意形はपढ्दै हुनुहुन्छ）のように現在形から推測して作りません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11242,15 +11705,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**गर्दै छु**と**गरिरहेको छु**はいずれも進行を表せます。後者は**गरि＋रहेको＋छु**という組み立て。人・数などに対応するरहेकी・रहेकाもあるため、रहेकोだけを全ての主語に固定する規則にはしません。",
+      "text": "**गर्दै छु**（私はしている途中です）と**गरिरहेको छु**（私はしている途中です）はいずれも進行を表せます。\n後者は**गरि＋रहेको＋छु**という組み立て。\n人・数などに対応するरहेकी・रहेकाもあるため、रहेकोだけを全ての主語に固定する規則にはしません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11258,15 +11723,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पढ्दै छैनँ**は今読んでいない、**पढ्दै थिएँ**はその時読んでいた。否定・時制を最後の補助動詞へ表すため、पढ्दैは保ちます。**पढ्दिनँ**なら通常・意思の否定で、同じ型ではありません。",
+      "text": "**पढ्दै छैनँ**（私は今読んでいません）は今読んでいない、**पढ्दै थिएँ**（私はその時読んでいる途中でした）はその時読んでいた。\n否定・時制を最後の補助動詞へ表すため、पढ्दैは保ちます。\n**पढ्दिनँ**なら通常・意思の否定で、同じ型ではありません。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11274,15 +11741,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पढिरहेको मान्छे**は読んでいる人、**मान्छे पढिरहेको छ**はその人が読んでいるという文。名詞の前の修飾では独立文のछをそのまま挟みません。名詞修飾はテーマ29でも学びます。",
+      "text": "**पढिरहेको मान्छे**（読んでいる人）は読んでいる人、**मान्छे पढिरहेको छ**（その人は読んでいます）はその人が読んでいるという文。\n名詞の前の修飾では独立文のछをそのまま挟みません。\n名詞修飾はテーマ29でも学びます。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -11295,7 +11764,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -11346,7 +11816,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11799,7 +12270,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -11807,17 +12279,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "11": [
     {
+      "type": "h",
+      "text": "テーマ11｜能格 ले と過去（〜した）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**म पढ्छु→मैले पढेँ**。完了した他動詞の出来事では動作主にलेが付き、मは**मैले**になります。**तपाईंले・उहाँले・हामीले**も同じ動作主の系列です。लेを目的語に付ける規則ではありません。",
+      "text": "**文の型と使い分け**\n他動詞の過去とले\n**म पढ्छु**（私は読みます・勉強します）→**मैले पढेँ**（私は読みました）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11825,7 +12308,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -11860,7 +12344,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 他動詞の過去とले",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**म पढ्छु**（私は読みます・勉強します）→**मैले पढेँ**（私は読みました）。\n完了した他動詞の出来事では動作主にलेが付き、मは**मैले**になります。\n**तपाईंले・उहाँले・हामीले**も同じ動作主の系列です。\nलेを目的語に付ける規則ではありません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11868,15 +12371,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म गएँ／उहाँ आउनुभयो**は行く・来るという自動詞の過去です。**मैले किताब पढेँ**のような対象を取る動作と区別します。時間が過去だからという理由だけでमをमैलेへ替えません。",
+      "text": "**म गएँ**（私は行きました）／**उहाँ आउनुभयो**（彼・彼女が来ました〈敬意〉）は行く・来るという自動詞の過去です。\n**मैले किताब पढेँ**（私は本を読みました）のような対象を取る動作と区別します。\n時間が過去だからという理由だけでमをमैलेへ替えません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11884,15 +12389,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**गर्नु→गरेँ／जानु→गएँ／आउनु→आएँ**。敬意形は**गर्नुभयो・जानुभयो・आउनुभयो**。उहाँ・उहाँहरूはどちらもこの敬意形を使い、女性だからगरिन्、複数だからगरेとはしません。",
+      "text": "**गर्नु→गरेँ／जानु→गएँ／आउनु→आएँ**。\n敬意形は**गर्नुभयो・जानुभयो・आउनुभयो**。\nउहाँ・उहाँहरूはどちらもこの敬意形を使い、女性だからगरिन्、複数だからगरेとはしません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11900,15 +12407,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "लेの付いた主語がある文でも、活用を一つの語尾へ固定しません。**मैले गरेँ**の一人称、**उहाँले गर्नुभयो**の敬意、普通の三人称では対象などに関係する一致が現れる場合があります。まず基本6人称の実例を基準にします。",
+      "text": "लेの付いた主語がある文でも、活用を一つの語尾へ固定しません。\n**मैले गरेँ**（私がしました）の一人称、**उहाँले गर्नुभयो**（彼・彼女がしました〈敬意〉）の敬意、普通の三人称では対象などに関係する一致が現れる場合があります。\nまず基本6人称の実例を基準にします。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -11916,15 +12425,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म घरमा थिएँ**は所在の過去、**म घर गएँ**は移動の出来事です。**काम थियो**は仕事があった、**काम भयो**は仕事が済んだ・起きた。過去の日本語訳が似ても、対応するネパール語の述語を選びます。",
+      "text": "**म घरमा थिएँ**（私は家にいました）は所在の過去、**म घर गएँ**（私は家に行きました・帰宅しました）は移動の出来事です。\n**काम थियो**（仕事がありました）は仕事があった、**काम भयो**（仕事が済みました・仕事が成立しました）は仕事が済んだ・起きた。\n過去の日本語訳が似ても、対応するネパール語の述語を選びます。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -11937,7 +12448,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -11988,7 +12500,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -12531,12 +13044,22 @@
   ],
   "12": [
     {
+      "type": "h",
+      "text": "テーマ12｜過去の否定（〜しなかった）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**मैले काम गरेनँ**は仕事をしなかったこと。現在の**काम गर्दिनँ**と語幹・語尾が違います。**गएँ→गएनँ／आएँ→आएनँ**も、それぞれの過去語幹から否定を作ります。",
+      "text": "**文の型と使い分け**\nगर्दिनँとगरेनँ\n**मैले काम गरेनँ**（私は仕事をしませんでした）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -12544,7 +13067,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -12579,7 +13103,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. गर्दिनँとगरेनँ",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**मैले काम गरेनँ**（私は仕事をしませんでした）は仕事をしなかったこと。\n現在の**काम गर्दिनँ**（私は働きません・仕事をしません）と語幹・語尾が違います。\n**गएँ→गएनँ／आएँ→आएनँ**も、それぞれの過去語幹から否定を作ります。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -12587,15 +13130,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**गर्नुभयो→गर्नुभएन／जानुभयो→जानुभएन**。तपाईं・उहाँ・उहाँहरूに対応します。**गर्नुहुन्न**は現在の否定、**गर्नुभएन**は過去の否定で、हुन्नとभएनの区別が時を変えます。",
+      "text": "**गर्नुभयो→गर्नुभएन／जानुभयो→जानुभएन**。\nतपाईं・उहाँ・उहाँहरूに対応します。\n**गर्नुहुन्न**は現在の否定、**गर्नुभएन**は過去の否定で、हुन्नとभएनの区別が時を変えます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -12603,15 +13148,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**मैले किताब पढिनँ／पढेनँ**のように、読まなかった出来事でも動作主の形はमैलेです。**म गएनँ**では行くが自動詞なのでम。否定にすればलेをすべて外す、という規則ではありません。",
+      "text": "**मैले किताब पढिनँ**（私は本を読みませんでした）**／पढेनँ**のように、読まなかった出来事でも動作主の形はमैलेです。\n**म गएनँ**（私は行きませんでした）では行くが自動詞なのでम。\n否定にすればलेをすべて外す、という規則ではありません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -12619,15 +13166,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पानी थिएन**は水がなかったという存在の否定。**पानी पिएनँ**は水を飲まなかったという動作の否定です。私がいなかったなら**म थिइनँ**、敬意形なら**हुनुहुन्थेन**のような所在・状態の系列を使います。",
+      "text": "**पानी थिएन**（水がありませんでした）は水がなかったという存在の否定。\n**पानी पिएनँ**（私は水を飲みませんでした）は水を飲まなかったという動作の否定です。\n私がいなかったなら**म थिइनँ**（私はいませんでした）、敬意形なら**हुनुहुन्थेन**のような所在・状態の系列を使います。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -12635,15 +13184,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**अझै गरेको छैन**はまだしていないという現在につながる未完了、**हिजो गरेनँ**は昨日しなかった出来事です。अझैを足すだけで過去否定が現在完了になるわけではなく、**-एको＋छैन系**へ型も替えます。",
+      "text": "**अझै गरेको छैन**（まだしていない）はまだしていないという現在につながる未完了、**हिजो गरेनँ**（私は昨日しませんでした）は昨日しなかった出来事です。\nअझैを足すだけで過去否定が現在完了になるわけではなく、**-एको＋छैन系**へ型も替えます。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -12656,7 +13207,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -12707,7 +13259,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -12758,7 +13311,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -13211,7 +13765,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -13219,17 +13774,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "13": [
     {
+      "type": "h",
+      "text": "テーマ13｜未来（〜する・〜するつもり）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**गर्नु→गर्नेछु／जानु→जानेछु／पढ्नु→पढ्नेछु**。基本は-नेの形に未来の人称語尾を組みます。私たちなら**गर्नेछौं**。**गर्नुहुनेछ**は敬意形で、普通形गर्नेछとは作りが違います。",
+      "text": "**文の型と使い分け**\n-नेछの未来形\n**गर्नु→गर्नेछु／जानु→जानेछु／पढ्नु→पढ्नेछु**",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -13237,7 +13803,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -13272,7 +13839,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. -नेछの未来形",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**गर्नु→गर्नेछु／जानु→जानेछु／पढ्नु→पढ्नेछु**。\n基本は-नेの形に未来の人称語尾を組みます。\n私たちなら**गर्नेछौं**。\n**गर्नुहुनेछ**は敬意形で、普通形गर्नेछとは作りが違います。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -13280,15 +13866,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म जानेछैनँ／हामी जानेछैनौं／उहाँ जानुहुनेछैन**。肯定のछに対してछैन系が対応します。敬意の現在否定**जानुहुन्न**と、明示的な未来否定**जानुहुनेछैन**を比べます。",
+      "text": "**म जानेछैनँ**（私は行きません〈未来形の否定〉）／**हामी जानेछैनौं**（私たちは行きません〈未来の否定〉）／**उहाँ जानुहुनेछैन**（彼・彼女は行かないでしょう〈未来・敬意〉）。\n肯定のछに対してछैन系が対応します。\n敬意の現在否定**जानुहुन्न**と、明示的な未来否定**जानुहुनेछैन**を比べます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -13296,15 +13884,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**भोलि जान्छु**も**भोलि जानेछु**も明日の行動を表せます。前者は日常会話の予定に使いやすく、後者は未来を形で明示する言い方です。日本語に「〜するつもり」があっても、必ず未来形だけになるわけではありません。",
+      "text": "**भोलि जान्छु**（私は明日行きます〈現在形で予定〉）も**भोलि जानेछु**（私は明日行きます〈未来形〉）も明日の行動を表せます。\n前者は日常会話の予定に使いやすく、後者は未来を形で明示する言い方です。\n日本語に「〜するつもり」があっても、必ず未来形だけになるわけではありません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -13312,15 +13902,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जाने बस**は行くバスという名詞修飾、**बस जानेछ**はバスが行くという未来の文です。-नेだけを見て未来の完成した述語と決めません。修飾先の名詞が続くかも確認します。",
+      "text": "**जाने बस**（行くバス）は行くバスという名詞修飾、**बस जानेछ**（バスが行くでしょう〈未来〉）はバスが行くという未来の文です。\n-नेだけを見て未来の完成した述語と決めません。\n修飾先の名詞が続くかも確認します。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -13328,15 +13920,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म जान्छु**は予定・意志、**म जाऊँ?**は私が行こうかという申し出。**हामी जाऔं**なら一緒に行こうという勧誘です。未来形、申し出、勧誘を同じ「行く」の訳だけで入れ替えません。",
+      "text": "**म जान्छु**（私は行きます）は予定・意志、**म जाऊँ?**（私が行きましょうか〈申し出〉）は私が行こうかという申し出。\n**हामी जाऔं**（私たちで行きましょう）なら一緒に行こうという勧誘です。\n未来形、申し出、勧誘を同じ「行く」の訳だけで入れ替えません。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -13349,7 +13943,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -13972,12 +14567,22 @@
   ],
   "14": [
     {
+      "type": "h",
+      "text": "テーマ14｜習慣過去（昔はよく〜した）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**म पहिले यहाँ बस्थें**は以前ここに住んでいたという習慣・継続的背景です。**म हिजो यहाँ बसेँ**は昨日ここにいた・座った一回の出来事。習慣過去**गर्थें・बस्थें**と単純過去**गरेँ・बसेँ**を対比します。",
+      "text": "**文の型と使い分け**\nगर्थेंとगरेँ\n**म पहिले यहाँ बस्थें**（私は以前ここに住んでいました）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -13985,7 +14590,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -14020,7 +14626,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. गर्थेंとगरेँ",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**म पहिले यहाँ बस्थें**（私は以前ここに住んでいました）は以前ここに住んでいたという習慣・継続的背景です。\n**म हिजो यहाँ बसेँ**（私は昨日ここにいました・座りました）は昨日ここにいた・座った一回の出来事。\n習慣過去**गर्थें・बस्थें**と単純過去**गरेँ・बसेँ**を対比します。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14028,15 +14653,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**गर्थें／गर्थ्यौं**は私／私たち、敬意形は**गर्नुहुन्थ्यो**。書き方にはगर्थेँなど鼻音を示す表記もあります。教材の表記を基準にしつつ、-थ्योを全人称にそのまま付けません。",
+      "text": "**गर्थें／गर्थ्यौं**は私／私たち、敬意形は**गर्नुहुन्थ्यो**。\n書き方にはगर्थेँなど鼻音を示す表記もあります。\n教材の表記を基準にしつつ、-थ्योを全人称にそのまま付けません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14044,15 +14671,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म गर्दिनथें／हामी गर्दैनथ्यौं**、敬意形は**गर्नुहुन्थेन**。**गरेनँ**は一回の過去を否定する基本形で、昔の繰り返しを否定する形とは異なります。",
+      "text": "**म गर्दिनथें**（私は以前はしていませんでした〈習慣〉）／**हामी गर्दैनथ्यौं**（私たちは以前はしていませんでした〈習慣〉）、敬意形は**गर्नुहुन्थेन**。\n**गरेनँ**は一回の過去を否定する基本形で、昔の繰り返しを否定する形とは異なります。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14060,15 +14689,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पढ्थें**は昔よく読んだ、**पढ्दै थिएँ**はある時読んでいる途中だった。**पहिले・सानो छँदा**のような背景は習慣を導けますが、述語の形と組み合わせて判断します。",
+      "text": "**पढ्थें**は昔よく読んだ、**पढ्दै थिएँ**（私はその時読んでいる途中でした）はある時読んでいる途中だった。\n**पहिले・सानो छँदा**（以前・子供の頃）のような背景は習慣を導けますが、述語の形と組み合わせて判断します。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14076,15 +14707,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**यहाँ विद्यालय थियो**は学校があったという過去の状態。**उहाँ यहाँ आउनुहुन्थ्यो**はその方がよくここへ来たという反復です。過去の「いた・あった」に訳せるだけで動作の習慣形を選びません。",
+      "text": "**यहाँ विद्यालय थियो**（ここに学校がありました）は学校があったという過去の状態。\n**उहाँ यहाँ आउनुहुन्थ्यो**（彼・彼女はよくここに来ていました〈敬意〉）はその方がよくここへ来たという反復です。\n過去の「いた・あった」に訳せるだけで動作の習慣形を選びません。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -14097,7 +14730,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -14148,7 +14782,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14551,7 +15186,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -14559,17 +15195,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "15": [
     {
+      "type": "h",
+      "text": "テーマ15｜現在完了・経験（〜した・〜したことがある）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**गरेको छु／पढेको छु／गएको छु**は完了した動作を現在の結果・経験につなぐ形です。**गरेँ**の一回の完了に対し、**गरेको छु**は現在との関わりを表す型として学びます。",
+      "text": "**文の型と使い分け**\n-एको＋छ系\n**गरेको छु**（私はすでにしています・したことがあります）／**पढेको छु**（私は読み終えています・読んだことがあります）／**गएको छु**（私は行っています・行ったことがあります）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14577,7 +15224,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -14612,7 +15260,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. -एको＋छ系",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**गरेको छु**（私はすでにしています・したことがあります）／**पढेको छु**（私は読み終えています・読んだことがあります）／**गएको छु**（私は行っています・行ったことがあります）は完了した動作を現在の結果・経験につなぐ形です。\n**गरेँ**の一回の完了に対し、**गरेको छु**（私はすでにしています・したことがあります）は現在との関わりを表す型として学びます。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14620,15 +15287,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**उहाँले पढ्नुभएको छ／उहाँ जानुभएको छ**。敬意を動作部分の**-नुभएको**で表します。最後はこの基本の敬意完了形ではछです。**जानुहुन्छ**の現在敬意形をそのまま差し込む作りではありません。",
+      "text": "**उहाँले पढ्नुभएको छ**（彼・彼女は読み終えています・読んだことがあります〈敬意〉）／**उहाँ जानुभएको छ**（彼・彼女は行っています・行ったことがあります〈敬意〉）。\n敬意を動作部分の**-नुभएको**で表します。\n最後はこの基本の敬意完了形ではछです。\n**जानुहुन्छ**の現在敬意形をそのまま差し込む作りではありません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14636,15 +15305,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**मैले किताब पढेको छु**では読むが他動詞なのでमैले。**म नेपाल गएको छु**は行くが自動詞なのでम。完了の形になっても、動作の種類に応じた主語の違いを保ちます。",
+      "text": "**मैले किताब पढेको छु**（私はその本を読んだことがあります・読み終えています）では読むが他動詞なのでमैले。\n**म नेपाल गएको छु**（私はネパールへ行ったことがあります・行っています）は行くが自動詞なのでम。\n完了の形になっても、動作の種類に応じた主語の違いを保ちます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14652,15 +15323,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पहिले・एक पटक・धेरै पटक**を添えると経験・回数を明確にできます。**नेपाल गएको छु**は行った経験や現在に関わる結果を文脈で表し、常に「今ネパールにいる」とまでは断定しません。",
+      "text": "**पहिले・एक पटक・धेरै पटक**（以前・1回・何度も）を添えると経験・回数を明確にできます。\n**नेपाल गएको छु**（私はネパールへ行ったことがあります・行っています）は行った経験や現在に関わる結果を文脈で表し、常に「今ネパールにいる」とまでは断定しません。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -14668,15 +15341,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**अझै गरेको छैन**はまだ済んでいない、**कहिल्यै गरेको छैन**はこれまで一度もしていない。否定は最後の**छैन系**へ表し、完了部分をगरेनにしません。人称により**गरेको छैनँ**などが対応します。",
+      "text": "**अझै गरेको छैन**（まだしていない）はまだ済んでいない、**कहिल्यै गरेको छैन**（これまで一度もしていない）はこれまで一度もしていない。\n否定は最後の**छैन系**へ表し、完了部分をगरेनにしません。\n人称により**गरेको छैनँ**（私はまだしていません）などが対応します。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -14689,7 +15364,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -15260,7 +15936,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -15268,17 +15945,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "16": [
     {
+      "type": "h",
+      "text": "テーマ16｜過去完了（〜していた・〜してしまっていた）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**गरेको थिएँ／पढेको थिएँ／गएको थिएँ**は過去の時点までに済んでいたことを表します。現在につなぐ**गरेको छु**から、補助動詞を過去の**थिएँ**へ替えた組です。",
+      "text": "**文の型と使い分け**\n-एको＋थियो系\n**गरेको थिएँ**（私はその時すでにしていました）／**पढेको थिएँ**（私はその時すでに読んでいました）／**गएको थिएँ**（私はその時すでに行っていました）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -15286,7 +15974,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -15321,7 +16010,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. -एको＋थियो系",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**गरेको थिएँ**（私はその時すでにしていました）／**पढेको थिएँ**（私はその時すでに読んでいました）／**गएको थिएँ**（私はその時すでに行っていました）は過去の時点までに済んでいたことを表します。\n現在につなぐ**गरेको छु**（私はすでにしています・したことがあります）から、補助動詞を過去の**थिएँ**へ替えた組です。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -15329,15 +16037,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**उहाँ आउँदा मैले काम सकेको थिएँ**では、来られた時点より前に仕事が済んでいます。**आउँदा**は来る時、**सकेको थिएँ**はその時までに完了。二つの動作の関係は語順だけでなく、この形で示されます。",
+      "text": "**उहाँ आउँदा मैले काम सकेको थिएँ**（その方が来た時、私は仕事を終えていました）では、来られた時点より前に仕事が済んでいます。\n**आउँदा**は来る時、**सकेको थिएँ**（私はその時すでに終えていました）はその時までに完了。\n二つの動作の関係は語順だけでなく、この形で示されます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -15345,15 +16055,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म गएको थिएँ／हामी गएका थियौं／उहाँ जानुभएको थियो**。普通形では分詞にもएकाなどの対応が現れます。敬意形は**-नुभएको थियो**として覚え、गएको थियोだけを全ての主語に固定しません。",
+      "text": "**म गएको थिएँ**（私はその時すでに行っていました）／**हामी गएका थियौं**（私たちはその時すでに行っていました）／**उहाँ जानुभएको थियो**（彼・彼女はその時すでに行っていました〈敬意〉）。\n普通形では分詞にもएकाなどの対応が現れます。\n敬意形は-**नुभएको थियो**（〜していた〈敬意・先行完了の語尾部分〉）として覚え、गएको थियो（行っていた〈三人称の過去完了の基本形〉）だけを全ての主語に固定しません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -15361,15 +16073,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**मैले काम सकेको थिइनँ**はその時までに終えていなかったこと。**सक्नुभएको थिएन**は敬意形です。**सकिनँ**なら終えられなかった・終えなかった一回の出来事を表すため、同じ型ではありません。",
+      "text": "**मैले काम सकेको थिइनँ**（私はその時まだ仕事を終えていませんでした）はその時までに終えていなかったこと。\n**सक्नुभएको थिएन**（まだ終えていませんでした〈敬意〉）は敬意形です。\n**सकिनँ**なら終えられなかった・終えなかった一回の出来事を表すため、同じ型ではありません。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -15377,15 +16091,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पढ्दै थिएँ**は読書の途中、**पढेको थिएँ**はすでに読んだこと、**पढ्थें**は昔よく読んだこと。日本語の「読んでいた」に訳せる場面でも、途中・先行完了・反復を区別して形を選びます。",
+      "text": "**पढ्दै थिएँ**（私はその時読んでいる途中でした）は読書の途中、**पढेको थिएँ**（私はその時すでに読んでいました）はすでに読んだこと、**पढ्थें**は昔よく読んだこと。\n日本語の「読んでいた」に訳せる場面でも、途中・先行完了・反復を区別して形を選びます。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -15398,7 +16114,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -15949,7 +16666,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -15957,17 +16675,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "17": [
     {
+      "type": "h",
+      "text": "テーマ17｜依頼・命令（ていねいさ3段階）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**बस्नु→बस्नुहोस्／गर्नु→गर्नुहोस्／हेर्नु→हेर्नुहोस्**。तपाईंに頼む基本はこの形です。**गर्नुहुन्छ**は「します」の敬意現在、**गर्नुहोस्**は「してください」で、語尾を入れ替えて使い分けます。",
+      "text": "**文の型と使い分け**\n敬意の依頼は-नुहोस्\n**बस्नु→बस्नुहोस्／गर्नु→गर्नुहोस्／हेर्नु→हेर्नुहोस्**",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -15975,7 +16704,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -16010,7 +16740,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 敬意の依頼は-नुहोस्",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**बस्नु→बस्नुहोस्／गर्नु→गर्नुहोस्／हेर्नु→हेर्नुहोस्**。\nतपाईंに頼む基本はこの形です。\n**गर्नुहुन्छ**は「します」の敬意現在、**गर्नुहोस्**は「してください」で、語尾を入れ替えて使い分けます。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -16018,15 +16767,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**दिनुहोस्**はください・与えてください、**लिनुहोस्**は取ってください、**आउनुहोस्**は来てください。方向や物を添えて**यहाँ आउनुहोस्／यो लिनुहोस्**と組みます。英語のpleaseに当たる一語が毎回必要なわけではありません。",
+      "text": "**दिनुहोस्**はください・与えてください、**लिनुहोस्**は取ってください、**आउनुहोस्**は来てください。\n方向や物を添えて**यहाँ आउनुहोस्**（ここに来てください）／**यो लिनुहोस्**（これを取ってください・どうぞお取りください）と組みます。\n英語のpleaseに当たる一語が毎回必要なわけではありません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -16034,15 +16785,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**लेखिदिनुहोस्／गरिदिनुहोस्**は書いてください・していただけますか。**लेख्नुहोस्**に対し、**लेखि＋दिनुहोस्**は相手のために行う含みを加えます。दिनुを毎回「物を与える」とだけ訳しません。",
+      "text": "**लेखिदिनुहोस्／गरिदिनुहोस्**は書いてください・していただけますか。\n**लेख्नुहोस्**に対し、**लेखि＋दिनुहोस्**は相手のために行う含みを加えます。\nदिनुを毎回「物を与える」とだけ訳しません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -16050,15 +16803,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**बस**は低い敬意、**बस्नुहोस्**は敬意のある依頼です。親しい相手向けには**बस／बस न**などの形が使われ、तिमी向けの活用はテーマ7と表で確認します。知らない人には敬意形を基本にします。",
+      "text": "**बस**は低い敬意、**बस्नुहोस्**は敬意のある依頼です。\n親しい相手向けには**बस／****बस न**（座ってね〈親しい依頼〉）などの形が使われ、तिमी向けの活用はテーマ7と表で確認します。\n知らない人には敬意形を基本にします。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -16066,15 +16821,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**गर्नुहोस्**は相手にしてもらう、**गरूँ?**は私がしようかという申し出。**गरौं**は一緒にしようという勧誘です。誰が動作をするかの違いを、実際の語尾で覚えます。",
+      "text": "**गर्नुहोस्**は相手にしてもらう、**गरूँ?**は私がしようかという申し出。\n**गरौं**は一緒にしようという勧誘です。\n誰が動作をするかの違いを、実際の語尾で覚えます。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -16709,12 +17466,22 @@
   ],
   "18": [
     {
+      "type": "h",
+      "text": "テーマ18｜勧誘・意志（〜しよう／〜しましょう）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**म गरूँ?／म जाऊँ?／म ल्याऊँ?**は私がしようか・行こうか・持って来ようか。疑問の調子で相手の意向を尋ねる使い方です。**गर्छु**はするという表明で、申し出の語形とは区別します。",
+      "text": "**文の型と使い分け**\n一人称の申し出\n**म गरूँ**（私がしましょうか〈申し出〉）?／**म जाऊँ**（私が行きましょうか〈申し出〉）?／**म ल्याऊँ**（私が持って来ましょうか〈申し出〉）?",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -16722,7 +17489,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -16757,7 +17525,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 一人称の申し出",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**म गरूँ**（私がしましょうか〈申し出〉）?／**म जाऊँ**（私が行きましょうか〈申し出〉）?／**म ल्याऊँ**（私が持って来ましょうか〈申し出〉）?は私がしようか・行こうか・持って来ようか。\n疑問の調子で相手の意向を尋ねる使い方です。\n**गर्छु**はするという表明で、申し出の語形とは区別します。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -16765,15 +17552,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**गरौं／जाऔं／बसौं／खाऔं**は一緒にしようという勧誘です。母音で終わる動詞では**जाऊँ→जाऔं**のように、一人称単数と複数で実際の形が変わります。",
+      "text": "**गरौं／जाऔं／बसौं／खाऔं**は一緒にしようという勧誘です。\n母音で終わる動詞では**जाऊँ→जाऔं**のように、一人称単数と複数で実際の形が変わります。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -16781,15 +17570,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**यहाँ बसौं**はここに一緒に座ろう、**यहाँ बस्नुहोस्**は相手にここへ座ってもらう依頼。聞き手が同じでも動作の参加者が違うため、単に丁寧さの違いではありません。",
+      "text": "**यहाँ बसौं**（ここに一緒に座りましょう）はここに一緒に座ろう、**यहाँ बस्नुहोस्**（ここに座ってください）は相手にここへ座ってもらう依頼。\n聞き手が同じでも動作の参加者が違うため、単に丁寧さの違いではありません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -16797,15 +17588,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**नजाऔं**は行かないでおこう、**नजानुहोस्**は行かないでください。否定のनは申し出・勧誘・命令の前に付きますが、後ろの形が誰の行動かを決めます。",
+      "text": "**नजाऔं**は行かないでおこう、**नजानुहोस्**は行かないでください。\n否定のनは申し出・勧誘・命令の前に付きますが、後ろの形が誰の行動かを決めます。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -16813,15 +17606,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म जानेछु**は私が行くという未来の表明、**म जाऊँ?**は行こうかという相談。**हामी जानेछौं**と**हामी जाऔं**も、予定の説明と勧誘の違いがあります。",
+      "text": "**म जानेछु**（私は行くでしょう・行きます〈未来形〉）は私が行くという未来の表明、**म जाऊँ?**（私が行きましょうか〈申し出〉）は行こうかという相談。\n**हामी जानेछौं**（私たちは行くでしょう・行きます〈未来形〉）と**हामी जाऔं**（私たちで行きましょう）も、予定の説明と勧誘の違いがあります。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -16834,7 +17629,8 @@
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -17700,12 +18496,22 @@
   ],
   "19": [
     {
+      "type": "h",
+      "text": "テーマ19｜禁止（〜してはいけない／〜しないで）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**न＋गर्नुहोस्→नगर्नुहोस्**、**नजानुहोस्・नखानुहोस्**。否定の依頼ではनを動詞の前に置きます。肯定の依頼の後ろへछैनを足す作りではありません。",
+      "text": "**文の型と使い分け**\nन＋依頼形\n**न＋गर्नुहोस्→नगर्नुहोस्**",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -17713,7 +18519,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -17748,7 +18555,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. न＋依頼形",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**न＋गर्नुहोस्→नगर्नुहोस्**、**नजानुहोस्・नखानुहोस्**。\n否定の依頼ではनを動詞の前に置きます。\n肯定の依頼の後ろへछैनを足す作りではありません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -17756,15 +18582,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**उहाँ जानुहुन्न**はその方は行かないという説明、**नजानुहोस्**は行かないでくださいという働きかけ。**-नुहुन्न**と**न-…-नुहोस्**の配置の違いで、文の役割が変わります。",
+      "text": "**उहाँ जानुहुन्न**（彼・彼女は行きません〈敬意〉）はその方は行かないという説明、**नजानुहोस्**は行かないでくださいという働きかけ。\n**-नुहुन्न**と**न-…-नुहोस्**の配置の違いで、文の役割が変わります。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -17772,31 +18600,35 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**नबस्नुहोस्**は座らないでください。**बस्नुहोस् न**の文末नは、お願いを柔らかくしたり促したりする助詞で、否定ではありません。同じनでも前にあるか後ろにあるかを見ます。",
+      "text": "**नबस्नुहोस्**は座らないでください。\n**बस्नुहोस् न**（どうぞ座ってください）の文末नは、お願いを柔らかくしたり促したりする助詞で、否定ではありません。\n同じनでも前にあるか後ろにあるかを見ます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "4. 禁止の-नु हुँदैन",
+      "text": "4. 禁止の-नु हुँदैन（〜してはいけない〈前に動詞語幹が付く型〉）",
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**यहाँ धूम्रपान गर्नु हुँदैन**はここで喫煙してはいけないという規則。**नगर्नुहोस्**は直接の依頼、**गर्नु हुँदैन**は許されない行為を述べる型です。हुन्नという短い形もあります。",
+      "text": "**यहाँ धूम्रपान गर्नु हुँदैन**（ここで喫煙してはいけません）はここで喫煙してはいけないという規則。\n**नगर्नुहोस्**は直接の依頼、**गर्नु हुँदैन**（してはいけません）は許されない行為を述べる型です。\nहुन्नという短い形もあります。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -17804,15 +18636,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जानु हुँदैन**は行ってはいけない、**जानु पर्दैन**は行く必要がない。否定されるのが許可のहुन्छか必要のपर्छかで意味が変わり、両方を「行かなくてよい」と訳せません。",
+      "text": "**जानु हुँदैन**（行ってはいけません）は行ってはいけない、**जानु पर्दैन**（行く必要はありません）は行く必要がない。\n否定されるのが許可のहुन्छか必要のपर्छかで意味が変わり、両方を「行かなくてよい」と訳せません。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -17825,7 +18659,8 @@
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -18765,12 +19600,22 @@
   ],
   "20": [
     {
+      "type": "h",
+      "text": "テーマ20｜可能（〜できる）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**पढ्न सक्छु／गर्न सक्छु／जान सक्छु**。能力・可能を表す前の動詞は-न形です。辞書形**पढ्नु**をそのまま置くのではなく、**पढ्न**にしてसक्नुの活用を続けます。",
+      "text": "**文の型と使い分け**\n-न＋सक्नु\n**पढ्न सक्छु**（私は読むことができます）／**गर्न सक्छु**（私はできます）／**जान सक्छु**（私は行くことができます）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -18778,7 +19623,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -18813,7 +19659,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. -न＋सक्नु",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**पढ्न सक्छु**（私は読むことができます）／**गर्न सक्छु**（私はできます）／**जान सक्छु**（私は行くことができます）。\n能力・可能を表す前の動詞は-न形です。\n辞書形**पढ्नु**をそのまま置くのではなく、**पढ्न**にしてसक्नुの活用を続けます。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -18821,15 +19686,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म गर्न सक्छु／हामी गर्न सक्छौं／उहाँ गर्न सक्नुहुन्छ**。前のगर्नは保ち、後ろが人称・敬意で変わります。二つの動詞を両方現在形にしてगर्छु सक्छुとは組みません。",
+      "text": "**म गर्न सक्छु**（私はできます）／**हामी गर्न सक्छौं**（私たちはできます）／**उहाँ गर्न सक्नुहुन्छ**（彼・彼女はできます〈敬意〉）。\n前のगर्नは保ち、後ろが人称・敬意で変わります。\n二つの動詞を両方現在形にしてगर्छु सक्छु（誤った接続例。能力ならगर्न सक्छु）とは組みません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -18837,15 +19704,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**सक्छु→सक्दिनँ**はできない、**सकेँ**はできた、**सकिनँ**はできなかった。敬意形は**सक्नुहुन्न／सक्नुभयो／सक्नुभएन**。前の動作の-न形はそのまま使います。",
+      "text": "**सक्छु→सक्दिनँ**はできない、**सकेँ**はできた、**सकिनँ**はできなかった。\n敬意形は**सक्नुहुन्न／सक्नुभयो／सक्नुभएन**。\n前の動作の-न形はそのまま使います。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -18853,31 +19722,35 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**नेपाली बोल्न सक्छु**は話すことができる、**नेपाली बोल्न जान्छु**は話し方を知っていることに重点があります。जान्नुは知る、जानुは行くなので、同じように見えるजान्छुも前の語と意味から読みます。",
+      "text": "**नेपाली बोल्न सक्छु**（私はネパール語を話せます）は話すことができる、**नेपाली बोल्न जान्छु**（私はネパール語の話し方を知っています）は話し方を知っていることに重点があります。\nजान्नुは知る、जानुは行くなので、同じように見えるजान्छुも前の語と意味から読みます。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "5. सक्नु・हुन्छ・मन पर्छ",
+      "text": "5. सक्नु・हुन्छ・मन पर्छ（好きです・気に入ります）",
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जान सक्छु**は行ける、**जान हुन्छ?**は行ってよいか、**जान मन पर्छ**は行きたい気持ち。能力があることと許可があることは別です。**हुन सक्छ**の可能性・推測はテーマ31で扱います。",
+      "text": "**जान सक्छु**（私は行くことができます）は行ける、**जान हुन्छ?**（行ってもよい）は行ってよいか、**जान मन पर्छ**（行きたい・行くのが好き〈文脈による〉）は行きたい気持ち。\n能力があることと許可があることは別です。\n**हुन सक्छ**（〜である可能性がある）の可能性・推測はテーマ31で扱います。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -18890,7 +19763,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -18941,7 +19815,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -19461,12 +20336,22 @@
   ],
   "21": [
     {
+      "type": "h",
+      "text": "テーマ21｜義務・許可（〜しなければ／〜してよい）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**मलाई जानु पर्छ**は私は行く必要があります。必要を感じる・負う人をलाईで置く型では、最後は**पर्छ**で、मलाईに合わせてपर्छुとしません。**-नुपर्छ**と続けて書く表記もあります。",
+      "text": "**文の型と使い分け**\n-नु पर्छ（〜する必要がある〈前に動詞語幹が付く型〉）：必要\n**मलाई जानु पर्छ**（私は行く必要があります）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -19474,7 +20359,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -19509,7 +20395,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. -नु पर्छ（〜する必要がある〈前に動詞語幹が付く型〉）：必要",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**मलाई जानु पर्छ**（私は行く必要があります）は私は行く必要があります。\n必要を感じる・負う人をलाईで置く型では、最後は**पर्छ**で、मलाईに合わせてपर्छुとしません。\n**-नुपर्छ**と続けて書く表記もあります。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -19517,31 +20422,35 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जानु पर्दैन**は行く必要がない、**जानु हुँदैन**は行ってはいけない。肯定の**पर्छ**は義務・必要、**हुन्छ**を含む許可型は可否を表します。否定形も別々に覚えます。",
+      "text": "**जानु पर्दैन**（行く必要はありません）は行く必要がない、**जानु हुँदैन**（行ってはいけません）は行ってはいけない。\n肯定の**पर्छ**は義務・必要、**हुन्छ**を含む許可型は可否を表します。\n否定形も別々に覚えます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "3. -न हुन्छと-नु हुन्छ",
+      "text": "3. -न हुन्छ（〜してよい〈前に動詞語幹が付く接続型〉）と-नु हुन्छ（〜してよい〈許可の型〉）",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**यहाँ बस्न हुन्छ?**はここに座ってよいですか。許可は**-न हुन्छ**や**-नु हुन्छ**の型で表せますが、禁止は**-नु हुँदैन**を基本に学びます。**बस्नुहुन्छ**と一語にした敬意現在形とは別です。",
+      "text": "**यहाँ बस्न हुन्छ?**（ここに座ってもよい）はここに座ってよいですか。\n許可は-**न हुन्छ**（〜してよい〈前に動詞語幹が付く接続型〉）や-**नु हुन्छ**（〜してよい〈許可の型〉）の型で表せますが、禁止は-**नु हुँदैन**（〜してはいけない〈前に動詞語幹が付く型〉）を基本に学びます。\n**बस्नुहुन्छ**と一語にした敬意現在形とは別です。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -19549,15 +20458,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**मलाई जानु पर्यो**は行く必要が生じた・行かなければならなかった、**जानु पर्दैनथ्यो**は行く必要がなかった。**जानुभएन**は行かなかったという出来事で、必要の有無を述べる形ではありません。",
+      "text": "**मलाई जानु पर्यो**（私は行かなければなりませんでした）は行く必要が生じた・行かなければならなかった、**जानु पर्दैनथ्यो**（行く必要はありませんでした）は行く必要がなかった。\n**जानुभएन**は行かなかったという出来事で、必要の有無を述べる形ではありません。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -19565,15 +20476,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**मलाई पानी चाहिन्छ**は水が必要、**मलाई जानु पर्छ**は行くという動作が必要。चाहिन्छは必要な物・量と組みやすく、पर्छは動詞の-नु形と組んで義務を表します。必要な人はどちらもमलाईにできます。",
+      "text": "**मलाई पानी चाहिन्छ**（私は水が必要です）は水が必要、**मलाई जानु पर्छ**（私は行く必要があります）は行くという動作が必要。\nचाहिन्छは必要な物・量と組みやすく、पर्छは動詞の-नु形と組んで義務を表します。\n必要な人はどちらもमलाईにできます。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -19586,7 +20499,8 @@
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -20366,12 +21280,22 @@
   ],
   "22": [
     {
+      "type": "h",
+      "text": "テーマ22｜願望（〜したい）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**म जान चाहन्छु／उहाँ जान चाहनुहुन्छ**。動作は-न形、希望する人を主語に置き、चाहनुを人称・敬意に合わせます。**मलाई जान चाहन्छु**と二つの型を混ぜません。",
+      "text": "**文の型と使い分け**\nचाहनुの希望\n**म जान चाहन्छु**（私は行きたいです）／**उहाँ जान चाहनुहुन्छ**（彼・彼女は行きたいと思っています〈敬意〉）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -20379,7 +21303,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -20414,39 +21339,62 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "2. मन लाग्नुの気持ち",
+      "text": "1. चाहनुの希望",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**मलाई जान मन लाग्छ**は行きたい気がする。気持ちを持つ人はमलाई、最後はलाग्छです。**म जान चाहन्छु**と意味は近くても、主語の形と述語の組み立てが異なります。",
+      "text": "**म जान चाहन्छु**（私は行きたいです）／**उहाँ जान चाहनुहुन्छ**（彼・彼女は行きたいと思っています〈敬意〉）。\n動作は-न形、希望する人を主語に置き、चाहनुを人称・敬意に合わせます。\n**मलाई जान चाहन्छु**（誤った組み立ての例。希望ならम जान चाहन्छु）と二つの型を混ぜません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "3. मन पर्नु：好みとの重なり",
+      "text": "2. मन लाग्नु（〜したい気になる）の気持ち",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**मलाई चिया मन पर्छ**はお茶が好き、**मलाई चिया खान मन पर्छ**はお茶を飲むのが好き・飲みたいと文脈で読めます。その時の欲求を明確にするなら**अहिले…मन लागेको छ**などの場面を添えます。",
+      "text": "**मलाई जान मन लाग्छ**（私は行きたい気がします）は行きたい気がする。\n気持ちを持つ人はमलाई、最後はलाग्छです。\n**म जान चाहन्छु**（私は行きたいです）と意味は近くても、主語の形と述語の組み立てが異なります。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "3. मन पर्नु（好きである・気に入る）：好みとの重なり",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**मलाई चिया मन पर्छ**（私はお茶が好きです）はお茶が好き、**मलाई चिया खान मन पर्छ**（私はお茶を飲むのが好きです・飲みたいです〈文脈による〉）はお茶を飲むのが好き・飲みたいと文脈で読めます。\nその時の欲求を明確にするなら**अहिले…मन लागेको छ**（今、〜したい気がしています）などの場面を添えます。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -20454,15 +21402,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म जान चाहन्नँ**と**मलाई जान मन लाग्दैन**を比較します。前者はचाहनुの否定、後者はलाग्नुの否定。日本語ではどちらも行きたくないでも、否定する動詞と人の形をセットで保ちます。",
+      "text": "**म जान चाहन्नँ**（私は行きたくありません）と**मलाई जान मन लाग्दैन**（私は行きたい気がしません）を比較します。\n前者はचाहनुの否定、後者はलाग्नुの否定。\n日本語ではどちらも行きたくないでも、否定する動詞と人の形をセットで保ちます。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -20470,15 +21420,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जान चाहन्छु**は行きたい、**जानु पर्छ**は行く必要、**जान सक्छु**は行ける。前の動詞も**जान／जानु**と異なるので、最後の一語だけを交換する万能の型ではありません。",
+      "text": "**जान चाहन्छु**（私は行きたいです）は行きたい、**जानु पर्छ**（行く必要があります）は行く必要、**जान सक्छु**（私は行くことができます）は行ける。\n前の動詞も**जान／जानु**と異なるので、最後の一語だけを交換する万能の型ではありません。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -20491,7 +21443,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -20538,11 +21491,12 @@
     },
     {
       "type": "p",
-      "text": "मन पर्छとमन **छ**・मन लाग्छは場面で使い分けます。",
+      "text": "मन पर्छ（好きです・気に入ります）とमन **छ**・मन लाग्छ（〜したい気がします）は場面で使い分けます。",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -21100,12 +22054,22 @@
   ],
   "23": [
     {
+      "type": "h",
+      "text": "テーマ23｜形容詞の一致・位置",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**राम्रो किताब**は良い本、**किताब राम्रो छ**は本が良い。**यो राम्रो किताब हो**は名詞句＋हो、**यो किताब राम्रो छ**は形容詞＋छです。形容詞がある文を全てछで終える規則ではありません。",
+      "text": "**文の型と使い分け**\n名詞の前と述語\n**राम्रो किताब**（良い本）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -21113,7 +22077,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -21148,7 +22113,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 名詞の前と述語",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**राम्रो किताब**（良い本）は良い本、**किताब राम्रो छ**（本は良いです）は本が良い。\n**यो राम्रो किताब हो**（これは良い本です）は名詞句＋हो、**यो किताब राम्रो छ**（この本は良いです）は形容詞＋छです。\n形容詞がある文を全てछで終える規則ではありません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -21156,15 +22140,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**राम्रो छोरा／राम्री छोरी／राम्रा साथीहरू**。この型の形容詞は名詞に応じてओ・ई・आが対応します。ただし名詞の最後がआなら必ず女性、という見分け方はできません。人を表す語と実際の組を覚えます。",
+      "text": "**राम्रो छोरा**（良い息子）／**राम्री छोरी**（良い娘）／**राम्रा साथीहरू**（良い友達たち）。\nこの型の形容詞は名詞に応じてओ・ई・आが対応します。\nただし名詞の最後がआなら必ず女性、という見分け方はできません。\n人を表す語と実際の組を覚えます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -21172,15 +22158,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**सुन्दर・सफा・व्यस्त**はराम्रोと同じ語尾変化をしません。**सुन्दर घर／सुन्दर फूल**のように使います。形容詞が変わらなくても、**म व्यस्त छु／हामी व्यस्त छौं**の動詞の一致は必要です。",
+      "text": "**सुन्दर・सफा・व्यस्त**はराम्रोと同じ語尾変化をしません。\n**सुन्दर घर**（美しい家）／**सुन्दर फूल**（美しい花）のように使います。\n形容詞が変わらなくても、**म व्यस्त छु**（私は忙しいです）／**हामी व्यस्त छौं**（私たちは忙しいです）の動詞の一致は必要です。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -21188,15 +22176,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**मेरो छोरा／मेरी छोरी／मेरा साथीहरू**、**कस्तो・कस्ती・कस्ता**、**जस्तो・जस्ती・जस्ता**。所有・疑問・類似の形にも対応が現れます。**मेरी**は持ち主が女性だから選ぶ形ではありません。",
+      "text": "**मेरो छोरा**（私の息子）／**मेरी छोरी**（私の娘）／**मेरा साथीहरू**（私の友達たち）、**कस्तो・कस्ती・कस्ता**、**जस्तो・जस्ती・जस्ता**。\n所有・疑問・類似の形にも対応が現れます。\n**मेरी**は持ち主が女性だから選ぶ形ではありません。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -21204,15 +22194,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "敬意を含む名詞句では複数に似た形が現れることがあります。**उहाँ राम्रो हुनुहुन्छ**などの基本形と、名詞を直接説明する**राम्रा शिक्षक**のような形を文ごとに学びます。語尾आだけで人数を確定しません。",
+      "text": "敬意を含む名詞句では複数に似た形が現れることがあります。\n**उहाँ राम्रो हुनुहुन्छ**（彼・彼女は良い方です〈敬意〉）などの基本形と、名詞を直接説明する**राम्रा शिक्षक**（良い先生〈複数・敬意の文脈〉）のような形を文ごとに学びます。\n語尾आだけで人数を確定しません。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -22010,7 +23002,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -22018,17 +23011,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "24": [
     {
+      "type": "h",
+      "text": "テーマ24｜副詞＋感嘆",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**बिस्तारै बोल्नुहोस्／राम्ररी पढ्नुहोस्**。बिस्तारैはゆっくり、राम्ररीはよく・きちんとです。**राम्रो किताब**のराम्रोと**राम्ररी पढ्नु**のराम्ररीは、名詞を説明する形と動作を説明する形の違いがあります。",
+      "text": "**文の型と使い分け**\n方法は動作の前に\n**बिस्तारै बोल्नुहोस्**（ゆっくり話してください）／**राम्ररी पढ्नुहोस्**（よく・きちんと読んでください）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -22036,7 +23040,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -22071,23 +23076,44 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "2. धेरैとधेरै पटक",
+      "text": "1. 方法は動作の前に",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**धेरै पानी**は多量の水、**धेरै पढ्छु**はたくさん読む、**धेरै पटक पढ्छु**は何度も読む。धेरैの説明先とपटकの有無で量・程度・回数が変わります。",
+      "text": "**बिस्तारै बोल्नुहोस्**（ゆっくり話してください）／**राम्ररी पढ्नुहोस्**（よく・きちんと読んでください）。\nबिस्तारैはゆっくり、राम्ररीはよく・きちんとです。\n**राम्रो किताब**（良い本）のराम्रोと**राम्ररी पढ्नु**（よく・きちんと読む）のराम्ररीは、名詞を説明する形と動作を説明する形の違いがあります。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "2. धेरैとधेरै पटक（何度も）",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**धेरै पानी**（たくさんの水）は多量の水、**धेरै पढ्छु**（私はたくさん読みます）はたくさん読む、**धेरै पटक पढ्छु**（私は何度も読みます）は何度も読む。\nधेरैの説明先とपटकの有無で量・程度・回数が変わります。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -22095,15 +23121,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**अलि बिस्तारै**は少しゆっくり、**थोरै पानी**は少量の水。意味の重なる場面もありますが、अलिは程度を和らげる依頼にもよく使い、**अलि हेर्नुहोस्**ならちょっと見てくださいという働きがあります。",
+      "text": "**अलि बिस्तारै**（少しゆっくり）は少しゆっくり、**थोरै पानी**（少量の水）は少量の水。\n意味の重なる場面もありますが、अलिは程度を和らげる依頼にもよく使い、**अलि हेर्नुहोस्**（ちょっと見てください）ならちょっと見てくださいという働きがあります。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -22111,15 +23139,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**प्रायः**はたいてい、**सधैं**はいつも、**कहिलेकाहीँ**は時々。**कहिल्यै…नकारात्मक**は一度も〜ないという型です。**कहिलेकाहीँ जान्छु**と**कहिल्यै जाँदिनँ**で肯否の組を比較します。",
+      "text": "**प्रायः**はたいてい、**सधैं**はいつも、**कहिलेकाहीँ**は時々。\n**कहिल्यै…नकारात्मक**は一度も〜ないという型です。\n**कहिलेकाहीँ जान्छु**（私は時々行きます）と**कहिल्यै जाँदिनँ**（私は一度も行きません）で肯否の組を比較します。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -22127,15 +23157,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म पनि जान्छु**は私も行く、**म चिया मात्र खान्छु**はお茶だけ飲む。पनि・मात्रは直前のどの語の範囲にかかるかで意味が変わります。文末へ適当に移動せず、追加・限定したいまとまりの後ろに置きます。",
+      "text": "**म पनि जान्छु**（私も行きます）は私も行く、**म चिया मात्र खान्छु**（私はお茶だけ飲みます）はお茶だけ飲む。\nपनि・मात्रは直前のどの語の範囲にかかるかで意味が変わります。\n文末へ適当に移動せず、追加・限定したいまとまりの後ろに置きます。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -22148,7 +23180,8 @@
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -22836,7 +23869,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -22844,17 +23878,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "25": [
     {
+      "type": "h",
+      "text": "テーマ25｜比較・最上級",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**यो घर त्यो घरभन्दा ठूलो छ**では、यो घरが説明対象、त्यो घरभन्दाが比較の基準です。**भन्दा＋ठूलो**だけで大きさの差を表せるので、英語のmoreに当たる語を常に足しません。",
+      "text": "**文の型と使い分け**\nभन्दाは比較基準の後ろ\n**यो घर त्यो घरभन्दा ठूलो छ**（この家はあの家より大きいです）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -22862,7 +23907,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -22897,7 +23943,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. भन्दाは比較基準の後ろ",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**यो घर त्यो घरभन्दा ठूलो छ**（この家はあの家より大きいです）では、यो घर（この家）が説明対象、त्यो घरभन्दा（あの家より）が比較の基準です。\n**भन्दा＋ठूलो**だけで大きさの差を表せるので、英語のmoreに当たる語を常に足しません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -22905,15 +23970,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**अझ राम्रो**はさらに良い、**धेरै राम्रो**はとても良い。**धेरै ठूलो**も単独では非常に大きい意味になり、二者比較を明示するには**Bभन्दा**などの基準が必要です。",
+      "text": "**अझ राम्रो**（さらに良い）はさらに良い、**धेरै राम्रो**（とても良い）はとても良い。\n**धेरै ठूलो**（とても大きい）も単独では非常に大きい意味になり、二者比較を明示するには**Bभन्दा**などの基準が必要です。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -22921,15 +23988,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**सबैभन्दा ठूलो**は最も大きい。**यीमध्ये**はこれらの中でという範囲です。**यीमध्ये यो सबैभन्दा ठूलो छ**のように、मध्येが集団、भन्दाを含む形が最上級を示します。",
+      "text": "**सबैभन्दा ठूलो**（最も大きい）は最も大きい。\n**यीमध्ये**はこれらの中でという範囲です。\n**यीमध्ये यो सबैभन्दा ठूलो छ**（これらの中でこれが一番大きいです）のように、मध्येが集団、भन्दाを含む形が最上級を示します。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -22937,15 +24006,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**तपाईंजस्तो साथी**はあなたのような友人。जस्तोは**जस्ती・जस्ता**の形にもなります。**तपाईं जस्तै**はあなたと同じように・あなたのような、と類似を強める形です。後ろの名詞との結び方も含めて比べます。",
+      "text": "**तपाईंजस्तो साथी**（あなたのような友達）はあなたのような友人。\nजस्तोは**जस्ती・जस्ता**の形にもなります。\n**तपाईं जस्तै**（あなたと同じように・あなたのような）はあなたと同じように・あなたのような、と類似を強める形です。\n後ろの名詞との結び方も含めて比べます。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -22953,15 +24024,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**A र B बराबर छन्**はAとBが等しい、**Bजति**はBほどの量・程度。**Bभन्दा**はBを基準に差を示します。大きい・小さいの語だけでなく、等量か比較差かを後置詞で区別します。",
+      "text": "**A र B बराबर छन्**（AとBは等しいです）はAとBが等しい、**Bजति**はBほどの量・程度。\n**Bभन्दा**はBを基準に差を示します。\n大きい・小さいの語だけでなく、等量か比較差かを後置詞で区別します。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -22974,7 +24047,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -24003,7 +25077,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -24011,17 +25086,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "26": [
     {
+      "type": "h",
+      "text": "テーマ26｜接続（と・そして・でも・ので）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**चिया र पानी**はお茶と水の並列。**खाना खाएँ अनि गएँ**は食べて、それから行ったという順序です。रも文をつなげますが、順番を明示したいならअनिが適します。",
+      "text": "**文の型と使い分け**\nरとअनि\n**चिया र पानी**（お茶と水）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -24029,7 +25115,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -24064,7 +25151,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. रとअनि",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**चिया र पानी**（お茶と水）はお茶と水の並列。\n**खाना खाएँ अनि गएँ**（私は食事をして、それから行きました）は食べて、それから行ったという順序です。\nरも文をつなげますが、順番を明示したいならअनिが適します。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -24072,15 +25178,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**सानो छ तर राम्रो छ**は小さいが良い。**सानो पनि छ**なら小さくもある。**तर**は対比の接続、**पनि**は直前の要素を含める「も」で、同じ接続位置へ単純交換できません。",
+      "text": "**सानो छ तर राम्रो छ**（小さいですが良いです）は小さいが良い。\n**सानो पनि छ**（小さくもあります）なら小さくもある。\n**तर**は対比の接続、**पनि**は直前の要素を含める「も」で、同じ接続位置へ単純交換できません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -24088,15 +25196,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म गएनँ किनभने पानी पर्यो**は行かなかった、なぜなら雨が降ったから。**पानी परेकोले म गएनँ**では理由の節を前に出し、**-एकोले**で結びます。単純過去पर्योにそのままलेを付ける型ではありません。",
+      "text": "**म गएनँ किनभने पानी पर्यो**（私は行きませんでした。雨が降ったからです）は行かなかった、なぜなら雨が降ったから。\n**पानी परेकोले म गएनँ**（雨が降ったので私は行きませんでした）では理由の節を前に出し、**-एकोले**で結びます。\n単純過去पर्योにそのままलेを付ける型ではありません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -24104,31 +25214,35 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**वर्षाका कारण**は雨のためという原因、**पढ्नको लागि**は勉強するためという目的です。日本語の「ため」が同じでも、原因の**का कारण**と目的の**को लागि**を使い分けます。",
+      "text": "**वर्षाका कारण**（雨のために〈原因〉）は雨のためという原因、**पढ्नको लागि**（読むために・勉強するために）は勉強するためという目的です。\n日本語の「ため」が同じでも、原因の**का कारण**（〜が原因で）と目的の**को लागि**（〜のために）を使い分けます。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "5. भए पनिの譲歩",
+      "text": "5. भए पनि（〜であっても）の譲歩",
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पानी परे पनि जान्छु**は雨が降っても行く。**पानी पर्यो तर गएँ**は雨が降ったが行った。前者は**-ए पनि**で仮定・譲歩を作り、後者は二つの出来事をतरで対比します。**का बाबजुद**は名詞句に続く「〜にもかかわらず」です。",
+      "text": "**पानी परे पनि जान्छु**（雨が降っても私は行きます）は雨が降っても行く。\n**पानी पर्यो तर गएँ**（雨が降りましたが私は行きました）は雨が降ったが行った。\n前者は-**ए पनि**（〜しても〈接続形の一部〉）で仮定・譲歩を作り、後者は二つの出来事をतरで対比します。\n**का बाबजुद**（〜にもかかわらず）は名詞句に続く「〜にもかかわらず」です。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -24141,7 +25255,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -24182,7 +25297,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -24945,7 +26061,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -24953,17 +26070,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "27": [
     {
+      "type": "h",
+      "text": "テーマ27｜〜ながら（-दै）／〜てから（-एपछि）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**खाँदै बोल्नु**は食べながら話す、**खाँदा**は食べる時・食べた時。**-दै**は動作の重なり、**-दा／-ँदा**は時の状況を作ります。पढ्दै छुのような進行形では、-दैにछ系が続きます。",
+      "text": "**文の型と使い分け**\n-दैと-दा：似た綴りを区別\n**खाँदै बोल्नु**（食べながら話す）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -24971,7 +26099,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -25006,23 +26135,44 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "2. पढेपछिとपढेको बेला",
+      "text": "1. -दैと-दा：似た綴りを区別",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पढेपछि**は読んだ後、**पढेको बेला**は読んだ時。**-एपछि**は先の動作の完了を前提に次へ進みます。**पढेँपछि**のように私の過去語尾ँをそのまま残す作りではありません。",
+      "text": "**खाँदै बोल्नु**（食べながら話す）は食べながら話す、**खाँदा**は食べる時・食べた時。\n**-दै**は動作の重なり、**-दा／-ँदा**は時の状況を作ります。\nपढ्दै छु（私は読んでいる途中です）のような進行形では、-दैにछ系が続きます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "2. पढेपछिとपढेको बेला（読んだ時・読んでいた時）",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**पढेपछि**は読んだ後、**पढेको बेला**（読んだ時・読んでいた時）は読んだ時。\n**-एपछि**は先の動作の完了を前提に次へ進みます。\n**पढेँपछि**のように私の過去語尾ँをそのまま残す作りではありません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -25030,15 +26180,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**खानुअघि**は食べる前、**खाएपछि**は食べた後。前後で**-नु**と**-ए**という接続形が異なります。名詞なら**खानाअघि／खानापछि**で、動詞の型と区別します。",
+      "text": "**खानुअघि**は食べる前、**खाएपछि**は食べた後。\n前後で**-नु**と**-ए**という接続形が異なります。\n名詞なら**खानाअघि／खानापछि**で、動詞の型と区別します。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -25046,15 +26198,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**दुई बजेसम्म**は2時まで、**दुई घण्टाभित्र**は2時間以内、**दुई घण्टापछि**は2時間後。सम्मは終点、भित्रは期限内、पछिは経過後です。同じ数字でも単位と後置詞が時間関係を変えます。",
+      "text": "**दुई बजेसम्म**（2時まで・2時までに〈動詞による〉）は2時まで、**दुई घण्टाभित्र**（2時間以内に）は2時間以内、**दुई घण्टापछि**（2時間後に）は2時間後。\nसम्मは終点、भित्रは期限内、पछिは経過後です。\n同じ数字でも単位と後置詞が時間関係を変えます。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -25062,15 +26216,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**आउनेबित्तिकै**は来るとすぐ、**आएपछि**は来た後。बित्तिकैは間を置かないことを強めます。**जब…तब／जहिले**の時を結ぶ形はテーマ29で扱い、条件のभनेとは区別します。",
+      "text": "**आउनेबित्तिकै**は来るとすぐ、**आएपछि**は来た後。\nबित्तिकैは間を置かないことを強めます。\n**जब…तब／जहिले**の時を結ぶ形はテーマ29で扱い、条件のभनेとは区別します。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -25083,7 +26239,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -25932,7 +27089,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -25940,17 +27098,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "28": [
     {
+      "type": "h",
+      "text": "テーマ28｜〜ために（-नको लागि）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**छोराको लागि／तपाईंका लागि**は息子のため・あなたのため。名詞や敬意を含む結合によりको／काの形を使います。**लाई**は受け手そのもの、**का लागि**は利益・目的を示すまとまりです。",
+      "text": "**文の型と使い分け**\n人のため：को／का लागि（〜のために）\n**छोराको लागि**（息子のために）／**तपाईंका लागि**（あなたのために）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -25958,7 +27127,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -25993,23 +27163,44 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "2. 動作の目的：-नको लागि",
+      "text": "1. 人のため：को／का लागि（〜のために）",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पढ्नको लागि／काम गर्नको लागि**。辞書形पढ्नुを目的用の**पढ्न**にしてको लागिを続けます。**पढाइका लागि**は勉強という名詞からの型で、見た目が似ても出発点が違います。",
+      "text": "**छोराको लागि**（息子のために）／**तपाईंका लागि**（あなたのために）は息子のため・あなたのため。\n名詞や敬意を含む結合によりको／काの形を使います。\n**लाई**は受け手そのもの、**का लागि**（〜のために）は利益・目的を示すまとまりです。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "2. 動作の目的：-नको लागि（〜するために〈前に動詞語幹が付く型〉）",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**पढ्नको लागि**（読むために・勉強するために）／**काम गर्नको लागि**（仕事をするために）。\n辞書形पढ्नुを目的用の**पढ्न**にしてको लागि（〜のために）を続けます。\n**पढाइका लागि**（勉強のために）は勉強という名詞からの型で、見た目が似ても出発点が違います。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -26017,15 +27208,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म पढ्न जान्छु**は勉強しに行く。移動の目的では**-न＋移動動詞**が自然に使え、को लागिは常に必須ではありません。**पढ्न सक्छु**の-नは能力の補語で、移動目的とは役割が違います。",
+      "text": "**म पढ्न जान्छु**（私は勉強しに行きます）は勉強しに行く。\n移動の目的では**-न＋移動動詞**が自然に使え、को लागि（〜のために）は常に必須ではありません。\n**पढ्न सक्छु**（私は読むことができます）の-नは能力の補語で、移動目的とは役割が違います。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -26033,15 +27226,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**तपाईंका लागि／तपाईंका निम्ति**はどちらもあなたのため。निमित्तは改まった文章でも使われます。意味は近くても、前の名詞・को／काを含む実際の結合を保ち、単語だけを機械的に挿げ替えません。",
+      "text": "**तपाईंका लागि**（あなたのために）／**तपाईंका निम्ति**（あなたのために）はどちらもあなたのため。\nनिमित्तは改まった文章でも使われます。\n意味は近くても、前の名詞・को／काを含む実際の結合を保ち、単語だけを機械的に挿げ替えません。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -26049,15 +27244,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पढ्नको लागि आएँ**は勉強する目的で来た、**पानी परेकोले आएनँ**は雨が降ったため来なかった。前者はこれから実現する動作、後者は原因の節で、ネパール語では接続形から違います。",
+      "text": "**पढ्नको लागि आएँ**（私は勉強するために来ました）は勉強する目的で来た、**पानी परेकोले आएनँ**（雨が降ったので私は来ませんでした）は雨が降ったため来なかった。\n前者はこれから実現する動作、後者は原因の節で、ネパール語では接続形から違います。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -26070,7 +27267,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -26871,7 +28069,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -26879,17 +28078,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "29": [
     {
+      "type": "h",
+      "text": "テーマ29｜人・物・場所・時をつなぐ関係表現",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**बस्ने मान्छे**は住む人、**आएको मान्छे**は来た人。**-ने**は習慣・これからの用途など、**-एको**は完了した動作などを説明します。**जाने बस**のजानेはバスを修飾し、जानेछという未来述語ではありません。",
+      "text": "**文の型と使い分け**\n-नेと-एकोで名詞を説明\n**बस्ने मान्छे**（住む人・座る人〈文脈による〉）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -26897,7 +28107,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -26932,7 +28143,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. -नेと-एकोで名詞を説明",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**बस्ने मान्छे**（住む人・座る人〈文脈による〉）は住む人、**आएको मान्छे**（来た人）は来た人。\n**-ने**は習慣・これからの用途など、**-एको**は完了した動作などを説明します。\n**जाने बस**（行くバス）のजानेはバスを修飾し、जानेछという未来述語ではありません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -26940,15 +28170,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म पढ्ने किताब**は私が読む本、**मैले पढेको किताब**は私が読んだ本。完了した他動詞なら修飾節でもमैलेが現れます。敬意の動作主には**उहाँले पढ्नुभएको किताब**、非完了には**उहाँ पढ्नुहुने किताब**のような形を使います。",
+      "text": "**म पढ्ने किताब**（私が読む本）は私が読む本、**मैले पढेको किताब**（私が読んだ本）は私が読んだ本。\n完了した他動詞なら修飾節でもमैलेが現れます。\n敬意の動作主には**उहाँले पढ्नुभएको किताब**（彼・彼女が読んだ本〈敬意〉）、非完了には**उहाँ पढ्नुहुने किताब**（彼・彼女が読む本〈敬意〉）のような形を使います。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -26956,15 +28188,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जो…उहाँ**は〜する人はその方、**जसले…उहाँले**は〜する人がその方が、**जसलाई…उहाँलाई**は〜する相手にその方に。後半の形は前半の綴りを写すのではなく、各節でその人が担う役割から選びます。",
+      "text": "**जो…उहाँ**は〜する人はその方、**जसले…उहाँले**は〜する人がその方が、**जसलाई…उहाँलाई**は〜する相手にその方に。\n後半の形は前半の綴りを写すのではなく、各節でその人が担う役割から選びます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -26972,15 +28206,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जुन किताब…त्यो**はどの本かを指定する型、**जे…त्यही**は〜するもの・ことを、それをという型です。**जुन किताबमा…**なら名詞にमाを付けます。**जो**は人を指す基本形で、全ての物へ一律には使いません。",
+      "text": "**जुन किताब**（〜する、その本〈関係表現〉）**…त्यो**はどの本かを指定する型、**जे…त्यही**は〜するもの・ことを、それをという型です。\n**जुन किताबमा**（〜する、その本に・中に〈関係表現〉）…なら名詞にमाを付けます。\n**जो**は人を指す基本形で、全ての物へ一律には使いません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -26988,15 +28224,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जहाँ…त्यहाँ**は場所、**जता…त्यता**は方向。**जब…तब**は時の対応、**जहिले**は〜する時・いつでもという反復にも使います。**कहाँ・कहिले**は質問、これらのज-形は節を結ぶ形です。",
+      "text": "**जहाँ…त्यहाँ**は場所、**जता…त्यता**は方向。\n**जब…तब**は時の対応、**जहिले**は〜する時・いつでもという反復にも使います。\n**कहाँ・कहिले**は質問、これらのज-形は節を結ぶ形です。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -27004,15 +28242,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जसरी…त्यसरी**は方法、**जति…त्यति**は量・程度、**जस्तो…त्यस्तो**は性質、**जत्रो…त्यत्रो**は大きさ。**जुनसुकै／जहिलेसुकै**などの-सुकैはどれでも・いつでもと範囲を開きます。数・性に対応する形はテーマ23も参照します。",
+      "text": "**जसरी…त्यसरी**は方法、**जति…त्यति**は量・程度、**जस्तो…त्यस्तो**は性質、**जत्रो…त्यत्रो**は大きさ。\n**जुनसुकै／जहिलेसुकै**などの-सुकैはどれでも・いつでもと範囲を開きます。\n数・性に対応する形はテーマ23も参照します。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -27025,23 +28265,26 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "ネパールへ行く人ならनेपाल जाने मान्छे、昨日来た人ならहिजो आएको मान्छेのように、説明を名詞の前に置きます。",
+      "text": "ネパールへ行く人ならनेपाल जाने मान्छे（ネパールへ行く人）、昨日来た人ならहिजो आएको मान्छे（昨日来た人）のように、説明を名詞の前に置きます。",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "一方、जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छでは、जोで人を導き、後半のउहाँが同じ人を受けます。",
+      "text": "一方、जो यहाँ बस्नुहुन्छ（ここに住んでいる方〈関係節〉）, उहाँ मेरो साथी हुनुहुन्छ（その方は私の友達です）では、जोで人を導き、後半のउहाँが同じ人を受けます。",
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -27157,7 +28400,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -27165,7 +28409,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -27173,7 +28418,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -27181,7 +28427,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -27189,7 +28436,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -28840,7 +30088,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -28848,17 +30097,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "30": [
     {
+      "type": "h",
+      "text": "テーマ30｜条件（もし〜なら）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**पानी पर्यो भने म जाँदिनँ**は雨が降ったら行かない。**यदि**はもしを明示しますが、省けます。भनेは条件の節の後ろに置き、**यदि…भने…**が基本の対応です。",
+      "text": "**文の型と使い分け**\n条件＋भने\n**पानी पर्यो भने म जाँदिनँ**（雨が降ったら私は行きません）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -28866,7 +30126,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -28901,7 +30162,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 条件＋भने",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**पानी पर्यो भने म जाँदिनँ**（雨が降ったら私は行きません）は雨が降ったら行かない。\n**यदि**はもしを明示しますが、省けます。\nभनेは条件の節の後ろに置き、**यदि…भने…**が基本の対応です。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -28909,47 +30189,53 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**भोलि पानी पर्यो भने**は明日雨が降ったら、という未来にも使います。पर्योの形だけを見て既に雨が降ったと訳しません。条件節では完了した場合を仮定する形が使われます。",
+      "text": "**भोलि पानी पर्यो भने**（明日雨が降ったら）は明日雨が降ったら、という未来にも使います。\nपर्योの形だけを見て既に雨が降ったと訳しません。\n条件節では完了した場合を仮定する形が使われます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "3. छ भनेとभयो भने",
+      "text": "3. छ भने（あるなら・いるなら）とभयो भने（起きたら・成立したら）",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**समय छ भने**は時間があるなら、**समय भयो भने**は時間ができたら・時間になったら。**छ**の状態と**भयो**の成立・変化を条件にしても区別します。",
+      "text": "**समय छ भने**（時間があるなら）は時間があるなら、**समय भयो भने**（時間ができたら・その時間になったら）は時間ができたら・時間になったら。\n**छ**の状態と**भयो**の成立・変化を条件にしても区別します。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "4. नभएとभए पनि",
+      "text": "4. नभएとभए पनि（〜であっても）",
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**समय नभए**は時間がなければ、**समय भए पनि**は時間があっても。**न-**は条件の否定、**पनि**を付けた-ए पनिは譲歩です。形の一部が似ていても結果との関係が違います。",
+      "text": "**समय नभए**（時間がなければ）は時間がなければ、**समय भए पनि**（時間があっても）は時間があっても。\n**न-**は条件の否定、**पनि**を付けた-ए पनि（〜しても〈接続形の一部〉）は譲歩です。\n形の一部が似ていても結果との関係が違います。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -28957,15 +30243,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जब आउनुहुन्छ, तब…**は来る時、その時…という時間の対応。**आउनुभयो भने…**は来られたら…という条件です。**भन्नुभयो**のभन्नुは言う動詞で、条件を作るभनेと文の役割が異なります。",
+      "text": "**जब आउनुहुन्छ**（来られる時）**, तब…**は来る時、その時…という時間の対応。\n**आउनुभयो भने**（来られたら）…は来られたら…という条件です。\n**भन्नुभयो**のभन्नुは言う動詞で、条件を作るभनेと文の役割が異なります。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -28978,7 +30266,8 @@
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -29641,7 +30930,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -29649,17 +30939,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "31": [
     {
+      "type": "h",
+      "text": "テーマ31｜推量・意見・可能性（〜と思う／〜だろう／〜かもしれない／〜に違いない）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**मलाई लाग्छ…**は私にはそう思えるという型です。感じる人をमलाईで置き、後ろに考えの内容を続けます。**…भन्ने लाग्छ**などの内容を受けるभन्नेもあり、発言の「言う」と同じ訳だけに固定しません。",
+      "text": "**文の型と使い分け**\nमलाई लाग्छ（私は〜と思います）の意見\n**मलाई लाग्छ**（私は〜と思います）…",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -29667,7 +30968,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -29702,39 +31004,62 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "2. हो・होला・हुन सक्छ",
+      "text": "1. मलाई लाग्छ（私は〜と思います）の意見",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**यो ठीक हो**は正しいという断言、**यो ठीक होला**はたぶん正しいという推測、**यो ठीक हुन सक्छ**は正しい可能性があること。होलाとहुन सक्छを、常に同じ確率の数値に対応させません。",
+      "text": "**मलाई लाग्छ**（私は〜と思います）…は私にはそう思えるという型です。\n感じる人をमलाईで置き、後ろに考えの内容を続けます。\n…**भन्ने लाग्छ**（〜というように思います〈内容に続く部分〉）などの内容を受けるभन्नेもあり、発言の「言う」と同じ訳だけに固定しません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "3. -एको होलाの推測",
+      "text": "2. हो・होला・हुन सक्छ（〜である可能性がある）",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**उहाँ जानुभएको होला**はその方はもう行かれたでしょう。動作の敬意完了**-नुभएको**にहोलाを続けます。**जानुभयो**なら出来事の報告で、होलाを省くと推測の含みがなくなります。",
+      "text": "**यो ठीक हो**（これは正しいです）は正しいという断言、**यो ठीक होला**（これはたぶん正しいでしょう）はたぶん正しいという推測、**यो ठीक हुन सक्छ**（これは正しい可能性があります）は正しい可能性があること。\nहोलाとहुन सक्छ（〜である可能性がある）を、常に同じ確率の数値に対応させません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "3. -एको होला（〜したでしょう〈前に動詞語幹が付く型〉）の推測",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**उहाँ जानुभएको होला**（彼・彼女はもう行かれたでしょう）はその方はもう行かれたでしょう。\n動作の敬意完了**-नुभएको**にहोलाを続けます。\n**जानुभयो**なら出来事の報告で、होलाを省くと推測の含みがなくなります。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -29742,15 +31067,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**जानु पर्छ**は行く必要、**गएको हुनु पर्छ**は行ったに違いないという推論です。**-नु**が必要な行為を示す型と、**-एको हुनु**が完了した状況を推し量る型を区別します。",
+      "text": "**जानु पर्छ**（行く必要があります）は行く必要、**गएको हुनु पर्छ**（行ったに違いない）は行ったに違いないという推論です。\n**-नु**が必要な行為を示す型と、-**एको हुनु**（〜した状態である〈複合形の一部〉）が完了した状況を推し量る型を区別します。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -29758,15 +31085,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**नआएको होला**は来ていないだろう、**आउन सक्नुहुन्न**は来られない能力・事情の否定。**आउनुभएको छैन**は来ていないという状態の説明です。否定される部分と推測の有無を両方保って訳します。",
+      "text": "**नआएको होला**（来ていないでしょう）は来ていないだろう、**आउन सक्नुहुन्न**（来ることができません〈敬意〉）は来られない能力・事情の否定。\n**आउनुभएको छैन**（まだ来ていません〈敬意〉）は来ていないという状態の説明です。\n否定される部分と推測の有無を両方保って訳します。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -29779,7 +31108,8 @@
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -30397,7 +31727,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -30405,17 +31736,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "32": [
     {
+      "type": "h",
+      "text": "テーマ32｜受動（〜される）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**ढोका खोलियो**はドアが開けられた、**ढोका खुल्यो**はドアが開いた。前者は**खोल्नु**からの受動、後者は**खुल्नु**の自動詞です。「が」で訳せるだけでは同じ活用と判断しません。",
+      "text": "**文の型と使い分け**\nखोलियोとखुल्यो\n**ढोका खोलियो**（ドアが開けられました）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -30423,7 +31765,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -30458,7 +31801,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. खोलियोとखुल्यो",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**ढोका खोलियो**（ドアが開けられました）はドアが開けられた、**ढोका खुल्यो**（ドアが開きました）はドアが開いた。\n前者は**खोल्नु**からの受動、後者は**खुल्नु**の自動詞です。\n「が」で訳せるだけでは同じ活用と判断しません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -30466,15 +31828,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**लेखिन्छ／लेखियो／लेखिएन**は書かれる・書かれた・書かれなかった。受動の語幹**लेखि-**に各形が対応します。**लेख्छ**は普通の能動現在で、同じछを含むから受動とは限りません。",
+      "text": "**लेखिन्छ／लेखियो／लेखिएन**は書かれる・書かれた・書かれなかった。\n受動の語幹**लेखि-**に各形が対応します。\n**लेख्छ**は普通の能動現在で、同じछを含むから受動とは限りません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -30482,15 +31846,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**शिक्षकद्वारा लेखिएको**は先生によって書かれた。**द्वारा**は改まった文で動作主を明示できます。**शिक्षकले लेख्नुभयो**は先生が書いた能動文で、動詞も能動の敬意形になります。",
+      "text": "**शिक्षकद्वारा लेखिएको**（先生によって書かれた）は先生によって書かれた。\n**द्वारा**は改まった文で動作主を明示できます。\n**शिक्षकले लेख्नुभयो**（先生が書きました〈敬意〉）は先生が書いた能動文で、動詞も能動の敬意形になります。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -30498,15 +31864,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**हुलाकमार्फत**は郵便を通じて、**प्रतिनिधिमार्फत**は代理人を介して。मार्फतは経路・仲介、द्वाराは動作主・手段を表す文脈があります。両方を「によって」と訳せても、誰が実行したかと誰を通したかを区別します。",
+      "text": "**हुलाकमार्फत**は郵便を通じて、**प्रतिनिधिमार्फत**は代理人を介して。\nमार्फतは経路・仲介、द्वाराは動作主・手段を表す文脈があります。\n両方を「によって」と訳せても、誰が実行したかと誰を通したかを区別します。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -30514,15 +31882,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**आज धेरै हिँडियो**は今日はたくさん歩いたという非人称的な述べ方です。歩く対象が受動になったわけではありません。**म धेरै हिँडेँ**なら私を主語に出す普通の能動文です。",
+      "text": "**आज धेरै हिँडियो**（今日はたくさん歩きました〈非人称〉）は今日はたくさん歩いたという非人称的な述べ方です。\n歩く対象が受動になったわけではありません。\n**म धेरै हिँडेँ**（私はたくさん歩きました）なら私を主語に出す普通の能動文です。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -30535,7 +31905,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -31597,7 +32968,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -31605,17 +32977,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "33": [
     {
+      "type": "h",
+      "text": "テーマ33｜使役（〜させる）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**खानु→खुवाउनु／सिक्नु→सिकाउनु／पढ्नु→पढाउनु**。食べる→食べさせる、学ぶ→教える、学ぶ・読む→教える・読ませる、という対応です。どの動詞にも同じ一語尾を足せばよいわけではありません。",
+      "text": "**文の型と使い分け**\n使役は動詞ごとの組で覚える\n**खानु→खुवाउनु／सिक्नु→सिकाउनु／पढ्नु→पढाउनु**",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -31623,7 +33006,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -31658,7 +33042,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 使役は動詞ごとの組で覚える",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**खानु→खुवाउनु／सिक्नु→सिकाउनु／पढ्नु→पढाउनु**。\n食べる→食べさせる、学ぶ→教える、学ぶ・読む→教える・読ませる、という対応です。\nどの動詞にも同じ一語尾を足せばよいわけではありません。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -31666,47 +33069,53 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**आमाले बच्चालाई खाना खुवाउनुभयो**は母が子供にご飯を食べさせた。आमालेは働きかけた人、बच्चालाईは食べる人、खानाは食べ物です。लेとलाईを同じ「が・に」の位置だけで暗記しません。",
+      "text": "**आमाले बच्चालाई खाना खुवाउनुभयो**（母が子供にご飯を食べさせました）は母が子供にご飯を食べさせた。\nआमालेは働きかけた人、बच्चालाईは食べる人、खानाは食べ物です。\nलेとलाईを同じ「が・に」の位置だけで暗記しません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "3. -न लगाउनुの型",
+      "text": "3. -न लगाउनु（〜させる〈前に動詞語幹が付く型〉）の型",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**लेख्न लगाउनु／काम गर्न लगाउनु**は書かせる・仕事をさせる。前の動詞は**-न**、最後のलगाउनुが時制・敬意を担います。**लगाउनुभयो**は過去敬意形で、前をलेख्नुभयोに替えません。",
+      "text": "**लेख्न लगाउनु**（書かせる）／**काम गर्न लगाउनु**（仕事をさせる）は書かせる・仕事をさせる。\n前の動詞は**-न**、最後のलगाउनुが時制・敬意を担います。\n**लगाउनुभयो**は過去敬意形で、前をलेख्नुभयोに替えません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
-      "text": "4. खुवाउनुとखान दिनु",
+      "text": "4. खुवाउनुとखान दिनु（食べることを許す・食べさせておく）",
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**खुवाउनु**は食べさせる・食事を与える使役、**खान दिनु**は食べることを許す・食べさせておく意味にもなります。日本語では似た訳でも、動作を引き起こすか許すかという違いがあります。",
+      "text": "**खुवाउनु**は食べさせる・食事を与える使役、**खान दिनु**（食べることを許す・食べさせておく）は食べることを許す・食べさせておく意味にもなります。\n日本語では似た訳でも、動作を引き起こすか許すかという違いがあります。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -31714,15 +33123,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**सिकाउनुहुन्छ→सिकाउनुभयो→सिकाउनुभएन**。元のसिक्नुではなく、使役動詞सिकाउनुを活用します。**सिक्न सक्नुहुन्छ**は学べる、**सिकाउन सक्नुहुन्छ**は教えられる能力で、使役の語幹が意味を保ちます。",
+      "text": "**सिकाउनुहुन्छ→सिकाउनुभयो→सिकाउनुभएन**。\n元のसिक्नुではなく、使役動詞सिकाउनुを活用します。\n**सिक्न सक्नुहुन्छ**（学ぶことができます〈敬意〉）は学べる、**सिकाउन सक्नुहुन्छ**（教えることができます〈敬意〉）は教えられる能力で、使役の語幹が意味を保ちます。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -32205,7 +33616,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -32213,17 +33625,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "34": [
     {
+      "type": "h",
+      "text": "テーマ34｜間接話法（〜と言った）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**उहाँले «म आउँछु» भन्नुभयो**では、引用の内容を先に置き、発言の動詞を最後に置きます。**भन्नुभयो**は言いました、**भन्नुहुन्छ**は言います。外側の主語उहाँलेに敬意形を合わせます。",
+      "text": "**文の型と使い分け**\n内容＋भन्नु\n**उहाँले «म आउँछु» भन्नुभयो**（その方は「私は来ます」と言いました）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -32231,7 +33654,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -32266,7 +33690,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. 内容＋भन्नु",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**उहाँले «म आउँछु» भन्नुभयो**（その方は「私は来ます」と言いました）では、引用の内容を先に置き、発言の動詞を最後に置きます。\n**भन्नुभयो**は言いました、**भन्नुहुन्छ**は言います。\n外側の主語उहाँलेに敬意形を合わせます。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -32274,15 +33717,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**«म आउँछु»**のमは引用された発言者を指します。間接的に**उहाँ आफू आउने कुरा भन्नुहुन्छ**のように伝える場合は、自分自身を受ける**आफू**や内容を名詞化する型が使われます。",
+      "text": "**«म आउँछु»**（「私は来ます」）のमは引用された発言者を指します。\n間接的に**उहाँ आफू आउने कुरा भन्नुहुन्छ**（その方は自分が来ると話します）のように伝える場合は、自分自身を受ける**आफू**や内容を名詞化する型が使われます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -32290,15 +33735,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**«आउँछु» भनेर भन्नुभयो**のभनेरは引用を結ぶ形、**आउने भन्ने कुरा**のभन्नेは内容を受ける形。**आउनुभयो भने**のभनेは条件です。同じभन्を含んでも、一律に「言った」と訳しません。",
+      "text": "**«आउँछु» भनेर भन्नुभयो**（「来ます」と言いました）のभनेरは引用を結ぶ形、**आउने भन्ने कुरा**（来るということ）のभन्नेは内容を受ける形。\n**आउनुभयो भने**（来られたら）のभनेは条件です。\n同じभन्を含んでも、一律に「言った」と訳しません。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -32306,15 +33753,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**«आउँदिनँ» भन्नुभयो**は来ないと言った、**«आउँछु» भन्नुभएन**は来るとは言わなかった。引用内の否定と外側の発言否定で、伝える事実が違います。",
+      "text": "**«आउँदिनँ» भन्नुभयो**（「来ません」と言いました）は来ないと言った、**«आउँछु» भन्नुभएन**（「来ます」とは言いませんでした）は来るとは言わなかった。\n引用内の否定と外側の発言否定で、伝える事実が違います。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -32322,15 +33771,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "引用の**भोलि**は元の発言の翌日です。**भन्नुहुन्थ्यो**は繰り返し言っていた、**भन्नुभयो**は一回の発言という基本の対比。間接話法では時制を英語式に機械的に一段ずらすのでなく、実際の時間関係を表します。",
+      "text": "引用の**भोलि**は元の発言の翌日です。\n**भन्नुहुन्थ्यो**は繰り返し言っていた、**भन्नुभयो**は一回の発言という基本の対比。\n間接話法では時制を英語式に機械的に一段ずらすのでなく、実際の時間関係を表します。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -32343,7 +33794,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -32374,7 +33826,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -32382,7 +33835,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -32390,7 +33844,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -32998,7 +34453,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -33006,17 +34462,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "35": [
     {
+      "type": "h",
+      "text": "テーマ35（付録A）｜書くことで覚える動詞活用（लेख्नु）",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**लेख्नु→लेख्छु／लेख्दिनँ**。私たちなら**लेख्छौं／लेख्दैनौं**、敬意形は**लेख्नुहुन्छ／लेख्नुहुन्न**。同じलेख्を軸に、普通形と敬意形で現在・否定の作り方が違います。",
+      "text": "**文の型と使い分け**\nलेख्नुの現在と否定\n**लेख्नु→लेख्छु／लेख्दिनँ**",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33024,7 +34491,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -33059,7 +34527,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. लेख्नुの現在と否定",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**लेख्नु→लेख्छु／लेख्दिनँ**。\n私たちなら**लेख्छौं／लेख्दैनौं**、敬意形は**लेख्नुहुन्छ／लेख्नुहुन्न**。\n同じलेख्を軸に、普通形と敬意形で現在・否定の作り方が違います。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33067,15 +34554,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म चिठी लेख्छु→मैले चिठी लेखेँ**。他動詞の完了なので主語も変わります。敬意形は**उहाँले चिठी लेख्नुभयो**。否定は**लेखिनँ／लेखेनँ**などで、現在のलेख्दिनँとは別です。",
+      "text": "**म चिठी लेख्छु**（私は手紙を書きます）→**मैले चिठी लेखेँ**（私は手紙を書きました）。\n他動詞の完了なので主語も変わります。\n敬意形は**उहाँले चिठी लेख्नुभयो**（彼・彼女が手紙を書きました〈敬意〉）。\n否定は**लेखिनँ／लेखेनँ**などで、現在のलेख्दिनँとは別です。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33083,15 +34572,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**लेख्दै छु／लेखेको छु／लेखेको थिएँ**は書いている途中・書いた結果や経験・その時より前に書いていたことです。**लेखेको**が共通でも、最後のछु／थिएँが参照時点を変えます。",
+      "text": "**लेख्दै छु**（私は書いている途中です）／**लेखेको छु**（私は書き終えています・書いたことがあります）／**लेखेको थिएँ**（私はその時すでに書いていました）は書いている途中・書いた結果や経験・その時より前に書いていたことです。\n**लेखेको**が共通でも、最後のछु／थिएँが参照時点を変えます。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33099,15 +34590,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**लेख्थें**は以前よく書いた、**लेख्नेछु**はこれから書く、**भोलि लेख्छु**は現在形で予定を示す形。**लेख्ने चिठी**なら書く手紙という修飾で、लेख्नेが常に未来の文末になるわけではありません。",
+      "text": "**लेख्थें**は以前よく書いた、**लेख्नेछु**はこれから書く、**भोलि लेख्छु**（私は明日書きます）は現在形で予定を示す形。\n**लेख्ने चिठी**（これから・ふだん書く手紙）なら書く手紙という修飾で、लेख्नेが常に未来の文末になるわけではありません。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33115,15 +34608,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**लेख्न सक्छु／लेख्न चाहन्छु／लेख्नु पर्छ／लेख्नको लागि**。能力・希望はलेख्न、必要の基本形はलेख्नु、目的はलेख्नको लागि。複合表現の前の形を一種類に固定せず、後ろの構文と組にします。",
+      "text": "**लेख्न सक्छु**（私は書くことができます）／**लेख्न चाहन्छु**（私は書きたいです）／**लेख्नु पर्छ**（書く必要があります）／**लेख्नको लागि**（書くために）。\n能力・希望はलेख्न、必要の基本形はलेख्नु、目的はलेख्नको लागि（書くために）。\n複合表現の前の形を一種類に固定せず、後ろの構文と組にします。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -33136,7 +34631,8 @@
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -33144,7 +34640,8 @@
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -33152,7 +34649,8 @@
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33160,7 +34658,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -33231,7 +34730,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -33302,7 +34802,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -33373,7 +34874,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -33444,7 +34946,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -33515,7 +35018,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -33586,7 +35090,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -33632,7 +35137,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -33713,17 +35219,28 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ],
   "36": [
     {
+      "type": "h",
+      "text": "テーマ36（付録B）｜人物紹介と居場所で覚える繋辞",
+      "lessonTitle": true,
+      "presentation": {
+        "tone": "blue",
+        "role": "plain"
+      }
+    },
+    {
       "type": "goal",
-      "text": "**文の型と使い分け**\n**म लेखक हुँ／म घरमा छु／म बिहान घरमा हुन्छु**。हो系は同定、छ系は所在・状態、हुन्छ系は反復・一般的状況です。全てहुनुの形でも、後ろに置く名詞・場所・時間と組む働きが違います。",
+      "text": "**文の型と使い分け**\nहो・छ・हुन्छを同じ主語で\n**म लेखक हुँ**（私は著者です）／**म घरमा छु**（私は家にいます）／**म बिहान घरमा हुन्छु**（私は朝はふだん家にいます）",
       "presentation": {
         "tone": "blue",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33731,7 +35248,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -33766,7 +35284,26 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "1. हो・छ・हुन्छを同じ主語で",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
+    },
+    {
+      "type": "p",
+      "text": "**म लेखक हुँ**（私は著者です）／**म घरमा छु**（私は家にいます）／**म बिहान घरमा हुन्छु**（私は朝はふだん家にいます）。\nहो系は同定、छ系は所在・状態、हुन्छ系は反復・一般的状況です。\n全てहुनुの形でも、後ろに置く名詞・場所・時間と組む働きが違います。",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33774,15 +35311,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**हुँ→होइनँ／छु→छैनँ／हुन्छु→हुँदिनँ**。普通の物なら**होइन／छैन／हुँदैन**。敬意形では**हुनुहुन्न**が重なるので、形だけでなく同定・所在・一般性のどの文かを読み取ります。",
+      "text": "**हुँ→होइनँ／छु→छैनँ／हुन्छु→हुँदिनँ**。\n普通の物なら**होइन／छैन／हुँदैन**。\n敬意形では**हुनुहुन्न**が重なるので、形だけでなく同定・所在・一般性のどの文かを読み取ります。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33790,15 +35329,17 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**म घरमा थिएँ**は家にいた、**काम भयो**は仕事が済んだ・起きた。**थियो**と**भयो**を同じ過去の「だった」として入れ替えません。過去の敬意状態は**हुनुहुन्थ्यो**、敬意の出来事には**हुनुभयो**などがあります。",
+      "text": "**म घरमा थिएँ**（私は家にいました）は家にいた、**काम भयो**（仕事が済みました・仕事が成立しました）は仕事が済んだ・起きた。\n**थियो**と**भयो**を同じ過去の「だった」として入れ替えません。\n過去の敬意状態は**हुनुहुन्थ्यो**、敬意の出来事には**हुनुभयो**などがあります。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33806,15 +35347,17 @@
       "presentation": {
         "tone": "teal",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**उहाँ लेखक हुनुहुन्छ／उहाँ घरमा हुनुहुन्छ**はどちらもहुनुहुन्छですが、前者は名詞による同定、後者はमाによる所在。**उहाँलाई जाडो लाग्छ**はलाई＋लाग्नुの経験者型で、हुनुに置換しません。",
+      "text": "**उहाँ लेखक हुनुहुन्छ**（彼・彼女は著者です〈敬意〉）／**उहाँ घरमा हुनुहुन्छ**（彼・彼女は家にいます〈敬意〉）はどちらもहुनुहुन्छですが、前者は名詞による同定、後者はमाによる所在。\n**उहाँलाई जाडो लाग्छ**（彼・彼女は寒く感じます〈敬意〉）はलाई＋लाग्नुの経験者型で、हुनुに置換しません。",
       "presentation": {
         "tone": "teal",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33822,15 +35365,17 @@
       "presentation": {
         "tone": "rose",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
-      "text": "**पढ्दै छु／पढेको छु／पढेको थिएँ**のछु・थिएँは、動作の進行や完了を支える補助動詞です。**घरमा छु**の所在とは前の動詞形が異なります。詳しい接続はテーマ10・15・16で学びます。",
+      "text": "**पढ्दै छु**（私は読んでいる途中です）／**पढेको छु**（私は読み終えています・読んだことがあります）／**पढेको थिएँ**（私はその時すでに読んでいました）のछु・थिएँは、動作の進行や完了を支える補助動詞です。\n**घरमा छु**（私は家にいます）の所在とは前の動詞形が異なります。\n詳しい接続はテーマ10・15・16で学びます。",
       "presentation": {
         "tone": "rose",
         "role": "body"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -33838,7 +35383,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -33907,7 +35453,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -33958,7 +35505,8 @@
       "presentation": {
         "tone": "green",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -34009,7 +35557,8 @@
       "presentation": {
         "tone": "violet",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -34065,7 +35614,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -34073,7 +35623,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "h",
@@ -34081,7 +35632,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -34202,7 +35754,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -34323,7 +35876,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -34444,7 +35998,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "table",
@@ -34500,7 +36055,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     },
     {
       "type": "p",
@@ -34508,7 +36064,8 @@
       "presentation": {
         "tone": "blue",
         "role": "plain"
-      }
+      },
+      "l1ExampleSupport": 1
     }
   ]
 }

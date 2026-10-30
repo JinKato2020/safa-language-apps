@@ -30,6 +30,9 @@ def detail_blocks(blocks,lang):
     result=[]
     for old in blocks:
         b=copy.deepcopy(old)
+        if b.get('l1ExampleSupport'):
+            result.append(b)
+            continue
         if b.get('type')=='note':
             b['type']='p';b['text']=('**ここもチェック**\n' if lang=='ja' else '**Also check**\n')+b.get('text','').replace('⚠️','').replace('⚠','').strip()
         if b.get('type')=='p' and not b.get('beginnerIntroEnd'):

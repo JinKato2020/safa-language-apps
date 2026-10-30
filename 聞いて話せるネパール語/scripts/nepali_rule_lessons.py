@@ -198,22 +198,26 @@ def rules(theme):
 def lesson_blocks(theme, lang, example, roman, translation, hunu):
     ja = lang == 'ja'
     rows = rules(theme)
-    bs = [{'type':'goal','text':('**文の型と使い分け**' if ja else '**Pattern and choice**')+'\n'+rows[0][2 if ja else 3]},
+    first_example=re.search(r'\*\*.+?\*\*',rows[0][2 if ja else 3]).group(0)
+    takeaway=rows[0][0 if ja else 1]+'\n'+first_example
+    if theme==5:
+        takeaway=('**देखि／बाट＝「〜から」**\n起点では用法が重なる。交通手段の「〜で」にはबाट。' if ja else '**देखि/बाट = from**\nTheir starting-point uses overlap. Use बाट for transport.')
+    bs = [{'type':'goal','text':('**文の型と使い分け**' if ja else '**Pattern and choice**')+'\n'+takeaway},
           {'type':'h','text':'① 例文でつかもう' if ja else '① Start with one example'},
           {'type':'p','text':'**'+example+'**'}, {'type':'p','text':roman}, {'type':'p','text':translation},
           {'type':'h','text':'② ネパール語のルール' if ja else '② Nepali grammar rules'}]
-    # The lead rule is taught in the takeaway; do not print it a second time.
-    for i,row in enumerate(rows[1:],2):
+    # Keep the takeaway short; teach every rule below the worked example.
+    for i,row in enumerate(rows,1):
         bs.extend([{'type':'h','text':f'{i}. '+row[0 if ja else 1]},
                    {'type':'p','text':row[2 if ja else 3]}])
     if theme == 5:
         bs.extend([{'type':'h','text':'देखि／बाट：場面で選ぶ' if ja else 'देखि/बाट: choose by construction'},
-            {'type':'table','headers':['場面','基本の形','替えたときの違い'] if ja else ['Context','Basic combination','Effect of substitution'],
+            {'type':'table','headers':['場面・基本の形','意味と使い分け'] if ja else ['Context and form','Meaning and choice'],
              'rows':[
-                ['時間の開始' if ja else 'Temporal start','बिहानदेखि / bihāndekhi', '朝から。बाटも時間に使えるが、まずदेखिを基本にする' if ja else 'Since morning. बाट also occurs temporally; learn देखि as the basic start marker.'],
-                ['場所から来る' if ja else 'Coming from a place','घरबाट आएँ / gharbāṭa āẽ', '家から来た。देखिも場所の起点に使え、空間用法は重なる' if ja else 'Came from home. देखि also marks spatial starting points; there is overlap.'],
-                ['起点〜終点' if ja else 'Start-to-end range','घरदेखि विद्यालयसम्म / ghardekhi vidyālayasamma', '家から学校まで。बाट…सम्मも可能で、必ず誤りとはしない' if ja else 'From home to school. बाट…सम्म is also possible, not categorically wrong.'],
-                ['交通手段' if ja else 'Transport','बसबाट / basbāṭa','バスで。बसदेखिは「バスを起点に」で、交通手段を表さない' if ja else 'By bus. बसदेखि treats the bus as a starting point, not transport.'],
+                [('時間の開始' if ja else 'Temporal start')+'\nबिहानदेखि / bihāndekhi', '朝から。बाटも時間に使えるが、まずदेखिを基本にする' if ja else 'Since morning. बाट also occurs temporally; learn देखि as the basic start marker.'],
+                [('場所から来る' if ja else 'Coming from a place')+'\nघरबाट आएँ / gharbāṭa āẽ', '家から来た。देखिも場所の起点に使え、空間用法は重なる' if ja else 'Came from home. देखि also marks spatial starting points; there is overlap.'],
+                [('起点〜終点' if ja else 'Start-to-end range')+'\nघरदेखि विद्यालयसम्म / ghardekhi vidyālayasamma', '家から学校まで。बाट…सम्मも可能で、必ず誤りとはしない' if ja else 'From home to school. बाट…सम्म is also possible, not categorically wrong.'],
+                [('交通手段' if ja else 'Transport')+'\nबसबाट / basbāṭa','バスで。बसदेखिは「バスを起点に」で、交通手段を表さない' if ja else 'By bus. बसदेखि treats the bus as a starting point, not transport.'],
              ]}])
     if theme in [1,2,3,4,36]:
         # Keep the actual paradigms and map; replace the duplicated prose.
