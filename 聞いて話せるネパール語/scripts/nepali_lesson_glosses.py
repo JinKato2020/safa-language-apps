@@ -377,7 +377,9 @@ DATA += '''
 भयो भने|起きたら・成立したら|if it happens/comes about
 एको होला|〜したでしょう〈前に動詞語幹が付く型〉|probably has done, with a preceding verb base
 न लगाउनु|〜させる〈前に動詞語幹が付く型〉|to make/have someone do, with a preceding verb base
-नु पर्छ|〜する必要がある〈前に動詞語幹が付く型〉|need to do, with a preceding verb base'''
+नु पर्छ|〜する必要がある〈前に動詞語幹が付く型〉|need to do, with a preceding verb base
+यहाँ किताब छ|ここに本があります|there is a book here
+त्यहाँ किताब छ|そこ・あそこに本があります|there is a book there/over there'''
 
 GLOSSES = {}
 for line in DATA.splitlines():

@@ -15,7 +15,7 @@ DATA = {
 होとछの境界|Choosing हो or छ|**यो राम्रो किताब हो**は「良い本」という名詞のまとまりを同定します。**यो किताब राम्रो छ**は本の性質を述べます。होを「永久」、छを「一時的」とだけ覚えると、この違いを説明できません。|**यो राम्रो किताब हो** identifies this as a good book. **यो किताब राम्रो छ** describes the book as good. The distinction is grammatical function, not simply permanent versus temporary.''',
 2: '''場所＋छ系|Location + छ|**म घरमा छु／किताब घरमा छ**。घरमाのमाは場所を示し、最後は存在する人・物に合わせます。**छु・छौं・छ・छन्**と敬意形हुनुहुन्छを使い分けます。|Compare **म घरमा छु / किताब घरमा छ**. मा marks the location; the final verb matches the entity located. Choose among **छु, छौं, छ, छन्** and respectful हुनुहुन्छ.
 所在と存在の語順|Locating and introducing|**किताब टेबलमा छ**は本の所在、**टेबलमा किताब छ**は机上に本があることを伝える基本の並べ方です。語順には情報の置き方による幅がありますが、माの付いた場所を動詞の一致の基準にしません。|**किताब टेबलमा छ** locates the book; **टेबलमा किताब छ** introduces a book on the table. Word order varies with information structure. The location marked by मा does not control the verb agreement.
-माとयहाँ・त्यहाँ|मा versus यहाँ/त्यहाँ|घर・नेपालなどには**घरमा・नेपालमा**。**यहाँ・त्यहाँ・कहाँ**は、それだけで「ここに・そこに・どこに」を表せます。基本の所在文ではयहाँमाのようにमाを重ねません。|Nouns combine with मा: **घरमा, नेपालमा**. **यहाँ, त्यहाँ and कहाँ** already function as here, there and where. Do not routinely add मा again in a basic location sentence.
+ここ・そこ・あそこ：यहाँとत्यहाँ|Here, there and over there: यहाँ and त्यहाँ|**यहाँ**（yahā̃／ヤハーン）は「ここに・ここで」、**त्यहाँ**（tyahā̃／ティヤハーン）は「そこに・あそこに／そこで・あそこで」。日本語の「そこ」と「あそこ」を、ネパール語では同じत्यहाँで表せます。聞き手の近くか、話し手から離れた所かは、指さしや文脈から読み取ります。**यहाँ किताब छ**はここ、**त्यहाँ किताब छ**はそこ・あそこに本がある文です。**कहाँ**はどこに・どこで。これらには基本の所在文でमाを重ねず、名詞の場所なら**घरमा・नेपालमा**にします。|**यहाँ** (yahā̃) means here; **त्यहाँ** (tyahā̃) means there or over there. Nepali can use the same त्यहाँ for the Japanese distinctions soko and asoko; context or pointing identifies the place. **यहाँ किताब छ** places a book here; **त्यहाँ किताब छ** places it there or over there. **कहाँ** asks where. Do not routinely add मा to these location words; place nouns instead combine with मा, as in **घरमा, नेपालमा**.
 所持では何に一致する？|Agreement in possession|**मसँग कलम छ**は「私の所にペンがある」という型です。मसँगは持ち主、कलमは存在する物なので、छुではなくछ。**म घरमा छु**のमとは役割が異なります。所持のसँगはテーマ5。|In **मसँग कलम छ**, मसँग marks the possessor and कलम is what exists, so use छ rather than छु. This differs from the subject म in **म घरमा छु**. See topic 5 for possessive सँग.
 छैनとहोइन|छैन versus होइन|**घरमा छैन**は「家にはいない・ない」、**घर होइन**は「家ではない」。所在・存在の否定はछैन系、同定の否定はहोइन系です。**उहाँ घरमा हुनुहुन्न**では敬意形が同じでも、घरमाが所在を示します。|**घरमा छैन** denies presence at home; **घर होइन** denies that something is a house. Location/existence uses the छैन family; identity uses होइन. In **उहाँ घरमा हुनुहुन्न**, घरमा identifies the location construction despite the shared honorific ending.''',
 3: '''形容詞＋छ|Adjective + छ|**पानी चिसो छ**のचिसोは冷たい状態を述べます。現在の性質・体調の基本は**対象＋形容詞＋छ系**。राम्रो・ठूलोなど、名詞により形が変わるものはテーマ23の一致も確認します。|In **पानी चिसो छ**, चिसो describes coldness. A basic current description is **subject + adjective + छ-family verb**. Inflecting adjectives such as राम्रो and ठूलो also follow the agreement patterns in topic 23.
@@ -210,6 +210,15 @@ def lesson_blocks(theme, lang, example, roman, translation, hunu):
     for i,row in enumerate(rows,1):
         bs.extend([{'type':'h','text':f'{i}. '+row[0 if ja else 1]},
                    {'type':'p','text':row[2 if ja else 3]}])
+    if theme == 2:
+        bs.extend([{'type':'h','text':'ここ・そこ・あそこを比べよう' if ja else 'Compare here, there and over there'},
+            {'type':'table','headers':['場所の語・読み','意味と場面'] if ja else ['Location word and reading','Meaning and context'],
+             'rows':[
+                ['यहाँ\nyahā̃', 'ここに・ここで：話し手の近く' if ja else 'Here: near the speaker.'],
+                ['त्यहाँ\ntyahā̃', 'そこに・そこで：聞き手の近くや、話題にしている場所など' if ja else 'There: for example near the listener, or at an identified place.'],
+                ['त्यहाँ\ntyahā̃', 'あそこに・あそこで：話し手から離れた場所。「そこ」と同じ形' if ja else 'Over there: away from the speaker. The same form as there.'],
+                ['कहाँ\nkahā̃', 'どこに・どこで：場所を尋ねる' if ja else 'Where: ask for the location.'],
+             ]}])
     if theme == 5:
         bs.extend([{'type':'h','text':'देखि／बाट：場面で選ぶ' if ja else 'देखि/बाट: choose by construction'},
             {'type':'table','headers':['場面・基本の形','意味と使い分け'] if ja else ['Context and form','Meaning and choice'],

@@ -1,0 +1,35 @@
+{
+  "packVersion": 1211,
+  "previousVersion": 1210,
+  "changedTheme": 2,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "added": "explicit here/there/over there/where comparison and L1 glosses",
+  "basicForms": {
+    "यहाँ": "here",
+    "त्यहाँ": "there / over there",
+    "कहाँ": "where"
+  },
+  "allOther35GuidesPerLanguageExactlyUnchanged": true,
+  "themeTitlesUnchanged": true,
+  "examplesTranslationsDictionaryAudioUnchanged": true,
+  "appRebuilt": false,
+  "readerScenarios": 12,
+  "offlineReload": true,
+  "cachedAudioDownloads": 0,
+  "illustrativePhrases": 329,
+  "bilingualGlossChecks": 760,
+  "publicationVerified": true,
+  "payloadSHA256Verified": true,
+  "catalogs": [
+    "packs-appa-v2",
+    "packs-appa-v3"
+  ],
+  "catalogSHA256": "e3580da01ecb8265cb2c8a9568514bf596e6f420a18a5a33d7dc77323b8e786c",
+  "verificationSources": [
+    "https://pressbooks.bccampus.ca/nepali/chapter/chapter-3-unit-4-grammar-focus/",
+    "https://wisc.pb.unizin.org/lctlresources/chapter/nepali-determiners/"
+  ]
+}

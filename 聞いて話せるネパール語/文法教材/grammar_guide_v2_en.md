@@ -291,10 +291,11 @@ Compare **म घरमा छु** (I am at home) / **किताब घरम
  Word order varies with information structure.
  The location marked by मा does not control the verb agreement.
 
-### 3. मा versus यहाँ/त्यहाँ
+### 3. Here, there and over there: यहाँ and त्यहाँ
 
-Nouns combine with मा: **घरमा, नेपालमा**. **यहाँ, त्यहाँ and कहाँ** already function as here, there and where.
- Do not routinely add मा again in a basic location sentence.
+**यहाँ** (yahā̃) means here; **त्यहाँ** (tyahā̃) means there or over there.
+ Nepali can use the same त्यहाँ for the Japanese distinctions soko and asoko; context or pointing identifies the place. **यहाँ किताब छ** (there is a book here) places a book here; **त्यहाँ किताब छ** (there is a book there/over there) places it there or over there. **कहाँ** asks where.
+ Do not routinely add मा to these location words; place nouns instead combine with मा, as in **घरमा, नेपालमा**.
 
 ### 4. Agreement in possession
 
@@ -307,6 +308,15 @@ In **मसँग कलम छ** (I have a pen), मसँग marks the possess
 **घरमा छैन** (is not at home) denies presence at home; **घर होइन** (it is not a house) denies that something is a house.
  Location/existence uses the छैन family; identity uses होइन.
  In **उहाँ घरमा हुनुहुन्न** (he/she is not at home, respectful), घरमा identifies the location construction despite the shared honorific ending.
+
+### Compare here, there and over there
+
+| Location word and reading | Meaning and context |
+| --- | --- |
+| यहाँ<br>yahā̃ | Here: near the speaker. |
+| त्यहाँ<br>tyahā̃ | There: for example near the listener, or at an identified place. |
+| त्यहाँ<br>tyahā̃ | Over there: away from the speaker. The same form as there. |
+| कहाँ<br>kahā̃ | Where: ask for the location. |
 
 ### हुनु: three sets and matching forms
 

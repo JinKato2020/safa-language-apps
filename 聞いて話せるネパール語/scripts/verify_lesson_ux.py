@@ -40,6 +40,11 @@ def main():
             text='\n'.join(b.get('text','') for b in o['grammarGuide'][key])
             assert sentence in text and GLOSSES[sentence][0 if lang=='ja' else 1] in text
         assert 'A' in o['grammarThemeNames']['35'] and 'B' in o['grammarThemeNames']['36']
+        location=next(b for b in o['grammarGuide']['2'] if b['type']=='table' and b['headers'][0] in ['場所の語・読み','Location word and reading'])
+        assert len(location['headers'])==2 and len(location['rows'])==4
+        assert location['rows'][1][0]==location['rows'][2][0]=='त्यहाँ\ntyahā̃','there and over there share the basic location form'
+        location_text=json.dumps(o['grammarGuide']['2'],ensure_ascii=False)
+        assert ('あそこ' if lang=='ja' else 'over there') in location_text
         comparison=next(b for b in o['grammarGuide']['5'] if b['type']=='table' and any('बसबाट / basbāṭa' in c for row in b['rows'] for c in row))
         assert len(comparison['headers'])==2,'narrow-screen comparison is two columns'
     for bad in ['म जाडो छु','मलाई जान चाहन्छु','गर्छु सक्छु','पढ्नुहुँदै छ','हो छैन']:

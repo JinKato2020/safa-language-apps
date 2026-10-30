@@ -1,6 +1,6 @@
 {
   "l1": "en",
-  "version": 1210,
+  "version": 1211,
   "examplesL1": {
     "1-1": [
       "My name is Ram.",
@@ -153190,7 +153190,7 @@
       },
       {
         "type": "h",
-        "text": "3. मा versus यहाँ/त्यहाँ",
+        "text": "3. Here, there and over there: यहाँ and त्यहाँ",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -153199,7 +153199,7 @@
       },
       {
         "type": "p",
-        "text": "Nouns combine with मा: **घरमा, नेपालमा**. **यहाँ, त्यहाँ and कहाँ** already function as here, there and where.\n Do not routinely add मा again in a basic location sentence.",
+        "text": "**यहाँ** (yahā̃) means here; **त्यहाँ** (tyahā̃) means there or over there.\n Nepali can use the same त्यहाँ for the Japanese distinctions soko and asoko; context or pointing identifies the place. **यहाँ किताब छ** (there is a book here) places a book here; **त्यहाँ किताब छ** (there is a book there/over there) places it there or over there. **कहाँ** asks where.\n Do not routinely add मा to these location words; place nouns instead combine with मा, as in **घरमा, नेपालमा**.",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -153241,6 +153241,43 @@
           "role": "body"
         },
         "l1ExampleSupport": 1
+      },
+      {
+        "type": "h",
+        "text": "Compare here, there and over there",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Location word and reading",
+          "Meaning and context"
+        ],
+        "rows": [
+          [
+            "यहाँ\nyahā̃",
+            "Here: near the speaker."
+          ],
+          [
+            "त्यहाँ\ntyahā̃",
+            "There: for example near the listener, or at an identified place."
+          ],
+          [
+            "त्यहाँ\ntyahā̃",
+            "Over there: away from the speaker. The same form as there."
+          ],
+          [
+            "कहाँ\nkahā̃",
+            "Where: ask for the location."
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
       },
       {
         "type": "h",
@@ -187695,6 +187732,6 @@
     "35": "Theme 35 (Appendix A)｜Verb forms through writing: लेख्नु",
     "36": "Theme 36 (Appendix B)｜Copulas through identity and location"
   },
-  "curriculumRevision": 1210,
+  "curriculumRevision": 1211,
   "grammarTextOnlyLabel": "Text practice (no audio)"
 }
