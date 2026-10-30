@@ -4,13 +4,24 @@ import argparse
 import collections
 import json
 import re
-from nepali_lesson_breaks import CARDS,SOURCES,extra_blocks
+from nepali_lesson_breaks import CARDS,SOURCES,extra_blocks,_EDITORIAL
+import hashlib
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('work',type=Path);a=p.parse_args()
     def read(path):return json.loads(path.read_text(encoding='utf-8-sig'))
     old=read(a.work/'live/catalog.json');new=read(a.work/'publish/catalog.json')
     kinds=collections.Counter();ids=set();examples=0
+    assert len(_EDITORIAL['items']) == 10
+    for item in _EDITORIAL['items']:
+        assert item['id'] != 'photo-encounter', 'Religious festival outside app scope'
+        assert 120 <= len(item['body']['ja']) <= 330
+        assert 50 <= len(item['body']['en'].split()) <= 110
+        assert all(len(item['body'][l].split('\n\n')) == 2 for l in ['ja','en'])
+        image = item['image']
+        asset = Path(__file__).resolve().parents[1] / 'expo-app/assets/culture' / image['uri'].rsplit('/',1)[1]
+        assert hashlib.sha256(asset.read_bytes()).hexdigest() == image['sha256']
+        assert item['sources'] and all(s.startswith('https://') for s in item['sources'])
     for theme,cards in CARDS.items():
         assert len(cards)<=2,'Keep breaks brief and optional to read'
         for card in cards:
@@ -31,17 +42,11 @@ def main():
         assert before['grammarThemeNames']==after['grammarThemeNames']
         for key,bs in after['grammarGuide'].items():
             base=[b for b in bs if not b.get('lessonSupplement')]
-            if key=='2':
-                # Intentional locative correction; preserve the original lesson
-                # after its generated introduction, including all exercises.
-                boundary=next(i for i,b in enumerate(base) if b.get('beginnerIntroEnd'))
-                oldbs=before['grammarGuide'][key]
-                oldboundary=next(i for i,b in enumerate(oldbs) if b.get('beginnerIntroEnd'))
-                assert base[boundary:]==oldbs[oldboundary:]
-                text=json.dumps(base,ensure_ascii=False)
-                for phrase in ['उहाँ किताब छ','उहाँ शिक्षक हुनुहुन्छ','उ त्यहाँ']:assert phrase in text
-            else:
-                assert base==before['grammarGuide'][key],('Existing guide changed',lang,key)
+            oldbase=[b for b in before['grammarGuide'][key] if not b.get('lessonSupplement')]
+            assert base==oldbase,('Existing guide changed',lang,key)
+            oldspoken=[b for b in before['grammarGuide'][key] if b.get('lessonSupplement',{}).get('kind')=='spoken']
+            newspoken=[b for b in bs if b.get('lessonSupplement',{}).get('kind')=='spoken']
+            assert oldspoken==newspoken,('Speech notes changed',lang,key)
             actual=[b for b in bs if b.get('lessonSupplement')]
             assert actual==extra_blocks(int(key),lang)
             for b in actual:
@@ -53,7 +58,10 @@ def main():
         mil='\n'.join(b.get('text','') for b in after['grammarGuide']['21'] if b.get('lessonSupplement',{}).get('id')=='milcha-permission')
         for form in ['मिल्छ','मिल्दैन','सक्नु','यहाँ बस्न मिल्छ?']:assert form in mil
         assert ('許可' if lang=='ja' else 'permission') in mil
-    print(f'PASS {kinds["culture"]} culture breaks, {kinds["spoken"]} speech notes, {examples} glossed/romanized reading examples per language; topic2 location corrected, all other base guides retained')
+        figures=[b for bs in after['grammarGuide'].values() for b in bs if b.get('image')]
+        assert len(figures)==10
+        assert all(b['image']['alt'] and b['image']['caption'] for b in figures)
+    print(f'PASS 10 illustrated culture breaks, {kinds["spoken"]} unchanged speech notes, {examples} glossed/romanized reading examples per language; all36 base guides retained')
     return {'cultureBreaks':kinds['culture'],'speechNotes':kinds['spoken'],'readingExamplesPerLanguage':examples,'themesWithSupplements':len(CARDS),'existingGuideBlocksExactlyPreservedExceptTheme2Intro':True,'allExamplesHaveRomanJaEn':True,'cultureSeparateFromLanguageDrills':True,'milchaPermissionFeasibilityExplained':True,'sourcesByCard':{c['id']:[SOURCES[s] for s in c['sources']] for cards in CARDS.values() for c in cards}}
 
 if __name__=='__main__':main()

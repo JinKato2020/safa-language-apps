@@ -31,17 +31,23 @@ function css(style,isView){
 }
 const View=props=>React.createElement('div',{style:css(props.style,true)},props.children);
 const Text=props=>React.createElement('span',{style:css(props.style,false)},props.children);
+// Resolve bundled image sources to local files in the DOM-only preview.
+let previewImage;
+const NativeImage=props=>React.createElement('img',{src:props.source.uri,alt:props.accessibilityLabel,style:{...css(props.style,false),objectFit:'contain',display:'block'}});
+const PreviewReact={...React,useEffect:()=>{},useState:value=>[value===null&&previewImage?{uri:previewImage}:value,()=>{}]};
 const theme=compile(fs.readFileSync(path.join(ROOT,'packages/shared/src/theme.ts'),'utf8'),()=>{throw Error('Unexpected theme import')});
 const file=path.join(ROOT,'packages/shared/src/screens/GrammarGuideScreen.tsx');
-const ui=compile(fs.readFileSync(file,'utf8')+'\nexport { Block };',name=>{
- if(name==='react')return React;if(name==='react/jsx-runtime')return require('react/jsx-runtime');
- if(name==='react-native')return{View,ScrollView:View,Pressable:View,StyleSheet:{create:x=>x}};
+const ui=compile(fs.readFileSync(file,'utf8')+'\nexport { Block, LessonBlocks };',name=>{
+ if(name==='react')return PreviewReact;if(name==='react/jsx-runtime')return require('react/jsx-runtime');
+ if(name==='react-native')return{View,Image:NativeImage,ScrollView:View,Pressable:View,StyleSheet:{create:x=>x}};
  if(name==='../Text')return{Text};if(name==='../theme')return theme;if(name==='../grammarPresentation')return presentation;
- if(['react-native-safe-area-context','@react-navigation/native','../SettingsContext','../grammarGuide'].includes(name))return{};
+ if(name==='../grammarGuide')return{useGrammarGuideImageResolver:()=>async()=>null};
+ if(['react-native-safe-area-context','@react-navigation/native','../SettingsContext'].includes(name))return{};
  throw Error(name);
 });
 const ss=scale=>(fontSize,lineHeight)=>({fontSize:fontSize*scale,...(lineHeight?{lineHeight:lineHeight*scale}:{})});
-const render=(b,scale=1)=>renderToStaticMarkup(React.createElement(ui.Block,{b,ss:ss(scale)}));
+const imageUri=media=>media?'file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/culture',media.uri.split('/').pop()).replaceAll('\\','/'):undefined;
+const render=(b,scale=1)=>{previewImage=imageUri(b.image);return renderToStaticMarkup(React.createElement(ui.Block,{b,ss:ss(scale)}))};
 for(const b of [{type:'p',text:'**plain** body'},{type:'h',text:'Heading'},{type:'goal',text:'Goal'},{type:'table',headers:['A'],rows:[['B']]}]){
  assert.equal(render(b),render({...b,presentation:{tone:'invalid'}}),'Unknown tones retain legacy UI');
 }
@@ -62,13 +68,24 @@ for(const lang of ['ja','en']){
  }
 }
 const supplements=process.argv.includes('--supplements');
-const samples=supplements?[['ja','2',390,1],['ja','21',320,1.4],['en','21',390,1]]:[['ja','3',390,1],['ja','5',320,1.4],['en','3',390,1]];
+const samples=supplements?[['ja','2',390,1],['ja','8',320,1.4],['en','3',390,1]]:[['ja','3',390,1],['ja','5',320,1.4],['en','3',390,1]];
 const pages=samples.map(([lang,id,width,scale])=>{
  const all=data[lang].grammarGuide[id];const end=all.findIndex(b=>b.beginnerIntroEnd);
  const shown=supplements?all.filter(b=>b.lessonSupplement):all.slice(0,end);
- return `<section style="width:${width}px"><header>${lang.toUpperCase()} · ${id} · ${width}px · ${scale}×</header><main>${shown.map(b=>render(b,scale)).join('')}</main></section>`;
+ previewImage=imageUri(shown.find(b=>b.image)?.image);
+ const markup=supplements?renderToStaticMarkup(React.createElement(ui.LessonBlocks,{blocks:shown,ss:ss(scale)})):shown.map(b=>render(b,scale)).join('');
+ return `<section style="width:${width}px"><header>${lang.toUpperCase()} · ${id} · ${width}px · ${scale}×</header><main>${markup}</main></section>`;
 });
 const html=`<!doctype html><meta charset="utf-8"><style>*{box-sizing:border-box}body{margin:0;padding:16px;background:#eef2f6;display:flex;gap:16px;align-items:flex-start;font-family:Arial,'Nirmala UI','Yu Gothic UI',sans-serif}section{flex:none;background:white;min-height:1500px}header{background:#fff;border-bottom:1px solid #e4e4e7;padding:16px;font-weight:700}main{padding:24px}</style>${pages.join('')}`;
 fs.writeFileSync(path.join(work,'preview.html'),html);
+if (supplements) {
+ const cards=[];
+ for(const lang of ['ja','en'])for(const width of [320,390])for(const scale of [1,1.4])for(const [id,all] of Object.entries(data[lang].grammarGuide)) {
+  const culture=all.filter(b=>b.lessonSupplement?.kind==='culture');if(!culture.length)continue;
+  previewImage=imageUri(culture.find(b=>b.image)?.image);
+  cards.push(`<section data-case="${lang}-${id}-${width}-${scale}" style="width:${width}px;flex:none"><main style="padding:24px">${renderToStaticMarkup(React.createElement(ui.LessonBlocks,{blocks:culture,ss:ss(scale)}))}</main></section>`);
+ }
+ fs.writeFileSync(path.join(work,'culture-all.html'),`<!doctype html><meta charset="utf-8"><style>*{box-sizing:border-box}body{display:flex;flex-wrap:wrap;gap:16px;font-family:Arial,'Yu Gothic UI',sans-serif}img{max-width:100%}</style>${cards.join('')}`);
+}
 console.log('PASS 5 palette contrasts >=4.5:1, numbered badges, uncolored/invalid metadata fallback, all72 semantic lesson layouts:',blocks,'blocks');
 console.log('Preview uses actual TSX Block with DOM adapters at390px and320px/1.4x font.');

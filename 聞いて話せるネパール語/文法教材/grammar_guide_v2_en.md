@@ -70,11 +70,13 @@ Initial के in **के यो किताब हो?** (is this a book) int
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-### A moment in Nepal｜Beyond a Kathmandu lane
+### A moment in Nepal｜A morning among three royal cities
 
-Kathmandu, Patan and Bhaktapur give the valley three distinct old-city faces.
- Imagine stepping from a square into a lane, then a courtyard.
- A place once seen on a map begins to feel like somebody’s neighbourhood.
+AI-generated scene illustration
+
+Morning light falls on a brick lane as someone carries vegetables beneath carved windows. **Kathmandu, Patan and Bhaktapur** flourished as royal cities under Malla rulers.
+
+Kathmandu brings commerce alongside old streets; Patan invites a closer look at metalwork and woodcarving; Bhaktapur is associated with brick streets and pottery. Picture walking beyond a square into a neighbourhood where people still live and work.
 
 ### Heard in conversation｜हैन? as a conversational check
 
@@ -363,11 +365,13 @@ In **मसँग कलम छ** (I have a pen), मसँग marks the possess
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-### A moment in Nepal｜Conversation across a cup of tea
+### A moment in Nepal｜Chiya makes a little time for conversation
 
-A visit may begin with tea and time together.
- Picture the steam from a sweet milk tea and an unhurried conversation.
- Even before you find much to say, sharing that small pause can make a first meeting feel warmer.
+AI-generated scene illustration
+
+Steam rises from a small glass. **Chiya** means tea in Nepali. Milk and sugar are familiar additions; ginger or cardamom may lend their aroma. Strength and sweetness vary, and tea without milk is available too.
+
+A tea shop can make room for neighbourhood news or a work conversation. Imagine a greeting turning into a longer exchange while the tea cools. Finding your own favourite cup becomes part of getting to know a place.
 
 ### Heard in conversation｜कता छ? in everyday directions
 
@@ -625,6 +629,14 @@ In **पानी चिसो छैन** (the water is not cold), retain the a
 | you plural<br>तपाईंहरू / tapāĩharū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
+
+### A moment in Nepal｜Rain, clear skies and the seasons of Nepal
+
+AI-generated scene illustration
+
+Rain taps on umbrellas; tea steams beside a wet lane. **The monsoon generally runs from June to September.** Fields grow greener and clouds may hide the mountains, while streets come alive between showers.
+
+Autumn through spring is generally drier, with October and November often bringing clear mountain views. Winter mornings and evenings can be cold. Lowlands and high mountains differ greatly: choosing a season for the place you hope to visit becomes part of imagining the journey.
 
 ### Heard in conversation｜A short “How are you?”
 
@@ -1134,11 +1146,13 @@ I live in a house.
 | Start-to-end range<br>घरदेखि विद्यालयसम्म / ghardekhi vidyālayasamma | From home to school. बाट…सम्म is also possible, not categorically wrong. |
 | Transport<br>बसबाट / basbāṭa | By bus. बसदेखि treats the bus as a starting point, not transport. |
 
-### A moment in Nepal｜Life beyond the city
+### A moment in Nepal｜Fields, footpaths and the work behind the view
 
-Nepal is more than snowy peaks.
- Hillside settlements, fields and paths between towns and villages hold everyday lives too.
- Imagine noticing a cluster of homes from a window and wondering what an ordinary day there feels like.
+AI-generated scene illustration
+
+Terraces follow a hillside towards a cluster of homes. **Terraced fields make sloping land usable for farming**; the paths between them also lead to schools, shops and homes.
+
+Crops vary with altitude, water and season across the mountains, middle hills and southern Tarai plains. Mountain journeys connect many jobs too: guiding, lodging, cooking, carrying supplies and transport. Imagine the everyday lives within a landscape, as well as the view.
 
 
 ### Core forms
@@ -2188,10 +2202,13 @@ Compare **तँ गर्छस्** (you do it, intimate/low respect) / **त�
 Learn **म→मैले/मलाई/मेरो**, **उ/ऊ→उसले/उसलाई/उसको**, **उनी→उनले/उनलाई/उनको**, and respectful **उहाँले/उहाँलाई/उहाँको**.
  Case-marked pronouns are not always formed by attaching a marker to the citation form unchanged.
 
-### A moment in Nepal｜A family-like way of addressing people
+### A moment in Nepal｜Dai and didi: warmth with a sense of respect
 
-An older person at a shop or on the street may be addressed with a word like elder brother or sister, even without a family connection.
- It is a glimpse of how warmth, age and relationships shape everyday encounters.
+AI-generated scene illustration
+
+A customer calls to a shopkeeper, “Didi.” They need not be relatives for the word to carry warmth. **Dai means elder brother; didi means elder sister**, and these words can also address older people outside the family.
+
+Age and relationships matter, so they are not automatic labels for everyone. A small word before a question can reveal how people relate to one another. Imagine listening for those greetings in a neighbourhood shop.
 
 ### Heard in conversation｜हजुर: acknowledgement or “Pardon?”
 
@@ -2526,11 +2543,13 @@ Compare **म पढ्छु** (I read/study) / **हामी पढ्छौ�
  Dedicated future जानेछु is another option.
  Compare negative **जान्छु→जाँदिनँ** and question **कहिले जानुहुन्छ?** (when do you go, respectful).
 
-### A moment in Nepal｜A little world on a dal-bhat plate
+### A moment in Nepal｜Dal bhat: a meal that changes with each mouthful
 
-Rice, lentil soup, vegetables and a tangy or spicy accompaniment make a plate of dal bhat a small world of flavours.
- Homes and regions vary the combination.
- Discovering how today’s plate differs from yesterday’s can become part of the journey.
+AI-generated scene illustration
+
+Rice, lentil soup and colourful accompaniments arrive on a metal plate. **Dal is lentil soup; bhat is cooked rice.** Tarkari adds vegetable dishes, while achar brings a tangy or spicy accompaniment.
+
+Combining a little at a time changes each mouthful. Eating with the right hand remains a living practice, alongside the use of spoons in different homes and settings. Ingredients vary by household, region and season: there is always another plate to discover.
 
 
 ### A reference table for comparing personal forms
@@ -3048,12 +3067,13 @@ A ले-marked agent does not force one invariant ending.
 **म घरमा थिएँ** (I was at home) gives past location; **म घर गएँ** (I went home) a completed movement. **काम थियो** (there was work) says there was work; **काम भयो** (the work was done/accomplished) presents accomplishment/occurrence.
  Similar translated past tenses do not make these predicates interchangeable.
 
-### A moment in Nepal｜The warmth behind an extra helping
+### A moment in Nepal｜Another helping, and the etiquette of sharing
 
-An offer of another helping can be a small gesture of care.
- That exchange may become as memorable as the food.
- You need not eat beyond comfort: appreciation and thanks matter too.
- Every household has its own rhythm.
+AI-generated scene illustration
+
+As the lentil soup runs low, someone offers another helping. That attention can be part of the welcome. When full, appreciation and thanks can accompany a gentle refusal.
+
+**Keep serving utensils separate from utensils used for eating** where that is the household practice. The idea of jutho concerns food or objects touched by the mouth or saliva, though customs vary with household and relationship. Watching how food is served helps you join the meal with care.
 
 ### Heard in conversation｜“Have you eaten?” as a caring check-in
 
@@ -5049,12 +5069,6 @@ I have to go to the office tomorrow.
 **मलाई पानी चाहिन्छ** (I need water) expresses need for water; **मलाई जानु पर्छ** (I need to go) need to perform an action. चाहिन्छ commonly takes a needed item/quantity; पर्छ combines with verbal -नु for obligation.
  Both can have मलाई as experiencer.
 
-### A moment in Nepal｜A moment before the photograph
-
-A market scene or a smile encountered along the way may invite a photograph.
- Ask before taking someone’s picture.
- A brief exchange with the person beyond the camera can turn an image into a shared memory.
-
 ### Heard in conversation｜मिल्छ for permission and feasibility
 
 **An infinitive in -न + मिल्छ** expresses something being feasible or acceptable and is common when asking permission.
@@ -5311,11 +5325,13 @@ Compare **म जान चाहन्नँ** (I do not want to go) with **म
 **जान चाहन्छु** (I want to go), **जानु पर्छ** (need to go) and **जान सक्छु** (I can go) express desire, necessity and ability.
  Even the preceding form differs, **जान/जानु**; they are not one universal pattern with a freely replaceable final word.
 
-### A moment in Nepal｜A plate of momo
+### A moment in Nepal｜Momo: the filling and sauce make a difference
 
-Picture a warm momo dipped in sauce before the first bite.
- Fillings, cooking styles and sauces offer different pleasures, including vegetable options.
- Being able to describe what you enjoy can make discovering the next plate even more inviting.
+AI-generated scene illustration
+
+A steamer opens and small pleated dumplings emerge through the steam. **Momo are filled dumplings widely enjoyed in Nepal.** Meat, vegetable and cheese versions offer different tastes; some are fried rather than steamed.
+
+Fillings, sauces and heat levels give each plate its character. A small question about what is inside, or how spicy the sauce is, can help you find a favourite. Waiting for that warm plate is part of the experience too.
 
 
 ### A reference table for comparing personal forms
@@ -5944,12 +5960,13 @@ In **यो घर त्यो घरभन्दा ठूलो छ** (this h
 **A र B बराबर छन्** (A and B are equal) states equality; **Bजति** compares an amount/degree to B; **Bभन्दा** introduces a standard for difference.
  The marker distinguishes equality/degree from unequal comparison.
 
-### A moment in Nepal｜Small encounters at the market
+### A moment in Nepal｜The market scale connects fields with the city
 
-A market gathers colour, produce and small encounters.
- Looking, asking and exchanging a few words can bring a place closer.
- Some shops welcome a price discussion; others use fixed prices.
- Think of the exchange as a meeting, not a contest.
+AI-generated scene illustration
+
+Red tomatoes, green leaves and the sound of produce settling on a scale: **a market brings food and people into the city**. Seasonal vegetables hint at daily meals, while supplies may arrive from nearby farms, other regions or abroad.
+
+Choosing a quantity and asking a price can bring everyday life closer. Some shops allow a price discussion; others have fixed prices. Watching the exchanges around you is a small discovery in itself.
 
 ### Heard in conversation｜A gentle price request
 
@@ -6244,11 +6261,13 @@ I like tea and coffee.
 **पानी परे पनि जान्छु** (I will go even if it rains) concedes even if it rains. **पानी पर्यो तर गएँ** (it rained, but I went) contrasts two reported events.
  The first uses -**ए पनि** (even if/although, part of a linking pattern); the second uses तर. **का बाबजुद** (despite) follows a noun phrase for despite.
 
-### A moment in Nepal｜More than one picture of Nepal
+### A moment in Nepal｜Beyond the peaks: what supports everyday Nepal?
 
-You may begin with a picture of high mountains, then discover varied languages, meals and clothing in towns and villages.
- Nepal’s many communities make differences part of the discovery.
- Leave room for the next encounter to surprise you.
+AI-generated scene illustration
+
+A bicycle passes fields on a southern plain. No snowy summit is in sight, yet this is Nepal too. **Mountains, hills and the Tarai plains** shape different crops, journeys and jobs.
+
+Farming and tourism sit alongside trade, transport, construction, manufacturing and hydropower. Money sent by relatives working abroad also supports households and education. Imagine asking about someone’s work and discovering a country that reaches far beyond a single mountain photograph.
 
 ### Heard in conversation｜अनि? to invite the next part
 

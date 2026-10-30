@@ -1,6 +1,6 @@
 {
   "l1": "en",
-  "version": 1212,
+  "version": 1213,
   "examplesL1": {
     "1-1": [
       "My name is Ram.",
@@ -152261,7 +152261,7 @@
       },
       {
         "type": "h",
-        "text": "A moment in Nepal｜Beyond a Kathmandu lane",
+        "text": "A moment in Nepal｜A morning among three royal cities",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -152274,10 +152274,45 @@
       },
       {
         "type": "p",
-        "text": "Kathmandu, Patan and Bhaktapur give the valley three distinct old-city faces.\n Imagine stepping from a square into a lane, then a courtyard.\n A place once seen on a map begins to feel like somebody’s neighbourhood.",
+        "text": "AI-generated scene illustration",
         "presentation": {
           "tone": "violet",
-          "role": "body"
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "valley-morning",
+          "kind": "culture"
+        },
+        "image": {
+          "id": "valley-morning-1e50a3f59ba0",
+          "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/valley-morning-1e50a3f59ba0.jpg",
+          "width": 960,
+          "height": 640,
+          "sha256": "1e50a3f59ba034213eb31c8282b42de2e56ae7e12a70a748d5b1c7bdd23a860b",
+          "alt": "An imagined Kathmandu Valley lane with brick walls, carved windows and a resident carrying vegetables",
+          "caption": "AI-generated scene illustration"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Morning light falls on a brick lane as someone carries vegetables beneath carved windows. **Kathmandu, Patan and Bhaktapur** flourished as royal cities under Malla rulers.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "valley-morning",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Kathmandu brings commerce alongside old streets; Patan invites a closer look at metalwork and woodcarving; Bhaktapur is associated with brick streets and pottery. Picture walking beyond a square into a neighbourhood where people still live and work.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
         },
         "l1ExampleSupport": 1,
         "lessonSupplement": {
@@ -153497,7 +153532,7 @@
       },
       {
         "type": "h",
-        "text": "A moment in Nepal｜Conversation across a cup of tea",
+        "text": "A moment in Nepal｜Chiya makes a little time for conversation",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -153510,10 +153545,45 @@
       },
       {
         "type": "p",
-        "text": "A visit may begin with tea and time together.\n Picture the steam from a sweet milk tea and an unhurried conversation.\n Even before you find much to say, sharing that small pause can make a first meeting feel warmer.",
+        "text": "AI-generated scene illustration",
         "presentation": {
           "tone": "violet",
-          "role": "body"
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "tea-visit",
+          "kind": "culture"
+        },
+        "image": {
+          "id": "tea-visit-eaef397d297b",
+          "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/tea-visit-eaef397d297b.jpg",
+          "width": 960,
+          "height": 640,
+          "sha256": "eaef397d297b921aceb52beea167df0c2815c190bdb4171b69957570e458a3b5",
+          "alt": "Two adults talking over glasses of milky tea in an imagined Nepali home",
+          "caption": "AI-generated scene illustration"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Steam rises from a small glass. **Chiya** means tea in Nepali. Milk and sugar are familiar additions; ginger or cardamom may lend their aroma. Strength and sweetness vary, and tea without milk is available too.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "tea-visit",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "A tea shop can make room for neighbourhood news or a work conversation. Imagine a greeting turning into a longer exchange while the tea cools. Finding your own favourite cup becomes part of getting to know a place.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
         },
         "l1ExampleSupport": 1,
         "lessonSupplement": {
@@ -154616,6 +154686,67 @@
         ],
         "presentation": {
           "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
+        "text": "A moment in Nepal｜Rain, clear skies and the seasons of Nepal",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "seasons-weather",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "AI-generated scene illustration",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "seasons-weather",
+          "kind": "culture"
+        },
+        "image": {
+          "id": "seasons-weather-8b7e6eecde66",
+          "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/seasons-weather-8b7e6eecde66.jpg",
+          "width": 960,
+          "height": 640,
+          "sha256": "8b7e6eecde66634211234ceaf87e53acc0da33616c3bbe1f1f11949f8ff53d72",
+          "alt": "An imagined monsoon scene in the Kathmandu Valley, with umbrellas and a rain-wet brick lane",
+          "caption": "AI-generated scene illustration"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Rain taps on umbrellas; tea steams beside a wet lane. **The monsoon generally runs from June to September.** Fields grow greener and clouds may hide the mountains, while streets come alive between showers.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "seasons-weather",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Autumn through spring is generally drier, with October and November often bringing clear mountain views. Winter mornings and evenings can be cold. Lowlands and high mountains differ greatly: choosing a season for the place you hope to visit becomes part of imagining the journey.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "seasons-weather",
+          "kind": "culture"
         }
       },
       {
@@ -156823,7 +156954,7 @@
       },
       {
         "type": "h",
-        "text": "A moment in Nepal｜Life beyond the city",
+        "text": "A moment in Nepal｜Fields, footpaths and the work behind the view",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -156836,10 +156967,45 @@
       },
       {
         "type": "p",
-        "text": "Nepal is more than snowy peaks.\n Hillside settlements, fields and paths between towns and villages hold everyday lives too.\n Imagine noticing a cluster of homes from a window and wondering what an ordinary day there feels like.",
+        "text": "AI-generated scene illustration",
         "presentation": {
           "tone": "violet",
-          "role": "body"
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "hills-paths",
+          "kind": "culture"
+        },
+        "image": {
+          "id": "hills-paths-524044ab9911",
+          "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/hills-paths-524044ab9911.jpg",
+          "width": 960,
+          "height": 640,
+          "sha256": "524044ab9911645968c2de459d4ce4a253efd1c5dd3d78ef12718d232190be75",
+          "alt": "An imagined path linking terraced fields and homes in Nepal’s middle hills",
+          "caption": "AI-generated scene illustration"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Terraces follow a hillside towards a cluster of homes. **Terraced fields make sloping land usable for farming**; the paths between them also lead to schools, shops and homes.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "hills-paths",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Crops vary with altitude, water and season across the mountains, middle hills and southern Tarai plains. Mountain journeys connect many jobs too: guiding, lodging, cooking, carrying supplies and transport. Imagine the everyday lives within a landscape, as well as the view.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
         },
         "l1ExampleSupport": 1,
         "lessonSupplement": {
@@ -161402,7 +161568,7 @@
       },
       {
         "type": "h",
-        "text": "A moment in Nepal｜A family-like way of addressing people",
+        "text": "A moment in Nepal｜Dai and didi: warmth with a sense of respect",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -161415,10 +161581,45 @@
       },
       {
         "type": "p",
-        "text": "An older person at a shop or on the street may be addressed with a word like elder brother or sister, even without a family connection.\n It is a glimpse of how warmth, age and relationships shape everyday encounters.",
+        "text": "AI-generated scene illustration",
         "presentation": {
           "tone": "violet",
-          "role": "body"
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "dai-didi",
+          "kind": "culture"
+        },
+        "image": {
+          "id": "dai-didi-4efe9bb6b36a",
+          "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/dai-didi-4efe9bb6b36a.jpg",
+          "width": 960,
+          "height": 640,
+          "sha256": "4efe9bb6b36ab923c36271178fcecfe011f916337285acf8de4b6faea156b54a",
+          "alt": "An imagined friendly exchange between a younger customer and an older shopkeeper in Nepal",
+          "caption": "AI-generated scene illustration"
+        }
+      },
+      {
+        "type": "p",
+        "text": "A customer calls to a shopkeeper, “Didi.” They need not be relatives for the word to carry warmth. **Dai means elder brother; didi means elder sister**, and these words can also address older people outside the family.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "dai-didi",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Age and relationships matter, so they are not automatic labels for everyone. A small word before a question can reveal how people relate to one another. Imagine listening for those greetings in a neighbourhood shop.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
         },
         "l1ExampleSupport": 1,
         "lessonSupplement": {
@@ -162872,7 +163073,7 @@
       },
       {
         "type": "h",
-        "text": "A moment in Nepal｜A little world on a dal-bhat plate",
+        "text": "A moment in Nepal｜Dal bhat: a meal that changes with each mouthful",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -162885,10 +163086,45 @@
       },
       {
         "type": "p",
-        "text": "Rice, lentil soup, vegetables and a tangy or spicy accompaniment make a plate of dal bhat a small world of flavours.\n Homes and regions vary the combination.\n Discovering how today’s plate differs from yesterday’s can become part of the journey.",
+        "text": "AI-generated scene illustration",
         "presentation": {
           "tone": "violet",
-          "role": "body"
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "dal-bhat",
+          "kind": "culture"
+        },
+        "image": {
+          "id": "dal-bhat-c8fa0f14d4bd",
+          "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/dal-bhat-c8fa0f14d4bd.jpg",
+          "width": 960,
+          "height": 640,
+          "sha256": "c8fa0f14d4bddb5f1f9141a6e4c18ef0bcf9e6288de888071b972b0b2e4bcc17",
+          "alt": "An imagined dal-bhat meal with rice, lentil soup, vegetables and achar, being mixed a little at a time with the right hand",
+          "caption": "AI-generated scene illustration"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Rice, lentil soup and colourful accompaniments arrive on a metal plate. **Dal is lentil soup; bhat is cooked rice.** Tarkari adds vegetable dishes, while achar brings a tangy or spicy accompaniment.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "dal-bhat",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Combining a little at a time changes each mouthful. Eating with the right hand remains a living practice, alongside the use of spoons in different homes and settings. Ingredients vary by household, region and season: there is always another plate to discover.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
         },
         "l1ExampleSupport": 1,
         "lessonSupplement": {
@@ -165013,7 +165249,7 @@
       },
       {
         "type": "h",
-        "text": "A moment in Nepal｜The warmth behind an extra helping",
+        "text": "A moment in Nepal｜Another helping, and the etiquette of sharing",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -165026,10 +165262,45 @@
       },
       {
         "type": "p",
-        "text": "An offer of another helping can be a small gesture of care.\n That exchange may become as memorable as the food.\n You need not eat beyond comfort: appreciation and thanks matter too.\n Every household has its own rhythm.",
+        "text": "AI-generated scene illustration",
         "presentation": {
           "tone": "violet",
-          "role": "body"
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "meal-warmth",
+          "kind": "culture"
+        },
+        "image": {
+          "id": "meal-warmth-1931024d41d4",
+          "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/meal-warmth-1931024d41d4.jpg",
+          "width": 960,
+          "height": 640,
+          "sha256": "1931024d41d4cd03163ea8ac8f9d1db1cad5f3a6ab7d403f67f98900abddcdbf",
+          "alt": "An imagined Nepali household meal where a host offers dal using a separate serving ladle",
+          "caption": "AI-generated scene illustration"
+        }
+      },
+      {
+        "type": "p",
+        "text": "As the lentil soup runs low, someone offers another helping. That attention can be part of the welcome. When full, appreciation and thanks can accompany a gentle refusal.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "meal-warmth",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "**Keep serving utensils separate from utensils used for eating** where that is the household practice. The idea of jutho concerns food or objects touched by the mouth or saliva, though customs vary with household and relationship. Watching how food is served helps you join the meal with care.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
         },
         "l1ExampleSupport": 1,
         "lessonSupplement": {
@@ -173450,32 +173721,6 @@
       },
       {
         "type": "h",
-        "text": "A moment in Nepal｜A moment before the photograph",
-        "presentation": {
-          "tone": "violet",
-          "role": "plain"
-        },
-        "l1ExampleSupport": 1,
-        "lessonSupplement": {
-          "id": "photo-encounter",
-          "kind": "culture"
-        }
-      },
-      {
-        "type": "p",
-        "text": "A market scene or a smile encountered along the way may invite a photograph.\n Ask before taking someone’s picture.\n A brief exchange with the person beyond the camera can turn an image into a shared memory.",
-        "presentation": {
-          "tone": "violet",
-          "role": "body"
-        },
-        "l1ExampleSupport": 1,
-        "lessonSupplement": {
-          "id": "photo-encounter",
-          "kind": "culture"
-        }
-      },
-      {
-        "type": "h",
         "text": "Heard in conversation｜मिल्छ for permission and feasibility",
         "presentation": {
           "tone": "teal",
@@ -174605,7 +174850,7 @@
       },
       {
         "type": "h",
-        "text": "A moment in Nepal｜A plate of momo",
+        "text": "A moment in Nepal｜Momo: the filling and sauce make a difference",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -174618,10 +174863,45 @@
       },
       {
         "type": "p",
-        "text": "Picture a warm momo dipped in sauce before the first bite.\n Fillings, cooking styles and sauces offer different pleasures, including vegetable options.\n Being able to describe what you enjoy can make discovering the next plate even more inviting.",
+        "text": "AI-generated scene illustration",
         "presentation": {
           "tone": "violet",
-          "role": "body"
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "momo-plate",
+          "kind": "culture"
+        },
+        "image": {
+          "id": "momo-plate-42e23293cc15",
+          "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/momo-plate-42e23293cc15.jpg",
+          "width": 960,
+          "height": 640,
+          "sha256": "42e23293cc158dfc01abada6322026029738b8858cdd5ab8b725c8408837e63f",
+          "alt": "An imagined momo shop with freshly steamed dumplings and a tomato-coloured dipping sauce",
+          "caption": "AI-generated scene illustration"
+        }
+      },
+      {
+        "type": "p",
+        "text": "A steamer opens and small pleated dumplings emerge through the steam. **Momo are filled dumplings widely enjoyed in Nepal.** Meat, vegetable and cheese versions offer different tastes; some are fried rather than steamed.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "momo-plate",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Fillings, sauces and heat levels give each plate its character. A small question about what is inside, or how spicy the sauce is, can help you find a favourite. Waiting for that warm plate is part of the experience too.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
         },
         "l1ExampleSupport": 1,
         "lessonSupplement": {
@@ -177276,7 +177556,7 @@
       },
       {
         "type": "h",
-        "text": "A moment in Nepal｜Small encounters at the market",
+        "text": "A moment in Nepal｜The market scale connects fields with the city",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -177289,10 +177569,45 @@
       },
       {
         "type": "p",
-        "text": "A market gathers colour, produce and small encounters.\n Looking, asking and exchanging a few words can bring a place closer.\n Some shops welcome a price discussion; others use fixed prices.\n Think of the exchange as a meeting, not a contest.",
+        "text": "AI-generated scene illustration",
         "presentation": {
           "tone": "violet",
-          "role": "body"
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "market-meeting",
+          "kind": "culture"
+        },
+        "image": {
+          "id": "market-meeting-381f878cb51d",
+          "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/market-meeting-381f878cb51d.jpg",
+          "width": 960,
+          "height": 640,
+          "sha256": "381f878cb51d73fe3e65f89b4ce2354d28e3ab822c6dd3fc3d7098ff2021c801",
+          "alt": "An imagined morning vegetable market in Nepal, with a vendor weighing produce for a customer",
+          "caption": "AI-generated scene illustration"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Red tomatoes, green leaves and the sound of produce settling on a scale: **a market brings food and people into the city**. Seasonal vegetables hint at daily meals, while supplies may arrive from nearby farms, other regions or abroad.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "market-meeting",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Choosing a quantity and asking a price can bring everyday life closer. Some shops allow a price discussion; others have fixed prices. Watching the exchanges around you is a small discovery in itself.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
         },
         "l1ExampleSupport": 1,
         "lessonSupplement": {
@@ -178569,7 +178884,7 @@
       },
       {
         "type": "h",
-        "text": "A moment in Nepal｜More than one picture of Nepal",
+        "text": "A moment in Nepal｜Beyond the peaks: what supports everyday Nepal?",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -178582,10 +178897,45 @@
       },
       {
         "type": "p",
-        "text": "You may begin with a picture of high mountains, then discover varied languages, meals and clothing in towns and villages.\n Nepal’s many communities make differences part of the discovery.\n Leave room for the next encounter to surprise you.",
+        "text": "AI-generated scene illustration",
         "presentation": {
           "tone": "violet",
-          "role": "body"
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "many-nepals",
+          "kind": "culture"
+        },
+        "image": {
+          "id": "many-nepals-f7a0e8329402",
+          "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/many-nepals-f7a0e8329402.jpg",
+          "width": 960,
+          "height": 640,
+          "sha256": "f7a0e83294027ad205df771c91641c4681fee96760c891dc2e733aab505b2e7b",
+          "alt": "An imagined lowland Tarai scene with fields, a village lane and people returning home",
+          "caption": "AI-generated scene illustration"
+        }
+      },
+      {
+        "type": "p",
+        "text": "A bicycle passes fields on a southern plain. No snowy summit is in sight, yet this is Nepal too. **Mountains, hills and the Tarai plains** shape different crops, journeys and jobs.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1,
+        "lessonSupplement": {
+          "id": "many-nepals",
+          "kind": "culture"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Farming and tourism sit alongside trade, transport, construction, manufacturing and hydropower. Money sent by relatives working abroad also supports households and education. Imagine asking about someone’s work and discovering a country that reaches far beyond a single mountain photograph.",
+        "presentation": {
+          "tone": "violet",
+          "role": "plain"
         },
         "l1ExampleSupport": 1,
         "lessonSupplement": {
@@ -189526,6 +189876,6 @@
     "35": "Theme 35 (Appendix A)｜Verb forms through writing: लेख्नु",
     "36": "Theme 36 (Appendix B)｜Copulas through identity and location"
   },
-  "curriculumRevision": 1212,
+  "curriculumRevision": 1213,
   "grammarTextOnlyLabel": "Text practice (no audio)"
 }

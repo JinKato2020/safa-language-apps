@@ -5,6 +5,8 @@ Speech examples are reading material with explicit L1/roman pairs, not additions
 to the voiced practice set. Sources support factual checks, not copied prose.
 """
 from nepali_lesson_glosses import soft_breaks
+import json
+from pathlib import Path
 
 SOURCES = {
  'valley':'https://ntb.gov.np/en/kathmandu-valley',
@@ -133,10 +135,31 @@ CARDS = {
     [('भोलि छुट्टी छ रे।','bholi chuṭṭī cha re.','明日は休みだそうです。','I hear tomorrow is a day off.')],['primer'])],
 }
 
+_EDITORIAL = json.loads((Path(__file__).resolve().parents[1] / '文法教材/culture_editorial_app.json').read_text(encoding='utf-8'))
+
+def culture_blocks(theme, lang):
+    result = []
+    for item in _EDITORIAL['items']:
+        if item['theme'] != theme:
+            continue
+        meta = {'id': item['id'], 'kind': 'culture'}
+        def block(kind, text):
+            return {'type': kind, 'text': text, 'presentation': {'tone':'violet','role':'plain'}, 'l1ExampleSupport':1, 'lessonSupplement':meta}
+        label = 'ひと休み' if lang == 'ja' else 'A moment in Nepal'
+        result.append(block('h', label+'｜'+item['title'][lang]))
+        caption = 'AI生成の情景イメージ' if lang == 'ja' else 'AI-generated scene illustration'
+        picture = block('p', caption)
+        picture['image'] = dict(item['image'],alt=item['alt'][lang],caption=caption)
+        result.append(picture)
+        result.extend(block('p', paragraph) for paragraph in item['body'][lang].split('\n\n'))
+    return result
+
 def extra_blocks(theme,lang):
     index=0 if lang=='ja' else 1
-    out=[]
+    out=culture_blocks(theme,lang)
     for card in CARDS.get(theme,[]):
+        if card['kind'] == 'culture':
+            continue  # Replaced by the concise, illustrated Web editorial snapshot.
         tone='violet' if card['kind']=='culture' else 'teal'
         meta={'id':card['id'],'kind':card['kind']}
         def block(kind,text,role='body',palette=tone,join=None):

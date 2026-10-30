@@ -1,7 +1,7 @@
 // 文法モードの「教材」表示画面。構造化ブロック(goal/h/p/note/table)をネイティブ描画する。
 // RootStack に登録(ヘッダー非表示)のため、自前のトップバー(✕+タイトル)を描く。
-import { Fragment } from 'react';
-import { ScrollView, View, StyleSheet, Pressable } from 'react-native';
+import { Fragment, useEffect, useState } from 'react';
+import { ScrollView, View, StyleSheet, Pressable, Image, type ImageSourcePropType } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text } from '../Text';
 import { useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
@@ -9,7 +9,7 @@ import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { colors, spacing, radius } from '../theme';
 import type { RootStackParamList } from '../types';
 import { useScaleStyle } from '../SettingsContext';
-import { useGrammarGuide, type GuideBlock } from '../grammarGuide';
+import { useGrammarGuide, useGrammarGuideImageResolver, type GuideBlock, type GuideImage } from '../grammarGuide';
 import { guidePalette, guideStep, type GuidePresentation } from '../grammarPresentation';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'GrammarGuide'>;
@@ -51,7 +51,44 @@ function Table({ headers, rows, ss, presentation }: { headers: string[]; rows: s
   );
 }
 
+function CultureImage({ media, ss }: { media: GuideImage; ss: ReturnType<typeof useScaleStyle> }) {
+  const resolve = useGrammarGuideImageResolver();
+  const [source, setSource] = useState<ImageSourcePropType | null>(null);
+  const [failed, setFailed] = useState(false);
+  useEffect(() => {
+    let active = true;
+    setSource(null); setFailed(false);
+    resolve(media).then(value => { if (active) setSource(value); }).catch(() => { if (active) setFailed(true); });
+    return () => { active = false; };
+  }, [resolve, media.uri, media.sha256]);
+  const ratio = Number.isFinite(media.width / media.height) && media.width > 0 && media.height > 0 ? media.width / media.height : 1.5;
+  return <View style={styles.cultureFigure}>
+    {source && !failed ? <View style={[styles.cultureImageFrame, { aspectRatio: ratio }]}>
+      <Image source={source} style={styles.cultureImage} resizeMode="contain" accessible accessibilityLabel={media.alt} onError={() => setFailed(true)} />
+    </View> : <Text style={[styles.cultureAlt, ss(13, 21)]}>{media.alt}</Text>}
+    <Text style={[styles.cultureCaption, ss(12, 19)]}>{media.caption}</Text>
+  </View>;
+}
+
+// Contiguous culture blocks share one card. Older apps still read their h/p text.
+function LessonBlocks({ blocks, ss }: { blocks: GuideBlock[]; ss: ReturnType<typeof useScaleStyle> }) {
+  const output = [];
+  for (let i = 0; i < blocks.length; i++) {
+    const b = blocks[i];
+    if (b.lessonSupplement?.kind !== 'culture') { output.push(<Block key={i} b={b} ss={ss} />); continue; }
+    const start = i, group = [b];
+    while (blocks[i + 1]?.lessonSupplement?.kind === 'culture' && blocks[i + 1]?.lessonSupplement?.id === b.lessonSupplement.id) group.push(blocks[++i]);
+    const palette = guidePalette('violet')!;
+    output.push(<View key={start} style={[styles.cultureCard, { backgroundColor: palette.soft, borderColor: palette.line }]}>
+      {group.map((part, j) => part.image ? <CultureImage key={j} media={part.image} ss={ss} /> : part.type !== 'table' ?
+        <Rich key={j} text={part.text} style={[part.type === 'h' ? styles.cultureTitle : styles.cultureBody, part.type === 'h' ? ss(17, 26) : ss(15, 25), { color: palette.ink }]} emphasisColor={palette.accent} /> : null)}
+    </View>);
+  }
+  return <>{output}</>;
+}
+
 function Block({ b, ss }: { b: GuideBlock; ss: ReturnType<typeof useScaleStyle> }) {
+  if (b.image) return <CultureImage media={b.image} ss={ss} />;
   const palette = guidePalette(b.presentation?.tone);
   if (b.type === 'goal') {
     return (
@@ -122,7 +159,7 @@ export default function GrammarGuideScreen() {
         {blocks.length === 0 ? (
           <Text style={[styles.p, ss(14, 22)]}>準備中</Text>
         ) : (
-          blocks.map((b, i) => <Block key={i} b={b} ss={ss} />)
+          <LessonBlocks blocks={blocks} ss={ss} />
         )}
         <View style={{ height: spacing.xxl + insets.bottom }} />
       </ScrollView>
@@ -131,6 +168,14 @@ export default function GrammarGuideScreen() {
 }
 
 const styles = StyleSheet.create({
+  cultureCard: { width: '100%', borderWidth: 1, borderRadius: 18, padding: 16, marginTop: 20, marginBottom: 24, overflow: 'hidden' },
+  cultureTitle: { fontWeight: '700', marginBottom: 12 },
+  cultureBody: { marginBottom: 12 },
+  cultureFigure: { width: '100%', marginBottom: 14 },
+  cultureImageFrame: { width: '100%', overflow: 'hidden', borderRadius: 12, backgroundColor: '#ede9f5' },
+  cultureImage: { width: '100%', height: '100%' },
+  cultureCaption: { color: '#635376', marginTop: 6 },
+  cultureAlt: { color: '#635376' },
   lessonCard: { borderWidth: 1, borderLeftWidth: 4, borderRadius: 10, padding: 14, marginBottom: 12 },
   exampleText: { fontSize: 18, lineHeight: 29, fontWeight: '600' },
   cardText: { fontSize: 14, lineHeight: 23 },

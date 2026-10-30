@@ -1,0 +1,303 @@
+{
+  "status": "pack1213 published and downloaded SHA256 verified; app2.1.6 ready for existing iOS workflow",
+  "packVersion": 1213,
+  "appVersion": "2.1.6",
+  "cultureCards": 10,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "source": "app_website/src/data/nepali-learning/culture-editorial-v2.json",
+  "sourceSHA256": "e7001623a91e80781cb4c811b5b3e8721c957bab8447c880a7003ab69e55ab9a",
+  "scope": "Concise two-paragraph readings and Web illustrations inside the same violet culture cards; religious festival excluded",
+  "speechNotesUnchanged": 17,
+  "illustrativeSpeechExamplesUnchanged": 26,
+  "grammarExercisesUnchanged": 528,
+  "conversationExamplesUnchanged": 1800,
+  "baseGuidesUnchanged": 72,
+  "dictionaryUnchanged": true,
+  "audioUnchanged": true,
+  "validation": {
+    "typecheck": [
+      "shared",
+      "App A",
+      "App B",
+      "App C"
+    ],
+    "iosMetroHermesExport": true,
+    "actualReaderScenarios": 12,
+    "cachedAudioDownloads": 0,
+    "offlineReload": true,
+    "glossChecks": 766,
+    "colorLayouts": 72,
+    "paletteContrastAtLeast4_5": true,
+    "cultureLayouts": 80,
+    "widths": [
+      320,
+      390
+    ],
+    "fontScales": [
+      1,
+      1.4
+    ],
+    "allImagesCompleteWithoutCropping": true,
+    "imageResolver": "bundled/cached offline, concurrent request deduplication, failed/empty HTTP cleanup and retry",
+    "nativeDeviceVerified": false
+  },
+  "images": {
+    "bundled": 10,
+    "dimensions": [
+      960,
+      640
+    ],
+    "bytes": 1632997,
+    "caption": "AI-generated scene illustration",
+    "futureUpdates": "new immutable image URL/hash and lesson JSON; no rebuild after2.1.6",
+    "futureOffline": "new images are saved after first successful view"
+  },
+  "cards": [
+    {
+      "id": "valley-morning",
+      "theme": 1,
+      "title": {
+        "ja": "三つの王都を、歩く朝",
+        "en": "A morning among three royal cities"
+      },
+      "jaCharacters": 176,
+      "enWords": 62,
+      "sources": [
+        "https://trade.ntb.gov.np/know-nepal/nepals-history/",
+        "https://trade.ntb.gov.np/tourist-destination/around-kathmandu/",
+        "https://whc.unesco.org/en/list/121/"
+      ],
+      "image": {
+        "id": "valley-morning-1e50a3f59ba0",
+        "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/valley-morning-1e50a3f59ba0.jpg",
+        "width": 960,
+        "height": 640,
+        "sha256": "1e50a3f59ba034213eb31c8282b42de2e56ae7e12a70a748d5b1c7bdd23a860b"
+      }
+    },
+    {
+      "id": "tea-visit",
+      "theme": 2,
+      "title": {
+        "ja": "チヤの湯気が、会話の時間をつくる",
+        "en": "Chiya makes a little time for conversation"
+      },
+      "jaCharacters": 174,
+      "enWords": 73,
+      "sources": [
+        "https://pressbooks.bccampus.ca/nepali/chapter/chapter-6-unit-2-cultural-insight/",
+        "https://ntb.gov.np/en/plan-your-trip/about-nepal/culture"
+      ],
+      "image": {
+        "id": "tea-visit-eaef397d297b",
+        "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/tea-visit-eaef397d297b.jpg",
+        "width": 960,
+        "height": 640,
+        "sha256": "eaef397d297b921aceb52beea167df0c2815c190bdb4171b69957570e458a3b5"
+      }
+    },
+    {
+      "id": "hills-paths",
+      "theme": 5,
+      "title": {
+        "ja": "段々畑の向こうに、暮らしと仕事がある",
+        "en": "Fields, footpaths and the work behind the view"
+      },
+      "jaCharacters": 188,
+      "enWords": 69,
+      "sources": [
+        "https://ntb.gov.np/en/mid-hills",
+        "https://www.worldbank.org/en/country/nepal/publication/unlocking-nepal-s-growth-potential",
+        "https://ntb.gov.np/en/trekking"
+      ],
+      "image": {
+        "id": "hills-paths-524044ab9911",
+        "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/hills-paths-524044ab9911.jpg",
+        "width": 960,
+        "height": 640,
+        "sha256": "524044ab9911645968c2de459d4ce4a253efd1c5dd3d78ef12718d232190be75"
+      }
+    },
+    {
+      "id": "dai-didi",
+      "theme": 7,
+      "title": {
+        "ja": "ダイ、ディディ。名前の前にある親しさと敬意",
+        "en": "Dai and didi: warmth with a sense of respect"
+      },
+      "jaCharacters": 183,
+      "enWords": 72,
+      "sources": [
+        "https://pressbooks.bccampus.ca/nepali/chapter/chapter-11-unit-2-cultural-insight/"
+      ],
+      "image": {
+        "id": "dai-didi-4efe9bb6b36a",
+        "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/dai-didi-4efe9bb6b36a.jpg",
+        "width": 960,
+        "height": 640,
+        "sha256": "4efe9bb6b36ab923c36271178fcecfe011f916337285acf8de4b6faea156b54a"
+      }
+    },
+    {
+      "id": "dal-bhat",
+      "theme": 8,
+      "title": {
+        "ja": "ダルバートは、混ぜながら味が変わる",
+        "en": "Dal bhat: a meal that changes with each mouthful"
+      },
+      "jaCharacters": 187,
+      "enWords": 73,
+      "sources": [
+        "https://ntb.gov.np/en/plan-your-trip/about-nepal/culture",
+        "https://trade.ntb.gov.np/wp-content/uploads/2018/05/Experience_Nepal_Globalizing_Nepalese_Heritage_Cuisine_Recipe_Book.pdf"
+      ],
+      "image": {
+        "id": "dal-bhat-c8fa0f14d4bd",
+        "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/dal-bhat-c8fa0f14d4bd.jpg",
+        "width": 960,
+        "height": 640,
+        "sha256": "c8fa0f14d4bddb5f1f9141a6e4c18ef0bcf9e6288de888071b972b0b2e4bcc17"
+      }
+    },
+    {
+      "id": "meal-warmth",
+      "theme": 11,
+      "title": {
+        "ja": "食卓のおかわりと、取り分ける作法",
+        "en": "Another helping, and the etiquette of sharing"
+      },
+      "jaCharacters": 208,
+      "enWords": 76,
+      "sources": [
+        "https://pressbooks.bccampus.ca/nepali/chapter/chapter-15-unit-2-cultural-insight/",
+        "https://trade.ntb.gov.np/travel-essentials/cultural-etiquette/"
+      ],
+      "image": {
+        "id": "meal-warmth-1931024d41d4",
+        "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/meal-warmth-1931024d41d4.jpg",
+        "width": 960,
+        "height": 640,
+        "sha256": "1931024d41d4cd03163ea8ac8f9d1db1cad5f3a6ab7d403f67f98900abddcdbf"
+      }
+    },
+    {
+      "id": "momo-plate",
+      "theme": 22,
+      "title": {
+        "ja": "モモは、包むものとたれで表情が変わる",
+        "en": "Momo: the filling and sauce make a difference"
+      },
+      "jaCharacters": 175,
+      "enWords": 73,
+      "sources": [
+        "https://ntb.gov.np/en/plan-your-trip/about-nepal/culture",
+        "https://trade.ntb.gov.np/wp-content/uploads/2018/05/Experience_Nepal_Globalizing_Nepalese_Heritage_Cuisine_Recipe_Book.pdf"
+      ],
+      "image": {
+        "id": "momo-plate-42e23293cc15",
+        "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/momo-plate-42e23293cc15.jpg",
+        "width": 960,
+        "height": 640,
+        "sha256": "42e23293cc158dfc01abada6322026029738b8858cdd5ab8b725c8408837e63f"
+      }
+    },
+    {
+      "id": "market-meeting",
+      "theme": 25,
+      "title": {
+        "ja": "市場のはかりが、畑と街をつないでいる",
+        "en": "The market scale connects fields with the city"
+      },
+      "jaCharacters": 183,
+      "enWords": 72,
+      "sources": [
+        "https://pressbooks.bccampus.ca/nepali/chapter/chapter-16-unit-2-cultural-insight/",
+        "https://www.worldbank.org/en/country/nepal/publication/unlocking-nepal-s-growth-potential"
+      ],
+      "image": {
+        "id": "market-meeting-381f878cb51d",
+        "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/market-meeting-381f878cb51d.jpg",
+        "width": 960,
+        "height": 640,
+        "sha256": "381f878cb51d73fe3e65f89b4ce2354d28e3ab822c6dd3fc3d7098ff2021c801"
+      }
+    },
+    {
+      "id": "many-nepals",
+      "theme": 26,
+      "title": {
+        "ja": "雪山の国、その暮らしを支える産業は？",
+        "en": "Beyond the peaks: what supports everyday Nepal?"
+      },
+      "jaCharacters": 193,
+      "enWords": 70,
+      "sources": [
+        "https://www.worldbank.org/en/country/nepal/publication/unlocking-nepal-s-growth-potential",
+        "https://www.worldbank.org/en/country/nepal/publication/nepaldevelopmentupdate",
+        "https://ntb.gov.np/en/plan-your-trip/about-nepal/culture"
+      ],
+      "image": {
+        "id": "many-nepals-f7a0e8329402",
+        "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/many-nepals-f7a0e8329402.jpg",
+        "width": 960,
+        "height": 640,
+        "sha256": "f7a0e83294027ad205df771c91641c4681fee96760c891dc2e733aab505b2e7b"
+      }
+    },
+    {
+      "id": "seasons-weather",
+      "theme": 3,
+      "title": {
+        "ja": "雨の匂いが変える、ネパールの季節",
+        "en": "Rain, clear skies and the seasons of Nepal"
+      },
+      "jaCharacters": 197,
+      "enWords": 77,
+      "sources": [
+        "https://ntb.gov.np/en/plan-your-trip/about-nepal/climate",
+        "https://www.data.jma.go.jp/tcc/tcc/products/climate/normal/parts/NrmMonth_e.php?stn=44454"
+      ],
+      "image": {
+        "id": "seasons-weather-8b7e6eecde66",
+        "uri": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/seasons-weather-8b7e6eecde66.jpg",
+        "width": 960,
+        "height": 640,
+        "sha256": "8b7e6eecde66634211234ceaf87e53acc0da33616c3bbe1f1f11949f8ff53d72"
+      }
+    }
+  ],
+  "publication": {
+    "assetsSHA256": {
+      "dai-didi-4efe9bb6b36a.jpg": "4efe9bb6b36ab923c36271178fcecfe011f916337285acf8de4b6faea156b54a",
+      "dal-bhat-c8fa0f14d4bd.jpg": "c8fa0f14d4bddb5f1f9141a6e4c18ef0bcf9e6288de888071b972b0b2e4bcc17",
+      "hills-paths-524044ab9911.jpg": "524044ab9911645968c2de459d4ce4a253efd1c5dd3d78ef12718d232190be75",
+      "many-nepals-f7a0e8329402.jpg": "f7a0e83294027ad205df771c91641c4681fee96760c891dc2e733aab505b2e7b",
+      "market-meeting-381f878cb51d.jpg": "381f878cb51d73fe3e65f89b4ce2354d28e3ab822c6dd3fc3d7098ff2021c801",
+      "meal-warmth-1931024d41d4.jpg": "1931024d41d4cd03163ea8ac8f9d1db1cad5f3a6ab7d403f67f98900abddcdbf",
+      "momo-plate-42e23293cc15.jpg": "42e23293cc158dfc01abada6322026029738b8858cdd5ab8b725c8408837e63f",
+      "seasons-weather-8b7e6eecde66.jpg": "8b7e6eecde66634211234ceaf87e53acc0da33616c3bbe1f1f11949f8ff53d72",
+      "tea-visit-eaef397d297b.jpg": "eaef397d297b921aceb52beea167df0c2815c190bdb4171b69957570e458a3b5",
+      "valley-morning-1e50a3f59ba0.jpg": "1e50a3f59ba034213eb31c8282b42de2e56ae7e12a70a748d5b1c7bdd23a860b",
+      "core-1213.json": "cf5f9f6ece63e0bc9bc54b1368b212e9332a36c06ef05b4c6a832be4bbe16993",
+      "overlay-en-1213.json": "7af79696ea9779868f7658a22f1ff1250932ac204656e8d710b4d7f5aeb908ee",
+      "overlay-ja-1213.json": "cd187199b584b0b19e9c3e9238254071ef90f935d7315b8105a932ef130614ae"
+    },
+    "catalogs": [
+      "packs-appa-v2",
+      "packs-appa-v3"
+    ],
+    "catalogSHA256": "8207fe6d33688234d119242f8d3ed00ed222ea8cfe4380c3d9f46b9449d4cec9",
+    "verified": true
+  },
+  "build": {
+    "workflow": "ios-build-nepali.yml",
+    "platform": "ios",
+    "submit": true,
+    "monitor": false,
+    "completionVerified": false
+  },
+  "preview": "docs/previews/nepali-culture-images-1213.png"
+}

@@ -3,6 +3,10 @@
 import { createContext, useContext, type ReactNode } from 'react';
 import { useAppData } from './AppDataContext';
 import type { GuidePresentation } from './grammarPresentation';
+import type { ImageSourcePropType } from 'react-native';
+
+export type GuideImage = { id: string; uri: string; width: number; height: number; alt: string; caption: string; sha256: string };
+export type GuideImageResolver = (image: GuideImage) => Promise<ImageSourcePropType | null>;
 
 // アプリが描画する構造化ブロック
 export type GuideBlock = (
@@ -11,7 +15,7 @@ export type GuideBlock = (
   | { type: 'p'; text: string }
   | { type: 'note'; text: string }
   | { type: 'table'; headers: string[]; rows: string[][] }
-) & { presentation?: GuidePresentation };
+) & { presentation?: GuidePresentation; image?: GuideImage; lessonSupplement?: { id: string; kind: 'culture' | 'spoken' } };
 
 // テーマid("1".."30") → ブロック列
 export type GrammarGuideData = Record<string, GuideBlock[]>;
@@ -30,3 +34,10 @@ export function useGrammarGuide(): GrammarGuideData | null {
   const d = useAppData();
   return ((d as { GRAMMAR_GUIDE?: GrammarGuideData | null }).GRAMMAR_GUIDE) ?? null;
 }
+
+// An app can supply bundled/offline images without adding assets to other apps.
+const GuideImages = createContext<GuideImageResolver>(async image => ({ uri: image.uri }));
+export function GrammarGuideImageProvider({ resolve, children }: { resolve: GuideImageResolver; children: ReactNode }) {
+  return <GuideImages.Provider value={resolve}>{children}</GuideImages.Provider>;
+}
+export function useGrammarGuideImageResolver() { return useContext(GuideImages); }

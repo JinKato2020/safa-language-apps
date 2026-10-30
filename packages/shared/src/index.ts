@@ -49,6 +49,8 @@ export {
 // ── 文法「教材」(ルール解説。アプリ側が母語別データを注入。未注入=非表示) ──
 export {
   GrammarGuideProvider, useGrammarGuide,
+  GrammarGuideImageProvider, useGrammarGuideImageResolver,
+  type GuideImage, type GuideImageResolver,
   type GuideBlock, type GrammarGuideData, type GrammarGuideByLang,
 } from './grammarGuide';
 

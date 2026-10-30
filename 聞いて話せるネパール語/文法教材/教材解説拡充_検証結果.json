@@ -1,6 +1,6 @@
 {
-  "packVersion": 1212,
-  "previousVersion": 1211,
+  "packVersion": 1213,
+  "previousVersion": 1212,
   "topics": 36,
   "languages": [
     "ja",
@@ -8,9 +8,9 @@
   ],
   "examplesUnchanged": 528,
   "audioChanged": false,
-  "clientCodeChanged": false,
+  "clientCodeChanged": true,
   "appRebuilt": false,
-  "appBuildRequired": false,
+  "appBuildRequired": true,
   "colorRendererMinimumVersion": "2.1.5",
   "olderReaderFallback": "existing plain layout; same examples and audio",
   "hunuTopicMapping": {
@@ -1086,8 +1086,8 @@
       "audioVersion": 1009,
       "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-core-1009.zip",
       "audioZipBytes": 39289890,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1211.json",
-      "version": 1211
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1212.json",
+      "version": 1212
     },
     "en": {
       "audioVersion": 1009,
@@ -1096,10 +1096,10 @@
       "l1": "en",
       "name": "English",
       "nameJa": "English",
-      "version": 1211,
+      "version": 1212,
       "access": "free",
-      "sizeBytes": 5115323,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1211.json"
+      "sizeBytes": 5166188,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1212.json"
     },
     "ja": {
       "audioVersion": 1010,
@@ -1108,16 +1108,17 @@
       "l1": "ja",
       "name": "日本語",
       "nameJa": "日本語",
-      "version": 1211,
+      "version": 1212,
       "access": "free",
-      "sizeBytes": 5321989,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1211.json"
+      "sizeBytes": 5375499,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1212.json"
     }
   },
   "payloadSHA256": {
-    "core-1212.json": "fa372994efb0b4c100988b4e8a6da5465a499ba1d4e4e2b195a2243fbd7f3e5d",
-    "overlay-ja-1212.json": "985dfc2f3e174c26ec9e27ee7e57a036186141d7e1d10bc9de91463f8ad84539",
-    "overlay-en-1212.json": "8d0b335927d1c61aabdb9268bf48311f0685857cd2489f580616b74b6ecb777d"
+    "catalog.json": "8207fe6d33688234d119242f8d3ed00ed222ea8cfe4380c3d9f46b9449d4cec9",
+    "core-1213.json": "cf5f9f6ece63e0bc9bc54b1368b212e9332a36c06ef05b4c6a832be4bbe16993",
+    "overlay-en-1213.json": "7af79696ea9779868f7658a22f1ff1250932ac204656e8d710b4d7f5aeb908ee",
+    "overlay-ja-1213.json": "cd187199b584b0b19e9c3e9238254071ef90f935d7315b8105a932ef130614ae"
   },
   "verificationSources": [
     "https://pressbooks.bccampus.ca/nepali/chapter/chapter-6-unit-4-grammar-focus/",
@@ -1128,16 +1129,5 @@
     "https://www.nepjol.info/index.php/gipan/article/download/48914/36490/144595",
     "https://madhavpokharel.com.np/noun-class-agreement-in-nepali/"
   ],
-  "reviewLimit": "Original bilingual explanations with source checks and automated consistency checks; not a native-speaker certification",
-  "publicationVerified": true,
-  "payloadSHA256Verified": true,
-  "catalogs": [
-    "packs-appa-v2",
-    "packs-appa-v3"
-  ],
-  "catalogSHA256": "a422cbe16c87871704496ffc79a9a471ce03752f5163190fa148f8be9009a9cb",
-  "readerScenarios": 12,
-  "offlineReload": true,
-  "cachedAudioDownloads": 0,
-  "supplementsReport": "文化と話し言葉_検証結果.json"
+  "reviewLimit": "Original bilingual explanations with source checks and automated consistency checks; not a native-speaker certification"
 }
