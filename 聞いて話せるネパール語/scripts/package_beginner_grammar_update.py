@@ -5,7 +5,8 @@ import copy
 import csv
 import hashlib
 import json
-from beginner_grammar_lessons import LESSONS, HEADINGS, expand_guides
+from beginner_grammar_lessons import LESSONS, expand_guides
+from nepali_rule_lessons import rules
 
 ROOT = Path(__file__).resolve().parents[2]
 APP = ROOT / '聞いて話せるネパール語'
@@ -84,15 +85,22 @@ def main():
             'appBuildRequired':a.renderer_update,'colorRendererMinimumVersion':'2.1.5','olderReaderFallback':'existing plain layout; same examples and audio',
             'hunuTopicMapping':{'हो':[1],'छ':[2,3],'हुन्छ':[4],'review':[36]},
             'basicThirdPerson':['उहाँ','उहाँहरू'],'familiarThirdPersonTopic':7,
-            'lessonIntroductions':stats,'sections':{'ja':['ここだけ覚えよう','例文1つ','3ステップ','まちがい注意','できたかチェック','もっと知りたいときに'], 'en':['Remember this','One example','3 steps','Watch out','Quick check','When you want to know more']},
-            'layout':{'existingNativeBlocksOnly':True,'boldLearningAnchors':True,'yellowWarningCards':False,'warningSymbols':False,'detailedExplanationPosition':'after quick learning sequence','repeatedRules':'sentence-specific comments retained; duplicated full rules removed'},
+            'lessonIntroductions':stats,'sections':{'ja':['文の型と使い分け','例文','ネパール語のルール','似た表現の対比','活用表・語彙一覧・既存例題'], 'en':['Pattern and choice','Example','Nepali grammar rules','Contrasts','Paradigms, inventories and existing exercises']},
+            'layout':{'existingNativeBlocksOnly':True,'boldLearningAnchors':True,'yellowWarningCards':False,'warningSymbols':False,'genericStudyAdviceRemoved':True,'motherTongueGrammarDefinitionsRemoved':True,'actualNepaliRulesAndContrastsFirst':True},
+            'rulesPerTopic':{str(k):len(rules(k)) for k in LESSONS},
+            'totalBilingualRulePairs':sum(len(rules(k)) for k in LESSONS),
+            'contrastIndex':{str(k):[{'ja':r[0],'en':r[1]} for r in rules(k)] for k in LESSONS},
             'audioReferencesPreserved':{'core':old['core'],**{e['l1']:e for e in old['packs']}},
             'payloadSHA256':{x.name:sha(x) for x in a.output_dir.iterdir() if x.is_file()},
             'verificationSources':[
-                'https://pressbooks.bccampus.ca/nepali/chapter/chapter-5-unit-4-grammar-focus/',
                 'https://pressbooks.bccampus.ca/nepali/chapter/chapter-6-unit-4-grammar-focus/',
                 'https://pressbooks.bccampus.ca/nepali/chapter/chapter-13-unit-4-grammar-focus/',
-                'https://pahar.in/pahar/Books%20and%20Articles/Nepal/1979%20Intermediate%20Nepali%20Structure%20by%20Verma%20s.pdf']}
+                'https://pressbooks.bccampus.ca/nepali/chapter/chapter-14-unit-4-grammar-focus/',
+                'https://elibrary.tucl.edu.np/bitstreams/93de7872-19f0-4bf3-a426-92972b2be2e3/download',
+                'https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/papers/Working%20Papers%20Vol%206.pdf',
+                'https://www.nepjol.info/index.php/gipan/article/download/48914/36490/144595',
+                'https://madhavpokharel.com.np/noun-class-agreement-in-nepali/'],
+            'reviewLimit':'Original bilingual explanations with source checks and automated consistency checks; not a native-speaker certification'}
     write(SRC/'教材解説拡充_検証結果.json',report)
     print(f'Expanded all36 topics in ja/en; {report["examplesUnchanged"]} exercises and all audio pointers unchanged')
     print('Japanese introduction characters:',min(x['jaCharacters'] for x in stats.values()),'–',max(x['jaCharacters'] for x in stats.values()))

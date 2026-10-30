@@ -14,24 +14,39 @@ for(const entry of [catalog.core,...catalog.packs]){
  for(const key of ['audioZip','audioVersion','audioZipBytes'])assert.equal(entry[key],old[key]);
  if(entry.l1)assert.deepEqual(without(payload(entry.url),['grammarGuide','version','curriculumRevision']),without(oldPayload(old.url),['grammarGuide','version','curriculumRevision']));
 }
-const headings={ja:['ここだけ覚えよう','① 例文でつかもう','② **3ステップ**で作ろう','まちがい注意','③ できたかチェック','もっと知りたいときに：くわしい説明'],
- en:['Remember this','① Start with one example','② Build it in **3 steps**','Watch out','③ Quick check','When you want to know more']};
+const headings={ja:['文の型と使い分け','① 例文でつかもう','② ネパール語のルール'],
+ en:['Pattern and choice','① Start with one example','② Nepali grammar rules']};
 const familiar=/(?<![\u0900-\u097f])(?:उनी(?:हरू)?(?:ले|लाई|को)?|उन(?:ले|लाई|को)|उस(?:ले|लाई|को)|ऊ|उ)(?![\u0900-\u097f])/u;
 for(const lang of ['ja','en']){
  const overlay=payload(catalog.packs.find(x=>x.l1===lang).url);
  assert.equal(Object.keys(overlay.grammarGuide).length,36);
  for(const [key,blocks] of Object.entries(overlay.grammarGuide)){
-  const boundary=blocks.findIndex(b=>b.beginnerIntroEnd);assert(boundary>10,key);
+  const boundary=blocks.findIndex(b=>b.beginnerIntroEnd);assert(boundary>=14,key);
   const intro=JSON.stringify(blocks.slice(0,boundary));
   assert.equal(blocks.filter(b=>b.type==='note').length,0,'No yellow warning cards');
   assert(!JSON.stringify(blocks).includes('⚠'),'No warning symbols');
   assert.equal(blocks.slice(0,boundary).filter(b=>b.type==='goal').length,1,'One clear takeaway card');
   for(const b of blocks)for(const text of b.type==='table'?[...b.headers,...b.rows.flat()]:[b.text||''])assert.equal((text.match(/\*\*/g)||[]).length%2,0,'Balanced emphasis');
   for(const h of headings[lang])assert(intro.includes(h),key+' '+h);
+  assert(blocks.slice(0,boundary).filter(b=>b.type==='h'&&/^\d+\. /.test(b.text)).length>=4,'At least five substantive rules including the takeaway');
+  for(const b of blocks.slice(0,boundary))if(b.type==='p'&&!['reading','translation'].includes(b.presentation?.role))assert(/[\u0900-\u097f]/u.test(b.text),'Every rule explains Nepali forms');
   assert(intro.includes(core.grammarNe[key][0]),'Worked exercise missing '+key);
   if(key!=='7')assert(!familiar.test(JSON.stringify(blocks)),key);
   for(const b of blocks){assert(['h','p','table','note','goal'].includes(b.type));if(b.type==='table')for(const row of b.rows)assert.equal(row.length,b.headers.length)}
-  for(const sentence of core.grammarNe[key])assert(JSON.stringify(blocks).replaceAll('**','').includes(sentence),'Practice missing '+key);
+  const oldBlocks=oldPayload(oldCatalog.packs.find(x=>x.l1===lang).url).grammarGuide[key];
+  const oldBoundary=oldBlocks.findIndex(b=>b.beginnerIntroEnd);
+  const exercises=bs=>bs.filter(b=>b.type==='h'&&/^(例題\d|Exercise\s*\d)/.test(b.text)).map(b=>b.text);
+  assert.deepEqual(exercises(blocks),exercises(oldBlocks.slice(oldBoundary+1)),'Every existing exercise retained in order');
+  for(const b of oldBlocks.slice(oldBoundary+1).filter(b=>b.type==='table'&&['語・形','Word or form'].includes(b.headers[0])))assert(blocks.some(n=>JSON.stringify(n)===JSON.stringify(b)),'Existing exercise word table preserved');
+  for(const b of blocks.filter(b=>b.type==='table'&&['人称','Person'].includes(b.headers[0]))){
+   const ne=b.rows.flat().filter(c=>typeof c==='string'&&c.includes('।'));
+   const model=ne.find(c=>c.includes('तपाईं'));
+   if(model)for(const row of ne.filter(c=>c.includes('उहाँ')))assert.equal(row.split('।')[0].split(' ').pop(),model.split('।')[0].split(' ').pop(),'Respectful table forms must agree');
+  }
+  for(const [index,sentence] of core.grammarNe[key].entries()){
+   assert(JSON.stringify(blocks).replaceAll('**','').includes(sentence),'Practice missing '+key);
+   assert(JSON.stringify(blocks).replaceAll('**','').includes(overlay.grammarL1[key][index]),'Practice translation missing '+lang+' '+key+' '+index);
+  }
  }
  for(const key of ['1','2','3','4','36']){
   const text=JSON.stringify(overlay.grammarGuide[key]).replaceAll('**','');
@@ -39,7 +54,13 @@ for(const lang of ['ja','en']){
   const first=({'1':'हुँ / hũ','2':'छु / chu','3':'छु / chu','4':'हुन्छु / hunchu','36':'हुँ / hũ'})[key];assert(text.includes(first));
  }
 }
-console.log('PASS all36 teaching sequences in ja/en, worked examples, question/answer, hunu map/paradigms and supported blocks; existing text/dictionary/audio unchanged');
+for(const lang of ['ja','en']){
+ const bs=payload(catalog.packs.find(x=>x.l1===lang).url).grammarGuide['5'];
+ const end=bs.findIndex(b=>b.beginnerIntroEnd),intro=bs.slice(0,end);
+ assert(intro.some(b=>b.type==='table'&&b.rows.some(r=>r.some(c=>c.includes('बसबाट')))),'देखि/बाट transport/source comparison table');
+ for(const form of ['बिहानदेखि','घरबाट','घरदेखि','बसदेखि'])assert(JSON.stringify(intro).includes(form));
+}
+console.log('PASS all36 Nepali-rule lessons in ja/en, >=5 substantive rules each, worked examples and translations, hunu map/paradigms; existing text/dictionary/audio unchanged');
 const ids=[...Object.entries(core.examplesNe).flatMap(([key,rows])=>rows.map((_,i)=>`${key}-${i+1}`)),...Object.entries(core.grammarNe).flatMap(([key,rows])=>rows.map((_,i)=>`${key}-${i+1}`))];
 function source(version,name){const p=`聞いて話せるネパール語/expo-app/src/${name}.ts`;return ['2.1.3','2.1.4'].includes(version)?cp.execFileSync('git',['show',`${version==='2.1.3'?'89c0982a':'62f7b756'}:${p}`],{cwd:ROOT,encoding:'utf8'}):fs.readFileSync(path.join(ROOT,p),'utf8')}
 function compile(code,customRequire){

@@ -63,7 +63,7 @@ for(const lang of ['ja','en']){
 }
 const samples=[['ja','1',390,1],['ja','5',320,1.4],['en','29',390,1]];
 const pages=samples.map(([lang,id,width,scale])=>{
- const all=data[lang].grammarGuide[id];const end=all.findIndex(b=>/^(もっと知りたい|When you want)/.test(b.text||''));
+ const all=data[lang].grammarGuide[id];const end=all.findIndex(b=>b.beginnerIntroEnd);
  return `<section style="width:${width}px"><header>${lang.toUpperCase()} · ${id} · ${width}px · ${scale}×</header><main>${all.slice(0,end).map(b=>render(b,scale)).join('')}</main></section>`;
 });
 const html=`<!doctype html><meta charset="utf-8"><style>*{box-sizing:border-box}body{margin:0;padding:16px;background:#eef2f6;display:flex;gap:16px;align-items:flex-start;font-family:Arial,'Nirmala UI','Yu Gothic UI',sans-serif}section{flex:none;background:white;min-height:1500px}header{background:#fff;border-bottom:1px solid #e4e4e7;padding:16px;font-weight:700}main{padding:24px}</style>${pages.join('')}`;

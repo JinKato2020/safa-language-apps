@@ -1,6 +1,6 @@
 {
-  "packVersion": 1207,
-  "previousVersion": 1206,
+  "packVersion": 1208,
+  "previousVersion": 1207,
   "topics": 36,
   "languages": [
     "ja",
@@ -8,9 +8,9 @@
   ],
   "examplesUnchanged": 528,
   "audioChanged": false,
-  "clientCodeChanged": true,
+  "clientCodeChanged": false,
   "appRebuilt": false,
-  "appBuildRequired": true,
+  "appBuildRequired": false,
   "colorRendererMinimumVersion": "2.1.5",
   "olderReaderFallback": "existing plain layout; same examples and audio",
   "hunuTopicMapping": {
@@ -35,202 +35,200 @@
   "familiarThirdPersonTopic": 7,
   "lessonIntroductions": {
     "1": {
-      "jaCharacters": 1033,
-      "enWords": 303,
-      "teachingSections": 6
+      "jaCharacters": 527,
+      "enWords": 156,
+      "teachingSections": 5
     },
     "2": {
-      "jaCharacters": 871,
-      "enWords": 288,
-      "teachingSections": 6
+      "jaCharacters": 527,
+      "enWords": 159,
+      "teachingSections": 5
     },
     "3": {
-      "jaCharacters": 906,
-      "enWords": 297,
-      "teachingSections": 6
+      "jaCharacters": 563,
+      "enWords": 164,
+      "teachingSections": 5
     },
     "4": {
-      "jaCharacters": 992,
-      "enWords": 289,
-      "teachingSections": 6
+      "jaCharacters": 551,
+      "enWords": 143,
+      "teachingSections": 5
     },
     "5": {
-      "jaCharacters": 847,
-      "enWords": 264,
+      "jaCharacters": 989,
+      "enWords": 240,
       "teachingSections": 6
     },
     "6": {
-      "jaCharacters": 819,
-      "enWords": 274,
-      "teachingSections": 6
+      "jaCharacters": 638,
+      "enWords": 141,
+      "teachingSections": 5
     },
     "7": {
-      "jaCharacters": 932,
-      "enWords": 259,
-      "teachingSections": 6
+      "jaCharacters": 607,
+      "enWords": 132,
+      "teachingSections": 5
     },
     "8": {
-      "jaCharacters": 803,
-      "enWords": 249,
-      "teachingSections": 6
+      "jaCharacters": 582,
+      "enWords": 133,
+      "teachingSections": 5
     },
     "9": {
-      "jaCharacters": 772,
-      "enWords": 217,
-      "teachingSections": 6
+      "jaCharacters": 559,
+      "enWords": 146,
+      "teachingSections": 5
     },
     "10": {
-      "jaCharacters": 761,
-      "enWords": 241,
-      "teachingSections": 6
+      "jaCharacters": 558,
+      "enWords": 157,
+      "teachingSections": 5
     },
     "11": {
-      "jaCharacters": 771,
-      "enWords": 242,
-      "teachingSections": 6
+      "jaCharacters": 580,
+      "enWords": 154,
+      "teachingSections": 5
     },
     "12": {
-      "jaCharacters": 771,
-      "enWords": 210,
-      "teachingSections": 6
+      "jaCharacters": 570,
+      "enWords": 130,
+      "teachingSections": 5
     },
     "13": {
-      "jaCharacters": 787,
-      "enWords": 248,
-      "teachingSections": 6
+      "jaCharacters": 552,
+      "enWords": 134,
+      "teachingSections": 5
     },
     "14": {
-      "jaCharacters": 741,
-      "enWords": 204,
-      "teachingSections": 6
+      "jaCharacters": 553,
+      "enWords": 125,
+      "teachingSections": 5
     },
     "15": {
-      "jaCharacters": 769,
-      "enWords": 245,
-      "teachingSections": 6
+      "jaCharacters": 553,
+      "enWords": 140,
+      "teachingSections": 5
     },
     "16": {
-      "jaCharacters": 718,
-      "enWords": 231,
-      "teachingSections": 6
+      "jaCharacters": 572,
+      "enWords": 141,
+      "teachingSections": 5
     },
     "17": {
-      "jaCharacters": 773,
-      "enWords": 241,
-      "teachingSections": 6
+      "jaCharacters": 598,
+      "enWords": 131,
+      "teachingSections": 5
     },
     "18": {
-      "jaCharacters": 703,
-      "enWords": 215,
-      "teachingSections": 6
+      "jaCharacters": 463,
+      "enWords": 121,
+      "teachingSections": 5
     },
     "19": {
-      "jaCharacters": 740,
-      "enWords": 208,
-      "teachingSections": 6
+      "jaCharacters": 522,
+      "enWords": 116,
+      "teachingSections": 5
     },
     "20": {
-      "jaCharacters": 715,
-      "enWords": 203,
-      "teachingSections": 6
+      "jaCharacters": 566,
+      "enWords": 132,
+      "teachingSections": 5
     },
     "21": {
-      "jaCharacters": 729,
-      "enWords": 222,
-      "teachingSections": 6
+      "jaCharacters": 578,
+      "enWords": 134,
+      "teachingSections": 5
     },
     "22": {
-      "jaCharacters": 730,
-      "enWords": 223,
-      "teachingSections": 6
+      "jaCharacters": 547,
+      "enWords": 146,
+      "teachingSections": 5
     },
     "23": {
-      "jaCharacters": 760,
-      "enWords": 224,
-      "teachingSections": 6
+      "jaCharacters": 623,
+      "enWords": 159,
+      "teachingSections": 5
     },
     "24": {
-      "jaCharacters": 741,
-      "enWords": 204,
-      "teachingSections": 6
+      "jaCharacters": 620,
+      "enWords": 130,
+      "teachingSections": 5
     },
     "25": {
-      "jaCharacters": 704,
-      "enWords": 201,
-      "teachingSections": 6
+      "jaCharacters": 557,
+      "enWords": 138,
+      "teachingSections": 5
     },
     "26": {
-      "jaCharacters": 709,
-      "enWords": 194,
-      "teachingSections": 6
+      "jaCharacters": 576,
+      "enWords": 142,
+      "teachingSections": 5
     },
     "27": {
-      "jaCharacters": 700,
-      "enWords": 222,
-      "teachingSections": 6
+      "jaCharacters": 539,
+      "enWords": 126,
+      "teachingSections": 5
     },
     "28": {
-      "jaCharacters": 746,
-      "enWords": 234,
-      "teachingSections": 6
+      "jaCharacters": 551,
+      "enWords": 130,
+      "teachingSections": 5
     },
     "29": {
-      "jaCharacters": 809,
-      "enWords": 235,
+      "jaCharacters": 784,
+      "enWords": 156,
       "teachingSections": 6
     },
     "30": {
-      "jaCharacters": 700,
-      "enWords": 203,
-      "teachingSections": 6
+      "jaCharacters": 499,
+      "enWords": 130,
+      "teachingSections": 5
     },
     "31": {
-      "jaCharacters": 766,
-      "enWords": 220,
-      "teachingSections": 6
+      "jaCharacters": 558,
+      "enWords": 127,
+      "teachingSections": 5
     },
     "32": {
-      "jaCharacters": 713,
-      "enWords": 214,
-      "teachingSections": 6
+      "jaCharacters": 552,
+      "enWords": 129,
+      "teachingSections": 5
     },
     "33": {
-      "jaCharacters": 738,
-      "enWords": 209,
-      "teachingSections": 6
+      "jaCharacters": 582,
+      "enWords": 111,
+      "teachingSections": 5
     },
     "34": {
-      "jaCharacters": 733,
-      "enWords": 222,
-      "teachingSections": 6
+      "jaCharacters": 558,
+      "enWords": 137,
+      "teachingSections": 5
     },
     "35": {
-      "jaCharacters": 779,
-      "enWords": 242,
-      "teachingSections": 6
+      "jaCharacters": 598,
+      "enWords": 131,
+      "teachingSections": 5
     },
     "36": {
-      "jaCharacters": 777,
-      "enWords": 236,
-      "teachingSections": 6
+      "jaCharacters": 611,
+      "enWords": 139,
+      "teachingSections": 5
     }
   },
   "sections": {
     "ja": [
-      "ここだけ覚えよう",
-      "例文1つ",
-      "3ステップ",
-      "まちがい注意",
-      "できたかチェック",
-      "もっと知りたいときに"
+      "文の型と使い分け",
+      "例文",
+      "ネパール語のルール",
+      "似た表現の対比",
+      "活用表・語彙一覧・既存例題"
     ],
     "en": [
-      "Remember this",
-      "One example",
-      "3 steps",
-      "Watch out",
-      "Quick check",
-      "When you want to know more"
+      "Pattern and choice",
+      "Example",
+      "Nepali grammar rules",
+      "Contrasts",
+      "Paradigms, inventories and existing exercises"
     ]
   },
   "layout": {
@@ -238,26 +236,858 @@
     "boldLearningAnchors": true,
     "yellowWarningCards": false,
     "warningSymbols": false,
-    "detailedExplanationPosition": "after quick learning sequence",
-    "repeatedRules": "sentence-specific comments retained; duplicated full rules removed",
-    "semanticColors": true,
-    "presetTones": [
-      "blue",
-      "green",
-      "violet",
-      "rose",
-      "teal"
+    "genericStudyAdviceRemoved": true,
+    "motherTongueGrammarDefinitionsRemoved": true,
+    "actualNepaliRulesAndContrastsFirst": true
+  },
+  "rulesPerTopic": {
+    "1": 5,
+    "2": 5,
+    "3": 5,
+    "4": 5,
+    "5": 6,
+    "6": 5,
+    "7": 5,
+    "8": 5,
+    "9": 5,
+    "10": 5,
+    "11": 5,
+    "12": 5,
+    "13": 5,
+    "14": 5,
+    "15": 5,
+    "16": 5,
+    "17": 5,
+    "18": 5,
+    "19": 5,
+    "20": 5,
+    "21": 5,
+    "22": 5,
+    "23": 5,
+    "24": 5,
+    "25": 5,
+    "26": 5,
+    "27": 5,
+    "28": 5,
+    "29": 6,
+    "30": 5,
+    "31": 5,
+    "32": 5,
+    "33": 5,
+    "34": 5,
+    "35": 5,
+    "36": 5
+  },
+  "totalBilingualRulePairs": 182,
+  "contrastIndex": {
+    "1": [
+      {
+        "ja": "名詞＋हो系",
+        "en": "Identity noun + हो"
+      },
+      {
+        "ja": "人称で変わる形",
+        "en": "Personal forms"
+      },
+      {
+        "ja": "否定はहोइन系",
+        "en": "Negation with होइन"
+      },
+      {
+        "ja": "केの位置と答え方",
+        "en": "Position of के and answers"
+      },
+      {
+        "ja": "होとछの境界",
+        "en": "Choosing हो or छ"
+      }
     ],
-    "numberBadges": true,
-    "largeExampleText": true
+    "2": [
+      {
+        "ja": "場所＋छ系",
+        "en": "Location + छ"
+      },
+      {
+        "ja": "所在と存在の語順",
+        "en": "Locating and introducing"
+      },
+      {
+        "ja": "माとयहाँ・त्यहाँ",
+        "en": "मा versus यहाँ/त्यहाँ"
+      },
+      {
+        "ja": "所持では何に一致する？",
+        "en": "Agreement in possession"
+      },
+      {
+        "ja": "छैनとहोइन",
+        "en": "छैन versus होइन"
+      }
+    ],
+    "3": [
+      {
+        "ja": "形容詞＋छ",
+        "en": "Adjective + छ"
+      },
+      {
+        "ja": "忙しい私はछु",
+        "en": "With I, use छु"
+      },
+      {
+        "ja": "मとमलाईの構文",
+        "en": "म versus मलाई"
+      },
+      {
+        "ja": "राम्रो छとराम्रो हुन्छ",
+        "en": "राम्रो छ versus राम्रो हुन्छ"
+      },
+      {
+        "ja": "否定の置き場所",
+        "en": "Where negation goes"
+      }
+    ],
+    "4": [
+      {
+        "ja": "छとहुन्छを対比する",
+        "en": "छ versus हुन्छ"
+      },
+      {
+        "ja": "反復の所在",
+        "en": "Habitual location"
+      },
+      {
+        "ja": "हुँदैनとछैन",
+        "en": "हुँदैन versus छैन"
+      },
+      {
+        "ja": "भयोとथियो",
+        "en": "भयो versus थियो"
+      },
+      {
+        "ja": "बन्नु・許可のहुन्छ",
+        "en": "बन्नु and permissive हुन्छ"
+      }
+    ],
+    "5": [
+      {
+        "ja": "देखिとबाट：重なる「から」",
+        "en": "देखि and बाट: shared source meanings"
+      },
+      {
+        "ja": "時間・手段で選び分ける",
+        "en": "Choose by time or means"
+      },
+      {
+        "ja": "मा・लाई：場所か参加者か",
+        "en": "मा versus लाई: location or participant"
+      },
+      {
+        "ja": "सँग・को：所持の二つの型",
+        "en": "सँग versus को in possession"
+      },
+      {
+        "ja": "ले・बाट：道具と移動手段",
+        "en": "ले versus बाट: instrument and transport"
+      },
+      {
+        "ja": "सम्म・तिरと結合順",
+        "en": "सम्म, तिर and attachment order"
+      }
+    ],
+    "6": [
+      {
+        "ja": "疑問詞は答えの位置へ",
+        "en": "Question words stay in their role"
+      },
+      {
+        "ja": "को・कसले・कसलाई・कसको",
+        "en": "को, कसले, कसलाई and कसको"
+      },
+      {
+        "ja": "कुन・कस्तो・कसरी",
+        "en": "कुन versus कस्तो versus कसरी"
+      },
+      {
+        "ja": "कति・कहिले・कहिलेदेखि",
+        "en": "Quantity and time questions"
+      },
+      {
+        "ja": "केとकिनの返答",
+        "en": "Answering के and किन"
+      }
+    ],
+    "7": [
+      {
+        "ja": "基本6人称と敬意形",
+        "en": "Six basic person groups"
+      },
+      {
+        "ja": "उ／ऊとउनी",
+        "en": "उ/ऊ versus उनी"
+      },
+      {
+        "ja": "उनीहरूとउहाँहरू",
+        "en": "उनीहरू versus उहाँहरू"
+      },
+      {
+        "ja": "तँ・तिमी・तपाईं",
+        "en": "तँ, तिमी and तपाईं"
+      },
+      {
+        "ja": "後置詞を付けた形",
+        "en": "Pronouns with case markers"
+      }
+    ],
+    "8": [
+      {
+        "ja": "-नुから現在形へ",
+        "en": "From -नु to the present"
+      },
+      {
+        "ja": "私・私たち・敬意形",
+        "en": "I, we and respectful forms"
+      },
+      {
+        "ja": "目的語とलाई",
+        "en": "Objects and लाई"
+      },
+      {
+        "ja": "習慣と進行を分ける",
+        "en": "Habitual versus progressive"
+      },
+      {
+        "ja": "現在形で未来の予定",
+        "en": "Present forms for plans"
+      }
+    ],
+    "9": [
+      {
+        "ja": "普通形の否定語幹",
+        "en": "Ordinary negative stems"
+      },
+      {
+        "ja": "鼻音を伴う否定",
+        "en": "Negatives with nasalization"
+      },
+      {
+        "ja": "敬意形は-नुहुन्न",
+        "en": "Respectful -नुहुन्न"
+      },
+      {
+        "ja": "現在否定と過去否定",
+        "en": "Present versus past negative"
+      },
+      {
+        "ja": "कहिल्यैと否定",
+        "en": "कहिल्यै with negation"
+      }
+    ],
+    "10": [
+      {
+        "ja": "-दैと補助動詞",
+        "en": "The -दै form and auxiliary"
+      },
+      {
+        "ja": "人称は最後に表す",
+        "en": "Agreement on the auxiliary"
+      },
+      {
+        "ja": "-रहेकोとの比較",
+        "en": "Comparing -रहेको"
+      },
+      {
+        "ja": "進行の否定と過去",
+        "en": "Negative and past progressive"
+      },
+      {
+        "ja": "名詞を修飾する進行形",
+        "en": "Progressive noun modifiers"
+      }
+    ],
+    "11": [
+      {
+        "ja": "他動詞の過去とले",
+        "en": "Transitive past and ले"
+      },
+      {
+        "ja": "行く・来るに一律のलेは付けない",
+        "en": "Not every past needs ले"
+      },
+      {
+        "ja": "過去の語幹と敬意形",
+        "en": "Past stems and respect"
+      },
+      {
+        "ja": "一致は動詞の種類も見る",
+        "en": "Agreement and construction"
+      },
+      {
+        "ja": "थियोとभयोの過去",
+        "en": "Past थियो versus भयो"
+      }
+    ],
+    "12": [
+      {
+        "ja": "गर्दिनँとगरेनँ",
+        "en": "गर्दिनँ versus गरेनँ"
+      },
+      {
+        "ja": "敬意形の否定は-नुभएन",
+        "en": "Respectful past -नुभएन"
+      },
+      {
+        "ja": "否定でもलेを検討する",
+        "en": "ले in a denied event"
+      },
+      {
+        "ja": "थिएनとगरेन",
+        "en": "थिएन versus गरेन"
+      },
+      {
+        "ja": "未完了の「まだ」と区別",
+        "en": "Not yet versus did not"
+      }
+    ],
+    "13": [
+      {
+        "ja": "-नेछの未来形",
+        "en": "The -नेछ future"
+      },
+      {
+        "ja": "未来の否定",
+        "en": "Negative future"
+      },
+      {
+        "ja": "जान्छुとजानेछु",
+        "en": "जान्छु versus जानेछु"
+      },
+      {
+        "ja": "-नेと-नेछを分ける",
+        "en": "Distinguish -ने from -नेछ"
+      },
+      {
+        "ja": "予定と意志の別の型",
+        "en": "Other plans and intention forms"
+      }
+    ],
+    "14": [
+      {
+        "ja": "गर्थेंとगरेँ",
+        "en": "गर्थें versus गरेँ"
+      },
+      {
+        "ja": "語幹と人称",
+        "en": "Stem and person"
+      },
+      {
+        "ja": "習慣過去の否定",
+        "en": "Negative habitual past"
+      },
+      {
+        "ja": "進行過去との違い",
+        "en": "Habitual versus past progressive"
+      },
+      {
+        "ja": "थियोとの違い",
+        "en": "Habitual versus थियो"
+      }
+    ],
+    "15": [
+      {
+        "ja": "-एको＋छ系",
+        "en": "The -एको + छ pattern"
+      },
+      {
+        "ja": "敬意形の-नुभएको",
+        "en": "Respectful -नुभएको"
+      },
+      {
+        "ja": "लेの有無",
+        "en": "Agent marking"
+      },
+      {
+        "ja": "経験と回数",
+        "en": "Experience and frequency"
+      },
+      {
+        "ja": "अझै…छैनとकहिल्यै…छैन",
+        "en": "Not yet and never"
+      }
+    ],
+    "16": [
+      {
+        "ja": "-एको＋थियो系",
+        "en": "-एको + a past auxiliary"
+      },
+      {
+        "ja": "参照時点を示す形",
+        "en": "Marking the past reference point"
+      },
+      {
+        "ja": "人称と敬意形",
+        "en": "Personal and respectful forms"
+      },
+      {
+        "ja": "否定はथिएन系",
+        "en": "Negative past auxiliaries"
+      },
+      {
+        "ja": "過去進行と習慣過去との比較",
+        "en": "Compare progressive and habitual past"
+      }
+    ],
+    "17": [
+      {
+        "ja": "敬意の依頼は-नुहोस्",
+        "en": "Respectful requests in -नुहोस्"
+      },
+      {
+        "ja": "दिनुहोस्・लिनुहोस्・आउनुहोस्",
+        "en": "Common request verbs"
+      },
+      {
+        "ja": "-दिनुで相手のための動作",
+        "en": "-दिनु for an action done for someone"
+      },
+      {
+        "ja": "親しい依頼との違い",
+        "en": "Familiar versus respectful requests"
+      },
+      {
+        "ja": "गर्नुहोस्とगरूँ?",
+        "en": "A request versus an offer"
+      }
+    ],
+    "18": [
+      {
+        "ja": "一人称の申し出",
+        "en": "First-person offers"
+      },
+      {
+        "ja": "一緒にする-औं",
+        "en": "-औं for shared suggestions"
+      },
+      {
+        "ja": "敬意依頼へは置換できない",
+        "en": "Not an honorific request"
+      },
+      {
+        "ja": "नगरौंとनगर्नुहोस्",
+        "en": "न + suggestion versus request"
+      },
+      {
+        "ja": "जानेछुとの比較",
+        "en": "Compare a future statement"
+      }
+    ],
+    "19": [
+      {
+        "ja": "न＋依頼形",
+        "en": "न + request form"
+      },
+      {
+        "ja": "जानुहुन्नとनजानुहोस्",
+        "en": "Statement versus negative request"
+      },
+      {
+        "ja": "न＋動詞と動詞＋न",
+        "en": "Negative न versus softening न"
+      },
+      {
+        "ja": "禁止の-नु हुँदैन",
+        "en": "Prohibition with -नु हुँदैन"
+      },
+      {
+        "ja": "禁止と不要",
+        "en": "Prohibition versus no obligation"
+      }
+    ],
+    "20": [
+      {
+        "ja": "-न＋सक्नु",
+        "en": "Infinitive -न + सक्नु"
+      },
+      {
+        "ja": "人称はसक्नुに表す",
+        "en": "Conjugate सक्नु"
+      },
+      {
+        "ja": "否定・過去の可能",
+        "en": "Negative and past ability"
+      },
+      {
+        "ja": "सक्छुとजान्छु",
+        "en": "Ability versus learned know-how"
+      },
+      {
+        "ja": "सक्नु・हुन्छ・मन पर्छ",
+        "en": "Can, may and want"
+      }
+    ],
+    "21": [
+      {
+        "ja": "-नु पर्छ：必要",
+        "en": "Necessity with -नु पर्छ"
+      },
+      {
+        "ja": "पर्दैन・हुँदैनの差",
+        "en": "पर्दैन versus हुँदैन"
+      },
+      {
+        "ja": "-न हुन्छと-नु हुन्छ",
+        "en": "Permission patterns"
+      },
+      {
+        "ja": "過去の必要",
+        "en": "Past necessity"
+      },
+      {
+        "ja": "चाहिन्छとपर्छ",
+        "en": "चाहिन्छ versus पर्छ"
+      }
+    ],
+    "22": [
+      {
+        "ja": "चाहनुの希望",
+        "en": "-न + चाहनु"
+      },
+      {
+        "ja": "मन लाग्नुの気持ち",
+        "en": "Desire with मन लाग्नु"
+      },
+      {
+        "ja": "मन पर्नु：好みとの重なり",
+        "en": "मन पर्नु and liking"
+      },
+      {
+        "ja": "希望の否定",
+        "en": "Negating desire"
+      },
+      {
+        "ja": "必要・能力への置換は不可",
+        "en": "Desire, need and ability"
+      }
+    ],
+    "23": [
+      {
+        "ja": "名詞の前と述語",
+        "en": "Attributive versus predicative"
+      },
+      {
+        "ja": "-ओ・-ई・-आの一致",
+        "en": "The -ओ/-ई/-आ pattern"
+      },
+      {
+        "ja": "変わらない形容詞",
+        "en": "Invariable adjectives"
+      },
+      {
+        "ja": "को・कस्तो・जस्तोも変わる",
+        "en": "Related agreeing forms"
+      },
+      {
+        "ja": "敬意と複数の関係",
+        "en": "Honorific and plural-looking agreement"
+      }
+    ],
+    "24": [
+      {
+        "ja": "方法は動作の前に",
+        "en": "Manner before the action"
+      },
+      {
+        "ja": "धेरैとधेरै पटक",
+        "en": "धेरै versus धेरै पटक"
+      },
+      {
+        "ja": "अलिとथोरै",
+        "en": "अलि versus थोरै"
+      },
+      {
+        "ja": "प्रायः・सधैं・कहिलेकाहीँ",
+        "en": "Frequency expressions"
+      },
+      {
+        "ja": "पनि・मात्रの位置",
+        "en": "Scope of पनि and मात्र"
+      }
+    ],
+    "25": [
+      {
+        "ja": "भन्दाは比較基準の後ろ",
+        "en": "भन्दा follows the standard"
+      },
+      {
+        "ja": "अझとधेरै",
+        "en": "अझ versus धेरै"
+      },
+      {
+        "ja": "最上級と範囲",
+        "en": "Superlative and comparison set"
+      },
+      {
+        "ja": "जस्तोとजस्तै",
+        "en": "जस्तो versus जस्तै"
+      },
+      {
+        "ja": "बराबर・जतिとभन्दा",
+        "en": "Equality versus difference"
+      }
+    ],
+    "26": [
+      {
+        "ja": "रとअनि",
+        "en": "र versus अनि"
+      },
+      {
+        "ja": "तरとपनि",
+        "en": "तर versus पनि"
+      },
+      {
+        "ja": "किनभनेと-एकोले",
+        "en": "किनभने versus -एकोले"
+      },
+      {
+        "ja": "原因と目的の形",
+        "en": "Cause versus purpose"
+      },
+      {
+        "ja": "भए पनिの譲歩",
+        "en": "Concession with भए पनि"
+      }
+    ],
+    "27": [
+      {
+        "ja": "-दैと-दा：似た綴りを区別",
+        "en": "-दै versus -दा"
+      },
+      {
+        "ja": "पढेपछिとपढेको बेला",
+        "en": "After versus at the time of"
+      },
+      {
+        "ja": "前は-नुअघि",
+        "en": "-नुअघि for before"
+      },
+      {
+        "ja": "सम्म・भित्र・पछि",
+        "en": "सम्म versus भित्र versus पछि"
+      },
+      {
+        "ja": "बित्तिकैとपछि",
+        "en": "बित्तिकै versus पछि"
+      }
+    ],
+    "28": [
+      {
+        "ja": "人のため：को／का लागि",
+        "en": "Beneficiary: को/का लागि"
+      },
+      {
+        "ja": "動作の目的：-नको लागि",
+        "en": "Action purpose: -नको लागि"
+      },
+      {
+        "ja": "移動なら-नだけでもよい",
+        "en": "Bare purpose infinitive with motion"
+      },
+      {
+        "ja": "लागि・निम्ति・निमित्त",
+        "en": "लागि, निम्ति and निमित्त"
+      },
+      {
+        "ja": "目的と理由の対比",
+        "en": "Purpose versus reason"
+      }
+    ],
+    "29": [
+      {
+        "ja": "-नेと-एकोで名詞を説明",
+        "en": "-ने versus -एको noun modifiers"
+      },
+      {
+        "ja": "修飾節の主語と敬意",
+        "en": "Subjects and respect inside modifiers"
+      },
+      {
+        "ja": "जो・जसले・जसलाई",
+        "en": "जो, जसले and जसलाई"
+      },
+      {
+        "ja": "जुन・जेと対応語",
+        "en": "जुन and जे with their correlates"
+      },
+      {
+        "ja": "जहाँ・जता・जब・जहिले",
+        "en": "Place, direction and time correlatives"
+      },
+      {
+        "ja": "जसरी・जति・जस्तोと-sुकै",
+        "en": "Manner, degree and -सुकै"
+      }
+    ],
+    "30": [
+      {
+        "ja": "条件＋भने",
+        "en": "Condition + भने"
+      },
+      {
+        "ja": "過去形に見えても未来条件",
+        "en": "Past-looking form in a future condition"
+      },
+      {
+        "ja": "छ भनेとभयो भने",
+        "en": "छ भने versus भयो भने"
+      },
+      {
+        "ja": "नभएとभए पनि",
+        "en": "नभए versus भए पनि"
+      },
+      {
+        "ja": "जब…तबとの違い",
+        "en": "Conditional versus temporal link"
+      }
+    ],
+    "31": [
+      {
+        "ja": "मलाई लाग्छの意見",
+        "en": "Opinions with मलाई लाग्छ"
+      },
+      {
+        "ja": "हो・होला・हुन सक्छ",
+        "en": "हो, होला and हुन सक्छ"
+      },
+      {
+        "ja": "-एको होलाの推測",
+        "en": "Supposition about completion"
+      },
+      {
+        "ja": "義務と推論のपर्छ",
+        "en": "Obligation versus inference"
+      },
+      {
+        "ja": "否定の範囲",
+        "en": "Scope of negation"
+      }
+    ],
+    "32": [
+      {
+        "ja": "खोलियोとखुल्यो",
+        "en": "Passive खोलियो versus intransitive खुल्यो"
+      },
+      {
+        "ja": "現在・過去・否定の受動",
+        "en": "Present, past and negative passive"
+      },
+      {
+        "ja": "動作主を示すद्वारा",
+        "en": "Agents with द्वारा"
+      },
+      {
+        "ja": "द्वाराとमार्फत",
+        "en": "द्वारा versus मार्फत"
+      },
+      {
+        "ja": "非人称の-इयो",
+        "en": "Impersonal -इयो"
+      }
+    ],
+    "33": [
+      {
+        "ja": "使役は動詞ごとの組で覚える",
+        "en": "Learn causative pairs"
+      },
+      {
+        "ja": "使役者と動作をする人",
+        "en": "Causer and person acting"
+      },
+      {
+        "ja": "-न लगाउनुの型",
+        "en": "The -न लगाउनु construction"
+      },
+      {
+        "ja": "खुवाउनुとखान दिनु",
+        "en": "खुवाउनु versus खान दिनु"
+      },
+      {
+        "ja": "使役も肯否・時制を変える",
+        "en": "Causative polarity and time"
+      }
+    ],
+    "34": [
+      {
+        "ja": "内容＋भन्नु",
+        "en": "Content + भन्नु"
+      },
+      {
+        "ja": "引用のमと外側のम",
+        "en": "Pronouns inside and outside quotation"
+      },
+      {
+        "ja": "भनेर・भन्ने・भने",
+        "en": "भनेर, भन्ने and भने"
+      },
+      {
+        "ja": "否定は引用内か外か",
+        "en": "Negation inside or outside the quote"
+      },
+      {
+        "ja": "भोलिとभन्नुहुन्थ्यो",
+        "en": "Time words and habitual reporting"
+      }
+    ],
+    "35": [
+      {
+        "ja": "लेख्नुの現在と否定",
+        "en": "लेख्नु present and negative"
+      },
+      {
+        "ja": "過去はमैलेも組にする",
+        "en": "Past: include मैले"
+      },
+      {
+        "ja": "進行・完了・先行完了",
+        "en": "Progressive and perfect compounds"
+      },
+      {
+        "ja": "習慣過去と未来",
+        "en": "Habitual past and future"
+      },
+      {
+        "ja": "लेख्न・लेख्नुの使い分け",
+        "en": "लेख्न versus लेख्नु"
+      }
+    ],
+    "36": [
+      {
+        "ja": "हो・छ・हुन्छを同じ主語で",
+        "en": "Three sets with one subject"
+      },
+      {
+        "ja": "否定も3系統で対応",
+        "en": "Three negative sets"
+      },
+      {
+        "ja": "所在の過去と変化の過去",
+        "en": "Past state versus occurrence"
+      },
+      {
+        "ja": "敬意形が同じでも構文は別",
+        "en": "Shared honorific forms, distinct functions"
+      },
+      {
+        "ja": "補助動詞としてのछ・थियो",
+        "en": "छ and थियो as auxiliaries"
+      }
+    ]
   },
   "audioReferencesPreserved": {
     "core": {
       "audioVersion": 1009,
       "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-core-1009.zip",
       "audioZipBytes": 39289890,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1206.json",
-      "version": 1206
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1207.json",
+      "version": 1207
     },
     "en": {
       "audioVersion": 1009,
@@ -266,10 +1096,10 @@
       "l1": "en",
       "name": "English",
       "nameJa": "English",
-      "version": 1206,
+      "version": 1207,
       "access": "free",
-      "sizeBytes": 5002404,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1206.json"
+      "sizeBytes": 5433358,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1207.json"
     },
     "ja": {
       "audioVersion": 1010,
@@ -278,42 +1108,70 @@
       "l1": "ja",
       "name": "日本語",
       "nameJa": "日本語",
-      "version": 1206,
+      "version": 1207,
       "access": "free",
-      "sizeBytes": 5236910,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1206.json"
+      "sizeBytes": 5671796,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1207.json"
     }
   },
   "payloadSHA256": {
-    "catalog.json": "1d2e349558e7495e1dbf961e842a949f6c4cf11d41a098a6082d02650c3e0f2c",
-    "core-1207.json": "7eb6fb72e90f8a3fbb5b940a31cde11c03f1300522e824ff7bf28188c8ae62fa",
-    "overlay-en-1207.json": "948833488b56c2a4cad5a1303f1461b80dd959645ea1c58816f30f590b5c3c91",
-    "overlay-ja-1207.json": "cdaf5defbb11385d8d4ad085ae02f380cd30d107ad5cb8e591570a170326c7f7"
+    "catalog.json": "f0e93fceba6c478554647f1782156010751657dd85c7f6f9493f669fd8c598e5",
+    "core-1208.json": "d22ae12d376010ab0b9d9dbada8e301a9f5a964a33ee35b836821fccc2473e7f",
+    "overlay-en-1208.json": "4f9ba279c12011c274b7344da8feb93b99d8ab6237239191683d76b34b6feb99",
+    "overlay-ja-1208.json": "c2591a2edea7fdccbadcac85ecd8a705a0c293c8617eebd00e2ad06d702a904f"
   },
   "verificationSources": [
-    "https://pressbooks.bccampus.ca/nepali/chapter/chapter-5-unit-4-grammar-focus/",
     "https://pressbooks.bccampus.ca/nepali/chapter/chapter-6-unit-4-grammar-focus/",
     "https://pressbooks.bccampus.ca/nepali/chapter/chapter-13-unit-4-grammar-focus/",
-    "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1979%20Intermediate%20Nepali%20Structure%20by%20Verma%20s.pdf"
+    "https://pressbooks.bccampus.ca/nepali/chapter/chapter-14-unit-4-grammar-focus/",
+    "https://elibrary.tucl.edu.np/bitstreams/93de7872-19f0-4bf3-a426-92972b2be2e3/download",
+    "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/papers/Working%20Papers%20Vol%206.pdf",
+    "https://www.nepjol.info/index.php/gipan/article/download/48914/36490/144595",
+    "https://madhavpokharel.com.np/noun-class-agreement-in-nepali/"
   ],
-  "runtimeVerification": {
-    "passed": true,
-    "readers": [
+  "reviewLimit": "Original bilingual explanations with source checks and automated consistency checks; not a native-speaker certification",
+  "verification": {
+    "actualReaders": [
       "2.1.3@89c0982a",
       "2.1.4@62f7b756",
-      "2.1.5"
+      "2.1.5 current"
     ],
+    "runtimeScenarios": 12,
     "languages": [
       "ja",
       "en"
     ],
-    "scenarios": [
-      "fresh download",
-      "old cache with zero audio downloads",
-      "offline reload"
+    "freshCachedOffline": true,
+    "cachedAudioDownloads": 0,
+    "all528ExercisesTranslationsAndWordTablesPreserved": true,
+    "allConversationDictionaryAndReadingsPreserved": true,
+    "authoringIdempotent": true,
+    "all72ColorLayouts": true,
+    "paletteContrastAtLeast4_5": true,
+    "allPersonalComparisonTablesRespectfulAgreement": true,
+    "dekhiBataContrastTable": true,
+    "nativeDeviceChecked": false
+  },
+  "publication": {
+    "verified": true,
+    "payloadSHA256Verified": true,
+    "catalogs": [
+      "packs-appa-v2",
+      "packs-appa-v3"
     ],
-    "nativeRendererUnitAndContrastChecks": true,
-    "typescriptAllAppsPassed": true,
-    "colorReport": "文法教材/教材カラー表示_検証結果.json"
+    "catalogSHA256": "f0e93fceba6c478554647f1782156010751657dd85c7f6f9493f669fd8c598e5",
+    "catalogsUpdatedAfterPayloadVerification": true,
+    "audioAssetsUploaded": 0,
+    "buildDispatched": false
+  },
+  "blockCounts": {
+    "ja": {
+      "before": 4768,
+      "after": 2784
+    },
+    "en": {
+      "before": 4727,
+      "after": 2775
+    }
   }
 }

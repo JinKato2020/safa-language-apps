@@ -2,8 +2,8 @@
 
 ## 1 हो: A is B (identity / equation)
 
-**Remember this**
-For identity, choose the **हो set**.
+**Pattern and choice**
+**म + विद्यार्थी + हुँ** identifies the speaker as a student. Use the हो family with an identity noun. No article is needed before an occupation. Replacing विद्यार्थी with शिक्षक leaves हुँ unchanged with म.
 
 ### ① Start with one example
 
@@ -13,133 +13,39 @@ ma vidyārthī hũ
 
 I am a student.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose who/what
+### 2. Personal forms
 
-**2**  Add an identity noun
+Compare **म हुँ / हामी हौं / यो हो**. Respectful तपाईं, तपाईंहरू, उहाँ and उहाँहरू take **हुनुहुन्छ**; this honorific verb form does not change for gender or number.
 
-**3**  Match the identity ending
+### 3. Negation with होइन
 
-### Watch out
+Replace हो with **होइन**: यो किताब होइन. Use **होइनँ** with I, **होइनौं** with we and **हुनुहुन्न** with a respectful subject. Do not form this negative by combining हो and छैन.
 
-Separate **identity** from **location**. Do not choose by the English word is alone.
+### 4. Position of के and answers
 
-### ③ Quick check
+Initial के in **के यो किताब हो?** introduces a yes/no question. In **यो के हो?**, के asks what. Answer the first with हो/होइन; answer the second with an identity such as यो किताब हो.
 
-**Check:** do I am a student and I am at home use the same set?
+### 5. Choosing हो or छ
 
-**Answer:** no.
+**यो राम्रो किताब हो** identifies this as a good book. **यो किताब राम्रो छ** describes the book as good. The distinction is grammatical function, not simply permanent versus temporary.
 
-Student gives identity, so use topic 1 and हुँ. घरमा gives location, so use topic 2 and छु.
-
-Choose by the information being supplied, not just by the English word am.
-
-### Your हुनु map: **3 sets**
-
-| Form and role | Topic |
-| --- | --- |
-| **हो**<br>identity | **1** |
-| **छ**<br>location / quality | **2・3** |
-| **हुन्छ**<br>regular situations / occurrences | **4** |
-
-The forms change with the person: with I, compare **हुँ・छु・हुन्छु**.
-
-### When you want to know more
-
-### What can you say?
-
-Use this pattern to identify or classify someone or something: I am a student; this is a book. **हो** is one set of forms of the dictionary verb हुनु.
-
-Conjugation means changing a verb to fit the person or situation.
-
-Do not put dictionary हुनु at the end of every sentence.
-
-This lesson uses forms such as हुँ, **हो** and respectful हुनुहुन्छ.
-
-### Look at the pattern
-
-The basic order is person/thing + identity + a **हो**-family form.
-
-The person or thing being described is the subject.
-
-Words naming people or things, such as विद्यार्थी, student, are nouns.
-
-With म use हुँ; with an ordinary thing indicated by यो use **हो**.
-
-Respectful तपाईं and उहाँ, including their plurals, take हुनुहुन्छ.
-
-### Check the construction
-
-1.
-
-Choose the subject: म, I.
-
-2.
-
-Add the identity noun: विद्यार्थी, student.
-
-3.
-
-Finish with the matching form, हुँ.
-
-The parts give म विद्यार्थी हुँ.
-
-4.
-
-If the subject changes, check the verb too.
-
-Respectful he/she is उहाँ, so say उहाँ विद्यार्थी हुनुहुन्छ.
-
-### How the example works
-
-Read the parts as म, I; विद्यार्थी, student; हुँ, am. हुँ is the verb, not part of the word student.
-
-If only the occupation changes, keep हुँ with म.
-
-The table below shows what changes when the subject changes.
-
-### Compare related patterns
-
-For a negative choose the होइन family: होइनँ with I, होइन with an ordinary thing, or respectful हुनुहुन्न.
-
-Initial के can introduce a yes/no question.
-
-Location belongs to topic 2 and condition to topic 3.
-
-Do not define **हो** as something that can never change: an occupation can change and still be introduced with this identity pattern.
-
-### The three sets of हुनु and where this topic fits
-
-हुनु (hunu) is a dictionary form used for being, existing, becoming or occurring. **हो**, छ and हुन्छ represent related sets used for different functions, not three unrelated verbs.
-
-Choose both the intended function and the form matching the subject and respect.
-
-These sets introduce the present system; other forms include past थियो and भयो.
+### हुनु: three sets and matching forms
 
 | Form and reading | Information supplied | Corresponding lesson |
 | --- | --- | --- |
-| **हो** / ho | Identity/classification: name, occupation, category | Topic 1 |
-| **छ** / cha | Existence/location or a quality/condition | Topic 2: existence/location; topic 3: qualities/conditions |
-| **हुन्छ** / huncha | Regular/conditional states, occurrences and outcomes | Topic 4; also permission in 21 and prohibition in 19 |
-
-This topic teaches set 1, identity/classification with **हो**.
+| हो / ho | Identity/classification: name, occupation, category | Topic 1 |
+| छ / cha | Existence/location or a quality/condition | Topic 2: existence/location; topic 3: qualities/conditions |
+| हुन्छ / huncha | Regular/conditional states, occurrences and outcomes | Topic 4; also permission in 21 and prohibition in 19 |
 
 | Compare with the same subject | Meaning | Why this set? |
 | --- | --- | --- |
-| म विद्यार्थी हुँ।<br>ma vidyārthī hũ | I am a student. | Identity, so the **हो** set: topic 1 |
-| म घरमा छु।<br>ma gharmā chu | I am at home. | Location, so the **छ** set: topic 2 |
-| म बिहान घरमा हुन्छु।<br>ma bihān gharmā hunchu | I am usually at home in the morning. | A regular time setting, so the **हुन्छ** set: topic 4 |
+| म विद्यार्थी हुँ।<br>ma vidyārthī hũ | I am a student. | Identity, so the हो set: topic 1 |
+| म घरमा छु।<br>ma gharmā chu | I am at home. | Location, so the छ set: topic 2 |
+| म बिहान घरमा हुन्छु।<br>ma bihān gharmā hunchu | I am usually at home in the morning. | A regular time setting, so the हुन्छ set: topic 4 |
 
-**Also check**
-
-The subject I alone does not select the form: identity, location and a regular setting give हुँ, छु and हुन्छु.
-
-Do not reduce **हो** versus छ to permanent versus temporary.
-
-Choose by construction and intended meaning.
-
-### **हो** set: six basic person groups, positive and negative
+### हो set: six basic person groups, positive and negative
 
 | Person and reading | Positive and reading | Negative and reading |
 | --- | --- | --- |
@@ -150,46 +56,12 @@ Choose by construction and intended meaning.
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-Respectful you/he/she and their plurals share हुनुहुन्छ/हुनुहुन्न across the three functions.
-
-Identical spelling does not erase the difference between identity, location and a regular setting.
-
-Basic ordinary singular forms are **हो**/होइन, छ/छैन and हुन्छ/हुँदैन; ordinary plurals have corresponding forms too.
-
-First learn the six basic person groups shown here.
-
-
-**Also check**
 
 Use उहाँ for he/she and उहाँहरू for they as the basic forms.
 
-Both take respectful verb agreement without a masculine/feminine distinction.
-
-Familiar forms are taught in topic 7.
-
 Note the nasal first-person negatives होइनँ/छैनँ.
 
-**Also check**
-
-The ending changes with the subject.
-
 Identity statements use the होइन family for negatives, not the छैन family.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -321,12 +193,6 @@ ke yo tapāĩko kitāb ho?
 | किताब | kitāb | book |
 | **हो** | ho | am; is; are |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 10
 
 She is a doctor.
@@ -384,22 +250,10 @@ tapāĩharū śikṣak hunuhuncha
 | शिक्षक | śikṣak | teacher |
 | हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement
-
 ## 2 छ: existence and location
 
-**Remember this**
-Where is it? Use the **छ set**.
+**Pattern and choice**
+Compare **म घरमा छु / किताब घरमा छ**. मा marks the location; the final verb matches the entity located. Choose among **छु, छौं, छ, छन्** and respectful हुनुहुन्छ.
 
 ### ① Start with one example
 
@@ -409,131 +263,39 @@ ma gharmā chu
 
 I am at home.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose who/what to locate
+### 2. Locating and introducing
 
-**2**  Add a place
+**किताब टेबलमा छ** locates the book; **टेबलमा किताब छ** introduces a book on the table. Word order varies with information structure. The location marked by मा does not control the verb agreement.
 
-**3**  Match the location ending
+### 3. मा versus यहाँ/त्यहाँ
 
-### Watch out
+Nouns combine with मा: **घरमा, नेपालमा**. **यहाँ, त्यहाँ and कहाँ** already function as here, there and where. Do not routinely add मा again in a basic location sentence.
 
-First identify **who or what exists**. The possessor alone does not determine agreement.
+### 4. Agreement in possession
 
-### ③ Quick check
+In **मसँग कलम छ**, मसँग marks the possessor and कलम is what exists, so use छ rather than छु. This differs from the subject म in **म घरमा छु**. See topic 5 for possessive सँग.
 
-**Check:** in मसँग कलम छ, I have a pen, should the ending be छु because I is mentioned?
+### 5. छैन versus होइन
 
-**Answer:** no.
+**घरमा छैन** denies presence at home; **घर होइन** denies that something is a house. Location/existence uses the छैन family; identity uses होइन. In **उहाँ घरमा हुनुहुन्न**, घरमा identifies the location construction despite the shared honorific ending.
 
-The thing present is कलम, a pen. मसँग marks the possessor.
-
-Use **छ** for the pen; study possession in topic 5.
-
-### Your हुनु map: **3 sets**
-
-| Form and role | Topic |
-| --- | --- |
-| **हो**<br>identity | **1** |
-| **छ**<br>location / quality | **2・3** |
-| **हुन्छ**<br>regular situations / occurrences | **4** |
-
-The forms change with the person: with I, compare **हुँ・छु・हुन्छु**.
-
-### When you want to know more
-
-### What can you say?
-
-This lesson describes where someone or something is, or what is present in a place.
-
-It uses the **छ** set of हुनु.
-
-Imagine a book on a table or yourself at home.
-
-The information is different from topic 1, which identifies what something is.
-
-The existence/location pattern applies to both people and things.
-
-### Look at the pattern
-
-To locate a known subject, use person/thing + place + a **छ**-family form. घर is house; मा adds at/in, giving घरमा.
-
-The subject is the person or thing being located.
-
-Use छु with I, छौं with we, and हुनुहुन्छ with respectful you/he/she.
-
-An ordinary singular thing takes **छ** and plural things generally take छन्.
-
-### Check the construction
-
-1.
-
-Choose what you are locating: म, I.
-
-2.
-
-Add a place such as घरमा, at home, or यहाँ, here.
-
-3.
-
-Choose the matching **छ** form; म takes छु.
-
-4.
-
-To introduce something present, a location may come first.
-
-Identify what exists before deciding its agreement.
-
-### How the example works
-
-म means I, घरमा at home, and छु am present.
-
-The sentence answers where I am, not what I am.
-
-Read घरमा as a unit, then separate घर + मा to see how house becomes at home.
-
-Topic 5 teaches such noun-following markers in detail.
-
-### Compare related patterns
-
-Negate with the छैन family: छैनँ for I and छैन for an ordinary thing; respectful people take हुनुहुन्न. कहाँ, where, can replace the location.
-
-Both identity and location use हुनुहुन्छ with respectful people.
-
-The identical spelling does not make their functions identical: student gives identity; at home gives location.
-
-### The three sets of हुनु and where this topic fits
-
-हुनु (hunu) is a dictionary form used for being, existing, becoming or occurring. **हो**, छ and हुन्छ represent related sets used for different functions, not three unrelated verbs.
-
-Choose both the intended function and the form matching the subject and respect.
-
-These sets introduce the present system; other forms include past थियो and भयो.
+### हुनु: three sets and matching forms
 
 | Form and reading | Information supplied | Corresponding lesson |
 | --- | --- | --- |
-| **हो** / ho | Identity/classification: name, occupation, category | Topic 1 |
-| **छ** / cha | Existence/location or a quality/condition | Topic 2: existence/location; topic 3: qualities/conditions |
-| **हुन्छ** / huncha | Regular/conditional states, occurrences and outcomes | Topic 4; also permission in 21 and prohibition in 19 |
-
-This topic teaches existence and location within set 2, **छ**.
+| हो / ho | Identity/classification: name, occupation, category | Topic 1 |
+| छ / cha | Existence/location or a quality/condition | Topic 2: existence/location; topic 3: qualities/conditions |
+| हुन्छ / huncha | Regular/conditional states, occurrences and outcomes | Topic 4; also permission in 21 and prohibition in 19 |
 
 | Compare with the same subject | Meaning | Why this set? |
 | --- | --- | --- |
-| म विद्यार्थी हुँ।<br>ma vidyārthī hũ | I am a student. | Identity, so the **हो** set: topic 1 |
-| म घरमा छु।<br>ma gharmā chu | I am at home. | Location, so the **छ** set: topic 2 |
-| म बिहान घरमा हुन्छु।<br>ma bihān gharmā hunchu | I am usually at home in the morning. | A regular time setting, so the **हुन्छ** set: topic 4 |
+| म विद्यार्थी हुँ।<br>ma vidyārthī hũ | I am a student. | Identity, so the हो set: topic 1 |
+| म घरमा छु।<br>ma gharmā chu | I am at home. | Location, so the छ set: topic 2 |
+| म बिहान घरमा हुन्छु।<br>ma bihān gharmā hunchu | I am usually at home in the morning. | A regular time setting, so the हुन्छ set: topic 4 |
 
-**Also check**
-
-The subject I alone does not select the form: identity, location and a regular setting give हुँ, छु and हुन्छु.
-
-Do not reduce **हो** versus छ to permanent versus temporary.
-
-Choose by construction and intended meaning.
-
-### **छ** set: six basic person groups, positive and negative
+### छ set: six basic person groups, positive and negative
 
 | Person and reading | Positive and reading | Negative and reading |
 | --- | --- | --- |
@@ -544,40 +306,10 @@ Choose by construction and intended meaning.
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-Respectful you/he/she and their plurals share हुनुहुन्छ/हुनुहुन्न across the three functions.
-
-Identical spelling does not erase the difference between identity, location and a regular setting.
-
-Basic ordinary singular forms are **हो**/होइन, छ/छैन and हुन्छ/हुँदैन; ordinary plurals have corresponding forms too.
-
-First learn the six basic person groups shown here.
-
-
-**Also check**
 
 Use उहाँ for he/she and उहाँहरू for they as the basic forms.
 
-Both take respectful verb agreement without a masculine/feminine distinction.
-
-Familiar forms are taught in topic 7.
-
 Note the nasal first-person negatives होइनँ/छैनँ.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -606,12 +338,6 @@ tapāĩ gharmā hunuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | घरमा | gharmā | at home |
 | हुनुहुन्छ | hunuhuncha | is; are (existence) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -697,12 +423,6 @@ Where is the toilet?
 | कहाँ | kahā̃ | where |
 | **छ** | cha | is; are (existence) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 9
 
 There is water on the table.
@@ -730,12 +450,6 @@ tapāĩharū kahā̃ hunuhuncha?
 | तपाईंहरू | tapāĩharū | you (respectful plural) |
 | कहाँ | kahā̃ | where |
 | हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 11
 
@@ -765,22 +479,14 @@ uhā̃harū vidyālayamā hunuhuncha
 | विद्यालयमा | vidyālayamā | at school (विद्यालय + मा) |
 | हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 1: **हो**: A is B (identity / equation) / 5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement
 
 ## 3 छ: is ~ (adjective / state)
 
-**Remember this**
-Describe a quality: **adjective + छ set**.
+**Pattern and choice**
+In **पानी चिसो छ**, चिसो describes coldness. A basic current description is **subject + adjective + छ-family verb**. Inflecting adjectives such as राम्रो and ठूलो also follow the agreement patterns in topic 23.
 
 ### ① Start with one example
 
@@ -790,127 +496,39 @@ yo phūl sundar cha
 
 This flower is beautiful.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose what to describe
+### 2. With I, use छु
 
-**2**  Add a quality or condition
+Compare **म व्यस्त छु / हामी व्यस्त छौं / उहाँ व्यस्त हुनुहुन्छ**. व्यस्त stays unchanged; the ending marks person and respect. An invariable adjective does not make the verb invariably छ.
 
-**3**  Match the छ ending
+### 3. म versus मलाई
 
-### Watch out
+**म खुसी छु** uses म as subject plus a condition. **मलाई जाडो लाग्छ** uses an experiencer in मलाई and the sensation construction जाडो लाग्नु. The translated subject I does not determine Nepali case or verb form.
 
-**It is a good book** and **the book is good** have different structures.
+### 4. राम्रो छ versus राम्रो हुन्छ
 
-### ③ Quick check
+**यहाँको मौसम राम्रो छ** describes the weather in the present context. **वसन्तमा यहाँको मौसम राम्रो हुन्छ** gives a regular springtime tendency. An adjective does not force छ when a habitual/general perspective is intended.
 
-**Check:** compare this is a good book with this book is good.
+### 5. Where negation goes
 
-**Answer:** the first identifies it with the noun phrase good book and uses the हो pattern.
+In **पानी चिसो छैन**, retain the adjective and negate the copula. Compare **म व्यस्त छैनँ / उहाँ व्यस्त हुनुहुन्न**. This is different from a prohibition using न before a request verb.
 
-The second describes the book and uses the **छ** pattern.
-
-Look at the whole construction, not just the adjective.
-
-### Your हुनु map: **3 sets**
-
-| Form and role | Topic |
-| --- | --- |
-| **हो**<br>identity | **1** |
-| **छ**<br>location / quality | **2・3** |
-| **हुन्छ**<br>regular situations / occurrences | **4** |
-
-The forms change with the person: with I, compare **हुँ・छु・हुन्छु**.
-
-### When you want to know more
-
-### What can you say?
-
-Use the **छ** family again, now to describe a quality or condition: a flower is beautiful; someone is busy.
-
-An adjective describes a quality such as beautiful, old or cold.
-
-Separate an identity noun such as student or book in topic 1 from a description such as beautiful or cold here.
-
-### Look at the pattern
-
-Use subject + descriptive word + a **छ**-family form. यो indicates this; फूल is flower; सुन्दर is beautiful.
-
-Group यो फूल as this flower, then add सुन्दर and **छ**.
-
-With I use छु; with a respectful person use हुनुहुन्छ.
-
-Topic 23 compares this with an adjective placed inside a noun phrase.
-
-### Check the construction
-
-1.
-
-Choose the subject: यो फूल, this flower.
-
-2.
-
-Choose a quality: सुन्दर, beautiful.
-
-3.
-
-Add the matching ending; a single flower takes **छ**.
-
-4.
-
-Check whether you are describing it or identifying it with a noun.
-
-A shared translation such as is does not choose the Nepali construction.
-
-### How the example works
-
-यो फूल names the subject, सुन्दर describes it, and **छ** completes the description.
-
-You are not assigning a second identity; you are describing the flower.
-
-Although a single adjective may work as a short response in conversation, practice the complete sentence to understand the structure.
-
-### Compare related patterns
-
-For a negative keep the adjective and use a छैन-family ending, or respectful हुनुहुन्न.
-
-Questions about a quality can use कस्तो and its related forms; see topic 23 for agreement.
-
-Do not define **छ** as temporary only: it can describe a particular thing’s quality.
-
-Topic 4 contrasts this with a general statement using **हुन्छ**.
-
-### The three sets of हुनु and where this topic fits
-
-हुनु (hunu) is a dictionary form used for being, existing, becoming or occurring. **हो**, छ and हुन्छ represent related sets used for different functions, not three unrelated verbs.
-
-Choose both the intended function and the form matching the subject and respect.
-
-These sets introduce the present system; other forms include past थियो and भयो.
+### हुनु: three sets and matching forms
 
 | Form and reading | Information supplied | Corresponding lesson |
 | --- | --- | --- |
-| **हो** / ho | Identity/classification: name, occupation, category | Topic 1 |
-| **छ** / cha | Existence/location or a quality/condition | Topic 2: existence/location; topic 3: qualities/conditions |
-| **हुन्छ** / huncha | Regular/conditional states, occurrences and outcomes | Topic 4; also permission in 21 and prohibition in 19 |
-
-This topic teaches qualities and conditions within set 2, **छ**.
+| हो / ho | Identity/classification: name, occupation, category | Topic 1 |
+| छ / cha | Existence/location or a quality/condition | Topic 2: existence/location; topic 3: qualities/conditions |
+| हुन्छ / huncha | Regular/conditional states, occurrences and outcomes | Topic 4; also permission in 21 and prohibition in 19 |
 
 | Compare with the same subject | Meaning | Why this set? |
 | --- | --- | --- |
-| म विद्यार्थी हुँ।<br>ma vidyārthī hũ | I am a student. | Identity, so the **हो** set: topic 1 |
-| म घरमा छु।<br>ma gharmā chu | I am at home. | Location, so the **छ** set: topic 2 |
-| म बिहान घरमा हुन्छु।<br>ma bihān gharmā hunchu | I am usually at home in the morning. | A regular time setting, so the **हुन्छ** set: topic 4 |
+| म विद्यार्थी हुँ।<br>ma vidyārthī hũ | I am a student. | Identity, so the हो set: topic 1 |
+| म घरमा छु।<br>ma gharmā chu | I am at home. | Location, so the छ set: topic 2 |
+| म बिहान घरमा हुन्छु।<br>ma bihān gharmā hunchu | I am usually at home in the morning. | A regular time setting, so the हुन्छ set: topic 4 |
 
-**Also check**
-
-The subject I alone does not select the form: identity, location and a regular setting give हुँ, छु and हुन्छु.
-
-Do not reduce **हो** versus छ to permanent versus temporary.
-
-Choose by construction and intended meaning.
-
-### **छ** set: six basic person groups, positive and negative
+### छ set: six basic person groups, positive and negative
 
 | Person and reading | Positive and reading | Negative and reading |
 | --- | --- | --- |
@@ -921,36 +539,8 @@ Choose by construction and intended meaning.
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-Respectful you/he/she and their plurals share हुनुहुन्छ/हुनुहुन्न across the three functions.
-
-Identical spelling does not erase the difference between identity, location and a regular setting.
-
-Basic ordinary singular forms are **हो**/होइन, छ/छैन and हुन्छ/हुँदैन; ordinary plurals have corresponding forms too.
-
-First learn the six basic person groups shown here.
-
-
-**Also check**
 
 With a person as subject, choose the appropriate form of **छ**.
-
-Do not confuse an adjective description with a noun identity such as being a doctor.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -1013,12 +603,6 @@ ke yo pānī ciso cha?
 | चिसो | ciso | cold |
 | **छ** | cha | am; is; are |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 5
 
 It is hot today.
@@ -1076,12 +660,6 @@ tapāĩ sancai hunuhuncha?
 | सन्चै | sancai | well |
 | हुनुहुन्छ | hunuhuncha | am; is; are |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 9
 
 She is ready.
@@ -1124,22 +702,14 @@ hāmī thākekā chaũ
 | थाकेका | thākekā | tired (plural agreeing form) |
 | छौं | chaũ | be; exist |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 1: **हो**: A is B (identity / equation) / 2: छ: existence and location / 23: Adjective agreement & position
 
 ## 4 हुन्छ: becomes / generally is (habitual, change)
 
-**Remember this**
-For regular situations, use the **हुन्छ set**.
+**Pattern and choice**
+**आज चिसो छ** describes today's condition; **जाडोमा चिसो हुन्छ** describes winter generally. हुन्छ can express a regular or conditional state, not only a change translated as become.
 
 ### ① Start with one example
 
@@ -1149,125 +719,39 @@ jāḍomā ciso huncha
 
 It gets cold in winter.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose a regular setting
+### 2. Habitual location
 
-**2**  Add time or condition
+Compare **म अहिले घरमा छु** with **म बिहान घरमा हुन्छु**. अहिले anchors now; बिहान can supply a recurring morning setting. I takes **हुन्छु**, we **हुन्छौं**, rather than invariant हुन्छ.
 
-**3**  Use the matching हुन्छ form
+### 3. हुँदैन versus छैन
 
-### Watch out
+**यहाँ हल्ला हुँदैन** can describe the usual absence of noise; **अहिले हल्ला छैन** describes the present situation. Negate the हुन्छ family with **हुँदैन, हुँदिनँ, हुँदैनौं**, or respectful हुनुहुन्न.
 
-Do not translate every **हुन्छ** as become.
+### 4. भयो versus थियो
 
-### ③ Quick check
+**काम भयो** presents work as completed/accomplished; **काम थियो** says there was work. Distinguish the past state थियो from the occurrence/change भयो rather than substituting भयो for every past छ.
 
-**Check:** why distinguish it is quiet here today from it is generally quiet here in the morning?
+### 5. बन्नु and permissive हुन्छ
 
-**Answer:** the first describes that situation with छ; the second describes a regular pattern with हुन्छ.
+**डाक्टर बन्नु** uses बन्नु for becoming a doctor. In **जान हुन्छ?**, हुन्छ belongs to a permission construction, not a description of regular conditions. Compare permission and prohibition in topic 21.
 
-First decide what kind of time perspective you intend.
-
-### Your हुनु map: **3 sets**
-
-| Form and role | Topic |
-| --- | --- |
-| **हो**<br>identity | **1** |
-| **छ**<br>location / quality | **2・3** |
-| **हुन्छ**<br>regular situations / occurrences | **4** |
-
-The forms change with the person: with I, compare **हुँ・छु・हुन्छु**.
-
-### When you want to know more
-
-### What can you say?
-
-This lesson teaches the **हुन्छ** set of हुनु: what is generally true, what happens under certain conditions, or what occurs.
-
-Compare it with the **छ** set in topics 2–3. हुन्छ also appears with scheduled events and in an accepting response.
-
-It does not have just one translation such as become.
-
-### Look at the pattern
-
-A useful pattern is time/condition + state or event + a **हुन्छ**-family form.
-
-A season or repeated time often gives a regular setting, unlike a particular state described with **छ**.
-
-Use हुन्छु with I and हुन्छौं with we.
-
-Respectful हुनुहुन्छ overlaps in spelling with the identity and location sets, so use context and meaning to distinguish them.
-
-### Check the construction
-
-1.
-
-Decide whether you mean one present situation or something regular, conditional or upcoming.
-
-2.
-
-Add a setting: जाडोमा, in winter.
-
-3.
-
-Add the condition: चिसो, cold.
-
-4.
-
-Use **हुन्छ** to state the general seasonal pattern.
-
-For today’s particular weather, use a today expression with the **छ** set.
-
-### How the example works
-
-जाडोमा means in winter, चिसो cold, and **हुन्छ** presents that regular condition.
-
-The sense is winter is generally cold.
-
-Even when translated becomes cold, it need not describe one change from a previously warm state.
-
-The seasonal expression signals the general setting.
-
-### Compare related patterns
-
-The negative uses the हुँदैन set: हुँदिनँ for I, हुँदैनौं for we, and respectful हुनुहुन्न. भयो can describe a past change or occurrence, while becoming a professional may use बन्नु.
-
-Do not translate every **हुन्छ** as become.
-
-See topic 21 for permission, 19 for prohibition and 13 for future expressions.
-
-### The three sets of हुनु and where this topic fits
-
-हुनु (hunu) is a dictionary form used for being, existing, becoming or occurring. **हो**, छ and हुन्छ represent related sets used for different functions, not three unrelated verbs.
-
-Choose both the intended function and the form matching the subject and respect.
-
-These sets introduce the present system; other forms include past थियो and भयो.
+### हुनु: three sets and matching forms
 
 | Form and reading | Information supplied | Corresponding lesson |
 | --- | --- | --- |
-| **हो** / ho | Identity/classification: name, occupation, category | Topic 1 |
-| **छ** / cha | Existence/location or a quality/condition | Topic 2: existence/location; topic 3: qualities/conditions |
-| **हुन्छ** / huncha | Regular/conditional states, occurrences and outcomes | Topic 4; also permission in 21 and prohibition in 19 |
-
-This topic teaches set 3, regular situations, conditions and occurrences with **हुन्छ**.
+| हो / ho | Identity/classification: name, occupation, category | Topic 1 |
+| छ / cha | Existence/location or a quality/condition | Topic 2: existence/location; topic 3: qualities/conditions |
+| हुन्छ / huncha | Regular/conditional states, occurrences and outcomes | Topic 4; also permission in 21 and prohibition in 19 |
 
 | Compare with the same subject | Meaning | Why this set? |
 | --- | --- | --- |
-| म विद्यार्थी हुँ।<br>ma vidyārthī hũ | I am a student. | Identity, so the **हो** set: topic 1 |
-| म घरमा छु।<br>ma gharmā chu | I am at home. | Location, so the **छ** set: topic 2 |
-| म बिहान घरमा हुन्छु।<br>ma bihān gharmā hunchu | I am usually at home in the morning. | A regular time setting, so the **हुन्छ** set: topic 4 |
+| म विद्यार्थी हुँ।<br>ma vidyārthī hũ | I am a student. | Identity, so the हो set: topic 1 |
+| म घरमा छु।<br>ma gharmā chu | I am at home. | Location, so the छ set: topic 2 |
+| म बिहान घरमा हुन्छु।<br>ma bihān gharmā hunchu | I am usually at home in the morning. | A regular time setting, so the हुन्छ set: topic 4 |
 
-**Also check**
-
-The subject I alone does not select the form: identity, location and a regular setting give हुँ, छु and हुन्छु.
-
-Do not reduce **हो** versus छ to permanent versus temporary.
-
-Choose by construction and intended meaning.
-
-### **हुन्छ** set: six basic person groups, positive and negative
+### हुन्छ set: six basic person groups, positive and negative
 
 | Person and reading | Positive and reading | Negative and reading |
 | --- | --- | --- |
@@ -1278,34 +762,8 @@ Choose by construction and intended meaning.
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-Respectful you/he/she and their plurals share हुनुहुन्छ/हुनुहुन्न across the three functions.
-
-Identical spelling does not erase the difference between identity, location and a regular setting.
-
-Basic ordinary singular forms are **हो**/होइन, छ/छैन and हुन्छ/हुँदैन; ordinary plurals have corresponding forms too.
-
-First learn the six basic person groups shown here.
-
-
-**Also check**
 
 Being cold now and getting cold in winter take different perspectives. भयो is one form used for a change that has happened.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -1381,12 +839,6 @@ kām kahile śurū huncha?
 | शुरू | śurū | start |
 | **हुन्छ** | huncha | starts |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 6
 
 Does this always happen here?
@@ -1402,12 +854,6 @@ ke yahā̃ sadhaĩ yasto huncha?
 | सधैं | sadhaĩ | always |
 | यस्तो | yasto | like this |
 | **हुन्छ** | huncha | becomes |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 7
 
@@ -1495,22 +941,14 @@ pānī tāto bhayo
 | तातो | tāto | hot; warm |
 | भयो | bhayo | became |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 2: **छ**: existence and location / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~)
 
 ## 5 Postpositions: place, participants and relationships
 
-**Remember this**
-Add a **relationship marker after the noun**.
+**Pattern and choice**
+**देखि (dekhi)** marks a starting point in time or space. **बाट (bāṭa)** marks departure/source and can mark route or transport. **घरदेखि विद्यालयसम्म** frames a range from home to school; **घरबाट आएँ** names where the speaker came from. Spatial starting points allow overlap: देखि is not exclusively temporal.
 
 ### ① Start with one example
 
@@ -1520,83 +958,36 @@ ma gharmā baschu
 
 I live in a house.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the noun
+### 2. Choose by time or means
 
-**2**  Decide place, company or another role
+**बिहानदेखि काम गर्दै छु** describes working since morning. **भोलिदेखि** starts tomorrow, so देखि need not mean continuation up to now. बाट also occurs with temporal starts; learn देखि as the basic starting-point pattern. **बसबाट जान्छु** means go by bus. Replacing बाट with देखि does not preserve the transport meaning.
 
-**3**  Add its marker, then the verb
+### 3. मा versus लाई: location or participant
 
-### Watch out
+**विद्यालयमा** marks a location; **शिक्षकलाई** marks a recipient or object. लाई can mark a specific personal object, but is not obligatory on every object: basic **किताब पढ्छु** has none. In **मलाई जाडो लाग्छ**, लाई marks the experiencer.
 
-**घरमा = at home**; **घरबाट = from home**. The marker changes the relationship.
+### 4. सँग versus को in possession
 
-### ③ Quick check
+**मसँग किताब छ** asserts possession/availability; **यो मेरो किताब हो** identifies ownership. सँग also marks company in **साथीसँग जान्छु**. Select **को/की/का** by the following noun/construction, not the owner's gender: compare **मेरो छोरा / मेरी छोरी / मेरा साथीहरू**.
 
-**Check:** can घरमा and घरबाट be exchanged because both mention a house?
+### 5. ले versus बाट: instrument and transport
 
-**Answer:** no.
+**कलमले लेख्छु** marks a writing instrument; **बसबाट जान्छु** marks transport; **बसमा छु** gives location inside a bus. ले also marks an agent in **मैले पढेँ**. The instrument कलमले is not the writer.
 
-One marks location; the other a starting point.
+### 6. सम्म, तिर and attachment order
 
-Say the intended relationship aloud—where, from where, with whom—before choosing the form.
+**पाँच बजेसम्म** means until five; **पाँच बजेतिर** around five. **घरमा** locates at home; **घरतिर** points towards home. Plural precedes the marker: **साथी + हरू + सँग**. Learn pronoun combinations **मलाई, मैले, मसँग, मेरो**, rather than mechanically stacking markers.
 
-### When you want to know more
+### देखि/बाट: choose by construction
 
-### What can you say?
-
-Compare at home, from home and with a friend.
-
-At, from and with show a relationship.
-
-Nepali usually marks such relationships after a noun, so these forms are called postpositions.
-
-Think of adding a relationship label after the person, place or thing.
-
-### Look at the pattern
-
-Build subject + noun with its relationship marker + verb. घर is house, घरमा at home, and घरबाट from home.
-
-Some markers attach directly; others form phrases such as को लागि.
-
-A single English or Japanese preposition/particle can have several functions, so choose by the relationship, not by a one-word translation.
-
-### Check the construction
-
-1.
-
-Choose an action, such as बस्नु, live.
-
-2.
-
-Separate who from where: म and घरमा.
-
-3.
-
-Put them before the verb and use बस्छु with I.
-
-4.
-
-For a starting point choose बाट; for company choose सँग.
-
-Name the relationship before choosing its marker.
-
-### How the example works
-
-म is I, घरमा at home, and बस्छु live.
-
-The attached मा identifies the location of living.
-
-With a coming action, बाट can instead identify the starting point.
-
-The same noun can fill different roles when its following marker changes.
-
-### Compare related patterns
-
-Possession with सँग + **छ** presents an object with its possessor; the possessor alone does not determine agreement. को/की/का also depend on the following noun. ले is not a universal subject marker; see topic 11.
-
-Use the allocation table below to find comparison, time and purpose forms in topics 25–28 and elsewhere.
+| Context | Basic combination | Effect of substitution |
+| --- | --- | --- |
+| Temporal start | बिहानदेखि / bihāndekhi | Since morning. बाट also occurs temporally; learn देखि as the basic start marker. |
+| Coming from a place | घरबाट आएँ / gharbāṭa āẽ | Came from home. देखि also marks spatial starting points; there is overlap. |
+| Start-to-end range | घरदेखि विद्यालयसम्म / ghardekhi vidyālayasamma | From home to school. बाट…सम्म is also possible, not categorically wrong. |
+| Transport | बसबाट / basbāṭa | By bus. बसदेखि treats the bus as a starting point, not transport. |
 
 
 ### Core forms
@@ -1656,8 +1047,6 @@ Use the allocation table below to find comparison, time and purpose forms in top
 | विरुद्ध・विपरीत<br>viruddha / viparīt | against, contrary to; context determines use | नियमविरुद्ध / niyamviruddha |
 | मार्फत<br>mārphat | through, via; compare agent vs intermediary in 32 | साथीमार्फत / sāthīmārphat |
 
-**Also check**
-
 मसँग कलम **छ** literally places a pen with me and means I have a pen.
 
 The possessor being I does not change **छ** to छु.
@@ -1668,29 +1057,7 @@ In साथीसँग जान्छु, सँग instead marks company.
 
 Pronouns can change before case markers: म→मलाई/मैले, उहाँ→उहाँलाई/उहाँले, उहाँहरू→उहाँहरूलाई/उहाँहरूले.
 
-Learn the form with its role.
-
-**Also check**
-
-Some pronouns change shape before a postposition.
-
 Distinguish म, मेरो, मलाई and मैले by their roles.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -1720,8 +1087,6 @@ ma nepālbāṭa āẽ
 | नेपालबाट | nepālbāṭa | from Nepal |
 | आएँ | āẽ | came |
 
-**In this sentence**
-
 बाट = source or means
 
 ### Exercise 3
@@ -1737,8 +1102,6 @@ hāmī sāthīharūsãga jānchaũ
 | हामी | hāmī | we |
 | साथीहरूसँग | sāthīharūsãga | with friends |
 | जान्छौं | jānchaũ | go; goes |
-
-**In this sentence**
 
 सँग = company/participant or possession
 
@@ -1756,11 +1119,7 @@ tapāĩ kosãga basnuhuncha?
 | कोसँग | kosãga | with whom |
 | बस्नुहुन्छ | basnuhuncha | live; sit (respectful) |
 
-**In this sentence**
-
 सँग = company/participant or possession / This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 5
 
@@ -1805,8 +1164,6 @@ masãga paisā chaina
 | पैसा | paisā | money |
 | छैन | chaina | is not; are not (existence) |
 
-**In this sentence**
-
 सँग = company/participant or possession
 
 ### Exercise 8
@@ -1823,11 +1180,7 @@ tapāĩsãga kalam cha?
 | कलम | kalam | pen |
 | **छ** | cha | is; are (existence) |
 
-**In this sentence**
-
 सँग = company/participant or possession / This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 9
 
@@ -1842,8 +1195,6 @@ hāmīsãga samay cha
 | हामीसँग | hāmīsãga | with us |
 | समय | samay | time |
 | **छ** | cha | is; are (existence) |
-
-**In this sentence**
 
 सँग = company/participant or possession
 
@@ -1862,8 +1213,6 @@ ma gharbāṭa vidyālayasamma hiṇḍchu
 | विद्यालयसम्म | vidyālayasamma | as far as school (विद्यालय + सम्म) |
 | हिँड्छु | hĩḍchu | walk; walks |
 
-**In this sentence**
-
 बाट = source or means / सम्म = endpoint or deadline
 
 ### Exercise 11
@@ -1880,8 +1229,6 @@ ma bihāndekhi yahā̃ chu
 | बिहानदेखि | bihāndekhi | since morning (बिहान + देखि) |
 | यहाँ | yahā̃ | here |
 | छु | chu | be; exist |
-
-**In this sentence**
 
 देखि = starting point
 
@@ -1900,8 +1247,6 @@ pasal pā̃c bajesamma khulā cha
 | बजेसम्म | bajesamma | until the stated hour (बजे + सम्म) |
 | खुला | khulā | open |
 | **छ** | cha | be; exist |
-
-**In this sentence**
 
 सम्म = endpoint or deadline
 
@@ -1932,8 +1277,6 @@ kitāb jholābhitra cha
 | किताब | kitāb | book |
 | झोलाभित्र | jholābhitra | inside the bag (झोला + भित्र) |
 | **छ** | cha | be; exist |
-
-**In this sentence**
 
 भित्र = inside or within a period
 
@@ -2013,22 +1356,14 @@ Except today, I always come here.
 | यहाँ | yahā̃ | here |
 | आउँछु | āũchu | come; comes |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 2: **छ**: existence and location / 6: Question words and how to ask / 7: Pronouns, familiarity, respect and verb agreement / 11: The ergative ले & the past (did ~) / 25: Comparison & superlative / 26: Conjunctions (and / so / but) / 27: While ~ (-दै) / after ~ (-एपछि) / 28: In order to ~ (-नको लागि) / 32: Passive (be ~ed)
 
 ## 6 Question words and how to ask
 
-**Remember this**
-Replace missing information with a **question word**.
+**Pattern and choice**
+Compare **उहाँ घरमा हुनुहुन्छ → उहाँ कहाँ हुनुहुन्छ?**. A question word need not move to the front. In **कहाँबाट आउनुभयो?**, retain बाट; an answer such as नेपालबाट preserves the source relationship.
 
 ### ① Start with one example
 
@@ -2038,79 +1373,23 @@ yo ke ho?
 
 What is this?
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the answer type
+### 2. को, कसले, कसलाई and कसको
 
-**2**  Replace the missing part
+Who **को** changes to agent **कसले**, recipient/object **कसलाई**, or possessive **कसको/कसकी/कसका**. **कसले लेख्नुभयो?** asks who wrote; **कसलाई लेख्नुभयो?** asks to whom. The marker changes the question's participant.
 
-**3**  Check the final verb
+### 3. कुन versus कस्तो versus कसरी
 
-### Watch out
+**कुन किताब?** selects which book; **कस्तो किताब?** asks its type/quality. **कसरी जानुहुन्छ?** asks how someone goes. कस्तो has forms **कस्ती/कस्ता**; कुन does not have this gender/number alternation.
 
-Distinguish **कुन = which** from **कस्तो = what kind**.
+### 4. Quantity and time questions
 
-### ③ Quick check
+**कति बजे?** asks clock time, **कति दिन?** a number of days, **कहिले?** when. **कहिलेदेखि?/कहिलेसम्म?** ask starting/end points. Use **कति जना?** for people and **कति वटा?** for countable items.
 
-**Check:** are which book and what kind of book the same question?
+### 5. Answering के and किन
 
-**Answer:** no. कुन asks for selection; कस्तो for a quality or kind.
-
-In the table below, identify what each word asks for and where its answer fits.
-
-### When you want to know more
-
-### What can you say?
-
-A question asks someone to supply missing information.
-
-Question words identify the type of answer: a person, place, time and so on.
-
-Before memorizing a whole question, decide what kind of information its answer must contain.
-
-### Look at the pattern
-
-Replace a statement’s missing part with a question word: को for a person, के for a thing, कहाँ for place and कहिले for time. कुन selects which item; कस्तो asks what kind.
-
-Case-marked forms include कसलाई and कसको.
-
-A question word does not remove the need for correct person, respect and tense on the verb.
-
-### Check the construction
-
-1.
-
-Imagine the answer pattern: this is a book.
-
-2.
-
-Replace the unknown identity with के.
-
-3.
-
-Keep यो, this, and identity **हो**, giving यो के हो?
-
-4.
-
-To answer, put the known identity back where के was.
-
-Practice questions and answers as a pair.
-
-### How the example works
-
-यो means this, के what, and **हो** is the identity ending: what is this? के occupies the missing identity.
-
-Asking where it is instead needs a location question with कहाँ and the **छ** set.
-
-Choose both the question word and the kind of sentence it belongs to.
-
-### Compare related patterns
-
-Initial के can also mark a yes/no question; that role differs from what. कति जना counts people, कति वटा objects, कति बजे asks clock time, and कति पटक counts occasions.
-
-Numerical questions still need the correct unit.
-
-Nepali does not require moving every question word to the front as English often does.
+**के खानुहुन्छ?** requests a food; **किन खानुहुन्न?** requests a reason. Initial के in **के तपाईं खानुहुन्छ?** instead introduces a yes/no question. Question formation retains the appropriate respectful verb.
 
 
 ### Core words and combinations with postpositions and counters
@@ -2150,8 +1429,6 @@ Nepali does not require moving every question word to the front as English often
 | कुनचाहिँ・कुन-कुन<br>kuncāhĩ / kun-kun | which one in particular, which ones |
 
 कसलाई, कसले and कसको are case forms related to who; कोसँग means with whom. कति जना counts people, कति वटा objects, कति बजे asks clock time, and कति पटक counts occasions. कस्तो asks for a quality and कुन a selection; they are not interchangeable.
-
-### Practice questions with their answers
 
 ### को
 
@@ -2370,35 +1647,13 @@ Nepali does not require moving every question word to the front as English often
 | Question | तपाईं कुनचाहिँ लिनुहुन्छ?<br>tapāĩ kuncāhĩ linuhuncha? | Which one will you take? |
 | Answer | म यो लिन्छु।<br>ma yo linchu | I will take this one. |
 
-**Also check**
-
 Compare कति बज्यो? (what time now) with कति बजे जानुहुन्छ? (at what time will you go).
 
 Age can be asked as तपाईंको उमेर कति वर्ष भयो?
 
 Forms such as भयो/आउनुभयो are past forms; see topic 11.
 
-Learn these natural constructions rather than translating word by word.
-
-**Also check**
-
 At the beginning of a sentence, के can mark a yes/no question rather than ask what an object is.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -2413,12 +1668,6 @@ yo ke ho?
 | यो | yo | this |
 | के | ke | what |
 | **हो** | ho | am; is; are |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 2
 
@@ -2435,12 +1684,6 @@ tyo kasko kitāb ho?
 | किताब | kitāb | book |
 | **हो** | ho | am; is; are |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 3
 
 Where do you live?
@@ -2454,12 +1697,6 @@ tapāĩ kahā̃ basnuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | कहाँ | kahā̃ | where |
 | बस्नुहुन्छ | basnuhuncha | live; sit (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 4
 
@@ -2475,12 +1712,6 @@ yo kati parcha?
 | कति | kati | how much |
 | पर्छ | parcha | costs |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 5
 
 Who is here?
@@ -2494,12 +1725,6 @@ yahā̃ ko cha?
 | यहाँ | yahā̃ | here |
 | को | ko | who |
 | **छ** | cha | am; is; are |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 6
 
@@ -2515,12 +1740,6 @@ kasle khānā pakāyo?
 | खाना | khānā | food; meal |
 | पकायो | pakāyo | cooked |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 7
 
 What do you need?
@@ -2534,12 +1753,6 @@ tapāĩlāī ke cāhincha?
 | तपाईंलाई | tapāĩlāī | to you (respectful) |
 | के | ke | what |
 | चाहिन्छ | cāhincha | is needed |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 8
 
@@ -2555,12 +1768,6 @@ tapāĩ kahile āunuhuncha?
 | कहिले | kahile | when |
 | आउनुहुन्छ | āunuhuncha | come/comes (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 9
 
 How will you go?
@@ -2574,12 +1781,6 @@ tapāĩ kasarī jānuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | कसरी | kasarī | how |
 | जानुहुन्छ | jānuhuncha | go/goes (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 10
 
@@ -2596,12 +1797,6 @@ tapāĩ kun kitāb paḍhnuhuncha?
 | किताब | kitāb | book |
 | पढ्नुहुन्छ | paḍhnuhuncha | read/reads (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 11
 
 What is this food like?
@@ -2617,12 +1812,6 @@ yo khānā kasto cha?
 | कस्तो | kasto | what kind; what like |
 | **छ** | cha | be; exist |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 12
 
 How many people are coming?
@@ -2636,12 +1825,6 @@ kati janā āunuhuncha?
 | कति | kati | how much; how |
 | जना | janā | counter for people |
 | आउनुहुन्छ | āunuhuncha | come/comes (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 13
 
@@ -2659,11 +1842,7 @@ tapāĩsãga kati vaṭā kalam chan?
 | कलम | kalam | pen |
 | छन् | chan | be; exist |
 
-**In this sentence**
-
 सँग = company/participant or possession / This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 14
 
@@ -2678,12 +1857,6 @@ ahile kati bajyo?
 | अहिले | ahile | now |
 | कति | kati | how much; how |
 | बज्यो | bajyo | the stated hour has struck; used to tell time |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 15
 
@@ -2700,12 +1873,6 @@ tapāĩ kati baje jānuhuncha?
 | बजे | baje | at ... o'clock |
 | जानुहुन्छ | jānuhuncha | go/goes (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 16
 
 Where did you come from?
@@ -2720,11 +1887,7 @@ tapāĩ kahā̃bāṭa āunubhayo?
 | कहाँबाट | kahā̃bāṭa | from where |
 | आउनुभयो | āunubhayo | came (respectful) |
 
-**In this sentence**
-
-बाट = source or means / This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
+This is a question.
 
 ### Exercise 17
 
@@ -2740,11 +1903,7 @@ tapāĩ kosãga basnuhuncha?
 | कोसँग | kosãga | with whom |
 | बस्नुहुन्छ | basnuhuncha | live/lives (respectful) |
 
-**In this sentence**
-
 सँग = company/participant or possession / This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 18
 
@@ -2759,12 +1918,6 @@ tapāĩ kina parkhanuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | किन | kina | why |
 | पर्खनुहुन्छ | parkhanuhuncha | wait (respectful present) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 19
 
@@ -2781,12 +1934,6 @@ tapāĩ kati din basnuhuncha?
 | दिन | din | day |
 | बस्नुहुन्छ | basnuhuncha | live/lives (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 20
 
 Who will you call?
@@ -2802,12 +1949,6 @@ tapāĩ kaslāī phon garnuhuncha?
 | फोन | phon | phone call |
 | गर्नुहुन्छ | garnuhuncha | do/does (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 21
 
 Which way are you going?
@@ -2822,28 +1963,14 @@ tapāĩ katā jānuhuncha?
 | कता | katā | which way; in which direction |
 | जानुहुन्छ | jānuhuncha | go/goes (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 1: **हो**: A is B (identity / equation) / 2: छ: existence and location / 5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement / 11: The ergative ले & the past (did ~) / 23: Adjective agreement & position / 27: While ~ (-दै) / after ~ (-एपछि) / 28: In order to ~ (-नको लागि)
 
 ## 7 Pronouns, familiarity, respect and verb agreement
 
-**Remember this**
-Learn **pronoun and verb together**.
+**Pattern and choice**
+Use **म, हामी, तपाईं, तपाईंहरू, उहाँ, उहाँहरू** as the basic set. Respectful तपाईं/उहाँ take **हुनुहुन्छ/गर्नुहुन्छ**; adding plural हरू does not change these honorific endings.
 
 ### ① Start with one example
 
@@ -2853,85 +1980,23 @@ ma kām garchu
 
 I work.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the person
+### 2. उ/ऊ versus उनी
 
-**2**  Choose number and respect
+**उ/ऊ** is a familiar singular third-person pronoun, with low-grade **छ/गर्छ** forms. **उनी** can refer to one person with a more considerate grade, taking **छन्/गर्छन्**. उनी alone does not guarantee a plural referent.
 
-**3**  Match the verb
+### 3. उनीहरू versus उहाँहरू
 
-### Watch out
+**उनीहरू** is plural and commonly takes **छन्/गर्छन्**. Respectful plural **उहाँहरू** takes **हुनुहुन्छ/गर्नुहुन्छ**. Translation as they does not encode which Nepali respect grade is intended.
 
-Change the **verb too**, not just the pronoun.
+### 4. तँ, तिमी and तपाईं
 
-### ③ Quick check
+Compare **तँ गर्छस् / तिमी गर्छौ / तपाईं गर्नुहुन्छ**. तँ is restricted to very close relationships and can offend; तिमी is familiar. Plural **तिमीहरू** still takes गर्छौ, not third-person गर्छन्.
 
-**Check:** should every she automatically become उनी?
+### 5. Pronouns with case markers
 
-**Answer:** no.
-
-First consider the relationship and respect.
-
-The course defaults to उहाँ for either gender.
-
-Compare उ/उनी and familiar second-person forms here; ordinary topics use the basic six groups.
-
-### When you want to know more
-
-### What can you say?
-
-Pronouns stand in for names: I, you, he/she and they.
-
-Nepali pronouns show familiarity and respect as well as person and number.
-
-The basic set in this course is म, हामी, तपाईं, तपाईंहरू, उहाँ and उहाँहरू.
-
-This lesson explains other forms and the relationships they express.
-
-### Look at the pattern
-
-Choose a pronoun and a matching verb together. उ and उनी are not simply male versus female pronouns; they differ in social register.
-
-Respectful उहाँ can refer to either gender.
-
-Add हरू for respectful plural उहाँहरू and retain respectful verb agreement.
-
-### Check the construction
-
-1.
-
-Choose म for yourself or हामी for your group.
-
-2.
-
-Start with respectful तपाईं/तपाईंहरू for addressees and उहाँ/उहाँहरू for third persons.
-
-3.
-
-Match the verb: गर्छु with I, गर्नुहुन्छ with a respectful person.
-
-4.
-
-Learn familiar pronouns together with their different verb forms.
-
-### How the example works
-
-म is I, काम work, and गर्छु do: I work. काम गर्नु is the combination do work.
-
-Do not use गर्नुहुन्छ simply to make your own statement sound polite.
-
-Agreement follows the subject’s person and register.
-
-Compare the endings with the same action below.
-
-### Compare related patterns
-
-तँ is very familiar/low-register and can be offensive; तिमी is familiar but not simply for inferiors. उनी is not female-only; explicitly feminine verb forms are a separate issue.
-
-Case markers may change a pronoun’s shape.
-
-Use the table to connect its basic, object, possessive and agent forms.
+Learn **म→मैले/मलाई/मेरो**, **उ/ऊ→उसले/उसलाई/उसको**, **उनी→उनले/उनलाई/उनको**, and respectful **उहाँले/उहाँलाई/उहाँको**. Case-marked pronouns are not always formed by attaching a marker to the citation form unchanged.
 
 
 ### उ, उनी and उहाँ distinguish respect, not male versus female
@@ -2957,33 +2022,11 @@ This does not make उनी a female-only pronoun. उनीहरू refers to
 | म / ma | मलाई / malāī | मेरो / mero; मैले / maile |
 | हामी / hāmī | हामीलाई / hāmīlāī | हाम्रो / hāmro; हामीले / hāmīle |
 
-**Also check**
-
 उ and ऊ here represent spellings of the same low-respect third-person pronoun. आफू refers back as self; आफ्नो means own.
-
-Do not mechanically assign different pronouns to English he and she.
-
-**Also check**
 
 तँ is appropriate only in particular relationships.
 
 When unsure, use तपाईं and match it with a respectful verb form.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -3140,12 +2183,6 @@ timī kahā̃ chau?
 | कहाँ | kahā̃ | where |
 | छौ | chau | is; are (existence) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 12
 
 Where are you?
@@ -3159,12 +2196,6 @@ tapāĩ kahā̃ hunuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | कहाँ | kahā̃ | where |
 | हुनुहुन्छ | hunuhuncha | is; are (existence) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 13
 
@@ -3194,12 +2225,6 @@ timīharū tayār chainau?
 | तिमीहरू | timīharū | you (plural) |
 | तयार | tayār | ready |
 | छैनौ | chainau | am not; is not; are not |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 15
 
@@ -3243,22 +2268,14 @@ uhā̃ yahā̃ hunuhuncha
 | यहाँ | yahā̃ | here |
 | हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 1: **हो**: A is B (identity / equation) / 2: छ: existence and location / 5: Postpositions: place, participants and relationships / 8: Action verbs: present (do ~)
 
 ## 8 Action verbs: present (do ~)
 
-**Remember this**
-Use the **action present** for routines.
+**Pattern and choice**
+Compare **पढ्नु→पढ्छु / गर्नु→गर्छु / खानु→खान्छु**, plus **जानु→जान्छु / आउनु→आउँछु**. Form the present from the appropriate stem; sound changes mean that mechanically adding छ to every dictionary form is insufficient.
 
 ### ① Start with one example
 
@@ -3268,81 +2285,23 @@ ma kām garchu
 
 I work.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the actor
+### 2. I, we and respectful forms
 
-**2**  Add action details
+Compare **म पढ्छु / हामी पढ्छौं / तपाईं पढ्नुहुन्छ / उहाँहरू पढ्नुहुन्छ**. Respectful forms contain **-नुहुन्छ**; do not append हुन्छ to a complete पढ्छु.
 
-**3**  Finish with the matching present
+### 3. Objects and लाई
 
-### Watch out
+**म किताब पढ्छु** has basic subject–object–verb order. An indefinite thing need not take लाई; a particular person as object can, as in **उहाँलाई भेट्छु**.
 
-A **routine** differs from an action **in progress now**.
+### 4. Habitual versus progressive
 
-### ③ Quick check
+**म बिहान पढ्छु** describes a morning routine; **म अहिले पढ्दै छु** an action in progress. पढ्छु is not limited to right now; frequent combinations include **सधैं, हरेक दिन, प्रायः**.
 
-**Check:** are I work every day and I am working now the same?
+### 5. Present forms for plans
 
-**Answer:** the first is a routine; the second an ongoing action.
-
-Decide the intended meaning before choosing this present pattern or the progressive in topic 10.
-
-### When you want to know more
-
-### What can you say?
-
-Describe everyday actions and habits such as getting up or reading.
-
-A verb expresses an action or state.
-
-A present form does not automatically mean an action is in progress at this moment; topic 10 teaches that distinction.
-
-### Look at the pattern
-
-The usual order is subject + object/time/place + verb.
-
-Dictionary forms include गर्नु and पढ्नु.
-
-Conjugation gives a sentence form such as गर्छु or पढ्छु for I.
-
-Learn the appropriate stem and ending; do not assume one identical letter-removal rule works for every verb.
-
-### Check the construction
-
-1.
-
-Choose the subject, for example म.
-
-2.
-
-Choose an action: काम गर्नु, do work.
-
-3.
-
-Conjugate it with I: काम गर्छु.
-
-4.
-
-Add a time or frequency expression before the verb to explain when or how regularly it happens.
-
-### How the example works
-
-म is I, काम work, and गर्छु do.
-
-The noun काम supplies the activity; गर्नु is the part being conjugated.
-
-With उहाँ use गर्नुहुन्छ.
-
-If the action changes to read while the subject stays I, choose a form of पढ्नु instead.
-
-### Compare related patterns
-
-Action negatives are taught in topic 9; do not attach identity होइन or existence छैन to every action verb.
-
-Questions retain appropriate person and respect and may use के or a question word.
-
-A present form with भोलि can also state a future plan; see topic 13.
+**भोलि म जान्छु** describes a future plan using a present form plus भोलि. Dedicated future जानेछु is another option. Compare negative **जान्छु→जाँदिनँ** and question **कहिले जानुहुन्छ?**.
 
 
 ### A reference table for comparing personal forms
@@ -3354,37 +2313,7 @@ A present form with भोलि can also state a future plan; see topic 13.
 | you | तपाईं काम गर्नुहुन्छ।<br>tapāĩ kām garnuhuncha | You work. |
 | you plural | तपाईंहरू काम गर्नुहुन्छ।<br>tapāĩharū kām garnuhuncha | You work. |
 | he/she | उहाँ काम गर्नुहुन्छ।<br>uhā̃ kām garnuhuncha | She works. |
-| they | उहाँहरू काम गर्छन्।<br>uhā̃harū kām garchan | They work. |
-
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
-
-**Also check**
-
-Respectful forms follow a different pattern from ordinary endings.
-
-Remember to change the ending when you change the subject.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
+| they | उहाँहरू काम गर्नुहुन्छ।<br>uhā̃harū kām garnuhuncha | They work. |
 
 ### Exercise 1
 
@@ -3416,12 +2345,6 @@ tapāĩ harek din vyāyām garnuhuncha?
 | व्यायाम | vyāyām | exercise |
 | गर्नुहुन्छ | garnuhuncha | do; does (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 3
 
 I get up at seven in the morning.
@@ -3451,12 +2374,6 @@ tapāĩ nepālī bolnuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | नेपाली | nepālī | Nepali (language) |
 | बोल्नुहुन्छ | bolnuhuncha | speak; speaks (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 5
 
@@ -3532,28 +2449,10 @@ tapāĩharū kahā̃ kām garnuhuncha?
 | काम | kām | work |
 | गर्नुहुन्छ | garnuhuncha | do/does (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement / 9: Present negative (don't ~)
-
 ## 9 Present negative (don't ~)
 
-**Remember this**
-For do not, use a **negative action verb**.
+**Pattern and choice**
+Compare **गर्छु→गर्दिनँ / पढ्छु→पढ्दिनँ**, and with we **गर्दैनौं/पढ्दैनौं**. Habitual action negatives are not made by appending होइन or छैन to a complete affirmative verb.
 
 ### ① Start with one example
 
@@ -3563,81 +2462,23 @@ ma āja kām gardinã
 
 I do not work today.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Identify the action
+### 2. Negatives with nasalization
 
-**2**  Check the subject
+Learn the nasalized shapes **खान्छु→खाँदिनँ / जान्छु→जाँदिनँ / आउँछु→आउँदिनँ**. Final nasalization in **गर्दिनँ** belongs to the first-person form, distinct from ordinary third-person गर्दैन.
 
-**3**  Choose its negative form
+### 3. Respectful -नुहुन्न
 
-### Watch out
+Use **तपाईं गर्नुहुन्न / उहाँ पढ्नुहुन्न / उहाँहरू जानुहुन्न**. Respectful affirmative -नुहुन्छ contrasts with negative **-नुहुन्न**. Translating उहाँ as she does not license a lower-grade feminine verb.
 
-Do not add **छैन** to every action to mean do not.
+### 4. Present versus past negative
 
-### ③ Quick check
+**म जाँदिनँ** means I do not/will not go; **म गएनँ** means I did not go. Negative past forms have variants; use the गरेनँ-series forms taught in the tables here. A time word alone does not convert one tense to another.
 
-**Check:** can do not and did not be distinguished just by changing the time word?
+### 5. कहिल्यै with negation
 
-**Answer:** no.
-
-The verb form changes too.
-
-Identify when the action fails to happen and learn present and past negatives separately.
-
-### When you want to know more
-
-### What can you say?
-
-Say that an action does not happen: not working today or not eating meat.
-
-This is action negation, not identity or absence.
-
-Identify what is being denied before choosing the negative form.
-
-### Look at the pattern
-
-Use subject + details + a negative action verb.
-
-Compare गर्छु with गर्दिनँ and पढ्छु with पढ्दिनँ.
-
-Respectful गर्नुहुन्छ becomes गर्नुहुन्न.
-
-The nasal sign in first-person negatives is meaningful pronunciation, not decoration.
-
-### Check the construction
-
-1.
-
-Identify the affirmative action being denied.
-
-2.
-
-Check the subject.
-
-3.
-
-Choose its negative form: काम गर्छु becomes काम गर्दिनँ with I.
-
-4.
-
-Add today, at night or another setting to distinguish a particular decision from a regular habit.
-
-### How the example works
-
-म is I, आज today, काम work and गर्दिनँ do not do.
-
-Today limits the statement; it does not claim never to work.
-
-The basic word order remains, while the final verb carries the negative and personal agreement.
-
-### Compare related patterns
-
-A negative question can check whether someone does not do something; it is not automatically an invitation.
-
-Topic 18 teaches invitations.
-
-Did not do is past negative and requires the forms in topic 12, not just this present negative.
+**म कहिल्यै चुरोट खाँदिनँ** gives a never statement. कहिल्यै combines with a negative for never and can mean ever in a question; the word alone does not supply the entire negative meaning.
 
 
 ### A reference table for comparing personal forms
@@ -3648,38 +2489,10 @@ Did not do is past negative and requires the forms in topic 12, not just this pr
 | we | हामी आज काम गर्दैनौं।<br>hāmī āja kām gardainaũ | We do not work today. |
 | you | तपाईं आज काम गर्नुहुन्न।<br>tapāĩ āja kām garnuhunna | You do not work today. |
 | you plural | तपाईंहरू आज काम गर्नुहुन्न।<br>tapāĩharū āja kām garnuhunna | You do not work today. |
-| he/she | उहाँ आज काम गर्दिनन्।<br>uhā̃ āja kām gardinan | She does not work today. |
-| they | उहाँहरू आज काम गर्दैनन्।<br>uhā̃harū āja kām gardainan | They do not work today. |
-
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
-
-**Also check**
+| he/she | उहाँ आज काम गर्नुहुन्न।<br>uhā̃ āja kām garnuhunna | She does not work today. |
+| they | उहाँहरू आज काम गर्नुहुन्न।<br>uhā̃harū āja kām garnuhunna | They do not work today. |
 
 An action negative is different from छैन for nonexistence.
-
-Check the respectful negative forms as well.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -3710,12 +2523,6 @@ tapāĩ rāti kām garnuhunna?
 | राति | rāti | at night |
 | काम | kām | work |
 | गर्नुहुन्न | garnuhunna | do not; does not (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -3790,22 +2597,10 @@ tapāĩharū āitabār kām garnuhunna
 | काम | kām | work |
 | गर्नुहुन्न | garnuhunna | do not; does not (respectful) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~)
-
 ## 10 Present progressive (~ing)
 
-**Remember this**
-In progress: **-दै + छ auxiliary**.
+**Pattern and choice**
+Compare **पढ्दै छु / गर्दै छु / खाँदै छु / जाँदै छु**. A progressive combines the action form with a **छ-family auxiliary**. Spelling and nasalization depend on the stem; learn actual shapes such as पढ्दै and खाँदै.
 
 ### ① Start with one example
 
@@ -3815,77 +2610,23 @@ ma ahile kām gardaichu
 
 I am working now.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the ongoing action
+### 2. Agreement on the auxiliary
 
-**2**  Use its -दै form
+**म पढ्दै छु / हामी पढ्दै छौं / उहाँ पढ्दै हुनुहुन्छ** share पढ्दै. The final auxiliary marks person/respect. Do not invent a progressive by mixing pieces of a finite present form.
 
-**3**  Add the matching auxiliary
+### 3. Comparing -रहेको
 
-### Watch out
+Both **गर्दै छु** and **गरिरहेको छु** can describe ongoing action. The latter combines **गरि + रहेको + छु**. Forms such as रहेकी/रहेका occur according to agreement; रहेको is not a universally invariant piece.
 
-Separate the action form from the final **auxiliary**.
+### 4. Negative and past progressive
 
-### ③ Quick check
+**पढ्दै छैनँ** denies reading in progress; **पढ्दै थिएँ** locates it in the past. The auxiliary carries polarity/time while पढ्दै remains. **पढ्दिनँ** is instead a habitual/intentional negative.
 
-**Check:** does छु in गर्दै छु only mean being located somewhere?
+### 5. Progressive noun modifiers
 
-**Answer:** here it is an auxiliary supporting the progressive action.
-
-The same set has different roles: location in topic 2, progressive support here.
-
-### When you want to know more
-
-### What can you say?
-
-A progressive presents an action in progress at a time, such as reading now.
-
-Contrast it with the routine present in topic 8.
-
-Do not choose it merely because a translation contains a continuing-looking expression; living somewhere can use an ordinary present form.
-
-### Look at the pattern
-
-Use an action form in -दै/-्दै plus a **छ**-family auxiliary. गर्दै indicates doing in progress; पढ्दै reading in progress.
-
-The auxiliary matches the person: गर्दै छु with I, गर्दै हुनुहुन्छ respectfully.
-
-Whether written together or apart, identify the action part and auxiliary.
-
-### Check the construction
-
-1.
-
-Choose who is doing what.
-
-2.
-
-Form the progressive action: गर्नु gives गर्दै.
-
-3.
-
-Add the matching **छ** auxiliary; म takes छु.
-
-4.
-
-Add अहिले, now, when you want to make the current setting explicit.
-
-### How the example works
-
-म is I, अहिले now, काम work, and गर्दैछु am doing.
-
-Split the ending into गर्दै + छु.
-
-The action phrase supplies what is happening; छु supplies the auxiliary agreeing with I.
-
-Recognize both jobs rather than memorizing one opaque ending.
-
-### Compare related patterns
-
-Negate the final auxiliary with the छैन set; do not append होइन to the action.
-
-Another progressive uses a -रहेको form plus an auxiliary, as in गरिरहेको छु. जाँदै छु may describe movement in progress or an imminent plan, so check time expressions and context.
+**पढिरहेको मान्छे** is a person reading; **मान्छे पढिरहेको छ** is a complete clause. Do not retain the finite छ inside the modifier before मान्छे. See topic 29 for noun modification.
 
 
 ### A reference table for comparing personal forms
@@ -3896,38 +2637,10 @@ Another progressive uses a -रहेको form plus an auxiliary, as in गर
 | we | हामी अहिले काम गर्दैछौं।<br>hāmī ahile kām gardaichaũ | We are working now. |
 | you | तपाईं अहिले काम गर्दैहुनुहुन्छ।<br>tapāĩ ahile kām gardaihunuhuncha | You are working now. |
 | you plural | तपाईंहरू अहिले काम गर्दैहुनुहुन्छ।<br>tapāĩharū ahile kām gardaihunuhuncha | You are working now. |
-| he/she | उहाँ अहिले काम गर्दैछिन्।<br>uhā̃ ahile kām gardaichin | She is working now. |
-| they | उहाँहरू अहिले काम गर्दैछन्।<br>uhā̃harū ahile kām gardaichan | They are working now. |
-
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
-
-**Also check**
-
-Distinguish an ongoing action from a state left by a completed action.
+| he/she | उहाँ अहिले काम गर्दैहुनुहुन्छ।<br>uhā̃ ahile kām gardaihunuhuncha | She is working now. |
+| they | उहाँहरू अहिले काम गर्दैहुनुहुन्छ।<br>uhā̃harū ahile kām gardaihunuhuncha | They are working now. |
 
 Do not add ले merely because the action verb is transitive.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -3957,12 +2670,6 @@ tapāĩ vyāyām gardaihunuhuncha?
 | तपाईं | tapāĩ | you (respectful) |
 | व्यायाम | vyāyām | exercise |
 | गर्दैहुनुहुन्छ | gardaihunuhuncha | am; is; are doing (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -4023,12 +2730,6 @@ tapāĩharū ke paḍhdai hunuhuncha?
 | पढ्दै | paḍhdai | reading (progressive form of पढ्नु) |
 | हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 7
 
 They are waiting for the bus.
@@ -4044,22 +2745,14 @@ uhā̃harū bas parkhãdai hunuhuncha
 | पर्खँदै | parkhãdai | waiting (progressive form of पर्खनु) |
 | हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 2: **छ**: existence and location / 7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~)
 
 ## 11 The ergative ले & the past (did ~)
 
-**Remember this**
-For past events, find **actor, object and action**.
+**Pattern and choice**
+Compare **म पढ्छु→मैले पढेँ**. Completed transitive clauses mark the agent with ले; म becomes **मैले**. Other forms include **तपाईंले, उहाँले, हामीले**. ले does not mark the object in this construction.
 
 ### ① Start with one example
 
@@ -4069,85 +2762,23 @@ maile hijo kām garẽ
 
 I worked yesterday.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose a completed event
+### 2. Not every past needs ले
 
-**2**  Check agent marking with ले
+**म गएँ / उहाँ आउनुभयो** use intransitive go/come. Contrast the object-taking **मैले किताब पढेँ**. Past time by itself does not require changing every म to मैले.
 
-**3**  Choose the appropriate past form
+### 3. Past stems and respect
 
-### Watch out
+Learn **गर्नु→गरेँ / जानु→गएँ / आउनु→आएँ** and respectful **गर्नुभयो/जानुभयो/आउनुभयो**. Both उहाँ and उहाँहरू retain the honorific form rather than switching to गरिन् or गरे on the basis of translation.
 
-Not every past sentence needs **ले**.
+### 4. Agreement and construction
 
-### ③ Quick check
+A ले-marked agent does not force one invariant ending. Compare first-person **मैले गरेँ** and respectful **उहाँले गर्नुभयो**. Other third-person constructions can show agreement related to the object. Use the six basic person-group examples as the starting pattern.
 
-**Check:** does every past sentence require ले?
+### 5. Past थियो versus भयो
 
-**Answer:** no.
-
-Look at the verb and clause structure, not just yesterday.
-
-Identify actor, object and action before choosing the marking.
-
-### When you want to know more
-
-### What can you say?
-
-Describe completed actions and distinguish their actor from the object affected.
-
-Read, write and eat commonly take objects and are called transitive verbs.
-
-Go and come do not follow that same object pattern.
-
-Not every past subject takes the same marker.
-
-### Look at the pattern
-
-A useful pattern is agent with ले + object/time + past verb.
-
-The agent is the doer.
-
-Learn म→मैले, तपाईं→तपाईंले and उहाँ→उहाँले in completed transitive clauses.
-
-The term ergative names this marking.
-
-Agreement can also involve respect and the object; it is not a simple translation of an English subject marker.
-
-### Check the construction
-
-1.
-
-Establish a completed past event.
-
-2.
-
-Identify actor and object and decide whether this is a ले pattern.
-
-3.
-
-Use मैले for I in this work-doing example, हिजो for yesterday, and काम for work.
-
-4.
-
-Finish with past गरेँ.
-
-### How the example works
-
-मैले marks I as agent, हिजो yesterday, काम work and गरेँ did.
-
-Compared with म काम गर्छु, both the pronoun form and verb change.
-
-It is not enough to add yesterday.
-
-Compare object-taking actions and the occurrence of ले below.
-
-### Compare related patterns
-
-Do not use मैले merely because a going sentence is past.
-
-Topic 12 covers past negatives, while past existence/location uses the थियो set. भयो can be a past occurrence/change form of हुनु; it is not a replacement for every other verb’s past.
+**म घरमा थिएँ** gives past location; **म घर गएँ** a completed movement. **काम थियो** says there was work; **काम भयो** presents accomplishment/occurrence. Similar translated past tenses do not make these predicates interchangeable.
 
 
 ### A reference table for comparing personal forms
@@ -4158,16 +2789,8 @@ Topic 12 covers past negatives, while past existence/location uses the थिय
 | we | हामीले हिजो काम गर्यौं।<br>hāmīle hijo kām garyaũ | We worked yesterday. |
 | you | तपाईंले हिजो काम गर्नुभयो।<br>tapāĩle hijo kām garnubhayo | You worked yesterday. |
 | you plural | तपाईंहरूले हिजो काम गर्नुभयो।<br>tapāĩharūle hijo kām garnubhayo | You worked yesterday. |
-| he/she | उहाँले हिजो काम गरिन्।<br>uhā̃le hijo kām garin | She worked yesterday. |
-| they | उहाँहरूले हिजो काम गरे।<br>uhā̃harūle hijo kām gare | They worked yesterday. |
-
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
+| he/she | उहाँले हिजो काम गर्नुभयो।<br>uhā̃le hijo kām garnubhayo | She worked yesterday. |
+| they | उहाँहरूले हिजो काम गर्नुभयो।<br>uhā̃harūle hijo kām garnubhayo | They worked yesterday. |
 
 ### Past existence uses the थियो family
 
@@ -4179,28 +2802,6 @@ See appendices A/B for fuller forms and topic 7 for respect.
 | you plural | तपाईंहरू अस्ति बजारमा हुनुहुन्थ्यो।<br>tapāĩharū asti bajārmā hunuhunthyo | You were at the market the day before yesterday. |
 | he/she | उहाँ अस्ति बजारमा हुनुहुन्थ्यो।<br>uhā̃ asti bajārmā hunuhunthyo | She was at the market the day before yesterday. |
 | they | उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो।<br>uhā̃harū asti bajārmā hunuhunthyo | They were at the market the day before yesterday. |
-
-**Also check**
-
-Do not mark an intransitive subject like the agent of a transitive action.
-
-Some verbs also change their stem in the past.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -4231,12 +2832,6 @@ tapāĩle hijo vyāyām garnubhayo?
 | हिजो | hijo | yesterday |
 | व्यायाम | vyāyām | exercise |
 | गर्नुभयो | garnubhayo | did (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -4323,28 +2918,10 @@ tapāĩharūle ke kinnubhayo?
 | के | ke | what; question marker |
 | किन्नुभयो | kinnubhayo | bought (respectful past of किन्नु) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~)
-
 ## 12 Past negative (didn't ~)
 
-**Remember this**
-Did not: choose a **past negative**.
+**Pattern and choice**
+**मैले काम गरेनँ** denies a past action, unlike present **काम गर्दिनँ**. Compare **गएँ→गएनँ / आएँ→आएनँ**; past negatives use their respective past stems.
 
 ### ① Start with one example
 
@@ -4354,77 +2931,23 @@ maile hijo kām garinã
 
 I did not work yesterday.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the past action denied
+### 2. Respectful past -नुभएन
 
-**2**  Check the subject/agent
+Compare **गर्नुभयो→गर्नुभएन / जानुभयो→जानुभएन** with respectful subjects. **गर्नुहुन्न** is present negative; **गर्नुभएन** past negative. The हुन्न/भएन contrast changes the time reference.
 
-**3**  Finish with a past negative
+### 3. ले in a denied event
 
-### Watch out
+A denied transitive event can retain **मैले**, as in **मैले किताब पढिनँ/पढेनँ**. Intransitive **म गएनँ** instead has म. Negation does not automatically remove every agent marker.
 
-**Do not** and **did not** need different verb forms.
+### 4. थिएन versus गरेन
 
-### ③ Quick check
+**पानी थिएन** denies past existence; **पानी पिएनँ** denies drinking. Past absence with I uses **म थिइनँ**; a respectful past-state negative can use **हुनुहुन्थेन**. These are not action negatives.
 
-**Check:** is a present negative plus yesterday enough?
+### 5. Not yet versus did not
 
-**Answer:** no.
-
-Choose the matching past negative verb.
-
-Separate present action negatives, past action negatives and absence by what they deny.
-
-### When you want to know more
-
-### What can you say?
-
-Describe an action that did not happen in the past.
-
-Past means before the time of speaking.
-
-Unlike the present negatives in topic 9, the verb must express both past time and negation.
-
-### Look at the pattern
-
-Use subject/agent + object/time + a past negative verb.
-
-Compare गरेँ with गरिनँ for I, and respectful गर्नुभयो with गर्नुभएन.
-
-In completed transitive patterns, retain appropriate agent marking such as मैले or उहाँले even when the action is denied.
-
-### Check the construction
-
-1.
-
-Start from the affirmative past pattern.
-
-2.
-
-Identify the verb and its subject/agent.
-
-3.
-
-Keep मैले and काम in this example but replace गरेँ with गरिनँ.
-
-4.
-
-Add हिजो, yesterday, to locate the event being denied.
-
-### How the example works
-
-मैले marks I as agent, हिजो yesterday, काम work and गरिनँ did not do.
-
-Compare it with present गर्दिनँ.
-
-Learn the whole clause, including the subject form, rather than relying on similar-looking negative endings.
-
-### Compare related patterns
-
-Past absence/state negatives use the थिएन family; they are not mechanically appended to read or work.
-
-Did not need to do something describes lack of necessity, not merely a denied event; compare the obligation patterns in topic 21.
+**अझै गरेको छैन** expresses not yet completed, while **हिजो गरेनँ** denies yesterday's event. A present-perfect negative uses **-एको + छैन-family auxiliary**; adding अझै alone does not change a past negative into that construction.
 
 
 ### A reference table for comparing personal forms
@@ -4435,16 +2958,8 @@ Did not need to do something describes lack of necessity, not merely a denied ev
 | we | हामीले हिजो काम गरेनौं।<br>hāmīle hijo kām garenaũ | We did not work yesterday. |
 | you | तपाईंले हिजो काम गर्नुभएन।<br>tapāĩle hijo kām garnubhaena | You did not work yesterday. |
 | you plural | तपाईंहरूले हिजो काम गर्नुभएन।<br>tapāĩharūle hijo kām garnubhaena | You did not work yesterday. |
-| he/she | उहाँले हिजो काम गरिनन्।<br>uhā̃le hijo kām garinan | She did not work yesterday. |
-| they | उहाँहरूले हिजो काम गरेनन्।<br>uhā̃harūle hijo kām garenan | They did not work yesterday. |
-
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
+| he/she | उहाँले हिजो काम गर्नुभएन।<br>uhā̃le hijo kām garnubhaena | She did not work yesterday. |
+| they | उहाँहरूले हिजो काम गर्नुभएन।<br>uhā̃harūle hijo kām garnubhaena | They did not work yesterday. |
 
 ### Past existence uses the थियो family
 
@@ -4457,27 +2972,7 @@ See appendices A/B for fuller forms and topic 7 for respect.
 | he/she | उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।<br>uhā̃ asti bajārmā hunuhunnathyo | She was not at the market the day before yesterday. |
 | they | उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो।<br>uhā̃harū asti bajārmā hunuhunnathyo | They were not at the market the day before yesterday. |
 
-**Also check**
-
 The agent keeps ले in a negative completed transitive sentence.
-
-This differs from saying something has not happened yet.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -4508,12 +3003,6 @@ tapāĩle hijo vyāyām garnubhaena?
 | हिजो | hijo | yesterday |
 | व्यायाम | vyāyām | exercise |
 | गर्नुभएन | garnubhaena | did not do (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -4588,22 +3077,14 @@ uhā̃le kaphī piunubhaena
 | कफी | kaphī | coffee |
 | पिउनुभएन | piunubhaena | did not drink (respectful) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 9: Present negative (don't ~) / 11: The ergative ले & the past (did ~)
 
 ## 13 Future (will ~)
 
-**Remember this**
-Read **time expression + verb** together for plans.
+**Pattern and choice**
+Compare **गर्नु→गर्नेछु / जानु→जानेछु / पढ्नु→पढ्नेछु** and we **गर्नेछौं**. These combine a -ने form with future personal endings. Respectful **गर्नुहुनेछ** has a different honorific construction from ordinary गर्नेछ.
 
 ### ① Start with one example
 
@@ -4613,79 +3094,23 @@ ma bholi kām garchu
 
 I will work tomorrow.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose a future time
+### 2. Negative future
 
-**2**  Choose the planned action
+Use **म जानेछैनँ / हामी जानेछैनौं / उहाँ जानुहुनेछैन**. Compare present respectful negative **जानुहुन्न** with explicit future **जानुहुनेछैन**.
 
-**3**  Match the verb to the subject
+### 3. जान्छु versus जानेछु
 
-### Watch out
+Both **भोलि जान्छु** and **भोलि जानेछु** can express tomorrow's action. The present is common for conversational plans; the future makes future reference explicit. A translated intention does not mandate only one tense form.
 
-A **present form + tomorrow** can express a plan.
+### 4. Distinguish -ने from -नेछ
 
-### ③ Quick check
+**जाने बस** is a bus that goes; **बस जानेछ** is a future clause. -ने alone is not necessarily a complete future predicate: check whether it modifies a following noun.
 
-**Check:** must गर्छु always refer to a present routine?
+### 5. Other plans and intention forms
 
-**Answer:** no.
-
-With a future time expression it can state a plan.
-
-Consider the verb, time words and conversational setting together.
-
-### When you want to know more
-
-### What can you say?
-
-Describe actions and plans after the time of speaking.
-
-Nepali can use a present form with tomorrow or next week as well as an explicit future form.
-
-Read the verb together with its time expression; the form alone does not always determine the intended time.
-
-### Look at the pattern
-
-A common pattern is subject + future time + details + present verb. भोलि is tomorrow; अर्को हप्ता next week.
-
-Explicit future forms include गर्नेछु and जानेछु, with respectful forms such as गर्नुहुनेछ.
-
-A plan, an intention and a prediction are not identical; topic 31 covers degrees of uncertainty.
-
-### Check the construction
-
-1.
-
-Choose a future time, such as भोलि.
-
-2.
-
-Identify who plans to do what.
-
-3.
-
-Choose a present-form plan or an explicit future form.
-
-4.
-
-Match person and respect; tomorrow does not make म and उहाँ take the same ending.
-
-### How the example works
-
-म is I, भोलि tomorrow, काम work and गर्छु do.
-
-The verb has the form learned in topic 8, but भोलि gives a future setting.
-
-This is not an action in progress now.
-
-Look for time expressions before interpreting the whole sentence.
-
-### Compare related patterns
-
-A negative plan needs the negative appropriate to its pattern; tomorrow does not negate an affirmative verb. **हुन्छ** can describe a future occurrence such as a meeting, but does not replace all ordinary action verbs.
-
-Review its functions in topic 4.
+**म जान्छु** can state a plan/intention; **म जाऊँ?** offers to go; **हामी जाऔं** proposes going together. Future tense, an offer and a suggestion are distinct constructions.
 
 
 ### A reference table for comparing personal forms
@@ -4697,37 +3122,7 @@ Review its functions in topic 4.
 | you | तपाईं भोलि काम गर्नुहुन्छ।<br>tapāĩ bholi kām garnuhuncha | You will work tomorrow. |
 | you plural | तपाईंहरू भोलि काम गर्नुहुन्छ।<br>tapāĩharū bholi kām garnuhuncha | You will work tomorrow. |
 | he/she | उहाँ भोलि काम गर्नुहुन्छ।<br>uhā̃ bholi kām garnuhuncha | She will work tomorrow. |
-| they | उहाँहरू भोलि काम गर्छन्।<br>uhā̃harū bholi kām garchan | They will work tomorrow. |
-
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
-
-**Also check**
-
-A definite plan and an uncertain prediction are different.
-
-Practice ways to soften predictions in the inference lesson.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
+| they | उहाँहरू भोलि काम गर्नुहुन्छ।<br>uhā̃harū bholi kām garnuhuncha | They will work tomorrow. |
 
 ### Exercise 1
 
@@ -4758,12 +3153,6 @@ tapāĩ bholi vyāyām garnuhuncha?
 | भोलि | bholi | tomorrow |
 | व्यायाम | vyāyām | exercise |
 | गर्नुहुन्छ | garnuhuncha | do; does (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -4809,12 +3198,6 @@ tapāĩ bholi kahā̃ jānuhuncha?
 | भोलि | bholi | tomorrow |
 | कहाँ | kahā̃ | where |
 | जानुहुन्छ | jānuhuncha | go; goes (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 6
 
@@ -4874,28 +3257,10 @@ tapāĩharū kahile pharkanuhunecha?
 | कहिले | kahile | when |
 | फर्कनुहुनेछ | pharkanuhunecha | will return (respectful future of फर्कनु) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~)
-
 ## 14 Habitual past (used to ~)
 
-**Remember this**
-Use the **habitual past** for former routines.
+**Pattern and choice**
+**म पहिले यहाँ बस्थें** describes former habitual residence; **म हिजो यहाँ बसेँ** locates a completed stay/sitting event yesterday. Contrast habitual **गर्थें/बस्थें** with simple past **गरेँ/बसेँ**.
 
 ### ① Start with one example
 
@@ -4905,73 +3270,23 @@ ma pahile yahā̃ kām garthẽ
 
 I used to work here.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose a former routine
+### 2. Stem and person
 
-**2**  Add its setting
+Compare first-person **गर्थें**, we **गर्थ्यौं**, and respectful **गर्नुहुन्थ्यो**. Nasalization can also be written as in गर्थेँ. The ending -थ्यो is not invariant across all persons.
 
-**3**  Use the habitual-past form
+### 3. Negative habitual past
 
-### Watch out
+Compare **म गर्दिनथें / हामी गर्दैनथ्यौं** and respectful **गर्नुहुन्थेन**. Simple past **गरेनँ** denies a completed event, unlike a former habitual negative.
 
-Distinguish a **former routine** from **one event yesterday**.
+### 4. Habitual versus past progressive
 
-### ③ Quick check
+**पढ्थें** describes former reading habits; **पढ्दै थिएँ** describes reading in progress at a past point. Backgrounds such as **पहिले/सानो छँदा** support habitual readings, but the predicate still matters.
 
-**Check:** is a former daily tea habit viewed like drinking one cup yesterday?
+### 5. Habitual versus थियो
 
-**Answer:** distinguish them here.
-
-This topic presents a repeated pattern; topic 11 presents a completed event.
-
-### When you want to know more
-
-### What can you say?
-
-Describe repeated past actions or former routines, rather than one completed event yesterday.
-
-A habit is an action done regularly.
-
-This form presents the past pattern; whether it has completely stopped now depends on context.
-
-### Look at the pattern
-
-Use subject + past setting + habitual-past verb. पहिले means before/formerly.
-
-With गर्नु, compare first-person गर्थें and respectful गर्नुहुन्थ्यो with single-event गरेँ.
-
-A past routine is also different from merely being at a location in the past.
-
-### Check the construction
-
-1.
-
-Choose a former repeated action, not one event.
-
-2.
-
-Identify who did what and where.
-
-3.
-
-Add a past-setting word such as पहिले.
-
-4.
-
-Finish with the appropriate habitual-past form.
-
-### How the example works
-
-म is I, पहिले formerly, यहाँ here and काम गर्थें used to work.
-
-The sentence describes a former work routine. काम गरेँ instead presents a completed event. यहाँ identifies where that past pattern took place.
-
-### Compare related patterns
-
-Learn the matching habitual-past negative rather than adding formerly to a present negative.
-
-Distinguish a repeated routine from an action in progress at a past moment and from something already completed by that moment in topic 16.
+**यहाँ विद्यालय थियो** describes a past state of existence. **उहाँ यहाँ आउनुहुन्थ्यो** describes repeated visits. A past-state translation does not by itself select habitual action morphology.
 
 
 ### A reference table for comparing personal forms
@@ -4982,36 +3297,10 @@ Distinguish a repeated routine from an action in progress at a past moment and f
 | we | हामी पहिले यहाँ काम गर्थ्यौं।<br>hāmī pahile yahā̃ kām garthyaũ | We used to work here. |
 | you | तपाईं पहिले यहाँ काम गर्नुहुन्थ्यो।<br>tapāĩ pahile yahā̃ kām garnuhunthyo | You used to work here. |
 | you plural | तपाईंहरू पहिले यहाँ काम गर्नुहुन्थ्यो।<br>tapāĩharū pahile yahā̃ kām garnuhunthyo | You used to work here. |
-| he/she | उहाँ पहिले यहाँ काम गर्थिन्।<br>uhā̃ pahile yahā̃ kām garthin | She used to work here. |
-| they | उहाँहरू पहिले यहाँ काम गर्थे।<br>uhā̃harū pahile yahā̃ kām garthe | They used to work here. |
-
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
-
-**Also check**
+| he/she | उहाँ पहिले यहाँ काम गर्नुहुन्थ्यो।<br>uhā̃ pahile yahā̃ kām garnuhunthyo | She used to work here. |
+| they | उहाँहरू पहिले यहाँ काम गर्नुहुन्थ्यो।<br>uhā̃harū pahile yahā̃ kām garnuhunthyo | They used to work here. |
 
 Do not automatically copy the ले marking of a single completed transitive event into a habitual past pattern.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -5043,12 +3332,6 @@ tapāĩ pahile vyāyām garnuhunthyo?
 | पहिले | pahile | before; first |
 | व्यायाम | vyāyām | exercise |
 | गर्नुहुन्थ्यो | garnuhunthyo | used to do (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -5110,22 +3393,14 @@ uhā̃ pahile ciyā piunuhunthyo
 | चिया | ciyā | tea |
 | पिउनुहुन्थ्यो | piunuhunthyo | used to drink (respectful) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 7: Pronouns, familiarity, respect and verb agreement / 11: The ergative ले & the past (did ~)
 
 ## 15 Present perfect / experience (have done ~)
 
-**Remember this**
-Completion relevant now: **participle + present auxiliary**.
+**Pattern and choice**
+**गरेको छु / पढेको छु / गएको छु** connect a completed action with a present result or experience. Compare simple completed **गरेँ** with the compound **गरेको छु**.
 
 ### ① Start with one example
 
@@ -5135,77 +3410,23 @@ maile yo kām gareko chu
 
 I have done this work.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose a relevant result/experience
+### 2. Respectful -नुभएको
 
-**2**  Use the completed-action form
+Compare **उहाँले पढ्नुभएको छ / उहाँ जानुभएको छ**. Respect is marked in **-नुभएको**; the basic respectful perfect here ends in छ. This is not formed by inserting the finite present जानुहुन्छ.
 
-**3**  Add a present auxiliary
+### 3. Agent marking
 
-### Watch out
+**मैले किताब पढेको छु** has a transitive agent; **म नेपाल गएको छु** has an intransitive subject. Compound completion preserves the distinction in subject marking.
 
-Read the **completed-action form + auxiliary** together.
+### 4. Experience and frequency
 
-### ③ Quick check
+**पहिले, एक पटक, धेरै पटक** can specify experience/frequency. **नेपाल गएको छु** can express experience or a present-relevant result; it does not invariably assert that the speaker is currently in Nepal.
 
-**Check:** what differs between the work is already finished and I did the work yesterday?
+### 5. Not yet and never
 
-**Answer:** one foregrounds the result now; the other reports a past event.
-
-That perspective motivates the perfect construction.
-
-### When you want to know more
-
-### What can you say?
-
-Connect an earlier action with the present: work already completed, or experience of eating something.
-
-Completion views the action as finished.
-
-Whether a sentence expresses experience or a present result depends on the action, time expressions and context; not every example means have ever.
-
-### Look at the pattern
-
-The pattern combines a completed-action participle, often in -एको, with a **छ**-family auxiliary.
-
-An auxiliary supports the main action’s time or state.
-
-In गरेको छु, गरेको supplies having done and छु connects it to I now.
-
-Respectful actions can use गर्नुभएको; examine both parts for agreement.
-
-### Check the construction
-
-1.
-
-Decide what past result or experience matters now.
-
-2.
-
-Choose the completed-action form, such as गरेको from गर्नु.
-
-3.
-
-Add the subject/agent and object.
-
-4.
-
-Use the appropriate present auxiliary to connect that completion with the present.
-
-### How the example works
-
-मैले marks I as agent, यो काम this work, and गरेको छु have done.
-
-The past action is presented as a completion relevant now. गरेको and छु have different jobs; छु alone does not convey that the work has been completed.
-
-### Compare related patterns
-
-Study the negative of this compound pattern below rather than mixing it with a simple past negative.
-
-Compare topic 11’s event report and topic 16’s completion before a past reference point.
-
-A shared translation such as did does not make these perspectives identical.
+**अझै गरेको छैन** means not yet completed; **कहिल्यै गरेको छैन** means never done. Negate the auxiliary with the **छैन family**, keeping the participle. Personal forms include **गरेको छैनँ**.
 
 
 ### A reference table for comparing personal forms
@@ -5216,38 +3437,8 @@ A shared translation such as did does not make these perspectives identical.
 | we | हामीले यो काम गरेको छौं।<br>hāmīle yo kām gareko chaũ | We have done this work. |
 | you | तपाईंले यो काम गर्नुभएको छ।<br>tapāĩle yo kām garnubhaeko cha | You have done this work. |
 | you plural | तपाईंहरूले यो काम गर्नुभएको छ।<br>tapāĩharūle yo kām garnubhaeko cha | You have done this work. |
-| he/she | उहाँले यो काम गरेकी हुनुहुन्छ।<br>uhā̃le yo kām garekī hunuhuncha | She has done this work. |
-| they | उहाँहरूले यो काम गरेका हुनुहुन्छ।<br>uhā̃harūle yo kām garekā hunuhuncha | They have done this work. |
-
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
-
-**Also check**
-
-Context distinguishes experience, completion and a resulting state.
-
-A negative can express not yet.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
+| he/she | उहाँले यो काम गर्नुभएको छ।<br>uhā̃le yo kām garnubhaeko cha | She has done this work. |
+| they | उहाँहरूले यो काम गर्नुभएको छ।<br>uhā̃harūle yo kām garnubhaeko cha | They have done this work. |
 
 ### Exercise 1
 
@@ -5281,12 +3472,6 @@ tapāĩle yo kām garnubhaeko cha?
 | गर्नुभएको | garnubhaeko | done (respectful perfect participle) |
 | **छ** | cha | have; has (perfect auxiliary) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 3
 
 I have eaten sushi.
@@ -5316,12 +3501,6 @@ tapāĩ nepāl jānubhaeko cha?
 | नेपाल | nepāl | Nepal |
 | जानुभएको | jānubhaeko | gone; been (respectful) |
 | **छ** | cha | have; has (perfect auxiliary) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 5
 
@@ -5381,22 +3560,14 @@ hāmīle yo philm herekā chaũ
 | हेरेका | herekā | seen (plural agreeing participle of हेर्नु) |
 | छौं | chaũ | be; exist |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 2: **छ**: existence and location / 11: The ergative ले & the past (did ~) / 23: Adjective agreement & position
 
 ## 16 Past perfect (had done ~)
 
-**Remember this**
-Already completed by then: **past perfect**.
+**Pattern and choice**
+**गरेको थिएँ / पढेको थिएँ / गएको थिएँ** describe prior completion relative to a past point. Compare present-relevant **गरेको छु** with past auxiliary **थिएँ**.
 
 ### ① Start with one example
 
@@ -5406,81 +3577,23 @@ maile yo kām gareko thiẽ
 
 I had done this work.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose a past reference point
+### 2. Marking the past reference point
 
-**2**  Find the earlier completion
+In **उहाँ आउँदा मैले काम सकेको थिएँ**, the work was finished before the arrival. **आउँदा** supplies the reference time; **सकेको थिएँ** gives prior completion. The morphology, not word order alone, expresses this relationship.
 
-**3**  Add a past auxiliary
+### 3. Personal and respectful forms
 
-### Watch out
+Compare **म गएको थिएँ / हामी गएका थियौं / उहाँ जानुभएको थियो**. Ordinary participles can also show agreement, as in एका. Learn respectful **-नुभएको थियो**, not invariant गएको थियो for every subject.
 
-Identify the past point **by which** it was completed.
+### 4. Negative past auxiliaries
 
-### ③ Quick check
+**मैले काम सकेको थिइनँ** denies completion by the past point; **सक्नुभएको थिएन** is respectful. A simple negative such as **सकिनँ** presents a different finite-event construction.
 
-**Check:** what is the second time involved in a past perfect?
+### 5. Compare progressive and habitual past
 
-**Answer:** the past reference point against which completion is assessed.
-
-Locate that point in the story before forming the sentence.
-
-### When you want to know more
-
-### What can you say?
-
-Choose a past reference point, such as a friend’s arrival, and say something was already completed by then.
-
-Past perfect does not mean merely a very long time ago.
-
-It helps place one completion before another past situation.
-
-### Look at the pattern
-
-Combine a completed-action participle with a past auxiliary in the थियो set.
-
-Compare गरेको छु with गरेको थिएँ: the reference shifts to the past.
-
-First-person थिएँ and other endings depend on the construction’s agreement.
-
-Separate the completed action from the auxiliary setting its time perspective.
-
-### Check the construction
-
-1.
-
-Establish a past reference point in context.
-
-2.
-
-Choose an action completed before it.
-
-3.
-
-Use the completed-action form.
-
-4.
-
-Add a past auxiliary.
-
-This is different from simply listing two events in chronological order.
-
-### How the example works
-
-मैले marks I as agent, यो काम this work and गरेको थिएँ had done.
-
-Context supplies the past point meant by then.
-
-Compare गरेको छु: it connects completion to now, while गरेको थिएँ connects it to a past reference point.
-
-### Compare related patterns
-
-A translation such as was doing is not enough to choose the construction.
-
-Distinguish a former habit, an action in progress, and prior completion.
-
-A negative here concerns something not completed by that past reference point; use the compound pattern’s negative.
+**पढ्दै थिएँ** describes ongoing reading, **पढेको थिएँ** prior completion, and **पढ्थें** a former routine. A translation such as was reading does not collapse these three Nepali patterns.
 
 
 ### A reference table for comparing personal forms
@@ -5491,38 +3604,8 @@ A negative here concerns something not completed by that past reference point; u
 | we | हामीले यो काम गरेको थियौं।<br>hāmīle yo kām gareko thiyaũ | We had done this work. |
 | you | तपाईंले यो काम गर्नुभएको थियो।<br>tapāĩle yo kām garnubhaeko thiyo | You had done this work. |
 | you plural | तपाईंहरूले यो काम गर्नुभएको थियो।<br>tapāĩharūle yo kām garnubhaeko thiyo | You had done this work. |
-| he/she | उहाँले यो काम गरेकी हुनुहुन्थ्यो।<br>uhā̃le yo kām garekī hunuhunthyo | She had done this work. |
-| they | उहाँहरूले यो काम गरेका हुनुहुन्थ्यो।<br>uhā̃harūle yo kām garekā hunuhunthyo | They had done this work. |
-
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
-
-**Also check**
-
-Distinguish an action that was in progress then from one already completed then.
-
-This pattern combines a past participle with a past copula.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
+| he/she | उहाँले यो काम गर्नुभएको थियो।<br>uhā̃le yo kām garnubhaeko thiyo | She had done this work. |
+| they | उहाँहरूले यो काम गर्नुभएको थियो।<br>uhā̃harūle yo kām garnubhaeko thiyo | They had done this work. |
 
 ### Exercise 1
 
@@ -5555,12 +3638,6 @@ tapāĩle yo kām garnubhaeko thiyo?
 | काम | kām | work |
 | गर्नुभएको | garnubhaeko | done (respectful perfect participle) |
 | थियो | thiyo | had (perfect auxiliary) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -5627,12 +3704,6 @@ tapāĩ pahile yahā̃ āunubhaeko thiyo?
 | आउनुभएको | āunubhaeko | come (respectful past participle) |
 | थियो | thiyo | had (perfect auxiliary) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 7
 
 The shop had already closed when we arrived.
@@ -5650,22 +3721,14 @@ hāmī pugdā pasal banda bhaisakeko thiyo
 | भइसकेको | bhaisakeko | already become; completed |
 | थियो | thiyo | was; were |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 11: The ergative ले & the past (did ~) / 15: Present perfect / experience (have done ~) / 27: While ~ (-दै) / after ~ (-एपछि)
 
 ## 17 Requests & commands (three politeness levels)
 
-**Remember this**
-Ask the listener: use a **respectful request**.
+**Pattern and choice**
+Compare **बस्नु→बस्नुहोस् / गर्नु→गर्नुहोस् / हेर्नु→हेर्नुहोस्**. Respectful present **गर्नुहुन्छ** states an action; **गर्नुहोस्** requests it. These endings are not interchangeable.
 
 ### ① Start with one example
 
@@ -5675,108 +3738,24 @@ yahā̃ basnuhos
 
 Please sit here.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the requested action
+### 2. Common request verbs
 
-**2**  Add place or manner
+**दिनुहोस्** requests giving; **लिनुहोस्** taking; **आउनुहोस्** coming. Add a place/item: **यहाँ आउनुहोस् / यो लिनुहोस्**. A separate word equivalent to please is not obligatory in every polite request.
 
-**3**  Use a respectful request form
+### 3. -दिनु for an action done for someone
 
-### Watch out
+**लेखिदिनुहोस्/गरिदिनुहोस्** request an action for someone. Compare **लेख्नुहोस्** with **लेखि + दिनुहोस्**; the latter adds a benefactive sense. दिनु need not refer to giving a physical object.
 
-Who sits: **the listener** or **you**? Separate a request from an offer.
+### 4. Familiar versus respectful requests
 
-### ③ Quick check
+Contrast low-grade **बस** with respectful **बस्नुहोस्**. Familiar requests can use forms such as **बस/बस न**; consult topic 7 and the tables for the appropriate relationship. Use respectful requests as the default with strangers.
 
-**Check:** is asking someone to sit the same as asking whether you may sit?
+### 5. A request versus an offer
 
-**Answer:** no.
+**गर्नुहोस्** requests the listener's action; **गरूँ?** offers the speaker's action; **गरौं** proposes shared action. These participant differences are encoded in the verb form.
 
-First identify the actor.
-
-The former is a request here; the latter uses an offer/permission-seeking pattern such as topic 18.
-
-### When you want to know more
-
-### What can you say?
-
-Ask the listener to sit, look or speak.
-
-Unlike a statement that someone sits, a request directs an action to the listener.
-
-Requests and commands differ in force, and tone and setting also affect how they sound.
-
-### Look at the pattern
-
-Start with place/object/manner + a respectful request form, such as बस्नुहोस् or हेर्नुहोस्.
-
-The listener is understood, so you is often omitted.
-
-Learn बस्नुहोस् as a request form rather than using dictionary बस्नु unchanged.
-
-Relate more familiar forms to the register distinctions in topic 7.
-
-### Check the construction
-
-1.
-
-Choose the requested action.
-
-2.
-
-Add a place or manner such as यहाँ, here.
-
-3.
-
-Finish with the respectful request form.
-
-4.
-
-Distinguish this from offering your own action in topic 18 and asking someone not to act in topic 19.
-
-### How the example works
-
-यहाँ means here and बस्नुहोस् please sit.
-
-The listener is the understood actor, so these two parts form a request.
-
-Keep the request form when changing the location.
-
-This is an instruction to someone, not a report that you are sitting here.
-
-### Compare related patterns
-
-Do not form every request by adding a separate please-word after an ordinary present verb.
-
-The verb itself changes.
-
-Even a respectful form can sound directive in context.
-
-Ability questions can also help soften a request; compare topic 20.
-
-
-**Also check**
-
-A short form can sound forceful with the wrong person.
-
-Small particles after a request can also change its tone.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -5925,22 +3904,10 @@ bholi āunuhos hai
 | आउनुहोस् | āunuhos | please come |
 | है | hai | okay? (gentle reminder) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement
-
 ## 18 Hortative / volitional (let's ~ / shall I ~)
 
-**Remember this**
-Shall I? Let’s! Use an **offer or suggestion**.
+**Pattern and choice**
+**म गरूँ? / म जाऊँ? / म ल्याऊँ?** offer to do, go or bring something. **गर्छु** instead states an action/intention; it is not the same offering form.
 
 ### ① Start with one example
 
@@ -5950,104 +3917,26 @@ ma yahā̃ basũ?
 
 May I sit here?
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose an offer or shared suggestion
+### 2. -औं for shared suggestions
 
-**2**  Choose the action
+**गरौं / जाऔं / बसौं / खाऔं** propose shared action. Compare singular offer **जाऊँ** with plural suggestion **जाऔं**, rather than assuming the same ending for both.
 
-**3**  Use the matching proposal form
+### 3. Not an honorific request
 
-### Watch out
+**यहाँ बसौं** proposes sitting here together; **यहाँ बस्नुहोस्** asks the listener to sit. This changes participants, not merely the degree of politeness.
 
-An **offer to act yourself** differs from a **request to the listener**.
+### 4. न + suggestion versus request
 
-### ③ Quick check
+**नजाऔं** means let's not go; **नजानुहोस्** asks someone not to go. Prefix न negates these proposal/request forms, while the following morphology identifies the participants.
 
-**Check:** why identify who opens the door?
+### 5. Compare a future statement
 
-**Answer:** offering to open it yourself and requesting that the listener open it require different forms.
+**म जानेछु** states future action; **म जाऊँ?** offers it for consideration. Likewise **हामी जानेछौं** states a plan, whereas **हामी जाऔं** proposes one.
 
-Decide the roles before translating an ending.
-
-### When you want to know more
-
-### What can you say?
-
-Offer your own action or suggest doing something together.
-
-Distinguish reporting that you will open something from asking whether you should do it.
-
-A singular offer and a shared suggestion use different forms.
-
-### Look at the pattern
-
-First-person offers or permission-seeking questions include बसूँ? and खोलूँ?
-
-Shared suggestions use forms such as जाऔं.
-
-These are not simply ordinary present verbs plus a question mark.
-
-Learn the verb form together with its singular-offer or shared-suggestion function.
-
-### Check the construction
-
-1.
-
-Choose an individual offer or a shared suggestion.
-
-2.
-
-Add the action and necessary details.
-
-3.
-
-For your own offer use the appropriate first-person proposal form.
-
-4.
-
-Use question intonation when seeking the other person’s response.
-
-### How the example works
-
-म is I, यहाँ here, and बसूँ? asks in this setting whether I may sit.
-
-I am the actor, not the listener.
-
-Contrast topic 17’s बस्नुहोस्, which asks the listener to sit.
-
-Similar verbs can perform different conversational jobs.
-
-### Compare related patterns
-
-Do not use your own offer form when you want the listener to act.
-
-A statement of plans belongs to topic 13; general permission rules belong to topic 21.
-
-Here focus on proposing an action within a conversation.
-
-
-**Also check**
-
-Shall I and let us use different persons.
 
 A suggestion not to do something places न before the verb.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -6063,12 +3952,6 @@ ma yahā̃ basũ?
 | यहाँ | yahā̃ | here |
 | बसूँ | basũ | may I sit |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 2
 
 Shall I open the door?
@@ -6082,12 +3965,6 @@ ma ḍhokā kholũ?
 | म | ma | I |
 | ढोका | ḍhokā | door |
 | खोलूँ | kholũ | shall I open |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -6103,12 +3980,6 @@ ma pānī lyāũ?
 | पानी | pānī | water |
 | ल्याऊँ | lyāũ | shall I bring |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 4
 
 Shall I speak first?
@@ -6122,12 +3993,6 @@ ma pahile bolũ?
 | म | ma | I |
 | पहिले | pahile | before; first |
 | बोलूँ | bolũ | shall I speak |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 5
 
@@ -6143,12 +4008,6 @@ ma yo kām garũ?
 | यो | yo | this |
 | काम | kām | work |
 | गरूँ | garũ | shall I do |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 6
 
@@ -6177,8 +4036,6 @@ sãgai khānā khāaũ
 | सँगै | sãgai | together |
 | खाना | khānā | food; meal |
 | खाऔं | khāaũ | let us eat |
-
-**In this sentence**
 
 सँग = company/participant or possession
 
@@ -6237,8 +4094,6 @@ hāmī sãgai kām garaũ
 | काम | kām | work |
 | गरौं | garaũ | let us do |
 
-**In this sentence**
-
 सँग = company/participant or possession
 
 ### Exercise 12
@@ -6284,28 +4139,10 @@ hāmī bholi bheṭaũ?
 | भोलि | bholi | tomorrow |
 | भेटौं | bheṭaũ | let us meet |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~) / 19: Prohibition (must not ~ / don't ~)
-
 ## 19 Prohibition (must not ~ / don't ~)
 
-**Remember this**
-Please do not: **न + request form**.
+**Pattern and choice**
+Prefix **न** to a request form: **नगर्नुहोस्, नजानुहोस्, नखानुहोस्**. Do not form a negative request by appending छैन to the affirmative imperative.
 
 ### ① Start with one example
 
@@ -6315,100 +4152,26 @@ tala nahernuhos
 
 Please do not look down.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the action to prevent
+### 2. Statement versus negative request
 
-**2**  Choose a respectful request form
+**उहाँ जानुहुन्न** reports that the person does not go; **नजानुहोस्** requests not going. Contrast **-नुहुन्न** with **न-…-नुहोस्** in both form and function.
 
-**3**  Put न before it
+### 3. Negative न versus softening न
 
-### Watch out
+**नबस्नुहोस्** means please do not sit. Sentence-final न in **बस्नुहोस् न** softens or urges a request and is not negation. Position changes the function of न.
 
-**Must not** and **need not** are different.
+### 4. Prohibition with -नु हुँदैन
 
-### ③ Quick check
+**यहाँ धूम्रपान गर्नु हुँदैन** states a prohibition. **नगर्नुहोस्** directly requests non-action; **गर्नु हुँदैन** describes an action as disallowed. हुन्न is also used as a shorter form.
 
-**Check:** are need not do and must not do the same?
+### 5. Prohibition versus no obligation
 
-**Answer:** no.
+**जानु हुँदैन** prohibits going; **जानु पर्दैन** removes the need to go. Negating permission हुन्छ and necessity पर्छ gives different meanings.
 
-One removes necessity; the other prohibits.
-
-Decide whether you mean necessity, permission or prohibition.
-
-### When you want to know more
-
-### What can you say?
-
-Ask someone not to act or state a prohibition.
-
-This directs behavior, unlike reporting that you yourself do not do something.
-
-Identify who is being addressed and which action must be avoided.
-
-### Look at the pattern
-
-A respectful negative request places न before the request verb: बस्नुहोस् becomes नबस्नुहोस्.
-
-A rule-like prohibition can use -नु हुँदैन.
-
-Distinguish directly asking the listener not to act from stating that an action is not allowed.
-
-### Check the construction
-
-1.
-
-Choose the action to prevent.
-
-2.
-
-Decide between a direct negative request and a prohibition rule.
-
-3.
-
-For a direct request place न before the respectful request form.
-
-4.
-
-Add place or manner to make its scope clear.
-
-### How the example works
-
-तल means down and नहेर्नुहोस् please do not look. न negates the requested action हेर्नुहोस्.
-
-It is an essential part of the negative request, not a denial of the place or direction.
-
-### Compare related patterns
-
-A negative request is not an ordinary present negative.
-
-In -नु हुँदैन, the हुनु form learned in topic 4 participates in a prohibition construction.
-
-This differs from not needing to act in topic 21; confusing the two can reverse the intended instruction.
-
-
-**Also check**
 
 Keep a negative request separate from a prohibition with हुँदैन.
-
-Neither is the same as saying an action is unnecessary.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -6597,12 +4360,6 @@ ke yahā̃ basnu hũdaina?
 | बस्नु | basnu | sit; stay |
 | हुँदैन | hũdaina | must not |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 14
 
 Is taking photos prohibited here?
@@ -6619,12 +4376,6 @@ ke yahā̃ phoṭo khicnu hũdaina?
 | खिच्नु | khicnu | take (a photo) |
 | हुँदैन | hũdaina | must not |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 15
 
 Please do not come here.
@@ -6639,22 +4390,10 @@ tapāĩ yahā̃ naāunuhos
 | यहाँ | yahā̃ | here |
 | नआउनुहोस् | naāunuhos | please do not come |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-7: Pronouns, familiarity, respect and verb agreement / 17: Requests & commands (three politeness levels) / 21: Obligation & permission (must ~ / may ~)
-
 ## 20 Ability (can ~)
 
-**Remember this**
-Can: **action infinitive + सक्नु**.
+**Pattern and choice**
+Use **पढ्न सक्छु / गर्न सक्छु / जान सक्छु** for ability/possibility. The preceding verb is the -न infinitive, such as **पढ्न**, not unchanged dictionary पढ्नु.
 
 ### ① Start with one example
 
@@ -6664,75 +4403,23 @@ ma nepālī bolna sakchu
 
 I can speak Nepali.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the possible action
+### 2. Conjugate सक्नु
 
-**2**  Use its infinitive form
+Compare **म गर्न सक्छु / हामी गर्न सक्छौं / उहाँ गर्न सक्नुहुन्छ**. Keep गर्न while conjugating the final सक्नु for person/respect; do not combine two finite presents such as गर्छु सक्छु.
 
-**3**  Conjugate सक्नु for the person
+### 3. Negative and past ability
 
-### Watch out
+Compare **सक्छु→सक्दिनँ**, past **सकेँ**, and negative past **सकिनँ**. Respectful forms include **सक्नुहुन्न/सक्नुभयो/सक्नुभएन**. Keep the preceding action in the -न form.
 
-**Can** as ability differs from **may** as permission.
+### 4. Ability versus learned know-how
 
-### ③ Quick check
+**नेपाली बोल्न सक्छु** expresses ability; **नेपाली बोल्न जान्छु** emphasizes learned know-how. जान्नु means know and जानु go; the same-looking finite जान्छु must be interpreted in its construction.
 
-**Check:** which part of बोल्न सक्छु means can?
+### 5. Can, may and want
 
-**Answer:** सक्छु. बोल्न specifies the possible action.
-
-Be able to explain the job of each part.
-
-### When you want to know more
-
-### What can you say?
-
-State ability or practical possibility: speaking Nepali or being able to come today.
-
-Ability may come from skill; situational possibility from available time or conditions. सक्नु can express both, with context supplying the reason.
-
-### Look at the pattern
-
-Use the action in its -न infinitive form before a conjugated सक्नु: बोल्नु gives बोल्न, गर्नु gives गर्न.
-
-Use सक्छु with I and सक्नुहुन्छ respectfully.
-
-The final सक्नु form carries the person and positive/negative meaning.
-
-### Check the construction
-
-1.
-
-Choose the action that is possible.
-
-2.
-
-Put it in the form used before सक्नु, such as बोल्न.
-
-3.
-
-Add details such as the language spoken.
-
-4.
-
-Finish with the सक्नु form matching the person.
-
-### How the example works
-
-म is I, नेपाली Nepali, बोल्न speak and सक्छु can.
-
-Two verb-related parts appear, but both do not receive ordinary present endings. बोल्न supplies the action; सक्छु supplies ability/possibility and agreement.
-
-### Compare related patterns
-
-Negate the सक्नु part, using forms such as सक्दिनँ or respectful सक्नुहुन्न.
-
-Do not place a finite negative action before सक्छु.
-
-Can as ability differs from may as permission in topic 21.
-
-An ability question can also serve as a request in context.
+**जान सक्छु** expresses ability, **जान हुन्छ?** asks permission, and **जान मन पर्छ** expresses a desire. Ability does not entail permission. See topic 31 for epistemic possibility with **हुन सक्छ**.
 
 
 ### A reference table for comparing personal forms
@@ -6746,35 +4433,7 @@ An ability question can also serve as a request in context.
 | he/she | उहाँ नेपाली बोल्न सक्नुहुन्छ।<br>uhā̃ nepālī bolna saknuhuncha | She can speak Nepali. |
 | they | उहाँहरू नेपाली बोल्न सक्नुहुन्छ।<br>uhā̃harū nepālī bolna saknuhuncha | They can speak Nepali. |
 
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
-
-**Also check**
-
-The action's ordinary present form differs from a can construction.
-
 Negate सक्नु to say cannot.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -6805,12 +4464,6 @@ tapāĩ nepālī bolna saknuhuncha?
 | नेपाली | nepālī | Nepali (language) |
 | बोल्न | bolna | speak |
 | सक्नुहुन्छ | saknuhuncha | can (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -6886,12 +4539,6 @@ tapāĩharū yo paḍhna saknuhuncha?
 | पढ्न | paḍhna | to read/study (infinitive of पढ्नु) |
 | सक्नुहुन्छ | saknuhuncha | can (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 8
 
 I cannot come today.
@@ -6907,22 +4554,10 @@ ma āja āuna sakdinã
 | आउन | āuna | come |
 | सक्दिनँ | sakdinã | cannot |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~) / 9: Present negative (don't ~)
-
 ## 21 Obligation & permission (must ~ / may ~)
 
-**Remember this**
-Separate **necessity, permission and prohibition**.
+**Pattern and choice**
+**मलाई जानु पर्छ** states that I need to go. With a लाई-marked experiencer, the predicate is **पर्छ**, not first-person पर्छु. The spelling **-नुपर्छ** also occurs.
 
 ### ① Start with one example
 
@@ -6932,102 +4567,26 @@ maile bholi aphis jānu parcha
 
 I have to go to the office tomorrow.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Decide necessity or permission
+### 2. पर्दैन versus हुँदैन
 
-**2**  Choose the action
+**जानु पर्दैन** removes necessity; **जानु हुँदैन** prohibits going. Affirmative **पर्छ** expresses obligation/need; permission constructions with **हुन्छ** express acceptability. Keep their negatives distinct.
 
-**3**  Choose the appropriate construction
+### 3. Permission patterns
 
-### Watch out
+**यहाँ बस्न हुन्छ?** asks permission to sit. Permission uses patterns with **-न हुन्छ** or **-नु हुन्छ**; learn prohibition with **-नु हुँदैन**. This differs from one-word respectful present **बस्नुहुन्छ**.
 
-Do not confuse **lack of necessity** with **prohibition**.
+### 4. Past necessity
 
-### ③ Quick check
+**मलाई जानु पर्यो** expresses a need that arose/had to be met; **जानु पर्दैनथ्यो** past lack of necessity. **जानुभएन** instead denies that a respectful person went.
 
-**Check:** are need not go and must not go the same instruction?
+### 5. चाहिन्छ versus पर्छ
 
-**Answer:** no.
+**मलाई पानी चाहिन्छ** expresses need for water; **मलाई जानु पर्छ** need to perform an action. चाहिन्छ commonly takes a needed item/quantity; पर्छ combines with verbal -नु for obligation. Both can have मलाई as experiencer.
 
-One removes the requirement while the other forbids going.
-
-The final construction changes what is being said about the action.
-
-### When you want to know more
-
-### What can you say?
-
-State necessity or permission: having to go or being allowed to wait.
-
-Obligation means an action is required; permission means it is allowed.
-
-Neither alone says whether the action actually happened.
-
-### Look at the pattern
-
-Obligation commonly uses an action in -नु + पर्छ, as in जानु पर्छ.
-
-This course includes मैले-type forms for the person bearing the obligation; ले does not by itself mean past.
-
-Permission uses an action in -न + **हुन्छ**.
-
-Separate the action from the part expressing necessity or permission.
-
-### Check the construction
-
-1.
-
-Decide between requirement and permission.
-
-2.
-
-Choose the relevant action.
-
-3.
-
-Use the obligation or permission pattern with its appropriate preceding verb form.
-
-4.
-
-Add the person concerned, time and place.
-
-### How the example works
-
-मैले identifies the person with the obligation, भोलि tomorrow, अफिस the office and जानु पर्छ must go.
-
-This is a future obligation, so ले cannot be treated as a past-time label. पर्छ expresses necessity and जानु supplies the required action.
-
-### Compare related patterns
-
-The negative पर्दैन removes necessity; it is not prohibition with हुँदैन.
-
-Ability or practical possibility belongs to topic 20.
-
-In permission expressions, **हुन्छ** participates in the meaning allowed; translating it mechanically as become would be misleading.
-
-
-**Also check**
-
-Do not have to does not mean must not.
 
 In this obligation pattern, पर्छ does not change for the subject's person.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -7120,12 +4679,6 @@ tapāĩle bholi āunu parcha?
 | आउनु | āunu | come |
 | पर्छ | parcha | must; have to |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 7
 
 I had to get up early.
@@ -7171,12 +4724,6 @@ yahā̃ basna huncha?
 | बस्न | basna | sit; stay |
 | **हुन्छ** | huncha | may; be allowed to |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 10
 
 May I take a photo?
@@ -7190,12 +4737,6 @@ phoṭo khicna milcha?
 | फोटो | phoṭo | photo |
 | खिच्न | khicna | take (a photo) |
 | मिल्छ | milcha | may; be allowed to |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 11
 
@@ -7212,12 +4753,6 @@ yo kalam lina milcha?
 | लिन | lina | take |
 | मिल्छ | milcha | may; be allowed to |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 12
 
 You cannot sit here.
@@ -7232,22 +4767,10 @@ yahā̃ basna mildaina
 | बस्न | basna | sit; stay |
 | मिल्दैन | mildaina | may not; be not allowed to |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-5: Postpositions: place, participants and relationships / 19: Prohibition (must not ~ / don't ~) / 20: Ability (can ~)
-
 ## 22 Desire (want to ~)
 
-**Remember this**
-Want to: **action + wish expression**.
+**Pattern and choice**
+Use **म जान चाहन्छु / उहाँ जान चाहनुहुन्छ**. The desired action is a -न infinitive; चाहनु agrees with the subject who wants it. Do not mix patterns as मलाई जान चाहन्छु.
 
 ### ① Start with one example
 
@@ -7257,77 +4780,23 @@ ma nepāl jāna cāhanchu
 
 I want to go to Nepal.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the desired action
+### 2. Desire with मन लाग्नु
 
-**2**  Choose चाहनु or a मन pattern
+**मलाई जान मन लाग्छ** expresses feeling like going. The experiencer is मलाई and the predicate लाग्छ. Its meaning overlaps with **म जान चाहन्छु**, but its case and verb construction differ.
 
-**3**  Fit the experiencer and ending
+### 3. मन पर्नु and liking
 
-### Watch out
+**मलाई चिया मन पर्छ** expresses liking tea. **मलाई चिया खान मन पर्छ** can describe liking/wanting the action, depending on context. A present urge can be made explicit with **अहिले…मन लागेको छ**.
 
-**Want to** and **need to** have different meanings.
+### 4. Negating desire
 
-### ③ Quick check
+Compare **म जान चाहन्नँ** with **मलाई जान मन लाग्दैन**. One negates चाहनु, the other लाग्नु. Preserve each construction's experiencer/subject marking when forming the negative.
 
-**Check:** which parts of जान चाहन्छु express go and want?
+### 5. Desire, need and ability
 
-**Answer:** जान supplies going and चाहन्छु wanting.
-
-Explain how the two parts work together rather than interpreting either in isolation.
-
-### When you want to know more
-
-### What can you say?
-
-Express a wish or an inclination to act.
-
-Wanting is different from a plan to do it or the ability to do it.
-
-Identify the desired action and the person experiencing the wish.
-
-### Look at the pattern
-
-One pattern is subject + action infinitive in -न + a form of चाहनु, as in जान चाहन्छु.
-
-Another marks the experiencer with मलाई and uses action + मन **छ** or मन लाग्छ. मन means mind/feeling.
-
-These patterns organize the experiencer and final verb differently; do not mix their parts arbitrarily.
-
-### Check the construction
-
-1.
-
-Choose the desired action, such as जानु.
-
-2.
-
-Before चाहनु use जान.
-
-3.
-
-With I finish with चाहन्छु.
-
-4.
-
-If choosing the मन pattern instead, start from the experiencer form appropriate to that construction.
-
-### How the example works
-
-म is I, नेपाल Nepal, जान go and चाहन्छु want. जान supplies the desired action; चाहन्छु expresses the wish and agreement.
-
-Unlike जान्छु as a statement of going, this reports a wish.
-
-### Compare related patterns
-
-Negate the final verb or state appropriate to the chosen pattern.
-
-Distinguish not wanting an action from not feeling like it now.
-
-Wanting is not needing; do not replace it with topic 21’s पर्छ.
-
-Respectful subjects require agreement within the chosen construction.
+**जान चाहन्छु**, **जानु पर्छ** and **जान सक्छु** express desire, necessity and ability. Even the preceding form differs, **जान/जानु**; they are not one universal pattern with a freely replaceable final word.
 
 
 ### A reference table for comparing personal forms
@@ -7341,35 +4810,7 @@ Respectful subjects require agreement within the chosen construction.
 | he/she | उहाँ नेपाल जान चाहन्छिन्।<br>uhā̃ nepāl jāna cāhanchin | She wants to go to Nepal. |
 | they | उहाँहरू नेपाल जान चाहँदैनन्।<br>uhā̃harū nepāl jāna cāhãdainan | They do not want to go to Nepal. |
 
-**Also check**
-
-Repetition in this table is for comparing agreement.
-
-The practice below varies situations and content.
-
-See appendices A/B for fuller forms and topic 7 for respect.
-
-**Also check**
-
-Keep liking something separate from wanting to do it.
-
 Distinguish मन पर्छ from मन **छ** and मन लाग्छ.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -7400,12 +4841,6 @@ tapāĩ nepāl jāna cāhanuhuncha?
 | नेपाल | nepāl | Nepal |
 | जान | jāna | go |
 | चाहनुहुन्छ | cāhanuhuncha | want to (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -7454,8 +4889,6 @@ hāmīlāī sãgai basna man lāgcha
 | बस्न | basna | sit; stay |
 | मन | man | mind; desire |
 | लाग्छ | lāgcha | feel like |
-
-**In this sentence**
 
 सँग = company/participant or possession
 
@@ -7506,28 +4939,10 @@ tapāĩharū ke khāna cāhanuhuncha?
 | खान | khāna | eat |
 | चाहनुहुन्छ | cāhanuhuncha | want to (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
-### Review topics
-
-5: Postpositions: place, participants and relationships / 8: Action verbs: present (do ~) / 9: Present negative (don't ~)
-
 ## 23 Adjective agreement & position
 
-**Remember this**
-Inside good book: **adjective → noun**.
+**Pattern and choice**
+**राम्रो किताब** is a good book; **किताब राम्रो छ** states that the book is good. Compare noun phrase + हो in **यो राम्रो किताब हो** with adjective + छ in **यो किताब राम्रो छ**.
 
 ### ① Start with one example
 
@@ -7537,106 +4952,24 @@ yo rāmro kitāb ho
 
 This is a good book.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the noun
+### 2. The -ओ/-ई/-आ pattern
 
-**2**  Put the adjective before it
+Compare **राम्रो छोरा / राम्री छोरी / राम्रा साथीहरू**. This adjective class alternates ओ/ई/आ according to agreement. A noun ending in आ is not automatically feminine; learn the actual noun–adjective combinations.
 
-**3**  Check agreement where needed
+### 3. Invariable adjectives
 
-### Watch out
+**सुन्दर, सफा, व्यस्त** do not follow the राम्रो alternation. Compare **सुन्दर घर / सुन्दर फूल**. Invariance of the adjective does not remove verb agreement: **म व्यस्त छु / हामी व्यस्त छौं**.
 
-Some adjectives change; others are **invariable**.
+### 4. Related agreeing forms
 
-### ③ Quick check
+Compare **मेरो छोरा / मेरी छोरी / मेरा साथीहरू**, **कस्तो/कस्ती/कस्ता**, and **जस्तो/जस्ती/जस्ता**. Possession, interrogation and similarity also show agreement. मेरी is not selected because the possessor is female.
 
-**Check:** which comes first inside good book?
+### 5. Honorific and plural-looking agreement
 
-**Answer:** adjective राम्रो precedes noun किताब.
+Honorific noun phrases can use forms resembling plural agreement. Learn complete combinations, including basic **उहाँ राम्रो हुनुहुन्छ** and noun modifiers such as **राम्रा शिक्षक**. The ending आ alone does not establish the number of people.
 
-Treat the phrase as one unit when placing it into a larger sentence.
-
-### When you want to know more
-
-### What can you say?
-
-Build noun phrases such as a good book.
-
-A noun names someone or something; an adjective describes a quality.
-
-Learn where the adjective goes and when its form matches the noun.
-
-Such matching is called agreement.
-
-### Look at the pattern
-
-The ordinary order is adjective + noun, as in राम्रो किताब.
-
-Some adjectives vary, such as राम्रो/राम्री/राम्रा; others such as सुन्दर are generally invariable.
-
-Learn Nepali agreement rather than assuming it works like English or Japanese, but do not force every adjective to change.
-
-### Check the construction
-
-1.
-
-Choose the noun.
-
-2.
-
-Put its adjective before it.
-
-3.
-
-If that adjective varies, choose a form appropriate to the noun.
-
-4.
-
-Use the complete noun phrase in an identity sentence or another construction.
-
-### How the example works
-
-यो is this, राम्रो किताब a good book, and **हो** the identity ending.
-
-The noun phrase supplies what this is.
-
-Contrast यो किताब राम्रो **छ**, which describes the book’s quality in topic 3.
-
-The arrangement changes the grammatical job.
-
-### Compare related patterns
-
-Check adjective agreement separately from pronoun respect.
-
-Using respectful उहाँ does not remove the need to consider the noun being described.
-
-Possessive को/की/का also relate to a following noun; compare topic 5.
-
-Distinguish an adjective inside a noun phrase from a whole sentence’s description.
-
-
-**Also check**
-
-Not every adjective changes in the same way.
-
-Learn feminine, plural and respectful patterns with actual nouns.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -7743,12 +5076,6 @@ yo nayā̃ kitāb ho?
 | किताब | kitāb | book |
 | **हो** | ho | am; is; are |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 8
 
 My younger brother is little.
@@ -7795,12 +5122,6 @@ ke yī nayā̃ kitābharū hun?
 | किताबहरू | kitābharū | books |
 | हुन् | hun | am; is; are |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 11
 
 This flower is beautiful.
@@ -7831,22 +5152,14 @@ yo koṭhā ṭhūlo chaina
 | ठूलो | ṭhūlo | big |
 | छैन | chaina | am not; is not; are not |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 1: **हो**: A is B (identity / equation) / 3: छ: is ~ (adjective / state) / 5: Postpositions: place, participants and relationships
 
 ## 24 Adverbs & exclamations
 
-**Remember this**
-Add an **adverb** for how, how often or how much.
+**Pattern and choice**
+**बिस्तारै बोल्नुहोस् / राम्ररी पढ्नुहोस्** modify the action. Compare adjective **राम्रो** in राम्रो किताब with adverb **राम्ररी** in राम्ररी पढ्नु.
 
 ### ① Start with one example
 
@@ -7856,100 +5169,26 @@ ma bistārai hĩḍchu
 
 I walk slowly.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Build a short sentence
+### 2. धेरै versus धेरै पटक
 
-**2**  Choose manner, frequency or degree
+**धेरै पानी** gives a large amount of water; **धेरै पढ्छु** much reading; **धेरै पटक पढ्छु** many repetitions. The modified expression and presence of पटक distinguish amount from frequency.
 
-**3**  Add the description
+### 3. अलि versus थोरै
 
-### Watch out
+**अलि बिस्तारै** means a little more slowly; **थोरै पानी** a small amount of water. Their uses overlap, but अलि is also common in softened requests such as **अलि हेर्नुहोस्**.
 
-Identify **which action or quality** the adverb describes.
+### 4. Frequency expressions
 
-### ③ Quick check
+**प्रायः** means usually, **सधैं** always, **कहिलेकाहीँ** sometimes. Compare **कहिलेकाहीँ जान्छु** with negative **कहिल्यै जाँदिनँ**. कहिल्यै receives its never reading in combination with negation.
 
-**Check:** does बिस्तारै explain who, what or how?
+### 5. Scope of पनि and मात्र
 
-**Answer:** how.
+**म पनि जान्छु** adds the speaker; **म चिया मात्र खान्छु** limits the item to tea. Scope depends on the expression before पनि/मात्र, so placement changes what is added or restricted.
 
-Identifying each word’s information type helps reveal the skeleton of longer sentences.
-
-### When you want to know more
-
-### What can you say?
-
-Add manner, frequency or degree: walk slowly, always come, very big.
-
-Such words are often called adverbs.
-
-Contrast an adjective describing a house with an adverb describing how someone walks.
-
-### Look at the pattern
-
-Use subject + manner/frequency expression + verb. बिस्तारै means slowly, छिटो quickly/early, सधैं always and प्रायः usually. धेरै may mean much/many or very depending on what it modifies.
-
-Identify the action or quality the word describes.
-
-### Check the construction
-
-1.
-
-Form a short sentence without the added description.
-
-2.
-
-Choose manner, frequency or degree.
-
-3.
-
-Put the action-description before the verb.
-
-4.
-
-Keep the same personal agreement if the subject and action have not changed.
-
-### How the example works
-
-म is I, बिस्तारै slowly and हिँड्छु walk.
-
-Slowly describes the manner of walking, not I as a permanent personal quality.
-
-Removing it leaves the basic sentence I walk.
-
-Build that skeleton before adding details.
-
-### Compare related patterns
-
-कति plus a descriptive word can express an exclamation as well as a question; use intonation and context.
-
-Distinguish frequency meanings even when words occupy similar positions.
-
-Adding an adverb does not itself make a verb progressive; retain the distinction in topics 8 and 10.
-
-
-**Also check**
 
 कति can be used for an exclamation as well as a question.
-
-Consider the purpose of the sentence, not just its punctuation.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -7979,12 +5218,6 @@ tapāĩ prāyaḥ yahā̃ āunuhuncha?
 | प्रायः | prāyaḥ | usually |
 | यहाँ | yahā̃ | here |
 | आउनुहुन्छ | āunuhuncha | come; comes (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -8071,12 +5304,6 @@ sā̃ccai?
 | --- | --- | --- |
 | साँच्चै | sā̃ccai | really |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 9
 
 It is very cold today.
@@ -8121,22 +5348,14 @@ yo phūl kati rāmro cha!
 | राम्रो | rāmro | good; nice |
 | **छ** | cha | am; is; are |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 3: **छ**: is ~ (adjective / state) / 8: Action verbs: present (do ~) / 6: Question words and how to ask
 
 ## 25 Comparison & superlative
 
-**Remember this**
-A compared with B: **A + Bभन्दा + adjective**.
+**Pattern and choice**
+In **यो घर त्यो घरभन्दा ठूलो छ**, यो घर is the target and त्यो घरभन्दा the standard. भन्दा with ठूलो already forms the comparison; an extra word corresponding to more is not always required.
 
 ### ① Start with one example
 
@@ -8146,77 +5365,23 @@ yo ghar tyo gharbhandā ṭhūlo cha
 
 This house is bigger than that house.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose A, the item described
+### 2. अझ versus धेरै
 
-**2**  Mark standard B with भन्दा
+**अझ राम्रो** means better/still better; **धेरै राम्रो** very good. **धेरै ठूलो** alone need not compare two items explicitly; use a standard such as **Bभन्दा** when required.
 
-**3**  Add the quality and ending
+### 3. Superlative and comparison set
 
-### Watch out
+**सबैभन्दा ठूलो** is biggest; **यीमध्ये** selects the set among these. In **यीमध्ये यो सबैभन्दा ठूलो छ**, मध्ये establishes the group and सबैभन्दा the superlative.
 
-**भन्दा** follows **B, the comparison standard**.
+### 4. जस्तो versus जस्तै
 
-### ③ Quick check
+**तपाईंजस्तो साथी** is a friend like you. जस्तो also has **जस्ती/जस्ता** forms. **तपाईं जस्तै** expresses similarity such as just like you. Compare complete noun/adverbial constructions, not isolated translations.
 
-**Check:** in A is bigger than B, which item is followed by भन्दा?
+### 5. Equality versus difference
 
-**Answer:** B, the standard.
-
-First identify the item being described to avoid reversing the comparison.
-
-### When you want to know more
-
-### What can you say?
-
-Compare things and describe differences or similarities.
-
-Separate the item being described from the standard it is compared against.
-
-Decide bigger than what, not just bigger, before arranging the sentence.
-
-### Look at the pattern
-
-Use A + Bभन्दा + adjective + ending.
-
-A is described; B is the standard. भन्दा follows B.
-
-Superlatives use forms such as सबैभन्दा, and मध्ये can identify the comparison group.
-
-Similarity with जस्तै/जस्तो is different from an inequality with भन्दा.
-
-### Check the construction
-
-1.
-
-Choose A, the item described.
-
-2.
-
-Choose B, the standard.
-
-3.
-
-Put भन्दा after B.
-
-4.
-
-Add the quality and an ending appropriate to A.
-
-### How the example works
-
-यो घर is this house, त्यो घरभन्दा than that house, and ठूलो **छ** is bigger.
-
-The marker attaches to the standard, while the sentence describes this house.
-
-Reversing the two houses changes which one is said to be larger.
-
-### Compare related patterns
-
-Negate the descriptive ending rather than deleting the comparison marker.
-
-Do not silently expand an unspecified superlative group to the whole world. जस्तो can vary with agreement; review topic 23 and its relative-expression uses in topic 29.
+**A र B बराबर छन्** states equality; **Bजति** compares an amount/degree to B; **Bभन्दा** introduces a standard for difference. The marker distinguishes equality/degree from unequal comparison.
 
 
 ### Related forms taught in this topic
@@ -8226,28 +5391,6 @@ Do not silently expand an unspecified superlative group to the whole world. ज�
 | भन्दा<br>bhandā | than | चियाभन्दा / ciyābhandā |
 | मध्ये<br>madhye | among a group | यीमध्ये / yīmadhye |
 | जस्तै・जस्तो・झैं・सरी<br>jastai / jasto / jhaĩ / sarī | like, similar to; जस्तो may agree | मेरो झोलाजस्तै / mero jholājastai |
-
-**Also check**
-
-The best or biggest should have a clear comparison group.
-
-Do not add an English-style comparative ending to the adjective.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -8265,8 +5408,6 @@ yo ghar tyo gharbhandā ṭhūlo cha
 | घरभन्दा | gharbhandā | than that house |
 | ठूलो | ṭhūlo | big |
 | **छ** | cha | am; is; are |
-
-**In this sentence**
 
 भन्दा = standard of comparison
 
@@ -8287,8 +5428,6 @@ yo kitāb tyo kitābbhandā sasto cha
 | सस्तो | sasto | cheap |
 | **छ** | cha | is; are (existence) |
 
-**In this sentence**
-
 भन्दा = standard of comparison
 
 ### Exercise 3
@@ -8305,8 +5444,6 @@ ciyā kaphībhandā sasto cha
 | कफीभन्दा | kaphībhandā | than coffee |
 | सस्तो | sasto | cheap |
 | **छ** | cha | is; are (existence) |
-
-**In this sentence**
 
 भन्दा = standard of comparison
 
@@ -8325,8 +5462,6 @@ It is colder today than yesterday.
 | चिसो | ciso | cold |
 | **छ** | cha | am; is; are |
 
-**In this sentence**
-
 भन्दा = standard of comparison
 
 ### Exercise 5
@@ -8343,8 +5478,6 @@ uhā̃ mabhandā chiṭo hiṇḍnuhuncha
 | मभन्दा | mabhandā | than me |
 | छिटो | chiṭo | quickly |
 | हिँड्नुहुन्छ | hiṇḍnuhuncha | walk/walks (respectful) |
-
-**In this sentence**
 
 भन्दा = standard of comparison
 
@@ -8365,8 +5498,6 @@ yo kām tyo kāmbhandā sajilo chaina
 | सजिलो | sajilo | easy |
 | छैन | chaina | am not; is not; are not |
 
-**In this sentence**
-
 भन्दा = standard of comparison
 
 ### Exercise 7
@@ -8385,11 +5516,7 @@ yīmadhye kun sabbhandā sasto cha?
 | सस्तो | sasto | cheap |
 | **छ** | cha | is; are (existence) |
 
-**In this sentence**
-
 भन्दा = standard of comparison / This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 8
 
@@ -8406,8 +5533,6 @@ yo jholā sabbhandā sasto cha
 | सबभन्दा | sabbhandā | the most |
 | सस्तो | sasto | cheap |
 | **छ** | cha | is; are (existence) |
-
-**In this sentence**
 
 भन्दा = standard of comparison
 
@@ -8426,8 +5551,6 @@ yo sabbhandā rāmro kitāb ho
 | राम्रो | rāmro | good; nice |
 | किताब | kitāb | book |
 | **हो** | ho | am; is; are |
-
-**In this sentence**
 
 भन्दा = standard of comparison
 
@@ -8448,11 +5571,7 @@ yo bāṭo tyo bāṭobhandā lāmo cha?
 | लामो | lāmo | long |
 | **छ** | cha | am; is; are |
 
-**In this sentence**
-
-बाट = source or means / भन्दा = standard of comparison / This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
+भन्दा = standard of comparison / This is a question.
 
 ### Exercise 11
 
@@ -8468,8 +5587,6 @@ uhā̃harū hāmībhandā chiṭo hiṇḍnuhuncha
 | हामीभन्दा | hāmībhandā | than us (हामी + भन्दा) |
 | छिटो | chiṭo | quickly |
 | हिँड्नुहुन्छ | hiṇḍnuhuncha | walk/walks (respectful) |
-
-**In this sentence**
 
 भन्दा = standard of comparison
 
@@ -8488,12 +5605,6 @@ yīmadhye kun rāmro cha?
 | राम्रो | rāmro | good; nice |
 | **छ** | cha | be; exist |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 13
 
 This bag is like my bag.
@@ -8510,22 +5621,14 @@ yo jholā mero jholājastai cha
 | झोलाजस्तै | jholājastai | like the bag (झोला + जस्तै) |
 | **छ** | cha | be; exist |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 3: **छ**: is ~ (adjective / state) / 5: Postpositions: place, participants and relationships / 23: Adjective agreement & position
 
 ## 26 Conjunctions (and / so / but)
 
-**Remember this**
-Choose the link: **addition, sequence, contrast or reason**.
+**Pattern and choice**
+**चिया र पानी** coordinates two items. **खाना खाएँ अनि गएँ** explicitly sequences eating then going. र can also join clauses, but अनि foregrounds succession.
 
 ### ① Start with one example
 
@@ -8535,73 +5638,23 @@ malāī ciyā ra kaphī man parcha
 
 I like tea and coffee.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Understand each piece
+### 2. तर versus पनि
 
-**2**  Choose their relationship
+**सानो छ तर राम्रो छ** contrasts smallness with goodness. **सानो पनि छ** adds smallness as another property. तर links contrast; पनि adds the preceding element. Their positions and roles differ.
 
-**3**  Link with र, अनि, तर or another form
+### 3. किनभने versus -एकोले
 
-### Watch out
+**म गएनँ किनभने पानी पर्यो** introduces the reason after the main statement. **पानी परेकोले म गएनँ** places a **-एकोले** reason clause first. Do not attach ले directly to every finite simple-past verb.
 
-**Coordination** and **sequence** are different relationships.
+### 4. Cause versus purpose
 
-### ③ Quick check
+**वर्षाका कारण** supplies a cause, rain; **पढ्नको लागि** an intended purpose, study. Cause **का कारण** and purpose **को लागि** are not interchangeable.
 
-**Check:** are tea and coffee and go home, then sleep the same relationship?
+### 5. Concession with भए पनि
 
-**Answer:** one coordinates items; the other orders actions.
-
-Choose by the relationship, not a single translated conjunction.
-
-### When you want to know more
-
-### What can you say?
-
-Connect items or clauses to express addition, sequence, contrast or reason.
-
-Connecting is not merely making a sentence longer: first decide the relationship between the pieces of information.
-
-### Look at the pattern
-
-र coordinates items, अनि marks sequence, तर contrast, and पनि adds also. किनभने introduces a reason.
-
-A clause describes an event or state.
-
-When clauses are linked, each still needs its own appropriate subject, verb and case relationships.
-
-### Check the construction
-
-1.
-
-Understand each piece separately.
-
-2.
-
-Choose addition, sequence, contrast or reason.
-
-3.
-
-Link them with the corresponding expression.
-
-4.
-
-Recheck which verb belongs to which person or thing.
-
-### How the example works
-
-मलाई marks the experiencer, चिया र कफी tea and coffee, and मन पर्छ liking. र joins two drinks inside one clause.
-
-It does not require repeating the experiencer and predicate for each drink.
-
-### Compare related patterns
-
-Do not exchange र and अनि indiscriminately: coordination and sequence differ.
-
-A reason explains why; a purpose states an intended outcome, taught in topic 28.
-
-Expressions such as का बाबजुद mark a result contrary to expectation.
+**पानी परे पनि जान्छु** concedes even if it rains. **पानी पर्यो तर गएँ** contrasts two reported events. The first uses **-ए पनि**; the second uses तर. **का बाबजुद** follows a noun phrase for despite.
 
 
 ### Related forms taught in this topic
@@ -8613,27 +5666,7 @@ Expressions such as का बाबजुद mark a result contrary to expectat
 | का कारण・को कारणले・को वजहले<br>kā kāraṇ / ko kāraṇle / ko vajahle | because of | वर्षाका कारण / varṣākā kāraṇ |
 | का बाबजुद・हुँदाहुँदै<br>kā bābajud / hũdāhũdai | despite; the latter is verbal | वर्षाका बाबजुद / varṣākā bābajud |
 
-**Also check**
-
-Confusing but with because changes the relationship between events.
-
 With पनि, also check what the word too applies to.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -8728,12 +5761,6 @@ tapāĩ pani āunuhuncha?
 | पनि | pani | also; too |
 | आउनुहुन्छ | āunuhuncha | come; comes (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 7
 
 We stayed home because it rained.
@@ -8799,10 +5826,6 @@ varṣākā kāraṇ bāṭo banda cha
 | बन्द | banda | closed |
 | **छ** | cha | be; exist |
 
-**In this sentence**
-
-बाट = source or means
-
 ### Exercise 11
 
 We went despite the rain.
@@ -8818,22 +5841,14 @@ varṣākā bābajud hāmī gayaũ
 | हामी | hāmī | we |
 | गयौं | gayaũ | we went (past of जानु) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 5: Postpositions: place, participants and relationships / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~)
 
 ## 27 While ~ (-दै) / after ~ (-एपछि)
 
-**Remember this**
-**At the same time or after?** Choose the time link.
+**Pattern and choice**
+**खाँदै बोल्नु** combines simultaneous eating and speaking; **खाँदा** supplies when eating. **-दै** marks overlap/progression, while **-दा/-ँदा** forms a temporal background. A finite progressive adds a छ-family auxiliary to -दै.
 
 ### ① Start with one example
 
@@ -8843,75 +5858,23 @@ ma saṅgīt sundai paḍhchu
 
 I study while listening to music.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose two actions
+### 2. After versus at the time of
 
-**2**  Choose overlap or succession
+**पढेपछि** means after reading; **पढेको बेला** at the time of reading. **-एपछि** establishes completed succession. Do not retain the first-person finite past ending as in पढेँपछि.
 
-**3**  Conjugate the main action last
+### 3. -नुअघि for before
 
-### Watch out
+Compare **खानुअघि** before eating with **खाएपछि** after eating: the linking forms differ, **-नु** versus **-ए**. Noun combinations such as **खानाअघि/खानापछि** follow a different construction.
 
-Distinguish **simultaneous** from **after completion**.
+### 4. सम्म versus भित्र versus पछि
 
-### ③ Quick check
+**दुई बजेसम्म** means until/by two o'clock, **दुई घण्टाभित्र** within two hours, **दुई घण्टापछि** after two hours. The unit and marker jointly express endpoint, deadline or delay.
 
-**Check:** which action has the final finite ending in the listening/studying example?
+### 5. बित्तिकै versus पछि
 
-**Answer:** the main action पढ्छु.
-
-Separate the linking form from the final verb when reading two-action sentences.
-
-### When you want to know more
-
-### What can you say?
-
-Listening while studying overlaps two actions; drinking tea before leaving orders them.
-
-Understand each action first, then express whether they overlap or one follows the other.
-
-### Look at the pattern
-
-For overlap use a -दै action form with the main action; for sequence use an appropriate completed-action form with पछि before the next action. -दै also appears in topic 10, but here links simultaneous actions.
-
-The final main verb carries the sentence’s personal and temporal information.
-
-### Check the construction
-
-1.
-
-Choose two actions.
-
-2.
-
-Decide overlap or succession.
-
-3.
-
-Put the background/earlier action in the appropriate linking form.
-
-4.
-
-Conjugate the final main action for the subject.
-
-Learn the actual linking forms through the examples.
-
-### How the example works
-
-म is I, संगीत music, सुन्दै while listening and पढ्छु study.
-
-The actions overlap. सुन्दै links the background action; final पढ्छु supplies the finite ending agreeing with I.
-
-Both actions do not receive independent ordinary-present endings here.
-
-### Compare related patterns
-
-Noun + पछि, after class, differs from a verb construction meaning after doing.
-
-Do not append पछि to every past verb unchanged. अघि/पहिले mark before, and भित्र can mark within a period.
-
-Do not assume the simple shared-actor overlap pattern fits every pair of clauses with different actors.
+**आउनेबित्तिकै** means immediately upon arrival; **आएपछि** after arrival. बित्तिकै emphasizes immediacy. See topic 29 for temporal **जब…तब/जहिले**, distinct from conditional भने.
 
 
 ### Related forms taught in this topic
@@ -8922,28 +5885,6 @@ Do not assume the simple shared-actor overlap pattern fits every pair of clauses
 | अघि・अगाडि・पहिले<br>aghi / agāḍi / pahile | before in time | खानुअघि / khānuaghi |
 | पछि・पश्चात्<br>pachi / paścāt | after; पश्चात् is more formal | कक्षापछि / kakṣāpachi |
 | भित्र<br>bhitra | within a period | दुई दिनभित्र / duī dinbhitra |
-
-**Also check**
-
-Translating a sequence as while changes the action.
-
-Begin with two actions performed by the same subject.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -9006,12 +5947,6 @@ tapāĩ saṅgīt sundai kām garnuhuncha?
 | सुन्दै | sundai | while listening |
 | काम | kām | work |
 | गर्नुहुन्छ | garnuhuncha | do; does (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 5
 
@@ -9135,17 +6070,7 @@ hāmī duī dinbhitra pharkanchaũ
 | दिनभित्र | dinbhitra | within the stated number of days (दिन + भित्र) |
 | फर्कन्छौं | pharkanchaũ | we return (present of फर्कनु) |
 
-**In this sentence**
-
 भित्र = inside or within a period
-
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
 
 ### Review topics
 
@@ -9153,8 +6078,8 @@ Change the intended message, not only the subject.
 
 ## 28 In order to ~ (-नको लागि)
 
-**Remember this**
-For an action purpose: **infinitive + को लागि**.
+**Pattern and choice**
+**छोराको लागि / तपाईंका लागि** mark beneficiaries. The connecting को/का depends on the noun/honorific construction. **लाई** marks a recipient; **का लागि** forms a beneficiary/purpose phrase.
 
 ### ① Start with one example
 
@@ -9164,77 +6089,23 @@ ma paḍhnako lāgi pustakālaya jānchu
 
 I go to the library to study.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the main action
+### 2. Action purpose: -नको लागि
 
-**2**  Choose its purpose
+Use **पढ्नको लागि / काम गर्नको लागि**. The purpose infinitive is **पढ्न**, not unchanged पढ्नु. **पढाइका लागि** instead begins with the noun study; these are different constructions.
 
-**3**  Put the purpose phrase before the verb
+### 3. Bare purpose infinitive with motion
 
-### Watch out
+**म पढ्न जान्छु** uses **-न + motion verb** for a purpose. को लागि is not obligatory here. The same infinitive in **पढ्न सक्छु** instead complements ability, not motion.
 
-Separate **why = reason** from **what for = purpose**.
+### 4. लागि, निम्ति and निमित्त
 
-### ③ Quick check
+**तपाईंका लागि / तपाईंका निम्ति** both mean for you. निमित्त also occurs in formal writing. Learn each complete combination including the connecting form rather than swapping isolated translated words.
 
-**Check:** is going home because it rains the same relationship as going somewhere to study?
+### 5. Purpose versus reason
 
-**Answer:** one gives a reason; the other an intended outcome.
-
-Choose the construction by that relationship.
-
-### When you want to know more
-
-### What can you say?
-
-Express an intended outcome or beneficiary: go to the library to study, buy something for a child.
-
-A purpose is what the action aims to achieve, unlike an already-existing reason.
-
-Separate going from what the person intends to do there.
-
-### Look at the pattern
-
-Beneficiaries use noun phrases with को/का लागि; action purposes use an infinitive in -न + को लागि, as in पढ्नको लागि.
-
-Separate the intended action from the main action.
-
-A past main verb can describe going for that purpose; a purpose phrase does not by itself make the sentence future.
-
-### Check the construction
-
-1.
-
-Choose the main action, such as going to a library.
-
-2.
-
-Identify the intended action or beneficiary.
-
-3.
-
-Put an action purpose in the appropriate purpose form.
-
-4.
-
-Place it before the main verb, which carries person and tense.
-
-### How the example works
-
-म is I, पढ्नको लागि in order to study, पुस्तकालय the library and जान्छु go.
-
-Studying is the intended action; going is the main action.
-
-Identify the purpose phrase as a unit before reading the final verb.
-
-### Compare related patterns
-
-Motion purposes can also use a shorter infinitive, as in पढ्न जान्छु; को लागि is not always obligatory.
-
-Related निम्ति/निमित्त expressions have their own combinations and register.
-
-Distinguish purpose from the reason constructions in topic 26.
+**पढ्नको लागि आएँ** gives an intended purpose; **पानी परेकोले आएनँ** a causal circumstance. Nepali distinguishes them in the linking morphology itself.
 
 
 ### Related forms taught in this topic
@@ -9244,28 +6115,6 @@ Distinguish purpose from the reason constructions in topic 26.
 | को लागि・का लागि<br>ko lāgi / kā lāgi | for a beneficiary; learn the construction | तपाईंका लागि / tapāĩkā lāgi |
 | -नको लागि<br>-nako lāgi | in order to do | पढ्नको लागि / paḍhnako lāgi |
 | निम्ति・निमित्त<br>nimti / nimitta | for, for the purpose of; further forms | तपाईंको निम्ति / tapāĩko nimti |
-
-**Also check**
-
-Purpose and cause are different.
-
-Check whether you mean an intended action or an existing circumstance.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -9298,12 +6147,6 @@ tapāĩ ke garnako lāgi āunubhayo?
 | गर्नको | garnako | to do (purpose) |
 | लागि | lāgi | for |
 | आउनुभयो | āunubhayo | came (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 3
 
@@ -9432,12 +6275,6 @@ tapāĩ kasko lāgi kām garnuhuncha?
 | काम | kām | work |
 | गर्नुहुन्छ | garnuhuncha | do; does (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 11
 
 I did not come to play.
@@ -9454,22 +6291,14 @@ ma khelnako lāgi āeko hoinã
 | आएको | āeko | come (past participle) |
 | होइनँ | hoinã | am not; is not; are not |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 5: Postpositions: place, participants and relationships / 6: Question words and how to ask / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~)
 
 ## 29 Relative expressions: people, things, place and time
 
-**Remember this**
-Use a **clause to specify a person or thing**.
+**Pattern and choice**
+**बस्ने मान्छे** describes someone who lives; **आएको मान्छे** someone who came. **-ने** often marks habitual/prospective function, **-एको** completion. जाने in **जाने बस** modifies बस; it is not the future predicate जानेछ.
 
 ### ① Start with one example
 
@@ -9479,73 +6308,27 @@ yahā̃ basne mānche mero sāthī ho
 
 The person who lives here is my friend.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the noun to specify
+### 2. Subjects and respect inside modifiers
 
-**2**  Put its modifier before it
+Compare **म पढ्ने किताब** with **मैले पढेको किताब**; a completed transitive modifier can still mark its agent. Respectful modifiers include **उहाँले पढ्नुभएको किताब** and non-completed **उहाँ पढ्नुहुने किताब**.
 
-**3**  Use the complete phrase in a sentence
+### 3. जो, जसले and जसलाई
 
-### Watch out
+Compare **जो…उहाँ**, agentive **जसले…उहाँले**, and dative **जसलाई…उहाँलाई**. Each clause assigns its own participant role; do not copy a case ending mechanically between clauses.
 
-**कहाँ asks a question**; **जहाँ links a place across clauses**.
+### 4. जुन and जे with their correlates
 
-### ③ Quick check
+**जुन किताब…त्यो** selects a particular book; **जे…त्यही** links whatever content/thing is intended. In **जुन किताबमा…**, the noun carries मा. Basic personal **जो** is not a universal substitute for every thing.
 
-**Check:** do where do you live? and the place where you live do the same job?
+### 5. Place, direction and time correlatives
 
-**Answer:** one requests information; the other describes or links a place inside a statement.
+**जहाँ…त्यहाँ** links place; **जता…त्यता** direction; **जब…तब** time. **जहिले** can introduce recurring whenever contexts. Unlike interrogative **कहाँ/कहिले**, these ज-forms link clauses.
 
-Decide question versus description first.
+### 6. Manner, degree and -सुकै
 
-### When you want to know more
-
-### What can you say?
-
-Describe a person or thing with a clause, as in the person who lives here.
-
-Also link two clauses referring to the same person, place or time.
-
-Think of relative expressions as a way to specify which person or setting you mean.
-
-### Look at the pattern
-
-There are two useful patterns: a modifying clause, often in -ने/-एको, before a noun; or linked clauses introduced by forms such as जो, जुन, जहाँ and जब.
-
-The first builds a noun phrase; the second connects corresponding information across clauses.
-
-### Check the construction
-
-1.
-
-Choose the noun, such as मान्छे, person.
-
-2.
-
-Build its description: यहाँ बस्ने, living here.
-
-3.
-
-Put the description before the noun.
-
-4.
-
-Use the complete noun phrase as one participant in the larger sentence.
-
-### How the example works
-
-यहाँ बस्ने मान्छे means the person who lives here; मेरो साथी my friend; **हो** completes the identity statement.
-
-Read through बस्ने to मान्छे to recognize the entire subject phrase rather than treating बस्ने as a separate finished sentence.
-
-### Compare related patterns
-
-Relative forms cover people, content, place, direction, time, manner and quantity. जसले, जसलाई and जसको reflect agent, object/recipient and possession within their clause.
-
-Do not simply string question words together: identify each clause’s roles.
-
-Compare questions in topic 6 and conditions in topic 30.
+**जसरी…त्यसरी** links manner, **जति…त्यति** degree, **जस्तो…त्यस्तो** quality, **जत्रो…त्यत्रो** size. **-सुकै**, as in **जुनसुकै/जहिलेसुकै**, opens the choice to any/whenever. See topic 23 for agreeing forms.
 
 
 ### Noun-modifying clauses and relative–correlative clauses
@@ -9553,10 +6336,6 @@ Compare questions in topic 6 and conditions in topic 30.
 Place a modifier before its noun: नेपाल जाने मान्छे, a person who goes to Nepal; हिजो आएको मान्छे, a person who came yesterday.
 
 In जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ, जो introduces a person and उहाँ resumes that person.
-
-A clause describes an event/state.
-
-Each clause uses the case marking and verb appropriate to its own role.
 
 | Relative form and reading | Function | Short example |
 | --- | --- | --- |
@@ -9580,35 +6359,13 @@ Each clause uses the case marking and verb appropriate to its own role.
 | जोसुकै・जुनसुकै・जेसुकै<br>josukai / junsukai / jesukai | whoever, whichever, whatever; extension | जुनसुकै किताब लिनुहोस्।<br>junsukai kitāb linuhos<br>Take any book. |
 | जहाँसुकै・जहिलेसुकै・जतिसुकै<br>jahā̃sukai / jahilesukai / jatisukai | wherever, whenever, however much; extension | जहिलेसुकै आउनुहोस्।<br>jahilesukai āunuhos<br>Come whenever you like. |
 
-**Also check**
-
 को/कहाँ/कहिले ask questions; जो/जहाँ/जब link information.
 
 Temporal जब…तब is not always interchangeable with conditional यदि…भने. जहिले can introduce recurring times and its use depends on context.
 
 See topic 23 for agreement of जस्तो/जत्रो.
 
-**Also check**
-
-Distinguish a finite present statement from a noun-modifying form.
-
 Adding बित्तिकै can express as soon as.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -9643,12 +6400,6 @@ kāṭhmāḍaũ jāne bas kahā̃ cha?
 | कहाँ | kahā̃ | where |
 | **छ** | cha | is; are (existence) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 3
 
 This is the road to school.
@@ -9665,10 +6416,6 @@ yo skūl jāne bāṭo ho
 | बाटो | bāṭo | road; path |
 | **हो** | ho | am; is; are |
 
-**In this sentence**
-
-बाट = source or means
-
 ### Exercise 4
 
 Is there anything to eat?
@@ -9682,12 +6429,6 @@ khāne kurā cha?
 | खाने | khāne | for eating; that one eats |
 | कुरा | kurā | thing |
 | **छ** | cha | is; are (existence) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 5
 
@@ -9815,8 +6556,6 @@ jo yahā̃ basnuhuncha, uhā̃ mero sāthī hunuhuncha
 | साथी | sāthī | friend |
 | हुनुहुन्छ | hunuhuncha | is/are (respectful) |
 
-**In this sentence**
-
 जो…उहाँ = the person who…that person
 
 ### Exercise 13
@@ -9837,8 +6576,6 @@ jun kitāb tapāĩ paḍhnuhuncha, tyo rāmro cha
 | राम्रो | rāmro | good; nice |
 | **छ** | cha | be; exist |
 
-**In this sentence**
-
 जुन…त्यो = the entity which…that one
 
 ### Exercise 14
@@ -9856,8 +6593,6 @@ jahā̃ pānī cha, tyahā̃ jīvan cha
 | **छ** | cha | be; exist |
 | त्यहाँ | tyahā̃ | there |
 | जीवन | jīvan | life |
-
-**In this sentence**
 
 जहाँ…त्यहाँ = where…there
 
@@ -9879,9 +6614,7 @@ jab pānī parcha, tab bāṭo hilo huncha
 | हिलो | hilo | mud; muddy |
 | **हुन्छ** | huncha | become; be generally |
 
-**In this sentence**
-
-बाट = source or means / जब…तब = when…then
+जब…तब = when…then
 
 ### Exercise 16
 
@@ -9899,8 +6632,6 @@ ma jahile āũchu, uhā̃ yahā̃ hunuhuncha
 | उहाँ | uhā̃ | he/she (respectful) |
 | यहाँ | yahā̃ | here |
 | हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
-
-**In this sentence**
 
 जहिले = when, whenever, according to context
 
@@ -9920,8 +6651,6 @@ jasle mehanat garnuhuncha, uhā̃le siknuhuncha
 | उहाँले | uhā̃le | he/she as agent (respectful) |
 | सिक्नुहुन्छ | siknuhuncha | learn/learns (respectful) |
 
-**In this sentence**
-
 जसले…उहाँले = the agent who…that agent
 
 ### Exercise 18
@@ -9939,8 +6668,6 @@ jaslāī pānī cāhincha, uhā̃lāī dinuhos
 | चाहिन्छ | cāhincha | is needed |
 | उहाँलाई | uhā̃lāī | to him/her; him/her as object (respectful) |
 | दिनुहोस् | dinuhos | please give |
-
-**In this sentence**
 
 जसलाई…उहाँलाई = the person whom/to whom…that person
 
@@ -9960,8 +6687,6 @@ jasarī ma garchu, tyasarī garnuhos
 | त्यसरी | tyasarī | in that way |
 | गर्नुहोस् | garnuhos | do; please do |
 
-**In this sentence**
-
 जसरी…त्यसरी = in the way…in that way
 
 ### Exercise 20
@@ -9978,8 +6703,6 @@ jati cāhincha, tyati linuhos
 | चाहिन्छ | cāhincha | is needed |
 | त्यति | tyati | that much/many |
 | लिनुहोस् | linuhos | please take (respectful request from लिनु) |
-
-**In this sentence**
 
 जति…त्यति = as much/many…that much/many
 
@@ -9998,8 +6721,6 @@ je man parcha, tyahī khānuhos
 | पर्छ | parcha | have to; must |
 | त्यही | tyahī | the very thing; that same one |
 | खानुहोस् | khānuhos | eat; please eat |
-
-**In this sentence**
 
 जे…त्यो／त्यही = what…that, the very thing
 
@@ -10021,17 +6742,7 @@ jatā uhā̃ jānuhuncha, ma pani tyatai jānchu
 | त्यतै | tyatai | that way; in that direction |
 | जान्छु | jānchu | go; goes |
 
-**In this sentence**
-
 जता…त्यता／त्यतै = in whichever direction…that way
-
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
 
 ### Review topics
 
@@ -10039,8 +6750,8 @@ Change the intended message, not only the subject.
 
 ## 30 Conditionals (if ~)
 
-**Remember this**
-If: **condition + भने + consequence**.
+**Pattern and choice**
+**पानी पर्यो भने म जाँदिनँ** gives an if-condition. **यदि** can make if explicit but is optional. Place भने after the condition in **यदि…भने…**.
 
 ### ① Start with one example
 
@@ -10050,96 +6761,26 @@ pānī paryo bhane, ma gharmā baschu
 
 If it rains, I will stay home.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the condition
+### 2. Past-looking form in a future condition
 
-**2**  Add भने
+**भोलि पानी पर्यो भने** can refer to rain tomorrow. The form पर्यो does not force a report that rain has already occurred; the conditional supposes the occurrence as completed.
 
-**3**  Follow with the consequence
+### 3. छ भने versus भयो भने
 
-### Watch out
+**समय छ भने** conditions on having time; **समय भयो भने** can condition on time becoming available/the time arriving. The state/occurrence contrast survives inside a conditional.
 
-Identify the **condition** and its **consequence**.
+### 4. नभए versus भए पनि
 
-### ③ Quick check
+**समय नभए** means if there is no time; **समय भए पनि** even if there is time. Prefix न negates the condition; **-ए पनि** makes it concessive.
 
-**Check:** what follows conditional भने?
+### 5. Conditional versus temporal link
 
-**Answer:** the clause stating what happens or what someone does under that condition.
+**जब आउनुहुन्छ, तब…** links the time of arrival; **आउनुभयो भने…** conditions on an arrival. The speech verb भन्नु in **भन्नुभयो** has a separate role from conditional भने.
 
-Explain the relationship, not just the translation if.
-
-### When you want to know more
-
-### What can you say?
-
-Imagine a condition and state what follows: if it rains, stay home.
-
-Separate if X from then Y.
-
-Also decide whether X is a current state or an event that may occur.
-
-### Look at the pattern
-
-Use condition clause + भने + consequence clause. यदि can explicitly add if but is often optional.
-
-Each clause describes its own event or state and needs the forms appropriate to its participant and time perspective.
-
-### Check the construction
-
-1.
-
-Choose the imagined situation.
-
-2.
-
-Form a short condition clause and add भने.
-
-3.
-
-Follow it with the consequence clause.
-
-4.
-
-Recheck which part is the condition and which is the result.
-
-### How the example works
-
-पानी पर्यो भने gives the rain condition; म घरमा बस्छु the response.
-
-Do not interpret the first verb in isolation as necessarily reporting an already-completed event.
-
-Read it together with भने as the condition.
-
-### Compare related patterns
-
-A state can also be a condition, as in being busy.
-
-Temporal जब…तब is not always interchangeable with an if-condition. भने can also appear as a speech-verb form, so distinguish introducing a condition from reporting that someone said something in topic 34.
-
-
-**Also check**
 
 भने can mark the condition even without यदि.
-
-Practice what happens when the condition is not met as well.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -10290,22 +6931,14 @@ bholi bidā cha bhane, hāmī bheṭaũ
 | हामी | hāmī | we |
 | भेटौं | bheṭaũ | let us meet |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 2: **छ**: existence and location / 3: छ: is ~ (adjective / state) / 9: Present negative (don't ~) / 11: The ergative ले & the past (did ~) / 17: Requests & commands (three politeness levels) / 18: Hortative / volitional (let's ~ / shall I ~) / 29: Relative expressions: people, things, place and time
 
 ## 31 Inference / opinion / possibility (I think / probably / might / must be)
 
-**Remember this**
-Fact or judgment? Preserve the **degree of certainty**.
+**Pattern and choice**
+**मलाई लाग्छ…** marks an experiencer in मलाई and introduces an impression. **…भन्ने लाग्छ** can frame the content with भन्ने; it need not report spoken words literally.
 
 ### ① Start with one example
 
@@ -10315,100 +6948,26 @@ bholi pānī parcha jasto lāgcha
 
 I think it will rain tomorrow.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the content
+### 2. हो, होला and हुन सक्छ
 
-**2**  Choose opinion, inference or possibility
+**यो ठीक हो** asserts correctness; **यो ठीक होला** supposes it; **यो ठीक हुन सक्छ** allows the possibility. होला and हुन सक्छ do not encode fixed numerical probabilities.
 
-**3**  Add the corresponding expression
+### 3. Supposition about completion
 
-### Watch out
+**उहाँ जानुभएको होला** supposes that the person has gone. It combines respectful perfect **-नुभएको** with होला. Removing the modal and saying **जानुभयो** instead reports the event.
 
-Do not turn may into a **statement of fact**.
+### 4. Obligation versus inference
 
-### ③ Quick check
+**जानु पर्छ** expresses obligation; **गएको हुनु पर्छ** an inference that someone must have gone. Distinguish required **-नु** action from inferred **-एको हुनु** completion.
 
-**Check:** are he will come and he may come equally certain?
+### 5. Scope of negation
 
-**Answer:** no.
+**नआएको होला** supposes non-arrival; **आउन सक्नुहुन्न** expresses inability to come; **आउनुभएको छैन** states non-arrival. Preserve both the scope of negation and the presence/absence of supposition.
 
-The latter leaves it as a possibility.
-
-Preserve the speaker’s degree of commitment when interpreting the sentence.
-
-### When you want to know more
-
-### What can you say?
-
-Add an opinion, inference or possibility rather than presenting something as an unquestioned fact.
-
-Separate what is known from what is judged or predicted.
-
-The expressions differ in the kind and strength of that judgment.
-
-### Look at the pattern
-
-A content clause followed by जस्तो लाग्छ can mean it seems/I think. मलाई लाग्छ introduces an impression. होला can express supposition and हुन सक्छ possibility.
-
-A completed-action form with हुनु पर्छ may express an inference, unlike an action in -नु + पर्छ expressing obligation.
-
-### Check the construction
-
-1.
-
-Identify the content being judged.
-
-2.
-
-Choose an opinion, prediction or possibility.
-
-3.
-
-Combine the content with the corresponding expression.
-
-4.
-
-Preserve that qualification in translation rather than turning it into a fact.
-
-### How the example works
-
-भोलि is tomorrow, पानी पर्छ it rains, and जस्तो लाग्छ it seems/I think.
-
-The final expression comments on the whole proposition about tomorrow’s rain, not the amount or manner of rain.
-
-### Compare related patterns
-
-Negating the content and negating the judgment are not automatically identical.
-
-Track what is being denied.
-
-In हुन सक्छ, हुन is the form of हुनु before सक्नु; there is no need to add a separate **हो** at the end.
-
-Compare the possibility structure in topic 20.
-
-
-**Also check**
 
 पर्छ has different roles in obligation and deduction.
-
-Check whether the whole construction means must do or must be.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -10457,12 +7016,6 @@ tapāĩlāī ke lāgcha?
 | के | ke | what |
 | लाग्छ | lāgcha | feel; think |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 4
 
 I think she will not come today.
@@ -10508,12 +7061,6 @@ yo kasko kitāb holā?
 | कसको | kasko | whose |
 | किताब | kitāb | book |
 | होला | holā | probably; might be |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 7
 
@@ -10562,22 +7109,14 @@ uhā̃ ghar jānubhaeko hunu parcha
 | हुनु | hunu | be; become |
 | पर्छ | parcha | have to; must |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 2: **छ**: existence and location / 3: छ: is ~ (adjective / state) / 11: The ergative ले & the past (did ~) / 15: Present perfect / experience (have done ~) / 21: Obligation & permission (must ~ / may ~) / 26: Conjunctions (and / so / but)
 
 ## 32 Passive (be ~ed)
 
-**Remember this**
-Focus on **what was affected**: the passive.
+**Pattern and choice**
+**ढोका खोलियो** is passive was opened, from **खोल्नु**; **ढोका खुल्यो** is intransitive opened, from **खुल्नु**. Similar translated subjects do not make them the same verb construction.
 
 ### ① Start with one example
 
@@ -10587,79 +7126,23 @@ Focus on **what was affected**: the passive.
 
 The door was opened.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the affected participant
+### 2. Present, past and negative passive
 
-**2**  Identify the action
+Compare **लेखिन्छ/लेखियो/लेखिएन** for present, past and negative past passive. Active **लेख्छ** is not passive merely because its ending contains छ.
 
-**3**  Use the appropriate passive form
+### 3. Agents with द्वारा
 
-### Watch out
+**शिक्षकद्वारा लेखिएको** names an agent in a formal passive modifier. **शिक्षकले लेख्नुभयो** is an active respectful clause. Changing perspective affects both participant marking and verb form.
 
-The first noun is not automatically **the actor**.
+### 4. द्वारा versus मार्फत
 
-### ③ Quick check
+**हुलाकमार्फत** means through the post; **प्रतिनिधिमार्फत** through a representative. मार्फत highlights a channel/intermediary, whereas द्वारा can identify an agent/means. Transmission through someone does not automatically make that person the agent.
 
-**Check:** must the actor be the center of a passive sentence?
+### 5. Impersonal -इयो
 
-**Answer:** no.
-
-The affected participant or event is foregrounded.
-
-Identify that focus to understand why the actor may be omitted.
-
-### When you want to know more
-
-### What can you say?
-
-A passive presents an event from the affected participant: the door was opened rather than someone opened the door.
-
-It is useful when the actor is unknown or not central.
-
-Not every passive-looking translation fits one identical Nepali pattern.
-
-### Look at the pattern
-
-Foreground the affected participant and choose a passive verb form, such as खोलियो or लेखियो.
-
-General/passive patterns also include लेखिन्छ.
-
-Distinguish the chosen passive construction from an ordinary intransitive change; do not identify them only through an English translation.
-
-### Check the construction
-
-1.
-
-Identify what is affected.
-
-2.
-
-Identify the original action, such as opening or writing.
-
-3.
-
-Select a passive form appropriate to the time intended.
-
-4.
-
-Decide whether the actor needs to be mentioned.
-
-### How the example works
-
-ढोका is door and खोलियो was opened.
-
-The sentence foregrounds what happened to the door.
-
-A noun in subject position is not automatically the actor.
-
-Separate who did it from what was affected.
-
-### Compare related patterns
-
-Negative लेखिएन denies the writing event; it is not simple absence with छैन. द्वारा can mark an actor and मार्फत an intermediary.
-
-Impersonal expressions such as धेरै हिँडियो do not mean a literal object was walked by someone.
+**आज धेरै हिँडियो** is an impersonal account of much walking, not a passive of a walked object. **म धेरै हिँडेँ** instead has an explicit first-person active subject.
 
 
 ### Related forms taught in this topic
@@ -10668,26 +7151,6 @@ Impersonal expressions such as धेरै हिँडियो do not mean a 
 | --- | --- | --- |
 | द्वारा<br>dvārā | by an agent | शिक्षकद्वारा / śikṣakdvārā |
 | मार्फत<br>mārphat | through an intermediary | साथीमार्फत / sāthīmārphat |
-
-**Also check**
-
-Do not interpret an impersonal expression such as having done a lot of walking as being forced to walk by someone.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -10823,12 +7286,6 @@ ke khānā pakāiyo?
 | खाना | khānā | food; meal |
 | पकाइयो | pakāiyo | was cooked |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 11
 
 This book is read by many people.
@@ -10917,8 +7374,6 @@ yo patra śikṣakdvārā lekhieko ho
 | लेखिएको | lekhieko | written (passive participle) |
 | **हो** | ho | be (identification) |
 
-**In this sentence**
-
 द्वारा = agent
 
 ### Exercise 17
@@ -10936,17 +7391,7 @@ maile sāthīmārphat khabar paṭhāẽ
 | खबर | khabar | news; message |
 | पठाएँ | paṭhāẽ | I sent (past of पठाउनु) |
 
-**In this sentence**
-
 मार्फत = intermediary
-
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
 
 ### Review topics
 
@@ -10954,8 +7399,8 @@ Change the intended message, not only the subject.
 
 ## 33 Causative (make someone ~)
 
-**Remember this**
-Separate **causer, actor and object**.
+**Pattern and choice**
+Learn **खानु→खुवाउनु / सिक्नु→सिकाउनु / पढ्नु→पढाउनु**. These pairs include eat/feed and learn/teach. Causatives involve stem-specific changes, not one universally attachable ending.
 
 ### ① Start with one example
 
@@ -10965,102 +7410,24 @@ Separate **causer, actor and object**.
 
 Mother feeds the child.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Identify the participants
+### 2. Causer and person acting
 
-**2**  Choose a causative pattern
+In **आमाले बच्चालाई खाना खुवाउनुभयो**, आमाले is the causer, बच्चालाई the eater and खाना the food. Participant roles determine the marker selection.
 
-**3**  Conjugate the main causative verb
+### 3. The -न लगाउनु construction
 
-### Watch out
+**लेख्न लगाउनु/काम गर्न लगाउनु** cause/arrange writing or working. Keep the first verb in **-न** and conjugate लगाउनु, as in respectful past **लगाउनुभयो**.
 
-Separate **the eater** from **the person feeding them**.
+### 4. खुवाउनु versus खान दिनु
 
-### ③ Quick check
+**खुवाउनु** expresses feeding/causing eating. **खान दिनु** can mean letting or allowing someone to eat. The translation feed/let eat depends on whether the action is caused or permitted.
 
-**Check:** in mother feeds the child, are the eater and causer the same person?
+### 5. Causative polarity and time
 
-**Answer:** no.
+Conjugate the causative itself: **सिकाउनुहुन्छ→सिकाउनुभयो→सिकाउनुभएन**. Compare ability **सिक्न सक्नुहुन्छ** learn with **सिकाउन सक्नुहुन्छ** teach; the causative stem remains essential.
 
-The child eats; mother feeds.
-
-Explain the role division before arranging the sentence.
-
-### When you want to know more
-
-### What can you say?
-
-Describe one person causing or arranging another’s action.
-
-A causative is not always coercive: teaching or feeding can also involve causing an action.
-
-Identify all participants and their roles before forming the sentence.
-
-### Look at the pattern
-
-Learn base/causative pairs: खानु eat and खुवाउनु feed; सिक्नु learn and सिकाउनु teach.
-
-Another pattern uses an action infinitive in -न before लगाउनु.
-
-Do not assume every causative is formed by adding the same letters.
-
-### Check the construction
-
-1.
-
-Separate causer, person acting and object.
-
-2.
-
-Choose a causative verb or the लगाउनु pattern.
-
-3.
-
-Mark the relevant participant with forms such as लाई.
-
-4.
-
-Conjugate the main causative verb for the intended time and agreement.
-
-### How the example works
-
-आमाले marks mother as causer, बच्चालाई the child, खाना food and खुवाउनुहुन्छ respectfully feeds.
-
-The child eats, but the mother causes or provides that action.
-
-Identify whose main action the final causative verb describes.
-
-### Compare related patterns
-
-Do not keep a base verb unchanged and merely translate it as causative.
-
-Review past transitive agents in topic 11 and लाई in topic 5.
-
-Complex permission/benefit meanings in Japanese are not all encoded by a single short causative form.
-
-
-**Also check**
-
-Seeing and showing, or learning and teaching, are different.
-
-Learn causative verbs by meaning rather than adding an ending mechanically.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -11138,12 +7505,6 @@ tapāĩle kaslāī kām garāunubhayo?
 | काम | kām | work |
 | गराउनुभयो | garāunubhayo | had (someone do) (respectful) |
 
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
-
 ### Exercise 6
 
 They made me go outside.
@@ -11176,22 +7537,14 @@ bubāle malāī kām garna lagāunubhaena
 | गर्न | garna | do |
 | लगाउनुभएन | lagāunubhaena | did not make (someone do) (respectful) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 5: Postpositions: place, participants and relationships / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~) / 12: Past negative (didn't ~)
 
 ## 34 Reported speech (said that ~)
 
-**Remember this**
-Separate **the quotation from the report**.
+**Pattern and choice**
+In **उहाँले «म आउँछु» भन्नुभयो**, quoted content precedes the reporting verb. **भन्नुभयो** is respectful past, **भन्नुहुन्छ** respectful present, agreeing with outer agent उहाँले.
 
 ### ① Start with one example
 
@@ -11201,79 +7554,23 @@ uhā̃le jā̃dinã bhannubhayo
 
 She said she would not go.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Identify the original speaker
+### 2. Pronouns inside and outside quotation
 
-**2**  Add the reported content
+म inside **«म आउँछु»** refers to the original speaker. An indirect formulation such as **उहाँ आफू आउने कुरा भन्नुहुन्छ** can use reflexive **आफू** and a nominalized content phrase.
 
-**3**  Match the outer speech verb
+### 3. भनेर, भन्ने and भने
 
-### Watch out
+**भनेर** links quoted content in **«आउँछु» भनेर भन्नुभयो**; **भन्ने** frames content in **आउने भन्ने कुरा**. **भने** in **आउनुभयो भने** is conditional. Their shared shape does not give them one identical function.
 
-**I inside a quotation** may refer to the original speaker.
+### 4. Negation inside or outside the quote
 
-### ③ Quick check
+**«आउँदिनँ» भन्नुभयो** reports saying I will not come. **«आउँछु» भन्नुभएन** denies saying I will come. Moving negation across the quotation boundary changes what is asserted.
 
-**Check:** does I inside a quotation always refer to the current reader or reporter?
+### 5. Time words and habitual reporting
 
-**Answer:** no.
-
-It can refer to the original speaker.
-
-Identify whose words you are inside before interpreting pronouns and time expressions.
-
-### When you want to know more
-
-### What can you say?
-
-Report what someone said.
-
-Direct quotation preserves the speaker’s words; indirect reporting reorganizes the content from the reporter’s perspective.
-
-The short exercises include direct-like quotations, so separate the reported content from the outer speech verb.
-
-### Look at the pattern
-
-Use speaker + reported content + speech verb, such as respectful भन्नुभयो.
-
-I, here and tomorrow inside a quotation may retain the original speaker’s viewpoint.
-
-The outer respectful subject and an inner first-person verb have different roles and need not share the same ending.
-
-### Check the construction
-
-1.
-
-Identify the original utterance.
-
-2.
-
-Choose quotation or indirect reporting.
-
-3.
-
-Add the speaker and content.
-
-4.
-
-Match the outer speech verb to the speaker’s register and time of speaking.
-
-### How the example works
-
-उहाँले marks the speaker, जाँदिनँ means I will/do not go in that speaker’s words, and भन्नुभयो reports said.
-
-The inner first-person negative belongs to the quoted utterance; the outer respectful past belongs to the report.
-
-Keep those layers separate.
-
-### Compare related patterns
-
-Indirect reports can use आफू, self, and content-clause constructions; compare the table below.
-
-The original tomorrow may not be tomorrow at reporting time.
-
-Distinguish conditional भने in topic 30 from speech-verb forms by their role in the sentence.
+Quoted **भोलि** is tomorrow relative to the original speech. Contrast habitual reporting **भन्नुहुन्थ्यो** with a completed report **भन्नुभयो**. Indirect reporting follows the intended time relations rather than obligatory English-style backshift.
 
 
 ### Direct quotation and indirect reporting
@@ -11286,30 +7583,6 @@ Distinguish conditional भने in topic 30 from speech-verb forms by their ro
 In direct speech, म refers to the original speaker.
 
 Indirect reporting uses आफू, self, to refer back to the subject and बिरामी, ill, + भएको to package the reported state. बताउनुभयो is the respectful past of बताउनु, tell/report.
-
-Track perspective and clause structure rather than simply replacing a pronoun.
-
-**Also check**
-
-Said they would come and did not say they would come differ in the scope of negation.
-
-Match the reporting verb to the speaker.
-
-### Before attempting the exercises
-
-The usual order is subject + object/place/time + verb.
-
-Nouns name entities, adjectives describe qualities, and verbs express actions or states.
-
-Person identifies who, tense when, and respect the social relationship.
-
-Check person/gender/number/respect agreement in the tables, topic 7 and appendices A/B.
-
-**Also check**
-
-Listen to the examples to check word order and expressions, then practice saying them aloud yourself.
-
-### Exercises, answers and how they work
 
 ### Exercise 1
 
@@ -11370,12 +7643,6 @@ tapāĩle āũchu bhannubhayo?
 | तपाईंले | tapāĩle | you (respectful agent) |
 | आउँछु | āũchu | come; comes |
 | भन्नुभयो | bhannubhayo | said (respectful) |
-
-**In this sentence**
-
-This is a question.
-
-Supply the missing information and keep person agreement on the final verb.
 
 ### Exercise 5
 
@@ -11455,22 +7722,14 @@ Mother always used to tell me to go to bed early.
 | भन्ने | bhanne | saying |
 | गर्नुहुन्थ्यो | garnuhunthyo | used to do (respectful) |
 
-### Build your own sentence
-
-Choose an example and reconstruct it from the translation.
-
-Change a noun, place or time and explain any required changes to the postposition or verb.
-
-Change the intended message, not only the subject.
-
 ### Review topics
 
 1: **हो**: A is B (identity / equation) / 5: Postpositions: place, participants and relationships / 7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~) / 9: Present negative (don't ~) / 11: The ergative ले & the past (did ~) / 14: Habitual past (used to ~) / 26: Conjunctions (and / so / but)
 
 ## 35 Verb forms through writing: लेख्नु
 
-**Remember this**
-Use the table to **compare one change at a time**.
+**Pattern and choice**
+Compare **लेख्नु→लेख्छु/लेख्दिनँ**, we **लेख्छौं/लेख्दैनौं**, and respectful **लेख्नुहुन्छ/लेख्नुहुन्न**. The common stem participates in distinct ordinary/respectful present and negative patterns.
 
 ### ① Start with one example
 
@@ -11480,98 +7739,30 @@ ma ciṭhī lekhchu
 
 I write letters.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose the time perspective
+### 2. Past: include मैले
 
-**2**  Find the appropriate person
+Compare **म चिठी लेख्छु→मैले चिठी लेखेँ**. Transitive completion changes the subject marking too. Respectful past is **उहाँले चिठी लेख्नुभयो**; negative variants **लेखिनँ/लेखेनँ** differ from present लेख्दिनँ.
 
-**3**  Compare positive and negative
+### 3. Progressive and perfect compounds
 
-### Watch out
+**लेख्दै छु / लेखेको छु / लेखेको थिएँ** express ongoing writing, present-relevant completion and prior completion at a past point. The auxiliary छु/थिएँ changes the reference time even with shared लेखेको.
 
-Compare **one change at a time**, not everything at once.
+### 4. Habitual past and future
 
-### ③ Quick check
+**लेख्थें** is former habitual writing; **लेख्नेछु** future; **भोलि लेख्छु** a present-form plan. In **लेख्ने चिठी**, लेख्ने modifies a noun rather than acting as a complete future predicate.
 
-**Check:** does swapping only a verb from the table always give a correct sentence?
+### 5. लेख्न versus लेख्नु
 
-**Answer:** no.
+Compare **लेख्न सक्छु / लेख्न चाहन्छु / लेख्नु पर्छ / लेख्नको लागि**. Ability/desire use लेख्न, basic necessity लेख्नु, and purpose लेख्नको लागि. The complement construction determines the preceding form.
 
-Subject form, object, tense and respect must fit.
-
-Use the table to understand the correspondences, not just to copy endings.
-
-### When you want to know more
-
-### What can you say?
-
-This appendix uses writing a letter to compare person, tense and negation.
-
-It is a reference, not a demand to memorize many near-identical sentences.
-
-Find what changes and transfer the construction principles to other verbs.
-
-Start with the basic six person groups; use topic 7 before comparing familiar forms.
-
-### Look at the pattern
-
-लेख्नु is the dictionary form write.
-
-Compare लेख्छु, लेख्दिनँ and लेखेँ for I write, do not write and wrote.
-
-Completed transitive clauses can also change म to मैले.
-
-Examine the whole sentence for respectful forms and object-related agreement, not only one isolated ending.
-
-### Check the construction
-
-1.
-
-Choose routine, past event, completion, former habit or plan.
-
-2.
-
-Find that subsection.
-
-3.
-
-Read the subject and verb together for the intended person.
-
-4.
-
-Compare its positive and negative and explain the change.
-
-### How the example works
-
-म is I, चिठी letter and लेख्छु write. लेख्छु is the appropriate present form of लेख्नु, not an arbitrary fragment.
-
-For yesterday’s completed writing, check both मैले and the past verb.
-
-Keep track of the letter as object too.
-
-### Compare related patterns
-
-Change one variable at a time: person first or tense first, not everything at once.
-
-Identify whether a negative means do not, did not, or had not completed by then.
-
-Topics 8–16 explain the time perspectives behind the reference forms.
-
-
-**Also check**
-
-This appendix is a conjugation reference.
-
-Ordinary exercises prioritize six basic person groups and varied situations.
 
 See topic 7 for respect/familiarity and topics 1–2 for **हो**/छ.
 
 This appendix uses लेख्नु, to write.
 
 Starting from the stem लेख्, compare who writes, who wrote and who has written.
-
-The practice examples use the everyday situation of writing letters.
 
 ### A writing routine
 
@@ -11690,16 +7881,12 @@ The practice examples use the everyday situation of writing letters.
 | हामी भोलि चिठी लेख्छौं। | hāmī bholi ciṭhī lekhchaũ | We will write a letter tomorrow. |
 | उहाँहरू भोलि चिठी लेख्नुहुन्छ। | uhā̃harū bholi ciṭhī lekhnuhuncha | They will write a letter tomorrow. |
 
-**Also check**
-
 Check the agent marker ले with completed transitive actions.
-
-Choose short imperative forms only when the relationship makes them appropriate.
 
 ## 36 Copulas through identity and location
 
-**Remember this**
-Review हुनु: **the three sets हो, छ and हुन्छ**.
+**Pattern and choice**
+Compare **म लेखक हुँ / म घरमा छु / म बिहान घरमा हुन्छु**: identity, current location and habitual setting. All belong to हुनु, but the construction and intended perspective select the set.
 
 ### ① Start with one example
 
@@ -11709,125 +7896,39 @@ ma lekhak hũ
 
 I am an author.
 
-### ② Build it in **3 steps**
+### ② Nepali grammar rules
 
-**1**  Choose identity, location or regular setting
+### 2. Three negative sets
 
-**2**  Choose the appropriate set
+Compare **हुँ→होइनँ / छु→छैनँ / हुन्छु→हुँदिनँ**, and ordinary **होइन/छैन/हुँदैन**. Respectful **हुनुहुन्न** can serve multiple functions; interpret the surrounding identity/location/habitual construction.
 
-**3**  Check person and polarity
+### 3. Past state versus occurrence
 
-### Watch out
+**म घरमा थिएँ** describes a past location; **काम भयो** accomplishment/occurrence. Distinguish **थियो** from **भयो**. Respectful past states use **हुनुहुन्थ्यो**; respectful occurrences include **हुनुभयो**.
 
-Do not classify by **हुनुहुन्छ** alone; examine the sentence’s function.
+### 4. Shared honorific forms, distinct functions
 
-### ③ Quick check
+**उहाँ लेखक हुनुहुन्छ / उहाँ घरमा हुनुहुन्छ** share an honorific verb, but differ in identity noun versus मा-marked location. **उहाँलाई जाडो लाग्छ** is a dative-experiencer construction with लाग्नु, not an interchangeable हुनु clause.
 
-**Check:** does हुनुहुन्छ always mean is at home?
+### 5. छ and थियो as auxiliaries
 
-**Answer:** no.
+In **पढ्दै छु / पढेको छु / पढेको थिएँ**, छु/थिएँ act as auxiliaries for progression/completion. Their preceding verb forms distinguish these from location **घरमा छु**. See topics 10, 15 and 16.
 
-It can support identity, condition and regular situations too.
-
-Identify the intended function and point to the corresponding lesson in topics 1–4.
-
-### Your हुनु map: **3 sets**
-
-| Form and role | Topic |
-| --- | --- |
-| **हो**<br>identity | **1** |
-| **छ**<br>location / quality | **2・3** |
-| **हुन्छ**<br>regular situations / occurrences | **4** |
-
-The forms change with the person: with I, compare **हुँ・छु・हुन्छु**.
-
-### When you want to know more
-
-### What can you say?
-
-This appendix reviews forms of हुनु through identity and location sentences.
-
-Copula is the grammatical term for a linking verb used in identification or description.
-
-Focus on choosing by function—identity, location or condition—rather than memorizing the terminology alone.
-
-### Look at the pattern
-
-हुनु is the dictionary form; **हो**, छ and हुन्छ represent the three sets.
-
-Study identity in topic 1, location in 2, qualities/conditions in 3, and general states or occurrences in 4.
-
-The reference tables mainly compare identity/location and their past forms; use the overview and corresponding lessons for the complete picture.
-
-### Check the construction
-
-1.
-
-Choose identity, location or condition.
-
-2.
-
-Decide present, past or regular perspective.
-
-3.
-
-Find the matching person and respect level.
-
-4.
-
-Select positive or negative and read the whole sentence.
-
-### How the example works
-
-म is I, लेखक author and हुँ am.
-
-This uses the identity set because लेखक supplies a category.
-
-Explain that function, not just the ending.
-
-With I am at the library, a place expression and छु instead perform the location function.
-
-### Compare related patterns
-
-Respectful तपाईं/उहाँ and their plurals can use the identical form हुनुहुन्छ across all three functions.
-
-The subject alone does not identify the set; use the rest of the construction and context.
-
-Past थियो forms and occurrence/change भयो are not interchangeable in every situation.
-
-### The three sets of हुनु and where this topic fits
-
-हुनु (hunu) is a dictionary form used for being, existing, becoming or occurring. **हो**, छ and हुन्छ represent related sets used for different functions, not three unrelated verbs.
-
-Choose both the intended function and the form matching the subject and respect.
-
-These sets introduce the present system; other forms include past थियो and भयो.
+### हुनु: three sets and matching forms
 
 | Form and reading | Information supplied | Corresponding lesson |
 | --- | --- | --- |
-| **हो** / ho | Identity/classification: name, occupation, category | Topic 1 |
-| **छ** / cha | Existence/location or a quality/condition | Topic 2: existence/location; topic 3: qualities/conditions |
-| **हुन्छ** / huncha | Regular/conditional states, occurrences and outcomes | Topic 4; also permission in 21 and prohibition in 19 |
-
-This appendix reviews the three sets.
-
-Study their explanations in topics 1–4 and compare past events/negatives in topics 11–12.
+| हो / ho | Identity/classification: name, occupation, category | Topic 1 |
+| छ / cha | Existence/location or a quality/condition | Topic 2: existence/location; topic 3: qualities/conditions |
+| हुन्छ / huncha | Regular/conditional states, occurrences and outcomes | Topic 4; also permission in 21 and prohibition in 19 |
 
 | Compare with the same subject | Meaning | Why this set? |
 | --- | --- | --- |
-| म विद्यार्थी हुँ।<br>ma vidyārthī hũ | I am a student. | Identity, so the **हो** set: topic 1 |
-| म घरमा छु।<br>ma gharmā chu | I am at home. | Location, so the **छ** set: topic 2 |
-| म बिहान घरमा हुन्छु।<br>ma bihān gharmā hunchu | I am usually at home in the morning. | A regular time setting, so the **हुन्छ** set: topic 4 |
+| म विद्यार्थी हुँ।<br>ma vidyārthī hũ | I am a student. | Identity, so the हो set: topic 1 |
+| म घरमा छु।<br>ma gharmā chu | I am at home. | Location, so the छ set: topic 2 |
+| म बिहान घरमा हुन्छु।<br>ma bihān gharmā hunchu | I am usually at home in the morning. | A regular time setting, so the हुन्छ set: topic 4 |
 
-**Also check**
-
-The subject I alone does not select the form: identity, location and a regular setting give हुँ, छु and हुन्छु.
-
-Do not reduce **हो** versus छ to permanent versus temporary.
-
-Choose by construction and intended meaning.
-
-### **हो** set: six basic person groups, positive and negative
+### हो set: six basic person groups, positive and negative
 
 | Person and reading | Positive and reading | Negative and reading |
 | --- | --- | --- |
@@ -11838,7 +7939,7 @@ Choose by construction and intended meaning.
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-### **छ** set: six basic person groups, positive and negative
+### छ set: six basic person groups, positive and negative
 
 | Person and reading | Positive and reading | Negative and reading |
 | --- | --- | --- |
@@ -11849,7 +7950,7 @@ Choose by construction and intended meaning.
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-### **हुन्छ** set: six basic person groups, positive and negative
+### हुन्छ set: six basic person groups, positive and negative
 
 | Person and reading | Positive and reading | Negative and reading |
 | --- | --- | --- |
@@ -11860,28 +7961,10 @@ Choose by construction and intended meaning.
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
-Respectful you/he/she and their plurals share हुनुहुन्छ/हुनुहुन्न across the three functions.
-
-Identical spelling does not erase the difference between identity, location and a regular setting.
-
-Basic ordinary singular forms are **हो**/होइन, छ/छैन and हुन्छ/हुँदैन; ordinary plurals have corresponding forms too.
-
-First learn the six basic person groups shown here.
-
-
-**Also check**
-
-This appendix is a conjugation reference.
-
-Ordinary exercises prioritize six basic person groups and varied situations.
 
 See topic 7 for respect/familiarity and topics 1–2 for **हो**/छ.
 
 Choose a form of हुनु according to what you mean.
-
-Compare being an author, being at the library and having been at the market the day before yesterday.
-
-Practice the subject and ending together as a short sentence.
 
 ### Identifying someone
 
@@ -11969,8 +8052,6 @@ Practice the subject and ending together as a short sentence.
 | यो पहिले पुस्तकालय थियो। | yo pahile pustakālaya thiyo | This used to be a library. |
 | मेरो कापी अस्ति यहाँ थिएन। | mero kāpī asti yahā̃ thiena | My notebook was not here the day before yesterday. |
 | उहाँ बाहिर हुनुहुन्छ। | uhā̃ bāhira hunuhuncha | That person is outside. |
-
-**Also check**
 
 Use the **हो** family for present identity and the छ family for present existence.
 
