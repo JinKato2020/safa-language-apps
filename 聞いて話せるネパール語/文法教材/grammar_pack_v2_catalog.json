@@ -8,10 +8,10 @@
       "l1": "en",
       "name": "English",
       "nameJa": "English",
-      "version": 1209,
+      "version": 1210,
       "access": "free",
-      "sizeBytes": 5122211,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1209.json"
+      "sizeBytes": 5113965,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1210.json"
     },
     {
       "audioVersion": 1010,
@@ -20,17 +20,17 @@
       "l1": "ja",
       "name": "日本語",
       "nameJa": "日本語",
-      "version": 1209,
+      "version": 1210,
       "access": "free",
-      "sizeBytes": 5329057,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1209.json"
+      "sizeBytes": 5320391,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1210.json"
     }
   ],
   "core": {
     "audioVersion": 1009,
     "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-core-1009.zip",
     "audioZipBytes": 39289890,
-    "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1209.json",
-    "version": 1209
+    "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1210.json",
+    "version": 1210
   }
 }

@@ -23,12 +23,14 @@ def main():
                     whole=[s for s in re.findall(r'\*\*(.*?)\*\*',text) if s in GLOSSES and phrase in s]
                     assert gloss in rendered or any(GLOSSES[s][0 if lang=='ja' else 1] in rendered for s in whole),(theme,lang,phrase)
                     examples.add(phrase);checks+=1
-    data={l:json.loads((a.work/f'publish/overlay-{l}-1209.json').read_text(encoding='utf-8')) for l in ['ja','en']}
+    catalog=json.loads((a.work/'publish/catalog.json').read_text(encoding='utf-8'))
+    data={e['l1']:json.loads((a.work/'publish'/e['url'].rsplit('/',1)[1]).read_text(encoding='utf-8')) for e in catalog['packs']}
     for lang,o in data.items():
         for key,bs in o['grammarGuide'].items():
             title=o['grammarThemeNames'][key]
             assert title==numbered_title(int(key),title,lang),'title prefix must be idempotent'
-            assert bs[0]['text']==title and bs[0]['lessonTitle']
+            assert bs[0]['type']=='goal'
+            assert not any(b.get('lessonTitle') or b.get('text')==title for b in bs),'no duplicate body title'
             intro=bs[:next(i for i,b in enumerate(bs) if b.get('beginnerIntroEnd'))]
             for b in intro:
                 if b['type'] in ['goal','p'] and b.get('presentation',{}).get('role') not in ['example','reading','translation']:

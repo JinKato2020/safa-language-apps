@@ -1,0 +1,25 @@
+{
+  "packVersion": 1210,
+  "previousVersion": 1209,
+  "topics": 36,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "duplicateBodyTitleBlocksRemoved": 72,
+  "allOtherGuideBlocksExactlyUnchanged": true,
+  "numberedHeaderTitlesUnchanged": true,
+  "bodyStartsWithTakeaway": true,
+  "examplesTranslationsDictionaryAudioUnchanged": true,
+  "appRebuilt": false,
+  "readerScenarios": 12,
+  "offlineReload": true,
+  "cachedAudioDownloads": 0,
+  "publicationVerified": true,
+  "payloadSHA256Verified": true,
+  "catalogs": [
+    "packs-appa-v2",
+    "packs-appa-v3"
+  ],
+  "catalogSHA256": "85d101a447b8fae0131a0f5fc96706a33ac5e280d12504e81c8a47e900f2e80c"
+}

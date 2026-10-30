@@ -27,8 +27,8 @@ for(const lang of ['ja','en']){
  for(const [key,blocks] of Object.entries(overlay.grammarGuide)){
   const boundary=blocks.findIndex(b=>b.beginnerIntroEnd);assert(boundary>=14,key);
   const intro=JSON.stringify(blocks.slice(0,boundary));
-  assert(blocks[0].lessonTitle,'Full title at the top of the lesson');
-  assert.equal(blocks[0].text,overlay.grammarThemeNames[key],'Header and body use the same numbered title');
+  assert.equal(blocks[0].type,'goal','Body starts with the takeaway');
+  assert(!blocks.some(b=>b.lessonTitle||b.text===overlay.grammarThemeNames[key]),'No duplicated theme title in the body');
   assert(overlay.grammarThemeNames[key].startsWith((lang==='ja'?'テーマ':'Theme ')+key),'Theme number in route title');
   assert.equal(blocks.filter(b=>b.type==='note').length,0,'No yellow warning cards');
   assert(!JSON.stringify(blocks).includes('⚠'),'No warning symbols');

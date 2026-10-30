@@ -2,8 +2,6 @@
 
 ## Theme 1｜हो: A is B (identity / equation)
 
-### Theme 1｜हो: A is B (identity / equation)
-
 **Pattern and choice**
 Identity noun + हो
 **म + विद्यार्थी + हुँ** (I + student + am → I am a student)
@@ -268,8 +266,6 @@ tapāĩharū śikṣak hunuhuncha
 
 ## Theme 2｜छ: existence and location
 
-### Theme 2｜छ: existence and location
-
 **Pattern and choice**
 Location + छ
 **म घरमा छु** (I am at home) / **किताब घरमा छ** (the book is at home)
@@ -516,8 +512,6 @@ uhā̃harū vidyālayamā hunuhuncha
 
 ## Theme 3｜छ: is ~ (adjective / state)
 
-### Theme 3｜छ: is ~ (adjective / state)
-
 **Pattern and choice**
 Adjective + छ
 **पानी चिसो छ** (the water is cold)
@@ -752,8 +746,6 @@ hāmī thākekā chaũ
 1: **हो**: A is B (identity / equation) / 2: छ: existence and location / 23: Adjective agreement & position
 
 ## Theme 4｜हुन्छ: becomes / generally is (habitual, change)
-
-### Theme 4｜हुन्छ: becomes / generally is (habitual, change)
 
 **Pattern and choice**
 छ versus हुन्छ
@@ -1003,8 +995,6 @@ pānī tāto bhayo
 2: **छ**: existence and location / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~)
 
 ## Theme 5｜Postpositions: place, participants and relationships
-
-### Theme 5｜Postpositions: place, participants and relationships
 
 **Pattern and choice**
 **देखि/बाट = from**
@@ -1433,8 +1423,6 @@ Except today, I always come here.
 2: **छ**: existence and location / 6: Question words and how to ask / 7: Pronouns, familiarity, respect and verb agreement / 11: The ergative ले & the past (did ~) / 25: Comparison & superlative / 26: Conjunctions (and / so / but) / 27: While ~ (-दै) / after ~ (-एपछि) / 28: In order to ~ (-नको लागि (in order to do, with a preceding verb base)) / 32: Passive (be ~ed)
 
 ## Theme 6｜Question words and how to ask
-
-### Theme 6｜Question words and how to ask
 
 **Pattern and choice**
 Question words stay in their role
@@ -2054,8 +2042,6 @@ tapāĩ katā jānuhuncha?
 
 ## Theme 7｜Pronouns, familiarity, respect and verb agreement
 
-### Theme 7｜Pronouns, familiarity, respect and verb agreement
-
 **Pattern and choice**
 Six basic person groups
 **म, हामी, तपाईं, तपाईंहरू, उहाँ, उहाँहरू**
@@ -2371,8 +2357,6 @@ uhā̃ yahā̃ hunuhuncha
 
 ## Theme 8｜Action verbs: present (do ~)
 
-### Theme 8｜Action verbs: present (do ~)
-
 **Pattern and choice**
 From -नु to the present
 **पढ्नु→पढ्छु / गर्नु→गर्छु / खानु→खान्छु**
@@ -2560,8 +2544,6 @@ tapāĩharū kahā̃ kām garnuhuncha?
 
 ## Theme 9｜Present negative (don't ~)
 
-### Theme 9｜Present negative (don't ~)
-
 **Pattern and choice**
 Ordinary negative stems
 **गर्छु→गर्दिनँ / पढ्छु→पढ्दिनँ**
@@ -2720,8 +2702,6 @@ tapāĩharū āitabār kām garnuhunna
 | गर्नुहुन्न | garnuhunna | do not; does not (respectful) |
 
 ## Theme 10｜Present progressive (~ing)
-
-### Theme 10｜Present progressive (~ing)
 
 **Pattern and choice**
 The -दै form and auxiliary
@@ -2888,8 +2868,6 @@ uhā̃harū bas parkhãdai hunuhuncha
 2: **छ**: existence and location / 7: Pronouns, familiarity, respect and verb agreement / 8: Action verbs: present (do ~)
 
 ## Theme 11｜The ergative ले & the past (did ~)
-
-### Theme 11｜The ergative ले & the past (did ~)
 
 **Pattern and choice**
 Transitive past and ले
@@ -3074,8 +3052,6 @@ tapāĩharūle ke kinnubhayo?
 
 ## Theme 12｜Past negative (didn't ~)
 
-### Theme 12｜Past negative (didn't ~)
-
 **Pattern and choice**
 गर्दिनँ versus गरेनँ
 **मैले काम गरेनँ** (I did not work)
@@ -3250,8 +3226,6 @@ uhā̃le kaphī piunubhaena
 9: Present negative (don't ~) / 11: The ergative ले & the past (did ~)
 
 ## Theme 13｜Future (will ~)
-
-### Theme 13｜Future (will ~)
 
 **Pattern and choice**
 The -नेछ future
@@ -3440,8 +3414,6 @@ tapāĩharū kahile pharkanuhunecha?
 
 ## Theme 14｜Habitual past (used to ~)
 
-### Theme 14｜Habitual past (used to ~)
-
 **Pattern and choice**
 गर्थें versus गरेँ
 **म पहिले यहाँ बस्थें** (I used to live here)
@@ -3592,8 +3564,6 @@ uhā̃ pahile ciyā piunuhunthyo
 7: Pronouns, familiarity, respect and verb agreement / 11: The ergative ले & the past (did ~)
 
 ## Theme 15｜Present perfect / experience (have done ~)
-
-### Theme 15｜Present perfect / experience (have done ~)
 
 **Pattern and choice**
 The -एको + छ pattern
@@ -3773,8 +3743,6 @@ hāmīle yo philm herekā chaũ
 
 ## Theme 16｜Past perfect (had done ~)
 
-### Theme 16｜Past perfect (had done ~)
-
 **Pattern and choice**
 -एको + a past auxiliary
 **गरेको थिएँ** (I had done it) / **पढेको थिएँ** (I had read it) / **गएको थिएँ** (I had gone)
@@ -3946,8 +3914,6 @@ hāmī pugdā pasal banda bhaisakeko thiyo
 11: The ergative ले & the past (did ~) / 15: Present perfect / experience (have done ~) / 27: While ~ (-दै) / after ~ (-एपछि)
 
 ## Theme 17｜Requests & commands (three politeness levels)
-
-### Theme 17｜Requests & commands (three politeness levels)
 
 **Pattern and choice**
 Respectful requests in -नुहोस्
@@ -4140,8 +4106,6 @@ bholi āunuhos hai
 | है | hai | okay? (gentle reminder) |
 
 ## Theme 18｜Hortative / volitional (let's ~ / shall I ~)
-
-### Theme 18｜Hortative / volitional (let's ~ / shall I ~)
 
 **Pattern and choice**
 First-person offers
@@ -4386,8 +4350,6 @@ hāmī bholi bheṭaũ?
 | भेटौं | bheṭaũ | let us meet |
 
 ## Theme 19｜Prohibition (must not ~ / don't ~)
-
-### Theme 19｜Prohibition (must not ~ / don't ~)
 
 **Pattern and choice**
 न + request form
@@ -4650,8 +4612,6 @@ tapāĩ yahā̃ naāunuhos
 
 ## Theme 20｜Ability (can ~)
 
-### Theme 20｜Ability (can ~)
-
 **Pattern and choice**
 Infinitive -न + सक्नु
 **पढ्न सक्छु** (I can read) / **गर्न सक्छु** (I can do it) / **जान सक्छु** (I can go)
@@ -4826,8 +4786,6 @@ ma āja āuna sakdinã
 | सक्दिनँ | sakdinã | cannot |
 
 ## Theme 21｜Obligation & permission (must ~ / may ~)
-
-### Theme 21｜Obligation & permission (must ~ / may ~)
 
 **Pattern and choice**
 Necessity with -नु पर्छ (need to do, with a preceding verb base)
@@ -5054,8 +5012,6 @@ yahā̃ basna mildaina
 
 ## Theme 22｜Desire (want to ~)
 
-### Theme 22｜Desire (want to ~)
-
 **Pattern and choice**
 -न + चाहनु
 **म जान चाहन्छु** (I want to go) / **उहाँ जान चाहनुहुन्छ** (he/she wants to go, respectful)
@@ -5240,8 +5196,6 @@ tapāĩharū ke khāna cāhanuhuncha?
 | चाहनुहुन्छ | cāhanuhuncha | want to (respectful) |
 
 ## Theme 23｜Adjective agreement & position
-
-### Theme 23｜Adjective agreement & position
 
 **Pattern and choice**
 Attributive versus predicative
@@ -5473,8 +5427,6 @@ yo koṭhā ṭhūlo chaina
 
 ## Theme 24｜Adverbs & exclamations
 
-### Theme 24｜Adverbs & exclamations
-
 **Pattern and choice**
 Manner before the action
 **बिस्तारै बोल्नुहोस्** (please speak slowly) / **राम्ररी पढ्नुहोस्** (please read/study carefully)
@@ -5680,8 +5632,6 @@ yo phūl kati rāmro cha!
 3: **छ**: is ~ (adjective / state) / 8: Action verbs: present (do ~) / 6: Question words and how to ask
 
 ## Theme 25｜Comparison & superlative
-
-### Theme 25｜Comparison & superlative
 
 **Pattern and choice**
 भन्दा follows the standard
@@ -5964,8 +5914,6 @@ yo jholā mero jholājastai cha
 
 ## Theme 26｜Conjunctions (and / so / but)
 
-### Theme 26｜Conjunctions (and / so / but)
-
 **Pattern and choice**
 र versus अनि
 **चिया र पानी** (tea and water)
@@ -6194,8 +6142,6 @@ varṣākā bābajud hāmī gayaũ
 5: Postpositions: place, participants and relationships / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~)
 
 ## Theme 27｜While ~ (-दै) / after ~ (-एपछि)
-
-### Theme 27｜While ~ (-दै) / after ~ (-एपछि)
 
 **Pattern and choice**
 -दै versus -दा
@@ -6438,8 +6384,6 @@ hāmī duī dinbhitra pharkanchaũ
 
 ## Theme 28｜In order to ~ (-नको लागि)
 
-### Theme 28｜In order to ~ (-नको लागि)
-
 **Pattern and choice**
 Beneficiary: को/का लागि (for; for the benefit of)
 **छोराको लागि** (for the son) / **तपाईंका लागि** (for you)
@@ -6668,8 +6612,6 @@ ma khelnako lāgi āeko hoinã
 5: Postpositions: place, participants and relationships / 6: Question words and how to ask / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~)
 
 ## Theme 29｜Relative expressions: people, things, place and time
-
-### Theme 29｜Relative expressions: people, things, place and time
 
 **Pattern and choice**
 -ने versus -एको noun modifiers
@@ -7135,8 +7077,6 @@ jatā uhā̃ jānuhuncha, ma pani tyatai jānchu
 
 ## Theme 30｜Conditionals (if ~)
 
-### Theme 30｜Conditionals (if ~)
-
 **Pattern and choice**
 Condition + भने
 **पानी पर्यो भने म जाँदिनँ** (if it rains, I will not go)
@@ -7334,8 +7274,6 @@ bholi bidā cha bhane, hāmī bheṭaũ
 
 ## Theme 31｜Inference / opinion / possibility (I think / probably / might / must be)
 
-### Theme 31｜Inference / opinion / possibility (I think / probably / might / must be)
-
 **Pattern and choice**
 Opinions with मलाई लाग्छ (I think/it seems to me that…)
 **मलाई लाग्छ** (I think/it seems to me that…)…
@@ -7522,8 +7460,6 @@ uhā̃ ghar jānubhaeko hunu parcha
 2: **छ**: existence and location / 3: छ: is ~ (adjective / state) / 11: The ergative ले & the past (did ~) / 15: Present perfect / experience (have done ~) / 21: Obligation & permission (must ~ / may ~) / 26: Conjunctions (and / so / but)
 
 ## Theme 32｜Passive (be ~ed)
-
-### Theme 32｜Passive (be ~ed)
 
 **Pattern and choice**
 Passive खोलियो versus intransitive खुल्यो
@@ -7818,8 +7754,6 @@ maile sāthīmārphat khabar paṭhāẽ
 
 ## Theme 33｜Causative (make someone ~)
 
-### Theme 33｜Causative (make someone ~)
-
 **Pattern and choice**
 Learn causative pairs
 **खानु→खुवाउनु / सिक्नु→सिकाउनु / पढ्नु→पढाउनु**
@@ -7974,8 +7908,6 @@ bubāle malāī kām garna lagāunubhaena
 5: Postpositions: place, participants and relationships / 8: Action verbs: present (do ~) / 11: The ergative ले & the past (did ~) / 12: Past negative (didn't ~)
 
 ## Theme 34｜Reported speech (said that ~)
-
-### Theme 34｜Reported speech (said that ~)
 
 **Pattern and choice**
 Content + भन्नु
@@ -8172,8 +8104,6 @@ Mother always used to tell me to go to bed early.
 
 ## Theme 35 (Appendix A)｜Verb forms through writing: लेख्नु
 
-### Theme 35 (Appendix A)｜Verb forms through writing: लेख्नु
-
 **Pattern and choice**
 लेख्नु present and negative
 **लेख्नु→लेख्छु/लेख्दिनँ**
@@ -8342,8 +8272,6 @@ Starting from the stem लेख्, compare who writes, who wrote and who has w
 Check the agent marker ले with completed transitive actions.
 
 ## Theme 36 (Appendix B)｜Copulas through identity and location
-
-### Theme 36 (Appendix B)｜Copulas through identity and location
 
 **Pattern and choice**
 Three sets with one subject

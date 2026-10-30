@@ -1,15 +1,6 @@
 {
   "1": [
     {
-      "type": "h",
-      "text": "Theme 1｜हो: A is B (identity / equation)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nIdentity noun + हो\n**म + विद्यार्थी + हुँ** (I + student + am → I am a student)",
       "presentation": {
@@ -1115,15 +1106,6 @@
   ],
   "2": [
     {
-      "type": "h",
-      "text": "Theme 2｜छ: existence and location",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nLocation + छ\n**म घरमा छु** (I am at home) / **किताब घरमा छ** (the book is at home)",
       "presentation": {
@@ -2153,15 +2135,6 @@
   ],
   "3": [
     {
-      "type": "h",
-      "text": "Theme 3｜छ: is ~ (adjective / state)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nAdjective + छ\n**पानी चिसो छ** (the water is cold)",
       "presentation": {
@@ -3151,15 +3124,6 @@
     }
   ],
   "4": [
-    {
-      "type": "h",
-      "text": "Theme 4｜हुन्छ: becomes / generally is (habitual, change)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nछ versus हुन्छ\n**आज चिसो छ** (it is cold today)",
@@ -4220,15 +4184,6 @@
     }
   ],
   "5": [
-    {
-      "type": "h",
-      "text": "Theme 5｜Postpositions: place, participants and relationships",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\n**देखि/बाट = from**\nTheir starting-point uses overlap.\n Use बाट for transport.",
@@ -6052,15 +6007,6 @@
     }
   ],
   "6": [
-    {
-      "type": "h",
-      "text": "Theme 6｜Question words and how to ask",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nQuestion words stay in their role\n**उहाँ घरमा हुनुहुन्छ** (he/she is at home, respectful) → **उहाँ कहाँ हुनुहुन्छ** (where is he/she, respectful)?",
@@ -8737,15 +8683,6 @@
   ],
   "7": [
     {
-      "type": "h",
-      "text": "Theme 7｜Pronouns, familiarity, respect and verb agreement",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nSix basic person groups\n**म, हामी, तपाईं, तपाईंहरू, उहाँ, उहाँहरू**",
       "presentation": {
@@ -10080,15 +10017,6 @@
   ],
   "8": [
     {
-      "type": "h",
-      "text": "Theme 8｜Action verbs: present (do ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nFrom -नु to the present\n**पढ्नु→पढ्छु / गर्नु→गर्छु / खानु→खान्छु**",
       "presentation": {
@@ -10872,15 +10800,6 @@
   ],
   "9": [
     {
-      "type": "h",
-      "text": "Theme 9｜Present negative (don't ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nOrdinary negative stems\n**गर्छु→गर्दिनँ / पढ्छु→पढ्दिनँ**",
       "presentation": {
@@ -11537,15 +11456,6 @@
     }
   ],
   "10": [
-    {
-      "type": "h",
-      "text": "Theme 10｜Present progressive (~ing)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nThe -दै form and auxiliary\n**पढ्दै छु** (I am reading) / **गर्दै छु** (I am doing it) / **खाँदै छु** (I am eating) / **जाँदै छु** (I am going)",
@@ -12221,15 +12131,6 @@
     }
   ],
   "11": [
-    {
-      "type": "h",
-      "text": "Theme 11｜The ergative ले & the past (did ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nTransitive past and ले\n**म पढ्छु** (I read/study)→**मैले पढेँ** (I read/studied, past)",
@@ -12981,15 +12882,6 @@
   ],
   "12": [
     {
-      "type": "h",
-      "text": "Theme 12｜Past negative (didn't ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nगर्दिनँ versus गरेनँ\n**मैले काम गरेनँ** (I did not work)",
       "presentation": {
@@ -13716,15 +13608,6 @@
     }
   ],
   "13": [
-    {
-      "type": "h",
-      "text": "Theme 13｜Future (will ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nThe -नेछ future\n**गर्नु→गर्नेछु / जानु→जानेछु / पढ्नु→पढ्नेछु**",
@@ -14504,15 +14387,6 @@
   ],
   "14": [
     {
-      "type": "h",
-      "text": "Theme 14｜Habitual past (used to ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nगर्थें versus गरेँ\n**म पहिले यहाँ बस्थें** (I used to live here)",
       "presentation": {
@@ -15137,15 +15011,6 @@
     }
   ],
   "15": [
-    {
-      "type": "h",
-      "text": "Theme 15｜Present perfect / experience (have done ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nThe -एको + छ pattern\n**गरेको छु** (I have done it) / **पढेको छु** (I have read it) / **गएको छु** (I have gone; I have been there)",
@@ -15888,15 +15753,6 @@
   ],
   "16": [
     {
-      "type": "h",
-      "text": "Theme 16｜Past perfect (had done ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\n-एको + a past auxiliary\n**गरेको थिएँ** (I had done it) / **पढेको थिएँ** (I had read it) / **गएको थिएँ** (I had gone)",
       "presentation": {
@@ -16617,15 +16473,6 @@
     }
   ],
   "17": [
-    {
-      "type": "h",
-      "text": "Theme 17｜Requests & commands (three politeness levels)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nRespectful requests in -नुहोस्\n**बस्नु→बस्नुहोस् / गर्नु→गर्नुहोस् / हेर्नु→हेर्नुहोस्**",
@@ -17402,15 +17249,6 @@
     }
   ],
   "18": [
-    {
-      "type": "h",
-      "text": "Theme 18｜Hortative / volitional (let's ~ / shall I ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nFirst-person offers\n**म गरूँ** (shall I do it, an offer)? / **म जाऊँ** (shall I go, an offer)? / **म ल्याऊँ** (shall I bring it, an offer)?",
@@ -18432,15 +18270,6 @@
     }
   ],
   "19": [
-    {
-      "type": "h",
-      "text": "Theme 19｜Prohibition (must not ~ / don't ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nन + request form\n**न**",
@@ -19537,15 +19366,6 @@
   ],
   "20": [
     {
-      "type": "h",
-      "text": "Theme 20｜Ability (can ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nInfinitive -न + सक्नु\n**पढ्न सक्छु** (I can read) / **गर्न सक्छु** (I can do it) / **जान सक्छु** (I can go)",
       "presentation": {
@@ -20272,15 +20092,6 @@
     }
   ],
   "21": [
-    {
-      "type": "h",
-      "text": "Theme 21｜Obligation & permission (must ~ / may ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nNecessity with -नु पर्छ (need to do, with a preceding verb base)\n**मलाई जानु पर्छ** (I need to go)",
@@ -21217,15 +21028,6 @@
   ],
   "22": [
     {
-      "type": "h",
-      "text": "Theme 22｜Desire (want to ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\n-न + चाहनु\n**म जान चाहन्छु** (I want to go) / **उहाँ जान चाहनुहुन्छ** (he/she wants to go, respectful)",
       "presentation": {
@@ -21990,15 +21792,6 @@
     }
   ],
   "23": [
-    {
-      "type": "h",
-      "text": "Theme 23｜Adjective agreement & position",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nAttributive versus predicative\n**राम्रो किताब** (a good book)",
@@ -22954,15 +22747,6 @@
   ],
   "24": [
     {
-      "type": "h",
-      "text": "Theme 24｜Adverbs & exclamations",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nManner before the action\n**बिस्तारै बोल्नुहोस्** (please speak slowly) / **राम्ररी पढ्नुहोस्** (please read/study carefully)",
       "presentation": {
@@ -23820,15 +23604,6 @@
     }
   ],
   "25": [
-    {
-      "type": "h",
-      "text": "Theme 25｜Comparison & superlative",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nभन्दा follows the standard\n**यो घर त्यो घरभन्दा ठूलो छ** (this house is bigger than that house)",
@@ -25029,15 +24804,6 @@
   ],
   "26": [
     {
-      "type": "h",
-      "text": "Theme 26｜Conjunctions (and / so / but)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nर versus अनि\n**चिया र पानी** (tea and water)",
       "presentation": {
@@ -26012,15 +25778,6 @@
     }
   ],
   "27": [
-    {
-      "type": "h",
-      "text": "Theme 27｜While ~ (-दै) / after ~ (-एपछि)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\n-दै versus -दा\n**खाँदै बोल्नु** (to speak while eating)",
@@ -27041,15 +26798,6 @@
   ],
   "28": [
     {
-      "type": "h",
-      "text": "Theme 28｜In order to ~ (-नको लागि)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nBeneficiary: को/का लागि (for; for the benefit of)\n**छोराको लागि** (for the son) / **तपाईंका लागि** (for you)",
       "presentation": {
@@ -28020,15 +27768,6 @@
     }
   ],
   "29": [
-    {
-      "type": "h",
-      "text": "Theme 29｜Relative expressions: people, things, place and time",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\n-ने versus -एको noun modifiers\n**बस्ने मान्छे** (the person who lives/sits, depending on context)",
@@ -30031,15 +29770,6 @@
   ],
   "30": [
     {
-      "type": "h",
-      "text": "Theme 30｜Conditionals (if ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nCondition + भने\n**पानी पर्यो भने म जाँदिनँ** (if it rains, I will not go)",
       "presentation": {
@@ -30873,15 +30603,6 @@
   ],
   "31": [
     {
-      "type": "h",
-      "text": "Theme 31｜Inference / opinion / possibility (I think / probably / might / must be)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nOpinions with मलाई लाग्छ (I think/it seems to me that…)\n**मलाई लाग्छ** (I think/it seems to me that…)…",
       "presentation": {
@@ -31669,15 +31390,6 @@
     }
   ],
   "32": [
-    {
-      "type": "h",
-      "text": "Theme 32｜Passive (be ~ed)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nPassive खोलियो versus intransitive खुल्यो\n**ढोका खोलियो** (the door was opened)",
@@ -32911,15 +32623,6 @@
   ],
   "33": [
     {
-      "type": "h",
-      "text": "Theme 33｜Causative (make someone ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nLearn causative pairs\n**खानु→खुवाउनु / सिक्नु→सिकाउनु / पढ्नु→पढाउनु**",
       "presentation": {
@@ -33558,15 +33261,6 @@
     }
   ],
   "34": [
-    {
-      "type": "h",
-      "text": "Theme 34｜Reported speech (said that ~)",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nContent + भन्नु\n**उहाँले «म आउँछु» भन्नुभयो** (he/she said, “I will come”)",
@@ -34387,15 +34081,6 @@
   ],
   "35": [
     {
-      "type": "h",
-      "text": "Theme 35 (Appendix A)｜Verb forms through writing: लेख्नु",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
-    {
       "type": "goal",
       "text": "**Pattern and choice**\nलेख्नु present and negative\n**लेख्नु→लेख्छु/लेख्दिनँ**",
       "presentation": {
@@ -35143,15 +34828,6 @@
     }
   ],
   "36": [
-    {
-      "type": "h",
-      "text": "Theme 36 (Appendix B)｜Copulas through identity and location",
-      "lessonTitle": true,
-      "presentation": {
-        "tone": "blue",
-        "role": "plain"
-      }
-    },
     {
       "type": "goal",
       "text": "**Pattern and choice**\nThree sets with one subject\n**म लेखक हुँ** (I am an author) / **म घरमा छु** (I am at home) / **म बिहान घरमा हुन्छु** (I am usually at home in the morning)",

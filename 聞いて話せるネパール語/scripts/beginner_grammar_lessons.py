@@ -101,9 +101,8 @@ def expand_guides(guides, examples, readings, translations, theme_names=None):
                     skip_table=False;continue
                 filtered.append(b)
             intro=lesson_blocks(theme,lang,examples[key][0],readings[key][0],translations[lang][key][0])
-            if theme_names is not None:
-                from nepali_lesson_glosses import numbered_title
-                intro.insert(0,{'type':'h','text':numbered_title(theme,theme_names[lang][key],lang),'lessonTitle':True})
+            # The native top bar already shows the numbered theme title.
+            # Start the body with the takeaway rather than repeating that title.
             # A zero-length paragraph is the saved, invisible insertion boundary.
             # Its index is stored in the teacher's source, not shown as a label.
             from friendly_grammar_layout import detail_blocks
