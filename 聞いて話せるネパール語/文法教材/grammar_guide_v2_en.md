@@ -70,6 +70,24 @@ Initial के in **के यो किताब हो?** (is this a book) int
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
+### A moment in Nepal｜Beyond a Kathmandu lane
+
+Kathmandu, Patan and Bhaktapur give the valley three distinct old-city faces.
+ Imagine stepping from a square into a lane, then a courtyard.
+ A place once seen on a map begins to feel like somebody’s neighbourhood.
+
+### Heard in conversation｜हैन? as a conversational check
+
+**हैन** is a common conversational form of **होइन**.
+ At the end of a statement, rising intonation can ask for confirmation.
+ In the example, the speaker checks a route rather than simply asserting a negative.
+
+**यही बाटो हो, हैन?**
+
+yahī bāṭo ho, haina?
+
+This is the right road, isn’t it?
+
 
 Use उहाँ for he/she and उहाँहरू for they as the basic forms.
 
@@ -291,10 +309,12 @@ Compare **म घरमा छु** (I am at home) / **किताब घरम
  Word order varies with information structure.
  The location marked by मा does not control the verb agreement.
 
-### 3. Here, there and over there: यहाँ and त्यहाँ
+### 3. Here, there and over there: यहाँ・त्यहाँ・उहाँ
 
-**यहाँ** (yahā̃) means here; **त्यहाँ** (tyahā̃) means there or over there.
- Nepali can use the same त्यहाँ for the Japanese distinctions soko and asoko; context or pointing identifies the place. **यहाँ किताब छ** (there is a book here) places a book here; **त्यहाँ किताब छ** (there is a book there/over there) places it there or over there. **कहाँ** asks where.
+**यहाँ** (yahā̃) means here, **त्यहाँ** (tyahā̃) there, and **उहाँ** (uhā̃) can mean over there.
+ Learn these three together, but they are not rigid distance categories: त्यहाँ also covers over there. **उ त्यहाँ** (over there, pointing to a distant place) explicitly points to a distant place. **यहाँ किताब छ** (there is a book here) places a book here; **त्यहाँ किताब छ** (there is a book there/over there) places it there or over there.
+ In **उहाँ किताब छ** (there is a book over there), उहाँ refers to a place, over there.
+ In **उहाँ शिक्षक हुनुहुन्छ** (he/she is a teacher (respectful)), it refers respectfully to a person, he or she; see topic 7. **कहाँ** asks where.
  Do not routinely add मा to these location words; place nouns instead combine with मा, as in **घरमा, नेपालमा**.
 
 ### 4. Agreement in possession
@@ -315,7 +335,7 @@ In **मसँग कलम छ** (I have a pen), मसँग marks the possess
 | --- | --- |
 | यहाँ<br>yahā̃ | Here: near the speaker. |
 | त्यहाँ<br>tyahā̃ | There: for example near the listener, or at an identified place. |
-| त्यहाँ<br>tyahā̃ | Over there: away from the speaker. The same form as there. |
+| उहाँ<br>uhā̃ | Over there: a distant place. Context distinguishes it from respectful he/she. |
 | कहाँ<br>kahā̃ | Where: ask for the location. |
 
 ### हुनु: three sets and matching forms
@@ -342,6 +362,24 @@ In **मसँग कलम छ** (I have a pen), मसँग marks the possess
 | you plural<br>तपाईंहरू / tapāĩharū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
+
+### A moment in Nepal｜Conversation across a cup of tea
+
+A visit may begin with tea and time together.
+ Picture the steam from a sweet milk tea and an unhurried conversation.
+ Even before you find much to say, sharing that small pause can make a first meeting feel warmer.
+
+### Heard in conversation｜कता छ? in everyday directions
+
+Alongside **कहाँ**, you will hear **कता** in everyday location questions.
+ It can ask where a shop or other place is, not only the direction of movement.
+ Recognize the short question as a complete conversational turn.
+
+**पसल कता छ?**
+
+pasal kata cha?
+
+Where is the shop?
 
 
 Use उहाँ for he/she and उहाँहरू for they as the basic forms.
@@ -588,6 +626,24 @@ In **पानी चिसो छैन** (the water is not cold), retain the a
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 
+### Heard in conversation｜A short “How are you?”
+
+**सन्चै?** is a short, friendly check on someone’s wellbeing.
+ Conversation can omit the subject and a longer question when the situation makes them clear.
+ A respectful address can accompany it when appropriate.
+
+**सन्चै?**
+
+sancai?
+
+Are you well?
+
+**सन्चै छु।**
+
+sancai chu.
+
+I am well.
+
 
 With a person as subject, choose the appropriate form of **छ**.
 
@@ -820,6 +876,23 @@ Compare **म अहिले घरमा छु** (I am at home now) with **�
 | you plural<br>तपाईंहरू / tapāĩharū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
+
+### Heard in conversation｜हुन्छ as “Okay”
+
+As a reply to a request or proposal, **हुन्छ** can mean okay or agreed. **ठीक छ** also acknowledges an arrangement.
+ These responses have a different role from **हो** confirming an identity statement.
+
+**हुन्छ।**
+
+huncha.
+
+Okay; agreed.
+
+**ठीक छ।**
+
+ṭhīk cha.
+
+All right; okay.
 
 
 Being cold now and getting cold in winter take different perspectives. भयो is one form used for a change that has happened.
@@ -1060,6 +1133,12 @@ I live in a house.
 | Coming from a place<br>घरबाट आएँ / gharbāṭa āẽ | Came from home. देखि also marks spatial starting points; there is overlap. |
 | Start-to-end range<br>घरदेखि विद्यालयसम्म / ghardekhi vidyālayasamma | From home to school. बाट…सम्म is also possible, not categorically wrong. |
 | Transport<br>बसबाट / basbāṭa | By bus. बसदेखि treats the bus as a starting point, not transport. |
+
+### A moment in Nepal｜Life beyond the city
+
+Nepal is more than snowy peaks.
+ Hillside settlements, fields and paths between towns and villages hold everyday lives too.
+ Imagine noticing a cluster of homes from a window and wondering what an ordinary day there feels like.
 
 
 ### Core forms
@@ -1473,6 +1552,24 @@ Who **को** changes to agent **कसले**, recipient/object **कसल�
 **के खानुहुन्छ?** (what do you eat, respectful) requests a food; **किन खानुहुन्न?** (why do you not eat, respectful) requests a reason.
  Initial के in **के तपाईं खानुहुन्छ?** (do you eat, a yes/no question) instead introduces a yes/no question.
  Question formation retains the appropriate respectful verb.
+
+### Heard in conversation｜तपाईंलाई नि? to return a question
+
+A short return question with **नि?** sends the previous topic back to the listener.
+ Here it asks about the other person’s wellbeing.
+ The missing content comes from the preceding turn; it is not a context-free question.
+
+**मलाई सन्चै छ।**
+
+malāī sancai cha.
+
+I am well.
+
+**तपाईंलाई नि?**
+
+tapāĩlāī ni?
+
+And you?
 
 
 ### Core words and combinations with postpositions and counters
@@ -2091,6 +2188,29 @@ Compare **तँ गर्छस्** (you do it, intimate/low respect) / **त�
 Learn **म→मैले/मलाई/मेरो**, **उ/ऊ→उसले/उसलाई/उसको**, **उनी→उनले/उनलाई/उनको**, and respectful **उहाँले/उहाँलाई/उहाँको**.
  Case-marked pronouns are not always formed by attaching a marker to the citation form unchanged.
 
+### A moment in Nepal｜A family-like way of addressing people
+
+An older person at a shop or on the street may be addressed with a word like elder brother or sister, even without a family connection.
+ It is a glimpse of how warmth, age and relationships shape everyday encounters.
+
+### Heard in conversation｜हजुर: acknowledgement or “Pardon?”
+
+**हजुर** can politely acknowledge that you are listening.
+ With questioning intonation, **हजुर?** can ask for repetition.
+ Acknowledging the speaker does not always mean agreeing with every part of the message.
+
+**हजुर।**
+
+hajur.
+
+Yes; I am listening.
+
+**हजुर?**
+
+hajur?
+
+Pardon?
+
 
 ### उ, उनी and उहाँ distinguish respect, not male versus female
 
@@ -2405,6 +2525,12 @@ Compare **म पढ्छु** (I read/study) / **हामी पढ्छौ�
 **भोलि म जान्छु** (I will go tomorrow) describes a future plan using a present form plus भोलि.
  Dedicated future जानेछु is another option.
  Compare negative **जान्छु→जाँदिनँ** and question **कहिले जानुहुन्छ?** (when do you go, respectful).
+
+### A moment in Nepal｜A little world on a dal-bhat plate
+
+Rice, lentil soup, vegetables and a tangy or spicy accompaniment make a plate of dal bhat a small world of flavours.
+ Homes and regions vary the combination.
+ Discovering how today’s plate differs from yesterday’s can become part of the journey.
 
 
 ### A reference table for comparing personal forms
@@ -2922,6 +3048,25 @@ A ले-marked agent does not force one invariant ending.
 **म घरमा थिएँ** (I was at home) gives past location; **म घर गएँ** (I went home) a completed movement. **काम थियो** (there was work) says there was work; **काम भयो** (the work was done/accomplished) presents accomplishment/occurrence.
  Similar translated past tenses do not make these predicates interchangeable.
 
+### A moment in Nepal｜The warmth behind an extra helping
+
+An offer of another helping can be a small gesture of care.
+ That exchange may become as memorable as the food.
+ You need not eat beyond comfort: appreciation and thanks matter too.
+ Every household has its own rhythm.
+
+### Heard in conversation｜“Have you eaten?” as a caring check-in
+
+**खाना खानुभयो?** really asks whether someone has eaten.
+ Between people who know each other, it can also be a caring check-in.
+ It is neither an automatic meal invitation nor a universal replacement for hello.
+
+**खाना खानुभयो?**
+
+khānā khānubhayo?
+
+Have you eaten?
+
 
 ### A reference table for comparing personal forms
 
@@ -3276,6 +3421,18 @@ Both **भोलि जान्छु** (I will go tomorrow, a present-form pla
 
 **म जान्छु** (I go; I will go) can state a plan/intention; **म जाऊँ?** (shall I go, an offer) offers to go; **हामी जाऔं** (let us go) proposes going together.
  Future tense, an offer and a suggestion are distinct constructions.
+
+### Heard in conversation｜पछि भेटौंला when parting
+
+**पछि भेटौंला** is a natural parting expression, see you later.
+ Recognize the **-ला** form as part of this conversational expression of an expected future meeting.
+ It does not by itself arrange a precise time.
+
+**पछि भेटौंला।**
+
+pachi bheṭaũlā.
+
+See you later.
 
 
 ### A reference table for comparing personal forms
@@ -3967,6 +4124,18 @@ Contrast low-grade **बस** with respectful **बस्नुहोस्**.
 **गर्नुहोस्** requests the listener's action; **गरूँ?** offers the speaker's action; **गरौं** proposes shared action.
  These participant differences are encoded in the verb form.
 
+### Heard in conversation｜Shortened polite दिनुस्
+
+Polite **दिनुहोस्** is often heard in shortened form **दिनुस्**.
+ Final **न** can soften or encourage a request.
+ Shortening alone does not make it rude; tone and context matter.
+
+**एक कप चिया दिनुस् न।**
+
+ek kap ciyā dinus na.
+
+A cup of tea, please.
+
 
 ### Exercise 1
 
@@ -4154,6 +4323,18 @@ May I sit here?
 
 **म जानेछु** (I will go) states future action; **म जाऊँ?** (shall I go, an offer) offers it for consideration.
  Likewise **हामी जानेछौं** (we will go) states a plan, whereas **हामी जाऔं** (let us go) proposes one.
+
+### Heard in conversation｜ल as “Well then” or “Let’s”
+
+**ल** can acknowledge what was said or signal moving on to action.
+ It is not always a literal yes.
+ Here it gives the suggestion a conversational well then, let’s get going feel.
+
+**ल, जाऔं।**
+
+la, jāaũ.
+
+Well then, let’s go.
 
 
 A suggestion not to do something places न before the verb.
@@ -4399,6 +4580,24 @@ Prefix **न** to a request form: **नगर्नुहोस्, नजान
 
 **जानु हुँदैन** (must not go) prohibits going; **जानु पर्दैन** (do not need to go) removes the need to go.
  Negating permission हुन्छ and necessity पर्छ gives different meanings.
+
+### Heard in conversation｜Initial न versus final न
+
+The position of **न** matters in speech.
+ Before a request verb it negates; after the request it can soften or urge.
+ Listen to its position rather than interpreting every न as not.
+
+**नजानुहोस्।**
+
+najānuhos.
+
+Please do not go.
+
+**जानुहोस् न।**
+
+jānuhos na.
+
+Please do go.
 
 
 Keep a negative request separate from a prohibition with हुँदैन.
@@ -4662,6 +4861,18 @@ Compare **सक्छु→सक्दिनँ**, past **सकेँ**, and 
  Ability does not entail permission.
  See topic 31 for epistemic possibility with **हुन सक्छ** (may be; can be).
 
+### Heard in conversation｜पाइन्छ? for availability
+
+In a shop, **पाइन्छ?** asks whether something is available or can be obtained.
+ This differs from personal ability with **सक्नु**.
+ The question asks about obtaining tea, not the customer’s ability to make it.
+
+**यहाँ चिया पाइन्छ?**
+
+yahā̃ ciyā pāincha?
+
+Can I get tea here?
+
 
 ### A reference table for comparing personal forms
 
@@ -4837,6 +5048,42 @@ I have to go to the office tomorrow.
 
 **मलाई पानी चाहिन्छ** (I need water) expresses need for water; **मलाई जानु पर्छ** (I need to go) need to perform an action. चाहिन्छ commonly takes a needed item/quantity; पर्छ combines with verbal -नु for obligation.
  Both can have मलाई as experiencer.
+
+### A moment in Nepal｜A moment before the photograph
+
+A market scene or a smile encountered along the way may invite a photograph.
+ Ask before taking someone’s picture.
+ A brief exchange with the person beyond the camera can turn an image into a shared memory.
+
+### Heard in conversation｜मिल्छ for permission and feasibility
+
+**An infinitive in -न + मिल्छ** expresses something being feasible or acceptable and is common when asking permission.
+ The negative is **मिल्दैन**.
+ This is an established use, not a mistake, but it is not interchangeable with ability **सक्नु** in every context.
+
+**यहाँ बस्न मिल्छ?**
+
+yahā̃ basna milcha?
+
+May I sit here?
+
+**आज भेट्न मिल्छ?**
+
+āja bheṭna milcha?
+
+Would it work to meet today?
+
+**मिल्छ।**
+
+milcha.
+
+Yes, that is fine.
+
+**अहिले बस्न मिल्दैन।**
+
+ahile basna mildaina.
+
+Sitting here is not possible/allowed right now.
 
 
 In this obligation pattern, पर्छ does not change for the subject's person.
@@ -5063,6 +5310,12 @@ Compare **म जान चाहन्नँ** (I do not want to go) with **म
 
 **जान चाहन्छु** (I want to go), **जानु पर्छ** (need to go) and **जान सक्छु** (I can go) express desire, necessity and ability.
  Even the preceding form differs, **जान/जानु**; they are not one universal pattern with a freely replaceable final word.
+
+### A moment in Nepal｜A plate of momo
+
+Picture a warm momo dipped in sauce before the first bite.
+ Fillings, cooking styles and sauces offer different pleasures, including vegetable options.
+ Being able to describe what you enjoy can make discovering the next plate even more inviting.
 
 
 ### A reference table for comparing personal forms
@@ -5476,6 +5729,17 @@ I walk slowly.
 **म पनि जान्छु** (I go too) adds the speaker; **म चिया मात्र खान्छु** (I drink only tea) limits the item to tea.
  Scope depends on the expression before पनि/मात्र, so placement changes what is added or restricted.
 
+### Heard in conversation｜अलि as a softener
+
+**अलि** can soften a request as well as express a small amount or degree.
+ Here it asks for a little slower speech, helping you keep the conversation going rather than ending it when you miss something.
+
+**अलि बिस्तारै बोल्नुस् न।**
+
+ali bistārai bolnus na.
+
+Could you speak a little more slowly, please?
+
 
 कति can be used for an exclamation as well as a question.
 
@@ -5679,6 +5943,24 @@ In **यो घर त्यो घरभन्दा ठूलो छ** (this h
 
 **A र B बराबर छन्** (A and B are equal) states equality; **Bजति** compares an amount/degree to B; **Bभन्दा** introduces a standard for difference.
  The marker distinguishes equality/degree from unequal comparison.
+
+### A moment in Nepal｜Small encounters at the market
+
+A market gathers colour, produce and small encounters.
+ Looking, asking and exchanging a few words can bring a place closer.
+ Some shops welcome a price discussion; others use fixed prices.
+ Think of the exchange as a meeting, not a contest.
+
+### Heard in conversation｜A gentle price request
+
+During a price discussion, **कम** asks for a reduction and **गरिदिनुस् न** makes a request for the listener to do it.
+ Use a friendly tone where negotiation is appropriate, not as a demand in every fixed-price shop.
+
+**अलि कम गरिदिनुस् न।**
+
+ali kam garidinus na.
+
+Could you reduce the price a little, please?
 
 
 ### Related forms taught in this topic
@@ -5961,6 +6243,29 @@ I like tea and coffee.
 
 **पानी परे पनि जान्छु** (I will go even if it rains) concedes even if it rains. **पानी पर्यो तर गएँ** (it rained, but I went) contrasts two reported events.
  The first uses -**ए पनि** (even if/although, part of a linking pattern); the second uses तर. **का बाबजुद** (despite) follows a noun phrase for despite.
+
+### A moment in Nepal｜More than one picture of Nepal
+
+You may begin with a picture of high mountains, then discover varied languages, meals and clothing in towns and villages.
+ Nepal’s many communities make differences part of the discovery.
+ Leave room for the next encounter to surprise you.
+
+### Heard in conversation｜अनि? to invite the next part
+
+**अनि** means then; a questioning **अनि?** can invite someone to continue. **अनि के भयो?** explicitly asks what happened next.
+ A gentle tone makes it an invitation to tell more, rather than a demand to hurry.
+
+**अनि?**
+
+ani?
+
+And then?
+
+**अनि के भयो?**
+
+ani ke bhayo?
+
+What happened then?
 
 
 ### Related forms taught in this topic
@@ -7957,6 +8262,18 @@ In **उहाँले «म आउँछु» भन्नुभयो** (he/s
 Quoted **भोलि** is tomorrow relative to the original speech.
  Contrast habitual reporting **भन्नुहुन्थ्यो** with a completed report **भन्नुभयो**.
  Indirect reporting follows the intended time relations rather than obligatory English-style backshift.
+
+### Heard in conversation｜रे as a hearsay signal
+
+Sentence-final **रे** can mark information heard from someone else.
+ It does not assert that the speaker personally verified it.
+ This reported-information use differs from the speaker’s own supposition with **होला**.
+
+**भोलि छुट्टी छ रे।**
+
+bholi chuṭṭī cha re.
+
+I hear tomorrow is a day off.
 
 
 ### Direct quotation and indirect reporting

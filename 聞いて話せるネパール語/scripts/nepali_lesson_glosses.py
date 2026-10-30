@@ -379,7 +379,10 @@ DATA += '''
 न लगाउनु|〜させる〈前に動詞語幹が付く型〉|to make/have someone do, with a preceding verb base
 नु पर्छ|〜する必要がある〈前に動詞語幹が付く型〉|need to do, with a preceding verb base
 यहाँ किताब छ|ここに本があります|there is a book here
-त्यहाँ किताब छ|そこ・あそこに本があります|there is a book there/over there'''
+त्यहाँ किताब छ|そこ・あそこに本があります|there is a book there/over there
+उहाँ किताब छ|あそこに本があります|there is a book over there
+उहाँ शिक्षक हुनुहुन्छ|あの方は先生です|he/she is a teacher (respectful)
+उ त्यहाँ|あそこ・ほらあそこ|over there, pointing to a distant place'''
 
 GLOSSES = {}
 for line in DATA.splitlines():

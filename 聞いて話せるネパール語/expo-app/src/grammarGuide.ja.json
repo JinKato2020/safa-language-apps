@@ -267,6 +267,100 @@
       }
     },
     {
+      "type": "h",
+      "text": "ひと休み｜カトマンズ、路地の向こうへ",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "valley-morning",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "カトマンズ盆地には、カトマンズ・パタン・バクタプルという、表情の違う古い街があります。\n広場から路地へ、路地から中庭へ。\n旅する自分を思い浮かべてみましょう。\n地図で見ていた街が、誰かの暮らす街に変わる瞬間です。",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "valley-morning",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜हैन? は「〜ですよね？」",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "haina-tag",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**हैन**は**होइन**の会話でよく聞く形です。\n文末で上げ調子にすると、確認の「〜ですよね？」にもなります。\n否定を押し付ける意味ではなく、道が合っているかなどを相手に確かめる場面で聞いてみましょう。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "haina-tag",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**यही बाटो हो, हैन?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "haina-tag",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "yahī bāṭo ho, haina?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "haina-tag",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "この道で合っていますよね？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "haina-tag",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -1197,7 +1291,7 @@
     },
     {
       "type": "h",
-      "text": "3. ここ・そこ・あそこ：यहाँとत्यहाँ",
+      "text": "3. ここ・そこ・あそこ：यहाँ・त्यहाँ・उहाँ",
       "presentation": {
         "tone": "violet",
         "role": "plain"
@@ -1206,7 +1300,7 @@
     },
     {
       "type": "p",
-      "text": "**यहाँ**（yahā̃／ヤハーン）は「ここに・ここで」、**त्यहाँ**（tyahā̃／ティヤハーン）は「そこに・あそこに／そこで・あそこで」。\n日本語の「そこ」と「あそこ」を、ネパール語では同じत्यहाँで表せます。\n聞き手の近くか、話し手から離れた所かは、指さしや文脈から読み取ります。\n**यहाँ किताब छ**（ここに本があります）はここ、**त्यहाँ किताब छ**（そこ・あそこに本があります）はそこ・あそこに本がある文です。\n**कहाँ**はどこに・どこで。\nこれらには基本の所在文でमाを重ねず、名詞の場所なら**घरमा・नेपालमा**にします。",
+      "text": "**यहाँ**（yahā̃／ヤハーン）は「ここに・ここで」、**त्यहाँ**（tyahā̃／ティヤハーン）は「そこに・そこで」、**उहाँ**（uhā̃／ウハーン）は「あそこに・あそこで」。\nまずこの3つを並べて覚えましょう。\nただし日本語の「こ・そ・あ」と完全に一対一ではなく、त्यहाँも「あそこ」を表します。\n遠くを指して**उ त्यहाँ**（あそこ・ほらあそこ）とも言います。\n**यहाँ किताब छ**（ここに本があります）はここ、**त्यहाँ किताब छ**（そこ・あそこに本があります）はそこ・あそこに本がある文です。\n**उहाँ किताब छ**（あそこに本があります）ではउहाँは場所「あそこ」。\n**उहाँ शिक्षक हुनुहुन्छ**（あの方は先生です）では人「あの方」です。\n人を敬って指す用法はテーマ7で扱います。\n**कहाँ**はどこに・どこで。\nこれらの場所の語には基本の所在文でमाを重ねず、名詞の場所なら**घरमा・नेपालमा**にします。",
       "presentation": {
         "tone": "violet",
         "role": "plain"
@@ -1274,8 +1368,8 @@
           "そこに・そこで：聞き手の近くや、話題にしている場所など"
         ],
         [
-          "त्यहाँ\ntyahā̃",
-          "あそこに・あそこで：話し手から離れた場所。「そこ」と同じ形"
+          "उहाँ\nuhā̃",
+          "あそこに・あそこで：離れた場所。人を指す「あの方」とは文脈で区別"
         ],
         [
           "कहाँ\nkahā̃",
@@ -1406,6 +1500,100 @@
       ],
       "presentation": {
         "tone": "blue"
+      }
+    },
+    {
+      "type": "h",
+      "text": "ひと休み｜湯気の向こうに、会話がある",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "tea-visit",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "家を訪ねたとき、温かいお茶を囲んで話が始まることがあります。\n甘いミルクティーの湯気を眺めながら、急がず過ごすひととき。\n何を話すか迷っても、同じ一杯を楽しむ時間が、初対面の距離を少し縮めてくれそうです。",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "tea-visit",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜कता छ? も「どちらですか？」",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kata-location",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "場所を聞く**कहाँ**に加え、会話では**कता**もよく聞きます。\n方向の「どちらへ」だけでなく、お店などの位置を尋ねる言い方にも使われます。\nまずは短い質問をひとまとまりで聞き取ってみましょう。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kata-location",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**पसल कता छ?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kata-location",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "pasal kata cha?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kata-location",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "お店はどちらですか？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kata-location",
+        "kind": "spoken"
       }
     },
     {
@@ -2438,6 +2626,116 @@
       }
     },
     {
+      "type": "h",
+      "text": "会話でよく聞く｜短くても会話になる「お元気？」",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "顔を合わせた場面では、主語や長い質問を省いた**सन्चै?**も聞かれます。\n親しみのある短い挨拶です。\n相手や場面に合わせて、丁寧な呼びかけを添えてもよいでしょう。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**सन्चै?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "sancai?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "お元気ですか？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**सन्चै छु।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "sancai chu.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "元気です。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -3425,6 +3723,116 @@
       ],
       "presentation": {
         "tone": "blue"
+      }
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜हुन्छ は、返事の「いいですよ」にも",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "依頼や提案への返事の**हुन्छ**は「いいですよ・分かりました」。\nここでは「なります」と直訳しません。\n**ठीक छ**も了解の返事に使えます。\n人・物の同定に答える**हो**とは、質問の種類が違います。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**हुन्छ।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "huncha.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "いいですよ・分かりました。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**ठीक छ।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ṭhīk cha.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "分かりました・大丈夫です。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
       }
     },
     {
@@ -4418,6 +4826,32 @@
       ],
       "presentation": {
         "tone": "blue"
+      }
+    },
+    {
+      "type": "h",
+      "text": "ひと休み｜街の先には、丘の暮らし",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hills-paths",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ネパールの魅力は雪山だけではありません。\n丘に沿って続く集落や畑、街と村を結ぶ道にも、人の暮らしがあります。\nいつか車窓から気になる家並みを見つけたら、「どんな毎日だろう」と想像してみたいですね。",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hills-paths",
+        "kind": "culture"
       }
     },
     {
@@ -6196,6 +6630,116 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜तपाईंलाई नि? で「あなたは？」",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**नि?**を添えた短い聞き返しは、直前の話題を相手に返すときに使います。\n下の流れなら「あなたの具合は？」。\nこれだけで何でも聞ける万能文ではなく、省かれた内容を会話から補います。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**मलाई सन्चै छ।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "malāī sancai cha.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "私は元気です。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**तपाईंलाई नि?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "tapāĩlāī ni?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "あなたはどうですか？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -8900,6 +9444,142 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "h",
+      "text": "ひと休み｜親戚でなくても、お兄さん・お姉さん",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dai-didi",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "お店や道端で、少し年上の人を「お兄さん・お姉さん」にあたる呼び方で呼ぶことがあります。\n本当のきょうだいでなくても、呼びかけに親しみがにじむのが面白いところ。\n相手との距離や年齢を大切にする、人づきあいの一面です。",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dai-didi",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜हजुर は「はい」と「もう一度？」",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**हजुर**は丁寧な応答として「はい・聞いています」。\n上げ調子の**हजुर?**なら「え、もう一度？」という聞き返しにもなります。\n相づちを打っただけなのか、内容に同意したのかは、前後のやり取りも確認します。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**हजुर।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "hajur.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "はい・伺っています。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**हजुर?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "hajur?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "もう一度お願いできますか？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -10259,6 +10939,32 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "ひと休み｜一皿に広がる、ダルバートの世界",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dal-bhat",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ご飯に豆のスープ、野菜のおかず、酸味や辛味のある付け合わせ。\nダルバートは、一皿の中で味を組み合わせて楽しめる食事です。\n家庭や地域で中身はさまざま。\n「同じ料理なのに、昨日のお店と違うね」も旅の楽しみになりそうです。",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dal-bhat",
+        "kind": "culture"
+      }
     },
     {
       "type": "p",
@@ -12376,6 +13082,100 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "h",
+      "text": "ひと休み｜おかわりに込められた、おもてなし",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "meal-warmth",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "食卓で、もう少しどうぞと勧めてもらうことがあります。\nひと皿を通して気に掛けてくれる、そのやり取りも旅の思い出。\n満腹なら無理をせず、味わった喜びや感謝を伝えたいですね。\n食卓の習慣は家庭ごとに違います。",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "meal-warmth",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜「食べましたか？」が気遣いの一言に",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "eaten-greeting",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**खाना खानुभयो?**は実際に食事を済ませたかという質問です。\n間柄や場面によっては、会ったときの気遣いの一言にもなります。\n食事への招待が必ず含まれるわけでも、いつでも「こんにちは」と置き換えられるわけでもありません。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "eaten-greeting",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**खाना खानुभयो?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "eaten-greeting",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "khānā khānubhayo?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "eaten-greeting",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ご飯は食べましたか？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "eaten-greeting",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -13851,6 +14651,74 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜पछि भेटौंला は別れ際の一言",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "bhetau-la",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "別れ際に**पछि भेटौंला**と言えば「また会いましょう」。\nここでの**-ला**は、未来形の表だけを直訳するより、再会を見込む会話の一言として覚えると自然です。\n具体的な日時を約束した文とは限りません。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "bhetau-la",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**पछि भेटौंला।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "bhetau-la",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "pachi bheṭaũlā.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "bhetau-la",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "また会いましょう。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "bhetau-la",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -16718,6 +17586,74 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "h",
+      "text": "会話でよく聞く｜दिनुहोस् → दिनुस् と短くなる",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dinus-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "丁寧な依頼の**दिनुहोस्**が、会話では**दिनुस्**と短く聞こえることがあります。\n文末の**न**は、お願いを柔らかくしたり促したりする働き。\n短い形だから必ず乱暴、というわけではありません。\n声の調子や場面も大切です。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dinus-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**एक कप चिया दिनुस् न।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dinus-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ek kap ciyā dinus na.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dinus-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "お茶を1杯お願いします。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dinus-short",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -17492,6 +18428,74 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜ल は「じゃあ・さあ」の合図",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "la-start",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**ल**は、話を受けたり、行動へ移ったりする短い合図として使います。\n必ず日本語の「はい」一語に対応するわけではありません。\n下の例なら、相談のあとで「じゃあ行こう」と動き出す感じです。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "la-start",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**ल, जाऔं।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "la-start",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "la, jāaũ.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "la-start",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "じゃあ、行きましょう。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "la-start",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -18513,6 +19517,116 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜前のनと、後ろのनは違う",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "会話で聞こえる**न**は、位置で役割が変わります。\n依頼形の前なら否定、文末ならお願いを添えることがあります。\n音だけを拾って「行かない」と決めず、動詞の前後まで聞いてみましょう。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**नजानुहोस्।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "najānuhos.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "行かないでください。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**जानुहोस् न।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "jānuhos na.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "どうぞ行ってください。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -19610,6 +20724,74 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "h",
+      "text": "会話でよく聞く｜पाइन्छ? は「手に入りますか？」",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "paincha-available",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "お店の**पाइन्छ?**は「売っていますか・手に入りますか」。\n能力の「できる」とは違います。\n**सक्नु**で自分の能力を述べる文と、お茶を提供してもらえるか尋ねる文を分けて覚えましょう。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "paincha-available",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**यहाँ चिया पाइन्छ?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "paincha-available",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "yahā̃ ciyā pāincha?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "paincha-available",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ここでお茶をいただけますか・売っていますか？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "paincha-available",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -20335,6 +21517,226 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "ひと休み｜シャッターより先に、ひと声",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "photo-encounter",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "市場の働く姿や、旅先で出会った笑顔。\n写真に残したくなる場面があっても、まずは撮ってよいかを確かめたいですね。\nカメラの外側にいる相手と少し話せたら、一枚の写真が、その人との思い出に変わります。",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "photo-encounter",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜मिल्छ は「〜してもいい」にも使う",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**動詞の-न形＋मिल्छ**は、状況に合って「できる・差し支えない」を表し、許可を尋ねる会話でもよく使います。\n否定は**मिल्दैन**。\n誤用ではありませんが、何でも能力の**सक्नु**と同じにはしません。\n許されるか、予定や事情から可能かは文脈で変わります。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**यहाँ बस्न मिल्छ?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "yahā̃ basna milcha?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ここに座ってもいいですか？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**आज भेट्न मिल्छ?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "āja bheṭna milcha?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "今日は会えますか？〈都合を尋ねる〉",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**मिल्छ।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "milcha.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "大丈夫です・構いません。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अहिले बस्न मिल्दैन।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ahile basna mildaina.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "今は座れません・座ってはいけません〈事情による〉。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -21270,6 +22672,32 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "ひと休み｜モモのお店で、ひと皿",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "momo-plate",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "湯気の立つモモを、たれに少し付けてひと口。\n具や調理法、たれにもお店ごとの楽しみがあります。\n肉入りだけでなく野菜入りもあり、食べ比べたくなる料理です。\n店先で好みを伝えられたら、次のひと皿がもっと楽しみになりそうです。",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "momo-plate",
+        "kind": "culture"
+      }
     },
     {
       "type": "p",
@@ -22991,6 +24419,74 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "h",
+      "text": "会話でよく聞く｜अलि はお願いのクッションにも",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ali-softening",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अलि**は量・程度の「少し」だけでなく、お願いを控えめにする働きもあります。\n下の例では「少しゆっくり」。\n命令を強くするのでなく、聞き取るために相手へ調整を頼む一言です。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ali-softening",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अलि बिस्तारै बोल्नुस् न।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ali-softening",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ali bistārai bolnus na.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ali-softening",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "少しゆっくり話していただけますか？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ali-softening",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -23847,6 +25343,100 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "ひと休み｜市場は、小さな出会いの連続",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "market-meeting",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "野菜や果物の色が並ぶ市場。\n品物を見て、値段を尋ねて、少し言葉を交わすだけでも、旅の景色が近くなります。\n値段を相談できるお店もあれば、定価のお店もあります。\n買い物を勝ち負けにせず、やり取りそのものを楽しみたいですね。",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "market-meeting",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜お店で「少し安く」はどう頼む？",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kam-request",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "値段の話をしているときの**कम**は「少なく」、**गरिदिनुस् न**は相手にしてもらう依頼です。\n値段を相談できる場で、穏やかに使います。\n定価の店でも必ず交渉する、という意味ではありません。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kam-request",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अलि कम गरिदिनुस् न।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kam-request",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ali kam garidinus na.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kam-request",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "少し安くしていただけませんか？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kam-request",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -25046,6 +26636,142 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "ひと休み｜ネパールは、一つの風景じゃない",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "many-nepals",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "高い山のイメージから旅を始めても、街や村で出会う言葉、食事、装いは一様ではありません。\nいろいろな背景の人が暮らす国だからこそ、「前に会った人と違う」が発見になります。\n知ったつもりにならず、次の出会いを楽しみに。",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "many-nepals",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜अनि? で話の続きを聞く",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अनि**は「それから」ですが、上げ調子の**अनि?**だけで「それで？」と続きを促すこともあります。\n**अनि के भयो?**なら何が起きたかを具体的に聞く形。\n相手の話を急がせない調子で使ってみましょう。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अनि?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ani?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "それで？・それから？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अनि के भयो?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ani ke bhayo?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "それからどうなりましたか？",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -33513,6 +35239,74 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "会話でよく聞く｜रे は「〜だそうです」の合図",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "re-hearsay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "会話の文末の**रे**は、人から聞いた内容を伝える合図になります。\n自分で確かめた事実の断言とは分け、誰から聞いた話かにも気を配ります。\n自分の推測を表す**होला**とは同じではありません。",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "re-hearsay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**भोलि छुट्टी छ रे।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "re-hearsay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "bholi chuṭṭī cha re.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "re-hearsay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "明日は休みだそうです。",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "re-hearsay",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",

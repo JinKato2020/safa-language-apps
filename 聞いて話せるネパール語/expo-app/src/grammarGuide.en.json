@@ -267,6 +267,100 @@
       }
     },
     {
+      "type": "h",
+      "text": "A moment in Nepal｜Beyond a Kathmandu lane",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "valley-morning",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Kathmandu, Patan and Bhaktapur give the valley three distinct old-city faces.\n Imagine stepping from a square into a lane, then a courtyard.\n A place once seen on a map begins to feel like somebody’s neighbourhood.",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "valley-morning",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜हैन? as a conversational check",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "haina-tag",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**हैन** is a common conversational form of **होइन**.\n At the end of a statement, rising intonation can ask for confirmation.\n In the example, the speaker checks a route rather than simply asserting a negative.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "haina-tag",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**यही बाटो हो, हैन?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "haina-tag",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "yahī bāṭo ho, haina?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "haina-tag",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "This is the right road, isn’t it?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "haina-tag",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -1197,7 +1291,7 @@
     },
     {
       "type": "h",
-      "text": "3. Here, there and over there: यहाँ and त्यहाँ",
+      "text": "3. Here, there and over there: यहाँ・त्यहाँ・उहाँ",
       "presentation": {
         "tone": "violet",
         "role": "plain"
@@ -1206,7 +1300,7 @@
     },
     {
       "type": "p",
-      "text": "**यहाँ** (yahā̃) means here; **त्यहाँ** (tyahā̃) means there or over there.\n Nepali can use the same त्यहाँ for the Japanese distinctions soko and asoko; context or pointing identifies the place. **यहाँ किताब छ** (there is a book here) places a book here; **त्यहाँ किताब छ** (there is a book there/over there) places it there or over there. **कहाँ** asks where.\n Do not routinely add मा to these location words; place nouns instead combine with मा, as in **घरमा, नेपालमा**.",
+      "text": "**यहाँ** (yahā̃) means here, **त्यहाँ** (tyahā̃) there, and **उहाँ** (uhā̃) can mean over there.\n Learn these three together, but they are not rigid distance categories: त्यहाँ also covers over there. **उ त्यहाँ** (over there, pointing to a distant place) explicitly points to a distant place. **यहाँ किताब छ** (there is a book here) places a book here; **त्यहाँ किताब छ** (there is a book there/over there) places it there or over there.\n In **उहाँ किताब छ** (there is a book over there), उहाँ refers to a place, over there.\n In **उहाँ शिक्षक हुनुहुन्छ** (he/she is a teacher (respectful)), it refers respectfully to a person, he or she; see topic 7. **कहाँ** asks where.\n Do not routinely add मा to these location words; place nouns instead combine with मा, as in **घरमा, नेपालमा**.",
       "presentation": {
         "tone": "violet",
         "role": "plain"
@@ -1274,8 +1368,8 @@
           "There: for example near the listener, or at an identified place."
         ],
         [
-          "त्यहाँ\ntyahā̃",
-          "Over there: away from the speaker. The same form as there."
+          "उहाँ\nuhā̃",
+          "Over there: a distant place. Context distinguishes it from respectful he/she."
         ],
         [
           "कहाँ\nkahā̃",
@@ -1406,6 +1500,100 @@
       ],
       "presentation": {
         "tone": "blue"
+      }
+    },
+    {
+      "type": "h",
+      "text": "A moment in Nepal｜Conversation across a cup of tea",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "tea-visit",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "A visit may begin with tea and time together.\n Picture the steam from a sweet milk tea and an unhurried conversation.\n Even before you find much to say, sharing that small pause can make a first meeting feel warmer.",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "tea-visit",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜कता छ? in everyday directions",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kata-location",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Alongside **कहाँ**, you will hear **कता** in everyday location questions.\n It can ask where a shop or other place is, not only the direction of movement.\n Recognize the short question as a complete conversational turn.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kata-location",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**पसल कता छ?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kata-location",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "pasal kata cha?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kata-location",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Where is the shop?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kata-location",
+        "kind": "spoken"
       }
     },
     {
@@ -2438,6 +2626,116 @@
       }
     },
     {
+      "type": "h",
+      "text": "Heard in conversation｜A short “How are you?”",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**सन्चै?** is a short, friendly check on someone’s wellbeing.\n Conversation can omit the subject and a longer question when the situation makes them clear.\n A respectful address can accompany it when appropriate.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**सन्चै?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "sancai?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Are you well?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**सन्चै छु।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "sancai chu.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "I am well.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "sanchai-short",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -3425,6 +3723,116 @@
       ],
       "presentation": {
         "tone": "blue"
+      }
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜हुन्छ as “Okay”",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "As a reply to a request or proposal, **हुन्छ** can mean okay or agreed. **ठीक छ** also acknowledges an arrangement.\n These responses have a different role from **हो** confirming an identity statement.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**हुन्छ।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "huncha.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Okay; agreed.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**ठीक छ।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ṭhīk cha.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "All right; okay.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "huncha-okay",
+        "kind": "spoken"
       }
     },
     {
@@ -4418,6 +4826,32 @@
       ],
       "presentation": {
         "tone": "blue"
+      }
+    },
+    {
+      "type": "h",
+      "text": "A moment in Nepal｜Life beyond the city",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hills-paths",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Nepal is more than snowy peaks.\n Hillside settlements, fields and paths between towns and villages hold everyday lives too.\n Imagine noticing a cluster of homes from a window and wondering what an ordinary day there feels like.",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hills-paths",
+        "kind": "culture"
       }
     },
     {
@@ -6187,6 +6621,116 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜तपाईंलाई नि? to return a question",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "A short return question with **नि?** sends the previous topic back to the listener.\n Here it asks about the other person’s wellbeing.\n The missing content comes from the preceding turn; it is not a context-free question.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**मलाई सन्चै छ।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "malāī sancai cha.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "I am well.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**तपाईंलाई नि?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "tapāĩlāī ni?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "And you?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ni-return-question",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -8864,6 +9408,142 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "h",
+      "text": "A moment in Nepal｜A family-like way of addressing people",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dai-didi",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "An older person at a shop or on the street may be addressed with a word like elder brother or sister, even without a family connection.\n It is a glimpse of how warmth, age and relationships shape everyday encounters.",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dai-didi",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜हजुर: acknowledgement or “Pardon?”",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**हजुर** can politely acknowledge that you are listening.\n With questioning intonation, **हजुर?** can ask for repetition.\n Acknowledging the speaker does not always mean agreeing with every part of the message.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**हजुर।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "hajur.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Yes; I am listening.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**हजुर?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "hajur?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Pardon?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "hajur-response",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -10196,6 +10876,32 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "A moment in Nepal｜A little world on a dal-bhat plate",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dal-bhat",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Rice, lentil soup, vegetables and a tangy or spicy accompaniment make a plate of dal bhat a small world of flavours.\n Homes and regions vary the combination.\n Discovering how today’s plate differs from yesterday’s can become part of the journey.",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dal-bhat",
+        "kind": "culture"
+      }
     },
     {
       "type": "p",
@@ -12313,6 +13019,100 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "h",
+      "text": "A moment in Nepal｜The warmth behind an extra helping",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "meal-warmth",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "An offer of another helping can be a small gesture of care.\n That exchange may become as memorable as the food.\n You need not eat beyond comfort: appreciation and thanks matter too.\n Every household has its own rhythm.",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "meal-warmth",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜“Have you eaten?” as a caring check-in",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "eaten-greeting",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**खाना खानुभयो?** really asks whether someone has eaten.\n Between people who know each other, it can also be a caring check-in.\n It is neither an automatic meal invitation nor a universal replacement for hello.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "eaten-greeting",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**खाना खानुभयो?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "eaten-greeting",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "khānā khānubhayo?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "eaten-greeting",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Have you eaten?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "eaten-greeting",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -13788,6 +14588,74 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜पछि भेटौंला when parting",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "bhetau-la",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**पछि भेटौंला** is a natural parting expression, see you later.\n Recognize the **-ला** form as part of this conversational expression of an expected future meeting.\n It does not by itself arrange a precise time.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "bhetau-la",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**पछि भेटौंला।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "bhetau-la",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "pachi bheṭaũlā.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "bhetau-la",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "See you later.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "bhetau-la",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -16655,6 +17523,74 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "h",
+      "text": "Heard in conversation｜Shortened polite दिनुस्",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dinus-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Polite **दिनुहोस्** is often heard in shortened form **दिनुस्**.\n Final **न** can soften or encourage a request.\n Shortening alone does not make it rude; tone and context matter.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dinus-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**एक कप चिया दिनुस् न।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dinus-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ek kap ciyā dinus na.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dinus-short",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "A cup of tea, please.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "dinus-short",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -17429,6 +18365,74 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜ल as “Well then” or “Let’s”",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "la-start",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**ल** can acknowledge what was said or signal moving on to action.\n It is not always a literal yes.\n Here it gives the suggestion a conversational well then, let’s get going feel.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "la-start",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**ल, जाऔं।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "la-start",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "la, jāaũ.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "la-start",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Well then, let’s go.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "la-start",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -18450,6 +19454,116 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜Initial न versus final न",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "The position of **न** matters in speech.\n Before a request verb it negates; after the request it can soften or urge.\n Listen to its position rather than interpreting every न as not.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**नजानुहोस्।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "najānuhos.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Please do not go.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**जानुहोस् न।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "jānuhos na.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Please do go.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "na-position",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -19547,6 +20661,74 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "h",
+      "text": "Heard in conversation｜पाइन्छ? for availability",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "paincha-available",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "In a shop, **पाइन्छ?** asks whether something is available or can be obtained.\n This differs from personal ability with **सक्नु**.\n The question asks about obtaining tea, not the customer’s ability to make it.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "paincha-available",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**यहाँ चिया पाइन्छ?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "paincha-available",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "yahā̃ ciyā pāincha?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "paincha-available",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Can I get tea here?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "paincha-available",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -20272,6 +21454,226 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "A moment in Nepal｜A moment before the photograph",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "photo-encounter",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "A market scene or a smile encountered along the way may invite a photograph.\n Ask before taking someone’s picture.\n A brief exchange with the person beyond the camera can turn an image into a shared memory.",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "photo-encounter",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜मिल्छ for permission and feasibility",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**An infinitive in -न + मिल्छ** expresses something being feasible or acceptable and is common when asking permission.\n The negative is **मिल्दैन**.\n This is an established use, not a mistake, but it is not interchangeable with ability **सक्नु** in every context.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**यहाँ बस्न मिल्छ?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "yahā̃ basna milcha?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "May I sit here?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**आज भेट्न मिल्छ?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "āja bheṭna milcha?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Would it work to meet today?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**मिल्छ।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "milcha.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Yes, that is fine.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अहिले बस्न मिल्दैन।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ahile basna mildaina.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Sitting here is not possible/allowed right now.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "milcha-permission",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -21207,6 +22609,32 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "A moment in Nepal｜A plate of momo",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "momo-plate",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Picture a warm momo dipped in sauce before the first bite.\n Fillings, cooking styles and sauces offer different pleasures, including vegetable options.\n Being able to describe what you enjoy can make discovering the next plate even more inviting.",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "momo-plate",
+        "kind": "culture"
+      }
     },
     {
       "type": "p",
@@ -22928,6 +24356,74 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "h",
+      "text": "Heard in conversation｜अलि as a softener",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ali-softening",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अलि** can soften a request as well as express a small amount or degree.\n Here it asks for a little slower speech, helping you keep the conversation going rather than ending it when you miss something.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ali-softening",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अलि बिस्तारै बोल्नुस् न।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ali-softening",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ali bistārai bolnus na.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ali-softening",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Could you speak a little more slowly, please?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ali-softening",
+        "kind": "spoken"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -23784,6 +25280,100 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "A moment in Nepal｜Small encounters at the market",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "market-meeting",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "A market gathers colour, produce and small encounters.\n Looking, asking and exchanging a few words can bring a place closer.\n Some shops welcome a price discussion; others use fixed prices.\n Think of the exchange as a meeting, not a contest.",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "market-meeting",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜A gentle price request",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kam-request",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "During a price discussion, **कम** asks for a reduction and **गरिदिनुस् न** makes a request for the listener to do it.\n Use a friendly tone where negotiation is appropriate, not as a demand in every fixed-price shop.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kam-request",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अलि कम गरिदिनुस् न।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kam-request",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ali kam garidinus na.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kam-request",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Could you reduce the price a little, please?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "kam-request",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -24983,6 +26573,142 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "A moment in Nepal｜More than one picture of Nepal",
+      "presentation": {
+        "tone": "violet",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "many-nepals",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "p",
+      "text": "You may begin with a picture of high mountains, then discover varied languages, meals and clothing in towns and villages.\n Nepal’s many communities make differences part of the discovery.\n Leave room for the next encounter to surprise you.",
+      "presentation": {
+        "tone": "violet",
+        "role": "body"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "many-nepals",
+        "kind": "culture"
+      }
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜अनि? to invite the next part",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अनि** means then; a questioning **अनि?** can invite someone to continue. **अनि के भयो?** explicitly asks what happened next.\n A gentle tone makes it an invitation to tell more, rather than a demand to hurry.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अनि?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ani?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "And then?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**अनि के भयो?**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "ani ke bhayo?",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "What happened then?",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "ani-followup",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",
@@ -33441,6 +35167,74 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "h",
+      "text": "Heard in conversation｜रे as a hearsay signal",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "re-hearsay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "Sentence-final **रे** can mark information heard from someone else.\n It does not assert that the speaker personally verified it.\n This reported-information use differs from the speaker’s own supposition with **होला**.",
+      "presentation": {
+        "tone": "teal",
+        "role": "plain"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "re-hearsay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "**भोलि छुट्टी छ रे।**",
+      "presentation": {
+        "tone": "green",
+        "role": "example",
+        "join": "start"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "re-hearsay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "bholi chuṭṭī cha re.",
+      "presentation": {
+        "tone": "green",
+        "role": "reading",
+        "join": "middle"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "re-hearsay",
+        "kind": "spoken"
+      }
+    },
+    {
+      "type": "p",
+      "text": "I hear tomorrow is a day off.",
+      "presentation": {
+        "tone": "green",
+        "role": "translation",
+        "join": "end"
+      },
+      "l1ExampleSupport": 1,
+      "lessonSupplement": {
+        "id": "re-hearsay",
+        "kind": "spoken"
+      }
     },
     {
       "type": "p",

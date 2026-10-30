@@ -1,6 +1,6 @@
 {
-  "packVersion": 1211,
-  "previousVersion": 1210,
+  "packVersion": 1212,
+  "previousVersion": 1211,
   "topics": 36,
   "languages": [
     "ja",
@@ -40,8 +40,8 @@
       "teachingSections": 5
     },
     "2": {
-      "jaCharacters": 692,
-      "enWords": 199,
+      "jaCharacters": 820,
+      "enWords": 234,
       "teachingSections": 5
     },
     "3": {
@@ -312,8 +312,8 @@
         "en": "Locating and introducing"
       },
       {
-        "ja": "ここ・そこ・あそこ：यहाँとत्यहाँ",
-        "en": "Here, there and over there: यहाँ and त्यहाँ"
+        "ja": "ここ・そこ・あそこ：यहाँ・त्यहाँ・उहाँ",
+        "en": "Here, there and over there: यहाँ・त्यहाँ・उहाँ"
       },
       {
         "ja": "所持では何に一致する？",
@@ -1086,8 +1086,8 @@
       "audioVersion": 1009,
       "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-core-1009.zip",
       "audioZipBytes": 39289890,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1210.json",
-      "version": 1210
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1211.json",
+      "version": 1211
     },
     "en": {
       "audioVersion": 1009,
@@ -1096,10 +1096,10 @@
       "l1": "en",
       "name": "English",
       "nameJa": "English",
-      "version": 1210,
+      "version": 1211,
       "access": "free",
-      "sizeBytes": 5113965,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1210.json"
+      "sizeBytes": 5115323,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1211.json"
     },
     "ja": {
       "audioVersion": 1010,
@@ -1108,17 +1108,16 @@
       "l1": "ja",
       "name": "日本語",
       "nameJa": "日本語",
-      "version": 1210,
+      "version": 1211,
       "access": "free",
-      "sizeBytes": 5320391,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1210.json"
+      "sizeBytes": 5321989,
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-ja-1211.json"
     }
   },
   "payloadSHA256": {
-    "catalog.json": "e3580da01ecb8265cb2c8a9568514bf596e6f420a18a5a33d7dc77323b8e786c",
-    "core-1211.json": "525d09177313a1a278323217c1d343b10c8814f7553c57e811b515c058533568",
-    "overlay-en-1211.json": "ceddf614202d60591cb544d9a83865d1be1927568766f792e34e87c742c7b0db",
-    "overlay-ja-1211.json": "b1a7f26ebd5a887d1ce3998acf2b50f638e5d5646c6adea1be8df4fec56de535"
+    "core-1212.json": "fa372994efb0b4c100988b4e8a6da5465a499ba1d4e4e2b195a2243fbd7f3e5d",
+    "overlay-ja-1212.json": "985dfc2f3e174c26ec9e27ee7e57a036186141d7e1d10bc9de91463f8ad84539",
+    "overlay-en-1212.json": "8d0b335927d1c61aabdb9268bf48311f0685857cd2489f580616b74b6ecb777d"
   },
   "verificationSources": [
     "https://pressbooks.bccampus.ca/nepali/chapter/chapter-6-unit-4-grammar-focus/",
@@ -1130,39 +1129,15 @@
     "https://madhavpokharel.com.np/noun-class-agreement-in-nepali/"
   ],
   "reviewLimit": "Original bilingual explanations with source checks and automated consistency checks; not a native-speaker certification",
-  "locationUpdate": {
-    "packVersion": 1211,
-    "previousVersion": 1210,
-    "changedTheme": 2,
-    "languages": [
-      "ja",
-      "en"
-    ],
-    "added": "explicit here/there/over there/where comparison and L1 glosses",
-    "basicForms": {
-      "यहाँ": "here",
-      "त्यहाँ": "there / over there",
-      "कहाँ": "where"
-    },
-    "allOther35GuidesPerLanguageExactlyUnchanged": true,
-    "themeTitlesUnchanged": true,
-    "examplesTranslationsDictionaryAudioUnchanged": true,
-    "appRebuilt": false,
-    "readerScenarios": 12,
-    "offlineReload": true,
-    "cachedAudioDownloads": 0,
-    "illustrativePhrases": 329,
-    "bilingualGlossChecks": 760,
-    "publicationVerified": true,
-    "payloadSHA256Verified": true,
-    "catalogs": [
-      "packs-appa-v2",
-      "packs-appa-v3"
-    ],
-    "catalogSHA256": "e3580da01ecb8265cb2c8a9568514bf596e6f420a18a5a33d7dc77323b8e786c",
-    "verificationSources": [
-      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-3-unit-4-grammar-focus/",
-      "https://wisc.pb.unizin.org/lctlresources/chapter/nepali-determiners/"
-    ]
-  }
+  "publicationVerified": true,
+  "payloadSHA256Verified": true,
+  "catalogs": [
+    "packs-appa-v2",
+    "packs-appa-v3"
+  ],
+  "catalogSHA256": "a422cbe16c87871704496ffc79a9a471ce03752f5163190fa148f8be9009a9cb",
+  "readerScenarios": 12,
+  "offlineReload": true,
+  "cachedAudioDownloads": 0,
+  "supplementsReport": "文化と話し言葉_検証結果.json"
 }

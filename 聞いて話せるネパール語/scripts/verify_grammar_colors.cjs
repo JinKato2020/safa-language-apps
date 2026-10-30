@@ -61,10 +61,12 @@ for(const lang of ['ja','en']){
   assert(!html.includes('⚠'));assert(!html.includes('#fff8e1'));assert(!html.includes('**'));
  }
 }
-const samples=[['ja','3',390,1],['ja','5',320,1.4],['en','3',390,1]];
+const supplements=process.argv.includes('--supplements');
+const samples=supplements?[['ja','2',390,1],['ja','21',320,1.4],['en','21',390,1]]:[['ja','3',390,1],['ja','5',320,1.4],['en','3',390,1]];
 const pages=samples.map(([lang,id,width,scale])=>{
  const all=data[lang].grammarGuide[id];const end=all.findIndex(b=>b.beginnerIntroEnd);
- return `<section style="width:${width}px"><header>${lang.toUpperCase()} · ${id} · ${width}px · ${scale}×</header><main>${all.slice(0,end).map(b=>render(b,scale)).join('')}</main></section>`;
+ const shown=supplements?all.filter(b=>b.lessonSupplement):all.slice(0,end);
+ return `<section style="width:${width}px"><header>${lang.toUpperCase()} · ${id} · ${width}px · ${scale}×</header><main>${shown.map(b=>render(b,scale)).join('')}</main></section>`;
 });
 const html=`<!doctype html><meta charset="utf-8"><style>*{box-sizing:border-box}body{margin:0;padding:16px;background:#eef2f6;display:flex;gap:16px;align-items:flex-start;font-family:Arial,'Nirmala UI','Yu Gothic UI',sans-serif}section{flex:none;background:white;min-height:1500px}header{background:#fff;border-bottom:1px solid #e4e4e7;padding:16px;font-weight:700}main{padding:24px}</style>${pages.join('')}`;
 fs.writeFileSync(path.join(work,'preview.html'),html);

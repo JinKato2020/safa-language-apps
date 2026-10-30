@@ -108,7 +108,11 @@ def expand_guides(guides, examples, readings, translations, theme_names=None):
             from friendly_grammar_layout import detail_blocks
             from nepali_rule_lessons import clean_retained, presentation
             from nepali_lesson_glosses import support_blocks
-            topics[key]=support_blocks(presentation(intro+[{'type':'p','text':'','beginnerIntroEnd':True}]+clean_retained(detail_blocks(filtered,lang),lang),lang),lang)
+            from nepali_lesson_breaks import extra_blocks
+            body=support_blocks(presentation(intro+[{'type':'p','text':'','beginnerIntroEnd':True}]+clean_retained(detail_blocks(filtered,lang),lang),lang),lang)
+            boundary=next(i for i,b in enumerate(body) if b.get('beginnerIntroEnd'))
+            body[boundary:boundary]=extra_blocks(theme,lang)
+            topics[key]=body
     return result
 
 # Compatibility export for packaging reports; original rule text lives in one file.

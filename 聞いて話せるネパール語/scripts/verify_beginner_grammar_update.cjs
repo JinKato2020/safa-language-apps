@@ -36,9 +36,10 @@ for(const lang of ['ja','en']){
   for(const b of blocks)for(const text of b.type==='table'?[...b.headers,...b.rows.flat()]:[b.text||''])assert.equal((text.match(/\*\*/g)||[]).length%2,0,'Balanced emphasis');
   for(const h of headings[lang])assert(intro.includes(h),key+' '+h);
   assert(blocks.slice(0,boundary).filter(b=>b.type==='h'&&/^\d+\. /.test(b.text)).length>=4,'At least five substantive rules including the takeaway');
-  for(const b of blocks.slice(0,boundary))if(b.type==='p'&&!['reading','translation'].includes(b.presentation?.role))assert(/[\u0900-\u097f]/u.test(b.text),'Every rule explains Nepali forms');
+  for(const b of blocks.slice(0,boundary))if(b.type==='p'&&!b.lessonSupplement&&!['reading','translation'].includes(b.presentation?.role))assert(/[\u0900-\u097f]/u.test(b.text),'Every grammar rule explains Nepali forms; culture breaks are separate');
   assert(intro.includes(core.grammarNe[key][0]),'Worked exercise missing '+key);
-  if(key!=='7')assert(!familiar.test(JSON.stringify(blocks)),key);
+  // उ त्यहाँ uses the pointing adverb उ, not a familiar personal pronoun.
+  if(key!=='7')assert(!familiar.test(JSON.stringify(blocks).replaceAll('उ त्यहाँ','')),key);
   for(const b of blocks){assert(['h','p','table','note','goal'].includes(b.type));if(b.type==='table')for(const row of b.rows)assert.equal(row.length,b.headers.length)}
   const oldBlocks=oldPayload(oldCatalog.packs.find(x=>x.l1===lang).url).grammarGuide[key];
   const oldBoundary=oldBlocks.findIndex(b=>b.beginnerIntroEnd);

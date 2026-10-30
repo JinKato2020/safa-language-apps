@@ -1,0 +1,365 @@
+{
+  "packVersion": 1212,
+  "previousVersion": 1211,
+  "cultureBreaks": 10,
+  "speechNotes": 17,
+  "supplementReadingExamplesPerLanguage": 26,
+  "themesWithSupplements": 20,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "culturePurpose": "Evocative short readings about Nepal, everyday life and motivation; no language drills in culture cards",
+  "cultureAndSpeechDistinct": true,
+  "source": "scripts/nepali_lesson_breaks.py",
+  "sourcesByCard": {
+    "valley-morning": [
+      "https://ntb.gov.np/en/kathmandu-valley"
+    ],
+    "haina-tag": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-17-unit-3-conversations/"
+    ],
+    "tea-visit": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-6-unit-2-cultural-insight/"
+    ],
+    "kata-location": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-17-unit-3-conversations/"
+    ],
+    "sanchai-short": [
+      "https://www.digitalhimalaya.com/projectteam/turin/downloads/nepali_primer.pdf",
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-12-unit-3-conversations/"
+    ],
+    "huncha-okay": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-9-unit-1-key-vocabulary/",
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-12-unit-3-conversations/"
+    ],
+    "hills-paths": [
+      "https://ntb.gov.np/en/mid-hills"
+    ],
+    "ni-return-question": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-12-unit-3-conversations/"
+    ],
+    "dai-didi": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-11-unit-2-cultural-insight/"
+    ],
+    "hajur-response": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-9-unit-1-key-vocabulary/"
+    ],
+    "dal-bhat": [
+      "https://trade.ntb.gov.np/wp-content/uploads/2018/05/Experience_Nepal_Globalizing_Nepalese_Heritage_Cuisine_Recipe_Book.pdf"
+    ],
+    "meal-warmth": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-15-unit-2-cultural-insight/"
+    ],
+    "eaten-greeting": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-15-unit-2-cultural-insight/"
+    ],
+    "bhetau-la": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-12-unit-3-conversations/"
+    ],
+    "dinus-short": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-16-unit-4-grammar-focus/"
+    ],
+    "la-start": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-12-unit-3-conversations/"
+    ],
+    "na-position": [
+      "https://www.digitalhimalaya.com/projectteam/turin/downloads/nepali_primer.pdf",
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-16-unit-4-grammar-focus/"
+    ],
+    "paincha-available": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-15-unit-4-grammar-focus/"
+    ],
+    "photo-encounter": [
+      "https://trade.ntb.gov.np/travel-essentials/cultural-etiquette/"
+    ],
+    "milcha-permission": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-17-unit-3-conversations/",
+      "https://www.digitalhimalaya.com/projectteam/turin/downloads/nepali_primer.pdf"
+    ],
+    "momo-plate": [
+      "https://ntb.gov.np/en/plan-your-trip/about-nepal/culture"
+    ],
+    "ali-softening": [
+      "https://www.digitalhimalaya.com/projectteam/turin/downloads/nepali_primer.pdf",
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-16-unit-4-grammar-focus/"
+    ],
+    "market-meeting": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-16-unit-2-cultural-insight/"
+    ],
+    "kam-request": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-16-unit-2-cultural-insight/"
+    ],
+    "many-nepals": [
+      "https://ntb.gov.np/en/things-to-do/meet-the-people",
+      "https://ntb.gov.np/en/plan-your-trip/about-nepal/culture"
+    ],
+    "ani-followup": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-14-unit-4-grammar-focus/"
+    ],
+    "re-hearsay": [
+      "https://www.digitalhimalaya.com/projectteam/turin/downloads/nepali_primer.pdf"
+    ]
+  },
+  "cardIndex": {
+    "1": [
+      {
+        "id": "valley-morning",
+        "kind": "culture",
+        "ja": "カトマンズ、路地の向こうへ",
+        "en": "Beyond a Kathmandu lane"
+      },
+      {
+        "id": "haina-tag",
+        "kind": "spoken",
+        "ja": "हैन? は「〜ですよね？」",
+        "en": "हैन? as a conversational check"
+      }
+    ],
+    "2": [
+      {
+        "id": "tea-visit",
+        "kind": "culture",
+        "ja": "湯気の向こうに、会話がある",
+        "en": "Conversation across a cup of tea"
+      },
+      {
+        "id": "kata-location",
+        "kind": "spoken",
+        "ja": "कता छ? も「どちらですか？」",
+        "en": "कता छ? in everyday directions"
+      }
+    ],
+    "3": [
+      {
+        "id": "sanchai-short",
+        "kind": "spoken",
+        "ja": "短くても会話になる「お元気？」",
+        "en": "A short “How are you?”"
+      }
+    ],
+    "4": [
+      {
+        "id": "huncha-okay",
+        "kind": "spoken",
+        "ja": "हुन्छ は、返事の「いいですよ」にも",
+        "en": "हुन्छ as “Okay”"
+      }
+    ],
+    "5": [
+      {
+        "id": "hills-paths",
+        "kind": "culture",
+        "ja": "街の先には、丘の暮らし",
+        "en": "Life beyond the city"
+      }
+    ],
+    "6": [
+      {
+        "id": "ni-return-question",
+        "kind": "spoken",
+        "ja": "तपाईंलाई नि? で「あなたは？」",
+        "en": "तपाईंलाई नि? to return a question"
+      }
+    ],
+    "7": [
+      {
+        "id": "dai-didi",
+        "kind": "culture",
+        "ja": "親戚でなくても、お兄さん・お姉さん",
+        "en": "A family-like way of addressing people"
+      },
+      {
+        "id": "hajur-response",
+        "kind": "spoken",
+        "ja": "हजुर は「はい」と「もう一度？」",
+        "en": "हजुर: acknowledgement or “Pardon?”"
+      }
+    ],
+    "8": [
+      {
+        "id": "dal-bhat",
+        "kind": "culture",
+        "ja": "一皿に広がる、ダルバートの世界",
+        "en": "A little world on a dal-bhat plate"
+      }
+    ],
+    "11": [
+      {
+        "id": "meal-warmth",
+        "kind": "culture",
+        "ja": "おかわりに込められた、おもてなし",
+        "en": "The warmth behind an extra helping"
+      },
+      {
+        "id": "eaten-greeting",
+        "kind": "spoken",
+        "ja": "「食べましたか？」が気遣いの一言に",
+        "en": "“Have you eaten?” as a caring check-in"
+      }
+    ],
+    "13": [
+      {
+        "id": "bhetau-la",
+        "kind": "spoken",
+        "ja": "पछि भेटौंला は別れ際の一言",
+        "en": "पछि भेटौंला when parting"
+      }
+    ],
+    "17": [
+      {
+        "id": "dinus-short",
+        "kind": "spoken",
+        "ja": "दिनुहोस् → दिनुस् と短くなる",
+        "en": "Shortened polite दिनुस्"
+      }
+    ],
+    "18": [
+      {
+        "id": "la-start",
+        "kind": "spoken",
+        "ja": "ल は「じゃあ・さあ」の合図",
+        "en": "ल as “Well then” or “Let’s”"
+      }
+    ],
+    "19": [
+      {
+        "id": "na-position",
+        "kind": "spoken",
+        "ja": "前のनと、後ろのनは違う",
+        "en": "Initial न versus final न"
+      }
+    ],
+    "20": [
+      {
+        "id": "paincha-available",
+        "kind": "spoken",
+        "ja": "पाइन्छ? は「手に入りますか？」",
+        "en": "पाइन्छ? for availability"
+      }
+    ],
+    "21": [
+      {
+        "id": "photo-encounter",
+        "kind": "culture",
+        "ja": "シャッターより先に、ひと声",
+        "en": "A moment before the photograph"
+      },
+      {
+        "id": "milcha-permission",
+        "kind": "spoken",
+        "ja": "मिल्छ は「〜してもいい」にも使う",
+        "en": "मिल्छ for permission and feasibility"
+      }
+    ],
+    "22": [
+      {
+        "id": "momo-plate",
+        "kind": "culture",
+        "ja": "モモのお店で、ひと皿",
+        "en": "A plate of momo"
+      }
+    ],
+    "24": [
+      {
+        "id": "ali-softening",
+        "kind": "spoken",
+        "ja": "अलि はお願いのクッションにも",
+        "en": "अलि as a softener"
+      }
+    ],
+    "25": [
+      {
+        "id": "market-meeting",
+        "kind": "culture",
+        "ja": "市場は、小さな出会いの連続",
+        "en": "Small encounters at the market"
+      },
+      {
+        "id": "kam-request",
+        "kind": "spoken",
+        "ja": "お店で「少し安く」はどう頼む？",
+        "en": "A gentle price request"
+      }
+    ],
+    "26": [
+      {
+        "id": "many-nepals",
+        "kind": "culture",
+        "ja": "ネパールは、一つの風景じゃない",
+        "en": "More than one picture of Nepal"
+      },
+      {
+        "id": "ani-followup",
+        "kind": "spoken",
+        "ja": "अनि? で話の続きを聞く",
+        "en": "अनि? to invite the next part"
+      }
+    ],
+    "34": [
+      {
+        "id": "re-hearsay",
+        "kind": "spoken",
+        "ja": "रे は「〜だそうです」の合図",
+        "en": "रे as a hearsay signal"
+      }
+    ]
+  },
+  "allSpeechExamplesHaveRomanJaEn": true,
+  "milcha": "Infinitive -न + मिल्छ, negative मिल्दैन; permission and situational feasibility contrasted with ability सक्नु",
+  "clientCodeChanged": false,
+  "appRebuilt": false,
+  "practiceExamplesUnchanged": 528,
+  "conversationExamplesUnchanged": 1800,
+  "dictionaryAudioUnchanged": true,
+  "readerScenarios": 12,
+  "offlineReload": true,
+  "cachedAudioDownloads": 0,
+  "nativeDeviceVerified": false,
+  "previewMethod": "Actual native Block TSX with DOM adapters; 390px and320px/1.4x browser preview; not native-device verification",
+  "layoutMeasurements": [
+    {
+      "width": 390,
+      "overflow": 0,
+      "outside": 0
+    },
+    {
+      "width": 320,
+      "overflow": 0,
+      "outside": 0
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "outside": 0
+    }
+  ],
+  "preview": "docs/previews/nepali-culture-speech-1212.png",
+  "publicationVerified": true,
+  "existingGuideBlocksExactlyPreservedExceptTheme2Intro": true,
+  "theme2Correction": {
+    "forms": {
+      "यहाँ": "here",
+      "त्यहाँ": "there (also over there)",
+      "उहाँ": "over there (also respectful he/she)"
+    },
+    "source": "https://tufs.repo.nii.ac.jp/record/7636/files/A619_1.pdf",
+    "pointingAlternative": "उ त्यहाँ",
+    "distinctionExamplesHaveL1Gloss": true
+  },
+  "illustrativePhraseChecks": {
+    "distinct": 332,
+    "bilingualOccurrences": 766
+  },
+  "payloadSHA256Verified": true,
+  "catalogs": [
+    "packs-appa-v2",
+    "packs-appa-v3"
+  ],
+  "catalogSHA256": "a422cbe16c87871704496ffc79a9a471ce03752f5163190fa148f8be9009a9cb",
+  "payloadSHA256": {
+    "core-1212.json": "fa372994efb0b4c100988b4e8a6da5465a499ba1d4e4e2b195a2243fbd7f3e5d",
+    "overlay-ja-1212.json": "985dfc2f3e174c26ec9e27ee7e57a036186141d7e1d10bc9de91463f8ad84539",
+    "overlay-en-1212.json": "8d0b335927d1c61aabdb9268bf48311f0685857cd2489f580616b74b6ecb777d"
+  }
+}
