@@ -1,5 +1,7 @@
 export const DAY = 24 * 60 * 60 * 1000;
-export const INTERVAL = 4 * DAY;
+export const FIRST_INVITE_DAY = 3;
+export const REPEAT_DAYS = 7;
+export const INTERVAL = REPEAT_DAYS * DAY;
 export type EngagementState = { firstSeen: number; lastInvite: number; disabled: boolean; reviewAttempts: number[] };
 
 export function readEngagement(raw: string | null, now: number): EngagementState {
@@ -11,12 +13,22 @@ export function readEngagement(raw: string | null, now: number): EngagementState
   } catch { return { firstSeen: now, lastInvite: 0, disabled: false, reviewAttempts: [] }; }
 }
 export function inviteDue(state: EngagementState, now: number): boolean {
-  return !state.disabled && now >= Math.max(state.firstSeen, state.lastInvite) + INTERVAL;
+  if (state.disabled || now < state.firstSeen || now < state.lastInvite) return false;
+  // First use is local calendar day1. The initial day3 follows the local date;
+  // subsequent invitations require a full seven days from the actual display.
+  const calendarDay = (time: number) => {
+    const date = new Date(time);
+    return Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / DAY;
+  };
+  return state.lastInvite > 0
+    ? now - state.lastInvite >= INTERVAL
+    : calendarDay(now) - calendarDay(state.firstSeen) >= FIRST_INVITE_DAY - 1;
 }
 export function canRequestReview(state: EngagementState, now: number): boolean {
   return !state.disabled && state.reviewAttempts.filter(t => t > now - 365 * DAY).length < 3;
 }
 export function isLandingRoute(name?: string): boolean { return ['Theme', 'VocabCategory', 'SettingsTab', 'SettingsMain', 'HomeTab'].includes(name ?? ''); }
+export function isStudyReturnRoute(name?: string): boolean { return ['Theme', 'VocabCategory', 'HomeTab'].includes(name ?? ''); }
 export function isStudyRoute(name?: string): boolean { return ['Practice', 'Flashcard', 'Listening', 'PosterAudio', 'GrammarGuide'].includes(name ?? ''); }
 
 export function requestMail(lang: string, version: string) {

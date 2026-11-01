@@ -5,7 +5,7 @@ import * as StoreReview from 'expo-store-review';
 import * as MailComposer from 'expo-mail-composer';
 import { useI18n, useScaleStyle, type SettingsDevelopmentTools } from '@safa/shared';
 import app from '../app.json';
-import { canRequestReview, inviteDue, isLandingRoute, isStudyRoute, readEngagement, requestMail, type EngagementState } from './engagementPolicy';
+import { canRequestReview, inviteDue, isLandingRoute, isStudyReturnRoute, isStudyRoute, readEngagement, requestMail, type EngagementState } from './engagementPolicy';
 
 const KEY = '@nepali_app/engagement_v1';
 const COPY = {
@@ -24,6 +24,7 @@ export function useEngagement() {
   const loading = useRef<Promise<EngagementState> | null>(null);
   const route = useRef<string | undefined>(undefined);
   const studyStart = useRef<number | null>(null);
+  const completedStudy = useRef(false);
   const lock = useRef(false);
   const composing = useRef(false);
   const preview = useRef(false);
@@ -43,40 +44,39 @@ export function useEngagement() {
 
   const onRouteChanged = useCallback((name: string | undefined) => {
     const now = Date.now();
-    const completedStudy = isStudyRoute(route.current) && isLandingRoute(name) && studyStart.current !== null && now - studyStart.current >= 30_000;
-    if (isStudyRoute(name) && !isStudyRoute(route.current)) studyStart.current = now;
+    const previous = route.current;
+    if (isStudyRoute(previous) && !isStudyRoute(name) && studyStart.current !== null && now - studyStart.current >= 30_000) completedStudy.current = true;
+    if (isStudyRoute(name) && !isStudyRoute(previous)) studyStart.current = now;
     if (!isStudyRoute(name)) studyStart.current = null;
     route.current = name;
-    if (reviewTimer.current) { clearTimeout(reviewTimer.current); reviewTimer.current = null; }
+    if (reviewTimer.current && previous !== name) { clearTimeout(reviewTimer.current); reviewTimer.current = null; }
     if (!isLandingRoute(name)) { setVisible(false); preview.current = false; return; }
     if (preview.current) return;
+    // A conversation may return via Level before Theme. Keep its completion
+    // across that intermediate screen, but never invite simply on launch/settings.
+    if (!isStudyReturnRoute(name) || !completedStudy.current) return;
     if (lock.current) return;
+    completedStudy.current = false;
     lock.current = true;
     void (async () => {
       let value = await load();
-      if (!mounted.current || !isLandingRoute(route.current) || value.disabled) return;
-      if (inviteDue(value, now)) {
-        value = { ...value, lastInvite: now };
-        await persist(value);
-        if (mounted.current && isLandingRoute(route.current)) setVisible(true);
-      } else if (value.lastInvite === 0) {
-        // Persist first use even when no invitation is due yet.
-        await persist(value);
-      }
+      if (!mounted.current || !isStudyReturnRoute(route.current) || !inviteDue(value, now)) return;
+      value = { ...value, lastInvite: now };
+      await persist(value);
+      if (mounted.current && isStudyReturnRoute(route.current)) setVisible(true);
       // Native review only after a meaningful study visit, never at first launch,
       // never gated by sentiment or by clicking the email invitation.
-      const lastAttempt = Math.max(0, ...value.reviewAttempts);
-      if (completedStudy && value.lastInvite > lastAttempt && canRequestReview(value, now) && Platform.OS === 'ios') {
+      if (canRequestReview(value, now) && Platform.OS === 'ios') {
         reviewTimer.current = setTimeout(() => {
           void (async () => {
-            if (!mounted.current || composing.current || !isLandingRoute(route.current) || AppState.currentState !== 'active' || state.current?.disabled) return;
+            if (!mounted.current || composing.current || !isStudyReturnRoute(route.current) || AppState.currentState !== 'active' || state.current?.disabled) return;
             try {
               if (!await StoreReview.isAvailableAsync()) return;
-              if (!mounted.current || composing.current || !isLandingRoute(route.current) || AppState.currentState !== 'active' || state.current?.disabled) return;
+              if (!mounted.current || composing.current || !isStudyReturnRoute(route.current) || AppState.currentState !== 'active' || state.current?.disabled) return;
               const latest = state.current!;
               if (!canRequestReview(latest, Date.now())) return;
               await persist({ ...latest, reviewAttempts: [...latest.reviewAttempts, Date.now()] });
-              if (!mounted.current || composing.current || !isLandingRoute(route.current) || AppState.currentState !== 'active' || state.current?.disabled) return;
+              if (!mounted.current || composing.current || !isStudyReturnRoute(route.current) || AppState.currentState !== 'active' || state.current?.disabled) return;
               await StoreReview.requestReview();
             } catch { /* Apple may suppress the prompt; no forced store redirect. */ }
           })();
@@ -95,8 +95,10 @@ export function useEngagement() {
     }
     const listener = AppState.addEventListener('change', status => {
       if (status === 'active' && isLandingRoute(route.current)) onRouteChanged(route.current);
+      else if (status === 'active' && isStudyRoute(route.current)) studyStart.current = Date.now();
       else if (status !== 'active') {
         studyStart.current = null;
+        completedStudy.current = false;
         if (reviewTimer.current) clearTimeout(reviewTimer.current);
       }
     });

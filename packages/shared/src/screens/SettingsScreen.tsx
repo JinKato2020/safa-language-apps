@@ -100,8 +100,8 @@ export default function SettingsScreen() {
   const ent = useEntitlement();
   const development = useSettingsDevelopment();
   const developmentCopy = lang === 'en'
-    ? { title: 'Development checks', review: 'Native rating dialog', request: 'Request invitation', description: 'Preview without waiting four days. Reminder preferences and timing stay unchanged.', launch: 'Launch', show: 'Show', unavailable: 'Native rating dialog unavailable', explanation: 'TestFlight cannot display Apple’s native rating dialog. You can open the real App Store review page instead.', failed: 'Could not request the native rating dialog.', store: 'Open App Store' }
-    : { title: '開発確認', review: '標準評価画面', request: 'リクエスト案内', description: '4日待たずに確認できます。案内の間隔・停止設定は変更しません。', launch: '起動', show: '表示', unavailable: '標準評価画面を表示できません', explanation: 'TestFlightではAppleの標準評価画面は表示されません。App Storeの実際の評価ページで確認できます。', failed: '標準評価画面の呼び出しに失敗しました。', store: 'App Storeで確認' };
+    ? { title: 'Development checks', review: 'Native rating dialog', request: 'Request invitation', description: 'Preview immediately. Reminder preferences and timing stay unchanged.', launch: 'Launch', show: 'Show', unavailable: 'Native rating dialog unavailable', explanation: 'TestFlight cannot display Apple’s native rating dialog. You can open the real App Store review page instead.', failed: 'Could not request the native rating dialog.', store: 'Open App Store' }
+    : { title: '開発確認', review: '標準評価画面', request: 'リクエスト案内', description: '日数を待たずに確認できます。案内の間隔・停止設定は変更しません。', launch: '起動', show: '表示', unavailable: '標準評価画面を表示できません', explanation: 'TestFlightではAppleの標準評価画面は表示されません。App Storeの実際の評価ページで確認できます。', failed: '標準評価画面の呼び出しに失敗しました。', store: 'App Storeで確認' };
   const showPurchase = Number.isFinite(ent.freeThemes); // App A のみ true(B/C は Infinity=非表示)
   const prem = PREMIUM_L[lang] ?? PREMIUM_L.ja;
   const freeCopy = lang === 'en'
