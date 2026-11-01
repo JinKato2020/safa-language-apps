@@ -4,10 +4,12 @@
 //  APIキーは app.json の expo.extra.revenueCatApiKeyIos から読む(空ならRCを初期化せず未所持扱い)。
 //  安全動作: キー空 / 初期化失敗 / 取得失敗でもクラッシュせず isPro=false で通常起動(審査スクショ用)。
 import { useCallback, useEffect, useState, type ReactNode } from 'react';
-import { Platform } from 'react-native';
+import { ActivityIndicator, Platform, View } from 'react-native';
 import Constants from 'expo-constants';
 import Purchases, { type CustomerInfo, type PurchasesOffering } from 'react-native-purchases';
 import { EntitlementProvider, type Entitlement } from '@safa/shared';
+import { loadLaunchAccess, saveLaunchGrant } from './launchAccess';
+import { LAUNCH_CAMPAIGN, eligibleOriginalDownload } from './launchAccessPolicy';
 
 const ENTITLEMENT_ID = 'all_themes';
 const OFFERING_ID = 'default';
@@ -22,11 +24,29 @@ function isActive(info: CustomerInfo | null | undefined): boolean {
 
 export function PurchasesProvider({ children }: { children: ReactNode }) {
   const [isPro, setIsPro] = useState(false);
+  const [launchAccess, setLaunchAccess] = useState(LAUNCH_CAMPAIGN.enrollmentOpen);
+  const [accessReady, setAccessReady] = useState(LAUNCH_CAMPAIGN.enrollmentOpen);
   const [priceString, setPriceString] = useState<string | undefined>(undefined);
   const [offering, setOffering] = useState<PurchasesOffering | null>(null);
   const [busy, setBusy] = useState(false);
 
   const usable = Platform.OS === 'ios' && !!API_KEY_IOS;
+
+  useEffect(() => {
+    let alive = true;
+    loadLaunchAccess().then(value => { if (alive && value) setLaunchAccess(true); }).catch(() => {}).finally(() => { if (alive) setAccessReady(true); });
+    return () => { alive = false; };
+  }, []);
+
+  const applyCustomerInfo = useCallback((info: CustomerInfo) => {
+    setIsPro(isActive(info));
+    // On a clean installation, Restore can recover the free cohort from the
+    // original App Store acquisition date validated by RevenueCat.
+    if (Platform.OS === 'ios' && eligibleOriginalDownload(info.originalPurchaseDate, LAUNCH_CAMPAIGN.closedAt)) {
+      setLaunchAccess(true);
+      void saveLaunchGrant({ campaign: LAUNCH_CAMPAIGN.id, grantedAt: info.originalPurchaseDate! });
+    }
+  }, []);
 
   useEffect(() => {
     if (!usable) return; // キー未設定 → RC 無効・isPro=false のまま通常動作
@@ -39,7 +59,7 @@ export function PurchasesProvider({ children }: { children: ReactNode }) {
     (async () => {
       try {
         const info = await Purchases.getCustomerInfo();
-        if (alive) setIsPro(isActive(info));
+        if (alive) applyCustomerInfo(info);
       } catch {}
       try {
         const offerings = await Purchases.getOfferings();
@@ -52,17 +72,17 @@ export function PurchasesProvider({ children }: { children: ReactNode }) {
       } catch {}
     })();
 
-    const listener = (info: CustomerInfo) => setIsPro(isActive(info));
+    const listener = (info: CustomerInfo) => { if (alive) applyCustomerInfo(info); };
     let remove = () => {};
     try {
       Purchases.addCustomerInfoUpdateListener(listener);
       remove = () => { try { Purchases.removeCustomerInfoUpdateListener(listener); } catch {} };
     } catch {}
     return () => { alive = false; remove(); };
-  }, [usable]);
+  }, [usable, applyCustomerInfo]);
 
   const purchase = useCallback(async () => {
-    if (!usable) return;
+    if (!usable || launchAccess || isPro) return;
     setBusy(true);
     try {
       let off = offering;
@@ -73,25 +93,27 @@ export function PurchasesProvider({ children }: { children: ReactNode }) {
       const pkg = off?.availablePackages?.[0];
       if (!pkg) return;
       const { customerInfo } = await Purchases.purchasePackage(pkg);
-      setIsPro(isActive(customerInfo));
+      applyCustomerInfo(customerInfo);
     } catch (e: any) {
       // ユーザーキャンセルは無視。それ以外も握りつぶして未所持のまま(クラッシュさせない)。
     } finally {
       setBusy(false);
     }
-  }, [usable, offering]);
+  }, [usable, offering, launchAccess, isPro, applyCustomerInfo]);
 
   const restore = useCallback(async () => {
     if (!usable) return;
     setBusy(true);
     try {
       const info = await Purchases.restorePurchases();
-      setIsPro(isActive(info));
+      applyCustomerInfo(info);
     } catch {} finally {
       setBusy(false);
     }
-  }, [usable]);
+  }, [usable, applyCustomerInfo]);
 
-  const value: Entitlement = { isPro, freeThemes: FREE_THEMES, priceString, purchase, restore, busy };
+  if (!accessReady) return <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}><ActivityIndicator /></View>;
+  const value: Entitlement = { isPro: isPro || launchAccess, accessKind: isPro ? 'purchase' : launchAccess ? 'launch-free' : undefined,
+    freeThemes: FREE_THEMES, priceString, purchase, restore, busy };
   return <EntitlementProvider value={value}>{children}</EntitlementProvider>;
 }

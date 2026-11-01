@@ -3,10 +3,10 @@
 //
 // VideoSplash の動画は アプリ側の assets を使うため props で渡してもらう (各アプリで保持)。
 
-import { useEffect, useRef, useState, type ReactNode, type ReactElement } from 'react';
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import { useCallback, useEffect, useRef, useState, type ReactNode, type ReactElement } from 'react';
+import { NavigationContainer, useNavigation, useNavigationContainerRef } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { BottomTabBar, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Animated, Dimensions, Pressable, StyleSheet, Text, View, useColorScheme } from 'react-native';
@@ -29,7 +29,7 @@ import { PosterProvider, usePosterLessons, type PosterLesson, type PosterResolve
 import { colors } from './theme';
 import { useGlobalScaleStyle, useSettings } from './SettingsContext';
 import { useI18n } from './i18n';
-import { ListeningAudioProvider } from './ListeningAudioContext';
+import { ListeningAudioProvider, useListeningAudio } from './ListeningAudioContext';
 import type { RootStackParamList } from './types';
 import HomeScreen from './screens/HomeScreen';
 import ListeningHubScreen from './screens/ListeningHubScreen';
@@ -208,7 +208,7 @@ function SettingsIcon({ color, focused }: { color: string; focused: boolean }) {
   return <TabIcon color={color} focused={focused}><Circle cx={12} cy={12} r={3} /><Path d="m9 3-.5 2-2 1-2-.5-2 3 1.5 1.5v3L2.5 15l2 3 2-.5 2 1 .5 2h4l.5-2 2-1 2 .5 2-3-1.5-1.5v-3L20 9l-2-3-2 .5-2-1-.5-2z" /></TabIcon>;
 }
 
-function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListening, dictData, hideModeHeaders }: { defaultStackOptions: any; progressStorageKey: string; tabs?: TabKey[]; posterInListening?: boolean; dictData?: DictData; hideModeHeaders?: boolean }) {
+function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListening, dictData, hideModeHeaders, mainScreenAccessory }: { defaultStackOptions: any; progressStorageKey: string; tabs?: TabKey[]; posterInListening?: boolean; dictData?: DictData; hideModeHeaders?: boolean; mainScreenAccessory?: ReactNode }) {
   const { bottom } = useSafeAreaInsets();
   const { t } = useI18n();
   const ss = useGlobalScaleStyle();
@@ -230,6 +230,7 @@ function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListe
   };
   return (
     <Tab.Navigator
+      tabBar={mainScreenAccessory ? props => <View>{mainScreenAccessory}<BottomTabBar {...props} /></View> : undefined}
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: colors.ink,
@@ -324,6 +325,9 @@ export type AppShellProps = {
   heroImages?: HeroImages | null;
   /** モード一覧のヘッダーを隠し、アプリ名・歯車を外す。詳細画面の戻る操作は保持。 */
   hideModeHeaders?: boolean;
+  /** Optional app-owned invitation above the tab bar, only on landing screens. */
+  mainScreenAccessory?: ReactNode;
+  onRouteChanged?: (name: string | undefined) => void;
 };
 
 // スプラッシュは「アプリ起動時の1回だけ」。言語切替で PackGate が data=null にして
@@ -331,12 +335,33 @@ export type AppShellProps = {
 // (毎回スプラッシュ動画が再生されて白画面で固まって見えるのを防ぐ)。
 let splashShownOnce = false;
 
-export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData, heroImages, hideModeHeaders = false }: AppShellProps) {
+function EngagementPlaybackGuard({ onChange }: { onChange: (playing: boolean) => void }) {
+  const { playing } = useListeningAudio();
+  useEffect(() => { onChange(playing); }, [playing, onChange]);
+  return null;
+}
+
+export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData, heroImages, hideModeHeaders = false, mainScreenAccessory, onRouteChanged }: AppShellProps) {
   const [splashDone, setSplashDone] = useState(splashShownOnce || splashSource == null);
   const defaultStackOptions = useRef(makeDefaultStackOptions(HeaderTitle, hideModeHeaders)).current;
   const { themeMode } = useSettings();
   const sys = useColorScheme();
   const scheme = themeMode === 'system' ? (sys ?? 'light') : themeMode;
+  const navigationRef = useNavigationContainerRef<RootStackParamList>();
+  const [landing, setLanding] = useState(false);
+  const [audioPlaying, setAudioPlaying] = useState(false);
+  const audioPlayingRef = useRef(false);
+  const routeCallback = useRef(onRouteChanged);
+  routeCallback.current = onRouteChanged;
+  const routeChanged = useCallback(() => {
+    if (!navigationRef.isReady()) return;
+    const name = navigationRef.getCurrentRoute()?.name;
+    setLanding(['Theme', 'VocabCategory', 'SettingsTab', 'SettingsMain', 'HomeTab'].includes(name ?? ''));
+    routeCallback.current?.(audioPlayingRef.current ? 'Listening' : name);
+  }, [navigationRef]);
+  const playbackChanged = useCallback((playing: boolean) => {
+    audioPlayingRef.current = playing; setAudioPlaying(playing); routeChanged();
+  }, [routeChanged]);
 
   useEffect(() => {
     setAudioModeAsync({
@@ -363,10 +388,11 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
 
   return (
     <SafeAreaProvider>
-      <NavigationContainer>
+      <NavigationContainer ref={navigationRef} onReady={routeChanged} onStateChange={routeChanged}>
         <StatusBar style="dark" />
         <PosterProvider lessons={posterLessons || []} resolveUri={posterResolveUri} ensure={posterEnsure}>
           <ListeningAudioProvider>
+            {onRouteChanged && <EngagementPlaybackGuard onChange={playbackChanged} />}
             <DesignThemeProvider scheme={scheme}>
               {/* ルートスタック: タブ本体 + ペイウォール(モーダル) + 文法教材。
                   ロックされたテーマのタップから navigation.navigate('Paywall') で
@@ -375,7 +401,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                <HeroImagesProvider value={heroImages}>
                 <RootStack.Navigator screenOptions={{ headerShown: false }}>
                   <RootStack.Screen name="MainTabs">
-                    {() => <MainTabs defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} hideModeHeaders={hideModeHeaders} />}
+                    {() => <MainTabs defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} hideModeHeaders={hideModeHeaders} mainScreenAccessory={landing && !audioPlaying ? mainScreenAccessory : undefined} />}
                   </RootStack.Screen>
                   <RootStack.Screen name="Paywall" component={PaywallScreen} options={{ presentation: 'modal' }} />
                   <RootStack.Screen name="GrammarGuide" component={GrammarGuideScreen} />

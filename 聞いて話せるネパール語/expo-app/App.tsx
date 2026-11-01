@@ -23,6 +23,7 @@ import { POSTER_LESSONS } from './src/posterLessons';
 import { posterUri, ensurePosterPack } from './src/posterPackLoader';
 import { PurchasesProvider } from './src/PurchasesProvider';
 import { resolveGuideImage } from './src/guideImageCache';
+import { useEngagement } from './src/useEngagement';
 
 // 文法「教材」(ルール解説)・文法テーマ名はOTA配信(overlayパック経由)。本体にバンドルしない。
 const headerIconSource = require('./assets/icon.png');
@@ -35,6 +36,11 @@ const HERO_IMAGES = {
 };
 
 // DLパックになり得る言語は en のみ。ja/ne は同梱(ja内容)を使う。
+function LearningAppShell() {
+  const engagement = useEngagement();
+  return <AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['grammar', 'conversation', 'listening', 'vocabulary', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={engagement.onRouteChanged} mainScreenAccessory={engagement.banner} />;
+}
+
 const toPackLang = (lang: string) => (lang === 'en' ? 'en' : 'ja');
 
 // 初回の母語選択。並び順は全アプリ共通(English優先)。App A の母語は ja / en の2つ。
@@ -277,7 +283,7 @@ export default function App() {
         >
           <FirstRunGate>
             <PackGate>
-              <AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['grammar', 'conversation', 'listening', 'vocabulary', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders />
+              <LearningAppShell />
             </PackGate>
           </FirstRunGate>
         </SettingsProvider>

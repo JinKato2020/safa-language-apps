@@ -8,6 +8,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export type Entitlement = {
   /** 全テーマ解放済みか(買い切り所持)。 */
   isPro: boolean;
+  /** Optional access origin; free campaign access is never labelled purchased. */
+  accessKind?: 'purchase' | 'launch-free';
   /** 無料で開放する先頭テーマ数(表示番号1..freeThemes が無料)。 */
   freeThemes: number;
   /** ストアから取得した価格表示文字列(例 "¥980")。取得前/不可は undefined。 */

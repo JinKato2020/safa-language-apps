@@ -99,6 +99,9 @@ export default function SettingsScreen() {
   const ent = useEntitlement();
   const showPurchase = Number.isFinite(ent.freeThemes); // App A のみ true(B/C は Infinity=非表示)
   const prem = PREMIUM_L[lang] ?? PREMIUM_L.ja;
+  const freeCopy = lang === 'en'
+    ? { title: 'Free launch access', label: 'All themes unlocked — no expiry', description: 'Your launch access continues after new users move to paid access. Ratings and feedback are optional.' }
+    : { title: '全テーマ無料利用', label: '無料利用権あり・期限なし', description: '今後、新規ユーザー向けに課金を再開しても、この利用権は継続します。評価・ご要望の送信は任意です。' };
 
   // 利用可能な言語から動的にピルを生成 (ja=日本語 / その他は L1 レジストリの自称表示)
   const langLabel = (code: Lang): string =>
@@ -181,9 +184,9 @@ export default function SettingsScreen() {
       </View>
 
       {showPurchase && (
-        <Section title={prem.title} icon={<StarIcon />} ss={ss}>
+        <Section title={ent.accessKind === 'launch-free' ? freeCopy.title : prem.title} icon={<StarIcon />} ss={ss}>
           {ent.isPro ? (
-            <Row label={prem.purchased} ss={ss}><Text style={styles.valueText}>✓</Text></Row>
+            <Row label={ent.accessKind === 'launch-free' ? freeCopy.label : prem.purchased} desc={ent.accessKind === 'launch-free' ? freeCopy.description : undefined} ss={ss}><Text style={styles.valueText}>✓</Text></Row>
           ) : (
             <Row label={prem.unlock} desc={prem.unlockDesc} ss={ss}>
               <Pressable style={[styles.btn, styles.btnPrimary]} onPress={() => nav.navigate('Paywall')}>
