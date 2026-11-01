@@ -56,6 +56,7 @@ export {
 
 // ── AppShell (Provider 群で包んでマウントする) ──
 export { AppShell, type AppShellProps } from './AppShell';
+export { SettingsDevelopmentProvider, useSettingsDevelopment, type SettingsDevelopmentTools } from './settingsDevelopment';
 
 // ── 画面 (個別利用する場合のみ。通常は AppShell 経由) ──
 export { default as HomeScreen } from './screens/HomeScreen';

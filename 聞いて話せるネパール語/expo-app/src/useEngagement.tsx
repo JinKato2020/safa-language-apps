@@ -3,7 +3,7 @@ import { Alert, AppState, Linking, Platform, Pressable, StyleSheet, Text, View }
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as StoreReview from 'expo-store-review';
 import * as MailComposer from 'expo-mail-composer';
-import { useI18n, useScaleStyle } from '@safa/shared';
+import { useI18n, useScaleStyle, type SettingsDevelopmentTools } from '@safa/shared';
 import app from '../app.json';
 import { canRequestReview, inviteDue, isLandingRoute, isStudyRoute, readEngagement, requestMail, type EngagementState } from './engagementPolicy';
 
@@ -19,12 +19,14 @@ export function useEngagement() {
   const copy = lang === 'en' ? COPY.en : COPY.ja;
   const [visible, setVisible] = useState(false);
   const [mailBusy, setMailBusy] = useState(false);
+  const [developmentEnabled, setDevelopmentEnabled] = useState(typeof __DEV__ !== 'undefined' && __DEV__);
   const state = useRef<EngagementState | null>(null);
   const loading = useRef<Promise<EngagementState> | null>(null);
   const route = useRef<string | undefined>(undefined);
   const studyStart = useRef<number | null>(null);
   const lock = useRef(false);
   const composing = useRef(false);
+  const preview = useRef(false);
   const mounted = useRef(true);
   const reviewTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const persist = useCallback(async (value: EngagementState) => {
@@ -46,7 +48,8 @@ export function useEngagement() {
     if (!isStudyRoute(name)) studyStart.current = null;
     route.current = name;
     if (reviewTimer.current) { clearTimeout(reviewTimer.current); reviewTimer.current = null; }
-    if (!isLandingRoute(name)) { setVisible(false); return; }
+    if (!isLandingRoute(name)) { setVisible(false); preview.current = false; return; }
+    if (preview.current) return;
     if (lock.current) return;
     lock.current = true;
     void (async () => {
@@ -85,6 +88,11 @@ export function useEngagement() {
   useEffect(() => {
     mounted.current = true;
     void load().then(value => persist(value));
+    // SDK54 iOS isAvailableAsync is false specifically for TestFlight receipts.
+    // Fail closed: errors never expose development tools in App Store builds.
+    if (Platform.OS === 'ios' && !(typeof __DEV__ !== 'undefined' && __DEV__)) {
+      void StoreReview.isAvailableAsync().then(available => { if (mounted.current) setDevelopmentEnabled(!available); }).catch(() => {});
+    }
     const listener = AppState.addEventListener('change', status => {
       if (status === 'active' && isLandingRoute(route.current)) onRouteChanged(route.current);
       else if (status !== 'active') {
@@ -107,17 +115,36 @@ export function useEngagement() {
     } catch { Alert.alert(copy.error, copy.errorBody); }
     finally { composing.current = false; if (mounted.current) setMailBusy(false); }
   };
-  const stop = () => { setVisible(false); if (state.current) void persist({ ...state.current, disabled: true }); };
+  const close = () => { setVisible(false); preview.current = false; };
+  const stop = () => {
+    setVisible(false);
+    if (preview.current) { preview.current = false; return; }
+    if (state.current) void persist({ ...state.current, disabled: true });
+  };
+  const developmentTools: SettingsDevelopmentTools | null = developmentEnabled ? {
+    showRequest: () => {
+      if (reviewTimer.current) clearTimeout(reviewTimer.current);
+      preview.current = true; setVisible(true);
+    },
+    showReview: async () => {
+      if (reviewTimer.current) clearTimeout(reviewTimer.current);
+      if (composing.current || AppState.currentState !== 'active') return 'unavailable';
+      try {
+        if (!await StoreReview.isAvailableAsync()) return 'unavailable';
+        await StoreReview.requestReview(); return 'requested';
+      } catch { return 'failed'; }
+    },
+  } : null;
   const banner = visible ? <View style={styles.card}>
     <Text style={[styles.title, ss(15, 21)]}>{copy.title}</Text>
     <Text style={[styles.body, ss(13, 20)]}>{copy.body}</Text>
     <View style={styles.actions}>
       <Pressable accessibilityRole="button" disabled={mailBusy} onPress={email} style={styles.primary}><Text style={[styles.primaryText, ss(13, 19)]}>{copy.mail}</Text></Pressable>
-      <Pressable accessibilityRole="button" onPress={() => setVisible(false)} style={styles.secondary}><Text style={[styles.link, ss(13, 19)]}>{copy.later}</Text></Pressable>
+      <Pressable accessibilityRole="button" onPress={close} style={styles.secondary}><Text style={[styles.link, ss(13, 19)]}>{copy.later}</Text></Pressable>
     </View>
     <Pressable accessibilityRole="button" onPress={stop} style={styles.optout}><Text style={[styles.muted, ss(12, 18)]}>{copy.never}</Text></Pressable>
   </View> : null;
-  return { onRouteChanged, banner };
+  return { onRouteChanged, banner, developmentTools };
 }
 
 const styles = StyleSheet.create({

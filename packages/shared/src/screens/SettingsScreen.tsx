@@ -14,6 +14,7 @@ import { useAppData } from '../AppDataContext';
 import * as Application from 'expo-application';
 import { useNavigation } from '@react-navigation/native';
 import { useEntitlement } from '../entitlement';
+import { useSettingsDevelopment } from '../settingsDevelopment';
 
 function Icon({ children, size = 16 }: { children: React.ReactNode; size?: number }) {
   return (
@@ -97,6 +98,10 @@ export default function SettingsScreen() {
   const isJaUI = lang === 'ja';
   const nav = useNavigation<any>();
   const ent = useEntitlement();
+  const development = useSettingsDevelopment();
+  const developmentCopy = lang === 'en'
+    ? { title: 'Development checks', review: 'Native rating dialog', request: 'Request invitation', description: 'Preview without waiting four days. Reminder preferences and timing stay unchanged.', launch: 'Launch', show: 'Show', unavailable: 'Native rating dialog unavailable', explanation: 'TestFlight cannot display Apple’s native rating dialog. You can open the real App Store review page instead.', failed: 'Could not request the native rating dialog.', store: 'Open App Store' }
+    : { title: '開発確認', review: '標準評価画面', request: 'リクエスト案内', description: '4日待たずに確認できます。案内の間隔・停止設定は変更しません。', launch: '起動', show: '表示', unavailable: '標準評価画面を表示できません', explanation: 'TestFlightではAppleの標準評価画面は表示されません。App Storeの実際の評価ページで確認できます。', failed: '標準評価画面の呼び出しに失敗しました。', store: 'App Storeで確認' };
   const showPurchase = Number.isFinite(ent.freeThemes); // App A のみ true(B/C は Infinity=非表示)
   const prem = PREMIUM_L[lang] ?? PREMIUM_L.ja;
   const freeCopy = lang === 'en'
@@ -176,6 +181,19 @@ export default function SettingsScreen() {
     }
   };
 
+  const ratingRow = canRate ? <Row label={t('settings.rateApp')} ss={ss}>
+    <Pressable accessibilityRole="button" onPress={onRate} style={[styles.btn, styles.testBtn]}><Text style={styles.btnText}>{t('common.open')}</Text></Pressable>
+  </Row> : null;
+  const testReview = async () => {
+    if (!development) return;
+    const result = await development.showReview();
+    if (result === 'requested') return;
+    Alert.alert(developmentCopy.unavailable, result === 'failed' ? developmentCopy.failed : developmentCopy.explanation, [
+      { text: t('common.cancel'), style: 'cancel' },
+      ...(canRate ? [{ text: developmentCopy.store, onPress: onRate }] : []),
+    ]);
+  };
+
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.head}>
@@ -201,6 +219,17 @@ export default function SettingsScreen() {
           </Row>
         </Section>
       )}
+
+      {showPurchase && ratingRow && <View style={styles.section}>{ratingRow}</View>}
+
+      {development && <Section title={developmentCopy.title} icon={<DataIcon />} ss={ss}>
+        <Row label={developmentCopy.review} desc={developmentCopy.description} ss={ss}>
+          <Pressable accessibilityRole="button" style={[styles.btn, styles.testBtn]} onPress={testReview}><Text style={styles.btnText}>{developmentCopy.launch}</Text></Pressable>
+        </Row>
+        <Row label={developmentCopy.request} ss={ss}>
+          <Pressable accessibilityRole="button" style={[styles.btn, styles.testBtn]} onPress={development.showRequest}><Text style={styles.btnText}>{developmentCopy.show}</Text></Pressable>
+        </Row>
+      </Section>}
 
       <Section title={t('settings.sectionLang')} icon={<LangIcon />} ss={ss}>
         <Row label={t('settings.language')} desc={langDescText} ss={ss}>
@@ -312,11 +341,7 @@ export default function SettingsScreen() {
 
       <Section title={t('settings.sectionAbout')} icon={<InfoIcon />} ss={ss}>
         <Row label={t('settings.version')} ss={ss}><Text style={styles.valueText}>{versionDisplay}</Text></Row>
-        {canRate && (
-          <Row label={t('settings.rateApp')} ss={ss}>
-            <Pressable onPress={onRate}><Text style={styles.linkText}>{t('common.open')}</Text></Pressable>
-          </Row>
-        )}
+        {!showPurchase && ratingRow}
         <Row label={t('settings.shareApp')} ss={ss}>
           <Pressable style={styles.btn} onPress={onShare}>
             <Text style={styles.btnText}>{t('common.share')}</Text>
@@ -370,6 +395,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.line, borderRadius: radius.sm,
   },
   btnText: { fontSize: 13, fontWeight: '500', color: colors.ink },
+  testBtn: { minHeight: 44, justifyContent: 'center' },
   btnPrimary: { backgroundColor: colors.ink, borderColor: colors.ink },
   btnTextPrimary: { fontSize: 13, fontWeight: '600', color: '#fff' },
   btnDanger: { borderColor: '#fecaca' },

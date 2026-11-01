@@ -10,6 +10,7 @@ import {
   I18nProvider,
   SettingsProvider,
   AppDataProvider,
+  SettingsDevelopmentProvider,
   GrammarGuideImageProvider,
   useI18n,
   type AppData,
@@ -38,7 +39,7 @@ const HERO_IMAGES = {
 // DLパックになり得る言語は en のみ。ja/ne は同梱(ja内容)を使う。
 function LearningAppShell() {
   const engagement = useEngagement();
-  return <AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['grammar', 'conversation', 'listening', 'vocabulary', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={engagement.onRouteChanged} mainScreenAccessory={engagement.banner} />;
+  return <SettingsDevelopmentProvider value={engagement.developmentTools}><AppShell headerIconSource={headerIconSource} posterLessons={POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['grammar', 'conversation', 'listening', 'vocabulary', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={engagement.onRouteChanged} mainScreenAccessory={engagement.banner} /></SettingsDevelopmentProvider>;
 }
 
 const toPackLang = (lang: string) => (lang === 'en' ? 'en' : 'ja');
