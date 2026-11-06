@@ -15,7 +15,7 @@ export type GuideBlock = (
   | { type: 'p'; text: string }
   | { type: 'note'; text: string }
   | { type: 'table'; headers: string[]; rows: string[][] }
-) & { presentation?: GuidePresentation; image?: GuideImage; lessonSupplement?: { id: string; kind: 'culture' | 'spoken' } };
+) & { beginnerIntroEnd?: boolean; presentation?: GuidePresentation; image?: GuideImage; lessonSupplement?: { id: string; kind: 'culture' | 'spoken' } };
 
 // テーマid("1".."30") → ブロック列
 export type GrammarGuideData = Record<string, GuideBlock[]>;

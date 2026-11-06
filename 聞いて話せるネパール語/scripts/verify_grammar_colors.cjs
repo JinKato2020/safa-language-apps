@@ -8,6 +8,7 @@ function compile(source,customRequire){
  vm.runInNewContext(`(function(require,module,exports){${code}\n})`,{console})(customRequire,module,module.exports);return module.exports;
 }
 const presentation=compile(fs.readFileSync(path.join(ROOT,'packages/shared/src/grammarPresentation.ts'),'utf8'),()=>{throw Error('Unexpected import')});
+const reading=compile(fs.readFileSync(path.join(ROOT,'packages/shared/src/grammarReading.ts'),'utf8'),()=>{throw Error('Unexpected reading import')});
 function luminance(hex){return hex.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4).reduce((sum,x,i)=>sum+x*[.2126,.7152,.0722][i],0)}
 function contrast(a,b){const x=luminance(a),y=luminance(b);return(Math.max(x,y)+.05)/(Math.min(x,y)+.05)}
 for(const [tone,p] of Object.entries(presentation.guidePalettes)){
@@ -39,8 +40,11 @@ const theme=compile(fs.readFileSync(path.join(ROOT,'packages/shared/src/theme.ts
 const file=path.join(ROOT,'packages/shared/src/screens/GrammarGuideScreen.tsx');
 const ui=compile(fs.readFileSync(file,'utf8')+'\nexport { Block, LessonBlocks };',name=>{
  if(name==='react')return PreviewReact;if(name==='react/jsx-runtime')return require('react/jsx-runtime');
- if(name==='react-native')return{View,Image:NativeImage,ScrollView:View,Pressable:View,StyleSheet:{create:x=>x}};
+ if(name==='react-native')return{View,Image:NativeImage,ScrollView:View,Pressable:View,StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:390,fontScale:1})};
  if(name==='../Text')return{Text};if(name==='../theme')return theme;if(name==='../grammarPresentation')return presentation;
+ if(name==='../grammarReading')return reading;
+ if(name==='../i18n')return{};
+ if(name==='../SettingsContext')return{useGlobalScaleStyle:()=>fontSize=>({fontSize})};
  if(name==='../grammarGuide')return{useGrammarGuideImageResolver:()=>async()=>null};
  if(['react-native-safe-area-context','@react-navigation/native','../SettingsContext'].includes(name))return{};
  throw Error(name);
