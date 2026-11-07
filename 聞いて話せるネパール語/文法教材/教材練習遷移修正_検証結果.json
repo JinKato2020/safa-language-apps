@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-07",
+  "appVersion": "2.1.11",
+  "packVersion": 1213,
+  "cause": "GrammarGuide was registered in RootStack, but Practice was registered only in nested tab stacks. Its root-targeted REPLACE was unhandled.",
+  "fix": "Register the existing PracticeScreen in RootStack. Replace the guide, preserve MainTabs and return to the existing grammar list on Back.",
+  "legacyFailureReproduced": true,
+  "realRouterScenarios": 36,
+  "realButtonWithRouterScenarios": 72,
+  "reader": {
+    "layouts": 360,
+    "accordionToggles": 996,
+    "allContentPreserved": true,
+    "browserErrors": []
+  },
+  "typechecks": [
+    "shared",
+    "App A",
+    "App B",
+    "App C"
+  ],
+  "iosHermesExport": true,
+  "nativeDeviceVerified": false,
+  "contentAndAudioChanged": false,
+  "limits": [
+    "Uses installed React Navigation routers and actual AppShell registrations; does not replace an iOS device test.",
+    "Prior 2.1.10 mocked callback checks did not validate that a route was reachable.",
+    "Build dispatch and submission are not App Store publication."
+  ]
+}

@@ -405,6 +405,9 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                   </RootStack.Screen>
                   <RootStack.Screen name="Paywall" component={PaywallScreen} options={{ presentation: 'modal' }} />
                   <RootStack.Screen name="GrammarGuide" component={GrammarGuideScreen} />
+                  {/* GrammarGuide replaces itself at this root, not inside GramStack.
+                      Keep MainTabs beneath it so Back returns to the existing list. */}
+                  <RootStack.Screen name="Practice" component={PracticeScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined }} />
                 </RootStack.Navigator>
                </HeroImagesProvider>
             </DesignThemeProvider>

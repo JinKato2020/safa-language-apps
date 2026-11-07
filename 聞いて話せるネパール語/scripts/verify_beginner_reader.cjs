@@ -1,6 +1,7 @@
 // Actual reader TSX rendered with DOM adapters; not an iOS device test.
 const fs = require('fs'), path = require('path'), vm = require('vm'), assert = require('assert/strict');
 const ts = require('typescript');
+const {checkGuideAction} = require('./verify_guide_navigation.cjs');
 const ROOT = path.resolve(__dirname, '../..');
 const work = path.resolve(process.argv[2] || '.work-reader');
 fs.mkdirSync(work, { recursive: true });
@@ -126,7 +127,9 @@ fs.writeFileSync(path.join(work, 'reader.html'), '<!doctype html><meta charset="
         for(let i=0;i<await toggles.count();i++) {await toggles.nth(i).click();assert.equal(await toggles.nth(i).getAttribute('aria-expanded'),'true');await toggles.nth(i).click();assert.equal(await toggles.nth(i).getAttribute('aria-expanded'),'false');opened++;}
       }
       await page.getByRole('button',{name:policy.readingCopy(lang).practice+' →',exact:true}).click();
-      assert.deepEqual(await page.evaluate(()=>window.nav.at(-1)),['Practice',{themeId:Number(id),mode:'grammar'}]);
+      const action=await page.evaluate(()=>window.nav.at(-1));
+      assert.deepEqual(action,['Practice',{themeId:Number(id),mode:'grammar'}]);
+      checkGuideAction(...action);
       await page.getByRole('button',{name:policy.readingCopy(lang).close,exact:true}).click();
       assert.deepEqual(await page.evaluate(()=>window.nav.at(-1)),['back']);
     }

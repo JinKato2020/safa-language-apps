@@ -554,6 +554,7 @@
   },
   "initialBlockReductionPercent": 80.5,
   "limits": [
+    "Correction in 2.1.11: practiceAndCloseRoutes checked mocked callbacks only. The 2.1.10 root Practice route was missing; actual-router regression coverage was added with the fix.",
     "Browser DOM adapters exercise actual TSX but do not prove iOS text metrics or VoiceOver focus behavior.",
     "No beginner user usability study or native-device check performed.",
     "Build submission is not App Store publication."
