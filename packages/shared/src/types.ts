@@ -74,6 +74,7 @@ export type RootStackParamList = {
   Sakubun: { themeId: number; levelId: number; startIndex?: number };
   GrammarGuide: { themeId: number; title: string; studySession?: StudySession };
   LearningPath: undefined;
+  LettersSounds: undefined;
   VocabCategory: { posterOnly?: boolean } | undefined;
   VocabDirection: { categoryId: number };
   Flashcard: { categoryId: number; direction: 'ne2ja' | 'ja2ne' };

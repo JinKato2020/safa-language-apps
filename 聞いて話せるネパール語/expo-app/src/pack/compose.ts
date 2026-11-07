@@ -27,6 +27,8 @@ export interface NeCore {
 export interface L1Overlay {
   learningPath?: AppData['LEARNING_PATH'];
   learningPathV2?: AppData['LEARNING_PATH'];
+  learningPathV3?: AppData['LEARNING_PATH'];
+  lettersSounds?: AppData['LETTERS_SOUNDS'];
   contentNames?: AppData['CONTENT_NAMES'];
   posterLessons?: AppData['POSTER_LESSONS'];
   nativeLang: string;
@@ -95,7 +97,8 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
     return out;
   };
   return {
-    LEARNING_PATH: overlay.learningPathV2 ?? overlay.learningPath,
+    LEARNING_PATH: overlay.learningPathV3 ?? overlay.learningPathV2 ?? overlay.learningPath,
+    LETTERS_SOUNDS: overlay.lettersSounds,
     CONTENT_NAMES: overlay.contentNames,
     POSTER_LESSONS: overlay.posterLessons,
     version: opts.version,

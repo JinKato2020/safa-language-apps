@@ -90,6 +90,8 @@ yahī bāṭo ho, haina?
 
 This is the right road, isn’t it?
 
+Practice focus: For identity: म → हुँ, हामी → हौं, तपाईं/उहाँ → हुनुहुन्छ.
+
 
 Use उहाँ for he/she and उहाँहरू for they as the basic forms.
 
@@ -198,6 +200,8 @@ pasal kata cha?
 
 Where is the shop?
 
+Practice focus: For location now: म → छु, हामी → छौं; respectful तपाईं/उहाँ → हुनुहुन्छ.
+
 
 Use उहाँ for he/she and उहाँहरू for they as the basic forms.
 
@@ -297,6 +301,8 @@ sancai chu.
 
 I am well.
 
+Practice focus: An adjective + the छ family describes a current state: I → छु, we → छौं, respectful subjects → हुनुहुन्छ.
+
 
 With a person as subject, choose the appropriate form of **छ**.
 
@@ -383,6 +389,8 @@ Okay; agreed.
 
 All right; okay.
 
+Practice focus: Use हुन्छ for recurring or general conditions; its negative is हुँदैन. Distinguish these from a state just now.
+
 
 Being cold now and getting cold in winter take different perspectives. भयो is one form used for a change that has happened.
 
@@ -450,6 +458,9 @@ AI-generated scene illustration
 Terraces follow a hillside towards a cluster of homes. **Terraced fields make sloping land usable for farming**; the paths between them also lead to schools, shops and homes.
 
 Crops vary with altitude, water and season across the mountains, middle hills and southern Tarai plains. Mountain journeys connect many jobs too: guiding, lodging, cooking, carrying supplies and transport. Imagine the everyday lives within a landscape, as well as the view.
+
+Practice focus: बाट marks a source of movement, सम्म an endpoint, and मा a location. Attach each after the noun.
+Use सँग for an accompanying person, unlike endpoint सम्म or source बाट.
 
 
 ### Core forms
@@ -580,6 +591,8 @@ I am well.
 tapāĩlāī ni?
 
 And you?
+
+Practice focus: Choose कहिले for time, कहाँ for place, and किन for a reason.
 
 
 ### Core words and combinations with postpositions and counters
@@ -912,6 +925,8 @@ hajur?
 
 Pardon?
 
+Practice focus: Match respect level: ऊ → छ, उनी → छन्, तिमी → छौ, उहाँ → हुनुहुन्छ. Here उनी refers to one person.
+
 
 ### उ, उनी and उहाँ distinguish respect, not male versus female
 
@@ -991,6 +1006,8 @@ Rice, lentil soup and colourful accompaniments arrive on a metal plate. **Dal is
 
 Combining a little at a time changes each mouthful. Eating with the right hand remains a living practice, alongside the use of spoons in different homes and settings. Ingredients vary by household, region and season: there is always another plate to discover.
 
+Practice focus: Present actions and routines agree with the subject: म → -छु, हामी → -छौं, respectful subjects → -नुहुन्छ.
+
 
 ### A reference table for comparing personal forms
 
@@ -1044,6 +1061,8 @@ Use **तपाईं गर्नुहुन्न** (you do not do it, respec
 ### 5. कहिल्यै with negation
 
 **म कहिल्यै चुरोट खाँदिनँ** (I never smoke) gives a never statement. कहिल्यै combines with a negative for never and can mean ever in a question; the word alone does not supply the entire negative meaning.
+
+Practice focus: Match a present negative to its subject: the -दिनँ family with म, -दैनौं with हामी, and -नुहुन्न for respect. Vowel-stem verbs also change within the stem.
 
 
 ### A reference table for comparing personal forms
@@ -1103,6 +1122,8 @@ Both **गर्दै छु** (I am doing it) and **गरिरहेको �
 **पढिरहेको मान्छे** (the person who is reading) is a person reading; **मान्छे पढिरहेको छ** (the person is reading) is a complete clause.
  Do not retain the finite छ inside the modifier before मान्छे.
  See topic 29 for noun modification.
+
+Practice focus: An ongoing action uses -दै/-तै plus the छ family, with the auxiliary agreeing with the subject.
 
 
 ### A reference table for comparing personal forms
@@ -1183,6 +1204,8 @@ khānā khānubhayo?
 
 Have you eaten?
 
+Practice focus: Completed transitive actions mark the agent with ले: म → मैले, हामी → हामीले, तपाईं → तपाईंले, उहाँ → उहाँले.
+
 
 ### A reference table for comparing personal forms
 
@@ -1248,6 +1271,8 @@ A denied transitive event can retain **मैले**, as in **मैले क�
 
 **अझै गरेको छैन** (has not done it yet) expresses not yet completed, while **हिजो गरेनँ** (I did not do it yesterday) denies yesterday's event.
  A present-perfect negative uses **-एको + छैन-family auxiliary**; adding अझै alone does not change a past negative into that construction.
+
+Practice focus: Compare past negatives: the first-person -इनँ family, plural -एनौं, and respectful -नुभएन.
 
 
 ### A reference table for comparing personal forms
@@ -1328,6 +1353,8 @@ pachi bheṭaũlā.
 
 See you later.
 
+Practice focus: Future forms agree with the subject: -नेछु for I, -नेछौं for we, -नुहुनेछ for respectful subjects.
+
 
 ### A reference table for comparing personal forms
 
@@ -1381,6 +1408,8 @@ Compare **म गर्दिनथें** (I did not use to do it) / **हा�
 
 **यहाँ विद्यालय थियो** (there was a school here) describes a past state of existence. **उहाँ यहाँ आउनुहुन्थ्यो** (he/she used to come here, respectful) describes repeated visits.
  A past-state translation does not by itself select habitual action morphology.
+
+Practice focus: Use the past habitual for former routines: बस्नु becomes बस्थें with म, बस्थ्यौं with हामी, and बस्नुहुन्थ्यो for respect.
 
 
 ### A reference table for comparing personal forms
@@ -1438,6 +1467,8 @@ Compare **उहाँले पढ्नुभएको छ** (he/she has read 
  Negate the auxiliary with the **छैन family**, keeping the participle.
  Personal forms include **गरेको छैनँ** (I have not done it).
 
+Practice focus: Perfect/experience uses the -एको family + छ: masculine -एको, feminine -एकी, plural -एका, respectful -नुभएको.
+
 
 ### A reference table for comparing personal forms
 
@@ -1491,6 +1522,8 @@ Compare **म गएको थिएँ** (I had gone) / **हामी गए�
 
 **पढ्दै थिएँ** (I was reading) describes ongoing reading, **पढेको थिएँ** (I had read it) prior completion, and **पढ्थें** a former routine.
  A translation such as was reading does not collapse these three Nepali patterns.
+
+Practice focus: For completion before a past reference time, use a perfect form + the थियो family: I → थिएँ, we → थियौं, respectful -नुभएको → थियो.
 
 
 ### A reference table for comparing personal forms
@@ -1560,6 +1593,8 @@ ek kap ciyā dinus na.
 
 A cup of tea, please.
 
+Practice focus: A polite request uses -नुहोस्. Distinguish it from descriptive -नुहुन्छ and first-person -छु.
+
 
 ## Theme 18｜Hortative / volitional (let's ~ / shall I ~)
 
@@ -1612,6 +1647,8 @@ May I sit here?
 la, jāaũ.
 
 Well then, let’s go.
+
+Practice focus: Use -औं for “let us”. Distinguish it from habitual “we” forms in -छौं and requests in -नुहोस्.
 
 
 A suggestion not to do something places न before the verb.
@@ -1675,6 +1712,8 @@ jānuhos na.
 
 Please do go.
 
+Practice focus: A polite prohibition adds न before the request form: न…नुहोस्. Adding न reverses the meaning.
+
 
 Keep a negative request separate from a prohibition with हुँदैन.
 
@@ -1731,6 +1770,8 @@ In a shop, **पाइन्छ?** asks whether something is available or can be
 yahā̃ ciyā pāincha?
 
 Can I get tea here?
+
+Practice focus: Ability uses a verb’s -न form + सक्नु. Match the auxiliary: सक्छु, सक्छौं, or respectful सक्नुहुन्छ.
 
 
 ### A reference table for comparing personal forms
@@ -1819,6 +1860,8 @@ ahile basna mildaina.
 
 Sitting here is not possible/allowed right now.
 
+Practice focus: After -न, पाइन्छ means allowed, पाइँदैन means not allowed, and पर्छ means must. These differ from ability with सक्नु.
+
 
 In this obligation pattern, पर्छ does not change for the subject's person.
 
@@ -1873,6 +1916,8 @@ AI-generated scene illustration
 A steamer opens and small pleated dumplings emerge through the steam. **Momo are filled dumplings widely enjoyed in Nepal.** Meat, vegetable and cheese versions offer different tastes; some are fried rather than steamed.
 
 Fillings, sauces and heat levels give each plate its character. A small question about what is inside, or how spicy the sauce is, can help you find a favourite. Waiting for that warm plate is part of the experience too.
+
+Practice focus: For a wish, use the experiencer + लाई, a verb in -न, and मन छ. मन छ stays the same when the person changes.
 
 
 ### A reference table for comparing personal forms
@@ -1932,6 +1977,10 @@ Honorific noun phrases can use forms resembling plural agreement.
  Learn complete combinations, including basic **उहाँ राम्रो हुनुहुन्छ** (he/she is a good person, respectful) and noun modifiers such as **राम्रा शिक्षक** (good teachers/a respected good teacher, depending on context).
  The ending आ alone does not establish the number of people.
 
+Practice focus: Match an inflecting adjective to the noun: masculine singular सानो, feminine singular सानी, plural साना.
+यी and the noun ending -हरू indicate plural. Match the adjective साना and possessive मेरा.
+केटी (girl) is feminine singular, so use सानी rather than सानो.
+
 
 ## Theme 24｜Adverbs & exclamations
 
@@ -1984,6 +2033,8 @@ I walk slowly.
 ali bistārai bolnus na.
 
 Could you speak a little more slowly, please?
+
+Practice focus: Adverbs describe manner or repetition: बिस्तारै slowly, छिटो quickly, फेरि again. They do not agree with the subject.
 
 
 कति can be used for an exclamation as well as a question.
@@ -2045,6 +2096,10 @@ During a price discussion, **कम** asks for a reduction and **गरिदि
 ali kam garidinus na.
 
 Could you reduce the price a little, please?
+
+Practice focus: Attach भन्दा to the comparison standard for “than”. The adjective itself does not need a comparative ending.
+सबैभन्दा literally compares with all: “the most”. Distinguish it from अलि (a little) and धेरै (very).
+For equal degree use जत्तिकै: त्योजत्तिकै means “as … as that”, unlike भन्दा for a difference.
 
 
 ### Related forms taught in this topic
@@ -2120,6 +2175,10 @@ ani ke bhayo?
 
 What happened then?
 
+Practice focus: तर connects a contrast (“but”), unlike additive र (“and”) or reason-giving किनभने (“because”).
+र can connect actions and clauses as “and”, as well as connecting nouns.
+Use त्यसैले for reason → result (“so”), and किनभने when a reason follows a result (“because”).
+
 
 ### Related forms taught in this topic
 
@@ -2173,6 +2232,8 @@ Compare **खानुअघि** before eating with **खाएपछि** afte
 **आउनेबित्तिकै** means immediately upon arrival; **आएपछि** after arrival. बित्तिकै emphasizes immediacy.
  See topic 29 for temporal **जब…तब/जहिले**, distinct from conditional भने.
 
+Practice focus: -एपछि means after completing an action; -दै/-तै expresses simultaneous “while”. Choose by the timing of the actions.
+
 
 ### Related forms taught in this topic
 
@@ -2223,6 +2284,8 @@ Use **पढ्नको लागि** (in order to read/study) / **काम �
 
 **पढ्नको लागि आएँ** (I came in order to study) gives an intended purpose; **पानी परेकोले आएनँ** (I did not come because it rained) a causal circumstance.
  Nepali distinguishes them in the linking morphology itself.
+
+Practice focus: The verb ending -नको लागि expresses purpose (“in order to”), distinct from पछि (after) and अघि (before).
 
 
 ### Related forms taught in this topic
@@ -2278,6 +2341,10 @@ Compare **जो…उहाँ**, agentive **जसले…उहाँले*
 
 **जसरी…त्यसरी** links manner, **जति…त्यति** degree, **जस्तो…त्यस्तो** quality, **जत्रो…त्यत्रो** size. **-सुकै**, as in **जुनसुकै/जहिलेसुकै**, opens the choice to any/whenever.
  See topic 23 for agreeing forms.
+
+Practice focus: Relative जो refers to a person and pairs here with उसले. Distinguish place कहाँ/जहाँ and time कहिले/जब.
+जब … तब … pairs “when … then …”. It refers to time, not a person or place.
+जहाँ … त्यहीँ … refers to a place and points back to it. Distinguish interrogative कहाँ from relative जहाँ.
 
 
 ### Noun-modifying clauses and relative–correlative clauses
@@ -2357,6 +2424,8 @@ If it rains, I will stay home.
 **जब आउनुहुन्छ** (when you/he/she comes, respectful)**, तब…** links the time of arrival; **आउनुभयो भने** (if you/he/she comes, respectful)… conditions on an arrival.
  The speech verb भन्नु in **भन्नुभयो** has a separate role from conditional भने.
 
+Practice focus: भए introduces a condition (“if there is”). भएपछि means after that happens; भएर links a cause/circumstance.
+
 
 भने can mark the condition even without यदि.
 
@@ -2400,6 +2469,9 @@ I think it will rain tomorrow.
 **नआएको होला** (probably has not come) supposes non-arrival; **आउन सक्नुहुन्न** (cannot come, respectful) expresses inability to come; **आउनुभएको छैन** (has not come, respectful) states non-arrival.
  Preserve both the scope of negation and the presence/absence of supposition.
 
+Practice focus: Respectful conjecture uses हुनुहोला, unlike a statement of fact with हुनुहुन्छ or a negative statement with हुनुहुन्न.
+होला signals a conjecture (“probably”), unlike छ for stating a current condition as fact.
+
 
 पर्छ has different roles in obligation and deduction.
 
@@ -2442,6 +2514,8 @@ Compare **लेखिन्छ/लेखियो/लेखिएन** for pres
 ### 5. Impersonal -इयो
 
 **आज धेरै हिँडियो** (there was a lot of walking today) is an impersonal account of much walking, not a passive of a walked object. **म धेरै हिँडेँ** (I walked a lot) instead has an explicit first-person active subject.
+
+Practice focus: The -इन्छ form expresses what is done, without foregrounding an agent. Distinguish it from first-person and respectful active forms.
 
 
 ### Related forms taught in this topic
@@ -2492,6 +2566,8 @@ In **आमाले बच्चालाई खाना खुवाउनु
 
 Conjugate the causative itself: **सिकाउनुहुन्छ→सिकाउनुभयो→सिकाउनुभएन**.
  Compare ability **सिक्न सक्नुहुन्छ** (can learn, respectful) learn with **सिकाउन सक्नुहुन्छ** (can teach, respectful) teach; the causative stem remains essential.
+
+Practice focus: Distinguish doing from causing: हाँस्नु → हँसाउनु, सुत्नु → सुताउनु, सिक्नु → सिकाउनु. Mark the affected person with लाई.
 
 
 ## Theme 34｜Reported speech (said that ~)
@@ -2547,6 +2623,8 @@ bholi chuṭṭī cha re.
 
 I hear tomorrow is a day off.
 
+Practice focus: In this report, भएको links the content “being”; नभएको links “not being”. आफू refers to the reported speaker.
+
 
 ### Direct quotation and indirect reporting
 
@@ -2601,6 +2679,11 @@ Compare **म चिठी लेख्छु** (I write a letter)→**मैल
 Compare **लेख्न सक्छु** (I can write) / **लेख्न चाहन्छु** (I want to write) / **लेख्नु पर्छ** (need to write) / **लेख्नको लागि** (in order to write).
  Ability/desire use लेख्न, basic necessity लेख्नु, and purpose लेख्नको लागि (in order to write).
  The complement construction determines the preceding form.
+
+Practice focus: Present, I: लेख्नु → लेख्छु.
+Negative present, we: लेख्नु → लेख्दैनौं.
+Future, we: लेख्नु → लेख्नेछौं.
+Past, respectful: लेख्नु → लेख्नुभयो. Mark the agent with ले.
 
 
 See topic 7 for respect/familiarity and topics 1–2 for **हो**/छ.
@@ -2816,6 +2899,10 @@ In **पढ्दै छु** (I am reading) / **पढेको छु** (I hav
 | you plural<br>तपाईंहरू / tapāĩharū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | he/she<br>उहाँ / uhā̃ | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
 | they<br>उहाँहरू / uhā̃harū | हुनुहुन्छ / hunuhuncha | हुनुहुन्न / hunuhunna |
+
+Practice focus: Identity uses the हो family: हामी takes हौं. Distinguish location छौं and habitual/change हुन्छौं.
+A current state uses the छ family: म takes छु, unlike identity हुँ or habitual/change हुन्छु.
+A regular location can use the हुन्छ family: म takes हुन्छु. Contrast this habitual context with छु for a location right now.
 
 
 See topic 7 for respect/familiarity and topics 1–2 for **हो**/छ.

@@ -396,6 +396,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: For identity: म → हुँ, हामी → हौं, तपाईं/उहाँ → हुनुहुन्छ.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -862,6 +870,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: For location now: म → छु, हामी → छौं; respectful तपाईं/उहाँ → हुनुहुन्छ.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -1324,6 +1340,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: An adjective + the छ family describes a current state: I → छु, we → छौं, respectful subjects → हुनुहुन्छ.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -1716,6 +1740,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: Use हुन्छ for recurring or general conditions; its negative is हुँदैन. Distinguish these from a state just now.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -1989,6 +2021,14 @@
       "lessonSupplement": {
         "id": "hills-paths",
         "kind": "culture"
+      }
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: बाट marks a source of movement, सम्म an endpoint, and मा a location. Attach each after the noun.\nUse सँग for an accompanying person, unlike endpoint सम्म or source बाट.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -2574,6 +2614,14 @@
       "lessonSupplement": {
         "id": "ni-return-question",
         "kind": "spoken"
+      }
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Choose कहिले for time, कहाँ for place, and किन for a reason.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -4081,6 +4129,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: Match respect level: ऊ → छ, उनी → छन्, तिमी → छौ, उहाँ → हुनुहुन्छ. Here उनी refers to one person.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -4428,6 +4484,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: Present actions and routines agree with the subject: म → -छु, हामी → -छौं, respectful subjects → -नुहुन्छ.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -4629,6 +4693,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Match a present negative to its subject: the -दिनँ family with म, -दैनौं with हामी, and -नुहुन्न for respect. Vowel-stem verbs also change within the stem.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -4841,6 +4913,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: An ongoing action uses -दै/-तै plus the छ family, with the auxiliary agreeing with the subject.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -5184,6 +5264,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: Completed transitive actions mark the agent with ले: म → मैले, हामी → हामीले, तपाईं → तपाईंले, उहाँ → उहाँले.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -5437,6 +5525,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Compare past negatives: the first-person -इनँ family, plural -एनौं, and respectful -नुभएन.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -5771,6 +5867,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: Future forms agree with the subject: -नेछु for I, -नेछौं for we, -नुहुनेछ for respectful subjects.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -5972,6 +6076,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Use the past habitual for former routines: बस्नु becomes बस्थें with म, बस्थ्यौं with हामी, and बस्नुहुन्थ्यो for respect.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -6186,6 +6298,14 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "note",
+      "text": "Practice focus: Perfect/experience uses the -एको family + छ: masculine -एको, feminine -एकी, plural -एका, respectful -नुभएको.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -6387,6 +6507,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: For completion before a past reference time, use a perfect form + the थियो family: I → थिएँ, we → थियौं, respectful -नुभएको → थियो.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -6660,6 +6788,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: A polite request uses -नुहोस्. Distinguish it from descriptive -नुहुन्छ and first-person -छु.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -6876,6 +7012,14 @@
       "lessonSupplement": {
         "id": "la-start",
         "kind": "spoken"
+      }
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Use -औं for “let us”. Distinguish it from habitual “we” forms in -छौं and requests in -नुहोस्.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -7149,6 +7293,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: A polite prohibition adds न before the request form: न…नुहोस्. Adding न reverses the meaning.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -7374,6 +7526,14 @@
       "lessonSupplement": {
         "id": "paincha-available",
         "kind": "spoken"
+      }
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Ability uses a verb’s -न form + सक्नु. Match the auxiliary: सक्छु, सक्छौं, or respectful सक्नुहुन्छ.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -7783,6 +7943,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: After -न, पाइन्छ means allowed, पाइँदैन means not allowed, and पर्छ means must. These differ from ability with सक्नु.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -8004,6 +8172,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: For a wish, use the experiencer + लाई, a verb in -न, and मन छ. मन छ stays the same when the person changes.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -8214,6 +8390,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Match an inflecting adjective to the noun: masculine singular सानो, feminine singular सानी, plural साना.\nयी and the noun ending -हरू indicate plural. Match the adjective साना and possessive मेरा.\nकेटी (girl) is feminine singular, so use सानी rather than सानो.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -8432,6 +8616,14 @@
       "lessonSupplement": {
         "id": "ali-softening",
         "kind": "spoken"
+      }
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Adverbs describe manner or repetition: बिस्तारै slowly, छिटो quickly, फेरि again. They do not agree with the subject.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -8721,6 +8913,14 @@
       "lessonSupplement": {
         "id": "kam-request",
         "kind": "spoken"
+      }
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Attach भन्दा to the comparison standard for “than”. The adjective itself does not need a comparative ending.\nसबैभन्दा literally compares with all: “the most”. Distinguish it from अलि (a little) and धेरै (very).\nFor equal degree use जत्तिकै: त्योजत्तिकै means “as … as that”, unlike भन्दा for a difference.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -9083,6 +9283,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: तर connects a contrast (“but”), unlike additive र (“and”) or reason-giving किनभने (“because”).\nर can connect actions and clauses as “and”, as well as connecting nouns.\nUse त्यसैले for reason → result (“so”), and किनभने when a reason follows a result (“because”).",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -9285,6 +9493,14 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "note",
+      "text": "Practice focus: -एपछि means after completing an action; -दै/-तै expresses simultaneous “while”. Choose by the timing of the actions.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -9476,6 +9692,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: The verb ending -नको लागि expresses purpose (“in order to”), distinct from पछि (after) and अघि (before).",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -9682,6 +9906,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Relative जो refers to a person and pairs here with उसले. Distinguish place कहाँ/जहाँ and time कहिले/जब.\nजब … तब … pairs “when … then …”. It refers to time, not a person or place.\nजहाँ … त्यहीँ … refers to a place and points back to it. Distinguish interrogative कहाँ from relative जहाँ.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -10006,6 +10238,14 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "note",
+      "text": "Practice focus: भए introduces a condition (“if there is”). भएपछि means after that happens; भएर links a cause/circumstance.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -10166,6 +10406,14 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "note",
+      "text": "Practice focus: Respectful conjecture uses हुनुहोला, unlike a statement of fact with हुनुहुन्छ or a negative statement with हुनुहुन्न.\nहोला signals a conjecture (“probably”), unlike छ for stating a current condition as fact.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -10324,6 +10572,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: The -इन्छ form expresses what is done, without foregrounding an agent. Distinguish it from first-person and respectful active forms.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -10507,6 +10763,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Distinguish doing from causing: हाँस्नु → हँसाउनु, सुत्नु → सुताउनु, सिक्नु → सिकाउनु. Mark the affected person with लाई.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -10728,6 +10992,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "Practice focus: In this report, भएको links the content “being”; नभएको links “not being”. आफू refers to the reported speaker.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -10927,6 +11199,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Present, I: लेख्नु → लेख्छु.\nNegative present, we: लेख्नु → लेख्दैनौं.\nFuture, we: लेख्नु → लेख्नेछौं.\nPast, respectful: लेख्नु → लेख्नुभयो. Mark the agent with ले.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -11900,6 +12180,14 @@
       ],
       "presentation": {
         "tone": "blue"
+      }
+    },
+    {
+      "type": "note",
+      "text": "Practice focus: Identity uses the हो family: हामी takes हौं. Distinguish location छौं and habitual/change हुन्छौं.\nA current state uses the छ family: म takes छु, unlike identity हुँ or habitual/change हुन्छु.\nA regular location can use the हुन्छ family: म takes हुन्छु. Contrast this habitual context with छु for a location right now.",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {

@@ -55,6 +55,7 @@ export type JpReading = Record<string, JpReadingEntry>;  // キー = 日本語�
 
 export type AppData = {
   LEARNING_PATH?: LearningPath;
+  LETTERS_SOUNDS?: import('./learning').LettersSounds;
   CONTENT_NAMES?: { themes?: Record<string,string>; levels?: Record<string,string>; categories?: Record<string,string> };
   POSTER_LESSONS?: import('./PosterContext').PosterLesson[];
   /** アプリの版数 (各アプリの app.json の expo.version) */

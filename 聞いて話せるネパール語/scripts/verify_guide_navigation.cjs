@@ -32,5 +32,17 @@ module.exports={checkGuideAction};
 if(require.main===module){
   assert(/<RootStack\.Screen\s+name="Practice"\s+component=\{PracticeScreen\}/.test(source),'Root must mount the actual practice screen');
   for(let themeId=1;themeId<=36;themeId++)checkGuideAction('Practice',{themeId,mode:'grammar'});
-  console.log('PASS36 real-router guide → practice → grammar-list scenarios;2.1.10 unhandled action reproduced; tab state and back stack preserved.');
+  for(let themeId=1;themeId<=36;themeId++)for(const fromPath of [false,true]){
+    const router=StackRouter({initialRouteName:'MainTabs'}),options=opts(names('RootStack'));
+    let state=router.getInitialState(options);
+    const send=action=>{state=router.getStateForAction(state,action,options);assert(state,'action must be handled');};
+    if(fromPath)send(CommonActions.navigate('LearningPath'));
+    send(CommonActions.navigate('GrammarGuide',{themeId,title:'Lesson'}));const guideKey=state.routes[state.index].key;
+    send(CommonActions.navigate('Practice',{themeId,mode:'grammar',examplesOnly:true}));
+    send({...CommonActions.goBack(),source:state.routes[state.index].key,target:state.key});
+    assert.equal(state.routes[state.index].key,guideKey,'back preserves the original guide instance');
+    send(CommonActions.goBack());assert.equal(state.routes[state.index].name,fromPath?'LearningPath':'MainTabs');
+    if(fromPath){send(CommonActions.goBack());assert.equal(state.routes[state.index].name,'MainTabs');}
+  }
+  console.log('PASS36 legacy regressions and72 examples back-navigation router round trips.');
 }

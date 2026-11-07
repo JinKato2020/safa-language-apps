@@ -32,7 +32,8 @@ import { useI18n } from './i18n';
 import { ListeningAudioProvider, useListeningAudio } from './ListeningAudioContext';
 import type { RootStackParamList } from './types';
 import { LearningProvider } from './LearningContext';
-import LearningPathScreen from './screens/LearningPathScreen';
+import LettersSoundsScreen from './screens/LettersSoundsScreen';
+import StudyHeader from './StudyHeader';
 import LearningHomeScreen from './screens/LearningHomeScreen';
 import HomeScreen from './screens/HomeScreen';
 import ListeningHubScreen from './screens/ListeningHubScreen';
@@ -414,8 +415,9 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                   <RootStack.Screen name="GrammarGuide" component={GrammarGuideScreen} />
                   {/* GrammarGuide replaces itself at this root, not inside GramStack.
                       Keep MainTabs beneath it so Back returns to the existing list. */}
-                  <RootStack.Screen name="Practice" component={PracticeScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined }} />
-                  <RootStack.Screen name="LearningPath" component={LearningPathScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined }} />
+                  <RootStack.Screen name="Practice" component={PracticeScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined, header: learningStorageKey ? StudyHeader : undefined }} />
+                  <RootStack.Screen name="LettersSounds" component={LettersSoundsScreen} options={{ ...defaultStackOptions, headerShown: true, header: StudyHeader }} />
+                  <RootStack.Screen name="LearningPath" component={LettersSoundsScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined, header: learningStorageKey ? StudyHeader : undefined }} />
                   <RootStack.Screen name="SettingsMain" component={SettingsScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined, title: t('settings.title') }} />
                 </RootStack.Navigator>
                 </LearningProvider>

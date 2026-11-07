@@ -5,16 +5,28 @@ import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 const app=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+async function persistJson(file,value){
+  const temp=file+'.next-'+process.pid;
+  fs.writeFileSync(temp,JSON.stringify(value,null,2)+'\n');
+  for(let attempt=0;;attempt++){
+    try{fs.renameSync(temp,file);return;}
+    catch(error){if(attempt>=9)throw error;await new Promise(r=>setTimeout(r,100*(attempt+1)));}
+  }
+}
 const env={};
 for(const p of [path.join(app,'../聞いて話せる日本語/.env'),path.join(app,'.env')])if(fs.existsSync(p))for(const line of fs.readFileSync(p,'utf8').split(/\r?\n/)){const m=line.match(/^\s*([A-Za-z0-9_]+)\s*=\s*(.*?)\s*$/);if(m)env[m[1]]=m[2].replace(/^["']|["']$/g,'');}
 const key=env.AZURE_SPEECH_KEY,region=env.AZURE_SPEECH_REGION;
 if(!key||!region)throw Error('Azure speech configuration is missing.');
 const file=path.join(app,'文法教材/beginner_learning_path.json'),paths=read(file);
+const grammarFile=path.join(app,'文法教材/grammar_practice.json'),lettersFile=path.join(app,'文法教材/letters_sounds.json');
+const grammar=fs.existsSync(grammarFile)?read(grammarFile):null,letters=fs.existsSync(lettersFile)?read(lettersFile):null;
+const letterSamples=p=>[...p.sections.flatMap(s=>s.samples),...p.combinations.flatMap(r=>r.samples)].filter(s=>s.audio);
 const manifestFile=path.join(app,'文法教材/learning_audio_manifest.json');
 const manifest=fs.existsSync(manifestFile)?read(manifestFile):{};
 const dir=path.join(app,'expo-app/assets/learning-audio');fs.mkdirSync(dir,{recursive:true});
-const samples=[...paths.ja.intro.flatMap(b=>b.samples??[]),...Object.values(paths.ja.exercises)];
-const texts=[...new Set(samples.map(s=>s.ne))],esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const samples=[...paths.ja.intro.flatMap(b=>b.samples??[]),...Object.values(paths.ja.exercises),...Object.values(grammar?.ja.exercises??{}),...(letters?letterSamples(letters.ja):[])];
+const texts=[...new Set(samples.map(s=>s.speech??s.ne))],esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+console.log(JSON.stringify({requestedClips:texts.length,newCharacters:texts.filter(t=>!manifest[t]).reduce((n,t)=>n+t.length,0)}));
 for(const text of texts){
   const prior=manifest[text],priorFile=prior&&path.join(dir,`learning-${prior.sha256}.mp3`);
   if(priorFile&&fs.existsSync(priorFile)&&crypto.createHash('sha256').update(fs.readFileSync(priorFile)).digest('hex')===prior.sha256)continue;
@@ -29,10 +41,13 @@ for(const text of texts){
   const sha256=crypto.createHash('sha256').update(bytes).digest('hex'),name=`learning-${sha256}.mp3`;
   fs.writeFileSync(path.join(dir,name),bytes);
   manifest[text]={url:'https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/'+name,sha256,bytes:bytes.length};
-  fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');
-  console.log('Recorded '+(texts.indexOf(text)+1)+' / '+texts.length);
+  await persistJson(manifestFile,manifest);
+  if(texts.indexOf(text)%20===0)console.log('Recorded '+(texts.indexOf(text)+1)+' / '+texts.length);
 }
 for(const p of Object.values(paths))for(const s of [...p.intro.flatMap(b=>b.samples??[]),...Object.values(p.exercises)])s.audio=manifest[s.ne];
-fs.writeFileSync(file,JSON.stringify(paths,null,2)+'\n');
+await persistJson(file,paths);
+if(grammar){for(const p of Object.values(grammar))for(const s of Object.values(p.exercises))s.audio=manifest[s.ne];await persistJson(grammarFile,grammar);}
+if(letters){for(const p of Object.values(letters))for(const s of letterSamples(p))s.audio=manifest[s.speech??s.ne];await persistJson(lettersFile,letters);}
 fs.writeFileSync(path.join(app,'expo-app/src/introAudio.ts'),'// Generated from learning_audio_manifest.json. Immutable recordings.\nexport const INTRO_AUDIO: Record<string, number> = {\n'+texts.map(t=>`  '${manifest[t].sha256}': require('../assets/learning-audio/learning-${manifest[t].sha256}.mp3'),`).join('\n')+'\n};\n');
+await persistJson(manifestFile,Object.fromEntries(texts.map(t=>[t,manifest[t]])));
 console.log(JSON.stringify({clips:texts.length,bytes:texts.reduce((n,t)=>n+manifest[t].bytes,0),voice:'ne-NP-HemkalaNeural',rate:'0%'}));

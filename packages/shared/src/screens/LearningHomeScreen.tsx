@@ -7,7 +7,7 @@ import { Text } from '../Text';
 import { useI18n } from '../i18n';
 import { useAppData } from '../AppDataContext';
 import { useLearning } from '../LearningContext';
-import { emptyStudyState, practiceParams, resolveStudy, reviewItems, stepSignature, studyActivity } from '../learning';
+import { emptyStudyState, practiceParams, resolveStudy, reviewItems, studyActivity } from '../learning';
 
 const c = { ink: '#123039', muted: '#52666C', navy: '#102F38', teal: '#7DE2CE', page: '#F2F5F3', line: '#DCE6E2' };
 const EMPTY = emptyStudyState();
@@ -29,9 +29,6 @@ export default function LearningHomeScreen() {
   }, []));
   const en = lang === 'en', state = learning?.state ?? EMPTY, ready = !!learning?.ready;
   const activity = useMemo(() => studyActivity(state, now), [state, now]);
-  const steps = data.LEARNING_PATH?.steps ?? [];
-  const completed = steps.filter(step => state.completed[step.id] === stepSignature(step.items));
-  const next = steps.find(step => !completed.includes(step));
   const due = useMemo(() => reviewItems(state, data, now), [state, data, now]);
   const resume = state.resume && resolveStudy(data, state.resume.item) ? state.resume : undefined;
   const weekCount = activity.week.filter(day => day.count > 0).length;
@@ -40,13 +37,11 @@ export default function LearningHomeScreen() {
   const weekdays = en ? ['S', 'M', 'T', 'W', 'T', 'F', 'S'] : ['日', '月', '火', '水', '木', '金', '土'];
   const action = resume ? (en ? 'Continue where you left off' : '前回の続きへ')
     : due.length ? (en ? `Review ${due.length} sentences` : `${due.length}文を復習する`)
-    : next && state.introRead ? (en ? 'Start today’s five' : '今日の5文を始める')
-    : next ? (en ? 'Start here' : 'はじめての方へ') : (en ? 'Explore your learning path' : '学習マップを開く');
+    : (en ? 'Explore letters & sounds' : '文字と音から始める');
   const start = () => {
     if (resume) nav.navigate('Practice', practiceParams(resume.item, resume.session));
     else if (due.length) nav.navigate('Practice', practiceParams(due[0], { kind: 'review', items: due }));
-    else if (next && state.introRead) nav.navigate('Practice', practiceParams(next.items[0], { kind: 'course', stepId: next.id, items: next.items }));
-    else nav.navigate('LearningPath');
+    else nav.navigate('LettersSounds');
   };
   const ratio = hero == null ? 3 : (() => { const asset = Image.resolveAssetSource(hero); return asset.width / asset.height; })();
 
@@ -97,11 +92,11 @@ export default function LearningHomeScreen() {
       <Text style={styles.recordNote}>{en ? 'Recorded when you rate a sentence after checking its answer.' : '例文の答えを確認して振り返ると、記録が増えます。'}</Text>
     </View>
 
-    <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Open learning path' : '学習マップを開く'} onPress={() => nav.navigate('LearningPath')} style={({ pressed }) => [styles.path, pressed && styles.pressed]}>
-      <View style={styles.sectionRow}><Text style={styles.overline}>{en ? 'YOUR LEARNING PATH' : 'はじめての7ステップ'}</Text><Text style={styles.pathCount}>{completed.length}<Text style={styles.pathDenominator}> / {steps.length}</Text></Text></View>
-      <Text style={styles.pathTitle}>{completed.length === steps.length && steps.length > 0 ? (en ? 'Your foundation is taking shape.' : '基礎の一歩、そろいました。') : (en ? 'Build your foundation.' : '「わかる」を、ひとつずつ。')}</Text>
-      <View style={styles.segments}>{steps.map(step => <View key={step.id} style={[styles.segment, { backgroundColor: completed.includes(step) ? '#237766' : '#D9E8E2' }]} />)}</View>
-      <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? 'Five sentences per step' : '1ステップ、5文から'}</Text><Text style={styles.pathLink}>{en ? 'View path →' : '学習マップ →'}</Text></View>
+    <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Letters & sounds' : '文字と音'} onPress={() => nav.navigate('LettersSounds')} style={({ pressed }) => [styles.path, pressed && styles.pressed]}>
+      <View style={styles.sectionRow}><Text style={styles.overline}>LETTERS &amp; SOUNDS</Text><Text style={styles.pathCount}>अ क म</Text></View>
+      <Text style={styles.pathTitle}>{en ? 'Letters & sounds' : '文字と音'}</Text>
+      <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Vowels, consonants, vowel signs and conjuncts. Tap to hear how the script sounds.' : '母音・子音から、組み合わせ・複合文字まで。文字を見て、音を確かめよう。'}</Text>
+      <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? `${state.lettersRead?.length??0} sections reviewed` : `${state.lettersRead?.length??0}項目を確認済み`}</Text><Text style={styles.pathLink}>{en ? 'Explore →' : '開く →'}</Text></View>
     </Pressable>
 
     {ready && due.length > 0 && <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Review saved sentences' : '保存した例文を復習'} onPress={() => nav.navigate('Practice', practiceParams(due[0], { kind: 'review', items: due }))} style={({ pressed }) => [styles.review, pressed && styles.pressed]}>

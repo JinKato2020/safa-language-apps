@@ -29,4 +29,30 @@ export function validateContent(core: any, overlay: any, lang: string) {
     for (const [id,rows] of Object.entries(core[ne]) as [string,any][]) if (!Array.isArray(rows) || !Array.isArray(overlay[l1][id]) || rows.length !== overlay[l1][id].length || !rows.every((s: any,i: number)=>typeof s==='string' && s && typeof overlay[l1][id][i]==='string' && overlay[l1][id][i])) throw new Error('Content/translation mismatch: '+id);
   }
   for (const theme of core.grammarThemes) if (!Array.isArray(overlay.grammarGuide?.[theme.id]) || !overlay.grammarThemeNames?.[theme.id]) throw new Error('Missing grammar guide');
+  if (overlay.learningPathV3) {
+    const p=overlay.learningPathV3;
+    if (!Array.isArray(p.steps) || p.steps.length!==core.grammarThemes.length || !p.exercises) throw new Error('Missing grammar practice');
+    for (const theme of core.grammarThemes) {
+      const step=p.steps.find((s: any)=>s.guideThemeId===theme.id);
+      if (step?.items?.length!==20 || new Set(step.items.map((r: any)=>r.exerciseId)).size!==20) throw new Error('Missing practice theme');
+      for (const ref of step.items) {
+        const e=p.exercises[ref.exerciseId],q=e?.selection;
+        if (!e || e.ne!==ref.ne || !e.jp || !Array.isArray(e.words) || !e.words.length || !e.words.every((w: any)=>w.text&&w.roman&&w.meaning)) throw new Error('Invalid practice words');
+        if (!q || !Number.isInteger(q.wordIndex) || !e.words[q.wordIndex] || !q.rule || !q.prompt || !Array.isArray(q.options) || q.options.length!==3 || new Set(q.options.map((o: any)=>o.form)).size!==3 || q.options.filter((o: any)=>o.form===(q.answer??e.words[q.wordIndex].text)).length!==1) throw new Error('Invalid form exercise');
+        if ((q.prefix??'')+(q.answer??e.words[q.wordIndex].text)!==e.words[q.wordIndex].text) throw new Error('Invalid cloze reconstruction');
+        if (!Array.isArray(e.meaningChoices) || new Set(e.meaningChoices).size!==e.meaningChoices.length || !e.meaningChoices.includes(e.jp) || e.meaningChoices.length<2) throw new Error('Invalid meaning exercise');
+        assertFile(e.audio);
+      }
+    }
+  }
+  if (overlay.lettersSounds) {
+    const l=overlay.lettersSounds;
+    if (!Array.isArray(l.sections) || !l.sections.length || !Array.isArray(l.combinations) || l.combinations.length!==33) throw new Error('Invalid letters course');
+    for (const row of l.combinations) if (!row.consonant || !Array.isArray(row.samples) || row.samples.length!==11) throw new Error('Incomplete vowel combinations');
+    for (const section of l.sections) if (!section.id || !section.title || !section.body || !Array.isArray(section.samples)) throw new Error('Invalid letters section');
+    for (const s of [...l.sections.flatMap((b: any)=>b.samples),...l.combinations.flatMap((r: any)=>r.samples)]) {
+      if (!s.id || !s.ne || !s.roman || !s.meaning || (s.speech && !s.audio)) throw new Error('Invalid letter sample');
+      if (s.audio) assertFile(s.audio);
+    }
+  }
 }

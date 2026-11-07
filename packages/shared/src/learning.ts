@@ -1,13 +1,15 @@
 import type { AppData } from './AppDataContext';
 
 export type StudyRef = { mode: 'grammar' | 'conversation'; themeId: number; levelId?: number; index: number; ne: string; exerciseId?: string };
-export type StudySession = { kind: 'course' | 'review'; items: StudyRef[]; stepId?: string; position?: number; answered?: string[] };
+export type StudySession = { kind: 'course' | 'review'; items: StudyRef[]; stepId?: string; position?: number; answered?: string[]; questionStages?: (2|3|4)[]; choiceSeed?: number };
 export type LearningAudio = { url: string; sha256: string; bytes: number };
 export type SoundSample = { id: string; ne: string; roman: string; meaning: string; audio: LearningAudio };
-export type LearningExercise = { ne: string; jp: string; words: {text: string; roman: string; meaning: string}[]; audio: LearningAudio; forms?: {subject: string; form: string; roman: string; meaning: string}[]; family?: string };
+export type LearningExercise = { ne: string; jp: string; words: {text: string; roman: string; meaning: string}[]; audio: LearningAudio; forms?: {subject: string; form: string; roman: string; meaning: string}[]; family?: string; meaningChoices?: string[]; selection?: { wordIndex: number; answer?: string; prefix?: string; prompt: string; rule: string; options: {subject: string; form: string; roman: string; meaning: string}[] } };
+export type LetterSample = { id: string; ne: string; roman: string; meaning: string; detail?: string; speech?: string; audio?: LearningAudio };
+export type LettersSounds = { title: string; description: string; sections: {id: string; title: string; body: string; samples: LetterSample[]}[]; combinations: { consonant: string; roman: string; samples: LetterSample[] }[] };
 export type LearningPath = { title: string; description: string; intro: { title: string; body: string; samples?: SoundSample[] }[]; exercises?: Record<string,LearningExercise>; steps: { id: string; title: string; goal: string; guideThemeId?: number; items: StudyRef[] }[] };
 export type Rating = { item: StudyRef; result: 'again' | 'known' | 'supported'; streak: number; due: number; updated: number };
-export type StudyState = { version: 1; introRead: boolean; ratings: Record<string, Rating>; completed: Record<string, string>; activity?: Record<string, string[]>; resume?: { item: StudyRef; session?: StudySession } };
+export type StudyState = { version: 1; introRead: boolean; lettersRead?: string[]; practicePools?: Record<string, import('./practicePool').PracticePool>; ratings: Record<string, Rating>; completed: Record<string, string>; activity?: Record<string, string[]>; resume?: { item: StudyRef; session?: StudySession } };
 export const emptyStudyState = (): StudyState => ({ version: 1, introRead: false, ratings: {}, completed: {}, activity: {} });
 export function studyDate(now: number): string {
   const d = new Date(now);
@@ -28,6 +30,11 @@ export function decodeStudy(raw: string | null): StudyState {
   const p = JSON.parse(raw);
   if (p?.version !== 1 || !p.ratings || typeof p.ratings !== 'object' || !p.completed || typeof p.completed !== 'object') throw new Error('Invalid study data');
   const state = emptyStudyState(); state.introRead = p.introRead === true;
+  if (Array.isArray(p.lettersRead)) state.lettersRead = [...new Set<string>(p.lettersRead.filter((s: unknown): s is string => typeof s === 'string' && /^[a-z-]{1,40}$/.test(s)))];
+  if(p.practicePools&&typeof p.practicePools==='object') {
+    state.practicePools={};
+    for(const [key,pool] of Object.entries(p.practicePools) as [string,any][])if(/^\d+:[234]$/.test(key)&&typeof pool?.signature==='string'&&Array.isArray(pool.remaining)&&pool.remaining.every((s: unknown)=>typeof s==='string')&&Array.isArray(pool.previous)&&pool.previous.every((s: unknown)=>typeof s==='string'))state.practicePools[key]=pool;
+  }
   for (const [key, r] of Object.entries(p.ratings) as [string, any][]) {
     if (validRef(r?.item) && key === studyKey(r.item) && ['known','again','supported'].includes(r.result) && Number.isInteger(r.streak) && r.streak >= 0 && Number.isFinite(r.due) && Number.isFinite(r.updated)) state.ratings[key] = r;
   }
@@ -50,7 +57,7 @@ export function decodeStudy(raw: string | null): StudyState {
   if (validRef(p.resume?.item)) {
     const s = p.resume.session;
     if (!s) state.resume = { item: p.resume.item };
-    else if (['course','review'].includes(s.kind) && Array.isArray(s.items) && s.items.length > 0 && s.items.every(validRef) && Number.isInteger(s.position) && s.position >= 0 && s.position < s.items.length && Array.isArray(s.answered) && s.answered.every((x: unknown) => typeof x === 'string')) state.resume = p.resume;
+    else if (['course','review'].includes(s.kind) && Array.isArray(s.items) && s.items.length > 0 && s.items.every(validRef) && Number.isInteger(s.position) && s.position >= 0 && s.position < s.items.length && Array.isArray(s.answered) && s.answered.every((x: unknown) => typeof x === 'string') && (s.questionStages==null||(Array.isArray(s.questionStages)&&s.questionStages.length===s.items.length&&s.questionStages.every((n: unknown)=>[2,3,4].includes(n as number))&&Number.isSafeInteger(s.choiceSeed)))) state.resume = p.resume;
   }
   return state;
 }

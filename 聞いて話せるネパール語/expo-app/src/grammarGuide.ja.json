@@ -396,6 +396,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：何者かを言う हो の仲間：म→हुँ、हामी→हौं、तपाईं／उहाँ→हुनुहुन्छ。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -862,6 +870,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：今いる場所には छ の仲間。म→छु、हामी→छौं。敬意の तपाईं／उहाँ では हुनुहुन्छ。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -1324,6 +1340,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：形容詞＋छ の仲間で今の状態を伝えます。私＝छु、私たち＝छौं、敬意＝हुनुहुन्छ。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -1716,6 +1740,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：繰り返す状態や一般的な傾向は हुन्छ。否定は हुँदैन。「今だけ」の状態とは区別します。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -1989,6 +2021,14 @@
       "lessonSupplement": {
         "id": "hills-paths",
         "kind": "culture"
+      }
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：बाट＝移動の出発点「から」、सम्म＝到達点「まで」、मा＝場所「に・で」。名詞の後ろにつけます。\n一緒に行動する相手には सँग。「〜まで」の सम्म や「〜から」の बाट と区別します。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -2583,6 +2623,14 @@
       "lessonSupplement": {
         "id": "ni-return-question",
         "kind": "spoken"
+      }
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：時は कहिले、場所は कहाँ、理由は किन。知りたい情報に合わせて疑問詞を選びます。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -4117,6 +4165,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：敬意の段階をそろえます。ऊ→छ、उनी→छन्、तिमी→छौ、उहाँ→हुनुहुन्छ。उनी はここでは1人を指します。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -4491,6 +4547,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：現在の動作・習慣も主語で語尾が変わります。म は -छु、हामी は -छौं、敬意の主語は -नुहुन्छ。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -4692,6 +4756,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：現在の否定を主語に合わせます。म は -दिनँ、हामी は -दैनौं の仲間、敬意の形は -नुहुन्न。母音を含む動詞では語幹の形にも注意。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -4904,6 +4976,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：進行形は -दै/-तै＋छ の仲間。後ろの形を主語に合わせます。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -5247,6 +5327,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：他動詞の完了過去では動作主に ले をつけます。म→मैले、हामी→हामीले、तपाईं→तपाईंले、उहाँ→उहाँले。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -5500,6 +5588,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：過去の否定も主語に合わせます。私の -इनँ、私たちの -एनौं、敬意の -नुभएन を比べます。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -5834,6 +5930,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：-नेछु は私、-नेछौं は私たち、-नुहुनेछ は敬意を表す未来の形です。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -6035,6 +6139,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：以前よくしていたことは過去の習慣形。बस्नु は म→बस्थें、हामी→बस्थ्यौं、敬意→बस्नुहुन्थ्यो。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -6249,6 +6361,14 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "note",
+      "text": "練習のポイント：完了・経験は -एको＋छ の仲間。男性単数 -एको、女性単数 -एकी、複数 -एका、敬意 -नुभएको を、話す人・相手に合わせます。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -6450,6 +6570,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：過去のある時点までに済んだことは、完了の形＋थियो の仲間。私は थिएँ、私たちは थियौं。敬意の -नुभएको の後ろは थियो です。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -6723,6 +6851,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：丁寧な依頼は -नुहोस्。説明する現在形 -नुहुन्छ や私の -छु と区別します。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -6939,6 +7075,14 @@
       "lessonSupplement": {
         "id": "la-start",
         "kind": "spoken"
+      }
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：一緒にしようという誘いは -औं の形。私たちの習慣 -छौं、相手への依頼 -नुहोस् とは違います。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -7212,6 +7356,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：丁寧な禁止は、依頼形の前に न をつけた न…नुहोस्。न があるかで意味が逆になります。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -7437,6 +7589,14 @@
       "lessonSupplement": {
         "id": "paincha-available",
         "kind": "spoken"
+      }
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：能力は動詞の -न 形＋सक्नु。後ろを主語に合わせて सक्छु／सक्छौं／सक्नुहुन्छ にします。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -7846,6 +8006,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：-न＋पाइन्छ は許可、पाइँदैन は禁止、पर्छ は義務。できる能力の सक्छु とは区別します。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -8067,6 +8235,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：希望は「気持ちの持ち主＋लाई」「動詞の -न 形」「मन छ」。人を 変えても मन छ は同じです。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -8277,6 +8453,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：男性単数の名詞には सानो、女性単数には सानी、複数には साना。形の変わる形容詞を名詞に合わせます。\nयी と名詞の -हरू は複数。形容詞も साना、所有の形も मेरा にそろえます。\nकेटी（女の子）は女性単数なので、सानो ではなく सानी。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -8495,6 +8679,14 @@
       "lessonSupplement": {
         "id": "ali-softening",
         "kind": "spoken"
+      }
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：副詞は動作の様子や繰り返しを示します。बिस्तारै＝ゆっくり、छिटो＝速く、फेरि＝もう一度。主語に合わせた活用はしません。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -8784,6 +8976,14 @@
       "lessonSupplement": {
         "id": "kam-request",
         "kind": "spoken"
+      }
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：比較の相手＋भन्दा で「〜より」。形容詞自体を英語のような比較級に変える必要はありません。\nसबैभन्दा は「全てより」から「一番・最も」。अलि（少し）や धेरै（とても）と区別します。\n同じ程度なら जत्तिकै。त्योजत्तिकै＝あれと同じくらい。大小の差を言う भन्दा とは別です。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {
@@ -9146,6 +9346,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：逆の方向の内容を続ける「けれど」は तर。単なる追加の र や理由の किनभने と区別します。\nर は名詞同士だけでなく、動作や文も「そして」でつなげます。\n理由→結果なら त्यसैले（だから）。結果を先に言って理由を続けるなら किनभने（なぜなら）。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -9348,6 +9556,14 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "note",
+      "text": "練習のポイント：-एपछि は先に終えた後、-दै/-तै は同時に「〜しながら」。動作の前後関係で選びます。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -9539,6 +9755,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：動詞の -नको लागि は「〜するために」。目的を、した後の पछि やする前の अघि と区別します。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -9745,6 +9969,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：人を表す जो は、後ろの उसले（その人が）と対応します。場所の जहाँ、時の जब と区別します。\nजब…तब… は「〜する時、その時…」。人や場所ではなく、時を受ける組み合わせです。\nजहाँ…त्यहीँ… は「〜がある場所、まさにそこへ」。疑問の कहाँ と関係表現の जहाँ を混ぜません。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -10078,6 +10310,14 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "note",
+      "text": "練習のポイント：条件の भए＝あれば。भएपछि はそうなった後、भएर はそうであるので。時・理由・条件を区別します。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -10238,6 +10478,14 @@
       "l1ExampleSupport": 1
     },
     {
+      "type": "note",
+      "text": "練習のポイント：敬意のある人についての推量は हुनुहोला。「です」と断定する हुनुहुन्छ、「ではない」の हुनुहुन्न と違います。\nहोला は「たぶん〜だろう」という推量。現在の状態を断定する छ と確かさが違います。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -10396,6 +10644,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：行う人を前面に出さず「〜される」と言う -इन्छ の形です。特定の私や敬意のある人がする形と区別します。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -10579,6 +10835,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：自分がする動詞と、人にさせる動詞を区別します。हाँस्नु→हँसाउनु、सुत्नु→सुताउनु、सिक्नु→सिकाउनु。相手は लाई で示します。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -10800,6 +11064,14 @@
       }
     },
     {
+      "type": "note",
+      "text": "練習のポイント：間接話法では内容を भएको でつなげます。「〜でない」は नभएको。आफू は、この文では話した本人を指します。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
+    },
+    {
       "type": "p",
       "text": "",
       "beginnerIntroEnd": true
@@ -11008,6 +11280,14 @@
         "role": "body"
       },
       "l1ExampleSupport": 1
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：現在・私：लेख्नु→लेख्छु。\n否定・私たち：लेख्नु→लेख्दैनौं。\n未来・私たち：लेख्नु→लेख्नेछौं。\n過去・敬意：लेख्नु→लेख्नुभयो。動作主には ले。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
+      }
     },
     {
       "type": "p",
@@ -11981,6 +12261,14 @@
       ],
       "presentation": {
         "tone": "blue"
+      }
+    },
+    {
+      "type": "note",
+      "text": "練習のポイント：何者かを言う हो の仲間。हामी には हौं。場所の छौं、習慣・変化の हुन्छौं と区別します。\n今の状態は छ の仲間。म には छु。何者かの हुँ、習慣・変化の हुन्छु と区別します。\n普段の決まった居場所は हुन्छ の仲間でも表せます。म は हुन्छु。「今ここにいる」という छु と場面を比べます。",
+      "practiceRuleV3": true,
+      "presentation": {
+        "tone": "teal"
       }
     },
     {

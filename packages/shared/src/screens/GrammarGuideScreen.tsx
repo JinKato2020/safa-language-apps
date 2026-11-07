@@ -1,3 +1,6 @@
+import { useAppData } from '../AppDataContext';
+import { useLearning } from '../LearningContext';
+import { createPracticeSession } from '../practicePool';
 // 文法モードの「教材」表示画面。構造化ブロック(goal/h/p/note/table)をネイティブ描画する。
 // RootStack に登録(ヘッダー非表示)のため、自前のトップバー(✕+タイトル)を描く。
 import { Fragment, useEffect, useRef, useState } from 'react';
@@ -183,6 +186,21 @@ export default function GrammarGuideScreen() {
   const nav = useNavigation<Nav>();
   const { themeId, title, studySession } = useRoute<R>().params;
   const ss = useScaleStyle();
+  const data = useAppData(), learning = useLearning();
+  const step = learning && data.LEARNING_PATH?.steps.find(s => s.guideThemeId === themeId);
+  const practiceSession = step ? { kind: 'course' as const, stepId: step.id, items: step.items } : studySession;
+  const [starting,setStarting]=useState(false), startingRef=useRef(false);
+  const startPractice=async()=>{
+    if(startingRef.current)return;
+    if(step&&data.LEARNING_PATH&&learning){
+      if(!learning.ready)return;
+      startingRef.current=true;setStarting(true);
+      let launch:ReturnType<typeof createPracticeSession>|undefined;
+      const saved=await learning.change(state=>{launch=createPracticeSession(state,data.LEARNING_PATH!,themeId);return launch.state;});
+      startingRef.current=false;setStarting(false);
+      if(saved&&launch)nav.navigate('Practice',launch.params);
+    }else if(practiceSession)nav.navigate('Practice',{themeId,mode:'grammar',studySession:practiceSession,challenge:false});
+  };
   const insets = useSafeAreaInsets();
   const { lang } = useI18n();
   const copy = readingCopy(lang);
@@ -219,7 +237,9 @@ export default function GrammarGuideScreen() {
             </> : <LessonBlocks blocks={sections[selected]} ss={ss} />}
             {selected === 'rules' && sections.reference.length > 0 && <Pressable accessibilityRole="button" onPress={() => choose('reference')} style={styles.secondaryAction}><Text style={[styles.actionText, ss(16, 25)]}>{copy.next} →</Text></Pressable>}
             <Pressable accessibilityRole="button" onPress={() => nav.navigate('Practice', { themeId, mode: 'grammar', examplesOnly: true, challenge: false })} style={styles.practiceAction}><Text style={[styles.practiceText, ss(16, 25)]}>{copy.practice} →</Text></Pressable>
-            {studySession && <Pressable accessibilityRole="button" onPress={() => nav.replace('Practice', { themeId, mode: 'grammar', studySession, challenge: false })} style={styles.secondaryAction}><Text style={[styles.actionText, ss(16, 25)]}>{lang === 'en' ? 'Start step practice' : 'ステップ練習へ'} →</Text></Pressable>}
+            {practiceSession && <Pressable accessibilityRole="button" disabled={starting||!learning?.ready} accessibilityState={{disabled:starting||!learning?.ready}} onPress={startPractice} style={[styles.secondaryAction,(starting||!learning?.ready)&&{opacity:.5}]}><Text style={[styles.actionText, ss(16, 25)]}>{starting?(lang==='en'?'Preparing…':'準備中…'):(lang === 'en' ? '3-step practice · 5 questions each' : '3ステップ練習・各5問')} →</Text></Pressable>}
+            {practiceSession&&<Text style={[styles.p,ss(14,24)]}>{lang==='en'?'20 questions per type. Each set contains 5 form, 5 meaning and 5 word-order questions. Unseen questions come first.':'各種類20問から、形・意味・語順を5問ずつ。まだ出ていない問題から出題します。'}</Text>}
+            {learning?.error&&<Text style={[styles.p,{color:'#9f1239'},ss(16,26)]}>{lang==='en'?'Could not save the practice set. Please retry.':'出題セットを保存できませんでした。もう一度お試しください。'}</Text>}
           </View>
         )}
         <View style={{ height: spacing.xxl + insets.bottom }} />

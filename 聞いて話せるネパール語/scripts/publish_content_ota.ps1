@@ -31,18 +31,33 @@ try {
   if (Test-Path -LiteralPath $audioManifestPath) {
     $audioManifest = Get-Content -LiteralPath $audioManifestPath -Raw | ConvertFrom-Json
     $clips = $audioManifest.PSObject.Properties.Value | Sort-Object sha256 -Unique
+    $uploads = @()
     foreach ($clip in $clips) {
       $name = 'learning-' + $clip.sha256 + '.mp3'
       $local = Join-Path $PSScriptRoot ('../expo-app/assets/learning-audio/' + $name)
       if ((Get-FileHash -LiteralPath $local -Algorithm SHA256).Hash.ToLowerInvariant() -ne $clip.sha256) { throw ('Local audio hash mismatch: ' + $name) }
       if ($existing -notcontains $name) {
-        & $Gh release upload $tag $local --repo $repo
-        if ($LASTEXITCODE -ne 0) { throw ('Audio upload failed: ' + $name) }
+        $uploads += $local
       }
-      $check = Join-Path $work 'verify-audio.tmp'
-      Invoke-WebRequest -Uri $clip.url -OutFile $check -UseBasicParsing
-      if ((Get-FileHash -LiteralPath $check -Algorithm SHA256).Hash.ToLowerInvariant() -ne $clip.sha256 -or (Get-Item -LiteralPath $check).Length -ne $clip.bytes) { throw ('Public audio mismatch: ' + $name) }
     }
+    for ($i = 0; $i -lt $uploads.Count; $i += 20) {
+      $batch = $uploads[$i..([Math]::Min($i + 19, $uploads.Count - 1))]
+      & $Gh release upload $tag @batch --repo $repo
+      if ($LASTEXITCODE -ne 0) { throw 'Audio batch upload failed.' }
+      Write-Output ('Uploaded audio: ' + [Math]::Min($i + 20, $uploads.Count) + '/' + $uploads.Count)
+    }
+    # Immutable clips are independent; bounded parallel checks keep a full alphabet
+    # publication practical. A failure still prevents the final manifest switch.
+    $verified = @($clips | ForEach-Object -Parallel {
+      $clip = $_
+      $check = Join-Path $using:work ('verify-' + $clip.sha256 + '.tmp')
+      try {
+        Invoke-WebRequest -Uri $clip.url -OutFile $check -UseBasicParsing -ErrorAction Stop
+        if ((Get-FileHash -LiteralPath $check -Algorithm SHA256).Hash.ToLowerInvariant() -ne $clip.sha256 -or (Get-Item -LiteralPath $check).Length -ne $clip.bytes) { throw 'Public audio mismatch' }
+        $true
+      } catch { $false }
+    } -ThrottleLimit 6)
+    if ($verified.Count -ne $clips.Count -or $verified -contains $false) { throw 'Public audio verification failed; manifest was not published.' }
     Write-Output ('Verified pronunciation/practice clips: ' + $clips.Count)
   }
   $files = Get-ChildItem -LiteralPath $work -Filter 'content-*.json'

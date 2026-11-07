@@ -40,7 +40,21 @@ def verify(folder):
                 for r in step['items']:assert path['exercises'][r['exerciseId']]['ne']==r['ne']
             for item in [*path['exercises'].values(),*(s for b in path['intro'] for s in b['samples'])]:
                 a=item['audio'];assert a['bytes']>0 and len(a['sha256'])==64 and a['url'].startswith('https://')
-        stats[lang]={'guides':len(guides),'courseSteps':len(o['learningPath']['steps']),'audioFiles':len(l['audio']['files'])}
+        if o.get('learningPathV3'):
+            path=o['learningPathV3'];assert len(path['steps'])==36 and len(path['exercises'])==720
+            for step in path['steps']:
+                assert len(step['items'])==20 and len({r['exerciseId'] for r in step['items']})==20
+                for r in step['items']:
+                    e=path['exercises'][r['exerciseId']];q=e['selection'];answer=q.get('answer',e['words'][q['wordIndex']]['text'])
+                    assert e['ne']==r['ne'] and q.get('prefix','')+answer==e['words'][q['wordIndex']]['text']
+                    assert len(q['options'])==3 and sum(c['form']==answer for c in q['options'])==1
+                    assert len(set(e['meaningChoices']))==3 and e['jp'] in e['meaningChoices']
+                    a=e['audio'];assert a['bytes']>0 and len(a['sha256'])==64
+            letters=o['lettersSounds'];assert len(letters['combinations'])==33
+            assert all(len(row['samples'])==11 for row in letters['combinations'])
+            for s in [s for section in letters['sections'] for s in section['samples'] if s.get('audio')]+[s for row in letters['combinations'] for s in row['samples']]:
+                assert s['audio']['bytes']>0 and len(s['audio']['sha256'])==64
+        stats[lang]={'guides':len(guides),'courseSteps':len(o['learningPath']['steps']),'practiceQuestions':len(o.get('learningPathV3',{}).get('exercises',{}))*3,'audioFiles':len(l['audio']['files'])}
     print(json.dumps({'version':m['version'],'languages':stats,'conversation':sum(map(len,core['examplesNe'].values())),'grammar':sum(map(len,core['grammarNe'].values())),'words':sum(map(len,core['wordsNe'].values()))}))
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('folder',type=Path);a=p.parse_args();verify(a.folder)

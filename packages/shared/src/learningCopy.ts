@@ -9,7 +9,7 @@ export function learningCopy(lang: string) { return lang === 'en' ? {
   start: 'はじめての方へ', path: '学習の道案内', resume: '前回の続きから', review: '5問ずつ復習する', due: 'いま復習できる例題', none: 'いま復習する例題はありません。新しい教材に進むか、明日また確認しましょう。',
   guide: '教材を読む', practice: 'このステップを始める', intro: 'はじめに：音と文字の読み方', introDone: '確認して、学習を始める', completed: '確認済み', next: '次のおすすめ', again: 'もう一度', known: 'できた',
   rating: '答えを確かめて、自分で振り返ろう。', saved: 'この端末に保存', error: '学習記録を保存・読み込みできませんでした。再試行してください。', retry: '再試行', loading: '学習記録を読み込み中…',
-  finish: '今回の練習はここまで', finishBody: '「もう一度」は復習に残ります。「できた」は練習を重ねると、1日後・3日後・7日後に再び出題されます。', back: '学習の道案内に戻る',
-  reveal: '答えを見る', doneCount: 'ステップ確認済み', session: '短い練習', unavailable: '例題が更新されています。学習の道案内から練習を開き直してください。', saving: '保存中…',
+  finish: '今回の練習はここまで', finishBody: '「もう一度」は復習に残ります。「できた」は練習を重ねると、1日後・3日後・7日後に再び出題されます。', back: 'もとの画面に戻る',
+  reveal: '答えを見る', doneCount: 'ステップ確認済み', session: '短い練習', unavailable: '例題が更新されています。教材から練習を開き直してください。', saving: '保存中…',
   progressNote: '見本つきの学習と、自力で思い出せた記録を分けています。', refresh: '復習一覧を更新', continueLabel: '続ける',
 }; }
