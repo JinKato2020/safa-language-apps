@@ -3,7 +3,7 @@ import { useLearning } from '../LearningContext';
 import { createPracticeSession } from '../practicePool';
 // 文法モードの「教材」表示画面。構造化ブロック(goal/h/p/note/table)をネイティブ描画する。
 // RootStack に登録(ヘッダー非表示)のため、自前のトップバー(✕+タイトル)を描く。
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { ScrollView, View, StyleSheet, Pressable, Image, useWindowDimensions, type ImageSourcePropType } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text } from '../Text';
@@ -13,12 +13,13 @@ import { colors, spacing, radius } from '../theme';
 import type { RootStackParamList } from '../types';
 import { useScaleStyle, useGlobalScaleStyle } from '../SettingsContext';
 import { useI18n } from '../i18n';
-import { partitionLesson, readingGroups, readingCopy, examplePreview, type ReadingPart, type ReadingGroup } from '../grammarReading';
+import { partitionLesson, readingGroups, readingCopy, examplePreview, fallbackCultureBreak, type ReadingPart, type ReadingGroup } from '../grammarReading';
 import { useGrammarGuide, useGrammarGuideImageResolver, type GuideBlock, type GuideImage } from '../grammarGuide';
 import { guidePalette, guideStep, type GuidePresentation } from '../grammarPresentation';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'GrammarGuide'>;
 type R = RouteProp<RootStackParamList, 'GrammarGuide'>;
+type GuidePart = ReadingPart | 'practice';
 
 // **太字** を反映して描画する簡易リッチテキスト。
 function Rich({ text, style, emphasisColor, heading = false }: { text: string; style?: any; emphasisColor?: string; heading?: boolean }) {
@@ -204,15 +205,20 @@ export default function GrammarGuideScreen() {
   const insets = useSafeAreaInsets();
   const { lang } = useI18n();
   const copy = readingCopy(lang);
-  const [part, setPart] = useState<ReadingPart>('rules');
+  const [part, setPart] = useState<GuidePart>('rules');
   const scroll = useRef<ScrollView>(null);
   const guide = useGrammarGuide();
   const blocks: GuideBlock[] = (guide && guide[String(themeId)]) || [];
-  const sections = partitionLesson(blocks);
-  const parts = (Object.keys(sections) as ReadingPart[]).filter(key => sections[key].length > 0);
+  const sections = useMemo(() => {
+    const result = partitionLesson(blocks);
+    if (practiceSession && !result.breaks.length && guide) result.breaks = fallbackCultureBreak(guide, themeId);
+    return result;
+  }, [blocks, guide, themeId, !!practiceSession]);
+  const parts: GuidePart[] = practiceSession ? ['rules', 'reference', 'practice', 'breaks'] : (Object.keys(sections) as ReadingPart[]).filter(key => sections[key].length > 0);
   const selected = parts.includes(part) ? part : 'rules';
-  const groups = readingGroups(sections[selected], copy.extra);
-  const choose = (next: ReadingPart) => { setPart(next); scroll.current?.scrollTo({ y: 0, animated: false }); };
+  const selectedBlocks = selected === 'practice' ? [] : selected === 'reference' && practiceSession ? [...sections.reference, ...sections.examples] : sections[selected];
+  const groups = readingGroups(selectedBlocks, copy.extra);
+  const choose = (next: GuidePart) => { setPart(next); scroll.current?.scrollTo({ y: 0, animated: false }); };
   useEffect(() => { setPart('rules'); scroll.current?.scrollTo({ y: 0, animated: false }); }, [themeId, lang]);
 
   return (
@@ -224,22 +230,37 @@ export default function GrammarGuideScreen() {
         <Text accessibilityRole="header" style={[styles.topTitle, ss(16, 25)]}>{title}</Text>
       </View>
       {parts.length > 1 && <View style={styles.partTabs}>{parts.map(key => <Pressable key={key} accessibilityRole="tab" accessibilityState={{ selected: selected === key }} onPress={() => choose(key)} style={[styles.partTab, selected === key && styles.partTabSelected]}>
-        <Text style={[styles.partTabText, ss(14, 22), selected === key && styles.partTabTextSelected]}>{copy[key]}{key === 'examples' ? ` (${readingGroups(sections.examples, copy.extra).length})` : ''}</Text>
+        <Text style={[styles.partTabText, ss(14, 22), selected === key && styles.partTabTextSelected]}>{key === 'practice' ? copy.exercises : copy[key]}{key === 'examples' ? ` (${readingGroups(sections.examples, copy.extra).length})` : ''}</Text>
       </Pressable>)}</View>}
       <ScrollView ref={scroll} contentContainerStyle={styles.container}>
         {blocks.length === 0 ? (
           <Text style={[styles.p, ss(16, 27)]}>{copy.empty}</Text>
         ) : (
           <View key={`${themeId}-${lang}-${selected}`}>
-            {selected === 'reference' || selected === 'examples' ? <>
+            {selected === 'practice' ? <>
+              <Text accessibilityRole="header" style={[styles.h, ss(22, 32)]}>{copy.exercises}</Text>
+              <Text style={[styles.p, ss(16, 27)]}>{lang === 'en' ? 'Practise this theme in three steps, with word meanings and rule hints available as you go.' : 'このテーマを3つのステップで練習しよう。単語の意味やルールは、途中でも確認できます。'}</Text>
+              {(lang === 'en' ? [
+                ['① Choose a form', 'Choose a verb form, postposition or other expression that fits this theme.'],
+                ['② Choose a meaning', 'Read a Nepali sentence and choose its meaning.'],
+                ['③ Word-order puzzle', 'Arrange the supplied words to build a sentence.'],
+              ] : [
+                ['① 形を選ぶ', '活用・後置詞など、このテーマに合う形を選びます。'],
+                ['② 意味を選ぶ', 'ネパール語の文を見て、意味を選びます。'],
+                ['③ 語順パズル', '用意された語句を並べて、文を作ります。'],
+              ]).map(([heading, body], i) => <View key={heading} style={[styles.lessonCard, { backgroundColor: i % 2 ? '#f5f3ff' : '#ecfdf5', borderColor: i % 2 ? '#ddd6fe' : '#a7f3d0', borderLeftColor: i % 2 ? '#7c3aed' : '#0f766e' }]}>
+                <Text style={[styles.bold, ss(18, 29)]}>{heading}</Text><Text style={[styles.p, ss(15, 25)]}>{body}</Text>
+              </View>)}
+              <Text style={[styles.p, ss(15, 25)]}>{lang === 'en' ? '5 questions per step · 15 in total. Each step draws from 20 questions, with unseen questions first.' : '各ステップ5問、合計15問。各20問の中から、まだ出ていない問題を優先して出題します。'}</Text>
+              <Pressable accessibilityRole="button" disabled={starting || !learning?.ready} accessibilityState={{ disabled: starting || !learning?.ready }} onPress={startPractice} style={[styles.practiceAction, (starting || !learning?.ready) && { opacity: .5 }]}>
+                <Text style={[styles.practiceText, ss(16, 25)]}>{starting ? (lang === 'en' ? 'Preparing…' : '準備中…') : (lang === 'en' ? 'Start practice · 15 questions' : '練習を始める・15問')}</Text>
+              </Pressable>
+              {learning?.error && <Text style={[styles.p, { color: '#9f1239' }, ss(16, 26)]}>{lang === 'en' ? 'Could not save the practice set. Please retry.' : '出題セットを保存できませんでした。もう一度お試しください。'}</Text>}
+            </> : selected === 'reference' || selected === 'examples' ? <>
               <Text style={[styles.p, ss(15, 25)]}>{selected === 'examples' ? copy.examplesHint : copy.referenceHint}</Text>
               {groups.map((group, i) => <ReadingAccordion key={i} group={group} example={selected === 'examples'} copy={copy} ss={ss} />)}
-            </> : <LessonBlocks blocks={sections[selected]} ss={ss} />}
-            {selected === 'rules' && sections.reference.length > 0 && <Pressable accessibilityRole="button" onPress={() => choose('reference')} style={styles.secondaryAction}><Text style={[styles.actionText, ss(16, 25)]}>{copy.next} →</Text></Pressable>}
-            <Pressable accessibilityRole="button" onPress={() => nav.navigate('Practice', { themeId, mode: 'grammar', examplesOnly: true, challenge: false })} style={styles.practiceAction}><Text style={[styles.practiceText, ss(16, 25)]}>{copy.practice} →</Text></Pressable>
-            {practiceSession && <Pressable accessibilityRole="button" disabled={starting||!learning?.ready} accessibilityState={{disabled:starting||!learning?.ready}} onPress={startPractice} style={[styles.secondaryAction,(starting||!learning?.ready)&&{opacity:.5}]}><Text style={[styles.actionText, ss(16, 25)]}>{starting?(lang==='en'?'Preparing…':'準備中…'):(lang === 'en' ? '3-step practice · 5 questions each' : '3ステップ練習・各5問')} →</Text></Pressable>}
-            {practiceSession&&<Text style={[styles.p,ss(14,24)]}>{lang==='en'?'20 questions per type. Each set contains 5 form, 5 meaning and 5 word-order questions. Unseen questions come first.':'各種類20問から、形・意味・語順を5問ずつ。まだ出ていない問題から出題します。'}</Text>}
-            {learning?.error&&<Text style={[styles.p,{color:'#9f1239'},ss(16,26)]}>{lang==='en'?'Could not save the practice set. Please retry.':'出題セットを保存できませんでした。もう一度お試しください。'}</Text>}
+            </> : <LessonBlocks blocks={selectedBlocks} ss={ss} />}
+            {!practiceSession && <Pressable accessibilityRole="button" onPress={() => nav.navigate('Practice', { themeId, mode: 'grammar', examplesOnly: true, challenge: false })} style={styles.practiceAction}><Text style={[styles.practiceText, ss(16, 25)]}>{copy.practice} →</Text></Pressable>}
           </View>
         )}
         <View style={{ height: spacing.xxl + insets.bottom }} />
@@ -265,7 +286,6 @@ const styles = StyleSheet.create({
   accordionBody: { padding: 14 },
   previewText: { color: '#064e3b', marginTop: 8 },
   actionText: { color: '#1e3a8a', fontWeight: '600' },
-  secondaryAction: { minHeight: 48, padding: 14, backgroundColor: '#eff6ff', borderRadius: 12, marginTop: 20 },
   practiceAction: { minHeight: 48, padding: 14, backgroundColor: '#1e3a8a', borderRadius: 12, marginTop: 16 },
   practiceText: { color: '#ffffff', fontWeight: '700', textAlign: 'center' },
   cultureCard: { width: '100%', borderWidth: 1, borderRadius: 18, padding: 16, marginTop: 20, marginBottom: 24, overflow: 'hidden' },

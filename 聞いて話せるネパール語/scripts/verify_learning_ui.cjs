@@ -19,7 +19,7 @@ function css(style,view=false){const s=flat(style),out=view?{position:'relative'
 if(k==='paddingHorizontal'){out.paddingLeft=v;out.paddingRight=v;}else if(k==='paddingVertical'){out.paddingTop=v;out.paddingBottom=v;}else if(k==='marginHorizontal'){out.marginLeft=v;out.marginRight=v;}else if(k==='marginVertical'){out.marginTop=v;out.marginBottom=v;}else if(k==='lineHeight')out[k]=v*window.caseInfo.scale+'px';else if(k==='fontSize')out[k]=v*window.caseInfo.scale;else out[k]=v;}return out;}
 function View(p){const ref=React.useRef(null);React.useEffect(()=>{if(!p.onLayout)return;const r=new ResizeObserver(()=>p.onLayout({nativeEvent:{layout:{width:ref.current.clientWidth,height:ref.current.clientHeight}}}));r.observe(ref.current);return()=>r.disconnect();},[p.onLayout]);return h('div',{ref,style:css(p.style,true)},p.children);}
 function Text(p){return h('span',{role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...css(p.style)}},p.children);}
-function Pressable(p){return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,disabled:p.disabled,onClick:p.onPress,'data-testid':p.testID,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
+function Pressable(p){return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,'aria-selected':p.accessibilityState?.selected,disabled:p.disabled,onClick:p.onPress,'data-testid':p.testID,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
 const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y)}));return h('div',{ref:el,style:{overflowY:p.horizontal?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
 const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))};
 const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode==='contain'?'contain':undefined,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
@@ -54,9 +54,41 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(process.argv.includes('--reader-only')){
+      for(const lang of ['ja','en']){
+        const en=lang==='en',labels=en?['Core rules','Forms & words','Practice','Take a break']:['基本ルール','活用・語彙','練習問題','一休み'];
+        const b=name=>page.getByRole('button',{name,exact:true}),tab=name=>page.getByRole('tab',{name,exact:true});
+        await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
+        const steps=await page.evaluate(()=>window.data.LEARNING_PATH.steps);
+        for(const step of steps){
+          await page.evaluate(({themeId,title})=>window.navigate('GrammarGuide',{themeId,title}),{themeId:step.guideThemeId,title:step.title});
+          assert.deepEqual(await page.getByRole('tab').allTextContents(),labels);
+          const before=await page.evaluate(()=>localStorage.getItem('test-study'));
+          for(const label of labels){
+            await tab(label).click();assert.equal(await tab(label).getAttribute('aria-selected'),'true');
+            if(label===labels[3])assert(await page.getByRole('heading').count()>=2,`${lang}/${step.guideThemeId}: the break tab must contain a real card`);
+            for(const removed of ['View examples & audio →','例題と音声を見る →','Explore forms & words →','活用・語彙を確認 →','3-step practice · 5 questions each →','3ステップ練習・各5問 →'])assert.equal(await b(removed).count(),0);
+            if(label!==labels[2])assert.equal(await b(en?'Start practice · 15 questions':'練習を始める・15問').count(),0);
+            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${step.id} ${label} overflow`);
+          }
+          assert.equal(await page.evaluate(()=>localStorage.getItem('test-study')),before,'Switching tabs never consumes questions');
+          await tab(labels[2]).click();await b(en?'Start practice · 15 questions':'練習を始める・15問').click();
+          const session=await page.evaluate(()=>window.route.params.studySession);assert.equal(session.items.length,15);assert(session.items.every(r=>r.themeId===step.guideThemeId));
+          await b(en?'Back':'戻る').click();assert.equal(await page.evaluate(()=>window.route.name),'GrammarGuide');
+          await b(en?'Close lesson':'教材を閉じる').click();assert.equal(await page.evaluate(()=>window.route.name),'HomeTab');
+        }
+        for(const [width,height,scale]of[[390,844,1],[320,568,1.4]]){
+          await page.setViewportSize({width,height});await page.evaluate(({lang,scale,title})=>window.boot(lang,false,{name:'GrammarGuide',params:{themeId:1,title}},scale),{lang,scale,title:steps[0].title});
+          for(const label of labels){await tab(label).click();assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${label} ${width} overflow`);if(width===390)await page.screenshot({path:path.join(work,`previews/reader-${lang}-${labels.indexOf(label)}.png`)});}
+        }
+        console.log('PASS '+lang+': all 36 lessons have four tabs; no footer cross-links; practice launches 15 questions and Back returns; narrow/large-text layouts.');
+      }
+      assert.deepEqual(errors,[]);return;
+    }
     for(const lang of ['ja','en']) {
       const en=lang==='en',b=name=>page.getByRole('button',{name,exact:true}),back=()=>b(en?'Back':'戻る').click();
-      const start=en?'3-step practice · 5 questions each →':'3ステップ練習・各5問 →';
+      const start=en?'Start practice · 15 questions':'練習を始める・15問';
+      const openPractice=async()=>{await page.getByRole('tab',{name:en?'Practice':'練習問題',exact:true}).click();await b(start).click();};
       await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
       assert.equal((await page.locator('body').textContent()).includes('はじめての7ステップ'),false);
       await b(en?'Letters & sounds':'文字と音').click();
@@ -80,7 +112,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         const step=steps[i],themeId=step.guideThemeId;
         await page.evaluate(({themeId,title})=>window.navigate('GrammarGuide',{themeId,title}),{themeId,title:step.title});
         assert.equal(await page.getByRole('tab',{name:en?'Examples':'例題',exact:true}).count(),0);
-        await b(start).click();
+        await openPractice();
         const session=await page.evaluate(()=>window.route.params.studySession);assert.equal(session.items.length,15);if(i===0)firstSession=session;
         for(let j=0;j<15;j++){
           const ref=session.items[j],e=exercises[ref.exerciseId],stage=session.questionStages[j];rated.add(ref.exerciseId);
@@ -111,13 +143,13 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           await b(next).click();
         }
         await page.getByRole('heading',{name:en?'Practice set complete':'今回の練習が終わりました',exact:true}).waitFor();
-        if(i===0){await back();assert.equal(await page.evaluate(()=>window.route.name),'HomeTab');await page.evaluate(({themeId,title})=>window.navigate('GrammarGuide',{themeId,title}),{themeId,title:step.title});await b(en?'View examples & audio →':'例題と音声を見る →').click();}
-        await back();assert.equal(await page.evaluate(()=>window.route.name),'GrammarGuide');
+        if(i===0){await back();assert.equal(await page.evaluate(()=>window.route.name),'HomeTab');await page.evaluate(({themeId,title})=>window.navigate('GrammarGuide',{themeId,title}),{themeId,title:step.title});}
+        else {await back();assert.equal(await page.evaluate(()=>window.route.name),'GrammarGuide');}
         await b(en?'Close lesson':'教材を閉じる').click();assert.equal(await page.evaluate(()=>window.route.name),'HomeTab');
       }
       const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')));
       assert.equal(Object.keys(saved.completed).length,36);assert.equal(Object.keys(saved.ratings).length,rated.size);assert(Object.values(saved.ratings).every(r=>r.result==='supported'&&r.streak===0));
-      await page.evaluate(({themeId,title})=>window.navigate('GrammarGuide',{themeId,title}),{themeId:steps[0].guideThemeId,title:steps[0].title});await b(start).click();
+      await page.evaluate(({themeId,title})=>window.navigate('GrammarGuide',{themeId,title}),{themeId:steps[0].guideThemeId,title:steps[0].title});await openPractice();
       const nextSession=await page.evaluate(()=>window.route.params.studySession);
       for(const stage of [2,3,4]){const old=firstSession.items.filter((_,i)=>firstSession.questionStages[i]===stage).map(r=>r.exerciseId);assert(!nextSession.items.filter((_,i)=>nextSession.questionStages[i]===stage).some(r=>old.includes(r.exerciseId)));}
       await page.evaluate(l=>window.boot(l,false),lang);assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).lettersRead.length),12);

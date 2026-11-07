@@ -62,7 +62,6 @@ export default function GuidedPracticeScreen() {
     <View style={[styles.card,styles.green]}><Text style={[styles.greenText,ss(36,45)]}>{items.length} {en?(session?.questionStages?'questions':'sentences'):(session?.questionStages?'問':'文')}</Text><Text style={[styles.body,ss(17,28)]}>{en?'You explored meanings and word order with support. Your progress is saved.':'文の意味と語順を、見本と一緒に確認しました。ここまでの学習を保存しました。'}</Text></View>
     <Text style={[styles.body,ss(16,27)]}>{en?'Try again tomorrow. This records supported practice, not independent speaking ability.':'明日もう一度確かめよう。見本つきでの学習を記録しています。自力で話せるかは、別の段階です。'}</Text>
     {button(en?'Back to the previous screen':'もとの画面に戻る',()=>nav.goBack(),true)}
-    {pathStep?.guideThemeId&&button(en?'Explore examples and audio':'例題と音声へ',()=>nav.replace('Practice',{themeId:pathStep.guideThemeId!,mode:'grammar',examplesOnly:true,challenge:false}))}
   </ScrollView>;
   const labels=en?['Preparation','① Choose a form','② Choose a meaning','③ Word order']:['準備','① 形を選ぶ','② 意味を選ぶ','③ 語順パズル'];
   const active=stage<=1?0:stage-1,conj=detail.conjugation;
