@@ -25,6 +25,26 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Release creation failed.' }
   }
   $existing = (& $Gh release view $tag --repo $repo --json assets | ConvertFrom-Json).assets.name
+  # Small pronunciation/practice clips are immutable assets independent of the
+  # large legacy voice archives. Verify every clip before publishing its text.
+  $audioManifestPath = Join-Path $PSScriptRoot '../文法教材/learning_audio_manifest.json'
+  if (Test-Path -LiteralPath $audioManifestPath) {
+    $audioManifest = Get-Content -LiteralPath $audioManifestPath -Raw | ConvertFrom-Json
+    $clips = $audioManifest.PSObject.Properties.Value | Sort-Object sha256 -Unique
+    foreach ($clip in $clips) {
+      $name = 'learning-' + $clip.sha256 + '.mp3'
+      $local = Join-Path $PSScriptRoot ('../expo-app/assets/learning-audio/' + $name)
+      if ((Get-FileHash -LiteralPath $local -Algorithm SHA256).Hash.ToLowerInvariant() -ne $clip.sha256) { throw ('Local audio hash mismatch: ' + $name) }
+      if ($existing -notcontains $name) {
+        & $Gh release upload $tag $local --repo $repo
+        if ($LASTEXITCODE -ne 0) { throw ('Audio upload failed: ' + $name) }
+      }
+      $check = Join-Path $work 'verify-audio.tmp'
+      Invoke-WebRequest -Uri $clip.url -OutFile $check -UseBasicParsing
+      if ((Get-FileHash -LiteralPath $check -Algorithm SHA256).Hash.ToLowerInvariant() -ne $clip.sha256 -or (Get-Item -LiteralPath $check).Length -ne $clip.bytes) { throw ('Public audio mismatch: ' + $name) }
+    }
+    Write-Output ('Verified pronunciation/practice clips: ' + $clips.Count)
+  }
   $files = Get-ChildItem -LiteralPath $work -Filter 'content-*.json'
   foreach ($file in $files) {
     if ($existing -notcontains $file.Name) {

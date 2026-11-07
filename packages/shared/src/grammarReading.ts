@@ -4,15 +4,15 @@ export type ReadingPart = 'rules' | 'reference' | 'examples' | 'breaks';
 export type ReadingGroup = { title: string; blocks: GuideBlock[]; subtitle?: string };
 export const readingCopy = (lang: string) => lang === 'ja' ? {
   rules: '基本ルール', reference: '活用・語彙', examples: '例題', breaks: 'ひと休み・会話',
-  close: '教材を閉じる', practice: 'このテーマを練習', empty: '教材を準備しています',
+  close: '教材を閉じる', practice: '例題と音声を見る', empty: '教材を準備しています',
   referenceHint: '確かめたい項目を開くと、活用や語の使い分けを読めます。',
-  examplesHint: '例題を開くと、読み方・訳・単語の意味を確認できます。音声は「このテーマを練習」から。',
+  examplesHint: '例題を開くと、読み方・訳・単語の意味を確認できます。音声は「例題と音声を見る」から。',
   extra: '補足と復習', open: '開く', hide: '閉じる', next: '活用・語彙を確認',
 } : {
   rules: 'Core rules', reference: 'Forms & words', examples: 'Examples', breaks: 'Culture & speech',
-  close: 'Close lesson', practice: 'Practise this topic', empty: 'This lesson is being prepared',
+  close: 'Close lesson', practice: 'View examples & audio', empty: 'This lesson is being prepared',
   referenceHint: 'Open a topic to check forms and how words are used.',
-  examplesHint: 'Open an example for its reading, translation and word meanings. For audio, choose “Practise this topic”.',
+  examplesHint: 'Open an example for its reading, translation and word meanings. For audio, choose “View examples & audio”.',
   extra: 'Notes & review', open: 'Open', hide: 'Close', next: 'Explore forms & words',
 };
 

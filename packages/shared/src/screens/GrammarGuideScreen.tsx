@@ -133,7 +133,7 @@ function Block({ b, ss }: { b: GuideBlock; ss: ReturnType<typeof useScaleStyle> 
     }
     return (
       <View style={styles.note}>
-        <Text style={[styles.noteMark, ss(14)]}>⚠️ </Text>
+        <Text style={[styles.noteMark, ss(14)]}></Text>
         <Rich text={b.text} style={[styles.noteText, ss(13, 20)]} />
       </View>
     );
@@ -218,7 +218,8 @@ export default function GrammarGuideScreen() {
               {groups.map((group, i) => <ReadingAccordion key={i} group={group} example={selected === 'examples'} copy={copy} ss={ss} />)}
             </> : <LessonBlocks blocks={sections[selected]} ss={ss} />}
             {selected === 'rules' && sections.reference.length > 0 && <Pressable accessibilityRole="button" onPress={() => choose('reference')} style={styles.secondaryAction}><Text style={[styles.actionText, ss(16, 25)]}>{copy.next} →</Text></Pressable>}
-            <Pressable accessibilityRole="button" onPress={() => nav.replace('Practice', { themeId, mode: 'grammar', ...(studySession ? { startIndex: studySession.items[0]?.index ?? 0, studySession } : {}) })} style={styles.practiceAction}><Text style={[styles.practiceText, ss(16, 25)]}>{copy.practice} →</Text></Pressable>
+            <Pressable accessibilityRole="button" onPress={() => nav.navigate('Practice', { themeId, mode: 'grammar', examplesOnly: true, challenge: false })} style={styles.practiceAction}><Text style={[styles.practiceText, ss(16, 25)]}>{copy.practice} →</Text></Pressable>
+            {studySession && <Pressable accessibilityRole="button" onPress={() => nav.replace('Practice', { themeId, mode: 'grammar', studySession, challenge: false })} style={styles.secondaryAction}><Text style={[styles.actionText, ss(16, 25)]}>{lang === 'en' ? 'Start step practice' : 'ステップ練習へ'} →</Text></Pressable>}
           </View>
         )}
         <View style={{ height: spacing.xxl + insets.bottom }} />

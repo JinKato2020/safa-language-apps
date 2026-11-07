@@ -18,6 +18,8 @@ import { useLearning } from '../LearningContext';
 import { learningCopy } from '../learningCopy';
 import { learningStyles } from '../LearningLaunch';
 import { rateStudy, resolveStudy, studyKey, stepSignature, type StudyRef } from '../learning';
+import GuidedPracticeScreen from './GuidedPracticeScreen';
+import ExampleStudyScreen from './ExampleStudyScreen';
 
 function tokenize(text: string): string[] {
   return text
@@ -44,6 +46,14 @@ function SpeakerIcon({ size = 18 }: { size?: number }) {
 }
 
 export default function PracticeScreen() {
+  const learning = useLearning();
+  const params = useRoute<R>().params;
+  if (learning && params.studySession && !params.challenge) return <GuidedPracticeScreen key={JSON.stringify(params)} />;
+  if (learning && params.examplesOnly && params.mode === 'grammar') return <ExampleStudyScreen key={JSON.stringify(params)} />;
+  return <ChallengePracticeScreen />;
+}
+
+function ChallengePracticeScreen() {
   const contentNames = useAppData().CONTENT_NAMES;
   const data = useAppData();
   const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio, VOCAB, GRAMMAR_VOCAB, CONV_VOCAB, JP_READING, nativeLang, vocabTokenize, grammarTextOnlyLabel } = data;

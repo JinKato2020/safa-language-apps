@@ -12,6 +12,7 @@ import {
   AppDataProvider,
   SettingsDevelopmentProvider,
   GrammarGuideImageProvider,
+  LearningAudioProvider,
   useI18n,
   useAppData,
   type AppData,
@@ -26,6 +27,7 @@ import { POSTER_LESSONS } from './src/posterLessons';
 import { posterUri, ensurePosterPack } from './src/posterPackLoader';
 import { PurchasesProvider } from './src/PurchasesProvider';
 import { resolveGuideImage } from './src/guideImageCache';
+import { resolveLearningAudio } from './src/learningAudioCache';
 import { useEngagement } from './src/useEngagement';
 
 // 文法「教材」(ルール解説)・文法テーマ名はOTA配信(overlayパック経由)。本体にバンドルしない。
@@ -145,6 +147,7 @@ export default function App() {
     // PurchasesProvider は最外側(RC 初期化を1回だけ・言語/パック切替で再マウントしない)。
     // 未注入のアプリ(App B/C)では shared 既定=全開放。App A はここで買い切り判定を注入する。
     <GrammarGuideImageProvider resolve={resolveGuideImage}>
+    <LearningAudioProvider resolve={resolveLearningAudio}>
     <PurchasesProvider>
       <I18nProvider
         translations={{ ja, ne, en }}
@@ -164,6 +167,7 @@ export default function App() {
         </SettingsProvider>
       </I18nProvider>
     </PurchasesProvider>
+    </LearningAudioProvider>
     </GrammarGuideImageProvider>
   );
 }

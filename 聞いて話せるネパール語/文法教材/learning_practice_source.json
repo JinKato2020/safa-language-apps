@@ -1,0 +1,35 @@
+{
+  "sentences": [
+    [1,"म बस चालक हुँ।","私はバスの運転手です。","I am a bus driver.","ho"],
+    [1,"हामी पुराना साथी हौं।","私たちは昔からの友人です。","We are old friends.","ho"],
+    [1,"उहाँ किसान हुनुहुन्छ।","あの方は農家の方です。","That person is a farmer.","ho"],
+    [2,"तपाईं पसलमा हुनुहुन्छ।","あなたは店にいます。","You are at the shop.","chha"],
+    [2,"हामी बगैंचामा छौं।","私たちは庭にいます。","We are in the garden.","chha"],
+    [2,"म भान्सामा छु।","私は台所にいます。","I am in the kitchen.","chha"],
+    [3,"म तयार छु।","私は準備ができています。","I am ready.","chha"],
+    [3,"तपाईं खुसी हुनुहुन्छ।","あなたはうれしいです。","You are happy.","chha"],
+    [3,"हामी व्यस्त छौं।","私たちは忙しいです。","We are busy.","chha"],
+    [4,"म साँझ घरमा हुन्छु।","私は夕方は普段、家にいます。","I am usually at home in the evening.","hunchha"],
+    [4,"हामी शनिबार बजारमा हुन्छौं।","私たちは土曜日は普段、市場にいます。","We are usually at the market on Saturdays.","hunchha"],
+    [4,"जाडोमा रात लामो हुन्छ।","冬は夜が長くなります。","Nights are long in winter.",null],
+    [5,"कलम झोलामा छ।","ペンはかばんの中にあります。","The pen is in the bag.",null],
+    [5,"यो आमाको चस्मा हो।","これは母の眼鏡です。","These are my mother's glasses.",null],
+    [5,"उहाँ बसबाट आउनुहुन्छ।","あの方はバスで来ます。","That person comes by bus.",null],
+    [6,"तपाईंको झोला कहाँ छ?","あなたのかばんはどこにありますか？","Where is your bag?",null],
+    [6,"पसल कहिले खुल्छ?","店はいつ開きますか？","When does the shop open?",null],
+    [6,"यो झोला कति हो?","このかばんはいくらですか？","How much is this bag?",null],
+    [7,"नमस्ते, मेरो नाम आशा हो।","こんにちは。私の名前はアーシャです。","Hello. My name is Asha.",null],
+    [7,"म धनगढीमा बस्छु।","私はダンガディに住んでいます。","I live in Dhangadhi.",null],
+    [7,"म अहिले नेपाली सिक्दै छु।","私は今、ネパール語を学んでいます。","I am learning Nepali now.",null]
+  ],
+  "words": {
+    "अहिले":["ahile","今","now"],"नेपाली":["nepālī","ネパール語（この文では）","Nepali (language; here)"],"सिक्दै":["sikdai","学んで（सिक्दै छु＝学んでいます）","learning (sikdai chu = am learning)"],
+    "म":["ma","私","I"],"हामी":["hāmī","私たち","we"],"तपाईं":["tapāī̃","あなた（敬意）","you (respectful)"],"उहाँ":["uhā̃","あの方・彼／彼女（敬意）","that person; he/she (respectful)"],
+    "बस":["bas","バス","bus"],"चालक":["cālak","運転手","driver"],"हुँ":["hũ","です（私）","am (identity)"],"पुराना":["purānā","古くからの・昔からの","old; long-standing"],"साथी":["sāthī","友人","friend(s)"],"हौं":["haũ","です（私たち）","are (we; identity)"],"किसान":["kisān","農家の人","farmer"],"हुनुहुन्छ":["hunuhuncha","です・います（敬意）","are/is (respectful)"],
+    "पसलमा":["pasalmā","店に（पसल＋मा）","at the shop (pasal + mā)"],"बगैंचामा":["bagaĩcāmā","庭に（बगैंचा＋मा）","in the garden (bagaĩcā + mā)"],"छौं":["chaũ","います・～の状態です（私たち）","are (we; location/state)"],"भान्सामा":["bhānsāmā","台所に（भान्सा＋मा）","in the kitchen (bhānsā + mā)"],"छु":["chu","います・～の状態です（私）","am (location/state)"],
+    "तयार":["tayār","準備ができた","ready"],"खुसी":["khusī","うれしい","happy; pleased"],"व्यस्त":["vyasta","忙しい","busy"],"साँझ":["sā̃jh","夕方","evening"],"घरमा":["gharmā","家に（घर＋मा）","at home (ghar + mā)"],"हुन्छु":["hunchu","普段います（私・この文では）","am usually (I; here)"],"शनिबार":["śanibār","土曜日","Saturday"],"बजारमा":["bajārmā","市場に（बजार＋मा）","at the market (bajār + mā)"],"हुन्छौं":["hunchaũ","普段います（私たち・この文では）","are usually (we; here)"],"जाडोमा":["jāḍomā","冬に（जाडो＋मा）","in winter (jāḍo + mā)"],"रात":["rāt","夜","night"],"लामो":["lāmo","長い","long"],"हुन्छ":["huncha","一般的に～になる／～である","is/becomes generally"],
+    "कलम":["kalam","ペン","pen"],"झोलामा":["jholāmā","かばんの中に（झोला＋मा）","in the bag (jholā + mā)"],"छ":["cha","あります（この文では）","is; exists (here)"],"यो":["yo","これ・この","this"],"आमाको":["āmāko","母の（आमा＋को）","mother's (āmā + ko)"],"चस्मा":["casmā","眼鏡","glasses"],"हो":["ho","です（何であるか・値段）","is (identity/price)"],"बसबाट":["basbāṭa","バスで（बस＋बाट）","by bus (bas + bāṭa)"],"आउनुहुन्छ":["āunuhuncha","来ます（敬意）","comes/come (respectful)"],
+    "तपाईंको":["tapāī̃ko","あなたの（तपाईं＋को）","your (tapāī̃ + ko)"],"झोला":["jholā","かばん","bag"],"कहाँ":["kahā̃","どこ","where"],"पसल":["pasal","店","shop"],"कहिले":["kahile","いつ","when"],"खुल्छ":["khulcha","開きます","opens"],"कति":["kati","いくら・どれくらい","how much; how many"],
+    "नमस्ते":["namaste","こんにちは（挨拶）","hello (greeting)"],"मेरो":["mero","私の","my"],"नाम":["nām","名前","name"],"आशा":["āśā","アーシャ（人名）","Asha (a name)"],"धनगढीमा":["dhangadhīmā","ダンガディに（地名＋मा）","in Dhangadhi (place + mā)"],"बस्छु":["baschu","住んでいます（私）","live (I)"],"तपाईंलाई":["tapāī̃lāī","あなたに（तपाईं＋लाई）","you (object of meeting; tapāī̃ + lāī)"],"भेटेर":["bheṭera","会って・会えて","having met; on meeting"],"लाग्यो":["lāgyo","感じました（खुसी लाग्यो＝うれしく感じた）","felt (khusī lāgyo = felt pleased)"]
+  }
+}

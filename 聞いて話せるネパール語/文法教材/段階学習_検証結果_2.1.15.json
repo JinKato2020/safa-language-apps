@@ -1,0 +1,24 @@
+{
+  "version": "2.1.15",
+  "ota": 1215,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "milestones": 7,
+  "independentPracticeSentences": 21,
+  "newPronunciationClips": 10,
+  "newPracticeClips": 21,
+  "newAudioBytes": 407952,
+  "existingGrammarExamplesPreserved": 528,
+  "existingConversationExamplesPreserved": 1800,
+  "existingWordsPreserved": 1000,
+  "uiLayouts": 24,
+  "readerLayouts": 360,
+  "readerDisclosures": 182,
+  "audioAllDecoded": true,
+  "legacyPathItemsPreserved": 35,
+  "realDeviceVerified": false,
+  "nativeSpeakerPhoneticsReviewed": false,
+  "listeningOnlyFourthStage": "proposal only; not implemented"
+}

@@ -72,3 +72,5 @@ export { default as FlashcardScreen } from './screens/FlashcardScreen';
 export { default as SettingsScreen } from './screens/SettingsScreen';
 export { default as PaywallScreen } from './screens/PaywallScreen';
 export { default as GrammarGuideScreen } from './screens/GrammarGuideScreen';
+export { LearningAudioProvider, type LearningAudioResolver } from './LearningSound';
+export type { LearningAudio } from './learning';

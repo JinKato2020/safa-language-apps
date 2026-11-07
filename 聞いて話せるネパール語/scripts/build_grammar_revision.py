@@ -283,7 +283,8 @@ for lang in overlays:
         for n,r in enumerate(lessons[key],1):
             bs += [block('h',bilingual(f'例題{n}',f'Exercise {n}',lang)),block('p',r[lang]+'\n'+r['ne']+'\n'+r['roman']),word_table(r,lang),block('p',bilingual('しくみ：','How it works: ',lang)+construction(r,k,lang))]
         bs += [block('h',bilingual('自分で組み立てる練習','Build your own sentence',lang)),block('p',bilingual('上の例題から一つ選び、日本語だけを見て文を作りましょう。次に名詞・場所・時を一つ替え、後置詞と動詞がどう変わるかを説明してください。主語だけを替えて終わらず、伝えたい内容を替えて練習します。','Choose an example and reconstruct it from the translation. Change a noun, place or time and explain any required changes to the postposition or verb. Change the intended message, not only the subject.',lang)),block('h',bilingual('復習する教材','Review topics',lang)),block('p',' / '.join(f'{n}: {titles[lang][str(n)]}' for n in REFS[k]))]
-        guides[lang][key]=bs
+        from build_scaffolded_learning import clean_guide
+        guides[lang][key]=clean_guide(bs)
 
 # Carry the same respectful examples into retained reference tables and notes.
 replacements = {}

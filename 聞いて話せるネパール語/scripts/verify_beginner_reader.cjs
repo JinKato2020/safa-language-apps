@@ -81,7 +81,7 @@ cache['../Text']={exports:{Text}};
 cache['../SettingsContext']={exports:{useScaleStyle:()=> (fontSize,lineHeight)=>({fontSize,lineHeight}),useGlobalScaleStyle:()=> (fontSize)=>({fontSize})}};
 cache['../i18n']={exports:{useI18n:()=>({lang:window.caseInfo.lang})}};
 cache['react-native-safe-area-context']={exports:{useSafeAreaInsets:()=>({top:0,bottom:0})}};
-cache['@react-navigation/native']={exports:{useNavigation:()=>({goBack:()=>window.nav.push(['back']),replace:(...x)=>window.nav.push(x)}),useRoute:()=>({params:{themeId:Number(window.caseInfo.id),title:data[window.caseInfo.lang].titles[window.caseInfo.id]}})}};
+cache['@react-navigation/native']={exports:{useNavigation:()=>({navigate:(...x)=>window.nav.push(x),goBack:()=>window.nav.push(['back']),replace:(...x)=>window.nav.push(x)}),useRoute:()=>({params:{themeId:Number(window.caseInfo.id),title:data[window.caseInfo.lang].titles[window.caseInfo.id]}})}};
 const resolveImage=async image=>({uri:images[image.sha256]});
 cache['../grammarGuide']={exports:{useGrammarGuide:()=>data[window.caseInfo.lang].guides,useGrammarGuideImageResolver:()=>resolveImage}};
 const ui=require('reader'),policy=require('../grammarReading'),root=require('react-dom/client').createRoot(document.getElementById('root'));
@@ -128,12 +128,12 @@ fs.writeFileSync(path.join(work, 'reader.html'), '<!doctype html><meta charset="
       }
       await page.getByRole('button',{name:policy.readingCopy(lang).practice+' →',exact:true}).click();
       const action=await page.evaluate(()=>window.nav.at(-1));
-      assert.deepEqual(action,['Practice',{themeId:Number(id),mode:'grammar'}]);
+      assert.deepEqual(action,['Practice',{themeId:Number(id),mode:'grammar',examplesOnly:true,challenge:false}]);
       checkGuideAction(...action);
       await page.getByRole('button',{name:policy.readingCopy(lang).close,exact:true}).click();
       assert.deepEqual(await page.evaluate(()=>window.nav.at(-1)),['back']);
     }
-    const shots=[['ja','1','rules'],['ja','6','reference'],['ja','2','examples'],['en','5','reference']];
+    const shots=[['ja','1','rules'],['ja','6','reference'],['ja','2','reference'],['en','5','reference']];
     fs.mkdirSync(path.join(ROOT,'docs/previews'),{recursive:true});
     for(const [lang,id,part] of shots){await page.evaluate(c=>window.renderCase(c),{lang,id,scale:1});if(part!=='rules')await page.getByRole('tab').filter({hasText:policy.readingCopy(lang)[part]}).click();if(part==='examples')await page.locator('button[aria-expanded]').first().click();await page.screenshot({path:path.join(ROOT,`docs/previews/nepali-reader-${require('../expo-app/app.json').expo.version}-${lang}-${id}.png`)});}
     assert.deepEqual(errors,[]);

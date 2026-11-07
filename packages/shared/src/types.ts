@@ -60,6 +60,8 @@ export type RootStackParamList = {
     startIndex?: number;
     mode?: 'grammar';
     studySession?: StudySession;
+    challenge?: boolean;
+    examplesOnly?: boolean;
   };
   Listening: {
     themeId: number;

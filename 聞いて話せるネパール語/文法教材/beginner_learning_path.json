@@ -1,27 +1,164 @@
 {
   "ja": {
     "title": "はじめての7ステップ",
-    "description": "1回5文。教材で形を確かめ、声に出し、答えと音声で振り返ろう。順番はおすすめです。どのテーマからでも始められます。",
+    "description": "1ステップ3文。ことばを知る → 活用を選ぶ → 意味を選ぶ → 語順パズル。活用を扱わない文は意味選択から。順番は自由、見本はいつでも確認できます。",
     "intro": [
       {
-        "title": "まず、音声と読みを並べよう",
-        "body": "文字が初めてでも、ローマ字と音声を一緒に使えます。म विद्यार्थी हुँ（ma vidyārthī hũ／私は学生です）。練習ではカードで答えを確かめ、音声を聞いてまねしてみましょう。"
+        "title": "文字・読み・意味を音と一緒に",
+        "body": "まず一文を聞いてみよう。読めない文字があっても、読みと訳を手がかりにできます。",
+        "samples": [
+          {
+            "id": "sentence-i",
+            "ne": "म विद्यार्थी हुँ।",
+            "roman": "ma vidyārthī hũ",
+            "meaning": "私は学生です。",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2cf210d7378eaaca113f06f88394821a6316b4ebdd564df12c13211f8e28c14c.mp3",
+              "sha256": "2cf210d7378eaaca113f06f88394821a6316b4ebdd564df12c13211f8e28c14c",
+              "bytes": 12528
+            }
+          }
+        ]
       },
       {
-        "title": "a と ā は同じ目印ではない",
-        "body": "a は軽い「ア」に近い音、ā は口を開く「ア」の目印です。ī・ū の線も文字の区別を示します。ネパール語を「線があれば必ず2倍長い」と決めず、実際の音声で確かめましょう。"
+        "title": "अ と आ を聞き比べよう",
+        "body": "a と ā は母音の違いを表す読みの目印です。ā をいつも2倍長くする、とは決めず、口の開きと響きの違いを聞いてみよう。",
+        "samples": [
+          {
+            "id": "vowel-a",
+            "ne": "अ",
+            "roman": "a",
+            "meaning": "母音の音",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-808530afe4cc282d0b3879e068d5b287be2576bf020b950850611b0d6c798ba1.mp3",
+              "sha256": "808530afe4cc282d0b3879e068d5b287be2576bf020b950850611b0d6c798ba1",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "vowel-aa",
+            "ne": "आ",
+            "roman": "ā",
+            "meaning": "母音の音",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-b31c9d95487e8d8ffe10a1d6e6e72e1041b4d3b00095e4f80504b4e768401636.mp3",
+              "sha256": "b31c9d95487e8d8ffe10a1d6e6e72e1041b4d3b00095e4f80504b4e768401636",
+              "bytes": 11232
+            }
+          }
+        ]
       },
       {
-        "title": "h が付く子音は、息も聞こう",
-        "body": "k と kh、t と th などは息の強さが違います。kh は k のあとに強く息を出す音です。英語の th の音ではありません。点のある ṭ・ḍ は舌先を少し後ろへ寄せ、t・d と区別します。"
+        "title": "क と ख：息の強さ",
+        "body": "ख（kha）は、क（ka）より強く息を出します。h を別の音として足すのでなく、一つの子音として聞こう。",
+        "samples": [
+          {
+            "id": "ka",
+            "ne": "क",
+            "roman": "ka",
+            "meaning": "文字の音",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-5f2c90da9203b89b4d6ce246085a9dfdd802020f501f8df3cb189f7be79e307a.mp3",
+              "sha256": "5f2c90da9203b89b4d6ce246085a9dfdd802020f501f8df3cb189f7be79e307a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "kha",
+            "ne": "ख",
+            "roman": "kha",
+            "meaning": "文字の音",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-a98c5cb8e081f07cba4245f972236207f42567d3ece90fdc0e42988b6316b167.mp3",
+              "sha256": "a98c5cb8e081f07cba4245f972236207f42567d3ece90fdc0e42988b6316b167",
+              "bytes": 11232
+            }
+          }
+        ]
       },
       {
-        "title": "鼻に響く母音もある",
-        "body": "यहाँ（yahā̃／ここ）の ã・ā̃ の波線は、母音を鼻にも響かせる印です。最後に別の「ン」を足すだけの音ではありません。हुँ（hũ／私は～です）も、音声の鼻への響きを聞いてみましょう。"
+        "title": "त と ट：舌先の位置",
+        "body": "त（ta）は舌先を上の歯に、ट（ṭa）は舌先を少し後ろに寄せて出します。点のある ṭ は別の文字の音です。",
+        "samples": [
+          {
+            "id": "ta",
+            "ne": "त",
+            "roman": "ta",
+            "meaning": "文字の音",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2d09cddcc2e992146e27fd50a8d3cee1e5ccdff7f5b7970e042b92d42f9cece0.mp3",
+              "sha256": "2d09cddcc2e992146e27fd50a8d3cee1e5ccdff7f5b7970e042b92d42f9cece0",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "tta",
+            "ne": "ट",
+            "roman": "ṭa",
+            "meaning": "文字の音",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-885806b12c525415d82b5d2102d8699bb49cb0fe25133f8a92564b1a0eabf5bd.mp3",
+              "sha256": "885806b12c525415d82b5d2102d8699bb49cb0fe25133f8a92564b1a0eabf5bd",
+              "bytes": 11232
+            }
+          }
+        ]
       },
       {
-        "title": "文末の形をひとつずつ",
-        "body": "म विद्यार्थी हुँ は「私＋学生＋です」。動詞は文末に来ることが多い一方、人称や敬意で形が変わります。まず म（私）・हामी（私たち）・तपाईं（あなた）・उहाँ（彼／彼女・敬意）を使い、हो・छ・हुन्छ の役割を順に学びます。"
+        "title": "波線は、鼻に響く母音",
+        "body": "यहाँ の ā̃、हुँ の ũ は、母音を鼻にも響かせます。最後に別の「ン」を足す音ではありません。",
+        "samples": [
+          {
+            "id": "here",
+            "ne": "यहाँ",
+            "roman": "yahā̃",
+            "meaning": "ここ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-80c2cafa1a2908e60e9e6a6b9ebd4cc2fe3506891121080e1ffdb0d19d45284b.mp3",
+              "sha256": "80c2cafa1a2908e60e9e6a6b9ebd4cc2fe3506891121080e1ffdb0d19d45284b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "am",
+            "ne": "हुँ",
+            "roman": "hũ",
+            "meaning": "です（私・何者かを言う形）",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-8d5c794d33060472d338266a738547157c798243d64ad0617df1a6f3a02c9774.mp3",
+              "sha256": "8d5c794d33060472d338266a738547157c798243d64ad0617df1a6f3a02c9774",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "title": "主語が変わると、文末も変わる",
+        "body": "म（私）には हुँ、तपाईं（あなた・敬意）には हुनुहुन्छ。まずは音と一緒に、この組み合わせを確かめよう。",
+        "samples": [
+          {
+            "id": "sentence-i",
+            "ne": "म विद्यार्थी हुँ।",
+            "roman": "ma vidyārthī hũ",
+            "meaning": "私は学生です。",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2cf210d7378eaaca113f06f88394821a6316b4ebdd564df12c13211f8e28c14c.mp3",
+              "sha256": "2cf210d7378eaaca113f06f88394821a6316b4ebdd564df12c13211f8e28c14c",
+              "bytes": 12528
+            }
+          },
+          {
+            "id": "sentence-you",
+            "ne": "तपाईं विद्यार्थी हुनुहुन्छ।",
+            "roman": "tapāī̃ vidyārthī hunuhuncha",
+            "meaning": "あなたは学生です。",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-883ef37f93b83dda45f82b14f26850ea1e2d12413c7af6eb63a435035d70a319.mp3",
+              "sha256": "883ef37f93b83dda45f82b14f26850ea1e2d12413c7af6eb63a435035d70a319",
+              "bytes": 15264
+            }
+          }
+        ]
       }
     ],
     "steps": [
@@ -34,31 +171,22 @@
             "mode": "grammar",
             "themeId": 1,
             "index": 0,
-            "ne": "म विद्यार्थी हुँ।"
+            "ne": "म बस चालक हुँ।",
+            "exerciseId": "practice-01-01"
           },
           {
             "mode": "grammar",
             "themeId": 1,
             "index": 1,
-            "ne": "तपाईं विद्यार्थी हुनुहुन्छ।"
+            "ne": "हामी पुराना साथी हौं।",
+            "exerciseId": "practice-01-02"
           },
           {
             "mode": "grammar",
             "themeId": 1,
             "index": 2,
-            "ne": "उहाँ विद्यार्थी हुनुहुन्छ।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 1,
-            "index": 4,
-            "ne": "उहाँहरू विद्यार्थी हुनुहुन्न।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 1,
-            "index": 12,
-            "ne": "तपाईंहरू शिक्षक हुनुहुन्छ।"
+            "ne": "उहाँ किसान हुनुहुन्छ।",
+            "exerciseId": "practice-01-03"
           }
         ],
         "guideThemeId": 1
@@ -72,31 +200,22 @@
             "mode": "grammar",
             "themeId": 2,
             "index": 0,
-            "ne": "म घरमा छु।"
+            "ne": "तपाईं पसलमा हुनुहुन्छ।",
+            "exerciseId": "practice-02-01"
           },
           {
             "mode": "grammar",
             "themeId": 2,
             "index": 1,
-            "ne": "तपाईं घरमा हुनुहुन्छ?"
+            "ne": "हामी बगैंचामा छौं।",
+            "exerciseId": "practice-02-02"
           },
           {
             "mode": "grammar",
             "themeId": 2,
-            "index": 5,
-            "ne": "यहाँ किताब छ।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 2,
-            "index": 6,
-            "ne": "त्यहाँ कापी छैन।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 2,
-            "index": 9,
-            "ne": "तपाईंहरू कहाँ हुनुहुन्छ?"
+            "index": 2,
+            "ne": "म भान्सामा छु।",
+            "exerciseId": "practice-02-03"
           }
         ],
         "guideThemeId": 2
@@ -110,31 +229,22 @@
             "mode": "grammar",
             "themeId": 3,
             "index": 0,
-            "ne": "यो फूल सुन्दर छ।"
+            "ne": "म तयार छु।",
+            "exerciseId": "practice-03-01"
           },
           {
             "mode": "grammar",
             "themeId": 3,
-            "index": 3,
-            "ne": "के यो पानी चिसो छ?"
+            "index": 1,
+            "ne": "तपाईं खुसी हुनुहुन्छ।",
+            "exerciseId": "practice-03-02"
           },
           {
             "mode": "grammar",
             "themeId": 3,
-            "index": 6,
-            "ne": "म व्यस्त छु।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 3,
-            "index": 7,
-            "ne": "तपाईं सन्चै हुनुहुन्छ?"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 3,
-            "index": 9,
-            "ne": "उहाँहरू व्यस्त हुनुहुन्छ।"
+            "index": 2,
+            "ne": "हामी व्यस्त छौं।",
+            "exerciseId": "practice-03-03"
           }
         ],
         "guideThemeId": 3
@@ -148,31 +258,22 @@
             "mode": "grammar",
             "themeId": 4,
             "index": 0,
-            "ne": "जाडोमा चिसो हुन्छ।"
+            "ne": "म साँझ घरमा हुन्छु।",
+            "exerciseId": "practice-04-01"
           },
           {
             "mode": "grammar",
             "themeId": 4,
             "index": 1,
-            "ne": "गर्मीमा दिन लामो हुन्छ।"
+            "ne": "हामी शनिबार बजारमा हुन्छौं।",
+            "exerciseId": "practice-04-02"
           },
           {
             "mode": "grammar",
             "themeId": 4,
             "index": 2,
-            "ne": "यहाँ बिहान शान्त हुन्छ।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 4,
-            "index": 3,
-            "ne": "आइतबार बजार बन्द हुन्छ।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 4,
-            "index": 5,
-            "ne": "के यहाँ सधैं यस्तो हुन्छ?"
+            "ne": "जाडोमा रात लामो हुन्छ।",
+            "exerciseId": "practice-04-03"
           }
         ],
         "guideThemeId": 4
@@ -186,31 +287,22 @@
             "mode": "grammar",
             "themeId": 5,
             "index": 0,
-            "ne": "म घरमा बस्छु।"
+            "ne": "कलम झोलामा छ।",
+            "exerciseId": "practice-05-01"
           },
           {
             "mode": "grammar",
             "themeId": 5,
             "index": 1,
-            "ne": "म नेपालबाट आएँ।"
+            "ne": "यो आमाको चस्मा हो।",
+            "exerciseId": "practice-05-02"
           },
           {
             "mode": "grammar",
             "themeId": 5,
             "index": 2,
-            "ne": "हामी साथीहरूसँग जान्छौं।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 5,
-            "index": 6,
-            "ne": "मसँग पैसा छैन।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 5,
-            "index": 7,
-            "ne": "तपाईंसँग कलम छ?"
+            "ne": "उहाँ बसबाट आउनुहुन्छ।",
+            "exerciseId": "practice-05-03"
           }
         ],
         "guideThemeId": 5
@@ -224,31 +316,22 @@
             "mode": "grammar",
             "themeId": 6,
             "index": 0,
-            "ne": "यो के हो?"
+            "ne": "तपाईंको झोला कहाँ छ?",
+            "exerciseId": "practice-06-01"
           },
           {
             "mode": "grammar",
             "themeId": 6,
             "index": 1,
-            "ne": "त्यो कसको किताब हो?"
+            "ne": "पसल कहिले खुल्छ?",
+            "exerciseId": "practice-06-02"
           },
           {
             "mode": "grammar",
             "themeId": 6,
             "index": 2,
-            "ne": "तपाईं कहाँ बस्नुहुन्छ?"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 6,
-            "index": 3,
-            "ne": "यो कति पर्छ?"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 6,
-            "index": 4,
-            "ne": "यहाँ को छ?"
+            "ne": "यो झोला कति हो?",
+            "exerciseId": "practice-06-03"
           }
         ],
         "guideThemeId": 6
@@ -259,67 +342,1029 @@
         "goal": "会話モードの短い文で、名前・出身・住まいなどを言ってみよう。",
         "items": [
           {
-            "mode": "conversation",
-            "themeId": 1,
+            "mode": "grammar",
+            "themeId": 7,
             "index": 0,
-            "ne": "मेरो नाम राम हो।",
-            "levelId": 1
+            "ne": "नमस्ते, मेरो नाम आशा हो।",
+            "exerciseId": "practice-07-01"
           },
           {
-            "mode": "conversation",
-            "themeId": 1,
+            "mode": "grammar",
+            "themeId": 7,
             "index": 1,
-            "ne": "म नेपाली हुँ।",
-            "levelId": 1
+            "ne": "म धनगढीमा बस्छु।",
+            "exerciseId": "practice-07-02"
           },
           {
-            "mode": "conversation",
-            "themeId": 1,
-            "index": 4,
-            "ne": "म काठमाडौंमा बस्छु।",
-            "levelId": 1
-          },
-          {
-            "mode": "conversation",
-            "themeId": 1,
-            "index": 5,
-            "ne": "म विद्यार्थी हुँ।",
-            "levelId": 1
-          },
-          {
-            "mode": "conversation",
-            "themeId": 1,
-            "index": 6,
-            "ne": "म पच्चीस वर्षको छु।",
-            "levelId": 1
+            "mode": "grammar",
+            "themeId": 7,
+            "index": 2,
+            "ne": "म अहिले नेपाली सिक्दै छु।",
+            "exerciseId": "practice-07-03"
           }
         ]
       }
-    ]
+    ],
+    "exercises": {
+      "practice-01-01": {
+        "ne": "म बस चालक हुँ।",
+        "jp": "私はバスの運転手です。",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "私"
+          },
+          {
+            "text": "बस",
+            "roman": "bas",
+            "meaning": "バス"
+          },
+          {
+            "text": "चालक",
+            "roman": "cālak",
+            "meaning": "運転手"
+          },
+          {
+            "text": "हुँ",
+            "roman": "hũ",
+            "meaning": "です（私）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-cb0f977b8e43fe1a767152a297df13c83b9464a0caf65c8be012ef9272aff3cf.mp3",
+          "sha256": "cb0f977b8e43fe1a767152a297df13c83b9464a0caf65c8be012ef9272aff3cf",
+          "bytes": 12384
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "हुँ",
+            "roman": "hũ",
+            "meaning": "です（私）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "हौं",
+            "roman": "haũ",
+            "meaning": "です（私たち）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "हो の仲間：何者かを言う"
+      },
+      "practice-01-02": {
+        "ne": "हामी पुराना साथी हौं।",
+        "jp": "私たちは昔からの友人です。",
+        "words": [
+          {
+            "text": "हामी",
+            "roman": "hāmī",
+            "meaning": "私たち"
+          },
+          {
+            "text": "पुराना",
+            "roman": "purānā",
+            "meaning": "古くからの・昔からの"
+          },
+          {
+            "text": "साथी",
+            "roman": "sāthī",
+            "meaning": "友人"
+          },
+          {
+            "text": "हौं",
+            "roman": "haũ",
+            "meaning": "です（私たち）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-f3d028963fe8d875bad35f77c596b0e55dbee12dd91c2a621aca9562fa8e9ab3.mp3",
+          "sha256": "f3d028963fe8d875bad35f77c596b0e55dbee12dd91c2a621aca9562fa8e9ab3",
+          "bytes": 14544
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "हुँ",
+            "roman": "hũ",
+            "meaning": "です（私）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "हौं",
+            "roman": "haũ",
+            "meaning": "です（私たち）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "हो の仲間：何者かを言う"
+      },
+      "practice-01-03": {
+        "ne": "उहाँ किसान हुनुहुन्छ।",
+        "jp": "あの方は農家の方です。",
+        "words": [
+          {
+            "text": "उहाँ",
+            "roman": "uhā̃",
+            "meaning": "あの方・彼／彼女（敬意）"
+          },
+          {
+            "text": "किसान",
+            "roman": "kisān",
+            "meaning": "農家の人"
+          },
+          {
+            "text": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です（敬意）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-b1bfd53377cb736d1d062051e129c364397fc058caa9798278dd50f51b07700c.mp3",
+          "sha256": "b1bfd53377cb736d1d062051e129c364397fc058caa9798278dd50f51b07700c",
+          "bytes": 13536
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "हुँ",
+            "roman": "hũ",
+            "meaning": "です（私）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "हौं",
+            "roman": "haũ",
+            "meaning": "です（私たち）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "हो の仲間：何者かを言う"
+      },
+      "practice-02-01": {
+        "ne": "तपाईं पसलमा हुनुहुन्छ।",
+        "jp": "あなたは店にいます。",
+        "words": [
+          {
+            "text": "तपाईं",
+            "roman": "tapāī̃",
+            "meaning": "あなた（敬意）"
+          },
+          {
+            "text": "पसलमा",
+            "roman": "pasalmā",
+            "meaning": "店に（पसल＋मा）"
+          },
+          {
+            "text": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "います（敬意）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-ff2cdd08577e01d2298f9a25b3ab6f1a426aeb2c23faea1ef14a8e8074b2fe77.mp3",
+          "sha256": "ff2cdd08577e01d2298f9a25b3ab6f1a426aeb2c23faea1ef14a8e8074b2fe77",
+          "bytes": 14256
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "います・～の状態です（私）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "います・～の状態です（私たち）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "छ の仲間：場所・今の状態"
+      },
+      "practice-02-02": {
+        "ne": "हामी बगैंचामा छौं।",
+        "jp": "私たちは庭にいます。",
+        "words": [
+          {
+            "text": "हामी",
+            "roman": "hāmī",
+            "meaning": "私たち"
+          },
+          {
+            "text": "बगैंचामा",
+            "roman": "bagaĩcāmā",
+            "meaning": "庭に（बगैंचा＋मा）"
+          },
+          {
+            "text": "छौं",
+            "roman": "chaũ",
+            "meaning": "います・～の状態です（私たち）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-9efbfc38656cc96bcad2a368b1f33f473b6d4d2c9d36cf4f407d2375dff5a42a.mp3",
+          "sha256": "9efbfc38656cc96bcad2a368b1f33f473b6d4d2c9d36cf4f407d2375dff5a42a",
+          "bytes": 13968
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "います・～の状態です（私）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "います・～の状態です（私たち）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "छ の仲間：場所・今の状態"
+      },
+      "practice-02-03": {
+        "ne": "म भान्सामा छु।",
+        "jp": "私は台所にいます。",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "私"
+          },
+          {
+            "text": "भान्सामा",
+            "roman": "bhānsāmā",
+            "meaning": "台所に（भान्सा＋मा）"
+          },
+          {
+            "text": "छु",
+            "roman": "chu",
+            "meaning": "います・～の状態です（私）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-3666fc0f54b7bc5f1021dccdb2c4d551991ec7cd327cfbe4c0fa2c2883418b87.mp3",
+          "sha256": "3666fc0f54b7bc5f1021dccdb2c4d551991ec7cd327cfbe4c0fa2c2883418b87",
+          "bytes": 12384
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "います・～の状態です（私）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "います・～の状態です（私たち）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "छ の仲間：場所・今の状態"
+      },
+      "practice-03-01": {
+        "ne": "म तयार छु।",
+        "jp": "私は準備ができています。",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "私"
+          },
+          {
+            "text": "तयार",
+            "roman": "tayār",
+            "meaning": "準備ができた"
+          },
+          {
+            "text": "छु",
+            "roman": "chu",
+            "meaning": "います・～の状態です（私）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2e597a2c9a6acb6fa4a1d8107f3765c1c75efc47c0e533aff2dee0c1d52b67b3.mp3",
+          "sha256": "2e597a2c9a6acb6fa4a1d8107f3765c1c75efc47c0e533aff2dee0c1d52b67b3",
+          "bytes": 11232
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "います・～の状態です（私）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "います・～の状態です（私たち）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "छ の仲間：場所・今の状態"
+      },
+      "practice-03-02": {
+        "ne": "तपाईं खुसी हुनुहुन्छ।",
+        "jp": "あなたはうれしいです。",
+        "words": [
+          {
+            "text": "तपाईं",
+            "roman": "tapāī̃",
+            "meaning": "あなた（敬意）"
+          },
+          {
+            "text": "खुसी",
+            "roman": "khusī",
+            "meaning": "うれしい"
+          },
+          {
+            "text": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "～の状態です（敬意）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-82206348758093153211311d19aa974257237c2726effbc08565ff552ef9c478.mp3",
+          "sha256": "82206348758093153211311d19aa974257237c2726effbc08565ff552ef9c478",
+          "bytes": 13968
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "います・～の状態です（私）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "います・～の状態です（私たち）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "छ の仲間：場所・今の状態"
+      },
+      "practice-03-03": {
+        "ne": "हामी व्यस्त छौं।",
+        "jp": "私たちは忙しいです。",
+        "words": [
+          {
+            "text": "हामी",
+            "roman": "hāmī",
+            "meaning": "私たち"
+          },
+          {
+            "text": "व्यस्त",
+            "roman": "vyasta",
+            "meaning": "忙しい"
+          },
+          {
+            "text": "छौं",
+            "roman": "chaũ",
+            "meaning": "います・～の状態です（私たち）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-477260c1da6d02f1e83b84dbf47369d25ec8afbcf405822d0e2e3e71799a6f0f.mp3",
+          "sha256": "477260c1da6d02f1e83b84dbf47369d25ec8afbcf405822d0e2e3e71799a6f0f",
+          "bytes": 12528
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "います・～の状態です（私）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "います・～の状態です（私たち）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "छ の仲間：場所・今の状態"
+      },
+      "practice-04-01": {
+        "ne": "म साँझ घरमा हुन्छु।",
+        "jp": "私は夕方は普段、家にいます。",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "私"
+          },
+          {
+            "text": "साँझ",
+            "roman": "sā̃jh",
+            "meaning": "夕方"
+          },
+          {
+            "text": "घरमा",
+            "roman": "gharmā",
+            "meaning": "家に（घर＋मा）"
+          },
+          {
+            "text": "हुन्छु",
+            "roman": "hunchu",
+            "meaning": "普段います（私・この文では）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-fed7270458d8c4f6b5cf76851afdc5b663a37ebe0c8442a5a071897ce7b99857.mp3",
+          "sha256": "fed7270458d8c4f6b5cf76851afdc5b663a37ebe0c8442a5a071897ce7b99857",
+          "bytes": 13968
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "हुन्छु",
+            "roman": "hunchu",
+            "meaning": "普段います（私・この文では）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "हुन्छौं",
+            "roman": "hunchaũ",
+            "meaning": "普段います（私たち・この文では）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "हुन्छ の仲間：普段・繰り返すこと"
+      },
+      "practice-04-02": {
+        "ne": "हामी शनिबार बजारमा हुन्छौं।",
+        "jp": "私たちは土曜日は普段、市場にいます。",
+        "words": [
+          {
+            "text": "हामी",
+            "roman": "hāmī",
+            "meaning": "私たち"
+          },
+          {
+            "text": "शनिबार",
+            "roman": "śanibār",
+            "meaning": "土曜日"
+          },
+          {
+            "text": "बजारमा",
+            "roman": "bajārmā",
+            "meaning": "市場に（बजार＋मा）"
+          },
+          {
+            "text": "हुन्छौं",
+            "roman": "hunchaũ",
+            "meaning": "普段います（私たち・この文では）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-e8591f4fc2f7e50e5c92dc620a5c05c9f55feed7063331436943537b83491cb1.mp3",
+          "sha256": "e8591f4fc2f7e50e5c92dc620a5c05c9f55feed7063331436943537b83491cb1",
+          "bytes": 16992
+        },
+        "forms": [
+          {
+            "subject": "म · 私",
+            "form": "हुन्छु",
+            "roman": "hunchu",
+            "meaning": "普段います（私・この文では）"
+          },
+          {
+            "subject": "हामी · 私たち",
+            "form": "हुन्छौं",
+            "roman": "hunchaũ",
+            "meaning": "普段います（私たち・この文では）"
+          },
+          {
+            "subject": "तपाईं / उहाँ · あなた／あの方（敬意）",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "です・います（敬意）"
+          }
+        ],
+        "family": "हुन्छ の仲間：普段・繰り返すこと"
+      },
+      "practice-04-03": {
+        "ne": "जाडोमा रात लामो हुन्छ।",
+        "jp": "冬は夜が長くなります。",
+        "words": [
+          {
+            "text": "जाडोमा",
+            "roman": "jāḍomā",
+            "meaning": "冬に（जाडो＋मा）"
+          },
+          {
+            "text": "रात",
+            "roman": "rāt",
+            "meaning": "夜"
+          },
+          {
+            "text": "लामो",
+            "roman": "lāmo",
+            "meaning": "長い"
+          },
+          {
+            "text": "हुन्छ",
+            "roman": "huncha",
+            "meaning": "一般的に～になる／～である"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-fa41120726db70bb437f63c2f142bf1d387564b31c7406d412003abe40bfbbf9.mp3",
+          "sha256": "fa41120726db70bb437f63c2f142bf1d387564b31c7406d412003abe40bfbbf9",
+          "bytes": 15120
+        }
+      },
+      "practice-05-01": {
+        "ne": "कलम झोलामा छ।",
+        "jp": "ペンはかばんの中にあります。",
+        "words": [
+          {
+            "text": "कलम",
+            "roman": "kalam",
+            "meaning": "ペン"
+          },
+          {
+            "text": "झोलामा",
+            "roman": "jholāmā",
+            "meaning": "かばんの中に（झोला＋मा）"
+          },
+          {
+            "text": "छ",
+            "roman": "cha",
+            "meaning": "あります（この文では）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-79edf8e91d411e84badb78407881f06d6cc11faa96a9beeb5f483c799b234842.mp3",
+          "sha256": "79edf8e91d411e84badb78407881f06d6cc11faa96a9beeb5f483c799b234842",
+          "bytes": 12096
+        }
+      },
+      "practice-05-02": {
+        "ne": "यो आमाको चस्मा हो।",
+        "jp": "これは母の眼鏡です。",
+        "words": [
+          {
+            "text": "यो",
+            "roman": "yo",
+            "meaning": "これ・この"
+          },
+          {
+            "text": "आमाको",
+            "roman": "āmāko",
+            "meaning": "母の（आमा＋को）"
+          },
+          {
+            "text": "चस्मा",
+            "roman": "casmā",
+            "meaning": "眼鏡"
+          },
+          {
+            "text": "हो",
+            "roman": "ho",
+            "meaning": "です（何であるか・値段）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-79a9c0e083ef5a955c99bbfe9471582b383c4f5f8edf3c36a8eb6da2583a943f.mp3",
+          "sha256": "79a9c0e083ef5a955c99bbfe9471582b383c4f5f8edf3c36a8eb6da2583a943f",
+          "bytes": 13824
+        }
+      },
+      "practice-05-03": {
+        "ne": "उहाँ बसबाट आउनुहुन्छ।",
+        "jp": "あの方はバスで来ます。",
+        "words": [
+          {
+            "text": "उहाँ",
+            "roman": "uhā̃",
+            "meaning": "あの方・彼／彼女（敬意）"
+          },
+          {
+            "text": "बसबाट",
+            "roman": "basbāṭa",
+            "meaning": "バスで（बस＋बाट）"
+          },
+          {
+            "text": "आउनुहुन्छ",
+            "roman": "āunuhuncha",
+            "meaning": "来ます（敬意）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-d27840ea56f6527b3fe913f8a914f224918bb038969e2af3c21b470d4c92a5f0.mp3",
+          "sha256": "d27840ea56f6527b3fe913f8a914f224918bb038969e2af3c21b470d4c92a5f0",
+          "bytes": 14544
+        }
+      },
+      "practice-06-01": {
+        "ne": "तपाईंको झोला कहाँ छ?",
+        "jp": "あなたのかばんはどこにありますか？",
+        "words": [
+          {
+            "text": "तपाईंको",
+            "roman": "tapāī̃ko",
+            "meaning": "あなたの（तपाईं＋को）"
+          },
+          {
+            "text": "झोला",
+            "roman": "jholā",
+            "meaning": "かばん"
+          },
+          {
+            "text": "कहाँ",
+            "roman": "kahā̃",
+            "meaning": "どこ"
+          },
+          {
+            "text": "छ",
+            "roman": "cha",
+            "meaning": "あります（この文では）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-f7eb3dece4bbc376e9afd3fe1df671ad9ce5dcc56bfd3c84c0769068d927e29b.mp3",
+          "sha256": "f7eb3dece4bbc376e9afd3fe1df671ad9ce5dcc56bfd3c84c0769068d927e29b",
+          "bytes": 13968
+        }
+      },
+      "practice-06-02": {
+        "ne": "पसल कहिले खुल्छ?",
+        "jp": "店はいつ開きますか？",
+        "words": [
+          {
+            "text": "पसल",
+            "roman": "pasal",
+            "meaning": "店"
+          },
+          {
+            "text": "कहिले",
+            "roman": "kahile",
+            "meaning": "いつ"
+          },
+          {
+            "text": "खुल्छ",
+            "roman": "khulcha",
+            "meaning": "開きます"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-4d8b997fe5221b4675f14487c8004d352c0e524848a3879482bd8865a45a4ec2.mp3",
+          "sha256": "4d8b997fe5221b4675f14487c8004d352c0e524848a3879482bd8865a45a4ec2",
+          "bytes": 12960
+        }
+      },
+      "practice-06-03": {
+        "ne": "यो झोला कति हो?",
+        "jp": "このかばんはいくらですか？",
+        "words": [
+          {
+            "text": "यो",
+            "roman": "yo",
+            "meaning": "これ・この"
+          },
+          {
+            "text": "झोला",
+            "roman": "jholā",
+            "meaning": "かばん"
+          },
+          {
+            "text": "कति",
+            "roman": "kati",
+            "meaning": "いくら・どれくらい"
+          },
+          {
+            "text": "हो",
+            "roman": "ho",
+            "meaning": "です（何であるか・値段）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-f6a174380094c336039809ba3c28e1d3cce1601364cec4a2e9dd72afd15247e1.mp3",
+          "sha256": "f6a174380094c336039809ba3c28e1d3cce1601364cec4a2e9dd72afd15247e1",
+          "bytes": 12672
+        }
+      },
+      "practice-07-01": {
+        "ne": "नमस्ते, मेरो नाम आशा हो।",
+        "jp": "こんにちは。私の名前はアーシャです。",
+        "words": [
+          {
+            "text": "नमस्ते",
+            "roman": "namaste",
+            "meaning": "こんにちは（挨拶）"
+          },
+          {
+            "text": "मेरो",
+            "roman": "mero",
+            "meaning": "私の"
+          },
+          {
+            "text": "नाम",
+            "roman": "nām",
+            "meaning": "名前"
+          },
+          {
+            "text": "आशा",
+            "roman": "āśā",
+            "meaning": "アーシャ（人名）"
+          },
+          {
+            "text": "हो",
+            "roman": "ho",
+            "meaning": "です（何であるか・値段）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-36c458166c1c83e2da84bba8c85c8774d84a040bc56507958ae27304f6ef603c.mp3",
+          "sha256": "36c458166c1c83e2da84bba8c85c8774d84a040bc56507958ae27304f6ef603c",
+          "bytes": 15552
+        }
+      },
+      "practice-07-02": {
+        "ne": "म धनगढीमा बस्छु।",
+        "jp": "私はダンガディに住んでいます。",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "私"
+          },
+          {
+            "text": "धनगढीमा",
+            "roman": "dhangadhīmā",
+            "meaning": "ダンガディに（地名＋मा）"
+          },
+          {
+            "text": "बस्छु",
+            "roman": "baschu",
+            "meaning": "住んでいます（私）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-7706a11b15991a6b56175b23b8c2965dfe13230180b128bb8a8a7b9696dc615c.mp3",
+          "sha256": "7706a11b15991a6b56175b23b8c2965dfe13230180b128bb8a8a7b9696dc615c",
+          "bytes": 13680
+        }
+      },
+      "practice-07-03": {
+        "ne": "म अहिले नेपाली सिक्दै छु।",
+        "jp": "私は今、ネパール語を学んでいます。",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "私"
+          },
+          {
+            "text": "अहिले",
+            "roman": "ahile",
+            "meaning": "今"
+          },
+          {
+            "text": "नेपाली",
+            "roman": "nepālī",
+            "meaning": "ネパール語（この文では）"
+          },
+          {
+            "text": "सिक्दै",
+            "roman": "sikdai",
+            "meaning": "学んで（सिक्दै छु＝学んでいます）"
+          },
+          {
+            "text": "छु",
+            "roman": "chu",
+            "meaning": "～しています（सिक्दै छु＝学んでいます）"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-e4703ab5c93f057856159969229023fee1632762fd2debbfce8ce4dc66c36e41.mp3",
+          "sha256": "e4703ab5c93f057856159969229023fee1632762fd2debbfce8ce4dc66c36e41",
+          "bytes": 16128
+        }
+      }
+    }
   },
   "en": {
     "title": "Your first 7 steps",
-    "description": "Five sentences at a time: read the pattern, say your answer, then check the text and audio. This is a suggested order; you can start anywhere.",
+    "description": "Three new sentences per step. Meet the words, choose a form, choose a meaning, then build the model. Sentences without a conjugation task start with meaning. Explore in any order and use hints freely.",
     "intro": [
       {
-        "title": "Start with sound and reading",
-        "body": "Use the romanization alongside the recording. म विद्यार्थी हुँ (ma vidyārthī hũ) means “I am a student.” Reveal the answer in practice, listen and say it aloud."
+        "title": "Text, reading and meaning together",
+        "body": "Start by listening to one sentence. Use its reading and translation to follow unfamiliar letters.",
+        "samples": [
+          {
+            "id": "sentence-i",
+            "ne": "म विद्यार्थी हुँ।",
+            "roman": "ma vidyārthī hũ",
+            "meaning": "I am a student.",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2cf210d7378eaaca113f06f88394821a6316b4ebdd564df12c13211f8e28c14c.mp3",
+              "sha256": "2cf210d7378eaaca113f06f88394821a6316b4ebdd564df12c13211f8e28c14c",
+              "bytes": 12528
+            }
+          }
+        ]
       },
       {
-        "title": "Notice a and ā",
-        "body": "a and ā represent different vowel qualities; ā is the more open vowel. The bars in ī and ū also preserve spelling distinctions. Do not assume every bar means exactly twice the length: follow the recording."
+        "title": "Listen to अ and आ",
+        "body": "a and ā mark different vowels in this reading system. Listen to the vowel quality; do not assume ā must always be twice as long.",
+        "samples": [
+          {
+            "id": "vowel-a",
+            "ne": "अ",
+            "roman": "a",
+            "meaning": "vowel sound",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-808530afe4cc282d0b3879e068d5b287be2576bf020b950850611b0d6c798ba1.mp3",
+              "sha256": "808530afe4cc282d0b3879e068d5b287be2576bf020b950850611b0d6c798ba1",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "vowel-aa",
+            "ne": "आ",
+            "roman": "ā",
+            "meaning": "vowel sound",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-b31c9d95487e8d8ffe10a1d6e6e72e1041b4d3b00095e4f80504b4e768401636.mp3",
+              "sha256": "b31c9d95487e8d8ffe10a1d6e6e72e1041b4d3b00095e4f80504b4e768401636",
+              "bytes": 11232
+            }
+          }
+        ]
       },
       {
-        "title": "Listen for the extra breath",
-        "body": "Pairs such as k/kh and t/th differ in aspiration. With kh, release an extra puff of air after k. th is not English “th.” A dot in ṭ or ḍ marks a tongue position farther back than t or d."
+        "title": "क and ख: the puff of air",
+        "body": "ख (kha) has a stronger puff of air than क (ka). Listen to it as one consonant, not a separate k followed by h.",
+        "samples": [
+          {
+            "id": "ka",
+            "ne": "क",
+            "roman": "ka",
+            "meaning": "letter sound",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-5f2c90da9203b89b4d6ce246085a9dfdd802020f501f8df3cb189f7be79e307a.mp3",
+              "sha256": "5f2c90da9203b89b4d6ce246085a9dfdd802020f501f8df3cb189f7be79e307a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "kha",
+            "ne": "ख",
+            "roman": "kha",
+            "meaning": "letter sound",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-a98c5cb8e081f07cba4245f972236207f42567d3ece90fdc0e42988b6316b167.mp3",
+              "sha256": "a98c5cb8e081f07cba4245f972236207f42567d3ece90fdc0e42988b6316b167",
+              "bytes": 11232
+            }
+          }
+        ]
       },
       {
-        "title": "Some vowels have a nasal quality",
-        "body": "The tilde in यहाँ (yahā̃, “here”) marks a nasal vowel. Let the vowel resonate through the nose; do not simply add a separate n. Listen for this in हुँ (hũ, “I am”) too."
+        "title": "त and ट: tongue position",
+        "body": "For त (ta), the tongue tip touches the upper teeth. For ट (ṭa), it is farther back. The dot in ṭ distinguishes the sounds.",
+        "samples": [
+          {
+            "id": "ta",
+            "ne": "त",
+            "roman": "ta",
+            "meaning": "letter sound",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2d09cddcc2e992146e27fd50a8d3cee1e5ccdff7f5b7970e042b92d42f9cece0.mp3",
+              "sha256": "2d09cddcc2e992146e27fd50a8d3cee1e5ccdff7f5b7970e042b92d42f9cece0",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "tta",
+            "ne": "ट",
+            "roman": "ṭa",
+            "meaning": "letter sound",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-885806b12c525415d82b5d2102d8699bb49cb0fe25133f8a92564b1a0eabf5bd.mp3",
+              "sha256": "885806b12c525415d82b5d2102d8699bb49cb0fe25133f8a92564b1a0eabf5bd",
+              "bytes": 11232
+            }
+          }
+        ]
       },
       {
-        "title": "Build from the ending",
-        "body": "म विद्यार्थी हुँ follows “I + student + am.” Verbs usually come at the end, but their forms change with person and respect. Begin with म (I), हामी (we), तपाईं (you) and उहाँ (he/she, respectful), then learn the roles of हो, छ and हुन्छ."
+        "title": "A tilde marks a nasal vowel",
+        "body": "The ā̃ in यहाँ and ũ in हुँ are nasal vowels. Let the vowel resonate through the nose; do not add a separate n.",
+        "samples": [
+          {
+            "id": "here",
+            "ne": "यहाँ",
+            "roman": "yahā̃",
+            "meaning": "here",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-80c2cafa1a2908e60e9e6a6b9ebd4cc2fe3506891121080e1ffdb0d19d45284b.mp3",
+              "sha256": "80c2cafa1a2908e60e9e6a6b9ebd4cc2fe3506891121080e1ffdb0d19d45284b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "am",
+            "ne": "हुँ",
+            "roman": "hũ",
+            "meaning": "am (identifying myself)",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-8d5c794d33060472d338266a738547157c798243d64ad0617df1a6f3a02c9774.mp3",
+              "sha256": "8d5c794d33060472d338266a738547157c798243d64ad0617df1a6f3a02c9774",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "title": "The subject changes the ending",
+        "body": "म (I) takes हुँ; respectful तपाईं (you) takes हुनुहुन्छ. Listen to the two complete sentences.",
+        "samples": [
+          {
+            "id": "sentence-i",
+            "ne": "म विद्यार्थी हुँ।",
+            "roman": "ma vidyārthī hũ",
+            "meaning": "I am a student.",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2cf210d7378eaaca113f06f88394821a6316b4ebdd564df12c13211f8e28c14c.mp3",
+              "sha256": "2cf210d7378eaaca113f06f88394821a6316b4ebdd564df12c13211f8e28c14c",
+              "bytes": 12528
+            }
+          },
+          {
+            "id": "sentence-you",
+            "ne": "तपाईं विद्यार्थी हुनुहुन्छ।",
+            "roman": "tapāī̃ vidyārthī hunuhuncha",
+            "meaning": "You are a student.",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-883ef37f93b83dda45f82b14f26850ea1e2d12413c7af6eb63a435035d70a319.mp3",
+              "sha256": "883ef37f93b83dda45f82b14f26850ea1e2d12413c7af6eb63a435035d70a319",
+              "bytes": 15264
+            }
+          }
+        ]
       }
     ],
     "steps": [
@@ -332,31 +1377,22 @@
             "mode": "grammar",
             "themeId": 1,
             "index": 0,
-            "ne": "म विद्यार्थी हुँ।"
+            "ne": "म बस चालक हुँ।",
+            "exerciseId": "practice-01-01"
           },
           {
             "mode": "grammar",
             "themeId": 1,
             "index": 1,
-            "ne": "तपाईं विद्यार्थी हुनुहुन्छ।"
+            "ne": "हामी पुराना साथी हौं।",
+            "exerciseId": "practice-01-02"
           },
           {
             "mode": "grammar",
             "themeId": 1,
             "index": 2,
-            "ne": "उहाँ विद्यार्थी हुनुहुन्छ।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 1,
-            "index": 4,
-            "ne": "उहाँहरू विद्यार्थी हुनुहुन्न।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 1,
-            "index": 12,
-            "ne": "तपाईंहरू शिक्षक हुनुहुन्छ।"
+            "ne": "उहाँ किसान हुनुहुन्छ।",
+            "exerciseId": "practice-01-03"
           }
         ],
         "guideThemeId": 1
@@ -370,31 +1406,22 @@
             "mode": "grammar",
             "themeId": 2,
             "index": 0,
-            "ne": "म घरमा छु।"
+            "ne": "तपाईं पसलमा हुनुहुन्छ।",
+            "exerciseId": "practice-02-01"
           },
           {
             "mode": "grammar",
             "themeId": 2,
             "index": 1,
-            "ne": "तपाईं घरमा हुनुहुन्छ?"
+            "ne": "हामी बगैंचामा छौं।",
+            "exerciseId": "practice-02-02"
           },
           {
             "mode": "grammar",
             "themeId": 2,
-            "index": 5,
-            "ne": "यहाँ किताब छ।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 2,
-            "index": 6,
-            "ne": "त्यहाँ कापी छैन।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 2,
-            "index": 9,
-            "ne": "तपाईंहरू कहाँ हुनुहुन्छ?"
+            "index": 2,
+            "ne": "म भान्सामा छु।",
+            "exerciseId": "practice-02-03"
           }
         ],
         "guideThemeId": 2
@@ -408,31 +1435,22 @@
             "mode": "grammar",
             "themeId": 3,
             "index": 0,
-            "ne": "यो फूल सुन्दर छ।"
+            "ne": "म तयार छु।",
+            "exerciseId": "practice-03-01"
           },
           {
             "mode": "grammar",
             "themeId": 3,
-            "index": 3,
-            "ne": "के यो पानी चिसो छ?"
+            "index": 1,
+            "ne": "तपाईं खुसी हुनुहुन्छ।",
+            "exerciseId": "practice-03-02"
           },
           {
             "mode": "grammar",
             "themeId": 3,
-            "index": 6,
-            "ne": "म व्यस्त छु।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 3,
-            "index": 7,
-            "ne": "तपाईं सन्चै हुनुहुन्छ?"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 3,
-            "index": 9,
-            "ne": "उहाँहरू व्यस्त हुनुहुन्छ।"
+            "index": 2,
+            "ne": "हामी व्यस्त छौं।",
+            "exerciseId": "practice-03-03"
           }
         ],
         "guideThemeId": 3
@@ -446,31 +1464,22 @@
             "mode": "grammar",
             "themeId": 4,
             "index": 0,
-            "ne": "जाडोमा चिसो हुन्छ।"
+            "ne": "म साँझ घरमा हुन्छु।",
+            "exerciseId": "practice-04-01"
           },
           {
             "mode": "grammar",
             "themeId": 4,
             "index": 1,
-            "ne": "गर्मीमा दिन लामो हुन्छ।"
+            "ne": "हामी शनिबार बजारमा हुन्छौं।",
+            "exerciseId": "practice-04-02"
           },
           {
             "mode": "grammar",
             "themeId": 4,
             "index": 2,
-            "ne": "यहाँ बिहान शान्त हुन्छ।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 4,
-            "index": 3,
-            "ne": "आइतबार बजार बन्द हुन्छ।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 4,
-            "index": 5,
-            "ne": "के यहाँ सधैं यस्तो हुन्छ?"
+            "ne": "जाडोमा रात लामो हुन्छ।",
+            "exerciseId": "practice-04-03"
           }
         ],
         "guideThemeId": 4
@@ -484,31 +1493,22 @@
             "mode": "grammar",
             "themeId": 5,
             "index": 0,
-            "ne": "म घरमा बस्छु।"
+            "ne": "कलम झोलामा छ।",
+            "exerciseId": "practice-05-01"
           },
           {
             "mode": "grammar",
             "themeId": 5,
             "index": 1,
-            "ne": "म नेपालबाट आएँ।"
+            "ne": "यो आमाको चस्मा हो।",
+            "exerciseId": "practice-05-02"
           },
           {
             "mode": "grammar",
             "themeId": 5,
             "index": 2,
-            "ne": "हामी साथीहरूसँग जान्छौं।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 5,
-            "index": 6,
-            "ne": "मसँग पैसा छैन।"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 5,
-            "index": 7,
-            "ne": "तपाईंसँग कलम छ?"
+            "ne": "उहाँ बसबाट आउनुहुन्छ।",
+            "exerciseId": "practice-05-03"
           }
         ],
         "guideThemeId": 5
@@ -522,31 +1522,22 @@
             "mode": "grammar",
             "themeId": 6,
             "index": 0,
-            "ne": "यो के हो?"
+            "ne": "तपाईंको झोला कहाँ छ?",
+            "exerciseId": "practice-06-01"
           },
           {
             "mode": "grammar",
             "themeId": 6,
             "index": 1,
-            "ne": "त्यो कसको किताब हो?"
+            "ne": "पसल कहिले खुल्छ?",
+            "exerciseId": "practice-06-02"
           },
           {
             "mode": "grammar",
             "themeId": 6,
             "index": 2,
-            "ne": "तपाईं कहाँ बस्नुहुन्छ?"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 6,
-            "index": 3,
-            "ne": "यो कति पर्छ?"
-          },
-          {
-            "mode": "grammar",
-            "themeId": 6,
-            "index": 4,
-            "ne": "यहाँ को छ?"
+            "ne": "यो झोला कति हो?",
+            "exerciseId": "practice-06-03"
           }
         ],
         "guideThemeId": 6
@@ -557,42 +1548,867 @@
         "goal": "Try short conversation sentences about your name, background and home.",
         "items": [
           {
-            "mode": "conversation",
-            "themeId": 1,
+            "mode": "grammar",
+            "themeId": 7,
             "index": 0,
-            "ne": "मेरो नाम राम हो।",
-            "levelId": 1
+            "ne": "नमस्ते, मेरो नाम आशा हो।",
+            "exerciseId": "practice-07-01"
           },
           {
-            "mode": "conversation",
-            "themeId": 1,
+            "mode": "grammar",
+            "themeId": 7,
             "index": 1,
-            "ne": "म नेपाली हुँ।",
-            "levelId": 1
+            "ne": "म धनगढीमा बस्छु।",
+            "exerciseId": "practice-07-02"
           },
           {
-            "mode": "conversation",
-            "themeId": 1,
-            "index": 4,
-            "ne": "म काठमाडौंमा बस्छु।",
-            "levelId": 1
-          },
-          {
-            "mode": "conversation",
-            "themeId": 1,
-            "index": 5,
-            "ne": "म विद्यार्थी हुँ।",
-            "levelId": 1
-          },
-          {
-            "mode": "conversation",
-            "themeId": 1,
-            "index": 6,
-            "ne": "म पच्चीस वर्षको छु।",
-            "levelId": 1
+            "mode": "grammar",
+            "themeId": 7,
+            "index": 2,
+            "ne": "म अहिले नेपाली सिक्दै छु।",
+            "exerciseId": "practice-07-03"
           }
         ]
       }
-    ]
+    ],
+    "exercises": {
+      "practice-01-01": {
+        "ne": "म बस चालक हुँ।",
+        "jp": "I am a bus driver.",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "I"
+          },
+          {
+            "text": "बस",
+            "roman": "bas",
+            "meaning": "bus"
+          },
+          {
+            "text": "चालक",
+            "roman": "cālak",
+            "meaning": "driver"
+          },
+          {
+            "text": "हुँ",
+            "roman": "hũ",
+            "meaning": "am (identity)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-cb0f977b8e43fe1a767152a297df13c83b9464a0caf65c8be012ef9272aff3cf.mp3",
+          "sha256": "cb0f977b8e43fe1a767152a297df13c83b9464a0caf65c8be012ef9272aff3cf",
+          "bytes": 12384
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "हुँ",
+            "roman": "hũ",
+            "meaning": "am (identity)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "हौं",
+            "roman": "haũ",
+            "meaning": "are (we; identity)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "ho family: identity"
+      },
+      "practice-01-02": {
+        "ne": "हामी पुराना साथी हौं।",
+        "jp": "We are old friends.",
+        "words": [
+          {
+            "text": "हामी",
+            "roman": "hāmī",
+            "meaning": "we"
+          },
+          {
+            "text": "पुराना",
+            "roman": "purānā",
+            "meaning": "old; long-standing"
+          },
+          {
+            "text": "साथी",
+            "roman": "sāthī",
+            "meaning": "friend(s)"
+          },
+          {
+            "text": "हौं",
+            "roman": "haũ",
+            "meaning": "are (we; identity)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-f3d028963fe8d875bad35f77c596b0e55dbee12dd91c2a621aca9562fa8e9ab3.mp3",
+          "sha256": "f3d028963fe8d875bad35f77c596b0e55dbee12dd91c2a621aca9562fa8e9ab3",
+          "bytes": 14544
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "हुँ",
+            "roman": "hũ",
+            "meaning": "am (identity)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "हौं",
+            "roman": "haũ",
+            "meaning": "are (we; identity)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "ho family: identity"
+      },
+      "practice-01-03": {
+        "ne": "उहाँ किसान हुनुहुन्छ।",
+        "jp": "That person is a farmer.",
+        "words": [
+          {
+            "text": "उहाँ",
+            "roman": "uhā̃",
+            "meaning": "that person; he/she (respectful)"
+          },
+          {
+            "text": "किसान",
+            "roman": "kisān",
+            "meaning": "farmer"
+          },
+          {
+            "text": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "is (respectful; identity)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-b1bfd53377cb736d1d062051e129c364397fc058caa9798278dd50f51b07700c.mp3",
+          "sha256": "b1bfd53377cb736d1d062051e129c364397fc058caa9798278dd50f51b07700c",
+          "bytes": 13536
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "हुँ",
+            "roman": "hũ",
+            "meaning": "am (identity)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "हौं",
+            "roman": "haũ",
+            "meaning": "are (we; identity)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "ho family: identity"
+      },
+      "practice-02-01": {
+        "ne": "तपाईं पसलमा हुनुहुन्छ।",
+        "jp": "You are at the shop.",
+        "words": [
+          {
+            "text": "तपाईं",
+            "roman": "tapāī̃",
+            "meaning": "you (respectful)"
+          },
+          {
+            "text": "पसलमा",
+            "roman": "pasalmā",
+            "meaning": "at the shop (pasal + mā)"
+          },
+          {
+            "text": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are (respectful; location)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-ff2cdd08577e01d2298f9a25b3ab6f1a426aeb2c23faea1ef14a8e8074b2fe77.mp3",
+          "sha256": "ff2cdd08577e01d2298f9a25b3ab6f1a426aeb2c23faea1ef14a8e8074b2fe77",
+          "bytes": 14256
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "am (location/state)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "are (we; location/state)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "chha family: location or current state"
+      },
+      "practice-02-02": {
+        "ne": "हामी बगैंचामा छौं।",
+        "jp": "We are in the garden.",
+        "words": [
+          {
+            "text": "हामी",
+            "roman": "hāmī",
+            "meaning": "we"
+          },
+          {
+            "text": "बगैंचामा",
+            "roman": "bagaĩcāmā",
+            "meaning": "in the garden (bagaĩcā + mā)"
+          },
+          {
+            "text": "छौं",
+            "roman": "chaũ",
+            "meaning": "are (we; location/state)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-9efbfc38656cc96bcad2a368b1f33f473b6d4d2c9d36cf4f407d2375dff5a42a.mp3",
+          "sha256": "9efbfc38656cc96bcad2a368b1f33f473b6d4d2c9d36cf4f407d2375dff5a42a",
+          "bytes": 13968
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "am (location/state)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "are (we; location/state)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "chha family: location or current state"
+      },
+      "practice-02-03": {
+        "ne": "म भान्सामा छु।",
+        "jp": "I am in the kitchen.",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "I"
+          },
+          {
+            "text": "भान्सामा",
+            "roman": "bhānsāmā",
+            "meaning": "in the kitchen (bhānsā + mā)"
+          },
+          {
+            "text": "छु",
+            "roman": "chu",
+            "meaning": "am (location/state)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-3666fc0f54b7bc5f1021dccdb2c4d551991ec7cd327cfbe4c0fa2c2883418b87.mp3",
+          "sha256": "3666fc0f54b7bc5f1021dccdb2c4d551991ec7cd327cfbe4c0fa2c2883418b87",
+          "bytes": 12384
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "am (location/state)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "are (we; location/state)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "chha family: location or current state"
+      },
+      "practice-03-01": {
+        "ne": "म तयार छु।",
+        "jp": "I am ready.",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "I"
+          },
+          {
+            "text": "तयार",
+            "roman": "tayār",
+            "meaning": "ready"
+          },
+          {
+            "text": "छु",
+            "roman": "chu",
+            "meaning": "am (location/state)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2e597a2c9a6acb6fa4a1d8107f3765c1c75efc47c0e533aff2dee0c1d52b67b3.mp3",
+          "sha256": "2e597a2c9a6acb6fa4a1d8107f3765c1c75efc47c0e533aff2dee0c1d52b67b3",
+          "bytes": 11232
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "am (location/state)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "are (we; location/state)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "chha family: location or current state"
+      },
+      "practice-03-02": {
+        "ne": "तपाईं खुसी हुनुहुन्छ।",
+        "jp": "You are happy.",
+        "words": [
+          {
+            "text": "तपाईं",
+            "roman": "tapāī̃",
+            "meaning": "you (respectful)"
+          },
+          {
+            "text": "खुसी",
+            "roman": "khusī",
+            "meaning": "happy; pleased"
+          },
+          {
+            "text": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are (respectful; state)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-82206348758093153211311d19aa974257237c2726effbc08565ff552ef9c478.mp3",
+          "sha256": "82206348758093153211311d19aa974257237c2726effbc08565ff552ef9c478",
+          "bytes": 13968
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "am (location/state)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "are (we; location/state)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "chha family: location or current state"
+      },
+      "practice-03-03": {
+        "ne": "हामी व्यस्त छौं।",
+        "jp": "We are busy.",
+        "words": [
+          {
+            "text": "हामी",
+            "roman": "hāmī",
+            "meaning": "we"
+          },
+          {
+            "text": "व्यस्त",
+            "roman": "vyasta",
+            "meaning": "busy"
+          },
+          {
+            "text": "छौं",
+            "roman": "chaũ",
+            "meaning": "are (we; location/state)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-477260c1da6d02f1e83b84dbf47369d25ec8afbcf405822d0e2e3e71799a6f0f.mp3",
+          "sha256": "477260c1da6d02f1e83b84dbf47369d25ec8afbcf405822d0e2e3e71799a6f0f",
+          "bytes": 12528
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "छु",
+            "roman": "chu",
+            "meaning": "am (location/state)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "छौं",
+            "roman": "chaũ",
+            "meaning": "are (we; location/state)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "chha family: location or current state"
+      },
+      "practice-04-01": {
+        "ne": "म साँझ घरमा हुन्छु।",
+        "jp": "I am usually at home in the evening.",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "I"
+          },
+          {
+            "text": "साँझ",
+            "roman": "sā̃jh",
+            "meaning": "evening"
+          },
+          {
+            "text": "घरमा",
+            "roman": "gharmā",
+            "meaning": "at home (ghar + mā)"
+          },
+          {
+            "text": "हुन्छु",
+            "roman": "hunchu",
+            "meaning": "am usually (I; here)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-fed7270458d8c4f6b5cf76851afdc5b663a37ebe0c8442a5a071897ce7b99857.mp3",
+          "sha256": "fed7270458d8c4f6b5cf76851afdc5b663a37ebe0c8442a5a071897ce7b99857",
+          "bytes": 13968
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "हुन्छु",
+            "roman": "hunchu",
+            "meaning": "am usually (I; here)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "हुन्छौं",
+            "roman": "hunchaũ",
+            "meaning": "are usually (we; here)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "hunchha family: usual or repeated situations"
+      },
+      "practice-04-02": {
+        "ne": "हामी शनिबार बजारमा हुन्छौं।",
+        "jp": "We are usually at the market on Saturdays.",
+        "words": [
+          {
+            "text": "हामी",
+            "roman": "hāmī",
+            "meaning": "we"
+          },
+          {
+            "text": "शनिबार",
+            "roman": "śanibār",
+            "meaning": "Saturday"
+          },
+          {
+            "text": "बजारमा",
+            "roman": "bajārmā",
+            "meaning": "at the market (bajār + mā)"
+          },
+          {
+            "text": "हुन्छौं",
+            "roman": "hunchaũ",
+            "meaning": "are usually (we; here)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-e8591f4fc2f7e50e5c92dc620a5c05c9f55feed7063331436943537b83491cb1.mp3",
+          "sha256": "e8591f4fc2f7e50e5c92dc620a5c05c9f55feed7063331436943537b83491cb1",
+          "bytes": 16992
+        },
+        "forms": [
+          {
+            "subject": "म · I",
+            "form": "हुन्छु",
+            "roman": "hunchu",
+            "meaning": "am usually (I; here)"
+          },
+          {
+            "subject": "हामी · we",
+            "form": "हुन्छौं",
+            "roman": "hunchaũ",
+            "meaning": "are usually (we; here)"
+          },
+          {
+            "subject": "तपाईं / उहाँ · you / that person (respectful)",
+            "form": "हुनुहुन्छ",
+            "roman": "hunuhuncha",
+            "meaning": "are/is (respectful)"
+          }
+        ],
+        "family": "hunchha family: usual or repeated situations"
+      },
+      "practice-04-03": {
+        "ne": "जाडोमा रात लामो हुन्छ।",
+        "jp": "Nights are long in winter.",
+        "words": [
+          {
+            "text": "जाडोमा",
+            "roman": "jāḍomā",
+            "meaning": "in winter (jāḍo + mā)"
+          },
+          {
+            "text": "रात",
+            "roman": "rāt",
+            "meaning": "night"
+          },
+          {
+            "text": "लामो",
+            "roman": "lāmo",
+            "meaning": "long"
+          },
+          {
+            "text": "हुन्छ",
+            "roman": "huncha",
+            "meaning": "is/becomes generally"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-fa41120726db70bb437f63c2f142bf1d387564b31c7406d412003abe40bfbbf9.mp3",
+          "sha256": "fa41120726db70bb437f63c2f142bf1d387564b31c7406d412003abe40bfbbf9",
+          "bytes": 15120
+        }
+      },
+      "practice-05-01": {
+        "ne": "कलम झोलामा छ।",
+        "jp": "The pen is in the bag.",
+        "words": [
+          {
+            "text": "कलम",
+            "roman": "kalam",
+            "meaning": "pen"
+          },
+          {
+            "text": "झोलामा",
+            "roman": "jholāmā",
+            "meaning": "in the bag (jholā + mā)"
+          },
+          {
+            "text": "छ",
+            "roman": "cha",
+            "meaning": "is; exists (here)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-79edf8e91d411e84badb78407881f06d6cc11faa96a9beeb5f483c799b234842.mp3",
+          "sha256": "79edf8e91d411e84badb78407881f06d6cc11faa96a9beeb5f483c799b234842",
+          "bytes": 12096
+        }
+      },
+      "practice-05-02": {
+        "ne": "यो आमाको चस्मा हो।",
+        "jp": "These are my mother's glasses.",
+        "words": [
+          {
+            "text": "यो",
+            "roman": "yo",
+            "meaning": "this"
+          },
+          {
+            "text": "आमाको",
+            "roman": "āmāko",
+            "meaning": "mother's (āmā + ko)"
+          },
+          {
+            "text": "चस्मा",
+            "roman": "casmā",
+            "meaning": "glasses"
+          },
+          {
+            "text": "हो",
+            "roman": "ho",
+            "meaning": "is (identity/price)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-79a9c0e083ef5a955c99bbfe9471582b383c4f5f8edf3c36a8eb6da2583a943f.mp3",
+          "sha256": "79a9c0e083ef5a955c99bbfe9471582b383c4f5f8edf3c36a8eb6da2583a943f",
+          "bytes": 13824
+        }
+      },
+      "practice-05-03": {
+        "ne": "उहाँ बसबाट आउनुहुन्छ।",
+        "jp": "That person comes by bus.",
+        "words": [
+          {
+            "text": "उहाँ",
+            "roman": "uhā̃",
+            "meaning": "that person; he/she (respectful)"
+          },
+          {
+            "text": "बसबाट",
+            "roman": "basbāṭa",
+            "meaning": "by bus (bas + bāṭa)"
+          },
+          {
+            "text": "आउनुहुन्छ",
+            "roman": "āunuhuncha",
+            "meaning": "comes/come (respectful)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-d27840ea56f6527b3fe913f8a914f224918bb038969e2af3c21b470d4c92a5f0.mp3",
+          "sha256": "d27840ea56f6527b3fe913f8a914f224918bb038969e2af3c21b470d4c92a5f0",
+          "bytes": 14544
+        }
+      },
+      "practice-06-01": {
+        "ne": "तपाईंको झोला कहाँ छ?",
+        "jp": "Where is your bag?",
+        "words": [
+          {
+            "text": "तपाईंको",
+            "roman": "tapāī̃ko",
+            "meaning": "your (tapāī̃ + ko)"
+          },
+          {
+            "text": "झोला",
+            "roman": "jholā",
+            "meaning": "bag"
+          },
+          {
+            "text": "कहाँ",
+            "roman": "kahā̃",
+            "meaning": "where"
+          },
+          {
+            "text": "छ",
+            "roman": "cha",
+            "meaning": "is; exists (here)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-f7eb3dece4bbc376e9afd3fe1df671ad9ce5dcc56bfd3c84c0769068d927e29b.mp3",
+          "sha256": "f7eb3dece4bbc376e9afd3fe1df671ad9ce5dcc56bfd3c84c0769068d927e29b",
+          "bytes": 13968
+        }
+      },
+      "practice-06-02": {
+        "ne": "पसल कहिले खुल्छ?",
+        "jp": "When does the shop open?",
+        "words": [
+          {
+            "text": "पसल",
+            "roman": "pasal",
+            "meaning": "shop"
+          },
+          {
+            "text": "कहिले",
+            "roman": "kahile",
+            "meaning": "when"
+          },
+          {
+            "text": "खुल्छ",
+            "roman": "khulcha",
+            "meaning": "opens"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-4d8b997fe5221b4675f14487c8004d352c0e524848a3879482bd8865a45a4ec2.mp3",
+          "sha256": "4d8b997fe5221b4675f14487c8004d352c0e524848a3879482bd8865a45a4ec2",
+          "bytes": 12960
+        }
+      },
+      "practice-06-03": {
+        "ne": "यो झोला कति हो?",
+        "jp": "How much is this bag?",
+        "words": [
+          {
+            "text": "यो",
+            "roman": "yo",
+            "meaning": "this"
+          },
+          {
+            "text": "झोला",
+            "roman": "jholā",
+            "meaning": "bag"
+          },
+          {
+            "text": "कति",
+            "roman": "kati",
+            "meaning": "how much; how many"
+          },
+          {
+            "text": "हो",
+            "roman": "ho",
+            "meaning": "is (identity/price)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-f6a174380094c336039809ba3c28e1d3cce1601364cec4a2e9dd72afd15247e1.mp3",
+          "sha256": "f6a174380094c336039809ba3c28e1d3cce1601364cec4a2e9dd72afd15247e1",
+          "bytes": 12672
+        }
+      },
+      "practice-07-01": {
+        "ne": "नमस्ते, मेरो नाम आशा हो।",
+        "jp": "Hello. My name is Asha.",
+        "words": [
+          {
+            "text": "नमस्ते",
+            "roman": "namaste",
+            "meaning": "hello (greeting)"
+          },
+          {
+            "text": "मेरो",
+            "roman": "mero",
+            "meaning": "my"
+          },
+          {
+            "text": "नाम",
+            "roman": "nām",
+            "meaning": "name"
+          },
+          {
+            "text": "आशा",
+            "roman": "āśā",
+            "meaning": "Asha (a name)"
+          },
+          {
+            "text": "हो",
+            "roman": "ho",
+            "meaning": "is (identity/price)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-36c458166c1c83e2da84bba8c85c8774d84a040bc56507958ae27304f6ef603c.mp3",
+          "sha256": "36c458166c1c83e2da84bba8c85c8774d84a040bc56507958ae27304f6ef603c",
+          "bytes": 15552
+        }
+      },
+      "practice-07-02": {
+        "ne": "म धनगढीमा बस्छु।",
+        "jp": "I live in Dhangadhi.",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "I"
+          },
+          {
+            "text": "धनगढीमा",
+            "roman": "dhangadhīmā",
+            "meaning": "in Dhangadhi (place + mā)"
+          },
+          {
+            "text": "बस्छु",
+            "roman": "baschu",
+            "meaning": "live (I)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-7706a11b15991a6b56175b23b8c2965dfe13230180b128bb8a8a7b9696dc615c.mp3",
+          "sha256": "7706a11b15991a6b56175b23b8c2965dfe13230180b128bb8a8a7b9696dc615c",
+          "bytes": 13680
+        }
+      },
+      "practice-07-03": {
+        "ne": "म अहिले नेपाली सिक्दै छु।",
+        "jp": "I am learning Nepali now.",
+        "words": [
+          {
+            "text": "म",
+            "roman": "ma",
+            "meaning": "I"
+          },
+          {
+            "text": "अहिले",
+            "roman": "ahile",
+            "meaning": "now"
+          },
+          {
+            "text": "नेपाली",
+            "roman": "nepālī",
+            "meaning": "Nepali (language; here)"
+          },
+          {
+            "text": "सिक्दै",
+            "roman": "sikdai",
+            "meaning": "learning (sikdai chu = am learning)"
+          },
+          {
+            "text": "छु",
+            "roman": "chu",
+            "meaning": "am (sikdai chu = am learning)"
+          }
+        ],
+        "audio": {
+          "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-e4703ab5c93f057856159969229023fee1632762fd2debbfce8ce4dc66c36e41.mp3",
+          "sha256": "e4703ab5c93f057856159969229023fee1632762fd2debbfce8ce4dc66c36e41",
+          "bytes": 16128
+        }
+      }
+    }
   }
 }
