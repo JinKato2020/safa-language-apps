@@ -4,8 +4,12 @@ export type StudyRef = { mode: 'grammar' | 'conversation'; themeId: number; leve
 export type StudySession = { kind: 'course' | 'review'; items: StudyRef[]; stepId?: string; position?: number; answered?: string[] };
 export type LearningPath = { title: string; description: string; intro: { title: string; body: string }[]; steps: { id: string; title: string; goal: string; guideThemeId?: number; items: StudyRef[] }[] };
 export type Rating = { item: StudyRef; result: 'again' | 'known'; streak: number; due: number; updated: number };
-export type StudyState = { version: 1; introRead: boolean; ratings: Record<string, Rating>; completed: Record<string, string>; resume?: { item: StudyRef; session?: StudySession } };
-export const emptyStudyState = (): StudyState => ({ version: 1, introRead: false, ratings: {}, completed: {} });
+export type StudyState = { version: 1; introRead: boolean; ratings: Record<string, Rating>; completed: Record<string, string>; activity?: Record<string, string[]>; resume?: { item: StudyRef; session?: StudySession } };
+export const emptyStudyState = (): StudyState => ({ version: 1, introRead: false, ratings: {}, completed: {}, activity: {} });
+export function studyDate(now: number): string {
+  const d = new Date(now);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
 export const studyKey = (r: StudyRef) => `${r.mode}:${r.themeId}:${r.levelId ?? 1}:${r.index}`;
 export const stepSignature = (items: StudyRef[]) => JSON.stringify(items.map(r => [studyKey(r), r.ne]));
 export function validRef(r: any): r is StudyRef {
@@ -25,6 +29,21 @@ export function decodeStudy(raw: string | null): StudyState {
     if (validRef(r?.item) && key === studyKey(r.item) && ['known','again'].includes(r.result) && Number.isInteger(r.streak) && r.streak >= 0 && Number.isFinite(r.due) && Number.isFinite(r.updated)) state.ratings[key] = r;
   }
   for (const [key, v] of Object.entries(p.completed)) if (typeof v === 'string') state.completed[key] = v;
+  if (p.activity && typeof p.activity === 'object') {
+    for (const [day, keys] of Object.entries(p.activity)) {
+      if (/^\d{4}-\d{2}-\d{2}$/.test(day) && studyDate(new Date(day + 'T12:00:00').getTime()) === day && Array.isArray(keys)) {
+        const valid = keys.filter((key): key is string => typeof key === 'string' && /^(grammar|conversation):\d+:\d+:\d+$/.test(key));
+        if (valid.length) state.activity![day] = [...new Set(valid)];
+      }
+    }
+  } else {
+    // Old installs know only each example's latest assessment. Preserve those
+    // confirmed dates without inventing earlier days or counting home visits.
+    for (const [key, rating] of Object.entries(state.ratings)) {
+      const day = studyDate(rating.updated);
+      state.activity![day] = [...(state.activity![day] ?? []), key];
+    }
+  }
   if (validRef(p.resume?.item)) {
     const s = p.resume.session;
     if (!s) state.resume = { item: p.resume.item };
@@ -38,7 +57,25 @@ export function rateStudy(state: StudyState, item: StudyRef, result: Rating['res
   const streak = result === 'again' ? 0 : same && previous.result === 'known' && previous.due > now ? previous.streak : Math.min(3, (same ? previous.streak : 0) + 1);
   const days = [0, 1, 3, 7][streak];
   const due = result === 'again' ? now : same && previous.result === 'known' && previous.due > now ? previous.due : now + days * 86400000;
-  return { ...state, ratings: { ...state.ratings, [key]: { item, result, streak, updated: now, due } } };
+  const day = studyDate(now), activity = state.activity ?? {};
+  return { ...state, activity: { ...activity, [day]: [...new Set([...(activity[day] ?? []), key])] }, ratings: { ...state.ratings, [key]: { item, result, streak, updated: now, due } } };
+}
+
+/** Calendar-day streaks, using local dates (including DST), not 24-hour offsets. */
+export function studyActivity(state: StudyState, now: number) {
+  const date = new Date(now), today = studyDate(now), activity = state.activity ?? {};
+  const offset = (days: number) => { const d = new Date(date); d.setHours(12, 0, 0, 0); d.setDate(d.getDate() + days); return studyDate(d.getTime()); };
+  const days = Object.keys(activity).filter(day => day <= today && activity[day].length > 0);
+  const active = new Set(days);
+  let cursor = active.has(today) ? 0 : -1, streak = 0;
+  while (active.has(offset(cursor--))) streak++;
+  return {
+    today: activity[today]?.length ?? 0, streak, totalDays: days.length,
+    week: Array.from({ length: 7 }, (_, index) => {
+      const key = offset(index - 6), d = new Date(key + 'T12:00:00');
+      return { key, weekday: d.getDay(), day: d.getDate(), count: activity[key]?.length ?? 0, today: key === today };
+    }),
+  };
 }
 export function reviewItems(state: StudyState, data: AppData, now: number, limit = 5): StudyRef[] {
   return Object.values(state.ratings).filter(r => r.due <= now && resolveStudy(data, r.item))

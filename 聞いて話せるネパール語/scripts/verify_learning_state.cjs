@@ -9,6 +9,22 @@ const ne={...core,nepaliAudio:{},nepaliGrammarAudio:{}};
 const data=compose(ne,{...overlays.ja,nativeLang:'ja'},{version:'test'});
 const m=overlays.ja.learningPath.steps[0].items[0],now=1000000,day=86400000,key=policy.studyKey(m);
 (async()=>{
+// Home activity is assessed practice, not app visits. Repeats count once per local day.
+const local=(y,m,d,h=12)=>new Date(y,m-1,d,h).getTime();
+let activity=policy.emptyStudyState();assert.equal(policy.studyActivity(activity,local(2026,11,7)).totalDays,0);
+activity=policy.rateStudy(activity,m,'again',local(2026,11,5));
+activity=policy.rateStudy(activity,m,'known',local(2026,11,5,14));assert.equal(activity.activity['2026-11-05'].length,1);
+activity=policy.rateStudy(activity,m,'known',local(2026,11,6));
+assert.equal(policy.studyActivity(activity,local(2026,11,7)).streak,2,'yesterday streak remains available today');
+assert.equal(policy.studyActivity(activity,local(2026,11,8)).streak,0,'missed day breaks streak');
+activity=policy.rateStudy(activity,m,'known',local(2026,11,7));
+assert.equal(policy.studyActivity(activity,local(2026,11,7)).streak,3);
+assert.equal(policy.studyActivity(policy.decodeStudy(JSON.stringify(activity)),local(2026,11,7)).totalDays,3,'repeat assessments preserve previous dates');
+const legacy=JSON.parse(JSON.stringify(activity));delete legacy.activity;
+assert.equal(policy.studyActivity(policy.decodeStudy(JSON.stringify(legacy)),local(2026,11,7)).totalDays,1,'migration uses only confirmed latest dates');
+let dst=policy.emptyStudyState();for(const day of [7,8,9])dst=policy.rateStudy(dst,m,'known',local(2026,3,day));
+assert.equal(policy.studyActivity(dst,local(2026,3,9)).streak,3,'local calendar streak crosses daylight-saving boundary');
+assert.equal(policy.studyActivity(dst,local(2026,3,9)).week.length,7);
 let state=policy.emptyStudyState();state=policy.rateStudy(state,m,'again',now);assert.equal(policy.reviewItems(state,data,now).length,1);
 state=policy.rateStudy(state,m,'known',now);assert.equal(policy.reviewItems(state,data,now).length,0);assert.equal(state.ratings[key].due,now+day);
 state=policy.rateStudy(state,m,'known',now+10);assert.equal(state.ratings[key].streak,1);assert.equal(state.ratings[key].due,now+day,'same-day repetition cannot skip the schedule');

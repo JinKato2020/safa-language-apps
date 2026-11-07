@@ -1,31 +1,152 @@
-import { Pressable, ScrollView, View } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { useCallback, useMemo, useState } from 'react';
+import { AppState, Image, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { ModeHero, useHeroImage } from '../heroImages';
+import { useHeroImage } from '../heroImages';
 import { Text } from '../Text';
 import { useI18n } from '../i18n';
-import { useScaleStyle } from '../SettingsContext';
-import { LearningLaunch, learningStyles as styles } from '../LearningLaunch';
+import { useAppData } from '../AppDataContext';
+import { useLearning } from '../LearningContext';
+import { emptyStudyState, practiceParams, resolveStudy, reviewItems, stepSignature, studyActivity } from '../learning';
+
+const c = { ink: '#123039', muted: '#52666C', navy: '#102F38', teal: '#7DE2CE', page: '#F2F5F3', line: '#DCE6E2' };
+const EMPTY = emptyStudyState();
 
 export default function LearningHomeScreen() {
-  const nav=useNavigation<any>(), {lang}=useI18n(), ss=useScaleStyle(), {top}=useSafeAreaInsets();
-  const hero=useHeroImage('grammar'), en=lang==='en';
-  const modes=[
-    ['GrammarTab',en?'Understand the grammar':'文法を理解する',en?'Patterns, explanations and practice':'文の型・解説・例題'],
-    ['ConversationTab',en?'Say it in Nepali':'ネパール語で言ってみる',en?'Short sentences for everyday situations':'場面別の瞬間作文'],
-    ['ListeningTab',en?'Listen and repeat':'聞いて繰り返す',en?'Review familiar sentences with audio':'学んだ文を音声で復習'],
-    ['VocabularyTab',en?'Build your vocabulary':'単語を増やす',en?'Cards and illustrated audio posters':'単語カードと音声付きポスター'],
-  ];
-  return <ScrollView style={{marginTop:top}} contentContainerStyle={{padding:20,paddingBottom:32,maxWidth:760,width:'100%',alignSelf:'center'}}>
-    {hero!=null && <ModeHero source={hero} />}
-    <View style={{flexDirection:'row',alignItems:'center',gap:12,marginTop:16}}>
-      <Text accessibilityRole="header" style={[styles.title,ss(24,34),{flex:1}]}>{en?'A little Nepali, every day':'今日は5文から'}</Text>
-      <Pressable accessibilityRole="button" accessibilityLabel={en?'Settings':'設定'} style={styles.secondary} onPress={()=>nav.navigate('SettingsMain')}><Text style={[styles.link,ss(16,24)]}>{en?'Settings':'設定'}</Text></Pressable>
+  const nav = useNavigation<any>(), { lang } = useI18n(), { top } = useSafeAreaInsets();
+  const data = useAppData(), learning = useLearning(), hero = useHeroImage('grammar');
+  const [now, setNow] = useState(Date.now);
+  useFocusEffect(useCallback(() => {
+    let timer: ReturnType<typeof setTimeout>;
+    const refresh = () => {
+      clearTimeout(timer); const current = Date.now(); setNow(current);
+      const tomorrow = new Date(current); tomorrow.setHours(24, 0, 1, 0);
+      timer = setTimeout(refresh, tomorrow.getTime() - current);
+    };
+    refresh();
+    const sub = AppState.addEventListener('change', value => { if (value === 'active') refresh(); });
+    return () => { clearTimeout(timer); sub.remove(); };
+  }, []));
+  const en = lang === 'en', state = learning?.state ?? EMPTY, ready = !!learning?.ready;
+  const activity = useMemo(() => studyActivity(state, now), [state, now]);
+  const steps = data.LEARNING_PATH?.steps ?? [];
+  const completed = steps.filter(step => state.completed[step.id] === stepSignature(step.items));
+  const next = steps.find(step => !completed.includes(step));
+  const due = useMemo(() => reviewItems(state, data, now), [state, data, now]);
+  const resume = state.resume && resolveStudy(data, state.resume.item) ? state.resume : undefined;
+  const weekCount = activity.week.filter(day => day.count > 0).length;
+  const total = Object.values(state.ratings).filter(rating => resolveStudy(data, rating.item)).length;
+  const target = Math.min(5, activity.today), achieved = activity.today >= 5;
+  const weekdays = en ? ['S', 'M', 'T', 'W', 'T', 'F', 'S'] : ['日', '月', '火', '水', '木', '金', '土'];
+  const action = resume ? (en ? 'Continue where you left off' : '前回の続きへ')
+    : due.length ? (en ? `Review ${due.length} sentences` : `${due.length}文を復習する`)
+    : next && state.introRead ? (en ? 'Start today’s five' : '今日の5文を始める')
+    : next ? (en ? 'Start here' : 'はじめての方へ') : (en ? 'Explore your learning path' : '学習マップを開く');
+  const start = () => {
+    if (resume) nav.navigate('Practice', practiceParams(resume.item, resume.session));
+    else if (due.length) nav.navigate('Practice', practiceParams(due[0], { kind: 'review', items: due }));
+    else if (next && state.introRead) nav.navigate('Practice', practiceParams(next.items[0], { kind: 'course', stepId: next.id, items: next.items }));
+    else nav.navigate('LearningPath');
+  };
+  const ratio = hero == null ? 3 : (() => { const asset = Image.resolveAssetSource(hero); return asset.width / asset.height; })();
+
+  return <ScrollView style={{ backgroundColor: c.page, marginTop: top }} contentContainerStyle={styles.page}>
+    <View style={styles.hero}>
+      {hero != null && <View style={{ width: '100%', aspectRatio: ratio }}>
+        <Image source={hero} resizeMode="contain" style={{ width: '100%', height: '100%' }} accessibilityIgnoresInvertColors />
+      </View>}
+      <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Settings' : '設定'} onPress={() => nav.navigate('SettingsMain')} style={({ pressed }) => [styles.settings, pressed && styles.pressed]}>
+        <Text style={styles.settingsText}>{en ? 'Settings' : '設定'}</Text>
+      </Pressable>
+      <View style={styles.heroBody}>
+        <Text style={styles.eyebrow}>NEPALI · EVERY DAY</Text>
+        <Text accessibilityRole="header" style={styles.headline}>{en ? 'A little today.\nMore to say tomorrow.' : '昨日より、\nひとこと先へ。'}</Text>
+        <View style={styles.goalRow}>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.goalLabel}>{achieved ? (en ? 'TODAY’S FIVE · DONE' : '今日の5文 · 達成') : (en ? 'TODAY’S FIVE' : '今日の5文')}</Text>
+            <Text style={styles.goalHint}>{achieved ? (en ? 'Your small step counts.' : '今日の一歩、積み重なりました。') : (en ? 'One sentence at a time.' : '一文ずつ、自分のペースで。')}</Text>
+          </View>
+          <Text accessibilityLabel={en ? `${activity.today} sentences practised today. Goal: 5.` : `今日の練習${activity.today}文。目標5文。`} style={styles.goalNumber}>{ready ? target : '—'}<Text style={styles.goalDenominator}> / 5</Text></Text>
+        </View>
+        <View accessibilityRole="progressbar" accessibilityLabel={en ? 'Daily practice goal' : '今日の練習目標'} accessibilityValue={{ min: 0, max: 5, now: target }} style={styles.segments}>
+          {[0, 1, 2, 3, 4].map(i => <View key={i} style={[styles.segment, { backgroundColor: i < target ? c.teal : '#34515A' }]} />)}
+        </View>
+        <Pressable accessibilityRole="button" accessibilityLabel={action} onPress={start} style={({ pressed }) => [styles.primary, pressed && styles.pressed]}>
+          <Text style={styles.primaryText}>{action}</Text><Text style={styles.arrow}>↗</Text>
+        </Pressable>
+      </View>
     </View>
-    <LearningLaunch />
-    <Text accessibilityRole="header" style={[styles.title,ss(20,30),{marginTop:12}]}>{en?'Choose how to practise':'好きな練習から始める'}</Text>
-    {modes.map(([route,title,body],i)=><Pressable key={route} accessibilityRole="button" style={[styles.card,i%2===1 && styles.green]} onPress={()=>nav.navigate(route)}>
-      <Text style={[styles.title,ss(18,28)]}>{title} →</Text><Text style={[styles.body,ss(15,24)]}>{body}</Text>
-    </Pressable>)}
+
+    <View style={styles.panel}>
+      <View style={styles.sectionRow}>
+        <View style={{ flex: 1 }}><Text style={styles.overline}>{en ? 'YOUR RHYTHM' : '学びのリズム'}</Text><Text accessibilityRole="header" style={styles.sectionTitle}>{en ? 'The last seven days' : '小さな一歩を、続けよう。'}</Text></View>
+        {activity.streak > 0 && <View style={styles.streak}><Text style={styles.streakValue}>{activity.streak}</Text><Text style={styles.streakLabel}>{en ? 'day streak' : '日連続'}</Text></View>}
+      </View>
+      <View style={styles.week}>
+        {activity.week.map(day => <View key={day.key} style={styles.weekDay} accessible accessibilityLabel={en ? `${day.key}: ${day.count} sentences` : `${day.key}：${day.count}文`}>
+          <Text style={[styles.weekLabel, day.today && { color: c.ink, fontWeight: '800' }]}>{weekdays[day.weekday]}</Text>
+          <View style={[styles.dayCircle, day.count > 0 && styles.dayDone, day.today && styles.dayToday]}><Text style={[styles.dayNumber, day.count > 0 && { color: '#FFF' }]}>{day.count > 0 ? '✓' : day.day}</Text></View>
+          <View style={[styles.todayDot, { backgroundColor: day.today ? c.ink : 'transparent' }]} />
+        </View>)}
+      </View>
+      <Text style={styles.weekCaption}>{en ? `${weekCount} of the last 7 days · every return counts.` : `直近7日のうち${weekCount}日。間が空いても、また一歩から。`}</Text>
+      <View style={styles.stats}>
+        <View style={styles.stat}><Text style={styles.statValue}>{ready ? total : '—'}<Text style={styles.statUnit}>{en ? '' : ' 文'}</Text></Text><Text style={styles.statLabel}>{en ? 'Sentences practised' : '取り組んだ例文'}</Text></View>
+        <View style={[styles.stat, styles.statBorder]}><Text style={styles.statValue}>{ready ? activity.totalDays : '—'}<Text style={styles.statUnit}>{en ? '' : ' 日'}</Text></Text><Text style={styles.statLabel}>{en ? 'Practice days' : '例文を練習した日'}</Text></View>
+      </View>
+      <Text style={styles.recordNote}>{en ? 'Recorded when you rate a sentence after checking its answer.' : '例文の答えを確認して振り返ると、記録が増えます。'}</Text>
+    </View>
+
+    <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Open learning path' : '学習マップを開く'} onPress={() => nav.navigate('LearningPath')} style={({ pressed }) => [styles.path, pressed && styles.pressed]}>
+      <View style={styles.sectionRow}><Text style={styles.overline}>{en ? 'YOUR LEARNING PATH' : 'はじめての7ステップ'}</Text><Text style={styles.pathCount}>{completed.length}<Text style={styles.pathDenominator}> / {steps.length}</Text></Text></View>
+      <Text style={styles.pathTitle}>{completed.length === steps.length && steps.length > 0 ? (en ? 'Your foundation is taking shape.' : '基礎の一歩、そろいました。') : (en ? 'Build your foundation.' : '「わかる」を、ひとつずつ。')}</Text>
+      <View style={styles.segments}>{steps.map(step => <View key={step.id} style={[styles.segment, { backgroundColor: completed.includes(step) ? '#237766' : '#D9E8E2' }]} />)}</View>
+      <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? 'Five sentences per step' : '1ステップ、5文から'}</Text><Text style={styles.pathLink}>{en ? 'View path →' : '学習マップ →'}</Text></View>
+    </Pressable>
+
+    {ready && due.length > 0 && <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Review saved sentences' : '保存した例文を復習'} onPress={() => nav.navigate('Practice', practiceParams(due[0], { kind: 'review', items: due }))} style={({ pressed }) => [styles.review, pressed && styles.pressed]}>
+      <View style={styles.reviewBadge}><Text style={styles.reviewNumber}>{due.length}</Text></View>
+      <View style={{ flex: 1 }}><Text style={styles.reviewTitle}>{en ? 'A little review, a little stronger.' : '思い出すほど、自分の言葉に。'}</Text><Text style={styles.reviewNote}>{en ? 'Your saved sentences are ready.' : 'もう一度練習する例文があります。'}</Text></View><Text style={styles.reviewArrow}>→</Text>
+    </Pressable>}
+    {learning?.error && <Pressable accessibilityRole="button" onPress={learning.retry} style={styles.error}><Text style={styles.errorText}>{en ? 'Could not load or save progress. Tap to retry.' : '学習記録を読み込み・保存できませんでした。タップして再試行。'}</Text></Pressable>}
+    <Text style={styles.footer}>{en ? 'A few words today. A real conversation tomorrow.' : '今日のひとことが、次の会話につながる。'}</Text>
   </ScrollView>;
 }
+
+const styles = StyleSheet.create({
+  page: { padding: 16, paddingBottom: 44, gap: 16, maxWidth: 760, width: '100%', alignSelf: 'center' },
+  hero: { backgroundColor: c.navy, borderRadius: 24, overflow: 'hidden' },
+  settings: { position: 'absolute', top: 12, right: 12, minHeight: 44, minWidth: 56, paddingHorizontal: 14, justifyContent: 'center', alignItems: 'center', borderRadius: 22, backgroundColor: '#FFFFFFEE' },
+  settingsText: { color: c.ink, fontSize: 13, fontWeight: '700' },
+  heroBody: { padding: 22, paddingTop: 20 },
+  eyebrow: { color: c.teal, fontSize: 11, lineHeight: 18, letterSpacing: 2, fontWeight: '700' },
+  headline: { color: '#FFF', fontSize: 30, lineHeight: 39, fontWeight: '700', letterSpacing: -0.5, marginTop: 10, marginBottom: 24 },
+  goalRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  goalLabel: { color: '#ECF9F5', fontSize: 13, lineHeight: 21, fontWeight: '700', letterSpacing: 0.4 },
+  goalHint: { color: '#BDCFD0', fontSize: 12, lineHeight: 19, marginTop: 3 },
+  goalNumber: { color: c.teal, fontSize: 36, lineHeight: 48, fontWeight: '600', fontVariant: ['tabular-nums'] },
+  goalDenominator: { color: '#BDCFD0', fontSize: 16, lineHeight: 24, fontWeight: '400' },
+  segments: { flexDirection: 'row', gap: 5, marginTop: 12 }, segment: { flex: 1, height: 4, borderRadius: 2 },
+  primary: { marginTop: 22, backgroundColor: c.teal, borderRadius: 14, minHeight: 54, paddingHorizontal: 18, paddingVertical: 14, flexDirection: 'row', alignItems: 'center', gap: 12 },
+  primaryText: { flex: 1, color: c.navy, fontSize: 16, lineHeight: 24, fontWeight: '800' }, arrow: { color: c.navy, fontSize: 24, lineHeight: 28 },
+  panel: { backgroundColor: '#FFF', borderRadius: 22, padding: 22, borderWidth: 1, borderColor: '#E5ECE8' },
+  sectionRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 10 },
+  overline: { color: c.muted, fontSize: 11, lineHeight: 18, fontWeight: '700', letterSpacing: 1.2, flexShrink: 1 },
+  sectionTitle: { color: c.ink, fontSize: 17, lineHeight: 26, fontWeight: '700', marginTop: 5 },
+  streak: { alignItems: 'center', paddingLeft: 4 }, streakValue: { color: '#1F7666', fontSize: 28, lineHeight: 34, fontWeight: '700' }, streakLabel: { color: c.muted, fontSize: 10, lineHeight: 17 },
+  week: { flexDirection: 'row', justifyContent: 'space-between', gap: 4, marginTop: 22 }, weekDay: { flex: 1, alignItems: 'center', gap: 7 },
+  weekLabel: { color: c.muted, fontSize: 11, lineHeight: 18 },
+  dayCircle: { width: '100%', maxWidth: 34, aspectRatio: 1, borderRadius: 18, alignItems: 'center', justifyContent: 'center', backgroundColor: '#F0F4F2', borderWidth: 1, borderColor: 'transparent' },
+  dayDone: { backgroundColor: '#237766' }, dayToday: { borderColor: '#123039', borderWidth: 2 },
+  dayNumber: { color: c.muted, fontSize: 12, lineHeight: 17, fontWeight: '600' }, todayDot: { width: 3, height: 3, borderRadius: 2 },
+  weekCaption: { color: c.muted, fontSize: 11, lineHeight: 18, marginTop: 11 },
+  stats: { flexDirection: 'row', borderTopWidth: 1, borderTopColor: c.line, marginTop: 20, paddingTop: 18 }, stat: { flex: 1 }, statBorder: { borderLeftWidth: 1, borderLeftColor: c.line, paddingLeft: 20 },
+  statValue: { color: c.ink, fontSize: 28, lineHeight: 38, fontWeight: '600', fontVariant: ['tabular-nums'] }, statUnit: { color: c.muted, fontSize: 12, lineHeight: 20, fontWeight: '400' }, statLabel: { color: c.muted, fontSize: 12, lineHeight: 19 },
+  recordNote: { color: c.muted, fontSize: 10, lineHeight: 17, marginTop: 16 },
+  path: { backgroundColor: '#E4EEE8', padding: 22, borderRadius: 22, gap: 9 }, pathCount: { color: c.ink, fontSize: 24, lineHeight: 32, fontWeight: '700' }, pathDenominator: { color: c.muted, fontSize: 13, lineHeight: 20, fontWeight: '400' },
+  pathTitle: { color: c.ink, fontSize: 19, lineHeight: 28, fontWeight: '700' }, pathNote: { color: c.muted, fontSize: 11, lineHeight: 18, flex: 1 }, pathLink: { color: c.ink, fontSize: 12, lineHeight: 20, fontWeight: '700' },
+  review: { flexDirection: 'row', alignItems: 'center', padding: 18, gap: 12, borderRadius: 20, backgroundColor: '#FFF' }, reviewBadge: { width: 40, height: 40, borderRadius: 14, alignItems: 'center', justifyContent: 'center', backgroundColor: '#E4EEE8' },
+  reviewNumber: { color: '#237766', fontSize: 19, fontWeight: '700' }, reviewTitle: { color: c.ink, fontSize: 14, lineHeight: 22, fontWeight: '700' }, reviewNote: { color: c.muted, fontSize: 11, lineHeight: 18, marginTop: 3 }, reviewArrow: { color: c.ink, fontSize: 20 },
+  error: { padding: 16, borderRadius: 14, backgroundColor: '#FCEEEF' }, errorText: { color: '#8B2945', fontSize: 13, lineHeight: 21 },
+  footer: { color: c.muted, fontSize: 11, lineHeight: 19, textAlign: 'center', marginTop: 2 }, pressed: { opacity: 0.78 },
+});

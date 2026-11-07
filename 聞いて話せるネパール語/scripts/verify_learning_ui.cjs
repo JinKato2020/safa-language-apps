@@ -1,5 +1,6 @@
 // Actual TSX screens and persistence provider through DOM adapters. Native gestures/audio are not simulated as device proof.
 const fs=require('fs'),path=require('path'),ts=require('typescript'),assert=require('assert/strict');
+const VERSION=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../expo-app/app.json'),'utf8')).expo.version;
 const ROOT=path.resolve(__dirname,'../..'),work=path.resolve(process.argv[2]||'.work-beginner/ui');fs.mkdirSync(work,{recursive:true});
 const source=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const compile=s=>ts.transpileModule(s,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
@@ -14,14 +15,15 @@ const modules=${JSON.stringify(modules)},cache={},overlays=${JSON.stringify(over
 function require(n){if(n.startsWith('.'))n=n.split('/').pop();if(cache[n])return cache[n].exports;const m={exports:{}};cache[n]=m;if(!modules[n])throw Error('Missing '+n);new Function('require','module','exports','process',modules[n])(require,m,m.exports,{env:{NODE_ENV:'production'}});return m.exports;}
 const React=require('react'),h=React.createElement;window.caseInfo={lang:'ja',scale:1};window.route={name:'HomeTab'};window.events=[];window.failStorage=false;
 const flat=s=>Object.assign({},...(Array.isArray(s)?s.flat(Infinity):[s]).filter(Boolean));
-function css(style,view=false){const s=flat(style),out=view?{display:'flex',flexDirection:'column',flexShrink:0,minWidth:0,borderWidth:0,borderStyle:'solid'}:{};for(const[k,v]of Object.entries(s)){
+function css(style,view=false){const s=flat(style),out=view?{position:'relative',display:'flex',flexDirection:'column',flexShrink:0,minWidth:0,borderWidth:0,borderStyle:'solid'}:{};for(const[k,v]of Object.entries(s)){
 if(k==='paddingHorizontal'){out.paddingLeft=v;out.paddingRight=v;}else if(k==='paddingVertical'){out.paddingTop=v;out.paddingBottom=v;}else if(k==='marginHorizontal'){out.marginLeft=v;out.marginRight=v;}else if(k==='marginVertical'){out.marginTop=v;out.marginBottom=v;}else if(k==='lineHeight')out[k]=v*window.caseInfo.scale+'px';else if(k==='fontSize')out[k]=v*window.caseInfo.scale;else out[k]=v;}return out;}
 function View(p){const ref=React.useRef(null);React.useEffect(()=>{if(!p.onLayout)return;const r=new ResizeObserver(()=>p.onLayout({nativeEvent:{layout:{width:ref.current.clientWidth,height:ref.current.clientHeight}}}));r.observe(ref.current);return()=>r.disconnect();},[p.onLayout]);return h('div',{ref,style:css(p.style,true)},p.children);}
 function Text(p){return h('span',{role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...css(p.style)}},p.children);}
 function Pressable(p){return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,disabled:p.disabled,onClick:p.onPress,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
 const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y)}));return h('div',{ref:el,style:{overflowY:'auto',flex:1,minHeight:0,...css(p.style,true)}},h('div',{style:css(p.contentContainerStyle,true)},p.children));});
-const Image=p=>h('img',{src:p.source?.uri,style:css(p.style)});
-cache['react-native']={exports:{View,Text,Pressable,ScrollView,Image,Animated:{View},StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
+const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))};
+const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode==='contain'?'contain':undefined,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
+cache['react-native']={exports:{AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,Image,Animated:{View},StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
 cache.Text={exports:{Text}};cache.SettingsContext={exports:{useSettings:()=>({practiceDirection:'ja2ne',romaji:true}),useScaleStyle:()=> (fontSize,lineHeight)=>({fontSize,lineHeight}),useGlobalScaleStyle:()=>fontSize=>({fontSize})}};
 cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).replace('{'+k+'}',v);return s;}})}};
 cache.AppDataContext={exports:{useAppData:()=>window.data}};
@@ -49,18 +51,18 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
 const{chromium}=require('C:/Users/jwpsa/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
 try{const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
 for(const lang of ['ja','en']){
-const copy=lang==='ja'?{start:'はじめての方へ →',practice:'この5文を練習 →',reveal:'答えを見る',known:'できた',again:'もう一度',finish:'今回の練習はここまで',back:'一覧に戻る',guide:'教材を読む →',intro:'はじめに：音と文字の読み方 ＋',read:'読んだので、学習を始める'}:{start:'Start here →',practice:'Practise these 5 sentences →',reveal:'Show answer',known:'I could do it',again:'Try again',finish:'This practice set is complete',back:'Back to list',guide:'Read the guide →',intro:'First: sounds and reading ＋',read:'Read — start learning'};
+const copy=lang==='ja'?{start:'はじめての方へ',practice:'この5文を練習 →',reveal:'答えを見る',known:'できた',again:'もう一度',finish:'今回の練習はここまで',back:'一覧に戻る',guide:'教材を読む →',intro:'はじめに：音と文字の読み方 ＋',read:'読んだので、学習を始める'}:{start:'Start here',practice:'Practise these 5 sentences →',reveal:'Show answer',known:'I could do it',again:'Try again',finish:'This practice set is complete',back:'Back to list',guide:'Read the guide →',intro:'First: sounds and reading ＋',read:'Read — start learning'};
 await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
 await page.getByRole('button',{name:copy.start,exact:true}).click();await page.getByRole('button',{name:copy.intro,exact:true}).click();await page.getByRole('button',{name:copy.read,exact:true}).click();
 for(let step=0;step<7;step++){
 await page.getByRole('button',{name:copy.practice,exact:true}).nth(step).click();
 for(let n=0;n<5;n++){await page.getByRole('button',{name:copy.reveal,exact:true}).click();await page.getByRole('button',{name:n===0?copy.again:copy.known,exact:true}).click();}
 await page.getByRole('heading',{name:copy.finish,exact:true}).waitFor();await page.getByRole('button',{name:copy.back,exact:true}).click();}
-const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')));assert.equal(Object.keys(saved.completed).length,7);assert.equal(Object.keys(saved.ratings).length,35);assert.equal(saved.introRead,true);
+const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')));assert.equal(Object.keys(saved.completed).length,7);assert.equal(Object.keys(saved.ratings).length,35);assert.equal(saved.introRead,true);assert.equal(Object.values(saved.activity).flat().length,35,'actual assessment buttons persist daily activity');
 // Restart and resume preserve the exact course position and previously answered items.
 await page.getByRole('button',{name:copy.practice,exact:true}).first().click();await page.getByRole('button',{name:copy.reveal,exact:true}).click();await page.getByRole('button',{name:copy.known,exact:true}).click();await page.waitForTimeout(30);
 let resume=await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).resume);assert.equal(resume.session.position,1);
-await page.evaluate(l=>window.boot(l,false),lang);await page.getByRole('button',{name:(lang==='ja'?'前回の続きから':'Continue where you left off')+' →',exact:true}).click();assert.equal(await page.evaluate(()=>window.route.params.studySession.position),1);
+await page.evaluate(l=>window.boot(l,false),lang);await page.getByRole('button',{name:(lang==='ja'?'前回の続きへ':'Continue where you left off'),exact:true}).click();assert.equal(await page.evaluate(()=>window.route.params.studySession.position),1);
 await page.getByRole('button',{name:copy.reveal,exact:true}).click();await page.evaluate(()=>window.failStorage=true);await page.getByRole('button',{name:copy.known,exact:true}).click();await page.waitForTimeout(50);assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).resume.session.position),1);await page.evaluate(()=>window.failStorage=false);
 // Real guide button carries the selected five-sentence session.
 await page.evaluate(l=>window.boot(l,false,{name:'LearningPath'}),lang);await page.getByRole('button',{name:copy.guide,exact:true}).first().click();await page.getByRole('button',{name:lang==='ja'?'このテーマを練習 →':'Practise this topic →',exact:true}).click();assert.equal(await page.evaluate(()=>window.route.params.studySession.items.length),5);
@@ -68,8 +70,29 @@ await page.evaluate(l=>window.boot(l,false,{name:'LearningPath'}),lang);await pa
 for(const[width,height,scale]of[[320,568,1],[390,844,1],[320,568,1.4],[844,390,1]])for(const name of ['HomeTab','LearningPath','Practice']){
 await page.setViewportSize({width,height});await page.evaluate(({lang,name,scale})=>window.boot(lang,false,{name,params:name==='Practice'?{themeId:1,mode:'grammar'}:undefined},scale),{lang,name,scale});
 const over=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2);assert(!over,lang+' '+name+' overflow '+width+' '+scale);
-if(width===390){fs.mkdirSync(path.join(ROOT,'docs/previews'),{recursive:true});await page.screenshot({path:path.join(ROOT,`docs/previews/nepali-learning-2.1.12-${lang}-${name}.png`)});}
+if(width===390){fs.mkdirSync(path.join(ROOT,'docs/previews'),{recursive:true});await page.screenshot({path:path.join(ROOT,`docs/previews/nepali-learning-${VERSION}-${lang}-${name}.png`)});}
 }
+// Home has real continuation/review/settings actions, with no duplicate mode cards.
+await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
+assert.equal(await page.evaluate(()=>localStorage.getItem('test-study')),null,'opening home does not record study');
+assert.equal(await page.getByRole('button',{name:lang==='ja'?'文法を理解する →':'Understand the grammar →'}).count(),0);
+await page.getByRole('button',{name:lang==='ja'?'設定':'Settings',exact:true}).click();assert.equal(await page.evaluate(()=>window.route.name),'SettingsMain');
+await page.evaluate(l=>window.boot(l,false),lang);
+await page.getByRole('button',{name:lang==='ja'?'学習マップを開く':'Open learning path',exact:true}).click();assert.equal(await page.evaluate(()=>window.route.name),'LearningPath');
+// Sample records for visual QA: genuine example IDs, three practice days, three today.
+await page.evaluate(async l=>{
+  const policy=require('learning'),items=window.data.LEARNING_PATH.steps.flatMap(s=>s.items);let state=policy.emptyStudyState();state.introRead=true;
+  for(let day=0;day<3;day++)for(let i=0;i<(day===2?3:5);i++){
+    const at=new Date();at.setHours(0,0,0,0);at.setDate(at.getDate()-2+day);
+    state=policy.rateStudy(state,items[day*5+i],day===2?'again':'known',at.getTime());
+  }
+  state.completed[window.data.LEARNING_PATH.steps[0].id]=policy.stepSignature(window.data.LEARNING_PATH.steps[0].items);
+  localStorage.setItem('test-study',JSON.stringify(state));await window.boot(l,false);
+},lang);
+await page.screenshot({path:path.join(ROOT,`docs/previews/nepali-home-${VERSION}-${lang}-progress.png`)});
+await page.getByRole('button',{name:lang==='ja'?'保存した例文を復習':'Review saved sentences',exact:true}).click();assert.equal(await page.evaluate(()=>window.route.params.studySession.kind),'review');
+await page.evaluate(l=>window.boot(l,false),lang);
+assert.equal(await page.getByRole('button',{name:lang==='ja'?'保存した例文を復習':'Review saved sentences',exact:true}).count(),1);
 }
 assert.deepEqual(errors,[]);console.log('PASS JA/EN: all7 course sessions,35 ratings each, intro, persistent restart/resume, storage failure, guide handoff,24 screen layouts; no browser exceptions.');
 }finally{await browser.close();}
