@@ -17,6 +17,7 @@ type Nav = NativeStackNavigationProp<RootStackParamList, 'VocabCategory'>;
 const GOLD = '#b08746';
 
 export default function VocabCategoryScreen() {
+  const contentNames = useAppData().CONTENT_NAMES;
   const { WORD_CATEGORIES } = useAppData();
   const lessons = usePosterLessons();
   const ent = useEntitlement();
@@ -84,7 +85,7 @@ export default function VocabCategoryScreen() {
       data={WORD_CATEGORIES}
       keyExtractor={(item) => String(item.id)}
       renderItem={({ item, index }) => {
-        const catName = t(`vocabCategories.${item.id}`);
+        const catName = (contentNames?.categories?.[item.id] ?? t(`vocabCategories.${item.id}`));
         const locked = isLockedAt(ent, index);
         return (
           <Pressable

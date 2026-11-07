@@ -13,6 +13,7 @@
 // 「audio object そのもの」をアプリ側で組み立てて渡してもらう。
 
 import { createContext, useContext, type ReactNode } from 'react';
+import type { LearningPath } from './learning';
 import type {
   ThemeMeta, LevelMeta, Example, WordCategoryMeta, Word, GrammarThemeMeta,
 } from './types';
@@ -53,6 +54,9 @@ export type JpReadingEntry = {
 export type JpReading = Record<string, JpReadingEntry>;  // キー = 日本語文そのまま
 
 export type AppData = {
+  LEARNING_PATH?: LearningPath;
+  CONTENT_NAMES?: { themes?: Record<string,string>; levels?: Record<string,string>; categories?: Record<string,string> };
+  POSTER_LESSONS?: import('./PosterContext').PosterLesson[];
   /** アプリの版数 (各アプリの app.json の expo.version) */
   version: string;
   /** 学習者の母語/第2言語コード (例: 'ne', 'bn')。未指定なら 'ne' 扱い。多言語化の足場。 */

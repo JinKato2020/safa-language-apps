@@ -38,6 +38,7 @@ const audioMarkerUri = (lang: string) => `${packDir(lang)}audio.version`;
 
 function toOverlay(json: any): L1Overlay {
   return {
+    learningPath: json.learningPath,
     nativeLang: json.l1,
     examplesL1: json.examplesL1 ?? {},
     grammarL1: json.grammarL1 ?? {},

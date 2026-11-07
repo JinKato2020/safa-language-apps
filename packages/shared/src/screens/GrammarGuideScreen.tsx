@@ -181,7 +181,7 @@ function ReadingAccordion({ group, example, ss, copy }: { group: ReadingGroup; e
 
 export default function GrammarGuideScreen() {
   const nav = useNavigation<Nav>();
-  const { themeId, title } = useRoute<R>().params;
+  const { themeId, title, studySession } = useRoute<R>().params;
   const ss = useScaleStyle();
   const insets = useSafeAreaInsets();
   const { lang } = useI18n();
@@ -218,7 +218,7 @@ export default function GrammarGuideScreen() {
               {groups.map((group, i) => <ReadingAccordion key={i} group={group} example={selected === 'examples'} copy={copy} ss={ss} />)}
             </> : <LessonBlocks blocks={sections[selected]} ss={ss} />}
             {selected === 'rules' && sections.reference.length > 0 && <Pressable accessibilityRole="button" onPress={() => choose('reference')} style={styles.secondaryAction}><Text style={[styles.actionText, ss(16, 25)]}>{copy.next} →</Text></Pressable>}
-            <Pressable accessibilityRole="button" onPress={() => nav.replace('Practice', { themeId, mode: 'grammar' })} style={styles.practiceAction}><Text style={[styles.practiceText, ss(16, 25)]}>{copy.practice} →</Text></Pressable>
+            <Pressable accessibilityRole="button" onPress={() => nav.replace('Practice', { themeId, mode: 'grammar', ...(studySession ? { startIndex: studySession.items[0]?.index ?? 0, studySession } : {}) })} style={styles.practiceAction}><Text style={[styles.practiceText, ss(16, 25)]}>{copy.practice} →</Text></Pressable>
           </View>
         )}
         <View style={{ height: spacing.xxl + insets.bottom }} />

@@ -1,0 +1,1497 @@
+{
+  "source": "Reviewed copula contexts; exact Nepali sentence guards prevent reuse after content changes.",
+  "references": [
+    "https://pressbooks.bccampus.ca/nepali/chapter/chapter-3-unit-4-grammar-focus/",
+    "https://pressbooks.bccampus.ca/nepali/chapter/chapter-6-unit-4-grammar-focus/"
+  ],
+  "entries": [
+    {
+      "sentence_id": "1-2",
+      "ne": "तपाईं विद्यार्थी हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "1-3",
+      "ne": "उहाँ विद्यार्थी हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "1-10",
+      "ne": "उहाँ डाक्टर हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "1-13",
+      "ne": "तपाईंहरू शिक्षक हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "7-13",
+      "ne": "उहाँ मेरो शिक्षक हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "23-2",
+      "ne": "उहाँ राम्री केटी हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "29-12",
+      "ne": "जो यहाँ बस्नुहुन्छ, उहाँ मेरो साथी हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "36-1",
+      "ne": "म लेखक हुँ।",
+      "word": "हुँ",
+      "ja": "です",
+      "en": "be (identity)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "36-2",
+      "ne": "तँ लेखक होस्।",
+      "word": "होस्",
+      "ja": "です",
+      "en": "be (identity)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "36-3",
+      "ne": "तिमी लेखक हौ।",
+      "word": "हौ",
+      "ja": "です",
+      "en": "be (identity)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "36-4",
+      "ne": "तिमीहरू लेखक हौ।",
+      "word": "हौ",
+      "ja": "です",
+      "en": "be (identity)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "36-5",
+      "ne": "तपाईं लेखक हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "36-6",
+      "ne": "उहाँ लेखक हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "36-7",
+      "ne": "उहाँ लेखिका हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "36-8",
+      "ne": "उहाँ लेखक हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "36-9",
+      "ne": "हामी लेखक हौं।",
+      "word": "हौं",
+      "ja": "です",
+      "en": "be (identity)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "36-10",
+      "ne": "उहाँहरू लेखक हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "です（敬意）",
+      "en": "be (identity) (respectful)",
+      "role": "identity"
+    },
+    {
+      "sentence_id": "1-5",
+      "ne": "उहाँहरू विद्यार्थी हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "ではありません（敬意）",
+      "en": "not be (identity) (respectful)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "36-11",
+      "ne": "म लेखक होइनँ।",
+      "word": "होइनँ",
+      "ja": "ではありません",
+      "en": "not be (identity)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "36-12",
+      "ne": "तँ लेखक होइनस्।",
+      "word": "होइनस्",
+      "ja": "ではありません",
+      "en": "not be (identity)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "36-13",
+      "ne": "तिमी लेखक होइनौ।",
+      "word": "होइनौ",
+      "ja": "ではありません",
+      "en": "not be (identity)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "36-14",
+      "ne": "तिमीहरू लेखक होइनौ।",
+      "word": "होइनौ",
+      "ja": "ではありません",
+      "en": "not be (identity)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "36-15",
+      "ne": "तपाईं लेखक हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "ではありません（敬意）",
+      "en": "not be (identity) (respectful)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "36-16",
+      "ne": "उहाँ लेखक हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "ではありません（敬意）",
+      "en": "not be (identity) (respectful)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "36-17",
+      "ne": "उहाँ लेखिका हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "ではありません（敬意）",
+      "en": "not be (identity) (respectful)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "36-18",
+      "ne": "उहाँ लेखक हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "ではありません（敬意）",
+      "en": "not be (identity) (respectful)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "36-19",
+      "ne": "हामी लेखक होइनौं।",
+      "word": "होइनौं",
+      "ja": "ではありません",
+      "en": "not be (identity)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "36-20",
+      "ne": "उहाँहरू लेखक हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "ではありません（敬意）",
+      "en": "not be (identity) (respectful)",
+      "role": "identity_not"
+    },
+    {
+      "sentence_id": "2-1",
+      "ne": "म घरमा छु।",
+      "word": "छु",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "2-2",
+      "ne": "तपाईं घरमा हुनुहुन्छ?",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "2-3",
+      "ne": "उहाँ घरमा हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "2-4",
+      "ne": "हामी घरमा छौं।",
+      "word": "छौं",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "2-10",
+      "ne": "तपाईंहरू कहाँ हुनुहुन्छ?",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "2-12",
+      "ne": "उहाँहरू विद्यालयमा हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "5-11",
+      "ne": "म बिहानदेखि यहाँ छु।",
+      "word": "छु",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "6-5",
+      "ne": "यहाँ को छ?",
+      "word": "छ",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "7-11",
+      "ne": "तिमी कहाँ छौ?",
+      "word": "छौ",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "7-12",
+      "ne": "तपाईं कहाँ हुनुहुन्छ?",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "7-15",
+      "ne": "उ यहाँ छ।",
+      "word": "छ",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "7-16",
+      "ne": "उनी यहाँ छन्।",
+      "word": "छन्",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "7-17",
+      "ne": "उहाँ यहाँ हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "29-16",
+      "ne": "म जहिले आउँछु, उहाँ यहाँ हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-67",
+      "ne": "उहाँ बाहिर हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-21",
+      "ne": "म पुस्तकालयमा छु।",
+      "word": "छु",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-22",
+      "ne": "तँ पुस्तकालयमा छस्।",
+      "word": "छस्",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-23",
+      "ne": "तिमी पुस्तकालयमा छौ।",
+      "word": "छौ",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-24",
+      "ne": "तिमीहरू पुस्तकालयमा छौ।",
+      "word": "छौ",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-25",
+      "ne": "तपाईं पुस्तकालयमा हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-26",
+      "ne": "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-27",
+      "ne": "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-28",
+      "ne": "उहाँ पुस्तकालयमा हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-29",
+      "ne": "हामी पुस्तकालयमा छौं।",
+      "word": "छौं",
+      "ja": "います",
+      "en": "be present (person)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "36-30",
+      "ne": "उहाँहरू पुस्तकालयमा हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "います（敬意）",
+      "en": "be present (person) (respectful)",
+      "role": "person"
+    },
+    {
+      "sentence_id": "2-5",
+      "ne": "उहाँहरू घरमा हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "いません（敬意）",
+      "en": "not be present (person) (respectful)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "36-31",
+      "ne": "म पुस्तकालयमा छैनँ।",
+      "word": "छैनँ",
+      "ja": "いません",
+      "en": "not be present (person)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "36-32",
+      "ne": "तँ पुस्तकालयमा छैनस्।",
+      "word": "छैनस्",
+      "ja": "いません",
+      "en": "not be present (person)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "36-33",
+      "ne": "तिमी पुस्तकालयमा छैनौ।",
+      "word": "छैनौ",
+      "ja": "いません",
+      "en": "not be present (person)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "36-34",
+      "ne": "तिमीहरू पुस्तकालयमा छैनौ।",
+      "word": "छैनौ",
+      "ja": "いません",
+      "en": "not be present (person)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "36-35",
+      "ne": "तपाईं पुस्तकालयमा हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "いません（敬意）",
+      "en": "not be present (person) (respectful)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "36-36",
+      "ne": "उहाँ पुस्तकालयमा हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "いません（敬意）",
+      "en": "not be present (person) (respectful)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "36-37",
+      "ne": "उहाँ पुस्तकालयमा हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "いません（敬意）",
+      "en": "not be present (person) (respectful)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "36-38",
+      "ne": "उहाँ पुस्तकालयमा हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "いません（敬意）",
+      "en": "not be present (person) (respectful)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "36-39",
+      "ne": "हामी पुस्तकालयमा छैनौं।",
+      "word": "छैनौं",
+      "ja": "いません",
+      "en": "not be present (person)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "36-40",
+      "ne": "उहाँहरू पुस्तकालयमा हुनुहुन्न।",
+      "word": "हुनुहुन्न",
+      "ja": "いません（敬意）",
+      "en": "not be present (person) (respectful)",
+      "role": "person_not"
+    },
+    {
+      "sentence_id": "2-6",
+      "ne": "यहाँ किताब छ।",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "2-8",
+      "ne": "शौचालय कहाँ छ?",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "2-9",
+      "ne": "टेबलमा पानी छ।",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "5-8",
+      "ne": "तपाईंसँग कलम छ?",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "5-9",
+      "ne": "हामीसँग समय छ।",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "5-14",
+      "ne": "किताब झोलाभित्र छ।",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "5-15",
+      "ne": "घरको अगाडि बगैंचा छ।",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "6-13",
+      "ne": "तपाईंसँग कति वटा कलम छन्?",
+      "word": "छन्",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "26-2",
+      "ne": "यहाँ किताब र कापी छन्।",
+      "word": "छन्",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "29-2",
+      "ne": "काठमाडौं जाने बस कहाँ छ?",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "29-4",
+      "ne": "खाने कुरा छ?",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "29-5",
+      "ne": "पिउने पानी यहाँ छ।",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "29-14",
+      "ne": "जहाँ पानी छ, त्यहाँ जीवन छ।",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "30-5",
+      "ne": "समय छ भने, यहाँ बस्नुहोस्।",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "34-2",
+      "ne": "शिक्षकले भोलि परीक्षा छ भन्नुभयो।",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "36-63",
+      "ne": "मेरो कापी झोलामा छ।",
+      "word": "छ",
+      "ja": "あります",
+      "en": "exist / be there",
+      "role": "exist"
+    },
+    {
+      "sentence_id": "2-7",
+      "ne": "त्यहाँ कापी छैन।",
+      "word": "छैन",
+      "ja": "ありません",
+      "en": "not exist / not be there",
+      "role": "exist_not"
+    },
+    {
+      "sentence_id": "2-11",
+      "ne": "कोठामा कुर्सी छैन।",
+      "word": "छैन",
+      "ja": "ありません",
+      "en": "not exist / not be there",
+      "role": "exist_not"
+    },
+    {
+      "sentence_id": "5-6",
+      "ne": "तपाईंको झोला टेबलमा छैन।",
+      "word": "छैन",
+      "ja": "ありません",
+      "en": "not exist / not be there",
+      "role": "exist_not"
+    },
+    {
+      "sentence_id": "5-7",
+      "ne": "मसँग पैसा छैन।",
+      "word": "छैन",
+      "ja": "ありません",
+      "en": "not exist / not be there",
+      "role": "exist_not"
+    },
+    {
+      "sentence_id": "29-6",
+      "ne": "बस्ने ठाउँ छैन।",
+      "word": "छैन",
+      "ja": "ありません",
+      "en": "not exist / not be there",
+      "role": "exist_not"
+    },
+    {
+      "sentence_id": "30-7",
+      "ne": "पैसा छैन भने, नकिन्नुहोस्।",
+      "word": "छैन",
+      "ja": "ありません",
+      "en": "not exist / not be there",
+      "role": "exist_not"
+    },
+    {
+      "sentence_id": "34-8",
+      "ne": "उहाँले पैसा छैन भन्नुभयो।",
+      "word": "छैन",
+      "ja": "ありません",
+      "en": "not exist / not be there",
+      "role": "exist_not"
+    },
+    {
+      "sentence_id": "36-64",
+      "ne": "तिम्रो कापी झोलामा छैन।",
+      "word": "छैन",
+      "ja": "ありません",
+      "en": "not exist / not be there",
+      "role": "exist_not"
+    },
+    {
+      "sentence_id": "3-1",
+      "ne": "यो फूल सुन्दर छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "3-2",
+      "ne": "त्यो किताब पुरानो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "3-4",
+      "ne": "के यो पानी चिसो छ?",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "3-5",
+      "ne": "आज गर्मी छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "3-7",
+      "ne": "म व्यस्त छु।",
+      "word": "छु",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "3-8",
+      "ne": "तपाईं सन्चै हुनुहुन्छ?",
+      "word": "हुनुहुन्छ",
+      "ja": "～です（状態）（敬意）",
+      "en": "be (state) (respectful)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "3-9",
+      "ne": "उहाँ तयार हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "～です（状態）（敬意）",
+      "en": "be (state) (respectful)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "3-10",
+      "ne": "उहाँहरू व्यस्त हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "～です（状態）（敬意）",
+      "en": "be (state) (respectful)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "5-12",
+      "ne": "पसल पाँच बजेसम्म खुला छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "6-11",
+      "ne": "यो खाना कस्तो छ?",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "22-3",
+      "ne": "मलाई चिया पिउन मन छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "23-8",
+      "ne": "मेरो भाइ सानो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "23-9",
+      "ne": "ती केटीहरू राम्रा छन्।",
+      "word": "छन्",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "23-11",
+      "ne": "यो फूल सुन्दर छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "24-7",
+      "ne": "यो खाना एकदमै मिठो छ!",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "24-9",
+      "ne": "आज धेरै चिसो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "25-1",
+      "ne": "यो घर त्यो घरभन्दा ठूलो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "25-2",
+      "ne": "यो किताब त्यो किताबभन्दा सस्तो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "25-3",
+      "ne": "चिया कफीभन्दा सस्तो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "25-4",
+      "ne": "आज हिजोभन्दा चिसो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "25-7",
+      "ne": "यीमध्ये कुन सबभन्दा सस्तो छ?",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "25-8",
+      "ne": "यो झोला सबभन्दा सस्तो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "25-10",
+      "ne": "यो बाटो त्यो बाटोभन्दा लामो छ?",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "25-12",
+      "ne": "यीमध्ये कुन राम्रो छ?",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "25-13",
+      "ne": "यो झोला मेरो झोलाजस्तै छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "26-4",
+      "ne": "यो राम्रो छ तर महँगो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "26-9",
+      "ne": "यो सानो, सस्तो अनि राम्रो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "26-10",
+      "ne": "वर्षाका कारण बाटो बन्द छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "29-9",
+      "ne": "हामी बस्ने घर सानो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "29-10",
+      "ne": "उहाँ काम गर्नुहुने अफिस टाढा छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "29-13",
+      "ne": "जुन किताब तपाईं पढ्नुहुन्छ, त्यो राम्रो छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "30-2",
+      "ne": "यदि सस्तो छ भने, म किन्छु।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "30-3",
+      "ne": "तपाईं व्यस्त हुनुहुन्छ भने, म पर्खन्छु।",
+      "word": "हुनुहुन्छ",
+      "ja": "～です（状態）（敬意）",
+      "en": "be (state) (respectful)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "30-8",
+      "ne": "यो पिरो छ भने, म खाँदिनँ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "30-9",
+      "ne": "भोलि बिदा छ भने, हामी भेटौं।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "31-2",
+      "ne": "यो किताब राम्रो छ जस्तो लाग्छ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "34-5",
+      "ne": "हामीले तयार छौं भन्यौं।",
+      "word": "छौं",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "34-7",
+      "ne": "मैले त्यो राम्रो छ भनिनँ।",
+      "word": "छ",
+      "ja": "～です（状態）",
+      "en": "be (state)",
+      "role": "state"
+    },
+    {
+      "sentence_id": "3-3",
+      "ne": "यो खाना पिरो छैन।",
+      "word": "छैन",
+      "ja": "～ではありません（状態の否定）",
+      "en": "not be (state)",
+      "role": "state_not"
+    },
+    {
+      "sentence_id": "3-6",
+      "ne": "यो घर सानो छैन।",
+      "word": "छैन",
+      "ja": "～ではありません（状態の否定）",
+      "en": "not be (state)",
+      "role": "state_not"
+    },
+    {
+      "sentence_id": "7-14",
+      "ne": "तिमीहरू तयार छैनौ?",
+      "word": "छैनौ",
+      "ja": "～ではありません（状態の否定）",
+      "en": "not be (state)",
+      "role": "state_not"
+    },
+    {
+      "sentence_id": "22-4",
+      "ne": "उहाँलाई अहिले बोल्न मन छैन।",
+      "word": "छैन",
+      "ja": "～ではありません（状態の否定）",
+      "en": "not be (state)",
+      "role": "state_not"
+    },
+    {
+      "sentence_id": "23-12",
+      "ne": "यो कोठा ठूलो छैन।",
+      "word": "छैन",
+      "ja": "～ではありません（状態の否定）",
+      "en": "not be (state)",
+      "role": "state_not"
+    },
+    {
+      "sentence_id": "25-6",
+      "ne": "यो काम त्यो कामभन्दा सजिलो छैन।",
+      "word": "छैन",
+      "ja": "～ではありません（状態の否定）",
+      "en": "not be (state)",
+      "role": "state_not"
+    },
+    {
+      "sentence_id": "10-4",
+      "ne": "उहाँ चिट्ठी लेख्दै हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "～しています（進行形の助動詞）（敬意）",
+      "en": "be …-ing (progressive auxiliary) (respectful)",
+      "role": "progress"
+    },
+    {
+      "sentence_id": "10-5",
+      "ne": "हामी नेपाली सिक्दै छौं।",
+      "word": "छौं",
+      "ja": "～しています（進行形の助動詞）",
+      "en": "be …-ing (progressive auxiliary)",
+      "role": "progress"
+    },
+    {
+      "sentence_id": "10-6",
+      "ne": "तपाईंहरू के पढ्दै हुनुहुन्छ?",
+      "word": "हुनुहुन्छ",
+      "ja": "～しています（進行形の助動詞）（敬意）",
+      "en": "be …-ing (progressive auxiliary) (respectful)",
+      "role": "progress"
+    },
+    {
+      "sentence_id": "10-7",
+      "ne": "उहाँहरू बस पर्खँदै हुनुहुन्छ।",
+      "word": "हुनुहुन्छ",
+      "ja": "～しています（進行形の助動詞）（敬意）",
+      "en": "be …-ing (progressive auxiliary) (respectful)",
+      "role": "progress"
+    },
+    {
+      "sentence_id": "3-11",
+      "ne": "हामी थाकेका छौं।",
+      "word": "छौं",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "15-1",
+      "ne": "मैले यो काम गरेको छु।",
+      "word": "छु",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "15-2",
+      "ne": "तपाईंले यो काम गर्नुभएको छ?",
+      "word": "छ",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "15-5",
+      "ne": "म थाकेको छु।",
+      "word": "छु",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "15-6",
+      "ne": "ढोका खुलेको छ।",
+      "word": "छ",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "15-7",
+      "ne": "खाना पाकेको छ।",
+      "word": "छ",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "35-41",
+      "ne": "मैले चिठी लेखेको छु।",
+      "word": "छु",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "35-42",
+      "ne": "तैंले चिठी लेखेको छस्।",
+      "word": "छस्",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "35-43",
+      "ne": "तिमीले चिठी लेखेको छौ।",
+      "word": "छौ",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "35-44",
+      "ne": "तिमीहरूले चिठी लेखेको छौ।",
+      "word": "छौ",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "35-45",
+      "ne": "तपाईंले चिठी लेख्नुभएको छ।",
+      "word": "छ",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "35-46",
+      "ne": "उहाँले चिठी लेख्नुभएको छ।",
+      "word": "छ",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "35-47",
+      "ne": "उहाँले चिठी लेख्नुभएको छिन्।",
+      "word": "छिन्",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "35-48",
+      "ne": "उहाँले चिठी लेख्नुभएको छ।",
+      "word": "छ",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "35-49",
+      "ne": "हामीले चिठी लेखेको छौं।",
+      "word": "छौं",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "35-50",
+      "ne": "उहाँहरूले चिठी लेख्नुभएको छन्।",
+      "word": "छन्",
+      "ja": "～した状態です（完了の助動詞）",
+      "en": "have/has …; resulting state (perfect auxiliary)",
+      "role": "perfect"
+    },
+    {
+      "sentence_id": "15-3",
+      "ne": "मैले सुशी खाएको छु।",
+      "word": "छु",
+      "ja": "～したことがあります（経験の助動詞）",
+      "en": "have/has … before (experience auxiliary)",
+      "role": "experience"
+    },
+    {
+      "sentence_id": "15-4",
+      "ne": "तपाईं नेपाल जानुभएको छ?",
+      "word": "छ",
+      "ja": "～したことがあります（経験の助動詞）",
+      "en": "have/has … before (experience auxiliary)",
+      "role": "experience"
+    },
+    {
+      "sentence_id": "15-8",
+      "ne": "हामीले यो फिल्म हेरेका छौं।",
+      "word": "छौं",
+      "ja": "～したことがあります（経験の助動詞）",
+      "en": "have/has … before (experience auxiliary)",
+      "role": "experience"
+    },
+    {
+      "sentence_id": "11-5",
+      "ne": "म हिजो घरमा थिएँ।",
+      "word": "थिएँ",
+      "ja": "いました",
+      "en": "was/were present (person)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "36-41",
+      "ne": "म अस्ति बजारमा थिएँ।",
+      "word": "थिएँ",
+      "ja": "いました",
+      "en": "was/were present (person)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "36-42",
+      "ne": "तँ अस्ति बजारमा थिइस्।",
+      "word": "थिइस्",
+      "ja": "いました",
+      "en": "was/were present (person)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "36-43",
+      "ne": "तिमी अस्ति बजारमा थियौ।",
+      "word": "थियौ",
+      "ja": "いました",
+      "en": "was/were present (person)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "36-44",
+      "ne": "तिमीहरू अस्ति बजारमा थियौ।",
+      "word": "थियौ",
+      "ja": "いました",
+      "en": "was/were present (person)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "36-45",
+      "ne": "तपाईं अस्ति बजारमा हुनुहुन्थ्यो।",
+      "word": "हुनुहुन्थ्यो",
+      "ja": "いました（敬意）",
+      "en": "was/were present (person) (respectful)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "36-46",
+      "ne": "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+      "word": "हुनुहुन्थ्यो",
+      "ja": "いました（敬意）",
+      "en": "was/were present (person) (respectful)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "36-47",
+      "ne": "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+      "word": "हुनुहुन्थ्यो",
+      "ja": "いました（敬意）",
+      "en": "was/were present (person) (respectful)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "36-48",
+      "ne": "उहाँ अस्ति बजारमा हुनुहुन्थ्यो।",
+      "word": "हुनुहुन्थ्यो",
+      "ja": "いました（敬意）",
+      "en": "was/were present (person) (respectful)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "36-49",
+      "ne": "हामी अस्ति बजारमा थियौं।",
+      "word": "थियौं",
+      "ja": "いました",
+      "en": "was/were present (person)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "36-50",
+      "ne": "उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो।",
+      "word": "हुनुहुन्थ्यो",
+      "ja": "いました（敬意）",
+      "en": "was/were present (person) (respectful)",
+      "role": "past_person"
+    },
+    {
+      "sentence_id": "12-5",
+      "ne": "हिजो यहाँ पैसा थिएन।",
+      "word": "थिएन",
+      "ja": "ありませんでした",
+      "en": "did not exist / was not there",
+      "role": "past_exist_not"
+    },
+    {
+      "sentence_id": "36-66",
+      "ne": "मेरो कापी अस्ति यहाँ थिएन।",
+      "word": "थिएन",
+      "ja": "ありませんでした",
+      "en": "did not exist / was not there",
+      "role": "past_exist_not"
+    },
+    {
+      "sentence_id": "36-65",
+      "ne": "यो पहिले पुस्तकालय थियो।",
+      "word": "थियो",
+      "ja": "でした",
+      "en": "was/were (identity)",
+      "role": "past_identity"
+    },
+    {
+      "sentence_id": "16-1",
+      "ne": "मैले यो काम गरेको थिएँ।",
+      "word": "थिएँ",
+      "ja": "～していました（過去の完了の助動詞）",
+      "en": "had … (past-perfect auxiliary)",
+      "role": "past_perfect"
+    },
+    {
+      "sentence_id": "16-2",
+      "ne": "तपाईंले यो काम गर्नुभएको थियो?",
+      "word": "थियो",
+      "ja": "～していました（過去の完了の助動詞）",
+      "en": "had … (past-perfect auxiliary)",
+      "role": "past_perfect"
+    },
+    {
+      "sentence_id": "16-4",
+      "ne": "हामी पुग्दा, उहाँ घर जानुभएको थियो।",
+      "word": "थियो",
+      "ja": "～していました（過去の完了の助動詞）",
+      "en": "had … (past-perfect auxiliary)",
+      "role": "past_perfect"
+    },
+    {
+      "sentence_id": "16-7",
+      "ne": "हामी पुग्दा पसल बन्द भइसकेको थियो।",
+      "word": "थियो",
+      "ja": "～していました（過去の完了の助動詞）",
+      "en": "had … (past-perfect auxiliary)",
+      "role": "past_perfect"
+    },
+    {
+      "sentence_id": "16-3",
+      "ne": "म त्यहाँ गएको थिएँ।",
+      "word": "थिएँ",
+      "ja": "～したことがありました（過去の経験）",
+      "en": "had … before (past experience)",
+      "role": "past_experience"
+    },
+    {
+      "sentence_id": "16-6",
+      "ne": "तपाईं पहिले यहाँ आउनुभएको थियो?",
+      "word": "थियो",
+      "ja": "～したことがありました（過去の経験）",
+      "en": "had … before (past experience)",
+      "role": "past_experience"
+    },
+    {
+      "sentence_id": "16-5",
+      "ne": "त्यस बेला मैले खाना खाएको थिइनँ।",
+      "word": "थिइनँ",
+      "ja": "まだ～していませんでした",
+      "en": "had not … yet (past-perfect auxiliary)",
+      "role": "past_perfect_not"
+    },
+    {
+      "sentence_id": "36-51",
+      "ne": "म अस्ति बजारमा थिइनँ।",
+      "word": "थिइनँ",
+      "ja": "いませんでした",
+      "en": "was/were not present (person)",
+      "role": "past_person_not"
+    },
+    {
+      "sentence_id": "36-52",
+      "ne": "तँ अस्ति बजारमा थिइनस्।",
+      "word": "थिइनस्",
+      "ja": "いませんでした",
+      "en": "was/were not present (person)",
+      "role": "past_person_not"
+    },
+    {
+      "sentence_id": "36-53",
+      "ne": "तिमी अस्ति बजारमा थिएनौ।",
+      "word": "थिएनौ",
+      "ja": "いませんでした",
+      "en": "was/were not present (person)",
+      "role": "past_person_not"
+    },
+    {
+      "sentence_id": "36-54",
+      "ne": "तिमीहरू अस्ति बजारमा थिएनौ।",
+      "word": "थिएनौ",
+      "ja": "いませんでした",
+      "en": "was/were not present (person)",
+      "role": "past_person_not"
+    },
+    {
+      "sentence_id": "36-55",
+      "ne": "तपाईं अस्ति बजारमा हुनुहुन्नथ्यो।",
+      "word": "हुनुहुन्नथ्यो",
+      "ja": "いませんでした（敬意）",
+      "en": "was/were not present (person) (respectful)",
+      "role": "past_person_not"
+    },
+    {
+      "sentence_id": "36-56",
+      "ne": "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+      "word": "हुनुहुन्नथ्यो",
+      "ja": "いませんでした（敬意）",
+      "en": "was/were not present (person) (respectful)",
+      "role": "past_person_not"
+    },
+    {
+      "sentence_id": "36-57",
+      "ne": "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+      "word": "हुनुहुन्नथ्यो",
+      "ja": "いませんでした（敬意）",
+      "en": "was/were not present (person) (respectful)",
+      "role": "past_person_not"
+    },
+    {
+      "sentence_id": "36-58",
+      "ne": "उहाँ अस्ति बजारमा हुनुहुन्नथ्यो।",
+      "word": "हुनुहुन्नथ्यो",
+      "ja": "いませんでした（敬意）",
+      "en": "was/were not present (person) (respectful)",
+      "role": "past_person_not"
+    },
+    {
+      "sentence_id": "36-59",
+      "ne": "हामी अस्ति बजारमा थिएनौं।",
+      "word": "थिएनौं",
+      "ja": "いませんでした",
+      "en": "was/were not present (person)",
+      "role": "past_person_not"
+    },
+    {
+      "sentence_id": "36-60",
+      "ne": "उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो।",
+      "word": "हुनुहुन्नथ्यो",
+      "ja": "いませんでした（敬意）",
+      "en": "was/were not present (person) (respectful)",
+      "role": "past_person_not"
+    }
+  ]
+}

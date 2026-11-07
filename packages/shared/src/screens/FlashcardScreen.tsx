@@ -39,6 +39,7 @@ function ShuffleIcon({ active }: { active: boolean }) {
 }
 
 export default function FlashcardScreen() {
+  const contentNames = useAppData().CONTENT_NAMES;
   const { WORD_CATEGORIES, getWords, nativeLang, WORDS_READING } = useAppData();
   const l1 = getL1(nativeLang);
   const { t } = useI18n();
@@ -48,7 +49,7 @@ export default function FlashcardScreen() {
   const { flip, animatedStyle } = useCardFlip();
   const [currentCategoryId, setCurrentCategoryId] = useState(initialCategoryId);
   const cat = WORD_CATEGORIES.find(c => c.id === currentCategoryId);
-  const catName = t(`vocabCategories.${currentCategoryId}`);
+  const catName = (contentNames?.categories?.[currentCategoryId] ?? t(`vocabCategories.${currentCategoryId}`));
   const allWords = useMemo(() => getWords(currentCategoryId), [currentCategoryId, nativeLang]);
   const [order, setOrder] = useState<number[]>(() => allWords.map((_, i) => i));
   const [cursor, setCursor] = useState(0);

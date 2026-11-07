@@ -123,7 +123,7 @@ tapāĩ vidyārthī hunuhuncha
 | --- | --- | --- |
 | तपाईं | tapāĩ | you (respectful) |
 | विद्यार्थी | vidyārthī | student |
-| हुनुहुन्छ | hunuhuncha | am; is; are |
+| हुनुहुन्छ | hunuhuncha | be (identity) (respectful) |
 
 ### Exercise 3
 
@@ -137,7 +137,7 @@ uhā̃ vidyārthī hunuhuncha
 | --- | --- | --- |
 | उहाँ | uhā̃ | he/she (respectful) |
 | विद्यार्थी | vidyārthī | student |
-| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
+| हुनुहुन्छ | hunuhuncha | be (identity) (respectful) |
 
 ### Exercise 4
 
@@ -165,7 +165,7 @@ uhā̃harū vidyārthī hunuhunna
 | --- | --- | --- |
 | उहाँहरू | uhā̃harū | they (respectful) |
 | विद्यार्थी | vidyārthī | student |
-| हुनुहुन्न | hunuhunna | is/are not (respectful) |
+| हुनुहुन्न | hunuhunna | not be (identity) (respectful) |
 
 ### Exercise 6
 
@@ -239,7 +239,7 @@ uhā̃ ḍākṭar hunuhuncha
 | --- | --- | --- |
 | उहाँ | uhā̃ | he/she (respectful) |
 | डाक्टर | ḍākṭar | doctor |
-| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
+| हुनुहुन्छ | hunuhuncha | be (identity) (respectful) |
 
 ### Exercise 11
 
@@ -282,7 +282,7 @@ tapāĩharū śikṣak hunuhuncha
 | --- | --- | --- |
 | तपाईंहरू | tapāĩharū | you (respectful plural) |
 | शिक्षक | śikṣak | teacher |
-| हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
+| हुनुहुन्छ | hunuhuncha | be (identity) (respectful) |
 
 ## Theme 2｜छ: existence and location
 
@@ -402,7 +402,7 @@ ma gharmā chu
 | --- | --- | --- |
 | म | ma | I |
 | घरमा | gharmā | at home |
-| छु | chu | is; are (existence) |
+| छु | chu | be present (person) |
 
 ### Exercise 2
 
@@ -416,7 +416,7 @@ tapāĩ gharmā hunuhuncha?
 | --- | --- | --- |
 | तपाईं | tapāĩ | you (respectful) |
 | घरमा | gharmā | at home |
-| हुनुहुन्छ | hunuhuncha | is; are (existence) |
+| हुनुहुन्छ | hunuhuncha | be present (person) (respectful) |
 
 ### Exercise 3
 
@@ -430,7 +430,7 @@ uhā̃ gharmā hunuhuncha
 | --- | --- | --- |
 | उहाँ | uhā̃ | he/she (respectful) |
 | घरमा | gharmā | at home |
-| हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
+| हुनुहुन्छ | hunuhuncha | be present (person) (respectful) |
 
 ### Exercise 4
 
@@ -444,7 +444,7 @@ hāmī gharmā chaũ
 | --- | --- | --- |
 | हामी | hāmī | we |
 | घरमा | gharmā | at home |
-| छौं | chaũ | is; are (existence) |
+| छौं | chaũ | be present (person) |
 
 ### Exercise 5
 
@@ -458,7 +458,7 @@ uhā̃harū gharmā hunuhunna
 | --- | --- | --- |
 | उहाँहरू | uhā̃harū | they (respectful) |
 | घरमा | gharmā | at home |
-| हुनुहुन्न | hunuhunna | is/are not present (respectful) |
+| हुनुहुन्न | hunuhunna | not be present (person) (respectful) |
 
 ### Exercise 6
 
@@ -486,7 +486,7 @@ tyahā̃ kāpī chaina
 | --- | --- | --- |
 | त्यहाँ | tyahā̃ | there |
 | कापी | kāpī | notebook |
-| छैन | chaina | is not; are not (existence) |
+| छैन | chaina | not exist / not be there |
 
 ### Exercise 8
 
@@ -528,7 +528,7 @@ tapāĩharū kahā̃ hunuhuncha?
 | --- | --- | --- |
 | तपाईंहरू | tapāĩharū | you (respectful plural) |
 | कहाँ | kahā̃ | where |
-| हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
+| हुनुहुन्छ | hunuhuncha | be present (person) (respectful) |
 
 ### Exercise 11
 
@@ -542,7 +542,7 @@ koṭhāmā kursī chaina
 | --- | --- | --- |
 | कोठामा | koṭhāmā | in the room |
 | कुर्सी | kursī | chair |
-| छैन | chaina | not be; not exist |
+| छैन | chaina | not exist / not be there |
 
 ### Exercise 12
 
@@ -556,7 +556,7 @@ uhā̃harū vidyālayamā hunuhuncha
 | --- | --- | --- |
 | उहाँहरू | uhā̃harū | they (respectful) |
 | विद्यालयमा | vidyālayamā | at school (विद्यालय + मा) |
-| हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
+| हुनुहुन्छ | hunuhuncha | be present (person) (respectful) |
 
 ### Review topics
 
@@ -702,7 +702,7 @@ yo khānā piro chaina
 | यो | yo | this |
 | खाना | khānā | food; meal |
 | पिरो | piro | spicy |
-| छैन | chaina | am not; is not; are not |
+| छैन | chaina | not be (state) |
 
 ### Exercise 4
 
@@ -747,7 +747,7 @@ yo ghar sāno chaina
 | यो | yo | this |
 | घर | ghar | home; house |
 | सानो | sāno | small; little |
-| छैन | chaina | am not; is not; are not |
+| छैन | chaina | not be (state) |
 
 ### Exercise 7
 
@@ -761,7 +761,7 @@ ma vyasta chu
 | --- | --- | --- |
 | म | ma | I |
 | व्यस्त | vyasta | busy |
-| छु | chu | am; is; are |
+| छु | chu | be (state) |
 
 ### Exercise 8
 
@@ -775,7 +775,7 @@ tapāĩ sancai hunuhuncha?
 | --- | --- | --- |
 | तपाईं | tapāĩ | you (respectful) |
 | सन्चै | sancai | well |
-| हुनुहुन्छ | hunuhuncha | am; is; are |
+| हुनुहुन्छ | hunuhuncha | be (state) (respectful) |
 
 ### Exercise 9
 
@@ -789,7 +789,7 @@ uhā̃ tayār hunuhuncha
 | --- | --- | --- |
 | उहाँ | uhā̃ | he/she (respectful) |
 | तयार | tayār | ready |
-| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
+| हुनुहुन्छ | hunuhuncha | be (state) (respectful) |
 
 ### Exercise 10
 
@@ -803,7 +803,7 @@ uhā̃harū vyasta hunuhuncha
 | --- | --- | --- |
 | उहाँहरू | uhā̃harū | they (respectful) |
 | व्यस्त | vyasta | busy |
-| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
+| हुनुहुन्छ | hunuhuncha | be (state) (respectful) |
 
 ### Exercise 11
 
@@ -817,7 +817,7 @@ hāmī thākekā chaũ
 | --- | --- | --- |
 | हामी | hāmī | we |
 | थाकेका | thākekā | tired (plural agreeing form) |
-| छौं | chaũ | be; exist |
+| छौं | chaũ | have/has …; resulting state (perfect auxiliary) |
 
 ### Review topics
 
@@ -1313,7 +1313,7 @@ tapāĩko jholā ṭebalmā chaina
 | तपाईंको | tapāĩko | your (respectful) |
 | झोला | jholā | bag |
 | टेबलमा | ṭebalmā | on the table |
-| छैन | chaina | is not; are not (existence) |
+| छैन | chaina | not exist / not be there |
 
 ### Exercise 7
 
@@ -1327,7 +1327,7 @@ masãga paisā chaina
 | --- | --- | --- |
 | मसँग | masãga | with me |
 | पैसा | paisā | money |
-| छैन | chaina | is not; are not (existence) |
+| छैन | chaina | not exist / not be there |
 
 सँग = company/participant or possession
 
@@ -1393,7 +1393,7 @@ ma bihāndekhi yahā̃ chu
 | म | ma | I |
 | बिहानदेखि | bihāndekhi | since morning (बिहान + देखि) |
 | यहाँ | yahā̃ | here |
-| छु | chu | be; exist |
+| छु | chu | be present (person) |
 
 देखि = starting point
 
@@ -2034,7 +2034,7 @@ tapāĩsãga kati vaṭā kalam chan?
 | कति | kati | how much; how |
 | वटा | vaṭā | counter for objects |
 | कलम | kalam | pen |
-| छन् | chan | be; exist |
+| छन् | chan | exist / be there |
 
 सँग = company/participant or possession / This is a question.
 
@@ -2411,7 +2411,7 @@ timī kahā̃ chau?
 | --- | --- | --- |
 | तिमी | timī | you (familiar) |
 | कहाँ | kahā̃ | where |
-| छौ | chau | is; are (existence) |
+| छौ | chau | be present (person) |
 
 ### Exercise 12
 
@@ -2425,7 +2425,7 @@ tapāĩ kahā̃ hunuhuncha?
 | --- | --- | --- |
 | तपाईं | tapāĩ | you (respectful) |
 | कहाँ | kahā̃ | where |
-| हुनुहुन्छ | hunuhuncha | is; are (existence) |
+| हुनुहुन्छ | hunuhuncha | be present (person) (respectful) |
 
 ### Exercise 13
 
@@ -2440,7 +2440,7 @@ uhā̃ mero śikṣak hunuhuncha
 | उहाँ | uhā̃ | he; she (respectful) |
 | मेरो | mero | my |
 | शिक्षक | śikṣak | teacher |
-| हुनुहुन्छ | hunuhuncha | am; is; are |
+| हुनुहुन्छ | hunuhuncha | be (identity) (respectful) |
 
 ### Exercise 14
 
@@ -2454,7 +2454,7 @@ timīharū tayār chainau?
 | --- | --- | --- |
 | तिमीहरू | timīharū | you (plural) |
 | तयार | tayār | ready |
-| छैनौ | chainau | am not; is not; are not |
+| छैनौ | chainau | not be (state) |
 
 ### Exercise 15
 
@@ -2482,7 +2482,7 @@ unī yahā̃ chan
 | --- | --- | --- |
 | उनी | unī | that person; he/she (medium respect) |
 | यहाँ | yahā̃ | here |
-| छन् | chan | be; exist |
+| छन् | chan | be present (person) |
 
 ### Exercise 17
 
@@ -2496,7 +2496,7 @@ uhā̃ yahā̃ hunuhuncha
 | --- | --- | --- |
 | उहाँ | uhā̃ | he/she (respectful) |
 | यहाँ | yahā̃ | here |
-| हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
+| हुनुहुन्छ | hunuhuncha | be present (person) (respectful) |
 
 ### Review topics
 
@@ -2971,7 +2971,7 @@ uhā̃ ciṭṭhī lekhdai hunuhuncha
 | उहाँ | uhā̃ | he/she (respectful) |
 | चिट्ठी | ciṭṭhī | letter |
 | लेख्दै | lekhdai | writing; while writing |
-| हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
+| हुनुहुन्छ | hunuhuncha | be …-ing (progressive auxiliary) (respectful) |
 
 ### Exercise 5
 
@@ -2986,7 +2986,7 @@ hāmī nepālī sikdai chaũ
 | हामी | hāmī | we |
 | नेपाली | nepālī | Nepali |
 | सिक्दै | sikdai | learning (progressive form of सिक्नु) |
-| छौं | chaũ | be; exist |
+| छौं | chaũ | be …-ing (progressive auxiliary) |
 
 ### Exercise 6
 
@@ -3001,7 +3001,7 @@ tapāĩharū ke paḍhdai hunuhuncha?
 | तपाईंहरू | tapāĩharū | you (respectful plural) |
 | के | ke | what; question marker |
 | पढ्दै | paḍhdai | reading (progressive form of पढ्नु) |
-| हुनुहुन्छ | hunuhuncha | is/becomes (respectful) |
+| हुनुहुन्छ | hunuhuncha | be …-ing (progressive auxiliary) (respectful) |
 
 ### Exercise 7
 
@@ -3016,7 +3016,7 @@ uhā̃harū bas parkhãdai hunuhuncha
 | उहाँहरू | uhā̃harū | they (respectful) |
 | बस | bas | sit; please sit |
 | पर्खँदै | parkhãdai | waiting (progressive form of पर्खनु) |
-| हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
+| हुनुहुन्छ | hunuhuncha | be …-ing (progressive auxiliary) (respectful) |
 
 ### Review topics
 
@@ -3181,7 +3181,7 @@ ma hijo gharmā thiẽ
 | म | ma | I |
 | हिजो | hijo | yesterday |
 | घरमा | gharmā | at home |
-| थिएँ | thiẽ | was; were (existence) |
+| थिएँ | thiẽ | was/were present (person) |
 
 ### Exercise 6
 
@@ -3365,7 +3365,7 @@ hijo yahā̃ paisā thiena
 | हिजो | hijo | yesterday |
 | यहाँ | yahā̃ | here |
 | पैसा | paisā | money |
-| थिएन | thiena | was not; were not (existence) |
+| थिएन | thiena | did not exist / was not there |
 
 ### Exercise 6
 
@@ -3818,7 +3818,7 @@ maile yo kām gareko chu
 | यो | yo | this |
 | काम | kām | work |
 | गरेको | gareko | done |
-| छु | chu | have; has (perfect auxiliary) |
+| छु | chu | have/has …; resulting state (perfect auxiliary) |
 
 ### Exercise 2
 
@@ -3849,7 +3849,7 @@ maile suśī khāeko chu
 | मैले | maile | I (agent) |
 | सुशी | suśī | sushi |
 | खाएको | khāeko | eaten |
-| छु | chu | have; has (perfect auxiliary) |
+| छु | chu | have/has … before (experience auxiliary) |
 
 ### Exercise 4
 
@@ -3878,7 +3878,7 @@ ma thākeko chu
 | --- | --- | --- |
 | म | ma | I |
 | थाकेको | thākeko | tired |
-| छु | chu | resulting state |
+| छु | chu | have/has …; resulting state (perfect auxiliary) |
 
 ### Exercise 6
 
@@ -3922,7 +3922,7 @@ hāmīle yo philm herekā chaũ
 | यो | yo | this |
 | फिल्म | philma | film |
 | हेरेका | herekā | seen (plural agreeing participle of हेर्नु) |
-| छौं | chaũ | be; exist |
+| छौं | chaũ | have/has … before (experience auxiliary) |
 
 ### Review topics
 
@@ -3996,7 +3996,7 @@ maile yo kām gareko thiẽ
 | यो | yo | this |
 | काम | kām | work |
 | गरेको | gareko | done |
-| थिएँ | thiẽ | had (perfect auxiliary) |
+| थिएँ | thiẽ | had … (past-perfect auxiliary) |
 
 ### Exercise 2
 
@@ -4012,7 +4012,7 @@ tapāĩle yo kām garnubhaeko thiyo?
 | यो | yo | this |
 | काम | kām | work |
 | गर्नुभएको | garnubhaeko | done (respectful perfect participle) |
-| थियो | thiyo | had (perfect auxiliary) |
+| थियो | thiyo | had … (past-perfect auxiliary) |
 
 ### Exercise 3
 
@@ -4027,7 +4027,7 @@ ma tyahā̃ gaeko thiẽ
 | म | ma | I |
 | त्यहाँ | tyahā̃ | there |
 | गएको | gaeko | gone; been |
-| थिएँ | thiẽ | had (perfect auxiliary) |
+| थिएँ | thiẽ | had … before (past experience) |
 
 ### Exercise 4
 
@@ -4044,7 +4044,7 @@ hāmī pugdā, uhā̃ ghar jānubhaeko thiyo
 | उहाँ | uhā̃ | he/she (respectful) |
 | घर | ghar | home; house |
 | जानुभएको | jānubhaeko | having gone (respectful) |
-| थियो | thiyo | was; were |
+| थियो | thiyo | had … (past-perfect auxiliary) |
 
 ### Exercise 5
 
@@ -4061,7 +4061,7 @@ tyas belā maile khānā khāeko thiinã
 | मैले | maile | I (agent) |
 | खाना | khānā | food; meal |
 | खाएको | khāeko | eaten |
-| थिइनँ | thiinã | had not (perfect auxiliary) |
+| थिइनँ | thiinã | had not … yet (past-perfect auxiliary) |
 
 ### Exercise 6
 
@@ -4077,7 +4077,7 @@ tapāĩ pahile yahā̃ āunubhaeko thiyo?
 | पहिले | pahile | before; first |
 | यहाँ | yahā̃ | here |
 | आउनुभएको | āunubhaeko | come (respectful past participle) |
-| थियो | thiyo | had (perfect auxiliary) |
+| थियो | thiyo | had … before (past experience) |
 
 ### Exercise 7
 
@@ -4094,7 +4094,7 @@ hāmī pugdā pasal banda bhaisakeko thiyo
 | पसल | pasal | shop |
 | बन्द | banda | closed |
 | भइसकेको | bhaisakeko | already become; completed |
-| थियो | thiyo | was; were |
+| थियो | thiyo | had … (past-perfect auxiliary) |
 
 ### Review topics
 
@@ -5407,7 +5407,7 @@ uhā̃lāī ahile bolna man chaina
 | अहिले | ahile | now |
 | बोल्न | bolna | speak |
 | मन | man | mind; desire |
-| छैन | chaina | not be; not exist |
+| छैन | chaina | not be (state) |
 
 ### Exercise 5
 
@@ -5547,7 +5547,7 @@ uhā̃ rāmrī keṭī hunuhuncha
 | उहाँ | uhā̃ | he/she (respectful) |
 | राम्री | rāmrī | pretty (feminine singular) |
 | केटी | keṭī | girl |
-| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
+| हुनुहुन्छ | hunuhuncha | be (identity) (respectful) |
 
 ### Exercise 3
 
@@ -5652,7 +5652,7 @@ tī keṭīharū rāmrā chan
 | ती | tī | those |
 | केटीहरू | keṭīharū | girls |
 | राम्रा | rāmrā | good; attractive (plural or respectful) |
-| छन् | chan | am; is; are |
+| छन् | chan | be (state) |
 
 ### Exercise 10
 
@@ -5698,7 +5698,7 @@ yo koṭhā ṭhūlo chaina
 | यो | yo | this |
 | कोठा | koṭhā | room |
 | ठूलो | ṭhūlo | big |
-| छैन | chaina | am not; is not; are not |
+| छैन | chaina | not be (state) |
 
 ### Review topics
 
@@ -6092,7 +6092,7 @@ yo kām tyo kāmbhandā sajilo chaina
 | त्यो | tyo | that |
 | कामभन्दा | kāmbhandā | than that work |
 | सजिलो | sajilo | easy |
-| छैन | chaina | am not; is not; are not |
+| छैन | chaina | not be (state) |
 
 भन्दा = standard of comparison
 
@@ -6329,7 +6329,7 @@ yahā̃ kitāb ra kāpī chan
 | किताब | kitāb | book |
 | र | ra | and |
 | कापी | kāpī | notebook |
-| छन् | chan | is; are (existence) |
+| छन् | chan | exist / be there |
 
 ### Exercise 3
 
@@ -7118,7 +7118,7 @@ basne ṭhāũ chaina
 | --- | --- | --- |
 | बस्ने | basne | for sitting; who lives |
 | ठाउँ | ṭhāũ | place |
-| छैन | chaina | is not; are not (existence) |
+| छैन | chaina | not exist / not be there |
 
 ### Exercise 7
 
@@ -7215,7 +7215,7 @@ jo yahā̃ basnuhuncha, uhā̃ mero sāthī hunuhuncha
 | उहाँ | uhā̃ | he/she (respectful) |
 | मेरो | mero | my |
 | साथी | sāthī | friend |
-| हुनुहुन्छ | hunuhuncha | is/are (respectful) |
+| हुनुहुन्छ | hunuhuncha | be (identity) (respectful) |
 
 जो…उहाँ = the person who…that person
 
@@ -7292,7 +7292,7 @@ ma jahile āũchu, uhā̃ yahā̃ hunuhuncha
 | आउँछु | āũchu | come; comes |
 | उहाँ | uhā̃ | he/she (respectful) |
 | यहाँ | yahā̃ | here |
-| हुनुहुन्छ | hunuhuncha | is/are present (respectful) |
+| हुनुहुन्छ | hunuhuncha | be present (person) (respectful) |
 
 जहिले = when, whenever, according to context
 
@@ -7499,7 +7499,7 @@ tapāĩ vyasta hunuhuncha bhane, ma parkhanchu
 | --- | --- | --- |
 | तपाईं | tapāĩ | you (respectful) |
 | व्यस्त | vyasta | busy |
-| हुनुहुन्छ | hunuhuncha | am; is; are |
+| हुनुहुन्छ | hunuhuncha | be (state) (respectful) |
 | भने | bhane | if |
 | म | ma | I |
 | पर्खन्छु | parkhanchu | wait |
@@ -7564,7 +7564,7 @@ paisā chaina bhane, nakinnuhos
 | Word or form | Reading | Meaning in this sentence |
 | --- | --- | --- |
 | पैसा | paisā | money |
-| छैन | chaina | is not; are not (existence) |
+| छैन | chaina | not exist / not be there |
 | भने | bhane | if |
 | नकिन्नुहोस् | nakinnuhos | please do not buy |
 
@@ -8378,7 +8378,7 @@ hāmīle tayār chaũ bhanyaũ
 | --- | --- | --- |
 | हामीले | hāmīle | we (agent) |
 | तयार | tayār | ready |
-| छौं | chaũ | am; is; are |
+| छौं | chaũ | be (state) |
 | भन्यौं | bhanyaũ | said |
 
 ### Exercise 6
@@ -8424,7 +8424,7 @@ uhā̃le paisā chaina bhannubhayo
 | --- | --- | --- |
 | उहाँले | uhā̃le | he/she as agent (respectful) |
 | पैसा | paisā | money |
-| छैन | chaina | not be; not exist |
+| छैन | chaina | not exist / not be there |
 | भन्नुभयो | bhannubhayo | said (respectful) |
 
 ### Exercise 9

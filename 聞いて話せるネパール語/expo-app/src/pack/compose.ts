@@ -25,6 +25,9 @@ export interface NeCore {
 
 // 母語オーバーレイ (学習者の母語側=jp/en)。core と同じキー・同じ位置で対応。
 export interface L1Overlay {
+  learningPath?: AppData['LEARNING_PATH'];
+  contentNames?: AppData['CONTENT_NAMES'];
+  posterLessons?: AppData['POSTER_LESSONS'];
   nativeLang: string;
   examplesL1: Record<string, string[]>;
   grammarL1: Record<string, string[]>;
@@ -91,6 +94,9 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
     return out;
   };
   return {
+    LEARNING_PATH: overlay.learningPath,
+    CONTENT_NAMES: overlay.contentNames,
+    POSTER_LESSONS: overlay.posterLessons,
     version: opts.version,
     nativeLang: overlay.nativeLang,
     THEMES: core.themes,

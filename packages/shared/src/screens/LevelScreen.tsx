@@ -12,11 +12,12 @@ type Nav = NativeStackNavigationProp<RootStackParamList, 'Level'>;
 type R = RouteProp<RootStackParamList, 'Level'>;
 
 export default function LevelScreen() {
+  const contentNames = useAppData().CONTENT_NAMES;
   const { LEVELS, getExamples } = useAppData();
   const navigation = useNavigation<Nav>();
   const { t } = useI18n();
   const { mode, themeId } = useRoute<R>().params;
-  const themeName = t(`themes.${themeId}`);
+  const themeName = (contentNames?.themes?.[themeId] ?? t(`themes.${themeId}`));
   const isListening = mode === 'listening';
 
   const { listenDirection, setListenDirection, nepaliRepeat, setNepaliRepeat } = useSettings();
@@ -71,7 +72,7 @@ export default function LevelScreen() {
       <View style={styles.grid}>
         {LEVELS.map(lv => {
           const exs = getExamples(themeId, lv.id);
-          const lvName = t(`levels.${lv.id}`);
+          const lvName = (contentNames?.levels?.[lv.id] ?? t(`levels.${lv.id}`));
           const onPress = () => {
             navigation.navigate(mode === 'conversation' ? 'Practice' : 'Listening', {
               themeId,

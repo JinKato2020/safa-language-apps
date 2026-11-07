@@ -3,6 +3,7 @@ from revise_grammar_curriculum import *
 import os
 from standard_third_person import normalize_row, lexicon_forms, PRONOUN
 from beginner_grammar_lessons import expand_guides
+from correct_grammar_contexts import corrected_meaning
 
 saved_catalog = SRC/'grammar_pack_v3_catalog.json'
 PACK_REVISION = int(os.environ.get('GRAMMAR_PACK_REVISION', str(read(saved_catalog)['core']['version'] + 1 if saved_catalog.exists() else 1200)))
@@ -142,6 +143,7 @@ for k,rows in lessons.items():
                         meaning = bilingual('です（敬意）' if identity else 'います（敬意）', 'is/are (respectful)' if identity else 'is/are present (respectful)', lang)
                     else:
                         meaning = bilingual('ではありません（敬意）' if identity else 'いません（敬意）', 'is/are not (respectful)' if identity else 'is/are not present (respectful)', lang)
+                meaning = corrected_meaning(r['id'], word, r['ne'], lang, meaning)
                 dest=new_vocab[lang].setdefault(word,dict(rom=roman,base_form=v.get('base_form',word),base_meaning=meaning,contexts=[]))
                 dest['contexts'].append({'sentence_id':r['id'],'ja':meaning})
 for lang in new_vocab:

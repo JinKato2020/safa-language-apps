@@ -56,6 +56,7 @@ export {
 
 // ── AppShell (Provider 群で包んでマウントする) ──
 export { AppShell, type AppShellProps } from './AppShell';
+export type { LearningPath, StudyRef, StudySession } from './learning';
 export { SettingsDevelopmentProvider, useSettingsDevelopment, type SettingsDevelopmentTools } from './settingsDevelopment';
 
 // ── 画面 (個別利用する場合のみ。通常は AppShell 経由) ──

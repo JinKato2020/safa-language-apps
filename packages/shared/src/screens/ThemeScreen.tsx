@@ -12,11 +12,13 @@ import { useI18n } from '../i18n';
 import { useAppData } from '../AppDataContext';
 import { useEntitlement, isLockedAt, LockBadge } from '../entitlement';
 import { useGrammarGuide } from '../grammarGuide';
+import { withoutThemePrefix } from '../themeLabels';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'Theme'>;
 type R = RouteProp<RootStackParamList, 'Theme'>;
 
 export default function ThemeScreen() {
+  const contentNames = useAppData().CONTENT_NAMES;
   const { THEMES, GRAMMAR_THEMES, LEVELS } = useAppData();
   const ent = useEntitlement();
   const grammarGuide = useGrammarGuide();
@@ -78,7 +80,7 @@ export default function ThemeScreen() {
       const gt = GRAMMAR_THEMES.find(x => x.id === id);
       return gt?.name ?? String(id);
     }
-    return t(`themes.${id}`);
+    return (contentNames?.themes?.[id] ?? t(`themes.${id}`));
   };
 
   const onPressItem = (id: number) => {
@@ -136,7 +138,7 @@ export default function ThemeScreen() {
                   onPress={() => setSelectedLevel(lv.id)}
                 >
                   <Text style={[styles.levelPillText, selectedLevel === lv.id && styles.levelPillTextOn, ss(13)]}>
-                    {t(`levels.${lv.id}`)}
+                    {(contentNames?.levels?.[lv.id] ?? t(`levels.${lv.id}`))}
                   </Text>
                 </Pressable>
               ))}
@@ -163,7 +165,7 @@ export default function ThemeScreen() {
           >
             {/* 表示番号はリスト上の位置(=テーマ並び順)。データキーは item.id を維持。 */}
             <Text style={styles.num}>{String(index + 1).padStart(2, '0')}</Text>
-            <Text style={[styles.name, ss(14)]}>{getThemeDisplayName(item.id)}</Text>
+            <Text style={[styles.name, ss(14)]}>{withoutThemePrefix(getThemeDisplayName(item.id))}</Text>
             {locked && <LockBadge />}
             {showGuide && (
               <Pressable

@@ -10,10 +10,11 @@ type Nav = NativeStackNavigationProp<RootStackParamList, 'VocabDirection'>;
 type R = RouteProp<RootStackParamList, 'VocabDirection'>;
 
 export default function VocabDirectionScreen() {
+  const contentNames = useAppData().CONTENT_NAMES;
   const navigation = useNavigation<Nav>();
   const { t } = useI18n();
   const { categoryId } = useRoute<R>().params;
-  const catName = t(`vocabCategories.${categoryId}`);
+  const catName = (contentNames?.categories?.[categoryId] ?? t(`vocabCategories.${categoryId}`));
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -62,3 +63,4 @@ const styles = StyleSheet.create({
   arrow: { fontSize: 18, color: colors.inkFaint },
   cardDesc: { fontSize: 13, color: colors.inkMute, lineHeight: 20 },
 });
+import { useAppData } from '../AppDataContext';

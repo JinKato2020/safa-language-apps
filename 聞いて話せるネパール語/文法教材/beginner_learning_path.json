@@ -1,0 +1,598 @@
+{
+  "ja": {
+    "title": "はじめての7ステップ",
+    "description": "1回5文。教材で形を確かめ、声に出し、答えと音声で振り返ろう。順番はおすすめです。どのテーマからでも始められます。",
+    "intro": [
+      {
+        "title": "まず、音声と読みを並べよう",
+        "body": "文字が初めてでも、ローマ字と音声を一緒に使えます。म विद्यार्थी हुँ（ma vidyārthī hũ／私は学生です）。練習ではカードで答えを確かめ、音声を聞いてまねしてみましょう。"
+      },
+      {
+        "title": "a と ā は同じ目印ではない",
+        "body": "a は軽い「ア」に近い音、ā は口を開く「ア」の目印です。ī・ū の線も文字の区別を示します。ネパール語を「線があれば必ず2倍長い」と決めず、実際の音声で確かめましょう。"
+      },
+      {
+        "title": "h が付く子音は、息も聞こう",
+        "body": "k と kh、t と th などは息の強さが違います。kh は k のあとに強く息を出す音です。英語の th の音ではありません。点のある ṭ・ḍ は舌先を少し後ろへ寄せ、t・d と区別します。"
+      },
+      {
+        "title": "鼻に響く母音もある",
+        "body": "यहाँ（yahā̃／ここ）の ã・ā̃ の波線は、母音を鼻にも響かせる印です。最後に別の「ン」を足すだけの音ではありません。हुँ（hũ／私は～です）も、音声の鼻への響きを聞いてみましょう。"
+      },
+      {
+        "title": "文末の形をひとつずつ",
+        "body": "म विद्यार्थी हुँ は「私＋学生＋です」。動詞は文末に来ることが多い一方、人称や敬意で形が変わります。まず म（私）・हामी（私たち）・तपाईं（あなた）・उहाँ（彼／彼女・敬意）を使い、हो・छ・हुन्छ の役割を順に学びます。"
+      }
+    ],
+    "steps": [
+      {
+        "id": "identity",
+        "title": "自分や相手を紹介する",
+        "goal": "हो の仲間で「私は～です」。人称に合う文末を選ぼう。",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 1,
+            "index": 0,
+            "ne": "म विद्यार्थी हुँ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 1,
+            "index": 1,
+            "ne": "तपाईं विद्यार्थी हुनुहुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 1,
+            "index": 2,
+            "ne": "उहाँ विद्यार्थी हुनुहुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 1,
+            "index": 4,
+            "ne": "उहाँहरू विद्यार्थी हुनुहुन्न।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 1,
+            "index": 12,
+            "ne": "तपाईंहरू शिक्षक हुनुहुन्छ।"
+          }
+        ],
+        "guideThemeId": 1
+      },
+      {
+        "id": "location",
+        "title": "ここ・そこ・居場所を伝える",
+        "goal": "छ の仲間で「いる・ある」。人と物、肯定と否定を練習。",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 2,
+            "index": 0,
+            "ne": "म घरमा छु।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 2,
+            "index": 1,
+            "ne": "तपाईं घरमा हुनुहुन्छ?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 2,
+            "index": 5,
+            "ne": "यहाँ किताब छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 2,
+            "index": 6,
+            "ne": "त्यहाँ कापी छैन।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 2,
+            "index": 9,
+            "ne": "तपाईंहरू कहाँ हुनुहुन्छ?"
+          }
+        ],
+        "guideThemeId": 2
+      },
+      {
+        "id": "state",
+        "title": "気持ちや状態を伝える",
+        "goal": "「忙しい」「冷たい」などの状態にも छ の仲間を使おう。",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 3,
+            "index": 0,
+            "ne": "यो फूल सुन्दर छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 3,
+            "index": 3,
+            "ne": "के यो पानी चिसो छ?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 3,
+            "index": 6,
+            "ne": "म व्यस्त छु।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 3,
+            "index": 7,
+            "ne": "तपाईं सन्चै हुनुहुन्छ?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 3,
+            "index": 9,
+            "ne": "उहाँहरू व्यस्त हुनुहुन्छ।"
+          }
+        ],
+        "guideThemeId": 3
+      },
+      {
+        "id": "regular",
+        "title": "いつものことを伝える",
+        "goal": "हुन्छ で、ふだんの様子と一般的なことを言おう。",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 4,
+            "index": 0,
+            "ne": "जाडोमा चिसो हुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 4,
+            "index": 1,
+            "ne": "गर्मीमा दिन लामो हुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 4,
+            "index": 2,
+            "ne": "यहाँ बिहान शान्त हुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 4,
+            "index": 3,
+            "ne": "आइतबार बजार बन्द हुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 4,
+            "index": 5,
+            "ne": "के यहाँ सधैं यस्तो हुन्छ?"
+          }
+        ],
+        "guideThemeId": 4
+      },
+      {
+        "id": "connections",
+        "title": "場所・出発点・相手をつなぐ",
+        "goal": "मा・बाट・सँग の違いを文の中で確かめよう。",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 5,
+            "index": 0,
+            "ne": "म घरमा बस्छु।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 5,
+            "index": 1,
+            "ne": "म नेपालबाट आएँ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 5,
+            "index": 2,
+            "ne": "हामी साथीहरूसँग जान्छौं।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 5,
+            "index": 6,
+            "ne": "मसँग पैसा छैन।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 5,
+            "index": 7,
+            "ne": "तपाईंसँग कलम छ?"
+          }
+        ],
+        "guideThemeId": 5
+      },
+      {
+        "id": "questions",
+        "title": "知りたいことを質問する",
+        "goal": "के・कसको・कहाँ・कति・को で、聞きたい部分を選ぼう。",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 6,
+            "index": 0,
+            "ne": "यो के हो?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 6,
+            "index": 1,
+            "ne": "त्यो कसको किताब हो?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 6,
+            "index": 2,
+            "ne": "तपाईं कहाँ बस्नुहुन्छ?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 6,
+            "index": 3,
+            "ne": "यो कति पर्छ?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 6,
+            "index": 4,
+            "ne": "यहाँ को छ?"
+          }
+        ],
+        "guideThemeId": 6
+      },
+      {
+        "id": "conversation",
+        "title": "自己紹介を声に出す",
+        "goal": "会話モードの短い文で、名前・出身・住まいなどを言ってみよう。",
+        "items": [
+          {
+            "mode": "conversation",
+            "themeId": 1,
+            "index": 0,
+            "ne": "मेरो नाम राम हो।",
+            "levelId": 1
+          },
+          {
+            "mode": "conversation",
+            "themeId": 1,
+            "index": 1,
+            "ne": "म नेपाली हुँ।",
+            "levelId": 1
+          },
+          {
+            "mode": "conversation",
+            "themeId": 1,
+            "index": 4,
+            "ne": "म काठमाडौंमा बस्छु।",
+            "levelId": 1
+          },
+          {
+            "mode": "conversation",
+            "themeId": 1,
+            "index": 5,
+            "ne": "म विद्यार्थी हुँ।",
+            "levelId": 1
+          },
+          {
+            "mode": "conversation",
+            "themeId": 1,
+            "index": 6,
+            "ne": "म पच्चीस वर्षको छु।",
+            "levelId": 1
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "title": "Your first 7 steps",
+    "description": "Five sentences at a time: read the pattern, say your answer, then check the text and audio. This is a suggested order; you can start anywhere.",
+    "intro": [
+      {
+        "title": "Start with sound and reading",
+        "body": "Use the romanization alongside the recording. म विद्यार्थी हुँ (ma vidyārthī hũ) means “I am a student.” Reveal the answer in practice, listen and say it aloud."
+      },
+      {
+        "title": "Notice a and ā",
+        "body": "a and ā represent different vowel qualities; ā is the more open vowel. The bars in ī and ū also preserve spelling distinctions. Do not assume every bar means exactly twice the length: follow the recording."
+      },
+      {
+        "title": "Listen for the extra breath",
+        "body": "Pairs such as k/kh and t/th differ in aspiration. With kh, release an extra puff of air after k. th is not English “th.” A dot in ṭ or ḍ marks a tongue position farther back than t or d."
+      },
+      {
+        "title": "Some vowels have a nasal quality",
+        "body": "The tilde in यहाँ (yahā̃, “here”) marks a nasal vowel. Let the vowel resonate through the nose; do not simply add a separate n. Listen for this in हुँ (hũ, “I am”) too."
+      },
+      {
+        "title": "Build from the ending",
+        "body": "म विद्यार्थी हुँ follows “I + student + am.” Verbs usually come at the end, but their forms change with person and respect. Begin with म (I), हामी (we), तपाईं (you) and उहाँ (he/she, respectful), then learn the roles of हो, छ and हुन्छ."
+      }
+    ],
+    "steps": [
+      {
+        "id": "identity",
+        "title": "Introduce yourself and others",
+        "goal": "Use the हो family for identity and choose an ending for the person.",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 1,
+            "index": 0,
+            "ne": "म विद्यार्थी हुँ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 1,
+            "index": 1,
+            "ne": "तपाईं विद्यार्थी हुनुहुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 1,
+            "index": 2,
+            "ne": "उहाँ विद्यार्थी हुनुहुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 1,
+            "index": 4,
+            "ne": "उहाँहरू विद्यार्थी हुनुहुन्न।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 1,
+            "index": 12,
+            "ne": "तपाईंहरू शिक्षक हुनुहुन्छ।"
+          }
+        ],
+        "guideThemeId": 1
+      },
+      {
+        "id": "location",
+        "title": "Say where someone or something is",
+        "goal": "Use the छ family for location and existence, including negative sentences.",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 2,
+            "index": 0,
+            "ne": "म घरमा छु।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 2,
+            "index": 1,
+            "ne": "तपाईं घरमा हुनुहुन्छ?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 2,
+            "index": 5,
+            "ne": "यहाँ किताब छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 2,
+            "index": 6,
+            "ne": "त्यहाँ कापी छैन।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 2,
+            "index": 9,
+            "ne": "तपाईंहरू कहाँ हुनुहुन्छ?"
+          }
+        ],
+        "guideThemeId": 2
+      },
+      {
+        "id": "state",
+        "title": "Describe states and qualities",
+        "goal": "Use the छ family with qualities such as busy or cold.",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 3,
+            "index": 0,
+            "ne": "यो फूल सुन्दर छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 3,
+            "index": 3,
+            "ne": "के यो पानी चिसो छ?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 3,
+            "index": 6,
+            "ne": "म व्यस्त छु।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 3,
+            "index": 7,
+            "ne": "तपाईं सन्चै हुनुहुन्छ?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 3,
+            "index": 9,
+            "ne": "उहाँहरू व्यस्त हुनुहुन्छ।"
+          }
+        ],
+        "guideThemeId": 3
+      },
+      {
+        "id": "regular",
+        "title": "Talk about regular situations",
+        "goal": "Use हुन्छ for regular or general situations.",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 4,
+            "index": 0,
+            "ne": "जाडोमा चिसो हुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 4,
+            "index": 1,
+            "ne": "गर्मीमा दिन लामो हुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 4,
+            "index": 2,
+            "ne": "यहाँ बिहान शान्त हुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 4,
+            "index": 3,
+            "ne": "आइतबार बजार बन्द हुन्छ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 4,
+            "index": 5,
+            "ne": "के यहाँ सधैं यस्तो हुन्छ?"
+          }
+        ],
+        "guideThemeId": 4
+      },
+      {
+        "id": "connections",
+        "title": "Connect places and people",
+        "goal": "Compare मा, बाट and सँग in complete sentences.",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 5,
+            "index": 0,
+            "ne": "म घरमा बस्छु।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 5,
+            "index": 1,
+            "ne": "म नेपालबाट आएँ।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 5,
+            "index": 2,
+            "ne": "हामी साथीहरूसँग जान्छौं।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 5,
+            "index": 6,
+            "ne": "मसँग पैसा छैन।"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 5,
+            "index": 7,
+            "ne": "तपाईंसँग कलम छ?"
+          }
+        ],
+        "guideThemeId": 5
+      },
+      {
+        "id": "questions",
+        "title": "Ask a useful question",
+        "goal": "Ask about things, ownership, places, amounts and people.",
+        "items": [
+          {
+            "mode": "grammar",
+            "themeId": 6,
+            "index": 0,
+            "ne": "यो के हो?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 6,
+            "index": 1,
+            "ne": "त्यो कसको किताब हो?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 6,
+            "index": 2,
+            "ne": "तपाईं कहाँ बस्नुहुन्छ?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 6,
+            "index": 3,
+            "ne": "यो कति पर्छ?"
+          },
+          {
+            "mode": "grammar",
+            "themeId": 6,
+            "index": 4,
+            "ne": "यहाँ को छ?"
+          }
+        ],
+        "guideThemeId": 6
+      },
+      {
+        "id": "conversation",
+        "title": "Say your introduction aloud",
+        "goal": "Try short conversation sentences about your name, background and home.",
+        "items": [
+          {
+            "mode": "conversation",
+            "themeId": 1,
+            "index": 0,
+            "ne": "मेरो नाम राम हो।",
+            "levelId": 1
+          },
+          {
+            "mode": "conversation",
+            "themeId": 1,
+            "index": 1,
+            "ne": "म नेपाली हुँ।",
+            "levelId": 1
+          },
+          {
+            "mode": "conversation",
+            "themeId": 1,
+            "index": 4,
+            "ne": "म काठमाडौंमा बस्छु।",
+            "levelId": 1
+          },
+          {
+            "mode": "conversation",
+            "themeId": 1,
+            "index": 5,
+            "ne": "म विद्यार्थी हुँ।",
+            "levelId": 1
+          },
+          {
+            "mode": "conversation",
+            "themeId": 1,
+            "index": 6,
+            "ne": "म पच्चीस वर्षको छु।",
+            "levelId": 1
+          }
+        ]
+      }
+    ]
+  }
+}

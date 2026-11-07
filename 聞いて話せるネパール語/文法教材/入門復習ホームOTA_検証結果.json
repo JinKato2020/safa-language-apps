@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-07",
+  "appVersion": "2.1.12",
+  "contentVersion": 1214,
+  "reviewedCopulaContexts": 186,
+  "bilingualDictionaryChecks": 372,
+  "guideWordTableChecks": 122,
+  "examplesAndRecordingsUnchanged": true,
+  "inventory": {
+    "grammarThemes": 36,
+    "grammarExamples": 528,
+    "conversationExamples": 1800,
+    "vocabularyWords": 1000
+  },
+  "homeTabs": [
+    "home",
+    "grammar",
+    "conversation",
+    "listening",
+    "vocabulary"
+  ],
+  "settingsLocation": "Home top-right",
+  "course": {
+    "steps": 7,
+    "sentencesPerStep": 5,
+    "locales": [
+      "ja",
+      "en"
+    ],
+    "actualScreenSessionsPassed": 14
+  },
+  "validation": {
+    "readerLayouts": 360,
+    "readerDisclosures": 996,
+    "learningLayouts": 24,
+    "realReactNavigationRouters": true,
+    "serializedStorageAndFailureRecovery": true,
+    "resumeAcrossRestart": true,
+    "sameDayScheduleGuard": true,
+    "changedContentInvalidatesRatings": true,
+    "otaRealImplementationWithMockDiskNetwork": true,
+    "otaChecks": [
+      "initial offline baseline",
+      "one changed lesson only",
+      "audio delta",
+      "archive/file checksums",
+      "atomic pointer failure",
+      "bad translations rejected",
+      "prior snapshot fallback",
+      "old version rejected",
+      "legacy audio reuse",
+      "second-language shared audio"
+    ],
+    "typechecks": [
+      "shared",
+      "App A",
+      "App B",
+      "App C"
+    ],
+    "iosHermesExport": true
+  },
+  "nativeDeviceVerified": false,
+  "limits": [
+    "DOM adapters do not prove iPhone/VoiceOver or native audio playback behavior.",
+    "No new native-speaker certification or listening audit of every recording.",
+    "Build dispatch is not TestFlight completion or App Store publication."
+  ],
+  "linguisticReferences": [
+    "https://pressbooks.bccampus.ca/nepali/front-matter/transcription/",
+    "https://pressbooks.bccampus.ca/nepali/chapter/chapter-1-unit-4-consonant-letters/",
+    "https://pressbooks.bccampus.ca/nepali/chapter/chapter-1-unit-7-nasalization/",
+    "https://pressbooks.bccampus.ca/nepali/chapter/chapter-3-unit-4-grammar-focus/"
+  ]
+}

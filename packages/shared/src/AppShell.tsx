@@ -31,6 +31,9 @@ import { useGlobalScaleStyle, useSettings } from './SettingsContext';
 import { useI18n } from './i18n';
 import { ListeningAudioProvider, useListeningAudio } from './ListeningAudioContext';
 import type { RootStackParamList } from './types';
+import { LearningProvider } from './LearningContext';
+import LearningPathScreen from './screens/LearningPathScreen';
+import LearningHomeScreen from './screens/LearningHomeScreen';
 import HomeScreen from './screens/HomeScreen';
 import ListeningHubScreen from './screens/ListeningHubScreen';
 import ShortHubScreen from './screens/ShortHubScreen';
@@ -208,7 +211,7 @@ function SettingsIcon({ color, focused }: { color: string; focused: boolean }) {
   return <TabIcon color={color} focused={focused}><Circle cx={12} cy={12} r={3} /><Path d="m9 3-.5 2-2 1-2-.5-2 3 1.5 1.5v3L2.5 15l2 3 2-.5 2 1 .5 2h4l.5-2 2-1 2 .5 2-3-1.5-1.5v-3L20 9l-2-3-2 .5-2-1-.5-2z" /></TabIcon>;
 }
 
-function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListening, dictData, hideModeHeaders, mainScreenAccessory }: { defaultStackOptions: any; progressStorageKey: string; tabs?: TabKey[]; posterInListening?: boolean; dictData?: DictData; hideModeHeaders?: boolean; mainScreenAccessory?: ReactNode }) {
+function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListening, dictData, hideModeHeaders, mainScreenAccessory, learningHome }: { defaultStackOptions: any; progressStorageKey: string; tabs?: TabKey[]; posterInListening?: boolean; dictData?: DictData; hideModeHeaders?: boolean; mainScreenAccessory?: ReactNode; learningHome?: boolean }) {
   const { bottom } = useSafeAreaInsets();
   const { t } = useI18n();
   const ss = useGlobalScaleStyle();
@@ -217,7 +220,7 @@ function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListe
     ? ({ route }: { route: { name: string } }) => ({ ...defaultStackOptions, headerShown: route.name !== 'Theme' && route.name !== 'VocabCategory' })
     : defaultStackOptions;
   const defs = {
-    home:         { name: 'HomeTab',         title: t('nav.home'),         icon: HomeIcon,       render: () => <HomeScreen storageKey={progressStorageKey} /> },
+    home:         { name: 'HomeTab',         title: t('nav.home'),         icon: HomeIcon,       render: () => learningHome ? <LearningHomeScreen /> : <HomeScreen storageKey={progressStorageKey} /> },
     conversation: { name: 'ConversationTab', title: t('nav.conversation'), icon: ChatIcon,       render: () => <ConversationStackNav defaultStackOptions={modeStackOptions} /> },
     grammar:      { name: 'GrammarTab',      title: t('nav.grammar'),      icon: GrammarIcon,    render: () => <GrammarStackNav defaultStackOptions={modeStackOptions} /> },
     listening:    { name: 'ListeningTab',    title: t('nav.listening'),    icon: HeadphonesIcon, render: () => <ListeningStackNav defaultStackOptions={modeStackOptions} posterInListening={posterInListening} /> },
@@ -303,6 +306,8 @@ const splashStyles = StyleSheet.create({
 
 // ─── AppShell: VideoSplash → MainTabs ──────────────────
 export type AppShellProps = {
+  /** Opt-in, app-specific local learning history; content comes from the language pack. */
+  learningStorageKey?: string;
   /** 各アプリの assets から渡してもらうスプラッシュ動画 (require('./assets/safa-splash.mp4'))。未指定ならスプラッシュ無しで直接起動。 */
   splashSource?: number;
   /** (旧) ヘッダーアイコン。現在はテキストタイトルに置き換えたため未使用 (互換のため任意で受け取る) */
@@ -341,7 +346,8 @@ function EngagementPlaybackGuard({ onChange }: { onChange: (playing: boolean) =>
   return null;
 }
 
-export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData, heroImages, hideModeHeaders = false, mainScreenAccessory, onRouteChanged }: AppShellProps) {
+export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData, heroImages, hideModeHeaders = false, mainScreenAccessory, onRouteChanged, learningStorageKey }: AppShellProps) {
+  const { t } = useI18n();
   const [splashDone, setSplashDone] = useState(splashShownOnce || splashSource == null);
   const defaultStackOptions = useRef(makeDefaultStackOptions(HeaderTitle, hideModeHeaders)).current;
   const { themeMode } = useSettings();
@@ -399,16 +405,20 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                   どのタブ配下からでもここへ到達する(課金を使わないアプリでも無害な登録)。
                   文法教材(GrammarGuide)も同様にどのタブからでも開ける。 */}
                <HeroImagesProvider value={heroImages}>
+                <LearningProvider storageKey={learningStorageKey}>
                 <RootStack.Navigator screenOptions={{ headerShown: false }}>
                   <RootStack.Screen name="MainTabs">
-                    {() => <MainTabs defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} hideModeHeaders={hideModeHeaders} mainScreenAccessory={landing && !audioPlaying ? mainScreenAccessory : undefined} />}
+                    {() => <MainTabs learningHome={!!learningStorageKey} defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} hideModeHeaders={hideModeHeaders} mainScreenAccessory={landing && !audioPlaying ? mainScreenAccessory : undefined} />}
                   </RootStack.Screen>
                   <RootStack.Screen name="Paywall" component={PaywallScreen} options={{ presentation: 'modal' }} />
                   <RootStack.Screen name="GrammarGuide" component={GrammarGuideScreen} />
                   {/* GrammarGuide replaces itself at this root, not inside GramStack.
                       Keep MainTabs beneath it so Back returns to the existing list. */}
                   <RootStack.Screen name="Practice" component={PracticeScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined }} />
+                  <RootStack.Screen name="LearningPath" component={LearningPathScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined }} />
+                  <RootStack.Screen name="SettingsMain" component={SettingsScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined, title: t('settings.title') }} />
                 </RootStack.Navigator>
+                </LearningProvider>
                </HeroImagesProvider>
             </DesignThemeProvider>
           </ListeningAudioProvider>

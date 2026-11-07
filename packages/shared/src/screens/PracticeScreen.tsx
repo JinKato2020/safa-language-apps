@@ -1,4 +1,4 @@
-import { useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Animated, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { Text } from '../Text';
 import { useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
@@ -13,6 +13,11 @@ import { useAppData } from '../AppDataContext';
 import { getL1 } from '../l1';
 import { useCardFlip } from '../useCardFlip';
 import { useHorizontalSwipe } from '../useHorizontalSwipe';
+import { grammarThemeLabel, withoutThemePrefix } from '../themeLabels';
+import { useLearning } from '../LearningContext';
+import { learningCopy } from '../learningCopy';
+import { learningStyles } from '../LearningLaunch';
+import { rateStudy, resolveStudy, studyKey, stepSignature, type StudyRef } from '../learning';
 
 function tokenize(text: string): string[] {
   return text
@@ -39,7 +44,10 @@ function SpeakerIcon({ size = 18 }: { size?: number }) {
 }
 
 export default function PracticeScreen() {
-  const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio, VOCAB, GRAMMAR_VOCAB, CONV_VOCAB, JP_READING, nativeLang, vocabTokenize, grammarTextOnlyLabel } = useAppData();
+  const contentNames = useAppData().CONTENT_NAMES;
+  const data = useAppData();
+  const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio, VOCAB, GRAMMAR_VOCAB, CONV_VOCAB, JP_READING, nativeLang, vocabTokenize, grammarTextOnlyLabel } = data;
+  const learning = useLearning();
   const { nepaliAudio, japaneseAudio, nepaliGrammarAudio, japaneseGrammarAudio } = audio;
   const l1 = getL1(nativeLang);
   const navigation = useNavigation<Nav>();
@@ -48,26 +56,38 @@ export default function PracticeScreen() {
   // 母語(訳)側UIか＝学習対象(ネパール語)を「単語」列に出す。ja/en=母語UI(App A)。
   // ne/bn UI(App B 等)は逆向き(対象語を単語列・母語を意味列)。
   const glossUI = lang === 'ja' || lang === 'en';
-  const { themeId: initialThemeId, levelId: initialLevelId, startIndex, mode } = useRoute<R>().params;
-  const isGrammar = mode === 'grammar';
+  const { themeId: initialThemeId, levelId: initialLevelId, startIndex, mode, studySession: session } = useRoute<R>().params;
+  const [position, setPosition] = useState(session?.position ?? 0);
+  const [answered, setAnswered] = useState<string[]>(session?.answered ?? []);
+  const [finished, setFinished] = useState(false), [saving, setSaving] = useState(false);
+  const savingRef = useRef(false);
+  const selected = session?.items[position];
+  const isGrammar = selected ? selected.mode === 'grammar' : mode === 'grammar';
+  const sessionValid = !session || (session.items.length > 0 && session.items.every(r => resolveStudy(data, r)));
+  const studyCopy = learningCopy(lang);
 
   // テーマを跨いだナビゲーションのため、themeId/levelId/index を state にする
-  const [themeId, setThemeId] = useState(initialThemeId);
-  const [levelId, setLevelId] = useState<number>(initialLevelId ?? 1);
-  const [index, setIndex] = useState(startIndex ?? 0);
+  const [normalThemeId, setThemeId] = useState(initialThemeId);
+  const [normalLevelId, setLevelId] = useState<number>(initialLevelId ?? 1);
+  const [normalIndex, setIndex] = useState(startIndex ?? 0);
+  const themeId = selected?.themeId ?? normalThemeId, levelId = selected?.levelId ?? normalLevelId, index = selected?.index ?? normalIndex;
   const [revealed, setRevealed] = useState(false);
+  useEffect(() => {
+    setThemeId(initialThemeId); setLevelId(initialLevelId ?? 1); setIndex(startIndex ?? 0);
+    setPosition(session?.position ?? 0); setAnswered(session?.answered ?? []); setFinished(false); setRevealed(false);
+  }, [initialThemeId, initialLevelId, startIndex, mode, session]);
 
   const examples = useMemo(
     () => (isGrammar ? getGrammarExamples(themeId) : getExamples(themeId, levelId)),
     // nativeLang(=パック) が変わったら再計算 (言語切替を既存画面にも反映)
-    [isGrammar, themeId, levelId, nativeLang],
+    [isGrammar, themeId, levelId, nativeLang, getExamples, getGrammarExamples],
   );
   const themeName = isGrammar
-    ? t(`grammarThemes.${themeId}`)
-    : t(`themes.${themeId}`);
+    ? withoutThemePrefix(grammarThemeLabel(GRAMMAR_THEMES, themeId, t(`grammarThemes.${themeId}`)))
+    : (contentNames?.themes?.[themeId] ?? t(`themes.${themeId}`));
   // 表示番号はテーマ選択画面と同じ「リスト位置」に揃える(themeId=データキーは並び替えでidとズレるため)。
   const themeNo = ((isGrammar ? GRAMMAR_THEMES : THEMES).findIndex(x => x.id === themeId) + 1) || themeId;
-  const levelName = isGrammar ? t('practice.grammarLabel') : t(`levels.${levelId}`);
+  const levelName = isGrammar ? t('practice.grammarLabel') : (contentNames?.levels?.[levelId] ?? t(`levels.${levelId}`));
 
   const { practiceDirection, romaji } = useSettings();
   const ss = useScaleStyle();
@@ -78,6 +98,14 @@ export default function PracticeScreen() {
   }, [navigation, isGrammar, t]);
 
   const ex = examples[index];
+  const current: StudyRef = { mode: isGrammar ? 'grammar' : 'conversation', themeId, ...(isGrammar ? {} : { levelId }), index, ne: ex?.ne ?? '' };
+  const currentKey = studyKey(current);
+  const ready = learning?.ready;
+  const change = learning?.change;
+  useEffect(() => {
+    if (!ready || !change || !ex || finished || !sessionValid) return;
+    void change(s => ({ ...s, resume: { item: current, ...(session ? { session: { ...session, position, answered } } : {}) } }));
+  }, [currentKey, ex?.ne, ready, change, finished, sessionValid, session, position, answered]);
   const isJa2Ne = practiceDirection === 'ja2ne';
   const audioKey = isGrammar
     ? `${themeId}-${index + 1}`
@@ -100,6 +128,11 @@ export default function PracticeScreen() {
 
   // テーマを跨いで次/前へ進む
   const go = (delta: number) => {
+    questionPlayer.pause(); answerPlayer.pause();
+    if (session) {
+      setPosition(p => Math.max(0, Math.min(session.items.length - 1, p + delta)));
+      setRevealed(false); return;
+    }
     if (delta > 0) {
       // 次へ
       if (index + 1 < examples.length) {
@@ -185,8 +218,9 @@ export default function PracticeScreen() {
   };
 
   // 端判定（無効化用）
-  const atFirst = index === 0 && themeId === 1 && (isGrammar || levelId === 1);
+  const atFirst = session ? position === 0 : index === 0 && themeId === 1 && (isGrammar || levelId === 1);
   const atLast = (() => {
+    if (session) return position === session.items.length - 1;
     if (index < examples.length - 1) return false;
     if (isGrammar) return themeId >= GRAMMAR_THEMES.length;
     if (themeId < THEMES.length) return false;
@@ -197,10 +231,39 @@ export default function PracticeScreen() {
   // カード上で開始したジェスチャーはスワイプ無効（タップのみ）にするための ref。
   const cardSwipeBlock = useRef(false);
   const swipe = useHorizontalSwipe(
-    () => { if (!atLast) go(1); },
-    () => { if (!atFirst) go(-1); },
+    () => { if (!atLast && !savingRef.current) go(1); },
+    () => { if (!atFirst && !savingRef.current) go(-1); },
     cardSwipeBlock,
   );
+
+  const record = async (result: 'known' | 'again') => {
+    if (!learning?.ready || !revealed || savingRef.current || !ex) return;
+    savingRef.current = true; setSaving(true);
+    const nextAnswered = [...new Set([...answered, currentKey])];
+    const complete = !!session && session.items.every(r => nextAnswered.includes(studyKey(r)));
+    const saved = await learning.change(state => {
+      let next = rateStudy(state, current, result, Date.now());
+      if (complete && session) {
+        next = { ...next, resume: undefined };
+        if (session.kind === 'course' && session.stepId) next.completed = { ...next.completed, [session.stepId]: stepSignature(session.items) };
+      }
+      return next;
+    });
+    savingRef.current = false; setSaving(false);
+    if (!saved) return;
+    setAnswered(nextAnswered);
+    if (complete) { questionPlayer.pause(); answerPlayer.pause(); setFinished(true); }
+    else if (session) { setPosition(session.items.findIndex(r => !nextAnswered.includes(studyKey(r)))); setRevealed(false); }
+    else if (!atLast) go(1);
+  };
+
+  if (session && (!sessionValid || finished)) return <ScrollView contentContainerStyle={styles.container}>
+    <View style={[learningStyles.card,learningStyles.green]}>
+      <Text accessibilityRole="header" style={[learningStyles.title,ss(22,32)]}>{finished ? studyCopy.finish : studyCopy.unavailable}</Text>
+      {finished && <Text style={[learningStyles.body,ss(16,27)]}>{studyCopy.finishBody}</Text>}
+      <Pressable accessibilityRole="button" style={learningStyles.primary} onPress={() => navigation.goBack()}><Text style={[learningStyles.primaryText,ss(16,24)]}>{lang === 'en' ? 'Back to list' : '一覧に戻る'}</Text></Pressable>
+    </View>
+  </ScrollView>;
 
   if (!ex) return null;
 
@@ -219,6 +282,7 @@ export default function PracticeScreen() {
     <View style={styles.swipeWrap} {...swipe}>
     <ScrollView style={styles.flex} contentContainerStyle={styles.container}>
       <View style={styles.metaRow}>
+        {session && <Text style={[learningStyles.badge,ss(16,25)]}>{studyCopy.session} · {position + 1} / {session.items.length}</Text>}
         <Text style={[styles.metaText, ss(12)]}>
           <Text style={styles.metaCur}>{themeNo}.</Text> {themeName} · {levelName} · {t('practice.exampleCounter')} <Text style={styles.metaCur}>{index + 1}</Text> / {examples.length}
         </Text>
@@ -272,6 +336,16 @@ export default function PracticeScreen() {
       <View style={styles.swipeHintRow}>
         <Text style={[styles.swipeHint, ss(11)]}>{t('common.swipeHint')}</Text>
       </View>
+
+      {learning && <View style={[learningStyles.card,learningStyles.green]}>
+        <Text style={[learningStyles.body,ss(15,24)]}>{studyCopy.rating}</Text>
+        {!revealed && <Pressable accessibilityRole="button" style={learningStyles.primary} onPress={()=>setRevealed(true)}><Text style={[learningStyles.primaryText,ss(16,24)]}>{studyCopy.reveal}</Text></Pressable>}
+        {revealed && learning.ready && <View style={{gap:10}}>
+          <Pressable accessibilityRole="button" disabled={saving} accessibilityState={{disabled:saving}} style={learningStyles.primary} onPress={()=>record('known')}><Text style={[learningStyles.primaryText,ss(16,24)]}>{saving?studyCopy.saving:studyCopy.known}</Text></Pressable>
+          <Pressable accessibilityRole="button" disabled={saving} accessibilityState={{disabled:saving}} style={learningStyles.secondary} onPress={()=>record('again')}><Text style={[learningStyles.link,ss(16,24)]}>{studyCopy.again}</Text></Pressable>
+        </View>}
+        {learning.error && <Text style={[learningStyles.error,ss(15,24)]}>{studyCopy.error}</Text>}
+      </View>}
 
       {/* 単語と意味 (全単語を表示)
             日本語 UI: ネパール語 (デーヴァナーガリー) + ローマ字 / 意味=日本語

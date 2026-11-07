@@ -11,6 +11,7 @@ import { useAppData } from '../AppDataContext';
 import { getL1 } from '../l1';
 import { useListeningAudio } from '../ListeningAudioContext';
 import { useHorizontalSwipe } from '../useHorizontalSwipe';
+import { grammarThemeLabel, withoutThemePrefix } from '../themeLabels';
 
 type R = RouteProp<RootStackParamList, 'Listening'>;
 
@@ -90,6 +91,7 @@ function PauseIcon({ size = 30 }: { size?: number }) {
 }
 
 export default function ListeningScreen() {
+  const contentNames = useAppData().CONTENT_NAMES;
   const { getExamples, getGrammarExamples, THEMES, GRAMMAR_THEMES, JP_READING, nativeLang } = useAppData();
   const l1 = getL1(nativeLang);
   const route = useRoute<R>();
@@ -121,11 +123,11 @@ export default function ListeningScreen() {
   const ex = examples[index];
 
   const themeName = isGrammarSrc
-    ? t(`grammarThemes.${themeId}`)
-    : t(`themes.${themeId}`);
+    ? withoutThemePrefix(grammarThemeLabel(GRAMMAR_THEMES, themeId, t(`grammarThemes.${themeId}`)))
+    : (contentNames?.themes?.[themeId] ?? t(`themes.${themeId}`));
   // 表示番号はテーマ選択画面と同じ「リスト位置」に揃える。
   const themeNo = ((isGrammarSrc ? GRAMMAR_THEMES : THEMES).findIndex(x => x.id === themeId) + 1) || themeId;
-  const levelName = isGrammarSrc ? t('practice.grammarLabel') : t(`levels.${levelId}`);
+  const levelName = isGrammarSrc ? t('practice.grammarLabel') : (contentNames?.levels?.[levelId] ?? t(`levels.${levelId}`));
 
   const cycleSpeed = () => {
     const cur = SPEEDS.indexOf(listenSpeed);

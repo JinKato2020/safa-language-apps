@@ -1,4 +1,5 @@
 // データモデル
+import type { StudySession } from './learning';
 
 export type Mode = 'conversation' | 'listening' | 'grammar' | 'vocabulary' | 'sakubun';
 
@@ -58,6 +59,7 @@ export type RootStackParamList = {
     levelId?: number;
     startIndex?: number;
     mode?: 'grammar';
+    studySession?: StudySession;
   };
   Listening: {
     themeId: number;
@@ -68,7 +70,8 @@ export type RootStackParamList = {
   ListeningHub: undefined;
   ShortHub: undefined;
   Sakubun: { themeId: number; levelId: number; startIndex?: number };
-  GrammarGuide: { themeId: number; title: string };
+  GrammarGuide: { themeId: number; title: string; studySession?: StudySession };
+  LearningPath: undefined;
   VocabCategory: { posterOnly?: boolean } | undefined;
   VocabDirection: { categoryId: number };
   Flashcard: { categoryId: number; direction: 'ne2ja' | 'ja2ne' };

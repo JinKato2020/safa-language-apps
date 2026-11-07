@@ -135,7 +135,7 @@ fs.writeFileSync(path.join(work, 'reader.html'), '<!doctype html><meta charset="
     }
     const shots=[['ja','1','rules'],['ja','6','reference'],['ja','2','examples'],['en','5','reference']];
     fs.mkdirSync(path.join(ROOT,'docs/previews'),{recursive:true});
-    for(const [lang,id,part] of shots){await page.evaluate(c=>window.renderCase(c),{lang,id,scale:1});if(part!=='rules')await page.getByRole('tab').filter({hasText:policy.readingCopy(lang)[part]}).click();if(part==='examples')await page.locator('button[aria-expanded]').first().click();await page.screenshot({path:path.join(ROOT,`docs/previews/nepali-reader-2.1.10-${lang}-${id}.png`)});}
+    for(const [lang,id,part] of shots){await page.evaluate(c=>window.renderCase(c),{lang,id,scale:1});if(part!=='rules')await page.getByRole('tab').filter({hasText:policy.readingCopy(lang)[part]}).click();if(part==='examples')await page.locator('button[aria-expanded]').first().click();await page.screenshot({path:path.join(ROOT,`docs/previews/nepali-reader-${require('../expo-app/app.json').expo.version}-${lang}-${id}.png`)});}
     assert.deepEqual(errors,[]);
     fs.writeFileSync(path.join(work,'results.json'),JSON.stringify({review,layouts:results.length,allContentPreserved:true,accordionToggles:opened,practiceAndCloseRoutes:72,browserErrors:errors,nativeDeviceVerified:false},null,2));
     console.log('PASS',results.length,'full lesson + reader layouts;',opened,'disclosures; all72 contents preserved; practice/close routes; no browser errors');

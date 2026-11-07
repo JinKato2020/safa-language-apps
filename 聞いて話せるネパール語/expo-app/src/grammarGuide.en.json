@@ -540,7 +540,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "am; is; are"
+          "be (identity) (respectful)"
         ]
       ],
       "presentation": {
@@ -600,7 +600,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are (respectful)"
+          "be (identity) (respectful)"
         ]
       ],
       "presentation": {
@@ -720,7 +720,7 @@
         [
           "हुनुहुन्न",
           "hunuhunna",
-          "is/are not (respectful)"
+          "not be (identity) (respectful)"
         ]
       ],
       "presentation": {
@@ -1040,7 +1040,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are (respectful)"
+          "be (identity) (respectful)"
         ]
       ],
       "presentation": {
@@ -1225,7 +1225,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/becomes (respectful)"
+          "be (identity) (respectful)"
         ]
       ],
       "presentation": {
@@ -1742,7 +1742,7 @@
         [
           "छु",
           "chu",
-          "is; are (existence)"
+          "be present (person)"
         ]
       ],
       "presentation": {
@@ -1802,7 +1802,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is; are (existence)"
+          "be present (person) (respectful)"
         ]
       ],
       "presentation": {
@@ -1862,7 +1862,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are present (respectful)"
+          "be present (person) (respectful)"
         ]
       ],
       "presentation": {
@@ -1922,7 +1922,7 @@
         [
           "छौं",
           "chaũ",
-          "is; are (existence)"
+          "be present (person)"
         ]
       ],
       "presentation": {
@@ -1982,7 +1982,7 @@
         [
           "हुनुहुन्न",
           "hunuhunna",
-          "is/are not present (respectful)"
+          "not be present (person) (respectful)"
         ]
       ],
       "presentation": {
@@ -2102,7 +2102,7 @@
         [
           "छैन",
           "chaina",
-          "is not; are not (existence)"
+          "not exist / not be there"
         ]
       ],
       "presentation": {
@@ -2282,7 +2282,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/becomes (respectful)"
+          "be present (person) (respectful)"
         ]
       ],
       "presentation": {
@@ -2342,7 +2342,7 @@
         [
           "छैन",
           "chaina",
-          "not be; not exist"
+          "not exist / not be there"
         ]
       ],
       "presentation": {
@@ -2402,7 +2402,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are present (respectful)"
+          "be present (person) (respectful)"
         ]
       ],
       "presentation": {
@@ -3068,7 +3068,7 @@
         [
           "छैन",
           "chaina",
-          "am not; is not; are not"
+          "not be (state)"
         ]
       ],
       "presentation": {
@@ -3263,7 +3263,7 @@
         [
           "छैन",
           "chaina",
-          "am not; is not; are not"
+          "not be (state)"
         ]
       ],
       "presentation": {
@@ -3323,7 +3323,7 @@
         [
           "छु",
           "chu",
-          "am; is; are"
+          "be (state)"
         ]
       ],
       "presentation": {
@@ -3383,7 +3383,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "am; is; are"
+          "be (state) (respectful)"
         ]
       ],
       "presentation": {
@@ -3443,7 +3443,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are (respectful)"
+          "be (state) (respectful)"
         ]
       ],
       "presentation": {
@@ -3503,7 +3503,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are (respectful)"
+          "be (state) (respectful)"
         ]
       ],
       "presentation": {
@@ -3563,7 +3563,7 @@
         [
           "छौं",
           "chaũ",
-          "be; exist"
+          "have/has …; resulting state (perfect auxiliary)"
         ]
       ],
       "presentation": {
@@ -5731,7 +5731,7 @@
         [
           "छैन",
           "chaina",
-          "is not; are not (existence)"
+          "not exist / not be there"
         ]
       ],
       "presentation": {
@@ -5791,7 +5791,7 @@
         [
           "छैन",
           "chaina",
-          "is not; are not (existence)"
+          "not exist / not be there"
         ]
       ],
       "presentation": {
@@ -6073,7 +6073,7 @@
         [
           "छु",
           "chu",
-          "be; exist"
+          "be present (person)"
         ]
       ],
       "presentation": {
@@ -8883,7 +8883,7 @@
         [
           "छन्",
           "chan",
-          "be; exist"
+          "exist / be there"
         ]
       ],
       "presentation": {
@@ -10542,7 +10542,7 @@
         [
           "छौ",
           "chau",
-          "is; are (existence)"
+          "be present (person)"
         ]
       ],
       "presentation": {
@@ -10602,7 +10602,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is; are (existence)"
+          "be present (person) (respectful)"
         ]
       ],
       "presentation": {
@@ -10667,7 +10667,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "am; is; are"
+          "be (identity) (respectful)"
         ]
       ],
       "presentation": {
@@ -10727,7 +10727,7 @@
         [
           "छैनौ",
           "chainau",
-          "am not; is not; are not"
+          "not be (state)"
         ]
       ],
       "presentation": {
@@ -10847,7 +10847,7 @@
         [
           "छन्",
           "chan",
-          "be; exist"
+          "be present (person)"
         ]
       ],
       "presentation": {
@@ -10907,7 +10907,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/becomes (respectful)"
+          "be present (person) (respectful)"
         ]
       ],
       "presentation": {
@@ -12888,7 +12888,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are present (respectful)"
+          "be …-ing (progressive auxiliary) (respectful)"
         ]
       ],
       "presentation": {
@@ -12953,7 +12953,7 @@
         [
           "छौं",
           "chaũ",
-          "be; exist"
+          "be …-ing (progressive auxiliary)"
         ]
       ],
       "presentation": {
@@ -13018,7 +13018,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/becomes (respectful)"
+          "be …-ing (progressive auxiliary) (respectful)"
         ]
       ],
       "presentation": {
@@ -13083,7 +13083,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are present (respectful)"
+          "be …-ing (progressive auxiliary) (respectful)"
         ]
       ],
       "presentation": {
@@ -13800,7 +13800,7 @@
         [
           "थिएँ",
           "thiẽ",
-          "was; were (existence)"
+          "was/were present (person)"
         ]
       ],
       "presentation": {
@@ -14564,7 +14564,7 @@
         [
           "थिएन",
           "thiena",
-          "was not; were not (existence)"
+          "did not exist / was not there"
         ]
       ],
       "presentation": {
@@ -16451,7 +16451,7 @@
         [
           "छु",
           "chu",
-          "have; has (perfect auxiliary)"
+          "have/has …; resulting state (perfect auxiliary)"
         ]
       ],
       "presentation": {
@@ -16586,7 +16586,7 @@
         [
           "छु",
           "chu",
-          "have; has (perfect auxiliary)"
+          "have/has … before (experience auxiliary)"
         ]
       ],
       "presentation": {
@@ -16711,7 +16711,7 @@
         [
           "छु",
           "chu",
-          "resulting state"
+          "have/has …; resulting state (perfect auxiliary)"
         ]
       ],
       "presentation": {
@@ -16901,7 +16901,7 @@
         [
           "छौं",
           "chaũ",
-          "be; exist"
+          "have/has … before (experience auxiliary)"
         ]
       ],
       "presentation": {
@@ -17192,7 +17192,7 @@
         [
           "थिएँ",
           "thiẽ",
-          "had (perfect auxiliary)"
+          "had … (past-perfect auxiliary)"
         ]
       ],
       "presentation": {
@@ -17262,7 +17262,7 @@
         [
           "थियो",
           "thiyo",
-          "had (perfect auxiliary)"
+          "had … (past-perfect auxiliary)"
         ]
       ],
       "presentation": {
@@ -17327,7 +17327,7 @@
         [
           "थिएँ",
           "thiẽ",
-          "had (perfect auxiliary)"
+          "had … before (past experience)"
         ]
       ],
       "presentation": {
@@ -17402,7 +17402,7 @@
         [
           "थियो",
           "thiyo",
-          "was; were"
+          "had … (past-perfect auxiliary)"
         ]
       ],
       "presentation": {
@@ -17477,7 +17477,7 @@
         [
           "थिइनँ",
           "thiinã",
-          "had not (perfect auxiliary)"
+          "had not … yet (past-perfect auxiliary)"
         ]
       ],
       "presentation": {
@@ -17547,7 +17547,7 @@
         [
           "थियो",
           "thiyo",
-          "had (perfect auxiliary)"
+          "had … before (past experience)"
         ]
       ],
       "presentation": {
@@ -17622,7 +17622,7 @@
         [
           "थियो",
           "thiyo",
-          "was; were"
+          "had … (past-perfect auxiliary)"
         ]
       ],
       "presentation": {
@@ -23245,7 +23245,7 @@
         [
           "छैन",
           "chaina",
-          "not be; not exist"
+          "not be (state)"
         ]
       ],
       "presentation": {
@@ -23809,7 +23809,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are (respectful)"
+          "be (identity) (respectful)"
         ]
       ],
       "presentation": {
@@ -24264,7 +24264,7 @@
         [
           "छन्",
           "chan",
-          "am; is; are"
+          "be (state)"
         ]
       ],
       "presentation": {
@@ -24464,7 +24464,7 @@
         [
           "छैन",
           "chaina",
-          "am not; is not; are not"
+          "not be (state)"
         ]
       ],
       "presentation": {
@@ -26185,7 +26185,7 @@
         [
           "छैन",
           "chaina",
-          "am not; is not; are not"
+          "not be (state)"
         ]
       ],
       "presentation": {
@@ -27254,7 +27254,7 @@
         [
           "छन्",
           "chan",
-          "is; are (existence)"
+          "exist / be there"
         ]
       ],
       "presentation": {
@@ -30612,7 +30612,7 @@
         [
           "छैन",
           "chaina",
-          "is not; are not (existence)"
+          "not exist / not be there"
         ]
       ],
       "presentation": {
@@ -31037,7 +31037,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are (respectful)"
+          "be (identity) (respectful)"
         ]
       ],
       "presentation": {
@@ -31374,7 +31374,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "is/are present (respectful)"
+          "be present (person) (respectful)"
         ]
       ],
       "presentation": {
@@ -32243,7 +32243,7 @@
         [
           "हुनुहुन्छ",
           "hunuhuncha",
-          "am; is; are"
+          "be (state) (respectful)"
         ],
         [
           "भने",
@@ -32528,7 +32528,7 @@
         [
           "छैन",
           "chaina",
-          "is not; are not (existence)"
+          "not exist / not be there"
         ],
         [
           "भने",
@@ -35954,7 +35954,7 @@
         [
           "छौं",
           "chaũ",
-          "am; is; are"
+          "be (state)"
         ],
         [
           "भन्यौं",
@@ -36154,7 +36154,7 @@
         [
           "छैन",
           "chaina",
-          "not be; not exist"
+          "not exist / not be there"
         ],
         [
           "भन्नुभयो",
