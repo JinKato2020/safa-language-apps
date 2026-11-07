@@ -31,20 +31,32 @@ try {
   if (Test-Path -LiteralPath $audioManifestPath) {
     $audioManifest = Get-Content -LiteralPath $audioManifestPath -Raw | ConvertFrom-Json
     $clips = $audioManifest.PSObject.Properties.Value | Sort-Object sha256 -Unique
-    $uploads = @()
     foreach ($clip in $clips) {
       $name = 'learning-' + $clip.sha256 + '.mp3'
       $local = Join-Path $PSScriptRoot ('../expo-app/assets/learning-audio/' + $name)
       if ((Get-FileHash -LiteralPath $local -Algorithm SHA256).Hash.ToLowerInvariant() -ne $clip.sha256) { throw ('Local audio hash mismatch: ' + $name) }
-      if ($existing -notcontains $name) {
-        $uploads += $local
-      }
     }
-    for ($i = 0; $i -lt $uploads.Count; $i += 20) {
-      $batch = $uploads[$i..([Math]::Min($i + 19, $uploads.Count - 1))]
-      & $Gh release upload $tag @batch --repo $repo
-      if ($LASTEXITCODE -ne 0) { throw 'Audio batch upload failed.' }
-      Write-Output ('Uploaded audio: ' + [Math]::Min($i + 20, $uploads.Count) + '/' + $uploads.Count)
+    # Preserve prior URLs, while new recordings use stable hash buckets to stay
+    # below GitHub's 1,000-assets-per-release limit.
+    foreach ($group in ($clips | Group-Object { ([Uri]$_.url).Segments[-2].TrimEnd('/') })) {
+      $audioTag = $group.Name
+      if ($audioTag -notmatch '^packs-appa-(ota|learning-[0-9a-f])$') { throw 'Unexpected learning-audio release' }
+      if ($audioTag -eq $tag) { $audioExisting = @($existing) } else {
+        $releaseJson = & $Gh release view $audioTag --repo $repo --json assets 2>$null
+        if ($LASTEXITCODE -ne 0) {
+          & $Gh release create $audioTag --repo $repo --title ('Nepali learning audio ' + $audioTag[-1]) --notes 'Immutable pronunciation and grammar recordings, grouped by content hash.' --latest=false
+          if ($LASTEXITCODE -ne 0) { throw 'Audio release creation failed.' }
+          $audioExisting = @()
+        } else { $audioExisting = @(($releaseJson | ConvertFrom-Json).assets.name) }
+      }
+      $uploads = @($group.Group | Where-Object { $audioExisting -notcontains ('learning-' + $_.sha256 + '.mp3') } | ForEach-Object { Join-Path $PSScriptRoot ('../expo-app/assets/learning-audio/learning-' + $_.sha256 + '.mp3') })
+      if ($audioExisting.Count + $uploads.Count -gt 1000) { throw ('Audio release is full: ' + $audioTag) }
+      for ($i = 0; $i -lt $uploads.Count; $i += 20) {
+        $batch = $uploads[$i..([Math]::Min($i + 19, $uploads.Count - 1))]
+        & $Gh release upload $audioTag @batch --repo $repo
+        if ($LASTEXITCODE -ne 0) { throw 'Audio batch upload failed.' }
+      }
+      Write-Output ('Audio ready: ' + $audioTag + ' (' + $group.Count + ' clips)')
     }
     # Immutable clips are independent; bounded parallel checks keep a full alphabet
     # publication practical. A failure still prevents the final manifest switch.
@@ -61,6 +73,7 @@ try {
     Write-Output ('Verified pronunciation/practice clips: ' + $clips.Count)
   }
   $files = Get-ChildItem -LiteralPath $work -Filter 'content-*.json'
+  if ($existing.Count + @($files | Where-Object { $existing -notcontains $_.Name }).Count -gt 999) { throw 'Text release is full; manifest was not changed.' }
   foreach ($file in $files) {
     if ($existing -notcontains $file.Name) {
       & $Gh release upload $tag $file.FullName --repo $repo

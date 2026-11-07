@@ -40,7 +40,9 @@ for(const text of texts){
   if(!bytes||bytes.length<500)throw Error('Empty speech output');
   const sha256=crypto.createHash('sha256').update(bytes).digest('hex'),name=`learning-${sha256}.mp3`;
   fs.writeFileSync(path.join(dir,name),bytes);
-  manifest[text]={url:'https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/'+name,sha256,bytes:bytes.length};
+  // Release assets are limited to 1,000 per release. Stable hash buckets leave
+  // room for future lesson revisions; existing immutable URLs are preserved.
+  manifest[text]={url:`https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-${sha256[0]}/`+name,sha256,bytes:bytes.length};
   await persistJson(manifestFile,manifest);
   if(texts.indexOf(text)%20===0)console.log('Recorded '+(texts.indexOf(text)+1)+' / '+texts.length);
 }
