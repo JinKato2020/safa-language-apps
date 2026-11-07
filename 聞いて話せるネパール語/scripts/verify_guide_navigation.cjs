@@ -30,6 +30,14 @@ function checkGuideAction(name,params) {
 }
 module.exports={checkGuideAction};
 if(require.main===module){
+  // React Navigation calls `header(props)` directly, including inside a route
+  // map on web. The callback must return an element without executing hooks.
+  const ts=require('typescript'),React=require('react'),header={exports:{}};
+  const code=ts.transpileModule(fs.readFileSync(path.join(root,'packages/shared/src/StudyHeader.tsx'),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX,target:ts.ScriptTarget.ES2022}}).outputText;
+  new Function('require','module','exports',code)(n=>n==='react/jsx-runtime'?require(n):new Proxy({},{get:()=>()=>{throw Error('Hook called by navigation header callback');}}),header,header.exports);
+  const element=header.exports.renderStudyHeader({});assert(React.isValidElement(element));assert.equal(element.type,header.exports.default);
+  assert.equal((source.match(/header: (?:learningStorageKey \? )?renderStudyHeader/g)||[]).length,3);
+  console.log('PASS custom header callback returns a React element without executing component hooks.');
   assert(/<RootStack\.Screen\s+name="Practice"\s+component=\{PracticeScreen\}/.test(source),'Root must mount the actual practice screen');
   for(let themeId=1;themeId<=36;themeId++)checkGuideAction('Practice',{themeId,mode:'grammar'});
   for(let themeId=1;themeId<=36;themeId++)for(const fromPath of [false,true]){

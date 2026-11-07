@@ -5,6 +5,10 @@ import { Text } from './Text';
 import { useI18n } from './i18n';
 import { useScaleStyle } from './SettingsContext';
 
+// Navigation invokes this callback directly. Keep component hooks inside the
+// returned element instead of adding them to the navigator's render lifecycle.
+export const renderStudyHeader = (props: NativeStackHeaderProps) => <StudyHeader {...props} />;
+
 /** Use a normal React touch target for study screens, independent of native back-button layout. */
 export default function StudyHeader({ navigation, options }: NativeStackHeaderProps) {
   const insets = useSafeAreaInsets(), { lang } = useI18n(), ss = useScaleStyle();
