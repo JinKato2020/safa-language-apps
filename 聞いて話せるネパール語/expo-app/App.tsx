@@ -21,6 +21,7 @@ import ja from './src/i18n/ja.json';
 import ne from './src/i18n/ne.json';
 import en from './src/i18n/en.json';
 import { bundledContent, cachedContent, syncContent, type ContentSnapshot } from './src/content/ota';
+import { scheduleContentUpdates } from './src/content/otaSchedule';
 import { POSTER_LESSONS } from './src/posterLessons';
 import { posterUri, ensurePosterPack } from './src/posterPackLoader';
 import { PurchasesProvider } from './src/PurchasesProvider';
@@ -67,31 +68,29 @@ function PackGate({children}:{children:ReactNode}) {
   const [shown,setShown]=useState<{lang:string;snapshot:ContentSnapshot}>(()=>({lang:packLang,snapshot:bundledContent(packLang)}));
   const [status,setStatus]=useState<'preparing'|'ready'|'pending'|'offline'>('preparing');
   useEffect(()=>{
-    let alive=true,busy=false,lastAttempt=0,failed=false;
+    let alive=true;
+    let updates:ReturnType<typeof scheduleContentUpdates>|undefined;
     let current=sessionContent[packLang]??bundledContent(packLang);
-    const show=(snapshot:ContentSnapshot)=>{current=snapshot;sessionContent[packLang]=snapshot;if(alive)setShown({lang:packLang,snapshot});};
+    const show=(snapshot:ContentSnapshot)=>{current=snapshot;sessionContent[packLang]=snapshot;if(alive)setShown(previous=>previous.lang===packLang&&previous.snapshot===snapshot?previous:{lang:packLang,snapshot});};
     const refresh=async()=>{
-      if(!alive||busy||AppState.currentState==='background'||Date.now()-lastAttempt<(failed?60000:300000))return;
-      busy=true;lastAttempt=Date.now();
       try{
         const next=await syncContent(packLang);
-        failed=false;if(!alive)return;
+        if(!alive)return;
         // Same text version: attach prepared audio. Changed lessons wait for a new launch.
         if(next.version===current.version){show(next);setStatus('ready');}
         else setStatus('pending');
-      }catch{failed=true;if(alive)setStatus('offline');}finally{busy=false;}
+      }catch(error){if(alive)setStatus('offline');throw error;}
     };
     const start=async()=>{
       setStatus('preparing');
       if(!sessionContent[packLang]){const cached=await cachedContent(packLang);if(!alive)return;if(cached)current=cached;}
       if(!alive)return;show(current);
       if(Object.keys(current.data.audio.nepaliAudio).length)setStatus('ready');
-      void refresh();
+      updates=scheduleContentUpdates(refresh,()=>AppState.currentState!=='background'&&AppState.currentState!=='inactive');
     };
     void start();
-    const sub=AppState.addEventListener('change',value=>{if(value==='active')void refresh();});
-    const timer=setInterval(()=>{void refresh();},60000);
-    return()=>{alive=false;sub.remove();clearInterval(timer);};
+    const sub=AppState.addEventListener('change',value=>{if(value==='active')updates?.foreground();});
+    return()=>{alive=false;sub.remove();updates?.stop();};
   },[packLang]);
   const visible=shown.lang===packLang?shown.snapshot:bundledContent(packLang);
   return <OtaStatus.Provider value={status}><AppDataProvider data={visible.data}>{children}</AppDataProvider></OtaStatus.Provider>;
