@@ -1,11 +1,13 @@
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert/strict'),ts=require('typescript'),crypto=require('crypto');
 const root=path.resolve(__dirname,'../..'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8').replace(/^\uFEFF/,''));
 function compile(p,req=require){const m={exports:{}};const js=ts.transpileModule(fs.readFileSync(path.join(root,p),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText;vm.runInNewContext('(function(require,module,exports){'+js+'})',{Date,Promise,Uint8Array,atob})(req,m,m.exports);return m.exports;}
-const policy=compile('packages/shared/src/learning.ts'),guided=compile('packages/shared/src/guidedPractice.ts'),compose=compile('聞いて話せるネパール語/expo-app/src/pack/compose.ts').composePack;
+const policy=compile('packages/shared/src/learning.ts'),pool=compile('packages/shared/src/practicePool.ts',n=>n==='./learning'?policy:require(n)),guided=compile('packages/shared/src/guidedPractice.ts',n=>n==='./practicePool'?pool:require(n)),compose=compile('聞いて話せるネパール語/expo-app/src/pack/compose.ts').composePack;
 const core=read('聞いて話せるネパール語/expo-app/data/ota-baseline/core.json'),oldBank=new Set([...Object.values(core.grammarNe),...Object.values(core.examplesNe)].flat());
 const audio=read('聞いて話せるネパール語/文法教材/learning_audio_manifest.json');
 for(const lang of ['ja','en']){
  const o=read(`聞いて話せるネパール語/expo-app/data/overlays/${lang}.json`),data=compose({...core,nepaliAudio:{},nepaliGrammarAudio:{}},{...o,nativeLang:lang},{version:'test'});
+ // Keep this regression focused on the shipped V2 course; V3 has its own exhaustive tests.
+ data.LEARNING_PATH=o.learningPathV2;
  assert.equal(data.LEARNING_PATH.steps.flatMap(s=>s.items).length,21);
  // Older installed clients still receive their original valid 35-item path.
  assert.equal(o.learningPath.steps.flatMap(s=>s.items).length,35);
@@ -40,5 +42,5 @@ const loader=compile('聞いて話せるネパール語/expo-app/src/learningAud
  await loader.resolveLearningAudio(sample);assert.equal(downloads,1,'valid disk clip reused');
  disk.set(result[0].uri,Buffer.alloc(real.length));bad=true;assert.equal(await loader.resolveLearningAudio(sample),null,'reject corrupted disk and downloaded clips');assert(![...disk.keys()].some(p=>p.endsWith('.part')));
  bad=false;assert(await loader.resolveLearningAudio(sample));
- console.log('PASS JA/EN21 independent practice sentences,31 audio hashes, literal word coverage, conjugation/meaning banks, supported review schedules, legacy35 compatibility, guide separation and audio cache failure/retry/deduplication.');
+ console.log('PASS JA/EN21 legacy V2 practice sentences, current audio hashes, literal word coverage, conjugation/meaning banks, supported review schedules, legacy35 compatibility, guide separation and audio cache failure/retry/deduplication.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

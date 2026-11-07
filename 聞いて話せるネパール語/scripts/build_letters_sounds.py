@@ -7,6 +7,7 @@ No third-party audio, illustrations or teaching prose are incorporated.
 """
 import json
 from pathlib import Path
+from letter_word_examples import WORDS, validate_words
 APP=Path(__file__).resolve().parents[1]
 def read(p): return json.loads(p.read_text(encoding='utf-8-sig'))
 def write(p,v): p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -68,6 +69,7 @@ CONJUNCTS=[
 ('र्ष','र् + ष','rṣa','वर्ष','varṣa','年','year')]
 
 def build():
+    validate_words()
     manifest=read(APP/'文法教材/learning_audio_manifest.json');out={}
     for lang in ['ja','en']:
         en=lang=='en';sections=[]
@@ -75,6 +77,8 @@ def build():
             obj=dict(id=id,ne=ne,roman=roman,meaning=eng if en else ja,detail=detail)
             if speech is not False:
                 text=speech or ne;obj.update(speech=text,audio=manifest.get(text,{'url':'','sha256':'','bytes':0}))
+            if id.startswith(('v-', 'c-', 'conj-')) and ne in WORDS:
+                obj['examples']=[dict(id=id+'-word-'+str(i),ne=w,roman=r,meaning=e if en else j,audio=manifest.get(w,{'url':'','sha256':'','bytes':0})) for i,(w,r,j,e) in enumerate(WORDS[ne])]
             return obj
         def section(id,ja,eng,bodyja,bodyen,samples): sections.append(dict(id=id,title=eng if en else ja,body=bodyen if en else bodyja,samples=samples))
         section('start','文字のしくみ','How the script works',
@@ -100,7 +104,7 @@ def build():
         '子音の下の ्（ハラント）は、もとの母音を外す記号。क्＋त＝क्त のように、母音を挟まず次の子音につながります。半分の形になったり、上下に重なったり、別の形に見えることもあります。\nक्ष・त्र・ज्ञ・श्र も組み合わせです。ज्ञ はネパール語では gya に近い読み。क्ष は語や話者によって kṣ／chya に近くなります。\nर् が先なら上に回る形（र्क など）、र が後なら下に添える形（क्र・त्र など）に注目。\n下は代表30形。複合文字は作り方のある組み合わせなので、有限の追加アルファベットとして丸暗記するものではありません。単語の音声で確かめよう。',
         'The lower mark ् (halant) removes the inherent vowel. In क् + त = क्त, the consonants join without a vowel between. Shapes may become half-forms, stack, or change considerably.\nक्ष, त्र, ज्ञ and श्र are combinations too. ज्ञ is commonly read close to gya in Nepali; क्ष varies toward kṣ/chya by word and speaker.\nInitial र् may appear above (र्क); following र often attaches below (क्र, त्र).\nThese 30 common forms illustrate the patterns. Conjuncts are productive combinations, not a finite extra alphabet. Listen to each whole word.',
         [sample('halant','क → क्','ka → k','母音を外す形','Removing the inherent vowel','この記号だけに音があるわけではありません。' if not en else 'The mark itself has no separate sound.',False),
-         *[sample('conj-'+str(i),c,roman,word+'＝'+ja,word+' = '+eng,formula+' → '+c+'\n'+word+' · '+wr,word)for i,(c,formula,roman,word,wr,ja,eng) in enumerate(CONJUNCTS)]])
+         *[sample('conj-'+str(i),c,roman,'子音をつなげた形','Joined consonants',formula+' → '+c+'\n'+('まず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。' if not en else 'Hear the letter sound first, then compare the two words. Vowels can disappear and sounds can change within a word.'),c)for i,(c,formula,roman,*_) in enumerate(CONJUNCTS)]])
         section('marks','鼻に響く音・記号','Nasal sounds and signs',
         'ँ（チャンドラビンドゥ）は母音の鼻への響きの目印。別の「ン」を足すより、母音そのものを鼻にも響かせます。ं（アヌスヴァーラ）は鼻音を表し、後ろの子音に合わせた音になることなどがあります。\nः（ヴィサルガ）は主にサンスクリット系の綴り。単語ごとに発音を確かめよう。। は文末の印です。',
         'ँ (chandrabindu) marks a nasal vowel: let the vowel resonate through the nose rather than adding a separate n. ं (anusvara) marks nasal sound; its pronunciation can adapt to the following consonant.\nः (visarga) occurs mainly in Sanskrit-derived spelling; check the whole word’s pronunciation. । marks a sentence ending.',

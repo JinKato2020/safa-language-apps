@@ -1,6 +1,6 @@
 {
   "l1": "ja",
-  "version": 1216,
+  "version": 1217,
   "examplesL1": {
     "1-1": [
       "私の名前はラムです。",
@@ -167952,7 +167952,7 @@
     "35": "テーマ35（付録A）｜書くことで覚える動詞活用（लेख्नु）",
     "36": "テーマ36（付録B）｜人物紹介と居場所で覚える繋辞"
   },
-  "curriculumRevision": 1216,
+  "curriculumRevision": 1217,
   "grammarTextOnlyLabel": "テキスト練習（音声なし）",
   "learningPath": {
     "title": "はじめての7ステップ",
@@ -232164,7 +232164,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-808530afe4cc282d0b3879e068d5b287be2576bf020b950850611b0d6c798ba1.mp3",
               "sha256": "808530afe4cc282d0b3879e068d5b287be2576bf020b950850611b0d6c798ba1",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-0-word-0",
+                "ne": "अहिले",
+                "roman": "ahile",
+                "meaning": "今",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-54452c9f7980f61c648f4492d322aa4f04982019be982755a424e8e4ddd12743.mp3",
+                  "sha256": "54452c9f7980f61c648f4492d322aa4f04982019be982755a424e8e4ddd12743",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-0-word-1",
+                "ne": "अगाडि",
+                "roman": "agāḍi",
+                "meaning": "前に",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-db93f681e35198f1569df0bdf44e9cf2914d841098e0d1fc5c292d5f2bdad7b2.mp3",
+                  "sha256": "db93f681e35198f1569df0bdf44e9cf2914d841098e0d1fc5c292d5f2bdad7b2",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "v-1",
@@ -232177,7 +232201,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-b31c9d95487e8d8ffe10a1d6e6e72e1041b4d3b00095e4f80504b4e768401636.mp3",
               "sha256": "b31c9d95487e8d8ffe10a1d6e6e72e1041b4d3b00095e4f80504b4e768401636",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-1-word-0",
+                "ne": "आमा",
+                "roman": "āmā",
+                "meaning": "母",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-36ec87e9a301270b225728b7a2886d0f4ce944abc2ecef3fce3271d2e9883dff.mp3",
+                  "sha256": "36ec87e9a301270b225728b7a2886d0f4ce944abc2ecef3fce3271d2e9883dff",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-1-word-1",
+                "ne": "आज",
+                "roman": "āja",
+                "meaning": "今日",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ca023dac8e40aed73ed2f1d464cd8dcd01fcc3b3550930ee68effbea76c9694a.mp3",
+                  "sha256": "ca023dac8e40aed73ed2f1d464cd8dcd01fcc3b3550930ee68effbea76c9694a",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "v-2",
@@ -232190,7 +232238,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ca3a8d2f8983d3b549bfe122068dcd312df18ddf85e51c935d44c9f906969679.mp3",
               "sha256": "ca3a8d2f8983d3b549bfe122068dcd312df18ddf85e51c935d44c9f906969679",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-2-word-0",
+                "ne": "इच्छा",
+                "roman": "icchā",
+                "meaning": "望み",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-25005ef9767bba4c2556fac2703be81b6393edefef48e7d236374e726a780fe5.mp3",
+                  "sha256": "25005ef9767bba4c2556fac2703be81b6393edefef48e7d236374e726a780fe5",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-2-word-1",
+                "ne": "इतिहास",
+                "roman": "itihās",
+                "meaning": "歴史",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8e0e8a2355e8d7dc86058e972bd052ea9878cdc898cadc8eb6b91ea92000593b.mp3",
+                  "sha256": "8e0e8a2355e8d7dc86058e972bd052ea9878cdc898cadc8eb6b91ea92000593b",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "v-3",
@@ -232203,7 +232275,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9166aa8a11775992f86ef85f35f9916a2ce31642f4286ef9d6d6f760cd605118.mp3",
               "sha256": "9166aa8a11775992f86ef85f35f9916a2ce31642f4286ef9d6d6f760cd605118",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-3-word-0",
+                "ne": "ईमेल",
+                "roman": "īmel",
+                "meaning": "メール",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b3c9648eb304168dc95276e8782dff07d1b5c0e077260e26483d64fdf8236fc1.mp3",
+                  "sha256": "b3c9648eb304168dc95276e8782dff07d1b5c0e077260e26483d64fdf8236fc1",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-3-word-1",
+                "ne": "ईर्ष्या",
+                "roman": "īrṣyā",
+                "meaning": "嫉妬",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3892eefb00abfb291c97351599f17c75b226d9e8c9886573f81ff4b60546d95e.mp3",
+                  "sha256": "3892eefb00abfb291c97351599f17c75b226d9e8c9886573f81ff4b60546d95e",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "v-4",
@@ -232216,7 +232312,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-743999971589645d87dd62455487cf569475f02881c773b1effaaebb02ca3fbc.mp3",
               "sha256": "743999971589645d87dd62455487cf569475f02881c773b1effaaebb02ca3fbc",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-4-word-0",
+                "ne": "उत्तर",
+                "roman": "uttar",
+                "meaning": "答え／北",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-0eb490f41621a593a555e85e15d979fcdd336dc75a44df329795ef835cfbb549.mp3",
+                  "sha256": "0eb490f41621a593a555e85e15d979fcdd336dc75a44df329795ef835cfbb549",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-4-word-1",
+                "ne": "उज्यालो",
+                "roman": "ujyālo",
+                "meaning": "明るい",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0b8f34af4ebce854efb7b21c936fcf494aef3032ef2a46932f0a55badd6f25b0.mp3",
+                  "sha256": "0b8f34af4ebce854efb7b21c936fcf494aef3032ef2a46932f0a55badd6f25b0",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "v-5",
@@ -232229,7 +232349,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5f9a50c93202875b8a48d42f4d1cbeab18a050250bf6f13e3de9a68b3a807d63.mp3",
               "sha256": "5f9a50c93202875b8a48d42f4d1cbeab18a050250bf6f13e3de9a68b3a807d63",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-5-word-0",
+                "ne": "ऊन",
+                "roman": "ūn",
+                "meaning": "羊毛",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-77b4f6f09b66542af60995930dce8d3cccd8bd0aef25d21fd93c0f386bce2d5f.mp3",
+                  "sha256": "77b4f6f09b66542af60995930dce8d3cccd8bd0aef25d21fd93c0f386bce2d5f",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-5-word-1",
+                "ne": "ऊर्जा",
+                "roman": "ūrjā",
+                "meaning": "エネルギー",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4dd9358cc047ef24e77f7d526c7674ba95364056c4dd52653b526084ea651f5e.mp3",
+                  "sha256": "4dd9358cc047ef24e77f7d526c7674ba95364056c4dd52653b526084ea651f5e",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "v-6",
@@ -232242,7 +232386,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4fcaf62f5e89cc78e50fc0ca5ae4b1b806a469403ff18c3f43a0b88bb776a317.mp3",
               "sha256": "4fcaf62f5e89cc78e50fc0ca5ae4b1b806a469403ff18c3f43a0b88bb776a317",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-6-word-0",
+                "ne": "ऋतु",
+                "roman": "ritu",
+                "meaning": "季節",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8d0eb6d93606e16d19969aa9cc1991b341ccdd2bc6ede92a6b3dd8edb4dc4593.mp3",
+                  "sha256": "8d0eb6d93606e16d19969aa9cc1991b341ccdd2bc6ede92a6b3dd8edb4dc4593",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-6-word-1",
+                "ne": "ऋण",
+                "roman": "riṇ",
+                "meaning": "借金",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2f929f3f5a2a3ceb8666255504d0387bfdbdffdb2b5d8ee561b8e309b3fb86a9.mp3",
+                  "sha256": "2f929f3f5a2a3ceb8666255504d0387bfdbdffdb2b5d8ee561b8e309b3fb86a9",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "v-7",
@@ -232255,7 +232423,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-dff6750404a7d8bb5a7604f4d74b1b1640133ff3778ba802cb2f545adf1aa75e.mp3",
               "sha256": "dff6750404a7d8bb5a7604f4d74b1b1640133ff3778ba802cb2f545adf1aa75e",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-7-word-0",
+                "ne": "एक",
+                "roman": "ek",
+                "meaning": "1",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f444d92baad527503b46985816aaef2446ed91cd21b07f551275128b094e7681.mp3",
+                  "sha256": "f444d92baad527503b46985816aaef2446ed91cd21b07f551275128b094e7681",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-7-word-1",
+                "ne": "एघार",
+                "roman": "eghāra",
+                "meaning": "11",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-521c0122d5991f4290938010ae989771c02e1f3185ddb1bb11785e8852003108.mp3",
+                  "sha256": "521c0122d5991f4290938010ae989771c02e1f3185ddb1bb11785e8852003108",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "v-8",
@@ -232268,7 +232460,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-3000dc3bbf924acd75a72049f67e8dc9489193cb52418d39ddfcc42b95d9276e.mp3",
               "sha256": "3000dc3bbf924acd75a72049f67e8dc9489193cb52418d39ddfcc42b95d9276e",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-8-word-0",
+                "ne": "ऐना",
+                "roman": "ainā",
+                "meaning": "鏡",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-57264b10d8adb31118ade248e696b7ac2c6e660689ca4fbe096d051cd04f3bfd.mp3",
+                  "sha256": "57264b10d8adb31118ade248e696b7ac2c6e660689ca4fbe096d051cd04f3bfd",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-8-word-1",
+                "ne": "ऐन",
+                "roman": "ain",
+                "meaning": "法律",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-aa19fcfc8212da1eaf700971b7d39e6a0645038b70b5a330b48208dfb60a2499.mp3",
+                  "sha256": "aa19fcfc8212da1eaf700971b7d39e6a0645038b70b5a330b48208dfb60a2499",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "v-9",
@@ -232281,7 +232497,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-82c1fd777dce6286d87aa5cb7a33fdab33b05c788d0bea5e8db008364be52aea.mp3",
               "sha256": "82c1fd777dce6286d87aa5cb7a33fdab33b05c788d0bea5e8db008364be52aea",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-9-word-0",
+                "ne": "ओठ",
+                "roman": "oṭh",
+                "meaning": "唇",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-dd1422f8439cde5e013001ef58fdd7b818a2067649dbb8a73b5501e9da2ee50a.mp3",
+                  "sha256": "dd1422f8439cde5e013001ef58fdd7b818a2067649dbb8a73b5501e9da2ee50a",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-9-word-1",
+                "ne": "ओछ्यान",
+                "roman": "ochyān",
+                "meaning": "寝床",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-799f0d1ec37f58ad7ff2efe0d741bc74944e7459d0556074b6d4c16cd23e6473.mp3",
+                  "sha256": "799f0d1ec37f58ad7ff2efe0d741bc74944e7459d0556074b6d4c16cd23e6473",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "v-10",
@@ -232294,7 +232534,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-1dd7b1b46e1c9a13a94e89a13e8123d0fe11254f646f62ba427154c74518e15e.mp3",
               "sha256": "1dd7b1b46e1c9a13a94e89a13e8123d0fe11254f646f62ba427154c74518e15e",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "v-10-word-0",
+                "ne": "औषधि",
+                "roman": "auṣadhi",
+                "meaning": "薬",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3b7c3958e61a1686c122281fab48381a78050cc3e8f04775a9188aa514f04d07.mp3",
+                  "sha256": "3b7c3958e61a1686c122281fab48381a78050cc3e8f04775a9188aa514f04d07",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "v-10-word-1",
+                "ne": "औँला",
+                "roman": "aũlā",
+                "meaning": "指",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-81f392c6495cb2832d28388023666ee062bbd6eb45be2a6e3a8f4a03ad839396.mp3",
+                  "sha256": "81f392c6495cb2832d28388023666ee062bbd6eb45be2a6e3a8f4a03ad839396",
+                  "bytes": 11232
+                }
+              }
+            ]
           }
         ]
       },
@@ -232314,7 +232578,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-5f2c90da9203b89b4d6ce246085a9dfdd802020f501f8df3cb189f7be79e307a.mp3",
               "sha256": "5f2c90da9203b89b4d6ce246085a9dfdd802020f501f8df3cb189f7be79e307a",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-क-word-0",
+                "ne": "किताब",
+                "roman": "kitāb",
+                "meaning": "本",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0266757f6c62322f477a5b35f7ab01c30e22c269dc1466103fb741ee256c7895.mp3",
+                  "sha256": "0266757f6c62322f477a5b35f7ab01c30e22c269dc1466103fb741ee256c7895",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-क-word-1",
+                "ne": "कुकुर",
+                "roman": "kukur",
+                "meaning": "犬",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d1403504b82c4dd56e144e4118fefe5fb5d66444cb59577e89b5526e70c95094.mp3",
+                  "sha256": "d1403504b82c4dd56e144e4118fefe5fb5d66444cb59577e89b5526e70c95094",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ख",
@@ -232327,7 +232615,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-a98c5cb8e081f07cba4245f972236207f42567d3ece90fdc0e42988b6316b167.mp3",
               "sha256": "a98c5cb8e081f07cba4245f972236207f42567d3ece90fdc0e42988b6316b167",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ख-word-0",
+                "ne": "खाना",
+                "roman": "khānā",
+                "meaning": "食事",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5102312c5cd98fbc3cde27eaf31cd18de1548960a6e7dbe3be0376e43c68d6bc.mp3",
+                  "sha256": "5102312c5cd98fbc3cde27eaf31cd18de1548960a6e7dbe3be0376e43c68d6bc",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ख-word-1",
+                "ne": "खुट्टा",
+                "roman": "khuṭṭā",
+                "meaning": "足",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-881c31f9e6f7ca0cbbffa642d7f9b7c81e81850395f6a1f2ddb2a5ab47bdec1e.mp3",
+                  "sha256": "881c31f9e6f7ca0cbbffa642d7f9b7c81e81850395f6a1f2ddb2a5ab47bdec1e",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ग",
@@ -232340,7 +232652,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c42412b42fc3da6525f9e97c06a40a28ebddd0f252b6f73089a896ae6eee2008.mp3",
               "sha256": "c42412b42fc3da6525f9e97c06a40a28ebddd0f252b6f73089a896ae6eee2008",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ग-word-0",
+                "ne": "गाउँ",
+                "roman": "gāũ",
+                "meaning": "村",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-97a7b5154752d7c5c4065b3d74bb890c39031b0b3bc3952ea7c99bb9a07f6228.mp3",
+                  "sha256": "97a7b5154752d7c5c4065b3d74bb890c39031b0b3bc3952ea7c99bb9a07f6228",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ग-word-1",
+                "ne": "गाडी",
+                "roman": "gāḍī",
+                "meaning": "車",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-09f1e0d2bab273cf84774a3efae457098ef4ae26b4fda0461b5c2e8a8b3947a8.mp3",
+                  "sha256": "09f1e0d2bab273cf84774a3efae457098ef4ae26b4fda0461b5c2e8a8b3947a8",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-घ",
@@ -232353,7 +232689,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-09c3ad66e3ec701f45f00f17ce09fc413938d29a5a9e63b4498af69e0dcddeca.mp3",
               "sha256": "09c3ad66e3ec701f45f00f17ce09fc413938d29a5a9e63b4498af69e0dcddeca",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-घ-word-0",
+                "ne": "घर",
+                "roman": "ghar",
+                "meaning": "家",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c863ae99482e2bcf7b505023d6fb7658af556edbd42befdf549c87d61ce30d61.mp3",
+                  "sha256": "c863ae99482e2bcf7b505023d6fb7658af556edbd42befdf549c87d61ce30d61",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-घ-word-1",
+                "ne": "घडी",
+                "roman": "ghaḍī",
+                "meaning": "時計",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-03e1d2a4a7179896447685aeecceb1f2354991e8f20a83d5fe84f89a45ffc500.mp3",
+                  "sha256": "03e1d2a4a7179896447685aeecceb1f2354991e8f20a83d5fe84f89a45ffc500",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ङ",
@@ -232366,7 +232726,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f74062751f0c554ea599ebfb24b7755479ba152046a5317563d4eadeee328f33.mp3",
               "sha256": "f74062751f0c554ea599ebfb24b7755479ba152046a5317563d4eadeee328f33",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ङ-word-0",
+                "ne": "रङ्ग",
+                "roman": "raṅga",
+                "meaning": "色",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-266342c183ffa0ab71afa6885fed9502eb9a441792e03b588ef420bccc458750.mp3",
+                  "sha256": "266342c183ffa0ab71afa6885fed9502eb9a441792e03b588ef420bccc458750",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ङ-word-1",
+                "ne": "अङ्ग",
+                "roman": "aṅga",
+                "meaning": "体の部分",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9cb9e25481faef17376ede23f46a66a8a1f7d45768dd091e29b2afc8e445ba6a.mp3",
+                  "sha256": "9cb9e25481faef17376ede23f46a66a8a1f7d45768dd091e29b2afc8e445ba6a",
+                  "bytes": 11232
+                }
+              }
+            ]
           }
         ]
       },
@@ -232386,7 +232770,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c358a86118287567d760054db52fe3589aad00f1276764d8ac5636a53c68e218.mp3",
               "sha256": "c358a86118287567d760054db52fe3589aad00f1276764d8ac5636a53c68e218",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-च-word-0",
+                "ne": "चिया",
+                "roman": "ciyā",
+                "meaning": "お茶",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-393c288889d39e96419a53a7147680b2cf2d54b999e4a4a52ef5e71e028d9f64.mp3",
+                  "sha256": "393c288889d39e96419a53a7147680b2cf2d54b999e4a4a52ef5e71e028d9f64",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-च-word-1",
+                "ne": "चामल",
+                "roman": "cāmal",
+                "meaning": "米",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cf62a2e51a027fb41c7b91b71135a3e1a55cfd91cc4ca3204c8af3276d27d5da.mp3",
+                  "sha256": "cf62a2e51a027fb41c7b91b71135a3e1a55cfd91cc4ca3204c8af3276d27d5da",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-छ",
@@ -232399,7 +232807,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d50720651096e21da576338d12a79d86eed0d01b57c4f35f99058f29e6b80b93.mp3",
               "sha256": "d50720651096e21da576338d12a79d86eed0d01b57c4f35f99058f29e6b80b93",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-छ-word-0",
+                "ne": "छाता",
+                "roman": "chātā",
+                "meaning": "傘",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f2f354e35859a69052a8281dd1ca44b0edfd586c270ed5ab45fd426e8e69ad2e.mp3",
+                  "sha256": "f2f354e35859a69052a8281dd1ca44b0edfd586c270ed5ab45fd426e8e69ad2e",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-छ-word-1",
+                "ne": "छोरी",
+                "roman": "chorī",
+                "meaning": "娘",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fff7b689c25f79dc376112010d4d4f40734d6ae3627284842b52905a6c641bd2.mp3",
+                  "sha256": "fff7b689c25f79dc376112010d4d4f40734d6ae3627284842b52905a6c641bd2",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ज",
@@ -232412,7 +232844,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-19a939deccc53742fe4e8f890643f51a7553a56239e5ab9898d1ed5d1564aaeb.mp3",
               "sha256": "19a939deccc53742fe4e8f890643f51a7553a56239e5ab9898d1ed5d1564aaeb",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ज-word-0",
+                "ne": "जुत्ता",
+                "roman": "juttā",
+                "meaning": "靴",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f95759c30e872eeb4dd92f75e93d9015c6279d3a0a1dee5f291ce31220d02149.mp3",
+                  "sha256": "f95759c30e872eeb4dd92f75e93d9015c6279d3a0a1dee5f291ce31220d02149",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ज-word-1",
+                "ne": "जाडो",
+                "roman": "jāḍo",
+                "meaning": "寒さ",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fc2dd26c5653708ed3cf6f0d12a51b53eabd7a3cda1bbaf963576be089a271fd.mp3",
+                  "sha256": "fc2dd26c5653708ed3cf6f0d12a51b53eabd7a3cda1bbaf963576be089a271fd",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-झ",
@@ -232425,7 +232881,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cb7cb78a4874901b1f24103505f71965b6f4d3e8e01c8c6e885710251b4b84d9.mp3",
               "sha256": "cb7cb78a4874901b1f24103505f71965b6f4d3e8e01c8c6e885710251b4b84d9",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-झ-word-0",
+                "ne": "झोला",
+                "roman": "jholā",
+                "meaning": "かばん",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-68c1f6f7be5220e85c43a98d34ec6b46f592f8e696ceaaeb2556e0d695e81d6b.mp3",
+                  "sha256": "68c1f6f7be5220e85c43a98d34ec6b46f592f8e696ceaaeb2556e0d695e81d6b",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-झ-word-1",
+                "ne": "झ्याल",
+                "roman": "jhyāl",
+                "meaning": "窓",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-21c347a53813da14a1dfdf915b8c1b8237c527f04c9c5963814e43faf088eda0.mp3",
+                  "sha256": "21c347a53813da14a1dfdf915b8c1b8237c527f04c9c5963814e43faf088eda0",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ञ",
@@ -232435,10 +232915,34 @@
             "detail": "",
             "speech": "ञ",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-169be98990f3f649ee2a75f612d0ac4d115f40cbd9ec0edbb006bcc72706e5a9.mp3",
-              "sha256": "169be98990f3f649ee2a75f612d0ac4d115f40cbd9ec0edbb006bcc72706e5a9",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8e99e2c4f4e2ff24bc1d0c9ab3aa1cb1454c6085815a1e1010a7aa00da2b61a5.mp3",
+              "sha256": "8e99e2c4f4e2ff24bc1d0c9ab3aa1cb1454c6085815a1e1010a7aa00da2b61a5",
+              "bytes": 3356
+            },
+            "examples": [
+              {
+                "id": "c-ञ-word-0",
+                "ne": "सञ्चार",
+                "roman": "sañcār",
+                "meaning": "通信・コミュニケーション",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-08d2657b4ac793a09dfb4b07f0fb82d9c88896ed696aa7144cf2fa453c3a4f73.mp3",
+                  "sha256": "08d2657b4ac793a09dfb4b07f0fb82d9c88896ed696aa7144cf2fa453c3a4f73",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ञ-word-1",
+                "ne": "मञ्जुरी",
+                "roman": "mañjurī",
+                "meaning": "同意・許可",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-30f4379c1fa16b354dfc88868f45ca956626bf8ff48f09da5c009d1da7b35361.mp3",
+                  "sha256": "30f4379c1fa16b354dfc88868f45ca956626bf8ff48f09da5c009d1da7b35361",
+                  "bytes": 11232
+                }
+              }
+            ]
           }
         ]
       },
@@ -232458,7 +232962,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-885806b12c525415d82b5d2102d8699bb49cb0fe25133f8a92564b1a0eabf5bd.mp3",
               "sha256": "885806b12c525415d82b5d2102d8699bb49cb0fe25133f8a92564b1a0eabf5bd",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ट-word-0",
+                "ne": "टाउको",
+                "roman": "ṭāuko",
+                "meaning": "頭",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5dda9bc21a3abefc9184f83186c67ee4304e9a9790b59b1af41c952939676cf2.mp3",
+                  "sha256": "5dda9bc21a3abefc9184f83186c67ee4304e9a9790b59b1af41c952939676cf2",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ट-word-1",
+                "ne": "टमाटर",
+                "roman": "ṭamāṭar",
+                "meaning": "トマト",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-ffa9b05c6dc96f4341163d4cbc60bbb5beda16e27f6b78c07e0bfd63c80af615.mp3",
+                  "sha256": "ffa9b05c6dc96f4341163d4cbc60bbb5beda16e27f6b78c07e0bfd63c80af615",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ठ",
@@ -232471,7 +232999,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-38ee16ddbb69a2883e130d0a6409b2d0fe6a877b1a9c3018834aac4b8d0b0abb.mp3",
               "sha256": "38ee16ddbb69a2883e130d0a6409b2d0fe6a877b1a9c3018834aac4b8d0b0abb",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ठ-word-0",
+                "ne": "ठूलो",
+                "roman": "ṭhūlo",
+                "meaning": "大きい",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1629922fdc3459bbd2556a971fdebf1e29821dab04618a312a969449011bda10.mp3",
+                  "sha256": "1629922fdc3459bbd2556a971fdebf1e29821dab04618a312a969449011bda10",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ठ-word-1",
+                "ne": "ठेगाना",
+                "roman": "ṭhegānā",
+                "meaning": "住所",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-178962656c694af8e1aedcefa610e842cbb66d631482fc043a0bfc7e442bce01.mp3",
+                  "sha256": "178962656c694af8e1aedcefa610e842cbb66d631482fc043a0bfc7e442bce01",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ड",
@@ -232484,7 +233036,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-22f87d3526d2428ae5f4297e7541c5bf02c391b256489911dbf28db138d374fa.mp3",
               "sha256": "22f87d3526d2428ae5f4297e7541c5bf02c391b256489911dbf28db138d374fa",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ड-word-0",
+                "ne": "डाँडा",
+                "roman": "ḍā̃ḍā",
+                "meaning": "丘",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4e6fd6df50586a8a4e96d8117a453245b2204188ef31981bea88bf6cf65977d1.mp3",
+                  "sha256": "4e6fd6df50586a8a4e96d8117a453245b2204188ef31981bea88bf6cf65977d1",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ड-word-1",
+                "ne": "डोरी",
+                "roman": "ḍorī",
+                "meaning": "ひも",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-07fe3317757c5704293c68d6162223c904a3cce3ee307849fc872d175cb12b97.mp3",
+                  "sha256": "07fe3317757c5704293c68d6162223c904a3cce3ee307849fc872d175cb12b97",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ढ",
@@ -232497,7 +233073,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7383bf4a9b4d2bdba344ed05a56fa554642eaca2a89ed186e77e96a02d179cf6.mp3",
               "sha256": "7383bf4a9b4d2bdba344ed05a56fa554642eaca2a89ed186e77e96a02d179cf6",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ढ-word-0",
+                "ne": "ढोका",
+                "roman": "ḍhokā",
+                "meaning": "ドア",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-00134488c2072d9c2f101b72c027ae97326d1aae17d2de3613c3e4ba16ee2bbf.mp3",
+                  "sha256": "00134488c2072d9c2f101b72c027ae97326d1aae17d2de3613c3e4ba16ee2bbf",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ढ-word-1",
+                "ne": "ढिलो",
+                "roman": "ḍhilo",
+                "meaning": "遅い",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6e15f5ff4b1a2a330654f9e7f7e05ef0f39f3a3353a858aaa522af0bbd3b5658.mp3",
+                  "sha256": "6e15f5ff4b1a2a330654f9e7f7e05ef0f39f3a3353a858aaa522af0bbd3b5658",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ण",
@@ -232510,7 +233110,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d352449417d285e94054f8d57ecbb2bfe57d4b15da3cbc37baaa50ff26499701.mp3",
               "sha256": "d352449417d285e94054f8d57ecbb2bfe57d4b15da3cbc37baaa50ff26499701",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ण-word-0",
+                "ne": "गणित",
+                "roman": "gaṇit",
+                "meaning": "数学",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e59bb1d43d3dada6f78f1d3cd128b92bf8714b737bfe1aa3b54d2f88a96a7264.mp3",
+                  "sha256": "e59bb1d43d3dada6f78f1d3cd128b92bf8714b737bfe1aa3b54d2f88a96a7264",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ण-word-1",
+                "ne": "गुण",
+                "roman": "guṇ",
+                "meaning": "性質・長所",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8d9aed0aad8cf40734b080369d23ec95eeb21ad7a3e3a1d2e8ebe5b6f1a870b5.mp3",
+                  "sha256": "8d9aed0aad8cf40734b080369d23ec95eeb21ad7a3e3a1d2e8ebe5b6f1a870b5",
+                  "bytes": 11232
+                }
+              }
+            ]
           }
         ]
       },
@@ -232530,7 +233154,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2d09cddcc2e992146e27fd50a8d3cee1e5ccdff7f5b7970e042b92d42f9cece0.mp3",
               "sha256": "2d09cddcc2e992146e27fd50a8d3cee1e5ccdff7f5b7970e042b92d42f9cece0",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-त-word-0",
+                "ne": "तपाईं",
+                "roman": "tapāī̃",
+                "meaning": "あなた（丁寧）",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-71ae0a2cbc178c232c5052873a9c2550d58dabb36f4d3318e78c1fb39354e670.mp3",
+                  "sha256": "71ae0a2cbc178c232c5052873a9c2550d58dabb36f4d3318e78c1fb39354e670",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-त-word-1",
+                "ne": "तारा",
+                "roman": "tārā",
+                "meaning": "星",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c49a91c8fa567899ba660308a2b34627a1bf70fd481166d1c696c883592c0480.mp3",
+                  "sha256": "c49a91c8fa567899ba660308a2b34627a1bf70fd481166d1c696c883592c0480",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-थ",
@@ -232543,7 +233191,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9a106e981613f4c02b52d29c7b05e01c5b980623b75e2c13ea06279eb3a2fcd9.mp3",
               "sha256": "9a106e981613f4c02b52d29c7b05e01c5b980623b75e2c13ea06279eb3a2fcd9",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-थ-word-0",
+                "ne": "थोरै",
+                "roman": "thorai",
+                "meaning": "少し",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-019cac2ddded7df75877c01d29847db757b72ab7b17f85ff99fa9fea9d1f88b8.mp3",
+                  "sha256": "019cac2ddded7df75877c01d29847db757b72ab7b17f85ff99fa9fea9d1f88b8",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-थ-word-1",
+                "ne": "थाल",
+                "roman": "thāl",
+                "meaning": "大皿",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-be3c619f65b6d070680f3a92fa7170561aeee43c316d80d047693d8437625a16.mp3",
+                  "sha256": "be3c619f65b6d070680f3a92fa7170561aeee43c316d80d047693d8437625a16",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-द",
@@ -232556,7 +233228,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a268ca5d68f4ff61c69329bb7c57253b482dbd4bae3b279ccd03ffc8e318da9c.mp3",
               "sha256": "a268ca5d68f4ff61c69329bb7c57253b482dbd4bae3b279ccd03ffc8e318da9c",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-द-word-0",
+                "ne": "दूध",
+                "roman": "dūdh",
+                "meaning": "牛乳",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a18da26f5ccb81b9f3bd9359e72fc52d6f707c7322319008118dbc5a6a0d1a82.mp3",
+                  "sha256": "a18da26f5ccb81b9f3bd9359e72fc52d6f707c7322319008118dbc5a6a0d1a82",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-द-word-1",
+                "ne": "दिन",
+                "roman": "din",
+                "meaning": "日",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6b94475adceaf3c484559bc39b3797d44ca7facfe9f637e9ad4ab9d111741667.mp3",
+                  "sha256": "6b94475adceaf3c484559bc39b3797d44ca7facfe9f637e9ad4ab9d111741667",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ध",
@@ -232569,7 +233265,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-838902b04e67892be17f1ecff95a4b585deea992377bc7a4927bc1e3af6ffb68.mp3",
               "sha256": "838902b04e67892be17f1ecff95a4b585deea992377bc7a4927bc1e3af6ffb68",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ध-word-0",
+                "ne": "धेरै",
+                "roman": "dherai",
+                "meaning": "たくさん",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a26bc469304526eee6ec90c1655de45c123f902c6a2e85b4adc7d3b0207c2456.mp3",
+                  "sha256": "a26bc469304526eee6ec90c1655de45c123f902c6a2e85b4adc7d3b0207c2456",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ध-word-1",
+                "ne": "धन्यवाद",
+                "roman": "dhanyavād",
+                "meaning": "ありがとう",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8f36631f988267bdf480452a3a85374a5b54d8a13d1bd00a9415b424a837c2d5.mp3",
+                  "sha256": "8f36631f988267bdf480452a3a85374a5b54d8a13d1bd00a9415b424a837c2d5",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-न",
@@ -232582,7 +233302,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f704f8864534e6d3bda4ac5e779fae282e09ca7740b979530752f7f55b13590a.mp3",
               "sha256": "f704f8864534e6d3bda4ac5e779fae282e09ca7740b979530752f7f55b13590a",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-न-word-0",
+                "ne": "नाम",
+                "roman": "nām",
+                "meaning": "名前",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5c5fd7e5a4b99c0f0e94c4af1291e5f745cb4ba3fa2165a7ef52f8a99af47eae.mp3",
+                  "sha256": "5c5fd7e5a4b99c0f0e94c4af1291e5f745cb4ba3fa2165a7ef52f8a99af47eae",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-न-word-1",
+                "ne": "नयाँ",
+                "roman": "nayā̃",
+                "meaning": "新しい",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-972b7707a109735b1f95559f60c33b26b9dc42e8b1473a9303b45d1017659dc0.mp3",
+                  "sha256": "972b7707a109735b1f95559f60c33b26b9dc42e8b1473a9303b45d1017659dc0",
+                  "bytes": 11232
+                }
+              }
+            ]
           }
         ]
       },
@@ -232602,7 +233346,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-1772985d71ef9ee3d1847cd7302dffb25dd73e2169b8fcbaaeabab8eb916834a.mp3",
               "sha256": "1772985d71ef9ee3d1847cd7302dffb25dd73e2169b8fcbaaeabab8eb916834a",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-प-word-0",
+                "ne": "पानी",
+                "roman": "pānī",
+                "meaning": "水",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-72914f7a408377129032a834c2552806160eb2a6f7839f943c2ee60077d70692.mp3",
+                  "sha256": "72914f7a408377129032a834c2552806160eb2a6f7839f943c2ee60077d70692",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-प-word-1",
+                "ne": "पसल",
+                "roman": "pasal",
+                "meaning": "店",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2d99fcd0af5568e2fbc5a398318e59d5380bd38ebaf0607396834ff4941f0f61.mp3",
+                  "sha256": "2d99fcd0af5568e2fbc5a398318e59d5380bd38ebaf0607396834ff4941f0f61",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-फ",
@@ -232615,7 +233383,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c10c309f1e4e09fe52994dc93be3a96dfbc693b1ed3c312316e448b1248e2a31.mp3",
               "sha256": "c10c309f1e4e09fe52994dc93be3a96dfbc693b1ed3c312316e448b1248e2a31",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-फ-word-0",
+                "ne": "फल",
+                "roman": "phal",
+                "meaning": "果物",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2e4f6c4733819a25a4bcfc1e5de7e9111f844b5b9ab351bb6e5b13650bf17c86.mp3",
+                  "sha256": "2e4f6c4733819a25a4bcfc1e5de7e9111f844b5b9ab351bb6e5b13650bf17c86",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-फ-word-1",
+                "ne": "फूल",
+                "roman": "phūl",
+                "meaning": "花",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-94259a2bd25fc9a5bad346050e46f401158df995701e90ee120ecc226ed66e5e.mp3",
+                  "sha256": "94259a2bd25fc9a5bad346050e46f401158df995701e90ee120ecc226ed66e5e",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ब",
@@ -232628,7 +233420,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3ec80aeccf1d7b93ac18e0c438008d2b2ef2498fddec414cefa023e1dc83fb66.mp3",
               "sha256": "3ec80aeccf1d7b93ac18e0c438008d2b2ef2498fddec414cefa023e1dc83fb66",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ब-word-0",
+                "ne": "बजार",
+                "roman": "bajār",
+                "meaning": "市場",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3062fd87056f361b7492e77e480f1cb93b7b3beece8f76be65ec0b9111223874.mp3",
+                  "sha256": "3062fd87056f361b7492e77e480f1cb93b7b3beece8f76be65ec0b9111223874",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ब-word-1",
+                "ne": "बिहान",
+                "roman": "bihān",
+                "meaning": "朝",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-97e3bdd3f0b8cee1a500cbb4737139bb23f9870709c6df9fcc14a653420ab703.mp3",
+                  "sha256": "97e3bdd3f0b8cee1a500cbb4737139bb23f9870709c6df9fcc14a653420ab703",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-भ",
@@ -232641,7 +233457,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8f6bff7320e12c029ae55730e9227e3b43bd633622a3c466e161a31872ec75a7.mp3",
               "sha256": "8f6bff7320e12c029ae55730e9227e3b43bd633622a3c466e161a31872ec75a7",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-भ-word-0",
+                "ne": "भात",
+                "roman": "bhāt",
+                "meaning": "炊いたご飯",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1cfab534ba445da676f2d5bf4bd5b3da4d22a9fa76973259ffe2e47f3fc48161.mp3",
+                  "sha256": "1cfab534ba445da676f2d5bf4bd5b3da4d22a9fa76973259ffe2e47f3fc48161",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-भ-word-1",
+                "ne": "भोलि",
+                "roman": "bholi",
+                "meaning": "明日",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-af1ab329c78d0bf4e636adbff7d25a7238e4261c53699dda74aaf8ab81dd4c28.mp3",
+                  "sha256": "af1ab329c78d0bf4e636adbff7d25a7238e4261c53699dda74aaf8ab81dd4c28",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-म",
@@ -232654,7 +233494,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4c3c4e86f935b9147473ef73daddee34f94b41688c987cb39817a1f72457a76e.mp3",
               "sha256": "4c3c4e86f935b9147473ef73daddee34f94b41688c987cb39817a1f72457a76e",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-म-word-0",
+                "ne": "माछा",
+                "roman": "māchā",
+                "meaning": "魚",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fcb1984abd810f3b0e7fa66319d87b4aeb4ce7a0d36deff3ed1f8d565fb1fe56.mp3",
+                  "sha256": "fcb1984abd810f3b0e7fa66319d87b4aeb4ce7a0d36deff3ed1f8d565fb1fe56",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-म-word-1",
+                "ne": "माया",
+                "roman": "māyā",
+                "meaning": "愛情",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b96241811ec8c15545bfeb876fc258da3db3439b40bb046a37e6b1a325823951.mp3",
+                  "sha256": "b96241811ec8c15545bfeb876fc258da3db3439b40bb046a37e6b1a325823951",
+                  "bytes": 11232
+                }
+              }
+            ]
           }
         ]
       },
@@ -232674,7 +233538,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6a963b1df4bc6bf64535e4bfedc298a4d4351e7f3bf1dc96b29d9a7a49b86ffa.mp3",
               "sha256": "6a963b1df4bc6bf64535e4bfedc298a4d4351e7f3bf1dc96b29d9a7a49b86ffa",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-य-word-0",
+                "ne": "यहाँ",
+                "roman": "yahā̃",
+                "meaning": "ここ",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-80c2cafa1a2908e60e9e6a6b9ebd4cc2fe3506891121080e1ffdb0d19d45284b.mp3",
+                  "sha256": "80c2cafa1a2908e60e9e6a6b9ebd4cc2fe3506891121080e1ffdb0d19d45284b",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-य-word-1",
+                "ne": "यात्रा",
+                "roman": "yātrā",
+                "meaning": "旅",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-dc3607fc67d50aa2d054d01e6dee5fba2a81fd40184a67f11549febdc0703740.mp3",
+                  "sha256": "dc3607fc67d50aa2d054d01e6dee5fba2a81fd40184a67f11549febdc0703740",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-र",
@@ -232687,7 +233575,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-dbdde949b8bb45bf80d63d57fe33f78304df9d9bc178d727a82d61c96a25211c.mp3",
               "sha256": "dbdde949b8bb45bf80d63d57fe33f78304df9d9bc178d727a82d61c96a25211c",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-र-word-0",
+                "ne": "राम्रो",
+                "roman": "rāmro",
+                "meaning": "良い",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3b4a481f866c25109ec8d5acce189b08eb52a31fcae66678f3ee49cc29812219.mp3",
+                  "sha256": "3b4a481f866c25109ec8d5acce189b08eb52a31fcae66678f3ee49cc29812219",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-र-word-1",
+                "ne": "रात",
+                "roman": "rāt",
+                "meaning": "夜",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3442d75d381353208d2e08399b88b547c5b43da6146736710ff48f9843395aa3.mp3",
+                  "sha256": "3442d75d381353208d2e08399b88b547c5b43da6146736710ff48f9843395aa3",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ल",
@@ -232700,7 +233612,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7888335bd0ffbc7c73cd164508f02091b93c5c6e44a1945165250c036e0af9f0.mp3",
               "sha256": "7888335bd0ffbc7c73cd164508f02091b93c5c6e44a1945165250c036e0af9f0",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ल-word-0",
+                "ne": "लुगा",
+                "roman": "lugā",
+                "meaning": "服",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f52a331855a4ad852f0850563513ee257168597bf6506967e6745e375aad7059.mp3",
+                  "sha256": "f52a331855a4ad852f0850563513ee257168597bf6506967e6745e375aad7059",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ल-word-1",
+                "ne": "लामो",
+                "roman": "lāmo",
+                "meaning": "長い",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1dabe176dcf529224412e4143784e6f75365c1caafaf1dfdc11af3e7abb0c822.mp3",
+                  "sha256": "1dabe176dcf529224412e4143784e6f75365c1caafaf1dfdc11af3e7abb0c822",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-व",
@@ -232713,7 +233649,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4185f771ce1549adc04fc275ce5566068a281b9557b91aa655faf8896850d5ed.mp3",
               "sha256": "4185f771ce1549adc04fc275ce5566068a281b9557b91aa655faf8896850d5ed",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-व-word-0",
+                "ne": "वर्ष",
+                "roman": "varṣa",
+                "meaning": "年",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8595cdb0632a464911c5ec6deb4c525a2fe8280cb8a891bb71077c38575b36b3.mp3",
+                  "sha256": "8595cdb0632a464911c5ec6deb4c525a2fe8280cb8a891bb71077c38575b36b3",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-व-word-1",
+                "ne": "विद्यालय",
+                "roman": "vidyālay",
+                "meaning": "学校",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e76414891883c7b660588e5bc94310cd30d4e3c5f6a9fe47cd13c18e221db61b.mp3",
+                  "sha256": "e76414891883c7b660588e5bc94310cd30d4e3c5f6a9fe47cd13c18e221db61b",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-श",
@@ -232723,10 +233683,34 @@
             "detail": "",
             "speech": "श",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a4a7982baf9ee37790616c8b63c4fed5b34efcfe25d45c8dd52021b786e13e01.mp3",
-              "sha256": "a4a7982baf9ee37790616c8b63c4fed5b34efcfe25d45c8dd52021b786e13e01",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce.mp3",
+              "sha256": "401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce",
+              "bytes": 3500
+            },
+            "examples": [
+              {
+                "id": "c-श-word-0",
+                "ne": "शहर",
+                "roman": "śahar",
+                "meaning": "都市",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-aa5e80f5643e8e5afad7b14a0aa9975fd0d35e34d159474c1f4b4281309a8710.mp3",
+                  "sha256": "aa5e80f5643e8e5afad7b14a0aa9975fd0d35e34d159474c1f4b4281309a8710",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-श-word-1",
+                "ne": "शब्द",
+                "roman": "śabda",
+                "meaning": "単語",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3ebe65a1692c171a70ce275efdbcb80fb7810758d6f9f1fad51e89273ebee47f.mp3",
+                  "sha256": "3ebe65a1692c171a70ce275efdbcb80fb7810758d6f9f1fad51e89273ebee47f",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ष",
@@ -232736,10 +233720,34 @@
             "detail": "",
             "speech": "ष",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5363602b56a96de8050891579c0f9e1f447f44e93dcd0109f4a95679af6a4004.mp3",
-              "sha256": "5363602b56a96de8050891579c0f9e1f447f44e93dcd0109f4a95679af6a4004",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161.mp3",
+              "sha256": "50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161",
+              "bytes": 3500
+            },
+            "examples": [
+              {
+                "id": "c-ष-word-0",
+                "ne": "भाषा",
+                "roman": "bhāṣā",
+                "meaning": "言語",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0284709d44ca8fcb02dfd177521efe24a33d157b35d2d33629b62d978cb170eb.mp3",
+                  "sha256": "0284709d44ca8fcb02dfd177521efe24a33d157b35d2d33629b62d978cb170eb",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ष-word-1",
+                "ne": "वर्ष",
+                "roman": "varṣa",
+                "meaning": "年",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8595cdb0632a464911c5ec6deb4c525a2fe8280cb8a891bb71077c38575b36b3.mp3",
+                  "sha256": "8595cdb0632a464911c5ec6deb4c525a2fe8280cb8a891bb71077c38575b36b3",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-स",
@@ -232749,10 +233757,34 @@
             "detail": "",
             "speech": "स",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-05c5b8cee93f0c8bc13d91f54bc3cb249cbb1cbd11558dbb22538906f1b01eb9.mp3",
-              "sha256": "05c5b8cee93f0c8bc13d91f54bc3cb249cbb1cbd11558dbb22538906f1b01eb9",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0.mp3",
+              "sha256": "fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0",
+              "bytes": 3500
+            },
+            "examples": [
+              {
+                "id": "c-स-word-0",
+                "ne": "समय",
+                "roman": "samay",
+                "meaning": "時間",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e83c8a76a07ff837ccd3d4853282ccc4bf1d2e38a794b0b3e53252f2fe957ec8.mp3",
+                  "sha256": "e83c8a76a07ff837ccd3d4853282ccc4bf1d2e38a794b0b3e53252f2fe957ec8",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-स-word-1",
+                "ne": "साथी",
+                "roman": "sāthī",
+                "meaning": "友達",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0eb78771e89058d72340ca45edbdc2f7476ada645481533e7f752d570601f4fb.mp3",
+                  "sha256": "0eb78771e89058d72340ca45edbdc2f7476ada645481533e7f752d570601f4fb",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "c-ह",
@@ -232765,7 +233797,31 @@
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f8b96ba92f179c03bcaacb4f916c6d628a7a000c066608664865a7e64bd5f5fd.mp3",
               "sha256": "f8b96ba92f179c03bcaacb4f916c6d628a7a000c066608664865a7e64bd5f5fd",
               "bytes": 11232
-            }
+            },
+            "examples": [
+              {
+                "id": "c-ह-word-0",
+                "ne": "हात",
+                "roman": "hāt",
+                "meaning": "手",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a016d03b1fbc91442e4468a2c102bef99b06496ae23656eb9104bbaaee18f105.mp3",
+                  "sha256": "a016d03b1fbc91442e4468a2c102bef99b06496ae23656eb9104bbaaee18f105",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "c-ह-word-1",
+                "ne": "हावा",
+                "roman": "hāvā",
+                "meaning": "風・空気",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fa9d7bd9c575caa79902484620dadea71d254adfba7dc6c38f4d0e91c35eef07.mp3",
+                  "sha256": "fa9d7bd9c575caa79902484620dadea71d254adfba7dc6c38f4d0e91c35eef07",
+                  "bytes": 11232
+                }
+              }
+            ]
           }
         ]
       },
@@ -232791,391 +233847,1111 @@
             "id": "conj-0",
             "ne": "क्ष",
             "roman": "kṣa / chya",
-            "meaning": "क्षमा＝許し",
-            "detail": "क् + ष → क्ष\nक्षमा · kṣamā",
-            "speech": "क्षमा",
+            "meaning": "子音をつなげた形",
+            "detail": "क् + ष → क्ष\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "क्ष",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-514582ada122331922715bbb8bd6e4a9e589bb8d780ef5d6a87d328d3310b814.mp3",
-              "sha256": "514582ada122331922715bbb8bd6e4a9e589bb8d780ef5d6a87d328d3310b814",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f641ddcde2f102d20698757ca5327eb6aac4bb0f54a02091115183559b973e58.mp3",
+              "sha256": "f641ddcde2f102d20698757ca5327eb6aac4bb0f54a02091115183559b973e58",
+              "bytes": 3788
+            },
+            "examples": [
+              {
+                "id": "conj-0-word-0",
+                "ne": "कक्षा",
+                "roman": "kakṣā",
+                "meaning": "授業・教室",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-67517614e0cf88ee81533bf7ded5c4f35388e4609ac69dcbc37d0b5634a18244.mp3",
+                  "sha256": "67517614e0cf88ee81533bf7ded5c4f35388e4609ac69dcbc37d0b5634a18244",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-0-word-1",
+                "ne": "परीक्षा",
+                "roman": "parīkṣā",
+                "meaning": "試験",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-99a842d186ac07255c5467f9566bb2ad13f1b30e59f7c1fb7d74bd0f8cb069b4.mp3",
+                  "sha256": "99a842d186ac07255c5467f9566bb2ad13f1b30e59f7c1fb7d74bd0f8cb069b4",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-1",
             "ne": "त्र",
             "roman": "tra",
-            "meaning": "पत्र＝手紙",
-            "detail": "त् + र → त्र\nपत्र · patra",
-            "speech": "पत्र",
+            "meaning": "子音をつなげた形",
+            "detail": "त् + र → त्र\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "त्र",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a0536c7d68c8d38f31cd33f43997f743cf3b8ba366f0df7cac4df4b7749a8c15.mp3",
-              "sha256": "a0536c7d68c8d38f31cd33f43997f743cf3b8ba366f0df7cac4df4b7749a8c15",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-16ed25e0e36f510dc3c061e5223dd4ccbe1180ca34eab31261040bdf79c3a7d2.mp3",
+              "sha256": "16ed25e0e36f510dc3c061e5223dd4ccbe1180ca34eab31261040bdf79c3a7d2",
+              "bytes": 3644
+            },
+            "examples": [
+              {
+                "id": "conj-1-word-0",
+                "ne": "पत्र",
+                "roman": "patra",
+                "meaning": "手紙",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a0536c7d68c8d38f31cd33f43997f743cf3b8ba366f0df7cac4df4b7749a8c15.mp3",
+                  "sha256": "a0536c7d68c8d38f31cd33f43997f743cf3b8ba366f0df7cac4df4b7749a8c15",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-1-word-1",
+                "ne": "मित्र",
+                "roman": "mitra",
+                "meaning": "友人",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-27c7af51c9d73852a30a7d6f09ce648c324aa9ba987e9b2d85a1a69bd4848423.mp3",
+                  "sha256": "27c7af51c9d73852a30a7d6f09ce648c324aa9ba987e9b2d85a1a69bd4848423",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-2",
             "ne": "ज्ञ",
             "roman": "gya",
-            "meaning": "ज्ञान＝知識",
-            "detail": "ज् + ञ → ज्ञ\nज्ञान · gyān",
-            "speech": "ज्ञान",
+            "meaning": "子音をつなげた形",
+            "detail": "ज् + ञ → ज्ञ\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "ज्ञ",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-ad679483a23ba6015edcbc5a8bf7b71de8e9d16eb678cbcf315710a1c45c1fe6.mp3",
-              "sha256": "ad679483a23ba6015edcbc5a8bf7b71de8e9d16eb678cbcf315710a1c45c1fe6",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5dcca6ea9a98938bdbd939c0f2bbc452a7e9b1c29b7014b83d97d43b65c1a004.mp3",
+              "sha256": "5dcca6ea9a98938bdbd939c0f2bbc452a7e9b1c29b7014b83d97d43b65c1a004",
+              "bytes": 3932
+            },
+            "examples": [
+              {
+                "id": "conj-2-word-0",
+                "ne": "ज्ञान",
+                "roman": "gyān",
+                "meaning": "知識",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-ad679483a23ba6015edcbc5a8bf7b71de8e9d16eb678cbcf315710a1c45c1fe6.mp3",
+                  "sha256": "ad679483a23ba6015edcbc5a8bf7b71de8e9d16eb678cbcf315710a1c45c1fe6",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-2-word-1",
+                "ne": "विज्ञान",
+                "roman": "vigyān",
+                "meaning": "科学",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b0cd498dae90b5031e871bb4ef23472e973a8076c710c271fc739e76767142b2.mp3",
+                  "sha256": "b0cd498dae90b5031e871bb4ef23472e973a8076c710c271fc739e76767142b2",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-3",
             "ne": "श्र",
             "roman": "śra",
-            "meaning": "श्रम＝労働",
-            "detail": "श् + र → श्र\nश्रम · śram",
-            "speech": "श्रम",
+            "meaning": "子音をつなげた形",
+            "detail": "श् + र → श्र\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "श्र",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-de6a618f0d88e78508047e133ca7d73e483b30664f730cc9ce5e7a7a3188b437.mp3",
-              "sha256": "de6a618f0d88e78508047e133ca7d73e483b30664f730cc9ce5e7a7a3188b437",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f10078bb23e9e2ada13cd22016bc10e3f20055ca6810e3eac680fdac04076cde.mp3",
+              "sha256": "f10078bb23e9e2ada13cd22016bc10e3f20055ca6810e3eac680fdac04076cde",
+              "bytes": 4076
+            },
+            "examples": [
+              {
+                "id": "conj-3-word-0",
+                "ne": "श्रम",
+                "roman": "śram",
+                "meaning": "労働",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-de6a618f0d88e78508047e133ca7d73e483b30664f730cc9ce5e7a7a3188b437.mp3",
+                  "sha256": "de6a618f0d88e78508047e133ca7d73e483b30664f730cc9ce5e7a7a3188b437",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-3-word-1",
+                "ne": "श्रमिक",
+                "roman": "śramik",
+                "meaning": "労働者",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8cdabc4255cbe6fb3ee66eb05a6cb54740dfef93330935a6b5bbb9fa42565a30.mp3",
+                  "sha256": "8cdabc4255cbe6fb3ee66eb05a6cb54740dfef93330935a6b5bbb9fa42565a30",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-4",
             "ne": "क्क",
             "roman": "kka",
-            "meaning": "पक्का＝確かな",
-            "detail": "क् + क → क्क\nपक्का · pakkā",
-            "speech": "पक्का",
+            "meaning": "子音をつなげた形",
+            "detail": "क् + क → क्क\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "क्क",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9f771dd9a469c04ccd8e1a1e5b6b2df05efe1fe3ebd99b5b6074308b7fc02276.mp3",
-              "sha256": "9f771dd9a469c04ccd8e1a1e5b6b2df05efe1fe3ebd99b5b6074308b7fc02276",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-45e3e2f35cd3cec2b5c41040acf7a4ad5a91ed08b7569e88ea60466f99240002.mp3",
+              "sha256": "45e3e2f35cd3cec2b5c41040acf7a4ad5a91ed08b7569e88ea60466f99240002",
+              "bytes": 4076
+            },
+            "examples": [
+              {
+                "id": "conj-4-word-0",
+                "ne": "पक्का",
+                "roman": "pakkā",
+                "meaning": "確かな",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9f771dd9a469c04ccd8e1a1e5b6b2df05efe1fe3ebd99b5b6074308b7fc02276.mp3",
+                  "sha256": "9f771dd9a469c04ccd8e1a1e5b6b2df05efe1fe3ebd99b5b6074308b7fc02276",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-4-word-1",
+                "ne": "चक्का",
+                "roman": "cakkā",
+                "meaning": "車輪",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9e5151f39bf7408c70674da67435acf31b881e70b1e39644da25b4373bfd857c.mp3",
+                  "sha256": "9e5151f39bf7408c70674da67435acf31b881e70b1e39644da25b4373bfd857c",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-5",
             "ne": "क्त",
             "roman": "kta",
-            "meaning": "रक्त＝血",
-            "detail": "क् + त → क्त\nरक्त · rakta",
-            "speech": "रक्त",
+            "meaning": "子音をつなげた形",
+            "detail": "क् + त → क्त\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "क्त",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4c256a7a6931703f6321488ded8d465ec0a5948c906663acf4a0a30c05ba1468.mp3",
-              "sha256": "4c256a7a6931703f6321488ded8d465ec0a5948c906663acf4a0a30c05ba1468",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-38720352962b06150a845923e02e2893a0c59fb1f7adedab577ab0318accac84.mp3",
+              "sha256": "38720352962b06150a845923e02e2893a0c59fb1f7adedab577ab0318accac84",
+              "bytes": 3788
+            },
+            "examples": [
+              {
+                "id": "conj-5-word-0",
+                "ne": "रक्त",
+                "roman": "rakta",
+                "meaning": "血",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4c256a7a6931703f6321488ded8d465ec0a5948c906663acf4a0a30c05ba1468.mp3",
+                  "sha256": "4c256a7a6931703f6321488ded8d465ec0a5948c906663acf4a0a30c05ba1468",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-5-word-1",
+                "ne": "व्यक्ति",
+                "roman": "vyakti",
+                "meaning": "人",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8dc2a5c05af4e913b02eb3eb7209b05b609f93b60dc9a7ca715691be84ea35e6.mp3",
+                  "sha256": "8dc2a5c05af4e913b02eb3eb7209b05b609f93b60dc9a7ca715691be84ea35e6",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-6",
             "ne": "क्र",
             "roman": "kra",
-            "meaning": "क्रम＝順番",
-            "detail": "क् + र → क्र\nक्रम · kram",
-            "speech": "क्रम",
+            "meaning": "子音をつなげた形",
+            "detail": "क् + र → क्र\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "क्र",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d21ccb6cf380755cb3785c2e8fe64b59f49ba3cc56c90082e625d05dfcea768e.mp3",
-              "sha256": "d21ccb6cf380755cb3785c2e8fe64b59f49ba3cc56c90082e625d05dfcea768e",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-26416a55b64040860cbda3dea1c495b339bf8e8bef0d37704f3d37cc1d190caf.mp3",
+              "sha256": "26416a55b64040860cbda3dea1c495b339bf8e8bef0d37704f3d37cc1d190caf",
+              "bytes": 3788
+            },
+            "examples": [
+              {
+                "id": "conj-6-word-0",
+                "ne": "क्रम",
+                "roman": "kram",
+                "meaning": "順番",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d21ccb6cf380755cb3785c2e8fe64b59f49ba3cc56c90082e625d05dfcea768e.mp3",
+                  "sha256": "d21ccb6cf380755cb3785c2e8fe64b59f49ba3cc56c90082e625d05dfcea768e",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-6-word-1",
+                "ne": "चक्र",
+                "roman": "cakra",
+                "meaning": "輪・周期",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-ec7b284f09c62a035a3a14cfac04e8cb9fa2e7eb69edf880b1f5350ac6d7f5d0.mp3",
+                  "sha256": "ec7b284f09c62a035a3a14cfac04e8cb9fa2e7eb69edf880b1f5350ac6d7f5d0",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-7",
             "ne": "ग्र",
             "roman": "gra",
-            "meaning": "ग्राम＝グラム",
-            "detail": "ग् + र → ग्र\nग्राम · grām",
-            "speech": "ग्राम",
+            "meaning": "子音をつなげた形",
+            "detail": "ग् + र → ग्र\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "ग्र",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5e55cc334dd438a865ec3fcaa2ed61bb04d4ccfddf0ff864de688a50b4b80a0e.mp3",
-              "sha256": "5e55cc334dd438a865ec3fcaa2ed61bb04d4ccfddf0ff864de688a50b4b80a0e",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-88aa463242b066a32cc969dd7c6c461ca6a0099d031c7bf55d50a245ddb7054f.mp3",
+              "sha256": "88aa463242b066a32cc969dd7c6c461ca6a0099d031c7bf55d50a245ddb7054f",
+              "bytes": 3788
+            },
+            "examples": [
+              {
+                "id": "conj-7-word-0",
+                "ne": "ग्राम",
+                "roman": "grām",
+                "meaning": "グラム",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5e55cc334dd438a865ec3fcaa2ed61bb04d4ccfddf0ff864de688a50b4b80a0e.mp3",
+                  "sha256": "5e55cc334dd438a865ec3fcaa2ed61bb04d4ccfddf0ff864de688a50b4b80a0e",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-7-word-1",
+                "ne": "ग्राहक",
+                "roman": "grāhak",
+                "meaning": "客",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d20cd3319a0006ef31bcb410cb1e72cab8649c8bf1e0b879f8a02cac43614971.mp3",
+                  "sha256": "d20cd3319a0006ef31bcb410cb1e72cab8649c8bf1e0b879f8a02cac43614971",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-8",
             "ne": "ङ्ग",
             "roman": "ṅga",
-            "meaning": "रङ्ग＝色",
-            "detail": "ङ् + ग → ङ्ग\nरङ्ग · raṅga",
-            "speech": "रङ्ग",
+            "meaning": "子音をつなげた形",
+            "detail": "ङ् + ग → ङ्ग\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "ङ्ग",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-266342c183ffa0ab71afa6885fed9502eb9a441792e03b588ef420bccc458750.mp3",
-              "sha256": "266342c183ffa0ab71afa6885fed9502eb9a441792e03b588ef420bccc458750",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5001b6d36ec0ea1f157c62ab15b791eea2b3ac338ab08553ecc7d26037d1805c.mp3",
+              "sha256": "5001b6d36ec0ea1f157c62ab15b791eea2b3ac338ab08553ecc7d26037d1805c",
+              "bytes": 3644
+            },
+            "examples": [
+              {
+                "id": "conj-8-word-0",
+                "ne": "रङ्ग",
+                "roman": "raṅga",
+                "meaning": "色",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-266342c183ffa0ab71afa6885fed9502eb9a441792e03b588ef420bccc458750.mp3",
+                  "sha256": "266342c183ffa0ab71afa6885fed9502eb9a441792e03b588ef420bccc458750",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-8-word-1",
+                "ne": "अङ्ग",
+                "roman": "aṅga",
+                "meaning": "体の部分",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9cb9e25481faef17376ede23f46a66a8a1f7d45768dd091e29b2afc8e445ba6a.mp3",
+                  "sha256": "9cb9e25481faef17376ede23f46a66a8a1f7d45768dd091e29b2afc8e445ba6a",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-9",
             "ne": "ञ्च",
             "roman": "ñca",
-            "meaning": "पञ्च＝五（複合語など）",
-            "detail": "ञ् + च → ञ्च\nपञ्च · pañca",
-            "speech": "पञ्च",
+            "meaning": "子音をつなげた形",
+            "detail": "ञ् + च → ञ्च\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "ञ्च",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fc567a6eb771e717759cee2971d0982a5ff1aea66c60db0ff507d28f154c52bb.mp3",
-              "sha256": "fc567a6eb771e717759cee2971d0982a5ff1aea66c60db0ff507d28f154c52bb",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-adbbfc3b82d9688f0b1c191c71957f47d01856d3e4444fa8064e2b92ea2056f4.mp3",
+              "sha256": "adbbfc3b82d9688f0b1c191c71957f47d01856d3e4444fa8064e2b92ea2056f4",
+              "bytes": 3932
+            },
+            "examples": [
+              {
+                "id": "conj-9-word-0",
+                "ne": "मञ्च",
+                "roman": "mañca",
+                "meaning": "舞台",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e683f3b5961cbb2d8cd693902701891cba1e7a9b6401502d68ec119aca0667dc.mp3",
+                  "sha256": "e683f3b5961cbb2d8cd693902701891cba1e7a9b6401502d68ec119aca0667dc",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-9-word-1",
+                "ne": "पञ्च",
+                "roman": "pañca",
+                "meaning": "五（複合語など）",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fc567a6eb771e717759cee2971d0982a5ff1aea66c60db0ff507d28f154c52bb.mp3",
+                  "sha256": "fc567a6eb771e717759cee2971d0982a5ff1aea66c60db0ff507d28f154c52bb",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-10",
             "ne": "ञ्ज",
             "roman": "ñja",
-            "meaning": "गुञ्जन＝響き",
-            "detail": "ञ् + ज → ञ्ज\nगुञ्जन · guñjan",
-            "speech": "गुञ्जन",
+            "meaning": "子音をつなげた形",
+            "detail": "ञ् + ज → ञ्ज\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "ञ्ज",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-675aadfca0b875ccf960be4ec568a1304aa60496129b142009c2aa55f23e95e4.mp3",
-              "sha256": "675aadfca0b875ccf960be4ec568a1304aa60496129b142009c2aa55f23e95e4",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-89f15760652bd343721704a38863d4ec22918689578877d7fab182be350e0f1c.mp3",
+              "sha256": "89f15760652bd343721704a38863d4ec22918689578877d7fab182be350e0f1c",
+              "bytes": 3932
+            },
+            "examples": [
+              {
+                "id": "conj-10-word-0",
+                "ne": "मञ्जुरी",
+                "roman": "mañjurī",
+                "meaning": "同意・許可",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-30f4379c1fa16b354dfc88868f45ca956626bf8ff48f09da5c009d1da7b35361.mp3",
+                  "sha256": "30f4379c1fa16b354dfc88868f45ca956626bf8ff48f09da5c009d1da7b35361",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-10-word-1",
+                "ne": "गुञ्जन",
+                "roman": "guñjan",
+                "meaning": "響き",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-675aadfca0b875ccf960be4ec568a1304aa60496129b142009c2aa55f23e95e4.mp3",
+                  "sha256": "675aadfca0b875ccf960be4ec568a1304aa60496129b142009c2aa55f23e95e4",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-11",
             "ne": "ट्ट",
             "roman": "ṭṭa",
-            "meaning": "पट्टी＝包帯",
-            "detail": "ट् + ट → ट्ट\nपट्टी · paṭṭī",
-            "speech": "पट्टी",
+            "meaning": "子音をつなげた形",
+            "detail": "ट् + ट → ट्ट\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "ट्ट",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a0f21a601dfab1ad3fe0549416ffddd8b363ebccbb20f5dc7ffa2fec0f272cc8.mp3",
-              "sha256": "a0f21a601dfab1ad3fe0549416ffddd8b363ebccbb20f5dc7ffa2fec0f272cc8",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0705ded5f2c82bb8a1d5ef2e8a3f0aee52f0f599bbda470c876d9a71e22b1cbc.mp3",
+              "sha256": "0705ded5f2c82bb8a1d5ef2e8a3f0aee52f0f599bbda470c876d9a71e22b1cbc",
+              "bytes": 3644
+            },
+            "examples": [
+              {
+                "id": "conj-11-word-0",
+                "ne": "पट्टी",
+                "roman": "paṭṭī",
+                "meaning": "包帯",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a0f21a601dfab1ad3fe0549416ffddd8b363ebccbb20f5dc7ffa2fec0f272cc8.mp3",
+                  "sha256": "a0f21a601dfab1ad3fe0549416ffddd8b363ebccbb20f5dc7ffa2fec0f272cc8",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-11-word-1",
+                "ne": "छुट्टी",
+                "roman": "chuṭṭī",
+                "meaning": "休み",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-aa181f6844e5af77b06d9d4ddd5903e218fe8f690ebd6abe779a0c2e48c77a83.mp3",
+                  "sha256": "aa181f6844e5af77b06d9d4ddd5903e218fe8f690ebd6abe779a0c2e48c77a83",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-12",
             "ne": "ण्ड",
             "roman": "ṇḍa",
-            "meaning": "खण्ड＝部分",
-            "detail": "ण् + ड → ण्ड\nखण्ड · khaṇḍa",
-            "speech": "खण्ड",
+            "meaning": "子音をつなげた形",
+            "detail": "ण् + ड → ण्ड\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "ण्ड",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d70fc15523304ef09642e33737758a1ee5dd08141764a169f75722b6a43eba8b.mp3",
-              "sha256": "d70fc15523304ef09642e33737758a1ee5dd08141764a169f75722b6a43eba8b",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4e8599f1aa388abbfa42248cbfc835ec85f1d0fd26c627a3e33bf80f68718743.mp3",
+              "sha256": "4e8599f1aa388abbfa42248cbfc835ec85f1d0fd26c627a3e33bf80f68718743",
+              "bytes": 3788
+            },
+            "examples": [
+              {
+                "id": "conj-12-word-0",
+                "ne": "अण्डा",
+                "roman": "aṇḍā",
+                "meaning": "卵",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-96def7793fa3e19cdbe7d8e791dffd90a879ce4d13c53f401a538cf5562c1b3b.mp3",
+                  "sha256": "96def7793fa3e19cdbe7d8e791dffd90a879ce4d13c53f401a538cf5562c1b3b",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-12-word-1",
+                "ne": "खण्ड",
+                "roman": "khaṇḍa",
+                "meaning": "部分・区分",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d70fc15523304ef09642e33737758a1ee5dd08141764a169f75722b6a43eba8b.mp3",
+                  "sha256": "d70fc15523304ef09642e33737758a1ee5dd08141764a169f75722b6a43eba8b",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-13",
             "ne": "त्त",
             "roman": "tta",
-            "meaning": "उत्तर＝答え／北",
-            "detail": "त् + त → त्त\nउत्तर · uttar",
-            "speech": "उत्तर",
+            "meaning": "子音をつなげた形",
+            "detail": "त् + त → त्त\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "त्त",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-0eb490f41621a593a555e85e15d979fcdd336dc75a44df329795ef835cfbb549.mp3",
-              "sha256": "0eb490f41621a593a555e85e15d979fcdd336dc75a44df329795ef835cfbb549",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f5a14f83ae5d8ad3ef147e04eb0d05d37e4389dc024df1e90771c03286410ccd.mp3",
+              "sha256": "f5a14f83ae5d8ad3ef147e04eb0d05d37e4389dc024df1e90771c03286410ccd",
+              "bytes": 3788
+            },
+            "examples": [
+              {
+                "id": "conj-13-word-0",
+                "ne": "उत्तर",
+                "roman": "uttar",
+                "meaning": "答え／北",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-0eb490f41621a593a555e85e15d979fcdd336dc75a44df329795ef835cfbb549.mp3",
+                  "sha256": "0eb490f41621a593a555e85e15d979fcdd336dc75a44df329795ef835cfbb549",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-13-word-1",
+                "ne": "पत्ता",
+                "roman": "pattā",
+                "meaning": "葉",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-38d1c3af2ec9a35961ca98ad25fa45bf2caf3ab6839a9d04d41b1091da864a26.mp3",
+                  "sha256": "38d1c3af2ec9a35961ca98ad25fa45bf2caf3ab6839a9d04d41b1091da864a26",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-14",
             "ne": "द्ध",
             "roman": "ddha",
-            "meaning": "शुद्ध＝純粋な",
-            "detail": "द् + ध → द्ध\nशुद्ध · śuddha",
-            "speech": "शुद्ध",
+            "meaning": "子音をつなげた形",
+            "detail": "द् + ध → द्ध\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "द्ध",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-82c4c359cd80aa1b1d34795ecf45788aa0e82be3017d1bf38dd5140c62bf06f1.mp3",
-              "sha256": "82c4c359cd80aa1b1d34795ecf45788aa0e82be3017d1bf38dd5140c62bf06f1",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5a7d5e472039602ec9daadd3029b04de2b7047f54aab08e80bbdbe6d390e4967.mp3",
+              "sha256": "5a7d5e472039602ec9daadd3029b04de2b7047f54aab08e80bbdbe6d390e4967",
+              "bytes": 3932
+            },
+            "examples": [
+              {
+                "id": "conj-14-word-0",
+                "ne": "शुद्ध",
+                "roman": "śuddha",
+                "meaning": "純粋な",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-82c4c359cd80aa1b1d34795ecf45788aa0e82be3017d1bf38dd5140c62bf06f1.mp3",
+                  "sha256": "82c4c359cd80aa1b1d34795ecf45788aa0e82be3017d1bf38dd5140c62bf06f1",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-14-word-1",
+                "ne": "प्रसिद्ध",
+                "roman": "prasiddha",
+                "meaning": "有名な",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5da5dc08ebfa9ae733f2da0e09af729c0ae1989b2206dd13abf4b8b186584d95.mp3",
+                  "sha256": "5da5dc08ebfa9ae733f2da0e09af729c0ae1989b2206dd13abf4b8b186584d95",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-15",
             "ne": "द्य",
             "roman": "dya",
-            "meaning": "विद्यालय＝学校",
-            "detail": "द् + य → द्य\nविद्यालय · vidyālay",
-            "speech": "विद्यालय",
+            "meaning": "子音をつなげた形",
+            "detail": "द् + य → द्य\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "द्य",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e76414891883c7b660588e5bc94310cd30d4e3c5f6a9fe47cd13c18e221db61b.mp3",
-              "sha256": "e76414891883c7b660588e5bc94310cd30d4e3c5f6a9fe47cd13c18e221db61b",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fdbf561ac9a3b01e5ff3f633a223194cb55b6d4059d5b3b9299d438a40b08493.mp3",
+              "sha256": "fdbf561ac9a3b01e5ff3f633a223194cb55b6d4059d5b3b9299d438a40b08493",
+              "bytes": 3644
+            },
+            "examples": [
+              {
+                "id": "conj-15-word-0",
+                "ne": "विद्यालय",
+                "roman": "vidyālay",
+                "meaning": "学校",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e76414891883c7b660588e5bc94310cd30d4e3c5f6a9fe47cd13c18e221db61b.mp3",
+                  "sha256": "e76414891883c7b660588e5bc94310cd30d4e3c5f6a9fe47cd13c18e221db61b",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-15-word-1",
+                "ne": "विद्यार्थी",
+                "roman": "vidyārthī",
+                "meaning": "学生",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0abd7476ebb6099ff182e7d772ec1eadab7ed8430fb17d0d36e546140080ebcc.mp3",
+                  "sha256": "0abd7476ebb6099ff182e7d772ec1eadab7ed8430fb17d0d36e546140080ebcc",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-16",
             "ne": "द्व",
             "roman": "dva",
-            "meaning": "द्वार＝門",
-            "detail": "द् + व → द्व\nद्वार · dvār",
-            "speech": "द्वार",
+            "meaning": "子音をつなげた形",
+            "detail": "द् + व → द्व\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "द्व",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4a72606e848329f36240cbe78919ca0a27271facce89990bc3102f7fde98b1be.mp3",
-              "sha256": "4a72606e848329f36240cbe78919ca0a27271facce89990bc3102f7fde98b1be",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c7e96f18f46f7495ddce931b71dec02b69f4cbb66681fb59d42f997ae39ac2de.mp3",
+              "sha256": "c7e96f18f46f7495ddce931b71dec02b69f4cbb66681fb59d42f997ae39ac2de",
+              "bytes": 3644
+            },
+            "examples": [
+              {
+                "id": "conj-16-word-0",
+                "ne": "द्वार",
+                "roman": "dvār",
+                "meaning": "門",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4a72606e848329f36240cbe78919ca0a27271facce89990bc3102f7fde98b1be.mp3",
+                  "sha256": "4a72606e848329f36240cbe78919ca0a27271facce89990bc3102f7fde98b1be",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-16-word-1",
+                "ne": "द्वीप",
+                "roman": "dvīp",
+                "meaning": "島",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d7273fd172c9c20a5945feb05da431b45e88ef2b7f2fec49ec088702ce20f713.mp3",
+                  "sha256": "d7273fd172c9c20a5945feb05da431b45e88ef2b7f2fec49ec088702ce20f713",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-17",
             "ne": "न्त",
             "roman": "nta",
-            "meaning": "अन्त＝終わり",
-            "detail": "न् + त → न्त\nअन्त · anta",
-            "speech": "अन्त",
+            "meaning": "子音をつなげた形",
+            "detail": "न् + त → न्त\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "न्त",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7d3a566303a628bc623c388971e8d612636788128f88340da3d448c3655a2202.mp3",
-              "sha256": "7d3a566303a628bc623c388971e8d612636788128f88340da3d448c3655a2202",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-661585874de2cbbdbc1aec9c3182a4d0dabc7404825ee7ed2c213b5f88de51b2.mp3",
+              "sha256": "661585874de2cbbdbc1aec9c3182a4d0dabc7404825ee7ed2c213b5f88de51b2",
+              "bytes": 4076
+            },
+            "examples": [
+              {
+                "id": "conj-17-word-0",
+                "ne": "अन्त",
+                "roman": "anta",
+                "meaning": "終わり",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7d3a566303a628bc623c388971e8d612636788128f88340da3d448c3655a2202.mp3",
+                  "sha256": "7d3a566303a628bc623c388971e8d612636788128f88340da3d448c3655a2202",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-17-word-1",
+                "ne": "शान्त",
+                "roman": "śānta",
+                "meaning": "静かな",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5750c7225c32684581075289ab438d8bf6d0a08be4763101cbc18d15e794ff66.mp3",
+                  "sha256": "5750c7225c32684581075289ab438d8bf6d0a08be4763101cbc18d15e794ff66",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-18",
             "ne": "न्द",
             "roman": "nda",
-            "meaning": "बन्द＝閉まった",
-            "detail": "न् + द → न्द\nबन्द · banda",
-            "speech": "बन्द",
+            "meaning": "子音をつなげた形",
+            "detail": "न् + द → न्द\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "न्द",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-142ea3b5e2a8898ad9467708e71f432f25f4885214ec66b4416117a57eaf9449.mp3",
-              "sha256": "142ea3b5e2a8898ad9467708e71f432f25f4885214ec66b4416117a57eaf9449",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3f08cbf3a939dd5b30aec10fdaa71ce74f526946c5be1ddf9503069d9d4e63da.mp3",
+              "sha256": "3f08cbf3a939dd5b30aec10fdaa71ce74f526946c5be1ddf9503069d9d4e63da",
+              "bytes": 3932
+            },
+            "examples": [
+              {
+                "id": "conj-18-word-0",
+                "ne": "बन्द",
+                "roman": "banda",
+                "meaning": "閉まった",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-142ea3b5e2a8898ad9467708e71f432f25f4885214ec66b4416117a57eaf9449.mp3",
+                  "sha256": "142ea3b5e2a8898ad9467708e71f432f25f4885214ec66b4416117a57eaf9449",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-18-word-1",
+                "ne": "सुन्दर",
+                "roman": "sundar",
+                "meaning": "美しい",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-235b75938b7abee85fd67e2d6290d69d9fa2f227a65817284a5640858ae1e2e2.mp3",
+                  "sha256": "235b75938b7abee85fd67e2d6290d69d9fa2f227a65817284a5640858ae1e2e2",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-19",
             "ne": "प्र",
             "roman": "pra",
-            "meaning": "प्रश्न＝質問",
-            "detail": "प् + र → प्र\nप्रश्न · praśna",
-            "speech": "प्रश्न",
+            "meaning": "子音をつなげた形",
+            "detail": "प् + र → प्र\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "प्र",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2ff974a86371aec7ca98abca479021ef1f93d86011035a1c98d0ff22e00b70f7.mp3",
-              "sha256": "2ff974a86371aec7ca98abca479021ef1f93d86011035a1c98d0ff22e00b70f7",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c49f3158910d03fa23b93462e191d353653b71c5dc096201b8a1463dc2d48bde.mp3",
+              "sha256": "c49f3158910d03fa23b93462e191d353653b71c5dc096201b8a1463dc2d48bde",
+              "bytes": 3500
+            },
+            "examples": [
+              {
+                "id": "conj-19-word-0",
+                "ne": "प्रश्न",
+                "roman": "praśna",
+                "meaning": "質問",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2ff974a86371aec7ca98abca479021ef1f93d86011035a1c98d0ff22e00b70f7.mp3",
+                  "sha256": "2ff974a86371aec7ca98abca479021ef1f93d86011035a1c98d0ff22e00b70f7",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-19-word-1",
+                "ne": "प्रयास",
+                "roman": "prayās",
+                "meaning": "試み",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-942f1135a408e35843554f154ec11e51199c10766aec452cd87834ef8fa160ac.mp3",
+                  "sha256": "942f1135a408e35843554f154ec11e51199c10766aec452cd87834ef8fa160ac",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-20",
             "ne": "म्ब",
             "roman": "mba",
-            "meaning": "लम्बाइ＝長さ",
-            "detail": "म् + ब → म्ब\nलम्बाइ · lambāi",
-            "speech": "लम्बाइ",
+            "meaning": "子音をつなげた形",
+            "detail": "म् + ब → म्ब\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "म्ब",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-42e0fdf6609e97dcc8541c89d2430ecb37d48d10b85f80e32df55b8d4c02247d.mp3",
-              "sha256": "42e0fdf6609e97dcc8541c89d2430ecb37d48d10b85f80e32df55b8d4c02247d",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-64394d268c3a7fc7d01bec016c02579b04aefd1e4924cbacdf09bf0f569966dd.mp3",
+              "sha256": "64394d268c3a7fc7d01bec016c02579b04aefd1e4924cbacdf09bf0f569966dd",
+              "bytes": 3788
+            },
+            "examples": [
+              {
+                "id": "conj-20-word-0",
+                "ne": "लम्बाइ",
+                "roman": "lambāi",
+                "meaning": "長さ",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-42e0fdf6609e97dcc8541c89d2430ecb37d48d10b85f80e32df55b8d4c02247d.mp3",
+                  "sha256": "42e0fdf6609e97dcc8541c89d2430ecb37d48d10b85f80e32df55b8d4c02247d",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-20-word-1",
+                "ne": "सम्बन्ध",
+                "roman": "sambandha",
+                "meaning": "関係",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4caab2d082a033b9b1936de57549dae892c8bb596f05492a8d5af22b8d063aa6.mp3",
+                  "sha256": "4caab2d082a033b9b1936de57549dae892c8bb596f05492a8d5af22b8d063aa6",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-21",
             "ne": "म्र",
             "roman": "mra",
-            "meaning": "राम्रो＝良い",
-            "detail": "म् + र → म्र\nराम्रो · rāmro",
-            "speech": "राम्रो",
+            "meaning": "子音をつなげた形",
+            "detail": "म् + र → म्र\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "म्र",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3b4a481f866c25109ec8d5acce189b08eb52a31fcae66678f3ee49cc29812219.mp3",
-              "sha256": "3b4a481f866c25109ec8d5acce189b08eb52a31fcae66678f3ee49cc29812219",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-830e51bc86f6c71bb1e0478a5149bd98d06800846eed50fca12c6c1127ae3210.mp3",
+              "sha256": "830e51bc86f6c71bb1e0478a5149bd98d06800846eed50fca12c6c1127ae3210",
+              "bytes": 3932
+            },
+            "examples": [
+              {
+                "id": "conj-21-word-0",
+                "ne": "राम्रो",
+                "roman": "rāmro",
+                "meaning": "良い",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3b4a481f866c25109ec8d5acce189b08eb52a31fcae66678f3ee49cc29812219.mp3",
+                  "sha256": "3b4a481f866c25109ec8d5acce189b08eb52a31fcae66678f3ee49cc29812219",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-21-word-1",
+                "ne": "नम्र",
+                "roman": "namra",
+                "meaning": "礼儀正しい",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-53dcbb00a4de72d8c4b463157e921fd6c7559474d708195384bc725318199ca0.mp3",
+                  "sha256": "53dcbb00a4de72d8c4b463157e921fd6c7559474d708195384bc725318199ca0",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-22",
             "ne": "ल्य",
             "roman": "lya",
-            "meaning": "मूल्य＝価格・価値",
-            "detail": "ल् + य → ल्य\nमूल्य · mūlya",
-            "speech": "मूल्य",
+            "meaning": "子音をつなげた形",
+            "detail": "ल् + य → ल्य\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "ल्य",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f6c96224bbbd9543884cbf9d404b84dd94f38a37e44f0c2305b363ef79ff5f73.mp3",
-              "sha256": "f6c96224bbbd9543884cbf9d404b84dd94f38a37e44f0c2305b363ef79ff5f73",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-eaf3d588adee7c6d0525259d22d4bb9948e5dcf203df8439782b06645814c5ab.mp3",
+              "sha256": "eaf3d588adee7c6d0525259d22d4bb9948e5dcf203df8439782b06645814c5ab",
+              "bytes": 3932
+            },
+            "examples": [
+              {
+                "id": "conj-22-word-0",
+                "ne": "मूल्य",
+                "roman": "mūlya",
+                "meaning": "価格・価値",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f6c96224bbbd9543884cbf9d404b84dd94f38a37e44f0c2305b363ef79ff5f73.mp3",
+                  "sha256": "f6c96224bbbd9543884cbf9d404b84dd94f38a37e44f0c2305b363ef79ff5f73",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-22-word-1",
+                "ne": "कल्याण",
+                "roman": "kalyāṇ",
+                "meaning": "幸福・福祉",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b0591835979fca6a4e9ad7af62bdb36b3d0e9585e238ee4cabdc1d231bbef5aa.mp3",
+                  "sha256": "b0591835979fca6a4e9ad7af62bdb36b3d0e9585e238ee4cabdc1d231bbef5aa",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-23",
             "ne": "व्य",
             "roman": "vya",
-            "meaning": "व्यस्त＝忙しい",
-            "detail": "व् + य → व्य\nव्यस्त · vyasta",
-            "speech": "व्यस्त",
+            "meaning": "子音をつなげた形",
+            "detail": "व् + य → व्य\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "व्य",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-20a37df8c1227c270e84114c7924e2851ee8b02be84a8e5026740f0e58134bad.mp3",
-              "sha256": "20a37df8c1227c270e84114c7924e2851ee8b02be84a8e5026740f0e58134bad",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6e5dca6c47c3fa9c25d7a2b45b52dc52d1f72e2233157a78439912ee0492762a.mp3",
+              "sha256": "6e5dca6c47c3fa9c25d7a2b45b52dc52d1f72e2233157a78439912ee0492762a",
+              "bytes": 3788
+            },
+            "examples": [
+              {
+                "id": "conj-23-word-0",
+                "ne": "व्यस्त",
+                "roman": "vyasta",
+                "meaning": "忙しい",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-20a37df8c1227c270e84114c7924e2851ee8b02be84a8e5026740f0e58134bad.mp3",
+                  "sha256": "20a37df8c1227c270e84114c7924e2851ee8b02be84a8e5026740f0e58134bad",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-23-word-1",
+                "ne": "व्यापार",
+                "roman": "vyāpār",
+                "meaning": "商業・商売",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3272f47b89d928f360f220fd8e95dc1354a38d4eb71ea440e2aa46793268e451.mp3",
+                  "sha256": "3272f47b89d928f360f220fd8e95dc1354a38d4eb71ea440e2aa46793268e451",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-24",
             "ne": "स्त",
             "roman": "sta",
-            "meaning": "सस्तो＝安い",
-            "detail": "स् + त → स्त\nसस्तो · sasto",
-            "speech": "सस्तो",
+            "meaning": "子音をつなげた形",
+            "detail": "स् + त → स्त\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "स्त",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6d945747fc23898bbff497e29d0e53c299485c7d6a3ec9b51a1705570fa0fa7d.mp3",
-              "sha256": "6d945747fc23898bbff497e29d0e53c299485c7d6a3ec9b51a1705570fa0fa7d",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-93d513f2da8f516efb6434a92696ff4ead206a2b688aeb067f6ad99610db8c2a.mp3",
+              "sha256": "93d513f2da8f516efb6434a92696ff4ead206a2b688aeb067f6ad99610db8c2a",
+              "bytes": 4364
+            },
+            "examples": [
+              {
+                "id": "conj-24-word-0",
+                "ne": "सस्तो",
+                "roman": "sasto",
+                "meaning": "安い",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6d945747fc23898bbff497e29d0e53c299485c7d6a3ec9b51a1705570fa0fa7d.mp3",
+                  "sha256": "6d945747fc23898bbff497e29d0e53c299485c7d6a3ec9b51a1705570fa0fa7d",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-24-word-1",
+                "ne": "पुस्तक",
+                "roman": "pustak",
+                "meaning": "本",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-15b6dbbc1f8f457bb90b192c5e36f05ef139401996910ffee7bc567ab0363db7.mp3",
+                  "sha256": "15b6dbbc1f8f457bb90b192c5e36f05ef139401996910ffee7bc567ab0363db7",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-25",
             "ne": "स्थ",
             "roman": "stha",
-            "meaning": "स्थान＝場所",
-            "detail": "स् + थ → स्थ\nस्थान · sthān",
-            "speech": "स्थान",
+            "meaning": "子音をつなげた形",
+            "detail": "स् + थ → स्थ\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "स्थ",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-ad31adb5af430b3bd4dfffe20b5145041bb4d0dfb6d14f9b8886123634b033ef.mp3",
-              "sha256": "ad31adb5af430b3bd4dfffe20b5145041bb4d0dfb6d14f9b8886123634b033ef",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9b0aaf608595d86bb438afe9dd375e9357e79cc41011c0c40e42d35b08edb141.mp3",
+              "sha256": "9b0aaf608595d86bb438afe9dd375e9357e79cc41011c0c40e42d35b08edb141",
+              "bytes": 4364
+            },
+            "examples": [
+              {
+                "id": "conj-25-word-0",
+                "ne": "स्थान",
+                "roman": "sthān",
+                "meaning": "場所",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-ad31adb5af430b3bd4dfffe20b5145041bb4d0dfb6d14f9b8886123634b033ef.mp3",
+                  "sha256": "ad31adb5af430b3bd4dfffe20b5145041bb4d0dfb6d14f9b8886123634b033ef",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-25-word-1",
+                "ne": "अवस्था",
+                "roman": "avasthā",
+                "meaning": "状態",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3c3840be9fa3184016dd724391c1f7fa3e006706ba00576aa6e329ee0de5efd5.mp3",
+                  "sha256": "3c3840be9fa3184016dd724391c1f7fa3e006706ba00576aa6e329ee0de5efd5",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-26",
             "ne": "स्क",
             "roman": "ska",
-            "meaning": "स्कुल＝学校",
-            "detail": "स् + क → स्क\nस्कुल · skul",
-            "speech": "स्कुल",
+            "meaning": "子音をつなげた形",
+            "detail": "स् + क → स्क\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "स्क",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d9b543e97aae4987831424e12b11508bc76739074235f5ac5785f5bf7018476b.mp3",
-              "sha256": "d9b543e97aae4987831424e12b11508bc76739074235f5ac5785f5bf7018476b",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e2bb755ab486ee511c38fdbf5a6d39b176604b2cffec0753c919e436bb2c1e6f.mp3",
+              "sha256": "e2bb755ab486ee511c38fdbf5a6d39b176604b2cffec0753c919e436bb2c1e6f",
+              "bytes": 4508
+            },
+            "examples": [
+              {
+                "id": "conj-26-word-0",
+                "ne": "स्कुल",
+                "roman": "skul",
+                "meaning": "学校",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d9b543e97aae4987831424e12b11508bc76739074235f5ac5785f5bf7018476b.mp3",
+                  "sha256": "d9b543e97aae4987831424e12b11508bc76739074235f5ac5785f5bf7018476b",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-26-word-1",
+                "ne": "नमस्कार",
+                "roman": "namaskār",
+                "meaning": "こんにちは（丁寧な挨拶）",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-aeaf31e2f4ceb26505806fdaaad30df4b531f0c2809afff3577ed09779ac30cc.mp3",
+                  "sha256": "aeaf31e2f4ceb26505806fdaaad30df4b531f0c2809afff3577ed09779ac30cc",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-27",
             "ne": "र्ख",
             "roman": "rkha",
-            "meaning": "पर्खनु＝待つ",
-            "detail": "र् + ख → र्ख\nपर्खनु · parkhanu",
-            "speech": "पर्खनु",
+            "meaning": "子音をつなげた形",
+            "detail": "र् + ख → र्ख\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "र्ख",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-20056c1479e972bde4aa597b7e12309d252917931d9a2689d45981a2d503f088.mp3",
-              "sha256": "20056c1479e972bde4aa597b7e12309d252917931d9a2689d45981a2d503f088",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e636fd285edc352d59499098bf96466179452222e08e66ae377ceb0efe88e9be.mp3",
+              "sha256": "e636fd285edc352d59499098bf96466179452222e08e66ae377ceb0efe88e9be",
+              "bytes": 4076
+            },
+            "examples": [
+              {
+                "id": "conj-27-word-0",
+                "ne": "पर्खनु",
+                "roman": "parkhanu",
+                "meaning": "待つ",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-20056c1479e972bde4aa597b7e12309d252917931d9a2689d45981a2d503f088.mp3",
+                  "sha256": "20056c1479e972bde4aa597b7e12309d252917931d9a2689d45981a2d503f088",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-27-word-1",
+                "ne": "मूर्ख",
+                "roman": "mūrkha",
+                "meaning": "愚かな",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-968e982573b660c8fac839e5190a816f8965f2a625a88dfa7eab18a3f1a5504e.mp3",
+                  "sha256": "968e982573b660c8fac839e5190a816f8965f2a625a88dfa7eab18a3f1a5504e",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-28",
             "ne": "र्त",
             "roman": "rta",
-            "meaning": "शर्त＝条件",
-            "detail": "र् + त → र्त\nशर्त · śarta",
-            "speech": "शर्त",
+            "meaning": "子音をつなげた形",
+            "detail": "र् + त → र्त\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "र्त",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f5497656f5415e0d6f35e414a33fa93421accfd7c365c30a0b041958d96f69b0.mp3",
-              "sha256": "f5497656f5415e0d6f35e414a33fa93421accfd7c365c30a0b041958d96f69b0",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6e4bfa8495ce8b47cd1dcd5c5a0d117089b7e0e2e1aad5105799fbc49e333786.mp3",
+              "sha256": "6e4bfa8495ce8b47cd1dcd5c5a0d117089b7e0e2e1aad5105799fbc49e333786",
+              "bytes": 4076
+            },
+            "examples": [
+              {
+                "id": "conj-28-word-0",
+                "ne": "शर्त",
+                "roman": "śarta",
+                "meaning": "条件",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f5497656f5415e0d6f35e414a33fa93421accfd7c365c30a0b041958d96f69b0.mp3",
+                  "sha256": "f5497656f5415e0d6f35e414a33fa93421accfd7c365c30a0b041958d96f69b0",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-28-word-1",
+                "ne": "कर्ता",
+                "roman": "kartā",
+                "meaning": "行為をする人・主語",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8253d7a4ded89cb6659084b0e1884719528e7056c9e165fbecb9736459c7bbe7.mp3",
+                  "sha256": "8253d7a4ded89cb6659084b0e1884719528e7056c9e165fbecb9736459c7bbe7",
+                  "bytes": 11232
+                }
+              }
+            ]
           },
           {
             "id": "conj-29",
             "ne": "र्ष",
             "roman": "rṣa",
-            "meaning": "वर्ष＝年",
-            "detail": "र् + ष → र्ष\nवर्ष · varṣa",
-            "speech": "वर्ष",
+            "meaning": "子音をつなげた形",
+            "detail": "र् + ष → र्ष\nまず文字の音を聞き、次に例単語で確かめよう。単語の中では母音が落ちたり、音が変わることがあります。",
+            "speech": "र्ष",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8595cdb0632a464911c5ec6deb4c525a2fe8280cb8a891bb71077c38575b36b3.mp3",
-              "sha256": "8595cdb0632a464911c5ec6deb4c525a2fe8280cb8a891bb71077c38575b36b3",
-              "bytes": 11232
-            }
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a50b76721fc8d391c936bc5739420d1453ada5ae690214116e1991197d4d6d84.mp3",
+              "sha256": "a50b76721fc8d391c936bc5739420d1453ada5ae690214116e1991197d4d6d84",
+              "bytes": 4076
+            },
+            "examples": [
+              {
+                "id": "conj-29-word-0",
+                "ne": "वर्ष",
+                "roman": "varṣa",
+                "meaning": "年",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8595cdb0632a464911c5ec6deb4c525a2fe8280cb8a891bb71077c38575b36b3.mp3",
+                  "sha256": "8595cdb0632a464911c5ec6deb4c525a2fe8280cb8a891bb71077c38575b36b3",
+                  "bytes": 11232
+                }
+              },
+              {
+                "id": "conj-29-word-1",
+                "ne": "हर्ष",
+                "roman": "harṣa",
+                "meaning": "喜び",
+                "audio": {
+                  "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6c60168b10136e44e7ae419bfe27e0b7b11ab4beb259bb4044a37649e21949a0.mp3",
+                  "sha256": "6c60168b10136e44e7ae419bfe27e0b7b11ab4beb259bb4044a37649e21949a0",
+                  "bytes": 11232
+                }
+              }
+            ]
           }
         ]
       },
@@ -234737,9 +236513,9 @@
             "detail": "ञ ＋ अ（もとの母音） → ञ",
             "speech": "ञ",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-169be98990f3f649ee2a75f612d0ac4d115f40cbd9ec0edbb006bcc72706e5a9.mp3",
-              "sha256": "169be98990f3f649ee2a75f612d0ac4d115f40cbd9ec0edbb006bcc72706e5a9",
-              "bytes": 11232
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8e99e2c4f4e2ff24bc1d0c9ab3aa1cb1454c6085815a1e1010a7aa00da2b61a5.mp3",
+              "sha256": "8e99e2c4f4e2ff24bc1d0c9ab3aa1cb1454c6085815a1e1010a7aa00da2b61a5",
+              "bytes": 3356
             }
           },
           {
@@ -237717,9 +239493,9 @@
             "detail": "श ＋ अ（もとの母音） → श",
             "speech": "श",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a4a7982baf9ee37790616c8b63c4fed5b34efcfe25d45c8dd52021b786e13e01.mp3",
-              "sha256": "a4a7982baf9ee37790616c8b63c4fed5b34efcfe25d45c8dd52021b786e13e01",
-              "bytes": 11232
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce.mp3",
+              "sha256": "401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce",
+              "bytes": 3500
             }
           },
           {
@@ -237866,9 +239642,9 @@
             "detail": "ष ＋ अ（もとの母音） → ष",
             "speech": "ष",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5363602b56a96de8050891579c0f9e1f447f44e93dcd0109f4a95679af6a4004.mp3",
-              "sha256": "5363602b56a96de8050891579c0f9e1f447f44e93dcd0109f4a95679af6a4004",
-              "bytes": 11232
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161.mp3",
+              "sha256": "50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161",
+              "bytes": 3500
             }
           },
           {
@@ -238015,9 +239791,9 @@
             "detail": "स ＋ अ（もとの母音） → स",
             "speech": "स",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-05c5b8cee93f0c8bc13d91f54bc3cb249cbb1cbd11558dbb22538906f1b01eb9.mp3",
-              "sha256": "05c5b8cee93f0c8bc13d91f54bc3cb249cbb1cbd11558dbb22538906f1b01eb9",
-              "bytes": 11232
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0.mp3",
+              "sha256": "fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0",
+              "bytes": 3500
             }
           },
           {

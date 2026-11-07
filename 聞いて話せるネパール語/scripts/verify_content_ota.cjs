@@ -23,6 +23,8 @@ for(const lang of ['ja','en']){
     const invalid=structuredClone(actualOverlay),step=invalid.learningPathV3.steps[0];step.items[1]=step.items[0];assert.throws(()=>models.validateContent(actualCore,invalid,lang));
     const badCloze=structuredClone(actualOverlay);Object.values(badCloze.learningPathV3.exercises)[0].selection.prefix='broken';assert.throws(()=>models.validateContent(actualCore,badCloze,lang));
     const badLetters=structuredClone(actualOverlay);badLetters.lettersSounds.combinations[0].samples.pop();assert.throws(()=>models.validateContent(actualCore,badLetters,lang));
+    const badWords=structuredClone(actualOverlay);badWords.lettersSounds.sections.find(s=>s.id==='conjuncts').samples.find(s=>s.examples).examples[0].ne='wrong';assert.throws(()=>models.validateContent(actualCore,badWords,lang));
+    const missingWordAudio=structuredClone(actualOverlay);delete missingWordAudio.lettersSounds.sections.find(s=>s.id==='vowels').samples[0].examples[0].audio;assert.throws(()=>models.validateContent(actualCore,missingWordAudio,lang));
   }
 }
 const work=compile(DIR+'src/content/otaWork.ts',name=>name==='expo-file-system/legacy'?FS:require(name));

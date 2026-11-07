@@ -15,9 +15,9 @@ const modules=${JSON.stringify(modules)},cache={},overlays=${JSON.stringify(over
 function require(n){if(n.startsWith('.'))n=n.split('/').pop();if(cache[n])return cache[n].exports;const m={exports:{}};cache[n]=m;if(!modules[n])throw Error('Missing '+n);new Function('require','module','exports','process',modules[n])(require,m,m.exports,{env:{NODE_ENV:'production'}});return m.exports;}
 const React=require('react'),h=React.createElement;window.caseInfo={lang:'ja',scale:1};window.route={name:'HomeTab'};window.events=[];window.failStorage=false;
 const flat=s=>Object.assign({},...(Array.isArray(s)?s.flat(Infinity):[s]).filter(Boolean));
-function css(style,view=false){const s=flat(style),out=view?{position:'relative',display:'flex',flexDirection:'column',flexShrink:0,minWidth:0,borderWidth:0,borderStyle:'solid'}:{};for(const[k,v]of Object.entries(s)){
+function css(style,view=false){const s=flat(style),out=view?{position:'relative',display:'flex',flexDirection:'column',flexShrink:0,minWidth:0,minHeight:0,borderWidth:0,borderStyle:'solid'}:{};for(const[k,v]of Object.entries(s)){
 if(k==='paddingHorizontal'){out.paddingLeft=v;out.paddingRight=v;}else if(k==='paddingVertical'){out.paddingTop=v;out.paddingBottom=v;}else if(k==='marginHorizontal'){out.marginLeft=v;out.marginRight=v;}else if(k==='marginVertical'){out.marginTop=v;out.marginBottom=v;}else if(k==='lineHeight')out[k]=v*window.caseInfo.scale+'px';else if(k==='fontSize')out[k]=v*window.caseInfo.scale;else out[k]=v;}return out;}
-function View(p){const ref=React.useRef(null);React.useEffect(()=>{if(!p.onLayout)return;const r=new ResizeObserver(()=>p.onLayout({nativeEvent:{layout:{width:ref.current.clientWidth,height:ref.current.clientHeight}}}));r.observe(ref.current);return()=>r.disconnect();},[p.onLayout]);return h('div',{ref,style:css(p.style,true)},p.children);}
+function View(p){const ref=React.useRef(null);React.useEffect(()=>{if(!p.onLayout)return;const r=new ResizeObserver(()=>p.onLayout({nativeEvent:{layout:{width:ref.current.clientWidth,height:ref.current.clientHeight}}}));r.observe(ref.current);return()=>r.disconnect();},[p.onLayout]);return h('div',{ref,'data-testid':p.testID,style:css(p.style,true)},p.children);}
 function Text(p){return h('span',{role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...css(p.style)}},p.children);}
 function Pressable(p){return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,'aria-selected':p.accessibilityState?.selected,disabled:p.disabled,onClick:p.onPress,'data-testid':p.testID,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
 const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y)}));return h('div',{ref:el,style:{overflowY:p.horizontal?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
@@ -31,17 +31,17 @@ cache['react-native-safe-area-context']={exports:{useSafeAreaInsets:()=>({top:20
 cache['react-native-svg']={exports:{__esModule:true,default:()=>null,Line:()=>null,Path:()=>null,Polyline:()=>null}};
 cache.useCardFlip={exports:{useCardFlip:()=>({flip:cb=>cb(),animatedStyle:{}})}};
 cache.useHorizontalSwipe={exports:{useHorizontalSwipe:()=>({})}};
-cache['expo-audio']={exports:{useAudioPlayer:src=>React.useMemo(()=>({source:src,seekTo:async()=>{},pause:()=>{},play:()=>window.events.push(['audio',src])}),[src]),useAudioPlayerStatus:p=>({isLoaded:!!p.source,playing:false})}};
+cache['expo-audio']={exports:{useAudioPlayer:src=>{const p=React.useMemo(()=>({source:src,seekTo:async()=>{},pause:()=>window.activeAudio.delete(p),play:()=>{window.activeAudio.add(p);window.events.push(['audio',src]);}}),[src]);React.useEffect(()=>()=>window.activeAudio.delete(p),[p]);return p;},useAudioPlayerStatus:p=>({isLoaded:!!p.source,playing:false,didJustFinish:window.audioEnded})}};
 cache['@react-native-async-storage/async-storage']={exports:{getItem:async k=>localStorage.getItem(k),setItem:async(k,v)=>{if(window.failStorage)throw Error('full');localStorage.setItem(k,v);}}};
-const nav={isFocused:()=>true,canGoBack:()=>window.stack.length>0,navigate:(name,params)=>{window.events.push(['navigate',name,params]);window.stack.push(window.route);window.route={name,params};window.redraw();},replace:(name,params)=>{window.events.push(['replace',name,params]);window.route={name,params};window.redraw();},goBack:()=>{window.route=window.stack.pop()??{name:'HomeTab'};window.redraw();},setOptions:()=>{}};
+const nav={isFocused:()=>true,canGoBack:()=>window.stack.length>0,navigate:(name,params)=>{window.events.push(['navigate',name,params]);window.stack.push(window.route);window.route={name,params};window.redraw();},replace:(name,params)=>{window.events.push(['replace',name,params]);window.route={name,params};window.redraw();},goBack:()=>{window.route=window.stack.pop()??{name:'HomeTab'};window.redraw();},setOptions:options=>{window.screenOptions=options;window.redraw?.();}};
 cache['@react-navigation/native']={exports:{useNavigation:()=>nav,useRoute:()=>window.route,useFocusEffect:cb=>React.useEffect(cb,[cb])}};
 cache.heroImages={exports:{useHeroImage:()=>1,ModeHero:()=>h('img',{src:${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))},style:{width:'100%',aspectRatio:'3/1',objectFit:'contain',borderRadius:16}})}};
 cache.grammarGuide={exports:{useGrammarGuide:()=>window.data.GRAMMAR_GUIDE,useGrammarGuideImageResolver:()=>async()=>null}};
 const root=require('react-dom/client').createRoot(document.getElementById('root')),Provider=require('LearningContext').LearningProvider;let generation=0;
 const AudioProvider=require('LearningSound').LearningAudioProvider,resolveAudio=async a=>({uri:a.url});
 const names={HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen'};
-function Frame(){const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['Practice','LettersSounds','LearningPath'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
-window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];
+function Frame(){const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['Practice','LettersSounds','LearningPath'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
+window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];window.activeAudio=new Set();window.audioEnded=false;
 const neAudio={},neGram={},l1Audio={},l1Gram={};for(const[k,rows]of Object.entries(core.examplesNe))rows.forEach((_,i)=>{neAudio[k+'-'+(i+1)]='ne/'+k+'-'+(i+1);l1Audio[k+'-'+(i+1)]=lang+'/'+k+'-'+(i+1);});for(const[k,id]of Object.entries(core.grammarAudioRefs??Object.fromEntries(Object.entries(core.grammarNe).flatMap(([t,rows])=>rows.map((_,i)=>[t+'-'+(i+1),t+'-'+(i+1)]))))){if(id){neGram[id]='ne/'+id;l1Gram[id]=lang+'/'+id;}}
 window.data=require('compose').composePack({...core,nepaliAudio:neAudio,nepaliGrammarAudio:neGram},{...overlays[lang],nativeLang:lang,l1Audio,l1GrammarAudio:l1Gram},{version:'test'});
 require('react-dom').flushSync(()=>root.render(h(Provider,{storageKey:'test-study',key:++generation},h(AudioProvider,{resolve:resolveAudio},h(Frame)))));await new Promise(r=>setTimeout(r,30));};
@@ -54,6 +54,58 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(process.argv.includes('--letters-only')){
+      for(const lang of ['ja','en']){
+        const en=lang==='en',b=name=>page.getByRole('button',{name,exact:true}),by=id=>page.getByTestId(id);
+        await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);await page.evaluate(()=>window.navigate('LettersSounds'));
+        const letters=await page.evaluate(()=>window.data.LETTERS_SOUNDS);
+        assert.equal(await page.locator('[data-testid^="letters-category-"]').count(),6);
+        await page.screenshot({path:path.join(work,`previews/letters-${lang}-library.png`),fullPage:true});
+        const sectionCategory=id=>['start','vowels','combinations','conjuncts'].includes(id)?id:['marks','numbers'].includes(id)?'marks':'consonants';
+        const play=async(id,url)=>{const before=await page.evaluate(()=>window.events.filter(e=>e[0]==='audio').length);await by(id).click();await page.waitForFunction(({before,url})=>window.events.filter(e=>e[0]==='audio').length===before+1&&window.events.filter(e=>e[0]==='audio').at(-1)[1].uri===url,{before,url});assert.equal(await page.evaluate(()=>window.activeAudio.size),1,'Only one audio player may be active');};
+        let total=0;
+        for(const section of letters.sections.filter(s=>s.id!=='combinations')){
+          await by('letters-category-'+sectionCategory(section.id)).click();
+          if(['marks','numbers','velar','affricate','retroflex','dental','labial','other'].includes(section.id))await by('letters-section-'+section.id).click();
+          const samples=section.samples.filter(s=>s.audio);
+          for(let i=0;i<samples.length;i++){
+            const s=samples[i];assert.equal(await by('letters-play-sound').getAttribute('aria-label'),`${en?'Play sound':'音を聞く'}: ${s.speech??s.ne}`);
+            await play('letters-play-sound',s.audio.url);
+            if(s.examples){assert.equal(s.examples.length,2);for(let j=0;j<2;j++){assert.equal(await by('letters-play-word-'+j).getAttribute('aria-label'),`${en?'Play word':'単語を聞く'}: ${s.examples[j].ne}`);await play('letters-play-word-'+j,s.examples[j].audio.url);}total++;}
+            else assert.equal(await page.locator('[data-testid^="letters-play-word-"]').count(),0);
+            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${s.id} overflow`);
+            if(i===0&&['vowels','conjuncts'].includes(section.id)){await b(en?'Stop':'停止').click();await by('letters-sound-card').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(work,`previews/letters-${lang}-${section.id}.png`)});}
+            if(i<samples.length-1){await by('letters-next').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0,'Selecting the next letter must stop the prior audio');}
+            else assert(await by('letters-next').isDisabled());
+          }
+          await b(en?'Mark section as reviewed':'この項目を確認済みにする').click();await b(en?'Reviewed ✓':'確認済み ✓').waitFor();
+          await by('letters-library').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
+        }
+        assert.equal(total,74);
+        await by('letters-category-combinations').click();
+        for(const row of letters.combinations){
+          await b(`${en?'Consonant':'子音'} ${row.consonant}`).click();
+          for(let i=0;i<11;i++){
+            const s=row.samples[i];assert.equal(await by('letters-play-sound').getAttribute('aria-label'),`${en?'Play sound':'音を聞く'}: ${s.speech??s.ne}`);
+            if(i===0||i===10)await play('letters-play-sound',s.audio.url);
+            if(i<10)await by('letters-next').click();
+          }
+        }
+        await b(en?'Choose a letter ▦':'文字を選ぶ ▦').click();await b(`${en?'Choose':'選ぶ'} ${letters.combinations.at(-1).samples[2].ne}`).click();
+        assert.equal(await page.locator('[aria-expanded="true"]').count(),0,'Letter selector closes after choosing');
+        await by('letters-play-sound').click();await page.waitForFunction(()=>window.activeAudio.size===1);await page.evaluate(()=>{window.audioEnded=true;window.redraw();});await page.waitForFunction(()=>window.activeAudio.size===0);await page.evaluate(()=>{window.audioEnded=false;});
+        await by('letters-library').click();await b(en?'Back':'戻る').click();assert.equal(await page.evaluate(()=>window.route.name),'HomeTab');
+        for(const[width,height,scale]of[[390,844,1],[320,568,1.4]]){
+          await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),'Library overflow');
+          for(const category of ['vowels','consonants','combinations','conjuncts','marks']){
+            await by('letters-category-'+category).click();await b(en?'Choose a letter ▦':'文字を選ぶ ▦').click();assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${category} narrow/large text overflow`);await by('letters-library').click();
+          }
+        }
+        console.log(`PASS ${lang}: 74 letter/word panels, 222 audio routes, 363 vowel forms, exclusive playback, stop/end/back, save and 320px/large text.`);
+      }
+      assert.deepEqual(errors,[]);return;
+    }
     if(process.argv.includes('--reader-only')){
       for(const lang of ['ja','en']){
         const en=lang==='en',labels=en?['Core rules','Forms & words','Practice','Take a break']:['基本ルール','活用・語彙','練習問題','一休み'];

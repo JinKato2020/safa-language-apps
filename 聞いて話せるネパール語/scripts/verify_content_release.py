@@ -54,6 +54,11 @@ def verify(folder):
             assert all(len(row['samples'])==11 for row in letters['combinations'])
             for s in [s for section in letters['sections'] for s in section['samples'] if s.get('audio')]+[s for row in letters['combinations'] for s in row['samples']]:
                 assert s['audio']['bytes']>0 and len(s['audio']['sha256'])==64
+                if s['id'].startswith(('v-','c-','conj-')):
+                    assert len(s.get('examples',[]))==2
+                    for word in s['examples']:
+                        assert s['ne'] in word['ne'] and word['roman'] and word['meaning']
+                        assert word['audio']['bytes']>0 and len(word['audio']['sha256'])==64
         stats[lang]={'guides':len(guides),'courseSteps':len(o['learningPath']['steps']),'practiceQuestions':len(o.get('learningPathV3',{}).get('exercises',{}))*3,'audioFiles':len(l['audio']['files'])}
     print(json.dumps({'version':m['version'],'languages':stats,'conversation':sum(map(len,core['examplesNe'].values())),'grammar':sum(map(len,core['grammarNe'].values())),'words':sum(map(len,core['wordsNe'].values()))}))
 if __name__=='__main__':

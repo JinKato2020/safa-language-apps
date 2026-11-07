@@ -1,0 +1,586 @@
+{
+  "श": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो श हो। यो ष हो। यो स हो।",
+    "source": "音声生成ソース/approved-sibilants.mp3",
+    "start": 0.3935416666666667,
+    "end": 0.5710416666666667,
+    "wordBoundary": {
+      "text": "श",
+      "start": 0.3125,
+      "duration": 0.15,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce",
+    "userApprovedSource": true,
+    "alignmentCorrelation": 0.9972962052454506,
+    "sourceSha256": "0d03ea5472453387a07dc2900e7dd50423cefaaee97e43dec58b45e93238da6d"
+  },
+  "ष": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो श हो। यो ष हो। यो स हो।",
+    "source": "音声生成ソース/approved-sibilants.mp3",
+    "start": 1.8935416666666667,
+    "end": 2.0585416666666667,
+    "wordBoundary": {
+      "text": "ष",
+      "start": 1.8125,
+      "duration": 0.1375,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161",
+    "userApprovedSource": true,
+    "alignmentCorrelation": 0.9972962052454506,
+    "sourceSha256": "0d03ea5472453387a07dc2900e7dd50423cefaaee97e43dec58b45e93238da6d"
+  },
+  "स": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो श हो। यो ष हो। यो स हो।",
+    "source": "音声生成ソース/approved-sibilants.mp3",
+    "start": 3.3685416666666668,
+    "end": 3.5335416666666672,
+    "wordBoundary": {
+      "text": "स",
+      "start": 3.2875,
+      "duration": 0.1375,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0",
+    "userApprovedSource": true,
+    "alignmentCorrelation": 0.9972962052454506,
+    "sourceSha256": "0d03ea5472453387a07dc2900e7dd50423cefaaee97e43dec58b45e93238da6d"
+  },
+  "ञ": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो ञ हो।",
+    "source": "音声生成ソース/context-ed19a924b3dc8010.wav",
+    "start": 0.33499999999999996,
+    "end": 0.4875,
+    "wordBoundary": {
+      "text": "ञ",
+      "start": 0.35,
+      "duration": 0.125,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "8e99e2c4f4e2ff24bc1d0c9ab3aa1cb1454c6085815a1e1010a7aa00da2b61a5",
+    "userApprovedSource": false
+  },
+  "क्ष": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो क्ष हो।",
+    "source": "音声生成ソース/context-6d78d61ee0f1a5b0.wav",
+    "start": 0.2975,
+    "end": 0.5,
+    "wordBoundary": {
+      "text": "क्ष",
+      "start": 0.3125,
+      "duration": 0.175,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "f641ddcde2f102d20698757ca5327eb6aac4bb0f54a02091115183559b973e58",
+    "userApprovedSource": false
+  },
+  "त्र": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो त्र हो।",
+    "source": "音声生成ソース/context-358d4f59123b2791.wav",
+    "start": 0.3225,
+    "end": 0.5125,
+    "wordBoundary": {
+      "text": "त्र",
+      "start": 0.3375,
+      "duration": 0.1625,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "16ed25e0e36f510dc3c061e5223dd4ccbe1180ca34eab31261040bdf79c3a7d2",
+    "userApprovedSource": false
+  },
+  "ज्ञ": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो ज्ञ हो।",
+    "source": "音声生成ソース/context-2ed1c3bf93be3244.wav",
+    "start": 0.3475,
+    "end": 0.575,
+    "wordBoundary": {
+      "text": "ज्ञ",
+      "start": 0.3625,
+      "duration": 0.2,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "5dcca6ea9a98938bdbd939c0f2bbc452a7e9b1c29b7014b83d97d43b65c1a004",
+    "userApprovedSource": false
+  },
+  "श्र": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो श्र हो।",
+    "source": "音声生成ソース/context-76b072e6c3fb0028.wav",
+    "start": 0.285,
+    "end": 0.5375000000000001,
+    "wordBoundary": {
+      "text": "श्र",
+      "start": 0.3,
+      "duration": 0.225,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "f10078bb23e9e2ada13cd22016bc10e3f20055ca6810e3eac680fdac04076cde",
+    "userApprovedSource": false
+  },
+  "क्क": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो क्क हो।",
+    "source": "音声生成ソース/context-f550cb57de76dc60.wav",
+    "start": 0.3475,
+    "end": 0.6000000000000001,
+    "wordBoundary": {
+      "text": "क्क",
+      "start": 0.3625,
+      "duration": 0.225,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "45e3e2f35cd3cec2b5c41040acf7a4ad5a91ed08b7569e88ea60466f99240002",
+    "userApprovedSource": false
+  },
+  "क्त": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो क्त हो।",
+    "source": "音声生成ソース/context-9e9fc5f00b2a0fe3.wav",
+    "start": 0.3225,
+    "end": 0.5375000000000001,
+    "wordBoundary": {
+      "text": "क्त",
+      "start": 0.3375,
+      "duration": 0.1875,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "38720352962b06150a845923e02e2893a0c59fb1f7adedab577ab0318accac84",
+    "userApprovedSource": false
+  },
+  "क्र": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो क्र हो।",
+    "source": "音声生成ソース/context-6910232f56c41349.wav",
+    "start": 0.3475,
+    "end": 0.55,
+    "wordBoundary": {
+      "text": "क्र",
+      "start": 0.3625,
+      "duration": 0.175,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "26416a55b64040860cbda3dea1c495b339bf8e8bef0d37704f3d37cc1d190caf",
+    "userApprovedSource": false
+  },
+  "ग्र": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो ग्र हो।",
+    "source": "音声生成ソース/context-aa73f08d755bd0ae.wav",
+    "start": 0.3475,
+    "end": 0.5625,
+    "wordBoundary": {
+      "text": "ग्र",
+      "start": 0.3625,
+      "duration": 0.1875,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "88aa463242b066a32cc969dd7c6c461ca6a0099d031c7bf55d50a245ddb7054f",
+    "userApprovedSource": false
+  },
+  "ङ्ग": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो ङ्ग हो।",
+    "source": "音声生成ソース/context-64574d0cf50a42a6.wav",
+    "start": 0.2975,
+    "end": 0.4875,
+    "wordBoundary": {
+      "text": "ङ्ग",
+      "start": 0.3125,
+      "duration": 0.1625,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "5001b6d36ec0ea1f157c62ab15b791eea2b3ac338ab08553ecc7d26037d1805c",
+    "userApprovedSource": false
+  },
+  "ञ्च": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो ञ्च हो।",
+    "source": "音声生成ソース/context-3d65675634646b08.wav",
+    "start": 0.3225,
+    "end": 0.5625,
+    "wordBoundary": {
+      "text": "ञ्च",
+      "start": 0.3375,
+      "duration": 0.2125,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "adbbfc3b82d9688f0b1c191c71957f47d01856d3e4444fa8064e2b92ea2056f4",
+    "userApprovedSource": false
+  },
+  "ञ्ज": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो ञ्ज हो।",
+    "source": "音声生成ソース/context-7b532485930f0937.wav",
+    "start": 0.3225,
+    "end": 0.55,
+    "wordBoundary": {
+      "text": "ञ्ज",
+      "start": 0.3375,
+      "duration": 0.2,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "89f15760652bd343721704a38863d4ec22918689578877d7fab182be350e0f1c",
+    "userApprovedSource": false
+  },
+  "ट्ट": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो ट्ट हो।",
+    "source": "音声生成ソース/context-044d332ebe5589d5.wav",
+    "start": 0.3475,
+    "end": 0.5375000000000001,
+    "wordBoundary": {
+      "text": "ट्ट",
+      "start": 0.3625,
+      "duration": 0.1625,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "0705ded5f2c82bb8a1d5ef2e8a3f0aee52f0f599bbda470c876d9a71e22b1cbc",
+    "userApprovedSource": false
+  },
+  "ण्ड": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो ण्ड हो।",
+    "source": "音声生成ソース/context-86e5ed621fbdc3d4.wav",
+    "start": 0.3225,
+    "end": 0.5275,
+    "wordBoundary": {
+      "text": "ण्ड",
+      "start": 0.3375,
+      "duration": 0.175,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "4e8599f1aa388abbfa42248cbfc835ec85f1d0fd26c627a3e33bf80f68718743",
+    "userApprovedSource": false
+  },
+  "त्त": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो त्त हो।",
+    "source": "音声生成ソース/context-abc3d848a7a969e3.wav",
+    "start": 0.3225,
+    "end": 0.5375000000000001,
+    "wordBoundary": {
+      "text": "त्त",
+      "start": 0.3375,
+      "duration": 0.1875,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "f5a14f83ae5d8ad3ef147e04eb0d05d37e4389dc024df1e90771c03286410ccd",
+    "userApprovedSource": false
+  },
+  "द्ध": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो द्ध हो।",
+    "source": "音声生成ソース/context-0ee43ed1fe0a8413.wav",
+    "start": 0.31,
+    "end": 0.5375000000000001,
+    "wordBoundary": {
+      "text": "द्ध",
+      "start": 0.325,
+      "duration": 0.2,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "5a7d5e472039602ec9daadd3029b04de2b7047f54aab08e80bbdbe6d390e4967",
+    "userApprovedSource": false
+  },
+  "द्य": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो द्य हो।",
+    "source": "音声生成ソース/context-4a712aba810e0f18.wav",
+    "start": 0.33499999999999996,
+    "end": 0.5249999999999999,
+    "wordBoundary": {
+      "text": "द्य",
+      "start": 0.35,
+      "duration": 0.1625,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "fdbf561ac9a3b01e5ff3f633a223194cb55b6d4059d5b3b9299d438a40b08493",
+    "userApprovedSource": false
+  },
+  "द्व": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो द्व हो।",
+    "source": "音声生成ソース/context-fab87162b11f0216.wav",
+    "start": 0.3225,
+    "end": 0.5125,
+    "wordBoundary": {
+      "text": "द्व",
+      "start": 0.3375,
+      "duration": 0.1625,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "c7e96f18f46f7495ddce931b71dec02b69f4cbb66681fb59d42f997ae39ac2de",
+    "userApprovedSource": false
+  },
+  "न्त": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो न्त हो।",
+    "source": "音声生成ソース/context-22b884253d11408a.wav",
+    "start": 0.2975,
+    "end": 0.55,
+    "wordBoundary": {
+      "text": "न्त",
+      "start": 0.3125,
+      "duration": 0.225,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "661585874de2cbbdbc1aec9c3182a4d0dabc7404825ee7ed2c213b5f88de51b2",
+    "userApprovedSource": false
+  },
+  "न्द": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो न्द हो।",
+    "source": "音声生成ソース/context-859ed2804569975d.wav",
+    "start": 0.2975,
+    "end": 0.5375000000000001,
+    "wordBoundary": {
+      "text": "न्द",
+      "start": 0.3125,
+      "duration": 0.2125,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "3f08cbf3a939dd5b30aec10fdaa71ce74f526946c5be1ddf9503069d9d4e63da",
+    "userApprovedSource": false
+  },
+  "प्र": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो प्र हो।",
+    "source": "音声生成ソース/context-3ed958715898df36.wav",
+    "start": 0.3225,
+    "end": 0.5,
+    "wordBoundary": {
+      "text": "प्र",
+      "start": 0.3375,
+      "duration": 0.15,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "c49f3158910d03fa23b93462e191d353653b71c5dc096201b8a1463dc2d48bde",
+    "userApprovedSource": false
+  },
+  "म्ब": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो म्ब हो।",
+    "source": "音声生成ソース/context-18d609708866a982.wav",
+    "start": 0.2975,
+    "end": 0.5125,
+    "wordBoundary": {
+      "text": "म्ब",
+      "start": 0.3125,
+      "duration": 0.1875,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "64394d268c3a7fc7d01bec016c02579b04aefd1e4924cbacdf09bf0f569966dd",
+    "userApprovedSource": false
+  },
+  "म्र": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो म्र हो।",
+    "source": "音声生成ソース/context-ea571e8a7004145f.wav",
+    "start": 0.31,
+    "end": 0.5375000000000001,
+    "wordBoundary": {
+      "text": "म्र",
+      "start": 0.325,
+      "duration": 0.2,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "830e51bc86f6c71bb1e0478a5149bd98d06800846eed50fca12c6c1127ae3210",
+    "userApprovedSource": false
+  },
+  "ल्य": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो ल्य हो।",
+    "source": "音声生成ソース/context-d075e9410f212a35.wav",
+    "start": 0.31,
+    "end": 0.5375000000000001,
+    "wordBoundary": {
+      "text": "ल्य",
+      "start": 0.325,
+      "duration": 0.2,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "eaf3d588adee7c6d0525259d22d4bb9948e5dcf203df8439782b06645814c5ab",
+    "userApprovedSource": false
+  },
+  "व्य": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो व्य हो।",
+    "source": "音声生成ソース/context-0aff93a49df089b8.wav",
+    "start": 0.33499999999999996,
+    "end": 0.55,
+    "wordBoundary": {
+      "text": "व्य",
+      "start": 0.35,
+      "duration": 0.1875,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "6e5dca6c47c3fa9c25d7a2b45b52dc52d1f72e2233157a78439912ee0492762a",
+    "userApprovedSource": false
+  },
+  "स्त": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो स्त हो।",
+    "source": "音声生成ソース/context-5ebbb1de51ea6c75.wav",
+    "start": 0.285,
+    "end": 0.5874999999999999,
+    "wordBoundary": {
+      "text": "स्त",
+      "start": 0.3,
+      "duration": 0.275,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "93d513f2da8f516efb6434a92696ff4ead206a2b688aeb067f6ad99610db8c2a",
+    "userApprovedSource": false
+  },
+  "स्थ": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो स्थ हो।",
+    "source": "音声生成ソース/context-b6f93892e2d891e0.wav",
+    "start": 0.31,
+    "end": 0.625,
+    "wordBoundary": {
+      "text": "स्थ",
+      "start": 0.325,
+      "duration": 0.2875,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "9b0aaf608595d86bb438afe9dd375e9357e79cc41011c0c40e42d35b08edb141",
+    "userApprovedSource": false
+  },
+  "स्क": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो स्क हो।",
+    "source": "音声生成ソース/context-2b1a3cf1b93f2007.wav",
+    "start": 0.31,
+    "end": 0.6375,
+    "wordBoundary": {
+      "text": "स्क",
+      "start": 0.325,
+      "duration": 0.3,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "e2bb755ab486ee511c38fdbf5a6d39b176604b2cffec0753c919e436bb2c1e6f",
+    "userApprovedSource": false
+  },
+  "र्ख": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो र्ख हो।",
+    "source": "音声生成ソース/context-027177fcef6dd582.wav",
+    "start": 0.33499999999999996,
+    "end": 0.6,
+    "wordBoundary": {
+      "text": "र्ख",
+      "start": 0.35,
+      "duration": 0.2375,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "e636fd285edc352d59499098bf96466179452222e08e66ae377ceb0efe88e9be",
+    "userApprovedSource": false
+  },
+  "र्त": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो र्त हो।",
+    "source": "音声生成ソース/context-366be58edee1b1fd.wav",
+    "start": 0.31,
+    "end": 0.5625,
+    "wordBoundary": {
+      "text": "र्त",
+      "start": 0.325,
+      "duration": 0.225,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "6e4bfa8495ce8b47cd1dcd5c5a0d117089b7e0e2e1aad5105799fbc49e333786",
+    "userApprovedSource": false
+  },
+  "र्ष": {
+    "method": "carrier-word-boundary",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "phrase": "यो र्ष हो।",
+    "source": "音声生成ソース/context-05d9b2e7c20bee75.wav",
+    "start": 0.31,
+    "end": 0.575,
+    "wordBoundary": {
+      "text": "र्ष",
+      "start": 0.325,
+      "duration": 0.2375,
+      "kind": "SpeechSynthesisBoundaryType.Word"
+    },
+    "sha256": "a50b76721fc8d391c936bc5739420d1453ada5ae690214116e1991197d4d6d84",
+    "userApprovedSource": false
+  }
+}

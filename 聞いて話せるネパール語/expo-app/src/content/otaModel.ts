@@ -53,6 +53,13 @@ export function validateContent(core: any, overlay: any, lang: string) {
     for (const s of [...l.sections.flatMap((b: any)=>b.samples),...l.combinations.flatMap((r: any)=>r.samples)]) {
       if (!s.id || !s.ne || !s.roman || !s.meaning || (s.speech && !s.audio)) throw new Error('Invalid letter sample');
       if (s.audio) assertFile(s.audio);
+      if (s.examples !== undefined) {
+        if (!Array.isArray(s.examples) || s.examples.length!==2 || new Set(s.examples.map((w: any)=>w.ne)).size!==2) throw new Error('Invalid letter word examples');
+        for (const w of s.examples) {
+          if (!w.id || !w.ne?.includes(s.ne) || !w.roman || !w.meaning) throw new Error('Missing letter word meaning');
+          assertFile(w.audio);
+        }
+      }
     }
   }
 }

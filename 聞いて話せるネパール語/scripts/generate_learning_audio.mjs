@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 const app=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
 async function persistJson(file,value){
+  if(fs.existsSync(file)&&JSON.stringify(read(file))===JSON.stringify(value))return;
   const temp=file+'.next-'+process.pid;
   fs.writeFileSync(temp,JSON.stringify(value,null,2)+'\n');
   for(let attempt=0;;attempt++){
@@ -20,7 +21,7 @@ if(!key||!region)throw Error('Azure speech configuration is missing.');
 const file=path.join(app,'文法教材/beginner_learning_path.json'),paths=read(file);
 const grammarFile=path.join(app,'文法教材/grammar_practice.json'),lettersFile=path.join(app,'文法教材/letters_sounds.json');
 const grammar=fs.existsSync(grammarFile)?read(grammarFile):null,letters=fs.existsSync(lettersFile)?read(lettersFile):null;
-const letterSamples=p=>[...p.sections.flatMap(s=>s.samples),...p.combinations.flatMap(r=>r.samples)].filter(s=>s.audio);
+const letterSamples=p=>[...p.sections.flatMap(s=>s.samples),...p.combinations.flatMap(r=>r.samples)].flatMap(s=>[s,...(s.examples??[])]).filter(s=>s.audio);
 const manifestFile=path.join(app,'文法教材/learning_audio_manifest.json');
 const manifest=fs.existsSync(manifestFile)?read(manifestFile):{};
 const dir=path.join(app,'expo-app/assets/learning-audio');fs.mkdirSync(dir,{recursive:true});

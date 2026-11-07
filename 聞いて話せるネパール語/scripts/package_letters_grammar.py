@@ -10,6 +10,7 @@ def package(version):
     for lang in ['ja','en']:
         p=APP/f'expo-app/data/overlays/{lang}.json';overlay=read(p)
         samples=[*practice[lang]['exercises'].values(),*[s for section in letters[lang]['sections']for s in section['samples']if 'audio'in s],*[s for row in letters[lang]['combinations']for s in row['samples']]]
+        samples.extend([w for s in list(samples) for w in s.get('examples',[])])
         assert all(s['audio']['bytes']>0 for s in samples),'Generate the audio before packaging'
         overlay.update(learningPathV3=practice[lang],lettersSounds=letters[lang],version=version,curriculumRevision=version)
         for step in practice[lang]['steps']:
