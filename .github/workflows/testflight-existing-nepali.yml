@@ -1,0 +1,97 @@
+name: TestFlight upload existing IPA (Nepali)
+run-name: "TestFlight · Nepali ${{ inputs.version }} (${{ inputs.build_number }}) · existing IPA"
+
+# Upload an already signed artifact. The upload command is the same as
+# ios-build-nepali.yml; there is no npm install, prebuild, signing or archive job.
+on:
+  workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: 'Successful ios-build-nepali run containing the original IPA'
+        required: true
+        type: string
+      artifact_id:
+        description: 'Immutable IPA artifact ID from that run'
+        required: true
+        type: string
+      version:
+        description: 'Expected version inside the IPA'
+        required: true
+        type: string
+      build_number:
+        description: 'Expected build number inside the IPA'
+        required: true
+        type: string
+      ipa_sha256:
+        description: 'SHA256 of the original IPA (not the artifact ZIP)'
+        required: true
+        type: string
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: nepali-testflight-existing-upload
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: macos-26
+    timeout-minutes: 20
+    steps:
+      - name: Download original IPA artifact
+        uses: actions/download-artifact@v5
+        with:
+          artifact-ids: ${{ inputs.artifact_id }}
+          run-id: ${{ inputs.source_run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: existing-ipa
+
+      - name: Verify unchanged IPA and app identity
+        env:
+          EXPECTED_VERSION: ${{ inputs.version }}
+          EXPECTED_BUILD: ${{ inputs.build_number }}
+          EXPECTED_SHA256: ${{ inputs.ipa_sha256 }}
+        shell: python3 {0}
+        run: |
+          import hashlib, os, plistlib, re, zipfile
+          from pathlib import Path
+          files = list(Path('existing-ipa').rglob('*.ipa'))
+          assert len(files) == 1, 'Expected exactly one IPA'
+          ipa = files[0]
+          expected_hash = os.environ['EXPECTED_SHA256'].lower()
+          assert re.fullmatch(r'[0-9a-f]{64}', expected_hash), 'Invalid expected hash'
+          digest = hashlib.sha256(ipa.read_bytes()).hexdigest()
+          assert digest == expected_hash, 'IPA differs from the original artifact'
+          with zipfile.ZipFile(ipa) as archive:
+              names = [n for n in archive.namelist() if re.fullmatch(r'Payload/[^/]+\.app/Info\.plist', n)]
+              assert len(names) == 1, 'Missing app Info.plist'
+              info = plistlib.loads(archive.read(names[0]))
+          assert info['CFBundleIdentifier'] == 'com.safa.nepali.jp', 'Wrong app'
+          assert info['CFBundleShortVersionString'] == os.environ['EXPECTED_VERSION'], 'Wrong version'
+          assert info['CFBundleVersion'] == os.environ['EXPECTED_BUILD'], 'Wrong build'
+          with open(os.environ['GITHUB_ENV'], 'a') as output:
+              output.write('IPA_PATH=' + str(ipa.resolve()) + '\n')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as output:
+              output.write(f"Verified original IPA: {info['CFBundleShortVersionString']} ({info['CFBundleVersion']})\n\nSHA256: `{digest}`\n")
+
+      - name: Upload to TestFlight
+        env:
+          KEY_ID_RAW: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          ISSUER_ID_RAW: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          KEY_B64: ${{ secrets.APP_STORE_CONNECT_API_KEY_BASE64 }}
+        run: |
+          KEY_ID=$(printf '%s' "$KEY_ID_RAW" | tr -d '\r\n[:space:]')
+          ISSUER_ID=$(printf '%s' "$ISSUER_ID_RAW" | tr -d '\r\n[:space:]')
+          mkdir -p ~/.appstoreconnect/private_keys
+          printf '%s' "$KEY_B64" | base64 --decode > ~/.appstoreconnect/private_keys/AuthKey_${KEY_ID}.p8
+          xcrun altool --upload-app \
+            --file "$IPA_PATH" \
+            --type ios \
+            --apiKey "$KEY_ID" \
+            --apiIssuer "$ISSUER_ID"
+
+      - name: Remove temporary upload credentials
+        if: always()
+        run: rm -rf ~/.appstoreconnect
