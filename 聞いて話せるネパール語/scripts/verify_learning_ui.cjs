@@ -475,7 +475,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await by('letters-category-vowels').click();await page.getByRole('button',{name:en?'Mark section as reviewed':'この項目を確認済みにする',exact:true}).click();
         await page.getByRole('button',{name:en?'Reviewed ✓':'確認済み ✓',exact:true}).waitFor();
         await page.evaluate(()=>{const s=JSON.parse(localStorage.getItem('test-study'));s.lettersRead=window.data.LETTERS_SOUNDS.sections.map(s=>s.id);localStorage.setItem('test-study',JSON.stringify(s));});
-        await page.evaluate(l=>window.boot(l,false,{name:'HomeTab'}),lang);await page.getByText(en?'6 sections reviewed':'6項目を確認済み',{exact:true}).waitFor();
+        await page.evaluate(l=>window.boot(l,false,{name:'HomeTab'}),lang);await by('home-letters').waitFor();assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).lettersRead.length),6,'Hidden home counters do not erase letter progress');
         console.log(`PASS ${lang}: 4 cards, 6 sections both directions, 33×12 consonant forms, 30×11 conjunct forms, only k/s bare audio, default single examples, all audio routes, immutable source, progress migration and 320px large-text layout.`);
       }
       assert.deepEqual(errors,[]);return;
@@ -509,7 +509,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         const en=lang==='en',by=id=>page.getByTestId(id),b=name=>page.getByRole('button',{name,exact:true});
         await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
         await by('home-grammar-lessons').waitFor();
-        assert(await page.evaluate(()=>document.querySelector('[data-testid="home-letters"]').nextElementSibling===document.querySelector('[data-testid="home-grammar-lessons"]')),'Lessons card must be immediately below letters');
+        assert(await page.evaluate(()=>document.querySelector('[data-testid="home-letters"]').nextElementSibling===document.querySelector('[data-testid="home-grammar-lessons"]')),'Lessons card follows letters in the first grid row');
         await by('home-grammar-lessons').click();assert.equal(await page.evaluate(()=>window.route.name),'GrammarLibrary');
         const themes=await page.evaluate(()=>window.data.GRAMMAR_THEMES);
         assert.equal(await page.locator('[data-testid^="grammar-lesson-"]').count(),themes.length);
