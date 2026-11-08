@@ -10,7 +10,7 @@ import { useLearning } from '../LearningContext';
 import { emptyStudyState, practiceParams, resolveStudy, reviewItems, studyActivity } from '../learning';
 import { useGrammarGuide } from '../grammarGuide';
 
-const c = { ink: '#123039', muted: '#52666C', navy: '#102F38', teal: '#7DE2CE', page: '#F2F5F3', line: '#DCE6E2' };
+const c = { ink: '#123039', muted: '#52666C', navy: '#102F38', teal: '#7DE2CE', page: '#F2F5F3' };
 const EMPTY = emptyStudyState();
 
 export default function LearningHomeScreen() {
@@ -33,10 +33,7 @@ export default function LearningHomeScreen() {
   const activity = useMemo(() => studyActivity(state, now), [state, now]);
   const due = useMemo(() => reviewItems(state, data, now), [state, data, now]);
   const resume = state.resume && resolveStudy(data, state.resume.item) ? state.resume : undefined;
-  const weekCount = activity.week.filter(day => day.count > 0).length;
-  const total = Object.values(state.ratings).filter(rating => resolveStudy(data, rating.item)).length;
   const target = Math.min(5, activity.today), achieved = activity.today >= 5;
-  const weekdays = en ? ['S', 'M', 'T', 'W', 'T', 'F', 'S'] : ['日', '月', '火', '水', '木', '金', '土'];
   const action = resume ? (en ? 'Continue where you left off' : '前回の続きへ')
     : due.length ? (en ? `Review ${due.length} sentences` : `${due.length}文を復習する`)
     : (en ? 'Explore letters & sounds' : '文字と音から始める');
@@ -70,26 +67,6 @@ export default function LearningHomeScreen() {
           <Text style={styles.primaryText}>{action}</Text><Text style={styles.arrow}>↗</Text>
         </Pressable>
       </View>
-    </View>
-
-    <View style={styles.panel}>
-      <View style={styles.sectionRow}>
-        <View style={{ flex: 1 }}><Text style={styles.overline}>{en ? 'YOUR RHYTHM' : '学びのリズム'}</Text><Text accessibilityRole="header" style={styles.sectionTitle}>{en ? 'The last seven days' : '小さな一歩を、続けよう。'}</Text></View>
-        {activity.streak > 0 && <View style={styles.streak}><Text style={styles.streakValue}>{activity.streak}</Text><Text style={styles.streakLabel}>{en ? 'day streak' : '日連続'}</Text></View>}
-      </View>
-      <View style={styles.week}>
-        {activity.week.map(day => <View key={day.key} style={styles.weekDay} accessible accessibilityLabel={en ? `${day.key}: ${day.count} sentences` : `${day.key}：${day.count}文`}>
-          <Text style={[styles.weekLabel, day.today && { color: c.ink, fontWeight: '800' }]}>{weekdays[day.weekday]}</Text>
-          <View style={[styles.dayCircle, day.count > 0 && styles.dayDone, day.today && styles.dayToday]}><Text style={[styles.dayNumber, day.count > 0 && { color: '#FFF' }]}>{day.count > 0 ? '✓' : day.day}</Text></View>
-          <View style={[styles.todayDot, { backgroundColor: day.today ? c.ink : 'transparent' }]} />
-        </View>)}
-      </View>
-      <Text style={styles.weekCaption}>{en ? `${weekCount} of the last 7 days · every return counts.` : `直近7日のうち${weekCount}日。間が空いても、また一歩から。`}</Text>
-      <View style={styles.stats}>
-        <View style={styles.stat}><Text style={styles.statValue}>{ready ? total : '—'}<Text style={styles.statUnit}>{en ? '' : ' 文'}</Text></Text><Text style={styles.statLabel}>{en ? 'Sentences practised' : '取り組んだ例文'}</Text></View>
-        <View style={[styles.stat, styles.statBorder]}><Text style={styles.statValue}>{ready ? activity.totalDays : '—'}<Text style={styles.statUnit}>{en ? '' : ' 日'}</Text></Text><Text style={styles.statLabel}>{en ? 'Practice days' : '例文を練習した日'}</Text></View>
-      </View>
-      <Text style={styles.recordNote}>{en ? 'Recorded when you rate a sentence after checking its answer.' : '例文の答えを確認して振り返ると、記録が増えます。'}</Text>
     </View>
 
     <Pressable testID="home-letters" accessibilityRole="button" accessibilityLabel={en ? 'Letters & sounds' : '文字と音'} onPress={() => nav.navigate('LettersSounds')} style={({ pressed }) => [styles.path, pressed && styles.pressed]}>
@@ -134,20 +111,8 @@ const styles = StyleSheet.create({
   segments: { flexDirection: 'row', gap: 5, marginTop: 12 }, segment: { flex: 1, height: 4, borderRadius: 2 },
   primary: { marginTop: 22, backgroundColor: c.teal, borderRadius: 14, minHeight: 54, paddingHorizontal: 18, paddingVertical: 14, flexDirection: 'row', alignItems: 'center', gap: 12 },
   primaryText: { flex: 1, color: c.navy, fontSize: 16, lineHeight: 24, fontWeight: '800' }, arrow: { color: c.navy, fontSize: 24, lineHeight: 28 },
-  panel: { backgroundColor: '#FFF', borderRadius: 22, padding: 22, borderWidth: 1, borderColor: '#E5ECE8' },
   sectionRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 10 },
   overline: { color: c.muted, fontSize: 11, lineHeight: 18, fontWeight: '700', letterSpacing: 1.2, flexShrink: 1 },
-  sectionTitle: { color: c.ink, fontSize: 17, lineHeight: 26, fontWeight: '700', marginTop: 5 },
-  streak: { alignItems: 'center', paddingLeft: 4 }, streakValue: { color: '#1F7666', fontSize: 28, lineHeight: 34, fontWeight: '700' }, streakLabel: { color: c.muted, fontSize: 10, lineHeight: 17 },
-  week: { flexDirection: 'row', justifyContent: 'space-between', gap: 4, marginTop: 22 }, weekDay: { flex: 1, alignItems: 'center', gap: 7 },
-  weekLabel: { color: c.muted, fontSize: 11, lineHeight: 18 },
-  dayCircle: { width: '100%', maxWidth: 34, aspectRatio: 1, borderRadius: 18, alignItems: 'center', justifyContent: 'center', backgroundColor: '#F0F4F2', borderWidth: 1, borderColor: 'transparent' },
-  dayDone: { backgroundColor: '#237766' }, dayToday: { borderColor: '#123039', borderWidth: 2 },
-  dayNumber: { color: c.muted, fontSize: 12, lineHeight: 17, fontWeight: '600' }, todayDot: { width: 3, height: 3, borderRadius: 2 },
-  weekCaption: { color: c.muted, fontSize: 11, lineHeight: 18, marginTop: 11 },
-  stats: { flexDirection: 'row', borderTopWidth: 1, borderTopColor: c.line, marginTop: 20, paddingTop: 18 }, stat: { flex: 1 }, statBorder: { borderLeftWidth: 1, borderLeftColor: c.line, paddingLeft: 20 },
-  statValue: { color: c.ink, fontSize: 28, lineHeight: 38, fontWeight: '600', fontVariant: ['tabular-nums'] }, statUnit: { color: c.muted, fontSize: 12, lineHeight: 20, fontWeight: '400' }, statLabel: { color: c.muted, fontSize: 12, lineHeight: 19 },
-  recordNote: { color: c.muted, fontSize: 10, lineHeight: 17, marginTop: 16 },
   path: { backgroundColor: '#E4EEE8', padding: 22, borderRadius: 22, gap: 9 }, pathCount: { color: c.ink, fontSize: 24, lineHeight: 32, fontWeight: '700' }, pathDenominator: { color: c.muted, fontSize: 13, lineHeight: 20, fontWeight: '400' },
   pathTitle: { color: c.ink, fontSize: 19, lineHeight: 28, fontWeight: '700' }, pathNote: { color: c.muted, fontSize: 11, lineHeight: 18, flex: 1 }, pathLink: { color: c.ink, fontSize: 12, lineHeight: 20, fontWeight: '700' },
   grammarPath: { backgroundColor: '#E5EBF5' },
