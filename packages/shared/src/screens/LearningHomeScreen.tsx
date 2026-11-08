@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
-import { AppState, Image, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { AppState, Image, Pressable, ScrollView, StyleSheet, View, useWindowDimensions } from 'react-native';
+import Svg, { Path, Rect, Circle } from 'react-native-svg';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useHeroImage } from '../heroImages';
@@ -7,9 +8,8 @@ import { Text } from '../Text';
 import { useI18n } from '../i18n';
 import { useAppData } from '../AppDataContext';
 import { useLearning } from '../LearningContext';
-import { emptyStudyState, practiceParams, resolveStudy, reviewItems, studyActivity } from '../learning';
+import { emptyStudyState, practiceParams, resolveStudy, reviewItems } from '../learning';
 import { useGrammarGuide } from '../grammarGuide';
-import { visibleLetterSections } from '../letterPresentation';
 
 const c = { ink: '#123039', muted: '#52666C', navy: '#102F38', teal: '#7DE2CE', page: '#F2F5F3' };
 const EMPTY = emptyStudyState();
@@ -30,12 +30,11 @@ export default function LearningHomeScreen() {
     const sub = AppState.addEventListener('change', value => { if (value === 'active') refresh(); });
     return () => { clearTimeout(timer); sub.remove(); };
   }, []));
-  const en = lang === 'en', state = learning?.state ?? EMPTY, ready = !!learning?.ready;
-  const activity = useMemo(() => studyActivity(state, now), [state, now]);
+  const en = lang === 'en', state = learning?.state ?? EMPTY;
+  const { width } = useWindowDimensions();
+  const displaySize = width < 360 ? 25 : 36;
   const due = useMemo(() => reviewItems(state, data, now), [state, data, now]);
   const resume = state.resume && resolveStudy(data, state.resume.item) ? state.resume : undefined;
-  const target = Math.min(5, activity.today), achieved = activity.today >= 5;
-  const lettersReadCount = data.LETTERS_SOUNDS ? visibleLetterSections(data.LETTERS_SOUNDS).filter(section => state.lettersRead?.includes(section.id)).length : 0;
   const action = resume ? (en ? 'Continue where you left off' : '前回の続きへ')
     : due.length ? (en ? `Review ${due.length} sentences` : `${due.length}文を復習する`)
     : (en ? 'Explore letters & sounds' : '文字と音から始める');
@@ -54,16 +53,11 @@ export default function LearningHomeScreen() {
 
       <View style={styles.heroBody}>
         <Text style={styles.eyebrow}>NEPALI · EVERY DAY</Text>
-        <Text accessibilityRole="header" style={styles.headline}>{en ? 'A little today.\nMore to say tomorrow.' : '昨日より、\nひとこと先へ。'}</Text>
-        <View style={styles.goalRow}>
-          <View style={{ flex: 1 }}>
-            <Text style={styles.goalLabel}>{achieved ? (en ? 'TODAY’S FIVE · DONE' : '今日の5文 · 達成') : (en ? 'TODAY’S FIVE' : '今日の5文')}</Text>
-            <Text style={styles.goalHint}>{achieved ? (en ? 'Your small step counts.' : '今日の一歩、積み重なりました。') : (en ? 'One sentence at a time.' : '一文ずつ、自分のペースで。')}</Text>
-          </View>
-          <Text accessibilityLabel={en ? `${activity.today} sentences practised today. Goal: 5.` : `今日の練習${activity.today}文。目標5文。`} style={styles.goalNumber}>{ready ? target : '—'}<Text style={styles.goalDenominator}> / 5</Text></Text>
-        </View>
-        <View accessibilityRole="progressbar" accessibilityLabel={en ? 'Daily practice goal' : '今日の練習目標'} accessibilityValue={{ min: 0, max: 5, now: target }} style={styles.segments}>
-          {[0, 1, 2, 3, 4].map(i => <View key={i} style={[styles.segment, { backgroundColor: i < target ? c.teal : '#34515A' }]} />)}
+        <View testID="home-motto" accessible accessibilityLabel="Small steps build great strength." accessibilityRole="header" style={styles.motto}>
+          <Text style={[styles.headline, { fontSize: displaySize, lineHeight: displaySize + 7 }]}>Small steps</Text>
+          <Text style={[styles.headline, { fontSize: displaySize, lineHeight: displaySize + 7 }]}>build great</Text>
+          <Text style={[styles.strength, { fontSize: displaySize + 8, lineHeight: displaySize + 17 }]}>strength.</Text>
+          <View style={styles.accent} />
         </View>
         <Pressable accessibilityRole="button" accessibilityLabel={action} onPress={start} style={({ pressed }) => [styles.primary, pressed && styles.pressed]}>
           <Text style={styles.primaryText}>{action}</Text><Text style={styles.arrow}>↗</Text>
@@ -71,58 +65,48 @@ export default function LearningHomeScreen() {
       </View>
     </View>
 
-    <Pressable testID="home-letters" accessibilityRole="button" accessibilityLabel={en ? 'Letters & sounds' : '文字と音'} onPress={() => nav.navigate('LettersSounds')} style={({ pressed }) => [styles.path, pressed && styles.pressed]}>
-      <View style={styles.sectionRow}><Text style={styles.overline}>LETTERS &amp; SOUNDS</Text></View>
-      <Text style={styles.pathTitle}>{en ? 'Letters & sounds' : '文字と音'}</Text>
-      <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Vowels, consonants, vowel signs and conjuncts. Tap to hear how the script sounds.' : '母音・子音から、組み合わせ・複合文字まで。文字を見て、音を確かめよう。'}</Text>
-      <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? `${lettersReadCount} sections reviewed` : `${lettersReadCount}項目を確認済み`}</Text><Text style={styles.pathLink}>{en ? 'Explore →' : '開く →'}</Text></View>
-    </Pressable>
-
-    {guideCount > 0 && <Pressable testID="home-grammar-lessons" accessibilityRole="button" accessibilityLabel={en ? 'Grammar lessons' : '文法教材'} onPress={() => nav.navigate('GrammarLibrary')} style={({ pressed }) => [styles.path, styles.grammarPath, pressed && styles.pressed]}>
-      <View style={styles.sectionRow}><Text style={styles.overline}>GRAMMAR LESSONS</Text></View>
-      <Text style={styles.pathTitle}>{en ? 'Grammar lessons' : '文法教材'}</Text>
-      <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Core rules, forms & words, practice your way and a cultural break. Build your understanding one theme at a time.' : '基本ルール・活用と語彙・練習問題・一休み。テーマごとに、文の作り方を学ぼう。'}</Text>
-      <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? `${guideCount} lessons, including appendices` : `付録を含む${guideCount}項目`}</Text><Text style={styles.pathLink}>{en ? 'Open lessons →' : '教材を開く →'}</Text></View>
-    </Pressable>}
-
-    <Pressable testID="home-vocabulary" accessibilityRole="button" accessibilityLabel={en ? 'Vocabulary' : '単語'} onPress={() => nav.navigate('VocabCategory')} style={({ pressed }) => [styles.path, { backgroundColor: '#eef1fa', borderColor: '#d6ddeb' }, pressed && styles.pressed]}>
-      <View style={styles.sectionRow}><Text style={styles.overline}>VOCABULARY</Text></View>
-      <Text style={styles.pathTitle}>{en ? 'Vocabulary' : '単語'}</Text>
-      <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Choose the meaning or choose the Nepali word. Practise both ways with four choices.' : 'ネパール語から意味を選ぶ。母語からことばを選ぶ。4択で繰り返し練習しよう。'}</Text>
-      <View style={styles.sectionRow}><Text style={styles.pathLink}>{en ? 'Explore words →' : '単語を学ぶ →'}</Text></View>
-    </Pressable>
-
-    {!!data.NEPALI_DICTIONARY?.entries.length && <Pressable testID="home-dictionary" accessibilityRole="button" accessibilityLabel={en ? 'Nepali dictionary' : 'ネパール語辞書'} onPress={() => nav.navigate('NepaliDictionary')} style={({ pressed }) => [styles.path, { backgroundColor: '#DDEEE8' }, pressed && styles.pressed]}>
-      <Text style={styles.overline}>DICTIONARY</Text>
-      <Text style={styles.pathTitle}>{en ? 'Nepali dictionary' : 'ネパール語辞書'}</Text>
-      <Text style={[styles.pathNote, { fontSize: 15, lineHeight: 25 }]}>{en ? 'Find a word, hear its sound and understand how to use it. Search in Nepali, romanization, English or Japanese.' : '気になることばを調べて、音と使い方を確かめよう。日本語・英語・ネパール語・ローマ字に対応。'}</Text>
-      <Text style={styles.pathLink}>{en ? 'Look up a word →' : 'ことばを調べる →'}</Text>
-    </Pressable>}
+    <View testID="home-content-grid" style={styles.grid}>
+      <View style={styles.tileRow}>
+        <HomeTile id="home-letters" title={en ? 'Letters & sounds' : '文字と音'} kind="letters" color="#E0EFE8" onPress={() => nav.navigate('LettersSounds')} />
+        {guideCount > 0 && <HomeTile id="home-grammar-lessons" title={en ? 'Grammar' : '文法教材'} kind="grammar" color="#E5EAF7" onPress={() => nav.navigate('GrammarLibrary')} />}
+      </View>
+      <View style={styles.tileRow}>
+        <HomeTile id="home-vocabulary" title={en ? 'Words' : '単語'} kind="vocabulary" color="#ECE8F4" onPress={() => nav.navigate('VocabCategory')} />
+        {!!data.NEPALI_DICTIONARY?.entries.length && <HomeTile id="home-dictionary" title={en ? 'Dictionary' : 'ネパール語辞書'} kind="dictionary" color="#DFEDF0" onPress={() => nav.navigate('NepaliDictionary')} />}
+      </View>
+    </View>
 
     {learning?.error && <Pressable accessibilityRole="button" onPress={learning.retry} style={styles.error}><Text style={styles.errorText}>{en ? 'Could not load or save progress. Tap to retry.' : '学習記録を読み込み・保存できませんでした。タップして再試行。'}</Text></Pressable>}
-    <Text style={styles.footer}>{en ? 'A few words today. A real conversation tomorrow.' : '今日のひとことが、次の会話につながる。'}</Text>
   </ScrollView>;
 }
 
+function HomeTile({ id, title, kind, color, onPress }: {id:string;title:string;kind:'letters'|'grammar'|'vocabulary'|'dictionary';color:string;onPress:()=>void}) {
+  const compact = useWindowDimensions().width < 360;
+  return <Pressable testID={id} accessibilityRole="button" accessibilityLabel={title} onPress={onPress} style={({pressed})=>[styles.tile,{backgroundColor:color},compact&&styles.compactTile,pressed&&styles.pressed]}>
+    <View accessible={false} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.icon}>
+      {kind==='letters' ? <Text style={styles.letterIcon}>अ</Text> : <Svg width={29} height={29} viewBox="0 0 24 24" fill="none" stroke="#234D48" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round">
+        {kind==='grammar' ? <><Path d="M12 5C8 3 5 3 2 4v15c3-1 6-1 10 1 4-2 7-2 10-1V4c-3-1-6-1-10 1Z"/><Path d="M12 5v15M5 8l4 1M5 12l4 1M15 9l4-1M15 13l4-1"/></> : kind==='vocabulary' ? <><Rect x="6" y="3" width="15" height="17" rx="3"/><Path d="M3 7v12a3 3 0 0 0 3 3M10 8h7M10 12h5"/></> : <><Path d="M4 3h12a2 2 0 0 1 2 2v4M4 3v17M4 3a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h7M7 7h7M7 11h3"/><Circle cx="16" cy="15" r="4"/><Path d="m19 18 3 3"/></>}
+      </Svg>}
+    </View>
+    <Text style={[styles.tileTitle,compact&&styles.compactTileTitle]}>{title}</Text>
+  </Pressable>;
+}
+
 const styles = StyleSheet.create({
-  page: { padding: 16, paddingBottom: 44, gap: 16, maxWidth: 760, width: '100%', alignSelf: 'center' },
+  page: { padding: 16, paddingBottom: 30, gap: 16, maxWidth: 760, width: '100%', alignSelf: 'center' },
   hero: { backgroundColor: c.navy, borderRadius: 24, overflow: 'hidden' },
-  heroBody: { padding: 22, paddingTop: 20 },
-  eyebrow: { color: c.teal, fontSize: 11, lineHeight: 18, letterSpacing: 2, fontWeight: '700' },
-  headline: { color: '#FFF', fontSize: 30, lineHeight: 39, fontWeight: '700', letterSpacing: -0.5, marginTop: 10, marginBottom: 24 },
-  goalRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  goalLabel: { color: '#ECF9F5', fontSize: 13, lineHeight: 21, fontWeight: '700', letterSpacing: 0.4 },
-  goalHint: { color: '#BDCFD0', fontSize: 12, lineHeight: 19, marginTop: 3 },
-  goalNumber: { color: c.teal, fontSize: 36, lineHeight: 48, fontWeight: '600', fontVariant: ['tabular-nums'] },
-  goalDenominator: { color: '#BDCFD0', fontSize: 16, lineHeight: 24, fontWeight: '400' },
-  segments: { flexDirection: 'row', gap: 5, marginTop: 12 }, segment: { flex: 1, height: 4, borderRadius: 2 },
-  primary: { marginTop: 22, backgroundColor: c.teal, borderRadius: 14, minHeight: 54, paddingHorizontal: 18, paddingVertical: 14, flexDirection: 'row', alignItems: 'center', gap: 12 },
-  primaryText: { flex: 1, color: c.navy, fontSize: 16, lineHeight: 24, fontWeight: '800' }, arrow: { color: c.navy, fontSize: 24, lineHeight: 28 },
-  sectionRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 10 },
-  overline: { color: c.muted, fontSize: 11, lineHeight: 18, fontWeight: '700', letterSpacing: 1.2, flexShrink: 1 },
-  path: { backgroundColor: '#E4EEE8', padding: 22, borderRadius: 22, gap: 9 }, pathDenominator: { color: c.muted, fontSize: 13, lineHeight: 20, fontWeight: '400' },
-  pathTitle: { color: c.ink, fontSize: 19, lineHeight: 28, fontWeight: '700' }, pathNote: { color: c.muted, fontSize: 11, lineHeight: 18, flex: 1 }, pathLink: { color: c.ink, fontSize: 12, lineHeight: 20, fontWeight: '700' },
-  grammarPath: { backgroundColor: '#E5EBF5' },
-  error: { padding: 16, borderRadius: 14, backgroundColor: '#FCEEEF' }, errorText: { color: '#8B2945', fontSize: 13, lineHeight: 21 },
-  footer: { color: c.muted, fontSize: 11, lineHeight: 19, textAlign: 'center', marginTop: 2 }, pressed: { opacity: 0.78 },
+  heroBody: { padding: 22, paddingTop: 18 },
+  eyebrow: { color: '#BAD6D0', fontSize: 10, lineHeight: 17, letterSpacing: 2.5, fontWeight: '700' },
+  motto: { marginTop: 14 },
+  headline: { color: '#F5FAF8', fontWeight: '600', letterSpacing: -1 },
+  strength: { color: c.teal, fontWeight: '800', letterSpacing: -1.4 },
+  accent: { width: 38, height: 3, borderRadius: 2, backgroundColor: c.teal, marginTop: 13 },
+  primary: { marginTop: 19, backgroundColor: c.teal, borderRadius: 14, minHeight: 50, paddingHorizontal: 16, paddingVertical: 12, flexDirection: 'row', alignItems: 'center', gap: 10 },
+  primaryText: { flex: 1, color: c.navy, fontSize: 15, lineHeight: 23, fontWeight: '700' }, arrow: { color: c.navy, fontSize: 23, lineHeight: 28 },
+  grid: { gap: 12 }, tileRow: { flexDirection: 'row', alignItems: 'stretch', gap: 12 },
+  tile: { flex: 1, minWidth: 0, minHeight: 126, padding: 17, borderRadius: 20, gap: 12, justifyContent: 'space-between' },
+  icon: { width: 38, height: 36, justifyContent: 'center' }, letterIcon: { color: '#234D48', fontSize: 31, lineHeight: 39, fontWeight: '600' },
+  compactTile: { padding: 12 }, compactTileTitle: { fontSize: 15, lineHeight: 23 },
+  tileTitle: { color: c.ink, fontSize: 17, lineHeight: 25, fontWeight: '700' },
+  error: { padding: 16, borderRadius: 14, backgroundColor: '#FCEEEF' }, errorText: { color: '#8B2945', fontSize: 13, lineHeight: 21 }, pressed: { opacity: 0.78 },
 });

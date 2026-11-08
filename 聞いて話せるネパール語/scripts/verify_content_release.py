@@ -70,7 +70,14 @@ def verify(folder):
             assert len({e['id']for e in d['entries']})==len(d['entries'])
             assert len({e['ne']for e in d['entries']})==len(d['entries'])
             sources=[s for e in d['entries']for s in e['sources']]
-            assert len(sources)==len(set(sources))==d['sourceRowCount']
+            assert len(sources)==len(set(sources))
+            original=[s for s in sources if __import__('re').fullmatch(r'\d+:\d+',s)]
+            assert len(original)==d['sourceRowCount']
+            assert set(original)=={f'{cat}:{i+1}' for cat,rows in core['wordsNe'].items()for i in range(len(rows))}
+            for e in d['entries']:
+                for s in e['sources']:
+                    assert s.split(':')[0]in core['wordsNe']
+                    assert s in original or s==f"{s.split(':')[0]}:dictionary:{e['id']}"
             for e in d['entries']:
                 assert e['roman'] and e['senses'] and all(s['ja'] and s['en'] and s['pos']for s in e['senses'])
                 assert all(str(t)in guides for t in e['themes'])

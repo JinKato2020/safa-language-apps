@@ -32,7 +32,7 @@ cache.PosterContext={exports:{usePosterLessons:()=>[]}};
 cache.AppDataContext={exports:{useAppData:()=>window.data}};
 const realEntitlement=require('entitlement');cache.entitlement={exports:{...realEntitlement,useEntitlement:()=>window.testEntitlement??{isPro:true,freeThemes:Infinity}}};
 cache['react-native-safe-area-context']={exports:{useSafeAreaInsets:()=>({top:20,bottom:0,left:0,right:0})}};
-cache['react-native-svg']={exports:{__esModule:true,default:()=>null,Line:()=>null,Path:()=>null,Polyline:()=>null,Rect:()=>null,Circle:()=>null,Ellipse:()=>null,Polygon:()=>null}};
+cache['react-native-svg']={exports:{__esModule:true,default:p=>h('svg',p),...Object.fromEntries(['Line','Path','Polyline','Rect','Circle','Ellipse','Polygon'].map(n=>[n,p=>h(n.toLowerCase(),p)]))}};
 cache.useCardFlip={exports:{useCardFlip:()=>({flip:cb=>cb(),animatedStyle:{}})}};
 cache.useHorizontalSwipe={exports:{useHorizontalSwipe:()=>({})}};
 cache['expo-audio']={exports:{useAudioPlayer:src=>{const p=React.useMemo(()=>({source:src,seekTo:async()=>{},pause:()=>window.activeAudio.delete(p),play:()=>{window.activeAudio.add(p);window.events.push(['audio',src]);}}),[src]);React.useEffect(()=>()=>window.activeAudio.delete(p),[p]);return p;},useAudioPlayerStatus:p=>({isLoaded:!!p.source,playing:false,didJustFinish:window.audioEnded})}};
@@ -58,24 +58,48 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(process.argv.includes('--home-grid')){
+      const routes={'home-letters':'LettersSounds','home-grammar-lessons':'GrammarLibrary','home-vocabulary':'VocabCategory','home-dictionary':'NepaliDictionary'};
+      for(const lang of ['ja','en'])for(const [width,scale]of[[390,1],[320,1.4]]){
+        await page.setViewportSize({width,height:844});await page.evaluate(({lang,scale})=>window.boot(lang,true,{name:'HomeTab'},scale),{lang,scale});
+        const grid=page.getByTestId('home-content-grid');assert.equal(await grid.getByRole('button').count(),4);
+        const boxes=[];for(const id of Object.keys(routes))boxes.push(await page.getByTestId(id).boundingBox());
+        assert.equal(boxes[0].y,boxes[1].y);assert.equal(boxes[2].y,boxes[3].y);assert(boxes[2].y>boxes[0].y);
+        assert(boxes[1].x>=boxes[0].x+boxes[0].width);for(const b of boxes)assert(b.width>=44&&b.height>=44);
+        for(const id of Object.keys(routes))assert.equal(await page.getByTestId(id).locator('span').count(),id==='home-letters'?2:1,'Title and icon only');
+        const body=await page.locator('body').innerText();assert(body.includes('Small steps')&&body.includes('strength.'));
+        for(const old of ['今日の5文','今日の一歩','開く→','教材を開く','単語を学ぶ','言葉を調べる'])assert(!body.includes(old),old);
+        assert(await page.getByTestId('home-motto').locator('span').evaluateAll(es=>es.every(e=>e.getBoundingClientRect().height<=parseFloat(getComputedStyle(e).lineHeight)+2)),'Motto lines never split inside a word');
+        assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        assert(await grid.evaluate(e=>[...e.querySelectorAll('span')].every(s=>s.scrollWidth<=s.clientWidth+2)),'Titles fit their tiles');
+        await grid.scrollIntoViewIfNeeded();await page.screenshot({path:path.join(work,`previews/home-grid-${lang}-${width}.png`)});
+        await page.getByTestId('home-motto').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(work,`previews/home-motto-${lang}-${width}.png`)});
+        for(const[id,route]of Object.entries(routes)){
+          await page.getByTestId(id).click();assert.equal(await page.evaluate(()=>window.route.name),route);
+          await page.getByTestId('study-back').click();assert.equal(await page.evaluate(()=>window.route.name),'HomeTab');
+        }
+        assert.deepEqual(errors,[]);
+      }
+      console.log('PASS home: compact 2×2 layout, JA/EN at 320/390px and large fonts, four live routes/back, no footer copy or horizontal overflow.');return;
+    }
     if(process.argv.includes('--nepali-dictionary')){
       const by=id=>page.getByTestId(id);
       for(const lang of ['ja','en'])for(const width of [320,390]){
         await page.setViewportSize({width,height:844});await page.evaluate(l=>window.boot(l,true,{name:'HomeTab'},1.2),lang);
         await by('home-dictionary').click();await by('dictionary-search').waitFor();
         assert.equal(await page.evaluate(()=>window.route.name),'NepaliDictionary');
-        for(const q of ['ghar','家','house','गर्छु']){
+        for(const [q,meaning] of [['ghar',lang==='en'?'house':'家'],['家',lang==='en'?'house':'家'],['house',lang==='en'?'house':'家'],['गर्छु',lang==='en'?'do':'する'],['死ぬ',lang==='en'?'die':'死ぬ'],['捨てる',lang==='en'?'discard':'捨てる'],['मर्‍यो',lang==='en'?'die':'死ぬ']]){
           await by('dictionary-search').fill(q);await page.waitForTimeout(80);
           const result=page.locator('[data-testid^="dictionary-entry-"]').first();
           await result.click();await by('dictionary-detail').waitFor();
-          assert((await by('dictionary-detail').innerText()).includes(q==='गर्छु'?(lang==='en'?'do':'する'):(lang==='en'?'house':'家')));
+          assert((await by('dictionary-detail').innerText()).includes(meaning));
           await by('dictionary-listen').click();await page.waitForTimeout(80);
           assert.equal(await page.evaluate(()=>window.activeAudio.size),1);
           await by('dictionary-search').fill('zzzz-no-match');await page.waitForTimeout(80);
           assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
           await page.getByText(lang==='en'?'No matching word yet':'一致することばがありません',{exact:true}).waitFor();
         }
-        await by('dictionary-clear').click();await by('dictionary-filters').click();await by('dictionary-category-11').click();assert((await by('dictionary-count').innerText()).startsWith('40'));
+        await by('dictionary-clear').click();await by('dictionary-filters').click();await by('dictionary-category-11').click();const expected=await page.evaluate(()=>window.data.NEPALI_DICTIONARY.entries.filter(e=>e.sources.some(s=>s.startsWith('11:'))).length);assert((await by('dictionary-count').innerText()).startsWith(String(expected)));
         await by('dictionary-filters').click();await by('dictionary-category-0').click();await by('dictionary-search').fill('लाग्नु');await page.locator('[data-testid^="dictionary-entry-"]').first().click();
         await page.screenshot({path:path.join(work,`previews/dictionary-${lang}-${width}.png`)});
         assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

@@ -5,6 +5,7 @@ not copied dictionary definitions. Re-running never invents inflection mappings.
 """
 import hashlib, json, re
 from pathlib import Path
+from dictionary_basic_expansion import BASIC_GROUPS, BASIC_FORMS, BASIC_NOTES, BASIC_EXAMPLES, BASIC_SENSE_UPDATES, BASIC_POS
 
 APP = Path(__file__).resolve().parents[1]
 DATA = APP / 'expo-app/data'
@@ -342,6 +343,12 @@ def build():
             add(ne,rom,ja,en,pos,f'{cat}:{i+1}',original)
     for line in EXTRA.strip().splitlines():
         ne,rom,pos,ja,en=line.split('|'); add(ne,rom,ja,en,pos)
+    for category,pos,rows in BASIC_GROUPS:
+        for line in rows.strip().splitlines():
+            ne,roman,ja,en=line.split('|')
+            if ne in by_word: continue
+            entry=add(ne,roman,ja,en,BASIC_POS.get(ne,pos))
+            entry['sources'].append(f"{category}:dictionary:{entry['id']}")
     for ne,forms in FORMS.items():
         if ne in by_word: by_word[ne]['forms']+= [f for f in forms.split() if f!=ne]
     # Common orthographic variants; not speculative lemmatization.
@@ -379,10 +386,20 @@ def build():
         pos=by_word[ne]['senses'][0]['pos']; by_word[ne]['senses']=[{'ja':ja,'en':en,'pos':pos} for ja,en in senses]
     by_word['निश्चय']['senses'][1]['pos']='adverb'
     for sense in by_word['उत्तर']['senses']: sense['pos']='noun'
+    for ne,forms in BASIC_FORMS.items():
+        if ne in by_word:
+            by_word[ne]['forms']=sorted((set(by_word[ne]['forms'])|set(forms if isinstance(forms,list) else forms.split()))-{ne})
+    for ne,notes in BASIC_NOTES.items():
+        if ne in by_word: by_word[ne]['note']={'ja':notes[0],'en':notes[1]}
+    for ne,examples in BASIC_EXAMPLES.items():
+        for sentence,ja,en in examples: by_word[ne]['examples'].append({'ne':sentence,'ja':ja,'en':en})
+    for ne,senses in BASIC_SENSE_UPDATES.items():
+        by_word[ne]['senses']=[{'ja':ja,'en':en,'pos':pos}for ja,en,pos in senses]
+    by_word['फाल्नु']['sources'].append('8:dictionary:'+by_word['फाल्नु']['id'])
     manifest=read(APP/'文法教材/learning_audio_manifest.json')
     for entry in by_word.values():
         if entry['ne'] in manifest: entry['audio']=manifest[entry['ne']]
-    result={'schema':1,'revision':1,'sourceRowCount':1000,'entries':list(by_word.values())}
+    result={'schema':1,'revision':2,'sourceRowCount':1000,'entries':list(by_word.values())}
     write(APP/'文法教材/nepali_dictionary.json',result)
     for lang,overlay in overlays.items():
         overlay['nepaliDictionary']=result; write(DATA/f'overlays/{lang}.json',overlay)

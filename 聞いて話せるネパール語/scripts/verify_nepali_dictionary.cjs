@@ -9,7 +9,11 @@ const dictionary=read(path.join(app,'文法教材/nepali_dictionary.json')),core
 const entries=dictionary.entries,index=search.indexDictionary(entries),find=q=>search.searchDictionary(index,q),entry=ne=>entries.find(e=>e.ne===ne);
 assert.equal(new Set(entries.map(e=>e.id)).size,entries.length);
 assert.equal(new Set(entries.map(e=>e.ne)).size,entries.length);
-const sources=entries.flatMap(e=>e.sources);assert.equal(sources.length,1000);assert.equal(new Set(sources).size,1000);
+const sources=entries.flatMap(e=>e.sources), originalSources=sources.filter(s=>/^\d+:\d+$/.test(s));
+assert.equal(originalSources.length,dictionary.sourceRowCount);assert.equal(new Set(sources).size,sources.length);
+assert(entries.length>=1900,'Basic vocabulary roughly doubles the original dictionary');
+for(const e of entries)for(const s of e.sources)assert(/^\d+:\d+$/.test(s)||s===`${s.split(':')[0]}:dictionary:${e.id}`);
+for(const s of sources)assert(core.wordsNe[s.split(':')[0]],s);
 for(const[cat,rows]of Object.entries(core.wordsNe))rows.forEach((_,i)=>assert(sources.includes(`${cat}:${i+1}`)));
 for(const e of entries){
   assert(find(e.ne).some(v=>v.id===e.id));assert(find(e.roman).some(v=>v.id===e.id));
@@ -21,7 +25,12 @@ for(const e of entries){
 for(const[q,ne]of Object.entries({'ghar':'घर','ＧＨＡＲ':'घर','家':'घर','house':'घर','गर्छु':'गर्नु','garchhu':'गर्नु','garchu':'गर्नु','chhu':'हुनु','hunchha':'हुनु','छु':'हुनु','पर्‍यो':'पर्नु','पर्यो':'पर्नु','राम्री':'राम्रो','tapain':'तपाईं','tapaaiin':'तपाईं','sanga':'सँग','thaha paaunu':'थाहा पाउनु'}))assert.equal(find(q)[0]?.ne,ne,q);
 assert.notEqual(search.dictionaryKey('मा'),search.dictionaryKey('म'));assert.notEqual(search.dictionaryKey('पानी'),search.dictionaryKey('पनि'));
 assert.equal(find('zzzz-no-match').length,0);
-assert.equal(search.searchDictionary(index,'',11).length,40);
+const family=search.searchDictionary(index,'',11);
+for(const ne of ['मामा','माइजू','फुपू','दाइ'])assert(family.some(e=>e.ne===ne),ne);
+assert(!family.some(e=>e.ne==='मर्नु'));
+for(const[q,ne]of Object.entries({'死ぬ':'मर्नु','殺す':'मार्नु','捨てる':'फाल्नु','मर्‍यो':'मर्नु','मार्‍यो':'मार्नु','चाहिन्छ':'चाहिनु','savaa':'सवा','मन्जन':'मञ्जन'}))assert.equal(find(q)[0]?.ne,ne,q);
+assert(entry('फाल्नु').senses.some(s=>s.ja.includes('捨てる')));
+assert(entry('छ').senses.some(s=>s.en==='six'));assert(entry('सत्र').senses.some(s=>s.en==='seventeen'));
 for(const[e,bad]of [['जानु','持ち帰り'],['भतिज','いとこ'],['सिलाई','仕立て屋'],['स्मरण','命日'],['कलगी','ガチョウ'],['मिठो खाना','デザート'],['खैरो','灰色']])assert(!entry(e).senses.some(s=>s.ja.includes(bad)),e);
 assert(entry('बस्नु').senses.length===2);assert(entry('पानी').senses.length===2);assert(entry('को').senses.length===2);
 assert(entry('पर्नु').note.ja.includes('जानुपर्छ'));assert(entry('थाहा पाउनु').note.en.includes('change'));
