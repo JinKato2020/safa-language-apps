@@ -263,18 +263,6 @@ export default function SettingsScreen() {
             ss={ss}
           />
         </Row>
-        <Row label={t('settings.nepaliRepeat')} desc={t('settings.nepaliRepeatDesc')} ss={ss}>
-          <PillGroup<NepaliRepeat>
-            items={[
-              { value: 1, label: t('levelScreen.repeat', { n: 1 }) },
-              { value: 2, label: t('levelScreen.repeat', { n: 2 }) },
-              { value: 3, label: t('levelScreen.repeat', { n: 3 }) },
-            ]}
-            value={s.nepaliRepeat}
-            onChange={s.setNepaliRepeat}
-            ss={ss}
-          />
-        </Row>
         <Row label={t('settings.convDirection')} desc={t('settings.convDirectionDesc')} ss={ss}>
           <PillGroup<Direction>
             items={directionItems}
@@ -288,6 +276,18 @@ export default function SettingsScreen() {
             items={directionItems}
             value={s.listenDirection}
             onChange={s.setListenDirection}
+            ss={ss}
+          />
+        </Row>
+        <Row label={t('settings.nepaliRepeat')} desc={t('settings.nepaliRepeatDesc')} ss={ss}>
+          <PillGroup<NepaliRepeat>
+            items={[
+              { value: 1, label: t('levelScreen.repeat', { n: 1 }) },
+              { value: 2, label: t('levelScreen.repeat', { n: 2 }) },
+              { value: 3, label: t('levelScreen.repeat', { n: 3 }) },
+            ]}
+            value={s.nepaliRepeat}
+            onChange={s.setNepaliRepeat}
             ss={ss}
           />
         </Row>
