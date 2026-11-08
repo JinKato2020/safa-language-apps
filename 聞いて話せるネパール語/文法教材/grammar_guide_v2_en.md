@@ -115,10 +115,15 @@ I am at home.
 
 ### ② Nepali grammar rules
 
-### 1. Location + छ
+### 1. Choose छ or छन् for what exists
 
-Compare **म घरमा छु** (I am at home) / **किताब घरमा छ** (the book is at home). मा marks the location; the final verb matches the entity located.
- Choose among **छु, छौं, छ, छन्** and respectful हुनुहुन्छ.
+A location takes **मा**. Put the location first to introduce what is there, or the thing first to say where it is.
+Use **छ for a singular thing**, **छन् for plural things**. For people, use छु with म, छौं with हामी, and हुनुहुन्छ for respectful subjects.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| टेबलमा किताब छ।<br>ṭebalmā kitāb cha | There is a book on the table. |
+| टेबलमा दुई किताब छन्।<br>ṭebalmā duī kitāb chan | There are two books on the table. The number already marks plurality; हरू is not required here. |
 
 ### 2. Locating and introducing
 
@@ -234,10 +239,20 @@ In **पानी चिसो छ** (the water is cold), चिसो describes
 Compare **म व्यस्त छु** (I am busy) / **हामी व्यस्त छौं** (we are busy) / **उहाँ व्यस्त हुनुहुन्छ** (he/she is busy, respectful). व्यस्त stays unchanged; the ending marks person and respect.
  An invariable adjective does not make the verb invariably छ.
 
-### 3. म versus मलाई
+### 3. मलाई + sensation + लाग्नु: who feels it?
 
-**म खुसी छु** (I am happy) uses म as subject plus a condition. **मलाई जाडो लाग्छ** (I feel cold) uses an experiencer in मलाई and the sensation construction जाडो लाग्नु (to feel cold).
- The translated subject I does not determine Nepali case or verb form.
+**मलाई (malāī) means “to me”**: लाई marks the person experiencing the sensation.
+Use **मलाई/हामीलाई/तपाईंलाई/उहाँलाई + sensation + लाग्छ**. Changing that person does not change लाग्छ to लाग्छु or लाग्नुहुन्छ in this construction.
+**म खुसी छु** (ma khusī chu, I am happy) is a different construction with म as the subject.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| मलाई जाडो लाग्छ।<br>malāī jāḍo lāgcha | I feel cold. जाडो = cold. |
+| मलाई भोक लाग्यो।<br>malāī bhok lāgyo | I am hungry / I got hungry. भोक = hunger. This can announce hunger felt now. |
+| मलाई निद्रा लागेको छ।<br>malāī nidrā lāgeko cha | I am feeling sleepy. निद्रा = sleep/sleepiness. |
+
+**लाग्छ → लाग्यो → लागेको छ** help distinguish a general feeling, a feeling that arose, and a resulting feeling now. Although लाग्यो is past in form, it can announce a present sensation such as becoming hungry.
+Negatives: **लाग्दैन (lāgdaina), लागेन (lāgena), लागेको छैन (lāgeko chaina)**.
 
 ### 4. राम्रो छ (is good, current description) versus राम्रो हुन्छ (is generally good/becomes good)
 
@@ -249,6 +264,17 @@ Compare **म व्यस्त छु** (I am busy) / **हामी व्य
 In **पानी चिसो छैन** (the water is not cold), retain the adjective and negate the copula.
  Compare **म व्यस्त छैनँ** (I am not busy) / **उहाँ व्यस्त हुनुहुन्न** (he/she is not busy, respectful).
  This is different from a prohibition using न before a request verb.
+
+### 6. लाग्नु also expresses time and cost
+
+**लाग्नु (lāgnu) has several constructions**, not one fixed translation. With time or cost it means “take/cost”; मलाई is not automatically required.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| एक घण्टा लाग्छ।<br>ek ghaṇṭā lāgcha | It takes one hour. एक घण्टा = one hour. |
+| एक घण्टा लाग्यो।<br>ek ghaṇṭā lāgyo | It took one hour. Here लाग्यो reports the time actually taken. |
+
+Theme 31 explains “think/seem”; theme 22 explains “feel like doing”. The words before लाग्नु select the meaning.
 
 ### हुनु: three sets and matching forms
 
@@ -973,10 +999,17 @@ I work.
 
 ### ② Nepali grammar rules
 
-### 1. From -नु to the present
+### 1. Build the present form from the dictionary form
 
-Compare **पढ्नु→पढ्छु / गर्नु→गर्छु / खानु→खान्छु**, plus **जानु→जान्छु / आउनु→आउँछु**.
- Form the present from the appropriate stem; sound changes mean that mechanically adding छ to every dictionary form is insufficient.
+The **stem is the base to which endings attach**. Remove final नु from the dictionary form and compare the resulting complete forms below.
+A consonant-final stem is written with ्. Vowels and nasalization can change, so one spelling rule does not cover every verb.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| गर्नु → गर् → गर्छु<br>garnu → gar → garchu | do → stem → I do. |
+| पढ्नु → पढ् → पढ्छु<br>paḍhnu → paḍh → paḍhchu | read/study → stem → I read. |
+| खानु → खान्छु／जानु → जान्छु<br>khānu → khānchu / jānu → jānchu | I eat / I go. Learn these vowel-stem forms as complete patterns. |
+| आउनु → आउँछु<br>āunu → āũchu | I come. ँ marks nasalization. |
 
 ### 2. I, we and respectful forms
 
@@ -1052,11 +1085,14 @@ Use **तपाईं गर्नुहुन्न** (you do not do it, respec
  Respectful affirmative -नुहुन्छ contrasts with negative **-नुहुन्न**.
  Translating उहाँ as she does not license a lower-grade feminine verb.
 
-### 4. Present versus past negative
+### 4. गर्दिनँ versus गरिनँ: two different negatives
 
-**म जाँदिनँ** (I do not/will not go) means I do not/will not go; **म गएनँ** (I did not go) means I did not go.
- Negative past forms have variants; use the गरेनँ-series forms taught in the tables here.
- A time word alone does not convert one tense to another.
+Compare the **द in the present negative** with the past forms. First-person past negatives include -इनँ and -एनँ variants; the examples in this course also use गरिनँ.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| म काम गर्दिनँ।<br>ma kām gardinã | I do not / will not work: present, habitual or intended non-action. |
+| मैले काम गरिनँ।／मैले काम गरेनँ।<br>maile kām garinã / maile kām garenã | I did not work: two first-person past negative forms. |
 
 ### 5. कहिल्यै with negation
 
@@ -1106,11 +1142,18 @@ Compare **पढ्दै छु** (I am reading) / **गर्दै छु** (
  The final auxiliary marks person/respect.
  Do not invent a progressive by mixing pieces of a finite present form.
 
-### 3. Comparing -रहेको
+### 3. Separate the parts of -रहेको
 
-Both **गर्दै छु** (I am doing it) and **गरिरहेको छु** (I am doing it) can describe ongoing action.
- The latter combines **गरि + रहेको + छु**.
- Forms such as रहेकी/रहेका occur according to agreement; रहेको is not a universally invariant piece.
+**गरि + रहेको + छु → गरिरहेको छु** (gari + raheko + chu → gariraheko chu, I am doing it).
+Separate the action, the ongoing form, and the personal auxiliary. Like **-दै + a छ form**, this can express an action in progress.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| म पढिरहेको छु।<br>ma paḍhiraheko chu | I am reading: the basic form. |
+| म पढिरहेकी छु।<br>ma paḍhirahekī chu | I am reading, with feminine agreement for the speaker. |
+| हामी पढिरहेका छौं।<br>hāmī paḍhirahekā chaũ | We are reading: a plural example. |
+
+Usage varies, including whether feminine agreement is expressed in conversation. Recognize **रहेको/रहेकी/रहेका**, and also match छु/छौं to the subject.
 
 ### 4. Negative and past progressive
 
@@ -1245,10 +1288,16 @@ I did not work yesterday.
 
 ### ② Nepali grammar rules
 
-### 1. गर्दिनँ versus गरेनँ
+### 1. Form the first-person past negative
 
-**मैले काम गरेनँ** (I did not work) denies a past action, unlike present **काम गर्दिनँ** (I do not work).
- Compare **गएँ→गएनँ / आएँ→आएनँ**; past negatives use their respective past stems.
+**गरेँ → गरिनँ/गरेनँ** contrasts “I did” with “I did not”. Both गरिनँ, used in the examples, and गरेनँ occur as first-person past negatives.
+**गर्दिनँ** is present “I do not”. Notice the द.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| गएँ → गएनँ<br>gaẽ → gaenã | I went → I did not go. |
+| आएँ → आएनँ<br>āẽ → āenã | I came → I did not come. |
+| पढेँ → पढिनँ／पढेनँ<br>paḍhẽ → paḍhinã / paḍhenã | I read → I did not read. |
 
 ### 2. Respectful past -नुभएन
 
@@ -1315,11 +1364,18 @@ I will work tomorrow.
 
 ### ② Nepali grammar rules
 
-### 1. The -नेछ future
+### 1. Build the future form in -नेछ
 
-Compare **गर्नु→गर्नेछु / जानु→जानेछु / पढ्नु→पढ्नेछु** and we **गर्नेछौं**.
- These combine a -ने form with future personal endings.
- Respectful **गर्नुहुनेछ** has a different honorific construction from ordinary गर्नेछ.
+**गर्नु → गर् + ने + छु → गर्नेछु** (garnu → gar + ne + chu → garnechu) gives “I will do”.
+Plain forms combine -ने with a personal ending. Respectful forms use the different sequence **-नुहुनेछ**.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| म गर्नेछु।<br>ma garnechu | I will do it. |
+| हामी गर्नेछौं।<br>hāmī garnechaũ | We will do it. |
+| उहाँ गर्नुहुनेछ।<br>uhā̃ garnuhunecha | That person will do it: respectful. |
+
+The Forms & words tab also compares everyday plans expressed with **भोलि + the present form**. Future time does not always require -नेछ.
 
 ### 2. Negative future
 
@@ -1356,7 +1412,7 @@ See you later.
 Practice focus: Future forms agree with the subject: -नेछु for I, -नेछौं for we, -नुहुनेछ for respectful subjects.
 
 
-### A reference table for comparing personal forms
+### Everyday plans: भोलि + the present form
 
 | Person | Form and reading | Meaning |
 | --- | --- | --- |
@@ -1467,7 +1523,19 @@ Compare **उहाँले पढ्नुभएको छ** (he/she has read 
  Negate the auxiliary with the **छैन family**, keeping the participle.
  Personal forms include **गरेको छैनँ** (I have not done it).
 
-Practice focus: Perfect/experience uses the -एको family + छ: masculine -एको, feminine -एकी, plural -एका, respectful -नुभएको.
+### 6. -एको, -एकी, -एका: what do they agree with?
+
+Start with **intransitive actions such as going and coming**. Gender and number can appear on the participle as well as on the final छु/छौं auxiliary.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| म गएको छु।／म गएकी छु।<br>ma gaeko chu / ma gaekī chu | I have been/gone: basic and feminine forms. |
+| हामी गएका छौं।<br>hāmī gaekā chaũ | We have been/gone: a plural example. |
+| उहाँ जानुभएको छ।<br>uhā̃ jānubhaeko cha | That person has been/gone. Respect is expressed in नुभएको. |
+
+**With a ले-marked transitive agent, do not change the participle solely by counting people.** Agreement also involves the object/construction: compare **हामीले काम गरेको छौं** (hāmīle kām gareko chaũ, we have done the work).
+
+Practice focus: for intransitive perfects, compare basic -एको, feminine -एकी and plural -एका, plus the final छ auxiliary. Respectful forms use -नुभएको. With ले-marked transitive agents, participle agreement also involves the object/construction; do not change it just by counting subjects.
 
 
 ### A reference table for comparing personal forms
@@ -1570,11 +1638,18 @@ Compare **बस्नु→बस्नुहोस् / गर्नु→ग�
 **लेखिदिनुहोस्/गरिदिनुहोस्** request an action for someone.
  Compare **लेख्नुहोस्** with **लेखि + दिनुहोस्**; the latter adds a benefactive sense. दिनु need not refer to giving a physical object.
 
-### 4. Familiar versus respectful requests
+### 4. Three levels of request: compare the whole ending
 
-Contrast low-grade **बस** with respectful **बस्नुहोस्**.
- Familiar requests can use forms such as **बस/****बस न** (do sit down, familiar request); consult topic 7 and the tables for the appropriate relationship.
- Use respectful requests as the default with strangers.
+For “do”, compare these three forms. **Choose by your relationship; गर्नुहोस् is the beginner default with someone you do not know.**
+The lowest and familiar forms differ in their final vowel; notice the final ् in writing.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| गर् / gar | With तँ: very direct, restricted to particular relationships and situations. |
+| गर / gara | With तिमी: a familiar “do”. |
+| गर्नुहोस् / garnuhos | With तपाईं: respectful “please do”. |
+
+Final न in **गर न** (gara na, do it, please) adds an urging/requesting tone. Negative **नगर** (nagara, do not do it) places न before the verb.
 
 ### 5. A request versus an offer
 
@@ -1685,9 +1760,13 @@ Prefix **न** to a request form: **नगर्नुहोस्, नजान
  Sentence-final न in **बस्नुहोस् न** (please do sit down) softens or urges a request and is not negation.
  Position changes the function of न.
 
-### 4. Prohibition with -नु हुँदैन (must not do, with a preceding verb base)
+### 4. Prohibition as a rule: -नु हुँदैन
 
-**यहाँ धूम्रपान गर्नु हुँदैन** (smoking is not allowed here) states a prohibition. **नगर्नुहोस्** directly requests non-action; **गर्नु हुँदैन** (must not do it) describes an action as disallowed. हुन्न is also used as a shorter form.
+**Dictionary-form verb + हुँदैन (hũdaina)** states that an action is not allowed.
+**यहाँ धूम्रपान गर्नु हुँदैन।**
+yahā̃ dhūmrapān garnu hũdaina.
+Smoking is not allowed here.
+**नगर्नुहोस्** (nagarnuhos, please do not do it) directly addresses someone. **गर्नु हुँदैन** (garnu hũdaina) describes a prohibited action. In conversation, हुँदैन can shorten to **हुन्न** (hunna).
 
 ### 5. Prohibition versus no obligation
 
@@ -1733,31 +1812,60 @@ I can speak Nepali.
 
 ### ② Nepali grammar rules
 
-### 1. Infinitive -न + सक्नु
+### 1. Use the -न form before सक्नु
 
-Use **पढ्न सक्छु** (I can read) / **गर्न सक्छु** (I can do it) / **जान सक्छु** (I can go) for ability/possibility.
- The preceding verb is the -न infinitive, such as **पढ्न**, not unchanged dictionary पढ्नु.
+Put **the action first, then the ability form for the person**. For the first verb, remove the final ु from the dictionary form to make the **-न form**. सक्नु (saknu) expresses ability.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| पढ्नु → पढ्न सक्छु<br>paḍhnu → paḍhna sakchu | read → I can read. |
+| बोल्नु → बोल्न सक्छु<br>bolnu → bolna sakchu | speak → I can speak. |
+| गर्नु → गर्न सक्छु<br>garnu → garna sakchu | do → I can do it. |
 
 ### 2. Conjugate सक्नु
 
 Compare **म गर्न सक्छु** (I can do it) / **हामी गर्न सक्छौं** (we can do it) / **उहाँ गर्न सक्नुहुन्छ** (he/she can do it, respectful).
  Keep गर्न while conjugating the final सक्नु for person/respect; do not combine two finite presents such as गर्छु सक्छु (incorrect combination; use गर्न सक्छु for ability).
 
-### 3. Negative and past ability
+### 3. सक्छ is not universal: negatives and past forms
 
-Compare **सक्छु→सक्दिनँ**, past **सकेँ**, and negative past **सकिनँ**.
- Respectful forms include **सक्नुहुन्न/सक्नुभयो/सक्नुभएन**.
- Keep the preceding action in the -न form.
+**सक्छ (sakcha)** is a plain third-person form, not a form for every subject. Use **सक्छु** for I, **सक्छौं** for we, and **सक्नुहुन्छ** for respectful subjects.
+Keep the first verb in its -न form when changing सक्नु for negation or tense.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| म पढ्न सक्दिनँ।<br>ma paḍhna sakdinã | I cannot read. |
+| मैले पढ्न सकेँ।<br>maile paḍhna sakẽ | I was able to read / managed to read. |
+| मैले पढ्न सकिनँ।<br>maile paḍhna sakinã | I could not read. |
+
+Respectful forms: **सक्नुहुन्न/सक्नुभयो/सक्नुभएन** (saknuhunna / saknubhayo / saknubhaena). With a completed transitive action such as reading, म also becomes the agent form मैले.
 
 ### 4. Ability versus learned know-how
 
 **नेपाली बोल्न सक्छु** (I can speak Nepali) expresses ability; **नेपाली बोल्न जान्छु** (I know how to speak Nepali) emphasizes learned know-how. जान्नु means know and जानु go; the same-looking finite जान्छु must be interpreted in its construction.
 
-### 5. Can, may and want
+### 5. Ability, permission and desire are different
 
-**जान सक्छु** (I can go) expresses ability, **जान हुन्छ?** (it is permissible to go) asks permission, and **जान मन पर्छ** (want/like to go, depending on context) expresses a desire.
- Ability does not entail permission.
- See topic 31 for epistemic possibility with **हुन सक्छ** (may be; can be).
+**Being able does not automatically mean being allowed.** Similar action forms can be followed by expressions with different functions.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| म जान सक्छु।<br>ma jāna sakchu | I can go: ability or practical possibility. |
+| जान मिल्छ?<br>jāna milcha? | May I go? Permission or whether it is acceptable. |
+| मलाई जान मन छ।<br>malāī jāna man cha | I want to go: desire. |
+
+**हुन सक्छ** (huna sakcha, may be) expresses possibility; see the construction in theme 31.
+
+### 6. सक्नु also means “finish”
+
+Compare **an action in -न + सक्नु, “be able”**, with **an object directly followed by सक्नु, “finish”**. सक्यो or सकेँ alone does not determine the meaning.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| मैले काम सकेँ।<br>maile kām sakẽ | I finished the work. काम is the direct object. |
+| मैले काम गर्न सकेँ।<br>maile kām garna sakẽ | I managed to do the work. गर्न supplies the action “do”. |
+
+**काम सकेको थिएँ** (kām sakeko thiẽ, had finished the work) in theme 16 uses the “finish” meaning.
 
 ### Heard in conversation｜पाइन्छ? for availability
 
@@ -1803,11 +1911,17 @@ I have to go to the office tomorrow.
 
 ### ② Nepali grammar rules
 
-### 1. Necessity with -नु पर्छ (need to do, with a preceding verb base)
+### 1. पर्छ for necessity: keep -नु before it
 
-**मलाई जानु पर्छ** (I need to go) states that I need to go.
- With a लाई-marked experiencer, the predicate is **पर्छ**, not first-person पर्छु.
- The spelling **-नुपर्छ** also occurs.
+**पर्नु (parnu) → पर्छ (parcha)**. With a dictionary-form verb it expresses necessity.
+Use **the responsible person + लाई/ले + an action in -नु + पर्छ**. Start with the मलाई pattern used here. Changing मलाई to हामीलाई or उहाँलाई does not change पर्छ in this necessity construction.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| मलाई पढ्नु पर्छ।<br>malāī paḍhnu parcha | I need to study. पढ्नु keeps its dictionary form. |
+| उहाँलाई पढ्नु पर्छ।<br>uhā̃lāī paḍhnu parcha | That person needs to study. पर्छ stays the same despite the respectful experiencer. |
+
+Compare **पढ्न सक्छु** (can read) with **पढ्नु पर्छ** (need to read): necessity keeps final ु. The joined spelling पढ्नुपर्छ is also used.
 
 ### 2. पर्दैन versus हुँदैन
 
@@ -1815,20 +1929,59 @@ I have to go to the office tomorrow.
  Affirmative **पर्छ** expresses obligation/need; permission constructions with **हुन्छ** express acceptability.
  Keep their negatives distinct.
 
-### 3. Permission patterns
+### 3. Permission हुन्छ versus respectful -नुहुन्छ
 
-**यहाँ बस्न हुन्छ?** (it is permissible to sit here) asks permission to sit.
- Permission uses patterns with -**न हुन्छ** (may do, with a preceding verb base) or -**नु हुन्छ** (may do, a permission pattern); learn prohibition with -**नु हुँदैन** (must not do, with a preceding verb base).
- This differs from one-word respectful present **बस्नुहुन्छ**.
+One basic permission question uses **an action in -न + हुन्छ?**. Dictionary-form -नु + हुन्छ also occurs.
+The similar-looking **-नुहुन्छ** is a respectful present ending describing an action.
 
-### 4. Past necessity
+| Form and reading | Meaning and use |
+| --- | --- |
+| यहाँ बस्न हुन्छ?<br>yahā̃ basna huncha? | May I sit here? Asking permission. |
+| यहाँ बस्नु हुन्छ?<br>yahā̃ basnu huncha? | May I sit here? The permission construction with -नु. |
+| उहाँ यहाँ बस्नुहुन्छ।<br>uhā̃ yahā̃ basnuhuncha | That person lives here: respectful present. |
 
-**मलाई जानु पर्यो** (I had to go) expresses a need that arose/had to be met; **जानु पर्दैनथ्यो** (did not need to go) past lack of necessity. **जानुभएन** instead denies that a respectful person went.
+For prohibition, learn **बस्नु हुँदैन** (basnu hũdaina, sitting is not allowed). Use the people and context as well as spacing to interpret the construction.
+
+### 4. पर्छ → पर्यो: a need arose
+
+**पर्यो (paryo)** is a past form of पर्नु; you may also see the rendering **पर्‍यो**. Learn it as a member of the **पर्छ family**, not as a separate verb.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| मलाई जानु पर्छ।<br>malāī jānu parcha | I need to go. |
+| मलाई जानु पर्यो।<br>malāī jānu paryo | I had to go: a need arose. |
+| मलाई जानु परेन।<br>malāī jānu parena | I did not have to go: that occasion did not require it. |
+| मलाई जानु पर्दैनथ्यो।<br>malāī jānu pardainathyo | I did not need to go then: a past situation or habitual requirement. |
+
+**जानु परेन** says there was no need; it does not itself say whether the person went. **म गएनँ** (ma gaenã) reports “I did not go”.
 
 ### 5. चाहिन्छ versus पर्छ
 
 **मलाई पानी चाहिन्छ** (I need water) expresses need for water; **मलाई जानु पर्छ** (I need to go) need to perform an action. चाहिन्छ commonly takes a needed item/quantity; पर्छ combines with verbal -नु for obligation.
  Both can have मलाई as experiencer.
+
+### 6. पाइन्छ and मिल्छ: asking what is allowed
+
+**An action in -न + पाइन्छ/मिल्छ** can ask about permission. पाइन्छ concerns what is allowed or available; मिल्छ can concern acceptability, suitability or feasibility.
+These impersonal forms do not become first-person merely because I am asking.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| यहाँ बस्न पाइन्छ?<br>yahā̃ basna pāincha? | Is sitting here allowed? Asking about permission/rules. |
+| यहाँ बस्न मिल्छ?<br>yahā̃ basna milcha? | Is it OK to sit here? Asking whether it is acceptable. |
+| बस्न पाइँदैन／बस्न मिल्दैन<br>basna pāĩdaina / basna mildaina | Sitting is not allowed / not acceptable or feasible, depending on context. |
+
+Distinguish these from ability **सक्छु**. With a thing, पाइन्छ can mean availability: **यहाँ चिया पाइन्छ** (yahā̃ ciyā pāincha, tea is available here).
+
+### 7. Read पर्छ together with what precedes it
+
+**पर्छ does not always mean “must”.** Distinguish necessity, weather, price and liking by the preceding expression.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| पानी पर्छ → पानी पर्यो<br>pānī parcha → pānī paryo | It rains → it rained. पानी refers to rain in this combination. |
+| यो कति पर्छ?<br>yo kati parcha? | How much does this cost? Asking a price. |
+| मलाई चिया मन पर्छ।<br>malāī ciyā man parcha | I like tea. Treat मन पर्छ as a unit. |
 
 ### Heard in conversation｜मिल्छ for permission and feasibility
 
@@ -1887,16 +2040,31 @@ Use **म जान चाहन्छु** (I want to go) / **उहाँ ज�
  The desired action is a -न infinitive; चाहनु agrees with the subject who wants it.
  Do not mix patterns as मलाई जान चाहन्छु (incorrect construction; use म जान चाहन्छु for wanting to go).
 
-### 2. Desire with मन लाग्नु (to feel like doing)
+### 2. मन छ, मन लाग्छ and मन लाग्यो
 
-**मलाई जान मन लाग्छ** (I feel like going) expresses feeling like going.
- The experiencer is मलाई and the predicate लाग्छ.
- Its meaning overlaps with **म जान चाहन्छु** (I want to go), but its case and verb construction differ.
+**Experiencer + लाई + action in -न + मन…**. मन (man) means mind/feeling. Use मलाई here, unlike subject म with चाहन्छु.
 
-### 3. मन पर्नु (to like; to find pleasing) and liking
+| Form and reading | Meaning and use |
+| --- | --- |
+| मलाई जान मन छ।<br>malāī jāna man cha | I want to go. The desire is present. |
+| मलाई जान मन लाग्छ।<br>malāī jāna man lāgcha | I feel like going. The desire arises. |
+| मलाई जान मन लाग्यो।<br>malāī jāna man lāgyo | I felt like going / came to want to go. |
+| मलाई जान मन छैन।<br>malāī jāna man chaina | I do not want to go. I have no desire to go now. |
 
-**मलाई चिया मन पर्छ** (I like tea) expresses liking tea. **मलाई चिया खान मन पर्छ** (I like/want to drink tea, depending on context) can describe liking/wanting the action, depending on context.
- A present urge can be made explicit with **अहिले…मन लागेको छ** (right now, feel like doing…).
+Also compare **मन लाग्दैन** (man lāgdaina, do not feel like it) and **मन लागेन** (man lāgena, did not feel like it). Changing the experiencer to उहाँलाई leaves छ/लाग्छ unchanged in this construction.
+
+### 3. मन पर्छ for liking, मन छ for wanting
+
+**मन पर्नु (man parnu) means to like or find pleasing**, whether the object is a thing or an activity.
+As a beginner, use **मन छ/मन लाग्छ for wanting or feeling like an action**, and **मन पर्छ for liking**.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| मलाई चिया पिउन मन पर्छ।<br>malāī ciyā piuna man parcha | I like drinking tea: liking an activity. |
+| मलाई चिया पिउन मन छ।<br>malāī ciyā piuna man cha | I want to drink tea: a present desire. |
+| मलाई यो चिया मन पर्यो।<br>malāī yo ciyā man paryo | I liked this tea: a reaction after trying it. |
+
+Negatives: **मन पर्दैन/मन परेन** (man pardaina / man parena). Context can bring these meanings closer, but मन पर्छ is not a universal substitute for “want to now”.
 
 ### 4. Negating desire
 
@@ -1928,8 +2096,8 @@ Practice focus: For a wish, use the experiencer + लाई, a verb in -न, and
 | we | हामी नेपाल जान चाहन्छौं।<br>hāmī nepāl jāna cāhanchaũ | We want to go to Nepal. |
 | you | तपाईं नेपाल जान चाहनुहुन्छ?<br>tapāĩ nepāl jāna cāhanuhuncha? | Do you want to go to Nepal? |
 | you plural | तपाईंहरू नेपाल जान चाहनुहुन्छ?<br>tapāĩharū nepāl jāna cāhanuhuncha? | Do you want to go to Nepal? |
-| he/she | उहाँ नेपाल जान चाहन्छिन्।<br>uhā̃ nepāl jāna cāhanchin | She wants to go to Nepal. |
-| they | उहाँहरू नेपाल जान चाहँदैनन्।<br>uhā̃harū nepāl jāna cāhãdainan | They do not want to go to Nepal. |
+| he/she | उहाँ नेपाल जान चाहनुहुन्छ।<br>uhā̃ nepāl jāna cāhanuhuncha | She wants to go to Nepal. |
+| they | उहाँहरू नेपाल जान चाहनुहुन्न।<br>uhā̃harū nepāl jāna cāhanuhunna | They do not want to go to Nepal. |
 
 Distinguish मन पर्छ (like; find pleasing) from मन **छ** and मन लाग्छ (feel like doing).
 
@@ -1949,16 +2117,34 @@ This is a good book.
 
 ### ② Nepali grammar rules
 
-### 1. Attributive versus predicative
+### 1. Identify with हो; describe a quality with छ
 
-**राम्रो किताब** (a good book) is a good book; **किताब राम्रो छ** (the book is good) states that the book is good.
- Compare noun phrase + हो in **यो राम्रो किताब हो** (this is a good book) with adjective + छ in **यो किताब राम्रो छ** (this book is good).
+**Adjective + noun + a हो form** identifies what something is.
+**यो राम्रो किताब हो।**
+yo rāmro kitāb ho.
+This is a good book.
 
-### 2. The -ओ/-ई/-आ pattern
+**Noun + adjective + a छ form** describes its quality or state.
+**यो किताब राम्रो छ।**
+yo kitāb rāmro cha.
+This book is good.
 
-Compare **राम्रो छोरा** (a good son) / **राम्री छोरी** (a good daughter) / **राम्रा साथीहरू** (good friends).
- This adjective class alternates ओ/ई/आ according to agreement.
- A noun ending in आ is not automatically feminine; learn the actual noun–adjective combinations.
+The adjective राम्रो (good) is the same. Its role **before the noun किताब or as the final description** determines the choice of हो/छ.
+
+### 2. The ending pattern: o → ī / ā
+
+An **inflecting adjective such as राम्रो, ending in -ो (o)**, changes its ending to agree with the person or thing described.
+**-ी (ī) is feminine; -ा (ā) is the basic plural pattern.** Replace the final vowel sign rather than adding another word.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| राम्रो छोरा<br>rāmro chorā | Masculine singular: a good son. राम्रो ends in ो = o. |
+| राम्री छोरी<br>rāmrī chorī | Feminine singular: a good daughter. राम्री ends in ी = ī. |
+| राम्रा किताबहरू<br>rāmrā kitābharū | Plural things: good books. राम्रा ends in ा = ā. |
+
+**सानो → सानी → साना** (sāno → sānī → sānā, small) follows the same pattern.
+Feminine agreement can also occur with a female plural, as in **राम्री केटीहरू** (rāmrī keṭīharū, pretty girls). Do not treat ā as an exceptionless plural ending.
+A noun ending alone does not identify gender: छोरा means son although it ends in आ.
 
 ### 3. Invariable adjectives
 
@@ -1971,15 +2157,20 @@ Compare **राम्रो छोरा** (a good son) / **राम्री 
 Compare **मेरो छोरा** (my son) / **मेरी छोरी** (my daughter) / **मेरा साथीहरू** (my friends), **कस्तो/कस्ती/कस्ता**, and **जस्तो/जस्ती/जस्ता**.
  Possession, interrogation and similarity also show agreement. मेरी is not selected because the possessor is female.
 
-### 5. Honorific and plural-looking agreement
+### 5. An ā form does not always mean several people
 
-Honorific noun phrases can use forms resembling plural agreement.
- Learn complete combinations, including basic **उहाँ राम्रो हुनुहुन्छ** (he/she is a good person, respectful) and noun modifiers such as **राम्रा शिक्षक** (good teachers/a respected good teacher, depending on context).
- The ending आ alone does not establish the number of people.
+**-ा (ā) can also occur in honorific agreement or an oblique form before a postposition.** Use the noun, numbers and context to determine how many people are meant.
 
-Practice focus: Match an inflecting adjective to the noun: masculine singular सानो, feminine singular सानी, plural साना.
-यी and the noun ending -हरू indicate plural. Match the adjective साना and possessive मेरा.
-केटी (girl) is feminine singular, so use सानी rather than सानो.
+| Form and reading | Meaning and use |
+| --- | --- |
+| एक जना राम्रा शिक्षक<br>ek janā rāmrā śikṣak | One good teacher. एक जना means one person; the ā form is honorific here. |
+| एउटा सानो केटा → एउटा साना केटाले<br>euṭā sāno keṭā → euṭā sānā keṭāle | One small boy → that boy as a ले-marked agent. The ā form can occur while the referent remains singular. |
+
+Learn the basic pattern first. Use this note to avoid automatically interpreting every ā form as plural.
+
+Practice focus: in these questions use basic सानो, feminine singular सानी and साना for plural things. Look at the noun being described.
+यी and -हरू mark plural; these questions pair them with साना and मेरा.
+केटी (girl) takes सानी. The core rules also explain feminine plurals and respectful forms.
 
 
 ## Theme 24｜Adverbs & exclamations
@@ -2022,6 +2213,15 @@ I walk slowly.
 
 **म पनि जान्छु** (I go too) adds the speaker; **म चिया मात्र खान्छु** (I drink only tea) limits the item to tea.
  Scope depends on the expression before पनि/मात्र, so placement changes what is added or restricted.
+
+### 6. कति can ask or exclaim
+
+**कति + adjective** can ask about degree or exclaim “how …!”. Context, intonation and punctuation distinguish them.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| कति राम्रो!<br>kati rāmro! | How lovely! No numerical answer is requested. |
+| यो कति ठूलो छ?<br>yo kati ṭhūlo cha? | How big is this? Asking about size. |
 
 ### Heard in conversation｜अलि as a softener
 
@@ -2073,10 +2273,16 @@ In **यो घर त्यो घरभन्दा ठूलो छ** (this h
 **तपाईंजस्तो साथी** (a friend like you) is a friend like you. जस्तो also has **जस्ती/जस्ता** forms. **तपाईं जस्तै** (just like you) expresses similarity such as just like you.
  Compare complete noun/adverbial constructions, not isolated translations.
 
-### 5. Equality versus difference
+### 5. जत्तिकै and जति: equality and amount
 
-**A र B बराबर छन्** (A and B are equal) states equality; **Bजति** compares an amount/degree to B; **Bभन्दा** introduces a standard for difference.
- The marker distinguishes equality/degree from unequal comparison.
+**Comparison standard + जत्तिकै + adjective** expresses “as … as”. **भन्दा** introduces a difference; **जत्तिकै** highlights equal degree.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| यो झोला त्यो झोलाजत्तिकै ठूलो छ।<br>yo jholā tyo jholājattikai ṭhūlo cha | This bag is as big as that bag. |
+| यो झोला त्यो झोलाभन्दा ठूलो छ।<br>yo jholā tyo jholābhandā ṭhūlo cha | This bag is bigger than that bag. |
+
+**जति** concerns amount/degree, and **बराबर** (barābar) means equal. Theme 29 covers the paired **जति…त्यति** construction.
 
 ### A moment in Nepal｜The market scale connects fields with the city
 
@@ -2149,6 +2355,15 @@ I like tea and coffee.
 
 **पानी परे पनि जान्छु** (I will go even if it rains) concedes even if it rains. **पानी पर्यो तर गएँ** (it rained, but I went) contrasts two reported events.
  The first uses -**ए पनि** (even if/although, part of a linking pattern); the second uses तर. **का बाबजुद** (despite) follows a noun phrase for despite.
+
+### 6. किनभने or त्यसैले: what comes first?
+
+Compare **result + किनभने + reason** with **reason + त्यसैले + result**. Swapping only the connector reverses the causal relation.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| म घरमै बसेँ किनभने पानी पर्यो।<br>ma gharmai basẽ kinabhane pānī paryo | I stayed home because it rained. घरमै emphasizes at home. |
+| पानी पर्यो, त्यसैले म घरमै बसेँ।<br>pānī paryo, tyasaile ma gharmai basẽ | It rained, so I stayed home. |
 
 ### A moment in Nepal｜Beyond the peaks: what supports everyday Nepal?
 
@@ -2321,10 +2536,14 @@ The person who lives here is my friend.
 Compare **म पढ्ने किताब** (the book I read) with **मैले पढेको किताब** (the book I read, completed); a completed transitive modifier can still mark its agent.
  Respectful modifiers include **उहाँले पढ्नुभएको किताब** (the book he/she has read, respectful) and non-completed **उहाँ पढ्नुहुने किताब** (the book he/she reads, respectful).
 
-### 3. जो, जसले and जसलाई
+### 3. Choose the relative and matching forms separately
 
-Compare **जो…उहाँ**, agentive **जसले…उहाँले**, and dative **जसलाई…उहाँलाई**.
- Each clause assigns its own participant role; do not copy a case ending mechanically between clauses.
+**जो refers to a person; जसले marks a relative agent; जसलाई marks a relative recipient/experiencer.** The same person can have different roles in the two clauses.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| जसले यो लेख्नुभयो, उहाँ मेरो साथी हुनुहुन्छ।<br>jasle yo lekhnubhayo, uhā̃ mero sāthī hunuhuncha | The person who wrote this is my friend. जसले marks the writer in the first clause; उहाँ is the identifying subject in the second. |
+| जसलाई पानी चाहिन्छ, उहाँलाई दिनुहोस्।<br>jaslāī pānī cāhincha, uhā̃lāī dinuhos | Give it to the person who needs water. The first clause has an experiencer, the second a recipient: both use लाई. |
 
 ### 4. जुन and जे with their correlates
 
@@ -2360,7 +2579,7 @@ In जो यहाँ बस्नुहुन्छ (the person who lives here
 | जे…त्यो／त्यही<br>je…tyo / tyahī | what…that, the very thing | जे मन पर्छ, त्यही खानुहोस्।<br>je man parcha, tyahī khānuhos<br>Eat what you like. |
 | जसले…उहाँले<br>jasle…uhā̃le | the agent who…that agent | जसले मेहनत गर्नुहुन्छ, उहाँले सिक्नुहुन्छ।<br>jasle mehanat garnuhuncha, uhā̃le siknuhuncha<br>The person who makes an effort learns. |
 | जसलाई…उहाँलाई<br>jaslāī…uhā̃lāī | the person whom/to whom…that person | जसलाई पानी चाहिन्छ, उहाँलाई दिनुहोस्।<br>jaslāī pānī cāhincha, uhā̃lāī dinuhos<br>Give water to the person who needs it. |
-| जसको・जसकी・जसका<br>jasko / jaskī / jaskā | whose; agreement follows the possessed noun | जसको किताब हुनुहुन्छ, उहाँलाई दिनुहोस्।<br>jasko kitāb hunuhuncha, uhā̃lāī dinuhos<br>Give it to the person whose book it is. |
+| जसको・जसकी・जसका<br>jasko / jaskī / jaskā | whose; agreement follows the possessed noun | जसको किताब हो, उहाँलाई दिनुहोस्।<br>jasko kitāb ho, uhā̃lāī dinuhos<br>Give it to the person whose book it is. |
 | जसमा・जुन…मा<br>jasmā / jun…mā | in which; choose according to the referent | जुन झोलामा किताब **छ**, त्यो मेरो हो।<br>jun jholāmā kitāb cha, tyo mero ho<br>The bag that has a book in it is mine. |
 | जहाँ…त्यहाँ<br>jahā̃…tyahā̃ | where…there | जहाँ पानी **छ**, त्यहाँ जीवन छ।<br>jahā̃ pānī cha, tyahā̃ jīvan cha<br>Where there is water, there is life. |
 | जहाँबाट…त्यहाँबाट<br>jahā̃bāṭa…tyahā̃bāṭa | from where…from there | जहाँबाट आउनुभयो, त्यहाँबाट फेरि आउनुहोस्।<br>jahā̃bāṭa āunubhayo, tyahā̃bāṭa pheri āunuhos<br>Come again from the place you came from. |
@@ -2445,9 +2664,17 @@ I think it will rain tomorrow.
 
 ### ② Nepali grammar rules
 
-### 1. Opinions with मलाई लाग्छ (I think/it seems to me that…)
+### 1. लाग्छ and लाग्यो with a complete thought
 
-**मलाई लाग्छ** (I think/it seems to me that…)… marks an experiencer in मलाई and introduces an impression. …**भन्ने लाग्छ** (it seems/thinks that…, following the content) can frame the content with भन्ने; it need not report spoken words literally.
+**Experiencer + [content] + जस्तो लाग्छ** means “it seems to that person that …”.
+The verb is the same लाग्नु as in **जाडो लाग्छ**, but here it takes the content of a thought.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| मलाई उहाँ घरमा हुनुहुन्छ जस्तो लाग्छ।<br>malāī uhā̃ gharmā hunuhuncha jasto lāgcha | I think that person is at home. हुनुहुन्छ agrees with that person; लाग्छ belongs to the “seems to me” construction. |
+| मलाई उहाँ घरमा हुनुहुन्छ जस्तो लाग्यो।<br>malāī uhā̃ gharmā hunuhuncha jasto lāgyo | I thought that person was at home. लाग्यो puts the impression in the past. |
+
+The order **मलाई लाग्छ, …** (malāī lāgcha, I think …) also occurs. **लाग्दैन** (lāgdaina) negates the impression.
 
 ### 2. हो, होला and हुन सक्छ (may be; can be)
 
@@ -2459,10 +2686,16 @@ I think it will rain tomorrow.
  It combines respectful perfect **-नुभएको** with होला.
  Removing the modal and saying **जानुभयो** instead reports the event.
 
-### 4. Obligation versus inference
+### 4. पर्छ: obligation versus inference
 
-**जानु पर्छ** (need to go) expresses obligation; **गएको हुनु पर्छ** (must have gone) an inference that someone must have gone.
- Distinguish required **-नु** action from inferred -**एको हुनु** (being in a completed state, part of a compound) completion.
+**Action in -नु + पर्छ expresses necessity. A perfect participle + हुनु पर्छ expresses an inference** about what must have happened. Read the preceding form.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| उहाँलाई जानु पर्छ।<br>uhā̃lāī jānu parcha | That person needs to go: a required action. |
+| उहाँ जानुभएको हुनु पर्छ।<br>uhā̃ jānubhaeko hunu parcha | That person must have gone: an inference from evidence. |
+
+**हुन सक्छ** (huna sakcha, may be) leaves a possibility open. Inferential **हुनु पर्छ** is also different from reporting a verified fact.
 
 ### 5. Scope of negation
 
@@ -2552,10 +2785,16 @@ Learn **खानु→खुवाउनु / सिक्नु→सिका
 In **आमाले बच्चालाई खाना खुवाउनुभयो** (the mother fed the child), आमाले is the causer, बच्चालाई the eater and खाना the food.
  Participant roles determine the marker selection.
 
-### 3. The -न लगाउनु (to make/have someone do, with a preceding verb base) construction
+### 3. लगाउनु and लाग्नु are different verbs
 
-**लेख्न लगाउनु** (to make/have someone write)/**काम गर्न लगाउनु** (to make/have someone work) cause/arrange writing or working.
- Keep the first verb in **-न** and conjugate लगाउनु, as in respectful past **लगाउनुभयो**.
+**Action in -न + लगाउनु (lagāunu) means to make/have someone do something**. It is a different verb from **लाग्नु (lāgnu), feel/take/seem**.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| उहाँले मलाई लेख्न लगाउनुभयो।<br>uhā̃le malāī lekhna lagāunubhayo | That person had me write. उहाँले is the causer; मलाई is the writer; लेख्न is the action. |
+| मलाई जाडो लाग्यो।<br>malāī jāḍo lāgyo | I felt/got cold. This लाग्यो is not causative. |
+
+The final **लगाउनुभयो** carries past tense and respect; the preceding लेख्न does not become लेख्नुभयो.
 
 ### 4. खुवाउनु versus खान दिनु (to let someone eat)
 
@@ -2590,10 +2829,16 @@ She said she would not go.
 
 In **उहाँले «म आउँछु» भन्नुभयो** (he/she said, “I will come”), quoted content precedes the reporting verb. **भन्नुभयो** is respectful past, **भन्नुहुन्छ** respectful present, agreeing with outer agent उहाँले.
 
-### 2. Pronouns inside and outside quotation
+### 2. From direct words to reported content
 
-म inside **«म आउँछु»** (“I will come”) refers to the original speaker.
- An indirect formulation such as **उहाँ आफू आउने कुरा भन्नुहुन्छ** (he/she says that he/she will come) can use reflexive **आफू** and a nominalized content phrase.
+**म inside a quotation refers to the original speaker**. Compare preserving those words with reporting the content as “that they themselves …”.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| उहाँले “म बिरामी छु” भन्नुभयो।<br>uhā̃le “ma birāmī chu” bhannubhayo | That person said, “I am ill.” The original छु stays inside the quotation. |
+| उहाँले आफू बिरामी भएको बताउनुभयो।<br>uhā̃le āphū birāmī bhaeko batāunubhayo | That person reported being ill. आफू refers to that person; भएको connects the reported state. |
+
+**भएको is not a universal marker for every quotation.** An action can instead take a form such as **आफू आउने** (āphū āune, that they will come), according to the reported content.
 
 ### 3. भनेर, भन्ने and भने
 
@@ -2623,7 +2868,7 @@ bholi chuṭṭī cha re.
 
 I hear tomorrow is a day off.
 
-Practice focus: In this report, भएको links the content “being”; नभएको links “not being”. आफू refers to the reported speaker.
+Practice focus: these questions report a state with भएको, or a negative state with नभएको. आफू refers to the original speaker. Actions can take other forms; भएको is not a universal indirect-speech marker.
 
 
 ### Direct quotation and indirect reporting
@@ -2697,90 +2942,66 @@ Starting from the stem लेख्, compare who writes, who wrote and who has w
 | Nepali | Reading | Meaning |
 | --- | --- | --- |
 | म चिठी लेख्छु। | ma ciṭhī lekhchu | I write letters. |
-| तँ चिठी लेख्छस्। | tã ciṭhī lekhchas | You write letters. |
-| तिमी चिठी लेख्छौ। | timī ciṭhī lekhchau | You write letters. |
-| तिमीहरू चिठी लेख्छौ। | timīharū ciṭhī lekhchau | You write letters. |
-| तपाईं चिठी लेख्नुहुन्छ। | tapāĩ ciṭhī lekhnuhuncha | You write letters. |
-| उहाँ चिठी लेख्नुहुन्छ। | uhā̃ ciṭhī lekhnuhuncha | He writes letters. |
-| उहाँ चिठी लेख्नुहुन्छ। | uhā̃ ciṭhī lekhnuhuncha | She writes letters. |
-| उहाँ चिठी लेख्नुहुन्छ। | uhā̃ ciṭhī lekhnuhuncha | He writes letters. |
 | हामी चिठी लेख्छौं। | hāmī ciṭhī lekhchaũ | We write letters. |
-| उहाँहरू चिठी लेख्नुहुन्छ। | uhā̃harū ciṭhī lekhnuhuncha | They write letters. |
+| तपाईं चिठी लेख्नुहुन्छ। | tapāĩ ciṭhī lekhnuhuncha | You write letters. |
+| तपाईंहरू चिठी लेख्नुहुन्छ। | tapāĩharū ciṭhī lekhnuhuncha | You all write letters. |
+| उहाँ चिठी लेख्नुहुन्छ। | uhā̃ ciṭhī lekhnuhuncha | That person writes letters. |
+| उहाँहरू चिठी लेख्नुहुन्छ। | uhā̃harū ciṭhī lekhnuhuncha | Those people write letters. |
 
 ### Not writing
 
 | Nepali | Reading | Meaning |
 | --- | --- | --- |
 | म चिठी लेख्दिनँ। | ma ciṭhī lekhdinã | I do not write letters. |
-| तँ चिठी लेख्दैनस्। | tã ciṭhī lekhdainas | You do not write letters. |
-| तिमी चिठी लेख्दैनौ। | timī ciṭhī lekhdainau | You do not write letters. |
-| तिमीहरू चिठी लेख्दैनौ। | timīharū ciṭhī lekhdainau | You do not write letters. |
-| तपाईं चिठी लेख्नुहुन्न। | tapāĩ ciṭhī lekhnuhunna | You do not write letters. |
-| उहाँ चिठी लेख्नुहुन्न। | uhā̃ ciṭhī lekhnuhunna | He does not write letters. |
-| उहाँ चिठी लेख्नुहुन्न। | uhā̃ ciṭhī lekhnuhunna | She does not write letters. |
-| उहाँ चिठी लेख्नुहुन्न। | uhā̃ ciṭhī lekhnuhunna | He does not write letters. |
 | हामी चिठी लेख्दैनौं। | hāmī ciṭhī lekhdainaũ | We do not write letters. |
-| उहाँहरू चिठी लेख्नुहुन्न। | uhā̃harū ciṭhī lekhnuhunna | They do not write letters. |
+| तपाईं चिठी लेख्नुहुन्न। | tapāĩ ciṭhī lekhnuhunna | You do not write letters. |
+| तपाईंहरू चिठी लेख्नुहुन्न। | tapāĩharū ciṭhī lekhnuhunna | You all do not write letters. |
+| उहाँ चिठी लेख्नुहुन्न। | uhā̃ ciṭhī lekhnuhunna | That person does not write letters. |
+| उहाँहरू चिठी लेख्नुहुन्न। | uhā̃harū ciṭhī lekhnuhunna | Those people do not write letters. |
 
 ### A completed writing event
 
 | Nepali | Reading | Meaning |
 | --- | --- | --- |
 | मैले हिजो चिठी लेखेँ। | maile hijo ciṭhī lekhẽ | I wrote a letter yesterday. |
-| तैंले हिजो चिठी लेखिस्। | taĩle hijo ciṭhī lekhis | You wrote a letter yesterday. |
-| तिमीले हिजो चिठी लेख्यौ। | timīle hijo ciṭhī lekhyau | You wrote a letter yesterday. |
-| तिमीहरूले हिजो चिठी लेख्यौ। | timīharūle hijo ciṭhī lekhyau | You wrote a letter yesterday. |
-| तपाईंले हिजो चिठी लेख्नुभयो। | tapāĩle hijo ciṭhī lekhnubhayo | You wrote a letter yesterday. |
-| उहाँले हिजो चिठी लेख्नुभयो। | uhā̃le hijo ciṭhī lekhnubhayo | He wrote a letter yesterday. |
-| उहाँले हिजो चिठी लेख्नुभयो। | uhā̃le hijo ciṭhī lekhnubhayo | She wrote a letter yesterday. |
-| उहाँले हिजो चिठी लेख्नुभयो। | uhā̃le hijo ciṭhī lekhnubhayo | He wrote a letter yesterday. |
 | हामीले हिजो चिठी लेख्यौं। | hāmīle hijo ciṭhī lekhyaũ | We wrote a letter yesterday. |
-| उहाँहरूले हिजो चिठी लेख्नुभयो। | uhā̃harūle hijo ciṭhī lekhnubhayo | They wrote a letter yesterday. |
+| तपाईंले हिजो चिठी लेख्नुभयो। | tapāĩle hijo ciṭhī lekhnubhayo | You wrote a letter yesterday. |
+| तपाईंहरूले हिजो चिठी लेख्नुभयो। | tapāĩharūle hijo ciṭhī lekhnubhayo | You all wrote a letter yesterday. |
+| उहाँले हिजो चिठी लेख्नुभयो। | uhā̃le hijo ciṭhī lekhnubhayo | That person wrote a letter yesterday. |
+| उहाँहरूले हिजो चिठी लेख्नुभयो। | uhā̃harūle hijo ciṭhī lekhnubhayo | Those people wrote a letter yesterday. |
 
 ### A writing event that did not happen
 
 | Nepali | Reading | Meaning |
 | --- | --- | --- |
 | मैले हिजो चिठी लेखिनँ। | maile hijo ciṭhī lekhinã | I did not write a letter yesterday. |
-| तैंले हिजो चिठी लेखिनस्। | taĩle hijo ciṭhī lekhinas | You did not write a letter yesterday. |
-| तिमीले हिजो चिठी लेखेनौ। | timīle hijo ciṭhī lekhenau | You did not write a letter yesterday. |
-| तिमीहरूले हिजो चिठी लेखेनौ। | timīharūle hijo ciṭhī lekhenau | You did not write a letter yesterday. |
-| तपाईंले हिजो चिठी लेख्नुभएन। | tapāĩle hijo ciṭhī lekhnubhaena | You did not write a letter yesterday. |
-| उहाँले हिजो चिठी लेख्नुभएन। | uhā̃le hijo ciṭhī lekhnubhaena | He did not write a letter yesterday. |
-| उहाँले हिजो चिठी लेख्नुभएन। | uhā̃le hijo ciṭhī lekhnubhaena | She did not write a letter yesterday. |
-| उहाँले हिजो चिठी लेख्नुभएन। | uhā̃le hijo ciṭhī lekhnubhaena | He did not write a letter yesterday. |
 | हामीले हिजो चिठी लेखेनौं। | hāmīle hijo ciṭhī lekhenaũ | We did not write a letter yesterday. |
-| उहाँहरूले हिजो चिठी लेख्नुभएन। | uhā̃harūle hijo ciṭhī lekhnubhaena | They did not write a letter yesterday. |
+| तपाईंले हिजो चिठी लेख्नुभएन। | tapāĩle hijo ciṭhī lekhnubhaena | You did not write a letter yesterday. |
+| तपाईंहरूले हिजो चिठी लेख्नुभएन। | tapāĩharūle hijo ciṭhī lekhnubhaena | You all did not write a letter yesterday. |
+| उहाँले हिजो चिठी लेख्नुभएन। | uhā̃le hijo ciṭhī lekhnubhaena | That person did not write a letter yesterday. |
+| उहाँहरूले हिजो चिठी लेख्नुभएन। | uhā̃harūle hijo ciṭhī lekhnubhaena | Those people did not write a letter yesterday. |
 
 ### Completion connected with now
 
 | Nepali | Reading | Meaning |
 | --- | --- | --- |
 | मैले चिठी लेखेको छु। | maile ciṭhī lekheko chu | I have done the write letters. |
-| तैंले चिठी लेखेको छस्। | taĩle ciṭhī lekheko chas | You have done the write letters. |
-| तिमीले चिठी लेखेको छौ। | timīle ciṭhī lekheko chau | You have done the write letters. |
-| तिमीहरूले चिठी लेखेको छौ। | timīharūle ciṭhī lekheko chau | You have done the write letters. |
-| तपाईंले चिठी लेख्नुभएको छ। | tapāĩle ciṭhī lekhnubhaeko cha | You have done the write letters. |
-| उहाँले चिठी लेख्नुभएको छ। | uhā̃le ciṭhī lekhnubhaeko cha | He has done the write letters. |
-| उहाँले चिठी लेख्नुभएको छिन्। | uhā̃le ciṭhī lekhnubhaeko chin | She has done the write letters. |
-| उहाँले चिठी लेख्नुभएको छ। | uhā̃le ciṭhī lekhnubhaeko cha | He has done the write letters. |
 | हामीले चिठी लेखेको छौं। | hāmīle ciṭhī lekheko chaũ | We have done the write letters. |
-| उहाँहरूले चिठी लेख्नुभएको छन्। | uhā̃harūle ciṭhī lekhnubhaeko chan | They have done the write letters. |
+| तपाईंले चिठी लेख्नुभएको छ। | tapāĩle ciṭhī lekhnubhaeko cha | You have done the write letters. |
+| तपाईंहरूले चिठी लेख्नुभएको छ। | tapāĩharūle ciṭhī lekhnubhaeko cha | You all have done the write letters. |
+| उहाँले चिठी लेख्नुभएको छ। | uhā̃le ciṭhī lekhnubhaeko cha | That person has done the write letters. |
+| उहाँहरूले चिठी लेख्नुभएको छ। | uhā̃harūle ciṭhī lekhnubhaeko cha | Those people have done the write letters. |
 
 ### Former writing habits
 
 | Nepali | Reading | Meaning |
 | --- | --- | --- |
 | म पहिले चिठी लेख्थें। | ma pahile ciṭhī lekhthẽ | I used to write letters. |
-| तँ पहिले चिठी लेख्थिस्। | tã pahile ciṭhī lekhthis | You used to write letters. |
-| तिमी पहिले चिठी लेख्थ्यौ। | timī pahile ciṭhī lekhthyau | You used to write letters. |
-| तिमीहरू पहिले चिठी लेख्थ्यौ। | timīharū pahile ciṭhī lekhthyau | You used to write letters. |
-| तपाईं पहिले चिठी लेख्नुहुन्थ्यो। | tapāĩ pahile ciṭhī lekhnuhunthyo | You used to write letters. |
-| उहाँ पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃ pahile ciṭhī lekhnuhunthyo | He used to write letters. |
-| उहाँ पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃ pahile ciṭhī lekhnuhunthyo | She used to write letters. |
-| उहाँ पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃ pahile ciṭhī lekhnuhunthyo | He used to write letters. |
 | हामी पहिले चिठी लेख्थ्यौं। | hāmī pahile ciṭhī lekhthyaũ | We used to write letters. |
-| उहाँहरू पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃harū pahile ciṭhī lekhnuhunthyo | They used to write letters. |
+| तपाईं पहिले चिठी लेख्नुहुन्थ्यो। | tapāĩ pahile ciṭhī lekhnuhunthyo | You used to write letters. |
+| तपाईंहरू पहिले चिठी लेख्नुहुन्थ्यो। | tapāĩharū pahile ciṭhī lekhnuhunthyo | You all used to write letters. |
+| उहाँ पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃ pahile ciṭhī lekhnuhunthyo | That person used to write letters. |
+| उहाँहरू पहिले चिठी लेख्नुहुन्थ्यो। | uhā̃harū pahile ciṭhī lekhnuhunthyo | Those people used to write letters. |
 
 ### Requests and offers
 
@@ -2914,75 +3135,51 @@ Choose a form of हुनु according to what you mean.
 | Nepali | Reading | Meaning |
 | --- | --- | --- |
 | म लेखक हुँ। | ma lekhak hũ | I am an author. |
-| तँ लेखक होस्। | tã lekhak hos | You are an author. |
-| तिमी लेखक हौ। | timī lekhak hau | You are an author. |
-| तिमीहरू लेखक हौ। | timīharū lekhak hau | You are authors. |
-| तपाईं लेखक हुनुहुन्छ। | tapāĩ lekhak hunuhuncha | You are an author. |
-| उहाँ लेखक हुनुहुन्छ। | uhā̃ lekhak hunuhuncha | He is an author. |
-| उहाँ लेखिका हुनुहुन्छ। | uhā̃ lekhikā hunuhuncha | She is an author. |
-| उहाँ लेखक हुनुहुन्छ। | uhā̃ lekhak hunuhuncha | He is an author. |
 | हामी लेखक हौं। | hāmī lekhak haũ | We are authors. |
-| उहाँहरू लेखक हुनुहुन्छ। | uhā̃harū lekhak hunuhuncha | They are authors. |
+| तपाईं लेखक हुनुहुन्छ। | tapāĩ lekhak hunuhuncha | You are an author. |
+| तपाईंहरू लेखक हुनुहुन्छ। | tapāĩharū lekhak hunuhuncha | You all are an author. |
+| उहाँ लेखक हुनुहुन्छ। | uhā̃ lekhak hunuhuncha | That person is an author. |
+| उहाँहरू लेखक हुनुहुन्छ। | uhā̃harū lekhak hunuhuncha | Those people are authors. |
 | म लेखक होइनँ। | ma lekhak hoinã | I am not an author. |
-| तँ लेखक होइनस्। | tã lekhak hoinas | You are not an author. |
-| तिमी लेखक होइनौ। | timī lekhak hoinau | You are not an author. |
-| तिमीहरू लेखक होइनौ। | timīharū lekhak hoinau | You are not authors. |
-| तपाईं लेखक हुनुहुन्न। | tapāĩ lekhak hunuhunna | You are not an author. |
-| उहाँ लेखक हुनुहुन्न। | uhā̃ lekhak hunuhunna | He is not an author. |
-| उहाँ लेखिका हुनुहुन्न। | uhā̃ lekhikā hunuhunna | She is not an author. |
-| उहाँ लेखक हुनुहुन्न। | uhā̃ lekhak hunuhunna | He is not an author. |
 | हामी लेखक होइनौं। | hāmī lekhak hoinaũ | We are not authors. |
-| उहाँहरू लेखक हुनुहुन्न। | uhā̃harū lekhak hunuhunna | They are not authors. |
+| तपाईं लेखक हुनुहुन्न। | tapāĩ lekhak hunuhunna | You are not an author. |
+| तपाईंहरू लेखक हुनुहुन्न। | tapāĩharū lekhak hunuhunna | You all are not an author. |
+| उहाँ लेखक हुनुहुन्न। | uhā̃ lekhak hunuhunna | That person is not an author. |
+| उहाँहरू लेखक हुनुहुन्न। | uhā̃harū lekhak hunuhunna | Those people are not authors. |
 
 ### Present location
 
 | Nepali | Reading | Meaning |
 | --- | --- | --- |
 | म पुस्तकालयमा छु। | ma pustakālayamā chu | I am at the library. |
-| तँ पुस्तकालयमा छस्। | tã pustakālayamā chas | You are at the library. |
-| तिमी पुस्तकालयमा छौ। | timī pustakālayamā chau | You are at the library. |
-| तिमीहरू पुस्तकालयमा छौ। | timīharū pustakālayamā chau | You are at the library. |
-| तपाईं पुस्तकालयमा हुनुहुन्छ। | tapāĩ pustakālayamā hunuhuncha | You are at the library. |
-| उहाँ पुस्तकालयमा हुनुहुन्छ। | uhā̃ pustakālayamā hunuhuncha | He is at the library. |
-| उहाँ पुस्तकालयमा हुनुहुन्छ। | uhā̃ pustakālayamā hunuhuncha | She is at the library. |
-| उहाँ पुस्तकालयमा हुनुहुन्छ। | uhā̃ pustakālayamā hunuhuncha | He is at the library. |
 | हामी पुस्तकालयमा छौं। | hāmī pustakālayamā chaũ | We are at the library. |
-| उहाँहरू पुस्तकालयमा हुनुहुन्छ। | uhā̃harū pustakālayamā hunuhuncha | They are at the library. |
+| तपाईं पुस्तकालयमा हुनुहुन्छ। | tapāĩ pustakālayamā hunuhuncha | You are at the library. |
+| तपाईंहरू पुस्तकालयमा हुनुहुन्छ। | tapāĩharū pustakālayamā hunuhuncha | You all are at the library. |
+| उहाँ पुस्तकालयमा हुनुहुन्छ। | uhā̃ pustakālayamā hunuhuncha | That person is at the library. |
+| उहाँहरू पुस्तकालयमा हुनुहुन्छ। | uhā̃harū pustakālayamā hunuhuncha | Those people are at the library. |
 | म पुस्तकालयमा छैनँ। | ma pustakālayamā chainã | I am not at the library. |
-| तँ पुस्तकालयमा छैनस्। | tã pustakālayamā chainas | You are not at the library. |
-| तिमी पुस्तकालयमा छैनौ। | timī pustakālayamā chainau | You are not at the library. |
-| तिमीहरू पुस्तकालयमा छैनौ। | timīharū pustakālayamā chainau | You are not at the library. |
-| तपाईं पुस्तकालयमा हुनुहुन्न। | tapāĩ pustakālayamā hunuhunna | You are not at the library. |
-| उहाँ पुस्तकालयमा हुनुहुन्न। | uhā̃ pustakālayamā hunuhunna | He is not at the library. |
-| उहाँ पुस्तकालयमा हुनुहुन्न। | uhā̃ pustakālayamā hunuhunna | She is not at the library. |
-| उहाँ पुस्तकालयमा हुनुहुन्न। | uhā̃ pustakālayamā hunuhunna | He is not at the library. |
 | हामी पुस्तकालयमा छैनौं। | hāmī pustakālayamā chainaũ | We are not at the library. |
-| उहाँहरू पुस्तकालयमा हुनुहुन्न। | uhā̃harū pustakālayamā hunuhunna | They are not at the library. |
+| तपाईं पुस्तकालयमा हुनुहुन्न। | tapāĩ pustakālayamā hunuhunna | You are not at the library. |
+| तपाईंहरू पुस्तकालयमा हुनुहुन्न। | tapāĩharū pustakālayamā hunuhunna | You all are not at the library. |
+| उहाँ पुस्तकालयमा हुनुहुन्न। | uhā̃ pustakālayamā hunuhunna | That person is not at the library. |
+| उहाँहरू पुस्तकालयमा हुनुहुन्न। | uhā̃harū pustakālayamā hunuhunna | Those people are not at the library. |
 
 ### Past location
 
 | Nepali | Reading | Meaning |
 | --- | --- | --- |
 | म अस्ति बजारमा थिएँ। | ma asti bajārmā thiẽ | I was at the market the day before yesterday. |
-| तँ अस्ति बजारमा थिइस्। | tã asti bajārmā thiis | You were at the market the day before yesterday. |
-| तिमी अस्ति बजारमा थियौ। | timī asti bajārmā thiyau | You were at the market the day before yesterday. |
-| तिमीहरू अस्ति बजारमा थियौ। | timīharū asti bajārmā thiyau | You were at the market the day before yesterday. |
-| तपाईं अस्ति बजारमा हुनुहुन्थ्यो। | tapāĩ asti bajārmā hunuhunthyo | You were at the market the day before yesterday. |
-| उहाँ अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃ asti bajārmā hunuhunthyo | He was at the market the day before yesterday. |
-| उहाँ अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃ asti bajārmā hunuhunthyo | She was at the market the day before yesterday. |
-| उहाँ अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃ asti bajārmā hunuhunthyo | He was at the market the day before yesterday. |
 | हामी अस्ति बजारमा थियौं। | hāmī asti bajārmā thiyaũ | We were at the market the day before yesterday. |
-| उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃harū asti bajārmā hunuhunthyo | They were at the market the day before yesterday. |
+| तपाईं अस्ति बजारमा हुनुहुन्थ्यो। | tapāĩ asti bajārmā hunuhunthyo | You were at the market the day before yesterday. |
+| तपाईंहरू अस्ति बजारमा हुनुहुन्थ्यो। | tapāĩharū asti bajārmā hunuhunthyo | You all were at the market the day before yesterday. |
+| उहाँ अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃ asti bajārmā hunuhunthyo | That person was at the market the day before yesterday. |
+| उहाँहरू अस्ति बजारमा हुनुहुन्थ्यो। | uhā̃harū asti bajārmā hunuhunthyo | Those people were at the market the day before yesterday. |
 | म अस्ति बजारमा थिइनँ। | ma asti bajārmā thiinã | I was not at the market the day before yesterday. |
-| तँ अस्ति बजारमा थिइनस्। | tã asti bajārmā thiinas | You were not at the market the day before yesterday. |
-| तिमी अस्ति बजारमा थिएनौ। | timī asti bajārmā thienau | You were not at the market the day before yesterday. |
-| तिमीहरू अस्ति बजारमा थिएनौ। | timīharū asti bajārmā thienau | You were not at the market the day before yesterday. |
-| तपाईं अस्ति बजारमा हुनुहुन्नथ्यो। | tapāĩ asti bajārmā hunuhunnathyo | You were not at the market the day before yesterday. |
-| उहाँ अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃ asti bajārmā hunuhunnathyo | He was not at the market the day before yesterday. |
-| उहाँ अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃ asti bajārmā hunuhunnathyo | She was not at the market the day before yesterday. |
-| उहाँ अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃ asti bajārmā hunuhunnathyo | He was not at the market the day before yesterday. |
 | हामी अस्ति बजारमा थिएनौं। | hāmī asti bajārmā thienaũ | We were not at the market the day before yesterday. |
-| उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃harū asti bajārmā hunuhunnathyo | They were not at the market the day before yesterday. |
+| तपाईं अस्ति बजारमा हुनुहुन्नथ्यो। | tapāĩ asti bajārmā hunuhunnathyo | You were not at the market the day before yesterday. |
+| तपाईंहरू अस्ति बजारमा हुनुहुन्नथ्यो। | tapāĩharū asti bajārmā hunuhunnathyo | You all were not at the market the day before yesterday. |
+| उहाँ अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃ asti bajārmā hunuhunnathyo | That person was not at the market the day before yesterday. |
+| उहाँहरू अस्ति बजारमा हुनुहुन्नथ्यो। | uhā̃harū asti bajārmā hunuhunnathyo | Those people were not at the market the day before yesterday. |
 
 ### An object and its location
 

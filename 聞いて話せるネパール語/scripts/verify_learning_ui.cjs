@@ -5,7 +5,7 @@ const ROOT=path.resolve(__dirname,'../..'),work=path.resolve(process.argv[2]||'.
 const source=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const compile=s=>ts.transpileModule(s,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
 const modules={};for(const[p,file]of[['react','react.production.js'],['react/jsx-runtime','react-jsx-runtime.production.js'],['react-dom','react-dom.production.js'],['react-dom/client','react-dom-client.production.js'],['scheduler','scheduler.production.js']])modules[p]=fs.readFileSync(path.join(path.dirname(require.resolve(p.split('/')[0]+'/package.json')),'cjs',file),'utf8');
-for(const name of ['vocabularyQuiz','PuzzleBoard','puzzleDrag','practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['PuzzleBoard','LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
+for(const name of ['letterPresentation','vocabularyQuiz','PuzzleBoard','puzzleDrag','practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['PuzzleBoard','LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
 for(const name of ['VocabularyQuizScreen','SettingsScreen','VocabCategoryScreen','VocabDirectionScreen','FlashcardScreen','FreePracticeScreen','GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
 modules.entitlement=compile(source('packages/shared/src/entitlement.tsx'));
 modules.compose=compile(source('聞いて話せるネパール語/expo-app/src/pack/compose.ts'));
@@ -265,131 +265,107 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
       }
       return;
     }
-    if(process.argv.includes('--conjuncts')){
+    if(['--letters-only','--conjuncts','--letters-navigation'].some(f=>process.argv.includes(f))){
       const by=id=>page.getByTestId(id);
+      const play=async(id,url)=>{const before=await page.evaluate(()=>window.events.filter(e=>e[0]==='audio').length);await by(id).click();await page.waitForFunction(({before,url})=>window.events.filter(e=>e[0]==='audio').length===before+1&&window.events.filter(e=>e[0]==='audio').at(-1)[1].uri===url,{before,url});assert.equal(await page.evaluate(()=>window.activeAudio.size),1);};
+      const checkWord=async sample=>{
+        assert.equal(await by('letters-play-word-0').count(),sample.examples?.length?1:0,'One natural example is visible without disclosure');
+        assert.equal(await by('letters-play-word-1').count(),0);
+        if(sample.examples?.length){assert((await by('letters-example-words').innerText()).includes(sample.examples[0].ne));await play('letters-play-word-0',sample.examples[0].audio.url);}
+      };
       for(const lang of ['ja','en']){
-        const en=lang==='en';await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true,{name:'LettersSounds'}),lang);await by('letters-category-start').click();
-        assert.equal(await by('letters-play-ka-aa').count(),0);assert.equal(await by('letters-play-house').count(),0);assert.equal(await by('letters-play-ka-base').count(),1);
-        await by('letters-library').click();await by('letters-category-conjuncts').click();
-        const data=await page.evaluate(()=>window.data.LETTERS_SOUNDS),bases=data.sections.find(s=>s.id==='conjuncts').samples.filter(s=>s.audio);
-        assert.equal(bases.length,30);assert.equal(data.conjunctCombinations.length,30);
-        for(const [i,base]of bases.entries()){
-          await by('letters-conjunct-'+base.id).click();assert.equal(await by('letters-conjunct-'+base.id).getAttribute('aria-selected'),'true');
-          assert.equal(await page.evaluate(()=>window.activeAudio.size),0,'Changing a conjunct stops playback, like consonant selection');assert.equal(await by('letters-example-words').count(),0);assert.equal(await by('letters-sound-chart').getByRole('button').count(),11);await by('letters-details').click();assert.equal(await by('letters-example-words').getByRole('button').count(),2);
-          for(let j=0;j<2;j++){await by('letters-play-word-'+j).click();await page.waitForFunction(url=>window.events.filter(e=>e[0]==='audio').at(-1)?.[1]?.uri===url,base.examples[j].audio.url);}
-          await by('letters-details').click();
-          for(const sample of data.conjunctCombinations[i].samples){await by('letters-play-'+sample.id).click();await page.waitForFunction(url=>window.events.filter(e=>e[0]==='audio').at(-1)?.[1]?.uri===url,sample.audio.url);assert.equal(await page.evaluate(()=>window.activeAudio.size),1);}
-        }
-        for(const[width,height,scale]of[[390,844,1],[320,568,1.4]]){
-          await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});await by('letters-category-conjuncts').click();
-          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
-          assert.equal(await by('letters-play-word-0').count(),0,'Word details use the same collapsed selection card');
-          const tiles=await by('letters-sound-chart').getByRole('button').all();for(const tile of tiles){const box=await tile.boundingBox();assert(box.width>=44&&box.height>=44);}
-          if(width===390){const last=await tiles.at(-1).boundingBox();assert(last.y+last.height<height-68,'All 11 conjunct forms fit together at standard text size');}
-          await page.screenshot({path:path.join(work,`previews/conjunct-${lang}-${width}.png`)});
-        }
-        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: ka/ghar removal; 30 wrapped conjunct selectors, 60 example words in shared details, 330 sound routes, one active player and narrow/large-text layout.`);
-      }
-      return;
-    }
-    if(process.argv.includes('--letters-navigation')){
-      for(const lang of ['ja','en']){
-        const en=lang==='en',by=id=>page.getByTestId(id);
-        await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true,{name:'LettersSounds'}),lang);
-        const sections=await page.evaluate(()=>window.data.LETTERS_SOUNDS.sections),saved=await page.evaluate(()=>localStorage.getItem('test-study'));
-        await by('letters-category-start').click();await by('letters-prev-section').click();await by('letters-category-start').waitFor();
-        await by('letters-category-start').click();
-        for(const section of sections){
-          await page.getByRole('heading',{name:section.title,exact:true}).waitFor();
-          assert(await by('letters-section-navigation').evaluate(el=>el===el.parentElement.lastElementChild),'Navigation is at the bottom of the lesson');
-          const first=by('letters-sound-chart').getByRole('button').first();await first.click();await page.waitForFunction(()=>window.activeAudio.size===1);
-          if(section.id==='vowels'){await by('letters-details').click();assert.equal(await by('letters-play-word-0').count(),1);await by('letters-play-word-0').click();await page.waitForFunction(()=>window.activeAudio.size===1);}
-          await by('letters-next-section').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0,'Moving stops the sound');assert.equal(await by('letters-play-word-0').count(),0,'Moving closes previous word details');
-        }
-        await by('letters-category-marks').click();await by('letters-section-numbers').click();
-        for(const section of [...sections].reverse()){
-          await page.getByRole('heading',{name:section.title,exact:true}).waitFor();await by('letters-prev-section').click();
-        }
-        await by('letters-category-start').waitFor();assert.equal(await page.evaluate(()=>localStorage.getItem('test-study')),saved,'Navigation never marks sections as reviewed');
-        for(const [width,height,scale]of[[390,844,1],[320,568,1.4]]){
-          await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});await by('letters-category-start').click();
-          for(const section of sections){
-            await page.getByRole('heading',{name:section.title,exact:true}).waitFor();await by('letters-next-section').scrollIntoViewIfNeeded();
-            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
-            for(const id of ['letters-prev-section','letters-next-section']){const box=await by(id).boundingBox();assert(box.width>=44&&box.height>=44);}
-            if(section.id==='start'||section.id==='vowels')await page.screenshot({path:path.join(work,`previews/letters-nav-${lang}-${width}-${section.id}.png`)});
-            await by('letters-next-section').click();
-          }
-        }
-        console.log(`PASS ${lang}: forward/back through all 13 sections, endpoint library links, stopped playback, reset details, no progress side effects, bottom placement and 320px/large-text targets.`);
-      }
-      assert.deepEqual(errors,[]);return;
-    }
-    if(process.argv.includes('--letters-only')){
-      for(const lang of ['ja','en']){
-        const en=lang==='en',b=name=>page.getByRole('button',{name,exact:true}),by=id=>page.getByTestId(id);
-        await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);await page.evaluate(()=>window.navigate('LettersSounds'));
-        const letters=await page.evaluate(()=>window.data.LETTERS_SOUNDS);
-        assert.equal(await page.locator('[data-testid^="letters-category-"]').count(),6);
+        const en=lang==='en';await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true,{name:'LettersSounds'}),lang);
+        const original=await page.evaluate(()=>JSON.stringify(window.data.LETTERS_SOUNDS));
+        const letters=await page.evaluate(l=>require('letterPresentation').prepareLetterPresentation(window.data.LETTERS_SOUNDS,l==='en'),lang);
+        assert.deepEqual(letters.sections.map(s=>s.id),['start','vowels','combinations','conjuncts','marks','numbers']);
+        assert.equal(letters.combinations.length,33);assert.equal(letters.conjunctCombinations.length,30);
+        assert.deepEqual(letters.combinations.filter(r=>r.samples[0].audio).map(r=>r.samples[0].ne),['क्','स्']);
+        const raw=JSON.parse(original);for(let i=0;i<33;i++)assert.deepEqual(letters.combinations[i].samples.slice(1).map(s=>s.audio),raw.combinations[i].samples.map(s=>s.audio));
+        for(let i=0;i<30;i++)assert.deepEqual(letters.conjunctCombinations[i].samples.map(s=>s.audio),raw.conjunctCombinations[i].samples.map(s=>s.audio));
+        assert.equal(letters.combinations.find(r=>r.consonant==='ज').samples[0].examples?.some(w=>w.ne==='ज्ञान')??false,false);
+        assert.equal(letters.combinations[0].samples[1].examples?.some(w=>w.ne==='किताब')??false,false);
+        assert.equal(await page.locator('[data-testid^="letters-category-"]').count(),4);
         await page.screenshot({path:path.join(work,`previews/letters-${lang}-library.png`),fullPage:true});
-        const sectionCategory=id=>['start','vowels','combinations','conjuncts'].includes(id)?id:['marks','numbers'].includes(id)?'marks':'consonants';
-        const play=async(id,url)=>{const before=await page.evaluate(()=>window.events.filter(e=>e[0]==='audio').length);await by(id).click();await page.waitForFunction(({before,url})=>window.events.filter(e=>e[0]==='audio').length===before+1&&window.events.filter(e=>e[0]==='audio').at(-1)[1].uri===url,{before,url});assert.equal(await page.evaluate(()=>window.activeAudio.size),1,'Only one audio player may be active');};
-        let total=0;
+        const saved=await page.evaluate(()=>localStorage.getItem('test-study'));
+        await by('letters-category-start').click();assert.equal(await by('letters-play-ka-aa').count(),0);assert.equal(await by('letters-play-house').count(),0);
+        for(const section of letters.sections){
+          await page.getByRole('heading',{name:section.title,exact:true}).waitFor();
+          assert(await by('letters-section-navigation').evaluate(el=>el===el.parentElement.lastElementChild));
+          await by('letters-next-section').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
+        }
+        await by('letters-category-conjuncts').click();await by('letters-section-numbers').click();
+        for(const section of [...letters.sections].reverse()){await page.getByRole('heading',{name:section.title,exact:true}).waitFor();await by('letters-prev-section').click();}
+        assert.equal(await page.evaluate(()=>localStorage.getItem('test-study')),saved);
         for(const section of letters.sections.filter(s=>!['combinations','conjuncts'].includes(s.id))){
-          await by('letters-category-'+sectionCategory(section.id)).click();
-          if(['bare','marks','numbers','velar','affricate','retroflex','dental','labial','other'].includes(section.id))await by('letters-section-'+section.id).click();
-          const samples=section.samples.filter(s=>s.audio);
-          assert.equal(await by('letters-sound-chart').getByRole('button').count(),samples.length,'All sounds must be on the chart without pagination');
-          assert.equal(await by('letters-next').count(),0);
-          if(section.id==='bare'){assert.equal(section.samples.length,33);assert.equal(samples.length,2);assert.equal(await page.locator('[data-testid^="letters-symbol-"]').count(),31);assert.deepEqual(samples.map(x=>x.ne),['क्','स्']);for(const s of section.samples.filter(x=>!x.audio))assert.equal(await by('letters-symbol-'+s.id).getByRole('button').count(),0);}
-          if(['bare','vowels','conjuncts'].includes(section.id))await page.screenshot({path:path.join(work,`previews/letters-${lang}-${section.id}.png`)});
-          for(const s of samples){
-            const id='letters-play-'+s.id;
-            assert.equal(await by(id).getAttribute('aria-label'),`${en?'Play sound':'音を聞く'}: ${s.speech??s.ne}`);
-            await play(id,s.audio.url);
-            assert.equal(await by(id).getAttribute('aria-selected'),'true');
-            if(s.examples){
-              assert.equal(s.examples.length,2);
-              if(await by('letters-details').getAttribute('aria-expanded')!=='true')await by('letters-details').click();
-              for(let j=0;j<2;j++){assert.equal(await by('letters-play-word-'+j).getAttribute('aria-label'),`${en?'Play word':'単語を聞く'}: ${s.examples[j].ne}`);await play('letters-play-word-'+j,s.examples[j].audio.url);}total++;
-            }
-            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${s.id} overflow`);
+          await by('letters-category-'+(['marks','numbers'].includes(section.id)?'conjuncts':section.id)).click();
+          if(['marks','numbers'].includes(section.id))await by('letters-section-'+section.id).click();
+          assert.equal(await by('letters-sound-chart').getByRole('button').count(),section.samples.length);
+          for(const sample of section.samples){
+            if(sample.audio)await play('letters-play-'+sample.id,sample.audio.url);else await by('letters-symbol-'+sample.id).click();
+            await checkWord(sample);
           }
-          await b(en?'Mark section as reviewed':'この項目を確認済みにする').click();await b(en?'Reviewed ✓':'確認済み ✓').waitFor();
           await by('letters-library').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
         }
-        assert.equal(total,44);
-        await by('letters-category-combinations').click();
-        for(const row of letters.combinations){
-          await b(`${en?'Consonant':'子音'} ${row.consonant}`).click();
-          assert.equal(await page.evaluate(()=>window.activeAudio.size),0,'Changing consonant stops playback');
-          assert.equal(await by('letters-sound-chart').getByRole('button').count(),11);
-          for(const s of row.samples){assert.equal(await by('letters-play-'+s.id).getAttribute('aria-label'),`${en?'Play sound':'音を聞く'}: ${s.speech??s.ne}`);await play('letters-play-'+s.id,s.audio.url);}
-        }
-        await b(en?'Stop':'停止').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
-        await by('letters-library').click();await by('letters-category-vowels').click();
-        const vowel=letters.sections.find(s=>s.id==='vowels').samples[0];
-        await play('letters-play-'+vowel.id,vowel.audio.url);await play('letters-play-'+vowel.id,vowel.audio.url);
-        await page.evaluate(()=>{window.audioEnded=true;window.redraw();});await page.waitForFunction(()=>window.activeAudio.size===0);await page.evaluate(()=>{window.audioEnded=false;});
-        await by('letters-library').click();await b(en?'Back':'戻る').click();assert.equal(await page.evaluate(()=>window.route.name),'HomeTab');
-        for(const[width,height,scale]of[[390,844,1],[320,568,1.4]]){
-          await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});
-          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),'Library overflow');
-          for(const category of ['vowels','consonants','combinations','marks']){
-            await by('letters-category-'+category).click();
-            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${category} narrow/large text overflow`);
-            const tiles=await by('letters-sound-chart').getByRole('button').all();for(const tile of tiles){const box=await tile.boundingBox();assert(box.width>=44&&box.height>=44,'Touch target below 44px');}
-            if(width===390&&['vowels','combinations'].includes(category)){
-              const first=await tiles[0].boundingBox(),last=await tiles.at(-1).boundingBox();assert(first.y>=0&&last.y+last.height<height-68,'All 11 sounds should fit together in the standard viewport');
-              await page.screenshot({path:path.join(work,`previews/letters-${lang}-${category}.png`)});
+        for(const category of ['combinations','conjuncts']){
+          await by('letters-category-'+category).click();
+          const rows=category==='combinations'?letters.combinations:letters.conjunctCombinations;
+          for(const row of rows){
+            const selector=category==='combinations'?'letters-consonant-'+row.consonant:'letters-conjunct-'+letters.sections.find(s=>s.id==='conjuncts').samples.find(s=>s.ne===row.consonant).id;
+            await by(selector).click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
+            assert.equal(await by('letters-sound-chart').getByRole('button').count(),category==='combinations'?12:11);
+            if(category==='conjuncts')assert.equal(await by('letters-play-word-0').count(),1,'Each conjunct starts at a form with a natural word');
+            for(const sample of row.samples){
+              if(sample.audio)await play('letters-play-'+sample.id,sample.audio.url);
+              else{await by('letters-symbol-'+sample.id).click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0);assert.equal(await by('letters-symbol-'+sample.id).getAttribute('aria-selected'),'true');}
+              await checkWord(sample);
             }
-            if(width===390&&category==='combinations')await page.screenshot({path:path.join(work,`previews/letters-${lang}-combinations.png`)});
+          }
+          await by('letters-library').click();
+        }
+        assert.equal(await page.evaluate(()=>JSON.stringify(window.data.LETTERS_SOUNDS)),original,'Presentation does not mutate OTA data');
+        for(const [width,height,scale]of[[390,844,1],[320,568,1.4]]){
+          await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});
+          for(const category of ['start','vowels','combinations','conjuncts']){
+            await by('letters-category-'+category).click();
+            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+            assert.equal(await page.getByText(en?'Reading tips':'読み方を見る',{exact:true}).count(),0);
+            for(const tile of await by('letters-sound-chart').getByRole('button').all()){const box=await tile.boundingBox();assert(box.width>=44&&box.height>=44,'44px minimum target');}
+            if(width===390&&['combinations','conjuncts'].includes(category)){const last=await by('letters-sound-chart').getByRole('button').last().boundingBox();assert(last.y+last.height<height-68,'All forms fit on standard screen');}
+            await page.screenshot({path:path.join(work,`previews/letters-${lang}-${width}-${category}.png`)});
             await by('letters-library').click();
           }
         }
-        console.log(`PASS ${lang}: 44 vowels/consonants with two words, all 363 vowel routes, grouped charts, tap/replay/stop/end/back, save, 44px targets and 320px/large text.`);
+        await by('letters-category-vowels').click();await page.getByRole('button',{name:en?'Mark section as reviewed':'この項目を確認済みにする',exact:true}).click();
+        await page.getByRole('button',{name:en?'Reviewed ✓':'確認済み ✓',exact:true}).waitFor();
+        await page.evaluate(()=>{const s=JSON.parse(localStorage.getItem('test-study'));s.lettersRead=window.data.LETTERS_SOUNDS.sections.map(s=>s.id);localStorage.setItem('test-study',JSON.stringify(s));});
+        await page.evaluate(l=>window.boot(l,false,{name:'HomeTab'}),lang);await page.getByText(en?'6 sections reviewed':'6項目を確認済み',{exact:true}).waitFor();
+        console.log(`PASS ${lang}: 4 cards, 6 sections both directions, 33×12 consonant forms, 30×11 conjunct forms, only k/s bare audio, default single examples, all audio routes, immutable source, progress migration and 320px large-text layout.`);
       }
       assert.deepEqual(errors,[]);return;
+    }
+    if(process.argv.includes('--grammar-clarity')){
+      for(const lang of ['ja','en'])for(const [width,scale]of[[390,1],[320,1.4]]){
+        await page.setViewportSize({width,height:844});await page.evaluate(({lang,scale})=>window.boot(lang,true,{name:'GrammarLibrary'},scale),{lang,scale});
+        const themes=(await page.evaluate(()=>window.data.GRAMMAR_THEMES)).filter(t=>!process.argv.includes('--changed-only')||[13,19,21,23].includes(t.id));
+        for(const theme of themes){
+          await page.evaluate(({themeId,title})=>window.navigate('GrammarGuide',{themeId,title}),{themeId:theme.id,title:theme.name});
+          for(const part of [lang==='ja'?'基本ルール':'Core rules',lang==='ja'?'活用・語彙':'Forms & words']){
+            await page.getByRole('tab',{name:part,exact:true}).click();
+            while(await page.locator('button[aria-expanded="false"]').count())await page.locator('button[aria-expanded="false"]').first().click();
+            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang}/${theme.id}/${width}/${part} page overflow`);
+            const overflow=await page.evaluate(()=>[...document.querySelectorAll('div,span')].filter(e=>{const b=e.getBoundingClientRect();return b.width>0&&b.x>=0&&b.right>innerWidth+2;}).map(e=>e.textContent.slice(0,70)));
+            assert.deepEqual(overflow,[],`${lang}/${theme.id}/${width}/${part} text overflow`);
+            if([3,21,23].includes(theme.id)&&part===(lang==='ja'?'基本ルール':'Core rules')){
+              const rule=theme.id===23?(lang==='ja'?'2. 語尾の基本：オ → イ／ア':'2. The ending pattern: o → ī / ā'):theme.id===21?(lang==='ja'?'4. पर्छ → पर्यो：必要が生じた':'4. पर्छ → पर्यो: a need arose'):(lang==='ja'?'3. मलाई＋感覚＋लाग्नु：誰がどう感じる？':'3. मलाई + sensation + लाग्नु: who feels it?');
+              await page.getByRole('heading',{name:rule,exact:true}).scrollIntoViewIfNeeded();
+              await page.screenshot({path:path.join(work,`previews/grammar-${lang}-${theme.id}-${width}.png`)});
+            }
+          }
+          await page.getByRole('button',{name:lang==='ja'?'教材を閉じる':'Close lesson',exact:true}).click();
+        }
+        assert.deepEqual(errors,[]);console.log(`PASS grammar ${lang} ${width}: ${themes.length} lessons, rules and expanded references, translated tables, no horizontal text overflow.`);
+      }
+      return;
     }
     if(process.argv.includes('--lesson-navigation')){
       for(const lang of ['ja','en']){

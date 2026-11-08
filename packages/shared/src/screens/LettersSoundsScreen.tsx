@@ -1,4 +1,4 @@
-import { useCallback, useLayoutEffect, useRef, useState } from 'react';
+import { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { Text } from '../Text';
@@ -8,22 +8,21 @@ import { useI18n } from '../i18n';
 import { useScaleStyle } from '../SettingsContext';
 import { LearningSound } from '../LearningSound';
 import type { LearningAudio, SoundSample } from '../learning';
+import { prepareLetterPresentation } from '../letterPresentation';
 
 const ink = '#183c3a', teal = '#126b60', muted = '#526c67';
 const categories = [
   { id: 'start', sections: ['start'], glyph: 'अ', ja: 'はじめに', en: 'Start here', subJa: '文字のしくみを知る', subEn: 'How the script works' },
   { id: 'vowels', sections: ['vowels'], glyph: 'अ आ', ja: '母音', en: 'Vowels', subJa: '11字 · 音と例単語', subEn: '11 letters · sounds & words' },
-  { id: 'consonants', sections: ['bare', 'velar', 'affricate', 'retroflex', 'dental', 'labial', 'other'], glyph: 'क ख', ja: '子音', en: 'Consonants', subJa: '33字 · 母音なしの形も', subEn: '33 letters · with & without a' },
-  { id: 'combinations', sections: ['combinations'], glyph: 'कि कु', ja: '子音＋母音', en: 'Vowel combinations', subJa: '33 × 11 通りの表', subEn: '33 × 11 forms' },
-  { id: 'conjuncts', sections: ['conjuncts'], glyph: 'क्ष ज्ञ', ja: '複合文字', en: 'Conjuncts', subJa: '30形 · 音から単語へ', subEn: '30 forms · from sounds to words' },
-  { id: 'marks', sections: ['marks', 'numbers'], glyph: 'ँ १२', ja: '記号・数字', en: 'Signs & digits', subJa: '鼻に響く音と数字', subEn: 'Nasal sounds & numbers' },
+  { id: 'combinations', sections: ['combinations'], glyph: 'कि कु', ja: '子音＋母音', en: 'Vowel combinations', subJa: '子音のみ＋母音11通り', subEn: 'Consonant only + 11 vowel forms' },
+  { id: 'conjuncts', sections: ['conjuncts', 'marks', 'numbers'], glyph: 'क्ष ँ', ja: '複合・記号', en: 'Conjuncts & signs', subJa: '複合文字・記号・数字', subEn: 'Conjuncts, signs & digits' },
 ];
 
 export default function LettersSoundsScreen() {
-  const { LETTERS_SOUNDS: data } = useAppData(), learning = useLearning(), { lang } = useI18n(), ss = useScaleStyle(), nav = useNavigation();
+  const { LETTERS_SOUNDS: source } = useAppData(), learning = useLearning(), { lang } = useI18n(), ss = useScaleStyle(), nav = useNavigation();
   const en = lang === 'en';
-  const [section, setSection] = useState<number | null>(null), [selected, setSelected] = useState(0), [row, setRow] = useState(0), [conjunctIndex, setConjunctIndex] = useState(0);
-  const [showDetails, setShowDetails] = useState(false), [showHelp, setShowHelp] = useState(false);
+  const data = useMemo(() => source ? prepareLetterPresentation(source, en) : undefined, [source, en]);
+  const [section, setSection] = useState<number | null>(null), [selected, setSelected] = useState<number | null>(null), [row, setRow] = useState(0), [conjunctIndex, setConjunctIndex] = useState(0);
   const [playing, setPlaying] = useState<{ id: string; audio: LearningAudio; key: number } | null>(null);
   const scroll = useRef<ScrollView>(null), serial = useRef(0);
   const stop = useCallback(() => setPlaying(null), []);
@@ -35,19 +34,18 @@ export default function LettersSoundsScreen() {
   const current = section === null ? null : data.sections[section];
   const category = categories.find(c => current && c.sections.includes(current.id));
   const isCombination = current?.id === 'combinations';
-  const isBare = current?.id === 'bare';
   const isConjunct = current?.id === 'conjuncts';
   const conjuncts = isConjunct ? current.samples.filter(s => s.audio) : [];
   const conjunct = conjuncts[conjunctIndex] ?? conjuncts[0];
-  const samples = current ? (isCombination ? data.combinations[row].samples : isConjunct ? data.conjunctCombinations?.find(r => r.consonant === conjunct?.ne)?.samples ?? (conjunct ? [conjunct] : []) : isBare ? current.samples : current.samples.filter(s => s.audio)) : [];
-  const sample = samples[selected] ?? samples[0];
+  const samples = current ? (isCombination ? data.combinations[row].samples : isConjunct ? data.conjunctCombinations?.find(r => r.consonant === conjunct?.ne)?.samples ?? (conjunct ? [conjunct] : []) : current.samples) : [];
+  const selectionIndex = selected ?? (isConjunct ? Math.max(0, samples.findIndex(s => s.examples?.length)) : 0);
+  const sample = samples[selectionIndex] ?? samples[0];
   const isChart = isCombination || isConjunct;
   const chartLetters = isConjunct ? conjuncts.map(s => ({ id: s.id, ne: s.ne })) : data.combinations.map(r => ({ id: r.consonant, ne: r.consonant }));
   const chartIndex = isConjunct ? conjunctIndex : row;
-  const words = isConjunct ? conjunct?.examples : sample?.examples;
-  const detail = isConjunct ? [...new Set([sample?.detail, conjunct?.detail].filter(Boolean))].join('\n') : sample?.detail;
+  const words = sample?.examples?.slice(0, 1);
   const move = (index: number | null) => {
-    stop(); setSection(index); setSelected(0); setConjunctIndex(0); setShowDetails(false); setShowHelp(false);
+    stop(); setSection(index); setSelected(null); setConjunctIndex(0);
     scroll.current?.scrollTo({ y: 0, animated: false });
   };
   const play = (id: string, audio: LearningAudio) => setPlaying({ id, audio, key: ++serial.current });
@@ -57,9 +55,7 @@ export default function LettersSoundsScreen() {
     <Text style={[styles.buttonText, primary && styles.white, ss(15, 24)]}>{label}</Text>
   </Pressable>;
   const sectionName = (id: string, fallback: string) => ({
-    bare: en ? 'Without a vowel' : '母音なし',
-    velar: en ? 'क group' : 'क の仲間', affricate: en ? 'च group' : 'च の仲間', retroflex: en ? 'ट group' : 'ट の仲間',
-    dental: en ? 'त group' : 'त の仲間', labial: en ? 'प group' : 'प の仲間', other: en ? 'य–ह' : 'य〜ह',
+    conjuncts: en ? 'Conjuncts' : '複合文字',
     marks: en ? 'Signs' : '記号', numbers: en ? 'Digits' : '数字',
   }[id] ?? fallback);
   const destination = (index: number) => {
@@ -67,7 +63,7 @@ export default function LettersSoundsScreen() {
     const name = en ? group?.en : group?.ja;
     return group && group.sections.length > 1 ? `${name} · ${sectionName(target.id, target.title)}` : name ?? target.title;
   };
-  const exampleWords = (words: SoundSample[]) => <View style={styles.wordsCard} testID="letters-example-words">{words.map((word, i) => <View key={word.id} style={[styles.wordRow, i > 0 && styles.wordDivider]}>
+  const exampleWords = (words: SoundSample[]) => <View style={styles.wordsCard} testID="letters-example-words"><Text style={[styles.muted, ss(12, 20)]}>{en ? 'EXAMPLE WORD' : '例単語'}</Text>{words.map((word, i) => <View key={word.id} style={[styles.wordRow, i > 0 && styles.wordDivider]}>
     <Pressable testID={`letters-play-word-${i}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Play word' : '単語を聞く'}: ${word.ne}`} onPress={() => play(word.id, word.audio)} style={({ pressed }) => [styles.wordButton, pressed && styles.pressed]}>
       <View style={styles.wordContent}><View style={styles.wordTitleRow}><Text style={[styles.wordNe, ss(23, 35)]}>{word.ne}</Text><Text style={[styles.wordRoman, ss(14, 23)]}>{word.roman}</Text></View><Text style={[styles.body, ss(14, 23)]}>{word.meaning}</Text></View><View style={[styles.wordPlay, playing?.id === word.id && styles.tileActive]}><Text style={[styles.helpTitle, playing?.id === word.id && styles.white, ss(16, 24)]}>▶</Text></View>
     </Pressable>
@@ -83,7 +79,7 @@ export default function LettersSoundsScreen() {
         <View style={styles.hero}>
           <Text style={[styles.eyebrow, ss(12, 20)]}>{en ? 'NEPALI SOUND STUDIO' : 'NEPALI · 文字と音'}</Text>
           <View style={styles.heroRow}><Text accessibilityRole="header" style={[styles.heroTitle, ss(29, 42)]}>{en ? 'See it.\nHear it. Say it.' : '文字を、\n音で覚える。'}</Text><View style={styles.heroGlyph}><Text style={[styles.heroLetter, ss(52, 74)]}>क</Text></View></View>
-          <Text style={[styles.heroBody, ss(15, 25)]}>{en ? 'Tap the letters to compare their sounds on one chart. Explore two words for each letter.' : '文字をタップして、同じ画面で聞き比べ。\n気になる音は、2つの単語でも確かめよう。'}</Text>
+          <Text style={[styles.heroBody, ss(15, 25)]}>{en ? 'Tap the letters to compare their sounds on one chart. See an example word for the selected sound.' : '文字をタップして、同じ画面で聞き比べ。\n気になる音は、例単語でも確かめよう。'}</Text>
           <View style={styles.progressTrack}><View style={[styles.progressFill, { width: `${completed / data.sections.length * 100}%` }]}/></View>
           <Text style={[styles.heroBody, ss(13, 22)]}>{en ? `${completed} / ${data.sections.length} sections reviewed` : `${data.sections.length}項目中 ${completed}項目を確認済み`}</Text>
         </View>
@@ -103,33 +99,27 @@ export default function LettersSoundsScreen() {
         <Text style={[styles.footnote, ss(13, 22)]}>{en ? 'A few sounds at a time is enough. “Reviewed” records what you have explored, not a test score.' : '一度に覚えなくて大丈夫。確認済みの印は、ここまで触れた記録です。'}</Text>
       </> : <>
         {category && category.sections.length > 1 && <View style={styles.groupTabs}>{data.sections.map((s, i) => category.sections.includes(s.id) && <Pressable key={s.id} accessibilityRole="tab" accessibilityState={{ selected: section === i }} testID={`letters-section-${s.id}`} onPress={() => move(i)} style={[styles.groupTab, section === i && styles.groupTabActive]}><Text style={[styles.groupText, section === i && styles.white, ss(14, 23)]}>{sectionName(s.id, s.title)}</Text></Pressable>)}</View>}
-        <View style={styles.titleRow}><Text accessibilityRole="header" style={[styles.sectionTitle, styles.flexTitle, ss(23, 35)]}>{current.title}</Text>
-          {current.id !== 'start' && <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Reading tips' : '読み方のヒント'} accessibilityState={{ expanded: showHelp }} onPress={() => setShowHelp(v => !v)} style={styles.helpToggle}>
-            <Text style={[styles.helpTitle, ss(14, 24)]}>{en ? 'Tips' : 'ヒント'} {showHelp ? '−' : '＋'}</Text>
-          </Pressable>}
-        </View>
-        {(showHelp || current.id === 'start') && <View style={styles.helpBody}><Text style={[styles.body, ss(16, 28)]}>{current.body}</Text>{!isBare && current.samples.filter(s => !s.audio).map(s => <Text key={s.id} style={[styles.body, ss(16, 28)]}>{s.ne} · {s.meaning}{s.detail ? '\n' + s.detail : ''}</Text>)}</View>}
+        <View style={styles.titleRow}><Text accessibilityRole="header" style={[styles.sectionTitle, styles.flexTitle, ss(23, 35)]}>{current.title}</Text></View>
+        {current.id === 'start' && <View style={styles.helpBody}><Text style={[styles.body, ss(16, 28)]}>{current.body}</Text></View>}
         {isChart && <View style={styles.combinationPanel}>
-          <View testID={isConjunct ? 'letters-conjunct-grid' : 'letters-consonant-grid'} style={styles.letterGrid}>{chartLetters.map((letter, i) => <Pressable key={letter.id} testID={isConjunct ? `letters-conjunct-${letter.id}` : `letters-consonant-${letter.id}`} accessibilityRole="button" accessibilityLabel={`${isConjunct ? (en ? 'Conjunct' : '複合文字') : (en ? 'Consonant' : '子音')} ${letter.ne}`} accessibilityState={{ selected: chartIndex === i }} onPress={() => { stop(); if (isConjunct) setConjunctIndex(i); else setRow(i); setSelected(0); setShowDetails(false); }} style={[styles.letterTile, chartIndex === i && styles.tileActive]}><Text style={[styles.tileText, chartIndex === i && styles.white, ss(22, 32)]}>{letter.ne}</Text></Pressable>)}</View>
+          <View testID={isConjunct ? 'letters-conjunct-grid' : 'letters-consonant-grid'} style={styles.letterGrid}>{chartLetters.map((letter, i) => <Pressable key={letter.id} testID={isConjunct ? `letters-conjunct-${letter.id}` : `letters-consonant-${letter.id}`} accessibilityRole="button" accessibilityLabel={`${isConjunct ? (en ? 'Conjunct' : '複合文字') : (en ? 'Consonant' : '子音')} ${letter.ne}`} accessibilityState={{ selected: chartIndex === i }} onPress={() => { stop(); if (isConjunct) setConjunctIndex(i); else setRow(i); setSelected(null); }} style={[styles.letterTile, chartIndex === i && styles.tileActive]}><Text style={[styles.tileText, chartIndex === i && styles.white, ss(22, 32)]}>{letter.ne}</Text></Pressable>)}</View>
         </View>}
         {sample && <>
-          {category?.id === 'consonants' && <View style={styles.readingNote}><Text style={[styles.body, ss(14, 24)]}>{isBare ? (en ? '् removes the vowel: क = ka → क् = k. All 33 written forms are shown; only क् and स् have recordings.' : '् は母音を外す印。क＝ka → क्＝k。33字すべての形を掲載し、क्・स् の2音だけ聞けます。') : (en ? 'These recordings read the letter with its inherent a: क = ka. The vowel-free form is क् = k.' : 'この音声は、母音 a を伴う文字の読みです。क＝ka。母音を外した形は क्＝k です。')}</Text></View>}
-          <Text style={[styles.stepLabel, ss(13, 22)]}>{isBare ? (en ? 'WRITTEN REFERENCE · TWO AUDIO EXAMPLES' : '文字の一覧 · 再生マークの2音を聞けます') : current.id === 'start' ? (en ? 'COMPARE: WITH a / WITHOUT A VOWEL' : '子音＋a ／ 母音なしを聞き比べる') : isChart ? (en ? `Choose a ${isConjunct ? 'conjunct' : 'consonant'} above; compare its 11 forms.` : `上で${isConjunct ? '複合文字' : '子音'}を選び、11通りを聞き比べよう`) : (en ? 'TAP A LETTER TO LISTEN & COMPARE' : '文字をタップして、聞き比べよう')}</Text>
+          <Text style={[styles.stepLabel, ss(13, 22)]}>{isCombination ? (en ? '12 FORMS · FIRST: NO VOWEL (AUDIO: k / s ONLY)' : '12通り · 先頭は母音なし（音声は k・s のみ）') : current.id === 'start' ? (en ? 'COMPARE: WITH a / WITHOUT A VOWEL' : '子音＋a ／ 母音なしを聞き比べる') : isConjunct ? (en ? '11 VOWEL FORMS' : '11通りの母音付き') : (en ? 'TAP A LETTER TO COMPARE' : '文字をタップして確かめよう')}</Text>
           <View style={[styles.soundGrid, isChart && styles.compactSoundGrid]} testID="letters-sound-chart">{samples.map((s, i) => {
             const active = playing?.id === s.id;
-            if (!s.audio) return <View key={s.id} testID={`letters-symbol-${s.id}`} accessible accessibilityLabel={`${s.ne}, ${s.roman}, ${s.meaning}`} style={[styles.soundTile, styles.referenceTile]}><Text style={[styles.tileText, ss(28, 42)]}>{s.ne}</Text><Text style={[styles.chartRoman, styles.tileRoman, ss(14, 22)]}>{s.roman}</Text></View>;
-            return <Pressable key={s.id} testID={`letters-play-${s.id}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Play sound' : '音を聞く'}: ${s.speech ?? s.ne}`} accessibilityState={{ selected: selected === i }} onPress={() => { setSelected(i); if (s.audio) play(s.id, s.audio); }} style={({ pressed }) => [styles.soundTile, isChart && styles.compactSoundTile, current.id === 'start' && styles.pairTile, selected === i && styles.soundTileSelected, active && styles.tileActive, pressed && styles.pressed]}>
+            if (!s.audio) return <Pressable key={s.id} testID={`letters-symbol-${s.id}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Select written form' : '文字を選ぶ'}: ${s.ne}, ${s.roman}`} accessibilityState={{ selected: selectionIndex === i }} onPress={() => { stop(); setSelected(i); }} style={[styles.soundTile, isChart && styles.compactSoundTile, styles.referenceTile, selectionIndex === i && styles.soundTileSelected]}><Text style={[styles.tileText, ss(isChart ? 24 : 28, isChart ? 34 : 42)]}>{s.ne}</Text><Text style={[styles.chartRoman, styles.tileRoman, ss(isChart ? 12 : 14, isChart ? 18 : 22)]}>{s.roman}</Text><Text style={[styles.tileCue, ss(10, 16)]}>{en ? 'Text' : '文字'}</Text></Pressable>;
+            return <Pressable key={s.id} testID={`letters-play-${s.id}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Play sound' : '音を聞く'}: ${s.speech ?? s.ne}`} accessibilityState={{ selected: selectionIndex === i }} onPress={() => { setSelected(i); if (s.audio) play(s.id, s.audio); }} style={({ pressed }) => [styles.soundTile, isChart && styles.compactSoundTile, current.id === 'start' && styles.pairTile, selectionIndex === i && styles.soundTileSelected, active && styles.tileActive, pressed && styles.pressed]}>
               <Text style={[styles.tileText, active && styles.white, ss(isChart ? 24 : 28, isChart ? 34 : 42)]}>{s.ne}</Text>
               <Text style={[styles.chartRoman, styles.tileRoman, active && styles.white, ss(isChart ? 12 : 14, isChart ? 18 : 22)]}>{s.roman}</Text>
               <Text style={[styles.tileCue, active && styles.white, ss(11, 18)]}>{active ? '●' : '▶'}</Text>
             </Pressable>;
           })}</View>
-          {!isBare && <View style={styles.selectionCard} testID="letters-selection">
+          <View style={styles.selectionCard} testID="letters-selection">
             <View style={styles.selectionRow}><Text style={[styles.selectionGlyph, ss(26, 38)]}>{sample.ne}</Text><Text style={[styles.chartRoman, ss(15, 24)]}>{sample.roman}</Text><Text style={[styles.body, styles.selectionMeaning, ss(14, 23)]}>{sample.meaning}</Text></View>
-            {(detail || words?.length) && <Pressable testID="letters-details" accessibilityRole="button" accessibilityState={{ expanded: showDetails }} onPress={() => setShowDetails(v => !v)} style={styles.detailToggle}><Text style={[styles.helpTitle, ss(15, 24)]}>{showDetails ? (en ? 'Close details −' : '詳しく見るを閉じる −') : words?.length ? (en ? `${isConjunct ? conjunct.ne + ': ' : ''}Two example words & reading tips +` : `${isConjunct ? conjunct.ne + ' の' : ''}例単語2つ・読み方を見る ＋`) : (en ? 'Reading tips +' : '読み方を見る ＋')}</Text></Pressable>}
-            {showDetails && !!detail && <Text style={[styles.detail, ss(14, 25)]}>{detail}</Text>}
-          {showDetails && !!words?.length && exampleWords(words)}
-          </View>}
+            {current.id === 'marks' && sample.detail && <Text style={[styles.body, ss(14, 23)]}>{sample.detail}</Text>}
+            {!!words?.length && exampleWords(words)}
+          </View>
         </>}
         <View style={styles.reviewPanel}><Text style={[styles.body, ss(14, 24)]}>{en ? 'Listen, compare, and say it aloud. Mark this section when you have explored its sounds.' : '聞く、比べる、声に出す。ひと通り確かめたら、記録を残そう。'}</Text>{textButton(read.includes(current.id) ? (en ? 'Reviewed ✓' : '確認済み ✓') : (en ? 'Mark section as reviewed' : 'この項目を確認済みにする'), () => { void learning?.change(s => ({ ...s, lettersRead: [...new Set([...(s.lettersRead ?? []), current.id])] })); }, false, !learning?.ready)}{learning?.error && <Text style={[styles.error, ss(14, 24)]}>{en ? 'Progress could not be saved. Please retry.' : '記録を保存できませんでした。もう一度お試しください。'}</Text>}</View>
         <View testID="letters-section-navigation" style={styles.sectionNavigation}>
@@ -146,7 +136,7 @@ export default function LettersSoundsScreen() {
       </>}
     </ScrollView>
     {current && samples.length > 0 && <View style={styles.playerBar}>
-      <View style={styles.playerMessage}>{playing ? <LearningSound key={playing.key} audio={playing.audio} onFinished={stop}/> : <Text style={[styles.muted, ss(13, 22)]}>{isBare ? (en ? 'Play क् or स् to compare.' : 'क्・स् をタップして音を確認。') : (en ? 'Tap any letter to hear it again.' : 'どの文字も、タップで何度でも。')}</Text>}</View>
+      <View style={styles.playerMessage}>{playing ? <LearningSound key={playing.key} audio={playing.audio} onFinished={stop}/> : <Text style={[styles.muted, ss(13, 22)]}>{en ? '▶ marks a recording. Tap to listen again.' : '▶ のある文字・単語をタップして再生。'}</Text>}</View>
       {textButton(en ? 'Stop' : '停止', stop, false, !playing)}
     </View>}
   </View>;
@@ -154,7 +144,7 @@ export default function LettersSoundsScreen() {
 
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: '#f5f7f3' }, empty: { padding: 24 },
-  content: { padding: 20, paddingBottom: 48, gap: 16, maxWidth: 760, width: '100%', alignSelf: 'center' },
+  content: { padding: 20, paddingBottom: 48, gap: 12, maxWidth: 760, width: '100%', alignSelf: 'center' },
   toolbar: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 16, paddingVertical: 8, gap: 10, borderBottomWidth: 1, borderBottomColor: '#dfe8e0', backgroundColor: '#fbfcf9' },
   toolbarLabel: { color: muted, flexShrink: 1 },
   hero: { padding: 24, borderRadius: 26, backgroundColor: '#153f3b', gap: 16 },
@@ -175,7 +165,6 @@ const styles = StyleSheet.create({
   groupTab: { minHeight: 48, paddingHorizontal: 16, paddingVertical: 10, borderRadius: 24, backgroundColor: '#e6eee7', justifyContent: 'center' },
   groupTabActive: { backgroundColor: teal }, groupText: { color: ink, fontWeight: '600' },
   flexTitle: { flex: 1, minWidth: 140 },
-  helpToggle: { minHeight: 48, paddingHorizontal: 14, paddingVertical: 10, backgroundColor: '#e8efe6', borderRadius: 13, justifyContent: 'center' },
   helpTitle: { color: teal, fontWeight: '600' }, helpBody: { paddingHorizontal: 8, gap: 14 },
   body: { color: ink }, combinationPanel: { gap: 10 }, letterGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 4 },
   stepLabel: { color: muted, fontWeight: '700', letterSpacing: .5 },
@@ -188,13 +177,10 @@ const styles = StyleSheet.create({
   referenceTile: { backgroundColor: '#eef1ec', borderColor: '#e1e6dd' },
   tileRoman: { flexShrink: 1 },
   chartRoman: { color: teal, fontWeight: '600' }, tileCue: { color: muted, position: 'absolute', right: 8, top: 5 },
-  readingNote: { padding: 14, backgroundColor: '#e4eef5', borderRadius: 14 },
   selectionCard: { borderRadius: 18, padding: 12, backgroundColor: '#eef2e9', gap: 8 },
   selectionRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 }, selectionGlyph: { color: teal }, selectionMeaning: { flex: 1, minWidth: 110 },
-  detailToggle: { minHeight: 48, justifyContent: 'center', borderTopWidth: 1, borderTopColor: '#d3dfcf', paddingTop: 10 },
   letterTile: { minWidth: 44, minHeight: 44, paddingHorizontal: 4, paddingVertical: 4, borderRadius: 10, borderWidth: 1, borderColor: '#ceddd2', backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' },
   tileText: { color: ink }, tileActive: { backgroundColor: teal, borderColor: teal },
-  detail: { color: muted, borderTopWidth: 1, borderTopColor: '#e7ece6', paddingTop: 12 },
   playerBar: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 18, paddingVertical: 8, minHeight: 68, backgroundColor: '#fbfcf9', borderTopWidth: 1, borderTopColor: '#dfe8e0' },
   playerMessage: { flex: 1 },
   wordsCard: { gap: 8 },

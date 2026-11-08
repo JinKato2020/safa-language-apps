@@ -9,6 +9,7 @@ import { useAppData } from '../AppDataContext';
 import { useLearning } from '../LearningContext';
 import { emptyStudyState, practiceParams, resolveStudy, reviewItems, studyActivity } from '../learning';
 import { useGrammarGuide } from '../grammarGuide';
+import { visibleLetterSections } from '../letterPresentation';
 
 const c = { ink: '#123039', muted: '#52666C', navy: '#102F38', teal: '#7DE2CE', page: '#F2F5F3' };
 const EMPTY = emptyStudyState();
@@ -34,6 +35,7 @@ export default function LearningHomeScreen() {
   const due = useMemo(() => reviewItems(state, data, now), [state, data, now]);
   const resume = state.resume && resolveStudy(data, state.resume.item) ? state.resume : undefined;
   const target = Math.min(5, activity.today), achieved = activity.today >= 5;
+  const lettersReadCount = data.LETTERS_SOUNDS ? visibleLetterSections(data.LETTERS_SOUNDS).filter(section => state.lettersRead?.includes(section.id)).length : 0;
   const action = resume ? (en ? 'Continue where you left off' : '前回の続きへ')
     : due.length ? (en ? `Review ${due.length} sentences` : `${due.length}文を復習する`)
     : (en ? 'Explore letters & sounds' : '文字と音から始める');
@@ -73,7 +75,7 @@ export default function LearningHomeScreen() {
       <View style={styles.sectionRow}><Text style={styles.overline}>LETTERS &amp; SOUNDS</Text></View>
       <Text style={styles.pathTitle}>{en ? 'Letters & sounds' : '文字と音'}</Text>
       <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Vowels, consonants, vowel signs and conjuncts. Tap to hear how the script sounds.' : '母音・子音から、組み合わせ・複合文字まで。文字を見て、音を確かめよう。'}</Text>
-      <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? `${state.lettersRead?.length??0} sections reviewed` : `${state.lettersRead?.length??0}項目を確認済み`}</Text><Text style={styles.pathLink}>{en ? 'Explore →' : '開く →'}</Text></View>
+      <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? `${lettersReadCount} sections reviewed` : `${lettersReadCount}項目を確認済み`}</Text><Text style={styles.pathLink}>{en ? 'Explore →' : '開く →'}</Text></View>
     </Pressable>
 
     {guideCount > 0 && <Pressable testID="home-grammar-lessons" accessibilityRole="button" accessibilityLabel={en ? 'Grammar lessons' : '文法教材'} onPress={() => nav.navigate('GrammarLibrary')} style={({ pressed }) => [styles.path, styles.grammarPath, pressed && styles.pressed]}>

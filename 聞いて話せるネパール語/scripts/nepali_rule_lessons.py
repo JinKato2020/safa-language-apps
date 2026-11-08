@@ -237,7 +237,8 @@ def lesson_blocks(theme, lang, example, roman, translation, hunu):
                 selected.append(copy.deepcopy(b))
         bs.append({'type':'h','text':'हुनु：3系統と対応する活用' if ja else 'हुनु: three sets and matching forms'})
         bs.extend(selected)
-    return bs
+    from nepali_rule_clarifications import clarify
+    return clarify(bs, theme, lang)
 
 GENERIC_HEADINGS = {
  '例題を解く前に確認すること','Before solving the examples','Before attempting the exercises',

@@ -112,7 +112,8 @@ def expand_guides(guides, examples, readings, translations, theme_names=None):
             body=support_blocks(presentation(intro+[{'type':'p','text':'','beginnerIntroEnd':True}]+clean_retained(detail_blocks(filtered,lang),lang),lang),lang)
             boundary=next(i for i,b in enumerate(body) if b.get('beginnerIntroEnd'))
             body[boundary:boundary]=extra_blocks(theme,lang)
-            topics[key]=body
+            from nepali_rule_clarifications import clarify
+            topics[key]=clarify(body,theme,lang)
     return result
 
 # Compatibility export for packaging reports; original rule text lives in one file.
