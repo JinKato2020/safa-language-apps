@@ -52,6 +52,7 @@ export default function LearningHomeScreen() {
         <Image source={hero} resizeMode="contain" style={{ width: '100%', height: '100%' }} accessibilityIgnoresInvertColors />
       </View>}
 
+      <Pressable testID="home-settings" accessibilityRole="button" accessibilityLabel={en ? 'Settings' : '設定'} onPress={() => nav.navigate('SettingsMain')} style={styles.settings}><Text style={styles.settingsText}>{en ? 'Settings' : '設定'}</Text></Pressable>
       <View style={styles.heroBody}>
         <Text style={styles.eyebrow}>NEPALI · EVERY DAY</Text>
         <Text accessibilityRole="header" style={styles.headline}>{en ? 'A little today.\nMore to say tomorrow.' : '昨日より、\nひとこと先へ。'}</Text>

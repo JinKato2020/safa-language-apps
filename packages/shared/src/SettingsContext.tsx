@@ -76,6 +76,8 @@ export function useFontScale(): number {
 
 type Settings = {
   // 音声
+  vocabularyDirection: Direction;
+  setVocabularyDirection: (d: Direction) => void;
   practiceDirection: Direction;
   setPracticeDirection: (d: Direction) => void;
   listenDirection: Direction;
@@ -108,6 +110,7 @@ const SettingsCtx = createContext<Settings | null>(null);
 const DEFAULT_STORAGE_KEY = '@safa/settings_v1';
 
 export type SettingsDefaults = {
+  vocabularyDirection?: Direction;
   practiceDirection?: Direction;
   listenDirection?: Direction;
   nepaliRepeat?: NepaliRepeat;
@@ -123,6 +126,7 @@ export type SettingsDefaults = {
 
 // シリーズ全体の標準デフォルト。アプリ側で上書きしたい項目だけ defaults props で渡す。
 const BASE_DEFAULTS = {
+  vocabularyDirection: 'ne2ja' as Direction,
   practiceDirection: 'ja2ne' as Direction,
   listenDirection: 'ja2ne' as Direction,
   nepaliRepeat: 1 as NepaliRepeat,
@@ -151,6 +155,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
   // 言語設定 (聞き流しの再生順序の既定を言語に連動させるため)
   const { lang } = useI18n();
 
+  const [vocabularyDirection, setVocabularyDirection] = useState<Direction>(D.vocabularyDirection);
   const [practiceDirection, setPracticeDirection] = useState<Direction>(D.practiceDirection);
   // 聞き流しの再生順序: ユーザーが明示的に変更したらその値を優先。
   // 未変更なら言語に連動した既定 (ja→ja2ne / ne→ne2ja)。
@@ -183,6 +188,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
         const raw = await AsyncStorage.getItem(storageKey);
         if (raw) {
           const s = JSON.parse(raw);
+          if (s.vocabularyDirection === 'ne2ja' || s.vocabularyDirection === 'ja2ne') setVocabularyDirection(s.vocabularyDirection);
           if (s.practiceDirection) setPracticeDirection(s.practiceDirection);
           if (s.listenDirection) setListenDirectionRaw(s.listenDirection);
           if (typeof s.listenDirectionExplicit === 'boolean') setListenDirectionExplicit(s.listenDirectionExplicit);
@@ -205,15 +211,16 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
   useEffect(() => {
     if (!loaded) return;
     const s = {
-      practiceDirection, listenDirection: listenDirectionRaw, listenDirectionExplicit, nepaliRepeat,
+      vocabularyDirection, practiceDirection, listenDirection: listenDirectionRaw, listenDirectionExplicit, nepaliRepeat,
       listenLoop, listenSpeed, gap,
       romaji, themeMode, fontMode,
       autoFlip, shuffle,
     };
     AsyncStorage.setItem(storageKey, JSON.stringify(s)).catch(() => {});
-  }, [storageKey, loaded, practiceDirection, listenDirectionRaw, listenDirectionExplicit, nepaliRepeat, listenLoop, listenSpeed, gap, romaji, themeMode, fontMode, autoFlip, shuffle]);
+  }, [storageKey, loaded, vocabularyDirection, practiceDirection, listenDirectionRaw, listenDirectionExplicit, nepaliRepeat, listenLoop, listenSpeed, gap, romaji, themeMode, fontMode, autoFlip, shuffle]);
 
   const resetSettings = () => {
+    setVocabularyDirection(D.vocabularyDirection);
     setPracticeDirection(D.practiceDirection);
     setListenDirectionRaw(D.listenDirection);
     setListenDirectionExplicit(false);
@@ -231,6 +238,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
   return (
     <SettingsCtx.Provider
       value={{
+        vocabularyDirection, setVocabularyDirection,
         practiceDirection, setPracticeDirection,
         listenDirection, setListenDirection,
         nepaliRepeat, setNepaliRepeat,

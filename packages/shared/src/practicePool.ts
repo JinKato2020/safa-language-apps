@@ -40,7 +40,7 @@ export function createPracticeSession(state: StudyState, path: LearningPath, the
 export const practiceTaskKey=(session: StudySession,item: StudyRef,index: number)=>session.questionStages?`${session.questionStages[index]}:${studyKey(item)}`:studyKey(item);
 
 /** One reserved question at a time. Cycling never grows the saved session. */
-export function createFreePracticeSession(state: StudyState, path: LearningPath, themeId: number, stage: PracticeStage, answered = 0, random: () => number = Math.random) {
+export function createFreePracticeSession(state: StudyState, path: LearningPath, themeId: number, stage: PracticeStage, answered = 0, random: () => number = Math.random, puzzleOnly = false) {
   const step = path.steps.find(s => s.guideThemeId === themeId);
   if (!step?.items.length || ![2,3,4].includes(stage) || !Number.isSafeInteger(answered) || answered < 0) throw new Error('Invalid free practice request');
   const lookup = new Map(step.items.map(ref => [studyKey(ref), ref])), signature = stepSignature(step.items);
@@ -55,6 +55,6 @@ export function createFreePracticeSession(state: StudyState, path: LearningPath,
   }
   const id = remaining[0], item = lookup.get(id)!;
   const pools = { ...state.practicePools, [key]: { signature, remaining: remaining.slice(1), previous: [id] } };
-  const session: StudySession = { kind: 'course', stepId: step.id, items: [item], position: 0, answered: [], questionStages: [stage], choiceSeed: Math.floor(random()*4294967296), freePractice: { stage, answered } };
+  const session: StudySession = { kind: 'course', stepId: step.id, items: [item], position: 0, answered: [], questionStages: [stage], choiceSeed: Math.floor(random()*4294967296), freePractice: { stage, answered, ...(puzzleOnly && stage === 4 ? { puzzleOnly: true } : {}) } };
   return { state: { ...state, practicePools: pools, resume: { item, session } }, session, params: practiceParams(item, session) };
 }

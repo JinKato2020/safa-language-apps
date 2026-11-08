@@ -1,7 +1,7 @@
 import type { AppData } from './AppDataContext';
 
 export type StudyRef = { mode: 'grammar' | 'conversation'; themeId: number; levelId?: number; index: number; ne: string; exerciseId?: string };
-export type StudySession = { kind: 'course' | 'review'; items: StudyRef[]; stepId?: string; position?: number; answered?: string[]; questionStages?: (2|3|4)[]; choiceSeed?: number; freePractice?: { stage: 2|3|4; answered: number } };
+export type StudySession = { kind: 'course' | 'review'; items: StudyRef[]; stepId?: string; position?: number; answered?: string[]; questionStages?: (2|3|4)[]; choiceSeed?: number; freePractice?: { stage: 2|3|4; answered: number; puzzleOnly?: boolean } };
 export type LearningAudio = { url: string; sha256: string; bytes: number };
 export type SoundSample = { id: string; ne: string; roman: string; meaning: string; audio: LearningAudio };
 export type LearningExercise = { ne: string; jp: string; words: {text: string; roman: string; meaning: string}[]; audio: LearningAudio; forms?: {subject: string; form: string; roman: string; meaning: string}[]; family?: string; meaningChoices?: string[]; selection?: { wordIndex: number; answer?: string; prefix?: string; prompt: string; rule: string; options: {subject: string; form: string; roman: string; meaning: string}[] } };

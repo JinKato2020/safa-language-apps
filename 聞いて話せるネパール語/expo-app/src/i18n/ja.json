@@ -25,7 +25,9 @@
     "grammar": "文法",
     "listening": "聞き流し",
     "vocabulary": "単語",
-    "home": "ホーム"
+    "home": "ホーム",
+    "composition": "瞬間作文",
+    "puzzle": "文章パズル"
   },
   "directions": {
     "ja2ne": "日本語 → ネパール語",
@@ -150,7 +152,9 @@
     "headerListen": "テーマを選んで、聞き流しを始めましょう。何度も聞いて、自然なネパール語の感覚を身につけましょう。",
     "modeTitleConv": "会話モード",
     "modeTitleGrammar": "文法モード",
-    "modeTitleListen": "聞き流しモード"
+    "modeTitleListen": "聞き流しモード",
+    "compositionDesc": "文法・会話からテーマを選んで、瞬間ネパール語作文に挑戦しよう。",
+    "puzzleDesc": "用意された語句を並べて、ネパール語の文を作ろう。テーマごとに何度でも練習できます。"
   },
   "levelScreen": {
     "title": "レベルを選択",
@@ -199,7 +203,7 @@
   },
   "vocab": {
     "modeTitle": "単語モード",
-    "themeSelectDesc": "テーマを選んで、4択クイズで練習しよう。出題方向はいつでも切り替えられます。",
+    "themeSelectDesc": "出題方向とテーマを選んで、4択クイズで練習しよう。",
     "directionTitle": "出題方向を選択",
     "directionDesc": "{{category}} の単語をどちら向きで練習しますか？",
     "neLang": "ネパール語",
@@ -226,8 +230,8 @@
     "playbackSpeedDesc": "全モード共通の再生速度",
     "nepaliRepeat": "ネパール語の繰り返し回数",
     "nepaliRepeatDesc": "聞き流し時にネパール語を何回再生するか",
-    "convDirection": "会話の出題方向",
-    "convDirectionDesc": "会話モードのデフォルト翻訳方向",
+    "convDirection": "瞬間作文の出題方向",
+    "convDirectionDesc": "文法・会話の例題で使う出題方向",
     "listenOrder": "聞き流しの再生順序",
     "listenOrderDesc": "聞き流しモードでどちらを先に再生するか",
     "listenLoop": "聞き流しループ再生",

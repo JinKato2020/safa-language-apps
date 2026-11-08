@@ -1,9 +1,9 @@
-import { useLayoutEffect, useState } from 'react';
+import { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { FlatList, Pressable, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ModeHero, useHeroImage } from '../heroImages';
 import { Text } from '../Text';
-import { useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
+import { useFocusEffect, useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { colors, spacing, radius } from '../theme';
 import type { RootStackParamList } from '../types';
@@ -13,20 +13,26 @@ import { useAppData } from '../AppDataContext';
 import { useEntitlement, isLockedAt, LockBadge } from '../entitlement';
 import { useGrammarGuide } from '../grammarGuide';
 import { withoutThemePrefix } from '../themeLabels';
+import { useLearning } from '../LearningContext';
+import { createFreePracticeSession } from '../practicePool';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'Theme'>;
 type R = RouteProp<RootStackParamList, 'Theme'>;
 
 export default function ThemeScreen() {
   const contentNames = useAppData().CONTENT_NAMES;
-  const { THEMES, GRAMMAR_THEMES, LEVELS } = useAppData();
+  const { THEMES, GRAMMAR_THEMES, LEVELS, LEARNING_PATH } = useAppData();
+  const learning = useLearning();
+  const busy = useRef(false), focused = useRef(true);
+  const [starting, setStarting] = useState(false);
+  useFocusEffect(useCallback(() => { focused.current = true; return () => { focused.current = false; }; }, []));
   const ent = useEntitlement();
   const grammarGuide = useGrammarGuide();
   const navigation = useNavigation<Nav>();
   const { t, lang } = useI18n();
   const ss = useScaleStyle();
-  const { mode, source, guidesOnHome } = useRoute<R>().params;
-  const heroSrc = useHeroImage(mode);
+  const { mode, source, guidesOnHome, composition, puzzleOnly } = useRoute<R>().params;
+  const heroSrc = useHeroImage(composition ? 'conversation' : mode);
   const { top } = useSafeAreaInsets();
   const isListening = mode === 'listening';
   // 聞き流しモードでは画面内トグルで会話/文法を切り替える（route param は初期値として尊重）
@@ -41,7 +47,7 @@ export default function ThemeScreen() {
   const isGrammarListen = isListening && effectiveSource === 'grammar';
   const isConversationListen = isListening && !isGrammarListen;
   const useGrammarThemes = isGrammarMode || isGrammarListen;
-  const items = useGrammarThemes ? GRAMMAR_THEMES : THEMES;
+  const items = puzzleOnly ? GRAMMAR_THEMES.filter(theme => LEARNING_PATH?.steps.some(step => step.guideThemeId === theme.id && step.items.length)) : useGrammarThemes ? GRAMMAR_THEMES : THEMES;
 
   // 会話モードおよび聞き流し×会話モードでレベルピルを表示
   const showLevelPills = mode === 'conversation' || isConversationListen || mode === 'sakubun';
@@ -85,8 +91,21 @@ export default function ThemeScreen() {
     return (contentNames?.themes?.[id] ?? t(`themes.${id}`));
   };
 
-  const onPressItem = (id: number) => {
-    if (mode === 'sakubun') {
+  if (composition) { modeTitle = t('nav.composition'); headerText = t('themeScreen.compositionDesc'); }
+  if (puzzleOnly) { modeTitle = lang === 'en' ? 'Sentence puzzles' : t('nav.puzzle'); headerText = t('themeScreen.puzzleDesc'); }
+
+  const onPressItem = async (id: number) => {
+    if (puzzleOnly) {
+      if (busy.current || !learning?.ready || !LEARNING_PATH) return;
+      busy.current = true; setStarting(true);
+      let launch: ReturnType<typeof createFreePracticeSession> | undefined;
+      const saved = await learning.change(state => {
+        launch = createFreePracticeSession(state, LEARNING_PATH, id, 4, 0, Math.random, true);
+        return launch.state;
+      });
+      busy.current = false; setStarting(false);
+      if (focused.current && saved && launch) navigation.navigate('Practice', launch.params);
+    } else if (mode === 'sakubun') {
       navigation.navigate('Sakubun', { themeId: id, levelId: selectedLevel, startIndex: 0 });
     } else if (mode === 'grammar') {
       navigation.navigate('Practice', { themeId: id, mode: 'grammar' });
@@ -111,6 +130,8 @@ export default function ThemeScreen() {
         <View style={styles.head}>
           <Text style={[styles.modeTitle, ss(20)]}>{modeTitle}</Text>
           <Text style={[styles.desc, ss(14, 21)]}>{headerText}</Text>
+          {composition && <View style={styles.sourceToggle}>{(['grammar', 'conversation'] as const).map(value => <Pressable key={value} testID={`composition-${value}`} accessibilityRole="tab" accessibilityState={{ selected: mode === value }} style={[styles.sourceTab, mode === value && styles.sourceTabOn]} onPress={() => navigation.setParams({ mode: value })}><Text style={[styles.sourceTabText, mode === value && styles.sourceTabTextOn, ss(14)]}>{t(`nav.${value}`)}</Text></Pressable>)}</View>}
+          {puzzleOnly && learning?.error && <Text accessibilityRole="alert" style={[styles.desc, { color: '#9f1239' }]}>{lang === 'en' ? 'Could not save. Please tap the theme to try again.' : '保存できませんでした。テーマをタップして再試行してください。'}</Text>}
           {isListening && (
             <View style={styles.sourceToggle}>
               <Pressable
@@ -161,6 +182,8 @@ export default function ThemeScreen() {
             testID={`theme-${item.id}`}
             accessibilityRole="button"
             accessibilityLabel={getThemeDisplayName(item.id)}
+            accessibilityState={{ disabled: !!puzzleOnly && (starting || !learning?.ready) }}
+            disabled={!!puzzleOnly && (starting || !learning?.ready)}
             style={({ pressed }) => [
               styles.card,
               pressed && styles.cardPressed,
@@ -171,6 +194,7 @@ export default function ThemeScreen() {
             {/* 表示番号はリスト上の位置(=テーマ並び順)。データキーは item.id を維持。 */}
             <Text style={styles.num}>{String(index + 1).padStart(2, '0')}</Text>
             <Text style={[styles.name, ss(14)]}>{withoutThemePrefix(getThemeDisplayName(item.id))}</Text>
+            {puzzleOnly && <Text style={[styles.num, { width: undefined }]}>{LEARNING_PATH?.steps.find(step => step.guideThemeId === item.id)?.items.length}{lang === 'en' ? ' puzzles' : '問'}</Text>}
             {locked && <LockBadge />}
             {showGuide && (
               <Pressable
@@ -198,6 +222,8 @@ const styles = StyleSheet.create({
   sourceToggle: { flexDirection: 'row', gap: spacing.xs, marginBottom: spacing.md },
   sourceTab: {
     minWidth: 92,
+    minHeight: 44,
+    justifyContent: 'center',
     paddingHorizontal: spacing.lg,
     paddingVertical: 9,
     alignItems: 'center',

@@ -29,7 +29,7 @@ export default function VocabularyQuizScreen() {
 
 function QuizSession({ decks, initialDirection, category }: { decks: Record<VocabularyDirection, VocabularyDeck>; initialDirection: VocabularyDirection; category: string }) {
   const { t, lang } = useI18n(), en = lang === 'en', { romaji } = useSettings(), ss = useScaleStyle();
-  const [direction, setDirection] = useState<VocabularyDirection>(initialDirection);
+  const direction = initialDirection;
   const [sessions, setSessions] = useState(() => ({ ne2ja: startVocabularyQuiz(decks.ne2ja)!, ja2ne: startVocabularyQuiz(decks.ja2ne)! }));
   const scroll = useRef<ScrollView>(null), session = sessions[direction], question = session.question;
   const answered = !!session.response, promptIsNepali = direction === 'ne2ja';
@@ -46,9 +46,6 @@ function QuizSession({ decks, initialDirection, category }: { decks: Record<Voca
   };
   return <ScrollView ref={scroll} style={styles.root} contentContainerStyle={styles.container}>
     <View style={styles.meta}><Text style={[styles.category, ss(16, 25)]}>{category}</Text><Text style={[styles.muted, ss(13, 22)]}>{decks[direction].questions.length}{en ? ' words' : '語'}</Text></View>
-    <View style={styles.directions}>{(['ne2ja', 'ja2ne'] as const).map(value => <Pressable key={value} testID={`vocab-direction-${value}`} accessibilityRole="tab" accessibilityState={{ selected: direction === value }} onPress={() => { setDirection(value); scroll.current?.scrollTo({ y: 0, animated: false }); }} style={[styles.direction, direction === value && styles.directionSelected]}>
-      <Text style={[styles.directionText, direction === value && styles.directionSelectedText, ss(14, 23)]}>{t(`directions.${value}`)}</Text>
-    </Pressable>)}</View>
     <View style={styles.counts}><Text testID="vocab-quiz-count" style={[styles.muted, ss(13, 22)]}>{en ? `${session.answered} answered this session` : `今回 ${session.answered}問`}</Text><Text testID="vocab-quiz-score" style={[styles.score, ss(13, 22)]}>{en ? `${session.correct} correct` : `正解 ${session.correct}問`}</Text></View>
     <View testID="vocab-quiz-prompt" style={styles.prompt}>
       <Text style={[styles.promptLabel, ss(13, 22)]}>{promptIsNepali ? (en ? 'Choose the meaning' : '意味を選ぼう') : (en ? 'Choose the Nepali word' : 'ネパール語を選ぼう')}</Text>
@@ -77,7 +74,6 @@ function QuizSession({ decks, initialDirection, category }: { decks: Record<Voca
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: '#f5f7f3' }, container: { padding: 20, paddingBottom: 36, gap: 14, width: '100%', maxWidth: 680, alignSelf: 'center' },
   meta: { flexDirection: 'row', alignItems: 'center', gap: 10 }, category: { flex: 1, color: '#334155', fontWeight: '700' }, muted: { color: '#52666c' },
-  directions: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 }, direction: { flexBasis: '45%', flexGrow: 1, minWidth: 110, minHeight: 48, paddingHorizontal: 10, paddingVertical: 10, justifyContent: 'center', borderRadius: 13, borderWidth: 1, borderColor: '#c5d8d0', backgroundColor: '#fff' }, directionSelected: { backgroundColor: '#dff5ec', borderColor: '#126b60' }, directionText: { color: '#52666c', textAlign: 'center' }, directionSelectedText: { color: '#126b60', fontWeight: '700' },
   counts: { flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }, score: { color: '#126b60', fontWeight: '700' },
   prompt: { borderRadius: 20, padding: 20, gap: 7, backgroundColor: '#153f3b' }, promptLabel: { color: '#c1ded0', fontWeight: '600' }, promptText: { color: '#fff', fontWeight: '700' }, promptRoman: { color: '#d5e5dc' },
   options: { gap: 9 }, option: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 16, paddingVertical: 12, minHeight: 62, borderRadius: 14, borderWidth: 1, borderColor: '#ccd9d2', backgroundColor: '#fff' }, optionLetter: { color: '#64748b', minWidth: 18, fontWeight: '700' }, optionBody: { flex: 1, gap: 2 }, optionText: { color: '#183c3a' },

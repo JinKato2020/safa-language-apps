@@ -40,6 +40,8 @@ export interface GrammarThemeMeta {
 
 // ボトムタブ
 export type RootTabParamList = {
+  CompositionTab: undefined;
+  PuzzleTab: undefined;
   ConversationTab: undefined;
   GrammarTab: undefined;
   ListeningTab: undefined;
@@ -53,6 +55,8 @@ export type RootStackParamList = {
     mode: Exclude<Mode, 'vocabulary'>;
     source?: 'grammar';
     guidesOnHome?: boolean;
+    composition?: boolean;
+    puzzleOnly?: boolean;
   };
   Level: { mode: Exclude<Mode, 'vocabulary' | 'grammar'>; themeId: number };
   Practice: {

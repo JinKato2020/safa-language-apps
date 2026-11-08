@@ -8,7 +8,7 @@ import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { colors, spacing, radius } from '../theme';
 import type { RootStackParamList } from '../types';
 import { useI18n } from '../i18n';
-import { useScaleStyle } from '../SettingsContext';
+import { useSettings, useScaleStyle } from '../SettingsContext';
 import { useAppData } from '../AppDataContext';
 import { usePosterLessons } from '../PosterContext';
 import { useEntitlement, isLockedAt, LockBadge } from '../entitlement';
@@ -18,7 +18,8 @@ const GOLD = '#b08746';
 
 export default function VocabCategoryScreen() {
   const contentNames = useAppData().CONTENT_NAMES;
-  const { WORD_CATEGORIES } = useAppData();
+  const { WORD_CATEGORIES, vocabularyQuiz } = useAppData();
+  const { vocabularyDirection, setVocabularyDirection } = useSettings();
   const lessons = usePosterLessons();
   const ent = useEntitlement();
   const navigation = useNavigation<Nav>();
@@ -48,7 +49,12 @@ export default function VocabCategoryScreen() {
           </Pressable>
         </View>
       )}
-      <Text style={styles.desc}>{showPoster ? t('vocab.modePosterDesc') : t('vocab.themeSelectDesc')}</Text>
+      <Text testID="vocab-theme-description" style={styles.desc}>{showPoster ? t('vocab.modePosterDesc') : t('vocab.themeSelectDesc')}</Text>
+      {vocabularyQuiz && !showPoster && !posterOnly && <View style={styles.directions}>
+        {(['ne2ja', 'ja2ne'] as const).map(value => <Pressable key={value} testID={`vocab-direction-${value}`} accessibilityRole="tab" accessibilityState={{ selected: vocabularyDirection === value }} onPress={() => setVocabularyDirection(value)} style={[styles.direction, vocabularyDirection === value && styles.directionSelected]}>
+          <Text style={[styles.directionText, vocabularyDirection === value && styles.directionSelectedText, ss(14, 23)]}>{t(`directions.${value}`)}</Text>
+        </Pressable>)}
+      </View>}
     </View>
   );
 
@@ -89,8 +95,10 @@ export default function VocabCategoryScreen() {
         const locked = isLockedAt(ent, index);
         return (
           <Pressable
+            testID={`vocab-category-${item.id}`}
+            accessibilityRole="button"
             style={({ pressed }) => [styles.card, pressed && styles.cardPressed, locked && styles.cardLocked]}
-            onPress={() => (locked ? navigation.navigate('Paywall') : navigation.navigate('Flashcard', { categoryId: item.id, direction: 'ne2ja' }))}
+            onPress={() => (locked ? navigation.navigate('Paywall') : navigation.navigate('Flashcard', { categoryId: item.id, direction: vocabularyQuiz ? vocabularyDirection : 'ne2ja' }))}
           >
             <Text style={styles.num}>{String(item.id).padStart(2, '0')}</Text>
             <Text style={styles.name}>{catName}</Text>
@@ -108,6 +116,11 @@ const styles = StyleSheet.create({
   head: { marginBottom: spacing.lg },
   modeTitle: { fontSize: 20, fontWeight: '700', color: colors.accentJa, letterSpacing: 0.2, marginBottom: spacing.sm, textAlign: 'center' },
   desc: { fontSize: 14, color: colors.inkMute, lineHeight: 21, textAlign: 'center' },
+  directions: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 16 },
+  direction: { flexBasis: '45%', flexGrow: 1, minWidth: 110, minHeight: 48, padding: 10, justifyContent: 'center', borderRadius: 13, borderWidth: 1, borderColor: '#c5d8d0', backgroundColor: '#fff' },
+  directionSelected: { backgroundColor: '#dff5ec', borderColor: '#126b60' },
+  directionText: { color: '#52666c', textAlign: 'center' },
+  directionSelectedText: { color: '#126b60', fontWeight: '700' },
   seg: { flexDirection: 'row', gap: spacing.sm, marginBottom: spacing.md },
   segBtn: { flex: 1, alignItems: 'center', gap: 2, paddingVertical: spacing.sm, borderWidth: 1.5, borderColor: colors.line, borderRadius: radius.md, backgroundColor: colors.surface },
   segOn: { borderColor: colors.ink, backgroundColor: colors.ink },

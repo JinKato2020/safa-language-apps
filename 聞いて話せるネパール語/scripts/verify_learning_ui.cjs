@@ -5,7 +5,7 @@ const ROOT=path.resolve(__dirname,'../..'),work=path.resolve(process.argv[2]||'.
 const source=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const compile=s=>ts.transpileModule(s,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
 const modules={};for(const[p,file]of[['react','react.production.js'],['react/jsx-runtime','react-jsx-runtime.production.js'],['react-dom','react-dom.production.js'],['react-dom/client','react-dom-client.production.js'],['scheduler','scheduler.production.js']])modules[p]=fs.readFileSync(path.join(path.dirname(require.resolve(p.split('/')[0]+'/package.json')),'cjs',file),'utf8');
-for(const name of ['letterPresentation','vocabularyQuiz','PuzzleBoard','puzzleDrag','practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['PuzzleBoard','LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
+for(const name of ['SettingsContext','letterPresentation','vocabularyQuiz','PuzzleBoard','puzzleDrag','practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['SettingsContext','PuzzleBoard','LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
 for(const name of ['VocabularyQuizScreen','SettingsScreen','VocabCategoryScreen','VocabDirectionScreen','FlashcardScreen','FreePracticeScreen','GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
 modules.entitlement=compile(source('packages/shared/src/entitlement.tsx'));
 modules.compose=compile(source('聞いて話せるネパール語/expo-app/src/pack/compose.ts'));
@@ -25,7 +25,7 @@ const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.us
 const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))};
 const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode==='contain'?'contain':undefined,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
 cache['react-native']={exports:{Platform:{OS:'ios'},Alert:{alert:(...args)=>window.alerts.push(args)},Linking:{openURL:async url=>window.links.push(url)},Share:{share:async()=>{}},Switch:()=>null,PanResponder:{create:config=>({panHandlers:{_pan:config}})},AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
-cache.Text={exports:{Text}};cache.SettingsContext={exports:{useSettings:()=>({practiceDirection:'ja2ne',romaji:true,listenSpeed:1,nepaliRepeat:1,listenDirection:'ja2ne',listenLoop:true,gap:'normal',fontMode:'medium',autoFlip:false,shuffle:false}),useScaleStyle:()=> (fontSize,lineHeight)=>({fontSize,lineHeight}),useGlobalScaleStyle:()=>fontSize=>({fontSize})}};
+cache.Text={exports:{Text}};
 cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,langs:['ja','en'],setLang:()=>{},t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).replace('{'+k+'}',v);return s;}})}};
 cache.ModalDropdown={exports:{ModalDropdown:p=>h('span',null,p.value)}};cache['expo-application']={exports:{nativeBuildVersion:'test'}};window.alerts=[];window.links=[];window.devCalls=[];window.devAvailable=true;window.devResult='unavailable';cache.settingsDevelopment={exports:{useSettingsDevelopment:()=>window.devAvailable?{showReview:async()=>{window.devCalls.push('review');return window.devResult;},showRequest:()=>window.devCalls.push('request')}:null}};
 cache.PosterContext={exports:{usePosterLessons:()=>[]}};
@@ -41,14 +41,14 @@ window.focusEnds=new Set();const nav={setParams:params=>{window.route={...window
 cache['@react-navigation/native']={exports:{useNavigation:()=>nav,useRoute:()=>window.route,useFocusEffect:cb=>React.useEffect(()=>{const end=cb();window.focusEnds.add(end);return()=>{window.focusEnds.delete(end);end?.();};},[cb])}};
 cache.heroImages={exports:{useHeroImage:()=>1,ModeHero:()=>h('img',{src:${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))},style:{width:'100%',aspectRatio:'3/1',objectFit:'contain',borderRadius:16}})}};
 cache.grammarGuide={exports:{useGrammarGuide:()=>window.data.GRAMMAR_GUIDE,useGrammarGuideImageResolver:()=>async()=>null}};
-const root=require('react-dom/client').createRoot(document.getElementById('root')),Provider=require('LearningContext').LearningProvider;let generation=0;
+const root=require('react-dom/client').createRoot(document.getElementById('root')),Provider=require('LearningContext').LearningProvider,SettingsProvider=require('SettingsContext').SettingsProvider;let generation=0;
 const AudioProvider=require('LearningSound').LearningAudioProvider,resolveAudio=async a=>({uri:a.url});
-const names={SettingsTab:'SettingsScreen',VocabCategory:'VocabCategoryScreen',VocabDirection:'VocabDirectionScreen',Flashcard:'FlashcardScreen',HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
+const names={SettingsMain:'SettingsScreen',SettingsTab:'SettingsScreen',VocabCategory:'VocabCategoryScreen',VocabDirection:'VocabDirectionScreen',Flashcard:'FlashcardScreen',HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
 function Frame(){const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['VocabCategory','VocabDirection','Flashcard','Practice','LettersSounds','LearningPath','GrammarLibrary'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
 window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];window.activeAudio=new Set();window.audioEnded=false;
 const neAudio={},neGram={},l1Audio={},l1Gram={};for(const[k,rows]of Object.entries(core.examplesNe))rows.forEach((_,i)=>{neAudio[k+'-'+(i+1)]='ne/'+k+'-'+(i+1);l1Audio[k+'-'+(i+1)]=lang+'/'+k+'-'+(i+1);});for(const[k,id]of Object.entries(core.grammarAudioRefs??Object.fromEntries(Object.entries(core.grammarNe).flatMap(([t,rows])=>rows.map((_,i)=>[t+'-'+(i+1),t+'-'+(i+1)]))))){if(id){neGram[id]='ne/'+id;l1Gram[id]=lang+'/'+id;}}
 window.data=require('compose').composePack({...core,nepaliAudio:neAudio,nepaliGrammarAudio:neGram},{...overlays[lang],nativeLang:lang,l1Audio,l1GrammarAudio:l1Gram},{version:'test'});window.data.review={iosAppId:'6771720689'};
-require('react-dom').flushSync(()=>root.render(h(Provider,{storageKey:'test-study',key:++generation},h(AudioProvider,{resolve:resolveAudio},h(Frame)))));await new Promise(r=>setTimeout(r,30));};
+require('react-dom').flushSync(()=>root.render(h(SettingsProvider,{storageKey:'test-settings',key:++generation},h(Provider,{storageKey:'test-study'},h(AudioProvider,{resolve:resolveAudio},h(Frame))))));await new Promise(r=>setTimeout(r,30));};
 window.navigate=nav.navigate;window.boot();
 `;
 fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(work,'index.html'),'<!doctype html><meta charset="utf-8"><style>*{box-sizing:border-box}body{margin:0;font-family:Arial,"Nirmala UI","Yu Gothic UI",sans-serif}#root{height:100vh;display:flex;flex-direction:column}button{background:none;cursor:pointer}</style><div id="root"></div><script src="index.js"></script>');
@@ -97,7 +97,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         const en=lang==='en';await page.setViewportSize({width:390,height:844});
         for(let category=1;category<=30;category++)for(const direction of ['ne2ja','ja2ne']){
           await page.evaluate(({lang,category,direction})=>{window.testEntitlement={isPro:true,freeThemes:Infinity};return window.boot(lang,true,{name:'Flashcard',params:{categoryId:category,direction}});},{lang,category,direction});
-          await by('vocab-quiz-prompt').waitFor();assert.equal(await options().count(),4);assert.equal(await by('vocab-direction-'+direction).getAttribute('aria-selected'),'true');
+          await by('vocab-quiz-prompt').waitFor();assert.equal(await options().count(),4);assert.equal(await page.locator('[data-testid^="vocab-direction-"]').count(),0,'Directions belong on the theme screen');
           const correct=await correctIndex(category,direction);await by('vocab-option-'+correct).click();await by('vocab-quiz-feedback').waitFor();
           assert((await by('vocab-quiz-count').innerText()).includes('1'));assert((await by('vocab-quiz-score').innerText()).includes('1'));
           assert(await options().evaluateAll(es=>es.every(e=>e.disabled)));
@@ -107,9 +107,6 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.evaluate(l=>window.boot(l,true,{name:'Flashcard',params:{categoryId:1,direction:'ne2ja'}}),lang);
         const correct=await correctIndex(1,'ne2ja');await by('vocab-option-'+((correct+1)%4)).click();
         assert((await by('vocab-quiz-score').innerText()).includes('0'));assert((await by('vocab-quiz-count').innerText()).includes('1'));
-        const oldPrompt=await by('vocab-quiz-word').innerText();await by('vocab-direction-ja2ne').click();assert.equal(await by('vocab-quiz-feedback').count(),0);assert((await by('vocab-quiz-count').innerText()).includes('0'));
-        await by('vocab-quiz-reveal').click();assert((await by('vocab-quiz-score').innerText()).includes('0'));assert((await by('vocab-quiz-count').innerText()).includes('1'));
-        await by('vocab-direction-ne2ja').click();assert.equal(await by('vocab-quiz-word').innerText(),oldPrompt);assert.equal(await by('vocab-quiz-feedback').count(),1,'Switching direction preserves each session');
         await by('vocab-quiz-next').click();const answer=await correctIndex(1,'ne2ja');
         await page.evaluate(index=>{const b=document.querySelector('[data-testid="vocab-option-'+index+'"]');b.click();b.click();},answer);
         assert((await by('vocab-quiz-score').innerText()).includes('1'));assert((await by('vocab-quiz-count').innerText()).includes('2'),'Rapid double taps are counted once');
@@ -123,29 +120,77 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           if(width===390&&direction==='ne2ja')await page.screenshot({path:path.join(work,`previews/vocabulary-${lang}-answer.png`)});
         }
         await page.evaluate(l=>window.boot(l,true,{name:'SettingsTab'}),lang);assert.equal(await page.getByText(strings[lang].settings.autoFlip,{exact:true}).count(),0);assert.equal(await page.getByText(strings[lang].settings.shuffle,{exact:true}).count(),0,'Obsolete card-only settings are removed');
-        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: 30 themes × both quiz directions, four options, correct/wrong/reveal/next, independent direction sessions, double taps, responsive layouts and card-setting removal.`);
+        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: 30 themes × both quiz directions, four options, correct/wrong/reveal/next, theme-level direction selection, double taps, responsive layouts and card-setting removal.`);
       }
       await page.evaluate(async()=>{await window.boot('ja',true,{name:'Flashcard',params:{categoryId:6,direction:'ne2ja'}});window.testEntitlement={isPro:false,freeThemes:5};window.redraw();});await by('vocab-quiz-back').waitFor();assert.equal(await by('vocab-quiz-prompt').count(),0);
       await page.evaluate(async()=>{window.testEntitlement={isPro:true,freeThemes:Infinity};await window.boot('ja',true,{name:'Flashcard',params:{categoryId:1,direction:'ne2ja'}});window.data={...window.data,WORDS:{}};window.redraw();});await by('vocab-quiz-back').waitFor();assert.equal(await options().count(),0,'Missing data never invents options');
       await page.evaluate(async()=>{await window.boot('en',true,{name:'Flashcard',params:{categoryId:1,direction:'ne2ja'}});window.data={...window.data,vocabularyQuiz:false};window.redraw();});await page.getByText(/tap to/i).first().waitFor();assert.equal(await by('vocab-quiz-prompt').count(),0,'Other apps keep their existing cards');
       assert.deepEqual(errors,[]);console.log('PASS entitlement guard, safe empty state and legacy opt-out.');return;
     }
+    if(process.argv.includes('--navigation-tabs')){
+      const app=source('聞いて話せるネパール語/expo-app/App.tsx'),shell=source('packages/shared/src/AppShell.tsx');
+      assert(app.includes("tabs={['home', 'puzzle', 'listening', 'composition']}"));
+      assert(shell.includes('CompositionStack.Screen name="Practice"'));assert(shell.includes('PuzzleStack.Screen name="Practice"'));
+      for(const lang of ['ja','en']){
+        await page.setViewportSize({width:390,height:844});
+        for(let theme=1;theme<=36;theme++){
+          await page.evaluate(l=>window.boot(l,true,{name:'Theme',params:{mode:'grammar',puzzleOnly:true,guidesOnHome:true}}),lang);
+          assert.equal(await page.locator('[data-testid^="theme-"]').count(),36);
+          await page.getByTestId('theme-'+theme).click();await page.getByTestId('free-bank').waitFor();
+          assert.equal(await page.locator('[data-testid^="free-mode-"]').count(),0);
+          assert.equal(await page.evaluate(()=>window.route.params.studySession.freePractice.puzzleOnly),true);
+          const question=await page.evaluate(()=>{const s=window.route.params.studySession;return require('freePractice').freePracticeQuestion(window.data,s.items[0],s.choiceSeed);});
+          assert(question.puzzleTokens.length>question.answerWords.length,'Puzzles include distractors');
+          for(let i=0;i<question.answerWords.length;i++)await page.getByTestId('free-token-word-'+i).click();
+          await page.getByTestId('free-feedback').waitFor();await page.getByTestId('free-next').click();await page.getByTestId('free-bank').waitFor();
+          assert.equal(await page.evaluate(()=>window.route.params.studySession.freePractice.answered),1);
+          assert.equal(await page.evaluate(()=>window.route.params.studySession.freePractice.puzzleOnly),true);
+          assert.equal(await page.locator('[data-testid^="free-mode-"]').count(),0);
+          await page.getByTestId('study-back').click();assert.equal(await page.evaluate(()=>window.route.name),'Theme');
+        }
+        await page.evaluate(l=>window.boot(l,false),lang);await page.getByRole('button',{name:lang==='en'?'Continue where you left off':'前回の続きへ',exact:true}).click();await page.getByTestId('free-bank').waitFor();assert.equal(await page.locator('[data-testid^="free-mode-"]').count(),0,'Puzzle-only mode survives saved resume');
+        for(const mode of ['grammar','conversation']){
+          await page.evaluate(l=>window.boot(l,true,{name:'Theme',params:{mode:'grammar',composition:true,guidesOnHome:true}}),lang);
+          await page.getByTestId('composition-'+mode).click();assert.equal(await page.getByTestId('composition-'+mode).getAttribute('aria-selected'),'true');
+          assert.equal(await page.locator('[data-testid^="theme-"]').count(),mode==='grammar'?36:30);
+          await page.screenshot({path:path.join(work,`previews/composition-${lang}-${mode}.png`)});
+          await page.getByTestId('theme-1').click();assert.equal(await page.evaluate(()=>window.route.name),'Practice');assert.equal(await page.evaluate(()=>window.route.params.mode??'conversation'),mode);
+          await page.getByTestId('study-back').click();await page.getByTestId('composition-'+mode).waitFor();assert.equal(await page.getByTestId('composition-'+mode).getAttribute('aria-selected'),'true');
+        }
+        for(const width of [320,390]){
+          await page.setViewportSize({width,height:844});await page.evaluate(l=>window.boot(l,true,{name:'Theme',params:{mode:'grammar',puzzleOnly:true,guidesOnHome:true}},1.4),lang);
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+          if(width===390)await page.screenshot({path:path.join(work,`previews/puzzle-themes-${lang}.png`)});
+          await page.getByTestId('theme-1').click();await page.getByTestId('free-bank').waitFor();assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+          if(width===390)await page.screenshot({path:path.join(work,`previews/puzzle-${lang}.png`)});
+        }
+        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: 36 puzzle themes, distractors, solve/next/back, puzzle-only saved resume, grammar/conversation composition routes and responsive layouts.`);
+      }
+      return;
+    }
     if(process.argv.includes('--home-vocabulary')){
       const app=source('聞いて話せるネパール語/expo-app/App.tsx'),shell=source('packages/shared/src/AppShell.tsx');
-      assert(app.includes("tabs={['home', 'grammar', 'conversation', 'listening', 'settings']}"));
+      assert(app.includes("tabs={['home', 'puzzle', 'listening', 'composition']}"));
       for(const route of ['VocabCategory','VocabDirection','Flashcard','PosterAudio'])assert(shell.includes('name="'+route+'"'));
       for(const lang of ['ja','en']){
         await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
         const ids=await page.locator('[data-testid^="home-"]').evaluateAll(es=>es.map(e=>e.dataset.testid));assert.equal(ids.indexOf('home-vocabulary'),ids.indexOf('home-grammar-lessons')+1);
         await page.getByTestId('home-vocabulary').click();assert.equal(await page.evaluate(()=>window.route.name),'VocabCategory');
+        await page.getByTestId('vocab-direction-ja2ne').click();assert.equal(await page.getByTestId('vocab-direction-ja2ne').getAttribute('aria-selected'),'true');
+        const directionBox=await page.getByTestId('vocab-direction-ja2ne').boundingBox(),descriptionBox=await page.getByTestId('vocab-theme-description').boundingBox();assert(directionBox.y>=descriptionBox.y+descriptionBox.height);
+        await page.screenshot({path:path.join(work,`previews/vocabulary-themes-${lang}.png`)});
         const cat=await page.evaluate(()=>window.data.CONTENT_NAMES?.categories?.[1]??window.data.WORD_CATEGORIES[0].name);await page.getByText(cat,{exact:true}).first().click();
-        assert.equal(await page.evaluate(()=>window.route.name),'Flashcard');assert.equal(await page.getByTestId('vocab-quiz-prompt').count(),1);assert.equal(await page.locator('[data-testid^="vocab-option-"]').count(),4);
-        await page.getByTestId('study-back').click();assert.equal(await page.evaluate(()=>window.route.name),'VocabCategory');await page.getByTestId('study-back').click();await page.getByTestId('home-vocabulary').waitFor();
+        assert.equal(await page.evaluate(()=>window.route.name),'Flashcard');assert.equal(await page.evaluate(()=>window.route.params.direction),'ja2ne');assert.equal(await page.getByTestId('vocab-quiz-prompt').count(),1);assert.equal(await page.locator('[data-testid^="vocab-option-"]').count(),4);
+        await page.getByTestId('study-back').click();assert.equal(await page.evaluate(()=>window.route.name),'VocabCategory');assert.equal(await page.getByTestId('vocab-direction-ja2ne').getAttribute('aria-selected'),'true');await page.getByTestId('study-back').click();await page.getByTestId('home-vocabulary').waitFor();
         await page.screenshot({path:path.join(work,`previews/home-${lang}.png`)});
+        await page.getByTestId('home-settings').click();assert.equal(await page.evaluate(()=>window.route.name),'SettingsMain');
+        await page.evaluate(l=>window.boot(l,false,{name:'VocabCategory'}),lang);assert.equal(await page.getByTestId('vocab-direction-ja2ne').getAttribute('aria-selected'),'true','Direction survives restart');
+        for(const width of [320,390]){await page.setViewportSize({width,height:844});await page.evaluate(l=>window.boot(l,false,{name:'VocabCategory'},1.4),lang);for(const direction of ['ne2ja','ja2ne']){const box=await page.getByTestId('vocab-direction-'+direction).boundingBox();assert(box.width>=44&&box.height>=44);}assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));}
+        await page.evaluate(()=>{window.data={...window.data,vocabularyQuiz:false};window.redraw();});assert.equal(await page.locator('[data-testid^="vocab-direction-"]').count(),0,'Legacy apps do not receive quiz controls');
         await page.evaluate(()=>window.navigate('Theme',{mode:'listening'}));assert((await page.locator('body').innerText()).includes(strings[lang].themeScreen.headerListen));
         assert.deepEqual(errors,[]);
       }
-      console.log('PASS home vocabulary below lessons, real category/quiz/back routes, bottom Settings config, bilingual listening introduction.');return;
+      console.log('PASS home vocabulary below lessons, real category/quiz/back routes, persisted directions above themes, home Settings route, bilingual listening introduction.');return;
     }
     if(process.argv.includes('--legacy-free-resume')){
       for(const lang of ['ja','en'])for(const position of [0,5,10]){

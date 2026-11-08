@@ -25,7 +25,9 @@
     "grammar": "Grammar",
     "listening": "Listening",
     "vocabulary": "Vocabulary",
-    "home": "Home"
+    "home": "Home",
+    "composition": "Quick sentences",
+    "puzzle": "Puzzles"
   },
   "directions": {
     "ja2ne": "English → Nepali",
@@ -150,7 +152,9 @@
     "headerListen": "Choose a theme and start listening. Listen again and again to develop a natural feel for Nepali.",
     "modeTitleConv": "Conversation Mode",
     "modeTitleGrammar": "Grammar Mode",
-    "modeTitleListen": "Listening Mode"
+    "modeTitleListen": "Listening Mode",
+    "compositionDesc": "Choose grammar or conversation, then practise making Nepali sentences on your own.",
+    "puzzleDesc": "Arrange the word tiles to build Nepali sentences. Choose a theme and practise at your own pace."
   },
   "levelScreen": {
     "title": "Choose a level",
@@ -199,7 +203,7 @@
   },
   "vocab": {
     "modeTitle": "Vocabulary Mode",
-    "themeSelectDesc": "Choose a theme and practise with four choices. Switch direction whenever you like.",
+    "themeSelectDesc": "Choose a direction and a theme to practise with four-choice quizzes.",
     "directionTitle": "Choose quiz direction",
     "directionDesc": "Which direction would you like to practise the words in \"{{category}}\"?",
     "neLang": "Nepali",
@@ -226,8 +230,8 @@
     "playbackSpeedDesc": "Playback speed shared across all modes",
     "nepaliRepeat": "Nepali repeat count",
     "nepaliRepeatDesc": "How many times Nepali is played during listening",
-    "convDirection": "Conversation quiz direction",
-    "convDirectionDesc": "Default translation direction for Conversation Mode",
+    "convDirection": "Quick sentence direction",
+    "convDirectionDesc": "Translation direction for grammar and conversation sentences",
     "listenOrder": "Listening playback order",
     "listenOrderDesc": "Which language is played first in Listening Mode",
     "listenLoop": "Loop listening",

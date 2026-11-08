@@ -52,6 +52,8 @@ const RootStack = createNativeStackNavigator();
 const ConvStack = createNativeStackNavigator();
 const ShortStack = createNativeStackNavigator();
 const GramStack = createNativeStackNavigator();
+const CompositionStack = createNativeStackNavigator();
+const PuzzleStack = createNativeStackNavigator();
 const ListenStack = createNativeStackNavigator();
 const VocabStack = createNativeStackNavigator();
 
@@ -147,6 +149,20 @@ function GrammarStackNav({ defaultStackOptions, guidesOnHome = false }: { defaul
   );
 }
 
+function CompositionStackNav({ defaultStackOptions }: { defaultStackOptions: any }) {
+  return <CompositionStack.Navigator screenOptions={defaultStackOptions}>
+    <CompositionStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'grammar', composition: true, guidesOnHome: true }} />
+    <CompositionStack.Screen name="Practice" component={PracticeScreen} options={{ header: renderStudyHeader }} />
+  </CompositionStack.Navigator>;
+}
+
+function PuzzleStackNav({ defaultStackOptions }: { defaultStackOptions: any }) {
+  return <PuzzleStack.Navigator screenOptions={defaultStackOptions}>
+    <PuzzleStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'grammar', puzzleOnly: true, guidesOnHome: true }} />
+    <PuzzleStack.Screen name="Practice" component={PracticeScreen} options={{ header: renderStudyHeader }} />
+  </PuzzleStack.Navigator>;
+}
+
 function ListeningStackNav({ defaultStackOptions, posterInListening }: { defaultStackOptions: any; posterInListening?: boolean }) {
   return (
     <ListenStack.Navigator screenOptions={defaultStackOptions}>
@@ -206,7 +222,7 @@ function DictIcon({ color, focused }: { color: string; focused: boolean }) {
 }
 
 // アプリ別タブ構成。tabs 未指定なら現状の5タブ(App A/C はこのまま=無改修)。
-export type TabKey = 'home' | 'conversation' | 'grammar' | 'listening' | 'vocabulary' | 'vocation' | 'short' | 'long' | 'dict' | 'settings';
+export type TabKey = 'puzzle' | 'composition' | 'home' | 'conversation' | 'grammar' | 'listening' | 'vocabulary' | 'vocation' | 'short' | 'long' | 'dict' | 'settings';
 const DEFAULT_TABS: TabKey[] = ['home', 'conversation', 'grammar', 'listening', 'vocabulary'];
 
 function SettingsIcon({ color, focused }: { color: string; focused: boolean }) {
@@ -223,6 +239,8 @@ function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListe
     : defaultStackOptions;
   const defs = {
     home:         { name: 'HomeTab',         title: t('nav.home'),         icon: HomeIcon,       render: () => learningHome ? <LearningHomeScreen /> : <HomeScreen storageKey={progressStorageKey} /> },
+    puzzle:       { name: 'PuzzleTab',       title: t('nav.puzzle'),       icon: CardsIcon,      render: () => <PuzzleStackNav defaultStackOptions={modeStackOptions} /> },
+    composition:  { name: 'CompositionTab',  title: t('nav.composition'),  icon: ChatIcon,       render: () => <CompositionStackNav defaultStackOptions={modeStackOptions} /> },
     conversation: { name: 'ConversationTab', title: t('nav.conversation'), icon: ChatIcon,       render: () => <ConversationStackNav defaultStackOptions={modeStackOptions} /> },
     grammar:      { name: 'GrammarTab',      title: t('nav.grammar'),      icon: GrammarIcon,    render: () => <GrammarStackNav defaultStackOptions={modeStackOptions} guidesOnHome={learningHome} /> },
     listening:    { name: 'ListeningTab',    title: t('nav.listening'),    icon: HeadphonesIcon, render: () => <ListeningStackNav defaultStackOptions={modeStackOptions} posterInListening={posterInListening} /> },

@@ -18,6 +18,7 @@ export default function FreePracticeScreen() {
   const data = useAppData(), learning = useLearning()!, { lang } = useI18n(), en = lang === 'en', ss = useScaleStyle();
   const nav = useNavigation<NativeStackNavigationProp<RootStackParamList, 'Practice'>>();
   const session = useRoute<RouteProp<RootStackParamList, 'Practice'>>().params.studySession!;
+  const puzzleOnly = session.freePractice?.puzzleOnly === true;
   const position = session.freePractice ? 0 : session.position ?? 0;
   const current = session.items[position], mode = session.freePractice?.stage ?? session.questionStages?.[position] ?? 2;
   const answered = session.freePractice?.answered ?? session.answered?.length ?? 0;
@@ -29,7 +30,7 @@ export default function FreePracticeScreen() {
   const [dragging, setDragging] = useState(false), [showPuzzleIntro] = useState(() => !learning.state.puzzleIntroSeen);
   const busy = useRef(false), focused = useRef(true);
   useFocusEffect(useCallback(() => { focused.current = true; return () => { focused.current = false; }; }, []));
-  useLayoutEffect(() => nav.setOptions({ title: en ? 'Practice your way' : '自由に練習' }), [nav, en]);
+  useLayoutEffect(() => nav.setOptions({ title: puzzleOnly ? (en ? 'Sentence puzzles' : '文章パズル') : (en ? 'Practice your way' : '自由に練習') }), [nav, en, puzzleOnly]);
   useEffect(() => { if (mode === 4 && showPuzzleIntro && learning.ready) void learning.change(state => ({ ...state, puzzleIntroSeen: true })); }, [mode, showPuzzleIntro, learning.ready, learning.change]);
   const labels = en ? ['Choose a form', 'Choose a meaning', 'Word-order puzzle'] : ['形を選ぶ', '意味を選ぶ', '語順パズル'];
   const solved = !!question && (revealed || (mode === 2 ? choice === question.conjugation?.target.text : mode === 3 ? choice === ex?.jp : matchesPuzzle(question.puzzleTokens, order, question.answerWords)));
@@ -40,7 +41,7 @@ export default function FreePracticeScreen() {
     let launch: ReturnType<typeof createFreePracticeSession> | undefined;
     const saved = await learning.change(state => {
       const next = countAnswer ? rateStudy(state, current, 'supported', Date.now()) : state;
-      launch = createFreePracticeSession(next, path, current.themeId, nextMode, answered + Number(countAnswer));
+      launch = createFreePracticeSession(next, path, current.themeId, nextMode, answered + Number(countAnswer), Math.random, puzzleOnly);
       return launch.state;
     });
     busy.current = false; setSaving(false);
@@ -54,11 +55,11 @@ export default function FreePracticeScreen() {
   const canForm = !!conj, canMeaning = question.meaningChoices.length > 1;
   return <ScrollView scrollEnabled={!dragging} contentContainerStyle={styles.container}>
     <View style={styles.heading}><Text style={[styles.theme, ss(14, 23)]}>{step.title}</Text><Text testID="free-count" style={[styles.count, ss(14, 23)]}>{en ? `${answered} practised` : `${answered}問取り組んだ`}</Text></View>
-    <View style={styles.modes}>{([2, 3, 4] as const).map((stage, i) => {
+    {!puzzleOnly && <View style={styles.modes}>{([2, 3, 4] as const).map((stage, i) => {
       const disabled = saving || !learning.ready || (stage === 2 && !canForm) || (stage === 3 && !canMeaning);
       return <Pressable key={stage} testID={`free-mode-${stage}`} accessibilityRole="tab" accessibilityState={{ selected: mode === stage, disabled }} disabled={disabled} onPress={() => { if (stage !== mode) void draw(stage, false); }} style={[styles.mode, mode === stage && styles.modeSelected, disabled && styles.disabled]}><Text style={[ss(14, 22), mode === stage ? styles.link : styles.muted]}>{labels[i]}</Text></Pressable>;
-    })}</View>
-    <Text accessibilityRole="header" style={[styles.title, ss(23, 34)]}>{labels[mode - 2]}</Text>
+    })}</View>}
+    {!puzzleOnly && <Text accessibilityRole="header" style={[styles.title, ss(23, 34)]}>{labels[mode - 2]}</Text>}
     {mode === 4 ? <View testID="free-prompt" style={styles.prompt}><Text style={[styles.promptLabel, ss(12, 20)]}>{en ? 'BUILD THIS MEANING' : 'この意味の文を作ろう'}</Text><Text style={[styles.promptText, ss(24, 37)]}>{ex.jp}</Text></View> : (mode !== 3 || solved) && <Text style={[styles.body, ss(18, 29)]}>{ex.jp}</Text>}
     {mode !== 4 && <View style={styles.sentence}><Text style={[styles.nepali, ss(27, 41)]}>{mode === 2 && !solved ? question.parts.map((part, i) => i === conj?.target.index ? (conj.prefix ?? '') + '＿＿＿' : part).join('') : ex.ne}</Text>{(mode === 3 || solved) && <Text style={[styles.muted, ss(16, 25)]}>{roman}</Text>}</View>}
     {mode === 2 && conj && !solved && <>

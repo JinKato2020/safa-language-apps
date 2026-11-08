@@ -39,7 +39,7 @@ const HERO_IMAGES = {
 // 日英の教材をOTAから供給。ne表示では日本語教材を使う。
 function LearningAppShell() {
   const engagement = useEngagement();
-  return <SettingsDevelopmentProvider value={engagement.developmentTools}><AppShell learningStorageKey="@nepali_app/learning_v1" headerIconSource={headerIconSource} progressStorageKey="@nepali_app/progress_v1" tabs={['home', 'grammar', 'conversation', 'listening', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={engagement.onRouteChanged} mainScreenAccessory={<>{engagement.banner}<ContentStatus /></>} /></SettingsDevelopmentProvider>;
+  return <SettingsDevelopmentProvider value={engagement.developmentTools}><AppShell learningStorageKey="@nepali_app/learning_v1" headerIconSource={headerIconSource} progressStorageKey="@nepali_app/progress_v1" tabs={['home', 'puzzle', 'listening', 'composition']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={engagement.onRouteChanged} mainScreenAccessory={<>{engagement.banner}<ContentStatus /></>} /></SettingsDevelopmentProvider>;
 }
 
 const toPackLang = (lang: string) => (lang === 'en' ? 'en' : 'ja');
