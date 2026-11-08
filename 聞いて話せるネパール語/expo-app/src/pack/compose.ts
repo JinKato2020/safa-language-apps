@@ -97,6 +97,7 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
     return out;
   };
   return {
+    vocabularyQuiz: true,
     LEARNING_PATH: overlay.learningPathV3 ?? overlay.learningPathV2 ?? overlay.learningPath,
     LETTERS_SOUNDS: overlay.lettersSounds,
     CONTENT_NAMES: overlay.contentNames,

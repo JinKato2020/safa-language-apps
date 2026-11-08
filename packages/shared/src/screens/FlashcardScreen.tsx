@@ -11,6 +11,7 @@ import { useAppData } from '../AppDataContext';
 import { getL1 } from '../l1';
 import { useCardFlip } from '../useCardFlip';
 import { useHorizontalSwipe } from '../useHorizontalSwipe';
+import VocabularyQuizScreen from './VocabularyQuizScreen';
 
 type R = RouteProp<RootStackParamList, 'Flashcard'>;
 
@@ -39,6 +40,10 @@ function ShuffleIcon({ active }: { active: boolean }) {
 }
 
 export default function FlashcardScreen() {
+  return useAppData().vocabularyQuiz ? <VocabularyQuizScreen /> : <WordCardsScreen />;
+}
+
+function WordCardsScreen() {
   const contentNames = useAppData().CONTENT_NAMES;
   const { WORD_CATEGORIES, getWords, nativeLang, WORDS_READING } = useAppData();
   const l1 = getL1(nativeLang);

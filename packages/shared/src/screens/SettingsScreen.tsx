@@ -91,7 +91,7 @@ export default function SettingsScreen() {
   const s = useSettings();
   const { t, lang, setLang, langs } = useI18n();
   const ss = useScaleStyle();
-  const { version: APP_VERSION, review } = useAppData();
+  const { version: APP_VERSION, review, vocabularyQuiz } = useAppData();
   const buildNumber = Application.nativeBuildVersion;
   const versionDisplay = buildNumber ? `${APP_VERSION} (${buildNumber})` : APP_VERSION;
   // 言語選択UI: 全アプリ共通でドロップダウン(ユーザー確定 2026-06-19。言語が多いため/UI統一)。
@@ -326,14 +326,14 @@ export default function SettingsScreen() {
         </Row>
       </Section>
 
-      <Section title={t('settings.sectionLearn')} icon={<CapIcon />} ss={ss}>
+      {!vocabularyQuiz && <Section title={t('settings.sectionLearn')} icon={<CapIcon />} ss={ss}>
         <Row label={t('settings.autoFlip')} desc={t('settings.autoFlipDesc')} ss={ss}>
           <Switch value={s.autoFlip} onValueChange={s.setAutoFlip} trackColor={{ false: colors.line, true: colors.ink }} />
         </Row>
         <Row label={t('settings.shuffle')} desc={t('settings.shuffleDesc')} ss={ss}>
           <Switch value={s.shuffle} onValueChange={s.setShuffle} trackColor={{ false: colors.line, true: colors.ink }} />
         </Row>
-      </Section>
+      </Section>}
 
       <Section title={t('settings.sectionData')} icon={<DataIcon />} ss={ss}>
         <Row label={t('settings.resetSettings')} desc={t('settings.resetSettingsDesc')} ss={ss}>

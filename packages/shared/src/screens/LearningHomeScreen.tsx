@@ -109,7 +109,7 @@ export default function LearningHomeScreen() {
     <Pressable testID="home-vocabulary" accessibilityRole="button" accessibilityLabel={en ? 'Vocabulary' : '単語'} onPress={() => nav.navigate('VocabCategory')} style={({ pressed }) => [styles.path, { backgroundColor: '#eef1fa', borderColor: '#d6ddeb' }, pressed && styles.pressed]}>
       <View style={styles.sectionRow}><Text style={styles.overline}>VOCABULARY</Text><Text style={styles.pathCount}>क →</Text></View>
       <Text style={styles.pathTitle}>{en ? 'Vocabulary' : '単語'}</Text>
-      <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Build your everyday vocabulary with word cards and audio.' : '身近なことばを、単語カードと音声で覚えよう。'}</Text>
+      <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Choose the meaning or choose the Nepali word. Practise both ways with four choices.' : 'ネパール語から意味を選ぶ。母語からことばを選ぶ。4択で繰り返し練習しよう。'}</Text>
       <View style={styles.sectionRow}><Text style={styles.pathLink}>{en ? 'Explore words →' : '単語を学ぶ →'}</Text></View>
     </Pressable>
 

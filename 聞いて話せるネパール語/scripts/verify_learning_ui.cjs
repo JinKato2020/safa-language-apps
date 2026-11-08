@@ -5,8 +5,8 @@ const ROOT=path.resolve(__dirname,'../..'),work=path.resolve(process.argv[2]||'.
 const source=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const compile=s=>ts.transpileModule(s,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
 const modules={};for(const[p,file]of[['react','react.production.js'],['react/jsx-runtime','react-jsx-runtime.production.js'],['react-dom','react-dom.production.js'],['react-dom/client','react-dom-client.production.js'],['scheduler','scheduler.production.js']])modules[p]=fs.readFileSync(path.join(path.dirname(require.resolve(p.split('/')[0]+'/package.json')),'cjs',file),'utf8');
-for(const name of ['PuzzleBoard','puzzleDrag','practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['PuzzleBoard','LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
-for(const name of ['SettingsScreen','VocabCategoryScreen','VocabDirectionScreen','FlashcardScreen','FreePracticeScreen','GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
+for(const name of ['vocabularyQuiz','PuzzleBoard','puzzleDrag','practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['PuzzleBoard','LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
+for(const name of ['VocabularyQuizScreen','SettingsScreen','VocabCategoryScreen','VocabDirectionScreen','FlashcardScreen','FreePracticeScreen','GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
 modules.entitlement=compile(source('packages/shared/src/entitlement.tsx'));
 modules.compose=compile(source('聞いて話せるネパール語/expo-app/src/pack/compose.ts'));
 const core=JSON.parse(source('聞いて話せるネパール語/expo-app/data/ota-baseline/core.json'));
@@ -21,7 +21,7 @@ if(k==='paddingHorizontal'){out.paddingLeft=v;out.paddingRight=v;}else if(k==='p
 const View=React.forwardRef((p,ref)=>{const el=React.useRef(null),gesture=React.useRef(null);React.useImperativeHandle(ref,()=>({measureInWindow:cb=>{const r=el.current.getBoundingClientRect();cb(r.x,r.y,r.width,r.height);}}));React.useEffect(()=>{if(!p.onLayout)return;const r=new ResizeObserver(()=>p.onLayout({nativeEvent:{layout:{width:el.current.clientWidth,height:el.current.clientHeight}}}));r.observe(el.current);return()=>r.disconnect();},[p.onLayout]);const event=e=>({nativeEvent:{pageX:e.clientX,pageY:e.clientY}});const state=e=>({x0:gesture.current.x,y0:gesture.current.y,moveX:e.clientX,moveY:e.clientY,dx:e.clientX-gesture.current.x,dy:e.clientY-gesture.current.y,numberActiveTouches:1});return h('div',{ref:el,'data-testid':p.testID,style:{...css(p.style,true),...(p.pointerEvents==='none'?{pointerEvents:'none'}:{})},onPointerDown:e=>{if(p._pan){gesture.current={x:e.clientX,y:e.clientY,active:false};(e.target.closest('button')??el.current).setPointerCapture(e.pointerId);}},onPointerMoveCapture:e=>{if(!p._pan||!gesture.current)return;const g=state(e);if(!gesture.current.active&&p._pan.onMoveShouldSetPanResponderCapture?.(event(e),g)){gesture.current.active=true;el.current.setPointerCapture(e.pointerId);p._pan.onPanResponderGrant?.(event(e),g);}if(gesture.current.active)p._pan.onPanResponderMove?.(event(e),g);},onPointerUpCapture:e=>{if(gesture.current?.active)p._pan.onPanResponderRelease?.(event(e),state(e));p.onTouchEnd?.(event(e));gesture.current=null;},onPointerCancel:e=>{if(gesture.current?.active)p._pan.onPanResponderTerminate?.();p.onTouchCancel?.();gesture.current=null;}},p.children);});
 function Text(p){return h('span',{'data-testid':p.testID,role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...css(p.style)}},p.children);}
 function Pressable(p){const timer=React.useRef();React.useEffect(()=>()=>clearTimeout(timer.current),[]);const stop=()=>clearTimeout(timer.current);return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,'aria-selected':p.accessibilityState?.selected,disabled:p.disabled,onClick:p.onPress,onPointerDown:e=>{if(p.disabled)return;p.onPressIn?.();const event={nativeEvent:{pageX:e.clientX,pageY:e.clientY}};if(p.onLongPress)timer.current=setTimeout(()=>p.onLongPress(event),p.delayLongPress??500);},onPointerUp:stop,onPointerLeave:stop,onPointerCancel:stop,'data-testid':p.testID,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
-const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y)}));return h('div',{ref:el,'data-testid':p.testID,style:{scrollbarGutter:'stable',overflowY:p.horizontal||p.scrollEnabled===false?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
+const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y),scrollToEnd:()=>el.current.scrollTo(0,el.current.scrollHeight)}));return h('div',{ref:el,'data-testid':p.testID,style:{scrollbarGutter:'stable',overflowY:p.horizontal||p.scrollEnabled===false?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
 const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))};
 const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode==='contain'?'contain':undefined,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
 cache['react-native']={exports:{Platform:{OS:'ios'},Alert:{alert:(...args)=>window.alerts.push(args)},Linking:{openURL:async url=>window.links.push(url)},Share:{share:async()=>{}},Switch:()=>null,PanResponder:{create:config=>({panHandlers:{_pan:config}})},AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
@@ -86,6 +86,50 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
       const text=await page.locator('body').innerText();assert(text.indexOf(strings.en.settings.rateApp)>text.indexOf(strings.en.settings.sectionAbout));
       console.log('PASS settings: ja/en×320/390 large text, hidden in all builds, seven fast taps only, timeout reset, re-hide on blur without unmount, review/request actions and explicit fallback, normal rating placement, other apps hidden.');return;
     }
+    if(process.argv.includes('--vocabulary-quiz')){
+      const by=id=>page.getByTestId(id),options=()=>page.locator('[data-testid^="vocab-option-"]');
+      const correctIndex=async(category,direction)=>{
+        const prompt=await by('vocab-quiz-word').innerText();
+        const answers=await page.evaluate(({category,direction,prompt})=>window.data.getWords(category).filter(w=>(direction==='ne2ja'?w.ne:w.ja)===prompt).map(w=>direction==='ne2ja'?w.ja:w.ne),{category,direction,prompt});
+        const labels=await options().evaluateAll(es=>es.map(e=>e.getAttribute('aria-label')));const indices=labels.flatMap((x,i)=>answers.includes(x)?[i]:[]);assert.equal(indices.length,1,'Only one displayed choice matches the prompt');return indices[0];
+      };
+      for(const lang of ['ja','en']){
+        const en=lang==='en';await page.setViewportSize({width:390,height:844});
+        for(let category=1;category<=30;category++)for(const direction of ['ne2ja','ja2ne']){
+          await page.evaluate(({lang,category,direction})=>{window.testEntitlement={isPro:true,freeThemes:Infinity};return window.boot(lang,true,{name:'Flashcard',params:{categoryId:category,direction}});},{lang,category,direction});
+          await by('vocab-quiz-prompt').waitFor();assert.equal(await options().count(),4);assert.equal(await by('vocab-direction-'+direction).getAttribute('aria-selected'),'true');
+          const correct=await correctIndex(category,direction);await by('vocab-option-'+correct).click();await by('vocab-quiz-feedback').waitFor();
+          assert((await by('vocab-quiz-count').innerText()).includes('1'));assert((await by('vocab-quiz-score').innerText()).includes('1'));
+          assert(await options().evaluateAll(es=>es.every(e=>e.disabled)));
+          await by('vocab-quiz-next').click();assert.equal(await by('vocab-quiz-feedback').count(),0);assert.equal(await options().count(),4);
+          assert.deepEqual(errors,[]);
+        }
+        await page.evaluate(l=>window.boot(l,true,{name:'Flashcard',params:{categoryId:1,direction:'ne2ja'}}),lang);
+        const correct=await correctIndex(1,'ne2ja');await by('vocab-option-'+((correct+1)%4)).click();
+        assert((await by('vocab-quiz-score').innerText()).includes('0'));assert((await by('vocab-quiz-count').innerText()).includes('1'));
+        const oldPrompt=await by('vocab-quiz-word').innerText();await by('vocab-direction-ja2ne').click();assert.equal(await by('vocab-quiz-feedback').count(),0);assert((await by('vocab-quiz-count').innerText()).includes('0'));
+        await by('vocab-quiz-reveal').click();assert((await by('vocab-quiz-score').innerText()).includes('0'));assert((await by('vocab-quiz-count').innerText()).includes('1'));
+        await by('vocab-direction-ne2ja').click();assert.equal(await by('vocab-quiz-word').innerText(),oldPrompt);assert.equal(await by('vocab-quiz-feedback').count(),1,'Switching direction preserves each session');
+        await by('vocab-quiz-next').click();const answer=await correctIndex(1,'ne2ja');
+        await page.evaluate(index=>{const b=document.querySelector('[data-testid="vocab-option-'+index+'"]');b.click();b.click();},answer);
+        assert((await by('vocab-quiz-score').innerText()).includes('1'));assert((await by('vocab-quiz-count').innerText()).includes('2'),'Rapid double taps are counted once');
+        await page.evaluate(()=>{const b=document.querySelector('[data-testid="vocab-quiz-next"]');b.click();b.click();});assert.equal(await by('vocab-quiz-feedback').count(),0);
+        for(const [width,height,scale]of[[390,844,1],[320,568,1.4],[844,390,1]])for(const direction of ['ne2ja','ja2ne']){
+          await page.setViewportSize({width,height});await page.evaluate(({lang,direction,scale})=>window.boot(lang,true,{name:'Flashcard',params:{categoryId:1,direction}},scale),{lang,direction,scale});
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),'Quiz does not overflow horizontally');
+          const controls=await options().all();for(const b of controls){const box=await b.boundingBox();assert(box.width>=44&&box.height>=44);}
+          if(width===390)await page.screenshot({path:path.join(work,`previews/vocabulary-${lang}-${direction}.png`)});
+          await by('vocab-quiz-reveal').click();await by('vocab-quiz-next').scrollIntoViewIfNeeded();const next=await by('vocab-quiz-next').boundingBox();assert(next.height>=44);assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+          if(width===390&&direction==='ne2ja')await page.screenshot({path:path.join(work,`previews/vocabulary-${lang}-answer.png`)});
+        }
+        await page.evaluate(l=>window.boot(l,true,{name:'SettingsTab'}),lang);assert.equal(await page.getByText(strings[lang].settings.autoFlip,{exact:true}).count(),0);assert.equal(await page.getByText(strings[lang].settings.shuffle,{exact:true}).count(),0,'Obsolete card-only settings are removed');
+        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: 30 themes × both quiz directions, four options, correct/wrong/reveal/next, independent direction sessions, double taps, responsive layouts and card-setting removal.`);
+      }
+      await page.evaluate(async()=>{await window.boot('ja',true,{name:'Flashcard',params:{categoryId:6,direction:'ne2ja'}});window.testEntitlement={isPro:false,freeThemes:5};window.redraw();});await by('vocab-quiz-back').waitFor();assert.equal(await by('vocab-quiz-prompt').count(),0);
+      await page.evaluate(async()=>{window.testEntitlement={isPro:true,freeThemes:Infinity};await window.boot('ja',true,{name:'Flashcard',params:{categoryId:1,direction:'ne2ja'}});window.data={...window.data,WORDS:{}};window.redraw();});await by('vocab-quiz-back').waitFor();assert.equal(await options().count(),0,'Missing data never invents options');
+      await page.evaluate(async()=>{await window.boot('en',true,{name:'Flashcard',params:{categoryId:1,direction:'ne2ja'}});window.data={...window.data,vocabularyQuiz:false};window.redraw();});await page.getByText(/tap to/i).first().waitFor();assert.equal(await by('vocab-quiz-prompt').count(),0,'Other apps keep their existing cards');
+      assert.deepEqual(errors,[]);console.log('PASS entitlement guard, safe empty state and legacy opt-out.');return;
+    }
     if(process.argv.includes('--home-vocabulary')){
       const app=source('聞いて話せるネパール語/expo-app/App.tsx'),shell=source('packages/shared/src/AppShell.tsx');
       assert(app.includes("tabs={['home', 'grammar', 'conversation', 'listening', 'settings']}"));
@@ -95,13 +139,13 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         const ids=await page.locator('[data-testid^="home-"]').evaluateAll(es=>es.map(e=>e.dataset.testid));assert.equal(ids.indexOf('home-vocabulary'),ids.indexOf('home-grammar-lessons')+1);
         await page.getByTestId('home-vocabulary').click();assert.equal(await page.evaluate(()=>window.route.name),'VocabCategory');
         const cat=await page.evaluate(()=>window.data.CONTENT_NAMES?.categories?.[1]??window.data.WORD_CATEGORIES[0].name);await page.getByText(cat,{exact:true}).first().click();
-        assert.equal(await page.evaluate(()=>window.route.name),'Flashcard');assert((await page.locator('body').innerText()).includes(await page.evaluate(()=>window.data.getWords(1)[0].ne)));
+        assert.equal(await page.evaluate(()=>window.route.name),'Flashcard');assert.equal(await page.getByTestId('vocab-quiz-prompt').count(),1);assert.equal(await page.locator('[data-testid^="vocab-option-"]').count(),4);
         await page.getByTestId('study-back').click();assert.equal(await page.evaluate(()=>window.route.name),'VocabCategory');await page.getByTestId('study-back').click();await page.getByTestId('home-vocabulary').waitFor();
         await page.screenshot({path:path.join(work,`previews/home-${lang}.png`)});
         await page.evaluate(()=>window.navigate('Theme',{mode:'listening'}));assert((await page.locator('body').innerText()).includes(strings[lang].themeScreen.headerListen));
         assert.deepEqual(errors,[]);
       }
-      console.log('PASS home vocabulary below lessons, real category/flashcard/back routes, bottom Settings config, bilingual listening introduction.');return;
+      console.log('PASS home vocabulary below lessons, real category/quiz/back routes, bottom Settings config, bilingual listening introduction.');return;
     }
     if(process.argv.includes('--legacy-free-resume')){
       for(const lang of ['ja','en'])for(const position of [0,5,10]){

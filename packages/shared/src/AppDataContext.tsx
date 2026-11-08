@@ -54,6 +54,8 @@ export type JpReadingEntry = {
 export type JpReading = Record<string, JpReadingEntry>;  // キー = 日本語文そのまま
 
 export type AppData = {
+  /** App A opts into bidirectional four-choice vocabulary practice. */
+  vocabularyQuiz?: boolean;
   LEARNING_PATH?: LearningPath;
   LETTERS_SOUNDS?: import('./learning').LettersSounds;
   CONTENT_NAMES?: { themes?: Record<string,string>; levels?: Record<string,string>; categories?: Record<string,string> };
