@@ -113,10 +113,6 @@ export default function LearningHomeScreen() {
       <View style={styles.sectionRow}><Text style={styles.pathLink}>{en ? 'Explore words →' : '単語を学ぶ →'}</Text></View>
     </Pressable>
 
-    {ready && due.length > 0 && <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Review saved sentences' : '保存した例文を復習'} onPress={() => nav.navigate('Practice', practiceParams(due[0], { kind: 'review', items: due }))} style={({ pressed }) => [styles.review, pressed && styles.pressed]}>
-      <View style={styles.reviewBadge}><Text style={styles.reviewNumber}>{due.length}</Text></View>
-      <View style={{ flex: 1 }}><Text style={styles.reviewTitle}>{en ? 'A little review, a little stronger.' : '思い出すほど、自分の言葉に。'}</Text><Text style={styles.reviewNote}>{en ? 'Your saved sentences are ready.' : 'もう一度練習する例文があります。'}</Text></View><Text style={styles.reviewArrow}>→</Text>
-    </Pressable>}
     {learning?.error && <Pressable accessibilityRole="button" onPress={learning.retry} style={styles.error}><Text style={styles.errorText}>{en ? 'Could not load or save progress. Tap to retry.' : '学習記録を読み込み・保存できませんでした。タップして再試行。'}</Text></Pressable>}
     <Text style={styles.footer}>{en ? 'A few words today. A real conversation tomorrow.' : '今日のひとことが、次の会話につながる。'}</Text>
   </ScrollView>;
@@ -155,8 +151,6 @@ const styles = StyleSheet.create({
   path: { backgroundColor: '#E4EEE8', padding: 22, borderRadius: 22, gap: 9 }, pathCount: { color: c.ink, fontSize: 24, lineHeight: 32, fontWeight: '700' }, pathDenominator: { color: c.muted, fontSize: 13, lineHeight: 20, fontWeight: '400' },
   pathTitle: { color: c.ink, fontSize: 19, lineHeight: 28, fontWeight: '700' }, pathNote: { color: c.muted, fontSize: 11, lineHeight: 18, flex: 1 }, pathLink: { color: c.ink, fontSize: 12, lineHeight: 20, fontWeight: '700' },
   grammarPath: { backgroundColor: '#E5EBF5' },
-  review: { flexDirection: 'row', alignItems: 'center', padding: 18, gap: 12, borderRadius: 20, backgroundColor: '#FFF' }, reviewBadge: { width: 40, height: 40, borderRadius: 14, alignItems: 'center', justifyContent: 'center', backgroundColor: '#E4EEE8' },
-  reviewNumber: { color: '#237766', fontSize: 19, fontWeight: '700' }, reviewTitle: { color: c.ink, fontSize: 14, lineHeight: 22, fontWeight: '700' }, reviewNote: { color: c.muted, fontSize: 11, lineHeight: 18, marginTop: 3 }, reviewArrow: { color: c.ink, fontSize: 20 },
   error: { padding: 16, borderRadius: 14, backgroundColor: '#FCEEEF' }, errorText: { color: '#8B2945', fontSize: 13, lineHeight: 21 },
   footer: { color: c.muted, fontSize: 11, lineHeight: 19, textAlign: 'center', marginTop: 2 }, pressed: { opacity: 0.78 },
 });
