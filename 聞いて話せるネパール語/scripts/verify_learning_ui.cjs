@@ -231,17 +231,20 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         assert.equal(bases.length,30);assert.equal(data.conjunctCombinations.length,30);
         for(const [i,base]of bases.entries()){
           await by('letters-conjunct-'+base.id).click();assert.equal(await by('letters-conjunct-'+base.id).getAttribute('aria-selected'),'true');
-          assert.equal(await by('letters-conjunct-words').getByRole('button').count(),2);assert.equal(await by('letters-sound-chart').getByRole('button').count(),11);
+          assert.equal(await page.evaluate(()=>window.activeAudio.size),0,'Changing a conjunct stops playback, like consonant selection');assert.equal(await by('letters-example-words').count(),0);assert.equal(await by('letters-sound-chart').getByRole('button').count(),11);await by('letters-details').click();assert.equal(await by('letters-example-words').getByRole('button').count(),2);
           for(let j=0;j<2;j++){await by('letters-play-word-'+j).click();await page.waitForFunction(url=>window.events.filter(e=>e[0]==='audio').at(-1)?.[1]?.uri===url,base.examples[j].audio.url);}
+          await by('letters-details').click();
           for(const sample of data.conjunctCombinations[i].samples){await by('letters-play-'+sample.id).click();await page.waitForFunction(url=>window.events.filter(e=>e[0]==='audio').at(-1)?.[1]?.uri===url,sample.audio.url);assert.equal(await page.evaluate(()=>window.activeAudio.size),1);}
         }
         for(const[width,height,scale]of[[390,844,1],[320,568,1.4]]){
           await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});await by('letters-category-conjuncts').click();
           assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
-          const word=await by('letters-play-word-0').boundingBox();if(width===390)assert(word.y+word.height<height-68,'First example is visible without scrolling');
+          assert.equal(await by('letters-play-word-0').count(),0,'Word details use the same collapsed selection card');
+          const tiles=await by('letters-sound-chart').getByRole('button').all();for(const tile of tiles){const box=await tile.boundingBox();assert(box.width>=44&&box.height>=44);}
+          if(width===390){const last=await tiles.at(-1).boundingBox();assert(last.y+last.height<height-68,'All 11 conjunct forms fit together at standard text size');}
           await page.screenshot({path:path.join(work,`previews/conjunct-${lang}-${width}.png`)});
         }
-        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: ka/ghar removal; 30 horizontal conjunct selectors, 60 immediate example words, 330 sound routes, one active player and narrow/large-text layout.`);
+        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: ka/ghar removal; 30 horizontal conjunct selectors, 60 example words in shared details, 330 sound routes, one active player and narrow/large-text layout.`);
       }
       return;
     }
@@ -257,7 +260,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           assert(await by('letters-section-navigation').evaluate(el=>el===el.parentElement.lastElementChild),'Navigation is at the bottom of the lesson');
           const first=by('letters-sound-chart').getByRole('button').first();await first.click();await page.waitForFunction(()=>window.activeAudio.size===1);
           if(section.id==='vowels'){await by('letters-details').click();assert.equal(await by('letters-play-word-0').count(),1);await by('letters-play-word-0').click();await page.waitForFunction(()=>window.activeAudio.size===1);}
-          await by('letters-next-section').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0,'Moving stops the sound');if(section.id!=='combinations')assert.equal(await by('letters-play-word-0').count(),0,'Moving closes previous word details');
+          await by('letters-next-section').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0,'Moving stops the sound');assert.equal(await by('letters-play-word-0').count(),0,'Moving closes previous word details');
         }
         await by('letters-category-marks').click();await by('letters-section-numbers').click();
         for(const section of [...sections].reverse()){
