@@ -1,13 +1,13 @@
 import { useAppData } from '../AppDataContext';
 import { useLearning } from '../LearningContext';
-import { createPracticeSession } from '../practicePool';
+import { createFreePracticeSession, type PracticeStage } from '../practicePool';
 // 文法モードの「教材」表示画面。構造化ブロック(goal/h/p/note/table)をネイティブ描画する。
 // RootStack に登録(ヘッダー非表示)のため、自前のトップバー(✕+タイトル)を描く。
-import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ScrollView, View, StyleSheet, Pressable, Image, useWindowDimensions, type ImageSourcePropType } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text } from '../Text';
-import { useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
+import { useFocusEffect, useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { colors, spacing, radius } from '../theme';
 import type { RootStackParamList } from '../types';
@@ -190,16 +190,17 @@ export default function GrammarGuideScreen() {
   const data = useAppData(), learning = useLearning();
   const step = learning && data.LEARNING_PATH?.steps.find(s => s.guideThemeId === themeId);
   const practiceSession = step ? { kind: 'course' as const, stepId: step.id, items: step.items } : studySession;
-  const [starting,setStarting]=useState(false), startingRef=useRef(false);
-  const startPractice=async()=>{
+  const [starting,setStarting]=useState(false), startingRef=useRef(false), focused=useRef(true);
+  useFocusEffect(useCallback(()=>{focused.current=true;return()=>{focused.current=false;};},[]));
+  const startPractice=async(stage: PracticeStage)=>{
     if(startingRef.current)return;
     if(step&&data.LEARNING_PATH&&learning){
       if(!learning.ready)return;
       startingRef.current=true;setStarting(true);
-      let launch:ReturnType<typeof createPracticeSession>|undefined;
-      const saved=await learning.change(state=>{launch=createPracticeSession(state,data.LEARNING_PATH!,themeId);return launch.state;});
+      let launch:ReturnType<typeof createFreePracticeSession>|undefined;
+      const saved=await learning.change(state=>{launch=createFreePracticeSession(state,data.LEARNING_PATH!,themeId,stage);return launch.state;});
       startingRef.current=false;setStarting(false);
-      if(saved&&launch)nav.navigate('Practice',launch.params);
+      if(focused.current&&saved&&launch)nav.navigate('Practice',launch.params);
     }else if(practiceSession)nav.navigate('Practice',{themeId,mode:'grammar',studySession:practiceSession,challenge:false});
   };
   const insets = useSafeAreaInsets();
@@ -239,22 +240,20 @@ export default function GrammarGuideScreen() {
           <View key={`${themeId}-${lang}-${selected}`}>
             {selected === 'practice' ? <>
               <Text accessibilityRole="header" style={[styles.h, ss(22, 32)]}>{copy.exercises}</Text>
-              <Text style={[styles.p, ss(16, 27)]}>{lang === 'en' ? 'Practise this theme in three steps, with word meanings and rule hints available as you go.' : 'このテーマを3つのステップで練習しよう。単語の意味やルールは、途中でも確認できます。'}</Text>
+              <Text style={[styles.p, ss(16, 27)]}>{lang === 'en' ? 'Choose what you want to practise. Stay with one type or switch whenever you like.' : '練習したいものを選ぼう。1つに集中しても、途中で切り替えてもOK。'}</Text>
               {(lang === 'en' ? [
-                ['① Choose a form', 'Choose a verb form, postposition or other expression that fits this theme.'],
-                ['② Choose a meaning', 'Read a Nepali sentence and choose its meaning.'],
-                ['③ Word-order puzzle', 'Arrange the supplied words to build a sentence.'],
+                ['Choose a form', 'Focus on this theme’s verb forms, postpositions or other expressions.'],
+                ['Choose a meaning', 'Choose this when you want to practise understanding Nepali sentences.'],
+                ['Word-order puzzle', 'Choose the words you need and arrange them. Some choices are extra.'],
               ] : [
-                ['① 形を選ぶ', '活用・後置詞など、このテーマに合う形を選びます。'],
-                ['② 意味を選ぶ', 'ネパール語の文を見て、意味を選びます。'],
-                ['③ 語順パズル', '用意された語句を並べて、文を作ります。'],
-              ]).map(([heading, body], i) => <View key={heading} style={[styles.lessonCard, { backgroundColor: i % 2 ? '#f5f3ff' : '#ecfdf5', borderColor: i % 2 ? '#ddd6fe' : '#a7f3d0', borderLeftColor: i % 2 ? '#7c3aed' : '#0f766e' }]}>
+                ['形を選ぶ', '活用・後置詞など、このテーマの形を集中的に練習。'],
+                ['意味を選ぶ', '文の意味を理解する練習がしたいときに。'],
+                ['語順パズル', '余分な選択肢から必要な語を選び、文を組み立てます。'],
+              ]).map(([heading, body], i) => <Pressable key={heading} testID={`practice-start-${i+2}`} accessibilityRole="button" accessibilityLabel={heading} disabled={starting || !learning?.ready} accessibilityState={{disabled: starting || !learning?.ready}} onPress={()=>void startPractice((i+2) as PracticeStage)} style={[styles.lessonCard, { padding:18, backgroundColor: i % 2 ? '#f5f3ff' : '#ecfdf5', borderColor: i % 2 ? '#ddd6fe' : '#a7f3d0', borderLeftColor: i % 2 ? '#7c3aed' : '#0f766e', opacity: starting || !learning?.ready ? .5 : 1 }]}>
                 <Text style={[styles.bold, ss(18, 29)]}>{heading}</Text><Text style={[styles.p, ss(15, 25)]}>{body}</Text>
-              </View>)}
-              <Text style={[styles.p, ss(15, 25)]}>{lang === 'en' ? '5 questions per step · 15 in total. Each step draws from 20 questions, with unseen questions first.' : '各ステップ5問、合計15問。各20問の中から、まだ出ていない問題を優先して出題します。'}</Text>
-              <Pressable accessibilityRole="button" disabled={starting || !learning?.ready} accessibilityState={{ disabled: starting || !learning?.ready }} onPress={startPractice} style={[styles.practiceAction, (starting || !learning?.ready) && { opacity: .5 }]}>
-                <Text style={[styles.practiceText, ss(16, 25)]}>{starting ? (lang === 'en' ? 'Preparing…' : '準備中…') : (lang === 'en' ? 'Start practice · 15 questions' : '練習を始める・15問')}</Text>
-              </Pressable>
+                <Text style={[styles.actionText, ss(14, 23)]}>{lang === 'en' ? 'Practise →' : 'この練習を始める →'}</Text>
+              </Pressable>)}
+              <Text style={[styles.p, ss(15, 25)]}>{lang === 'en' ? 'No question limit. Each type cycles through 20 questions, then reshuffles. Hints are always available; use the back button whenever you want to stop.' : '問題数に上限はありません。各20問を一巡すると、順番を変えて繰り返します。ヒントも使えます。やめたいときは戻るボタンで。'}</Text>
               {learning?.error && <Text style={[styles.p, { color: '#9f1239' }, ss(16, 26)]}>{lang === 'en' ? 'Could not save the practice set. Please retry.' : '出題セットを保存できませんでした。もう一度お試しください。'}</Text>}
             </> : selected === 'reference' || selected === 'examples' ? <>
               <Text style={[styles.p, ss(15, 25)]}>{selected === 'examples' ? copy.examplesHint : copy.referenceHint}</Text>

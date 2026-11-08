@@ -1,7 +1,7 @@
 import type { AppData } from './AppDataContext';
 
 export type StudyRef = { mode: 'grammar' | 'conversation'; themeId: number; levelId?: number; index: number; ne: string; exerciseId?: string };
-export type StudySession = { kind: 'course' | 'review'; items: StudyRef[]; stepId?: string; position?: number; answered?: string[]; questionStages?: (2|3|4)[]; choiceSeed?: number };
+export type StudySession = { kind: 'course' | 'review'; items: StudyRef[]; stepId?: string; position?: number; answered?: string[]; questionStages?: (2|3|4)[]; choiceSeed?: number; freePractice?: { stage: 2|3|4; answered: number } };
 export type LearningAudio = { url: string; sha256: string; bytes: number };
 export type SoundSample = { id: string; ne: string; roman: string; meaning: string; audio: LearningAudio };
 export type LearningExercise = { ne: string; jp: string; words: {text: string; roman: string; meaning: string}[]; audio: LearningAudio; forms?: {subject: string; form: string; roman: string; meaning: string}[]; family?: string; meaningChoices?: string[]; selection?: { wordIndex: number; answer?: string; prefix?: string; prompt: string; rule: string; options: {subject: string; form: string; roman: string; meaning: string}[] } };
@@ -57,7 +57,7 @@ export function decodeStudy(raw: string | null): StudyState {
   if (validRef(p.resume?.item)) {
     const s = p.resume.session;
     if (!s) state.resume = { item: p.resume.item };
-    else if (['course','review'].includes(s.kind) && Array.isArray(s.items) && s.items.length > 0 && s.items.every(validRef) && Number.isInteger(s.position) && s.position >= 0 && s.position < s.items.length && Array.isArray(s.answered) && s.answered.every((x: unknown) => typeof x === 'string') && (s.questionStages==null||(Array.isArray(s.questionStages)&&s.questionStages.length===s.items.length&&s.questionStages.every((n: unknown)=>[2,3,4].includes(n as number))&&Number.isSafeInteger(s.choiceSeed)))) state.resume = p.resume;
+    else if (['course','review'].includes(s.kind) && Array.isArray(s.items) && s.items.length > 0 && s.items.every(validRef) && Number.isInteger(s.position) && s.position >= 0 && s.position < s.items.length && Array.isArray(s.answered) && s.answered.every((x: unknown) => typeof x === 'string') && (s.questionStages==null||(Array.isArray(s.questionStages)&&s.questionStages.length===s.items.length&&s.questionStages.every((n: unknown)=>[2,3,4].includes(n as number))&&Number.isSafeInteger(s.choiceSeed))) && (s.freePractice==null||(s.kind==='course'&&s.items.length===1&&s.position===0&&s.answered.length===0&&[2,3,4].includes(s.freePractice.stage)&&s.questionStages?.[0]===s.freePractice.stage&&Number.isSafeInteger(s.choiceSeed)&&Number.isSafeInteger(s.freePractice.answered)&&s.freePractice.answered>=0&&studyKey(p.resume.item)===studyKey(s.items[0])&&p.resume.item.ne===s.items[0].ne))) state.resume = p.resume;
   }
   return state;
 }

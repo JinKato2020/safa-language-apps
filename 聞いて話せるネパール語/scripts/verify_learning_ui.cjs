@@ -5,8 +5,8 @@ const ROOT=path.resolve(__dirname,'../..'),work=path.resolve(process.argv[2]||'.
 const source=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const compile=s=>ts.transpileModule(s,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
 const modules={};for(const[p,file]of[['react','react.production.js'],['react/jsx-runtime','react-jsx-runtime.production.js'],['react-dom','react-dom.production.js'],['react-dom/client','react-dom-client.production.js'],['scheduler','scheduler.production.js']])modules[p]=fs.readFileSync(path.join(path.dirname(require.resolve(p.split('/')[0]+'/package.json')),'cjs',file),'utf8');
-for(const name of ['practicePool','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
-for(const name of ['GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
+for(const name of ['practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
+for(const name of ['FreePracticeScreen','GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
 modules.entitlement=compile(source('packages/shared/src/entitlement.tsx'));
 modules.compose=compile(source('聞いて話せるネパール語/expo-app/src/pack/compose.ts'));
 const core=JSON.parse(source('聞いて話せるネパール語/expo-app/data/ota-baseline/core.json'));
@@ -19,7 +19,7 @@ const flat=s=>Object.assign({},...(Array.isArray(s)?s.flat(Infinity):[s]).filter
 function css(style,view=false){const s=flat(style),out=view?{position:'relative',display:'flex',flexDirection:'column',flexShrink:0,minWidth:0,minHeight:0,borderWidth:0,borderStyle:'solid'}:{};for(const[k,v]of Object.entries(s)){
 if(k==='paddingHorizontal'){out.paddingLeft=v;out.paddingRight=v;}else if(k==='paddingVertical'){out.paddingTop=v;out.paddingBottom=v;}else if(k==='marginHorizontal'){out.marginLeft=v;out.marginRight=v;}else if(k==='marginVertical'){out.marginTop=v;out.marginBottom=v;}else if(k==='lineHeight')out[k]=v*window.caseInfo.scale+'px';else if(k==='fontSize')out[k]=v*window.caseInfo.scale;else out[k]=v;}return out;}
 function View(p){const ref=React.useRef(null);React.useEffect(()=>{if(!p.onLayout)return;const r=new ResizeObserver(()=>p.onLayout({nativeEvent:{layout:{width:ref.current.clientWidth,height:ref.current.clientHeight}}}));r.observe(ref.current);return()=>r.disconnect();},[p.onLayout]);return h('div',{ref,'data-testid':p.testID,style:css(p.style,true)},p.children);}
-function Text(p){return h('span',{role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...css(p.style)}},p.children);}
+function Text(p){return h('span',{'data-testid':p.testID,role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...css(p.style)}},p.children);}
 function Pressable(p){return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,'aria-selected':p.accessibilityState?.selected,disabled:p.disabled,onClick:p.onPress,'data-testid':p.testID,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
 const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y)}));return h('div',{ref:el,style:{overflowY:p.horizontal?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
 const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))};
@@ -35,7 +35,7 @@ cache.useCardFlip={exports:{useCardFlip:()=>({flip:cb=>cb(),animatedStyle:{}})}}
 cache.useHorizontalSwipe={exports:{useHorizontalSwipe:()=>({})}};
 cache['expo-audio']={exports:{useAudioPlayer:src=>{const p=React.useMemo(()=>({source:src,seekTo:async()=>{},pause:()=>window.activeAudio.delete(p),play:()=>{window.activeAudio.add(p);window.events.push(['audio',src]);}}),[src]);React.useEffect(()=>()=>window.activeAudio.delete(p),[p]);return p;},useAudioPlayerStatus:p=>({isLoaded:!!p.source,playing:false,didJustFinish:window.audioEnded})}};
 cache['@react-native-async-storage/async-storage']={exports:{getItem:async k=>localStorage.getItem(k),setItem:async(k,v)=>{if(window.failStorage)throw Error('full');localStorage.setItem(k,v);}}};
-const nav={isFocused:()=>true,canGoBack:()=>window.stack.length>0,navigate:(name,params)=>{window.events.push(['navigate',name,params]);window.stack.push(window.route);window.route={name,params};window.redraw();},replace:(name,params)=>{window.events.push(['replace',name,params]);window.route={name,params};window.redraw();},goBack:()=>{window.route=window.stack.pop()??{name:'HomeTab'};window.redraw();},setOptions:options=>{const next={...window.screenOptions,...options};if(JSON.stringify(next)===JSON.stringify(window.screenOptions))return;window.screenOptions=next;window.redraw?.();}};
+const nav={setParams:params=>{window.route={...window.route,params:{...window.route.params,...params}};window.redraw();},isFocused:()=>true,canGoBack:()=>window.stack.length>0,navigate:(name,params)=>{window.events.push(['navigate',name,params]);window.stack.push(window.route);window.route={name,params};window.redraw();},replace:(name,params)=>{window.events.push(['replace',name,params]);window.route={name,params};window.redraw();},goBack:()=>{window.route=window.stack.pop()??{name:'HomeTab'};window.redraw();},setOptions:options=>{const next={...window.screenOptions,...options};if(JSON.stringify(next)===JSON.stringify(window.screenOptions))return;window.screenOptions=next;window.redraw?.();}};
 cache['@react-navigation/native']={exports:{useNavigation:()=>nav,useRoute:()=>window.route,useFocusEffect:cb=>React.useEffect(cb,[cb])}};
 cache.heroImages={exports:{useHeroImage:()=>1,ModeHero:()=>h('img',{src:${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))},style:{width:'100%',aspectRatio:'3/1',objectFit:'contain',borderRadius:16}})}};
 cache.grammarGuide={exports:{useGrammarGuide:()=>window.data.GRAMMAR_GUIDE,useGrammarGuideImageResolver:()=>async()=>null}};
@@ -56,6 +56,94 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(process.argv.includes('--legacy-free-resume')){
+      for(const lang of ['ja','en'])for(const position of [0,5,10]){
+        await page.evaluate(({lang,position})=>{const old=require('practicePool').createPracticeSession(require('learning').emptyStudyState(),window.data.LEARNING_PATH,1,require('practicePool').seededRandom(7));old.session.position=position;old.session.answered=old.session.items.slice(0,position).map((r,i)=>require('practicePool').practiceTaskKey(old.session,r,i));old.state.resume={item:old.session.items[position],session:old.session};localStorage.setItem('test-study',JSON.stringify(old.state));return window.boot(lang,false);},{lang,position});
+        await page.getByRole('button',{name:lang==='en'?'Continue where you left off':'前回の続きへ',exact:true}).click();
+        const old=await page.evaluate(()=>window.route.params.studySession),stage=old.questionStages[position];
+        assert.equal(await page.getByTestId('free-mode-'+stage).getAttribute('aria-selected'),'true');
+        assert.equal(await page.getByTestId('free-count').textContent(),lang==='en'?`${position} practised`:`${position}問取り組んだ`);
+        await page.getByTestId('free-model').click();await page.getByTestId('free-next').click();
+        await page.waitForFunction(n=>window.route.params.studySession.freePractice?.answered===n,position+1);
+        const upgraded=await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')));assert.equal(upgraded.resume.session.items.length,1);assert.equal(upgraded.resume.session.freePractice.stage,stage);
+        assert(upgraded.ratings['exercise:'+old.items[position].exerciseId]);
+      }
+      assert.deepEqual(errors,[]);console.log('PASS JA/EN: old fixed-set resumes at form, meaning and puzzle positions enter free practice; next atomically saves the compact session.');return;
+    }
+    if(process.argv.includes('--free-practice')){
+      const by=id=>page.getByTestId(id),session=()=>page.evaluate(()=>window.route.params.studySession);
+      for(const lang of ['ja','en']){
+        const en=lang==='en',b=name=>page.getByRole('button',{name,exact:true});
+        await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
+        const steps=await page.evaluate(()=>window.data.LEARNING_PATH.steps);
+        const open=async step=>{await page.evaluate(({themeId,title})=>window.navigate('GrammarGuide',{themeId,title}),{themeId:step.guideThemeId,title:step.title});await page.getByRole('tab',{name:en?'Practice':'練習問題',exact:true}).click();};
+        const next=async()=>{const old=await session();await by('free-next').click();await page.waitForFunction(n=>window.route.params.studySession.freePractice.answered===n,old.freePractice.answered+1);assert.equal((await session()).items.length,1);};
+        for(const step of steps){
+          await open(step);assert.equal(await page.locator('[data-testid^="practice-start-"]').count(),3);
+          if(step.guideThemeId===1)await page.screenshot({path:path.join(work,`previews/practice-${lang}-choose.png`)});
+          for(const mode of [2,3,4]){
+            await by('practice-start-'+mode).click();await by('free-mode-'+mode).waitFor();
+            const s=await session(),e=await page.evaluate(id=>window.data.LEARNING_PATH.exercises[id],s.items[0].exerciseId);
+            assert.equal(s.freePractice.stage,mode);assert.equal(s.freePractice.answered,0);assert.equal(s.items.length,1);
+            assert.equal(await by('free-mode-'+mode).getAttribute('aria-selected'),'true');assert.equal(await page.getByRole('tab').count(),3);
+            if(mode===2||mode===3){
+              const wrong=mode===2?e.selection.options.find(o=>o.form!==e.selection.answer):e.meaningChoices.find(t=>t!==e.jp);
+              await b(mode===2?wrong.form+' · '+wrong.roman:wrong).click();assert.equal(await by('free-next').count(),0);
+              const correct=mode===2?e.selection.options.find(o=>o.form===e.selection.answer):e.jp;
+              if(step.guideThemeId===1)await page.screenshot({path:path.join(work,`previews/practice-${lang}-${mode}.png`)});
+              await b(mode===2?correct.form+' · '+correct.roman:correct).click();
+            }else{
+              assert.equal(await by('free-bank').getByRole('button').count(),e.words.length+2);
+              if(step.guideThemeId===1)await page.screenshot({path:path.join(work,`previews/practice-${lang}-puzzle.png`)});
+              await page.locator('[data-testid^="free-token-extra-"]').first().click();
+              for(let i=1;i<e.words.length;i++)await by('free-token-word-'+i).click();
+              await by('free-check').click();assert.equal(await by('free-next').count(),0);
+              assert((await page.locator('body').textContent()).includes(en?'One of the words does not fit':'この文に合わない語'));
+              await by('free-remove-0').click();assert.equal(await by('free-check').isDisabled(),true);
+              if(await by('free-reset').count())await by('free-reset').click();
+              for(let i=0;i<e.words.length;i++)await by('free-token-word-'+i).click();
+              await by('free-check').click();
+            }
+            await by('free-feedback').waitFor();
+            if(step.guideThemeId===1&&mode===2){
+              const saved=await page.evaluate(()=>localStorage.getItem('test-study'));
+              await page.evaluate(()=>window.failStorage=true);await by('free-next').click();await page.getByText(en?'Could not save. Your question is still here; please try again.':'保存できませんでした。今の問題を残しています。もう一度お試しください。',{exact:true}).waitFor();
+              assert.equal(await page.evaluate(()=>localStorage.getItem('test-study')),saved);assert.deepEqual(await session(),s);await page.evaluate(()=>window.failStorage=false);
+            }
+            await next();assert.notEqual((await session()).items[0].exerciseId,s.items[0].exerciseId);
+            await b(en?'Back':'戻る').click();assert.equal(await page.evaluate(()=>window.route.name),'GrammarGuide');await page.getByRole('tab',{name:en?'Practice':'練習問題',exact:true}).click();
+          }
+          await b(en?'Close lesson':'教材を閉じる').click();
+        }
+        // Stay in one type for more than both the old five-question cap and a full pool.
+        await page.evaluate(l=>window.boot(l,true),lang);await open(steps[0]);await by('practice-start-2').click();const seen=[];
+        for(let i=0;i<25;i++){
+          const s=await session();seen.push(s.items[0].exerciseId);await by('free-model').click();
+          if(i===0){await by('free-audio').click();await page.waitForFunction(()=>window.activeAudio.size===1);}
+          await next();assert.equal((await session()).freePractice.answered,i+1);assert.equal(await page.evaluate(()=>window.stack.length),2);assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
+        }
+        assert.equal(new Set(seen.slice(0,20)).size,20);assert.notEqual(seen[19],seen[20]);
+        const before=await session();await by('free-mode-4').click();await by('free-bank').waitFor();assert.equal((await session()).freePractice.answered,25);
+        await by('free-hint').click();await by('free-hints').waitFor();await by('free-hint').click();assert.equal(await by('free-hints').count(),0);
+        const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study'))),resumed=await session();
+        await page.evaluate(l=>window.boot(l,false),lang);await b(en?'Continue where you left off':'前回の続きへ').click();assert.deepEqual(await session(),resumed);
+        assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).practicePools),saved.practicePools);
+        // Rapid Next cannot count twice; changing mode does not count an abandoned question.
+        await by('free-model').click();await by('free-next').evaluate(el=>{el.click();el.click();});await page.waitForFunction(()=>window.route.params.studySession.freePractice.answered===26);
+        await by('free-mode-3').click();await by('free-mode-3').waitFor();assert.equal((await session()).freePractice.answered,26);
+        for(const[width,height,scale]of[[390,844,1],[320,568,1.4]]){
+          await page.setViewportSize({width,height});const params=await page.evaluate(()=>window.route.params);await page.evaluate(({lang,scale,params})=>window.boot(lang,false,{name:'Practice',params},scale),{lang,scale,params});
+          for(const mode of [2,3,4]){
+            await by('free-mode-'+mode).click();await page.waitForFunction(m=>window.route.params.studySession.freePractice.stage===m,mode);
+            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${width} mode ${mode} overflow`);
+            const buttons=await page.locator('button').evaluateAll(els=>els.map(e=>e.getBoundingClientRect()).filter(r=>r.width&&r.height));assert(buttons.every(r=>r.height>=43),'44px minimum touch target');
+            if(width===320&&mode===4)await page.screenshot({path:path.join(work,`previews/practice-${lang}-compact.png`)});
+          }
+        }
+        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: all 36 themes × 3 direct modes, incorrect forms/meanings/puzzle extras, undo, 25 continuous questions, switching, resume, double tap, save failure, audio cleanup and compact/large text layouts.`);
+      }
+      assert.deepEqual(errors,[]);return;
+    }
     if(process.argv.includes('--letters-only')){
       for(const lang of ['ja','en']){
         const en=lang==='en',b=name=>page.getByRole('button',{name,exact:true}),by=id=>page.getByTestId(id);
@@ -169,12 +257,12 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
             await tab(label).click();assert.equal(await tab(label).getAttribute('aria-selected'),'true');
             if(label===labels[3])assert(await page.getByRole('heading').count()>=2,`${lang}/${step.guideThemeId}: the break tab must contain a real card`);
             for(const removed of ['View examples & audio →','例題と音声を見る →','Explore forms & words →','活用・語彙を確認 →','3-step practice · 5 questions each →','3ステップ練習・各5問 →'])assert.equal(await b(removed).count(),0);
-            if(label!==labels[2])assert.equal(await b(en?'Start practice · 15 questions':'練習を始める・15問').count(),0);
+            assert.equal(await page.locator('[data-testid^="practice-start-"]').count(),label===labels[2]?3:0);
             assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${step.id} ${label} overflow`);
           }
           assert.equal(await page.evaluate(()=>localStorage.getItem('test-study')),before,'Switching tabs never consumes questions');
-          await tab(labels[2]).click();await b(en?'Start practice · 15 questions':'練習を始める・15問').click();
-          const session=await page.evaluate(()=>window.route.params.studySession);assert.equal(session.items.length,15);assert(session.items.every(r=>r.themeId===step.guideThemeId));
+          await tab(labels[2]).click();await page.getByTestId('practice-start-2').click();
+          const session=await page.evaluate(()=>window.route.params.studySession);assert.equal(session.items.length,1);assert.equal(session.freePractice.stage,2);assert(session.items.every(r=>r.themeId===step.guideThemeId));
           await b(en?'Back':'戻る').click();assert.equal(await page.evaluate(()=>window.route.name),'GrammarGuide');
           await b(en?'Close lesson':'教材を閉じる').click();assert.equal(await page.evaluate(()=>window.route.name),'HomeTab');
         }
@@ -182,7 +270,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           await page.setViewportSize({width,height});await page.evaluate(({lang,scale,title})=>window.boot(lang,false,{name:'GrammarGuide',params:{themeId:1,title}},scale),{lang,scale,title:steps[0].title});
           for(const label of labels){await tab(label).click();assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${label} ${width} overflow`);if(width===390)await page.screenshot({path:path.join(work,`previews/reader-${lang}-${labels.indexOf(label)}.png`)});}
         }
-        console.log('PASS '+lang+': all 36 lessons have four tabs; no footer cross-links; practice launches 15 questions and Back returns; narrow/large-text layouts.');
+        console.log('PASS '+lang+': all 36 lessons have four tabs; no footer cross-links; practice launches a continuous question and Back returns; narrow/large-text layouts.');
       }
       assert.deepEqual(errors,[]);return;
     }

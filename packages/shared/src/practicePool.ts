@@ -38,3 +38,23 @@ export function createPracticeSession(state: StudyState, path: LearningPath, the
   return {state:{...state,practicePools:pools,resume:{item:items[0],session}},session,params:practiceParams(items[0],session)};
 }
 export const practiceTaskKey=(session: StudySession,item: StudyRef,index: number)=>session.questionStages?`${session.questionStages[index]}:${studyKey(item)}`:studyKey(item);
+
+/** One reserved question at a time. Cycling never grows the saved session. */
+export function createFreePracticeSession(state: StudyState, path: LearningPath, themeId: number, stage: PracticeStage, answered = 0, random: () => number = Math.random) {
+  const step = path.steps.find(s => s.guideThemeId === themeId);
+  if (!step?.items.length || ![2,3,4].includes(stage) || !Number.isSafeInteger(answered) || answered < 0) throw new Error('Invalid free practice request');
+  const lookup = new Map(step.items.map(ref => [studyKey(ref), ref])), signature = stepSignature(step.items);
+  if (lookup.size !== step.items.length) throw new Error('Duplicate practice questions');
+  const key = `${themeId}:${stage}`, old = state.practicePools?.[key];
+  let remaining = old?.signature === signature ? old.remaining.filter(id => lookup.has(id)) : [];
+  if (new Set(remaining).size !== remaining.length) remaining = [];
+  const previous = old?.signature === signature ? old.previous.filter(id => lookup.has(id)) : [];
+  if (!remaining.length) {
+    const deck = shuffle([...lookup.keys()], random);
+    remaining = [...deck.filter(id => !previous.includes(id)), ...deck.filter(id => previous.includes(id))];
+  }
+  const id = remaining[0], item = lookup.get(id)!;
+  const pools = { ...state.practicePools, [key]: { signature, remaining: remaining.slice(1), previous: [id] } };
+  const session: StudySession = { kind: 'course', stepId: step.id, items: [item], position: 0, answered: [], questionStages: [stage], choiceSeed: Math.floor(random()*4294967296), freePractice: { stage, answered } };
+  return { state: { ...state, practicePools: pools, resume: { item, session } }, session, params: practiceParams(item, session) };
+}

@@ -19,6 +19,7 @@ import { learningCopy } from '../learningCopy';
 import { learningStyles } from '../LearningLaunch';
 import { rateStudy, resolveStudy, studyKey, stepSignature, type StudyRef } from '../learning';
 import GuidedPracticeScreen from './GuidedPracticeScreen';
+import FreePracticeScreen from './FreePracticeScreen';
 import ExampleStudyScreen from './ExampleStudyScreen';
 
 function tokenize(text: string): string[] {
@@ -48,6 +49,9 @@ function SpeakerIcon({ size = 18 }: { size?: number }) {
 export default function PracticeScreen() {
   const learning = useLearning();
   const params = useRoute<R>().params;
+  // Existing 15-question course resumes also enter free practice at their saved question.
+  const session = params.studySession;
+  if (learning && session && (session.freePractice || (session.kind === 'course' && session.questionStages?.length)) && !params.challenge) return <FreePracticeScreen key={JSON.stringify(params)} />;
   if (learning && params.studySession && !params.challenge) return <GuidedPracticeScreen key={JSON.stringify(params)} />;
   if (learning && params.examplesOnly && params.mode === 'grammar') return <ExampleStudyScreen key={JSON.stringify(params)} />;
   return <ChallengePracticeScreen />;
