@@ -70,21 +70,21 @@ export default function LearningHomeScreen() {
     </View>
 
     <Pressable testID="home-letters" accessibilityRole="button" accessibilityLabel={en ? 'Letters & sounds' : '文字と音'} onPress={() => nav.navigate('LettersSounds')} style={({ pressed }) => [styles.path, pressed && styles.pressed]}>
-      <View style={styles.sectionRow}><Text style={styles.overline}>LETTERS &amp; SOUNDS</Text><Text style={styles.pathCount}>अ क म</Text></View>
+      <View style={styles.sectionRow}><Text style={styles.overline}>LETTERS &amp; SOUNDS</Text></View>
       <Text style={styles.pathTitle}>{en ? 'Letters & sounds' : '文字と音'}</Text>
       <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Vowels, consonants, vowel signs and conjuncts. Tap to hear how the script sounds.' : '母音・子音から、組み合わせ・複合文字まで。文字を見て、音を確かめよう。'}</Text>
       <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? `${state.lettersRead?.length??0} sections reviewed` : `${state.lettersRead?.length??0}項目を確認済み`}</Text><Text style={styles.pathLink}>{en ? 'Explore →' : '開く →'}</Text></View>
     </Pressable>
 
     {guideCount > 0 && <Pressable testID="home-grammar-lessons" accessibilityRole="button" accessibilityLabel={en ? 'Grammar lessons' : '文法教材'} onPress={() => nav.navigate('GrammarLibrary')} style={({ pressed }) => [styles.path, styles.grammarPath, pressed && styles.pressed]}>
-      <View style={styles.sectionRow}><Text style={styles.overline}>GRAMMAR LESSONS</Text><Text style={styles.pathCount}>01 →</Text></View>
+      <View style={styles.sectionRow}><Text style={styles.overline}>GRAMMAR LESSONS</Text></View>
       <Text style={styles.pathTitle}>{en ? 'Grammar lessons' : '文法教材'}</Text>
       <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Core rules, forms & words, practice your way and a cultural break. Build your understanding one theme at a time.' : '基本ルール・活用と語彙・練習問題・一休み。テーマごとに、文の作り方を学ぼう。'}</Text>
       <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? `${guideCount} lessons, including appendices` : `付録を含む${guideCount}項目`}</Text><Text style={styles.pathLink}>{en ? 'Open lessons →' : '教材を開く →'}</Text></View>
     </Pressable>}
 
     <Pressable testID="home-vocabulary" accessibilityRole="button" accessibilityLabel={en ? 'Vocabulary' : '単語'} onPress={() => nav.navigate('VocabCategory')} style={({ pressed }) => [styles.path, { backgroundColor: '#eef1fa', borderColor: '#d6ddeb' }, pressed && styles.pressed]}>
-      <View style={styles.sectionRow}><Text style={styles.overline}>VOCABULARY</Text><Text style={styles.pathCount}>क →</Text></View>
+      <View style={styles.sectionRow}><Text style={styles.overline}>VOCABULARY</Text></View>
       <Text style={styles.pathTitle}>{en ? 'Vocabulary' : '単語'}</Text>
       <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Choose the meaning or choose the Nepali word. Practise both ways with four choices.' : 'ネパール語から意味を選ぶ。母語からことばを選ぶ。4択で繰り返し練習しよう。'}</Text>
       <View style={styles.sectionRow}><Text style={styles.pathLink}>{en ? 'Explore words →' : '単語を学ぶ →'}</Text></View>
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   primaryText: { flex: 1, color: c.navy, fontSize: 16, lineHeight: 24, fontWeight: '800' }, arrow: { color: c.navy, fontSize: 24, lineHeight: 28 },
   sectionRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 10 },
   overline: { color: c.muted, fontSize: 11, lineHeight: 18, fontWeight: '700', letterSpacing: 1.2, flexShrink: 1 },
-  path: { backgroundColor: '#E4EEE8', padding: 22, borderRadius: 22, gap: 9 }, pathCount: { color: c.ink, fontSize: 24, lineHeight: 32, fontWeight: '700' }, pathDenominator: { color: c.muted, fontSize: 13, lineHeight: 20, fontWeight: '400' },
+  path: { backgroundColor: '#E4EEE8', padding: 22, borderRadius: 22, gap: 9 }, pathDenominator: { color: c.muted, fontSize: 13, lineHeight: 20, fontWeight: '400' },
   pathTitle: { color: c.ink, fontSize: 19, lineHeight: 28, fontWeight: '700' }, pathNote: { color: c.muted, fontSize: 11, lineHeight: 18, flex: 1 }, pathLink: { color: c.ink, fontSize: 12, lineHeight: 20, fontWeight: '700' },
   grammarPath: { backgroundColor: '#E5EBF5' },
   error: { padding: 16, borderRadius: 14, backgroundColor: '#FCEEEF' }, errorText: { color: '#8B2945', fontSize: 13, lineHeight: 21 },
