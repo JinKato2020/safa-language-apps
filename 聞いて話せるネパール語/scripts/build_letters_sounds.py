@@ -88,9 +88,7 @@ def build():
          sample('ka-bare','क्','k','母音なしの k','k without a vowel','क との違いは、最後の a がないこと。日本語の「ク」のように u も付けません。' if not en else 'Unlike क, this has no final a. Do not add another vowel after k.'),
          sample('sa-base','स','sa','子音 s ＋ 母音 a','Consonant s + vowel a'),
          sample('sa-bare','स्','s','母音なしの s','s without a vowel','歯の近くで息を通す音だけ。日本語の「ス」のように u は付けません。' if not en else 'Only the airflow sound: do not add a vowel after s.'),
-         sample('ka-aa','का','kā','क に ा をつけた形','क with the ा sign'),
-         sample('nepali','नेपाली','nepālī','ネパール語','Nepali','ने + पा + ली → नेपाली'),
-         sample('house','घर','ghar','家','house','実際の単語では、् が書かれていなくても母音 a を読まないことがあります。घर は ghar で、語末の र に a を足しません。すべての a を消すルールではないので、単語の音声と一緒に覚えよう。' if not en else 'In real words, an inherent a can disappear even without a written ्. घर is ghar, without a final a after र. This does not mean every a disappears; learn each word with its recording.')])
+         sample('nepali','नेपाली','nepālī','ネパール語','Nepali','ने + पा + ली → नेपाली')])
         section('vowels','母音11字','11 vowel letters','単独で書く母音字です。イ・ウには綴りの異なる2字ずつがあります。ローマ字の長音線は字を見分ける目印としても使っています。\n母音の後に母音が続く時も独立した字を使います。','These are independent vowel letters. The i and u sounds each have two spellings. Roman bars also help distinguish those spellings.\nAn independent letter is also used when a vowel follows another vowel.',
         [sample('v-'+str(i),v,r,j,e,de if en else dj)for i,(v,sign,r,j,e,dj,de) in enumerate(VOWELS)])
         consonants=[row for group in GROUPS for row in group[-1]]
@@ -124,7 +122,15 @@ def build():
         '数字も左から右。१० は10、२५ は25です。読みは数字を1字ずつつなぐだけではないので、まず0〜9を音で覚えよう。\nこの教材はネパール語の基本文字を網羅しています。他言語・古典用の ॠ・ऌ・ॡ や、借用語用の点（़）つき文字なども同じ文字体系にありますが、日常ネパール語の基本33子音・11母音とは分けて扱います。',
         'Digits also run left to right: १० is 10 and २५ is 25. Number names are not made simply by reading each digit separately; begin with 0–9.\nThis course covers the core Nepali script. The wider script also has letters such as ॠ, ऌ and ॡ for classical or other-language use, and dotted letters (़) for borrowed sounds. Those are distinct from the 33 core consonants and 11 vowel letters.',
         [sample('digit-'+str(i),d,r,f'{i} · {word}',f'{i} · {word}',speech=word)for i,(d,word,r) in enumerate(nums)])
-        out[lang]=dict(title='Letters & sounds' if en else '文字と音',description='11 vowels · 33 consonants · 363 combinations' if en else '母音11字・子音33字・組み合わせ363通り',sections=sections,combinations=combinations)
+        conjunct_combinations=[]
+        for i,(c,formula,roman,*_) in enumerate(CONJUNCTS):
+            stems=[r.removesuffix('a') for r in roman.split(' / ')]
+            sounds=[]
+            for j,(v,sign,vr,*_) in enumerate(VOWELS):
+                ne=c+sign;reading=' / '.join(stem+('ri' if v=='ऋ' else vr) for stem in stems)
+                sounds.append(sample(f'ccv-{i}-{j}',ne,reading,f'{c} ＋ {v}',f'{c} + {v}',f'{c} + {sign or "अ"} → {ne}'))
+            conjunct_combinations.append(dict(consonant=c,roman=roman,samples=sounds))
+        out[lang]=dict(title='Letters & sounds' if en else '文字と音',description='11 vowels · 33 consonants · 30 conjuncts' if en else '母音11字・子音33字・複合文字30形',sections=sections,combinations=combinations,conjunctCombinations=conjunct_combinations)
     write(APP/'文法教材/letters_sounds.json',out)
-    print('Prepared 13 sections: 33 vowel-free forms (2 recorded), 11 vowels, 33 letter readings, 363 combinations, 30 conjuncts, signs and digits, JA/EN.')
+    print('Prepared 13 sections: 33 vowel-free forms (2 recorded), 11 vowels, 33 letter readings, 363 combinations, 30 conjuncts with 330 vowel forms, signs and digits, JA/EN.')
 if __name__=='__main__':build()

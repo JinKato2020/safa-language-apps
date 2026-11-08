@@ -5,6 +5,13 @@ function load(name){if(cache[name])return cache[name].exports;const m={exports:{
 const {createFreePracticeSession,createPracticeSession,seededRandom}=load('practicePool');
 const {emptyStudyState,decodeStudy,studyKey,createStudyStore,rateStudy}=load('learning');
 const {freePracticeQuestion,matchesPuzzle}=load('freePractice');
+const {puzzleInsertion,insertPuzzleToken}=load('puzzleDrag');
+const area={x:10,y:20,width:280,height:200},rect=(x,y,width=60)=>({x,y,width,height:44}),rows=[rect(20,50),rect(90,50),rect(20,110),rect(90,110)];
+for(const [point,expected] of [[{x:0,y:20},null],[{x:30,y:35},0],[{x:30,y:70},0],[{x:70,y:70},1],[{x:250,y:70},2],[{x:30,y:130},2],[{x:135,y:130},4],[{x:250,y:190},4]])assert.equal(puzzleInsertion(point,area,rows),expected,'Wrapped-row insertion');
+assert.equal(puzzleInsertion({x:30,y:70},area,[]),0);
+assert.deepEqual(insertPuzzleToken(['a','b'],'c',1,3),['a','c','b']);assert.deepEqual(insertPuzzleToken(['a','b','c'],'c',0,3),['c','a','b']);assert.deepEqual(insertPuzzleToken(['a','b','c'],'a',2,3),['b','c','a']);assert.deepEqual(insertPuzzleToken(['a','b','c'],'d',1,3),['a','b','c']);assert.deepEqual(insertPuzzleToken(['word-0','word-1'],'word-0',1,2),['word-1','word-0']);
+assert.equal(decodeStudy(JSON.stringify({...emptyStudyState(),puzzleIntroSeen:true})).puzzleIntroSeen,true);assert.equal(decodeStudy(JSON.stringify({...emptyStudyState(),puzzleIntroSeen:'true'})).puzzleIntroSeen,undefined);
+console.log('PASS measured drag geometry: wrapped rows, outside cancellation, empty answer, insertion, reorder, capacity, distinct duplicate-word IDs; one-time intro persistence.');
 const paths=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../文法教材/grammar_practice.json'),'utf8'));
 for(const lang of ['ja','en']){
  const p=paths[lang],data={LEARNING_PATH:p};

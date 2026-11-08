@@ -50,7 +50,16 @@ export function validateContent(core: any, overlay: any, lang: string) {
     if (!Array.isArray(l.sections) || !l.sections.length || !Array.isArray(l.combinations) || l.combinations.length!==33) throw new Error('Invalid letters course');
     for (const row of l.combinations) if (!row.consonant || !Array.isArray(row.samples) || row.samples.length!==11) throw new Error('Incomplete vowel combinations');
     for (const section of l.sections) if (!section.id || !section.title || !section.body || !Array.isArray(section.samples)) throw new Error('Invalid letters section');
-    for (const s of [...l.sections.flatMap((b: any)=>b.samples),...l.combinations.flatMap((r: any)=>r.samples)]) {
+    if (l.conjunctCombinations !== undefined) {
+      const letters=l.sections.find((s: any)=>s.id==='conjuncts')?.samples.filter((s: any)=>s.audio)??[];
+      if (!Array.isArray(l.conjunctCombinations) || l.conjunctCombinations.length!==letters.length || !letters.length) throw new Error('Incomplete conjunct combinations');
+      const signs=['','ा','ि','ी','ु','ू','ृ','े','ै','ो','ौ'];
+      l.conjunctCombinations.forEach((row: any,i: number)=>{
+        if (row.consonant!==letters[i].ne || !row.roman || !Array.isArray(row.samples) || row.samples.length!==11) throw new Error('Invalid conjunct row');
+        row.samples.forEach((s: any,j: number)=>{if(s.ne!==row.consonant+signs[j] || s.speech!==s.ne || !s.audio)throw new Error('Invalid conjunct vowel form');});
+      });
+    }
+    for (const s of [...l.sections.flatMap((b: any)=>b.samples),...l.combinations.flatMap((r: any)=>r.samples),...(l.conjunctCombinations??[]).flatMap((r: any)=>r.samples)]) {
       if (!s.id || !s.ne || !s.roman || !s.meaning || (s.speech && !s.audio)) throw new Error('Invalid letter sample');
       if (s.audio) assertFile(s.audio);
       if (s.examples !== undefined) {

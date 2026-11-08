@@ -52,9 +52,7 @@ export default function LearningHomeScreen() {
       {hero != null && <View style={{ width: '100%', aspectRatio: ratio }}>
         <Image source={hero} resizeMode="contain" style={{ width: '100%', height: '100%' }} accessibilityIgnoresInvertColors />
       </View>}
-      <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Settings' : '設定'} onPress={() => nav.navigate('SettingsMain')} style={({ pressed }) => [styles.settings, pressed && styles.pressed]}>
-        <Text style={styles.settingsText}>{en ? 'Settings' : '設定'}</Text>
-      </Pressable>
+
       <View style={styles.heroBody}>
         <Text style={styles.eyebrow}>NEPALI · EVERY DAY</Text>
         <Text accessibilityRole="header" style={styles.headline}>{en ? 'A little today.\nMore to say tomorrow.' : '昨日より、\nひとこと先へ。'}</Text>
@@ -104,9 +102,16 @@ export default function LearningHomeScreen() {
     {guideCount > 0 && <Pressable testID="home-grammar-lessons" accessibilityRole="button" accessibilityLabel={en ? 'Grammar lessons' : '文法教材'} onPress={() => nav.navigate('GrammarLibrary')} style={({ pressed }) => [styles.path, styles.grammarPath, pressed && styles.pressed]}>
       <View style={styles.sectionRow}><Text style={styles.overline}>GRAMMAR LESSONS</Text><Text style={styles.pathCount}>01 →</Text></View>
       <Text style={styles.pathTitle}>{en ? 'Grammar lessons' : '文法教材'}</Text>
-      <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Core rules, forms & words, step-by-step practice and a cultural break. Build your understanding one theme at a time.' : '基本ルール・活用と語彙・練習問題・一休み。テーマごとに、文の作り方を学ぼう。'}</Text>
+      <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Core rules, forms & words, practice your way and a cultural break. Build your understanding one theme at a time.' : '基本ルール・活用と語彙・練習問題・一休み。テーマごとに、文の作り方を学ぼう。'}</Text>
       <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? `${guideCount} lessons, including appendices` : `付録を含む${guideCount}項目`}</Text><Text style={styles.pathLink}>{en ? 'Open lessons →' : '教材を開く →'}</Text></View>
     </Pressable>}
+
+    <Pressable testID="home-vocabulary" accessibilityRole="button" accessibilityLabel={en ? 'Vocabulary' : '単語'} onPress={() => nav.navigate('VocabCategory')} style={({ pressed }) => [styles.path, { backgroundColor: '#eef1fa', borderColor: '#d6ddeb' }, pressed && styles.pressed]}>
+      <View style={styles.sectionRow}><Text style={styles.overline}>VOCABULARY</Text><Text style={styles.pathCount}>क →</Text></View>
+      <Text style={styles.pathTitle}>{en ? 'Vocabulary' : '単語'}</Text>
+      <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Build your everyday vocabulary with word cards and audio.' : '身近なことばを、単語カードと音声で覚えよう。'}</Text>
+      <View style={styles.sectionRow}><Text style={styles.pathLink}>{en ? 'Explore words →' : '単語を学ぶ →'}</Text></View>
+    </Pressable>
 
     {ready && due.length > 0 && <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Review saved sentences' : '保存した例文を復習'} onPress={() => nav.navigate('Practice', practiceParams(due[0], { kind: 'review', items: due }))} style={({ pressed }) => [styles.review, pressed && styles.pressed]}>
       <View style={styles.reviewBadge}><Text style={styles.reviewNumber}>{due.length}</Text></View>

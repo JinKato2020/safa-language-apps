@@ -1,6 +1,6 @@
 {
   "l1": "ja",
-  "version": 1218,
+  "version": 1219,
   "examplesL1": {
     "1-1": [
       "私の名前はラムです。",
@@ -167952,7 +167952,7 @@
     "35": "テーマ35（付録A）｜書くことで覚える動詞活用（लेख्नु）",
     "36": "テーマ36（付録B）｜人物紹介と居場所で覚える繋辞"
   },
-  "curriculumRevision": 1218,
+  "curriculumRevision": 1219,
   "grammarTextOnlyLabel": "テキスト練習（音声なし）",
   "learningPath": {
     "title": "はじめての7ステップ",
@@ -232087,7 +232087,7 @@
   },
   "lettersSounds": {
     "title": "文字と音",
-    "description": "母音11字・子音33字・組み合わせ363通り",
+    "description": "母音11字・子音33字・複合文字30形",
     "sections": [
       {
         "id": "start",
@@ -232147,19 +232147,6 @@
             }
           },
           {
-            "id": "ka-aa",
-            "ne": "का",
-            "roman": "kā",
-            "meaning": "क に ा をつけた形",
-            "detail": "",
-            "speech": "का",
-            "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2ec52f6b3e735882391232b4f5b10f3021769ce5a58be30a81d040e43030c6ae.mp3",
-              "sha256": "2ec52f6b3e735882391232b4f5b10f3021769ce5a58be30a81d040e43030c6ae",
-              "bytes": 11232
-            }
-          },
-          {
             "id": "nepali",
             "ne": "नेपाली",
             "roman": "nepālī",
@@ -232169,19 +232156,6 @@
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-61baa08c703c278869f101c7aca121ce3285b4b33718d2141697b241f647c0e7.mp3",
               "sha256": "61baa08c703c278869f101c7aca121ce3285b4b33718d2141697b241f647c0e7",
-              "bytes": 11232
-            }
-          },
-          {
-            "id": "house",
-            "ne": "घर",
-            "roman": "ghar",
-            "meaning": "家",
-            "detail": "実際の単語では、् が書かれていなくても母音 a を読まないことがあります。घर は ghar で、語末の र に a を足しません。すべての a を消すルールではないので、単語の音声と一緒に覚えよう。",
-            "speech": "घर",
-            "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c863ae99482e2bcf7b505023d6fb7658af556edbd42befdf549c87d61ce30d61.mp3",
-              "sha256": "c863ae99482e2bcf7b505023d6fb7658af556edbd42befdf549c87d61ce30d61",
               "bytes": 11232
             }
           }
@@ -240361,6 +240335,4478 @@
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b73a4ba8b9045ce86e61d8165068409f2b4f2704da27c9559aa41509e6e5fe71.mp3",
               "sha256": "b73a4ba8b9045ce86e61d8165068409f2b4f2704da27c9559aa41509e6e5fe71",
+              "bytes": 11232
+            }
+          }
+        ]
+      }
+    ],
+    "conjunctCombinations": [
+      {
+        "consonant": "क्ष",
+        "roman": "kṣa / chya",
+        "samples": [
+          {
+            "id": "ccv-0-0",
+            "ne": "क्ष",
+            "roman": "kṣa / chya",
+            "meaning": "क्ष ＋ अ",
+            "detail": "क्ष + अ → क्ष",
+            "speech": "क्ष",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f641ddcde2f102d20698757ca5327eb6aac4bb0f54a02091115183559b973e58.mp3",
+              "sha256": "f641ddcde2f102d20698757ca5327eb6aac4bb0f54a02091115183559b973e58",
+              "bytes": 3788
+            }
+          },
+          {
+            "id": "ccv-0-1",
+            "ne": "क्षा",
+            "roman": "kṣā / chyā",
+            "meaning": "क्ष ＋ आ",
+            "detail": "क्ष + ा → क्षा",
+            "speech": "क्षा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7c3a853120a757e87f0c0dd53ddc484db94eac95b1aaf9137b0959d86faee113.mp3",
+              "sha256": "7c3a853120a757e87f0c0dd53ddc484db94eac95b1aaf9137b0959d86faee113",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-0-2",
+            "ne": "क्षि",
+            "roman": "kṣi / chyi",
+            "meaning": "क्ष ＋ इ",
+            "detail": "क्ष + ि → क्षि",
+            "speech": "क्षि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c08b71d6583c7b4237195798dc3db263dd76a724434202e76795b0e478224433.mp3",
+              "sha256": "c08b71d6583c7b4237195798dc3db263dd76a724434202e76795b0e478224433",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-0-3",
+            "ne": "क्षी",
+            "roman": "kṣī / chyī",
+            "meaning": "क्ष ＋ ई",
+            "detail": "क्ष + ी → क्षी",
+            "speech": "क्षी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b8518f669a63a2713bf81430794c1b66d68367583fc2e5898dac4413476b9a0c.mp3",
+              "sha256": "b8518f669a63a2713bf81430794c1b66d68367583fc2e5898dac4413476b9a0c",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-0-4",
+            "ne": "क्षु",
+            "roman": "kṣu / chyu",
+            "meaning": "क्ष ＋ उ",
+            "detail": "क्ष + ु → क्षु",
+            "speech": "क्षु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-be2ddcdda834ef04810ac58faaf2a98d058eec8b9eaaebdc4b8a69529d5426bb.mp3",
+              "sha256": "be2ddcdda834ef04810ac58faaf2a98d058eec8b9eaaebdc4b8a69529d5426bb",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-0-5",
+            "ne": "क्षू",
+            "roman": "kṣū / chyū",
+            "meaning": "क्ष ＋ ऊ",
+            "detail": "क्ष + ू → क्षू",
+            "speech": "क्षू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f16f1275e32285d4cc60703a871ee734ecccd3f30ccc3f9c8506c44994f9b2a3.mp3",
+              "sha256": "f16f1275e32285d4cc60703a871ee734ecccd3f30ccc3f9c8506c44994f9b2a3",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-0-6",
+            "ne": "क्षृ",
+            "roman": "kṣri / chyri",
+            "meaning": "क्ष ＋ ऋ",
+            "detail": "क्ष + ृ → क्षृ",
+            "speech": "क्षृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-30830323b9b8cdd9feeee7365c6c6f1a2bc06d01925a91b41ab2196f02e944a7.mp3",
+              "sha256": "30830323b9b8cdd9feeee7365c6c6f1a2bc06d01925a91b41ab2196f02e944a7",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-0-7",
+            "ne": "क्षे",
+            "roman": "kṣe / chye",
+            "meaning": "क्ष ＋ ए",
+            "detail": "क्ष + े → क्षे",
+            "speech": "क्षे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-770c47bb104c052ff183af9b3fd401f0daa8ef3dba651288413ab6cf49e1acc6.mp3",
+              "sha256": "770c47bb104c052ff183af9b3fd401f0daa8ef3dba651288413ab6cf49e1acc6",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-0-8",
+            "ne": "क्षै",
+            "roman": "kṣai / chyai",
+            "meaning": "क्ष ＋ ऐ",
+            "detail": "क्ष + ै → क्षै",
+            "speech": "क्षै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-49faeac125209ffe51c9e8e0a8718189cd565ca2dfa5c9fc74684113a5c9fab9.mp3",
+              "sha256": "49faeac125209ffe51c9e8e0a8718189cd565ca2dfa5c9fc74684113a5c9fab9",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-0-9",
+            "ne": "क्षो",
+            "roman": "kṣo / chyo",
+            "meaning": "क्ष ＋ ओ",
+            "detail": "क्ष + ो → क्षो",
+            "speech": "क्षो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cfabf028f7606afff79d73b5f8054b371120930512c614edee7c83fdf84dc816.mp3",
+              "sha256": "cfabf028f7606afff79d73b5f8054b371120930512c614edee7c83fdf84dc816",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-0-10",
+            "ne": "क्षौ",
+            "roman": "kṣau / chyau",
+            "meaning": "क्ष ＋ औ",
+            "detail": "क्ष + ौ → क्षौ",
+            "speech": "क्षौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2a82e3c72e99f6d50a13d6e84c26ce2ffe6d834b18e8f62f3650360d9f4297d9.mp3",
+              "sha256": "2a82e3c72e99f6d50a13d6e84c26ce2ffe6d834b18e8f62f3650360d9f4297d9",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "त्र",
+        "roman": "tra",
+        "samples": [
+          {
+            "id": "ccv-1-0",
+            "ne": "त्र",
+            "roman": "tra",
+            "meaning": "त्र ＋ अ",
+            "detail": "त्र + अ → त्र",
+            "speech": "त्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-16ed25e0e36f510dc3c061e5223dd4ccbe1180ca34eab31261040bdf79c3a7d2.mp3",
+              "sha256": "16ed25e0e36f510dc3c061e5223dd4ccbe1180ca34eab31261040bdf79c3a7d2",
+              "bytes": 3644
+            }
+          },
+          {
+            "id": "ccv-1-1",
+            "ne": "त्रा",
+            "roman": "trā",
+            "meaning": "त्र ＋ आ",
+            "detail": "त्र + ा → त्रा",
+            "speech": "त्रा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-316a6c62e8d423ae0c236d6de2f0f2da300fa7b83662c6e5bee58012af58f294.mp3",
+              "sha256": "316a6c62e8d423ae0c236d6de2f0f2da300fa7b83662c6e5bee58012af58f294",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-1-2",
+            "ne": "त्रि",
+            "roman": "tri",
+            "meaning": "त्र ＋ इ",
+            "detail": "त्र + ि → त्रि",
+            "speech": "त्रि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1dec1b122e491b108142bfd5c1224750ef250df227b665a3e5b87cb2108d57a0.mp3",
+              "sha256": "1dec1b122e491b108142bfd5c1224750ef250df227b665a3e5b87cb2108d57a0",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-1-3",
+            "ne": "त्री",
+            "roman": "trī",
+            "meaning": "त्र ＋ ई",
+            "detail": "त्र + ी → त्री",
+            "speech": "त्री",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2f184bc8cce7427ae8a35b11ad34a932ec017193bb727442fbcc49c9f61c1170.mp3",
+              "sha256": "2f184bc8cce7427ae8a35b11ad34a932ec017193bb727442fbcc49c9f61c1170",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-1-4",
+            "ne": "त्रु",
+            "roman": "tru",
+            "meaning": "त्र ＋ उ",
+            "detail": "त्र + ु → त्रु",
+            "speech": "त्रु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4a1cade20475bc7f32bbdbbc06632dd44d67afda732e912fd8670bb377f8a9ae.mp3",
+              "sha256": "4a1cade20475bc7f32bbdbbc06632dd44d67afda732e912fd8670bb377f8a9ae",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-1-5",
+            "ne": "त्रू",
+            "roman": "trū",
+            "meaning": "त्र ＋ ऊ",
+            "detail": "त्र + ू → त्रू",
+            "speech": "त्रू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-223d52654c39f7effaa7575450274f30ba610b8e784eb666a0cd6fa8dc407c01.mp3",
+              "sha256": "223d52654c39f7effaa7575450274f30ba610b8e784eb666a0cd6fa8dc407c01",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-1-6",
+            "ne": "त्रृ",
+            "roman": "trri",
+            "meaning": "त्र ＋ ऋ",
+            "detail": "त्र + ृ → त्रृ",
+            "speech": "त्रृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-dac79a23c5967d02b59c057dedc0f1cb31f70a0d635f0d7fc9f138fded629610.mp3",
+              "sha256": "dac79a23c5967d02b59c057dedc0f1cb31f70a0d635f0d7fc9f138fded629610",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-1-7",
+            "ne": "त्रे",
+            "roman": "tre",
+            "meaning": "त्र ＋ ए",
+            "detail": "त्र + े → त्रे",
+            "speech": "त्रे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-dbc72a7c1c81e70eac74fe9add0577e659dce1519abb237debab2b6dcaac540f.mp3",
+              "sha256": "dbc72a7c1c81e70eac74fe9add0577e659dce1519abb237debab2b6dcaac540f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-1-8",
+            "ne": "त्रै",
+            "roman": "trai",
+            "meaning": "त्र ＋ ऐ",
+            "detail": "त्र + ै → त्रै",
+            "speech": "त्रै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-05d32fee97d6b8465516e33a70ff9d3262652041aa7b9aa03c6fd34c479dbefd.mp3",
+              "sha256": "05d32fee97d6b8465516e33a70ff9d3262652041aa7b9aa03c6fd34c479dbefd",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-1-9",
+            "ne": "त्रो",
+            "roman": "tro",
+            "meaning": "त्र ＋ ओ",
+            "detail": "त्र + ो → त्रो",
+            "speech": "त्रो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6ffc1c91f03f4c0dbf4b4584de5a3c11bcb6daad3a83ede7280b10d224297eea.mp3",
+              "sha256": "6ffc1c91f03f4c0dbf4b4584de5a3c11bcb6daad3a83ede7280b10d224297eea",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-1-10",
+            "ne": "त्रौ",
+            "roman": "trau",
+            "meaning": "त्र ＋ औ",
+            "detail": "त्र + ौ → त्रौ",
+            "speech": "त्रौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-387af5d7f2dd72213ed67a701b17538a4f2fe7a6960c2b37b58bf5677e5b4db9.mp3",
+              "sha256": "387af5d7f2dd72213ed67a701b17538a4f2fe7a6960c2b37b58bf5677e5b4db9",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "ज्ञ",
+        "roman": "gya",
+        "samples": [
+          {
+            "id": "ccv-2-0",
+            "ne": "ज्ञ",
+            "roman": "gya",
+            "meaning": "ज्ञ ＋ अ",
+            "detail": "ज्ञ + अ → ज्ञ",
+            "speech": "ज्ञ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5dcca6ea9a98938bdbd939c0f2bbc452a7e9b1c29b7014b83d97d43b65c1a004.mp3",
+              "sha256": "5dcca6ea9a98938bdbd939c0f2bbc452a7e9b1c29b7014b83d97d43b65c1a004",
+              "bytes": 3932
+            }
+          },
+          {
+            "id": "ccv-2-1",
+            "ne": "ज्ञा",
+            "roman": "gyā",
+            "meaning": "ज्ञ ＋ आ",
+            "detail": "ज्ञ + ा → ज्ञा",
+            "speech": "ज्ञा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-57d70079c1eb12bc4497803f01a4d692a4660d92af6797720d09fa9989b51df8.mp3",
+              "sha256": "57d70079c1eb12bc4497803f01a4d692a4660d92af6797720d09fa9989b51df8",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-2-2",
+            "ne": "ज्ञि",
+            "roman": "gyi",
+            "meaning": "ज्ञ ＋ इ",
+            "detail": "ज्ञ + ि → ज्ञि",
+            "speech": "ज्ञि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-af2735a167ed36adef09df0fc8abe4d9d4a70532626f1b895f6b026a7c12183a.mp3",
+              "sha256": "af2735a167ed36adef09df0fc8abe4d9d4a70532626f1b895f6b026a7c12183a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-2-3",
+            "ne": "ज्ञी",
+            "roman": "gyī",
+            "meaning": "ज्ञ ＋ ई",
+            "detail": "ज्ञ + ी → ज्ञी",
+            "speech": "ज्ञी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a29788cf8d9151c16d1d1e247ba041fc40c785be554cd9f5bb298bf059fd4a77.mp3",
+              "sha256": "a29788cf8d9151c16d1d1e247ba041fc40c785be554cd9f5bb298bf059fd4a77",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-2-4",
+            "ne": "ज्ञु",
+            "roman": "gyu",
+            "meaning": "ज्ञ ＋ उ",
+            "detail": "ज्ञ + ु → ज्ञु",
+            "speech": "ज्ञु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4c1ff13703087e6b1028968f15337fb18f4b3964031a9cd7aa02be2ff64ed3ba.mp3",
+              "sha256": "4c1ff13703087e6b1028968f15337fb18f4b3964031a9cd7aa02be2ff64ed3ba",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-2-5",
+            "ne": "ज्ञू",
+            "roman": "gyū",
+            "meaning": "ज्ञ ＋ ऊ",
+            "detail": "ज्ञ + ू → ज्ञू",
+            "speech": "ज्ञू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f247046c8baa250cd69294628a7493187155fc6efd463ddb21a178f57a5e9f39.mp3",
+              "sha256": "f247046c8baa250cd69294628a7493187155fc6efd463ddb21a178f57a5e9f39",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-2-6",
+            "ne": "ज्ञृ",
+            "roman": "gyri",
+            "meaning": "ज्ञ ＋ ऋ",
+            "detail": "ज्ञ + ृ → ज्ञृ",
+            "speech": "ज्ञृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c597498015dfa8a4b97a613d9e3874292968098d1c051c38f7dbf59987f99f34.mp3",
+              "sha256": "c597498015dfa8a4b97a613d9e3874292968098d1c051c38f7dbf59987f99f34",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-2-7",
+            "ne": "ज्ञे",
+            "roman": "gye",
+            "meaning": "ज्ञ ＋ ए",
+            "detail": "ज्ञ + े → ज्ञे",
+            "speech": "ज्ञे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-18a95c02fe1a6fa8851771b20cf666fc38605181a131e5b28c5c2ed716198487.mp3",
+              "sha256": "18a95c02fe1a6fa8851771b20cf666fc38605181a131e5b28c5c2ed716198487",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-2-8",
+            "ne": "ज्ञै",
+            "roman": "gyai",
+            "meaning": "ज्ञ ＋ ऐ",
+            "detail": "ज्ञ + ै → ज्ञै",
+            "speech": "ज्ञै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6ed3eb4c522347787dc71fec10a9c9f8b4328b5c3de436dcf20e2950fb353533.mp3",
+              "sha256": "6ed3eb4c522347787dc71fec10a9c9f8b4328b5c3de436dcf20e2950fb353533",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-2-9",
+            "ne": "ज्ञो",
+            "roman": "gyo",
+            "meaning": "ज्ञ ＋ ओ",
+            "detail": "ज्ञ + ो → ज्ञो",
+            "speech": "ज्ञो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-bbc48e48ad4ac52dae64fb151e0cbc31f475a425e7301c405b20a5c7b452faa1.mp3",
+              "sha256": "bbc48e48ad4ac52dae64fb151e0cbc31f475a425e7301c405b20a5c7b452faa1",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-2-10",
+            "ne": "ज्ञौ",
+            "roman": "gyau",
+            "meaning": "ज्ञ ＋ औ",
+            "detail": "ज्ञ + ौ → ज्ञौ",
+            "speech": "ज्ञौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9dcc7acc880378331d6ccc9d4dcf47d87119a9e8264dfb5fea1c0527e1367609.mp3",
+              "sha256": "9dcc7acc880378331d6ccc9d4dcf47d87119a9e8264dfb5fea1c0527e1367609",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "श्र",
+        "roman": "śra",
+        "samples": [
+          {
+            "id": "ccv-3-0",
+            "ne": "श्र",
+            "roman": "śra",
+            "meaning": "श्र ＋ अ",
+            "detail": "श्र + अ → श्र",
+            "speech": "श्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f10078bb23e9e2ada13cd22016bc10e3f20055ca6810e3eac680fdac04076cde.mp3",
+              "sha256": "f10078bb23e9e2ada13cd22016bc10e3f20055ca6810e3eac680fdac04076cde",
+              "bytes": 4076
+            }
+          },
+          {
+            "id": "ccv-3-1",
+            "ne": "श्रा",
+            "roman": "śrā",
+            "meaning": "श्र ＋ आ",
+            "detail": "श्र + ा → श्रा",
+            "speech": "श्रा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5ddf60239157944955b41cd76050963011f7ae402e1c8157e0f1795c44e00d36.mp3",
+              "sha256": "5ddf60239157944955b41cd76050963011f7ae402e1c8157e0f1795c44e00d36",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-3-2",
+            "ne": "श्रि",
+            "roman": "śri",
+            "meaning": "श्र ＋ इ",
+            "detail": "श्र + ि → श्रि",
+            "speech": "श्रि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2be857277a0ba96b42eb3beb0839e039237289d834ef9778d00fbc0b8d93e419.mp3",
+              "sha256": "2be857277a0ba96b42eb3beb0839e039237289d834ef9778d00fbc0b8d93e419",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-3-3",
+            "ne": "श्री",
+            "roman": "śrī",
+            "meaning": "श्र ＋ ई",
+            "detail": "श्र + ी → श्री",
+            "speech": "श्री",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-62f1ed7d202a29aaf245029d839148cdf058826b4bbe96369f44156d72832b38.mp3",
+              "sha256": "62f1ed7d202a29aaf245029d839148cdf058826b4bbe96369f44156d72832b38",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-3-4",
+            "ne": "श्रु",
+            "roman": "śru",
+            "meaning": "श्र ＋ उ",
+            "detail": "श्र + ु → श्रु",
+            "speech": "श्रु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c4a9aca7ebbe9a2a17001ebd1eb202f5f31568f953bb82f03b46d8e2cd3bd24b.mp3",
+              "sha256": "c4a9aca7ebbe9a2a17001ebd1eb202f5f31568f953bb82f03b46d8e2cd3bd24b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-3-5",
+            "ne": "श्रू",
+            "roman": "śrū",
+            "meaning": "श्र ＋ ऊ",
+            "detail": "श्र + ू → श्रू",
+            "speech": "श्रू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-00294d3e6dfe53fb45f81754c9838e11a852762a0df19f9203df9a9e5dbe2b2d.mp3",
+              "sha256": "00294d3e6dfe53fb45f81754c9838e11a852762a0df19f9203df9a9e5dbe2b2d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-3-6",
+            "ne": "श्रृ",
+            "roman": "śrri",
+            "meaning": "श्र ＋ ऋ",
+            "detail": "श्र + ृ → श्रृ",
+            "speech": "श्रृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-49c3dcb4749d4b03cf1578809bef544cd7e03ccce62a80f55ad040f12408d5bb.mp3",
+              "sha256": "49c3dcb4749d4b03cf1578809bef544cd7e03ccce62a80f55ad040f12408d5bb",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-3-7",
+            "ne": "श्रे",
+            "roman": "śre",
+            "meaning": "श्र ＋ ए",
+            "detail": "श्र + े → श्रे",
+            "speech": "श्रे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5cb35b267b883274d30eed0cc9b36c73717a72df4af1ff88916aeb113f63bd0f.mp3",
+              "sha256": "5cb35b267b883274d30eed0cc9b36c73717a72df4af1ff88916aeb113f63bd0f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-3-8",
+            "ne": "श्रै",
+            "roman": "śrai",
+            "meaning": "श्र ＋ ऐ",
+            "detail": "श्र + ै → श्रै",
+            "speech": "श्रै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7e022189565e3264555db632170fdc13370b759cd613e56697a1fb1f206e1f7b.mp3",
+              "sha256": "7e022189565e3264555db632170fdc13370b759cd613e56697a1fb1f206e1f7b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-3-9",
+            "ne": "श्रो",
+            "roman": "śro",
+            "meaning": "श्र ＋ ओ",
+            "detail": "श्र + ो → श्रो",
+            "speech": "श्रो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-ba282391a7e3a0bb38090bb8cc01fdb6f4d7ed6b23530b4ec71b95d6697204f3.mp3",
+              "sha256": "ba282391a7e3a0bb38090bb8cc01fdb6f4d7ed6b23530b4ec71b95d6697204f3",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-3-10",
+            "ne": "श्रौ",
+            "roman": "śrau",
+            "meaning": "श्र ＋ औ",
+            "detail": "श्र + ौ → श्रौ",
+            "speech": "श्रौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-bf1b9dd084d44942ec0e959fb7545590845ee5d538dc72087ee35e79e87a01dd.mp3",
+              "sha256": "bf1b9dd084d44942ec0e959fb7545590845ee5d538dc72087ee35e79e87a01dd",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "क्क",
+        "roman": "kka",
+        "samples": [
+          {
+            "id": "ccv-4-0",
+            "ne": "क्क",
+            "roman": "kka",
+            "meaning": "क्क ＋ अ",
+            "detail": "क्क + अ → क्क",
+            "speech": "क्क",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-45e3e2f35cd3cec2b5c41040acf7a4ad5a91ed08b7569e88ea60466f99240002.mp3",
+              "sha256": "45e3e2f35cd3cec2b5c41040acf7a4ad5a91ed08b7569e88ea60466f99240002",
+              "bytes": 4076
+            }
+          },
+          {
+            "id": "ccv-4-1",
+            "ne": "क्का",
+            "roman": "kkā",
+            "meaning": "क्क ＋ आ",
+            "detail": "क्क + ा → क्का",
+            "speech": "क्का",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-afd46941bc8c11366804a353acc1b77c89e34ddf4699a2dea2b580b419faa7f8.mp3",
+              "sha256": "afd46941bc8c11366804a353acc1b77c89e34ddf4699a2dea2b580b419faa7f8",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-4-2",
+            "ne": "क्कि",
+            "roman": "kki",
+            "meaning": "क्क ＋ इ",
+            "detail": "क्क + ि → क्कि",
+            "speech": "क्कि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3944009ff1b0002ac004b2152b3505c549aabe6be7fd2e515b311cc2b3eedbb5.mp3",
+              "sha256": "3944009ff1b0002ac004b2152b3505c549aabe6be7fd2e515b311cc2b3eedbb5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-4-3",
+            "ne": "क्की",
+            "roman": "kkī",
+            "meaning": "क्क ＋ ई",
+            "detail": "क्क + ी → क्की",
+            "speech": "क्की",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a916cb38a5737cb20155d62ab79968567de784766c77f727da1447bce87b1264.mp3",
+              "sha256": "a916cb38a5737cb20155d62ab79968567de784766c77f727da1447bce87b1264",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-4-4",
+            "ne": "क्कु",
+            "roman": "kku",
+            "meaning": "क्क ＋ उ",
+            "detail": "क्क + ु → क्कु",
+            "speech": "क्कु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-95a2dff402eac4c7e649151bed0a2d768f9bafd62d15eadc0901b5fc9d97ae49.mp3",
+              "sha256": "95a2dff402eac4c7e649151bed0a2d768f9bafd62d15eadc0901b5fc9d97ae49",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-4-5",
+            "ne": "क्कू",
+            "roman": "kkū",
+            "meaning": "क्क ＋ ऊ",
+            "detail": "क्क + ू → क्कू",
+            "speech": "क्कू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a292bcad174cfa3f9a1fd087840a4b02b6bdf37b07d4fc22f4ed88e56a4e2ace.mp3",
+              "sha256": "a292bcad174cfa3f9a1fd087840a4b02b6bdf37b07d4fc22f4ed88e56a4e2ace",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-4-6",
+            "ne": "क्कृ",
+            "roman": "kkri",
+            "meaning": "क्क ＋ ऋ",
+            "detail": "क्क + ृ → क्कृ",
+            "speech": "क्कृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1bbde95e3b281a79d245be1e9c2971cbd957da4be8d0cc9b660efb0c5a6c2df4.mp3",
+              "sha256": "1bbde95e3b281a79d245be1e9c2971cbd957da4be8d0cc9b660efb0c5a6c2df4",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-4-7",
+            "ne": "क्के",
+            "roman": "kke",
+            "meaning": "क्क ＋ ए",
+            "detail": "क्क + े → क्के",
+            "speech": "क्के",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ce16ec5ca21089a718aa5187576068d8baf1a19dba304ceb032678da4582e233.mp3",
+              "sha256": "ce16ec5ca21089a718aa5187576068d8baf1a19dba304ceb032678da4582e233",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-4-8",
+            "ne": "क्कै",
+            "roman": "kkai",
+            "meaning": "क्क ＋ ऐ",
+            "detail": "क्क + ै → क्कै",
+            "speech": "क्कै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c2492b4c9b3c6e43da59ede3126b53d46765b226653e636d8b838a1bf191d1af.mp3",
+              "sha256": "c2492b4c9b3c6e43da59ede3126b53d46765b226653e636d8b838a1bf191d1af",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-4-9",
+            "ne": "क्को",
+            "roman": "kko",
+            "meaning": "क्क ＋ ओ",
+            "detail": "क्क + ो → क्को",
+            "speech": "क्को",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f24ec823968a104340d7c83d039aa96e77ac9c3310281ca5f98ebd056563d0b0.mp3",
+              "sha256": "f24ec823968a104340d7c83d039aa96e77ac9c3310281ca5f98ebd056563d0b0",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-4-10",
+            "ne": "क्कौ",
+            "roman": "kkau",
+            "meaning": "क्क ＋ औ",
+            "detail": "क्क + ौ → क्कौ",
+            "speech": "क्कौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8be13abd4c59bd0a74856f3058a0fc0f693f2073e02f8e9d5945e8d897511c0c.mp3",
+              "sha256": "8be13abd4c59bd0a74856f3058a0fc0f693f2073e02f8e9d5945e8d897511c0c",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "क्त",
+        "roman": "kta",
+        "samples": [
+          {
+            "id": "ccv-5-0",
+            "ne": "क्त",
+            "roman": "kta",
+            "meaning": "क्त ＋ अ",
+            "detail": "क्त + अ → क्त",
+            "speech": "क्त",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-38720352962b06150a845923e02e2893a0c59fb1f7adedab577ab0318accac84.mp3",
+              "sha256": "38720352962b06150a845923e02e2893a0c59fb1f7adedab577ab0318accac84",
+              "bytes": 3788
+            }
+          },
+          {
+            "id": "ccv-5-1",
+            "ne": "क्ता",
+            "roman": "ktā",
+            "meaning": "क्त ＋ आ",
+            "detail": "क्त + ा → क्ता",
+            "speech": "क्ता",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-770594c2c462bccf6b7bca9c309b632d107c43b51950bbdbfe27f9f92e927947.mp3",
+              "sha256": "770594c2c462bccf6b7bca9c309b632d107c43b51950bbdbfe27f9f92e927947",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-5-2",
+            "ne": "क्ति",
+            "roman": "kti",
+            "meaning": "क्त ＋ इ",
+            "detail": "क्त + ि → क्ति",
+            "speech": "क्ति",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-76eb3d779d41a4bb965c8b3b1301039a76f448597c3cfb198a6e5335d9ef18af.mp3",
+              "sha256": "76eb3d779d41a4bb965c8b3b1301039a76f448597c3cfb198a6e5335d9ef18af",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-5-3",
+            "ne": "क्ती",
+            "roman": "ktī",
+            "meaning": "क्त ＋ ई",
+            "detail": "क्त + ी → क्ती",
+            "speech": "क्ती",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-620fa697eacdb0bab80168c02667fe155ce7156a214fc9a31124cdc0db76c011.mp3",
+              "sha256": "620fa697eacdb0bab80168c02667fe155ce7156a214fc9a31124cdc0db76c011",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-5-4",
+            "ne": "क्तु",
+            "roman": "ktu",
+            "meaning": "क्त ＋ उ",
+            "detail": "क्त + ु → क्तु",
+            "speech": "क्तु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9a1df9884fa80adebb88fe9a4a0959be610fbab8772c17cd3274c6f87d3a626e.mp3",
+              "sha256": "9a1df9884fa80adebb88fe9a4a0959be610fbab8772c17cd3274c6f87d3a626e",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-5-5",
+            "ne": "क्तू",
+            "roman": "ktū",
+            "meaning": "क्त ＋ ऊ",
+            "detail": "क्त + ू → क्तू",
+            "speech": "क्तू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2d2890607ef4ecf9a4e39c3cb3c5bb918f2106594ab132ed872834b73982216f.mp3",
+              "sha256": "2d2890607ef4ecf9a4e39c3cb3c5bb918f2106594ab132ed872834b73982216f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-5-6",
+            "ne": "क्तृ",
+            "roman": "ktri",
+            "meaning": "क्त ＋ ऋ",
+            "detail": "क्त + ृ → क्तृ",
+            "speech": "क्तृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-316663cb107220cb145f76c38ce0e8ee1515fd9ec32e5cdb18b232820083f243.mp3",
+              "sha256": "316663cb107220cb145f76c38ce0e8ee1515fd9ec32e5cdb18b232820083f243",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-5-7",
+            "ne": "क्ते",
+            "roman": "kte",
+            "meaning": "क्त ＋ ए",
+            "detail": "क्त + े → क्ते",
+            "speech": "क्ते",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-195b5be97460fdb63ed3c3d3972e8ec6775872580c2ff8a5b71edc25dcb6eff6.mp3",
+              "sha256": "195b5be97460fdb63ed3c3d3972e8ec6775872580c2ff8a5b71edc25dcb6eff6",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-5-8",
+            "ne": "क्तै",
+            "roman": "ktai",
+            "meaning": "क्त ＋ ऐ",
+            "detail": "क्त + ै → क्तै",
+            "speech": "क्तै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c42c6a24e986ea88b353bd4266e18488485cd97e101039c3f993f3ac980243d7.mp3",
+              "sha256": "c42c6a24e986ea88b353bd4266e18488485cd97e101039c3f993f3ac980243d7",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-5-9",
+            "ne": "क्तो",
+            "roman": "kto",
+            "meaning": "क्त ＋ ओ",
+            "detail": "क्त + ो → क्तो",
+            "speech": "क्तो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6fd4e78760d83398d197da4d8f47932dedb66beb07355ef6eee3d4c0ecf202d2.mp3",
+              "sha256": "6fd4e78760d83398d197da4d8f47932dedb66beb07355ef6eee3d4c0ecf202d2",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-5-10",
+            "ne": "क्तौ",
+            "roman": "ktau",
+            "meaning": "क्त ＋ औ",
+            "detail": "क्त + ौ → क्तौ",
+            "speech": "क्तौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e37cb93c1d731f8d41520c6e33fea94ed11ac0c7df1a8261c8c70e2196f77d1d.mp3",
+              "sha256": "e37cb93c1d731f8d41520c6e33fea94ed11ac0c7df1a8261c8c70e2196f77d1d",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "क्र",
+        "roman": "kra",
+        "samples": [
+          {
+            "id": "ccv-6-0",
+            "ne": "क्र",
+            "roman": "kra",
+            "meaning": "क्र ＋ अ",
+            "detail": "क्र + अ → क्र",
+            "speech": "क्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-26416a55b64040860cbda3dea1c495b339bf8e8bef0d37704f3d37cc1d190caf.mp3",
+              "sha256": "26416a55b64040860cbda3dea1c495b339bf8e8bef0d37704f3d37cc1d190caf",
+              "bytes": 3788
+            }
+          },
+          {
+            "id": "ccv-6-1",
+            "ne": "क्रा",
+            "roman": "krā",
+            "meaning": "क्र ＋ आ",
+            "detail": "क्र + ा → क्रा",
+            "speech": "क्रा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-21d7e7eb64022ad6912b30ab4690372971866d55d1f095a551f630254670d09d.mp3",
+              "sha256": "21d7e7eb64022ad6912b30ab4690372971866d55d1f095a551f630254670d09d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-6-2",
+            "ne": "क्रि",
+            "roman": "kri",
+            "meaning": "क्र ＋ इ",
+            "detail": "क्र + ि → क्रि",
+            "speech": "क्रि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f24bad99e2e5f68565dcea3248b11d599126dd13fd5f8c455f5f56e4b328f4d3.mp3",
+              "sha256": "f24bad99e2e5f68565dcea3248b11d599126dd13fd5f8c455f5f56e4b328f4d3",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-6-3",
+            "ne": "क्री",
+            "roman": "krī",
+            "meaning": "क्र ＋ ई",
+            "detail": "क्र + ी → क्री",
+            "speech": "क्री",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2adaa0f1241a11d51972ea3c911cf1575965f7fd5c2acd0705eff3bc5d836b26.mp3",
+              "sha256": "2adaa0f1241a11d51972ea3c911cf1575965f7fd5c2acd0705eff3bc5d836b26",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-6-4",
+            "ne": "क्रु",
+            "roman": "kru",
+            "meaning": "क्र ＋ उ",
+            "detail": "क्र + ु → क्रु",
+            "speech": "क्रु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2c6990fd493a899f404102c6f03e7d6e38f3c1650320685028d9b37bbc2e19d2.mp3",
+              "sha256": "2c6990fd493a899f404102c6f03e7d6e38f3c1650320685028d9b37bbc2e19d2",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-6-5",
+            "ne": "क्रू",
+            "roman": "krū",
+            "meaning": "क्र ＋ ऊ",
+            "detail": "क्र + ू → क्रू",
+            "speech": "क्रू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-ed589919f2e67e535b5d721c7d197f45ec54f54476f697d87eafe5af9e89da13.mp3",
+              "sha256": "ed589919f2e67e535b5d721c7d197f45ec54f54476f697d87eafe5af9e89da13",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-6-6",
+            "ne": "क्रृ",
+            "roman": "krri",
+            "meaning": "क्र ＋ ऋ",
+            "detail": "क्र + ृ → क्रृ",
+            "speech": "क्रृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6c48cbf7bc25f97d61d987414eeb90a39a04dda2c24dbb2ebb62c159ab4d2622.mp3",
+              "sha256": "6c48cbf7bc25f97d61d987414eeb90a39a04dda2c24dbb2ebb62c159ab4d2622",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-6-7",
+            "ne": "क्रे",
+            "roman": "kre",
+            "meaning": "क्र ＋ ए",
+            "detail": "क्र + े → क्रे",
+            "speech": "क्रे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a0a067c5a07182eabf67c8f8066748aff3227f8968cebb32f9577593c3b310aa.mp3",
+              "sha256": "a0a067c5a07182eabf67c8f8066748aff3227f8968cebb32f9577593c3b310aa",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-6-8",
+            "ne": "क्रै",
+            "roman": "krai",
+            "meaning": "क्र ＋ ऐ",
+            "detail": "क्र + ै → क्रै",
+            "speech": "क्रै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4aa6a05e47693edabade7c710bc08f6062d04d6e4f7d30d2a49529c068db1f40.mp3",
+              "sha256": "4aa6a05e47693edabade7c710bc08f6062d04d6e4f7d30d2a49529c068db1f40",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-6-9",
+            "ne": "क्रो",
+            "roman": "kro",
+            "meaning": "क्र ＋ ओ",
+            "detail": "क्र + ो → क्रो",
+            "speech": "क्रो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a5568757012a441abc2f38232240d289c9e144ffcb21ceb70fb79f8008bf3cf7.mp3",
+              "sha256": "a5568757012a441abc2f38232240d289c9e144ffcb21ceb70fb79f8008bf3cf7",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-6-10",
+            "ne": "क्रौ",
+            "roman": "krau",
+            "meaning": "क्र ＋ औ",
+            "detail": "क्र + ौ → क्रौ",
+            "speech": "क्रौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d0c9f2b75a3a57644dcd0d9ace2a82f3b3b88fa1874f14d9f58b20aab5749deb.mp3",
+              "sha256": "d0c9f2b75a3a57644dcd0d9ace2a82f3b3b88fa1874f14d9f58b20aab5749deb",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "ग्र",
+        "roman": "gra",
+        "samples": [
+          {
+            "id": "ccv-7-0",
+            "ne": "ग्र",
+            "roman": "gra",
+            "meaning": "ग्र ＋ अ",
+            "detail": "ग्र + अ → ग्र",
+            "speech": "ग्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-88aa463242b066a32cc969dd7c6c461ca6a0099d031c7bf55d50a245ddb7054f.mp3",
+              "sha256": "88aa463242b066a32cc969dd7c6c461ca6a0099d031c7bf55d50a245ddb7054f",
+              "bytes": 3788
+            }
+          },
+          {
+            "id": "ccv-7-1",
+            "ne": "ग्रा",
+            "roman": "grā",
+            "meaning": "ग्र ＋ आ",
+            "detail": "ग्र + ा → ग्रा",
+            "speech": "ग्रा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d9f6c6f01df308c09cdc5c250d744d2f5bbf98ea8ddd9d8286a53902d418f3df.mp3",
+              "sha256": "d9f6c6f01df308c09cdc5c250d744d2f5bbf98ea8ddd9d8286a53902d418f3df",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-7-2",
+            "ne": "ग्रि",
+            "roman": "gri",
+            "meaning": "ग्र ＋ इ",
+            "detail": "ग्र + ि → ग्रि",
+            "speech": "ग्रि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f08ba114f5d66e97f0d69bc046783a9be128e365ec545c921d72fff7e1d2b7db.mp3",
+              "sha256": "f08ba114f5d66e97f0d69bc046783a9be128e365ec545c921d72fff7e1d2b7db",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-7-3",
+            "ne": "ग्री",
+            "roman": "grī",
+            "meaning": "ग्र ＋ ई",
+            "detail": "ग्र + ी → ग्री",
+            "speech": "ग्री",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-89e0254e7d612283d0cbe920aa1bbdd99cc14567d07e1732e7a46c67ac3731b8.mp3",
+              "sha256": "89e0254e7d612283d0cbe920aa1bbdd99cc14567d07e1732e7a46c67ac3731b8",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-7-4",
+            "ne": "ग्रु",
+            "roman": "gru",
+            "meaning": "ग्र ＋ उ",
+            "detail": "ग्र + ु → ग्रु",
+            "speech": "ग्रु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5eb2f6bb3152b5763f85298334c86a3836dbadd2cb3bd14f82514986310543cf.mp3",
+              "sha256": "5eb2f6bb3152b5763f85298334c86a3836dbadd2cb3bd14f82514986310543cf",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-7-5",
+            "ne": "ग्रू",
+            "roman": "grū",
+            "meaning": "ग्र ＋ ऊ",
+            "detail": "ग्र + ू → ग्रू",
+            "speech": "ग्रू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-ff324111d529b257b336e68bcbb34232716f8052965fa75d965c6a8459f27e23.mp3",
+              "sha256": "ff324111d529b257b336e68bcbb34232716f8052965fa75d965c6a8459f27e23",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-7-6",
+            "ne": "ग्रृ",
+            "roman": "grri",
+            "meaning": "ग्र ＋ ऋ",
+            "detail": "ग्र + ृ → ग्रृ",
+            "speech": "ग्रृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6ed2d6ca09547e9e00629c0b2ecb78284425ab1a2559093ec5c9ad8176c6ab4f.mp3",
+              "sha256": "6ed2d6ca09547e9e00629c0b2ecb78284425ab1a2559093ec5c9ad8176c6ab4f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-7-7",
+            "ne": "ग्रे",
+            "roman": "gre",
+            "meaning": "ग्र ＋ ए",
+            "detail": "ग्र + े → ग्रे",
+            "speech": "ग्रे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-06d7f691c0699c8b4d323d759d2f3a350fc5b45df933d945309b16fd586a94d4.mp3",
+              "sha256": "06d7f691c0699c8b4d323d759d2f3a350fc5b45df933d945309b16fd586a94d4",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-7-8",
+            "ne": "ग्रै",
+            "roman": "grai",
+            "meaning": "ग्र ＋ ऐ",
+            "detail": "ग्र + ै → ग्रै",
+            "speech": "ग्रै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-97d109720d846698c04adf58042ad8da0922f9c43c368f77b80a6942e92603bb.mp3",
+              "sha256": "97d109720d846698c04adf58042ad8da0922f9c43c368f77b80a6942e92603bb",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-7-9",
+            "ne": "ग्रो",
+            "roman": "gro",
+            "meaning": "ग्र ＋ ओ",
+            "detail": "ग्र + ो → ग्रो",
+            "speech": "ग्रो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c80db3fe56b2ce29a3a49141a644c1eaa8989f5ef9aac52f291694a7d839135f.mp3",
+              "sha256": "c80db3fe56b2ce29a3a49141a644c1eaa8989f5ef9aac52f291694a7d839135f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-7-10",
+            "ne": "ग्रौ",
+            "roman": "grau",
+            "meaning": "ग्र ＋ औ",
+            "detail": "ग्र + ौ → ग्रौ",
+            "speech": "ग्रौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f596c20b8593debefd995c51d7f2644770ea2cc32d47b0f7536ee2594a430db0.mp3",
+              "sha256": "f596c20b8593debefd995c51d7f2644770ea2cc32d47b0f7536ee2594a430db0",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "ङ्ग",
+        "roman": "ṅga",
+        "samples": [
+          {
+            "id": "ccv-8-0",
+            "ne": "ङ्ग",
+            "roman": "ṅga",
+            "meaning": "ङ्ग ＋ अ",
+            "detail": "ङ्ग + अ → ङ्ग",
+            "speech": "ङ्ग",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5001b6d36ec0ea1f157c62ab15b791eea2b3ac338ab08553ecc7d26037d1805c.mp3",
+              "sha256": "5001b6d36ec0ea1f157c62ab15b791eea2b3ac338ab08553ecc7d26037d1805c",
+              "bytes": 3644
+            }
+          },
+          {
+            "id": "ccv-8-1",
+            "ne": "ङ्गा",
+            "roman": "ṅgā",
+            "meaning": "ङ्ग ＋ आ",
+            "detail": "ङ्ग + ा → ङ्गा",
+            "speech": "ङ्गा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-557e558f8ca407873d96f24085c087c1faa87851571137cd834b4838ef1ee6f7.mp3",
+              "sha256": "557e558f8ca407873d96f24085c087c1faa87851571137cd834b4838ef1ee6f7",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-8-2",
+            "ne": "ङ्गि",
+            "roman": "ṅgi",
+            "meaning": "ङ्ग ＋ इ",
+            "detail": "ङ्ग + ि → ङ्गि",
+            "speech": "ङ्गि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a5e80656827ba59f55f9c62fc7b22a730578e1dea60f6bb78305f242b9223e13.mp3",
+              "sha256": "a5e80656827ba59f55f9c62fc7b22a730578e1dea60f6bb78305f242b9223e13",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-8-3",
+            "ne": "ङ्गी",
+            "roman": "ṅgī",
+            "meaning": "ङ्ग ＋ ई",
+            "detail": "ङ्ग + ी → ङ्गी",
+            "speech": "ङ्गी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e882f821febc86cd9f73653d6d8d2dac117ce4ac0d11d79e1e95871749a85d4d.mp3",
+              "sha256": "e882f821febc86cd9f73653d6d8d2dac117ce4ac0d11d79e1e95871749a85d4d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-8-4",
+            "ne": "ङ्गु",
+            "roman": "ṅgu",
+            "meaning": "ङ्ग ＋ उ",
+            "detail": "ङ्ग + ु → ङ्गु",
+            "speech": "ङ्गु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d152e8f03726e572b7027139afa59476b0a5147842c17a3d7ccebdcd4271f2c2.mp3",
+              "sha256": "d152e8f03726e572b7027139afa59476b0a5147842c17a3d7ccebdcd4271f2c2",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-8-5",
+            "ne": "ङ्गू",
+            "roman": "ṅgū",
+            "meaning": "ङ्ग ＋ ऊ",
+            "detail": "ङ्ग + ू → ङ्गू",
+            "speech": "ङ्गू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-37dc5a707d4bab0448adcde0009bad70cd53cc52846d3a127e7c5fc91e73ffb5.mp3",
+              "sha256": "37dc5a707d4bab0448adcde0009bad70cd53cc52846d3a127e7c5fc91e73ffb5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-8-6",
+            "ne": "ङ्गृ",
+            "roman": "ṅgri",
+            "meaning": "ङ्ग ＋ ऋ",
+            "detail": "ङ्ग + ृ → ङ्गृ",
+            "speech": "ङ्गृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-eb0c300aedf48343af87dc3880374fd5dcf78f5a4af646ccad86510276191a36.mp3",
+              "sha256": "eb0c300aedf48343af87dc3880374fd5dcf78f5a4af646ccad86510276191a36",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-8-7",
+            "ne": "ङ्गे",
+            "roman": "ṅge",
+            "meaning": "ङ्ग ＋ ए",
+            "detail": "ङ्ग + े → ङ्गे",
+            "speech": "ङ्गे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-066d4fe6022589b82e9c866e484061e60f66b152c5a48a669994e38c2c7a3b61.mp3",
+              "sha256": "066d4fe6022589b82e9c866e484061e60f66b152c5a48a669994e38c2c7a3b61",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-8-8",
+            "ne": "ङ्गै",
+            "roman": "ṅgai",
+            "meaning": "ङ्ग ＋ ऐ",
+            "detail": "ङ्ग + ै → ङ्गै",
+            "speech": "ङ्गै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-08300028962dfff103459e619818cd3eb8f5d9dd8f4e38386785d4d9171d62ce.mp3",
+              "sha256": "08300028962dfff103459e619818cd3eb8f5d9dd8f4e38386785d4d9171d62ce",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-8-9",
+            "ne": "ङ्गो",
+            "roman": "ṅgo",
+            "meaning": "ङ्ग ＋ ओ",
+            "detail": "ङ्ग + ो → ङ्गो",
+            "speech": "ङ्गो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4f5b7a58fa39ea4ed1f294642b922e03aa94c66d25733408499b50bf42779a6e.mp3",
+              "sha256": "4f5b7a58fa39ea4ed1f294642b922e03aa94c66d25733408499b50bf42779a6e",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-8-10",
+            "ne": "ङ्गौ",
+            "roman": "ṅgau",
+            "meaning": "ङ्ग ＋ औ",
+            "detail": "ङ्ग + ौ → ङ्गौ",
+            "speech": "ङ्गौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-da95266c0ac43d7a22821de21c813a50242d5ca29e8792546ad4f64712b17b60.mp3",
+              "sha256": "da95266c0ac43d7a22821de21c813a50242d5ca29e8792546ad4f64712b17b60",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "ञ्च",
+        "roman": "ñca",
+        "samples": [
+          {
+            "id": "ccv-9-0",
+            "ne": "ञ्च",
+            "roman": "ñca",
+            "meaning": "ञ्च ＋ अ",
+            "detail": "ञ्च + अ → ञ्च",
+            "speech": "ञ्च",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-adbbfc3b82d9688f0b1c191c71957f47d01856d3e4444fa8064e2b92ea2056f4.mp3",
+              "sha256": "adbbfc3b82d9688f0b1c191c71957f47d01856d3e4444fa8064e2b92ea2056f4",
+              "bytes": 3932
+            }
+          },
+          {
+            "id": "ccv-9-1",
+            "ne": "ञ्चा",
+            "roman": "ñcā",
+            "meaning": "ञ्च ＋ आ",
+            "detail": "ञ्च + ा → ञ्चा",
+            "speech": "ञ्चा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b0fbd1132a35a47533d30b765b7d0c0ad8567b20f461a943321f8d88fb2f6dba.mp3",
+              "sha256": "b0fbd1132a35a47533d30b765b7d0c0ad8567b20f461a943321f8d88fb2f6dba",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-9-2",
+            "ne": "ञ्चि",
+            "roman": "ñci",
+            "meaning": "ञ्च ＋ इ",
+            "detail": "ञ्च + ि → ञ्चि",
+            "speech": "ञ्चि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-74d88c4877f64c0cc0725d2e9da92e3e78a9594e6fa369deeafcb2e9a0c6380d.mp3",
+              "sha256": "74d88c4877f64c0cc0725d2e9da92e3e78a9594e6fa369deeafcb2e9a0c6380d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-9-3",
+            "ne": "ञ्ची",
+            "roman": "ñcī",
+            "meaning": "ञ्च ＋ ई",
+            "detail": "ञ्च + ी → ञ्ची",
+            "speech": "ञ्ची",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b3d2e2f0328cc3b34cab08b0465ecbe7b124d068096c1dc15f51774f1d8216d4.mp3",
+              "sha256": "b3d2e2f0328cc3b34cab08b0465ecbe7b124d068096c1dc15f51774f1d8216d4",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-9-4",
+            "ne": "ञ्चु",
+            "roman": "ñcu",
+            "meaning": "ञ्च ＋ उ",
+            "detail": "ञ्च + ु → ञ्चु",
+            "speech": "ञ्चु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7637425511d8386fe947119ac2fe22041e1db8021035746b6b968a44b690612d.mp3",
+              "sha256": "7637425511d8386fe947119ac2fe22041e1db8021035746b6b968a44b690612d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-9-5",
+            "ne": "ञ्चू",
+            "roman": "ñcū",
+            "meaning": "ञ्च ＋ ऊ",
+            "detail": "ञ्च + ू → ञ्चू",
+            "speech": "ञ्चू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fa857b32df95b4e96037186267f395a5be4e4ebce895e7f84f8486c00bf10313.mp3",
+              "sha256": "fa857b32df95b4e96037186267f395a5be4e4ebce895e7f84f8486c00bf10313",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-9-6",
+            "ne": "ञ्चृ",
+            "roman": "ñcri",
+            "meaning": "ञ्च ＋ ऋ",
+            "detail": "ञ्च + ृ → ञ्चृ",
+            "speech": "ञ्चृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-ec12f58818288504164572d1ec7f16f7e4b44b9ad47b38b1fe0a87a983c80754.mp3",
+              "sha256": "ec12f58818288504164572d1ec7f16f7e4b44b9ad47b38b1fe0a87a983c80754",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-9-7",
+            "ne": "ञ्चे",
+            "roman": "ñce",
+            "meaning": "ञ्च ＋ ए",
+            "detail": "ञ्च + े → ञ्चे",
+            "speech": "ञ्चे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1e9b601d98c3e0cc98b1ed5645df578460f18b8360c2183f901c1720ca701bbc.mp3",
+              "sha256": "1e9b601d98c3e0cc98b1ed5645df578460f18b8360c2183f901c1720ca701bbc",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-9-8",
+            "ne": "ञ्चै",
+            "roman": "ñcai",
+            "meaning": "ञ्च ＋ ऐ",
+            "detail": "ञ्च + ै → ञ्चै",
+            "speech": "ञ्चै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a35caaa18f0901abb6a554b7a7f18b8a2e960e139f695d094fef97d6dbac6606.mp3",
+              "sha256": "a35caaa18f0901abb6a554b7a7f18b8a2e960e139f695d094fef97d6dbac6606",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-9-9",
+            "ne": "ञ्चो",
+            "roman": "ñco",
+            "meaning": "ञ्च ＋ ओ",
+            "detail": "ञ्च + ो → ञ्चो",
+            "speech": "ञ्चो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2ff3c07cf2187e76c3d5aed3078bc880884102efcf3c33cf50ab8b31bda6d051.mp3",
+              "sha256": "2ff3c07cf2187e76c3d5aed3078bc880884102efcf3c33cf50ab8b31bda6d051",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-9-10",
+            "ne": "ञ्चौ",
+            "roman": "ñcau",
+            "meaning": "ञ्च ＋ औ",
+            "detail": "ञ्च + ौ → ञ्चौ",
+            "speech": "ञ्चौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7ff072561bad0739f3892bd2861966b565c7aed40684feb78d32da5affabd873.mp3",
+              "sha256": "7ff072561bad0739f3892bd2861966b565c7aed40684feb78d32da5affabd873",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "ञ्ज",
+        "roman": "ñja",
+        "samples": [
+          {
+            "id": "ccv-10-0",
+            "ne": "ञ्ज",
+            "roman": "ñja",
+            "meaning": "ञ्ज ＋ अ",
+            "detail": "ञ्ज + अ → ञ्ज",
+            "speech": "ञ्ज",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-89f15760652bd343721704a38863d4ec22918689578877d7fab182be350e0f1c.mp3",
+              "sha256": "89f15760652bd343721704a38863d4ec22918689578877d7fab182be350e0f1c",
+              "bytes": 3932
+            }
+          },
+          {
+            "id": "ccv-10-1",
+            "ne": "ञ्जा",
+            "roman": "ñjā",
+            "meaning": "ञ्ज ＋ आ",
+            "detail": "ञ्ज + ा → ञ्जा",
+            "speech": "ञ्जा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-beb9af60c3709f520d8a563310672c35bf5e89e85dbdd1f661da79ab1b669be9.mp3",
+              "sha256": "beb9af60c3709f520d8a563310672c35bf5e89e85dbdd1f661da79ab1b669be9",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-10-2",
+            "ne": "ञ्जि",
+            "roman": "ñji",
+            "meaning": "ञ्ज ＋ इ",
+            "detail": "ञ्ज + ि → ञ्जि",
+            "speech": "ञ्जि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-eb97e40b5b55439280a06359c0991feddabde5ce033e1f0bc134c86b1949f46c.mp3",
+              "sha256": "eb97e40b5b55439280a06359c0991feddabde5ce033e1f0bc134c86b1949f46c",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-10-3",
+            "ne": "ञ्जी",
+            "roman": "ñjī",
+            "meaning": "ञ्ज ＋ ई",
+            "detail": "ञ्ज + ी → ञ्जी",
+            "speech": "ञ्जी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b89b9d90a4405d453e47ecf6bfb655bb9f834bdaebf0802b322a69b91671ed32.mp3",
+              "sha256": "b89b9d90a4405d453e47ecf6bfb655bb9f834bdaebf0802b322a69b91671ed32",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-10-4",
+            "ne": "ञ्जु",
+            "roman": "ñju",
+            "meaning": "ञ्ज ＋ उ",
+            "detail": "ञ्ज + ु → ञ्जु",
+            "speech": "ञ्जु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a8aae052937d7bad0d57423f92e6e5f141e0806873dc47c643453a5c96f88206.mp3",
+              "sha256": "a8aae052937d7bad0d57423f92e6e5f141e0806873dc47c643453a5c96f88206",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-10-5",
+            "ne": "ञ्जू",
+            "roman": "ñjū",
+            "meaning": "ञ्ज ＋ ऊ",
+            "detail": "ञ्ज + ू → ञ्जू",
+            "speech": "ञ्जू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b9536612fbc2793276e9f50418d5f9eca9af016f39b5da8d8674cf62ec429239.mp3",
+              "sha256": "b9536612fbc2793276e9f50418d5f9eca9af016f39b5da8d8674cf62ec429239",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-10-6",
+            "ne": "ञ्जृ",
+            "roman": "ñjri",
+            "meaning": "ञ्ज ＋ ऋ",
+            "detail": "ञ्ज + ृ → ञ्जृ",
+            "speech": "ञ्जृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0dc02b4be08d07ff467fb4175e70d8ce23245111e5f772aeb4df39dfdf541dbd.mp3",
+              "sha256": "0dc02b4be08d07ff467fb4175e70d8ce23245111e5f772aeb4df39dfdf541dbd",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-10-7",
+            "ne": "ञ्जे",
+            "roman": "ñje",
+            "meaning": "ञ्ज ＋ ए",
+            "detail": "ञ्ज + े → ञ्जे",
+            "speech": "ञ्जे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2dd1c911f19acdc1387ee4498b005e6276aca2f40cbbb0702a48baa4fd6aef11.mp3",
+              "sha256": "2dd1c911f19acdc1387ee4498b005e6276aca2f40cbbb0702a48baa4fd6aef11",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-10-8",
+            "ne": "ञ्जै",
+            "roman": "ñjai",
+            "meaning": "ञ्ज ＋ ऐ",
+            "detail": "ञ्ज + ै → ञ्जै",
+            "speech": "ञ्जै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-767b6516dbe61d498d9d7838d5a99aed6d56e5453755a0ee4b5e99ec3622454a.mp3",
+              "sha256": "767b6516dbe61d498d9d7838d5a99aed6d56e5453755a0ee4b5e99ec3622454a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-10-9",
+            "ne": "ञ्जो",
+            "roman": "ñjo",
+            "meaning": "ञ्ज ＋ ओ",
+            "detail": "ञ्ज + ो → ञ्जो",
+            "speech": "ञ्जो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-509ab5358680cf1806576d6a31ad14664909087b2c87a43374617c1c09423ba5.mp3",
+              "sha256": "509ab5358680cf1806576d6a31ad14664909087b2c87a43374617c1c09423ba5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-10-10",
+            "ne": "ञ्जौ",
+            "roman": "ñjau",
+            "meaning": "ञ्ज ＋ औ",
+            "detail": "ञ्ज + ौ → ञ्जौ",
+            "speech": "ञ्जौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7b5b0e64e293710981f6d3772b422560f4eaf6645167f37cbc44c53011f3d837.mp3",
+              "sha256": "7b5b0e64e293710981f6d3772b422560f4eaf6645167f37cbc44c53011f3d837",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "ट्ट",
+        "roman": "ṭṭa",
+        "samples": [
+          {
+            "id": "ccv-11-0",
+            "ne": "ट्ट",
+            "roman": "ṭṭa",
+            "meaning": "ट्ट ＋ अ",
+            "detail": "ट्ट + अ → ट्ट",
+            "speech": "ट्ट",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0705ded5f2c82bb8a1d5ef2e8a3f0aee52f0f599bbda470c876d9a71e22b1cbc.mp3",
+              "sha256": "0705ded5f2c82bb8a1d5ef2e8a3f0aee52f0f599bbda470c876d9a71e22b1cbc",
+              "bytes": 3644
+            }
+          },
+          {
+            "id": "ccv-11-1",
+            "ne": "ट्टा",
+            "roman": "ṭṭā",
+            "meaning": "ट्ट ＋ आ",
+            "detail": "ट्ट + ा → ट्टा",
+            "speech": "ट्टा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2c89b7e93c5c8edf7bdb321a5f7e1fc6337d865ff253b6bbcba5207cc2f1f770.mp3",
+              "sha256": "2c89b7e93c5c8edf7bdb321a5f7e1fc6337d865ff253b6bbcba5207cc2f1f770",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-11-2",
+            "ne": "ट्टि",
+            "roman": "ṭṭi",
+            "meaning": "ट्ट ＋ इ",
+            "detail": "ट्ट + ि → ट्टि",
+            "speech": "ट्टि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cf2c9b274e4b1647b8b55b330e8daea9fd166d5f845aa047937dde40a1f42058.mp3",
+              "sha256": "cf2c9b274e4b1647b8b55b330e8daea9fd166d5f845aa047937dde40a1f42058",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-11-3",
+            "ne": "ट्टी",
+            "roman": "ṭṭī",
+            "meaning": "ट्ट ＋ ई",
+            "detail": "ट्ट + ी → ट्टी",
+            "speech": "ट्टी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c340a69ad1ff35ca0ffdf17e503261bcbac7fe6138e276c571b50e820d1d53d6.mp3",
+              "sha256": "c340a69ad1ff35ca0ffdf17e503261bcbac7fe6138e276c571b50e820d1d53d6",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-11-4",
+            "ne": "ट्टु",
+            "roman": "ṭṭu",
+            "meaning": "ट्ट ＋ उ",
+            "detail": "ट्ट + ु → ट्टु",
+            "speech": "ट्टु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9b42c412ec2c3072c72f8aecabdae115c8a322c97b9c364580c9b39555c6c8a1.mp3",
+              "sha256": "9b42c412ec2c3072c72f8aecabdae115c8a322c97b9c364580c9b39555c6c8a1",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-11-5",
+            "ne": "ट्टू",
+            "roman": "ṭṭū",
+            "meaning": "ट्ट ＋ ऊ",
+            "detail": "ट्ट + ू → ट्टू",
+            "speech": "ट्टू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0c1b99878f5aed79382b727c0207694b8ccb2085fbed764305dd52a50faff72b.mp3",
+              "sha256": "0c1b99878f5aed79382b727c0207694b8ccb2085fbed764305dd52a50faff72b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-11-6",
+            "ne": "ट्टृ",
+            "roman": "ṭṭri",
+            "meaning": "ट्ट ＋ ऋ",
+            "detail": "ट्ट + ृ → ट्टृ",
+            "speech": "ट्टृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cb5e93c143ea36125520751441fce98d480fba33fa8ef15f70a7b7570e3b307d.mp3",
+              "sha256": "cb5e93c143ea36125520751441fce98d480fba33fa8ef15f70a7b7570e3b307d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-11-7",
+            "ne": "ट्टे",
+            "roman": "ṭṭe",
+            "meaning": "ट्ट ＋ ए",
+            "detail": "ट्ट + े → ट्टे",
+            "speech": "ट्टे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f18021c39e04d0e239ebdea3fcd820366593eafa8f253c236dc3bf9a7eea9865.mp3",
+              "sha256": "f18021c39e04d0e239ebdea3fcd820366593eafa8f253c236dc3bf9a7eea9865",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-11-8",
+            "ne": "ट्टै",
+            "roman": "ṭṭai",
+            "meaning": "ट्ट ＋ ऐ",
+            "detail": "ट्ट + ै → ट्टै",
+            "speech": "ट्टै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-afdf99c9637e63f2dfbc065024cb72788b0ade606e6199b78ca0024a97c4993b.mp3",
+              "sha256": "afdf99c9637e63f2dfbc065024cb72788b0ade606e6199b78ca0024a97c4993b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-11-9",
+            "ne": "ट्टो",
+            "roman": "ṭṭo",
+            "meaning": "ट्ट ＋ ओ",
+            "detail": "ट्ट + ो → ट्टो",
+            "speech": "ट्टो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-36ca9f0ea571fce17c0651a487575da79914323d08ca47d0bad129522e57fe9c.mp3",
+              "sha256": "36ca9f0ea571fce17c0651a487575da79914323d08ca47d0bad129522e57fe9c",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-11-10",
+            "ne": "ट्टौ",
+            "roman": "ṭṭau",
+            "meaning": "ट्ट ＋ औ",
+            "detail": "ट्ट + ौ → ट्टौ",
+            "speech": "ट्टौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-47f0127607f112bc4942e88a6eb484c5ef4ffade37479a85c85659baea42b2da.mp3",
+              "sha256": "47f0127607f112bc4942e88a6eb484c5ef4ffade37479a85c85659baea42b2da",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "ण्ड",
+        "roman": "ṇḍa",
+        "samples": [
+          {
+            "id": "ccv-12-0",
+            "ne": "ण्ड",
+            "roman": "ṇḍa",
+            "meaning": "ण्ड ＋ अ",
+            "detail": "ण्ड + अ → ण्ड",
+            "speech": "ण्ड",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4e8599f1aa388abbfa42248cbfc835ec85f1d0fd26c627a3e33bf80f68718743.mp3",
+              "sha256": "4e8599f1aa388abbfa42248cbfc835ec85f1d0fd26c627a3e33bf80f68718743",
+              "bytes": 3788
+            }
+          },
+          {
+            "id": "ccv-12-1",
+            "ne": "ण्डा",
+            "roman": "ṇḍā",
+            "meaning": "ण्ड ＋ आ",
+            "detail": "ण्ड + ा → ण्डा",
+            "speech": "ण्डा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-19b7036ac5ce75b98ad58e01021c16dba69faaf63e72be022f245f6d64f1b8dc.mp3",
+              "sha256": "19b7036ac5ce75b98ad58e01021c16dba69faaf63e72be022f245f6d64f1b8dc",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-12-2",
+            "ne": "ण्डि",
+            "roman": "ṇḍi",
+            "meaning": "ण्ड ＋ इ",
+            "detail": "ण्ड + ि → ण्डि",
+            "speech": "ण्डि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7d2f68e812f2e217bd9c954a04372d7dd9470159fdcf27e3553b7ce8a58c6bc1.mp3",
+              "sha256": "7d2f68e812f2e217bd9c954a04372d7dd9470159fdcf27e3553b7ce8a58c6bc1",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-12-3",
+            "ne": "ण्डी",
+            "roman": "ṇḍī",
+            "meaning": "ण्ड ＋ ई",
+            "detail": "ण्ड + ी → ण्डी",
+            "speech": "ण्डी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-be31fbb25b62aaf304e5d1a6007a6492a7e9abbf74f75882fb5e8a8d0df82ee9.mp3",
+              "sha256": "be31fbb25b62aaf304e5d1a6007a6492a7e9abbf74f75882fb5e8a8d0df82ee9",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-12-4",
+            "ne": "ण्डु",
+            "roman": "ṇḍu",
+            "meaning": "ण्ड ＋ उ",
+            "detail": "ण्ड + ु → ण्डु",
+            "speech": "ण्डु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-61e6d22b76ec9289c7905b67c7e53c55630ccdaf1f9d5bf966dab869624d990f.mp3",
+              "sha256": "61e6d22b76ec9289c7905b67c7e53c55630ccdaf1f9d5bf966dab869624d990f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-12-5",
+            "ne": "ण्डू",
+            "roman": "ṇḍū",
+            "meaning": "ण्ड ＋ ऊ",
+            "detail": "ण्ड + ू → ण्डू",
+            "speech": "ण्डू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-672fc47c58bc086fc1f4e53a894b002dbe7b47fb96562dadfb1eb4edd64bd909.mp3",
+              "sha256": "672fc47c58bc086fc1f4e53a894b002dbe7b47fb96562dadfb1eb4edd64bd909",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-12-6",
+            "ne": "ण्डृ",
+            "roman": "ṇḍri",
+            "meaning": "ण्ड ＋ ऋ",
+            "detail": "ण्ड + ृ → ण्डृ",
+            "speech": "ण्डृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-953b299b95d47f5c3bd11850b91361317d8fafe532365b9cd597eb0afbeecf4a.mp3",
+              "sha256": "953b299b95d47f5c3bd11850b91361317d8fafe532365b9cd597eb0afbeecf4a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-12-7",
+            "ne": "ण्डे",
+            "roman": "ṇḍe",
+            "meaning": "ण्ड ＋ ए",
+            "detail": "ण्ड + े → ण्डे",
+            "speech": "ण्डे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5695466c5b7422007c7f0877b8b597962f4b99db0976e09d45b72e4cd06351b7.mp3",
+              "sha256": "5695466c5b7422007c7f0877b8b597962f4b99db0976e09d45b72e4cd06351b7",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-12-8",
+            "ne": "ण्डै",
+            "roman": "ṇḍai",
+            "meaning": "ण्ड ＋ ऐ",
+            "detail": "ण्ड + ै → ण्डै",
+            "speech": "ण्डै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-05e4f84cbde5ba3c46f5978f5f6bf6ddce866dd2e61d51f072e4b57cf2b71b10.mp3",
+              "sha256": "05e4f84cbde5ba3c46f5978f5f6bf6ddce866dd2e61d51f072e4b57cf2b71b10",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-12-9",
+            "ne": "ण्डो",
+            "roman": "ṇḍo",
+            "meaning": "ण्ड ＋ ओ",
+            "detail": "ण्ड + ो → ण्डो",
+            "speech": "ण्डो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fb19592c71e0baa1d86a4d35d03605ad013896f846ad7de6edf703f8e39e71ce.mp3",
+              "sha256": "fb19592c71e0baa1d86a4d35d03605ad013896f846ad7de6edf703f8e39e71ce",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-12-10",
+            "ne": "ण्डौ",
+            "roman": "ṇḍau",
+            "meaning": "ण्ड ＋ औ",
+            "detail": "ण्ड + ौ → ण्डौ",
+            "speech": "ण्डौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e73630e607ce7634efab256a561d2c1cadf2f1236ccfb9551f61adfcd324c416.mp3",
+              "sha256": "e73630e607ce7634efab256a561d2c1cadf2f1236ccfb9551f61adfcd324c416",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "त्त",
+        "roman": "tta",
+        "samples": [
+          {
+            "id": "ccv-13-0",
+            "ne": "त्त",
+            "roman": "tta",
+            "meaning": "त्त ＋ अ",
+            "detail": "त्त + अ → त्त",
+            "speech": "त्त",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f5a14f83ae5d8ad3ef147e04eb0d05d37e4389dc024df1e90771c03286410ccd.mp3",
+              "sha256": "f5a14f83ae5d8ad3ef147e04eb0d05d37e4389dc024df1e90771c03286410ccd",
+              "bytes": 3788
+            }
+          },
+          {
+            "id": "ccv-13-1",
+            "ne": "त्ता",
+            "roman": "ttā",
+            "meaning": "त्त ＋ आ",
+            "detail": "त्त + ा → त्ता",
+            "speech": "त्ता",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-107e924fc08435337da31df6d85c1e929b6bb126758bee5400347fead0ed6584.mp3",
+              "sha256": "107e924fc08435337da31df6d85c1e929b6bb126758bee5400347fead0ed6584",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-13-2",
+            "ne": "त्ति",
+            "roman": "tti",
+            "meaning": "त्त ＋ इ",
+            "detail": "त्त + ि → त्ति",
+            "speech": "त्ति",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-703cf812f86a5ba3350b111dbfc213ca25ef446b00f6d4f23704fb3b28f3d571.mp3",
+              "sha256": "703cf812f86a5ba3350b111dbfc213ca25ef446b00f6d4f23704fb3b28f3d571",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-13-3",
+            "ne": "त्ती",
+            "roman": "ttī",
+            "meaning": "त्त ＋ ई",
+            "detail": "त्त + ी → त्ती",
+            "speech": "त्ती",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-362c3af1d9664ffead3d035b559ddafbb8fc77fdcba06937013bf1cdfb418953.mp3",
+              "sha256": "362c3af1d9664ffead3d035b559ddafbb8fc77fdcba06937013bf1cdfb418953",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-13-4",
+            "ne": "त्तु",
+            "roman": "ttu",
+            "meaning": "त्त ＋ उ",
+            "detail": "त्त + ु → त्तु",
+            "speech": "त्तु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0368a9377b05a4afc2d4dbbba47b14bbe17636f427c1b730068e9a9d123656d9.mp3",
+              "sha256": "0368a9377b05a4afc2d4dbbba47b14bbe17636f427c1b730068e9a9d123656d9",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-13-5",
+            "ne": "त्तू",
+            "roman": "ttū",
+            "meaning": "त्त ＋ ऊ",
+            "detail": "त्त + ू → त्तू",
+            "speech": "त्तू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b558ba43d2d8d5ad136f18f69e62352e5935c3a6660102fe9a7a0010047bdb5b.mp3",
+              "sha256": "b558ba43d2d8d5ad136f18f69e62352e5935c3a6660102fe9a7a0010047bdb5b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-13-6",
+            "ne": "त्तृ",
+            "roman": "ttri",
+            "meaning": "त्त ＋ ऋ",
+            "detail": "त्त + ृ → त्तृ",
+            "speech": "त्तृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-48ba2b6fd3b08d8c37a11114a71dd5b0fca9be4aa18cc7c379e219756da83ac5.mp3",
+              "sha256": "48ba2b6fd3b08d8c37a11114a71dd5b0fca9be4aa18cc7c379e219756da83ac5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-13-7",
+            "ne": "त्ते",
+            "roman": "tte",
+            "meaning": "त्त ＋ ए",
+            "detail": "त्त + े → त्ते",
+            "speech": "त्ते",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d684b7731d50b5dc14879af1132315027fcf2a021e2b8d5e61fc61b2d68b73d9.mp3",
+              "sha256": "d684b7731d50b5dc14879af1132315027fcf2a021e2b8d5e61fc61b2d68b73d9",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-13-8",
+            "ne": "त्तै",
+            "roman": "ttai",
+            "meaning": "त्त ＋ ऐ",
+            "detail": "त्त + ै → त्तै",
+            "speech": "त्तै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-385845bf152064cebd041fe53d7e0d4197d121ee6268def2cb58d3fa10aeb1f1.mp3",
+              "sha256": "385845bf152064cebd041fe53d7e0d4197d121ee6268def2cb58d3fa10aeb1f1",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-13-9",
+            "ne": "त्तो",
+            "roman": "tto",
+            "meaning": "त्त ＋ ओ",
+            "detail": "त्त + ो → त्तो",
+            "speech": "त्तो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-ef853b06e081a8590066d329cead9967179d987f94553cbe9eb3531f85de662d.mp3",
+              "sha256": "ef853b06e081a8590066d329cead9967179d987f94553cbe9eb3531f85de662d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-13-10",
+            "ne": "त्तौ",
+            "roman": "ttau",
+            "meaning": "त्त ＋ औ",
+            "detail": "त्त + ौ → त्तौ",
+            "speech": "त्तौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d9795d032a1cefb3e4683c0d54df610199054cc67f48e841c6763e5994dd8082.mp3",
+              "sha256": "d9795d032a1cefb3e4683c0d54df610199054cc67f48e841c6763e5994dd8082",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "द्ध",
+        "roman": "ddha",
+        "samples": [
+          {
+            "id": "ccv-14-0",
+            "ne": "द्ध",
+            "roman": "ddha",
+            "meaning": "द्ध ＋ अ",
+            "detail": "द्ध + अ → द्ध",
+            "speech": "द्ध",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5a7d5e472039602ec9daadd3029b04de2b7047f54aab08e80bbdbe6d390e4967.mp3",
+              "sha256": "5a7d5e472039602ec9daadd3029b04de2b7047f54aab08e80bbdbe6d390e4967",
+              "bytes": 3932
+            }
+          },
+          {
+            "id": "ccv-14-1",
+            "ne": "द्धा",
+            "roman": "ddhā",
+            "meaning": "द्ध ＋ आ",
+            "detail": "द्ध + ा → द्धा",
+            "speech": "द्धा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8fefda14458c4bcb8c4ec50a85b91cedc19889b0d9a0a739ee60d87f3fa2c53b.mp3",
+              "sha256": "8fefda14458c4bcb8c4ec50a85b91cedc19889b0d9a0a739ee60d87f3fa2c53b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-14-2",
+            "ne": "द्धि",
+            "roman": "ddhi",
+            "meaning": "द्ध ＋ इ",
+            "detail": "द्ध + ि → द्धि",
+            "speech": "द्धि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-95984b00d35f9a6a1bbba26d52eaa9cf4da99d2cad110f61b65f9c752d195665.mp3",
+              "sha256": "95984b00d35f9a6a1bbba26d52eaa9cf4da99d2cad110f61b65f9c752d195665",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-14-3",
+            "ne": "द्धी",
+            "roman": "ddhī",
+            "meaning": "द्ध ＋ ई",
+            "detail": "द्ध + ी → द्धी",
+            "speech": "द्धी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8b5ad3a54eb39d172a4ff768d0a62b326b1d8808c03dacea475b15cdfa53b570.mp3",
+              "sha256": "8b5ad3a54eb39d172a4ff768d0a62b326b1d8808c03dacea475b15cdfa53b570",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-14-4",
+            "ne": "द्धु",
+            "roman": "ddhu",
+            "meaning": "द्ध ＋ उ",
+            "detail": "द्ध + ु → द्धु",
+            "speech": "द्धु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-afeec4d18e8a7ed9c7df13fc81e28f71e94348f78719a1b5f19c61eeb3db6c4b.mp3",
+              "sha256": "afeec4d18e8a7ed9c7df13fc81e28f71e94348f78719a1b5f19c61eeb3db6c4b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-14-5",
+            "ne": "द्धू",
+            "roman": "ddhū",
+            "meaning": "द्ध ＋ ऊ",
+            "detail": "द्ध + ू → द्धू",
+            "speech": "द्धू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7213212bc1bbbf9c697733a1ad728dd24ee6807c5e90e6e4af9d779cedc082fc.mp3",
+              "sha256": "7213212bc1bbbf9c697733a1ad728dd24ee6807c5e90e6e4af9d779cedc082fc",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-14-6",
+            "ne": "द्धृ",
+            "roman": "ddhri",
+            "meaning": "द्ध ＋ ऋ",
+            "detail": "द्ध + ृ → द्धृ",
+            "speech": "द्धृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9206738d3f1b4aa1958b8e4fafd4f26e6a0ee6eef7bfa80112333924199d455f.mp3",
+              "sha256": "9206738d3f1b4aa1958b8e4fafd4f26e6a0ee6eef7bfa80112333924199d455f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-14-7",
+            "ne": "द्धे",
+            "roman": "ddhe",
+            "meaning": "द्ध ＋ ए",
+            "detail": "द्ध + े → द्धे",
+            "speech": "द्धे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cd4f78e4d23aa091cf74263f736d62ebc0f7cbdbe64e919fb0f4f85db673928f.mp3",
+              "sha256": "cd4f78e4d23aa091cf74263f736d62ebc0f7cbdbe64e919fb0f4f85db673928f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-14-8",
+            "ne": "द्धै",
+            "roman": "ddhai",
+            "meaning": "द्ध ＋ ऐ",
+            "detail": "द्ध + ै → द्धै",
+            "speech": "द्धै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5305f662d232ecaf548ef183ca185047480402d87a7751e589cda7cfcdb2a105.mp3",
+              "sha256": "5305f662d232ecaf548ef183ca185047480402d87a7751e589cda7cfcdb2a105",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-14-9",
+            "ne": "द्धो",
+            "roman": "ddho",
+            "meaning": "द्ध ＋ ओ",
+            "detail": "द्ध + ो → द्धो",
+            "speech": "द्धो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a73c4673d8f4d2a5456d3ccf117a0a3116326fa5cdf2a089dba5470603d7e91c.mp3",
+              "sha256": "a73c4673d8f4d2a5456d3ccf117a0a3116326fa5cdf2a089dba5470603d7e91c",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-14-10",
+            "ne": "द्धौ",
+            "roman": "ddhau",
+            "meaning": "द्ध ＋ औ",
+            "detail": "द्ध + ौ → द्धौ",
+            "speech": "द्धौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1cb3a81d287c7e2a9f2a2d8e61288106c00de7889bd909c50f55a85e38205fa7.mp3",
+              "sha256": "1cb3a81d287c7e2a9f2a2d8e61288106c00de7889bd909c50f55a85e38205fa7",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "द्य",
+        "roman": "dya",
+        "samples": [
+          {
+            "id": "ccv-15-0",
+            "ne": "द्य",
+            "roman": "dya",
+            "meaning": "द्य ＋ अ",
+            "detail": "द्य + अ → द्य",
+            "speech": "द्य",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fdbf561ac9a3b01e5ff3f633a223194cb55b6d4059d5b3b9299d438a40b08493.mp3",
+              "sha256": "fdbf561ac9a3b01e5ff3f633a223194cb55b6d4059d5b3b9299d438a40b08493",
+              "bytes": 3644
+            }
+          },
+          {
+            "id": "ccv-15-1",
+            "ne": "द्या",
+            "roman": "dyā",
+            "meaning": "द्य ＋ आ",
+            "detail": "द्य + ा → द्या",
+            "speech": "द्या",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-24f54354067231278235fc7c5a75932e556ae2c2f61dffb46bf57a3eff3716f5.mp3",
+              "sha256": "24f54354067231278235fc7c5a75932e556ae2c2f61dffb46bf57a3eff3716f5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-15-2",
+            "ne": "द्यि",
+            "roman": "dyi",
+            "meaning": "द्य ＋ इ",
+            "detail": "द्य + ि → द्यि",
+            "speech": "द्यि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f58f5137b0b1fae9a233e9916a41af076a6ac60caa8431818f53599788e79d7f.mp3",
+              "sha256": "f58f5137b0b1fae9a233e9916a41af076a6ac60caa8431818f53599788e79d7f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-15-3",
+            "ne": "द्यी",
+            "roman": "dyī",
+            "meaning": "द्य ＋ ई",
+            "detail": "द्य + ी → द्यी",
+            "speech": "द्यी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9b0b34f9dc7c8cd3007bf06ea74e7d377cf098a908c619cc8c5e49ef1c64d392.mp3",
+              "sha256": "9b0b34f9dc7c8cd3007bf06ea74e7d377cf098a908c619cc8c5e49ef1c64d392",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-15-4",
+            "ne": "द्यु",
+            "roman": "dyu",
+            "meaning": "द्य ＋ उ",
+            "detail": "द्य + ु → द्यु",
+            "speech": "द्यु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-10ca1d90554e4d668d31e4c206975f3414ccf4efd9e37cdc480d93ea4f934552.mp3",
+              "sha256": "10ca1d90554e4d668d31e4c206975f3414ccf4efd9e37cdc480d93ea4f934552",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-15-5",
+            "ne": "द्यू",
+            "roman": "dyū",
+            "meaning": "द्य ＋ ऊ",
+            "detail": "द्य + ू → द्यू",
+            "speech": "द्यू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8f19a49178e9fa21ba9ce29d541f8362d42fe58865bbc4f4b361f7a483859ed3.mp3",
+              "sha256": "8f19a49178e9fa21ba9ce29d541f8362d42fe58865bbc4f4b361f7a483859ed3",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-15-6",
+            "ne": "द्यृ",
+            "roman": "dyri",
+            "meaning": "द्य ＋ ऋ",
+            "detail": "द्य + ृ → द्यृ",
+            "speech": "द्यृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d372de2ceb5e8184e97380ca8cb048e94aed204cde3693ab6f182380b1d4dc55.mp3",
+              "sha256": "d372de2ceb5e8184e97380ca8cb048e94aed204cde3693ab6f182380b1d4dc55",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-15-7",
+            "ne": "द्ये",
+            "roman": "dye",
+            "meaning": "द्य ＋ ए",
+            "detail": "द्य + े → द्ये",
+            "speech": "द्ये",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-49fddff3fce7bfb9465cda7308a849c8fe7100938bcdc1ce292e2f01b8f7ed8f.mp3",
+              "sha256": "49fddff3fce7bfb9465cda7308a849c8fe7100938bcdc1ce292e2f01b8f7ed8f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-15-8",
+            "ne": "द्यै",
+            "roman": "dyai",
+            "meaning": "द्य ＋ ऐ",
+            "detail": "द्य + ै → द्यै",
+            "speech": "द्यै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3cf3de36d7d0139b8396c4b34d22c500bf8a7fb521b59b6b1e25ef871a432cfe.mp3",
+              "sha256": "3cf3de36d7d0139b8396c4b34d22c500bf8a7fb521b59b6b1e25ef871a432cfe",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-15-9",
+            "ne": "द्यो",
+            "roman": "dyo",
+            "meaning": "द्य ＋ ओ",
+            "detail": "द्य + ो → द्यो",
+            "speech": "द्यो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1bd092d149e0ecaea6eec66a1a0b3b067ce30a19a738d7d25df799fd9c1f6efd.mp3",
+              "sha256": "1bd092d149e0ecaea6eec66a1a0b3b067ce30a19a738d7d25df799fd9c1f6efd",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-15-10",
+            "ne": "द्यौ",
+            "roman": "dyau",
+            "meaning": "द्य ＋ औ",
+            "detail": "द्य + ौ → द्यौ",
+            "speech": "द्यौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b771ca8afb450997265b9f88b8abac228a57110323e88b10db7113e68d0b3028.mp3",
+              "sha256": "b771ca8afb450997265b9f88b8abac228a57110323e88b10db7113e68d0b3028",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "द्व",
+        "roman": "dva",
+        "samples": [
+          {
+            "id": "ccv-16-0",
+            "ne": "द्व",
+            "roman": "dva",
+            "meaning": "द्व ＋ अ",
+            "detail": "द्व + अ → द्व",
+            "speech": "द्व",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c7e96f18f46f7495ddce931b71dec02b69f4cbb66681fb59d42f997ae39ac2de.mp3",
+              "sha256": "c7e96f18f46f7495ddce931b71dec02b69f4cbb66681fb59d42f997ae39ac2de",
+              "bytes": 3644
+            }
+          },
+          {
+            "id": "ccv-16-1",
+            "ne": "द्वा",
+            "roman": "dvā",
+            "meaning": "द्व ＋ आ",
+            "detail": "द्व + ा → द्वा",
+            "speech": "द्वा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4f4daf39f5a725e40ce7a07655af879c65386a50c53a61b8e2a45c5e9da8583b.mp3",
+              "sha256": "4f4daf39f5a725e40ce7a07655af879c65386a50c53a61b8e2a45c5e9da8583b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-16-2",
+            "ne": "द्वि",
+            "roman": "dvi",
+            "meaning": "द्व ＋ इ",
+            "detail": "द्व + ि → द्वि",
+            "speech": "द्वि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-323949461a07f36d97a087658873d3f685116eabbd15c33abd8dfe72d8a8fd1f.mp3",
+              "sha256": "323949461a07f36d97a087658873d3f685116eabbd15c33abd8dfe72d8a8fd1f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-16-3",
+            "ne": "द्वी",
+            "roman": "dvī",
+            "meaning": "द्व ＋ ई",
+            "detail": "द्व + ी → द्वी",
+            "speech": "द्वी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2b98bf8476bb3649e179557943d31edf16637a776028d30020ab1ef02dadbe77.mp3",
+              "sha256": "2b98bf8476bb3649e179557943d31edf16637a776028d30020ab1ef02dadbe77",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-16-4",
+            "ne": "द्वु",
+            "roman": "dvu",
+            "meaning": "द्व ＋ उ",
+            "detail": "द्व + ु → द्वु",
+            "speech": "द्वु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b324ce598718b35bfab59dd8813b29d2541dbdb671ab663bd7a6b6785cba39ab.mp3",
+              "sha256": "b324ce598718b35bfab59dd8813b29d2541dbdb671ab663bd7a6b6785cba39ab",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-16-5",
+            "ne": "द्वू",
+            "roman": "dvū",
+            "meaning": "द्व ＋ ऊ",
+            "detail": "द्व + ू → द्वू",
+            "speech": "द्वू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f3aebda960007e7a83bcc3da8a19219925436ac8b686980373f8356185b6d0a0.mp3",
+              "sha256": "f3aebda960007e7a83bcc3da8a19219925436ac8b686980373f8356185b6d0a0",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-16-6",
+            "ne": "द्वृ",
+            "roman": "dvri",
+            "meaning": "द्व ＋ ऋ",
+            "detail": "द्व + ृ → द्वृ",
+            "speech": "द्वृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-36a774bc3afc78b24c8c82b54d4d2d81c9bb06a14242174efa766331c65ed974.mp3",
+              "sha256": "36a774bc3afc78b24c8c82b54d4d2d81c9bb06a14242174efa766331c65ed974",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-16-7",
+            "ne": "द्वे",
+            "roman": "dve",
+            "meaning": "द्व ＋ ए",
+            "detail": "द्व + े → द्वे",
+            "speech": "द्वे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8c9860cc54c15ccf056cbc57d8bd3e491c585eafaf59385797cddc49d700ca19.mp3",
+              "sha256": "8c9860cc54c15ccf056cbc57d8bd3e491c585eafaf59385797cddc49d700ca19",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-16-8",
+            "ne": "द्वै",
+            "roman": "dvai",
+            "meaning": "द्व ＋ ऐ",
+            "detail": "द्व + ै → द्वै",
+            "speech": "द्वै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1db354e203f84364192ce31131e04a0a189c69b5fc6ffb7bcbfd259cb0c1e838.mp3",
+              "sha256": "1db354e203f84364192ce31131e04a0a189c69b5fc6ffb7bcbfd259cb0c1e838",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-16-9",
+            "ne": "द्वो",
+            "roman": "dvo",
+            "meaning": "द्व ＋ ओ",
+            "detail": "द्व + ो → द्वो",
+            "speech": "द्वो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-67993b1354e2125ce387acaa2561d08c2f661f5be57c252bd78458eb78b75e28.mp3",
+              "sha256": "67993b1354e2125ce387acaa2561d08c2f661f5be57c252bd78458eb78b75e28",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-16-10",
+            "ne": "द्वौ",
+            "roman": "dvau",
+            "meaning": "द्व ＋ औ",
+            "detail": "द्व + ौ → द्वौ",
+            "speech": "द्वौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5181d85f55d42e6ff7f4c7be471c7995dc42354f8de709c6cc7288cb911155b3.mp3",
+              "sha256": "5181d85f55d42e6ff7f4c7be471c7995dc42354f8de709c6cc7288cb911155b3",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "न्त",
+        "roman": "nta",
+        "samples": [
+          {
+            "id": "ccv-17-0",
+            "ne": "न्त",
+            "roman": "nta",
+            "meaning": "न्त ＋ अ",
+            "detail": "न्त + अ → न्त",
+            "speech": "न्त",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-661585874de2cbbdbc1aec9c3182a4d0dabc7404825ee7ed2c213b5f88de51b2.mp3",
+              "sha256": "661585874de2cbbdbc1aec9c3182a4d0dabc7404825ee7ed2c213b5f88de51b2",
+              "bytes": 4076
+            }
+          },
+          {
+            "id": "ccv-17-1",
+            "ne": "न्ता",
+            "roman": "ntā",
+            "meaning": "न्त ＋ आ",
+            "detail": "न्त + ा → न्ता",
+            "speech": "न्ता",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e5a709ce860c4387c48e1635105bafcb0b5591b13be6b5c5369325e68840ebe3.mp3",
+              "sha256": "e5a709ce860c4387c48e1635105bafcb0b5591b13be6b5c5369325e68840ebe3",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-17-2",
+            "ne": "न्ति",
+            "roman": "nti",
+            "meaning": "न्त ＋ इ",
+            "detail": "न्त + ि → न्ति",
+            "speech": "न्ति",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fb75522c8a006646fc69f55cbbabe7b52f606f2d65c8b529ecc679fde6d5cb2c.mp3",
+              "sha256": "fb75522c8a006646fc69f55cbbabe7b52f606f2d65c8b529ecc679fde6d5cb2c",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-17-3",
+            "ne": "न्ती",
+            "roman": "ntī",
+            "meaning": "न्त ＋ ई",
+            "detail": "न्त + ी → न्ती",
+            "speech": "न्ती",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c88421dae872b9c9dfda85ce0b0455e22e8d10ba9566707392537d61589f7660.mp3",
+              "sha256": "c88421dae872b9c9dfda85ce0b0455e22e8d10ba9566707392537d61589f7660",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-17-4",
+            "ne": "न्तु",
+            "roman": "ntu",
+            "meaning": "न्त ＋ उ",
+            "detail": "न्त + ु → न्तु",
+            "speech": "न्तु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f3f18a6d54f8780870c66b269f68c96fb5b64ce624b849400fd8f5d83aab0333.mp3",
+              "sha256": "f3f18a6d54f8780870c66b269f68c96fb5b64ce624b849400fd8f5d83aab0333",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-17-5",
+            "ne": "न्तू",
+            "roman": "ntū",
+            "meaning": "न्त ＋ ऊ",
+            "detail": "न्त + ू → न्तू",
+            "speech": "न्तू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3a5260b15c25b45647613011e0d77927c309ccdeb74783be49a5a78bfad74111.mp3",
+              "sha256": "3a5260b15c25b45647613011e0d77927c309ccdeb74783be49a5a78bfad74111",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-17-6",
+            "ne": "न्तृ",
+            "roman": "ntri",
+            "meaning": "न्त ＋ ऋ",
+            "detail": "न्त + ृ → न्तृ",
+            "speech": "न्तृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e06e07ef1d63463b534ccaca1a1b4c12cdc5816ea644d3add3e3b1725856e026.mp3",
+              "sha256": "e06e07ef1d63463b534ccaca1a1b4c12cdc5816ea644d3add3e3b1725856e026",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-17-7",
+            "ne": "न्ते",
+            "roman": "nte",
+            "meaning": "न्त ＋ ए",
+            "detail": "न्त + े → न्ते",
+            "speech": "न्ते",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-ec319e790df49aa4255bf1a1f94075c7956395e0ac5eacd23e321b88aed9052a.mp3",
+              "sha256": "ec319e790df49aa4255bf1a1f94075c7956395e0ac5eacd23e321b88aed9052a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-17-8",
+            "ne": "न्तै",
+            "roman": "ntai",
+            "meaning": "न्त ＋ ऐ",
+            "detail": "न्त + ै → न्तै",
+            "speech": "न्तै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d1194aa692351f7f4a3562c04c154cd1a02402d1890314b14eae3eeb4625efe2.mp3",
+              "sha256": "d1194aa692351f7f4a3562c04c154cd1a02402d1890314b14eae3eeb4625efe2",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-17-9",
+            "ne": "न्तो",
+            "roman": "nto",
+            "meaning": "न्त ＋ ओ",
+            "detail": "न्त + ो → न्तो",
+            "speech": "न्तो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9268230b1fb093700fa767f5ba70e6b8ce3bd6064fd0426adda7c5c1cafd96ce.mp3",
+              "sha256": "9268230b1fb093700fa767f5ba70e6b8ce3bd6064fd0426adda7c5c1cafd96ce",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-17-10",
+            "ne": "न्तौ",
+            "roman": "ntau",
+            "meaning": "न्त ＋ औ",
+            "detail": "न्त + ौ → न्तौ",
+            "speech": "न्तौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-12cebea14167614b2100cc98c6fa8115e19c2e80120edb7db90128ae9ef59921.mp3",
+              "sha256": "12cebea14167614b2100cc98c6fa8115e19c2e80120edb7db90128ae9ef59921",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "न्द",
+        "roman": "nda",
+        "samples": [
+          {
+            "id": "ccv-18-0",
+            "ne": "न्द",
+            "roman": "nda",
+            "meaning": "न्द ＋ अ",
+            "detail": "न्द + अ → न्द",
+            "speech": "न्द",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3f08cbf3a939dd5b30aec10fdaa71ce74f526946c5be1ddf9503069d9d4e63da.mp3",
+              "sha256": "3f08cbf3a939dd5b30aec10fdaa71ce74f526946c5be1ddf9503069d9d4e63da",
+              "bytes": 3932
+            }
+          },
+          {
+            "id": "ccv-18-1",
+            "ne": "न्दा",
+            "roman": "ndā",
+            "meaning": "न्द ＋ आ",
+            "detail": "न्द + ा → न्दा",
+            "speech": "न्दा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6a7181385a340cfb3239a68df49bb1edea866a895565f8b349edcc6daa3d5eec.mp3",
+              "sha256": "6a7181385a340cfb3239a68df49bb1edea866a895565f8b349edcc6daa3d5eec",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-18-2",
+            "ne": "न्दि",
+            "roman": "ndi",
+            "meaning": "न्द ＋ इ",
+            "detail": "न्द + ि → न्दि",
+            "speech": "न्दि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7a7730ad1a95795c3441b169468cfbe2dd7c3324dafc18f2b77e3bfc967b6a70.mp3",
+              "sha256": "7a7730ad1a95795c3441b169468cfbe2dd7c3324dafc18f2b77e3bfc967b6a70",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-18-3",
+            "ne": "न्दी",
+            "roman": "ndī",
+            "meaning": "न्द ＋ ई",
+            "detail": "न्द + ी → न्दी",
+            "speech": "न्दी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1a07457f2a431d356c84a3b70cbc0f0d61cea96e6ca7293bd04e3dcfe7e01af4.mp3",
+              "sha256": "1a07457f2a431d356c84a3b70cbc0f0d61cea96e6ca7293bd04e3dcfe7e01af4",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-18-4",
+            "ne": "न्दु",
+            "roman": "ndu",
+            "meaning": "न्द ＋ उ",
+            "detail": "न्द + ु → न्दु",
+            "speech": "न्दु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-feb56c6bf32bb11ad0b34e29eb86f3bc902d89484cad1494dcc88baa7f67bcc2.mp3",
+              "sha256": "feb56c6bf32bb11ad0b34e29eb86f3bc902d89484cad1494dcc88baa7f67bcc2",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-18-5",
+            "ne": "न्दू",
+            "roman": "ndū",
+            "meaning": "न्द ＋ ऊ",
+            "detail": "न्द + ू → न्दू",
+            "speech": "न्दू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2358252db5e7469daea60dd369dfa0d09d925470f976f71380c3ce20d8398fc3.mp3",
+              "sha256": "2358252db5e7469daea60dd369dfa0d09d925470f976f71380c3ce20d8398fc3",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-18-6",
+            "ne": "न्दृ",
+            "roman": "ndri",
+            "meaning": "न्द ＋ ऋ",
+            "detail": "न्द + ृ → न्दृ",
+            "speech": "न्दृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5b025bc01e80e989cfa71348205574eaf75fef6f5b546350990cde4626d25339.mp3",
+              "sha256": "5b025bc01e80e989cfa71348205574eaf75fef6f5b546350990cde4626d25339",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-18-7",
+            "ne": "न्दे",
+            "roman": "nde",
+            "meaning": "न्द ＋ ए",
+            "detail": "न्द + े → न्दे",
+            "speech": "न्दे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-52edd87c1e7fe4c8156b84af55c6e3a2b811b4d1d78aa2d7fa39a32d70a3a5a8.mp3",
+              "sha256": "52edd87c1e7fe4c8156b84af55c6e3a2b811b4d1d78aa2d7fa39a32d70a3a5a8",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-18-8",
+            "ne": "न्दै",
+            "roman": "ndai",
+            "meaning": "न्द ＋ ऐ",
+            "detail": "न्द + ै → न्दै",
+            "speech": "न्दै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9768f209a3b68e6beb9e82fc2622d92fccaf8835375209c030a634e5954fddf9.mp3",
+              "sha256": "9768f209a3b68e6beb9e82fc2622d92fccaf8835375209c030a634e5954fddf9",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-18-9",
+            "ne": "न्दो",
+            "roman": "ndo",
+            "meaning": "न्द ＋ ओ",
+            "detail": "न्द + ो → न्दो",
+            "speech": "न्दो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a37c7167521c1f46f0040d532bcb9c0a644800d570664952f14c83d64dcb4c42.mp3",
+              "sha256": "a37c7167521c1f46f0040d532bcb9c0a644800d570664952f14c83d64dcb4c42",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-18-10",
+            "ne": "न्दौ",
+            "roman": "ndau",
+            "meaning": "न्द ＋ औ",
+            "detail": "न्द + ौ → न्दौ",
+            "speech": "न्दौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6bfe0ebed61202be99a9ca142639953d5085c3e68e21f88adfd3bd179d63d824.mp3",
+              "sha256": "6bfe0ebed61202be99a9ca142639953d5085c3e68e21f88adfd3bd179d63d824",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "प्र",
+        "roman": "pra",
+        "samples": [
+          {
+            "id": "ccv-19-0",
+            "ne": "प्र",
+            "roman": "pra",
+            "meaning": "प्र ＋ अ",
+            "detail": "प्र + अ → प्र",
+            "speech": "प्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c49f3158910d03fa23b93462e191d353653b71c5dc096201b8a1463dc2d48bde.mp3",
+              "sha256": "c49f3158910d03fa23b93462e191d353653b71c5dc096201b8a1463dc2d48bde",
+              "bytes": 3500
+            }
+          },
+          {
+            "id": "ccv-19-1",
+            "ne": "प्रा",
+            "roman": "prā",
+            "meaning": "प्र ＋ आ",
+            "detail": "प्र + ा → प्रा",
+            "speech": "प्रा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-43d159bf60cb426a40d4ac7a2fc67da896fee5979c6ee8a864334f2f3536ea78.mp3",
+              "sha256": "43d159bf60cb426a40d4ac7a2fc67da896fee5979c6ee8a864334f2f3536ea78",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-19-2",
+            "ne": "प्रि",
+            "roman": "pri",
+            "meaning": "प्र ＋ इ",
+            "detail": "प्र + ि → प्रि",
+            "speech": "प्रि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4aea0ec6a952e2466bd393c69ba554719108787ea937f2a14501d5a18a6a56d5.mp3",
+              "sha256": "4aea0ec6a952e2466bd393c69ba554719108787ea937f2a14501d5a18a6a56d5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-19-3",
+            "ne": "प्री",
+            "roman": "prī",
+            "meaning": "प्र ＋ ई",
+            "detail": "प्र + ी → प्री",
+            "speech": "प्री",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5d81e18becc23d34da9344a0f7346f80486b2696be74d7b3dc53c6e0686d52a6.mp3",
+              "sha256": "5d81e18becc23d34da9344a0f7346f80486b2696be74d7b3dc53c6e0686d52a6",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-19-4",
+            "ne": "प्रु",
+            "roman": "pru",
+            "meaning": "प्र ＋ उ",
+            "detail": "प्र + ु → प्रु",
+            "speech": "प्रु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-01d9b62822bf74da56d5af8939b679ad3fc94fee98f90f6e54572de4c34f7eac.mp3",
+              "sha256": "01d9b62822bf74da56d5af8939b679ad3fc94fee98f90f6e54572de4c34f7eac",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-19-5",
+            "ne": "प्रू",
+            "roman": "prū",
+            "meaning": "प्र ＋ ऊ",
+            "detail": "प्र + ू → प्रू",
+            "speech": "प्रू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-15d3ca5972f6917b0b45d0f5952ffd994c8d9eadf4df8e71c9b573378cd2c0b8.mp3",
+              "sha256": "15d3ca5972f6917b0b45d0f5952ffd994c8d9eadf4df8e71c9b573378cd2c0b8",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-19-6",
+            "ne": "प्रृ",
+            "roman": "prri",
+            "meaning": "प्र ＋ ऋ",
+            "detail": "प्र + ृ → प्रृ",
+            "speech": "प्रृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cc56637a2accce2280babbb0ee7299d309a996c0900d659dc4c8c4a01773a90a.mp3",
+              "sha256": "cc56637a2accce2280babbb0ee7299d309a996c0900d659dc4c8c4a01773a90a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-19-7",
+            "ne": "प्रे",
+            "roman": "pre",
+            "meaning": "प्र ＋ ए",
+            "detail": "प्र + े → प्रे",
+            "speech": "प्रे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b5b2d20511fda9d3adbc3e5ab92242183e9380935df8bb6e58d63b9b0fedd13b.mp3",
+              "sha256": "b5b2d20511fda9d3adbc3e5ab92242183e9380935df8bb6e58d63b9b0fedd13b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-19-8",
+            "ne": "प्रै",
+            "roman": "prai",
+            "meaning": "प्र ＋ ऐ",
+            "detail": "प्र + ै → प्रै",
+            "speech": "प्रै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-942de37f7cca8e1760ddc2ecdd655bcbcb9dba3af283957087d41371be8eb9bb.mp3",
+              "sha256": "942de37f7cca8e1760ddc2ecdd655bcbcb9dba3af283957087d41371be8eb9bb",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-19-9",
+            "ne": "प्रो",
+            "roman": "pro",
+            "meaning": "प्र ＋ ओ",
+            "detail": "प्र + ो → प्रो",
+            "speech": "प्रो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-93948f5fbda71af024b14ca92058bbbf7e552f5d64ae784851ce46dc4c8f3d8a.mp3",
+              "sha256": "93948f5fbda71af024b14ca92058bbbf7e552f5d64ae784851ce46dc4c8f3d8a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-19-10",
+            "ne": "प्रौ",
+            "roman": "prau",
+            "meaning": "प्र ＋ औ",
+            "detail": "प्र + ौ → प्रौ",
+            "speech": "प्रौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c174b7a3b7c359afeeecc5e58f767f6708e821e21605b5f595a7b0ee1195127e.mp3",
+              "sha256": "c174b7a3b7c359afeeecc5e58f767f6708e821e21605b5f595a7b0ee1195127e",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "म्ब",
+        "roman": "mba",
+        "samples": [
+          {
+            "id": "ccv-20-0",
+            "ne": "म्ब",
+            "roman": "mba",
+            "meaning": "म्ब ＋ अ",
+            "detail": "म्ब + अ → म्ब",
+            "speech": "म्ब",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-64394d268c3a7fc7d01bec016c02579b04aefd1e4924cbacdf09bf0f569966dd.mp3",
+              "sha256": "64394d268c3a7fc7d01bec016c02579b04aefd1e4924cbacdf09bf0f569966dd",
+              "bytes": 3788
+            }
+          },
+          {
+            "id": "ccv-20-1",
+            "ne": "म्बा",
+            "roman": "mbā",
+            "meaning": "म्ब ＋ आ",
+            "detail": "म्ब + ा → म्बा",
+            "speech": "म्बा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c4a6981cae68b7b6883ca5012f08f4b835fbeca86a6ce73435a791e1c0de45f7.mp3",
+              "sha256": "c4a6981cae68b7b6883ca5012f08f4b835fbeca86a6ce73435a791e1c0de45f7",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-20-2",
+            "ne": "म्बि",
+            "roman": "mbi",
+            "meaning": "म्ब ＋ इ",
+            "detail": "म्ब + ि → म्बि",
+            "speech": "म्बि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8bc0088569e7180aa904641a98ed6abebc2ad2b69c90b8e5f65dc93711f39233.mp3",
+              "sha256": "8bc0088569e7180aa904641a98ed6abebc2ad2b69c90b8e5f65dc93711f39233",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-20-3",
+            "ne": "म्बी",
+            "roman": "mbī",
+            "meaning": "म्ब ＋ ई",
+            "detail": "म्ब + ी → म्बी",
+            "speech": "म्बी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-33b551429441d0aff026851ce700bd8d462ad2f84297b632f3bc54c2c6410290.mp3",
+              "sha256": "33b551429441d0aff026851ce700bd8d462ad2f84297b632f3bc54c2c6410290",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-20-4",
+            "ne": "म्बु",
+            "roman": "mbu",
+            "meaning": "म्ब ＋ उ",
+            "detail": "म्ब + ु → म्बु",
+            "speech": "म्बु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-33b6fa30d67346efff373e19ef112d46bd9d696c7042fbbaf7bf79f67b272476.mp3",
+              "sha256": "33b6fa30d67346efff373e19ef112d46bd9d696c7042fbbaf7bf79f67b272476",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-20-5",
+            "ne": "म्बू",
+            "roman": "mbū",
+            "meaning": "म्ब ＋ ऊ",
+            "detail": "म्ब + ू → म्बू",
+            "speech": "म्बू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-75bc64e5688d1532856ab237a1eafa781aaa089815e9f79376c28de5b99a5699.mp3",
+              "sha256": "75bc64e5688d1532856ab237a1eafa781aaa089815e9f79376c28de5b99a5699",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-20-6",
+            "ne": "म्बृ",
+            "roman": "mbri",
+            "meaning": "म्ब ＋ ऋ",
+            "detail": "म्ब + ृ → म्बृ",
+            "speech": "म्बृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-357df826266ba8c78e6cfc76487a9344ae1556f8a11d872a82e9e1a9e4762005.mp3",
+              "sha256": "357df826266ba8c78e6cfc76487a9344ae1556f8a11d872a82e9e1a9e4762005",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-20-7",
+            "ne": "म्बे",
+            "roman": "mbe",
+            "meaning": "म्ब ＋ ए",
+            "detail": "म्ब + े → म्बे",
+            "speech": "म्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e8ee7cc636395d939dc030cb0aa142a20a297b41a1df815ab766dadc014b6fb0.mp3",
+              "sha256": "e8ee7cc636395d939dc030cb0aa142a20a297b41a1df815ab766dadc014b6fb0",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-20-8",
+            "ne": "म्बै",
+            "roman": "mbai",
+            "meaning": "म्ब ＋ ऐ",
+            "detail": "म्ब + ै → म्बै",
+            "speech": "म्बै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-eba6b12f8bf30e17cf547fc5406ba36add62ec93836b7bc8fe5a78a739468e9f.mp3",
+              "sha256": "eba6b12f8bf30e17cf547fc5406ba36add62ec93836b7bc8fe5a78a739468e9f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-20-9",
+            "ne": "म्बो",
+            "roman": "mbo",
+            "meaning": "म्ब ＋ ओ",
+            "detail": "म्ब + ो → म्बो",
+            "speech": "म्बो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d96f4bdce67d78af9e1ed77cd218641e1734f649de9f566c97eecb165ed4e7ea.mp3",
+              "sha256": "d96f4bdce67d78af9e1ed77cd218641e1734f649de9f566c97eecb165ed4e7ea",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-20-10",
+            "ne": "म्बौ",
+            "roman": "mbau",
+            "meaning": "म्ब ＋ औ",
+            "detail": "म्ब + ौ → म्बौ",
+            "speech": "म्बौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6363b2c92e1a9ef16b34a2f10204fc8b30b1e748256c34dabfd7bf24fde435e2.mp3",
+              "sha256": "6363b2c92e1a9ef16b34a2f10204fc8b30b1e748256c34dabfd7bf24fde435e2",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "म्र",
+        "roman": "mra",
+        "samples": [
+          {
+            "id": "ccv-21-0",
+            "ne": "म्र",
+            "roman": "mra",
+            "meaning": "म्र ＋ अ",
+            "detail": "म्र + अ → म्र",
+            "speech": "म्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-830e51bc86f6c71bb1e0478a5149bd98d06800846eed50fca12c6c1127ae3210.mp3",
+              "sha256": "830e51bc86f6c71bb1e0478a5149bd98d06800846eed50fca12c6c1127ae3210",
+              "bytes": 3932
+            }
+          },
+          {
+            "id": "ccv-21-1",
+            "ne": "म्रा",
+            "roman": "mrā",
+            "meaning": "म्र ＋ आ",
+            "detail": "म्र + ा → म्रा",
+            "speech": "म्रा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2c5581cd3f3eed6a064b9b8abc87c893a6978593637d49dada0a35226ec3d795.mp3",
+              "sha256": "2c5581cd3f3eed6a064b9b8abc87c893a6978593637d49dada0a35226ec3d795",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-21-2",
+            "ne": "म्रि",
+            "roman": "mri",
+            "meaning": "म्र ＋ इ",
+            "detail": "म्र + ि → म्रि",
+            "speech": "म्रि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-48543e0796dc257ab272bd27963abc28ec914010b3a41f999ef4c4a7c068f847.mp3",
+              "sha256": "48543e0796dc257ab272bd27963abc28ec914010b3a41f999ef4c4a7c068f847",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-21-3",
+            "ne": "म्री",
+            "roman": "mrī",
+            "meaning": "म्र ＋ ई",
+            "detail": "म्र + ी → म्री",
+            "speech": "म्री",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-139a441f33b25824a53630d27dacc0efcbc8af9d86a31bd2b34a73d72a727aea.mp3",
+              "sha256": "139a441f33b25824a53630d27dacc0efcbc8af9d86a31bd2b34a73d72a727aea",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-21-4",
+            "ne": "म्रु",
+            "roman": "mru",
+            "meaning": "म्र ＋ उ",
+            "detail": "म्र + ु → म्रु",
+            "speech": "म्रु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7584b00264910185e3f31ae981ecf173f3cedb1de84bf5802c0dca76450af9b0.mp3",
+              "sha256": "7584b00264910185e3f31ae981ecf173f3cedb1de84bf5802c0dca76450af9b0",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-21-5",
+            "ne": "म्रू",
+            "roman": "mrū",
+            "meaning": "म्र ＋ ऊ",
+            "detail": "म्र + ू → म्रू",
+            "speech": "म्रू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d701ca24c4adbec53d2795a7deb893ca2908361172c938db04a51c3a27a623bf.mp3",
+              "sha256": "d701ca24c4adbec53d2795a7deb893ca2908361172c938db04a51c3a27a623bf",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-21-6",
+            "ne": "म्रृ",
+            "roman": "mrri",
+            "meaning": "म्र ＋ ऋ",
+            "detail": "म्र + ृ → म्रृ",
+            "speech": "म्रृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a0e33997bed7ce088913ee69918e32c7f4d5a9d6bceeb553e9bde7ce08d0da1d.mp3",
+              "sha256": "a0e33997bed7ce088913ee69918e32c7f4d5a9d6bceeb553e9bde7ce08d0da1d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-21-7",
+            "ne": "म्रे",
+            "roman": "mre",
+            "meaning": "म्र ＋ ए",
+            "detail": "म्र + े → म्रे",
+            "speech": "म्रे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a4f65a8d12d671c66a2f279f31fd3fa6514eb2b4e1d40d5bc668a0709e1a1788.mp3",
+              "sha256": "a4f65a8d12d671c66a2f279f31fd3fa6514eb2b4e1d40d5bc668a0709e1a1788",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-21-8",
+            "ne": "म्रै",
+            "roman": "mrai",
+            "meaning": "म्र ＋ ऐ",
+            "detail": "म्र + ै → म्रै",
+            "speech": "म्रै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0a0bb74cf4b1578c97273fa55828b1ef3a579cbe4c7ca5b545949ff6c109c458.mp3",
+              "sha256": "0a0bb74cf4b1578c97273fa55828b1ef3a579cbe4c7ca5b545949ff6c109c458",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-21-9",
+            "ne": "म्रो",
+            "roman": "mro",
+            "meaning": "म्र ＋ ओ",
+            "detail": "म्र + ो → म्रो",
+            "speech": "म्रो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7108ffbe8d1f3a4736376ba048cf8387f3f7b1bea9ef22d216eed1ccf56645f9.mp3",
+              "sha256": "7108ffbe8d1f3a4736376ba048cf8387f3f7b1bea9ef22d216eed1ccf56645f9",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-21-10",
+            "ne": "म्रौ",
+            "roman": "mrau",
+            "meaning": "म्र ＋ औ",
+            "detail": "म्र + ौ → म्रौ",
+            "speech": "म्रौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-861e640d8b30f3edf94c59653cc14e3730f77ccf4dbcb7d9dbfe6df224406fe9.mp3",
+              "sha256": "861e640d8b30f3edf94c59653cc14e3730f77ccf4dbcb7d9dbfe6df224406fe9",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "ल्य",
+        "roman": "lya",
+        "samples": [
+          {
+            "id": "ccv-22-0",
+            "ne": "ल्य",
+            "roman": "lya",
+            "meaning": "ल्य ＋ अ",
+            "detail": "ल्य + अ → ल्य",
+            "speech": "ल्य",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-eaf3d588adee7c6d0525259d22d4bb9948e5dcf203df8439782b06645814c5ab.mp3",
+              "sha256": "eaf3d588adee7c6d0525259d22d4bb9948e5dcf203df8439782b06645814c5ab",
+              "bytes": 3932
+            }
+          },
+          {
+            "id": "ccv-22-1",
+            "ne": "ल्या",
+            "roman": "lyā",
+            "meaning": "ल्य ＋ आ",
+            "detail": "ल्य + ा → ल्या",
+            "speech": "ल्या",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3f5e0f8948f0fc7e3316fed7262427e82cb97a8b6343bddb2cad979542e02aeb.mp3",
+              "sha256": "3f5e0f8948f0fc7e3316fed7262427e82cb97a8b6343bddb2cad979542e02aeb",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-22-2",
+            "ne": "ल्यि",
+            "roman": "lyi",
+            "meaning": "ल्य ＋ इ",
+            "detail": "ल्य + ि → ल्यि",
+            "speech": "ल्यि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-819f596a296ac453b1c596c33ddad7a339a88c89eea999b320ad60446acd66c0.mp3",
+              "sha256": "819f596a296ac453b1c596c33ddad7a339a88c89eea999b320ad60446acd66c0",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-22-3",
+            "ne": "ल्यी",
+            "roman": "lyī",
+            "meaning": "ल्य ＋ ई",
+            "detail": "ल्य + ी → ल्यी",
+            "speech": "ल्यी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a3dc6de17799cfacebf95ff239fb4d6a4bb3fb164f29de1f5e31b3050bc0728a.mp3",
+              "sha256": "a3dc6de17799cfacebf95ff239fb4d6a4bb3fb164f29de1f5e31b3050bc0728a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-22-4",
+            "ne": "ल्यु",
+            "roman": "lyu",
+            "meaning": "ल्य ＋ उ",
+            "detail": "ल्य + ु → ल्यु",
+            "speech": "ल्यु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2a8c128a22288db1f03cd895c4b7790dc85be4da3f49b2ba0a08ec3ba50e9c8f.mp3",
+              "sha256": "2a8c128a22288db1f03cd895c4b7790dc85be4da3f49b2ba0a08ec3ba50e9c8f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-22-5",
+            "ne": "ल्यू",
+            "roman": "lyū",
+            "meaning": "ल्य ＋ ऊ",
+            "detail": "ल्य + ू → ल्यू",
+            "speech": "ल्यू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1f953c2bc2fa59c50dc53a613cb331f4be05e92aea8061a0b507b9b96f2551af.mp3",
+              "sha256": "1f953c2bc2fa59c50dc53a613cb331f4be05e92aea8061a0b507b9b96f2551af",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-22-6",
+            "ne": "ल्यृ",
+            "roman": "lyri",
+            "meaning": "ल्य ＋ ऋ",
+            "detail": "ल्य + ृ → ल्यृ",
+            "speech": "ल्यृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-39b2611dc7c984ce495c3dc77ac0085d1991dfe9cf482b9371b412c4bfcb1d46.mp3",
+              "sha256": "39b2611dc7c984ce495c3dc77ac0085d1991dfe9cf482b9371b412c4bfcb1d46",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-22-7",
+            "ne": "ल्ये",
+            "roman": "lye",
+            "meaning": "ल्य ＋ ए",
+            "detail": "ल्य + े → ल्ये",
+            "speech": "ल्ये",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-25000638d9dca29d39e441be6a978d4d41e970a94b49203a076fb51e56acad1f.mp3",
+              "sha256": "25000638d9dca29d39e441be6a978d4d41e970a94b49203a076fb51e56acad1f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-22-8",
+            "ne": "ल्यै",
+            "roman": "lyai",
+            "meaning": "ल्य ＋ ऐ",
+            "detail": "ल्य + ै → ल्यै",
+            "speech": "ल्यै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3ab635f11d4cabdaea33f38fb125651ab11c33c6403031c0b0c3252b73ad3aba.mp3",
+              "sha256": "3ab635f11d4cabdaea33f38fb125651ab11c33c6403031c0b0c3252b73ad3aba",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-22-9",
+            "ne": "ल्यो",
+            "roman": "lyo",
+            "meaning": "ल्य ＋ ओ",
+            "detail": "ल्य + ो → ल्यो",
+            "speech": "ल्यो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-37c46867cacad9a1420ff606e62e8cdfe7b0234d25dcf02b3ef46a4d37b71121.mp3",
+              "sha256": "37c46867cacad9a1420ff606e62e8cdfe7b0234d25dcf02b3ef46a4d37b71121",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-22-10",
+            "ne": "ल्यौ",
+            "roman": "lyau",
+            "meaning": "ल्य ＋ औ",
+            "detail": "ल्य + ौ → ल्यौ",
+            "speech": "ल्यौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-aaf996bf04b2edadeb78596c61422b8f5b8f5caab3c8548fc67c2de86149b4f3.mp3",
+              "sha256": "aaf996bf04b2edadeb78596c61422b8f5b8f5caab3c8548fc67c2de86149b4f3",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "व्य",
+        "roman": "vya",
+        "samples": [
+          {
+            "id": "ccv-23-0",
+            "ne": "व्य",
+            "roman": "vya",
+            "meaning": "व्य ＋ अ",
+            "detail": "व्य + अ → व्य",
+            "speech": "व्य",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6e5dca6c47c3fa9c25d7a2b45b52dc52d1f72e2233157a78439912ee0492762a.mp3",
+              "sha256": "6e5dca6c47c3fa9c25d7a2b45b52dc52d1f72e2233157a78439912ee0492762a",
+              "bytes": 3788
+            }
+          },
+          {
+            "id": "ccv-23-1",
+            "ne": "व्या",
+            "roman": "vyā",
+            "meaning": "व्य ＋ आ",
+            "detail": "व्य + ा → व्या",
+            "speech": "व्या",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1c15bbf3a36b52fb9638a19e0d6e979c99d6a58d3eeaaaee764f226eb1ddf570.mp3",
+              "sha256": "1c15bbf3a36b52fb9638a19e0d6e979c99d6a58d3eeaaaee764f226eb1ddf570",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-23-2",
+            "ne": "व्यि",
+            "roman": "vyi",
+            "meaning": "व्य ＋ इ",
+            "detail": "व्य + ि → व्यि",
+            "speech": "व्यि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-74744eefef1a28f5664a920df5b426210fd49e693e394d4a37d3d753f4f7a50d.mp3",
+              "sha256": "74744eefef1a28f5664a920df5b426210fd49e693e394d4a37d3d753f4f7a50d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-23-3",
+            "ne": "व्यी",
+            "roman": "vyī",
+            "meaning": "व्य ＋ ई",
+            "detail": "व्य + ी → व्यी",
+            "speech": "व्यी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a926170f0222362c1c41ec645df31e0d234a8c151d4bbff3320aa050bfbffade.mp3",
+              "sha256": "a926170f0222362c1c41ec645df31e0d234a8c151d4bbff3320aa050bfbffade",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-23-4",
+            "ne": "व्यु",
+            "roman": "vyu",
+            "meaning": "व्य ＋ उ",
+            "detail": "व्य + ु → व्यु",
+            "speech": "व्यु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d7d35efb1bc69fa1aedb389abf518171d77555bf93abd5c0c820908bb9c8b8dd.mp3",
+              "sha256": "d7d35efb1bc69fa1aedb389abf518171d77555bf93abd5c0c820908bb9c8b8dd",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-23-5",
+            "ne": "व्यू",
+            "roman": "vyū",
+            "meaning": "व्य ＋ ऊ",
+            "detail": "व्य + ू → व्यू",
+            "speech": "व्यू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3d19b67eeca3a03ab6e0e0804415df7b43d906eb676a8f0acf90f2d53388359c.mp3",
+              "sha256": "3d19b67eeca3a03ab6e0e0804415df7b43d906eb676a8f0acf90f2d53388359c",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-23-6",
+            "ne": "व्यृ",
+            "roman": "vyri",
+            "meaning": "व्य ＋ ऋ",
+            "detail": "व्य + ृ → व्यृ",
+            "speech": "व्यृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4537753a031460c74046be1bb534f1ed831b8633f7023da722a0232161273616.mp3",
+              "sha256": "4537753a031460c74046be1bb534f1ed831b8633f7023da722a0232161273616",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-23-7",
+            "ne": "व्ये",
+            "roman": "vye",
+            "meaning": "व्य ＋ ए",
+            "detail": "व्य + े → व्ये",
+            "speech": "व्ये",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7de2352599237ffb7e57885eb3645e4f6936eea8e2e2839cac90428251a9fefd.mp3",
+              "sha256": "7de2352599237ffb7e57885eb3645e4f6936eea8e2e2839cac90428251a9fefd",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-23-8",
+            "ne": "व्यै",
+            "roman": "vyai",
+            "meaning": "व्य ＋ ऐ",
+            "detail": "व्य + ै → व्यै",
+            "speech": "व्यै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ccf9f99e4a8ca8db8145431a39037df1d2d84733163fc190ce4a8edc8d471abe.mp3",
+              "sha256": "ccf9f99e4a8ca8db8145431a39037df1d2d84733163fc190ce4a8edc8d471abe",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-23-9",
+            "ne": "व्यो",
+            "roman": "vyo",
+            "meaning": "व्य ＋ ओ",
+            "detail": "व्य + ो → व्यो",
+            "speech": "व्यो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-842ecdf1fa968ad78473f3cd09bc8d1d630c60aaed50653d34040fa6e54e38f1.mp3",
+              "sha256": "842ecdf1fa968ad78473f3cd09bc8d1d630c60aaed50653d34040fa6e54e38f1",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-23-10",
+            "ne": "व्यौ",
+            "roman": "vyau",
+            "meaning": "व्य ＋ औ",
+            "detail": "व्य + ौ → व्यौ",
+            "speech": "व्यौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a58bafcaac1e842b858aafa81ac3fbe7526a5c8ea5e33f2c5a274fe8e5d2ede4.mp3",
+              "sha256": "a58bafcaac1e842b858aafa81ac3fbe7526a5c8ea5e33f2c5a274fe8e5d2ede4",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "स्त",
+        "roman": "sta",
+        "samples": [
+          {
+            "id": "ccv-24-0",
+            "ne": "स्त",
+            "roman": "sta",
+            "meaning": "स्त ＋ अ",
+            "detail": "स्त + अ → स्त",
+            "speech": "स्त",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-93d513f2da8f516efb6434a92696ff4ead206a2b688aeb067f6ad99610db8c2a.mp3",
+              "sha256": "93d513f2da8f516efb6434a92696ff4ead206a2b688aeb067f6ad99610db8c2a",
+              "bytes": 4364
+            }
+          },
+          {
+            "id": "ccv-24-1",
+            "ne": "स्ता",
+            "roman": "stā",
+            "meaning": "स्त ＋ आ",
+            "detail": "स्त + ा → स्ता",
+            "speech": "स्ता",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-31fa70fd7a48c11381a491f18ab05e6eabe904cda5f38469766e39945118dbb9.mp3",
+              "sha256": "31fa70fd7a48c11381a491f18ab05e6eabe904cda5f38469766e39945118dbb9",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-24-2",
+            "ne": "स्ति",
+            "roman": "sti",
+            "meaning": "स्त ＋ इ",
+            "detail": "स्त + ि → स्ति",
+            "speech": "स्ति",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9f1e9a17d08ccb150251775539ee83d5d884f5689bdde67a0b42c8a19926c937.mp3",
+              "sha256": "9f1e9a17d08ccb150251775539ee83d5d884f5689bdde67a0b42c8a19926c937",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-24-3",
+            "ne": "स्ती",
+            "roman": "stī",
+            "meaning": "स्त ＋ ई",
+            "detail": "स्त + ी → स्ती",
+            "speech": "स्ती",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5f77a365d02b07eff908ac859d59e7e0cea3d2cf54b053c2894188b9a1567ed4.mp3",
+              "sha256": "5f77a365d02b07eff908ac859d59e7e0cea3d2cf54b053c2894188b9a1567ed4",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-24-4",
+            "ne": "स्तु",
+            "roman": "stu",
+            "meaning": "स्त ＋ उ",
+            "detail": "स्त + ु → स्तु",
+            "speech": "स्तु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-505f540b60cf043c2349e8b1027c1059bde1d798d86ce3c50397dca3f62b08ee.mp3",
+              "sha256": "505f540b60cf043c2349e8b1027c1059bde1d798d86ce3c50397dca3f62b08ee",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-24-5",
+            "ne": "स्तू",
+            "roman": "stū",
+            "meaning": "स्त ＋ ऊ",
+            "detail": "स्त + ू → स्तू",
+            "speech": "स्तू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-027d2434216ab303976fd47d4b2691c7414f69ed79fa15422424d09718b8815b.mp3",
+              "sha256": "027d2434216ab303976fd47d4b2691c7414f69ed79fa15422424d09718b8815b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-24-6",
+            "ne": "स्तृ",
+            "roman": "stri",
+            "meaning": "स्त ＋ ऋ",
+            "detail": "स्त + ृ → स्तृ",
+            "speech": "स्तृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c95ccee5eba78cef43889bfc96836fccae2d093354e471ae75bba54cfe8ee2a1.mp3",
+              "sha256": "c95ccee5eba78cef43889bfc96836fccae2d093354e471ae75bba54cfe8ee2a1",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-24-7",
+            "ne": "स्ते",
+            "roman": "ste",
+            "meaning": "स्त ＋ ए",
+            "detail": "स्त + े → स्ते",
+            "speech": "स्ते",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-ffabef3951061b9a3df2291e083899c09455e0dd008555e7aca1da640aad2f4d.mp3",
+              "sha256": "ffabef3951061b9a3df2291e083899c09455e0dd008555e7aca1da640aad2f4d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-24-8",
+            "ne": "स्तै",
+            "roman": "stai",
+            "meaning": "स्त ＋ ऐ",
+            "detail": "स्त + ै → स्तै",
+            "speech": "स्तै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0af1d85a7f5b9ca6206d1e5295ed061bc75b6c533c4461df5888c1aaa358c576.mp3",
+              "sha256": "0af1d85a7f5b9ca6206d1e5295ed061bc75b6c533c4461df5888c1aaa358c576",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-24-9",
+            "ne": "स्तो",
+            "roman": "sto",
+            "meaning": "स्त ＋ ओ",
+            "detail": "स्त + ो → स्तो",
+            "speech": "स्तो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3f71b482dd5a7ed065567fb9921f52c219e9dfc0d50a08861397bf3b974fb963.mp3",
+              "sha256": "3f71b482dd5a7ed065567fb9921f52c219e9dfc0d50a08861397bf3b974fb963",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-24-10",
+            "ne": "स्तौ",
+            "roman": "stau",
+            "meaning": "स्त ＋ औ",
+            "detail": "स्त + ौ → स्तौ",
+            "speech": "स्तौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e5c317eeb3f5b99d9f076a9f6da75ff9b408b555e300353d4b6a1e8e37bfd64b.mp3",
+              "sha256": "e5c317eeb3f5b99d9f076a9f6da75ff9b408b555e300353d4b6a1e8e37bfd64b",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "स्थ",
+        "roman": "stha",
+        "samples": [
+          {
+            "id": "ccv-25-0",
+            "ne": "स्थ",
+            "roman": "stha",
+            "meaning": "स्थ ＋ अ",
+            "detail": "स्थ + अ → स्थ",
+            "speech": "स्थ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9b0aaf608595d86bb438afe9dd375e9357e79cc41011c0c40e42d35b08edb141.mp3",
+              "sha256": "9b0aaf608595d86bb438afe9dd375e9357e79cc41011c0c40e42d35b08edb141",
+              "bytes": 4364
+            }
+          },
+          {
+            "id": "ccv-25-1",
+            "ne": "स्था",
+            "roman": "sthā",
+            "meaning": "स्थ ＋ आ",
+            "detail": "स्थ + ा → स्था",
+            "speech": "स्था",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-018487da22901939319e369a73603eefd34e0d0c730212b6800d643e5c6d9e1f.mp3",
+              "sha256": "018487da22901939319e369a73603eefd34e0d0c730212b6800d643e5c6d9e1f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-25-2",
+            "ne": "स्थि",
+            "roman": "sthi",
+            "meaning": "स्थ ＋ इ",
+            "detail": "स्थ + ि → स्थि",
+            "speech": "स्थि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b4bdbac96717bd4eef3e39e4928a77f88a72af90e5236558c492ccd109c4fd99.mp3",
+              "sha256": "b4bdbac96717bd4eef3e39e4928a77f88a72af90e5236558c492ccd109c4fd99",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-25-3",
+            "ne": "स्थी",
+            "roman": "sthī",
+            "meaning": "स्थ ＋ ई",
+            "detail": "स्थ + ी → स्थी",
+            "speech": "स्थी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c68ea1c1f21d69dfab7bf550b7be82ac25a081e3db07ec4bc86cc454c930a82b.mp3",
+              "sha256": "c68ea1c1f21d69dfab7bf550b7be82ac25a081e3db07ec4bc86cc454c930a82b",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-25-4",
+            "ne": "स्थु",
+            "roman": "sthu",
+            "meaning": "स्थ ＋ उ",
+            "detail": "स्थ + ु → स्थु",
+            "speech": "स्थु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b6d821f1444453192882e03956aced2cd07293ed6c2c74707ab528951e882035.mp3",
+              "sha256": "b6d821f1444453192882e03956aced2cd07293ed6c2c74707ab528951e882035",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-25-5",
+            "ne": "स्थू",
+            "roman": "sthū",
+            "meaning": "स्थ ＋ ऊ",
+            "detail": "स्थ + ू → स्थू",
+            "speech": "स्थू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-eaedba9e827b3b4b65113a8e3d708cc7dc7088f79d411a38d59753a4012307c9.mp3",
+              "sha256": "eaedba9e827b3b4b65113a8e3d708cc7dc7088f79d411a38d59753a4012307c9",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-25-6",
+            "ne": "स्थृ",
+            "roman": "sthri",
+            "meaning": "स्थ ＋ ऋ",
+            "detail": "स्थ + ृ → स्थृ",
+            "speech": "स्थृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0fe0b3a0708624777248b59acf58700b155b7d2fe0fdf33b512734e0f0549a7e.mp3",
+              "sha256": "0fe0b3a0708624777248b59acf58700b155b7d2fe0fdf33b512734e0f0549a7e",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-25-7",
+            "ne": "स्थे",
+            "roman": "sthe",
+            "meaning": "स्थ ＋ ए",
+            "detail": "स्थ + े → स्थे",
+            "speech": "स्थे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-24dca79eef1333ec94e107d8ee3930c6c28b71fb8addfb9b3e501dc3a905bf07.mp3",
+              "sha256": "24dca79eef1333ec94e107d8ee3930c6c28b71fb8addfb9b3e501dc3a905bf07",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-25-8",
+            "ne": "स्थै",
+            "roman": "sthai",
+            "meaning": "स्थ ＋ ऐ",
+            "detail": "स्थ + ै → स्थै",
+            "speech": "स्थै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-55233a37a2d6e6a1039f7a7088cca8340e5509e013690031df0f7c2305d7d88d.mp3",
+              "sha256": "55233a37a2d6e6a1039f7a7088cca8340e5509e013690031df0f7c2305d7d88d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-25-9",
+            "ne": "स्थो",
+            "roman": "stho",
+            "meaning": "स्थ ＋ ओ",
+            "detail": "स्थ + ो → स्थो",
+            "speech": "स्थो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-85c021cb8789959950824dfb9e1a7932e732be3835f4ef8a69b4b00beda9a200.mp3",
+              "sha256": "85c021cb8789959950824dfb9e1a7932e732be3835f4ef8a69b4b00beda9a200",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-25-10",
+            "ne": "स्थौ",
+            "roman": "sthau",
+            "meaning": "स्थ ＋ औ",
+            "detail": "स्थ + ौ → स्थौ",
+            "speech": "स्थौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-801e14c0ac4a03205ff1867881d9e32d7a24e68c8fb36e644e28e6ad81567835.mp3",
+              "sha256": "801e14c0ac4a03205ff1867881d9e32d7a24e68c8fb36e644e28e6ad81567835",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "स्क",
+        "roman": "ska",
+        "samples": [
+          {
+            "id": "ccv-26-0",
+            "ne": "स्क",
+            "roman": "ska",
+            "meaning": "स्क ＋ अ",
+            "detail": "स्क + अ → स्क",
+            "speech": "स्क",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e2bb755ab486ee511c38fdbf5a6d39b176604b2cffec0753c919e436bb2c1e6f.mp3",
+              "sha256": "e2bb755ab486ee511c38fdbf5a6d39b176604b2cffec0753c919e436bb2c1e6f",
+              "bytes": 4508
+            }
+          },
+          {
+            "id": "ccv-26-1",
+            "ne": "स्का",
+            "roman": "skā",
+            "meaning": "स्क ＋ आ",
+            "detail": "स्क + ा → स्का",
+            "speech": "स्का",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6edca83c2bbdaedd943004d667d356741aa8453bb853c697632bbf879c647a59.mp3",
+              "sha256": "6edca83c2bbdaedd943004d667d356741aa8453bb853c697632bbf879c647a59",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-26-2",
+            "ne": "स्कि",
+            "roman": "ski",
+            "meaning": "स्क ＋ इ",
+            "detail": "स्क + ि → स्कि",
+            "speech": "स्कि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8ef321819c43f00e3ac8533786682d314f97316696348ee39db465b2d2cf407c.mp3",
+              "sha256": "8ef321819c43f00e3ac8533786682d314f97316696348ee39db465b2d2cf407c",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-26-3",
+            "ne": "स्की",
+            "roman": "skī",
+            "meaning": "स्क ＋ ई",
+            "detail": "स्क + ी → स्की",
+            "speech": "स्की",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-baec132b72eb0845811a5ed46fdde0f69d5c33281136166666356a588458384e.mp3",
+              "sha256": "baec132b72eb0845811a5ed46fdde0f69d5c33281136166666356a588458384e",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-26-4",
+            "ne": "स्कु",
+            "roman": "sku",
+            "meaning": "स्क ＋ उ",
+            "detail": "स्क + ु → स्कु",
+            "speech": "स्कु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d5f24125e51f6e7cc7ff2da6b7c1e1927052dc9e53b0af604c0fb3cf332aad7e.mp3",
+              "sha256": "d5f24125e51f6e7cc7ff2da6b7c1e1927052dc9e53b0af604c0fb3cf332aad7e",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-26-5",
+            "ne": "स्कू",
+            "roman": "skū",
+            "meaning": "स्क ＋ ऊ",
+            "detail": "स्क + ू → स्कू",
+            "speech": "स्कू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7f7e158ba0f31e30cac1eb36cbe9dbbb1a218ead1b40cb6333fc4721604063bc.mp3",
+              "sha256": "7f7e158ba0f31e30cac1eb36cbe9dbbb1a218ead1b40cb6333fc4721604063bc",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-26-6",
+            "ne": "स्कृ",
+            "roman": "skri",
+            "meaning": "स्क ＋ ऋ",
+            "detail": "स्क + ृ → स्कृ",
+            "speech": "स्कृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-aedff206d2a8e4b1676020524173bf01d0a80aa16631f9734ba4b3b07ac6a4b3.mp3",
+              "sha256": "aedff206d2a8e4b1676020524173bf01d0a80aa16631f9734ba4b3b07ac6a4b3",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-26-7",
+            "ne": "स्के",
+            "roman": "ske",
+            "meaning": "स्क ＋ ए",
+            "detail": "स्क + े → स्के",
+            "speech": "स्के",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6798a1c6f9fc8a6c0c52a7514c405a6e5bf22ac8ddffd3eb4d36e7305d767005.mp3",
+              "sha256": "6798a1c6f9fc8a6c0c52a7514c405a6e5bf22ac8ddffd3eb4d36e7305d767005",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-26-8",
+            "ne": "स्कै",
+            "roman": "skai",
+            "meaning": "स्क ＋ ऐ",
+            "detail": "स्क + ै → स्कै",
+            "speech": "स्कै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e8439837df758dbf89c0918f05bd4867559adab289b822c52a78e6918dcec6d2.mp3",
+              "sha256": "e8439837df758dbf89c0918f05bd4867559adab289b822c52a78e6918dcec6d2",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-26-9",
+            "ne": "स्को",
+            "roman": "sko",
+            "meaning": "स्क ＋ ओ",
+            "detail": "स्क + ो → स्को",
+            "speech": "स्को",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-112da0a6b70b08a537e99232b636cd32444bb8f587b5bd60a6c01d4bc75e6811.mp3",
+              "sha256": "112da0a6b70b08a537e99232b636cd32444bb8f587b5bd60a6c01d4bc75e6811",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-26-10",
+            "ne": "स्कौ",
+            "roman": "skau",
+            "meaning": "स्क ＋ औ",
+            "detail": "स्क + ौ → स्कौ",
+            "speech": "स्कौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9359e3abb6802c0369f7af5d390371341e1ac9cc7efd2a67adf69b9d06c69ea8.mp3",
+              "sha256": "9359e3abb6802c0369f7af5d390371341e1ac9cc7efd2a67adf69b9d06c69ea8",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "र्ख",
+        "roman": "rkha",
+        "samples": [
+          {
+            "id": "ccv-27-0",
+            "ne": "र्ख",
+            "roman": "rkha",
+            "meaning": "र्ख ＋ अ",
+            "detail": "र्ख + अ → र्ख",
+            "speech": "र्ख",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e636fd285edc352d59499098bf96466179452222e08e66ae377ceb0efe88e9be.mp3",
+              "sha256": "e636fd285edc352d59499098bf96466179452222e08e66ae377ceb0efe88e9be",
+              "bytes": 4076
+            }
+          },
+          {
+            "id": "ccv-27-1",
+            "ne": "र्खा",
+            "roman": "rkhā",
+            "meaning": "र्ख ＋ आ",
+            "detail": "र्ख + ा → र्खा",
+            "speech": "र्खा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-140383bd15b20c324aa0a07d4c61f0092b98e6f1c51391b71dfa2874655511d5.mp3",
+              "sha256": "140383bd15b20c324aa0a07d4c61f0092b98e6f1c51391b71dfa2874655511d5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-27-2",
+            "ne": "र्खि",
+            "roman": "rkhi",
+            "meaning": "र्ख ＋ इ",
+            "detail": "र्ख + ि → र्खि",
+            "speech": "र्खि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fa9b9ee3fcbf0c3bb7fc85a7f5c33a3b7e39b957bd53426c780e608fcb961160.mp3",
+              "sha256": "fa9b9ee3fcbf0c3bb7fc85a7f5c33a3b7e39b957bd53426c780e608fcb961160",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-27-3",
+            "ne": "र्खी",
+            "roman": "rkhī",
+            "meaning": "र्ख ＋ ई",
+            "detail": "र्ख + ी → र्खी",
+            "speech": "र्खी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0d8b40e498a6eeceaff76a22836e79144551be9a603ff2c601612ef9cd96ce5a.mp3",
+              "sha256": "0d8b40e498a6eeceaff76a22836e79144551be9a603ff2c601612ef9cd96ce5a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-27-4",
+            "ne": "र्खु",
+            "roman": "rkhu",
+            "meaning": "र्ख ＋ उ",
+            "detail": "र्ख + ु → र्खु",
+            "speech": "र्खु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-721b1532ce2d8510f8dbe59ac91830bc80f6baf0a9de80a9542541b2c0e66015.mp3",
+              "sha256": "721b1532ce2d8510f8dbe59ac91830bc80f6baf0a9de80a9542541b2c0e66015",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-27-5",
+            "ne": "र्खू",
+            "roman": "rkhū",
+            "meaning": "र्ख ＋ ऊ",
+            "detail": "र्ख + ू → र्खू",
+            "speech": "र्खू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2ad126998a0105461d6c6f80bfd6c1ee3fba0f49c0e021639b8c65358f965b55.mp3",
+              "sha256": "2ad126998a0105461d6c6f80bfd6c1ee3fba0f49c0e021639b8c65358f965b55",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-27-6",
+            "ne": "र्खृ",
+            "roman": "rkhri",
+            "meaning": "र्ख ＋ ऋ",
+            "detail": "र्ख + ृ → र्खृ",
+            "speech": "र्खृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b233f0956050ce6f657589b699fc870d85b6f22daa59ac425567920838a5547f.mp3",
+              "sha256": "b233f0956050ce6f657589b699fc870d85b6f22daa59ac425567920838a5547f",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-27-7",
+            "ne": "र्खे",
+            "roman": "rkhe",
+            "meaning": "र्ख ＋ ए",
+            "detail": "र्ख + े → र्खे",
+            "speech": "र्खे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9aa3d4e972034ee1580e8b9810cc6681c3639908c1b06742aa9f00c6d212a4ce.mp3",
+              "sha256": "9aa3d4e972034ee1580e8b9810cc6681c3639908c1b06742aa9f00c6d212a4ce",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-27-8",
+            "ne": "र्खै",
+            "roman": "rkhai",
+            "meaning": "र्ख ＋ ऐ",
+            "detail": "र्ख + ै → र्खै",
+            "speech": "र्खै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d6b667e9a71ef6ce49bada0ad286d285babaa8ee518ce851cd899053bb8c106a.mp3",
+              "sha256": "d6b667e9a71ef6ce49bada0ad286d285babaa8ee518ce851cd899053bb8c106a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-27-9",
+            "ne": "र्खो",
+            "roman": "rkho",
+            "meaning": "र्ख ＋ ओ",
+            "detail": "र्ख + ो → र्खो",
+            "speech": "र्खो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7d995710014db8cf44ef42320b24bc4c51be3a0bb3c879309882b3e5c031fdff.mp3",
+              "sha256": "7d995710014db8cf44ef42320b24bc4c51be3a0bb3c879309882b3e5c031fdff",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-27-10",
+            "ne": "र्खौ",
+            "roman": "rkhau",
+            "meaning": "र्ख ＋ औ",
+            "detail": "र्ख + ौ → र्खौ",
+            "speech": "र्खौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-88c0fd289a5daf0eb1201e5188abfd157c3f790e6c9e31ad7e7838e9185c0e4b.mp3",
+              "sha256": "88c0fd289a5daf0eb1201e5188abfd157c3f790e6c9e31ad7e7838e9185c0e4b",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "र्त",
+        "roman": "rta",
+        "samples": [
+          {
+            "id": "ccv-28-0",
+            "ne": "र्त",
+            "roman": "rta",
+            "meaning": "र्त ＋ अ",
+            "detail": "र्त + अ → र्त",
+            "speech": "र्त",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6e4bfa8495ce8b47cd1dcd5c5a0d117089b7e0e2e1aad5105799fbc49e333786.mp3",
+              "sha256": "6e4bfa8495ce8b47cd1dcd5c5a0d117089b7e0e2e1aad5105799fbc49e333786",
+              "bytes": 4076
+            }
+          },
+          {
+            "id": "ccv-28-1",
+            "ne": "र्ता",
+            "roman": "rtā",
+            "meaning": "र्त ＋ आ",
+            "detail": "र्त + ा → र्ता",
+            "speech": "र्ता",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-48553d848be80240e0c7d9ae45cdaedf5a12fadb32d8da2a6047250d4837860a.mp3",
+              "sha256": "48553d848be80240e0c7d9ae45cdaedf5a12fadb32d8da2a6047250d4837860a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-28-2",
+            "ne": "र्ति",
+            "roman": "rti",
+            "meaning": "र्त ＋ इ",
+            "detail": "र्त + ि → र्ति",
+            "speech": "र्ति",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-09aff56219d8f1ae85ec7678b2b93116320692c0dbfc4ea42e772ecd02762386.mp3",
+              "sha256": "09aff56219d8f1ae85ec7678b2b93116320692c0dbfc4ea42e772ecd02762386",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-28-3",
+            "ne": "र्ती",
+            "roman": "rtī",
+            "meaning": "र्त ＋ ई",
+            "detail": "र्त + ी → र्ती",
+            "speech": "र्ती",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1d14a2ab7bab60254ee340a89040ae9aebce8d051882eda2352493586305467a.mp3",
+              "sha256": "1d14a2ab7bab60254ee340a89040ae9aebce8d051882eda2352493586305467a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-28-4",
+            "ne": "र्तु",
+            "roman": "rtu",
+            "meaning": "र्त ＋ उ",
+            "detail": "र्त + ु → र्तु",
+            "speech": "र्तु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8f7ecff93d43d558287e1515545c54e2d6ab96ab076dbae8890c779294ce2323.mp3",
+              "sha256": "8f7ecff93d43d558287e1515545c54e2d6ab96ab076dbae8890c779294ce2323",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-28-5",
+            "ne": "र्तू",
+            "roman": "rtū",
+            "meaning": "र्त ＋ ऊ",
+            "detail": "र्त + ू → र्तू",
+            "speech": "र्तू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d2e7c9dadae2d593b8dd0e0ddd34353588d5c1e4b9e21a452c0d025728345c74.mp3",
+              "sha256": "d2e7c9dadae2d593b8dd0e0ddd34353588d5c1e4b9e21a452c0d025728345c74",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-28-6",
+            "ne": "र्तृ",
+            "roman": "rtri",
+            "meaning": "र्त ＋ ऋ",
+            "detail": "र्त + ृ → र्तृ",
+            "speech": "र्तृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7e43fd3eed710d667b2c5541425facf96f156f6d94d2e02f0bba330b165050c9.mp3",
+              "sha256": "7e43fd3eed710d667b2c5541425facf96f156f6d94d2e02f0bba330b165050c9",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-28-7",
+            "ne": "र्ते",
+            "roman": "rte",
+            "meaning": "र्त ＋ ए",
+            "detail": "र्त + े → र्ते",
+            "speech": "र्ते",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e4596fc472f9a42854afb4e0cda0df0ea72ece700150ba855df8713b63a91392.mp3",
+              "sha256": "e4596fc472f9a42854afb4e0cda0df0ea72ece700150ba855df8713b63a91392",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-28-8",
+            "ne": "र्तै",
+            "roman": "rtai",
+            "meaning": "र्त ＋ ऐ",
+            "detail": "र्त + ै → र्तै",
+            "speech": "र्तै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-866a78c5cd3baeef154e4a93d06e3f095abc64ed9e57b5b319bb21c2f25a2337.mp3",
+              "sha256": "866a78c5cd3baeef154e4a93d06e3f095abc64ed9e57b5b319bb21c2f25a2337",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-28-9",
+            "ne": "र्तो",
+            "roman": "rto",
+            "meaning": "र्त ＋ ओ",
+            "detail": "र्त + ो → र्तो",
+            "speech": "र्तो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0df143be33f47838161d161c6f4334770c01f8d0dcdf5fb30eb872549fa41737.mp3",
+              "sha256": "0df143be33f47838161d161c6f4334770c01f8d0dcdf5fb30eb872549fa41737",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-28-10",
+            "ne": "र्तौ",
+            "roman": "rtau",
+            "meaning": "र्त ＋ औ",
+            "detail": "र्त + ौ → र्तौ",
+            "speech": "र्तौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ca7a0afd1a29ef24e44127fc4832149aa01eda54296734d7d0d343f8cc641995.mp3",
+              "sha256": "ca7a0afd1a29ef24e44127fc4832149aa01eda54296734d7d0d343f8cc641995",
+              "bytes": 11232
+            }
+          }
+        ]
+      },
+      {
+        "consonant": "र्ष",
+        "roman": "rṣa",
+        "samples": [
+          {
+            "id": "ccv-29-0",
+            "ne": "र्ष",
+            "roman": "rṣa",
+            "meaning": "र्ष ＋ अ",
+            "detail": "र्ष + अ → र्ष",
+            "speech": "र्ष",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a50b76721fc8d391c936bc5739420d1453ada5ae690214116e1991197d4d6d84.mp3",
+              "sha256": "a50b76721fc8d391c936bc5739420d1453ada5ae690214116e1991197d4d6d84",
+              "bytes": 4076
+            }
+          },
+          {
+            "id": "ccv-29-1",
+            "ne": "र्षा",
+            "roman": "rṣā",
+            "meaning": "र्ष ＋ आ",
+            "detail": "र्ष + ा → र्षा",
+            "speech": "र्षा",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-010b351572ba545dc66156d8ae87a78ec6fabd36479989b67092103827c0d3c3.mp3",
+              "sha256": "010b351572ba545dc66156d8ae87a78ec6fabd36479989b67092103827c0d3c3",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-29-2",
+            "ne": "र्षि",
+            "roman": "rṣi",
+            "meaning": "र्ष ＋ इ",
+            "detail": "र्ष + ि → र्षि",
+            "speech": "र्षि",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-52f03b9c569488aa4e74212842b72bb3336c9d3771bfcc631ebbee71b1b89dfd.mp3",
+              "sha256": "52f03b9c569488aa4e74212842b72bb3336c9d3771bfcc631ebbee71b1b89dfd",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-29-3",
+            "ne": "र्षी",
+            "roman": "rṣī",
+            "meaning": "र्ष ＋ ई",
+            "detail": "र्ष + ी → र्षी",
+            "speech": "र्षी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-82c8eac066c88c1a22d893d3770bc4bf54eabafef7bc90185e0769d60867e1bc.mp3",
+              "sha256": "82c8eac066c88c1a22d893d3770bc4bf54eabafef7bc90185e0769d60867e1bc",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-29-4",
+            "ne": "र्षु",
+            "roman": "rṣu",
+            "meaning": "र्ष ＋ उ",
+            "detail": "र्ष + ु → र्षु",
+            "speech": "र्षु",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5d6a4d8108c0c83a8ba42b90a183f2a6fc02bd8f9af0606b50a085f6100fa72d.mp3",
+              "sha256": "5d6a4d8108c0c83a8ba42b90a183f2a6fc02bd8f9af0606b50a085f6100fa72d",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-29-5",
+            "ne": "र्षू",
+            "roman": "rṣū",
+            "meaning": "र्ष ＋ ऊ",
+            "detail": "र्ष + ू → र्षू",
+            "speech": "र्षू",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e46119591b44fcc07b01e2f0f57b588b3987026153b002dc2a363bc8dfb09b92.mp3",
+              "sha256": "e46119591b44fcc07b01e2f0f57b588b3987026153b002dc2a363bc8dfb09b92",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-29-6",
+            "ne": "र्षृ",
+            "roman": "rṣri",
+            "meaning": "र्ष ＋ ऋ",
+            "detail": "र्ष + ृ → र्षृ",
+            "speech": "र्षृ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b8d47137e70fedec1c596b08d202a770ad3efeea1d5d38a93021eeaa24c4137a.mp3",
+              "sha256": "b8d47137e70fedec1c596b08d202a770ad3efeea1d5d38a93021eeaa24c4137a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-29-7",
+            "ne": "र्षे",
+            "roman": "rṣe",
+            "meaning": "र्ष ＋ ए",
+            "detail": "र्ष + े → र्षे",
+            "speech": "र्षे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-43c6cb47ce401f1d0bec7369892aca46bc7024bfbec2e7ddcd28d9d524802ef1.mp3",
+              "sha256": "43c6cb47ce401f1d0bec7369892aca46bc7024bfbec2e7ddcd28d9d524802ef1",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-29-8",
+            "ne": "र्षै",
+            "roman": "rṣai",
+            "meaning": "र्ष ＋ ऐ",
+            "detail": "र्ष + ै → र्षै",
+            "speech": "र्षै",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3f1a17f43c9c53019b14721c3c606d58ad06a4bb19fb19223de5c55bbb2092c0.mp3",
+              "sha256": "3f1a17f43c9c53019b14721c3c606d58ad06a4bb19fb19223de5c55bbb2092c0",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-29-9",
+            "ne": "र्षो",
+            "roman": "rṣo",
+            "meaning": "र्ष ＋ ओ",
+            "detail": "र्ष + ो → र्षो",
+            "speech": "र्षो",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-33d54c50df1fc3b8b7a14e190212115fb07b31414bf3d1e274c10ce3ff493906.mp3",
+              "sha256": "33d54c50df1fc3b8b7a14e190212115fb07b31414bf3d1e274c10ce3ff493906",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ccv-29-10",
+            "ne": "र्षौ",
+            "roman": "rṣau",
+            "meaning": "र्ष ＋ औ",
+            "detail": "र्ष + ौ → र्षौ",
+            "speech": "र्षौ",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cb00f453770d686f46c6b2e6732b4f90a1e877c3377a0da58787f5f033198078.mp3",
+              "sha256": "cb00f453770d686f46c6b2e6732b4f90a1e877c3377a0da58787f5f033198078",
               "bytes": 11232
             }
           }

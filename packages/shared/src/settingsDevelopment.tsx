@@ -1,4 +1,4 @@
-// Optional app-owned tools. App Store production and other apps supply no tools.
+// Optional app-owned tools. Settings keeps them hidden until an explicit version-tap unlock.
 import { createContext, useContext, type ReactNode } from 'react';
 
 export type SettingsDevelopmentTools = {

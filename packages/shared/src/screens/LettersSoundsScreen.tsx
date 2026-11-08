@@ -7,7 +7,7 @@ import { useLearning } from '../LearningContext';
 import { useI18n } from '../i18n';
 import { useScaleStyle } from '../SettingsContext';
 import { LearningSound } from '../LearningSound';
-import type { LearningAudio } from '../learning';
+import type { LearningAudio, SoundSample } from '../learning';
 
 const ink = '#183c3a', teal = '#126b60', muted = '#526c67';
 const categories = [
@@ -22,7 +22,7 @@ const categories = [
 export default function LettersSoundsScreen() {
   const { LETTERS_SOUNDS: data } = useAppData(), learning = useLearning(), { lang } = useI18n(), ss = useScaleStyle(), nav = useNavigation();
   const en = lang === 'en';
-  const [section, setSection] = useState<number | null>(null), [selected, setSelected] = useState(0), [row, setRow] = useState(0);
+  const [section, setSection] = useState<number | null>(null), [selected, setSelected] = useState(0), [row, setRow] = useState(0), [conjunctIndex, setConjunctIndex] = useState(0);
   const [showDetails, setShowDetails] = useState(false), [showHelp, setShowHelp] = useState(false);
   const [playing, setPlaying] = useState<{ id: string; audio: LearningAudio; key: number } | null>(null);
   const scroll = useRef<ScrollView>(null), serial = useRef(0);
@@ -36,10 +36,13 @@ export default function LettersSoundsScreen() {
   const category = categories.find(c => current && c.sections.includes(current.id));
   const isCombination = current?.id === 'combinations';
   const isBare = current?.id === 'bare';
-  const samples = current ? (isCombination ? data.combinations[row].samples : isBare ? current.samples : current.samples.filter(s => s.audio)) : [];
+  const isConjunct = current?.id === 'conjuncts';
+  const conjuncts = isConjunct ? current.samples.filter(s => s.audio) : [];
+  const conjunct = conjuncts[conjunctIndex] ?? conjuncts[0];
+  const samples = current ? (isCombination ? data.combinations[row].samples : isConjunct ? data.conjunctCombinations?.find(r => r.consonant === conjunct?.ne)?.samples ?? (conjunct ? [conjunct] : []) : isBare ? current.samples : current.samples.filter(s => s.audio)) : [];
   const sample = samples[selected] ?? samples[0];
   const move = (index: number | null) => {
-    stop(); setSection(index); setSelected(0); setShowDetails(false); setShowHelp(false);
+    stop(); setSection(index); setSelected(0); setConjunctIndex(0); setShowDetails(false); setShowHelp(false);
     scroll.current?.scrollTo({ y: 0, animated: false });
   };
   const play = (id: string, audio: LearningAudio) => setPlaying({ id, audio, key: ++serial.current });
@@ -54,6 +57,16 @@ export default function LettersSoundsScreen() {
     dental: en ? 'त group' : 'त の仲間', labial: en ? 'प group' : 'प の仲間', other: en ? 'य–ह' : 'य〜ह',
     marks: en ? 'Signs' : '記号', numbers: en ? 'Digits' : '数字',
   }[id] ?? fallback);
+  const destination = (index: number) => {
+    const target = data.sections[index], group = categories.find(c => c.sections.includes(target.id));
+    const name = en ? group?.en : group?.ja;
+    return group && group.sections.length > 1 ? `${name} · ${sectionName(target.id, target.title)}` : name ?? target.title;
+  };
+  const exampleWords = (words: SoundSample[]) => <View style={styles.wordsCard} testID="letters-example-words">{words.map((word, i) => <View key={word.id} style={[styles.wordRow, i > 0 && styles.wordDivider]}>
+    <Pressable testID={`letters-play-word-${i}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Play word' : '単語を聞く'}: ${word.ne}`} onPress={() => play(word.id, word.audio)} style={({ pressed }) => [styles.wordButton, pressed && styles.pressed]}>
+      <View style={styles.wordContent}><View style={styles.wordTitleRow}><Text style={[styles.wordNe, ss(23, 35)]}>{word.ne}</Text><Text style={[styles.wordRoman, ss(14, 23)]}>{word.roman}</Text></View><Text style={[styles.body, ss(14, 23)]}>{word.meaning}</Text></View><View style={[styles.wordPlay, playing?.id === word.id && styles.tileActive]}><Text style={[styles.helpTitle, playing?.id === word.id && styles.white, ss(16, 24)]}>▶</Text></View>
+    </Pressable>
+  </View>)}</View>;
 
   return <View style={styles.root}>
     {current && <View style={styles.toolbar}>
@@ -94,32 +107,42 @@ export default function LettersSoundsScreen() {
         {isCombination && <View style={styles.combinationPanel}>
           <ScrollView horizontal showsHorizontalScrollIndicator contentContainerStyle={styles.strip}>{data.combinations.map((r, i) => <Pressable key={r.consonant} accessibilityRole="button" accessibilityLabel={`${en ? 'Consonant' : '子音'} ${r.consonant}`} accessibilityState={{ selected: row === i }} onPress={() => { stop(); setRow(i); setSelected(0); setShowDetails(false); }} style={[styles.letterTile, row === i && styles.tileActive]}><Text style={[styles.tileText, row === i && styles.white, ss(24, 38)]}>{r.consonant}</Text></Pressable>)}</ScrollView>
         </View>}
+        {isConjunct && conjunct && <>
+          <View style={styles.titleRow}><Text style={[styles.muted, ss(13, 22)]}>{en ? 'Swipe to choose a conjunct →' : '横にスワイプして複合文字を選ぶ →'}</Text><Text style={[styles.chartRoman, ss(13, 22)]}>{conjunctIndex + 1} / {conjuncts.length}</Text></View>
+          <ScrollView testID="letters-conjunct-strip" horizontal showsHorizontalScrollIndicator contentContainerStyle={styles.strip}>{conjuncts.map((s, i) => <Pressable key={s.id} testID={`letters-conjunct-${s.id}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Conjunct' : '複合文字'} ${s.ne}`} accessibilityState={{ selected: conjunctIndex === i }} onPress={() => { stop(); setConjunctIndex(i); setSelected(0); setShowDetails(false); if (s.audio) play(s.id, s.audio); }} style={[styles.conjunctTile, conjunctIndex === i && styles.tileActive]}><Text style={[styles.tileText, conjunctIndex === i && styles.white, ss(26, 40)]}>{s.ne}</Text><Text style={[styles.chartRoman, conjunctIndex === i && styles.white, ss(13, 21)]}>{s.roman}</Text></Pressable>)}</ScrollView>
+          <View testID="letters-conjunct-words" style={styles.conjunctWords}><View style={styles.titleRow}><Text style={[styles.cardTitle, ss(17, 27)]}>{conjunct.ne} · {en ? 'Two example words' : '例単語2つ'}</Text></View>{conjunct.examples && exampleWords(conjunct.examples)}</View>
+        </>}
         {sample && <>
           {category?.id === 'consonants' && <View style={styles.readingNote}><Text style={[styles.body, ss(14, 24)]}>{isBare ? (en ? '् removes the vowel: क = ka → क् = k. All 33 written forms are shown; only क् and स् have recordings.' : '् は母音を外す印。क＝ka → क्＝k。33字すべての形を掲載し、क्・स् の2音だけ聞けます。') : (en ? 'These recordings read the letter with its inherent a: क = ka. The vowel-free form is क् = k.' : 'この音声は、母音 a を伴う文字の読みです。क＝ka。母音を外した形は क्＝k です。')}</Text></View>}
-          <Text style={[styles.stepLabel, ss(13, 22)]}>{isBare ? (en ? 'WRITTEN REFERENCE · TWO AUDIO EXAMPLES' : '文字の一覧 · 再生マークの2音を聞けます') : current.id === 'start' ? (en ? 'COMPARE: WITH a / WITHOUT A VOWEL' : '子音＋a ／ 母音なしを聞き比べる') : isCombination ? (en ? 'Choose a consonant above; compare its 11 forms.' : '上で子音を選び、11通りを聞き比べよう') : (en ? 'TAP A LETTER TO LISTEN & COMPARE' : '文字をタップして、聞き比べよう')}</Text>
+          <Text style={[styles.stepLabel, ss(13, 22)]}>{isConjunct ? (en ? 'ADD A VOWEL · TAP TO COMPARE' : '母音をつけて、聞き比べよう') : isBare ? (en ? 'WRITTEN REFERENCE · TWO AUDIO EXAMPLES' : '文字の一覧 · 再生マークの2音を聞けます') : current.id === 'start' ? (en ? 'COMPARE: WITH a / WITHOUT A VOWEL' : '子音＋a ／ 母音なしを聞き比べる') : isCombination ? (en ? 'Choose a consonant above; compare its 11 forms.' : '上で子音を選び、11通りを聞き比べよう') : (en ? 'TAP A LETTER TO LISTEN & COMPARE' : '文字をタップして、聞き比べよう')}</Text>
           <View style={styles.soundGrid} testID="letters-sound-chart">{samples.map((s, i) => {
             const active = playing?.id === s.id;
             if (!s.audio) return <View key={s.id} testID={`letters-symbol-${s.id}`} accessible accessibilityLabel={`${s.ne}, ${s.roman}, ${s.meaning}`} style={[styles.soundTile, styles.referenceTile]}><Text style={[styles.tileText, ss(28, 42)]}>{s.ne}</Text><Text style={[styles.chartRoman, styles.tileRoman, ss(14, 22)]}>{s.roman}</Text></View>;
-            return <Pressable key={s.id} testID={`letters-play-${s.id}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Play sound' : '音を聞く'}: ${s.speech ?? s.ne}`} accessibilityState={{ selected: selected === i }} onPress={() => { setSelected(i); if (s.audio) play(s.id, s.audio); }} style={({ pressed }) => [styles.soundTile, (current.id === 'start' || current.id === 'conjuncts') && styles.pairTile, selected === i && styles.soundTileSelected, active && styles.tileActive, pressed && styles.pressed]}>
+            return <Pressable key={s.id} testID={`letters-play-${s.id}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Play sound' : '音を聞く'}: ${s.speech ?? s.ne}`} accessibilityState={{ selected: selected === i }} onPress={() => { setSelected(i); if (s.audio) play(s.id, s.audio); }} style={({ pressed }) => [styles.soundTile, current.id === 'start' && styles.pairTile, selected === i && styles.soundTileSelected, active && styles.tileActive, pressed && styles.pressed]}>
               <Text style={[styles.tileText, active && styles.white, ss(28, 42)]}>{s.ne}</Text>
               <Text style={[styles.chartRoman, styles.tileRoman, active && styles.white, ss(14, 22)]}>{s.roman}</Text>
               <Text style={[styles.tileCue, active && styles.white, ss(11, 18)]}>{active ? '●' : '▶'}</Text>
             </Pressable>;
           })}</View>
-          {!isBare && <View style={styles.selectionCard} testID="letters-selection">
+          {!isBare && !isConjunct && <View style={styles.selectionCard} testID="letters-selection">
             <View style={styles.selectionRow}><Text style={[styles.selectionGlyph, ss(26, 38)]}>{sample.ne}</Text><Text style={[styles.chartRoman, ss(15, 24)]}>{sample.roman}</Text><Text style={[styles.body, styles.selectionMeaning, ss(14, 23)]}>{sample.meaning}</Text></View>
             {(sample.detail || sample.examples?.length) && <Pressable testID="letters-details" accessibilityRole="button" accessibilityState={{ expanded: showDetails }} onPress={() => setShowDetails(v => !v)} style={styles.detailToggle}><Text style={[styles.helpTitle, ss(15, 24)]}>{showDetails ? (en ? 'Close details −' : '詳しく見るを閉じる −') : sample.examples?.length ? (en ? 'Two example words & reading tips +' : '例単語2つ・読み方を見る ＋') : (en ? 'Reading tips +' : '読み方を見る ＋')}</Text></Pressable>}
             {showDetails && !!sample.detail && <Text style={[styles.detail, ss(14, 25)]}>{sample.detail}</Text>}
-          {showDetails && !!sample.examples?.length && <View style={styles.wordsCard}>
-            {sample.examples.map((word, i) => <View key={word.id} style={[styles.wordRow, i > 0 && styles.wordDivider]}>
-              <Pressable testID={`letters-play-word-${i}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Play word' : '単語を聞く'}: ${word.ne}`} onPress={() => play(word.id, word.audio)} style={({ pressed }) => [styles.wordButton, pressed && styles.pressed]}>
-                <View style={styles.wordContent}><View style={styles.wordTitleRow}><Text style={[styles.wordNe, ss(23, 35)]}>{word.ne}</Text><Text style={[styles.wordRoman, ss(14, 23)]}>{word.roman}</Text></View><Text style={[styles.body, ss(14, 23)]}>{word.meaning}</Text></View><View style={[styles.wordPlay, playing?.id === word.id && styles.tileActive]}><Text style={[styles.helpTitle, playing?.id === word.id && styles.white, ss(16, 24)]}>▶</Text></View>
-              </Pressable>
-            </View>)}
-          </View>}
+          {showDetails && !!sample.examples?.length && exampleWords(sample.examples)}
           </View>}
         </>}
         <View style={styles.reviewPanel}><Text style={[styles.body, ss(14, 24)]}>{en ? 'Listen, compare, and say it aloud. Mark this section when you have explored its sounds.' : '聞く、比べる、声に出す。ひと通り確かめたら、記録を残そう。'}</Text>{textButton(read.includes(current.id) ? (en ? 'Reviewed ✓' : '確認済み ✓') : (en ? 'Mark section as reviewed' : 'この項目を確認済みにする'), () => { void learning?.change(s => ({ ...s, lettersRead: [...new Set([...(s.lettersRead ?? []), current.id])] })); }, false, !learning?.ready)}{learning?.error && <Text style={[styles.error, ss(14, 24)]}>{en ? 'Progress could not be saved. Please retry.' : '記録を保存できませんでした。もう一度お試しください。'}</Text>}</View>
+        <View testID="letters-section-navigation" style={styles.sectionNavigation}>
+          {([-1, 1] as const).map(direction => {
+            const index = section! + direction, inRange = index >= 0 && index < data.sections.length;
+            const label = direction < 0 ? (en ? '‹ Previous' : '‹ 前へ') : (en ? 'Next ›' : '次へ ›');
+            const title = inRange ? destination(index) : (en ? 'All categories' : '文字の一覧');
+            return <Pressable key={direction} testID={direction < 0 ? 'letters-prev-section' : 'letters-next-section'} accessibilityRole="button" accessibilityLabel={`${label}: ${title}`} onPress={() => move(inRange ? index : null)} style={({ pressed }) => [styles.sectionLink, direction > 0 && styles.primary, pressed && styles.pressed]}>
+              <Text style={[styles.muted, direction > 0 && styles.white, ss(13, 22)]}>{label}</Text>
+              <Text style={[styles.cardTitle, direction > 0 && styles.white, ss(16, 26)]}>{title}</Text>
+            </Pressable>;
+          })}
+        </View>
       </>}
     </ScrollView>
     {current && samples.length > 0 && <View style={styles.playerBar}>
@@ -182,4 +205,8 @@ const styles = StyleSheet.create({
   buttonText: { color: ink, fontWeight: '600', textAlign: 'center' }, primary: { backgroundColor: teal }, white: { color: '#fff' },
   disabled: { opacity: .35 }, pressed: { opacity: .78 },
   reviewPanel: { marginTop: 8, padding: 18, gap: 12, borderTopWidth: 1, borderTopColor: '#d5e0d4' }, error: { color: '#9f1239' },
+  conjunctTile: { minWidth: 76, minHeight: 76, paddingHorizontal: 13, paddingVertical: 7, borderRadius: 14, borderWidth: 1, borderColor: '#ceddd2', backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' },
+  conjunctWords: { padding: 14, gap: 10, backgroundColor: '#eef2e9', borderRadius: 18, borderWidth: 1, borderColor: '#cbdac5' },
+  sectionNavigation: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginTop: 4 },
+  sectionLink: { flexBasis: '45%', flexGrow: 1, minWidth: 120, minHeight: 76, padding: 15, gap: 5, borderRadius: 16, backgroundColor: '#e6eee7', justifyContent: 'center' },
 });

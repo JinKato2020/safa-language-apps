@@ -77,7 +77,7 @@ export type RootStackParamList = {
   GrammarLibrary: undefined;
   LearningPath: undefined;
   LettersSounds: undefined;
-  VocabCategory: { posterOnly?: boolean } | undefined;
+  VocabCategory: { posterOnly?: boolean; fromHome?: boolean } | undefined;
   VocabDirection: { categoryId: number };
   Flashcard: { categoryId: number; direction: 'ne2ja' | 'ja2ne' };
   SettingsMain: undefined;

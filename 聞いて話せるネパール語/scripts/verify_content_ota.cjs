@@ -23,6 +23,10 @@ for(const lang of ['ja','en']){
     const invalid=structuredClone(actualOverlay),step=invalid.learningPathV3.steps[0];step.items[1]=step.items[0];assert.throws(()=>models.validateContent(actualCore,invalid,lang));
     const badCloze=structuredClone(actualOverlay);Object.values(badCloze.learningPathV3.exercises)[0].selection.prefix='broken';assert.throws(()=>models.validateContent(actualCore,badCloze,lang));
     const badLetters=structuredClone(actualOverlay);badLetters.lettersSounds.combinations[0].samples.pop();assert.throws(()=>models.validateContent(actualCore,badLetters,lang));
+    const legacyLetters=structuredClone(actualOverlay);delete legacyLetters.lettersSounds.conjunctCombinations;models.validateContent(actualCore,legacyLetters,lang);
+    for(const mutation of [r=>r.pop(),r=>r[0].samples.pop(),r=>r[0].samples[1].ne='क',r=>delete r[0].samples[1].audio,r=>r[1]=r[0]]){
+      const invalid=structuredClone(actualOverlay);mutation(invalid.lettersSounds.conjunctCombinations);assert.throws(()=>models.validateContent(actualCore,invalid,lang),'Incomplete or mismatched conjunct chart rejected');
+    }
     const badWords=structuredClone(actualOverlay);badWords.lettersSounds.sections.find(s=>s.id==='conjuncts').samples.find(s=>s.examples).examples[0].ne='wrong';assert.throws(()=>models.validateContent(actualCore,badWords,lang));
     const missingWordAudio=structuredClone(actualOverlay);delete missingWordAudio.lettersSounds.sections.find(s=>s.id==='vowels').samples[0].examples[0].audio;assert.throws(()=>models.validateContent(actualCore,missingWordAudio,lang));
   }

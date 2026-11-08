@@ -52,7 +52,13 @@ def verify(folder):
                     a=e['audio'];assert a['bytes']>0 and len(a['sha256'])==64
             letters=o['lettersSounds'];assert len(letters['combinations'])==33
             assert all(len(row['samples'])==11 for row in letters['combinations'])
-            for s in [s for section in letters['sections'] for s in section['samples'] if s.get('audio')]+[s for row in letters['combinations'] for s in row['samples']]:
+            conjuncts=letters.get('conjunctCombinations',[])
+            bases=[s for section in letters['sections'] if section['id']=='conjuncts' for s in section['samples'] if s.get('audio')]
+            assert len(conjuncts)==len(bases)==30
+            for row,base in zip(conjuncts,bases):
+                assert row['consonant']==base['ne'] and len(row['samples'])==11
+                assert [s['ne'] for s in row['samples']]==[base['ne']+sign for sign in ['', 'ा', 'ि', 'ी', 'ु', 'ू', 'ृ', 'े', 'ै', 'ो', 'ौ']]
+            for s in [s for section in letters['sections'] for s in section['samples'] if s.get('audio')]+[s for row in letters['combinations']+conjuncts for s in row['samples']]:
                 assert s['audio']['bytes']>0 and len(s['audio']['sha256'])==64
                 if s['id'].startswith(('v-','c-','conj-')):
                     assert len(s.get('examples',[]))==2

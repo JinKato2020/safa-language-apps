@@ -55,7 +55,7 @@ export default function VocabCategoryScreen() {
   if (showPoster) {
     return (
       <FlatList
-        style={!posterOnly && heroSrc != null ? { marginTop: top } : undefined}
+        style={!posterOnly && heroSrc != null ? { marginTop: route.params?.fromHome ? 0 : top } : undefined}
         contentContainerStyle={styles.container}
         ListHeaderComponent={Header}
         data={lessons}
@@ -79,7 +79,7 @@ export default function VocabCategoryScreen() {
 
   return (
     <FlatList
-      style={!posterOnly && heroSrc != null ? { marginTop: top } : undefined}
+      style={!posterOnly && heroSrc != null ? { marginTop: route.params?.fromHome ? 0 : top } : undefined}
       contentContainerStyle={styles.container}
       ListHeaderComponent={Header}
       data={WORD_CATEGORIES}

@@ -9,7 +9,7 @@ def verify(ffprobe):
         legacy=read(APP/'文法教材/beginner_learning_path.json')[lang]
         grammar=read(APP/'文法教材/grammar_practice.json')[lang]
         letters=read(APP/'文法教材/letters_sounds.json')[lang]
-        letter_samples=[s for b in letters['sections'] for s in b['samples'] if s.get('audio')]+[s for r in letters['combinations'] for s in r['samples']]
+        letter_samples=[s for b in letters['sections'] for s in b['samples'] if s.get('audio')]+[s for r in letters['combinations']+letters.get('conjunctCombinations',[]) for s in r['samples']]
         samples=[*legacy['exercises'].values(),*[s for b in legacy['intro'] for s in b.get('samples',[])],*grammar['exercises'].values(),*letter_samples,*[w for s in letter_samples for w in s.get('examples',[])]]
         targets=[s for s in letter_samples if s['id'].startswith(('v-','c-','conj-'))]
         assert len(targets)==74 and all(len(s.get('examples',[]))==2 for s in targets)

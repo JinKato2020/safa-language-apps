@@ -44,7 +44,7 @@ const HERO_IMAGES = {
 function LearningAppShell() {
   const engagement = useEngagement();
   const data = useAppData();
-  return <SettingsDevelopmentProvider value={engagement.developmentTools}><AppShell learningStorageKey="@nepali_app/learning_v1" headerIconSource={headerIconSource} posterLessons={data.POSTER_LESSONS ?? POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['home', 'grammar', 'conversation', 'listening', 'vocabulary']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={engagement.onRouteChanged} mainScreenAccessory={<>{engagement.banner}<ContentStatus /></>} /></SettingsDevelopmentProvider>;
+  return <SettingsDevelopmentProvider value={engagement.developmentTools}><AppShell learningStorageKey="@nepali_app/learning_v1" headerIconSource={headerIconSource} posterLessons={data.POSTER_LESSONS ?? POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['home', 'grammar', 'conversation', 'listening', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={engagement.onRouteChanged} mainScreenAccessory={<>{engagement.banner}<ContentStatus /></>} /></SettingsDevelopmentProvider>;
 }
 
 const toPackLang = (lang: string) => (lang === 'en' ? 'en' : 'ja');

@@ -80,14 +80,14 @@ function invitationCase(lang='ja',raw=null,environment='production'){
  i=invitationCase('ja',saved);await tick();await i.route('Practice');now+=31_000;await i.route('Theme');i.background();await i.runTimers();assert.equal(i.reviewCount(),0,'No background review');i.unmount();
  i=invitationCase('ja',saved);await tick();await i.route('Practice');now+=31_000;await i.route('Theme');await i.route('Practice');await i.runTimers();assert.equal(i.reviewCount(),0,'New study screen cancels pending review');i.unmount();
  i=invitationCase('ja',saved);await tick();await i.route('Practice');now+=31_000;await i.route('Theme');i.available(false);await i.runTimers();assert.equal(i.reviewCount(),0,'TestFlight/unavailable is not forced into App Store');i.unmount();
- i=invitationCase('ja',saved);await tick();assert.equal(i.render().developmentTools,null,'No developer controls in production');i.unmount();
+ i=invitationCase('ja',saved);await tick();assert(i.render().developmentTools,'Tools supplied in every build; SettingsScreen requires the explicit seven-tap gesture');i.unmount();
  i=invitationCase('ja',saved,'testflight');await tick();await i.route('SettingsTab');const original=i.store.disk.get('@nepali_app/engagement_v1');
- assert(i.render().developmentTools,'TestFlight has explicit developer controls');assert.equal(await i.render().developmentTools.showReview(),'unavailable');assert.equal(i.reviewCount(),0);
+ assert(i.render().developmentTools,'TestFlight tools use the same hidden settings gate');assert.equal(await i.render().developmentTools.showReview(),'unavailable');assert.equal(i.reviewCount(),0);
  i.render().developmentTools.showRequest();assert(i.render().banner);await i.press(2);assert.equal(i.render().banner,null);assert.equal(i.store.disk.get('@nepali_app/engagement_v1'),original,'Preview opt-out does not alter real preferences');
  i.render().developmentTools.showRequest();await i.press(1);assert.equal(i.store.disk.get('@nepali_app/engagement_v1'),original,'Preview close does not reschedule invitations');
  i.render().developmentTools.showRequest();i.available(true);assert.equal(await i.render().developmentTools.showReview(),'requested');assert.equal(i.reviewCount(),1);assert.equal(i.store.disk.get('@nepali_app/engagement_v1'),original,'Manual test does not consume production review budget');i.unmount();
  i=invitationCase('en',saved,'development');await tick();assert(i.render().developmentTools,'Development build exposes tools even when native rating is available');assert.equal(await i.render().developmentTools.showReview(),'requested');assert.equal(i.reviewCount(),1);i.unmount();
  console.log('PASS launch access: enroll, persistence repair, offline/storage failure, campaign closed, receipt restore, paid access retained, no purchase during free access.');
  console.log('PASS engagement: calendar day3 then weekly after study only; launch/settings quiet; lessons and conversation via Level;30second minimum; annual review cap; opt-out; background/navigation cancellation; ja/en email drafts.');
- console.log('PASS settings triggers: production hidden, TestFlight available, native-unavailable result, immediate request preview, no timing/preference/review-budget mutations.');
+ console.log('PASS settings triggers: shared hidden gate for all builds, native-unavailable result, immediate request preview, no timing/preference/review-budget mutations.');
 })().catch(e=>{console.error(e);process.exitCode=1});

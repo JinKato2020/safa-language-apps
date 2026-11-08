@@ -5,8 +5,8 @@ const ROOT=path.resolve(__dirname,'../..'),work=path.resolve(process.argv[2]||'.
 const source=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const compile=s=>ts.transpileModule(s,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
 const modules={};for(const[p,file]of[['react','react.production.js'],['react/jsx-runtime','react-jsx-runtime.production.js'],['react-dom','react-dom.production.js'],['react-dom/client','react-dom-client.production.js'],['scheduler','scheduler.production.js']])modules[p]=fs.readFileSync(path.join(path.dirname(require.resolve(p.split('/')[0]+'/package.json')),'cjs',file),'utf8');
-for(const name of ['practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
-for(const name of ['FreePracticeScreen','GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
+for(const name of ['PuzzleBoard','puzzleDrag','practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['PuzzleBoard','LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
+for(const name of ['SettingsScreen','VocabCategoryScreen','VocabDirectionScreen','FlashcardScreen','FreePracticeScreen','GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
 modules.entitlement=compile(source('packages/shared/src/entitlement.tsx'));
 modules.compose=compile(source('聞いて話せるネパール語/expo-app/src/pack/compose.ts'));
 const core=JSON.parse(source('聞いて話せるネパール語/expo-app/data/ota-baseline/core.json'));
@@ -18,34 +18,36 @@ const React=require('react'),h=React.createElement;window.caseInfo={lang:'ja',sc
 const flat=s=>Object.assign({},...(Array.isArray(s)?s.flat(Infinity):[s]).filter(Boolean));
 function css(style,view=false){const s=flat(style),out=view?{position:'relative',display:'flex',flexDirection:'column',flexShrink:0,minWidth:0,minHeight:0,borderWidth:0,borderStyle:'solid'}:{};for(const[k,v]of Object.entries(s)){
 if(k==='paddingHorizontal'){out.paddingLeft=v;out.paddingRight=v;}else if(k==='paddingVertical'){out.paddingTop=v;out.paddingBottom=v;}else if(k==='marginHorizontal'){out.marginLeft=v;out.marginRight=v;}else if(k==='marginVertical'){out.marginTop=v;out.marginBottom=v;}else if(k==='lineHeight')out[k]=v*window.caseInfo.scale+'px';else if(k==='fontSize')out[k]=v*window.caseInfo.scale;else out[k]=v;}return out;}
-function View(p){const ref=React.useRef(null);React.useEffect(()=>{if(!p.onLayout)return;const r=new ResizeObserver(()=>p.onLayout({nativeEvent:{layout:{width:ref.current.clientWidth,height:ref.current.clientHeight}}}));r.observe(ref.current);return()=>r.disconnect();},[p.onLayout]);return h('div',{ref,'data-testid':p.testID,style:css(p.style,true)},p.children);}
+const View=React.forwardRef((p,ref)=>{const el=React.useRef(null),gesture=React.useRef(null);React.useImperativeHandle(ref,()=>({measureInWindow:cb=>{const r=el.current.getBoundingClientRect();cb(r.x,r.y,r.width,r.height);}}));React.useEffect(()=>{if(!p.onLayout)return;const r=new ResizeObserver(()=>p.onLayout({nativeEvent:{layout:{width:el.current.clientWidth,height:el.current.clientHeight}}}));r.observe(el.current);return()=>r.disconnect();},[p.onLayout]);const event=e=>({nativeEvent:{pageX:e.clientX,pageY:e.clientY}});const state=e=>({x0:gesture.current.x,y0:gesture.current.y,moveX:e.clientX,moveY:e.clientY,dx:e.clientX-gesture.current.x,dy:e.clientY-gesture.current.y,numberActiveTouches:1});return h('div',{ref:el,'data-testid':p.testID,style:{...css(p.style,true),...(p.pointerEvents==='none'?{pointerEvents:'none'}:{})},onPointerDown:e=>{if(p._pan){gesture.current={x:e.clientX,y:e.clientY,active:false};(e.target.closest('button')??el.current).setPointerCapture(e.pointerId);}},onPointerMoveCapture:e=>{if(!p._pan||!gesture.current)return;const g=state(e);if(!gesture.current.active&&p._pan.onMoveShouldSetPanResponderCapture?.(event(e),g)){gesture.current.active=true;el.current.setPointerCapture(e.pointerId);p._pan.onPanResponderGrant?.(event(e),g);}if(gesture.current.active)p._pan.onPanResponderMove?.(event(e),g);},onPointerUpCapture:e=>{if(gesture.current?.active)p._pan.onPanResponderRelease?.(event(e),state(e));p.onTouchEnd?.(event(e));gesture.current=null;},onPointerCancel:e=>{if(gesture.current?.active)p._pan.onPanResponderTerminate?.();p.onTouchCancel?.();gesture.current=null;}},p.children);});
 function Text(p){return h('span',{'data-testid':p.testID,role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...css(p.style)}},p.children);}
-function Pressable(p){return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,'aria-selected':p.accessibilityState?.selected,disabled:p.disabled,onClick:p.onPress,'data-testid':p.testID,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
-const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y)}));return h('div',{ref:el,style:{overflowY:p.horizontal?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
+function Pressable(p){const timer=React.useRef();React.useEffect(()=>()=>clearTimeout(timer.current),[]);const stop=()=>clearTimeout(timer.current);return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,'aria-selected':p.accessibilityState?.selected,disabled:p.disabled,onClick:p.onPress,onPointerDown:e=>{if(p.disabled)return;p.onPressIn?.();const event={nativeEvent:{pageX:e.clientX,pageY:e.clientY}};if(p.onLongPress)timer.current=setTimeout(()=>p.onLongPress(event),p.delayLongPress??500);},onPointerUp:stop,onPointerLeave:stop,onPointerCancel:stop,'data-testid':p.testID,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
+const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y)}));return h('div',{ref:el,'data-testid':p.testID,style:{scrollbarGutter:'stable',overflowY:p.horizontal||p.scrollEnabled===false?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
 const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))};
 const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode==='contain'?'contain':undefined,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
-cache['react-native']={exports:{AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
-cache.Text={exports:{Text}};cache.SettingsContext={exports:{useSettings:()=>({practiceDirection:'ja2ne',romaji:true}),useScaleStyle:()=> (fontSize,lineHeight)=>({fontSize,lineHeight}),useGlobalScaleStyle:()=>fontSize=>({fontSize})}};
-cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).replace('{'+k+'}',v);return s;}})}};
+cache['react-native']={exports:{Platform:{OS:'ios'},Alert:{alert:(...args)=>window.alerts.push(args)},Linking:{openURL:async url=>window.links.push(url)},Share:{share:async()=>{}},Switch:()=>null,PanResponder:{create:config=>({panHandlers:{_pan:config}})},AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
+cache.Text={exports:{Text}};cache.SettingsContext={exports:{useSettings:()=>({practiceDirection:'ja2ne',romaji:true,listenSpeed:1,nepaliRepeat:1,listenDirection:'ja2ne',listenLoop:true,gap:'normal',fontMode:'medium',autoFlip:false,shuffle:false}),useScaleStyle:()=> (fontSize,lineHeight)=>({fontSize,lineHeight}),useGlobalScaleStyle:()=>fontSize=>({fontSize})}};
+cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,langs:['ja','en'],setLang:()=>{},t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).replace('{'+k+'}',v);return s;}})}};
+cache.ModalDropdown={exports:{ModalDropdown:p=>h('span',null,p.value)}};cache['expo-application']={exports:{nativeBuildVersion:'test'}};window.alerts=[];window.links=[];window.devCalls=[];window.devAvailable=true;window.devResult='unavailable';cache.settingsDevelopment={exports:{useSettingsDevelopment:()=>window.devAvailable?{showReview:async()=>{window.devCalls.push('review');return window.devResult;},showRequest:()=>window.devCalls.push('request')}:null}};
+cache.PosterContext={exports:{usePosterLessons:()=>[]}};
 cache.AppDataContext={exports:{useAppData:()=>window.data}};
 const realEntitlement=require('entitlement');cache.entitlement={exports:{...realEntitlement,useEntitlement:()=>window.testEntitlement??{isPro:true,freeThemes:Infinity}}};
 cache['react-native-safe-area-context']={exports:{useSafeAreaInsets:()=>({top:20,bottom:0,left:0,right:0})}};
-cache['react-native-svg']={exports:{__esModule:true,default:()=>null,Line:()=>null,Path:()=>null,Polyline:()=>null}};
+cache['react-native-svg']={exports:{__esModule:true,default:()=>null,Line:()=>null,Path:()=>null,Polyline:()=>null,Rect:()=>null,Circle:()=>null,Ellipse:()=>null,Polygon:()=>null}};
 cache.useCardFlip={exports:{useCardFlip:()=>({flip:cb=>cb(),animatedStyle:{}})}};
 cache.useHorizontalSwipe={exports:{useHorizontalSwipe:()=>({})}};
 cache['expo-audio']={exports:{useAudioPlayer:src=>{const p=React.useMemo(()=>({source:src,seekTo:async()=>{},pause:()=>window.activeAudio.delete(p),play:()=>{window.activeAudio.add(p);window.events.push(['audio',src]);}}),[src]);React.useEffect(()=>()=>window.activeAudio.delete(p),[p]);return p;},useAudioPlayerStatus:p=>({isLoaded:!!p.source,playing:false,didJustFinish:window.audioEnded})}};
 cache['@react-native-async-storage/async-storage']={exports:{getItem:async k=>localStorage.getItem(k),setItem:async(k,v)=>{if(window.failStorage)throw Error('full');localStorage.setItem(k,v);}}};
-const nav={setParams:params=>{window.route={...window.route,params:{...window.route.params,...params}};window.redraw();},isFocused:()=>true,canGoBack:()=>window.stack.length>0,navigate:(name,params)=>{window.events.push(['navigate',name,params]);window.stack.push(window.route);window.route={name,params};window.redraw();},replace:(name,params)=>{window.events.push(['replace',name,params]);window.route={name,params};window.redraw();},goBack:()=>{window.route=window.stack.pop()??{name:'HomeTab'};window.redraw();},setOptions:options=>{const next={...window.screenOptions,...options};if(JSON.stringify(next)===JSON.stringify(window.screenOptions))return;window.screenOptions=next;window.redraw?.();}};
-cache['@react-navigation/native']={exports:{useNavigation:()=>nav,useRoute:()=>window.route,useFocusEffect:cb=>React.useEffect(cb,[cb])}};
+window.focusEnds=new Set();const nav={setParams:params=>{window.route={...window.route,params:{...window.route.params,...params}};window.redraw();},isFocused:()=>true,canGoBack:()=>window.stack.length>0,navigate:(name,params)=>{window.events.push(['navigate',name,params]);window.stack.push(window.route);window.route={name,params};window.redraw();},replace:(name,params)=>{window.events.push(['replace',name,params]);window.route={name,params};window.redraw();},goBack:()=>{window.route=window.stack.pop()??{name:'HomeTab'};window.redraw();},setOptions:options=>{const next={...window.screenOptions,...options};if(JSON.stringify(next)===JSON.stringify(window.screenOptions))return;window.screenOptions=next;window.redraw?.();}};
+cache['@react-navigation/native']={exports:{useNavigation:()=>nav,useRoute:()=>window.route,useFocusEffect:cb=>React.useEffect(()=>{const end=cb();window.focusEnds.add(end);return()=>{window.focusEnds.delete(end);end?.();};},[cb])}};
 cache.heroImages={exports:{useHeroImage:()=>1,ModeHero:()=>h('img',{src:${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))},style:{width:'100%',aspectRatio:'3/1',objectFit:'contain',borderRadius:16}})}};
 cache.grammarGuide={exports:{useGrammarGuide:()=>window.data.GRAMMAR_GUIDE,useGrammarGuideImageResolver:()=>async()=>null}};
 const root=require('react-dom/client').createRoot(document.getElementById('root')),Provider=require('LearningContext').LearningProvider;let generation=0;
 const AudioProvider=require('LearningSound').LearningAudioProvider,resolveAudio=async a=>({uri:a.url});
-const names={HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
-function Frame(){const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['Practice','LettersSounds','LearningPath','GrammarLibrary'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
+const names={SettingsTab:'SettingsScreen',VocabCategory:'VocabCategoryScreen',VocabDirection:'VocabDirectionScreen',Flashcard:'FlashcardScreen',HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
+function Frame(){const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['VocabCategory','VocabDirection','Flashcard','Practice','LettersSounds','LearningPath','GrammarLibrary'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
 window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];window.activeAudio=new Set();window.audioEnded=false;
 const neAudio={},neGram={},l1Audio={},l1Gram={};for(const[k,rows]of Object.entries(core.examplesNe))rows.forEach((_,i)=>{neAudio[k+'-'+(i+1)]='ne/'+k+'-'+(i+1);l1Audio[k+'-'+(i+1)]=lang+'/'+k+'-'+(i+1);});for(const[k,id]of Object.entries(core.grammarAudioRefs??Object.fromEntries(Object.entries(core.grammarNe).flatMap(([t,rows])=>rows.map((_,i)=>[t+'-'+(i+1),t+'-'+(i+1)]))))){if(id){neGram[id]='ne/'+id;l1Gram[id]=lang+'/'+id;}}
-window.data=require('compose').composePack({...core,nepaliAudio:neAudio,nepaliGrammarAudio:neGram},{...overlays[lang],nativeLang:lang,l1Audio,l1GrammarAudio:l1Gram},{version:'test'});
+window.data=require('compose').composePack({...core,nepaliAudio:neAudio,nepaliGrammarAudio:neGram},{...overlays[lang],nativeLang:lang,l1Audio,l1GrammarAudio:l1Gram},{version:'test'});window.data.review={iosAppId:'6771720689'};
 require('react-dom').flushSync(()=>root.render(h(Provider,{storageKey:'test-study',key:++generation},h(AudioProvider,{resolve:resolveAudio},h(Frame)))));await new Promise(r=>setTimeout(r,30));};
 window.navigate=nav.navigate;window.boot();
 `;
@@ -56,6 +58,51 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(process.argv.includes('--settings-gate')){
+      const by=id=>page.getByTestId(id);
+      for(const lang of ['ja','en'])for(const width of [320,390]){
+        await page.setViewportSize({width,height:844});await page.evaluate(l=>{window.devAvailable=true;window.testEntitlement={isPro:true,accessKind:'launch-free',freeThemes:5,restore:()=>{}};return window.boot(l,true,{name:'SettingsTab'},1.25);},lang);
+        const en=lang==='en',title=en?'Development checks':'開発確認',launch=en?'Launch':'起動',show=en?'Show':'表示';
+        const body=await page.locator('body').innerText(),copy=strings[lang].settings;
+        assert.equal(body.split(copy.rateApp).length-1,1);assert(body.indexOf(copy.rateApp)>body.indexOf(copy.restore));assert(await page.evaluate(copy=>{const spans=[...document.querySelectorAll('span')],rating=spans.find(e=>e.textContent===copy.rateApp),lang=spans.find(e=>e.textContent===copy.sectionLang);return !!(rating.compareDocumentPosition(lang)&Node.DOCUMENT_POSITION_FOLLOWING);},copy));
+        assert.equal(await page.getByText(title,{exact:true}).count(),0);
+        for(let n=0;n<6;n++)await by('settings-version').click();assert.equal(await page.getByText(title,{exact:true}).count(),0);
+        await by('settings-version').click();await page.getByText(title,{exact:true}).waitFor();
+        await page.evaluate(()=>{window.alerts=[];window.links=[];window.devCalls=[];});
+        await page.getByRole('button',{name:launch,exact:true}).click();assert.deepEqual(await page.evaluate(()=>window.devCalls),['review']);assert.equal(await page.evaluate(()=>window.links.length),0);
+        assert.equal(await page.evaluate(()=>window.alerts.length),1);await page.evaluate(()=>window.alerts[0][2].at(-1).onPress());assert((await page.evaluate(()=>window.links[0])).endsWith('id6771720689?action=write-review'));
+        await page.getByRole('button',{name:show,exact:true}).click();assert.deepEqual(await page.evaluate(()=>window.devCalls),['review','request']);
+        assert((await page.getByRole('button',{name:launch,exact:true}).boundingBox()).height>=44);
+        await page.screenshot({path:path.join(work,`previews/settings-${lang}-${width}-unlocked.png`)});
+        await page.evaluate(()=>{for(const end of window.focusEnds)end?.();});await page.getByText(title,{exact:true}).waitFor({state:'detached'});
+        // A new focus starts hidden even when the tab itself stayed mounted.
+        for(let n=0;n<6;n++)await by('settings-version').click();assert.equal(await page.getByText(title,{exact:true}).count(),0);
+        await page.waitForTimeout(3100);await by('settings-version').click();assert.equal(await page.getByText(title,{exact:true}).count(),0,'Slow taps reset the count');
+        await page.evaluate(()=>window.navigate('HomeTab'));await page.evaluate(()=>window.navigate('SettingsTab'));assert.equal(await page.getByText(title,{exact:true}).count(),0);
+        assert.deepEqual(errors,[]);
+      }
+      await page.evaluate(()=>{window.devAvailable=false;window.testEntitlement={isPro:true,freeThemes:Infinity};return window.boot('en',true,{name:'SettingsTab'});});
+      for(let n=0;n<7;n++)await by('settings-version').click();assert.equal(await page.getByText('Development checks',{exact:true}).count(),0);
+      const text=await page.locator('body').innerText();assert(text.indexOf(strings.en.settings.rateApp)>text.indexOf(strings.en.settings.sectionAbout));
+      console.log('PASS settings: ja/en×320/390 large text, hidden in all builds, seven fast taps only, timeout reset, re-hide on blur without unmount, review/request actions and explicit fallback, normal rating placement, other apps hidden.');return;
+    }
+    if(process.argv.includes('--home-vocabulary')){
+      const app=source('聞いて話せるネパール語/expo-app/App.tsx'),shell=source('packages/shared/src/AppShell.tsx');
+      assert(app.includes("tabs={['home', 'grammar', 'conversation', 'listening', 'settings']}"));
+      for(const route of ['VocabCategory','VocabDirection','Flashcard','PosterAudio'])assert(shell.includes('name="'+route+'"'));
+      for(const lang of ['ja','en']){
+        await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
+        const ids=await page.locator('[data-testid^="home-"]').evaluateAll(es=>es.map(e=>e.dataset.testid));assert.equal(ids.indexOf('home-vocabulary'),ids.indexOf('home-grammar-lessons')+1);
+        await page.getByTestId('home-vocabulary').click();assert.equal(await page.evaluate(()=>window.route.name),'VocabCategory');
+        const cat=await page.evaluate(()=>window.data.CONTENT_NAMES?.categories?.[1]??window.data.WORD_CATEGORIES[0].name);await page.getByText(cat,{exact:true}).first().click();
+        assert.equal(await page.evaluate(()=>window.route.name),'Flashcard');assert((await page.locator('body').innerText()).includes(await page.evaluate(()=>window.data.getWords(1)[0].ne)));
+        await page.getByTestId('study-back').click();assert.equal(await page.evaluate(()=>window.route.name),'VocabCategory');await page.getByTestId('study-back').click();await page.getByTestId('home-vocabulary').waitFor();
+        await page.screenshot({path:path.join(work,`previews/home-${lang}.png`)});
+        await page.evaluate(()=>window.navigate('Theme',{mode:'listening'}));assert((await page.locator('body').innerText()).includes(strings[lang].themeScreen.headerListen));
+        assert.deepEqual(errors,[]);
+      }
+      console.log('PASS home vocabulary below lessons, real category/flashcard/back routes, bottom Settings config, bilingual listening introduction.');return;
+    }
     if(process.argv.includes('--legacy-free-resume')){
       for(const lang of ['ja','en'])for(const position of [0,5,10]){
         await page.evaluate(({lang,position})=>{const old=require('practicePool').createPracticeSession(require('learning').emptyStudyState(),window.data.LEARNING_PATH,1,require('practicePool').seededRandom(7));old.session.position=position;old.session.answered=old.session.items.slice(0,position).map((r,i)=>require('practicePool').practiceTaskKey(old.session,r,i));old.state.resume={item:old.session.items[position],session:old.session};localStorage.setItem('test-study',JSON.stringify(old.state));return window.boot(lang,false);},{lang,position});
@@ -97,12 +144,12 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
               if(step.guideThemeId===1)await page.screenshot({path:path.join(work,`previews/practice-${lang}-puzzle.png`)});
               await page.locator('[data-testid^="free-token-extra-"]').first().click();
               for(let i=1;i<e.words.length;i++)await by('free-token-word-'+i).click();
-              await by('free-check').click();assert.equal(await by('free-next').count(),0);
-              assert((await page.locator('body').textContent()).includes(en?'One of the words does not fit':'この文に合わない語'));
-              await by('free-remove-0').click();assert.equal(await by('free-check').isDisabled(),true);
-              if(await by('free-reset').count())await by('free-reset').click();
+              assert.equal(await by('free-next').count(),0);
+              assert((await page.locator('body').textContent()).includes(en?'Try replacing a word.':'語句を入れ替えてみよう。'));
+              await by('free-remove-0').click();assert.equal(await by('free-check').count(),0);
+              assert.equal(await by('free-reset').count(),0);while(await by('free-remove-0').count())await by('free-remove-0').click();
               for(let i=0;i<e.words.length;i++)await by('free-token-word-'+i).click();
-              await by('free-check').click();
+              await by('free-feedback').waitFor();
             }
             await by('free-feedback').waitFor();
             if(step.guideThemeId===1&&mode===2){
@@ -119,14 +166,14 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.evaluate(l=>window.boot(l,true),lang);await open(steps[0]);await by('practice-start-2').click();const seen=[];
         for(let i=0;i<25;i++){
           const s=await session();seen.push(s.items[0].exerciseId);await by('free-model').click();
-          if(i===0){await by('free-audio').click();await page.waitForFunction(()=>window.activeAudio.size===1);}
+          assert.equal(await by('free-audio').count(),0);
           await next();assert.equal((await session()).freePractice.answered,i+1);assert.equal(await page.evaluate(()=>window.stack.length),2);assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
         }
         assert.equal(new Set(seen.slice(0,20)).size,20);assert.notEqual(seen[19],seen[20]);
         const before=await session();await by('free-mode-4').click();await by('free-bank').waitFor();assert.equal((await session()).freePractice.answered,25);
-        await by('free-hint').click();await by('free-hints').waitFor();await by('free-hint').click();assert.equal(await by('free-hints').count(),0);
+        assert.equal(await by('free-hint').count(),0);assert.equal(await by('free-hints').count(),0);assert.equal(await by('free-puzzle-intro').count(),1);
         const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study'))),resumed=await session();
-        await page.evaluate(l=>window.boot(l,false),lang);await b(en?'Continue where you left off':'前回の続きへ').click();assert.deepEqual(await session(),resumed);
+        await page.evaluate(l=>window.boot(l,false),lang);await b(en?'Continue where you left off':'前回の続きへ').click();assert.deepEqual(await session(),resumed);assert.equal(await by('free-puzzle-intro').count(),0);
         assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).practicePools),saved.practicePools);
         // Rapid Next cannot count twice; changing mode does not count an abandoned question.
         await by('free-model').click();await by('free-next').evaluate(el=>{el.click();el.click();});await page.waitForFunction(()=>window.route.params.studySession.freePractice.answered===26);
@@ -144,6 +191,93 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
       }
       assert.deepEqual(errors,[]);return;
     }
+    if(process.argv.includes('--puzzle-gestures')){
+      const by=id=>page.getByTestId(id);
+      const drag=async(source,target,fixed=false)=>{const before=await source.boundingBox();await source.scrollIntoViewIfNeeded();const box=await source.boundingBox();if(!fixed)target={x:target.x+box.x-before.x,y:target.y+box.y-before.y};await page.mouse.move(box.x+box.width/2,box.y+box.height/2);await page.mouse.down();await page.waitForTimeout(230);await page.mouse.move(target.x,target.y,{steps:12});await page.mouse.up();};
+      for(const lang of ['ja','en']){
+        const en=lang==='en';await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
+        await page.evaluate(()=>window.navigate('GrammarGuide',{themeId:1,title:window.data.LEARNING_PATH.steps[0].title}));await page.getByRole('tab',{name:en?'Practice':'練習問題',exact:true}).click();await by('practice-start-4').click();
+        assert.equal(await by('free-puzzle-intro').count(),1);assert.equal(await by('free-hint').count(),0);assert.equal(await by('free-reset').count(),0);assert.equal(await by('free-check').count(),0);
+        const ex=await page.evaluate(()=>window.data.LEARNING_PATH.exercises[window.route.params.studySession.items[0].exerciseId]);
+        const labels=()=>page.locator('[data-testid^="free-remove-"]').allTextContents();
+        await by('free-answer').scrollIntoViewIfNeeded();let a=await by('free-answer').boundingBox();
+        await drag(by('free-token-word-1'),{x:a.x+a.width/2,y:a.y+a.height-20});assert.deepEqual(await labels(),[ex.words[1].text]);
+        await by('free-token-word-0').click();assert.deepEqual(await labels(),[ex.words[1].text,ex.words[0].text]);
+        a=await by('free-answer').boundingBox();await drag(by('free-token-word-2'),{x:a.x+a.width-15,y:a.y+a.height-16});
+        assert.equal(await by('free-next').count(),0);assert.deepEqual(await labels(),[ex.words[1].text,ex.words[0].text,ex.words[2].text]);
+        // Returning a selected card to the bank removes just that card.
+        const bank=await by('free-bank').boundingBox();await drag(by('free-remove-0'),{x:bank.x+bank.width-5,y:bank.y+bank.height-5});assert.deepEqual(await labels(),[ex.words[0].text,ex.words[2].text]);
+        // Dropping outside either area leaves the answer alone.
+        await drag(by('free-token-word-1'),{x:5,y:90},true);assert.deepEqual(await labels(),[ex.words[0].text,ex.words[2].text]);await by('puzzle-drag-preview').waitFor({state:'detached'});
+        const second=await by('free-remove-1').boundingBox();await drag(by('free-token-word-1'),{x:second.x+2,y:second.y+second.height/2});await by('free-feedback').waitFor();
+        await by('free-next').click();await by('free-bank').waitFor();assert.equal(await by('free-puzzle-intro').count(),0);
+        // A direct reorder of an existing card is also supported.
+        const e=await page.evaluate(()=>window.data.LEARNING_PATH.exercises[window.route.params.studySession.items[0].exerciseId]);
+        await by('free-token-word-1').click();await by('free-token-word-0').click();
+        const first=await by('free-remove-0').boundingBox();await drag(by('free-remove-1'),{x:first.x+1,y:first.y+first.height/2});assert.deepEqual(await labels(),[e.words[0].text,e.words[1].text]);
+        await page.screenshot({path:path.join(work,`previews/puzzle-${lang}-direct-cards.png`)});
+        await page.evaluate(l=>window.boot(l,false),lang);await page.getByRole('button',{name:en?'Continue where you left off':'前回の続きへ',exact:true}).click();assert.equal(await by('free-puzzle-intro').count(),0);
+        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: real PanResponder handlers through pointer adapter, bank insertion, reorder, return to bank, cancelled outside drop, automatic judgement and one-time intro across restart.`);
+      }
+      return;
+    }
+    if(process.argv.includes('--conjuncts')){
+      const by=id=>page.getByTestId(id);
+      for(const lang of ['ja','en']){
+        const en=lang==='en';await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true,{name:'LettersSounds'}),lang);await by('letters-category-start').click();
+        assert.equal(await by('letters-play-ka-aa').count(),0);assert.equal(await by('letters-play-house').count(),0);assert.equal(await by('letters-play-ka-base').count(),1);
+        await by('letters-library').click();await by('letters-category-conjuncts').click();
+        const data=await page.evaluate(()=>window.data.LETTERS_SOUNDS),bases=data.sections.find(s=>s.id==='conjuncts').samples.filter(s=>s.audio);
+        assert.equal(bases.length,30);assert.equal(data.conjunctCombinations.length,30);
+        for(const [i,base]of bases.entries()){
+          await by('letters-conjunct-'+base.id).click();assert.equal(await by('letters-conjunct-'+base.id).getAttribute('aria-selected'),'true');
+          assert.equal(await by('letters-conjunct-words').getByRole('button').count(),2);assert.equal(await by('letters-sound-chart').getByRole('button').count(),11);
+          for(let j=0;j<2;j++){await by('letters-play-word-'+j).click();await page.waitForFunction(url=>window.events.filter(e=>e[0]==='audio').at(-1)?.[1]?.uri===url,base.examples[j].audio.url);}
+          for(const sample of data.conjunctCombinations[i].samples){await by('letters-play-'+sample.id).click();await page.waitForFunction(url=>window.events.filter(e=>e[0]==='audio').at(-1)?.[1]?.uri===url,sample.audio.url);assert.equal(await page.evaluate(()=>window.activeAudio.size),1);}
+        }
+        for(const[width,height,scale]of[[390,844,1],[320,568,1.4]]){
+          await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});await by('letters-category-conjuncts').click();
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+          const word=await by('letters-play-word-0').boundingBox();if(width===390)assert(word.y+word.height<height-68,'First example is visible without scrolling');
+          await page.screenshot({path:path.join(work,`previews/conjunct-${lang}-${width}.png`)});
+        }
+        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: ka/ghar removal; 30 horizontal conjunct selectors, 60 immediate example words, 330 sound routes, one active player and narrow/large-text layout.`);
+      }
+      return;
+    }
+    if(process.argv.includes('--letters-navigation')){
+      for(const lang of ['ja','en']){
+        const en=lang==='en',by=id=>page.getByTestId(id);
+        await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true,{name:'LettersSounds'}),lang);
+        const sections=await page.evaluate(()=>window.data.LETTERS_SOUNDS.sections),saved=await page.evaluate(()=>localStorage.getItem('test-study'));
+        await by('letters-category-start').click();await by('letters-prev-section').click();await by('letters-category-start').waitFor();
+        await by('letters-category-start').click();
+        for(const section of sections){
+          await page.getByRole('heading',{name:section.title,exact:true}).waitFor();
+          assert(await by('letters-section-navigation').evaluate(el=>el===el.parentElement.lastElementChild),'Navigation is at the bottom of the lesson');
+          const first=by('letters-sound-chart').getByRole('button').first();await first.click();await page.waitForFunction(()=>window.activeAudio.size===1);
+          if(section.id==='vowels'){await by('letters-details').click();assert.equal(await by('letters-play-word-0').count(),1);await by('letters-play-word-0').click();await page.waitForFunction(()=>window.activeAudio.size===1);}
+          await by('letters-next-section').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0,'Moving stops the sound');if(section.id!=='combinations')assert.equal(await by('letters-play-word-0').count(),0,'Moving closes previous word details');
+        }
+        await by('letters-category-marks').click();await by('letters-section-numbers').click();
+        for(const section of [...sections].reverse()){
+          await page.getByRole('heading',{name:section.title,exact:true}).waitFor();await by('letters-prev-section').click();
+        }
+        await by('letters-category-start').waitFor();assert.equal(await page.evaluate(()=>localStorage.getItem('test-study')),saved,'Navigation never marks sections as reviewed');
+        for(const [width,height,scale]of[[390,844,1],[320,568,1.4]]){
+          await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});await by('letters-category-start').click();
+          for(const section of sections){
+            await page.getByRole('heading',{name:section.title,exact:true}).waitFor();await by('letters-next-section').scrollIntoViewIfNeeded();
+            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+            for(const id of ['letters-prev-section','letters-next-section']){const box=await by(id).boundingBox();assert(box.width>=44&&box.height>=44);}
+            if(section.id==='start'||section.id==='vowels')await page.screenshot({path:path.join(work,`previews/letters-nav-${lang}-${width}-${section.id}.png`)});
+            await by('letters-next-section').click();
+          }
+        }
+        console.log(`PASS ${lang}: forward/back through all 13 sections, endpoint library links, stopped playback, reset details, no progress side effects, bottom placement and 320px/large-text targets.`);
+      }
+      assert.deepEqual(errors,[]);return;
+    }
     if(process.argv.includes('--letters-only')){
       for(const lang of ['ja','en']){
         const en=lang==='en',b=name=>page.getByRole('button',{name,exact:true}),by=id=>page.getByTestId(id);
@@ -154,7 +288,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         const sectionCategory=id=>['start','vowels','combinations','conjuncts'].includes(id)?id:['marks','numbers'].includes(id)?'marks':'consonants';
         const play=async(id,url)=>{const before=await page.evaluate(()=>window.events.filter(e=>e[0]==='audio').length);await by(id).click();await page.waitForFunction(({before,url})=>window.events.filter(e=>e[0]==='audio').length===before+1&&window.events.filter(e=>e[0]==='audio').at(-1)[1].uri===url,{before,url});assert.equal(await page.evaluate(()=>window.activeAudio.size),1,'Only one audio player may be active');};
         let total=0;
-        for(const section of letters.sections.filter(s=>s.id!=='combinations')){
+        for(const section of letters.sections.filter(s=>!['combinations','conjuncts'].includes(s.id))){
           await by('letters-category-'+sectionCategory(section.id)).click();
           if(['bare','marks','numbers','velar','affricate','retroflex','dental','labial','other'].includes(section.id))await by('letters-section-'+section.id).click();
           const samples=section.samples.filter(s=>s.audio);
@@ -177,7 +311,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           await b(en?'Mark section as reviewed':'この項目を確認済みにする').click();await b(en?'Reviewed ✓':'確認済み ✓').waitFor();
           await by('letters-library').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
         }
-        assert.equal(total,74);
+        assert.equal(total,44);
         await by('letters-category-combinations').click();
         for(const row of letters.combinations){
           await b(`${en?'Consonant':'子音'} ${row.consonant}`).click();
@@ -194,7 +328,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         for(const[width,height,scale]of[[390,844,1],[320,568,1.4]]){
           await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});
           assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),'Library overflow');
-          for(const category of ['vowels','consonants','combinations','conjuncts','marks']){
+          for(const category of ['vowels','consonants','combinations','marks']){
             await by('letters-category-'+category).click();
             assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${category} narrow/large text overflow`);
             const tiles=await by('letters-sound-chart').getByRole('button').all();for(const tile of tiles){const box=await tile.boundingBox();assert(box.width>=44&&box.height>=44,'Touch target below 44px');}
@@ -206,7 +340,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
             await by('letters-library').click();
           }
         }
-        console.log(`PASS ${lang}: 74 letters with two words, all 363 vowel routes, grouped charts, tap/replay/stop/end/back, save, 44px targets and 320px/large text.`);
+        console.log(`PASS ${lang}: 44 vowels/consonants with two words, all 363 vowel routes, grouped charts, tap/replay/stop/end/back, save, 44px targets and 320px/large text.`);
       }
       assert.deepEqual(errors,[]);return;
     }

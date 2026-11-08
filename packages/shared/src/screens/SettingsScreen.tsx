@@ -1,3 +1,4 @@
+import { useCallback, useRef, useState } from 'react';
 import { Alert, Linking, Platform, Pressable, ScrollView, Share, StyleSheet, Switch, View } from 'react-native';
 import Svg, { Circle, Ellipse, Line, Path, Polygon } from 'react-native-svg';
 import { Text } from '../Text';
@@ -12,7 +13,7 @@ import { useI18n, type Lang } from '../i18n';
 import { L1_REGISTRY, langOrderRank } from '../l1';
 import { useAppData } from '../AppDataContext';
 import * as Application from 'expo-application';
-import { useNavigation } from '@react-navigation/native';
+import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { useEntitlement } from '../entitlement';
 import { useSettingsDevelopment } from '../settingsDevelopment';
 
@@ -99,6 +100,16 @@ export default function SettingsScreen() {
   const nav = useNavigation<any>();
   const ent = useEntitlement();
   const development = useSettingsDevelopment();
+  const [developmentUnlocked, setDevelopmentUnlocked] = useState(false);
+  const versionTaps = useRef({ count: 0, last: 0 });
+  useFocusEffect(useCallback(() => () => { versionTaps.current = { count: 0, last: 0 }; setDevelopmentUnlocked(false); }, []));
+  const tapVersion = () => {
+    if (!development) return;
+    const now = Date.now(), previous = versionTaps.current;
+    const count = now - previous.last > 3000 ? 1 : previous.count + 1;
+    versionTaps.current = { count, last: now };
+    if (count >= 7) { setDevelopmentUnlocked(true); versionTaps.current.count = 0; }
+  };
   const developmentCopy = lang === 'en'
     ? { title: 'Development checks', review: 'Native rating dialog', request: 'Request invitation', description: 'Preview immediately. Reminder preferences and timing stay unchanged.', launch: 'Launch', show: 'Show', unavailable: 'Native rating dialog unavailable', explanation: 'TestFlight cannot display Apple’s native rating dialog. You can open the real App Store review page instead.', failed: 'Could not request the native rating dialog.', store: 'Open App Store' }
     : { title: '開発確認', review: '標準評価画面', request: 'リクエスト案内', description: '日数を待たずに確認できます。案内の間隔・停止設定は変更しません。', launch: '起動', show: '表示', unavailable: '標準評価画面を表示できません', explanation: 'TestFlightではAppleの標準評価画面は表示されません。App Storeの実際の評価ページで確認できます。', failed: '標準評価画面の呼び出しに失敗しました。', store: 'App Storeで確認' };
@@ -185,7 +196,7 @@ export default function SettingsScreen() {
     <Pressable accessibilityRole="button" onPress={onRate} style={[styles.btn, styles.testBtn]}><Text style={styles.btnText}>{t('common.open')}</Text></Pressable>
   </Row> : null;
   const testReview = async () => {
-    if (!development) return;
+    if (!development || !developmentUnlocked) return;
     const result = await development.showReview();
     if (result === 'requested') return;
     Alert.alert(developmentCopy.unavailable, result === 'failed' ? developmentCopy.failed : developmentCopy.explanation, [
@@ -222,14 +233,7 @@ export default function SettingsScreen() {
 
       {showPurchase && ratingRow && <View style={styles.section}>{ratingRow}</View>}
 
-      {development && <Section title={developmentCopy.title} icon={<DataIcon />} ss={ss}>
-        <Row label={developmentCopy.review} desc={developmentCopy.description} ss={ss}>
-          <Pressable accessibilityRole="button" style={[styles.btn, styles.testBtn]} onPress={testReview}><Text style={styles.btnText}>{developmentCopy.launch}</Text></Pressable>
-        </Row>
-        <Row label={developmentCopy.request} ss={ss}>
-          <Pressable accessibilityRole="button" style={[styles.btn, styles.testBtn]} onPress={development.showRequest}><Text style={styles.btnText}>{developmentCopy.show}</Text></Pressable>
-        </Row>
-      </Section>}
+
 
       <Section title={t('settings.sectionLang')} icon={<LangIcon />} ss={ss}>
         <Row label={t('settings.language')} desc={langDescText} ss={ss}>
@@ -340,7 +344,7 @@ export default function SettingsScreen() {
       </Section>
 
       <Section title={t('settings.sectionAbout')} icon={<InfoIcon />} ss={ss}>
-        <Row label={t('settings.version')} ss={ss}><Text style={styles.valueText}>{versionDisplay}</Text></Row>
+        <Row label={t('settings.version')} ss={ss}><Pressable testID="settings-version" accessibilityRole="button" accessibilityLabel={`${t('settings.version')} ${versionDisplay}`} onPress={tapVersion} style={{ minHeight: 44, paddingHorizontal: 8, justifyContent: 'center' }}><Text style={styles.valueText}>{versionDisplay}</Text></Pressable></Row>
         {!showPurchase && ratingRow}
         <Row label={t('settings.shareApp')} ss={ss}>
           <Pressable style={styles.btn} onPress={onShare}>
@@ -359,6 +363,15 @@ export default function SettingsScreen() {
           <Pressable onPress={onContact}><Text style={styles.linkText}>{t('common.mail')}</Text></Pressable>
         </Row>
       </Section>
+
+      {development && developmentUnlocked && <Section title={developmentCopy.title} icon={<DataIcon />} ss={ss}>
+        <Row label={developmentCopy.review} desc={developmentCopy.description} ss={ss}>
+          <Pressable accessibilityRole="button" style={[styles.btn, styles.testBtn]} onPress={testReview}><Text style={styles.btnText}>{developmentCopy.launch}</Text></Pressable>
+        </Row>
+        <Row label={developmentCopy.request} ss={ss}>
+          <Pressable accessibilityRole="button" style={[styles.btn, styles.testBtn]} onPress={() => { if (developmentUnlocked) development.showRequest(); }}><Text style={styles.btnText}>{developmentCopy.show}</Text></Pressable>
+        </Row>
+      </Section>}
 
       <Text style={styles.versionFooter}>{t('app.name')} v{versionDisplay}</Text>
     </ScrollView>

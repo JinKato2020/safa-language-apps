@@ -19,7 +19,6 @@ export function useEngagement() {
   const copy = lang === 'en' ? COPY.en : COPY.ja;
   const [visible, setVisible] = useState(false);
   const [mailBusy, setMailBusy] = useState(false);
-  const [developmentEnabled, setDevelopmentEnabled] = useState(typeof __DEV__ !== 'undefined' && __DEV__);
   const state = useRef<EngagementState | null>(null);
   const loading = useRef<Promise<EngagementState> | null>(null);
   const route = useRef<string | undefined>(undefined);
@@ -88,11 +87,6 @@ export function useEngagement() {
   useEffect(() => {
     mounted.current = true;
     void load().then(value => persist(value));
-    // SDK54 iOS isAvailableAsync is false specifically for TestFlight receipts.
-    // Fail closed: errors never expose development tools in App Store builds.
-    if (Platform.OS === 'ios' && !(typeof __DEV__ !== 'undefined' && __DEV__)) {
-      void StoreReview.isAvailableAsync().then(available => { if (mounted.current) setDevelopmentEnabled(!available); }).catch(() => {});
-    }
     const listener = AppState.addEventListener('change', status => {
       if (status === 'active' && isLandingRoute(route.current)) onRouteChanged(route.current);
       else if (status === 'active' && isStudyRoute(route.current)) studyStart.current = Date.now();
@@ -123,7 +117,7 @@ export function useEngagement() {
     if (preview.current) { preview.current = false; return; }
     if (state.current) void persist({ ...state.current, disabled: true });
   };
-  const developmentTools: SettingsDevelopmentTools | null = developmentEnabled ? {
+  const developmentTools: SettingsDevelopmentTools = {
     showRequest: () => {
       if (reviewTimer.current) clearTimeout(reviewTimer.current);
       preview.current = true; setVisible(true);
@@ -136,7 +130,7 @@ export function useEngagement() {
         await StoreReview.requestReview(); return 'requested';
       } catch { return 'failed'; }
     },
-  } : null;
+  };
   const banner = visible ? <View style={styles.card}>
     <Text style={[styles.title, ss(15, 21)]}>{copy.title}</Text>
     <Text style={[styles.body, ss(13, 20)]}>{copy.body}</Text>

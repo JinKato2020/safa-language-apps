@@ -253,7 +253,7 @@ export default function GrammarGuideScreen() {
                 <Text style={[styles.bold, ss(18, 29)]}>{heading}</Text><Text style={[styles.p, ss(15, 25)]}>{body}</Text>
                 <Text style={[styles.actionText, ss(14, 23)]}>{lang === 'en' ? 'Practise →' : 'この練習を始める →'}</Text>
               </Pressable>)}
-              <Text style={[styles.p, ss(15, 25)]}>{lang === 'en' ? 'No question limit. Each type cycles through 20 questions, then reshuffles. Hints are always available; use the back button whenever you want to stop.' : '問題数に上限はありません。各20問を一巡すると、順番を変えて繰り返します。ヒントも使えます。やめたいときは戻るボタンで。'}</Text>
+              <Text style={[styles.p, ss(15, 25)]}>{lang === 'en' ? 'No question limit. Each type cycles through 20 questions, then reshuffles. Use the back button whenever you want to stop.' : '問題数に上限はありません。各20問を一巡すると、順番を変えて繰り返します。やめたいときは戻るボタンで。'}</Text>
               {learning?.error && <Text style={[styles.p, { color: '#9f1239' }, ss(16, 26)]}>{lang === 'en' ? 'Could not save the practice set. Please retry.' : '出題セットを保存できませんでした。もう一度お試しください。'}</Text>}
             </> : selected === 'reference' || selected === 'examples' ? <>
               <Text style={[styles.p, ss(15, 25)]}>{selected === 'examples' ? copy.examplesHint : copy.referenceHint}</Text>
