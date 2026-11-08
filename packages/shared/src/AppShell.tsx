@@ -33,6 +33,7 @@ import { ListeningAudioProvider, useListeningAudio } from './ListeningAudioConte
 import type { RootStackParamList } from './types';
 import { LearningProvider } from './LearningContext';
 import LettersSoundsScreen from './screens/LettersSoundsScreen';
+import NepaliDictionaryScreen from './screens/NepaliDictionaryScreen';
 import { renderStudyHeader } from './StudyHeader';
 import LearningHomeScreen from './screens/LearningHomeScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -436,6 +437,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                   <RootStack.Screen name="VocabDirection" component={VocabDirectionScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
                   <RootStack.Screen name="Flashcard" component={FlashcardScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
                   {!!posterLessons?.length && <RootStack.Screen name="PosterAudio" component={PosterAudioScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />}
+                  <RootStack.Screen name="NepaliDictionary" component={NepaliDictionaryScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
                   <RootStack.Screen name="GrammarLibrary" component={GrammarLibraryScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
                   {/* GrammarGuide replaces itself at this root, not inside GramStack.
                       Keep MainTabs beneath it so Back returns to the existing list. */}

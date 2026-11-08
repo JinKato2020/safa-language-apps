@@ -19,6 +19,10 @@ def verify(ffprobe):
             if s['id'].startswith('conj-'):assert s['speech']==s['ne'],'Conjunct button must play its own sound'
         for s in samples:
             text=s.get('speech',s['ne']);assert s['audio']==manifest[text],text;used.add(text)
+    dictionary=APP/'文法教材/nepali_dictionary.json'
+    if dictionary.exists():
+        for e in read(dictionary)['entries']:
+            assert e['audio']==manifest[e['ne']],e['ne'];used.add(e['ne'])
     assert used==set(manifest),'Unreferenced/missing manifest entries'
     def check(a):
         f=APP/'expo-app/assets/learning-audio'/f"learning-{a['sha256']}.mp3";b=f.read_bytes()

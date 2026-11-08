@@ -92,6 +92,13 @@ export default function LearningHomeScreen() {
       <View style={styles.sectionRow}><Text style={styles.pathLink}>{en ? 'Explore words →' : '単語を学ぶ →'}</Text></View>
     </Pressable>
 
+    {!!data.NEPALI_DICTIONARY?.entries.length && <Pressable testID="home-dictionary" accessibilityRole="button" accessibilityLabel={en ? 'Nepali dictionary' : 'ネパール語辞書'} onPress={() => nav.navigate('NepaliDictionary')} style={({ pressed }) => [styles.path, { backgroundColor: '#DDEEE8' }, pressed && styles.pressed]}>
+      <Text style={styles.overline}>DICTIONARY</Text>
+      <Text style={styles.pathTitle}>{en ? 'Nepali dictionary' : 'ネパール語辞書'}</Text>
+      <Text style={[styles.pathNote, { fontSize: 15, lineHeight: 25 }]}>{en ? 'Find a word, hear its sound and understand how to use it. Search in Nepali, romanization, English or Japanese.' : '気になることばを調べて、音と使い方を確かめよう。日本語・英語・ネパール語・ローマ字に対応。'}</Text>
+      <Text style={styles.pathLink}>{en ? 'Look up a word →' : 'ことばを調べる →'}</Text>
+    </Pressable>}
+
     {learning?.error && <Pressable accessibilityRole="button" onPress={learning.retry} style={styles.error}><Text style={styles.errorText}>{en ? 'Could not load or save progress. Tap to retry.' : '学習記録を読み込み・保存できませんでした。タップして再試行。'}</Text></Pressable>}
     <Text style={styles.footer}>{en ? 'A few words today. A real conversation tomorrow.' : '今日のひとことが、次の会話につながる。'}</Text>
   </ScrollView>;

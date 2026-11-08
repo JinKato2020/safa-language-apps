@@ -22,12 +22,14 @@ const file=path.join(app,'文法教材/beginner_learning_path.json'),paths=read(
 const grammarFile=path.join(app,'文法教材/grammar_practice.json'),lettersFile=path.join(app,'文法教材/letters_sounds.json');
 const grammar=fs.existsSync(grammarFile)?read(grammarFile):null,letters=fs.existsSync(lettersFile)?read(lettersFile):null;
 const letterSamples=p=>[...p.sections.flatMap(s=>s.samples),...p.combinations.flatMap(r=>r.samples),...(p.conjunctCombinations??[]).flatMap(r=>r.samples)].flatMap(s=>[s,...(s.examples??[])]).filter(s=>s.audio);
+const dictionaryFile=path.join(app,'文法教材/nepali_dictionary.json');
+const dictionary=fs.existsSync(dictionaryFile)?read(dictionaryFile):null;
 const manifestFile=path.join(app,'文法教材/learning_audio_manifest.json');
 const manifest=fs.existsSync(manifestFile)?read(manifestFile):{};
 const pronunciationSourceFile=path.join(app,'文法教材/letter_audio_sources.json');
 const pronunciationSources=fs.existsSync(pronunciationSourceFile)?read(pronunciationSourceFile):{};
 const dir=path.join(app,'expo-app/assets/learning-audio');fs.mkdirSync(dir,{recursive:true});
-const samples=[...paths.ja.intro.flatMap(b=>b.samples??[]),...Object.values(paths.ja.exercises),...Object.values(grammar?.ja.exercises??{}),...(letters?letterSamples(letters.ja):[])];
+const samples=[...paths.ja.intro.flatMap(b=>b.samples??[]),...Object.values(paths.ja.exercises),...Object.values(grammar?.ja.exercises??{}),...(letters?letterSamples(letters.ja):[]),...(dictionary?.entries??[])];
 const texts=[...new Set(samples.map(s=>s.speech??s.ne))],esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 console.log(JSON.stringify({requestedClips:texts.length,newCharacters:texts.filter(t=>!manifest[t]).reduce((n,t)=>n+t.length,0)}));
 for(const text of texts){
@@ -59,6 +61,7 @@ for(const text of texts){
 for(const p of Object.values(paths))for(const s of [...p.intro.flatMap(b=>b.samples??[]),...Object.values(p.exercises)])s.audio=manifest[s.ne];
 await persistJson(file,paths);
 if(grammar){for(const p of Object.values(grammar))for(const s of Object.values(p.exercises))s.audio=manifest[s.ne];await persistJson(grammarFile,grammar);}
+if(dictionary){for(const entry of dictionary.entries)entry.audio=manifest[entry.ne];await persistJson(dictionaryFile,dictionary);}
 if(letters){for(const p of Object.values(letters))for(const s of letterSamples(p))s.audio=manifest[s.speech??s.ne];await persistJson(lettersFile,letters);}
 fs.writeFileSync(path.join(app,'expo-app/src/introAudio.ts'),'// Generated from learning_audio_manifest.json. Immutable recordings.\nexport const INTRO_AUDIO: Record<string, number> = {\n'+texts.map(t=>`  '${manifest[t].sha256}': require('../assets/learning-audio/learning-${manifest[t].sha256}.mp3'),`).join('\n')+'\n};\n');
 await persistJson(manifestFile,Object.fromEntries(texts.map(t=>[t,manifest[t]])));

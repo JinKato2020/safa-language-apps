@@ -65,6 +65,17 @@ def verify(folder):
                     for word in s['examples']:
                         assert s['ne'] in word['ne'] and word['roman'] and word['meaning']
                         assert word['audio']['bytes']>0 and len(word['audio']['sha256'])==64
+        if o.get('nepaliDictionary'):
+            d=o['nepaliDictionary'];assert d['schema']==1 and d['entries']
+            assert len({e['id']for e in d['entries']})==len(d['entries'])
+            assert len({e['ne']for e in d['entries']})==len(d['entries'])
+            sources=[s for e in d['entries']for s in e['sources']]
+            assert len(sources)==len(set(sources))==d['sourceRowCount']
+            for e in d['entries']:
+                assert e['roman'] and e['senses'] and all(s['ja'] and s['en'] and s['pos']for s in e['senses'])
+                assert all(str(t)in guides for t in e['themes'])
+                a=e['audio'];assert a['bytes']>0 and len(a['sha256'])==64 and a['url'].startswith('https://')
+                assert all(x['ne'] and x['ja'] and x['en']for x in e['examples'])
         stats[lang]={'guides':len(guides),'courseSteps':len(o['learningPath']['steps']),'practiceQuestions':len(o.get('learningPathV3',{}).get('exercises',{}))*3,'audioFiles':len(l['audio']['files'])}
     print(json.dumps({'version':m['version'],'languages':stats,'conversation':sum(map(len,core['examplesNe'].values())),'grammar':sum(map(len,core['grammarNe'].values())),'words':sum(map(len,core['wordsNe'].values()))}))
 if __name__=='__main__':

@@ -29,6 +29,21 @@ export function validateContent(core: any, overlay: any, lang: string) {
     for (const [id,rows] of Object.entries(core[ne]) as [string,any][]) if (!Array.isArray(rows) || !Array.isArray(overlay[l1][id]) || rows.length !== overlay[l1][id].length || !rows.every((s: any,i: number)=>typeof s==='string' && s && typeof overlay[l1][id][i]==='string' && overlay[l1][id][i])) throw new Error('Content/translation mismatch: '+id);
   }
   for (const theme of core.grammarThemes) if (!Array.isArray(overlay.grammarGuide?.[theme.id]) || !overlay.grammarThemeNames?.[theme.id]) throw new Error('Missing grammar guide');
+  if (overlay.nepaliDictionary !== undefined) {
+    const d=overlay.nepaliDictionary, text=(v: any)=>typeof v==='string' && v.trim().length>0;
+    if (d?.schema!==1 || !Number.isSafeInteger(d.revision) || !Array.isArray(d.entries) || !d.entries.length) throw new Error('Invalid Nepali dictionary');
+    const ids=new Set(), words=new Set();
+    for (const e of d.entries) {
+      if (!text(e.id)||!text(e.ne)||!text(e.roman)||ids.has(e.id)||words.has(e.ne)) throw new Error('Duplicate/invalid dictionary entry');
+      ids.add(e.id);words.add(e.ne);
+      if (!Array.isArray(e.senses)||!e.senses.length||!e.senses.every((s: any)=>text(s.ja)&&text(s.en)&&text(s.pos))) throw new Error('Missing dictionary meaning');
+      for (const key of ['forms','sources']) if (!Array.isArray(e[key])||!e[key].every(text)) throw new Error('Invalid dictionary index');
+      if (!Array.isArray(e.themes)||!e.themes.every((id: any)=>core.grammarThemes.some((t: any)=>t.id===id))) throw new Error('Invalid dictionary lesson link');
+      if (!Array.isArray(e.examples)||!e.examples.every((x: any)=>text(x.ne)&&text(x.ja)&&text(x.en))) throw new Error('Invalid dictionary example');
+      if (e.note && (!text(e.note.ja)||!text(e.note.en))) throw new Error('Invalid dictionary note');
+      assertFile(e.audio);
+    }
+  }
   if (overlay.learningPathV3) {
     const p=overlay.learningPathV3;
     if (!Array.isArray(p.steps) || p.steps.length!==core.grammarThemes.length || !p.exercises) throw new Error('Missing grammar practice');

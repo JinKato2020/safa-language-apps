@@ -29,6 +29,7 @@ export interface L1Overlay {
   learningPathV2?: AppData['LEARNING_PATH'];
   learningPathV3?: AppData['LEARNING_PATH'];
   lettersSounds?: AppData['LETTERS_SOUNDS'];
+  nepaliDictionary?: AppData['NEPALI_DICTIONARY'];
   contentNames?: AppData['CONTENT_NAMES'];
   posterLessons?: AppData['POSTER_LESSONS'];
   nativeLang: string;
@@ -98,6 +99,7 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
   };
   return {
     vocabularyQuiz: true,
+    NEPALI_DICTIONARY: overlay.nepaliDictionary,
     LEARNING_PATH: overlay.learningPathV3 ?? overlay.learningPathV2 ?? overlay.learningPath,
     LETTERS_SOUNDS: overlay.lettersSounds,
     CONTENT_NAMES: overlay.contentNames,
