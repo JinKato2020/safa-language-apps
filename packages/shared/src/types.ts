@@ -52,6 +52,7 @@ export type RootStackParamList = {
   Theme: {
     mode: Exclude<Mode, 'vocabulary'>;
     source?: 'grammar';
+    guidesOnHome?: boolean;
   };
   Level: { mode: Exclude<Mode, 'vocabulary' | 'grammar'>; themeId: number };
   Practice: {
@@ -73,6 +74,7 @@ export type RootStackParamList = {
   ShortHub: undefined;
   Sakubun: { themeId: number; levelId: number; startIndex?: number };
   GrammarGuide: { themeId: number; title: string; studySession?: StudySession };
+  GrammarLibrary: undefined;
   LearningPath: undefined;
   LettersSounds: undefined;
   VocabCategory: { posterOnly?: boolean } | undefined;

@@ -12,7 +12,7 @@ APP=Path(__file__).resolve().parents[1]
 def read(p): return json.loads(p.read_text(encoding='utf-8-sig'))
 def write(p,v): p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 VOWELS=[
-('अ','','a','口を力ませない「ア」','Relaxed a vowel','子音だけの字にも、この母音が含まれています。','This is the inherent vowel in a plain consonant letter.'),
+('अ','','a','口を力ませない「ア」','Relaxed a vowel','母音記号のない子音字にも、この母音が含まれています。','This is the inherent vowel in a plain consonant letter.'),
 ('आ','ा','ā','口を開く「ア」','Open ā vowel','अ と口の開き・響きを聞き比べよう。単純に2倍伸ばす記号ではありません。','Compare its quality with अ. The bar does not mean you must simply double its duration.'),
 ('इ','ि','i','「イ」の字（इ）','The i letter इ','子音につく ि は字の左に見えても、音は子音の後。कि＝ki。','The sign ि appears to the left but is pronounced after the consonant: कि = ki.'),
 ('ई','ी','ī','「イ」の別の字（ई）','The i letter ई','इ と ई は綴りを区別します。現代ネパール語では、いつも長さだけで区別するわけではありません。','Keep इ and ई distinct in spelling. Modern Nepali does not consistently distinguish them by duration alone.'),
@@ -82,14 +82,24 @@ def build():
             return obj
         def section(id,ja,eng,bodyja,bodyen,samples): sections.append(dict(id=id,title=eng if en else ja,body=bodyen if en else bodyja,samples=samples))
         section('start','文字のしくみ','How the script works',
-        'ネパール語の文字はデーヴァナーガリー。左から右へ読みます。横につながる上の線も、字の一部です。\n子音の字には基本の母音 a が含まれ、記号を添えると母音が変わります。まず「1字ずつ」より「音のまとまり」で見てみよう。',
-        'Nepali uses Devanagari, read left to right. The joining line at the top is part of the script.\nA consonant letter includes an inherent a; attached signs change that vowel. Look for sound units rather than treating every visible mark as a separate sound.',
-        [sample('nepali','नेपाली','nepālī','ネパール語','Nepali','ने + पा + ली → नेपाली'),sample('ka-base','क','ka','子音＋基本の母音 a','Consonant + inherent a'),sample('ka-aa','का','kā','क に ा をつけた形','क with the ा sign'),sample('house','घर','ghar','家','house','語末の a を読まない語もあります。字の表と単語の音を一緒に確認しよう。' if not en else 'The final inherent a is not spoken in some words. Compare the letter chart with the complete word.')])
+        'ネパール語は左から右へ読みます。子音字には基本の母音 a が含まれ、क は ka、स は sa。この教材の「子音」一覧も、この文字の読みです。\n下の ्（ハラント）は、母音 a を外す印。क् は k、स् は s だけで、後ろにアを付けません。下の2組を聞き比べよう。\nस्＋त＝स्त（sta）のように子音をつなぐ時は、s と t の間に母音を挟みません。',
+        'Nepali is read left to right. A consonant letter includes an inherent a: क is ka and स is sa. The consonant chart in this course uses these letter readings.\nThe lower mark ् (halant) removes that a: क् is k and स् is s, without a following vowel. Compare the two pairs below.\nWhen consonants join, as in स् + त = स्त (sta), there is no vowel between s and t.',
+        [sample('ka-base','क','ka','子音 k ＋ 母音 a','Consonant k + vowel a'),
+         sample('ka-bare','क्','k','母音なしの k','k without a vowel','क との違いは、最後の a がないこと。日本語の「ク」のように u も付けません。' if not en else 'Unlike क, this has no final a. Do not add another vowel after k.'),
+         sample('sa-base','स','sa','子音 s ＋ 母音 a','Consonant s + vowel a'),
+         sample('sa-bare','स्','s','母音なしの s','s without a vowel','歯の近くで息を通す音だけ。日本語の「ス」のように u は付けません。' if not en else 'Only the airflow sound: do not add a vowel after s.'),
+         sample('ka-aa','का','kā','क に ा をつけた形','क with the ा sign'),
+         sample('nepali','नेपाली','nepālī','ネパール語','Nepali','ने + पा + ली → नेपाली'),
+         sample('house','घर','ghar','家','house','実際の単語では、् が書かれていなくても母音 a を読まないことがあります。घर は ghar で、語末の र に a を足しません。すべての a を消すルールではないので、単語の音声と一緒に覚えよう。' if not en else 'In real words, an inherent a can disappear even without a written ्. घर is ghar, without a final a after र. This does not mean every a disappears; learn each word with its recording.')])
         section('vowels','母音11字','11 vowel letters','単独で書く母音字です。イ・ウには綴りの異なる2字ずつがあります。ローマ字の長音線は字を見分ける目印としても使っています。\n母音の後に母音が続く時も独立した字を使います。','These are independent vowel letters. The i and u sounds each have two spellings. Roman bars also help distinguish those spellings.\nAn independent letter is also used when a vowel follows another vowel.',
         [sample('v-'+str(i),v,r,j,e,de if en else dj)for i,(v,sign,r,j,e,dj,de) in enumerate(VOWELS)])
-        consonants=[]
+        consonants=[row for group in GROUPS for row in group[-1]]
+        section('bare','母音なしの子音33字','33 consonants without a vowel',
+        '子音字に ् を付けると、もとの母音 a を外した形になります。क → क्（k）、स → स्（s）。ローマ字にも a を付けず、子音だけで表します。\n下は基本33字すべての母音なしの形。再生マークのある क्・स् が音の代表例です。ほかの31字は文字と読みの一覧として確認しよう。\n子音を続けて書くと半分の形や合字になることがあります。複合文字の項目で、つながった形も確かめられます。',
+        'Adding ् removes a consonant letter’s inherent a: क → क् (k), स → स् (s). The roman spelling also has no final a.\nHere are the vowel-free forms of all 33 core consonants. क् and स् have play icons as representative recordings; the other 31 entries are a written reference.\nWhen consonants join, they can form half-letters or ligatures. Explore their joined shapes in Conjuncts.',
+        [sample('bare-'+c,c+'्',r,mj,me,speech=c+'्' if c in ['क','स'] else False) for c,r,mj,me in consonants])
         for id,j,e,bj,be,rows in GROUPS:
-            section(id,j,e,bj,be,[sample('c-'+c,c,r+'a',mj,me)for c,r,mj,me in rows]);consonants.extend(rows)
+            section(id,j,e,bj+'\nここで再生するのは子音字の読み（子音＋a）。母音なしの子音は、क् のように ् を付けて表します。',be+'\nThese recordings read consonant letters with inherent a. A vowel-free consonant is written with ्, as in क्.',[sample('c-'+c,c,r+'a',mj,me)for c,r,mj,me in rows])
         section('combinations','子音＋母音','Consonant + vowel','33子音×11母音を選んで確認できます。म＋ा＝मा、म＋ि＝मि のように、同じ子音の母音が変わります。\n最初は क・म・न からで十分。ऋ／ृ の列や一部の組み合わせは綴りのしくみを知るための表で、日常語にすべてが現れるわけではありません。\nर＋ु＝रु、र＋ू＝रू は特別な見た目にも注目。',
         'Explore 33 consonants × 11 vowels. For example, म + ा = मा and म + ि = मि: the consonant stays, the vowel changes.\nStart with क, म and न. The ऋ/ृ column and some combinations are spelling references; not every combination is common in everyday words.\nNotice the special shapes रु and रू.',[])
         combinations=[]
@@ -116,5 +126,5 @@ def build():
         [sample('digit-'+str(i),d,r,f'{i} · {word}',f'{i} · {word}',speech=word)for i,(d,word,r) in enumerate(nums)])
         out[lang]=dict(title='Letters & sounds' if en else '文字と音',description='11 vowels · 33 consonants · 363 combinations' if en else '母音11字・子音33字・組み合わせ363通り',sections=sections,combinations=combinations)
     write(APP/'文法教材/letters_sounds.json',out)
-    print('Prepared 12 sections, 11 vowels, 33 consonants, 363 combinations, 30 conjuncts, signs and digits, JA/EN.')
+    print('Prepared 13 sections: 33 vowel-free forms (2 recorded), 11 vowels, 33 letter readings, 363 combinations, 30 conjuncts, signs and digits, JA/EN.')
 if __name__=='__main__':build()

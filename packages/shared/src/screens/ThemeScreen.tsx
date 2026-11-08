@@ -25,7 +25,7 @@ export default function ThemeScreen() {
   const navigation = useNavigation<Nav>();
   const { t, lang } = useI18n();
   const ss = useScaleStyle();
-  const { mode, source } = useRoute<R>().params;
+  const { mode, source, guidesOnHome } = useRoute<R>().params;
   const heroSrc = useHeroImage(mode);
   const { top } = useSafeAreaInsets();
   const isListening = mode === 'listening';
@@ -55,7 +55,9 @@ export default function ThemeScreen() {
 
   let headerText: string;
   if (isGrammarMode) {
-    headerText = t('themeScreen.headerGrammar');
+    headerText = guidesOnHome
+      ? (lang === 'en' ? 'Choose a theme to practise its example sentences with audio.' : 'テーマを選んで、例題と音声で文法を身につけよう。')
+      : t('themeScreen.headerGrammar');
   } else if (isGrammarListen || mode === 'listening') {
     headerText = t('themeScreen.headerListen');
   } else {
@@ -153,9 +155,12 @@ export default function ThemeScreen() {
         // 表示番号(index+1)が無料枠を超えたらロック。タップでペイウォールへ。
         const locked = isLockedAt(ent, index);
         // 文法モードで、ロックされておらず、このテーマの教材(解説)がある時だけ「教材」ボタンを右に表示。
-        const showGuide = isGrammarMode && !locked && !!grammarGuide && !!grammarGuide[String(item.id)];
+        const showGuide = isGrammarMode && !guidesOnHome && !locked && !!grammarGuide && !!grammarGuide[String(item.id)];
         return (
           <Pressable
+            testID={`theme-${item.id}`}
+            accessibilityRole="button"
+            accessibilityLabel={getThemeDisplayName(item.id)}
             style={({ pressed }) => [
               styles.card,
               pressed && styles.cardPressed,

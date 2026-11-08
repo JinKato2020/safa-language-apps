@@ -6,7 +6,8 @@ const source=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const compile=s=>ts.transpileModule(s,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
 const modules={};for(const[p,file]of[['react','react.production.js'],['react/jsx-runtime','react-jsx-runtime.production.js'],['react-dom','react-dom.production.js'],['react-dom/client','react-dom-client.production.js'],['scheduler','scheduler.production.js']])modules[p]=fs.readFileSync(path.join(path.dirname(require.resolve(p.split('/')[0]+'/package.json')),'cjs',file),'utf8');
 for(const name of ['practicePool','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
-for(const name of ['GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
+for(const name of ['GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
+modules.entitlement=compile(source('packages/shared/src/entitlement.tsx'));
 modules.compose=compile(source('聞いて話せるネパール語/expo-app/src/pack/compose.ts'));
 const core=JSON.parse(source('聞いて話せるネパール語/expo-app/data/ota-baseline/core.json'));
 const overlays={},strings={};for(const lang of ['ja','en']){overlays[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/data/overlays/${lang}.json`));strings[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/src/i18n/${lang}.json`));}
@@ -23,24 +24,25 @@ function Pressable(p){return h('button',{'aria-label':p.accessibilityLabel,'aria
 const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y)}));return h('div',{ref:el,style:{overflowY:p.horizontal?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
 const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))};
 const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode==='contain'?'contain':undefined,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
-cache['react-native']={exports:{AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,Image,Animated:{View},StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
+cache['react-native']={exports:{AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
 cache.Text={exports:{Text}};cache.SettingsContext={exports:{useSettings:()=>({practiceDirection:'ja2ne',romaji:true}),useScaleStyle:()=> (fontSize,lineHeight)=>({fontSize,lineHeight}),useGlobalScaleStyle:()=>fontSize=>({fontSize})}};
 cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).replace('{'+k+'}',v);return s;}})}};
 cache.AppDataContext={exports:{useAppData:()=>window.data}};
+const realEntitlement=require('entitlement');cache.entitlement={exports:{...realEntitlement,useEntitlement:()=>window.testEntitlement??{isPro:true,freeThemes:Infinity}}};
 cache['react-native-safe-area-context']={exports:{useSafeAreaInsets:()=>({top:20,bottom:0,left:0,right:0})}};
 cache['react-native-svg']={exports:{__esModule:true,default:()=>null,Line:()=>null,Path:()=>null,Polyline:()=>null}};
 cache.useCardFlip={exports:{useCardFlip:()=>({flip:cb=>cb(),animatedStyle:{}})}};
 cache.useHorizontalSwipe={exports:{useHorizontalSwipe:()=>({})}};
 cache['expo-audio']={exports:{useAudioPlayer:src=>{const p=React.useMemo(()=>({source:src,seekTo:async()=>{},pause:()=>window.activeAudio.delete(p),play:()=>{window.activeAudio.add(p);window.events.push(['audio',src]);}}),[src]);React.useEffect(()=>()=>window.activeAudio.delete(p),[p]);return p;},useAudioPlayerStatus:p=>({isLoaded:!!p.source,playing:false,didJustFinish:window.audioEnded})}};
 cache['@react-native-async-storage/async-storage']={exports:{getItem:async k=>localStorage.getItem(k),setItem:async(k,v)=>{if(window.failStorage)throw Error('full');localStorage.setItem(k,v);}}};
-const nav={isFocused:()=>true,canGoBack:()=>window.stack.length>0,navigate:(name,params)=>{window.events.push(['navigate',name,params]);window.stack.push(window.route);window.route={name,params};window.redraw();},replace:(name,params)=>{window.events.push(['replace',name,params]);window.route={name,params};window.redraw();},goBack:()=>{window.route=window.stack.pop()??{name:'HomeTab'};window.redraw();},setOptions:options=>{window.screenOptions=options;window.redraw?.();}};
+const nav={isFocused:()=>true,canGoBack:()=>window.stack.length>0,navigate:(name,params)=>{window.events.push(['navigate',name,params]);window.stack.push(window.route);window.route={name,params};window.redraw();},replace:(name,params)=>{window.events.push(['replace',name,params]);window.route={name,params};window.redraw();},goBack:()=>{window.route=window.stack.pop()??{name:'HomeTab'};window.redraw();},setOptions:options=>{const next={...window.screenOptions,...options};if(JSON.stringify(next)===JSON.stringify(window.screenOptions))return;window.screenOptions=next;window.redraw?.();}};
 cache['@react-navigation/native']={exports:{useNavigation:()=>nav,useRoute:()=>window.route,useFocusEffect:cb=>React.useEffect(cb,[cb])}};
 cache.heroImages={exports:{useHeroImage:()=>1,ModeHero:()=>h('img',{src:${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))},style:{width:'100%',aspectRatio:'3/1',objectFit:'contain',borderRadius:16}})}};
 cache.grammarGuide={exports:{useGrammarGuide:()=>window.data.GRAMMAR_GUIDE,useGrammarGuideImageResolver:()=>async()=>null}};
 const root=require('react-dom/client').createRoot(document.getElementById('root')),Provider=require('LearningContext').LearningProvider;let generation=0;
 const AudioProvider=require('LearningSound').LearningAudioProvider,resolveAudio=async a=>({uri:a.url});
-const names={HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen'};
-function Frame(){const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['Practice','LettersSounds','LearningPath'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
+const names={HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
+function Frame(){const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['Practice','LettersSounds','LearningPath','GrammarLibrary'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
 window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];window.activeAudio=new Set();window.audioEnded=false;
 const neAudio={},neGram={},l1Audio={},l1Gram={};for(const[k,rows]of Object.entries(core.examplesNe))rows.forEach((_,i)=>{neAudio[k+'-'+(i+1)]='ne/'+k+'-'+(i+1);l1Audio[k+'-'+(i+1)]=lang+'/'+k+'-'+(i+1);});for(const[k,id]of Object.entries(core.grammarAudioRefs??Object.fromEntries(Object.entries(core.grammarNe).flatMap(([t,rows])=>rows.map((_,i)=>[t+'-'+(i+1),t+'-'+(i+1)]))))){if(id){neGram[id]='ne/'+id;l1Gram[id]=lang+'/'+id;}}
 window.data=require('compose').composePack({...core,nepaliAudio:neAudio,nepaliGrammarAudio:neGram},{...overlays[lang],nativeLang:lang,l1Audio,l1GrammarAudio:l1Gram},{version:'test'});
@@ -66,17 +68,23 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         let total=0;
         for(const section of letters.sections.filter(s=>s.id!=='combinations')){
           await by('letters-category-'+sectionCategory(section.id)).click();
-          if(['marks','numbers','velar','affricate','retroflex','dental','labial','other'].includes(section.id))await by('letters-section-'+section.id).click();
+          if(['bare','marks','numbers','velar','affricate','retroflex','dental','labial','other'].includes(section.id))await by('letters-section-'+section.id).click();
           const samples=section.samples.filter(s=>s.audio);
-          for(let i=0;i<samples.length;i++){
-            const s=samples[i];assert.equal(await by('letters-play-sound').getAttribute('aria-label'),`${en?'Play sound':'音を聞く'}: ${s.speech??s.ne}`);
-            await play('letters-play-sound',s.audio.url);
-            if(s.examples){assert.equal(s.examples.length,2);for(let j=0;j<2;j++){assert.equal(await by('letters-play-word-'+j).getAttribute('aria-label'),`${en?'Play word':'単語を聞く'}: ${s.examples[j].ne}`);await play('letters-play-word-'+j,s.examples[j].audio.url);}total++;}
-            else assert.equal(await page.locator('[data-testid^="letters-play-word-"]').count(),0);
+          assert.equal(await by('letters-sound-chart').getByRole('button').count(),samples.length,'All sounds must be on the chart without pagination');
+          assert.equal(await by('letters-next').count(),0);
+          if(section.id==='bare'){assert.equal(section.samples.length,33);assert.equal(samples.length,2);assert.equal(await page.locator('[data-testid^="letters-symbol-"]').count(),31);assert.deepEqual(samples.map(x=>x.ne),['क्','स्']);for(const s of section.samples.filter(x=>!x.audio))assert.equal(await by('letters-symbol-'+s.id).getByRole('button').count(),0);}
+          if(['bare','vowels','conjuncts'].includes(section.id))await page.screenshot({path:path.join(work,`previews/letters-${lang}-${section.id}.png`)});
+          for(const s of samples){
+            const id='letters-play-'+s.id;
+            assert.equal(await by(id).getAttribute('aria-label'),`${en?'Play sound':'音を聞く'}: ${s.speech??s.ne}`);
+            await play(id,s.audio.url);
+            assert.equal(await by(id).getAttribute('aria-selected'),'true');
+            if(s.examples){
+              assert.equal(s.examples.length,2);
+              if(await by('letters-details').getAttribute('aria-expanded')!=='true')await by('letters-details').click();
+              for(let j=0;j<2;j++){assert.equal(await by('letters-play-word-'+j).getAttribute('aria-label'),`${en?'Play word':'単語を聞く'}: ${s.examples[j].ne}`);await play('letters-play-word-'+j,s.examples[j].audio.url);}total++;
+            }
             assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${s.id} overflow`);
-            if(i===0&&['vowels','conjuncts'].includes(section.id)){await b(en?'Stop':'停止').click();await by('letters-sound-card').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(work,`previews/letters-${lang}-${section.id}.png`)});}
-            if(i<samples.length-1){await by('letters-next').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0,'Selecting the next letter must stop the prior audio');}
-            else assert(await by('letters-next').isDisabled());
           }
           await b(en?'Mark section as reviewed':'この項目を確認済みにする').click();await b(en?'Reviewed ✓':'確認済み ✓').waitFor();
           await by('letters-library').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
@@ -85,24 +93,65 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await by('letters-category-combinations').click();
         for(const row of letters.combinations){
           await b(`${en?'Consonant':'子音'} ${row.consonant}`).click();
-          for(let i=0;i<11;i++){
-            const s=row.samples[i];assert.equal(await by('letters-play-sound').getAttribute('aria-label'),`${en?'Play sound':'音を聞く'}: ${s.speech??s.ne}`);
-            if(i===0||i===10)await play('letters-play-sound',s.audio.url);
-            if(i<10)await by('letters-next').click();
-          }
+          assert.equal(await page.evaluate(()=>window.activeAudio.size),0,'Changing consonant stops playback');
+          assert.equal(await by('letters-sound-chart').getByRole('button').count(),11);
+          for(const s of row.samples){assert.equal(await by('letters-play-'+s.id).getAttribute('aria-label'),`${en?'Play sound':'音を聞く'}: ${s.speech??s.ne}`);await play('letters-play-'+s.id,s.audio.url);}
         }
-        await b(en?'Choose a letter ▦':'文字を選ぶ ▦').click();await b(`${en?'Choose':'選ぶ'} ${letters.combinations.at(-1).samples[2].ne}`).click();
-        assert.equal(await page.locator('[aria-expanded="true"]').count(),0,'Letter selector closes after choosing');
-        await by('letters-play-sound').click();await page.waitForFunction(()=>window.activeAudio.size===1);await page.evaluate(()=>{window.audioEnded=true;window.redraw();});await page.waitForFunction(()=>window.activeAudio.size===0);await page.evaluate(()=>{window.audioEnded=false;});
+        await b(en?'Stop':'停止').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
+        await by('letters-library').click();await by('letters-category-vowels').click();
+        const vowel=letters.sections.find(s=>s.id==='vowels').samples[0];
+        await play('letters-play-'+vowel.id,vowel.audio.url);await play('letters-play-'+vowel.id,vowel.audio.url);
+        await page.evaluate(()=>{window.audioEnded=true;window.redraw();});await page.waitForFunction(()=>window.activeAudio.size===0);await page.evaluate(()=>{window.audioEnded=false;});
         await by('letters-library').click();await b(en?'Back':'戻る').click();assert.equal(await page.evaluate(()=>window.route.name),'HomeTab');
         for(const[width,height,scale]of[[390,844,1],[320,568,1.4]]){
           await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});
           assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),'Library overflow');
           for(const category of ['vowels','consonants','combinations','conjuncts','marks']){
-            await by('letters-category-'+category).click();await b(en?'Choose a letter ▦':'文字を選ぶ ▦').click();assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${category} narrow/large text overflow`);await by('letters-library').click();
+            await by('letters-category-'+category).click();
+            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang} ${category} narrow/large text overflow`);
+            const tiles=await by('letters-sound-chart').getByRole('button').all();for(const tile of tiles){const box=await tile.boundingBox();assert(box.width>=44&&box.height>=44,'Touch target below 44px');}
+            if(width===390&&['vowels','combinations'].includes(category)){
+              const first=await tiles[0].boundingBox(),last=await tiles.at(-1).boundingBox();assert(first.y>=0&&last.y+last.height<height-68,'All 11 sounds should fit together in the standard viewport');
+              await page.screenshot({path:path.join(work,`previews/letters-${lang}-${category}.png`)});
+            }
+            if(width===390&&category==='combinations')await page.screenshot({path:path.join(work,`previews/letters-${lang}-combinations.png`)});
+            await by('letters-library').click();
           }
         }
-        console.log(`PASS ${lang}: 74 letter/word panels, 222 audio routes, 363 vowel forms, exclusive playback, stop/end/back, save and 320px/large text.`);
+        console.log(`PASS ${lang}: 74 letters with two words, all 363 vowel routes, grouped charts, tap/replay/stop/end/back, save, 44px targets and 320px/large text.`);
+      }
+      assert.deepEqual(errors,[]);return;
+    }
+    if(process.argv.includes('--lesson-navigation')){
+      for(const lang of ['ja','en']){
+        const en=lang==='en',by=id=>page.getByTestId(id),b=name=>page.getByRole('button',{name,exact:true});
+        await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
+        await by('home-grammar-lessons').waitFor();
+        assert(await page.evaluate(()=>document.querySelector('[data-testid="home-letters"]').nextElementSibling===document.querySelector('[data-testid="home-grammar-lessons"]')),'Lessons card must be immediately below letters');
+        await by('home-grammar-lessons').click();assert.equal(await page.evaluate(()=>window.route.name),'GrammarLibrary');
+        const themes=await page.evaluate(()=>window.data.GRAMMAR_THEMES);
+        assert.equal(await page.locator('[data-testid^="grammar-lesson-"]').count(),themes.length);
+        await page.screenshot({path:path.join(work,`previews/grammar-${lang}-library.png`)});
+        for(const theme of themes){
+          await by('grammar-lesson-'+theme.id).click();assert.equal(await page.evaluate(()=>window.route.name),'GrammarGuide');
+          assert.equal(await page.evaluate(()=>window.route.params.themeId),theme.id);
+          assert.equal(await page.evaluate(()=>window.route.params.title),theme.name);
+          assert.equal(await page.getByRole('tab').count(),4);
+          await b(en?'Close lesson':'教材を閉じる').click();assert.equal(await page.evaluate(()=>window.route.name),'GrammarLibrary');
+        }
+        await b(en?'Back':'戻る').click();assert.equal(await page.evaluate(()=>window.route.name),'HomeTab');
+        await page.evaluate(()=>window.navigate('Theme',{mode:'grammar',guidesOnHome:true}));
+        assert.equal(await page.getByText(en?'Guide':'教材',{exact:true}).count(),0,'Grammar tab has no lesson controls');
+        await by('theme-'+themes[0].id).click();assert.equal(await page.evaluate(()=>window.route.name),'Practice');
+        assert.equal(await page.evaluate(()=>window.route.params.mode),'grammar');
+        assert.deepEqual(errors,[]);
+        await b(en?'Back':'戻る').click();assert.equal(await page.evaluate(()=>window.route.name),'Theme');
+        await page.evaluate(()=>{window.testEntitlement={isPro:false,freeThemes:1};});await page.evaluate(l=>window.boot(l,false,{name:'GrammarLibrary'}),lang);
+        await by('grammar-lesson-'+themes[1].id).click();assert.equal(await page.evaluate(()=>window.route.name),'Paywall','Original access limits preserved');
+        await page.evaluate(()=>{window.testEntitlement=undefined;});
+        await page.setViewportSize({width:320,height:568});await page.evaluate(l=>window.boot(l,false,{name:'GrammarLibrary'},1.4),lang);
+        assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),'Lesson library narrow/large text overflow');
+        console.log(`PASS ${lang}: home card order, all ${themes.length} lessons, four reader tabs, return to library/home, grammar tab examples and access limits.`);
       }
       assert.deepEqual(errors,[]);return;
     }

@@ -1,60 +1,39 @@
 {
   "श": {
-    "method": "carrier-word-boundary",
+    "method": "explicit-inherent-vowel-whole-clip",
     "voice": "ne-NP-HemkalaNeural",
     "rate": "0%",
-    "phrase": "यो श हो। यो ष हो। यो स हो।",
-    "source": "音声生成ソース/approved-sibilants.mp3",
-    "start": 0.3935416666666667,
-    "end": 0.5710416666666667,
-    "wordBoundary": {
-      "text": "श",
-      "start": 0.3125,
-      "duration": 0.15,
-      "kind": "SpeechSynthesisBoundaryType.Word"
-    },
-    "sha256": "401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce",
-    "userApprovedSource": true,
-    "alignmentCorrelation": 0.9972962052454506,
-    "sourceSha256": "0d03ea5472453387a07dc2900e7dd50423cefaaee97e43dec58b45e93238da6d"
+    "synthesisText": "शअ",
+    "source": "音声生成ソース/approved-sha-explicit-20261108.mp3",
+    "sha256": "3aafa048c19082abc8e24e0b483a1c426018fa2690d436b82bfc539b9b0f0e2f",
+    "sourceSha256": "3aafa048c19082abc8e24e0b483a1c426018fa2690d436b82bfc539b9b0f0e2f",
+    "userApprovedWholeClip": true,
+    "approval": "2026-11-08: サ3つはよいが、ञが違う",
+    "note": "Entire exact reviewed recording; no cropping or re-synthesis."
   },
   "ष": {
-    "method": "carrier-word-boundary",
+    "method": "explicit-inherent-vowel-whole-clip",
     "voice": "ne-NP-HemkalaNeural",
     "rate": "0%",
-    "phrase": "यो श हो। यो ष हो। यो स हो।",
-    "source": "音声生成ソース/approved-sibilants.mp3",
-    "start": 1.8935416666666667,
-    "end": 2.0585416666666667,
-    "wordBoundary": {
-      "text": "ष",
-      "start": 1.8125,
-      "duration": 0.1375,
-      "kind": "SpeechSynthesisBoundaryType.Word"
-    },
-    "sha256": "50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161",
-    "userApprovedSource": true,
-    "alignmentCorrelation": 0.9972962052454506,
-    "sourceSha256": "0d03ea5472453387a07dc2900e7dd50423cefaaee97e43dec58b45e93238da6d"
+    "synthesisText": "षअ",
+    "source": "音声生成ソース/approved-ssa-explicit-20261108.mp3",
+    "sha256": "cbb883258e466bdffb1c807dfeffc74226baf2fa274fab373c2e035c105651af",
+    "sourceSha256": "cbb883258e466bdffb1c807dfeffc74226baf2fa274fab373c2e035c105651af",
+    "userApprovedWholeClip": true,
+    "approval": "2026-11-08: サ3つはよいが、ञが違う",
+    "note": "Entire exact reviewed recording; no cropping or re-synthesis."
   },
   "स": {
-    "method": "carrier-word-boundary",
+    "method": "explicit-inherent-vowel-whole-clip",
     "voice": "ne-NP-HemkalaNeural",
     "rate": "0%",
-    "phrase": "यो श हो। यो ष हो। यो स हो।",
-    "source": "音声生成ソース/approved-sibilants.mp3",
-    "start": 3.3685416666666668,
-    "end": 3.5335416666666672,
-    "wordBoundary": {
-      "text": "स",
-      "start": 3.2875,
-      "duration": 0.1375,
-      "kind": "SpeechSynthesisBoundaryType.Word"
-    },
-    "sha256": "fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0",
-    "userApprovedSource": true,
-    "alignmentCorrelation": 0.9972962052454506,
-    "sourceSha256": "0d03ea5472453387a07dc2900e7dd50423cefaaee97e43dec58b45e93238da6d"
+    "synthesisText": "सअ",
+    "source": "音声生成ソース/approved-sa-explicit-20261108.mp3",
+    "sha256": "ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2",
+    "sourceSha256": "ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2",
+    "userApprovedWholeClip": true,
+    "approval": "2026-11-08: サ3つはよいが、ञが違う",
+    "note": "Entire exact reviewed recording; no cropping or re-synthesis."
   },
   "ञ": {
     "method": "carrier-word-boundary",
@@ -582,5 +561,29 @@
     },
     "sha256": "a50b76721fc8d391c936bc5739420d1453ada5ae690214116e1991197d4d6d84",
     "userApprovedSource": false
+  },
+  "क्": {
+    "method": "halant-whole-clip",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "synthesisText": "क्",
+    "source": "音声生成ソース/approved-bare-k-20261108.mp3",
+    "sha256": "d5941cc13f89645328da58d4567e86b5ce63cf53620eedf5d6aa771bbd6137a5",
+    "sourceSha256": "d5941cc13f89645328da58d4567e86b5ce63cf53620eedf5d6aa771bbd6137a5",
+    "userApprovedWholeClip": true,
+    "approval": "2026-11-08: k,sなどは子音だけで聞こえている。この2つを代表例として解説",
+    "note": "Exact whole reviewed recording; two representatives only, no vowel-free alphabet generation."
+  },
+  "स्": {
+    "method": "halant-whole-clip",
+    "voice": "ne-NP-HemkalaNeural",
+    "rate": "0%",
+    "synthesisText": "स्",
+    "source": "音声生成ソース/approved-bare-s-20261108.mp3",
+    "sha256": "85869480cafc4f321b3895b17c92047f3adcbf3f25b6ad6f710d66972a8b8b95",
+    "sourceSha256": "85869480cafc4f321b3895b17c92047f3adcbf3f25b6ad6f710d66972a8b8b95",
+    "userApprovedWholeClip": true,
+    "approval": "2026-11-08: k,sなどは子音だけで聞こえている。この2つを代表例として解説",
+    "note": "Exact whole reviewed recording; two representatives only, no vowel-free alphabet generation."
   }
 }

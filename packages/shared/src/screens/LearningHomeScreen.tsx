@@ -8,6 +8,7 @@ import { useI18n } from '../i18n';
 import { useAppData } from '../AppDataContext';
 import { useLearning } from '../LearningContext';
 import { emptyStudyState, practiceParams, resolveStudy, reviewItems, studyActivity } from '../learning';
+import { useGrammarGuide } from '../grammarGuide';
 
 const c = { ink: '#123039', muted: '#52666C', navy: '#102F38', teal: '#7DE2CE', page: '#F2F5F3', line: '#DCE6E2' };
 const EMPTY = emptyStudyState();
@@ -15,6 +16,7 @@ const EMPTY = emptyStudyState();
 export default function LearningHomeScreen() {
   const nav = useNavigation<any>(), { lang } = useI18n(), { top } = useSafeAreaInsets();
   const data = useAppData(), learning = useLearning(), hero = useHeroImage('grammar');
+  const guides = useGrammarGuide(), guideCount = data.GRAMMAR_THEMES.filter(theme => guides?.[String(theme.id)]?.length).length;
   const [now, setNow] = useState(Date.now);
   useFocusEffect(useCallback(() => {
     let timer: ReturnType<typeof setTimeout>;
@@ -92,12 +94,19 @@ export default function LearningHomeScreen() {
       <Text style={styles.recordNote}>{en ? 'Recorded when you rate a sentence after checking its answer.' : '例文の答えを確認して振り返ると、記録が増えます。'}</Text>
     </View>
 
-    <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Letters & sounds' : '文字と音'} onPress={() => nav.navigate('LettersSounds')} style={({ pressed }) => [styles.path, pressed && styles.pressed]}>
+    <Pressable testID="home-letters" accessibilityRole="button" accessibilityLabel={en ? 'Letters & sounds' : '文字と音'} onPress={() => nav.navigate('LettersSounds')} style={({ pressed }) => [styles.path, pressed && styles.pressed]}>
       <View style={styles.sectionRow}><Text style={styles.overline}>LETTERS &amp; SOUNDS</Text><Text style={styles.pathCount}>अ क म</Text></View>
       <Text style={styles.pathTitle}>{en ? 'Letters & sounds' : '文字と音'}</Text>
       <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Vowels, consonants, vowel signs and conjuncts. Tap to hear how the script sounds.' : '母音・子音から、組み合わせ・複合文字まで。文字を見て、音を確かめよう。'}</Text>
       <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? `${state.lettersRead?.length??0} sections reviewed` : `${state.lettersRead?.length??0}項目を確認済み`}</Text><Text style={styles.pathLink}>{en ? 'Explore →' : '開く →'}</Text></View>
     </Pressable>
+
+    {guideCount > 0 && <Pressable testID="home-grammar-lessons" accessibilityRole="button" accessibilityLabel={en ? 'Grammar lessons' : '文法教材'} onPress={() => nav.navigate('GrammarLibrary')} style={({ pressed }) => [styles.path, styles.grammarPath, pressed && styles.pressed]}>
+      <View style={styles.sectionRow}><Text style={styles.overline}>GRAMMAR LESSONS</Text><Text style={styles.pathCount}>01 →</Text></View>
+      <Text style={styles.pathTitle}>{en ? 'Grammar lessons' : '文法教材'}</Text>
+      <Text style={[styles.pathNote,{fontSize:15,lineHeight:25}]}>{en ? 'Core rules, forms & words, step-by-step practice and a cultural break. Build your understanding one theme at a time.' : '基本ルール・活用と語彙・練習問題・一休み。テーマごとに、文の作り方を学ぼう。'}</Text>
+      <View style={styles.sectionRow}><Text style={styles.pathNote}>{en ? `${guideCount} lessons, including appendices` : `付録を含む${guideCount}項目`}</Text><Text style={styles.pathLink}>{en ? 'Open lessons →' : '教材を開く →'}</Text></View>
+    </Pressable>}
 
     {ready && due.length > 0 && <Pressable accessibilityRole="button" accessibilityLabel={en ? 'Review saved sentences' : '保存した例文を復習'} onPress={() => nav.navigate('Practice', practiceParams(due[0], { kind: 'review', items: due }))} style={({ pressed }) => [styles.review, pressed && styles.pressed]}>
       <View style={styles.reviewBadge}><Text style={styles.reviewNumber}>{due.length}</Text></View>
@@ -140,6 +149,7 @@ const styles = StyleSheet.create({
   recordNote: { color: c.muted, fontSize: 10, lineHeight: 17, marginTop: 16 },
   path: { backgroundColor: '#E4EEE8', padding: 22, borderRadius: 22, gap: 9 }, pathCount: { color: c.ink, fontSize: 24, lineHeight: 32, fontWeight: '700' }, pathDenominator: { color: c.muted, fontSize: 13, lineHeight: 20, fontWeight: '400' },
   pathTitle: { color: c.ink, fontSize: 19, lineHeight: 28, fontWeight: '700' }, pathNote: { color: c.muted, fontSize: 11, lineHeight: 18, flex: 1 }, pathLink: { color: c.ink, fontSize: 12, lineHeight: 20, fontWeight: '700' },
+  grammarPath: { backgroundColor: '#E5EBF5' },
   review: { flexDirection: 'row', alignItems: 'center', padding: 18, gap: 12, borderRadius: 20, backgroundColor: '#FFF' }, reviewBadge: { width: 40, height: 40, borderRadius: 14, alignItems: 'center', justifyContent: 'center', backgroundColor: '#E4EEE8' },
   reviewNumber: { color: '#237766', fontSize: 19, fontWeight: '700' }, reviewTitle: { color: c.ink, fontSize: 14, lineHeight: 22, fontWeight: '700' }, reviewNote: { color: c.muted, fontSize: 11, lineHeight: 18, marginTop: 3 }, reviewArrow: { color: c.ink, fontSize: 20 },
   error: { padding: 16, borderRadius: 14, backgroundColor: '#FCEEEF' }, errorText: { color: '#8B2945', fontSize: 13, lineHeight: 21 },

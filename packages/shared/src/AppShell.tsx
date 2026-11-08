@@ -43,6 +43,7 @@ import ScaffoldScreen from './screens/ScaffoldScreen';
 import DictScreen, { type DictData } from './screens/DictScreen';
 import PaywallScreen from './screens/PaywallScreen';
 import GrammarGuideScreen from './screens/GrammarGuideScreen';
+import GrammarLibraryScreen from './screens/GrammarLibraryScreen';
 import { HeroImagesProvider, type HeroImages } from './heroImages';
 import { DesignThemeProvider } from './design';
 
@@ -136,10 +137,10 @@ function ConversationStackNav({ defaultStackOptions }: { defaultStackOptions: an
   );
 }
 
-function GrammarStackNav({ defaultStackOptions }: { defaultStackOptions: any }) {
+function GrammarStackNav({ defaultStackOptions, guidesOnHome = false }: { defaultStackOptions: any; guidesOnHome?: boolean }) {
   return (
     <GramStack.Navigator screenOptions={defaultStackOptions}>
-      <GramStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'grammar' }} />
+      <GramStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'grammar', guidesOnHome }} />
       <GramStack.Screen name="Practice" component={PracticeScreen} initialParams={{ mode: 'grammar' }} />
       <GramStack.Screen name="SettingsMain" component={SettingsScreen} />
     </GramStack.Navigator>
@@ -223,7 +224,7 @@ function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListe
   const defs = {
     home:         { name: 'HomeTab',         title: t('nav.home'),         icon: HomeIcon,       render: () => learningHome ? <LearningHomeScreen /> : <HomeScreen storageKey={progressStorageKey} /> },
     conversation: { name: 'ConversationTab', title: t('nav.conversation'), icon: ChatIcon,       render: () => <ConversationStackNav defaultStackOptions={modeStackOptions} /> },
-    grammar:      { name: 'GrammarTab',      title: t('nav.grammar'),      icon: GrammarIcon,    render: () => <GrammarStackNav defaultStackOptions={modeStackOptions} /> },
+    grammar:      { name: 'GrammarTab',      title: t('nav.grammar'),      icon: GrammarIcon,    render: () => <GrammarStackNav defaultStackOptions={modeStackOptions} guidesOnHome={learningHome} /> },
     listening:    { name: 'ListeningTab',    title: t('nav.listening'),    icon: HeadphonesIcon, render: () => <ListeningStackNav defaultStackOptions={modeStackOptions} posterInListening={posterInListening} /> },
     vocabulary:   { name: 'VocabularyTab',   title: t('nav.vocabulary'),   icon: CardsIcon,      render: () => <VocabularyStackNav defaultStackOptions={modeStackOptions} /> },
     short:        { name: 'ShortTab',        title: t('nav.short'),        icon: ShortIcon,      render: () => <ShortStackNav defaultStackOptions={defaultStackOptions} /> },
@@ -413,6 +414,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                   </RootStack.Screen>
                   <RootStack.Screen name="Paywall" component={PaywallScreen} options={{ presentation: 'modal' }} />
                   <RootStack.Screen name="GrammarGuide" component={GrammarGuideScreen} />
+                  <RootStack.Screen name="GrammarLibrary" component={GrammarLibraryScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
                   {/* GrammarGuide replaces itself at this root, not inside GramStack.
                       Keep MainTabs beneath it so Back returns to the existing list. */}
                   <RootStack.Screen name="Practice" component={PracticeScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined, header: learningStorageKey ? renderStudyHeader : undefined }} />

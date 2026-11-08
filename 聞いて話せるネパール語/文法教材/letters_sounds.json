@@ -6,31 +6,57 @@
       {
         "id": "start",
         "title": "文字のしくみ",
-        "body": "ネパール語の文字はデーヴァナーガリー。左から右へ読みます。横につながる上の線も、字の一部です。\n子音の字には基本の母音 a が含まれ、記号を添えると母音が変わります。まず「1字ずつ」より「音のまとまり」で見てみよう。",
+        "body": "ネパール語は左から右へ読みます。子音字には基本の母音 a が含まれ、क は ka、स は sa。この教材の「子音」一覧も、この文字の読みです。\n下の ्（ハラント）は、母音 a を外す印。क् は k、स् は s だけで、後ろにアを付けません。下の2組を聞き比べよう。\nस्＋त＝स्त（sta）のように子音をつなぐ時は、s と t の間に母音を挟みません。",
         "samples": [
-          {
-            "id": "nepali",
-            "ne": "नेपाली",
-            "roman": "nepālī",
-            "meaning": "ネパール語",
-            "detail": "ने + पा + ली → नेपाली",
-            "speech": "नेपाली",
-            "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-61baa08c703c278869f101c7aca121ce3285b4b33718d2141697b241f647c0e7.mp3",
-              "sha256": "61baa08c703c278869f101c7aca121ce3285b4b33718d2141697b241f647c0e7",
-              "bytes": 11232
-            }
-          },
           {
             "id": "ka-base",
             "ne": "क",
             "roman": "ka",
-            "meaning": "子音＋基本の母音 a",
+            "meaning": "子音 k ＋ 母音 a",
             "detail": "",
             "speech": "क",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-5f2c90da9203b89b4d6ce246085a9dfdd802020f501f8df3cb189f7be79e307a.mp3",
               "sha256": "5f2c90da9203b89b4d6ce246085a9dfdd802020f501f8df3cb189f7be79e307a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ka-bare",
+            "ne": "क्",
+            "roman": "k",
+            "meaning": "母音なしの k",
+            "detail": "क との違いは、最後の a がないこと。日本語の「ク」のように u も付けません。",
+            "speech": "क्",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d5941cc13f89645328da58d4567e86b5ce63cf53620eedf5d6aa771bbd6137a5.mp3",
+              "sha256": "d5941cc13f89645328da58d4567e86b5ce63cf53620eedf5d6aa771bbd6137a5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "sa-base",
+            "ne": "स",
+            "roman": "sa",
+            "meaning": "子音 s ＋ 母音 a",
+            "detail": "",
+            "speech": "स",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2.mp3",
+              "sha256": "ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "sa-bare",
+            "ne": "स्",
+            "roman": "s",
+            "meaning": "母音なしの s",
+            "detail": "歯の近くで息を通す音だけ。日本語の「ス」のように u は付けません。",
+            "speech": "स्",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-85869480cafc4f321b3895b17c92047f3adcbf3f25b6ad6f710d66972a8b8b95.mp3",
+              "sha256": "85869480cafc4f321b3895b17c92047f3adcbf3f25b6ad6f710d66972a8b8b95",
               "bytes": 11232
             }
           },
@@ -48,11 +74,24 @@
             }
           },
           {
+            "id": "nepali",
+            "ne": "नेपाली",
+            "roman": "nepālī",
+            "meaning": "ネパール語",
+            "detail": "ने + पा + ली → नेपाली",
+            "speech": "नेपाली",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-61baa08c703c278869f101c7aca121ce3285b4b33718d2141697b241f647c0e7.mp3",
+              "sha256": "61baa08c703c278869f101c7aca121ce3285b4b33718d2141697b241f647c0e7",
+              "bytes": 11232
+            }
+          },
+          {
             "id": "house",
             "ne": "घर",
             "roman": "ghar",
             "meaning": "家",
-            "detail": "語末の a を読まない語もあります。字の表と単語の音を一緒に確認しよう。",
+            "detail": "実際の単語では、् が書かれていなくても母音 a を読まないことがあります。घर は ghar で、語末の र に a を足しません。すべての a を消すルールではないので、単語の音声と一緒に覚えよう。",
             "speech": "घर",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c863ae99482e2bcf7b505023d6fb7658af556edbd42befdf549c87d61ce30d61.mp3",
@@ -72,7 +111,7 @@
             "ne": "अ",
             "roman": "a",
             "meaning": "口を力ませない「ア」",
-            "detail": "子音だけの字にも、この母音が含まれています。",
+            "detail": "母音記号のない子音字にも、この母音が含まれています。",
             "speech": "अ",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-808530afe4cc282d0b3879e068d5b287be2576bf020b950850611b0d6c798ba1.mp3",
@@ -477,9 +516,259 @@
         ]
       },
       {
+        "id": "bare",
+        "title": "母音なしの子音33字",
+        "body": "子音字に ् を付けると、もとの母音 a を外した形になります。क → क्（k）、स → स्（s）。ローマ字にも a を付けず、子音だけで表します。\n下は基本33字すべての母音なしの形。再生マークのある क्・स् が音の代表例です。ほかの31字は文字と読みの一覧として確認しよう。\n子音を続けて書くと半分の形や合字になることがあります。複合文字の項目で、つながった形も確かめられます。",
+        "samples": [
+          {
+            "id": "bare-क",
+            "ne": "क्",
+            "roman": "k",
+            "meaning": "息を強く出さない",
+            "detail": "",
+            "speech": "क्",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d5941cc13f89645328da58d4567e86b5ce63cf53620eedf5d6aa771bbd6137a5.mp3",
+              "sha256": "d5941cc13f89645328da58d4567e86b5ce63cf53620eedf5d6aa771bbd6137a5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "bare-ख",
+            "ne": "ख्",
+            "roman": "kh",
+            "meaning": "強く息を出す",
+            "detail": ""
+          },
+          {
+            "id": "bare-ग",
+            "ne": "ग्",
+            "roman": "g",
+            "meaning": "声を伴う",
+            "detail": ""
+          },
+          {
+            "id": "bare-घ",
+            "ne": "घ्",
+            "roman": "gh",
+            "meaning": "声と強い息を伴う",
+            "detail": ""
+          },
+          {
+            "id": "bare-ङ",
+            "ne": "ङ्",
+            "roman": "ṅ",
+            "meaning": "喉の奥の鼻音",
+            "detail": ""
+          },
+          {
+            "id": "bare-च",
+            "ne": "च्",
+            "roman": "c",
+            "meaning": "チ／ツに近い音",
+            "detail": ""
+          },
+          {
+            "id": "bare-छ",
+            "ne": "छ्",
+            "roman": "ch",
+            "meaning": "その音に強い息を添える",
+            "detail": ""
+          },
+          {
+            "id": "bare-ज",
+            "ne": "ज्",
+            "roman": "j",
+            "meaning": "ジ／ズに近い音",
+            "detail": ""
+          },
+          {
+            "id": "bare-झ",
+            "ne": "झ्",
+            "roman": "jh",
+            "meaning": "その音に声と強い息",
+            "detail": ""
+          },
+          {
+            "id": "bare-ञ",
+            "ne": "ञ्",
+            "roman": "ñ",
+            "meaning": "ニャに近い位置の鼻音",
+            "detail": ""
+          },
+          {
+            "id": "bare-ट",
+            "ne": "ट्",
+            "roman": "ṭ",
+            "meaning": "舌先を後ろに・息は弱く",
+            "detail": ""
+          },
+          {
+            "id": "bare-ठ",
+            "ne": "ठ्",
+            "roman": "ṭh",
+            "meaning": "舌先を後ろに・息は強く",
+            "detail": ""
+          },
+          {
+            "id": "bare-ड",
+            "ne": "ड्",
+            "roman": "ḍ",
+            "meaning": "舌先を後ろに・声を伴う",
+            "detail": ""
+          },
+          {
+            "id": "bare-ढ",
+            "ne": "ढ्",
+            "roman": "ḍh",
+            "meaning": "舌先を後ろに・声と強い息",
+            "detail": ""
+          },
+          {
+            "id": "bare-ण",
+            "ne": "ण्",
+            "roman": "ṇ",
+            "meaning": "この位置の鼻音（語によって न に近い）",
+            "detail": ""
+          },
+          {
+            "id": "bare-त",
+            "ne": "त्",
+            "roman": "t",
+            "meaning": "歯の付近・息は弱く",
+            "detail": ""
+          },
+          {
+            "id": "bare-थ",
+            "ne": "थ्",
+            "roman": "th",
+            "meaning": "歯の付近・息は強く",
+            "detail": ""
+          },
+          {
+            "id": "bare-द",
+            "ne": "द्",
+            "roman": "d",
+            "meaning": "歯の付近・声を伴う",
+            "detail": ""
+          },
+          {
+            "id": "bare-ध",
+            "ne": "ध्",
+            "roman": "dh",
+            "meaning": "歯の付近・声と強い息",
+            "detail": ""
+          },
+          {
+            "id": "bare-न",
+            "ne": "न्",
+            "roman": "n",
+            "meaning": "歯の付近の鼻音",
+            "detail": ""
+          },
+          {
+            "id": "bare-प",
+            "ne": "प्",
+            "roman": "p",
+            "meaning": "唇を閉じて開く",
+            "detail": ""
+          },
+          {
+            "id": "bare-फ",
+            "ne": "फ्",
+            "roman": "ph",
+            "meaning": "強い息を伴う",
+            "detail": ""
+          },
+          {
+            "id": "bare-ब",
+            "ne": "ब्",
+            "roman": "b",
+            "meaning": "声を伴う",
+            "detail": ""
+          },
+          {
+            "id": "bare-भ",
+            "ne": "भ्",
+            "roman": "bh",
+            "meaning": "声と強い息を伴う",
+            "detail": ""
+          },
+          {
+            "id": "bare-म",
+            "ne": "म्",
+            "roman": "m",
+            "meaning": "唇を閉じた鼻音",
+            "detail": ""
+          },
+          {
+            "id": "bare-य",
+            "ne": "य्",
+            "roman": "y",
+            "meaning": "「ヤ」の子音",
+            "detail": ""
+          },
+          {
+            "id": "bare-र",
+            "ne": "र्",
+            "roman": "r",
+            "meaning": "舌先を短く弾く／震わせる",
+            "detail": ""
+          },
+          {
+            "id": "bare-ल",
+            "ne": "ल्",
+            "roman": "l",
+            "meaning": "舌先を上につけ、横へ息を流す",
+            "detail": ""
+          },
+          {
+            "id": "bare-व",
+            "ne": "व्",
+            "roman": "v",
+            "meaning": "v／w に近い音。語や話者で違う",
+            "detail": ""
+          },
+          {
+            "id": "bare-श",
+            "ne": "श्",
+            "roman": "ś",
+            "meaning": "श の字。s／sh に近い",
+            "detail": ""
+          },
+          {
+            "id": "bare-ष",
+            "ne": "ष्",
+            "roman": "ṣ",
+            "meaning": "ष の字。日常では s に近いことも",
+            "detail": ""
+          },
+          {
+            "id": "bare-स",
+            "ne": "स्",
+            "roman": "s",
+            "meaning": "「ス」の子音",
+            "detail": "",
+            "speech": "स्",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-85869480cafc4f321b3895b17c92047f3adcbf3f25b6ad6f710d66972a8b8b95.mp3",
+              "sha256": "85869480cafc4f321b3895b17c92047f3adcbf3f25b6ad6f710d66972a8b8b95",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "bare-ह",
+            "ne": "ह्",
+            "roman": "h",
+            "meaning": "息を通すハ行に近い音",
+            "detail": ""
+          }
+        ]
+      },
+      {
         "id": "velar",
         "title": "喉の奥：क の仲間",
-        "body": "舌の奥を上げて出す仲間。क→ख、ग→घ は息の強さを比べよう。ङ は「ンガ」の鼻に響く部分に近く、単語では ङ्ग などの形でも現れます。",
+        "body": "舌の奥を上げて出す仲間。क→ख、ग→घ は息の強さを比べよう。ङ は「ンガ」の鼻に響く部分に近く、単語では ङ्ग などの形でも現れます。\nここで再生するのは子音字の読み（子音＋a）。母音なしの子音は、क् のように ् を付けて表します。",
         "samples": [
           {
             "id": "c-क",
@@ -671,7 +960,7 @@
       {
         "id": "affricate",
         "title": "チ・ジャの仲間",
-        "body": "च と छ、ज と झ の息を聞き分けよう。ローマ字の c は「カ」ではなくチ／ツに近い音の目印です。ञ は主に結合した形で見かけます。",
+        "body": "च と छ、ज と झ の息を聞き分けよう。ローマ字の c は「カ」ではなくチ／ツに近い音の目印です。ञ は主に結合した形で見かけます。\nここで再生するのは子音字の読み（子音＋a）。母音なしの子音は、क् のように ् を付けて表します。",
         "samples": [
           {
             "id": "c-च",
@@ -863,7 +1152,7 @@
       {
         "id": "retroflex",
         "title": "舌先を後ろに：ट の仲間",
-        "body": "舌先を上の歯より後ろへ。ṭ・ḍ の下の点は、त・द と区別する目印です。「タ」とだけ覚えず、次の項目と聞き比べよう。",
+        "body": "舌先を上の歯より後ろへ。ṭ・ḍ の下の点は、त・द と区別する目印です。「タ」とだけ覚えず、次の項目と聞き比べよう。\nここで再生するのは子音字の読み（子音＋a）。母音なしの子音は、क् のように ् を付けて表します。",
         "samples": [
           {
             "id": "c-ट",
@@ -1055,7 +1344,7 @@
       {
         "id": "dental",
         "title": "上の歯に：त の仲間",
-        "body": "舌先を上の歯の付近に当てます。त と ट は字も音も別。थ の h は別の「ハ」を足す指示ではなく、強い息の目印です。",
+        "body": "舌先を上の歯の付近に当てます。त と ट は字も音も別。थ の h は別の「ハ」を足す指示ではなく、強い息の目印です。\nここで再生するのは子音字の読み（子音＋a）。母音なしの子音は、क् のように ् を付けて表します。",
         "samples": [
           {
             "id": "c-त",
@@ -1247,7 +1536,7 @@
       {
         "id": "labial",
         "title": "唇を使う：प の仲間",
-        "body": "両唇を閉じてから開く仲間。प と फ、ब と भ の息を比べよう。फ は借用語などで f に近く発音されることもあります。",
+        "body": "両唇を閉じてから開く仲間。प と फ、ब と भ の息を比べよう。फ は借用語などで f に近く発音されることもあります。\nここで再生するのは子音字の読み（子音＋a）。母音なしの子音は、क् のように ् を付けて表します。",
         "samples": [
           {
             "id": "c-प",
@@ -1439,7 +1728,7 @@
       {
         "id": "other",
         "title": "残りの8字",
-        "body": "य・र・ल・व と、श・ष・स・ह。श と ष はサンスクリット系の綴りによく現れ、日常の発音では स に近づくことがあります。綴りと実際の音を分けて覚えよう。",
+        "body": "य・र・ल・व と、श・ष・स・ह。श と ष はサンスクリット系の綴りによく現れ、日常の発音では स に近づくことがあります。綴りと実際の音を分けて覚えよう。\nここで再生するのは子音字の読み（子音＋a）。母音なしの子音は、क् のように ् を付けて表します。",
         "samples": [
           {
             "id": "c-य",
@@ -1597,9 +1886,9 @@
             "detail": "",
             "speech": "श",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce.mp3",
-              "sha256": "401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3aafa048c19082abc8e24e0b483a1c426018fa2690d436b82bfc539b9b0f0e2f.mp3",
+              "sha256": "3aafa048c19082abc8e24e0b483a1c426018fa2690d436b82bfc539b9b0f0e2f",
+              "bytes": 11232
             },
             "examples": [
               {
@@ -1634,9 +1923,9 @@
             "detail": "",
             "speech": "ष",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161.mp3",
-              "sha256": "50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cbb883258e466bdffb1c807dfeffc74226baf2fa274fab373c2e035c105651af.mp3",
+              "sha256": "cbb883258e466bdffb1c807dfeffc74226baf2fa274fab373c2e035c105651af",
+              "bytes": 11232
             },
             "examples": [
               {
@@ -1671,9 +1960,9 @@
             "detail": "",
             "speech": "स",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0.mp3",
-              "sha256": "fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2.mp3",
+              "sha256": "ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2",
+              "bytes": 11232
             },
             "examples": [
               {
@@ -7407,9 +7696,9 @@
             "detail": "श ＋ अ（もとの母音） → श",
             "speech": "श",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce.mp3",
-              "sha256": "401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3aafa048c19082abc8e24e0b483a1c426018fa2690d436b82bfc539b9b0f0e2f.mp3",
+              "sha256": "3aafa048c19082abc8e24e0b483a1c426018fa2690d436b82bfc539b9b0f0e2f",
+              "bytes": 11232
             }
           },
           {
@@ -7556,9 +7845,9 @@
             "detail": "ष ＋ अ（もとの母音） → ष",
             "speech": "ष",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161.mp3",
-              "sha256": "50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cbb883258e466bdffb1c807dfeffc74226baf2fa274fab373c2e035c105651af.mp3",
+              "sha256": "cbb883258e466bdffb1c807dfeffc74226baf2fa274fab373c2e035c105651af",
+              "bytes": 11232
             }
           },
           {
@@ -7705,9 +7994,9 @@
             "detail": "स ＋ अ（もとの母音） → स",
             "speech": "स",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0.mp3",
-              "sha256": "fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2.mp3",
+              "sha256": "ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2",
+              "bytes": 11232
             }
           },
           {
@@ -8000,31 +8289,57 @@
       {
         "id": "start",
         "title": "How the script works",
-        "body": "Nepali uses Devanagari, read left to right. The joining line at the top is part of the script.\nA consonant letter includes an inherent a; attached signs change that vowel. Look for sound units rather than treating every visible mark as a separate sound.",
+        "body": "Nepali is read left to right. A consonant letter includes an inherent a: क is ka and स is sa. The consonant chart in this course uses these letter readings.\nThe lower mark ् (halant) removes that a: क् is k and स् is s, without a following vowel. Compare the two pairs below.\nWhen consonants join, as in स् + त = स्त (sta), there is no vowel between s and t.",
         "samples": [
-          {
-            "id": "nepali",
-            "ne": "नेपाली",
-            "roman": "nepālī",
-            "meaning": "Nepali",
-            "detail": "ने + पा + ली → नेपाली",
-            "speech": "नेपाली",
-            "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-61baa08c703c278869f101c7aca121ce3285b4b33718d2141697b241f647c0e7.mp3",
-              "sha256": "61baa08c703c278869f101c7aca121ce3285b4b33718d2141697b241f647c0e7",
-              "bytes": 11232
-            }
-          },
           {
             "id": "ka-base",
             "ne": "क",
             "roman": "ka",
-            "meaning": "Consonant + inherent a",
+            "meaning": "Consonant k + vowel a",
             "detail": "",
             "speech": "क",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-5f2c90da9203b89b4d6ce246085a9dfdd802020f501f8df3cb189f7be79e307a.mp3",
               "sha256": "5f2c90da9203b89b4d6ce246085a9dfdd802020f501f8df3cb189f7be79e307a",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "ka-bare",
+            "ne": "क्",
+            "roman": "k",
+            "meaning": "k without a vowel",
+            "detail": "Unlike क, this has no final a. Do not add another vowel after k.",
+            "speech": "क्",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d5941cc13f89645328da58d4567e86b5ce63cf53620eedf5d6aa771bbd6137a5.mp3",
+              "sha256": "d5941cc13f89645328da58d4567e86b5ce63cf53620eedf5d6aa771bbd6137a5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "sa-base",
+            "ne": "स",
+            "roman": "sa",
+            "meaning": "Consonant s + vowel a",
+            "detail": "",
+            "speech": "स",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2.mp3",
+              "sha256": "ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "sa-bare",
+            "ne": "स्",
+            "roman": "s",
+            "meaning": "s without a vowel",
+            "detail": "Only the airflow sound: do not add a vowel after s.",
+            "speech": "स्",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-85869480cafc4f321b3895b17c92047f3adcbf3f25b6ad6f710d66972a8b8b95.mp3",
+              "sha256": "85869480cafc4f321b3895b17c92047f3adcbf3f25b6ad6f710d66972a8b8b95",
               "bytes": 11232
             }
           },
@@ -8042,11 +8357,24 @@
             }
           },
           {
+            "id": "nepali",
+            "ne": "नेपाली",
+            "roman": "nepālī",
+            "meaning": "Nepali",
+            "detail": "ने + पा + ली → नेपाली",
+            "speech": "नेपाली",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-61baa08c703c278869f101c7aca121ce3285b4b33718d2141697b241f647c0e7.mp3",
+              "sha256": "61baa08c703c278869f101c7aca121ce3285b4b33718d2141697b241f647c0e7",
+              "bytes": 11232
+            }
+          },
+          {
             "id": "house",
             "ne": "घर",
             "roman": "ghar",
             "meaning": "house",
-            "detail": "The final inherent a is not spoken in some words. Compare the letter chart with the complete word.",
+            "detail": "In real words, an inherent a can disappear even without a written ्. घर is ghar, without a final a after र. This does not mean every a disappears; learn each word with its recording.",
             "speech": "घर",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c863ae99482e2bcf7b505023d6fb7658af556edbd42befdf549c87d61ce30d61.mp3",
@@ -8471,9 +8799,259 @@
         ]
       },
       {
+        "id": "bare",
+        "title": "33 consonants without a vowel",
+        "body": "Adding ् removes a consonant letter’s inherent a: क → क् (k), स → स् (s). The roman spelling also has no final a.\nHere are the vowel-free forms of all 33 core consonants. क् and स् have play icons as representative recordings; the other 31 entries are a written reference.\nWhen consonants join, they can form half-letters or ligatures. Explore their joined shapes in Conjuncts.",
+        "samples": [
+          {
+            "id": "bare-क",
+            "ne": "क्",
+            "roman": "k",
+            "meaning": "Unaspirated",
+            "detail": "",
+            "speech": "क्",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d5941cc13f89645328da58d4567e86b5ce63cf53620eedf5d6aa771bbd6137a5.mp3",
+              "sha256": "d5941cc13f89645328da58d4567e86b5ce63cf53620eedf5d6aa771bbd6137a5",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "bare-ख",
+            "ne": "ख्",
+            "roman": "kh",
+            "meaning": "Aspirated",
+            "detail": ""
+          },
+          {
+            "id": "bare-ग",
+            "ne": "ग्",
+            "roman": "g",
+            "meaning": "Voiced",
+            "detail": ""
+          },
+          {
+            "id": "bare-घ",
+            "ne": "घ्",
+            "roman": "gh",
+            "meaning": "Voiced with aspiration",
+            "detail": ""
+          },
+          {
+            "id": "bare-ङ",
+            "ne": "ङ्",
+            "roman": "ṅ",
+            "meaning": "Velar nasal",
+            "detail": ""
+          },
+          {
+            "id": "bare-च",
+            "ne": "च्",
+            "roman": "c",
+            "meaning": "Ch/ts-like sound",
+            "detail": ""
+          },
+          {
+            "id": "bare-छ",
+            "ne": "छ्",
+            "roman": "ch",
+            "meaning": "With aspiration",
+            "detail": ""
+          },
+          {
+            "id": "bare-ज",
+            "ne": "ज्",
+            "roman": "j",
+            "meaning": "J/dz-like sound",
+            "detail": ""
+          },
+          {
+            "id": "bare-झ",
+            "ne": "झ्",
+            "roman": "jh",
+            "meaning": "Voiced with aspiration",
+            "detail": ""
+          },
+          {
+            "id": "bare-ञ",
+            "ne": "ञ्",
+            "roman": "ñ",
+            "meaning": "Palatal nasal",
+            "detail": ""
+          },
+          {
+            "id": "bare-ट",
+            "ne": "ट्",
+            "roman": "ṭ",
+            "meaning": "Retroflex, unaspirated",
+            "detail": ""
+          },
+          {
+            "id": "bare-ठ",
+            "ne": "ठ्",
+            "roman": "ṭh",
+            "meaning": "Retroflex, aspirated",
+            "detail": ""
+          },
+          {
+            "id": "bare-ड",
+            "ne": "ड्",
+            "roman": "ḍ",
+            "meaning": "Retroflex, voiced",
+            "detail": ""
+          },
+          {
+            "id": "bare-ढ",
+            "ne": "ढ्",
+            "roman": "ḍh",
+            "meaning": "Retroflex, voiced aspirated",
+            "detail": ""
+          },
+          {
+            "id": "bare-ण",
+            "ne": "ण्",
+            "roman": "ṇ",
+            "meaning": "Retroflex nasal; often close to न in everyday speech",
+            "detail": ""
+          },
+          {
+            "id": "bare-त",
+            "ne": "त्",
+            "roman": "t",
+            "meaning": "Dental, unaspirated",
+            "detail": ""
+          },
+          {
+            "id": "bare-थ",
+            "ne": "थ्",
+            "roman": "th",
+            "meaning": "Dental, aspirated",
+            "detail": ""
+          },
+          {
+            "id": "bare-द",
+            "ne": "द्",
+            "roman": "d",
+            "meaning": "Dental, voiced",
+            "detail": ""
+          },
+          {
+            "id": "bare-ध",
+            "ne": "ध्",
+            "roman": "dh",
+            "meaning": "Dental, voiced aspirated",
+            "detail": ""
+          },
+          {
+            "id": "bare-न",
+            "ne": "न्",
+            "roman": "n",
+            "meaning": "Dental nasal",
+            "detail": ""
+          },
+          {
+            "id": "bare-प",
+            "ne": "प्",
+            "roman": "p",
+            "meaning": "Lips close and release",
+            "detail": ""
+          },
+          {
+            "id": "bare-फ",
+            "ne": "फ्",
+            "roman": "ph",
+            "meaning": "With aspiration",
+            "detail": ""
+          },
+          {
+            "id": "bare-ब",
+            "ne": "ब्",
+            "roman": "b",
+            "meaning": "Voiced",
+            "detail": ""
+          },
+          {
+            "id": "bare-भ",
+            "ne": "भ्",
+            "roman": "bh",
+            "meaning": "Voiced aspirated",
+            "detail": ""
+          },
+          {
+            "id": "bare-म",
+            "ne": "म्",
+            "roman": "m",
+            "meaning": "Nasal with closed lips",
+            "detail": ""
+          },
+          {
+            "id": "bare-य",
+            "ne": "य्",
+            "roman": "y",
+            "meaning": "Y sound",
+            "detail": ""
+          },
+          {
+            "id": "bare-र",
+            "ne": "र्",
+            "roman": "r",
+            "meaning": "Brief tongue tap or trill",
+            "detail": ""
+          },
+          {
+            "id": "bare-ल",
+            "ne": "ल्",
+            "roman": "l",
+            "meaning": "Lateral l sound",
+            "detail": ""
+          },
+          {
+            "id": "bare-व",
+            "ne": "व्",
+            "roman": "v",
+            "meaning": "V/w-like; varies by word and speaker",
+            "detail": ""
+          },
+          {
+            "id": "bare-श",
+            "ne": "श्",
+            "roman": "ś",
+            "meaning": "The letter श; s/sh-like",
+            "detail": ""
+          },
+          {
+            "id": "bare-ष",
+            "ne": "ष्",
+            "roman": "ṣ",
+            "meaning": "The letter ष; often close to s",
+            "detail": ""
+          },
+          {
+            "id": "bare-स",
+            "ne": "स्",
+            "roman": "s",
+            "meaning": "S sound",
+            "detail": "",
+            "speech": "स्",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-85869480cafc4f321b3895b17c92047f3adcbf3f25b6ad6f710d66972a8b8b95.mp3",
+              "sha256": "85869480cafc4f321b3895b17c92047f3adcbf3f25b6ad6f710d66972a8b8b95",
+              "bytes": 11232
+            }
+          },
+          {
+            "id": "bare-ह",
+            "ne": "ह्",
+            "roman": "h",
+            "meaning": "H-like sound",
+            "detail": ""
+          }
+        ]
+      },
+      {
         "id": "velar",
         "title": "At the back: the क group",
-        "body": "Raise the back of the tongue. Compare the puff of air in क/ख and ग/घ. ङ is a nasal sound at the same place; it also appears in clusters such as ङ्ग.",
+        "body": "Raise the back of the tongue. Compare the puff of air in क/ख and ग/घ. ङ is a nasal sound at the same place; it also appears in clusters such as ङ्ग.\nThese recordings read consonant letters with inherent a. A vowel-free consonant is written with ्, as in क्.",
         "samples": [
           {
             "id": "c-क",
@@ -8665,7 +9243,7 @@
       {
         "id": "affricate",
         "title": "The च and ज group",
-        "body": "Compare the aspiration in च/छ and ज/झ. Roman c here marks a ch/ts-like sound, not k. ञ is mainly encountered in conjuncts.",
+        "body": "Compare the aspiration in च/छ and ज/झ. Roman c here marks a ch/ts-like sound, not k. ञ is mainly encountered in conjuncts.\nThese recordings read consonant letters with inherent a. A vowel-free consonant is written with ्, as in क्.",
         "samples": [
           {
             "id": "c-च",
@@ -8857,7 +9435,7 @@
       {
         "id": "retroflex",
         "title": "Tongue farther back: ट group",
-        "body": "Place the tongue tip farther back than the upper teeth. The dots in ṭ and ḍ distinguish these from त and द. Compare with the next group.",
+        "body": "Place the tongue tip farther back than the upper teeth. The dots in ṭ and ḍ distinguish these from त and द. Compare with the next group.\nThese recordings read consonant letters with inherent a. A vowel-free consonant is written with ्, as in क्.",
         "samples": [
           {
             "id": "c-ट",
@@ -9049,7 +9627,7 @@
       {
         "id": "dental",
         "title": "At the upper teeth: त group",
-        "body": "Touch the tongue tip near the upper teeth. त and ट are distinct letters and sounds. The h in थ marks aspiration, not an extra syllable.",
+        "body": "Touch the tongue tip near the upper teeth. त and ट are distinct letters and sounds. The h in थ marks aspiration, not an extra syllable.\nThese recordings read consonant letters with inherent a. A vowel-free consonant is written with ्, as in क्.",
         "samples": [
           {
             "id": "c-त",
@@ -9241,7 +9819,7 @@
       {
         "id": "labial",
         "title": "Using the lips: प group",
-        "body": "Close and release the lips. Compare aspiration in प/फ and ब/भ. फ can also be pronounced close to f, especially in loanwords.",
+        "body": "Close and release the lips. Compare aspiration in प/फ and ब/भ. फ can also be pronounced close to f, especially in loanwords.\nThese recordings read consonant letters with inherent a. A vowel-free consonant is written with ्, as in क्.",
         "samples": [
           {
             "id": "c-प",
@@ -9433,7 +10011,7 @@
       {
         "id": "other",
         "title": "Eight more consonants",
-        "body": "य, र, ल, व and श, ष, स, ह. श and ष occur in Sanskrit-derived spellings and may approach स in everyday speech. Learn both the spelling and the spoken form.",
+        "body": "य, र, ल, व and श, ष, स, ह. श and ष occur in Sanskrit-derived spellings and may approach स in everyday speech. Learn both the spelling and the spoken form.\nThese recordings read consonant letters with inherent a. A vowel-free consonant is written with ्, as in क्.",
         "samples": [
           {
             "id": "c-य",
@@ -9591,9 +10169,9 @@
             "detail": "",
             "speech": "श",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce.mp3",
-              "sha256": "401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3aafa048c19082abc8e24e0b483a1c426018fa2690d436b82bfc539b9b0f0e2f.mp3",
+              "sha256": "3aafa048c19082abc8e24e0b483a1c426018fa2690d436b82bfc539b9b0f0e2f",
+              "bytes": 11232
             },
             "examples": [
               {
@@ -9628,9 +10206,9 @@
             "detail": "",
             "speech": "ष",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161.mp3",
-              "sha256": "50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cbb883258e466bdffb1c807dfeffc74226baf2fa274fab373c2e035c105651af.mp3",
+              "sha256": "cbb883258e466bdffb1c807dfeffc74226baf2fa274fab373c2e035c105651af",
+              "bytes": 11232
             },
             "examples": [
               {
@@ -9665,9 +10243,9 @@
             "detail": "",
             "speech": "स",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0.mp3",
-              "sha256": "fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2.mp3",
+              "sha256": "ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2",
+              "bytes": 11232
             },
             "examples": [
               {
@@ -15401,9 +15979,9 @@
             "detail": "श + अ (inherent) → श",
             "speech": "श",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce.mp3",
-              "sha256": "401c898680f07801e8c67d94395811cc741787717c3069a72da93617e78843ce",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3aafa048c19082abc8e24e0b483a1c426018fa2690d436b82bfc539b9b0f0e2f.mp3",
+              "sha256": "3aafa048c19082abc8e24e0b483a1c426018fa2690d436b82bfc539b9b0f0e2f",
+              "bytes": 11232
             }
           },
           {
@@ -15550,9 +16128,9 @@
             "detail": "ष + अ (inherent) → ष",
             "speech": "ष",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161.mp3",
-              "sha256": "50c74d848c1f323ccb4ada317b18ef2b71418dfa879107dd38136e19d6e94161",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-cbb883258e466bdffb1c807dfeffc74226baf2fa274fab373c2e035c105651af.mp3",
+              "sha256": "cbb883258e466bdffb1c807dfeffc74226baf2fa274fab373c2e035c105651af",
+              "bytes": 11232
             }
           },
           {
@@ -15699,9 +16277,9 @@
             "detail": "स + अ (inherent) → स",
             "speech": "स",
             "audio": {
-              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0.mp3",
-              "sha256": "fa7aaf11ede06556590503d7de361d704f1ffc1bca2f1a11f7479810dab761b0",
-              "bytes": 3500
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2.mp3",
+              "sha256": "ce53d261981d8c6dc2ebd00a930f74924b67a26dfcf4a0c107ae49e9f102c9f2",
+              "bytes": 11232
             }
           },
           {

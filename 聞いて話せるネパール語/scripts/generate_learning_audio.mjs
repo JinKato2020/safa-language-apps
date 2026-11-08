@@ -24,6 +24,8 @@ const grammar=fs.existsSync(grammarFile)?read(grammarFile):null,letters=fs.exist
 const letterSamples=p=>[...p.sections.flatMap(s=>s.samples),...p.combinations.flatMap(r=>r.samples)].flatMap(s=>[s,...(s.examples??[])]).filter(s=>s.audio);
 const manifestFile=path.join(app,'文法教材/learning_audio_manifest.json');
 const manifest=fs.existsSync(manifestFile)?read(manifestFile):{};
+const pronunciationSourceFile=path.join(app,'文法教材/letter_audio_sources.json');
+const pronunciationSources=fs.existsSync(pronunciationSourceFile)?read(pronunciationSourceFile):{};
 const dir=path.join(app,'expo-app/assets/learning-audio');fs.mkdirSync(dir,{recursive:true});
 const samples=[...paths.ja.intro.flatMap(b=>b.samples??[]),...Object.values(paths.ja.exercises),...Object.values(grammar?.ja.exercises??{}),...(letters?letterSamples(letters.ja):[])];
 const texts=[...new Set(samples.map(s=>s.speech??s.ne))],esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
@@ -31,6 +33,13 @@ console.log(JSON.stringify({requestedClips:texts.length,newCharacters:texts.filt
 for(const text of texts){
   const prior=manifest[text],priorFile=prior&&path.join(dir,`learning-${prior.sha256}.mp3`);
   if(priorFile&&fs.existsSync(priorFile)&&crypto.createHash('sha256').update(fs.readFileSync(priorFile)).digest('hex')===prior.sha256)continue;
+  const reviewed=pronunciationSources[text];
+  if(reviewed?.userApprovedWholeClip){
+    const source=path.join(app,'文法教材',reviewed.source),bytes=fs.readFileSync(source);
+    const sha=crypto.createHash('sha256').update(bytes).digest('hex');
+    if(sha!==reviewed.sha256||sha!==prior?.sha256||bytes.length!==prior.bytes)throw Error('Reviewed pronunciation source mismatch: '+text);
+    fs.writeFileSync(priorFile,bytes);continue;
+  }
   let bytes;
   for(let attempt=0;attempt<3;attempt++){
     const response=await fetch(`https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`,{method:'POST',headers:{'Ocp-Apim-Subscription-Key':key,'Content-Type':'application/ssml+xml','X-Microsoft-OutputFormat':'audio-24khz-48kbitrate-mono-mp3','User-Agent':'safa-tts'},body:`<speak version="1.0" xml:lang="ne-NP"><voice name="ne-NP-HemkalaNeural"><prosody rate="0%">${esc(text)}</prosody></voice></speak>`});
