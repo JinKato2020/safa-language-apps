@@ -101,7 +101,6 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
     LEARNING_PATH: overlay.learningPathV3 ?? overlay.learningPathV2 ?? overlay.learningPath,
     LETTERS_SOUNDS: overlay.lettersSounds,
     CONTENT_NAMES: overlay.contentNames,
-    POSTER_LESSONS: overlay.posterLessons,
     version: opts.version,
     nativeLang: overlay.nativeLang,
     THEMES: core.themes,

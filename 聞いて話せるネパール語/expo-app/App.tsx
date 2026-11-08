@@ -14,8 +14,6 @@ import {
   GrammarGuideImageProvider,
   LearningAudioProvider,
   useI18n,
-  useAppData,
-  type AppData,
 } from '@safa/shared';
 
 import ja from './src/i18n/ja.json';
@@ -23,8 +21,6 @@ import ne from './src/i18n/ne.json';
 import en from './src/i18n/en.json';
 import { bundledContent, cachedContent, syncContent, type ContentSnapshot } from './src/content/ota';
 import { scheduleContentUpdates } from './src/content/otaSchedule';
-import { POSTER_LESSONS } from './src/posterLessons';
-import { posterUri, ensurePosterPack } from './src/posterPackLoader';
 import { PurchasesProvider } from './src/PurchasesProvider';
 import { resolveGuideImage } from './src/guideImageCache';
 import { resolveLearningAudio } from './src/learningAudioCache';
@@ -43,8 +39,7 @@ const HERO_IMAGES = {
 // 日英の教材をOTAから供給。ne表示では日本語教材を使う。
 function LearningAppShell() {
   const engagement = useEngagement();
-  const data = useAppData();
-  return <SettingsDevelopmentProvider value={engagement.developmentTools}><AppShell learningStorageKey="@nepali_app/learning_v1" headerIconSource={headerIconSource} posterLessons={data.POSTER_LESSONS ?? POSTER_LESSONS} posterResolveUri={posterUri} posterEnsure={ensurePosterPack} progressStorageKey="@nepali_app/progress_v1" tabs={['home', 'grammar', 'conversation', 'listening', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={engagement.onRouteChanged} mainScreenAccessory={<>{engagement.banner}<ContentStatus /></>} /></SettingsDevelopmentProvider>;
+  return <SettingsDevelopmentProvider value={engagement.developmentTools}><AppShell learningStorageKey="@nepali_app/learning_v1" headerIconSource={headerIconSource} progressStorageKey="@nepali_app/progress_v1" tabs={['home', 'grammar', 'conversation', 'listening', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={engagement.onRouteChanged} mainScreenAccessory={<>{engagement.banner}<ContentStatus /></>} /></SettingsDevelopmentProvider>;
 }
 
 const toPackLang = (lang: string) => (lang === 'en' ? 'en' : 'ja');

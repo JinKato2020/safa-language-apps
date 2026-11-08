@@ -417,7 +417,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                   <RootStack.Screen name="VocabCategory" component={VocabCategoryScreen} initialParams={{ fromHome: true }} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader, title: t('nav.vocabulary') }} />
                   <RootStack.Screen name="VocabDirection" component={VocabDirectionScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
                   <RootStack.Screen name="Flashcard" component={FlashcardScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
-                  <RootStack.Screen name="PosterAudio" component={PosterAudioScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
+                  {!!posterLessons?.length && <RootStack.Screen name="PosterAudio" component={PosterAudioScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />}
                   <RootStack.Screen name="GrammarLibrary" component={GrammarLibraryScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
                   {/* GrammarGuide replaces itself at this root, not inside GramStack.
                       Keep MainTabs beneath it so Back returns to the existing list. */}
