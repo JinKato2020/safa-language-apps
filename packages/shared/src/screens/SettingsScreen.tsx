@@ -256,20 +256,20 @@ export default function SettingsScreen() {
       </Section>
 
       <Section title={t('settings.sectionAudio')} icon={<SoundIcon />} ss={ss}>
+        <Row label={t('settings.convDirection')} desc={t('settings.convDirectionDesc')} ss={ss}>
+          <PillGroup<Direction>
+            items={directionItems}
+            value={s.practiceDirection}
+            onChange={s.setPracticeDirection}
+            ss={ss}
+          />
+        </Row>
         <Row label={t('settings.playbackSpeed')} desc={t('settings.playbackSpeedDesc')} ss={ss} fullWidthControl>
           <PillGroup<ListenSpeed>
             singleRow
             items={[{ value: 0.8, label: '×0.8' }, { value: 1.0, label: '×1.0' }, { value: 1.2, label: '×1.2' }, { value: 1.5, label: '×1.5' }]}
             value={s.listenSpeed}
             onChange={s.setListenSpeed}
-            ss={ss}
-          />
-        </Row>
-        <Row label={t('settings.convDirection')} desc={t('settings.convDirectionDesc')} ss={ss}>
-          <PillGroup<Direction>
-            items={directionItems}
-            value={s.practiceDirection}
-            onChange={s.setPracticeDirection}
             ss={ss}
           />
         </Row>
