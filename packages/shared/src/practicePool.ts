@@ -1,3 +1,4 @@
+import type { AppData } from './AppDataContext';
 import { practiceParams, stepSignature, studyKey, type LearningPath, type StudyRef, type StudySession, type StudyState } from './learning';
 
 export type PracticeStage = 2 | 3 | 4;
@@ -42,10 +43,29 @@ export const practiceTaskKey=(session: StudySession,item: StudyRef,index: number
 /** One reserved question at a time. Cycling never grows the saved session. */
 export function createFreePracticeSession(state: StudyState, path: LearningPath, themeId: number, stage: PracticeStage, answered = 0, random: () => number = Math.random, puzzleOnly = false) {
   const step = path.steps.find(s => s.guideThemeId === themeId);
-  if (!step?.items.length || ![2,3,4].includes(stage) || !Number.isSafeInteger(answered) || answered < 0) throw new Error('Invalid free practice request');
-  const lookup = new Map(step.items.map(ref => [studyKey(ref), ref])), signature = stepSignature(step.items);
-  if (lookup.size !== step.items.length) throw new Error('Duplicate practice questions');
-  const key = `${themeId}:${stage}`, old = state.practicePools?.[key];
+  return reserveFreeQuestion(state, step?.items ?? [], `${themeId}:${stage}`, step?.id, stage, answered, random, puzzleOnly);
+}
+
+/** Keep original example indexes so translations and audio references remain aligned. */
+export function conversationPuzzleItems(data: Pick<AppData, 'getExamples'>, themeId: number, levelId: number): StudyRef[] {
+  return data.getExamples(themeId, levelId).flatMap((example, index) => example.jp.trim() && puzzleSentenceWords(example.ne).length >= 2
+    ? [{ mode: 'conversation' as const, themeId, levelId, index, ne: example.ne }] : []);
+}
+
+export function puzzleSentenceWords(sentence: string): string[] {
+  return sentence.split(/(\s+|[।॥?!,;:「」『』（）()"“”]+)/u).filter(text => /[\u0900-\u097f\p{L}\p{N}]/u.test(text) && !/^[।॥]+$/.test(text));
+}
+
+export function createConversationPuzzleSession(state: StudyState, data: Pick<AppData, 'getExamples'>, themeId: number, levelId: number, answered = 0, random: () => number = Math.random) {
+  const items = conversationPuzzleItems(data, themeId, levelId);
+  return reserveFreeQuestion(state, items, `conversation:${themeId}:${levelId}:4`, undefined, 4, answered, random, true);
+}
+
+function reserveFreeQuestion(state: StudyState, items: StudyRef[], key: string, stepId: string | undefined, stage: PracticeStage, answered: number, random: () => number, puzzleOnly: boolean) {
+  if (!items.length || ![2,3,4].includes(stage) || !Number.isSafeInteger(answered) || answered < 0) throw new Error('Invalid free practice request');
+  const lookup = new Map(items.map(ref => [studyKey(ref), ref])), signature = stepSignature(items);
+  if (lookup.size !== items.length) throw new Error('Duplicate practice questions');
+  const old = state.practicePools?.[key];
   let remaining = old?.signature === signature ? old.remaining.filter(id => lookup.has(id)) : [];
   if (new Set(remaining).size !== remaining.length) remaining = [];
   const previous = old?.signature === signature ? old.previous.filter(id => lookup.has(id)) : [];
@@ -55,6 +75,6 @@ export function createFreePracticeSession(state: StudyState, path: LearningPath,
   }
   const id = remaining[0], item = lookup.get(id)!;
   const pools = { ...state.practicePools, [key]: { signature, remaining: remaining.slice(1), previous: [id] } };
-  const session: StudySession = { kind: 'course', stepId: step.id, items: [item], position: 0, answered: [], questionStages: [stage], choiceSeed: Math.floor(random()*4294967296), freePractice: { stage, answered, ...(puzzleOnly && stage === 4 ? { puzzleOnly: true } : {}) } };
+  const session: StudySession = { kind: 'course', ...(stepId ? { stepId } : {}), items: [item], position: 0, answered: [], questionStages: [stage], choiceSeed: Math.floor(random()*4294967296), freePractice: { stage, answered, ...(puzzleOnly && stage === 4 ? { puzzleOnly: true } : {}) } };
   return { state: { ...state, practicePools: pools, resume: { item, session } }, session, params: practiceParams(item, session) };
 }

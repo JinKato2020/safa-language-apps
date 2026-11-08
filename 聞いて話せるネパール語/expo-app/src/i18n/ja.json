@@ -27,7 +27,8 @@
     "vocabulary": "単語",
     "home": "ホーム",
     "composition": "瞬間作文",
-    "puzzle": "文章パズル"
+    "puzzle": "文章パズル",
+    "compositionShort": "瞬間作文"
   },
   "directions": {
     "ja2ne": "日本語 → ネパール語",

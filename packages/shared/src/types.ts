@@ -53,7 +53,9 @@ export type RootStackParamList = {
   ListenSource: undefined;
   Theme: {
     mode: Exclude<Mode, 'vocabulary'>;
-    source?: 'grammar';
+    source?: 'grammar' | 'conversation';
+    grammarFirst?: boolean;
+    levelId?: number;
     guidesOnHome?: boolean;
     composition?: boolean;
     puzzleOnly?: boolean;

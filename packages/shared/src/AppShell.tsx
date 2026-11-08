@@ -163,12 +163,12 @@ function PuzzleStackNav({ defaultStackOptions }: { defaultStackOptions: any }) {
   </PuzzleStack.Navigator>;
 }
 
-function ListeningStackNav({ defaultStackOptions, posterInListening }: { defaultStackOptions: any; posterInListening?: boolean }) {
+function ListeningStackNav({ defaultStackOptions, posterInListening, grammarFirst }: { defaultStackOptions: any; posterInListening?: boolean; grammarFirst?: boolean }) {
   return (
     <ListenStack.Navigator screenOptions={defaultStackOptions}>
       {/* App B: 聞き流しタブにハブ(会話聞き流し/単語音声ポスター)を統合。ハブを初期画面に。 */}
       {posterInListening && <ListenStack.Screen name="ListeningHub" component={ListeningHubScreen} />}
-      <ListenStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'listening' }} />
+      <ListenStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'listening', grammarFirst }} />
       <ListenStack.Screen name="Listening" component={ListeningScreen} />
       {posterInListening && <ListenStack.Screen name="VocabCategory" component={VocabCategoryScreen} initialParams={{ posterOnly: true }} />}
       {posterInListening && <ListenStack.Screen name="PosterAudio" component={PosterAudioScreen} />}
@@ -240,10 +240,10 @@ function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListe
   const defs = {
     home:         { name: 'HomeTab',         title: t('nav.home'),         icon: HomeIcon,       render: () => learningHome ? <LearningHomeScreen /> : <HomeScreen storageKey={progressStorageKey} /> },
     puzzle:       { name: 'PuzzleTab',       title: t('nav.puzzle'),       icon: CardsIcon,      render: () => <PuzzleStackNav defaultStackOptions={modeStackOptions} /> },
-    composition:  { name: 'CompositionTab',  title: t('nav.composition'),  icon: ChatIcon,       render: () => <CompositionStackNav defaultStackOptions={modeStackOptions} /> },
+    composition:  { name: 'CompositionTab',  title: t('nav.composition'), label: t('nav.compositionShort'), icon: ChatIcon,       render: () => <CompositionStackNav defaultStackOptions={modeStackOptions} /> },
     conversation: { name: 'ConversationTab', title: t('nav.conversation'), icon: ChatIcon,       render: () => <ConversationStackNav defaultStackOptions={modeStackOptions} /> },
     grammar:      { name: 'GrammarTab',      title: t('nav.grammar'),      icon: GrammarIcon,    render: () => <GrammarStackNav defaultStackOptions={modeStackOptions} guidesOnHome={learningHome} /> },
-    listening:    { name: 'ListeningTab',    title: t('nav.listening'),    icon: HeadphonesIcon, render: () => <ListeningStackNav defaultStackOptions={modeStackOptions} posterInListening={posterInListening} /> },
+    listening:    { name: 'ListeningTab',    title: t('nav.listening'),    icon: HeadphonesIcon, render: () => <ListeningStackNav defaultStackOptions={modeStackOptions} posterInListening={posterInListening} grammarFirst={learningHome} /> },
     vocabulary:   { name: 'VocabularyTab',   title: t('nav.vocabulary'),   icon: CardsIcon,      render: () => <VocabularyStackNav defaultStackOptions={modeStackOptions} /> },
     short:        { name: 'ShortTab',        title: t('nav.short'),        icon: ShortIcon,      render: () => <ShortStackNav defaultStackOptions={defaultStackOptions} /> },
     long:         { name: 'LongTab',         title: t('nav.long'),         icon: LongIcon,       render: () => <ScaffoldScreen area="chobun" /> },
@@ -265,7 +265,7 @@ function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListe
       {list.map((k) => {
         const d = defs[k];
         return (
-          <Tab.Screen key={k} name={d.name} options={{ title: d.title, tabBarIcon: d.icon }}>
+          <Tab.Screen key={k} name={d.name} options={{ title: d.title, tabBarLabel: 'label' in d ? d.label : d.title, tabBarIcon: d.icon }}>
             {d.render}
           </Tab.Screen>
         );

@@ -35,7 +35,7 @@ export function decodeStudy(raw: string | null): StudyState {
   if (Array.isArray(p.lettersRead)) state.lettersRead = [...new Set<string>(p.lettersRead.filter((s: unknown): s is string => typeof s === 'string' && /^[a-z-]{1,40}$/.test(s)))];
   if(p.practicePools&&typeof p.practicePools==='object') {
     state.practicePools={};
-    for(const [key,pool] of Object.entries(p.practicePools) as [string,any][])if(/^\d+:[234]$/.test(key)&&typeof pool?.signature==='string'&&Array.isArray(pool.remaining)&&pool.remaining.every((s: unknown)=>typeof s==='string')&&Array.isArray(pool.previous)&&pool.previous.every((s: unknown)=>typeof s==='string'))state.practicePools[key]=pool;
+    for(const [key,pool] of Object.entries(p.practicePools) as [string,any][])if(/^(?:\d+:[234]|conversation:\d+:\d+:4)$/.test(key)&&typeof pool?.signature==='string'&&Array.isArray(pool.remaining)&&pool.remaining.every((s: unknown)=>typeof s==='string')&&Array.isArray(pool.previous)&&pool.previous.every((s: unknown)=>typeof s==='string'))state.practicePools[key]=pool;
   }
   for (const [key, r] of Object.entries(p.ratings) as [string, any][]) {
     if (validRef(r?.item) && key === studyKey(r.item) && ['known','again','supported'].includes(r.result) && Number.isInteger(r.streak) && r.streak >= 0 && Number.isFinite(r.due) && Number.isFinite(r.updated)) state.ratings[key] = r;

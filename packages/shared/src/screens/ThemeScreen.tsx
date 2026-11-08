@@ -14,14 +14,14 @@ import { useEntitlement, isLockedAt, LockBadge } from '../entitlement';
 import { useGrammarGuide } from '../grammarGuide';
 import { withoutThemePrefix } from '../themeLabels';
 import { useLearning } from '../LearningContext';
-import { createFreePracticeSession } from '../practicePool';
+import { conversationPuzzleItems, createConversationPuzzleSession, createFreePracticeSession } from '../practicePool';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'Theme'>;
 type R = RouteProp<RootStackParamList, 'Theme'>;
 
 export default function ThemeScreen() {
-  const contentNames = useAppData().CONTENT_NAMES;
-  const { THEMES, GRAMMAR_THEMES, LEVELS, LEARNING_PATH } = useAppData();
+  const data = useAppData(), contentNames = data.CONTENT_NAMES;
+  const { THEMES, GRAMMAR_THEMES, LEVELS, LEARNING_PATH } = data;
   const learning = useLearning();
   const busy = useRef(false), focused = useRef(true);
   const [starting, setStarting] = useState(false);
@@ -31,14 +31,12 @@ export default function ThemeScreen() {
   const navigation = useNavigation<Nav>();
   const { t, lang } = useI18n();
   const ss = useScaleStyle();
-  const { mode, source, guidesOnHome, composition, puzzleOnly } = useRoute<R>().params;
+  const { mode, source, guidesOnHome, composition, puzzleOnly, grammarFirst, levelId } = useRoute<R>().params;
   const heroSrc = useHeroImage(composition ? 'conversation' : mode);
   const { top } = useSafeAreaInsets();
   const isListening = mode === 'listening';
-  // 聞き流しモードでは画面内トグルで会話/文法を切り替える（route param は初期値として尊重）
-  const [listenSource, setListenSource] = useState<'conversation' | 'grammar'>(
-    source === 'grammar' ? 'grammar' : 'conversation'
-  );
+  // Route params retain the source and level when returning from practice/playback.
+  const listenSource = source ?? (grammarFirst ? 'grammar' : 'conversation');
   const effectiveSource = isListening
     ? (listenSource === 'grammar' ? 'grammar' : undefined)
     : source;
@@ -47,11 +45,11 @@ export default function ThemeScreen() {
   const isGrammarListen = isListening && effectiveSource === 'grammar';
   const isConversationListen = isListening && !isGrammarListen;
   const useGrammarThemes = isGrammarMode || isGrammarListen;
-  const items = puzzleOnly ? GRAMMAR_THEMES.filter(theme => LEARNING_PATH?.steps.some(step => step.guideThemeId === theme.id && step.items.length)) : useGrammarThemes ? GRAMMAR_THEMES : THEMES;
+  const items = puzzleOnly && isGrammarMode ? GRAMMAR_THEMES.filter(theme => LEARNING_PATH?.steps.some(step => step.guideThemeId === theme.id && step.items.length)) : useGrammarThemes ? GRAMMAR_THEMES : THEMES;
 
   // 会話モードおよび聞き流し×会話モードでレベルピルを表示
   const showLevelPills = mode === 'conversation' || isConversationListen || mode === 'sakubun';
-  const [selectedLevel, setSelectedLevel] = useState(1);
+  const selectedLevel = levelId ?? 1;
 
   const titleText = t('themeScreen.title');
 
@@ -96,11 +94,13 @@ export default function ThemeScreen() {
 
   const onPressItem = async (id: number) => {
     if (puzzleOnly) {
-      if (busy.current || !learning?.ready || !LEARNING_PATH) return;
+      if (busy.current || !learning?.ready || (isGrammarMode && !LEARNING_PATH)) return;
       busy.current = true; setStarting(true);
       let launch: ReturnType<typeof createFreePracticeSession> | undefined;
       const saved = await learning.change(state => {
-        launch = createFreePracticeSession(state, LEARNING_PATH, id, 4, 0, Math.random, true);
+        launch = isGrammarMode
+          ? createFreePracticeSession(state, LEARNING_PATH!, id, 4, 0, Math.random, true)
+          : createConversationPuzzleSession(state, data, id, selectedLevel);
         return launch.state;
       });
       busy.current = false; setStarting(false);
@@ -130,35 +130,23 @@ export default function ThemeScreen() {
         <View style={styles.head}>
           <Text style={[styles.modeTitle, ss(20)]}>{modeTitle}</Text>
           <Text style={[styles.desc, ss(14, 21)]}>{headerText}</Text>
-          {composition && <View style={styles.sourceToggle}>{(['grammar', 'conversation'] as const).map(value => <Pressable key={value} testID={`composition-${value}`} accessibilityRole="tab" accessibilityState={{ selected: mode === value }} style={[styles.sourceTab, mode === value && styles.sourceTabOn]} onPress={() => navigation.setParams({ mode: value })}><Text style={[styles.sourceTabText, mode === value && styles.sourceTabTextOn, ss(14)]}>{t(`nav.${value}`)}</Text></Pressable>)}</View>}
+          {(composition || puzzleOnly) && <View style={styles.sourceToggle}>{(['grammar', 'conversation'] as const).map(value => <Pressable key={value} testID={`${puzzleOnly ? 'puzzle' : 'composition'}-${value}`} accessibilityRole="tab" accessibilityState={{ selected: mode === value }} style={[styles.sourceTab, mode === value && styles.sourceTabOn]} onPress={() => navigation.setParams({ mode: value })}><Text style={[styles.sourceTabText, mode === value && styles.sourceTabTextOn, ss(14)]}>{t(`nav.${value}`)}</Text></Pressable>)}</View>}
           {puzzleOnly && learning?.error && <Text accessibilityRole="alert" style={[styles.desc, { color: '#9f1239' }]}>{lang === 'en' ? 'Could not save. Please tap the theme to try again.' : '保存できませんでした。テーマをタップして再試行してください。'}</Text>}
-          {isListening && (
-            <View style={styles.sourceToggle}>
-              <Pressable
-                style={[styles.sourceTab, listenSource === 'conversation' && styles.sourceTabOn]}
-                onPress={() => setListenSource('conversation')}
-              >
-                <Text style={[styles.sourceTabText, listenSource === 'conversation' && styles.sourceTabTextOn, ss(14)]}>
-                  {t('listenSource.convName')}
-                </Text>
-              </Pressable>
-              <Pressable
-                style={[styles.sourceTab, listenSource === 'grammar' && styles.sourceTabOn]}
-                onPress={() => setListenSource('grammar')}
-              >
-                <Text style={[styles.sourceTabText, listenSource === 'grammar' && styles.sourceTabTextOn, ss(14)]}>
-                  {t('listenSource.grammarName')}
-                </Text>
-              </Pressable>
-            </View>
-          )}
+          {isListening && <View style={styles.sourceToggle}>
+            {(grammarFirst ? ['grammar', 'conversation'] as const : ['conversation', 'grammar'] as const).map(value => <Pressable key={value} testID={`listen-source-${value}`} accessibilityRole="tab" accessibilityState={{ selected: listenSource === value }} style={[styles.sourceTab, listenSource === value && styles.sourceTabOn]} onPress={() => navigation.setParams({ source: value })}>
+              <Text style={[styles.sourceTabText, listenSource === value && styles.sourceTabTextOn, ss(14)]}>{t(value === 'grammar' ? 'listenSource.grammarName' : 'listenSource.convName')}</Text>
+            </Pressable>)}
+          </View>}
           {showLevelPills && (
             <View style={styles.levelPillRow}>
               {LEVELS.map(lv => (
                 <Pressable
                   key={lv.id}
+                  testID={`theme-level-${lv.id}`}
+                  accessibilityRole="tab"
+                  accessibilityState={{ selected: selectedLevel === lv.id }}
                   style={[styles.levelPill, selectedLevel === lv.id && styles.levelPillOn]}
-                  onPress={() => setSelectedLevel(lv.id)}
+                  onPress={() => navigation.setParams({ levelId: lv.id })}
                 >
                   <Text style={[styles.levelPillText, selectedLevel === lv.id && styles.levelPillTextOn, ss(13)]}>
                     {(contentNames?.levels?.[lv.id] ?? t(`levels.${lv.id}`))}
@@ -194,7 +182,7 @@ export default function ThemeScreen() {
             {/* 表示番号はリスト上の位置(=テーマ並び順)。データキーは item.id を維持。 */}
             <Text style={styles.num}>{String(index + 1).padStart(2, '0')}</Text>
             <Text style={[styles.name, ss(14)]}>{withoutThemePrefix(getThemeDisplayName(item.id))}</Text>
-            {puzzleOnly && <Text style={[styles.num, { width: undefined }]}>{LEARNING_PATH?.steps.find(step => step.guideThemeId === item.id)?.items.length}{lang === 'en' ? ' puzzles' : '問'}</Text>}
+            {puzzleOnly && <Text style={[styles.num, { width: undefined }]}>{isGrammarMode ? LEARNING_PATH?.steps.find(step => step.guideThemeId === item.id)?.items.length : conversationPuzzleItems(data, item.id, selectedLevel).length}{lang === 'en' ? ' puzzles' : '問'}</Text>}
             {locked && <LockBadge />}
             {showGuide && (
               <Pressable

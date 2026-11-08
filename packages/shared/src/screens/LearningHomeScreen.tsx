@@ -52,7 +52,6 @@ export default function LearningHomeScreen() {
         <Image source={hero} resizeMode="contain" style={{ width: '100%', height: '100%' }} accessibilityIgnoresInvertColors />
       </View>}
 
-      <Pressable testID="home-settings" accessibilityRole="button" accessibilityLabel={en ? 'Settings' : '設定'} onPress={() => nav.navigate('SettingsMain')} style={styles.settings}><Text style={styles.settingsText}>{en ? 'Settings' : '設定'}</Text></Pressable>
       <View style={styles.heroBody}>
         <Text style={styles.eyebrow}>NEPALI · EVERY DAY</Text>
         <Text accessibilityRole="header" style={styles.headline}>{en ? 'A little today.\nMore to say tomorrow.' : '昨日より、\nひとこと先へ。'}</Text>
@@ -101,8 +100,6 @@ export default function LearningHomeScreen() {
 const styles = StyleSheet.create({
   page: { padding: 16, paddingBottom: 44, gap: 16, maxWidth: 760, width: '100%', alignSelf: 'center' },
   hero: { backgroundColor: c.navy, borderRadius: 24, overflow: 'hidden' },
-  settings: { position: 'absolute', top: 12, right: 12, minHeight: 44, minWidth: 56, paddingHorizontal: 14, justifyContent: 'center', alignItems: 'center', borderRadius: 22, backgroundColor: '#FFFFFFEE' },
-  settingsText: { color: c.ink, fontSize: 13, fontWeight: '700' },
   heroBody: { padding: 22, paddingTop: 20 },
   eyebrow: { color: c.teal, fontSize: 11, lineHeight: 18, letterSpacing: 2, fontWeight: '700' },
   headline: { color: '#FFF', fontSize: 30, lineHeight: 39, fontWeight: '700', letterSpacing: -0.5, marginTop: 10, marginBottom: 24 },

@@ -50,6 +50,43 @@ for(const lang of ['ja','en']){
  }
  console.log(`PASS ${lang}: 36 themes × 3 freely selectable modes × 61 draws; bounded restartable session; 720 puzzles each with two valid wrong forms and romanizations.`);
 }
+// Conversation puzzles share the same bounded session and drag board, but use
+// separate pools for each theme/level so they never consume grammar questions.
+const {conversationPuzzleItems,createConversationPuzzleSession,puzzleSentenceWords}=load('practicePool');
+const {vocabularyAliases}=load('vocabularyQuiz');
+const core=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../expo-app/data/ota-baseline/core.json'),'utf8'));
+for(const lang of ['ja','en']){
+ const overlay=JSON.parse(fs.readFileSync(path.resolve(__dirname,`../expo-app/data/overlays/${lang}.json`),'utf8'));
+ const examples=Object.fromEntries(Object.entries(core.examplesNe).map(([key,rows])=>[key,rows.map((ne,i)=>({ne,jp:overlay.examplesL1[key][i]}))]));
+ const data={VOCAB:overlay.vocab,CONV_VOCAB:overlay.convVocab,WORDS:Object.fromEntries(Object.entries(core.wordsNe).map(([key,rows])=>[key,rows.map((ne,i)=>({ne,ja:overlay.wordsL1[key][i]}))])),getExamples:(theme,level)=>examples[`${theme}-${level}`]??[]};
+ let total=0;
+ for(let theme=1;theme<=30;theme++)for(let level=1;level<=3;level++){
+  const refs=conversationPuzzleItems(data,theme,level);assert(refs.length>=16&&refs.length<=20);total+=refs.length;
+  let state=createFreePracticeSession(emptyStudyState(),paths[lang],1,4,0,seededRandom(7)).state;
+  const grammarPool=structuredClone(state.practicePools['1:4']);let seen=[],previous;
+  for(let n=0;n<refs.length*3+1;n++){
+   const launch=createConversationPuzzleSession(state,data,theme,level,n,seededRandom(123+n));state=decodeStudy(JSON.stringify(launch.state));
+   assert.deepEqual(state.resume.session,launch.session);assert.equal(state.resume.item.mode,'conversation');assert.equal(state.resume.item.levelId,level);
+   assert.equal(launch.session.freePractice.puzzleOnly,true);assert.equal(launch.session.freePractice.answered,n);
+   assert.deepEqual(state.practicePools['1:4'],grammarPool,'Grammar pool untouched');
+   assert(state.practicePools[`conversation:${theme}:${level}:4`],'Conversation pool survives decode');
+   const key=studyKey(launch.session.items[0]);assert.notEqual(key,previous);previous=key;
+   if(n%refs.length===0)seen=[];seen.push(key);assert.equal(new Set(seen).size,seen.length,'No repeats before exhaustion');
+  }
+  for(const ref of refs){
+   const q=freePracticeQuestion(data,ref,56);assert.deepEqual(q,freePracticeQuestion(data,ref,56));
+   assert(q.answerWords.length>=2);assert.deepEqual(q.answerWords,puzzleSentenceWords(ref.ne));
+   assert.equal(q.puzzleTokens.length,q.answerWords.length+2);assert.equal(new Set(q.puzzleTokens.map(t=>t.id)).size,q.puzzleTokens.length);
+   const ids=q.answerWords.map((_,i)=>'word-'+i);assert(matchesPuzzle(q.puzzleTokens,ids,q.answerWords));
+   const aliases=new Set(q.words.flatMap(w=>vocabularyAliases(w.meaning)));
+   for(const token of q.puzzleTokens){assert(token.roman,'Every tile has a reading');if(token.id.startsWith('extra-')){assert(!q.answerWords.includes(token.text));assert(!matchesPuzzle(q.puzzleTokens,[token.id,...ids.slice(1)],q.answerWords));const meaning=data.CONV_VOCAB[token.text]?.base_meaning??data.VOCAB[token.text]?.ja??'';assert(!vocabularyAliases(meaning).some(x=>aliases.has(x)),'Known equivalent meanings excluded');}}
+  }
+ }
+ assert.equal(total,1795);assert.throws(()=>createConversationPuzzleSession(emptyStudyState(),{getExamples:()=>[]},1,1));
+ const one=createConversationPuzzleSession(emptyStudyState(),data,1,1,0,seededRandom(1)),two=createConversationPuzzleSession(one.state,data,1,2,0,seededRandom(2));
+ assert.deepEqual(two.state.practicePools['conversation:1:1:4'],one.state.practicePools['conversation:1:1:4'],'Levels keep independent decks');
+ console.log(`PASS ${lang}: 1795 conversation puzzles, 30 themes × 3 levels, two real distractors, translations/readings, three complete shuffled cycles, isolated pools and saved resume.`);
+}
 const base=createFreePracticeSession(emptyStudyState(),paths.ja,1,2,3,seededRandom(8));
 for(const mutate of [s=>s.freePractice.stage=1,s=>s.freePractice.answered=-1,s=>s.freePractice.answered=.5,s=>s.questionStages=[3],s=>s.items.push(s.items[0]),s=>s.answered=['bad']]){const bad=structuredClone(base.state);mutate(bad.resume.session);assert.equal(decodeStudy(JSON.stringify(bad)).resume,undefined);}
 const repeat=[{id:'a',text:'पनि'},{id:'b',text:'पनि'}];assert(matchesPuzzle(repeat,['a','b'],['पनि','पनि']));assert(!matchesPuzzle(repeat,['a','a'],['पनि','पनि']));
