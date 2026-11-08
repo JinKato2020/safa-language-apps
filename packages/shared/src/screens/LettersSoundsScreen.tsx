@@ -110,17 +110,17 @@ export default function LettersSoundsScreen() {
         </View>
         {(showHelp || current.id === 'start') && <View style={styles.helpBody}><Text style={[styles.body, ss(16, 28)]}>{current.body}</Text>{!isBare && current.samples.filter(s => !s.audio).map(s => <Text key={s.id} style={[styles.body, ss(16, 28)]}>{s.ne} · {s.meaning}{s.detail ? '\n' + s.detail : ''}</Text>)}</View>}
         {isChart && <View style={styles.combinationPanel}>
-          <ScrollView testID={isConjunct ? 'letters-conjunct-strip' : 'letters-consonant-strip'} horizontal showsHorizontalScrollIndicator contentContainerStyle={styles.strip}>{chartLetters.map((letter, i) => <Pressable key={letter.id} testID={isConjunct ? `letters-conjunct-${letter.id}` : `letters-consonant-${letter.id}`} accessibilityRole="button" accessibilityLabel={`${isConjunct ? (en ? 'Conjunct' : '複合文字') : (en ? 'Consonant' : '子音')} ${letter.ne}`} accessibilityState={{ selected: chartIndex === i }} onPress={() => { stop(); if (isConjunct) setConjunctIndex(i); else setRow(i); setSelected(0); setShowDetails(false); }} style={[styles.letterTile, chartIndex === i && styles.tileActive]}><Text style={[styles.tileText, chartIndex === i && styles.white, ss(24, 38)]}>{letter.ne}</Text></Pressable>)}</ScrollView>
+          <View testID={isConjunct ? 'letters-conjunct-grid' : 'letters-consonant-grid'} style={styles.letterGrid}>{chartLetters.map((letter, i) => <Pressable key={letter.id} testID={isConjunct ? `letters-conjunct-${letter.id}` : `letters-consonant-${letter.id}`} accessibilityRole="button" accessibilityLabel={`${isConjunct ? (en ? 'Conjunct' : '複合文字') : (en ? 'Consonant' : '子音')} ${letter.ne}`} accessibilityState={{ selected: chartIndex === i }} onPress={() => { stop(); if (isConjunct) setConjunctIndex(i); else setRow(i); setSelected(0); setShowDetails(false); }} style={[styles.letterTile, chartIndex === i && styles.tileActive]}><Text style={[styles.tileText, chartIndex === i && styles.white, ss(22, 32)]}>{letter.ne}</Text></Pressable>)}</View>
         </View>}
         {sample && <>
           {category?.id === 'consonants' && <View style={styles.readingNote}><Text style={[styles.body, ss(14, 24)]}>{isBare ? (en ? '् removes the vowel: क = ka → क् = k. All 33 written forms are shown; only क् and स् have recordings.' : '् は母音を外す印。क＝ka → क्＝k。33字すべての形を掲載し、क्・स् の2音だけ聞けます。') : (en ? 'These recordings read the letter with its inherent a: क = ka. The vowel-free form is क् = k.' : 'この音声は、母音 a を伴う文字の読みです。क＝ka。母音を外した形は क्＝k です。')}</Text></View>}
           <Text style={[styles.stepLabel, ss(13, 22)]}>{isBare ? (en ? 'WRITTEN REFERENCE · TWO AUDIO EXAMPLES' : '文字の一覧 · 再生マークの2音を聞けます') : current.id === 'start' ? (en ? 'COMPARE: WITH a / WITHOUT A VOWEL' : '子音＋a ／ 母音なしを聞き比べる') : isChart ? (en ? `Choose a ${isConjunct ? 'conjunct' : 'consonant'} above; compare its 11 forms.` : `上で${isConjunct ? '複合文字' : '子音'}を選び、11通りを聞き比べよう`) : (en ? 'TAP A LETTER TO LISTEN & COMPARE' : '文字をタップして、聞き比べよう')}</Text>
-          <View style={styles.soundGrid} testID="letters-sound-chart">{samples.map((s, i) => {
+          <View style={[styles.soundGrid, isChart && styles.compactSoundGrid]} testID="letters-sound-chart">{samples.map((s, i) => {
             const active = playing?.id === s.id;
             if (!s.audio) return <View key={s.id} testID={`letters-symbol-${s.id}`} accessible accessibilityLabel={`${s.ne}, ${s.roman}, ${s.meaning}`} style={[styles.soundTile, styles.referenceTile]}><Text style={[styles.tileText, ss(28, 42)]}>{s.ne}</Text><Text style={[styles.chartRoman, styles.tileRoman, ss(14, 22)]}>{s.roman}</Text></View>;
-            return <Pressable key={s.id} testID={`letters-play-${s.id}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Play sound' : '音を聞く'}: ${s.speech ?? s.ne}`} accessibilityState={{ selected: selected === i }} onPress={() => { setSelected(i); if (s.audio) play(s.id, s.audio); }} style={({ pressed }) => [styles.soundTile, current.id === 'start' && styles.pairTile, selected === i && styles.soundTileSelected, active && styles.tileActive, pressed && styles.pressed]}>
-              <Text style={[styles.tileText, active && styles.white, ss(28, 42)]}>{s.ne}</Text>
-              <Text style={[styles.chartRoman, styles.tileRoman, active && styles.white, ss(14, 22)]}>{s.roman}</Text>
+            return <Pressable key={s.id} testID={`letters-play-${s.id}`} accessibilityRole="button" accessibilityLabel={`${en ? 'Play sound' : '音を聞く'}: ${s.speech ?? s.ne}`} accessibilityState={{ selected: selected === i }} onPress={() => { setSelected(i); if (s.audio) play(s.id, s.audio); }} style={({ pressed }) => [styles.soundTile, isChart && styles.compactSoundTile, current.id === 'start' && styles.pairTile, selected === i && styles.soundTileSelected, active && styles.tileActive, pressed && styles.pressed]}>
+              <Text style={[styles.tileText, active && styles.white, ss(isChart ? 24 : 28, isChart ? 34 : 42)]}>{s.ne}</Text>
+              <Text style={[styles.chartRoman, styles.tileRoman, active && styles.white, ss(isChart ? 12 : 14, isChart ? 18 : 22)]}>{s.roman}</Text>
               <Text style={[styles.tileCue, active && styles.white, ss(11, 18)]}>{active ? '●' : '▶'}</Text>
             </Pressable>;
           })}</View>
@@ -177,10 +177,12 @@ const styles = StyleSheet.create({
   flexTitle: { flex: 1, minWidth: 140 },
   helpToggle: { minHeight: 48, paddingHorizontal: 14, paddingVertical: 10, backgroundColor: '#e8efe6', borderRadius: 13, justifyContent: 'center' },
   helpTitle: { color: teal, fontWeight: '600' }, helpBody: { paddingHorizontal: 8, gap: 14 },
-  body: { color: ink }, combinationPanel: { gap: 10 }, strip: { flexDirection: 'row', gap: 8, paddingBottom: 8 },
+  body: { color: ink }, combinationPanel: { gap: 10 }, letterGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 4 },
   stepLabel: { color: muted, fontWeight: '700', letterSpacing: .5 },
   soundGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   soundTile: { flexBasis: '28%', flexGrow: 1, minWidth: 80, minHeight: 72, paddingHorizontal: 10, paddingVertical: 10, flexDirection: 'row', flexWrap: 'wrap', gap: 6, borderRadius: 15, borderWidth: 1, borderColor: '#d5e2d6', backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' },
+  compactSoundGrid: { gap: 6 },
+  compactSoundTile: { flexBasis: '21%', minWidth: 72, minHeight: 60, paddingHorizontal: 6, paddingVertical: 5, gap: 4, borderRadius: 12 },
   soundTileSelected: { borderColor: teal, backgroundColor: '#e9f2e7' },
   pairTile: { flexBasis: '45%' },
   referenceTile: { backgroundColor: '#eef1ec', borderColor: '#e1e6dd' },
@@ -190,7 +192,7 @@ const styles = StyleSheet.create({
   selectionCard: { borderRadius: 18, padding: 12, backgroundColor: '#eef2e9', gap: 8 },
   selectionRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 }, selectionGlyph: { color: teal }, selectionMeaning: { flex: 1, minWidth: 110 },
   detailToggle: { minHeight: 48, justifyContent: 'center', borderTopWidth: 1, borderTopColor: '#d3dfcf', paddingTop: 10 },
-  letterTile: { minWidth: 50, minHeight: 56, paddingHorizontal: 12, paddingVertical: 7, borderRadius: 13, borderWidth: 1, borderColor: '#ceddd2', backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' },
+  letterTile: { minWidth: 44, minHeight: 44, paddingHorizontal: 4, paddingVertical: 4, borderRadius: 10, borderWidth: 1, borderColor: '#ceddd2', backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' },
   tileText: { color: ink }, tileActive: { backgroundColor: teal, borderColor: teal },
   detail: { color: muted, borderTopWidth: 1, borderTopColor: '#e7ece6', paddingTop: 12 },
   playerBar: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 18, paddingVertical: 8, minHeight: 68, backgroundColor: '#fbfcf9', borderTopWidth: 1, borderTopColor: '#dfe8e0' },

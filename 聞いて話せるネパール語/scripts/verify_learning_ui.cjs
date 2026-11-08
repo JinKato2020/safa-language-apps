@@ -244,7 +244,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           if(width===390){const last=await tiles.at(-1).boundingBox();assert(last.y+last.height<height-68,'All 11 conjunct forms fit together at standard text size');}
           await page.screenshot({path:path.join(work,`previews/conjunct-${lang}-${width}.png`)});
         }
-        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: ka/ghar removal; 30 horizontal conjunct selectors, 60 example words in shared details, 330 sound routes, one active player and narrow/large-text layout.`);
+        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: ka/ghar removal; 30 wrapped conjunct selectors, 60 example words in shared details, 330 sound routes, one active player and narrow/large-text layout.`);
       }
       return;
     }
