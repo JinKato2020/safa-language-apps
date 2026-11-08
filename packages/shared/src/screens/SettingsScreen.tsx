@@ -35,18 +35,19 @@ function LangIcon() { return <Icon><Circle cx={12} cy={12} r={10} /><Line x1={2}
 function StarIcon() { return <Icon><Polygon points="12 2 15 9 22 9 16 14 18 21 12 17 6 21 8 14 2 9 9 9 12 2" /></Icon>; }
 
 // Pill (ピル選択)
-function PillGroup<T extends string | number>({ items, value, onChange, ss }: {
+function PillGroup<T extends string | number>({ items, value, onChange, ss, singleRow = false }: {
   items: { value: T; label: string }[];
   value: T;
   onChange: (v: T) => void;
+  singleRow?: boolean;
   ss: (fs: number, lh?: number) => { fontSize: number; lineHeight?: number };
 }) {
   return (
-    <View style={styles.pillGroup}>
+    <View style={[styles.pillGroup, singleRow && styles.pillGroupSingleRow]}>
       {items.map(it => (
         <Pressable
           key={String(it.value)}
-          style={[styles.pill, value === it.value && styles.pillOn]}
+          style={[styles.pill, singleRow && styles.pillSingleRow, value === it.value && styles.pillOn]}
           onPress={() => onChange(it.value)}
         >
           <Text style={[styles.pillText, value === it.value && styles.pillTextOn, ss(12)]}>{it.label}</Text>
@@ -56,14 +57,14 @@ function PillGroup<T extends string | number>({ items, value, onChange, ss }: {
   );
 }
 
-function Row({ label, desc, children, ss }: { label: string; desc?: string; children: React.ReactNode; ss: (fs: number, lh?: number) => { fontSize: number; lineHeight?: number } }) {
+function Row({ label, desc, children, ss, fullWidthControl = false }: { label: string; desc?: string; children: React.ReactNode; fullWidthControl?: boolean; ss: (fs: number, lh?: number) => { fontSize: number; lineHeight?: number } }) {
   return (
     <View style={styles.item}>
       <View style={styles.itemLabelCol}>
         <Text style={[styles.itemLabel, ss(14)]}>{label}</Text>
         {desc ? <Text style={[styles.itemDesc, ss(12)]}>{desc}</Text> : null}
       </View>
-      <View style={styles.itemControl}>{children}</View>
+      <View style={[styles.itemControl, fullWidthControl && styles.itemControlFullWidth]}>{children}</View>
     </View>
   );
 }
@@ -255,8 +256,9 @@ export default function SettingsScreen() {
       </Section>
 
       <Section title={t('settings.sectionAudio')} icon={<SoundIcon />} ss={ss}>
-        <Row label={t('settings.playbackSpeed')} desc={t('settings.playbackSpeedDesc')} ss={ss}>
+        <Row label={t('settings.playbackSpeed')} desc={t('settings.playbackSpeedDesc')} ss={ss} fullWidthControl>
           <PillGroup<ListenSpeed>
+            singleRow
             items={[{ value: 0.8, label: '×0.8' }, { value: 1.0, label: '×1.0' }, { value: 1.2, label: '×1.2' }, { value: 1.5, label: '×1.5' }]}
             value={s.listenSpeed}
             onChange={s.setListenSpeed}
@@ -395,7 +397,10 @@ const styles = StyleSheet.create({
   itemLabel: { fontSize: 14, fontWeight: '500', color: colors.ink },
   itemDesc: { fontSize: 12, color: colors.inkMute, marginTop: 2 },
   itemControl: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs, flexWrap: 'wrap', justifyContent: 'flex-end' },
+  itemControlFullWidth: { width: '100%', flexBasis: '100%' },
   pillGroup: { flexDirection: 'row', gap: 6, flexWrap: 'wrap', justifyContent: 'flex-end' },
+  pillGroupSingleRow: { flexWrap: 'nowrap', width: '100%' },
+  pillSingleRow: { flex: 1, minWidth: 44, minHeight: 44, paddingHorizontal: 4, alignItems: 'center', justifyContent: 'center' },
   pill: {
     paddingHorizontal: spacing.md, paddingVertical: 6,
     backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.line, borderRadius: 99,
