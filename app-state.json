@@ -2257,18 +2257,18 @@
     }
   },
   "appa_arabic_2026_11_11": {
-    "status": "All 36 grammar lessons, 720 exercises, 1000 quiz words, 4743 general vocabulary destinations and full 2089-entry dictionary translated; conversation base meanings complete except one source ambiguity; remaining conversation sentences and context notes pending; unpublished",
+    "status": "All core lessons/practice/dictionary/general vocabulary translated; 1794 of 1800 conversation sentences translated, six original-source issues held; contextual notes in progress; unpublished",
     "scope": "Arabic mother-language UI and course translations with RTL/mixed-script layout",
     "maximumAdditionalAPIChargeJPY": 0,
     "dependsOnKoreanBuild": "complete: 2.2.4 (1075), GitHub run 42859546525 succeeded",
     "shipping": "Arabic is not imported into App A translation provider and is not selectable. No Arabic overlay/OTA/native build released. Korean 2.2.4 (1075)/OTA1224 remains current.",
     "sourcePlanSha256": "c3d316fdedc73d0e1b67137c917fc162386e11e86fc9e53ba32db0d85714cf6f",
-    "reviewedUnique": 17312,
+    "reviewedUnique": 20014,
     "totalUnique": 23716,
-    "pendingUnique": 6404,
+    "pendingUnique": 3702,
     "coverage": {
       "examplesL1": {
-        "complete": 437,
+        "complete": 1794,
         "total": 1800
       },
       "grammarL1": {
@@ -2284,7 +2284,7 @@
         "total": 4743
       },
       "convVocab": {
-        "complete": 38549,
+        "complete": 40746,
         "total": 45047
       },
       "grammarVocab": {
@@ -2389,11 +2389,13 @@
       "Arabic dictionary UI at 320/390px and 1.0/1.2 scale: script-sensitive input, Arabic diacritics/tatweel/alef search, Nepali/romanization/conjugation lookup, left disclosure, audio cleanup, category counts and back passed. Visual inspection passed.",
       "JA/EN dictionary UI regression passed; shared/AppA/AppB TypeScript passed.",
       "496 exact context templates checked for full-source matching, preserved Nepali text, rejected unknown prose and stable output.",
-      "All 4743 general vocabulary destinations translated; full partial audit passed at 17312 reviewed unique keys, 94 contextual overrides. Source plan unchanged; lessons/practice/dictionary remain complete."
+      "All 4743 general vocabulary destinations translated; full partial audit passed at 17312 reviewed unique keys, 94 contextual overrides. Source plan unchanged; lessons/practice/dictionary remain complete.",
+      "Partial audit passed at 19144 unique translations and 95 contextual overrides: 1794/1800 conversation destinations. Reviewed numeric-source differences against Arabic number words; only intentional Latin S and 2LDK remain in translated conversation sentences.",
+      "Final checkpoint partial audit passed at 20014 reviewed keys / 3702 pending; 95 overrides; all 36 lessons, 720 exercises and dictionary remain complete. Scoped git diff --check passed. No source-plan, app-provider or release changes."
     ],
     "remaining": [
-      "1358 unique conversation translations (1363 destinations), including source contradictions",
-      "5045 contextual conversation-note translations and one ambiguous base meaning",
+      "Six conversation sentences require original Nepali/JA/EN reconciliation (55, 278, 475, 1060, 1249, 1476)",
+      "3695 contextual conversation-note translations and one ambiguous base meaning",
       "Full Arabic content assembly, Arabic audio, native-device RTL verification and publication"
     ],
     "audio": "No Arabic audio generated; no paid synthesis invoked.",
@@ -2441,7 +2443,7 @@
       "validation": "Checked full-resolution artwork, rendered copy bounds, dimensions/RGB and visible brand/footer pixels in every output. No App Store Connect upload."
     },
     "completePracticeExercises": 720,
-    "contextOverrides": 94,
+    "contextOverrides": 95,
     "sourceReviewIssues": [
       {
         "sourceIndex": 55,
@@ -2458,6 +2460,18 @@
         "sentenceId": "8-3-18",
         "status": "pending source reconciliation",
         "issue": "Restaurant sentence uses परोस् for please serve, but the source gloss/lemma is internally inconsistent (पार्नु versus परोस्). Hold base-meaning index 17039 and full sentence for source/audio reconciliation."
+      },
+      {
+        "sourceIndex": 1060,
+        "sentenceId": "18-3-7",
+        "status": "pending source reconciliation",
+        "issue": "हात थाप्ने normally extends a receiving/begging hand; JA/EN intend lending help. Reconcile the Nepali sentence before translating/releasing. Native usage consulted: https://gorkhapatraonline.com/news/102696 . No source or audio changed."
+      },
+      {
+        "sourceIndex": 1249,
+        "sentenceId": "21-3-18",
+        "status": "pending source reconciliation",
+        "issue": "नभर्ने means not filling, while JA/EN intend not relying on physical punishment. Likely malformed reliance expression; original Nepali/audio needs reconciliation."
       },
       {
         "sourceIndex": 1476,
@@ -2478,8 +2492,13 @@
       "Finance and IT vocabulary: धान्नका covers expenses, कलको means of a call, ब्याजको is financial interest, चक्रवृद्धि is compound interest, आईटी is IT; general vocabulary all complete.",
       "Contextual distinction: पर्दा curtain versus when something happens; भए past versus conditional; भन्दा comparison versus saying; धुन melody versus washing. Added destination-specific meanings.",
       "लिए, रहे, देखिए, सके, लागे and बसे reviewed against actual sentences: conditional meanings where appropriate. सकिन in 3-3-1 is to end, not could not; बसाल्नुस् in 14-2-20 establishes a habit, not please sit down.",
-      "Corrected वृद्धावस्था from erroneous medicine to old age; को is genitive, not ablative; हुनु identity versus state distinction replaces misleading stronger/weaker assertion explanations."
+      "Corrected वृद्धावस्था from erroneous medicine to old age; को is genitive, not ablative; हुनु identity versus state distinction replaces misleading stronger/weaker assertion explanations.",
+      "Conversation 793 uses national-language subject, not invented Nepali/Japanese; 863 uses LINE messaging application, with matching base gloss; 1558 asks if seat is empty, not taken.",
+      "Context notes corrected: राम्रो modifies निद्रा; सबभन्दा marks superlative, not substandard; भेटौंला future parting expression; विकासले uses ले, not कोले; source/explanation mismatches retained in source but Arabic rules corrected.",
+      "Contextual हारे gloss allows actual concessive despite losing with पनि; added matching destination override.",
+      "Question marker के is not inherently polite; Manner expression राम्रोसँग uses adverbial सँग, not accompaniment. Corrected earlier English explanations in Arabic.",
+      "भयो is simple past/change, not inherently past perfect; भएकोले is भएको + ले, not an independent कोले suffix; मात्र नभई means not only/but also; उचित हुन्छ is advisability rather than mandatory obligation."
     ],
-    "updated": "2026-11-11T07:38:13+09:00"
+    "updated": "2026-11-11T08:16:54+09:00"
   }
 }
