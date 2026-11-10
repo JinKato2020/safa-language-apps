@@ -28,6 +28,32 @@ def write(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
 
 
+def destination_id(path):
+    return json.dumps(path, ensure_ascii=False, separators=(',', ':'))
+
+
+def validate_overrides(plan, cache, language):
+    """Keep reviewed exceptions for ambiguous English glosses tied to one exact source plan."""
+    prefix = {'ko': 'korean', 'ar': 'arabic'}[language]
+    plan_sha = hashlib.sha256((WORK / f'{prefix}_translation_requests.json').read_bytes()).hexdigest()
+    destinations = {destination_id(d['path']): d for d in plan['destinations']}
+    for path_id, item in cache.get('overrides', {}).items():
+        assert path_id in destinations, f'Unknown override destination: {path_id}'
+        key = destinations[path_id]['key']
+        assert item.get('sourcePlanSha256') == plan_sha, f'Stale override plan: {path_id}'
+        assert item.get('sourceKey') == key, f'Stale override key: {path_id}'
+        assert item.get('reviewed') is True, f'Unreviewed override: {path_id}'
+        value = item.get(language)
+        assert isinstance(value, str) and value.strip(), f'Empty override: {path_id}'
+        expected = set(re.findall(r'\{\{\w+\}\}', plan['requests'][key]['en']))
+        assert expected == set(re.findall(r'\{\{\w+\}\}', value)), f'Override placeholders: {path_id}'
+
+
+def destination_translation(cache, destination, language):
+    override = cache.get('overrides', {}).get(destination_id(destination['path']))
+    return (override or cache['items'][destination['key']])[language]
+
+
 def prepare(language='ko'):
     prefix = {'ko': 'korean', 'ar': 'arabic'}[language]
     english = read(DATA / 'overlays/en.json')
@@ -97,6 +123,7 @@ def assemble(language='ko'):
     prefix = {'ko': 'korean', 'ar': 'arabic'}[language]
     plan = prepare(language)
     cache = read(WORK / f'{prefix}_translations.json')
+    validate_overrides(plan, cache, language)
     required = set(plan['requests'])
     assert required <= set(cache['items']), f"Missing {len(required - set(cache['items']))} translations"
     for key in required:
@@ -116,7 +143,7 @@ def assemble(language='ko'):
         parent = output
         for key in destination['path'][:-1]:
             parent = parent[key]
-        parent[destination['path'][-1]] = cache['items'][destination['key']][language]
+        parent[destination['path'][-1]] = destination_translation(cache, destination, language)
     overlay = output['overlay']
     overlay['l1'] = language
     # These retired fields are not used by the Korean-capable shell.

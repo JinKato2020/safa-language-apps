@@ -32,7 +32,7 @@ if(arabicFoundation){
   for(const d of plan.destinations){
     if(d.path[0]!=='overlay'||!cache.items[d.key]?.reviewed)continue;
     let parent=overlays.ar;for(const k of d.path.slice(1,-1))parent=parent[k];
-    parent[d.path.at(-1)]=cache.items[d.key].ar;
+    parent[d.path.at(-1)]=(cache.overrides?.[JSON.stringify(d.path)]??cache.items[d.key]).ar;
   }
   overlays.ar.l1='ar';
   modules.Text=compile(source('packages/shared/src/Text.tsx'));
@@ -111,13 +111,25 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           await page.screenshot({path:path.join(work,`previews/letters-ar-${category}-${width}-${scale}.png`)});
           await page.getByTestId('letters-library').click();
         }
-        for(let themeId=1;themeId<=7;themeId++){
+        for(let themeId=1;themeId<=36;themeId++){
           await page.evaluate(({scale,themeId})=>window.boot('ar',true,{name:'GrammarGuide',params:{themeId,title:'الموضوع '+themeId}},scale),{scale,themeId});
           for(const label of ['القواعد الأساسية','الصيغ والمفردات','استراحة']){
           await page.getByRole('tab',{name:label,exact:true}).click();
           while(await page.locator('button[aria-expanded="false"]').count())await page.locator('button[aria-expanded="false"]').first().click();
           assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`Arabic reader ${label}/${width}/${scale}`);
-          await page.screenshot({path:path.join(work,`previews/reader-ar-${themeId}-${label}-${width}-${scale}.png`)});
+          if([1,15,23,29,35].includes(themeId))await page.screenshot({path:path.join(work,`previews/reader-ar-${themeId}-${label}-${width}-${scale}.png`)});
+          }
+          await page.getByRole('tab',{name:'التدريبات',exact:true}).click();
+          for(const stage of [2,3,4]){
+            await page.getByTestId('practice-start-'+stage).click();await page.getByTestId('free-mode-'+stage).waitFor();
+            assert(/[\u0620-\u064a]/.test(await page.locator('body').innerText()),`Arabic practice ${themeId}/${stage}`);
+            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`Arabic practice ${themeId}/${stage}/${width}/${scale} overflow`);
+            const before=await page.evaluate(()=>window.route.params.studySession.items[0].exerciseId);
+            await page.getByTestId('free-model').click();
+            if([1,21,29,35].includes(themeId))await page.screenshot({path:path.join(work,`previews/practice-ar-${themeId}-${stage}-${width}-${scale}.png`)});
+            await page.getByTestId('free-next').click();await page.getByTestId('free-mode-'+stage).waitFor();
+            assert.notEqual(await page.evaluate(()=>window.route.params.studySession.items[0].exerciseId),before);
+            await page.getByTestId('study-back').click();await page.getByRole('tab',{name:'التدريبات',exact:true}).click();
           }
         }
         await page.evaluate(scale=>window.boot('ar',true,{name:'Theme',params:{mode:'grammar',puzzleOnly:true,guidesOnHome:true}},scale),scale);
@@ -141,7 +153,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.screenshot({path:path.join(work,`previews/word-quiz-ar-${width}-${scale}.png`)});
       }
       assert.deepEqual(errors,[]);
-      console.log('PASS Arabic foundation: real Text wrapper, right-side back/return, settings, all six letter categories, lessons 1-7 readers, LTR Nepali alphabet and puzzle inside RTL UI, 30 vocabulary categories x both directions, 320/390px at normal/large text. Partial preview only; no full Arabic course claim.');
+      console.log('PASS Arabic foundation: real Text wrapper, right-side back/return, settings, all six letter categories, all 36 lesson readers and three practice modes, LTR Nepali alphabet and puzzle inside RTL UI, 30 vocabulary categories x both directions, 320/390px at normal/large text. Partial preview only; no full Arabic course claim.');
       return;
     }
     if(process.argv.includes('--korean-modes')){

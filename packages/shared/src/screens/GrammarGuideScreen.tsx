@@ -43,7 +43,7 @@ function Table({ headers, rows, ss, presentation }: { headers: string[]; rows: s
   const [measured, setMeasured] = useState<number | null>(null);
   const effectiveWidth = (measured ?? Math.min(width - 48, 712)) / (fontScale * scaleStyle(16).fontSize / 16);
   const stacked = effectiveWidth / Math.max(headers.length, 1) < 145;
-  const wordTable = headers.length === 3 && ['読み', 'Reading'].includes(headers[1]);
+  const wordTable = headers.length === 3 && ['読み', 'Reading', '발음', 'النطق'].includes(headers[1]);
   if (stacked) return <View onLayout={e => setMeasured(e.nativeEvent.layout.width)} style={styles.tableStack}>
     {rows.map((row, ri) => {
       const rowPalette = guidePalette(presentation?.rowTones?.[ri]) ?? palette;

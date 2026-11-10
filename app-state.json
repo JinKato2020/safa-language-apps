@@ -1,6 +1,6 @@
 {
   "_about": "App家族(聞いて話せるシリーズ)の横断状態ファイル。セッション分離の調整レイヤ。各セッションは開始時に読み、節目で更新する。安定仕様(不変)は『ポスター成果物契約.md』、本ファイルは動的状態。",
-  "updated": "2026-11-11T03:02:35+09:00",
+  "updated": "2026-11-11T06:33:42+09:00",
   "coordinationModel": {
     "mode": "session-separation + app-state.json",
     "rule": "App固有作業はApp別セッションで並行可。共有コードは sharedLock を取得した1セッションだけが編集する。司令塔(全集約)モデルは廃止(=1セッションにコンテキストが肥大して上限に達する原因だった)。真に横断的な一括処理が要る時だけ workflow で一時的に起動する。",
@@ -2257,18 +2257,18 @@
     }
   },
   "appa_arabic_2026_11_11": {
-    "status": "Arabic foundation implemented and validated; full course translation remains in progress; not published",
+    "status": "All 36 grammar lessons, 528 example sentences, grammar vocabulary and 720 practice exercises translated; Arabic full course remains incomplete and unpublished",
     "scope": "Arabic mother-language UI and course translations with RTL/mixed-script layout",
     "maximumAdditionalAPIChargeJPY": 0,
     "dependsOnKoreanBuild": "complete: 2.2.4 (1075), GitHub run 42859546525 succeeded",
     "shipping": "Arabic is not imported into App A translation provider and is not selectable. No Arabic overlay/OTA/native build released. Korean 2.2.4 (1075)/OTA1224 remains current.",
     "sourcePlanSha256": "c3d316fdedc73d0e1b67137c917fc162386e11e86fc9e53ba32db0d85714cf6f",
-    "reviewedUnique": 6082,
+    "reviewedUnique": 8975,
     "totalUnique": 23716,
-    "pendingUnique": 17634,
+    "pendingUnique": 14741,
     "coverage": {
       "examplesL1": {
-        "complete": 3,
+        "complete": 429,
         "total": 1800
       },
       "grammarL1": {
@@ -2280,19 +2280,19 @@
         "total": 1000
       },
       "vocab": {
-        "complete": 310,
+        "complete": 365,
         "total": 4743
       },
       "convVocab": {
-        "complete": 19764,
+        "complete": 22092,
         "total": 45047
       },
       "grammarVocab": {
-        "complete": 357,
+        "complete": 2584,
         "total": 2584
       },
       "grammarGuide": {
-        "complete": 975,
+        "complete": 1919,
         "total": 1919
       },
       "grammarThemeNames": {
@@ -2300,7 +2300,7 @@
         "total": 36
       },
       "grammarTextOnlyLabel": {
-        "complete": 0,
+        "complete": 1,
         "total": 1
       },
       "contentNames": {
@@ -2308,7 +2308,7 @@
         "total": 66
       },
       "learningPathV3": {
-        "complete": 730,
+        "complete": 7521,
         "total": 7521
       },
       "lettersSounds": {
@@ -2316,7 +2316,7 @@
         "total": 742
       },
       "nepaliDictionary": {
-        "complete": 853,
+        "complete": 890,
         "total": 2196
       },
       "ui": {
@@ -2331,7 +2331,36 @@
       4,
       5,
       6,
-      7
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
     ],
     "translationMethod": "Direct in-session Arabic translation/source review; finite fully matched terminology and letter templates; preserved target-language samples explicitly reviewed. No external translation API or model download.",
     "additionalAPIChargeJPY": 0,
@@ -2349,14 +2378,18 @@
       "JA/EN: all 36 readers, practice navigation and narrow/large text layouts passed using actual Text wrapper",
       "KO: six letter categories, dictionary search/audio, 30 vocabulary categories in both directions and composition passed using actual Text wrapper",
       "Dictionary validation: 2089 entries, Arabic diacritics/tatweel/alef search, Nepali vowel distinction",
-      "Scoped git diff --check passed"
+      "Scoped git diff --check passed",
+      "All 36 Arabic readers passed at 320/390px and normal/large text; compact table labels fixed for Arabic/Korean.",
+      "All 36 Korean readers and 3 practice modes passed after shared table-label fix. tsc:all passed.",
+      "All 720 translated practice exercises: answer present, meaning choices remain distinct even ignoring Arabic vowel marks; no Nepali teaching forms lost.",
+      "Source-plan, source-key, reviewed flag and nonempty destination-override rejection tests passed.",
+      "All 36 Arabic themes x all 3 practice modes x 320/390px x normal/large text: reveal/next/back and mixed-script layout passed. Full-release guard correctly rejects remaining translations."
     ],
     "remaining": [
-      "Conversation sentences",
-      "Grammar lessons 8-36 including appendices",
-      "Context-specific word meanings and grammatical notes",
-      "Remaining dictionary translations and practice text",
-      "Full Arabic content assembly, native-device RTL verification and publication"
+      "Remaining 1371 conversation sentences (including two source contradictions awaiting resolution)",
+      "Context-specific conversation vocabulary and grammatical notes",
+      "Remaining general vocabulary and dictionary translations",
+      "Full Arabic content assembly, Arabic audio, native-device RTL verification and publication"
     ],
     "audio": "No Arabic audio generated; no paid synthesis invoked.",
     "sharedLockReleased": true,
@@ -2401,6 +2434,27 @@
         }
       ],
       "validation": "Checked full-resolution artwork, rendered copy bounds, dimensions/RGB and visible brand/footer pixels in every output. No App Store Connect upload."
-    }
+    },
+    "completePracticeExercises": 720,
+    "contextOverrides": 56,
+    "sourceReviewIssues": [
+      {
+        "sourceIndex": 55,
+        "status": "pending; untranslated",
+        "issue": "Nepali भावनामा बगेर says carried away by emotion; JA/EN say not carried away. Need reconcile source/audio before releasing this sentence."
+      },
+      {
+        "sourceIndex": 278,
+        "status": "pending; untranslated",
+        "issue": "Nepali झल्याँस लाग्छ expresses being startled/realizing suddenly; JA/EN mean frustration. Need reconcile source/audio before releasing."
+      }
+    ],
+    "sourceCorrectionsInArabic": [
+      "20020 and 21171: obligation requires -नु + पर्छ, distinct from permission -न + पाइन्छ. Existing English explanation conflates them.",
+      "20387-20392: natural completed-letter wording based on Nepali and Japanese, correcting malformed English.",
+      "20430 and 20436: plural authors for तपाईंहरू.",
+      "Reviewed 56 destination-specific overrides: conditional/quotative भने and भनी, active खोलिन् versus passive खोलियो, active गरेको versus passive गरिएको. Pinned to exact source-plan SHA."
+    ],
+    "updated": "2026-11-11T06:33:42+09:00"
   }
 }
