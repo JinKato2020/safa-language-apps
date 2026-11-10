@@ -65,6 +65,8 @@ export type AppData = {
   version: string;
   /** 学習者の母語/第2言語コード (例: 'ne', 'bn')。未指定なら 'ne' 扱い。多言語化の足場。 */
   nativeLang?: string;
+  /** Learning target; App A explicitly marks Nepali independently of UI language. */
+  targetLang?: string;
   THEMES: ThemeMeta[];
   LEVELS: LevelMeta[];
   EXAMPLES: Record<string, Example[]>;

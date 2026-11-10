@@ -15,6 +15,25 @@ def archive_index(entry,archives):
                 out['files'][name]={'sha256':hashlib.sha256(data).hexdigest(),'md5':hashlib.md5(data).hexdigest(),'bytes':len(data)}
     assert out['files']
     return out
+def korean_archive(output,overlay):
+    """Package verified Korean masters without re-encoding; same flat MP3 contract."""
+    manifest=read(APP/'文法教材/korean_audio_manifest.json')
+    assert manifest['voice']=='ko-KR-SunHiNeural'
+    expected={f'{mode}/{key}-{i+1}.mp3':text
+              for mode,section in [('conv','examplesL1'),('gram','grammarL1')]
+              for key,rows in overlay[section].items() for i,text in enumerate(rows)}
+    assert set(expected)==set(manifest['items']) and len(expected)==2328
+    temporary=output/'audio-ko.zip'
+    with zipfile.ZipFile(temporary,'w',zipfile.ZIP_STORED) as archive:
+        for name,text in sorted(expected.items()):
+            meta=manifest['items'][name];data=(APP/'audio/ko'/name).read_bytes()
+            assert meta['text']==text and meta['voice']==manifest['voice'],name
+            assert hashlib.sha256(data).hexdigest()==meta['sha256'] and len(data)==meta['bytes'],name
+            info=zipfile.ZipInfo(name.split('/')[-1],(2026,1,1,0,0,0))
+            archive.writestr(info,data)
+    name='audio-ko-'+hashlib.sha256(temporary.read_bytes()).hexdigest()+'.zip'
+    temporary.replace(output/name)
+    return archive_index({'audioVersion':1,'audioZip':BASE+name},output)
 def build(output,version,archives=None):
     output.mkdir(parents=True,exist_ok=True)
     catalog=read(APP/'文法教材/grammar_pack_v3_catalog.json')
@@ -30,8 +49,9 @@ def build(output,version,archives=None):
         return {'sha256':sha,'bytes':len(raw),'url':BASE+name}
     core=read(APP/'expo-app/data/ota-baseline/core.json');core.pop('curriculumRevision',None)
     manifest={'schema':1,'version':version,'core':chunk(core),'audio':audio['_core'],'languages':{}}
-    for lang in ['ja','en']:
+    for lang in ['ja','en','ko']:
         overlay=read(APP/f'expo-app/data/overlays/{lang}.json');guides=overlay.pop('grammarGuide');overlay.pop('version',None);overlay.pop('curriculumRevision',None)
+        if lang=='ko':audio[lang]=korean_archive(output,overlay)
         for k in core['grammarNe']:assert len(core['grammarNe'][k])==len(overlay['grammarL1'][k])
         for k in core['examplesNe']:assert len(core['examplesNe'][k])==len(overlay['examplesL1'][k])
         manifest['languages'][lang]={'overlay':chunk(overlay),'guides':{k:chunk(v)for k,v in guides.items()},'audio':audio[lang]}

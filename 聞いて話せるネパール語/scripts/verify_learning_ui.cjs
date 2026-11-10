@@ -11,6 +11,16 @@ modules.entitlement=compile(source('packages/shared/src/entitlement.tsx'));
 modules.compose=compile(source('聞いて話せるネパール語/expo-app/src/pack/compose.ts'));
 const core=JSON.parse(source('聞いて話せるネパール語/expo-app/data/ota-baseline/core.json'));
 const overlays={},strings={};for(const lang of ['ja','en']){overlays[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/data/overlays/${lang}.json`));strings[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/src/i18n/${lang}.json`));}
+if(process.argv.some(a=>a.startsWith('--korean-'))){
+  overlays.ko=JSON.parse(source('聞いて話せるネパール語/expo-app/data/overlays/ko.json'));strings.ko=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ko.json'));
+  for(const[group,values]of Object.entries(strings.en))for(const[key,value]of Object.entries(values)){
+    const translated=strings.ko[group]?.[key];assert.equal(typeof translated,'string',`${group}.${key}`);
+    if(value.startsWith('https://')){assert.equal(translated,value);continue;}
+    assert(/[가-힣]/.test(translated),`Untranslated UI: ${group}.${key}`);
+    const expected=[...new Set(value.match(/\{\{\w+\}\}/g)??[])].filter(p=>!(group==='courseCopy'&&key==='c_3ec230bb4da9'&&p==='{{p1}}')).sort();
+    assert.deepEqual([...new Set(translated.match(/\{\{\w+\}\}/g)??[])].sort(),expected,`${group}.${key}`);
+  }
+}
 const code=`
 const modules=${JSON.stringify(modules)},cache={},overlays=${JSON.stringify(overlays)},strings=${JSON.stringify(strings)},core=${JSON.stringify(core)};
 function require(n){if(n.startsWith('.'))n=n.split('/').pop();if(cache[n])return cache[n].exports;const m={exports:{}};cache[n]=m;if(!modules[n])throw Error('Missing '+n);new Function('require','module','exports','process',modules[n])(require,m,m.exports,{env:{NODE_ENV:'production'}});return m.exports;}
@@ -26,7 +36,7 @@ const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネ
 const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode==='contain'?'contain':undefined,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
 cache['react-native']={exports:{Platform:{OS:'ios'},Alert:{alert:(...args)=>window.alerts.push(args)},Linking:{openURL:async url=>window.links.push(url)},Share:{share:async()=>{}},Switch:()=>null,PanResponder:{create:config=>({panHandlers:{_pan:config}})},AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,TextInput:p=>h('input',{'data-testid':p.testID,'aria-label':p.accessibilityLabel,value:p.value,onChange:e=>p.onChangeText(e.target.value),placeholder:p.placeholder,style:css(p.style)}),FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.length?null:p.ListEmptyComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
 cache.Text={exports:{Text}};
-cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,langs:['ja','en'],setLang:()=>{},t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).replace('{'+k+'}',v);return s;}})}};
+cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,langs:Object.keys(strings),setLang:()=>{},copy:(key,ja,en,vars={})=>{let s=window.caseInfo.lang==='ko'?strings.ko.courseCopy[key]??en:window.caseInfo.lang==='en'?en:ja;for(const[k,v]of Object.entries(vars))s=s.split('{{'+k+'}}').join(String(v));return s;},t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).split('{{'+k+'}}').join(String(v));return s;}})}};
 cache.ModalDropdown={exports:{ModalDropdown:p=>h('span',null,p.value)}};cache['expo-application']={exports:{nativeBuildVersion:'test'}};window.alerts=[];window.links=[];window.devCalls=[];window.devAvailable=true;window.devResult='unavailable';cache.settingsDevelopment={exports:{useSettingsDevelopment:()=>window.devAvailable?{showReview:async()=>{window.devCalls.push('review');return window.devResult;},showRequest:()=>window.devCalls.push('request')}:null}};
 cache.PosterContext={exports:{usePosterLessons:()=>[]}};
 cache.AppDataContext={exports:{useAppData:()=>window.data}};
@@ -58,6 +68,86 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(process.argv.includes('--korean-modes')){
+      for(const [width,scale]of[[390,1],[320,1.4]]){
+        await page.setViewportSize({width,height:844});
+        await page.evaluate(scale=>window.boot('ko',true,{name:'LettersSounds'},scale),scale);
+        await page.screenshot({path:path.join(work,`previews/letters-ko-${width}.png`)});
+        for(const id of ['start','vowels','combinations','conjuncts','marks','numbers']){
+          await page.getByTestId('letters-category-'+id).click();
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`Korean letters ${id}/${width}`);
+          await page.getByTestId('letters-library').click();
+        }
+        await page.evaluate(scale=>window.boot('ko',true,{name:'NepaliDictionary'},scale),scale);
+        for(const query of ['집','죽다','버리다','ghar','गर्छु']){
+          await page.getByTestId('dictionary-search').fill(query);
+          const result=page.locator('[data-testid^="dictionary-entry-"]').first();await result.click();
+          assert(/[가-힣]/.test(await page.getByTestId('dictionary-detail').innerText()));
+          await page.getByTestId('dictionary-listen').click();await page.waitForTimeout(50);
+          assert.equal(await page.evaluate(()=>window.activeAudio.size),1);
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        }
+        await page.screenshot({path:path.join(work,`previews/dictionary-ko-${width}.png`)});
+        for(let category=1;category<=30;category++)for(const direction of ['ne2ja','ja2ne']){
+          await page.evaluate(({category,direction,scale})=>window.boot('ko',true,{name:'Flashcard',params:{categoryId:category,direction}},scale),{category,direction,scale});
+          await page.getByTestId('vocab-quiz-prompt').waitFor();assert.equal(await page.locator('[data-testid^="vocab-option-"]').count(),4);
+          assert(/[가-힣]/.test(direction==='ne2ja'?await page.getByTestId('vocab-option-0').innerText():await page.getByTestId('vocab-quiz-word').innerText()));
+          await page.getByTestId('vocab-quiz-reveal').click();await page.getByTestId('vocab-quiz-next').click();await page.getByTestId('vocab-quiz-prompt').waitFor();
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        }
+        for(const mode of ['grammar','conversation']){
+          await page.evaluate(({mode,scale})=>window.boot('ko',true,{name:'Practice',params:{mode,themeId:1,levelId:1}},scale),{mode,scale});
+          assert(/[가-힣]/.test(await page.locator('body').innerText()));
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+          await page.screenshot({path:path.join(work,`previews/composition-ko-${mode}-${width}.png`)});
+        }
+      }
+      assert.deepEqual(errors,[]);console.log('PASS Korean: all six letters categories, dictionary search/audio, 30 vocabulary themes × both directions, grammar/conversation composition at 320/390px.');return;
+    }
+    if(process.argv.includes('--korean-ui')){
+      for(const [width,scale]of[[390,1],[320,1.4]]){
+        await page.setViewportSize({width,height:844});
+        await page.evaluate(scale=>window.boot('ko',true,{name:'HomeTab'},scale),scale);
+        for(const label of ['문자와 소리','문법','단어','사전'])assert((await page.getByTestId('home-content-grid').innerText()).includes(label),label);
+        await page.getByTestId('home-letters').click();
+        for(const label of ['시작하기','모음','자음＋모음','결합 문자','기호','숫자'])assert((await page.locator('body').innerText()).includes(label));
+        assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        await page.screenshot({path:path.join(work,`previews/letters-library-ko-${width}.png`)});
+        await page.evaluate(()=>{window.testEntitlement={isPro:true,accessKind:'launch-free',freeThemes:5,restore:()=>{}};window.navigate('SettingsTab');});
+        const body=await page.locator('body').innerText();
+        for(const label of ['모국어','한국어','네팔어 반복 횟수','무료 이용권 보유'])assert(body.includes(label),label);
+        assert(!body.includes('開発確認'));assert(!body.includes('개발 확인'));
+        for(let n=0;n<6;n++)await page.getByTestId('settings-version').click();assert.equal(await page.getByText('개발 확인',{exact:true}).count(),0);
+        await page.getByTestId('settings-version').click();await page.getByText('개발 확인',{exact:true}).waitFor();
+        await page.getByRole('button',{name:'실행',exact:true}).click();assert.equal(await page.evaluate(()=>window.alerts.at(-1)[0]),'기본 평가 창을 표시할 수 없어요');
+        assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        await page.screenshot({path:path.join(work,`previews/settings-ko-${width}.png`)});
+        // Real Korean lessons: every theme, every reading section and all three practice modes.
+        await page.evaluate(scale=>window.boot('ko',true,{name:'GrammarLibrary'},scale),scale);
+        const themes=await page.evaluate(()=>window.data.GRAMMAR_THEMES);
+        for(const theme of themes){
+          await page.getByTestId('grammar-lesson-'+theme.id).click();
+          for(const part of ['기본 규칙','활용·어휘','잠깐 쉬어가기']){
+            await page.getByRole('tab',{name:part,exact:true}).click();
+            while(await page.locator('button[aria-expanded="false"]').count())await page.locator('button[aria-expanded="false"]').first().click();
+            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`Korean ${theme.id}/${part}/${width} overflow`);
+            if(theme.id===1&&part==='기본 규칙')await page.screenshot({path:path.join(work,`previews/grammar-ko-${width}.png`)});
+          }
+          await page.getByRole('tab',{name:'연습 문제',exact:true}).click();
+          for(const stage of [2,3,4]){
+            await page.getByTestId('practice-start-'+stage).click();await page.getByTestId('free-mode-'+stage).waitFor();
+            assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`Korean practice ${theme.id}/${stage}/${width} overflow`);
+            const before=await page.evaluate(()=>window.route.params.studySession.items[0].exerciseId);
+            await page.getByTestId('free-model').click();await page.getByTestId('free-next').click();await page.getByTestId('free-mode-'+stage).waitFor();
+            assert.notEqual(await page.evaluate(()=>window.route.params.studySession.items[0].exerciseId),before);
+            await page.getByTestId('study-back').click();await page.getByRole('tab',{name:'연습 문제',exact:true}).click();
+          }
+          await page.getByRole('button',{name:'학습 자료 닫기',exact:true}).click();
+        }
+        console.log(`PASS Korean ${width}: all 36 lesson readers and 3 practice modes with actual Korean data.`);
+      }
+      assert.deepEqual(errors,[]);console.log('PASS Korean UI with real Korean course: home labels, six letters categories, settings and hidden development checks at 320/390px.');return;
+    }
     if(process.argv.includes('--home-grid')){
       const routes={'home-letters':'LettersSounds','home-grammar-lessons':'GrammarLibrary','home-vocabulary':'VocabCategory','home-dictionary':'NepaliDictionary'};
       for(const lang of ['ja','en'])for(const [width,scale]of[[390,1],[320,1.4]]){
@@ -421,7 +511,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         for(let i=0;i<30;i++)assert.deepEqual(letters.conjunctCombinations[i].samples.map(s=>s.audio),raw.conjunctCombinations[i].samples.map(s=>s.audio));
         assert.equal(letters.combinations.find(r=>r.consonant==='ज').samples[0].examples?.some(w=>w.ne==='ज्ञान')??false,false);
         assert.equal(letters.combinations[0].samples[1].examples?.some(w=>w.ne==='किताब')??false,false);
-        assert.equal(await page.locator('[data-testid^="letters-category-"]').count(),4);
+        assert.equal(await page.locator('[data-testid^="letters-category-"]').count(),6);
         await page.screenshot({path:path.join(work,`previews/letters-${lang}-library.png`),fullPage:true});
         const saved=await page.evaluate(()=>localStorage.getItem('test-study'));
         await by('letters-category-start').click();assert.equal(await by('letters-play-ka-aa').count(),0);assert.equal(await by('letters-play-house').count(),0);
@@ -430,14 +520,14 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           assert(await by('letters-section-navigation').evaluate(el=>el===el.parentElement.lastElementChild));
           await by('letters-next-section').click();assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
         }
-        await by('letters-category-conjuncts').click();await by('letters-section-numbers').click();
+        await by('letters-category-numbers').click();
         for(const section of [...letters.sections].reverse()){await page.getByRole('heading',{name:section.title,exact:true}).waitFor();await by('letters-prev-section').click();}
         assert.equal(await page.evaluate(()=>localStorage.getItem('test-study')),saved);
         for(const section of letters.sections.filter(s=>!['combinations','conjuncts'].includes(s.id))){
-          await by('letters-category-'+(['marks','numbers'].includes(section.id)?'conjuncts':section.id)).click();
-          if(['marks','numbers'].includes(section.id))await by('letters-section-'+section.id).click();
-          assert.equal(await by('letters-sound-chart').getByRole('button').count(),section.samples.length);
+          await by('letters-category-'+section.id).click();
+          assert.equal(await by('letters-sound-chart').getByRole('button').count(),section.id==='numbers'?11:section.samples.length);
           for(const sample of section.samples){
+            if(section.id==='numbers'){const group=sample.value>100?10:Math.max(0,Math.ceil(sample.value/10)-1);await by('letters-number-chooser').click();await by('letters-number-range-'+group).click();}
             if(sample.audio)await play('letters-play-'+sample.id,sample.audio.url);else await by('letters-symbol-'+sample.id).click();
             await checkWord(sample);
           }
@@ -462,7 +552,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         assert.equal(await page.evaluate(()=>JSON.stringify(window.data.LETTERS_SOUNDS)),original,'Presentation does not mutate OTA data');
         for(const [width,height,scale]of[[390,844,1],[320,568,1.4]]){
           await page.setViewportSize({width,height});await page.evaluate(({lang,scale})=>window.boot(lang,false,{name:'LettersSounds'},scale),{lang,scale});
-          for(const category of ['start','vowels','combinations','conjuncts']){
+          for(const category of ['start','vowels','combinations','conjuncts','marks','numbers']){
             await by('letters-category-'+category).click();
             assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
             assert.equal(await page.getByText(en?'Reading tips':'読み方を見る',{exact:true}).count(),0);
@@ -472,11 +562,12 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
             await by('letters-library').click();
           }
         }
-        await by('letters-category-vowels').click();await page.getByRole('button',{name:en?'Mark section as reviewed':'この項目を確認済みにする',exact:true}).click();
-        await page.getByRole('button',{name:en?'Reviewed ✓':'確認済み ✓',exact:true}).waitFor();
-        await page.evaluate(()=>{const s=JSON.parse(localStorage.getItem('test-study'));s.lettersRead=window.data.LETTERS_SOUNDS.sections.map(s=>s.id);localStorage.setItem('test-study',JSON.stringify(s));});
-        await page.evaluate(l=>window.boot(l,false,{name:'HomeTab'}),lang);await by('home-letters').waitFor();assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).lettersRead.length),6,'Hidden home counters do not erase letter progress');
-        console.log(`PASS ${lang}: 4 cards, 6 sections both directions, 33×12 consonant forms, 30×11 conjunct forms, only k/s bare audio, default single examples, all audio routes, immutable source, progress migration and 320px large-text layout.`);
+        await by('letters-category-vowels').click();assert.equal(await page.getByRole('button',{name:/確認済|Reviewed|Mark section/}).count(),0);
+        assert.equal(await page.getByText(/確認済|sections reviewed|Reviewed/).count(),0);
+        const numberSamples=letters.sections.find(s=>s.id==='numbers').samples;assert.equal(numberSamples.length,106);assert.deepEqual(numberSamples.slice(0,101).map(s=>s.value),Array.from({length:101},(_,i)=>i));assert.deepEqual(numberSamples.slice(101).map(s=>s.value),[1000,10000,100000,1000000,10000000]);
+        await page.evaluate(()=>{const s=JSON.parse(localStorage.getItem('test-study'))??{version:1,introRead:false,ratings:{},completed:{}};s.lettersRead=window.data.LETTERS_SOUNDS.sections.map(s=>s.id);localStorage.setItem('test-study',JSON.stringify(s));});
+        await page.evaluate(l=>window.boot(l,false,{name:'HomeTab'}),lang);await by('home-letters').waitFor();assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).lettersRead.length),raw.sections.length,'Hidden home counters do not erase letter progress');
+        console.log(`PASS ${lang}: 6 cards, 106 spoken numbers, no reviewed UI, 6 sections both directions, 33×12 consonant forms, 30×11 conjunct forms, only k/s bare audio, default single examples, all audio routes, immutable source, progress migration and 320px large-text layout.`);
       }
       assert.deepEqual(errors,[]);return;
     }

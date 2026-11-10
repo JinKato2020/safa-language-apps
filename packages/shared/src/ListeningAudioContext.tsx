@@ -161,7 +161,7 @@ export function useListeningAudio(): ListeningAudioValue {
 }
 
 export function ListeningAudioProvider({ children }: { children: ReactNode }) {
-  const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio, grammarTextOnlyLabel } = useAppData();
+  const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio, grammarTextOnlyLabel, targetLang } = useAppData();
   const { nepaliAudio, japaneseAudio, nepaliGrammarAudio, japaneseGrammarAudio } = audio;
   const convDeps: ConvDataDeps = { THEMES, LEVELS, getExamples };
   const gramDeps: GramDataDeps = { GRAMMAR_THEMES, getGrammarExamples };
@@ -174,8 +174,8 @@ export function ListeningAudioProvider({ children }: { children: ReactNode }) {
     gap,
   } = useSettings();
   const isJa2Ne = listenDirection === 'ja2ne';
-  // 繰り返し対象 = UI 言語の反対側 (ja UI → ne を繰り返し、ne UI → ja を繰り返し)
-  const repeatLang: 'ja' | 'ne' = isJaUI ? 'ne' : 'ja';
+  // App A always repeats Nepali, including Korean/English UI. Preserve other apps' mapping.
+  const repeatLang: 'ja' | 'ne' = targetLang === 'ne' || isJaUI ? 'ne' : 'ja';
   const firstLang: 'ja' | 'ne' = isJa2Ne ? 'ja' : 'ne';
   const secondLang: 'ja' | 'ne' = isJa2Ne ? 'ne' : 'ja';
   const firstRepeats = firstLang === repeatLang;

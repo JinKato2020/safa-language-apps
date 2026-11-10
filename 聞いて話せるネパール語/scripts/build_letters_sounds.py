@@ -8,6 +8,7 @@ No third-party audio, illustrations or teaching prose are incorporated.
 import json
 from pathlib import Path
 from letter_word_examples import WORDS, validate_words
+from letter_numbers import number_rows, nepali_digits
 APP=Path(__file__).resolve().parents[1]
 def read(p): return json.loads(p.read_text(encoding='utf-8-sig'))
 def write(p,v): p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -117,11 +118,10 @@ def build():
         'ँ（チャンドラビンドゥ）は母音の鼻への響きの目印。別の「ン」を足すより、母音そのものを鼻にも響かせます。ं（アヌスヴァーラ）は鼻音を表し、後ろの子音に合わせた音になることなどがあります。\nः（ヴィサルガ）は主にサンスクリット系の綴り。単語ごとに発音を確かめよう。। は文末の印です。',
         'ँ (chandrabindu) marks a nasal vowel: let the vowel resonate through the nose rather than adding a separate n. ं (anusvara) marks nasal sound; its pronunciation can adapt to the following consonant.\nः (visarga) occurs mainly in Sanskrit-derived spelling; check the whole word’s pronunciation. । marks a sentence ending.',
         [sample('nasal-here','यहाँ','yahā̃','ここ','here','ँ の響き' if not en else 'Listen for ँ'),sample('nasal-am','हुँ','hũ','です（私・何者か）','am (I; identity)'),sample('anusvara','संसार','saṃsār','世界','world','ं のある語' if not en else 'A word with ं'),sample('visarga','दुःख','duḥkha / dukha','悲しみ・苦しみ','sorrow','ः のある語' if not en else 'A word with ः'),sample('stop','।','pūrṇa virām','文末の印。ここでは音を読みません。','Sentence-ending mark; not pronounced here.',speech=False)])
-        nums=[('०','शून्य','śūnya'),('१','एक','ek'),('२','दुई','duī'),('३','तीन','tīn'),('४','चार','cār'),('५','पाँच','pā̃c'),('६','छ','cha'),('७','सात','sāt'),('८','आठ','āṭh'),('९','नौ','nau')]
-        section('numbers','数字と読みの確認','Digits and reading',
-        '数字も左から右。१० は10、२५ は25です。読みは数字を1字ずつつなぐだけではないので、まず0〜9を音で覚えよう。\nこの教材はネパール語の基本文字を網羅しています。他言語・古典用の ॠ・ऌ・ॡ や、借用語用の点（़）つき文字なども同じ文字体系にありますが、日常ネパール語の基本33子音・11母音とは分けて扱います。',
-        'Digits also run left to right: १० is 10 and २५ is 25. Number names are not made simply by reading each digit separately; begin with 0–9.\nThis course covers the core Nepali script. The wider script also has letters such as ॠ, ऌ and ॡ for classical or other-language use, and dotted letters (़) for borrowed sounds. Those are distinct from the 33 core consonants and 11 vowel letters.',
-        [sample('digit-'+str(i),d,r,f'{i} · {word}',f'{i} · {word}',speech=word)for i,(d,word,r) in enumerate(nums)])
+        section('numbers','数字と数え方','Numbers and counting',
+        '0〜100は、まとまりごとに聞いて覚えよう。21＝एक्काइस のように、十の位と一の位をそのままつなぐ読み方ではありません。100＝एक सय（सय とも言います）。\n大きな数は हजार＝千、लाख＝10万、करोड＝1,000万。ネパールでは 1,00,000＝10万、1,00,00,000＝1,000万という区切り方も使います。',
+        'Learn 0–100 in small groups. Names such as 21 = एक्काइस cannot be built simply by joining the tens and ones. 100 = एक सय (also सय).\nFor larger numbers: हजार = thousand, लाख = 100,000, करोड = 10,000,000. Nepali grouping also writes these as 1,00,000 and 1,00,00,000.',
+        [dict(sample('digit-'+str(n),nepali_digits(n),r,j,e,speech=word),value=n) for n,word,r,j,e in number_rows()])
         conjunct_combinations=[]
         for i,(c,formula,roman,*_) in enumerate(CONJUNCTS):
             stems=[r.removesuffix('a') for r in roman.split(' / ')]
@@ -132,5 +132,5 @@ def build():
             conjunct_combinations.append(dict(consonant=c,roman=roman,samples=sounds))
         out[lang]=dict(title='Letters & sounds' if en else '文字と音',description='11 vowels · 33 consonants · 30 conjuncts' if en else '母音11字・子音33字・複合文字30形',sections=sections,combinations=combinations,conjunctCombinations=conjunct_combinations)
     write(APP/'文法教材/letters_sounds.json',out)
-    print('Prepared 13 sections: 33 vowel-free forms (2 recorded), 11 vowels, 33 letter readings, 363 combinations, 30 conjuncts with 330 vowel forms, signs and digits, JA/EN.')
+    print('Prepared 13 sections: 33 vowel-free forms (2 recorded), 11 vowels, 33 letter readings, 363 combinations, 30 conjuncts with 330 vowel forms, signs and 106 numbers, JA/EN.')
 if __name__=='__main__':build()

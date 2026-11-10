@@ -15,7 +15,7 @@ const c = { ink: '#123039', muted: '#52666C', navy: '#102F38', teal: '#7DE2CE', 
 const EMPTY = emptyStudyState();
 
 export default function LearningHomeScreen() {
-  const nav = useNavigation<any>(), { lang } = useI18n(), { top } = useSafeAreaInsets();
+  const nav = useNavigation<any>(), { lang , copy: trCopy } = useI18n(), { top } = useSafeAreaInsets();
   const data = useAppData(), learning = useLearning(), hero = useHeroImage('grammar');
   const guides = useGrammarGuide(), guideCount = data.GRAMMAR_THEMES.filter(theme => guides?.[String(theme.id)]?.length).length;
   const [now, setNow] = useState(Date.now);
@@ -35,9 +35,9 @@ export default function LearningHomeScreen() {
   const displaySize = width < 360 ? 25 : 36;
   const due = useMemo(() => reviewItems(state, data, now), [state, data, now]);
   const resume = state.resume && resolveStudy(data, state.resume.item) ? state.resume : undefined;
-  const action = resume ? (en ? 'Continue where you left off' : '前回の続きへ')
-    : due.length ? (en ? `Review ${due.length} sentences` : `${due.length}文を復習する`)
-    : (en ? 'Explore letters & sounds' : '文字と音から始める');
+  const action = resume ? (trCopy('c_c3e74a179b32', '前回の続きへ', 'Continue where you left off'))
+    : due.length ? (trCopy('c_534c3db39d21', `${due.length}文を復習する`, `Review ${due.length} sentences`, {p0: due.length}))
+    : (trCopy('c_0b84f22d7823', '文字と音から始める', 'Explore letters & sounds'));
   const start = () => {
     if (resume) nav.navigate('Practice', practiceParams(resume.item, resume.session));
     else if (due.length) nav.navigate('Practice', practiceParams(due[0], { kind: 'review', items: due }));
@@ -67,16 +67,16 @@ export default function LearningHomeScreen() {
 
     <View testID="home-content-grid" style={styles.grid}>
       <View style={styles.tileRow}>
-        <HomeTile id="home-letters" title={en ? 'Letters & sounds' : '文字と音'} kind="letters" color="#E0EFE8" onPress={() => nav.navigate('LettersSounds')} />
-        {guideCount > 0 && <HomeTile id="home-grammar-lessons" title={en ? 'Grammar' : '文法教材'} kind="grammar" color="#E5EAF7" onPress={() => nav.navigate('GrammarLibrary')} />}
+        <HomeTile id="home-letters" title={trCopy('c_2f46b1d4291b', '文字と音', 'Letters & sounds')} kind="letters" color="#E0EFE8" onPress={() => nav.navigate('LettersSounds')} />
+        {guideCount > 0 && <HomeTile id="home-grammar-lessons" title={trCopy('c_c12a73a72dcb', '文法教材', 'Grammar')} kind="grammar" color="#E5EAF7" onPress={() => nav.navigate('GrammarLibrary')} />}
       </View>
       <View style={styles.tileRow}>
-        <HomeTile id="home-vocabulary" title={en ? 'Words' : '単語'} kind="vocabulary" color="#ECE8F4" onPress={() => nav.navigate('VocabCategory')} />
-        {!!data.NEPALI_DICTIONARY?.entries.length && <HomeTile id="home-dictionary" title={en ? 'Dictionary' : 'ネパール語辞書'} kind="dictionary" color="#DFEDF0" onPress={() => nav.navigate('NepaliDictionary')} />}
+        <HomeTile id="home-vocabulary" title={trCopy('c_d282e858f43a', '単語', 'Words')} kind="vocabulary" color="#ECE8F4" onPress={() => nav.navigate('VocabCategory')} />
+        {!!data.NEPALI_DICTIONARY?.entries.length && <HomeTile id="home-dictionary" title={trCopy('c_df9dedb2fa8a', 'ネパール語辞書', 'Dictionary')} kind="dictionary" color="#DFEDF0" onPress={() => nav.navigate('NepaliDictionary')} />}
       </View>
     </View>
 
-    {learning?.error && <Pressable accessibilityRole="button" onPress={learning.retry} style={styles.error}><Text style={styles.errorText}>{en ? 'Could not load or save progress. Tap to retry.' : '学習記録を読み込み・保存できませんでした。タップして再試行。'}</Text></Pressable>}
+    {learning?.error && <Pressable accessibilityRole="button" onPress={learning.retry} style={styles.error}><Text style={styles.errorText}>{trCopy('c_70a7891dec6e', '学習記録を読み込み・保存できませんでした。タップして再試行。', 'Could not load or save progress. Tap to retry.')}</Text></Pressable>}
   </ScrollView>;
 }
 

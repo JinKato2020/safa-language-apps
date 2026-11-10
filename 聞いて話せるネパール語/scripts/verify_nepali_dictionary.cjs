@@ -25,6 +25,14 @@ for(const e of entries){
 for(const[q,ne]of Object.entries({'ghar':'घर','ＧＨＡＲ':'घर','家':'घर','house':'घर','गर्छु':'गर्नु','garchhu':'गर्नु','garchu':'गर्नु','chhu':'हुनु','hunchha':'हुनु','छु':'हुनु','पर्‍यो':'पर्नु','पर्यो':'पर्नु','राम्री':'राम्रो','tapain':'तपाईं','tapaaiin':'तपाईं','sanga':'सँग','thaha paaunu':'थाहा पाउनु'}))assert.equal(find(q)[0]?.ne,ne,q);
 assert.notEqual(search.dictionaryKey('मा'),search.dictionaryKey('म'));assert.notEqual(search.dictionaryKey('पानी'),search.dictionaryKey('पनि'));
 assert.equal(find('zzzz-no-match').length,0);
+// Korean searches use Korean glosses without losing Nepali forms or JA/EN lookup.
+const koreanHouse=structuredClone(entry('घर'));koreanHouse.senses[0].ko='집';
+koreanHouse.note={ja:'住む場所',en:'a place to live',ko:'사람이 사는 곳'};
+const koreanIndex=search.indexDictionary([koreanHouse]);
+for(const query of ['집','사는 곳','house','家','घर'])assert.equal(search.searchDictionary(koreanIndex,query)[0]?.ne,'घर',query);
+assert.equal(search.dictionaryTranslation(koreanHouse.senses[0],'ko'),'집');
+assert.equal(search.dictionaryTranslation({ja:'家',en:'house'},'ko'),'house');
+assert.equal(search.dictionaryPos.noun[2],'명사');
 const family=search.searchDictionary(index,'',11);
 for(const ne of ['मामा','माइजू','फुपू','दाइ'])assert(family.some(e=>e.ne===ne),ne);
 assert(!family.some(e=>e.ne==='मर्नु'));

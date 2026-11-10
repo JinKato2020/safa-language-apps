@@ -12,23 +12,23 @@ import type { RootStackParamList } from '../types';
 import { answerVocabularyQuiz, nextVocabularyQuiz, prepareVocabularyDecks, startVocabularyQuiz, type VocabularyDeck, type VocabularyDirection } from '../vocabularyQuiz';
 
 export default function VocabularyQuizScreen() {
-  const data = useAppData(), { t, lang } = useI18n(), ent = useEntitlement();
+  const data = useAppData(), { t, lang , copy: trCopy } = useI18n(), ent = useEntitlement();
   const nav = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   const { categoryId, direction } = useRoute<RouteProp<RootStackParamList, 'Flashcard'>>().params;
   const decks = useMemo(() => prepareVocabularyDecks(data.WORDS, categoryId), [data.WORDS, categoryId]);
-  useLayoutEffect(() => nav.setOptions({ title: lang === 'en' ? 'Vocabulary quiz' : '単語クイズ' }), [nav, lang]);
+  useLayoutEffect(() => nav.setOptions({ title: trCopy('c_a7fb752caad4', '単語クイズ', 'Vocabulary quiz') }), [nav, lang, trCopy]);
   const index = data.WORD_CATEGORIES.findIndex(c => c.id === categoryId);
   const locked = index >= 0 && isLockedAt(ent, index);
   if (locked || index < 0 || !decks.ne2ja.questions.length || !decks.ja2ne.questions.length) return <View style={styles.container}>
-    <Text style={styles.empty}>{locked ? (lang === 'en' ? 'Unlock this theme to practise its words.' : 'このテーマを解放すると練習できます。') : (lang === 'en' ? 'There are not enough distinct word meanings for a four-choice quiz. Please choose another theme.' : '4択にできる単語が不足しています。別のテーマを選んでください。')}</Text>
-    <Pressable testID="vocab-quiz-back" accessibilityRole="button" onPress={() => locked ? nav.navigate('Paywall') : nav.goBack()} style={styles.next}><Text style={styles.nextText}>{locked ? (lang === 'en' ? 'Unlock themes' : 'テーマを解放') : (lang === 'en' ? 'Back to themes' : 'テーマに戻る')}</Text></Pressable>
+    <Text style={styles.empty}>{locked ? (trCopy('c_fb7e831a839f', 'このテーマを解放すると練習できます。', 'Unlock this theme to practise its words.')) : (trCopy('c_49f1da83b734', '4択にできる単語が不足しています。別のテーマを選んでください。', 'There are not enough distinct word meanings for a four-choice quiz. Please choose another theme.'))}</Text>
+    <Pressable testID="vocab-quiz-back" accessibilityRole="button" onPress={() => locked ? nav.navigate('Paywall') : nav.goBack()} style={styles.next}><Text style={styles.nextText}>{locked ? (trCopy('c_7b318c514302', 'テーマを解放', 'Unlock themes')) : (trCopy('c_120d00f16d92', 'テーマに戻る', 'Back to themes'))}</Text></Pressable>
   </View>;
   const category = data.CONTENT_NAMES?.categories?.[categoryId] ?? t(`vocabCategories.${categoryId}`);
   return <QuizSession key={`${categoryId}:${data.nativeLang}:${direction}:${decks.ne2ja.revision}`} decks={decks} initialDirection={direction} category={category} />;
 }
 
 function QuizSession({ decks, initialDirection, category }: { decks: Record<VocabularyDirection, VocabularyDeck>; initialDirection: VocabularyDirection; category: string }) {
-  const { t, lang } = useI18n(), en = lang === 'en', { romaji } = useSettings(), ss = useScaleStyle();
+  const { t, lang , copy: trCopy } = useI18n(), en = lang === 'en', { romaji } = useSettings(), ss = useScaleStyle();
   const direction = initialDirection;
   const [sessions, setSessions] = useState(() => ({ ne2ja: startVocabularyQuiz(decks.ne2ja)!, ja2ne: startVocabularyQuiz(decks.ja2ne)! }));
   const scroll = useRef<ScrollView>(null), session = sessions[direction], question = session.question;
@@ -45,29 +45,29 @@ function QuizSession({ decks, initialDirection, category }: { decks: Record<Voca
     scroll.current?.scrollTo({ y: 0, animated: false });
   };
   return <ScrollView ref={scroll} style={styles.root} contentContainerStyle={styles.container}>
-    <View style={styles.meta}><Text style={[styles.category, ss(16, 25)]}>{category}</Text><Text style={[styles.muted, ss(13, 22)]}>{decks[direction].questions.length}{en ? ' words' : '語'}</Text></View>
-    <View style={styles.counts}><Text testID="vocab-quiz-count" style={[styles.muted, ss(13, 22)]}>{en ? `${session.answered} answered this session` : `今回 ${session.answered}問`}</Text><Text testID="vocab-quiz-score" style={[styles.score, ss(13, 22)]}>{en ? `${session.correct} correct` : `正解 ${session.correct}問`}</Text></View>
+    <View style={styles.meta}><Text style={[styles.category, ss(16, 25)]}>{category}</Text><Text style={[styles.muted, ss(13, 22)]}>{decks[direction].questions.length}{trCopy('c_d17430b8f47d', '語', ' words')}</Text></View>
+    <View style={styles.counts}><Text testID="vocab-quiz-count" style={[styles.muted, ss(13, 22)]}>{trCopy('c_69768e234ffb', `今回 ${session.answered}問`, `${session.answered} answered this session`, {p0: session.answered})}</Text><Text testID="vocab-quiz-score" style={[styles.score, ss(13, 22)]}>{trCopy('c_025f1ade73c0', `正解 ${session.correct}問`, `${session.correct} correct`, {p0: session.correct})}</Text></View>
     <View testID="vocab-quiz-prompt" style={styles.prompt}>
-      <Text style={[styles.promptLabel, ss(13, 22)]}>{promptIsNepali ? (en ? 'Choose the meaning' : '意味を選ぼう') : (en ? 'Choose the Nepali word' : 'ネパール語を選ぼう')}</Text>
+      <Text style={[styles.promptLabel, ss(13, 22)]}>{promptIsNepali ? (trCopy('c_d79cc997341a', '意味を選ぼう', 'Choose the meaning')) : (trCopy('c_5b41da71852b', 'ネパール語を選ぼう', 'Choose the Nepali word'))}</Text>
       <Text testID="vocab-quiz-word" style={[styles.promptText, ss(promptIsNepali ? 34 : 28, promptIsNepali ? 48 : 41)]}>{question.prompt}</Text>
       {promptIsNepali && romaji && <Text style={[styles.promptRoman, ss(16, 26)]}>{toRomaji(question.prompt)}</Text>}
     </View>
     <View style={styles.options}>{question.choices.map((option, index) => {
       const correct = answered && option.id === question.id, incorrect = answered && session.response?.choice === option.id && !correct;
-      return <Pressable key={option.id} testID={`vocab-option-${index}`} accessibilityRole="button" accessibilityLabel={`${option.text}${correct ? (en ? ', correct answer' : '、正解') : incorrect ? (en ? ', your answer, incorrect' : '、選んだ答え、不正解') : ''}`} accessibilityState={{ disabled: answered }} disabled={answered} onPress={() => choose(option.id)} style={({ pressed }) => [styles.option, correct && styles.optionCorrect, incorrect && styles.optionIncorrect, answered && !correct && !incorrect && styles.optionQuiet, pressed && styles.pressed]}>
+      return <Pressable key={option.id} testID={`vocab-option-${index}`} accessibilityRole="button" accessibilityLabel={`${option.text}${correct ? (trCopy('c_329a7f06b724', '、正解', ', correct answer')) : incorrect ? (trCopy('c_bd067216dbe5', '、選んだ答え、不正解', ', your answer, incorrect')) : ''}`} accessibilityState={{ disabled: answered }} disabled={answered} onPress={() => choose(option.id)} style={({ pressed }) => [styles.option, correct && styles.optionCorrect, incorrect && styles.optionIncorrect, answered && !correct && !incorrect && styles.optionQuiet, pressed && styles.pressed]}>
         <Text style={[styles.optionLetter, correct && styles.correctInk, incorrect && styles.incorrectInk, ss(14, 22)]}>{correct ? '✓' : incorrect ? '×' : String.fromCharCode(65 + index)}</Text>
         <View style={styles.optionBody}><Text style={[styles.optionText, correct && styles.correctInk, incorrect && styles.incorrectInk, ss(promptIsNepali ? 20 : 25, promptIsNepali ? 31 : 37)]}>{option.text}</Text>{!promptIsNepali && romaji && <Text style={[styles.muted, ss(14, 23)]}>{toRomaji(option.text)}</Text>}</View>
       </Pressable>;
     })}</View>
     {answered ? <>
       <View testID="vocab-quiz-feedback" accessibilityLiveRegion="polite" style={styles.feedback} onLayout={() => scroll.current?.scrollToEnd({ animated: true })}>
-        <Text style={[styles.feedbackTitle, ss(18, 28)]}>{session.response?.correct ? (en ? 'Correct!' : '正解！') : session.response?.choice === null ? (en ? 'Check the answer' : '答えを確認しよう') : (en ? 'Here is the correct answer' : '正解はこちら')}</Text>
+        <Text style={[styles.feedbackTitle, ss(18, 28)]}>{session.response?.correct ? (trCopy('c_82df0295e579', '正解！', 'Correct!')) : session.response?.choice === null ? (trCopy('c_6495d71d08a2', '答えを確認しよう', 'Check the answer')) : (trCopy('c_a6811849c0fc', '正解はこちら', 'Here is the correct answer'))}</Text>
         <Text style={[styles.feedbackWord, ss(25, 37)]}>{question.word.ne}</Text>
         {romaji && <Text style={[styles.muted, ss(14, 23)]}>{toRomaji(question.word.ne)}</Text>}
         <Text style={[styles.optionText, ss(18, 28)]}>{question.word.ja}</Text>
       </View>
-      <Pressable testID="vocab-quiz-next" accessibilityRole="button" onPress={nextQuestion} style={({ pressed }) => [styles.next, pressed && styles.pressed]}><Text style={[styles.nextText, ss(17, 27)]}>{en ? 'Next question →' : '次の問題へ →'}</Text></Pressable>
-    </> : <Pressable testID="vocab-quiz-reveal" accessibilityRole="button" onPress={() => choose(null)} style={styles.reveal}><Text style={[styles.revealText, ss(15, 24)]}>{en ? 'Show the answer' : '答えを見て確認'}</Text></Pressable>}
+      <Pressable testID="vocab-quiz-next" accessibilityRole="button" onPress={nextQuestion} style={({ pressed }) => [styles.next, pressed && styles.pressed]}><Text style={[styles.nextText, ss(17, 27)]}>{trCopy('c_4106a42c46c7', '次の問題へ →', 'Next question →')}</Text></Pressable>
+    </> : <Pressable testID="vocab-quiz-reveal" accessibilityRole="button" onPress={() => choose(null)} style={styles.reveal}><Text style={[styles.revealText, ss(15, 24)]}>{trCopy('c_ac325df68661', '答えを見て確認', 'Show the answer')}</Text></Pressable>}
   </ScrollView>;
 }
 

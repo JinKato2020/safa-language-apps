@@ -23,7 +23,9 @@ export function containsLetterForm(word: SoundSample, sample: LetterSample): boo
 }
 
 /** Reuse translated, recorded words already supplied with the course; never invent a rare example. */
-export function prepareLetterPresentation(source: LettersSounds, en: boolean): LettersSounds {
+export function prepareLetterPresentation(source: LettersSounds, language: boolean | string): LettersSounds {
+  // Boolean arguments remain supported for existing callers and regression checks.
+  const en = language === true || language === 'en', ko = language === 'ko';
   const allSamples = source.sections.flatMap(s => s.samples);
   const pool = [...new Map(allSamples.flatMap(s => s.examples ?? []).map(w => [w.ne, w])).values()];
   const withExample = (sample: LetterSample): LetterSample => {
@@ -37,7 +39,7 @@ export function prepareLetterPresentation(source: LettersSounds, en: boolean): L
     const bare: LetterSample = {
       id: existing?.id ?? `bare-${row.consonant}`, ne,
       roman: existing?.roman ?? row.roman.replace(/a$/, ''),
-      meaning: en ? 'Consonant only · no vowel' : '子音のみ・母音なし',
+      meaning: ko ? '자음만 · 모음 없음' : en ? 'Consonant only · no vowel' : '子音のみ・母音なし',
       audio: ['क', 'स'].includes(row.consonant) ? existing?.audio : undefined,
       speech: ne,
     };
@@ -48,7 +50,9 @@ export function prepareLetterPresentation(source: LettersSounds, en: boolean): L
     if (section.id === 'start') body = body
       .replace('この教材の「子音」一覧も、この文字の読みです。', '「子音＋母音」では、母音なしの形から11の母音を付けた形まで比べられます。')
       .replace('The consonant chart in this course uses these letter readings.', 'In Vowel combinations, compare the vowel-free form with the 11 vowel forms.');
-    if (section.id === 'combinations') body = en
+    if (section.id === 'combinations') body = ko
+      ? '맨 앞은 자음만 있는 형태이고, 그다음은 모음 11가지를 붙인 형태예요. ्는 기본 모음 a를 없애는 기호예요(क्=k, क=ka). 자음만의 음성은 क्와 स् 두 가지예요. 나머지는 글자 형태로 확인해 보세요.'
+      : en
       ? 'First: consonant only. Then: 11 vowel forms. ् removes the inherent a: क् = k, क = ka. Only क् and स् have consonant-only recordings; the other bare forms are written references.'
       : '先頭は子音のみ、その後は11通りの母音付き。् は母音 a を外す印です（क्＝k、क＝ka）。子音のみの音声は क्・स् の2つ。ほかは文字で確認できます。';
     return { ...section, body, samples: section.samples.map(withExample) };

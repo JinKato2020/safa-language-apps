@@ -105,6 +105,7 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
     CONTENT_NAMES: overlay.contentNames,
     version: opts.version,
     nativeLang: overlay.nativeLang,
+    targetLang: 'ne',
     THEMES: core.themes,
     LEVELS: core.levels,
     EXAMPLES,

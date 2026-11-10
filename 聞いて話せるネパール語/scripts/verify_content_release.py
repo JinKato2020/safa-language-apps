@@ -18,7 +18,7 @@ def verify(folder):
         assert set(guides)==set(core['grammarNe'])==set(o['grammarThemeNames'])
         for theme,rows in core['grammarNe'].items():
             text=json.dumps(guides[theme],ensure_ascii=False).replace('**','')
-            if o.get('learningPathV2'):
+            if o.get('learningPathV3') or o.get('learningPathV2'):
                 assert not any(b.get('type')=='h' and __import__('re').fullmatch(r'例題\d+|Exercise\s+\d+',b.get('text','')) for b in guides[theme])
             else:
                 for i,ne in enumerate(rows):assert ne in text and o['grammarL1'][theme][i] in text
@@ -29,7 +29,7 @@ def verify(folder):
                 for i in range(len(rows)):
                     sid=f'{key}-{i+1}';ref=refs.get(sid) if refs is not None else sid
                     if ref is not None:assert ref+'.mp3' in audio['files'],(lang,sid,ref)
-        for step in o['learningPath']['steps']:
+        for step in o.get('learningPath',{}).get('steps',[]):
             for r in step['items']:
                 rows=core['grammarNe'][str(r['themeId'])] if r['mode']=='grammar' else core['examplesNe'][f"{r['themeId']}-{r['levelId']}"]
                 assert rows[r['index']]==r['ne']
@@ -83,7 +83,11 @@ def verify(folder):
                 assert all(str(t)in guides for t in e['themes'])
                 a=e['audio'];assert a['bytes']>0 and len(a['sha256'])==64 and a['url'].startswith('https://')
                 assert all(x['ne'] and x['ja'] and x['en']for x in e['examples'])
-        stats[lang]={'guides':len(guides),'courseSteps':len(o['learningPath']['steps']),'practiceQuestions':len(o.get('learningPathV3',{}).get('exercises',{}))*3,'audioFiles':len(l['audio']['files'])}
+                if lang=='ko':
+                    assert all(s.get('ko') for s in e['senses'])
+                    assert all(x.get('ko') for x in e['examples'])
+                    if e.get('note'):assert e['note'].get('ko')
+        stats[lang]={'guides':len(guides),'courseSteps':len(o.get('learningPathV3',o.get('learningPath',{})).get('steps',[])),'practiceQuestions':len(o.get('learningPathV3',{}).get('exercises',{}))*3,'audioFiles':len(l['audio']['files'])}
     print(json.dumps({'version':m['version'],'languages':stats,'conversation':sum(map(len,core['examplesNe'].values())),'grammar':sum(map(len,core['grammarNe'].values())),'words':sum(map(len,core['wordsNe'].values()))}))
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('folder',type=Path);a=p.parse_args();verify(a.folder)

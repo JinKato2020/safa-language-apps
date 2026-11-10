@@ -232989,138 +232989,1492 @@
       },
       {
         "id": "numbers",
-        "title": "Digits and reading",
-        "body": "Digits also run left to right: १० is 10 and २५ is 25. Number names are not made simply by reading each digit separately; begin with 0–9.\nThis course covers the core Nepali script. The wider script also has letters such as ॠ, ऌ and ॡ for classical or other-language use, and dotted letters (़) for borrowed sounds. Those are distinct from the 33 core consonants and 11 vowel letters.",
+        "title": "Numbers and counting",
+        "body": "Learn 0–100 in small groups. Names such as 21 = एक्काइस cannot be built simply by joining the tens and ones. 100 = एक सय (also सय).\nFor larger numbers: हजार = thousand, लाख = 100,000, करोड = 10,000,000. Nepali grouping also writes these as 1,00,000 and 1,00,00,000.",
         "samples": [
           {
             "id": "digit-0",
             "ne": "०",
             "roman": "śūnya",
-            "meaning": "0 · शून्य",
+            "meaning": "0",
             "detail": "",
             "speech": "शून्य",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d4aef70beb571c3e5a29f20841163e9ed0048ddea73ebf448db7366af38b90a0.mp3",
               "sha256": "d4aef70beb571c3e5a29f20841163e9ed0048ddea73ebf448db7366af38b90a0",
               "bytes": 11232
-            }
+            },
+            "value": 0
           },
           {
             "id": "digit-1",
             "ne": "१",
             "roman": "ek",
-            "meaning": "1 · एक",
+            "meaning": "1",
             "detail": "",
             "speech": "एक",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f444d92baad527503b46985816aaef2446ed91cd21b07f551275128b094e7681.mp3",
               "sha256": "f444d92baad527503b46985816aaef2446ed91cd21b07f551275128b094e7681",
               "bytes": 11232
-            }
+            },
+            "value": 1
           },
           {
             "id": "digit-2",
             "ne": "२",
             "roman": "duī",
-            "meaning": "2 · दुई",
+            "meaning": "2",
             "detail": "",
             "speech": "दुई",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-0dc447ceda7c90fc7a49aaf5570ffd707f44d8253226d724ef635bdfb74b3c09.mp3",
               "sha256": "0dc447ceda7c90fc7a49aaf5570ffd707f44d8253226d724ef635bdfb74b3c09",
               "bytes": 11232
-            }
+            },
+            "value": 2
           },
           {
             "id": "digit-3",
             "ne": "३",
             "roman": "tīn",
-            "meaning": "3 · तीन",
+            "meaning": "3",
             "detail": "",
             "speech": "तीन",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/learning-2d7056d5929ca633e5d5da1be29e51158e15ee9ab563d281d4c0c8837650c9e8.mp3",
               "sha256": "2d7056d5929ca633e5d5da1be29e51158e15ee9ab563d281d4c0c8837650c9e8",
               "bytes": 11232
-            }
+            },
+            "value": 3
           },
           {
             "id": "digit-4",
             "ne": "४",
             "roman": "cār",
-            "meaning": "4 · चार",
+            "meaning": "4",
             "detail": "",
             "speech": "चार",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-573d08a5991d07505b4b31e8ab0342e3b99f59f811a2b04aaf23132a62e81a15.mp3",
               "sha256": "573d08a5991d07505b4b31e8ab0342e3b99f59f811a2b04aaf23132a62e81a15",
               "bytes": 11232
-            }
+            },
+            "value": 4
           },
           {
             "id": "digit-5",
             "ne": "५",
             "roman": "pā̃c",
-            "meaning": "5 · पाँच",
+            "meaning": "5",
             "detail": "",
             "speech": "पाँच",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6f3548455c78295c152cb5b15ffe7ef1112a10dba4155177ee0148560e45f057.mp3",
               "sha256": "6f3548455c78295c152cb5b15ffe7ef1112a10dba4155177ee0148560e45f057",
               "bytes": 11232
-            }
+            },
+            "value": 5
           },
           {
             "id": "digit-6",
             "ne": "६",
             "roman": "cha",
-            "meaning": "6 · छ",
+            "meaning": "6",
             "detail": "",
             "speech": "छ",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d50720651096e21da576338d12a79d86eed0d01b57c4f35f99058f29e6b80b93.mp3",
               "sha256": "d50720651096e21da576338d12a79d86eed0d01b57c4f35f99058f29e6b80b93",
               "bytes": 11232
-            }
+            },
+            "value": 6
           },
           {
             "id": "digit-7",
             "ne": "७",
             "roman": "sāt",
-            "meaning": "7 · सात",
+            "meaning": "7",
             "detail": "",
             "speech": "सात",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6cba5f9ecbaccd5a43a3b7362cd8783c55d2e67cb702f8b9be5152d15d97bffd.mp3",
               "sha256": "6cba5f9ecbaccd5a43a3b7362cd8783c55d2e67cb702f8b9be5152d15d97bffd",
               "bytes": 11232
-            }
+            },
+            "value": 7
           },
           {
             "id": "digit-8",
             "ne": "८",
             "roman": "āṭh",
-            "meaning": "8 · आठ",
+            "meaning": "8",
             "detail": "",
             "speech": "आठ",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9eba17b69c5617f82f25ddf400cf3373f092fc4a4d2c42bbb1520f9cb892e534.mp3",
               "sha256": "9eba17b69c5617f82f25ddf400cf3373f092fc4a4d2c42bbb1520f9cb892e534",
               "bytes": 11232
-            }
+            },
+            "value": 8
           },
           {
             "id": "digit-9",
             "ne": "९",
             "roman": "nau",
-            "meaning": "9 · नौ",
+            "meaning": "9",
             "detail": "",
             "speech": "नौ",
             "audio": {
               "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-72322af286aeac548c8b96d32a9df87b4332c15ffe64d5b21e428ba4647b0941.mp3",
               "sha256": "72322af286aeac548c8b96d32a9df87b4332c15ffe64d5b21e428ba4647b0941",
               "bytes": 11232
-            }
+            },
+            "value": 9
+          },
+          {
+            "id": "digit-10",
+            "ne": "१०",
+            "roman": "das",
+            "meaning": "10",
+            "detail": "",
+            "speech": "दस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-666bd4b308008be35ef718a49fd9a76564b5c9507dc5c69de54dd021b6e77b03.mp3",
+              "sha256": "666bd4b308008be35ef718a49fd9a76564b5c9507dc5c69de54dd021b6e77b03",
+              "bytes": 11232
+            },
+            "value": 10
+          },
+          {
+            "id": "digit-11",
+            "ne": "११",
+            "roman": "eghār",
+            "meaning": "11",
+            "detail": "",
+            "speech": "एघार",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-521c0122d5991f4290938010ae989771c02e1f3185ddb1bb11785e8852003108.mp3",
+              "sha256": "521c0122d5991f4290938010ae989771c02e1f3185ddb1bb11785e8852003108",
+              "bytes": 11232
+            },
+            "value": 11
+          },
+          {
+            "id": "digit-12",
+            "ne": "१२",
+            "roman": "bāhra",
+            "meaning": "12",
+            "detail": "",
+            "speech": "बाह्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f481725d05c03dee98291367e7ba4bc9b34040362c4b5b6787d3f45d1de7e5df.mp3",
+              "sha256": "f481725d05c03dee98291367e7ba4bc9b34040362c4b5b6787d3f45d1de7e5df",
+              "bytes": 11232
+            },
+            "value": 12
+          },
+          {
+            "id": "digit-13",
+            "ne": "१३",
+            "roman": "tehra",
+            "meaning": "13",
+            "detail": "",
+            "speech": "तेह्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-62b37059663fb49bb35eafcdb877c3f2c235245df808e0342a22d4d150fbdb6e.mp3",
+              "sha256": "62b37059663fb49bb35eafcdb877c3f2c235245df808e0342a22d4d150fbdb6e",
+              "bytes": 11232
+            },
+            "value": 13
+          },
+          {
+            "id": "digit-14",
+            "ne": "१४",
+            "roman": "caudh",
+            "meaning": "14",
+            "detail": "",
+            "speech": "चौध",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-079cc88ac2a4805c6ce1f6e6e7bcdd16098f9fffce2bc246effb0e063aa538b9.mp3",
+              "sha256": "079cc88ac2a4805c6ce1f6e6e7bcdd16098f9fffce2bc246effb0e063aa538b9",
+              "bytes": 11232
+            },
+            "value": 14
+          },
+          {
+            "id": "digit-15",
+            "ne": "१५",
+            "roman": "pandhra",
+            "meaning": "15",
+            "detail": "",
+            "speech": "पन्ध्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3a7f466395c0fbb495ceb85cafa21d82d6c06826504e43ecb80d4b2c04d8c7cc.mp3",
+              "sha256": "3a7f466395c0fbb495ceb85cafa21d82d6c06826504e43ecb80d4b2c04d8c7cc",
+              "bytes": 11232
+            },
+            "value": 15
+          },
+          {
+            "id": "digit-16",
+            "ne": "१६",
+            "roman": "sohra",
+            "meaning": "16",
+            "detail": "",
+            "speech": "सोह्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-99422b4bce7b2fd2c8c022f550a8c44021f5ba2aea3bd6a5fb0209b86d67b9b7.mp3",
+              "sha256": "99422b4bce7b2fd2c8c022f550a8c44021f5ba2aea3bd6a5fb0209b86d67b9b7",
+              "bytes": 11232
+            },
+            "value": 16
+          },
+          {
+            "id": "digit-17",
+            "ne": "१७",
+            "roman": "satra",
+            "meaning": "17",
+            "detail": "",
+            "speech": "सत्र",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0986d55c4beb42b304879ae42bca045ae1693631cdfed5e43986f479b01653a6.mp3",
+              "sha256": "0986d55c4beb42b304879ae42bca045ae1693631cdfed5e43986f479b01653a6",
+              "bytes": 11232
+            },
+            "value": 17
+          },
+          {
+            "id": "digit-18",
+            "ne": "१८",
+            "roman": "aṭhār",
+            "meaning": "18",
+            "detail": "",
+            "speech": "अठार",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0ab5354c938753e88a99c6214721bddb84b4a8c749884b7b1b7672fdc49b7a5b.mp3",
+              "sha256": "0ab5354c938753e88a99c6214721bddb84b4a8c749884b7b1b7672fdc49b7a5b",
+              "bytes": 11232
+            },
+            "value": 18
+          },
+          {
+            "id": "digit-19",
+            "ne": "१९",
+            "roman": "unnāis",
+            "meaning": "19",
+            "detail": "",
+            "speech": "उन्नाइस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1fd58c9d8f5f24575ecb68f48f5e790e6df564846f712e60c6c7001b4117e064.mp3",
+              "sha256": "1fd58c9d8f5f24575ecb68f48f5e790e6df564846f712e60c6c7001b4117e064",
+              "bytes": 11232
+            },
+            "value": 19
+          },
+          {
+            "id": "digit-20",
+            "ne": "२०",
+            "roman": "bīs",
+            "meaning": "20",
+            "detail": "",
+            "speech": "बीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-092556fb1003c4c37bf635bd25b9ac95d36fb2e536298f05eb9655019bc3788e.mp3",
+              "sha256": "092556fb1003c4c37bf635bd25b9ac95d36fb2e536298f05eb9655019bc3788e",
+              "bytes": 11232
+            },
+            "value": 20
+          },
+          {
+            "id": "digit-21",
+            "ne": "२१",
+            "roman": "ekkāis",
+            "meaning": "21",
+            "detail": "",
+            "speech": "एक्काइस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-58f042759ac6b209595cf09e16f1f7cdd4e062cb047664e4d3f18dc7df866637.mp3",
+              "sha256": "58f042759ac6b209595cf09e16f1f7cdd4e062cb047664e4d3f18dc7df866637",
+              "bytes": 11232
+            },
+            "value": 21
+          },
+          {
+            "id": "digit-22",
+            "ne": "२२",
+            "roman": "bāis",
+            "meaning": "22",
+            "detail": "",
+            "speech": "बाइस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-eac009923e989cf46c230298f0f46ee91ed8abcf501001acb91e02930a62591c.mp3",
+              "sha256": "eac009923e989cf46c230298f0f46ee91ed8abcf501001acb91e02930a62591c",
+              "bytes": 11232
+            },
+            "value": 22
+          },
+          {
+            "id": "digit-23",
+            "ne": "२३",
+            "roman": "teis",
+            "meaning": "23",
+            "detail": "",
+            "speech": "तेइस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2c6c62f8383699e4e29684893a882f6e6b53bcb94cffd60cc75564fadeaefc9d.mp3",
+              "sha256": "2c6c62f8383699e4e29684893a882f6e6b53bcb94cffd60cc75564fadeaefc9d",
+              "bytes": 11232
+            },
+            "value": 23
+          },
+          {
+            "id": "digit-24",
+            "ne": "२४",
+            "roman": "caubīs",
+            "meaning": "24",
+            "detail": "",
+            "speech": "चौबीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e5ab16ddfe40e58ef97727c3af0247b7db05ecd79109d45711556ebc719acc48.mp3",
+              "sha256": "e5ab16ddfe40e58ef97727c3af0247b7db05ecd79109d45711556ebc719acc48",
+              "bytes": 11232
+            },
+            "value": 24
+          },
+          {
+            "id": "digit-25",
+            "ne": "२५",
+            "roman": "paccīs",
+            "meaning": "25",
+            "detail": "",
+            "speech": "पच्चीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-71e017fb42066306667ec92efa9a4a04235847fcc5d4ba88599820ff82d57e8c.mp3",
+              "sha256": "71e017fb42066306667ec92efa9a4a04235847fcc5d4ba88599820ff82d57e8c",
+              "bytes": 11232
+            },
+            "value": 25
+          },
+          {
+            "id": "digit-26",
+            "ne": "२६",
+            "roman": "chabbīs",
+            "meaning": "26",
+            "detail": "",
+            "speech": "छब्बीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9ffeb0869cd92f6f817a96745c731d11c36434499ee8e9f24608c74d80be4af2.mp3",
+              "sha256": "9ffeb0869cd92f6f817a96745c731d11c36434499ee8e9f24608c74d80be4af2",
+              "bytes": 11232
+            },
+            "value": 26
+          },
+          {
+            "id": "digit-27",
+            "ne": "२७",
+            "roman": "sattāis",
+            "meaning": "27",
+            "detail": "",
+            "speech": "सत्ताइस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-249759a57572b87c65f98cbc7224e09127119ff3bfaa90bced31c00573516a93.mp3",
+              "sha256": "249759a57572b87c65f98cbc7224e09127119ff3bfaa90bced31c00573516a93",
+              "bytes": 11232
+            },
+            "value": 27
+          },
+          {
+            "id": "digit-28",
+            "ne": "२८",
+            "roman": "aṭṭhāis",
+            "meaning": "28",
+            "detail": "",
+            "speech": "अट्ठाइस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c4140da4ddcd86d2d74c058ffd9446c425762ecdf93cbb92af020b03ab12176b.mp3",
+              "sha256": "c4140da4ddcd86d2d74c058ffd9446c425762ecdf93cbb92af020b03ab12176b",
+              "bytes": 11232
+            },
+            "value": 28
+          },
+          {
+            "id": "digit-29",
+            "ne": "२९",
+            "roman": "unantīs",
+            "meaning": "29",
+            "detail": "",
+            "speech": "उनन्तीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2f81346964825838864790d384c4f63308d683a289d951434393cceafa4c70ae.mp3",
+              "sha256": "2f81346964825838864790d384c4f63308d683a289d951434393cceafa4c70ae",
+              "bytes": 11232
+            },
+            "value": 29
+          },
+          {
+            "id": "digit-30",
+            "ne": "३०",
+            "roman": "tīs",
+            "meaning": "30",
+            "detail": "",
+            "speech": "तीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9e3fc0f7521ad0dfb1df41f1f6fdc949e89138f16da2b749251aa84d1f82cd2a.mp3",
+              "sha256": "9e3fc0f7521ad0dfb1df41f1f6fdc949e89138f16da2b749251aa84d1f82cd2a",
+              "bytes": 11232
+            },
+            "value": 30
+          },
+          {
+            "id": "digit-31",
+            "ne": "३१",
+            "roman": "ekatīs",
+            "meaning": "31",
+            "detail": "",
+            "speech": "एकतीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e9bce89d173abd16ba1ee9472d9f9cafee64d9885c8e113d7265452cdba336c2.mp3",
+              "sha256": "e9bce89d173abd16ba1ee9472d9f9cafee64d9885c8e113d7265452cdba336c2",
+              "bytes": 11232
+            },
+            "value": 31
+          },
+          {
+            "id": "digit-32",
+            "ne": "३२",
+            "roman": "battīs",
+            "meaning": "32",
+            "detail": "",
+            "speech": "बत्तीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6146ef110c7a98ac03a8493078a514a02903d873fdc1ad5061dcda8b59ca5fa5.mp3",
+              "sha256": "6146ef110c7a98ac03a8493078a514a02903d873fdc1ad5061dcda8b59ca5fa5",
+              "bytes": 11232
+            },
+            "value": 32
+          },
+          {
+            "id": "digit-33",
+            "ne": "३३",
+            "roman": "tettīs",
+            "meaning": "33",
+            "detail": "",
+            "speech": "तेत्तीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-bcfdbda6beb094f5c2ff0d35eff781cba25edea2f73c03ab04fdc87ba37681e7.mp3",
+              "sha256": "bcfdbda6beb094f5c2ff0d35eff781cba25edea2f73c03ab04fdc87ba37681e7",
+              "bytes": 11232
+            },
+            "value": 33
+          },
+          {
+            "id": "digit-34",
+            "ne": "३४",
+            "roman": "caũtīs",
+            "meaning": "34",
+            "detail": "",
+            "speech": "चौँतीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9d06789b98820ec75f9f3e7bc6ce5886db10714952a60796884a981b129597f7.mp3",
+              "sha256": "9d06789b98820ec75f9f3e7bc6ce5886db10714952a60796884a981b129597f7",
+              "bytes": 11232
+            },
+            "value": 34
+          },
+          {
+            "id": "digit-35",
+            "ne": "३५",
+            "roman": "paĩtīs",
+            "meaning": "35",
+            "detail": "",
+            "speech": "पैँतीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b224819cf7ea36f7127b0599070f691b972721164793bdbb57fa3cd0616627f6.mp3",
+              "sha256": "b224819cf7ea36f7127b0599070f691b972721164793bdbb57fa3cd0616627f6",
+              "bytes": 11232
+            },
+            "value": 35
+          },
+          {
+            "id": "digit-36",
+            "ne": "३६",
+            "roman": "chattīs",
+            "meaning": "36",
+            "detail": "",
+            "speech": "छत्तीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f5693b3f6a994a8cb11a390a130a12cc192718d80d86913241343f54a0ca4b69.mp3",
+              "sha256": "f5693b3f6a994a8cb11a390a130a12cc192718d80d86913241343f54a0ca4b69",
+              "bytes": 11232
+            },
+            "value": 36
+          },
+          {
+            "id": "digit-37",
+            "ne": "३७",
+            "roman": "saĩtīs",
+            "meaning": "37",
+            "detail": "",
+            "speech": "सैँतीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-477607a8bdf55de51c18cd29fa96d7b9fd22bf470a128517c5752d1681d32441.mp3",
+              "sha256": "477607a8bdf55de51c18cd29fa96d7b9fd22bf470a128517c5752d1681d32441",
+              "bytes": 11232
+            },
+            "value": 37
+          },
+          {
+            "id": "digit-38",
+            "ne": "३८",
+            "roman": "aṭhatīs",
+            "meaning": "38",
+            "detail": "",
+            "speech": "अठतीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-01bb665121ac96486e5804b03bd799e69e34b10cdba60ee1798b65f681fc5574.mp3",
+              "sha256": "01bb665121ac96486e5804b03bd799e69e34b10cdba60ee1798b65f681fc5574",
+              "bytes": 11232
+            },
+            "value": 38
+          },
+          {
+            "id": "digit-39",
+            "ne": "३९",
+            "roman": "unancālīs",
+            "meaning": "39",
+            "detail": "",
+            "speech": "उनन्चालीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8de9fa70866d06ff973e96191a335ec91afd7697c5b8772a956bd2e088b7db6a.mp3",
+              "sha256": "8de9fa70866d06ff973e96191a335ec91afd7697c5b8772a956bd2e088b7db6a",
+              "bytes": 11232
+            },
+            "value": 39
+          },
+          {
+            "id": "digit-40",
+            "ne": "४०",
+            "roman": "cālīs",
+            "meaning": "40",
+            "detail": "",
+            "speech": "चालीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5d9da14c24d20c232846c751df369fa01223afdb42efde6b165e99056d1ca005.mp3",
+              "sha256": "5d9da14c24d20c232846c751df369fa01223afdb42efde6b165e99056d1ca005",
+              "bytes": 11232
+            },
+            "value": 40
+          },
+          {
+            "id": "digit-41",
+            "ne": "४१",
+            "roman": "ekacālīs",
+            "meaning": "41",
+            "detail": "",
+            "speech": "एकचालीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-7f6bd155f0b81577a0bd194f773da3c582fd162a9b6a5650d86674ac25b665f9.mp3",
+              "sha256": "7f6bd155f0b81577a0bd194f773da3c582fd162a9b6a5650d86674ac25b665f9",
+              "bytes": 11232
+            },
+            "value": 41
+          },
+          {
+            "id": "digit-42",
+            "ne": "४२",
+            "roman": "bayālīs",
+            "meaning": "42",
+            "detail": "",
+            "speech": "बयालीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2b607f16bb82d9a62c2865ba7241a2c1e1d24c864563eb90bdf36114fdf2a27d.mp3",
+              "sha256": "2b607f16bb82d9a62c2865ba7241a2c1e1d24c864563eb90bdf36114fdf2a27d",
+              "bytes": 11232
+            },
+            "value": 42
+          },
+          {
+            "id": "digit-43",
+            "ne": "४३",
+            "roman": "tricālīs",
+            "meaning": "43",
+            "detail": "",
+            "speech": "त्रिचालीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-791f2c543b4b8132679362888f783cf71170c679bd48778c2f5ce352b9b0eeec.mp3",
+              "sha256": "791f2c543b4b8132679362888f783cf71170c679bd48778c2f5ce352b9b0eeec",
+              "bytes": 11232
+            },
+            "value": 43
+          },
+          {
+            "id": "digit-44",
+            "ne": "४४",
+            "roman": "cavālīs",
+            "meaning": "44",
+            "detail": "",
+            "speech": "चवालीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2ed7c07f8716c842178b4ab9a296eef35719e1b74c82b4483e270250a3b1a2ce.mp3",
+              "sha256": "2ed7c07f8716c842178b4ab9a296eef35719e1b74c82b4483e270250a3b1a2ce",
+              "bytes": 11232
+            },
+            "value": 44
+          },
+          {
+            "id": "digit-45",
+            "ne": "४५",
+            "roman": "paĩtālīs",
+            "meaning": "45",
+            "detail": "",
+            "speech": "पैँतालीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9fa70805d95c18e7aa6dbf5dbeb78aab075d15d1298f65704edea4a87ad0a570.mp3",
+              "sha256": "9fa70805d95c18e7aa6dbf5dbeb78aab075d15d1298f65704edea4a87ad0a570",
+              "bytes": 11232
+            },
+            "value": 45
+          },
+          {
+            "id": "digit-46",
+            "ne": "४६",
+            "roman": "chayālīs",
+            "meaning": "46",
+            "detail": "",
+            "speech": "छयालीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8b7450c6505088905ad9bb2ec47891be93796f087c296686e83ab575037c6a85.mp3",
+              "sha256": "8b7450c6505088905ad9bb2ec47891be93796f087c296686e83ab575037c6a85",
+              "bytes": 11232
+            },
+            "value": 46
+          },
+          {
+            "id": "digit-47",
+            "ne": "४७",
+            "roman": "satacālīs",
+            "meaning": "47",
+            "detail": "",
+            "speech": "सतचालीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-0e90f97fc81a06b12d87b7968870ab6fbd4b09f0833695a4f866ffdc3d30b54e.mp3",
+              "sha256": "0e90f97fc81a06b12d87b7968870ab6fbd4b09f0833695a4f866ffdc3d30b54e",
+              "bytes": 11232
+            },
+            "value": 47
+          },
+          {
+            "id": "digit-48",
+            "ne": "४८",
+            "roman": "aṭhacālīs",
+            "meaning": "48",
+            "detail": "",
+            "speech": "अठचालीस",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1e509f212f44db9f660b77894436d7b5110d89beb29b87eb1557e994989d8828.mp3",
+              "sha256": "1e509f212f44db9f660b77894436d7b5110d89beb29b87eb1557e994989d8828",
+              "bytes": 11232
+            },
+            "value": 48
+          },
+          {
+            "id": "digit-49",
+            "ne": "४९",
+            "roman": "unancās",
+            "meaning": "49",
+            "detail": "",
+            "speech": "उनन्चास",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d3a4bb0e151d23f83ba6d17116481969f1dcece2f21941b3d8d932ba2ca02977.mp3",
+              "sha256": "d3a4bb0e151d23f83ba6d17116481969f1dcece2f21941b3d8d932ba2ca02977",
+              "bytes": 11232
+            },
+            "value": 49
+          },
+          {
+            "id": "digit-50",
+            "ne": "५०",
+            "roman": "pacās",
+            "meaning": "50",
+            "detail": "",
+            "speech": "पचास",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5036a3d995bf41045b4346d8a2f9d6caae2e61c308048b27bd64a48398c809d6.mp3",
+              "sha256": "5036a3d995bf41045b4346d8a2f9d6caae2e61c308048b27bd64a48398c809d6",
+              "bytes": 11232
+            },
+            "value": 50
+          },
+          {
+            "id": "digit-51",
+            "ne": "५१",
+            "roman": "ekāunna",
+            "meaning": "51",
+            "detail": "",
+            "speech": "एकाउन्न",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8dd4dfc87e747f4cccd459819f4d13df15c2964e565746e6ae1809dcb75d6ce9.mp3",
+              "sha256": "8dd4dfc87e747f4cccd459819f4d13df15c2964e565746e6ae1809dcb75d6ce9",
+              "bytes": 11232
+            },
+            "value": 51
+          },
+          {
+            "id": "digit-52",
+            "ne": "५२",
+            "roman": "bāunna",
+            "meaning": "52",
+            "detail": "",
+            "speech": "बाउन्न",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-750e4c460df6489d201e4e96335cfa1028e45f7cee0c441752b4b57c23a72b3e.mp3",
+              "sha256": "750e4c460df6489d201e4e96335cfa1028e45f7cee0c441752b4b57c23a72b3e",
+              "bytes": 11232
+            },
+            "value": 52
+          },
+          {
+            "id": "digit-53",
+            "ne": "५३",
+            "roman": "tripanna",
+            "meaning": "53",
+            "detail": "",
+            "speech": "त्रिपन्न",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d401ff05d19caa27b6eb7bb85d4ffa27e13cfea00c2e9206f763517d616f8850.mp3",
+              "sha256": "d401ff05d19caa27b6eb7bb85d4ffa27e13cfea00c2e9206f763517d616f8850",
+              "bytes": 11232
+            },
+            "value": 53
+          },
+          {
+            "id": "digit-54",
+            "ne": "५४",
+            "roman": "cavanna",
+            "meaning": "54",
+            "detail": "",
+            "speech": "चवन्न",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e4b099179e66befafd778f048aa7811b05f481d50b706bdeb8303016161eb436.mp3",
+              "sha256": "e4b099179e66befafd778f048aa7811b05f481d50b706bdeb8303016161eb436",
+              "bytes": 11232
+            },
+            "value": 54
+          },
+          {
+            "id": "digit-55",
+            "ne": "५५",
+            "roman": "pacapanna",
+            "meaning": "55",
+            "detail": "",
+            "speech": "पचपन्न",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4082321442e13293465448d933e382cb7046a28cb022afde21505e5fae69375d.mp3",
+              "sha256": "4082321442e13293465448d933e382cb7046a28cb022afde21505e5fae69375d",
+              "bytes": 11232
+            },
+            "value": 55
+          },
+          {
+            "id": "digit-56",
+            "ne": "५६",
+            "roman": "chapanna",
+            "meaning": "56",
+            "detail": "",
+            "speech": "छपन्न",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-ff00c15ee7e069d91b985cc9fd0c1c9a9326081168f57672d354f227a2e0f743.mp3",
+              "sha256": "ff00c15ee7e069d91b985cc9fd0c1c9a9326081168f57672d354f227a2e0f743",
+              "bytes": 11232
+            },
+            "value": 56
+          },
+          {
+            "id": "digit-57",
+            "ne": "५७",
+            "roman": "santāunna",
+            "meaning": "57",
+            "detail": "",
+            "speech": "सन्ताउन्न",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a987ec8ee90990f68b52a8e04819cd4e796a30e6edd605a3f43544ceae3801e2.mp3",
+              "sha256": "a987ec8ee90990f68b52a8e04819cd4e796a30e6edd605a3f43544ceae3801e2",
+              "bytes": 11232
+            },
+            "value": 57
+          },
+          {
+            "id": "digit-58",
+            "ne": "५८",
+            "roman": "anṭhāunna",
+            "meaning": "58",
+            "detail": "",
+            "speech": "अन्ठाउन्न",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-0/learning-09894522423972d72c13f40d1774a0b6a1765b905e0bddac9c6b96436c5c2b15.mp3",
+              "sha256": "09894522423972d72c13f40d1774a0b6a1765b905e0bddac9c6b96436c5c2b15",
+              "bytes": 11232
+            },
+            "value": 58
+          },
+          {
+            "id": "digit-59",
+            "ne": "५९",
+            "roman": "unansāṭhī",
+            "meaning": "59",
+            "detail": "",
+            "speech": "उनन्साठी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-6a6c50510bcca0920fe17f598cfd2a6752aec6c7d4e74ba513b350fe24220187.mp3",
+              "sha256": "6a6c50510bcca0920fe17f598cfd2a6752aec6c7d4e74ba513b350fe24220187",
+              "bytes": 11232
+            },
+            "value": 59
+          },
+          {
+            "id": "digit-60",
+            "ne": "६०",
+            "roman": "sāṭhī",
+            "meaning": "60",
+            "detail": "",
+            "speech": "साठी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e1ff1c75c1e16ab8612c3e0dd40f93399c4bf54aa46c6743ba3beae3d08b0c7b.mp3",
+              "sha256": "e1ff1c75c1e16ab8612c3e0dd40f93399c4bf54aa46c6743ba3beae3d08b0c7b",
+              "bytes": 11232
+            },
+            "value": 60
+          },
+          {
+            "id": "digit-61",
+            "ne": "६१",
+            "roman": "ekasaṭṭhī",
+            "meaning": "61",
+            "detail": "",
+            "speech": "एकसट्ठी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-dc5571a0b86703cc6e36eaa1819850441328595208d04d155cfec3fa5b6da2ff.mp3",
+              "sha256": "dc5571a0b86703cc6e36eaa1819850441328595208d04d155cfec3fa5b6da2ff",
+              "bytes": 11232
+            },
+            "value": 61
+          },
+          {
+            "id": "digit-62",
+            "ne": "६२",
+            "roman": "bayasaṭṭhī",
+            "meaning": "62",
+            "detail": "",
+            "speech": "बयसट्ठी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-90369b0262af2834110ed7fe83863d41b30073464ef7dc4ec7b33dcd16ed6d74.mp3",
+              "sha256": "90369b0262af2834110ed7fe83863d41b30073464ef7dc4ec7b33dcd16ed6d74",
+              "bytes": 11232
+            },
+            "value": 62
+          },
+          {
+            "id": "digit-63",
+            "ne": "६३",
+            "roman": "trisaṭṭhī",
+            "meaning": "63",
+            "detail": "",
+            "speech": "त्रिसट्ठी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-7/learning-70178acbbd34b1580e70965635d52945d4206aa248ce2c7d4f4a50faeaed2710.mp3",
+              "sha256": "70178acbbd34b1580e70965635d52945d4206aa248ce2c7d4f4a50faeaed2710",
+              "bytes": 11232
+            },
+            "value": 63
+          },
+          {
+            "id": "digit-64",
+            "ne": "६४",
+            "roman": "causaṭṭhī",
+            "meaning": "64",
+            "detail": "",
+            "speech": "चौसट्ठी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-25479bcf7705836b659ebccecb0c58de022a66561785a3b0b6dca36aae725ba0.mp3",
+              "sha256": "25479bcf7705836b659ebccecb0c58de022a66561785a3b0b6dca36aae725ba0",
+              "bytes": 11232
+            },
+            "value": 64
+          },
+          {
+            "id": "digit-65",
+            "ne": "६५",
+            "roman": "paĩsaṭṭhī",
+            "meaning": "65",
+            "detail": "",
+            "speech": "पैँसट्ठी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5b89363fad21a468c2c05dacb8a38707e3c8d667d7c307ba59bc91b905dad851.mp3",
+              "sha256": "5b89363fad21a468c2c05dacb8a38707e3c8d667d7c307ba59bc91b905dad851",
+              "bytes": 11232
+            },
+            "value": 65
+          },
+          {
+            "id": "digit-66",
+            "ne": "६६",
+            "roman": "chayasaṭṭhī",
+            "meaning": "66",
+            "detail": "",
+            "speech": "छयसट्ठी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f1af2c82771a9929aaa384b8d389ca0d93afe7467e9ea2cba9e431e2294bdc1d.mp3",
+              "sha256": "f1af2c82771a9929aaa384b8d389ca0d93afe7467e9ea2cba9e431e2294bdc1d",
+              "bytes": 11232
+            },
+            "value": 66
+          },
+          {
+            "id": "digit-67",
+            "ne": "६७",
+            "roman": "satasaṭṭhī",
+            "meaning": "67",
+            "detail": "",
+            "speech": "सतसट्ठी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9956d3e0dd8448d14120d3d68025dd9f3c580596c16765cfd5b2990d7c1d8d87.mp3",
+              "sha256": "9956d3e0dd8448d14120d3d68025dd9f3c580596c16765cfd5b2990d7c1d8d87",
+              "bytes": 11232
+            },
+            "value": 67
+          },
+          {
+            "id": "digit-68",
+            "ne": "६८",
+            "roman": "aṭhasaṭṭhī",
+            "meaning": "68",
+            "detail": "",
+            "speech": "अठसट्ठी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-64d693dc96d5fd49324d086f8ecf440e838dcc2398b7c13ac8d6e8bdc59984e5.mp3",
+              "sha256": "64d693dc96d5fd49324d086f8ecf440e838dcc2398b7c13ac8d6e8bdc59984e5",
+              "bytes": 11232
+            },
+            "value": 68
+          },
+          {
+            "id": "digit-69",
+            "ne": "६९",
+            "roman": "unansattarī",
+            "meaning": "69",
+            "detail": "",
+            "speech": "उनन्सत्तरी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8f517dd61897e18b6dc44cfb1ad6188078ab289712e38fa7d9ee1a1c52dd50fb.mp3",
+              "sha256": "8f517dd61897e18b6dc44cfb1ad6188078ab289712e38fa7d9ee1a1c52dd50fb",
+              "bytes": 11232
+            },
+            "value": 69
+          },
+          {
+            "id": "digit-70",
+            "ne": "७०",
+            "roman": "sattarī",
+            "meaning": "70",
+            "detail": "",
+            "speech": "सत्तरी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4bda38203f8f2096e721ad3d619e6984c0ead3565619fcd6f3019b653c5d2d02.mp3",
+              "sha256": "4bda38203f8f2096e721ad3d619e6984c0ead3565619fcd6f3019b653c5d2d02",
+              "bytes": 11232
+            },
+            "value": 70
+          },
+          {
+            "id": "digit-71",
+            "ne": "७१",
+            "roman": "ekahattar",
+            "meaning": "71",
+            "detail": "",
+            "speech": "एकहत्तर",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4ea24c4a3d3cd1f21d4378bdb2e3e2859814d4dd44b1e3699e37f8fb2a3a2d0c.mp3",
+              "sha256": "4ea24c4a3d3cd1f21d4378bdb2e3e2859814d4dd44b1e3699e37f8fb2a3a2d0c",
+              "bytes": 11232
+            },
+            "value": 71
+          },
+          {
+            "id": "digit-72",
+            "ne": "७२",
+            "roman": "bahattar",
+            "meaning": "72",
+            "detail": "",
+            "speech": "बहत्तर",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f06bfc6171b696dac3ae224814e26b4deeb10b5d9a6e08e65ecaf57eb4d58435.mp3",
+              "sha256": "f06bfc6171b696dac3ae224814e26b4deeb10b5d9a6e08e65ecaf57eb4d58435",
+              "bytes": 11232
+            },
+            "value": 72
+          },
+          {
+            "id": "digit-73",
+            "ne": "७३",
+            "roman": "trihattar",
+            "meaning": "73",
+            "detail": "",
+            "speech": "त्रिहत्तर",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e7d00583b3ca737528f0643008823399673f0f218d5a2dd3d38159a4d131b523.mp3",
+              "sha256": "e7d00583b3ca737528f0643008823399673f0f218d5a2dd3d38159a4d131b523",
+              "bytes": 11232
+            },
+            "value": 73
+          },
+          {
+            "id": "digit-74",
+            "ne": "७४",
+            "roman": "cauhattar",
+            "meaning": "74",
+            "detail": "",
+            "speech": "चौहत्तर",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f4f773f5505ceb24d8e2cc9ba6489350c3d6785287283fcb3e21bac2a91eff4a.mp3",
+              "sha256": "f4f773f5505ceb24d8e2cc9ba6489350c3d6785287283fcb3e21bac2a91eff4a",
+              "bytes": 11232
+            },
+            "value": 74
+          },
+          {
+            "id": "digit-75",
+            "ne": "७५",
+            "roman": "pacahattar",
+            "meaning": "75",
+            "detail": "",
+            "speech": "पचहत्तर",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-e/learning-e1c99a47dc1332a751af6dc82500b3b7c11a1ba0df1371ea22d19e0dc3cc357d.mp3",
+              "sha256": "e1c99a47dc1332a751af6dc82500b3b7c11a1ba0df1371ea22d19e0dc3cc357d",
+              "bytes": 11232
+            },
+            "value": 75
+          },
+          {
+            "id": "digit-76",
+            "ne": "७६",
+            "roman": "chayahattar",
+            "meaning": "76",
+            "detail": "",
+            "speech": "छयहत्तर",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4548061a9131605294bb6f22cff052eec18be52ee7f32d8b7c15943fb720f685.mp3",
+              "sha256": "4548061a9131605294bb6f22cff052eec18be52ee7f32d8b7c15943fb720f685",
+              "bytes": 11232
+            },
+            "value": 76
+          },
+          {
+            "id": "digit-77",
+            "ne": "७७",
+            "roman": "satahattar",
+            "meaning": "77",
+            "detail": "",
+            "speech": "सतहत्तर",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-36fcd240a90d96366f45220afcebb85aa6e2015176f11a33635e23e7427c6d8b.mp3",
+              "sha256": "36fcd240a90d96366f45220afcebb85aa6e2015176f11a33635e23e7427c6d8b",
+              "bytes": 11232
+            },
+            "value": 77
+          },
+          {
+            "id": "digit-78",
+            "ne": "७८",
+            "roman": "aṭhahattar",
+            "meaning": "78",
+            "detail": "",
+            "speech": "अठहत्तर",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c644689081af938f33fa992c6bda2036cddb3459311c67a698edd7e23aac13e2.mp3",
+              "sha256": "c644689081af938f33fa992c6bda2036cddb3459311c67a698edd7e23aac13e2",
+              "bytes": 11232
+            },
+            "value": 78
+          },
+          {
+            "id": "digit-79",
+            "ne": "७९",
+            "roman": "unāsī",
+            "meaning": "79",
+            "detail": "",
+            "speech": "उनासी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-b/learning-b837dd5270bc05c6894695cace712caec6a2bc7e3d5aabdca3ba26b5e2e297e0.mp3",
+              "sha256": "b837dd5270bc05c6894695cace712caec6a2bc7e3d5aabdca3ba26b5e2e297e0",
+              "bytes": 11232
+            },
+            "value": 79
+          },
+          {
+            "id": "digit-80",
+            "ne": "८०",
+            "roman": "asī",
+            "meaning": "80",
+            "detail": "",
+            "speech": "असी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-ded5fbfb87f0e68b5d7dd3b451e41b9706883b7482861512ab556658330bca65.mp3",
+              "sha256": "ded5fbfb87f0e68b5d7dd3b451e41b9706883b7482861512ab556658330bca65",
+              "bytes": 11232
+            },
+            "value": 80
+          },
+          {
+            "id": "digit-81",
+            "ne": "८१",
+            "roman": "ekāsī",
+            "meaning": "81",
+            "detail": "",
+            "speech": "एकासी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-97142b8b69b860277e25ee4ef90c82c37f78e657f813ae0156dd214fa371d686.mp3",
+              "sha256": "97142b8b69b860277e25ee4ef90c82c37f78e657f813ae0156dd214fa371d686",
+              "bytes": 11232
+            },
+            "value": 81
+          },
+          {
+            "id": "digit-82",
+            "ne": "८२",
+            "roman": "bayāsī",
+            "meaning": "82",
+            "detail": "",
+            "speech": "बयासी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-af49f08608024bd15e6f466cb430e37be9dedeeefcd0580bfae6feb9b535987b.mp3",
+              "sha256": "af49f08608024bd15e6f466cb430e37be9dedeeefcd0580bfae6feb9b535987b",
+              "bytes": 11232
+            },
+            "value": 82
+          },
+          {
+            "id": "digit-83",
+            "ne": "८३",
+            "roman": "triyāsī",
+            "meaning": "83",
+            "detail": "",
+            "speech": "त्रियासी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f100de2cc3820703c0f550765c14a027f836a4127dad66d0c379cb4dcde7758e.mp3",
+              "sha256": "f100de2cc3820703c0f550765c14a027f836a4127dad66d0c379cb4dcde7758e",
+              "bytes": 11232
+            },
+            "value": 83
+          },
+          {
+            "id": "digit-84",
+            "ne": "८४",
+            "roman": "caurāsī",
+            "meaning": "84",
+            "detail": "",
+            "speech": "चौरासी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-ffb0ce23f7d1f77d7452d147299645e4f3639b5e01efc29e31585d85eee56e05.mp3",
+              "sha256": "ffb0ce23f7d1f77d7452d147299645e4f3639b5e01efc29e31585d85eee56e05",
+              "bytes": 11232
+            },
+            "value": 84
+          },
+          {
+            "id": "digit-85",
+            "ne": "८५",
+            "roman": "pacāsī",
+            "meaning": "85",
+            "detail": "",
+            "speech": "पचासी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a0b4d4b8cbc17f1050e55be71b5eac072b3dcf72d9eedabbd15d0e7089832c0b.mp3",
+              "sha256": "a0b4d4b8cbc17f1050e55be71b5eac072b3dcf72d9eedabbd15d0e7089832c0b",
+              "bytes": 11232
+            },
+            "value": 85
+          },
+          {
+            "id": "digit-86",
+            "ne": "८६",
+            "roman": "chayāsī",
+            "meaning": "86",
+            "detail": "",
+            "speech": "छयासी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4b2697637cde3a6667c9287d41a242238eec1529e241a874fbdd42b5e836d83b.mp3",
+              "sha256": "4b2697637cde3a6667c9287d41a242238eec1529e241a874fbdd42b5e836d83b",
+              "bytes": 11232
+            },
+            "value": 86
+          },
+          {
+            "id": "digit-87",
+            "ne": "८७",
+            "roman": "satāsī",
+            "meaning": "87",
+            "detail": "",
+            "speech": "सतासी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-6/learning-678bd5365856feac632a79c4ee454e3ab84ef2e4cef3245ee3a0af65d23619bf.mp3",
+              "sha256": "678bd5365856feac632a79c4ee454e3ab84ef2e4cef3245ee3a0af65d23619bf",
+              "bytes": 11232
+            },
+            "value": 87
+          },
+          {
+            "id": "digit-88",
+            "ne": "८८",
+            "roman": "aṭhāsī",
+            "meaning": "88",
+            "detail": "",
+            "speech": "अठासी",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4747d461489fc66335782b6c206f49850017bae0ae40cfa61c3996c70299f4e1.mp3",
+              "sha256": "4747d461489fc66335782b6c206f49850017bae0ae40cfa61c3996c70299f4e1",
+              "bytes": 11232
+            },
+            "value": 88
+          },
+          {
+            "id": "digit-89",
+            "ne": "८९",
+            "roman": "unānnabbe",
+            "meaning": "89",
+            "detail": "",
+            "speech": "उनान्नब्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-115bb6b52ddc564cf0ea8a763acad7b34881a2f4495765f3f787d38f73cd841e.mp3",
+              "sha256": "115bb6b52ddc564cf0ea8a763acad7b34881a2f4495765f3f787d38f73cd841e",
+              "bytes": 11232
+            },
+            "value": 89
+          },
+          {
+            "id": "digit-90",
+            "ne": "९०",
+            "roman": "nabbe",
+            "meaning": "90",
+            "detail": "",
+            "speech": "नब्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-5/learning-5108c0a7b92ef58055b36502b5b08b44def6bac0fe68f7e5c286a3fcc3cec871.mp3",
+              "sha256": "5108c0a7b92ef58055b36502b5b08b44def6bac0fe68f7e5c286a3fcc3cec871",
+              "bytes": 11232
+            },
+            "value": 90
+          },
+          {
+            "id": "digit-91",
+            "ne": "९१",
+            "roman": "ekānabbe",
+            "meaning": "91",
+            "detail": "",
+            "speech": "एकानब्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-1b6ffbe9abf6d0b55480a573700982d12f0ec13f1bceebd8868c6a81ae40b88c.mp3",
+              "sha256": "1b6ffbe9abf6d0b55480a573700982d12f0ec13f1bceebd8868c6a81ae40b88c",
+              "bytes": 11232
+            },
+            "value": 91
+          },
+          {
+            "id": "digit-92",
+            "ne": "९२",
+            "roman": "bayānabbe",
+            "meaning": "92",
+            "detail": "",
+            "speech": "बयानब्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-c/learning-c9b8ccd98f4513822c1860251341ac7719bb83e0d097427c362031dbcc5428eb.mp3",
+              "sha256": "c9b8ccd98f4513822c1860251341ac7719bb83e0d097427c362031dbcc5428eb",
+              "bytes": 11232
+            },
+            "value": 92
+          },
+          {
+            "id": "digit-93",
+            "ne": "९३",
+            "roman": "triyānabbe",
+            "meaning": "93",
+            "detail": "",
+            "speech": "त्रियानब्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-118cb5ebfbe4ec556edd42c3ad1aad9928ae04990b470e1cbefe4c9fd34ae7f3.mp3",
+              "sha256": "118cb5ebfbe4ec556edd42c3ad1aad9928ae04990b470e1cbefe4c9fd34ae7f3",
+              "bytes": 11232
+            },
+            "value": 93
+          },
+          {
+            "id": "digit-94",
+            "ne": "९४",
+            "roman": "caurānabbe",
+            "meaning": "94",
+            "detail": "",
+            "speech": "चौरानब्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4a893fb6d151bb21d4125a3a6dd456b2c79cf8a08bb6cccb8798bfecfe67fbe7.mp3",
+              "sha256": "4a893fb6d151bb21d4125a3a6dd456b2c79cf8a08bb6cccb8798bfecfe67fbe7",
+              "bytes": 11232
+            },
+            "value": 94
+          },
+          {
+            "id": "digit-95",
+            "ne": "९५",
+            "roman": "pancānabbe",
+            "meaning": "95",
+            "detail": "",
+            "speech": "पन्चानब्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-f4fe03716492bf8ae8efbdcb83b482a313c8996901c5b1ed150abc4245a14b21.mp3",
+              "sha256": "f4fe03716492bf8ae8efbdcb83b482a313c8996901c5b1ed150abc4245a14b21",
+              "bytes": 11232
+            },
+            "value": 95
+          },
+          {
+            "id": "digit-96",
+            "ne": "९६",
+            "roman": "chayānabbe",
+            "meaning": "96",
+            "detail": "",
+            "speech": "छयानब्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-9/learning-9aefd8c3be0a9097936e0f7a50903f666ded4fc3a232f5330e42626a313b31f8.mp3",
+              "sha256": "9aefd8c3be0a9097936e0f7a50903f666ded4fc3a232f5330e42626a313b31f8",
+              "bytes": 11232
+            },
+            "value": 96
+          },
+          {
+            "id": "digit-97",
+            "ne": "९७",
+            "roman": "santānabbe",
+            "meaning": "97",
+            "detail": "",
+            "speech": "सन्तानब्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-8/learning-8e4f39408ad675c12a2e7b6098f27d24a12859d810f371d81d6ab13f6fff9578.mp3",
+              "sha256": "8e4f39408ad675c12a2e7b6098f27d24a12859d810f371d81d6ab13f6fff9578",
+              "bytes": 11232
+            },
+            "value": 97
+          },
+          {
+            "id": "digit-98",
+            "ne": "९८",
+            "roman": "anṭhānabbe",
+            "meaning": "98",
+            "detail": "",
+            "speech": "अन्ठानब्बे",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d463b8e80f6a48f1b55a3d0dc1c4f8c858a9d953ecf8b259bddf7d99c3b1607f.mp3",
+              "sha256": "d463b8e80f6a48f1b55a3d0dc1c4f8c858a9d953ecf8b259bddf7d99c3b1607f",
+              "bytes": 11232
+            },
+            "value": 98
+          },
+          {
+            "id": "digit-99",
+            "ne": "९९",
+            "roman": "unānsay",
+            "meaning": "99",
+            "detail": "",
+            "speech": "उनान्सय",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-3/learning-3234911f342b5bce69c49d24c8ffabfd0d792740df5bc3f760a454d5df31b6f2.mp3",
+              "sha256": "3234911f342b5bce69c49d24c8ffabfd0d792740df5bc3f760a454d5df31b6f2",
+              "bytes": 11232
+            },
+            "value": 99
+          },
+          {
+            "id": "digit-100",
+            "ne": "१००",
+            "roman": "ek say",
+            "meaning": "100",
+            "detail": "",
+            "speech": "एक सय",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-d/learning-d1b3ccf20b79bc7cc508f526635ca61f90433ce1bd29b373340a9aa738688991.mp3",
+              "sha256": "d1b3ccf20b79bc7cc508f526635ca61f90433ce1bd29b373340a9aa738688991",
+              "bytes": 11232
+            },
+            "value": 100
+          },
+          {
+            "id": "digit-1000",
+            "ne": "१०००",
+            "roman": "ek hajār",
+            "meaning": "1,000 · one thousand",
+            "detail": "",
+            "speech": "एक हजार",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-f/learning-fe9a1bd2c3177204d4b1f9de0e5727ad0bfd412a821faa1841d1d31f15c6d694.mp3",
+              "sha256": "fe9a1bd2c3177204d4b1f9de0e5727ad0bfd412a821faa1841d1d31f15c6d694",
+              "bytes": 11232
+            },
+            "value": 1000
+          },
+          {
+            "id": "digit-10000",
+            "ne": "१००००",
+            "roman": "das hajār",
+            "meaning": "10,000 · ten thousand",
+            "detail": "",
+            "speech": "दस हजार",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-1/learning-123b7681a51dd129cde717287fbe13eea95e3d82c880d9209e5bfd32c3361dd4.mp3",
+              "sha256": "123b7681a51dd129cde717287fbe13eea95e3d82c880d9209e5bfd32c3361dd4",
+              "bytes": 11232
+            },
+            "value": 10000
+          },
+          {
+            "id": "digit-100000",
+            "ne": "१०००००",
+            "roman": "ek lākh",
+            "meaning": "100,000 · one lakh",
+            "detail": "",
+            "speech": "एक लाख",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-a/learning-a7435fd8245ef56b92db8dc5e586b9a9274ccad126bcf6653fde2f4843934e90.mp3",
+              "sha256": "a7435fd8245ef56b92db8dc5e586b9a9274ccad126bcf6653fde2f4843934e90",
+              "bytes": 11232
+            },
+            "value": 100000
+          },
+          {
+            "id": "digit-1000000",
+            "ne": "१००००००",
+            "roman": "das lākh",
+            "meaning": "1,000,000 · ten lakh",
+            "detail": "",
+            "speech": "दस लाख",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-4/learning-4ba7c6f518a1b108287aa9eacb7b43ee26ad21173acf82ec076bb101100a2408.mp3",
+              "sha256": "4ba7c6f518a1b108287aa9eacb7b43ee26ad21173acf82ec076bb101100a2408",
+              "bytes": 11232
+            },
+            "value": 1000000
+          },
+          {
+            "id": "digit-10000000",
+            "ne": "१०००००००",
+            "roman": "ek karoḍ",
+            "meaning": "10,000,000 · one crore",
+            "detail": "",
+            "speech": "एक करोड",
+            "audio": {
+              "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-learning-2/learning-2d89d65a419772c40a6b1c7193dc4f19e4f20ec277556aa9c32720ab403d9d34.mp3",
+              "sha256": "2d89d65a419772c40a6b1c7193dc4f19e4f20ec277556aa9c32720ab403d9d34",
+              "bytes": 11232
+            },
+            "value": 10000000
           }
         ]
       }

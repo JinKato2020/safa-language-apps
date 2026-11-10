@@ -27,6 +27,8 @@ type I18nValue = {
   lang: Lang;
   setLang: (l: Lang) => void;
   t: (key: string, params?: Record<string, string | number>) => string;
+  /** Incremental migration of existing bilingual course copy to keyed locales. */
+  copy: (key: string, ja: string, en: string, params?: Record<string, string | number>) => string;
   /** 利用可能な言語コード一覧 (translations のキー)。言語選択UIの動的生成に使う。 */
   langs: Lang[];
 };
@@ -116,10 +118,17 @@ export function I18nProvider({ children, translations, fallbackLang, selectableL
     };
   }, [lang, translations, fallbackLang]);
 
+  const copy = useMemo(() => (key: string, ja: string, en: string, params?: Record<string, string | number>): string => {
+    if (lang === 'ja') return ja;
+    if (lang === 'en') return en;
+    const localized = pick(translations[lang], `courseCopy.${key}`);
+    return localized == null ? (lang === 'ko' ? en : ja) : interpolate(localized, params);
+  }, [lang, translations]);
+
   if (!loaded) return null;
 
   return (
-    <I18nCtx.Provider value={{ lang, setLang, t, langs: selectable }}>
+    <I18nCtx.Provider value={{ lang, setLang, t, copy, langs: selectable }}>
       {children}
     </I18nCtx.Provider>
   );
@@ -128,7 +137,7 @@ export function I18nProvider({ children, translations, fallbackLang, selectableL
 export function useI18n(): I18nValue {
   const ctx = useContext(I18nCtx);
   if (!ctx) {
-    return { lang: 'ja', setLang: () => {}, t: (k) => k, langs: ['ja'] };
+    return { lang: 'ja', setLang: () => {}, t: (k) => k, copy: (_k, ja) => ja, langs: ['ja'] };
   }
   return ctx;
 }

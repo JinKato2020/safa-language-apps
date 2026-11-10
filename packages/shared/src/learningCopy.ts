@@ -1,4 +1,11 @@
-export function learningCopy(lang: string) { return lang === 'en' ? {
+export function learningCopy(lang: string) { return lang === 'ko' ? {
+  start: '처음 시작하기', path: '학습 길잡이', resume: '이어서 학습하기', review: '최대 5문제 복습', due: '지금 복습할 문장', none: '지금 복습할 문장이 없어요. 새 단원을 공부하거나 내일 다시 확인해 보세요.',
+  guide: '설명 읽기', practice: '이 단계 시작하기', intro: '먼저: 소리와 읽는 법', introDone: '확인하고 학습 시작', completed: '학습한 단계', next: '다음 추천', again: '다시 연습', known: '할 수 있어요',
+  rating: '답을 확인하고 스스로 점검해 보세요.', saved: '이 기기에 저장됨', error: '학습 기록을 저장하거나 불러오지 못했어요. 다시 시도해 주세요.', retry: '다시 시도', loading: '학습 기록을 불러오는 중…',
+  finish: '이번 연습을 마쳤어요', finishBody: '「다시 연습」을 선택한 문장은 복습 목록에 남아요. 「할 수 있어요」를 선택한 문장은 연습을 거듭하면 1일, 3일, 7일 뒤에 다시 나와요.', back: '학습으로 돌아가기',
+  reveal: '답 보기', doneCount: '개 단계 학습', session: '짧은 연습', unavailable: '예문이 변경되었어요. 새 연습을 열어 주세요.', saving: '저장 중…',
+  progressNote: '도움을 받으며 연습한 기록과 스스로 떠올린 기록을 따로 저장해요.', refresh: '복습 목록 새로고침', continueLabel: '계속',
+} : lang === 'en' ? {
   start: 'Start here', path: 'Your learning path', resume: 'Continue where you left off', review: 'Review 5 or fewer', due: 'Ready for review', none: 'No reviews due. Try a lesson or come back tomorrow.',
   guide: 'Read the guide', practice: 'Start this step', intro: 'First: sounds and reading', introDone: 'Reviewed — start learning', completed: 'Explored', next: 'Recommended next', again: 'Try again', known: 'I could do it',
   rating: 'Check the answer, then rate yourself.', saved: 'Saved on this device', error: 'Progress could not be saved or loaded. Please retry.', retry: 'Retry', loading: 'Loading progress…',

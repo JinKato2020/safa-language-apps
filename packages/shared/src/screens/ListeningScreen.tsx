@@ -92,8 +92,8 @@ function PauseIcon({ size = 30 }: { size?: number }) {
 
 export default function ListeningScreen() {
   const contentNames = useAppData().CONTENT_NAMES;
-  const { getExamples, getGrammarExamples, THEMES, GRAMMAR_THEMES, JP_READING, nativeLang } = useAppData();
-  const l1 = getL1(nativeLang);
+  const { getExamples, getGrammarExamples, THEMES, GRAMMAR_THEMES, JP_READING, nativeLang, targetLang } = useAppData();
+  const l1 = getL1(nativeLang, targetLang);
   const route = useRoute<R>();
   const { t, lang } = useI18n();
   const isJaUI = lang === 'ja';
@@ -158,7 +158,7 @@ export default function ListeningScreen() {
     <View style={[styles.card, activeLang === 'ne' && styles.cardNeActive]}>
       <Text style={[styles.tag, activeLang === 'ne' && styles.tagNeActive, ss(11)]}>{t('listening.tagNe')}</Text>
       <Text style={[styles.textNe, ss(26, 38)]}>{ex.ne}</Text>
-      {isJaUI && romaji && l1.romanizeSentence ? <Text style={[styles.romaji, ss(14, 22)]}>{l1.romanizeSentence(ex.ne)}</Text> : null}
+      {(targetLang === 'ne' || isJaUI) && romaji && l1.romanizeSentence ? <Text style={[styles.romaji, ss(14, 22)]}>{l1.romanizeSentence(ex.ne)}</Text> : null}
     </View>
   );
 

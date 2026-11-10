@@ -29,7 +29,7 @@ export default function ThemeScreen() {
   const ent = useEntitlement();
   const grammarGuide = useGrammarGuide();
   const navigation = useNavigation<Nav>();
-  const { t, lang } = useI18n();
+  const { t, lang , copy: trCopy } = useI18n();
   const ss = useScaleStyle();
   const { mode, source, guidesOnHome, composition, puzzleOnly, grammarFirst, levelId } = useRoute<R>().params;
   const heroSrc = useHeroImage(composition ? 'conversation' : mode);
@@ -60,7 +60,7 @@ export default function ThemeScreen() {
   let headerText: string;
   if (isGrammarMode) {
     headerText = guidesOnHome
-      ? (lang === 'en' ? 'Choose a theme to practise its example sentences with audio.' : 'テーマを選んで、例題と音声で文法を身につけよう。')
+      ? (trCopy('c_fb6fd62a5745', 'テーマを選んで、例題と音声で文法を身につけよう。', 'Choose a theme to practise its example sentences with audio.'))
       : t('themeScreen.headerGrammar');
   } else if (isGrammarListen || mode === 'listening') {
     headerText = t('themeScreen.headerListen');
@@ -131,7 +131,7 @@ export default function ThemeScreen() {
           <Text style={[styles.modeTitle, ss(20)]}>{modeTitle}</Text>
           <Text style={[styles.desc, ss(14, 21)]}>{headerText}</Text>
           {(composition || puzzleOnly) && <View style={styles.sourceToggle}>{(['grammar', 'conversation'] as const).map(value => <Pressable key={value} testID={`${puzzleOnly ? 'puzzle' : 'composition'}-${value}`} accessibilityRole="tab" accessibilityState={{ selected: mode === value }} style={[styles.sourceTab, mode === value && styles.sourceTabOn]} onPress={() => navigation.setParams({ mode: value })}><Text style={[styles.sourceTabText, mode === value && styles.sourceTabTextOn, ss(14)]}>{t(`nav.${value}`)}</Text></Pressable>)}</View>}
-          {puzzleOnly && learning?.error && <Text accessibilityRole="alert" style={[styles.desc, { color: '#9f1239' }]}>{lang === 'en' ? 'Could not save. Please tap the theme to try again.' : '保存できませんでした。テーマをタップして再試行してください。'}</Text>}
+          {puzzleOnly && learning?.error && <Text accessibilityRole="alert" style={[styles.desc, { color: '#9f1239' }]}>{trCopy('c_10a188e49af5', '保存できませんでした。テーマをタップして再試行してください。', 'Could not save. Please tap the theme to try again.')}</Text>}
           {isListening && <View style={styles.sourceToggle}>
             {(grammarFirst ? ['grammar', 'conversation'] as const : ['conversation', 'grammar'] as const).map(value => <Pressable key={value} testID={`listen-source-${value}`} accessibilityRole="tab" accessibilityState={{ selected: listenSource === value }} style={[styles.sourceTab, listenSource === value && styles.sourceTabOn]} onPress={() => navigation.setParams({ source: value })}>
               <Text style={[styles.sourceTabText, listenSource === value && styles.sourceTabTextOn, ss(14)]}>{t(value === 'grammar' ? 'listenSource.grammarName' : 'listenSource.convName')}</Text>
@@ -182,7 +182,7 @@ export default function ThemeScreen() {
             {/* 表示番号はリスト上の位置(=テーマ並び順)。データキーは item.id を維持。 */}
             <Text style={styles.num}>{String(index + 1).padStart(2, '0')}</Text>
             <Text style={[styles.name, ss(14)]}>{withoutThemePrefix(getThemeDisplayName(item.id))}</Text>
-            {puzzleOnly && <Text style={[styles.num, { width: undefined }]}>{isGrammarMode ? LEARNING_PATH?.steps.find(step => step.guideThemeId === item.id)?.items.length : conversationPuzzleItems(data, item.id, selectedLevel).length}{lang === 'en' ? ' puzzles' : '問'}</Text>}
+            {puzzleOnly && <Text style={[styles.num, { width: undefined }]}>{isGrammarMode ? LEARNING_PATH?.steps.find(step => step.guideThemeId === item.id)?.items.length : conversationPuzzleItems(data, item.id, selectedLevel).length}{trCopy('c_7853465b804b', '問', ' puzzles')}</Text>}
             {locked && <LockBadge />}
             {showGuide && (
               <Pressable
@@ -190,7 +190,7 @@ export default function ThemeScreen() {
                 onPress={() => navigation.navigate('GrammarGuide', { themeId: item.id, title: getThemeDisplayName(item.id) })}
                 hitSlop={6}
               >
-                <Text style={[styles.guideBtnText, ss(12)]}>{lang === 'en' ? 'Guide' : '教材'}</Text>
+                <Text style={[styles.guideBtnText, ss(12)]}>{trCopy('c_402678d91498', '教材', 'Guide')}</Text>
               </Pressable>
             )}
           </Pressable>

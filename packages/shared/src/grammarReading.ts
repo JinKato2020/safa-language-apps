@@ -2,7 +2,13 @@ import type { GuideBlock } from './grammarGuide';
 
 export type ReadingPart = 'rules' | 'reference' | 'examples' | 'breaks';
 export type ReadingGroup = { title: string; blocks: GuideBlock[]; subtitle?: string };
-export const readingCopy = (lang: string) => lang === 'ja' ? {
+export const readingCopy = (lang: string) => lang === 'ko' ? {
+  rules: '기본 규칙', reference: '활용·어휘', examples: '예문', breaks: '잠깐 쉬어가기', exercises: '연습 문제',
+  close: '학습 자료 닫기', practice: '예문과 음성 보기', empty: '학습 자료를 준비하고 있어요',
+  referenceHint: '항목을 열어 활용형과 단어의 쓰임을 확인해 보세요.',
+  examplesHint: '예문을 열면 읽는 법, 번역, 단어 뜻을 볼 수 있어요. 음성은 「예문과 음성 보기」에서 들을 수 있어요.',
+  extra: '보충·복습', open: '열기', hide: '닫기',
+} : lang === 'ja' ? {
   rules: '基本ルール', reference: '活用・語彙', examples: '例題', breaks: '一休み', exercises: '練習問題',
   close: '教材を閉じる', practice: '例題と音声を見る', empty: '教材を準備しています',
   referenceHint: '確かめたい項目を開くと、活用や語の使い分けを読めます。',
@@ -31,7 +37,7 @@ export function partitionLesson(blocks: GuideBlock[]): Record<ReadingPart, Guide
         if (/^\d+\.\s/.test(b.text)) inRules = true;
         else if (inRules) part = 'reference';
       } else {
-        part = /^(例題\d+|Exercise\s+\d+)$/i.test(b.text) ? 'examples' : 'reference';
+        part = /^(例題\d+|Exercise\s+\d+|예문\s*\d+|연습\s*\d+)$/i.test(b.text) ? 'examples' : 'reference';
       }
     }
     result[part].push(b);

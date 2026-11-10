@@ -68,6 +68,7 @@ export const L1_REGISTRY: Record<string, L1Config> = {
 };
 
 /** code に対応する L1 設定を返す。未知/未指定なら ne にフォールバック。 */
-export function getL1(code: string | undefined): L1Config {
-  return (code && L1_REGISTRY[code]) || L1_REGISTRY['ne'];
+export function getL1(code: string | undefined, targetLang?: string): L1Config {
+  const config = (code && L1_REGISTRY[code]) || L1_REGISTRY['ne'];
+  return targetLang === 'ne' ? { ...config, romanizeWord: toRomaji, romanizeSentence: sentenceToRomaji, romanizeSentenceWithDict: sentenceToRomajiWithDict } : config;
 }

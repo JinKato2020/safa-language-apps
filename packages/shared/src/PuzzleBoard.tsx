@@ -14,7 +14,7 @@ function DraggableWord({ token, selected, disabled, testID, register, tap, start
   start: (id: string, point: PuzzlePoint) => void; move: (point: PuzzlePoint) => void; finish: (point: PuzzlePoint) => void; cancel: () => void;
   earlier?: () => void; later?: () => void;
 }) {
-  const ss=useScaleStyle(),{lang}=useI18n(),en=lang==='en',active=useRef(false),suppressTap=useRef(false);
+  const ss=useScaleStyle(),{lang, copy: trCopy }=useI18n(),en=lang==='en',active=useRef(false),suppressTap=useRef(false);
   const callbacks=useRef({start,move,finish,cancel,disabled});callbacks.current={start,move,finish,cancel,disabled};
   const begin=(point: PuzzlePoint)=>{if(active.current||callbacks.current.disabled)return;active.current=true;suppressTap.current=true;callbacks.current.start(token.id,point);};
   const end=(point: PuzzlePoint)=>{if(!active.current)return;active.current=false;callbacks.current.finish(point);};
@@ -30,8 +30,8 @@ function DraggableWord({ token, selected, disabled, testID, register, tap, start
     onShouldBlockNativeResponder:()=>active.current,
   }),[token.id]);
   return <View ref={register} collapsable={false} style={styles.tileWrap} {...responder.panHandlers} onTouchEnd={e=>end({x:e.nativeEvent.pageX,y:e.nativeEvent.pageY})} onTouchCancel={abort}>
-    <Pressable testID={testID} accessibilityRole="button" accessibilityLabel={selected?`${en?'Remove':'取り消す'}: ${token.text}`:token.text} accessibilityHint={en?'Tap to add or remove. Hold and drag to move.':'タップで追加・取り消し。長押ししてドラッグで移動。'} accessibilityState={{disabled}} disabled={disabled}
-      accessibilityActions={[{name:'activate'},...(earlier?[{name:'earlier',label:en?'Move earlier':'前へ移動'}]:[]),...(later?[{name:'later',label:en?'Move later':'後ろへ移動'}]:[])]}
+    <Pressable testID={testID} accessibilityRole="button" accessibilityLabel={selected?`${trCopy('c_498f3bd78d67', '取り消す', 'Remove')}: ${token.text}`:token.text} accessibilityHint={trCopy('c_49dc3b3897f7', 'タップで追加・取り消し。長押ししてドラッグで移動。', 'Tap to add or remove. Hold and drag to move.')} accessibilityState={{disabled}} disabled={disabled}
+      accessibilityActions={[{name:'activate'},...(earlier?[{name:'earlier',label:trCopy('c_da9485c9a6f6', '前へ移動', 'Move earlier')}]:[]),...(later?[{name:'later',label:trCopy('c_edc691a67452', '後ろへ移動', 'Move later')}]:[])]}
       onAccessibilityAction={e=>{if(e.nativeEvent.actionName==='earlier')earlier?.();else if(e.nativeEvent.actionName==='later')later?.();else if(e.nativeEvent.actionName==='activate')tap();}}
       onPressIn={()=>{suppressTap.current=false;}} onLongPress={e=>begin({x:e.nativeEvent.pageX,y:e.nativeEvent.pageY})} delayLongPress={180} onPress={()=>{if(!suppressTap.current)tap();}}
       style={[styles.tile,selected&&styles.chosen,disabled&&styles.used]}><Text style={[styles.nepali,ss(24,36)]}>{token.text}</Text>{!selected&&!!token.roman&&<Text style={[styles.muted,ss(13,21)]}>{token.roman}</Text>}</Pressable>
@@ -39,7 +39,7 @@ function DraggableWord({ token, selected, disabled, testID, register, tap, start
 }
 
 export function PuzzleBoard({tokens,order,limit,onChange,onDragging,disabled=false}:{tokens:Token[];order:string[];limit:number;onChange:(order:string[])=>void;onDragging:(active:boolean)=>void;disabled?:boolean}) {
-  const {lang}=useI18n(),en=lang==='en',ss=useScaleStyle();
+  const {lang, copy: trCopy }=useI18n(),en=lang==='en',ss=useScaleStyle();
   const root=useRef<View>(null),answer=useRef<View>(null),bank=useRef<View>(null),nodes=useRef(new Map<string,View>());
   const [drag,setDrag]=useState<Drag|null>(null),live=useRef<Drag|null>(null),generation=useRef(0),latestPoint=useRef<PuzzlePoint>({x:0,y:0});
   const byId=new Map(tokens.map(t=>[t.id,t]));
@@ -60,8 +60,8 @@ export function PuzzleBoard({tokens,order,limit,onChange,onDragging,disabled=fal
   const markerY=drag&&marker?marker.y:drag?drag.answer.y+44:0;
   return <View ref={root} collapsable={false} style={styles.board}>
     <View ref={answer} collapsable={false} testID="free-answer" style={[styles.answer,drag?.index!=null&&styles.dropActive]}>
-      <View style={styles.answerHeading}><Text style={[styles.answerLabel,ss(14,23)]}>{en?'YOUR SENTENCE':'組み立てる文'}</Text><Text style={[styles.muted,ss(13,22)]}>{order.length} / {limit}</Text></View>
-      <View style={styles.cards}>{order.length?order.map((id,i)=><DraggableWord key={id} token={byId.get(id)!} selected disabled={disabled} testID={`free-remove-${i}`} register={node=>{if(node)nodes.current.set(id,node);else nodes.current.delete(id);}} tap={()=>onChange(order.filter(value=>value!==id))} start={start} move={move} finish={finish} cancel={cancel} earlier={i>0?()=>onChange(insertPuzzleToken(order,id,i-1,limit)):undefined} later={i<order.length-1?()=>onChange(insertPuzzleToken(order,id,i+1,limit)):undefined}/>):<Text style={[styles.placeholder,ss(18,29)]}>{en?'Tap or drag words here':'語句をタップ、またはここへドラッグ'}</Text>}</View>
+      <View style={styles.answerHeading}><Text style={[styles.answerLabel,ss(14,23)]}>{trCopy('c_bd2e3d2922bd', '組み立てる文', 'YOUR SENTENCE')}</Text><Text style={[styles.muted,ss(13,22)]}>{order.length} / {limit}</Text></View>
+      <View style={styles.cards}>{order.length?order.map((id,i)=><DraggableWord key={id} token={byId.get(id)!} selected disabled={disabled} testID={`free-remove-${i}`} register={node=>{if(node)nodes.current.set(id,node);else nodes.current.delete(id);}} tap={()=>onChange(order.filter(value=>value!==id))} start={start} move={move} finish={finish} cancel={cancel} earlier={i>0?()=>onChange(insertPuzzleToken(order,id,i-1,limit)):undefined} later={i<order.length-1?()=>onChange(insertPuzzleToken(order,id,i+1,limit)):undefined}/>):<Text style={[styles.placeholder,ss(18,29)]}>{trCopy('c_11c0ed797c03', '語句をタップ、またはここへドラッグ', 'Tap or drag words here')}</Text>}</View>
     </View>
     <View ref={bank} collapsable={false} testID="free-bank" style={[styles.cards,styles.bank,drag?.remove&&styles.returnActive]}>{tokens.map(token=><DraggableWord key={token.id} token={token} selected={false} disabled={disabled||order.includes(token.id)||order.length>=limit} testID={`free-token-${token.id}`} tap={()=>onChange(insertPuzzleToken(order,token.id,order.length,limit))} start={start} move={move} finish={finish} cancel={cancel}/>)}</View>
     {drag&&<>

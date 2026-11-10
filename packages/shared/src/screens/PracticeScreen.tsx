@@ -63,13 +63,13 @@ function ChallengePracticeScreen() {
   const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio, VOCAB, GRAMMAR_VOCAB, CONV_VOCAB, JP_READING, nativeLang, vocabTokenize, grammarTextOnlyLabel } = data;
   const learning = useLearning();
   const { nepaliAudio, japaneseAudio, nepaliGrammarAudio, japaneseGrammarAudio } = audio;
-  const l1 = getL1(nativeLang);
+  const l1 = getL1(nativeLang, data.targetLang);
   const navigation = useNavigation<Nav>();
-  const { t, lang } = useI18n();
+  const { t, lang , copy: trCopy } = useI18n();
   const isJaUI = lang === 'ja';
   // 母語(訳)側UIか＝学習対象(ネパール語)を「単語」列に出す。ja/en=母語UI(App A)。
   // ne/bn UI(App B 等)は逆向き(対象語を単語列・母語を意味列)。
-  const glossUI = lang === 'ja' || lang === 'en';
+  const glossUI = data.targetLang === 'ne' || lang === 'ja' || lang === 'en';
   const { themeId: initialThemeId, levelId: initialLevelId, startIndex, mode, studySession: session } = useRoute<R>().params;
   const [position, setPosition] = useState(session?.position ?? 0);
   const [answered, setAnswered] = useState<string[]>(session?.answered ?? []);
@@ -275,7 +275,7 @@ function ChallengePracticeScreen() {
     <View style={[learningStyles.card,learningStyles.green]}>
       <Text accessibilityRole="header" style={[learningStyles.title,ss(22,32)]}>{finished ? studyCopy.finish : studyCopy.unavailable}</Text>
       {finished && <Text style={[learningStyles.body,ss(16,27)]}>{studyCopy.finishBody}</Text>}
-      <Pressable accessibilityRole="button" style={learningStyles.primary} onPress={() => navigation.goBack()}><Text style={[learningStyles.primaryText,ss(16,24)]}>{lang === 'en' ? 'Back to list' : '一覧に戻る'}</Text></Pressable>
+      <Pressable accessibilityRole="button" style={learningStyles.primary} onPress={() => navigation.goBack()}><Text style={[learningStyles.primaryText,ss(16,24)]}>{trCopy('c_3474b9c8237c', '一覧に戻る', 'Back to list')}</Text></Pressable>
     </View>
   </ScrollView>;
 

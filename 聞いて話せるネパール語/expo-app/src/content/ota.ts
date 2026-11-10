@@ -9,6 +9,7 @@ import { extractAudio, hashText, workBudget } from './otaWork';
 import coreBaseline from '../../data/ota-baseline/core.json';
 import jaBaseline from '../../data/overlays/ja.json';
 import enBaseline from '../../data/overlays/en.json';
+import koBaseline from '../../data/overlays/ko.json';
 
 export const MANIFEST_URL='https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/manifest.json';
 const ROOT=()=>`${FS.documentDirectory}content-ota/`;
@@ -34,7 +35,7 @@ function compose(core:any,overlay:any,ne:Record<string,string>={},l1:Record<stri
 }
 export function bundledContent(lang:string):ContentSnapshot {
   const cached=bundled.get(lang);if(cached)return cached;
-  const overlay=lang==='en'?enBaseline:jaBaseline;
+  const overlay=lang==='ko'?koBaseline:lang==='en'?enBaseline:jaBaseline;
   const result={version:baselineVersion,data:compose(coreBaseline,overlay)};bundled.set(lang,result);return result;
 }
 async function fetchText(url:string,ms=12000):Promise<string>{

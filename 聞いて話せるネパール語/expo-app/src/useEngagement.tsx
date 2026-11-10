@@ -9,6 +9,7 @@ import { canRequestReview, inviteDue, isLandingRoute, isStudyReturnRoute, isStud
 
 const KEY = '@nepali_app/engagement_v1';
 const COPY = {
+  ko: { title: '개선 의견 보내기', body: '추가하고 싶은 학습 자료나 기능을 이메일로 알려 주세요.', mail: '이메일로 의견 보내기', later: '나중에', never: '이 안내 다시 보지 않기', error: '이메일을 열 수 없어요', errorBody: '이메일 앱 설정을 확인해 주세요. 문의: contact@safa-lang.com' },
   ja: { title: '改善リクエスト', body: '追加してほしい教材や機能を、メールで送れます。', mail: '要望をメールで送る', later: '今は閉じる', never: 'この案内を表示しない', error: 'メールを開けませんでした', errorBody: 'メールアプリの設定をご確認ください。送信先：contact@safa-lang.com' },
   en: { title: 'Help shape the app', body: 'Send a request for lessons, features or improvements by email.', mail: 'Email a request', later: 'Not now', never: 'Stop these reminders', error: 'Unable to open email', errorBody: 'Please check your email app settings. Contact: contact@safa-lang.com' },
 };
@@ -16,7 +17,7 @@ const COPY = {
 export function useEngagement() {
   const { lang } = useI18n();
   const ss = useScaleStyle();
-  const copy = lang === 'en' ? COPY.en : COPY.ja;
+  const copy = lang === 'ko' ? COPY.ko : lang === 'en' ? COPY.en : COPY.ja;
   const [visible, setVisible] = useState(false);
   const [mailBusy, setMailBusy] = useState(false);
   const state = useRef<EngagementState | null>(null);

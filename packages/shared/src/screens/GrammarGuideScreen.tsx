@@ -204,7 +204,7 @@ export default function GrammarGuideScreen() {
     }else if(practiceSession)nav.navigate('Practice',{themeId,mode:'grammar',studySession:practiceSession,challenge:false});
   };
   const insets = useSafeAreaInsets();
-  const { lang } = useI18n();
+  const { lang , copy: trCopy } = useI18n();
   const copy = readingCopy(lang);
   const [part, setPart] = useState<GuidePart>('rules');
   const scroll = useRef<ScrollView>(null);
@@ -240,8 +240,12 @@ export default function GrammarGuideScreen() {
           <View key={`${themeId}-${lang}-${selected}`}>
             {selected === 'practice' ? <>
               <Text accessibilityRole="header" style={[styles.h, ss(22, 32)]}>{copy.exercises}</Text>
-              <Text style={[styles.p, ss(16, 27)]}>{lang === 'en' ? 'Choose what you want to practise. Stay with one type or switch whenever you like.' : '練習したいものを選ぼう。1つに集中しても、途中で切り替えてもOK。'}</Text>
-              {(lang === 'en' ? [
+              <Text style={[styles.p, ss(16, 27)]}>{trCopy('c_8424c273139f', '練習したいものを選ぼう。1つに集中しても、途中で切り替えてもOK。', 'Choose what you want to practise. Stay with one type or switch whenever you like.')}</Text>
+              {(lang === 'ko' ? [
+                ['형태 선택', '이 테마의 동사 활용·후치사 등 형태를 집중적으로 연습해요.'],
+                ['뜻 선택', '네팔어 문장의 뜻을 이해하는 연습이에요.'],
+                ['어순 퍼즐', '필요한 단어를 골라 문장을 만들어요. 쓰지 않는 보기도 있어요.'],
+              ] : lang === 'en' ? [
                 ['Choose a form', 'Focus on this theme’s verb forms, postpositions or other expressions.'],
                 ['Choose a meaning', 'Choose this when you want to practise understanding Nepali sentences.'],
                 ['Word-order puzzle', 'Choose the words you need and arrange them. Some choices are extra.'],
@@ -251,10 +255,10 @@ export default function GrammarGuideScreen() {
                 ['語順パズル', '余分な選択肢から必要な語を選び、文を組み立てます。'],
               ]).map(([heading, body], i) => <Pressable key={heading} testID={`practice-start-${i+2}`} accessibilityRole="button" accessibilityLabel={heading} disabled={starting || !learning?.ready} accessibilityState={{disabled: starting || !learning?.ready}} onPress={()=>void startPractice((i+2) as PracticeStage)} style={[styles.lessonCard, { padding:18, backgroundColor: i % 2 ? '#f5f3ff' : '#ecfdf5', borderColor: i % 2 ? '#ddd6fe' : '#a7f3d0', borderLeftColor: i % 2 ? '#7c3aed' : '#0f766e', opacity: starting || !learning?.ready ? .5 : 1 }]}>
                 <Text style={[styles.bold, ss(18, 29)]}>{heading}</Text><Text style={[styles.p, ss(15, 25)]}>{body}</Text>
-                <Text style={[styles.actionText, ss(14, 23)]}>{lang === 'en' ? 'Practise →' : 'この練習を始める →'}</Text>
+                <Text style={[styles.actionText, ss(14, 23)]}>{trCopy('c_5f2d94defb26', 'この練習を始める →', 'Practise →')}</Text>
               </Pressable>)}
-              <Text style={[styles.p, ss(15, 25)]}>{lang === 'en' ? 'No question limit. Each type cycles through 20 questions, then reshuffles. Use the back button whenever you want to stop.' : '問題数に上限はありません。各20問を一巡すると、順番を変えて繰り返します。やめたいときは戻るボタンで。'}</Text>
-              {learning?.error && <Text style={[styles.p, { color: '#9f1239' }, ss(16, 26)]}>{lang === 'en' ? 'Could not save the practice set. Please retry.' : '出題セットを保存できませんでした。もう一度お試しください。'}</Text>}
+              <Text style={[styles.p, ss(15, 25)]}>{trCopy('c_1fcf3fbd5259', '問題数に上限はありません。各20問を一巡すると、順番を変えて繰り返します。やめたいときは戻るボタンで。', 'No question limit. Each type cycles through 20 questions, then reshuffles. Use the back button whenever you want to stop.')}</Text>
+              {learning?.error && <Text style={[styles.p, { color: '#9f1239' }, ss(16, 26)]}>{trCopy('c_fdcfe86cc0c7', '出題セットを保存できませんでした。もう一度お試しください。', 'Could not save the practice set. Please retry.')}</Text>}
             </> : selected === 'reference' || selected === 'examples' ? <>
               <Text style={[styles.p, ss(15, 25)]}>{selected === 'examples' ? copy.examplesHint : copy.referenceHint}</Text>
               {groups.map((group, i) => <ReadingAccordion key={i} group={group} example={selected === 'examples'} copy={copy} ss={ss} />)}

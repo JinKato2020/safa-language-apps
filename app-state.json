@@ -1,6 +1,6 @@
 {
   "_about": "App家族(聞いて話せるシリーズ)の横断状態ファイル。セッション分離の調整レイヤ。各セッションは開始時に読み、節目で更新する。安定仕様(不変)は『ポスター成果物契約.md』、本ファイルは動的状態。",
-  "updated": "2026-06-25",
+  "updated": "2026-11-08T14:11:03+09:00",
   "coordinationModel": {
     "mode": "session-separation + app-state.json",
     "rule": "App固有作業はApp別セッションで並行可。共有コードは sharedLock を取得した1セッションだけが編集する。司令塔(全集約)モデルは廃止(=1セッションにコンテキストが肥大して上限に達する原因だった)。真に横断的な一括処理が要る時だけ workflow で一時的に起動する。",
@@ -10,11 +10,27 @@
       "多言語教材/00_共通/tools (render_pair.mjs 等)"
     ]
   },
-  "sharedLock": {
-    "path": null,
-    "owner": null,
-    "since": null,
-    "_note": "【2026-06-25 解放=JLPTアプリ】App B 辞書タブ配線＋DictScreen強化 完了。①App B側配線=i18n7言語(nav.dict+dict.*8キー)/App.tsx tabs vocation→dict/dictData注入。②DictScreen(packages/shared)強化=DictData型に examples?/kanjiExamples?追加・語彙展開に例文＋該当語下線・漢字展開に音訓の例語(複数読み)。3アプリ(B/A/C)tsc全緑。結合率=語彙94%(7528/8033)・漢字99%(1946/1974)。dict_wiring_handoff 全消化。"
+  "sharedLock": null,
+  "heroLayoutFix_2026-10-27": {
+    "status": "v1.7.25 iOSビルド成功・TestFlightアップロード成功。実機再確認待ち。文法教材・辞書修正はこの版には含まれない。",
+    "buildVersion": "1.7.25",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/40471053150",
+    "commit": "7fc911f799dd0ecdac8b2e0c9057b2caa4977acd",
+    "reportedVersion": "1.7.24",
+    "cause": "静的Imageの元サイズ1200x400が幅100%・aspectRatio指定と競合。Yogaで画面幅390でも画像幅1200になることを再現。",
+    "fix": "ModeHero共通部品のViewで元画像比率を指定し、内側Imageの幅・高さ100%とcontainを明示。会話・文法・聞き流し・単語に適用。",
+    "validation": "既存npm ci / npm run tsc:all成功(shared・App A・App B)。TSX構文・Yoga 9画面幅×3比率=27条件合格。画像未注入時とposterOnlyの非表示条件保持。実機再確認待ち。"
+  },
+  "grammarGuideDictionaryFix_2026-10-27": {
+    "status": "配信パック公開済み・v1.7.26 iOSビルド成功、TestFlightアップロード成功(10分33秒)。実機再確認待ち。",
+    "cause": "packLoader.toOverlayがgrammarGuide/grammarThemeNamesを破棄。配信overlayのgrammarVocabが空で、旧汎用辞書へfallbackしていた。",
+    "fix": "教材2フィールドを通過させ、別例文の先頭contextを流用しない。全714例文・621語・2756文脈をja/enともレビュー・再収録。",
+    "pack": "packs-appa-v2 overlay-ja/en + catalog: version 1101。公開後の3JSONは再DLしてbyte一致確認。core/本文/音声は不変。",
+    "validation": "npm run tsc:all成功。実際のloadPack経路でja/en×新規/1100キャッシュ更新の4通りを確認。全714文の全語に一意のsentence_id訳あり、36教材が画面用AppDataまで到達。ネパール語話者の最終監修・実機確認は未実施。",
+    "commit": "bfca135b",
+    "buildVersion": "1.7.26",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/40474239974",
+    "review": "聞いて話せるネパール語/文法教材/文法v2_辞書レビュー.md"
   },
   "sharedDesignSystem_JLPT主導_2026-06-23": {
     "_from": "JLPTアプリセッション",
@@ -274,5 +290,1915 @@
       "dict.attribution": "語彙・漢字: JMdict/KANJIDIC2 © EDRDG (CC BY-SA). 類義語: 日本語WordNet © NICT."
     },
     "dict_data_pattern": "import jaVocab from './data/dict/ja-vocab.json'; import jaKanji from './data/dict/ja-kanji.json'; const dictData = { vocab: jaVocab, kanji: jaKanji }; // AppShell に dictData={dictData} で渡す"
+  },
+  "appa_2_1_1_2026_10_27": {
+    "version": "2.1.1",
+    "status": "iOS build + TestFlight upload dispatched; no monitoring per user request",
+    "commit": "a97ad0a9",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/40481030643",
+    "content": "36 grammar topics / 714 sentences; 672 surface words / 2758 contexts per language; appendix144 examples and432 audio updated",
+    "packs": {
+      "textVersion": 1102,
+      "coreAudioVersion": 1005,
+      "enAudioVersion": 1005,
+      "jaAudioVersion": 1006,
+      "verifiedPublished": true,
+      "obsoleteDeltasRemoved": true
+    },
+    "ui": "five bottom tabs including settings; hero-first roots; Japanese and English copy synchronized",
+    "webHandoff": "docs/WEB引き継ぎ_ネパール語_2.1.1_2026-10-27.md",
+    "validation": "TypeScript all apps, navigation regression, 714 sentence/text/dictionary alignment,432 MP3,2514 files per audioZIP,Excel synchronization and preservation passed. Device verification pending."
+  },
+  "appa_store_screenshots_2026_10_28": {
+    "status": "completed; saved locally; not uploaded to stores",
+    "size": "2622x1206 RGB PNG no alpha",
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "count": 10,
+    "order": [
+      "overview",
+      "grammar",
+      "instant Nepali sentence practice",
+      "listening",
+      "vocabulary"
+    ],
+    "output": "聞いて話せるネパール語/画像/スクショ/{ja,en}/0*_2622x1206.png",
+    "sourceImagesPreserved": true,
+    "design": "new generated Himalayan dawn background; navy and gold; original app screenshots in 1-2 phone frames",
+    "cleanup": "English listening transient volume HUD and black edges removed in separate working asset; source JPG preserved",
+    "authoring": "聞いて話せるネパール語/画像/スクショ/制作データ_20261028/render.cjs",
+    "preview": "聞いて話せるネパール語/画像/スクショ/制作データ_20261028/日英_全10枚プレビュー.png",
+    "validation": "all10 exact2622x1206 verified; uniform scaling preserves device and typography proportions; old2688x1242 files and sourceJPEG preserved",
+    "revision": "3; all10 rerendered to user requested dimensions",
+    "typography": "feature rows changed to concise single-line 70px copy; previous titles34-37 and details25-28px. Lead46px. All10 regenerated at2688x1242.",
+    "grammar": "Detailed lessons headline;34 themes+2appendices; usage,sentencepatterns,verbforms,cautions;714examples"
+  },
+  "appa_rebuild_2_1_3_2026_10_28": {
+    "version": "2.1.3",
+    "commit": "89c0982a",
+    "status": "iOS build and TestFlight upload dispatched; no monitoring per user request",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/40607127275",
+    "changes": "Only app.json version and workflow run-name; rebuild includes committed2.1.2 microphone permission removal plugin",
+    "workflow": "ios-build-nepali.yml platform=ios submit=true"
+  },
+  "appa_grammar_redesign_decisions": {
+    "status": "design decided and saved only; no content/audio/pack changes or build",
+    "document": "聞いて話せるネパール語/文法教材/文法教材_再設計方針_後置詞_疑問詞_人称.md",
+    "scope": "postposition allocation across5/11/25/26/27/28/32; question word basic and derived forms in6; basic6person practice; familiar/informal/highhonorific variants in7; ho/cha tables within lessons; varied meaningful examples instead of repetitive conjugation",
+    "beginnerRequirement": "lesson must explain forms, meanings, construction, negatives/questions, differences and answers needed for examples; bidirectional references; Japanese and English synchronized"
+  },
+  "appa_grammar_revision_2_1_4": {
+    "version": "2.1.4",
+    "commit": "6dda59db",
+    "status": "Beginner lessons pack1205 available to existing2.1.3/2.1.4; no new build",
+    "packRelease": "https://github.com/JinKato2020/safa-language-apps/releases/tag/packs-appa-v3",
+    "packVersion": 1205,
+    "examples": 528,
+    "mainExamples": 384,
+    "appendixExamples": 144,
+    "reusedRecordings": 448,
+    "textOnlyExamples": 0,
+    "dictionaryWords": 578,
+    "dictionaryContextsPerLanguage": 2006,
+    "audioChanged": true,
+    "publishedSHA256Verified": true,
+    "validation": "All240 new MP3 frames/durations and ledger hashes validated; 2514 legacy ZIP entries per language byte-identical; actual loadPack ja/en fresh and old-cache upgrade passed; remote seven hashes and legacy six payloads verified",
+    "webHandoff": "docs/WEB引き継ぎ_文法教材改訂_2.1.4.md",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/40816438751",
+    "rollout": "Existing2.1.3 and2.1.4 both use paired positional data; no reference table required",
+    "storeSubmission": "not submitted for App Store review",
+    "sharedCode": "lock released after typecheck and runtime tests",
+    "generatedRecordings": 80,
+    "recordedExamples": 528,
+    "audioAdded": 240,
+    "appRebuilt": false
+  },
+  "contentDeliveryPolicy_AppA": {
+    "default": "Update lessons/examples/translations/dictionary and matching theme-index.mp3 files together using existing positional reader; no app build/version bump/workflow dispatch",
+    "document": "docs/教材配信運用_ビルド不要.md",
+    "nativeChanges": "Explain concrete shell change before building; use existing Claude workflow only",
+    "baselineAppVersion": "2.1.3",
+    "buildMonitoring": "Do not monitor; user preference",
+    "recordingReferences": "Not required and not included in published set1202",
+    "defaultThirdPerson": {
+      "singular": "उहाँ",
+      "plural": "उहाँहरू",
+      "familiarPronounsTopic": 7,
+      "verbAgreement": "respectful; same singular/plural conjugation"
+    },
+    "textOnlyLessons": "Keep exercise/audio data and audio version/URLs unchanged; publish only core/overlays + catalog; zero audio redownload on cached devices",
+    "lessonDesign": "Teach concrete Nepali forms and selection rules first; contrast similar forms with short examples, including overlap and non-interchangeable uses; remove generic mother-tongue grammar definitions/study advice; preserve semantic colors, no yellow warning cards/symbols",
+    "colors": {
+      "rendererVersion": "2.1.5",
+      "metadata": "presentation.tone/role/join/rowTones",
+      "presets": [
+        "blue",
+        "green",
+        "violet",
+        "rose",
+        "teal"
+      ],
+      "ordinaryColorSelectionChanges": "data-only, no rebuild",
+      "warningSymbols": false,
+      "yellowCards": false
+    },
+    "lessonL1Support": "Explicit Japanese/English glosses in explanations; theme number/title only in fixed top bar; no repeated body title;35/A and36/B labels retained"
+  },
+  "appa_paired_content_update": {
+    "status": "pack1211 published; theme2 here/there/over there clarified; examples/audio retained",
+    "commit": "ddfd5930",
+    "packVersion": 1211,
+    "compatibleApps": [
+      "2.1.3",
+      "2.1.4"
+    ],
+    "examples": 528,
+    "conversationExamplesUnchanged": 1800,
+    "audioFilesPerLanguage": 2328,
+    "audioVersions": {
+      "core": 1009,
+      "en": 1009,
+      "ja": 1010
+    },
+    "shippedRecordingReferences": false,
+    "clientCodeChanged": false,
+    "appRebuilt": false,
+    "voices": {
+      "ne": "Hemkala0%",
+      "ja": "Neural2-B",
+      "en": "Wavenet-F"
+    },
+    "verification": "Actual shipped2.1.3@89c0982a and2.1.4 loaders; ja/en x fresh/old-cache upgrades; all528 text/guide/translation/MP3 hashes; offline reload; eight scenarios passed; remote six payload digests and both catalogs match",
+    "report": "聞いて話せるネパール語/文法教材/教材音声セット更新_検証結果.json",
+    "catalogSHA256": "e3580da01ecb8265cb2c8a9568514bf596e6f420a18a5a33d7dc77323b8e786c",
+    "publication": "Immutable payloads in packs-appa-v2; v2/v3 catalogs point to same set; old release assets retained"
+  },
+  "appa_pronoun_revision": {
+    "status": "completed; paired positional pack1204 published; remote SHA256 verified",
+    "basicThirdPerson": [
+      "उहाँ",
+      "उहाँहरू"
+    ],
+    "familiarPronounsTopic": 7,
+    "changedExamples": 91,
+    "neAudioGenerated": 64,
+    "reusedLanguageFiles": 209,
+    "newMasterFiles": 273,
+    "dictionaryWords": 578,
+    "dictionaryContexts": 2006,
+    "appRebuilt": false,
+    "commit": "a7609918",
+    "packVersion": 1204,
+    "excelSynced": true,
+    "publicationVerified": true,
+    "verification": "All528 audio and dictionary contexts; familiar third person confined to topic7; 2.1.3/2.1.4 readers x ja/en x fresh/old-cache; offline; workbook528rows/styles/other parts; published six hashes and both catalogs",
+    "catalogSHA256": "ca200c9ff62ee839c3eeb1e7a2ae200542bd1ca85f23f76ef2c0880f4045c5c0"
+  },
+  "appa_beginner_lessons": {
+    "status": "Superseded by friendly layout1206; detailed explanations retained after quick section",
+    "packVersion": 1206,
+    "hunuMap": {
+      "हो": [
+        1
+      ],
+      "छ": [
+        2,
+        3
+      ],
+      "हुन्छ": [
+        4
+      ],
+      "review": [
+        36
+      ]
+    },
+    "jaIntroCharacters": {
+      "min": 700,
+      "max": 1033
+    },
+    "examplesChanged": 0,
+    "audioChanged": false,
+    "appRebuilt": false,
+    "commit": "7eb41d5f",
+    "publicationVerified": true,
+    "catalogSHA256": "7b3a25d59237c0e4d06c40ac8279f24536418e8924b6da2771e37ecdc5da3a81",
+    "validation": "All36 ja/en lesson sequences and hunu maps/paradigms;528 exercises/translations/dictionaries/readings preserved; shipped2.1.3/current2.1.4 readers x ja/en x fresh/cached; offline reload; cached devices download zero audio; remote3text hashes and3existing audio digests; both published catalogs match"
+  },
+  "appa_friendly_lessons": {
+    "status": "completed; committed/pushed; pack1206 published and remote SHA256 verified",
+    "packVersion": 1206,
+    "opening": [
+      "one takeaway",
+      "one example",
+      "3 short steps",
+      "one short caution",
+      "check with answer"
+    ],
+    "emphasis": [
+      "bold forms",
+      "3 paradigms",
+      "6 person groups",
+      "step numbers"
+    ],
+    "details": "short paragraphs after quick section",
+    "warningCards": "No yellow warning cards or warning symbols; user preference",
+    "appRebuilt": false,
+    "audioChanged": false,
+    "commit": "62f7b756",
+    "publicationVerified": true,
+    "catalogSHA256": "5492f41400436af0f9d0553b1cec8121b5d92419a7f0c2414ecb02f01bde0579"
+  },
+  "appa_color_lessons": {
+    "status": "committed/pushed; pack1207 public SHA256 verified;2.1.5 iOS build and TestFlight submission dispatched; no monitoring",
+    "reasonForBuild": "Existing renderer fixes text and backgrounds; this user request changes actual screen presentation",
+    "version": "2.1.5",
+    "buildMonitoring": "Do not monitor",
+    "warningStyle": "pale rose text/card, no yellow or warning symbols",
+    "packVersion": 1207,
+    "preview": "docs/previews/nepali-grammar-colors-2.1.5.png",
+    "validation": "4project tsc, actual renderer color/legacy fallback tests, contrast>=4.5, measured320px/1.4x and390px; 3readers x ja/en fresh/cached/offline; audio unchanged",
+    "sharedLockReleased": true,
+    "commit": "08e2cc78",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/40860460766",
+    "packPublicationVerified": true,
+    "catalogSHA256": "1d2e349558e7495e1dbf961e842a949f6c4cf11d41a098a6082d02650c3e0f2c",
+    "colorAvailable": "after installing2.1.5; older apps display same data in previous style",
+    "buildCompletionVerified": false
+  },
+  "appa_rule_focused_lessons": {
+    "status": "completed; pack1208 public SHA256 verified; committed and pushed",
+    "packVersion": 1208,
+    "topics": 36,
+    "bilingualRulePairs": 182,
+    "rulesPerTopic": "5–6 plus existing inventories and paradigms",
+    "contrastHighlights": [
+      "देखि/बाट source, start time and transport overlap",
+      "मा/लाई, सँग/को, सम्म/तिर",
+      "हो/छ/हुन्छ",
+      "गर्दिनँ/गरेनँ",
+      "-दै/-दा, पछि/बित्तिकै, सम्म/भित्र",
+      "पर्दैन/हुँदैन",
+      "जो/जुन/जे and correlatives",
+      "passive/intransitive/causative"
+    ],
+    "removed": "generic mother-tongue definitions, generic three-step study instructions, repeated study advice and empty question annotations",
+    "corrected": "substring बाट annotation on बाटो; respectful comparison-table verbs",
+    "audioChanged": false,
+    "examplesChanged": false,
+    "appRebuilt": false,
+    "appVersion": "2.1.5 unchanged",
+    "publicationVerified": true,
+    "catalogSHA256": "f0e93fceba6c478554647f1782156010751657dd85c7f6f9493f669fd8c598e5",
+    "validation": {
+      "actualReaders": [
+        "2.1.3@89c0982a",
+        "2.1.4@62f7b756",
+        "2.1.5 current"
+      ],
+      "runtimeScenarios": 12,
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "freshCachedOffline": true,
+      "cachedAudioDownloads": 0,
+      "all528ExercisesTranslationsAndWordTablesPreserved": true,
+      "allConversationDictionaryAndReadingsPreserved": true,
+      "authoringIdempotent": true,
+      "all72ColorLayouts": true,
+      "paletteContrastAtLeast4_5": true,
+      "allPersonalComparisonTablesRespectfulAgreement": true,
+      "dekhiBataContrastTable": true,
+      "nativeDeviceChecked": false
+    },
+    "commit": "8b8363cf"
+  },
+  "appa_lesson_ux_1209": {
+    "status": "completed; pack1209 published and SHA256 verified; committed/pushed",
+    "packVersion": 1209,
+    "scope": [
+      "ja/en glosses on illustrative Nepali",
+      "numbered header via grammarThemeNames",
+      "full numbered title at body start",
+      "appendix35/A and36/B",
+      "sentence breaks",
+      "two-column dekhi/bata comparison"
+    ],
+    "clientCodeChanged": false,
+    "appRebuilt": false,
+    "examplesChanged": false,
+    "audioChanged": false,
+    "publicationVerified": true,
+    "catalogSHA256": "81884f8e533ea770f431478bdeb42eba6193fce238d8165b6a9a49ffcab478ff",
+    "validation": "327phrases/756bilingual occurrences,72titles,12reader scenarios,offline,cached audio0,72color layouts,390px+320px/1.4x no overflow",
+    "report": "聞いて話せるネパール語/文法教材/教材UX改善_検証結果.json",
+    "commit": "d38d4d84"
+  },
+  "appa_lesson_title_dedup_1210": {
+    "status": "completed; pack1210 published and SHA256 verified; committed/pushed",
+    "packVersion": 1210,
+    "previousVersion": 1209,
+    "topics": 36,
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "duplicateBodyTitleBlocksRemoved": 72,
+    "allOtherGuideBlocksExactlyUnchanged": true,
+    "numberedHeaderTitlesUnchanged": true,
+    "bodyStartsWithTakeaway": true,
+    "examplesTranslationsDictionaryAudioUnchanged": true,
+    "appRebuilt": false,
+    "readerScenarios": 12,
+    "offlineReload": true,
+    "cachedAudioDownloads": 0,
+    "publicationVerified": true,
+    "payloadSHA256Verified": true,
+    "catalogs": [
+      "packs-appa-v2",
+      "packs-appa-v3"
+    ],
+    "catalogSHA256": "85d101a447b8fae0131a0f5fc96706a33ac5e280d12504e81c8a47e900f2e80c",
+    "commit": "0b2bc58d"
+  },
+  "appa_theme2_location_1211": {
+    "status": "completed; pack1211 published and SHA256 verified; committed/pushed",
+    "packVersion": 1211,
+    "previousVersion": 1210,
+    "changedTheme": 2,
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "added": "explicit here/there/over there/where comparison and L1 glosses",
+    "basicForms": {
+      "यहाँ": "here",
+      "त्यहाँ": "there / over there",
+      "कहाँ": "where"
+    },
+    "allOther35GuidesPerLanguageExactlyUnchanged": true,
+    "themeTitlesUnchanged": true,
+    "examplesTranslationsDictionaryAudioUnchanged": true,
+    "appRebuilt": false,
+    "readerScenarios": 12,
+    "offlineReload": true,
+    "cachedAudioDownloads": 0,
+    "illustrativePhrases": 329,
+    "bilingualGlossChecks": 760,
+    "publicationVerified": true,
+    "payloadSHA256Verified": true,
+    "catalogs": [
+      "packs-appa-v2",
+      "packs-appa-v3"
+    ],
+    "catalogSHA256": "e3580da01ecb8265cb2c8a9568514bf596e6f420a18a5a33d7dc77323b8e786c",
+    "verificationSources": [
+      "https://pressbooks.bccampus.ca/nepali/chapter/chapter-3-unit-4-grammar-focus/",
+      "https://wisc.pb.unizin.org/lctlresources/chapter/nepali-determiners/"
+    ],
+    "commit": "ddfd5930"
+  },
+  "appa_culture_speech_1212": {
+    "status": "completed; pack1212 published and SHA256 verified; committed/pushed",
+    "packVersion": 1212,
+    "scope": "Culture evokes everyday Nepal and motivation; separate from contextual speech explanations",
+    "existingExercisesChanged": false,
+    "audioChanged": false,
+    "appRebuilt": false,
+    "theme2LocativeCorrection": true,
+    "readerScenarios": 12,
+    "cachedAudioDownloads": 0,
+    "publicationVerified": true,
+    "cultureBreaks": 10,
+    "speechNotes": 17,
+    "supplementReadingExamples": 26,
+    "catalogSHA256": "a422cbe16c87871704496ffc79a9a471ce03752f5163190fa148f8be9009a9cb",
+    "report": "聞いて話せるネパール語/文法教材/文化と話し言葉_検証結果.json",
+    "commit": "30504e82"
+  },
+  "appa_culture_images_1213": {
+    "status": "completed; pack1213 published and verified; committed/pushed; iOS2.1.6 build and TestFlight submission dispatched; no monitoring",
+    "source": "app_website/src/data/nepali-learning/culture-editorial-v2.json",
+    "buildReason": "existing native reader has no image support",
+    "targetAppVersion": "2.1.6",
+    "targetPackVersion": 1213,
+    "cultureCards": 10,
+    "publicationVerified": true,
+    "catalogSHA256": "8207fe6d33688234d119242f8d3ed00ed222ea8cfe4380c3d9f46b9449d4cec9",
+    "imageAssetsVerified": 10,
+    "nativeDeviceVerified": false,
+    "sharedLockReleased": true,
+    "report": "聞いて話せるネパール語/文法教材/文化画像カード_検証結果.json",
+    "commit": "b736e302",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/41041735923",
+    "buildDispatched": true,
+    "buildCompletionVerified": false,
+    "buildMonitoring": false
+  },
+  "appa_launch_free_2_1_7": {
+    "status": "completed; committed/pushed; iOS2.1.7 build and TestFlight submission dispatched; App Store release not submitted",
+    "freeAccess": "unconditional lifetime campaign enrollment; future paid mode preserves grants",
+    "requestIntervalDays": 4,
+    "nativeReview": "Apple controlled; no custom review solicitation",
+    "mailRecipient": "contact@safa-lang.com",
+    "grantStorage": [
+      "iOS Keychain",
+      "AsyncStorage backup"
+    ],
+    "restore": "RevenueCat-validated original App Store acquisition date after enrollment closes",
+    "nativeReviewAttemptsPer365Days": 3,
+    "firstInviteAfterDays": 4,
+    "studySecondsBeforeReview": 30,
+    "nativeReviewDisabledInTestFlight": true,
+    "sharedLockReleased": true,
+    "appStoreProductionReceiptTested": false,
+    "typechecks": [
+      "shared",
+      "App A",
+      "App B",
+      "App C"
+    ],
+    "nativeBundleExportVerified": true,
+    "mailComposer": "native editable composer, mailto fallback, user sends",
+    "buildMonitoring": false,
+    "globalPlaybackGuard": true,
+    "commit": "f2b47668",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/41258003537",
+    "buildDispatched": true,
+    "buildCompletionVerified": false,
+    "appStorePublished": false,
+    "nativeDeviceVerified": false,
+    "report": "聞いて話せるネパール語/無料解放と評価依頼_検証結果.json"
+  },
+  "appa_settings_triggers_2_1_8": {
+    "status": "completed; committed/pushed; iOS2.1.8 build and TestFlight submission dispatched; no monitoring",
+    "scope": "TestFlight/development triggers; normal rating below purchases",
+    "buildMonitoring": false,
+    "sharedLockReleased": true,
+    "visualCases": 8,
+    "previewStateUnchanged": true,
+    "nativeDeviceVerified": false,
+    "commit": "b0f8d7d9",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/41259066422",
+    "buildDispatched": true,
+    "buildCompletionVerified": false,
+    "report": "聞いて話せるネパール語/設定開発トリガー_検証結果.json"
+  },
+  "appa_engagement_schedule_2_1_9": {
+    "status": "completed; committed/pushed; iOS2.1.9 build and TestFlight submission dispatched; no monitoring",
+    "firstInvite": "third local calendar day, first use is day1",
+    "repeat": "at least168hours after actual invitation, after meaningful study only",
+    "buildMonitoring": false,
+    "sharedLockReleased": true,
+    "firstInviteDay": 3,
+    "studyMinimumSeconds": 30,
+    "launchAndSettingsNeverTrigger": true,
+    "nativeDeviceVerified": false,
+    "commit": "a65a02d8",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/41261411997",
+    "buildDispatched": true,
+    "buildCompletionVerified": false,
+    "report": "聞いて話せるネパール語/学習後の案内タイミング_検証結果.json"
+  },
+  "appa_beginner_ux_2_1_10": {
+    "status": "completed; committed/pushed; iOS2.1.10 build and TestFlight submission dispatched; no monitoring",
+    "scope": "all36 Japanese/English guides; progressive reading, readable tables and practice navigation",
+    "buildReason": "native reader changes",
+    "nativeDeviceVerified": false,
+    "layouts": 360,
+    "accordionToggles": 996,
+    "all72GuidesPreserved": true,
+    "publicPack1213Unchanged": true,
+    "iosHermesExport": true,
+    "report": "聞いて話せるネパール語/文法教材/初学者リーダー改善_検証結果.json",
+    "commit": "c1932fab",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42245617006",
+    "buildDispatched": true,
+    "buildCompletionVerified": false,
+    "buildMonitoring": false,
+    "appStorePublished": false,
+    "sharedLockReleased": true
+  },
+  "appa_guide_practice_fix_2_1_11": {
+    "status": "committed and pushed; existing iOS build + TestFlight submission workflow dispatched; not monitored",
+    "cause": "GrammarGuide is registered at root; Practice was only registered inside tab stacks",
+    "nativeDeviceVerified": false,
+    "date": "2026-11-07",
+    "appVersion": "2.1.11",
+    "report": "聞いて話せるネパール語/文法教材/教材練習遷移修正_検証結果.json",
+    "realRouterScenarios": 36,
+    "contentAndAudioChanged": false,
+    "commit": "5ddfbbba",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42356467308",
+    "appStorePublished": false
+  },
+  "appa_content_review_2026_11_07": {
+    "date": "2026-11-07",
+    "scope": "Content inventory and implemented learning paths; read-only review except reported guide-button bug",
+    "packVersion": 1213,
+    "inventory": {
+      "conversation": 1800,
+      "grammarExamples": 528,
+      "grammarThemes": 36,
+      "vocabulary": 1000
+    },
+    "opinion": "Strong repetition material, but needs a guided beginner path, pronunciation introduction, contextual gloss consistency and mastery/review support.",
+    "findings": [
+      "Contextual gloss for हुनुहुन्छ in grammar example 1-13 is います・なります（敬意） even though its sentence translation is あなたたちは先生です.",
+      "Practice/listening use bundled grammar theme labels while theme list uses pack labels.",
+      "No active first-time course or persisted mastery/review flow in App A.",
+      "Vocabulary flashcards do not expose audio playback; separate posters have audio."
+    ],
+    "limits": [
+      "No beginner usability study or native-device test.",
+      "Not a native-speaker audit of every sentence or a listening review of every audio file."
+    ]
+  },
+  "appa_beginner_learning_2026_11_07": {
+    "status": "Content OTA 1214 and legacy v2/v3 catalogs published and publicly hash-verified; 2.1.12 iOS build dispatched with submit=true; not monitored per user instruction",
+    "appVersion": "2.1.12",
+    "packVersion": 1214,
+    "sharedLockOwner": "App A beginner learning improvements",
+    "nativeDeviceVerified": false,
+    "contentChanges": "186 copula contexts reviewed in JA/EN; 528/1800/1000 existing examples/words and recordings unchanged",
+    "homeTabs": [
+      "home",
+      "grammar",
+      "conversation",
+      "listening",
+      "vocabulary"
+    ],
+    "settingsLocation": "Home top-right",
+    "ota": "SHA256 text chunks; validated audio archive/delta; silent staging; atomic activation next launch; bundled initial text; offline fallback",
+    "commit": "b607f99edf9f641ad5e46040bc38cac0b1a4a96c",
+    "validation": "JA/EN 14 course sessions; 360 guide layouts; 24 learning layouts; actual navigation routers; OTA recovery and checksums; shared/A/B/C TypeScript; iOS Hermes export passed",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42359863195",
+    "buildWorkflow": "ios-build-nepali.yml",
+    "buildMonitored": false,
+    "otaManifest": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/manifest.json",
+    "publishedTextChunks": 75,
+    "legacyCatalogsPublished": [
+      "packs-appa-v2",
+      "packs-appa-v3"
+    ]
+  },
+  "appa_responsiveness_2026_11_07": {
+    "status": "Committed and pushed; 2.1.13 iOS build dispatched with submit=true using existing workflow; not monitored",
+    "reportedVersion": "2.1.12",
+    "symptom": "Tab switching remains slow after waiting",
+    "targetVersion": "2.1.13",
+    "contentVersion": 1214,
+    "measurements": {
+      "scope": "Desktop Node; actual production OTA functions with in-memory filesystem, not native iPhone timing",
+      "files": 2328,
+      "archiveBytes": 39797296,
+      "oldBlockingDecodeMs": 2378,
+      "newMaximumEventLoopGapMs": 59,
+      "newTotalStreamingMs": 4736,
+      "maxArchiveReadBytes": 32768,
+      "diskReads": 2431,
+      "heartbeats": 337,
+      "scheduler": "launch/eligible foreground only; no study polling; retry/background/stop passed",
+      "checksums": "full archive, per-file, UTF-8 and DEFLATE passed",
+      "appVersion": "2.1.13",
+      "contentVersion": 1214,
+      "nativeDeviceVerified": false,
+      "unchangedOtaDiskReads": 0,
+      "unchangedOtaDataIdentityPreserved": true
+    },
+    "distribution": "GitHub Releases packs-appa-ota; existing audio packs-appa-v2. JLPT uses jlpt.safa-lang.com/content/ Pages, not the same host.",
+    "commit": "13c95cf8b2b4b49ae45b68460d3e697e47ba2c39",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42368532352",
+    "buildMonitored": false,
+    "iosHermesExport": true,
+    "nativeDeviceVerified": false
+  },
+  "appa_home_refresh_2026_11_07": {
+    "status": "Committed and pushed; 2.1.14 iOS build dispatched with submit=true using existing workflow; not monitored",
+    "recordingRule": "Only persisted example self-assessments count, never home visits",
+    "targetVersion": "2.1.14",
+    "validation": {
+      "uiLayouts": 24,
+      "courseSessions": 14,
+      "examplesPerLanguage": 35,
+      "actualButtons": [
+        "start",
+        "resume",
+        "review",
+        "learning path",
+        "settings"
+      ],
+      "dailyActivity": "unique per example/local day; persisted dates; old-state migration; streak gaps; US DST boundary",
+      "typechecks": [
+        "shared",
+        "App A",
+        "App B",
+        "App C"
+      ],
+      "iosHermesExport": true,
+      "nativeDeviceVerified": false
+    },
+    "previews": [
+      "docs/previews/nepali-home-2.1.14-ja-progress.png",
+      "docs/previews/nepali-home-2.1.14-en-progress.png"
+    ],
+    "commit": "a7cb0ca95b9578460eee895ee62d9f8f5ca4c082",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42371296511",
+    "buildMonitored": false,
+    "contentVersion": 1214
+  },
+  "appa_scaffolded_learning_2026_11_07": {
+    "status": "Implemented; OTA1215 published; native2.1.15 original build1317 uploaded to TestFlight successfully without rebuilding",
+    "targetVersion": "2.1.15",
+    "contentVersion": 1215,
+    "recordingRule": "Supported completion is distinct from unassisted self-assessment; no fabricated mastery",
+    "practiceSentences": 21,
+    "audioClips": 31,
+    "stages": [
+      "conjugation where applicable",
+      "Nepali-to-L1 meaning",
+      "word-order puzzle"
+    ],
+    "fourthStage": "Audio-only listening proposed for later review; not implemented",
+    "preservedGrammarExamples": 528,
+    "commit": "099aa5e2061d24565552386c767aeb7a76d71e40",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42377371998",
+    "buildSubmit": false,
+    "buildTracked": false,
+    "otaManifest": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/manifest.json",
+    "nativeSpeakerPhoneticReview": false,
+    "deviceVerification": false,
+    "approvalReview": "Initial combined build/submit rejected before explicit submission authorization. User subsequently authorized TestFlight and specified the existing 2.1.15 IPA. Upload-only workflow dispatched; no App Store review or public release requested.",
+    "originalBuildConclusion": "success",
+    "cancelledRebuildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42381226424",
+    "cancelledRebuildConclusion": "cancelled; Upload to TestFlight skipped",
+    "testFlight": {
+      "workflow": "testflight-existing-nepali.yml",
+      "workflowCommit": "b2502696688f2d3a0a44229c0925d9c09cc35095",
+      "run": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42381766332",
+      "status": "success; original 2.1.15 build1317 uploaded to Apple via upload-only workflow",
+      "version": "2.1.15",
+      "build": "1317",
+      "sourceRunId": "42377371998",
+      "artifactId": "13577000399",
+      "ipaSha256": "86b337e5ecff728899f4a5aeedf28a6ea7a5a9c96f1f95d32b7a610d0ad29f4c",
+      "rebuild": false
+    }
+  },
+  "local_cleanup_2026_11_07": {
+    "status": "complete",
+    "deletedFiles": 130,
+    "deletedBytes": 188378626,
+    "removedJunctions": 1,
+    "retainedFilesHashVerified": 2434,
+    "verification": "OTA1215 generated and verified locally: 75 chunks, ja/en 36 guides each, 1800 conversation / 528 grammar / 1000 vocabulary; no publication or native rebuild",
+    "removedTargets": [
+      "tmp\\grammar_examples",
+      "tmp\\xlsx_update",
+      "docs\\previews",
+      "聞いて話せるネパール語\\designs\\hero-proposals",
+      "聞いて話せるネパール語\\audio\\比較",
+      "聞いて話せるネパール語\\scripts\\__pycache__",
+      "聞いて話せるネパール語\\dist-packs",
+      "聞いて話せるネパール語\\expo-app\\data\\grammar-vocab-app.html",
+      "聞いて話せるネパール語\\expo-app\\data\\grammar-vocab-context.html",
+      "聞いて話せるネパール語\\文法教材\\文法解説_ドラフト_全30テーマ.md",
+      "聞いて話せるネパール語\\文法教材\\文法解説_ドラフト_EN_全30テーマ.md",
+      "聞いて話せるネパール語\\文法教材\\OTA応答性_検証結果_2.1.13.json",
+      "聞いて話せるネパール語\\文法教材\\テーマ2_場所表現追加_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\入門復習ホームOTA_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\初学者リーダー改善_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\教材UX改善_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\教材カラー表示_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\教材練習遷移修正_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\教材見出し重複修正_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\教材解説拡充_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\文化と話し言葉_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\文化画像カード_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\文法教材改訂_検証結果.json",
+      "聞いて話せるネパール語\\文法教材\\段階学習_検証結果_2.1.15.json",
+      "聞いて話せるネパール語\\文法教材\\音声追加_検証結果.json",
+      "聞いて話せるネパール語\\学習後の案内タイミング_検証結果.json",
+      "聞いて話せるネパール語\\無料解放と評価依頼_検証結果.json",
+      "聞いて話せるネパール語\\設定開発トリガー_検証結果.json",
+      "聞いて話せるネパール語\\画像\\スクショ\\制作データ_20261028\\日英_全10枚プレビュー.png",
+      "聞いて話せるネパール語\\画像\\スクショ\\制作データ_20261028\\検証結果.json",
+      "聞いて話せるネパール語\\コンテンツ\\theme1_ho_examples.json",
+      "聞いて話せるネパール語\\old\\バイリンガル.xlsx",
+      "聞いて話せるネパール語\\old\\単語.xlsx",
+      "聞いて話せるネパール語\\old\\戦略.docx",
+      "聞いて話せるネパール語\\old\\文法.xlsx",
+      "聞いて話せるネパール語\\old\\追加.xlsx"
+    ],
+    "preserved": "Current app, scripts, master workbooks/text, recording ledger, current images/screenshots, unique historical originals, credentials, shared runtime; positional audio verification report remains because a test consumes it",
+    "historicalArtifactNote": "Old state entries may name previews/reports deleted by this user-authorized cleanup."
+  },
+  "appa_back_navigation_check_2026_11_07": {
+    "status": "User confirmed back works again; no native or OTA change made",
+    "version": "2.1.15",
+    "report": "Examples & audio back arrow initially did not respond, then worked after initial preparation; exact iPhone cause not reproduced",
+    "tests": "36 prior guide/router regressions +72 example-return round trips passed; existing stale-cache rejection additionally verified for app upgrade/offline/newer OTA/corrupt fallback; original implementation already had the guard",
+    "desktopOtaTiming": {
+      "archiveBytes": 39797296,
+      "files": 2328,
+      "maxEventLoopGapMs": 76,
+      "totalMs": 5405,
+      "notDeviceMeasurement": true
+    },
+    "withdrawnChanges": "Proposed custom header and duplicate cache guard removed after new user evidence and complete source review",
+    "buildOrPublication": false
+  },
+  "appa_literacy_grammar_2026_11_07": {
+    "status": "Implemented and pushed; OTA 1216 published and public hashes verified; final native 2.1.16 build/TestFlight submit dispatched",
+    "targetVersion": "2.1.16",
+    "tasks": [
+      "Fix recurrent back control in guide/path/examples",
+      "Replace home7steps with complete Nepali Devanagari letters/sounds with audio",
+      "Attach appropriate form/meaning/order exercises to grammar lessons without listening tests",
+      "Validate bilingual navigation/content/audio; use existing native build workflow"
+    ],
+    "cleanupAlreadyComplete": {
+      "files": 130,
+      "bytes": 188378626
+    },
+    "pilot": "Replaced single-question pilot with 36 themes × 20 sentences × 3 task pools; each session draws 5 per type",
+    "practicePlan": {
+      "themes": 36,
+      "poolPerType": 20,
+      "types": 3,
+      "perSessionPerType": 5
+    },
+    "validation": {
+      "poolCycles": "36 themes × 40 sessions × JA/EN, no repeat until 20 exhausted; previous set excluded at cycle boundary",
+      "ui": "JA/EN actual TSX: 36 themes × 15 questions; resume/save failure/back; 320px/large-font layouts",
+      "types": "shared and all three apps pass",
+      "audioClips": 1160,
+      "audioBytes": 16568208,
+      "audioChecks": "source references, SHA-256, MP3 decoding, 24 kHz mono",
+      "deviceLimit": "iPhone native interaction and pronunciation listening review remain device/human QA",
+      "nativeHeaderCallback": "Verified navigation callback returns React element without executing component hooks; 72 router back round trips and App A typecheck pass"
+    },
+    "otaVersion": 1216,
+    "commit": "713b77b7aa86af974657d557b643ddf67725ffc7",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42389738059",
+    "buildStatus": "dispatched, final header callback fix included; completion not monitored per user instruction",
+    "audioDelivery": "Existing GitHub Releases; legacy URLs retained, new clips hashed across packs-appa-learning-[0-f] to respect the 1000-asset limit",
+    "supersededBuild": {
+      "run": 42389075241,
+      "status": "cancellation requested before re-dispatch"
+    },
+    "ota": {
+      "version": 1216,
+      "status": "published",
+      "textChunksVerified": 75,
+      "learningClipsVerified": 1160,
+      "manifestUrl": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/manifest.json"
+    },
+    "temporaryArtifacts": "Removed UI previews, test staging, Python cache, and 28 unused pilot recordings; publisher cleaned staging"
+  },
+  "appa_reader_four_tabs_2026_11_08": {
+    "updatedAt": "2026-11-08T01:54:27+09:00",
+    "version": "2.1.17",
+    "status": "committed_and_pushed_build_dispatched",
+    "changes": [
+      "教材上部を基本ルール／活用・語彙／練習問題／一休みの4項目に統一（日英）",
+      "各教材末尾と練習完了画面の他コンテンツへのリンクを削除",
+      "練習問題タブから既存の3ステップ・各5問を開始",
+      "一休み未配置の16テーマに既存の文化コラムを割り当て"
+    ],
+    "validation": [
+      "shared／ネパール語／日本語／英語 TypeScript check passed",
+      "JA/EN各36テーマの4タブ・リンク削除・15問開始・戻る操作をDOMアダプタで確認",
+      "320px・390pxと拡大文字の表示を確認",
+      "36旧導線と72例題画面の戻りルート回帰確認",
+      "実機確認は未実施"
+    ],
+    "otaVersion": 1216,
+    "otaNote": "教材・音声データは変更なし。画面構成変更は2.1.17のインストールが必要。",
+    "commit": "23126f993d0a5118aa29ff007e78e669372270c0",
+    "buildUrl": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42393593024",
+    "buildStatus": "in_progress at initial source check; not monitored per user request",
+    "buildWorkflow": "ios-build-nepali.yml platform=ios submit=true",
+    "cleanup": "Removed .work-reader-2117 after verification; unrelated working tree changes preserved"
+  },
+  "appa_isolated_consonant_audio_2026_11_08": {
+    "updatedAt": "2026-11-08T09:36:00+09:00",
+    "status": "Completed under revised user scope: all33 vowel-free letters as text; only approved क् and स् as representative audio. Three approved sibilant whole clips also preserved.",
+    "reported": "ञ at end of च/ज group sounds like ga; स sounds like tsa; consonant+vowel forms sound correct",
+    "verified": [
+      "JA/EN live OTA 1216 single-letter audio matches local source",
+      "Singles and first inherent-vowel cells use identical audio; other vowel-marked forms use separate audio",
+      "Public audio SHA-256 and size match both reported letters",
+      "Azure say-as characters produces PCM identical to current audio; rejected as a fix"
+    ],
+    "questionPending": null,
+    "reviewCandidates": [],
+    "limitation": "Root model cannot listen to audio; context variants are unverified audition candidates, not corrected production assets",
+    "release": "Committed d41c70cf; OTA1218 published; native2.1.19 build dispatched.",
+    "latestUserReport": "Do not record the full vowel-free alphabet; include all33 written forms and romanizations, with k/s representative recordings.",
+    "affectedSibilants": [
+      "श",
+      "ष",
+      "स"
+    ],
+    "nextCandidate": null,
+    "decision": "Do not substitute long/open-vowel syllable recordings (e.g. सा) under bare-letter labels (स). Test lexical context rather than only alphabet/syllable strings.",
+    "userApproval": "ここでの音声は正しいと思う。これで子音だけの発音に実装して",
+    "provenance": "文法教材/letter_audio_sources.json",
+    "approvedSource": "聞いて話せるネパール語/文法教材/音声生成ソース/approved-sibilants.mp3",
+    "reviewFinding": "Existing selected intervals are 0.1525–0.1775s. Sibilant recordings contain only 0.04–0.07s of periodic frames, versus 0.27–0.29s in explicit-vowel candidates. This supports truncation/underspecified vowel concern but is not a phonetic listening verdict.",
+    "candidateMethod": "Generate each target with explicit अ (ञअ/शअ/षअ/सअ) and preserve the whole recording; no word-boundary crop.",
+    "candidateDirectory": null,
+    "productionOta": 1218,
+    "approvedLetters": [
+      "श",
+      "ष",
+      "स"
+    ],
+    "rejectedNya": "ञअ: user heard ニャ・ア (extra vowel)",
+    "nyaCandidates": [],
+    "newBareLetters": [
+      "क्",
+      "स्"
+    ],
+    "approvedBareLetters": [
+      "क्",
+      "स्"
+    ]
+  },
+  "appa_letters_studio_2026_11_08": {
+    "updatedAt": "2026-11-08T08:24:45+09:00",
+    "status": "Implemented, verified, committed and pushed; OTA 1217 published and public hashes verified; native 2.1.18 build/TestFlight submit dispatched",
+    "version": "2.1.18",
+    "otaVersion": 1217,
+    "commit": "ffce5cb6c94642f46651bfd4101ef52f8003ef7a",
+    "scope": [
+      "Correct isolated श/ष/स using the user-approved recording and timestamp alignment",
+      "Regenerate ञ and 30 conjunct sounds from carrier sentences with exact-word extraction",
+      "Two bilingual audio word examples for all 11 vowels + 33 consonants + 30 conjuncts (148 placements, 140 distinct words)",
+      "Six-category library; focused one-letter sound/words view; letter grid, next/previous, stop/replay, saved section review; 363 combination cells retained"
+    ],
+    "audio": {
+      "clips": 1297,
+      "bytes": 17856200,
+      "voice": "ne-NP-HemkalaNeural",
+      "rate": "0%",
+      "approvedSibilantAlignmentCorrelation": 0.997296,
+      "provenance": "文法教材/letter_audio_sources.json",
+      "humanReviewLimit": "Only the original three-sibilant source was approved by the user. New ञ/conjunct/example recordings were generated and mechanically validated; the model could not listen to them."
+    },
+    "validation": [
+      "JA/EN 74 letter/word panels, 222 sound/word routes, all 363 vowel forms, one active player, stop/completion/back, saving",
+      "390px and 320px/large-text UI; actual TSX through DOM adapters, not physical iPhone QA",
+      "Shared and all three apps pass TypeScript",
+      "JA/EN36 grammar reader tabs/practice/back regression passed",
+      "1297 audio files: source mappings, SHA-256, byte lengths, MP3 decode, 24kHz mono",
+      "All unaffected vowel-marked combination cells byte-identical to previous content",
+      "OTA integrity/recovery/corrupt word examples, learning persistence, legacy V2/V1 and audio cache regressions passed"
+    ],
+    "previewDirectory": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\UIプレビュー\\2.1.18",
+    "cleanup": {
+      "unusedAudioFilesRemoved": 6,
+      "unusedAudioBytesRemoved": 67392,
+      "scratch": "Removed temporary SDK, probes, candidate trials and UI/OTA local test staging; committed source recordings and delivered UI previews retained",
+      "temporaryFilesRemoved": 511,
+      "temporaryBytesRemoved": 53502904,
+      "otaPublisher": "Publication staging cleaned by existing publish script after public manifest verification"
+    },
+    "buildUrl": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42424966655",
+    "buildStatus": "in_progress at initial source check; not monitored per user request",
+    "buildWorkflow": "ios-build-nepali.yml platform=ios submit=true",
+    "ota": {
+      "version": 1217,
+      "status": "published",
+      "publicLearningAudioVerified": 1297,
+      "publicTextChunksVerified": 75,
+      "manifestUrl": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/manifest.json",
+      "compatibility": "Corrected isolated sounds reach existing 2.1.16/2.1.17 letters screens through OTA. New two-word controls and studio layout require native 2.1.18."
+    }
+  },
+  "appa_letters_and_lessons_2026_11_08": {
+    "updatedAt": "2026-11-08T10:06:34.235822",
+    "version": "2.1.19",
+    "otaVersion": 1218,
+    "status": "Complete: committed/pushed; OTA 1218 published and public hashes verified; native 2.1.19 iOS build/TestFlight submit queued and deliberately not tracked",
+    "scope": [
+      "Mother-vowel-free forms of all 33 consonants, romanized; only क्/k and स्/s have exact user-approved whole recordings",
+      "Keep existing letter readings with inherent a; preserve three user-approved sibilant recordings",
+      "One-screen comparison grids for 11 vowels and 11 vowel forms per consonant; compact inline letter/roman and two-line word content",
+      "Home > Letters & sounds > Grammar lessons; grammar tab keeps example practice; JA/EN"
+    ],
+    "validation": [
+      "Shared and App A/B/C TypeScript passed",
+      "JA/EN all 36 lesson routes and return-to-library/home; grammar-tab examples and entitlement limits passed",
+      "JA/EN all 74 letter panels / 148 example placements checked at 320px and 1.4x text",
+      "1299 immutable audio files: hashes, byte counts, MP3 decode, 24kHz mono; only five canonical audio entries changed",
+      "OTA 1218 build/content integrity and recovery/offline/corruption checks passed",
+      "JA/EN 13 sections: all 33 vowel-free glyphs/romanizations; exactly 2 audio controls and 31 noninteractive reference tiles; all 363 vowel routes"
+    ],
+    "audioProvenance": "文法教材/letter_audio_sources.json",
+    "deviceValidation": "DOM-adapter interaction and layout checks; no physical iPhone test",
+    "buildPolicy": "Existing ios-build-nepali workflow; dispatch once, no build tracking per user request",
+    "commit": "d41c70cf50694f25471a5ee0eed21a4e2f54125a",
+    "previewDirectory": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\UIプレビュー\\2.1.19",
+    "cleanup": {
+      "ownScratchFilesRemoved": 120,
+      "ownScratchBytesRemoved": 33745450,
+      "supersededUnreferencedAudioFilesRemoved": 3,
+      "supersededUnreferencedAudioBytesRemoved": 10500,
+      "officialApprovedSourcesRetained": 5,
+      "finalPreviewsRetained": 14,
+      "publisherStaging": "Removed by existing publisher after manifest verification"
+    },
+    "buildUrl": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42432735498",
+    "buildRunId": 42432735498,
+    "buildStatus": "queued at initial head check; not monitored per user request",
+    "buildWorkflow": "ios-build-nepali.yml platform=ios submit=true",
+    "ota": {
+      "version": 1218,
+      "status": "published",
+      "publicLearningAudioVerified": 1299,
+      "publicTextChunksVerified": 75,
+      "manifestUrl": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/manifest.json"
+    },
+    "compatibility": "Text and approved recordings published via OTA. Grouped compact charts, the full passive consonant reference view and home grammar-library navigation require native 2.1.19. No physical iPhone validation performed."
+  },
+  "appa_free_practice_2026_11_08": {
+    "status": "Committed and pushed; existing iOS build/TestFlight workflow dispatched once. No build completion monitoring.",
+    "version": "2.1.20",
+    "otaVersion": 1218,
+    "validation": [
+      "JA/EN 36 themes x 3 modes x 61 draws; all 720 puzzles per language with 2 rule-based distractors",
+      "JA/EN all 36 themes x 3 screen launches, wrong choices, undo, 25 continuous questions, mode switching, resume, save failure, double tap, audio cleanup",
+      "All 36 readers x 4 tabs in JA/EN; 320px large text and 390px layouts",
+      "Legacy fixed-set resumes at form/meaning/puzzle positions upgrade to continuous sessions",
+      "TypeScript App A/B/C; legacy learning state, pools and scaffolded content checks"
+    ],
+    "ota": "1218 unchanged: no content/audio payload changes; new native shell required",
+    "deviceValidation": "Actual TSX through DOM adapters; physical iPhone validation pending",
+    "updated": "2026-11-08T10:57:27.345617+09:00",
+    "commit": "f538a2dfe534241d8ea45d0746c79350b22b0f70",
+    "buildUrl": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42436399131",
+    "buildRunId": 42436399131,
+    "buildStatus": "in_progress at initial exact-head verification; completion not monitored per user request",
+    "buildWorkflow": "ios-build-nepali.yml platform=ios submit=true",
+    "previewDirectory": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\UIプレビュー\\2.1.20",
+    "cleanup": {
+      "ownScratchFilesRemoved": 24,
+      "ownScratchBytesRemoved": 32864527,
+      "finalPreviewsRetained": 10
+    }
+  },
+  "appa_letters_navigation_2026_11_08": {
+    "status": "OTA1219 published and public content/audio verified. 2.1.21 iOS/TestFlight build dispatched once. Completion not tracked per user instruction.",
+    "version": "2.1.21",
+    "otaVersion": 1219,
+    "newAudioClips": 300,
+    "newAudioCharacters": 1200,
+    "validation": "shared/App A/B/C tsc; ja/en 36×3 free practice and 61 draws per mode; direct drag/tap/reorder/cancel; 13-section previous/next; 44 letter entries and 363 vowel routes; 30 conjuncts/60 words/330 audio routes; settings seven taps/blur/timeout; home vocabulary and bilingual listening; local OTA1219; 1599 audio files integrity/ffprobe",
+    "newAudioReview": "300 newly synthesized Hemkala clips. Phonetic quality and native touch behavior still require real-device listening/use.",
+    "preview": "聞いて話せるネパール語\\画像\\UIプレビュー\\2.1.21",
+    "commit": "34fd2f169fcfbc062c1b333011819de64fcde2a9",
+    "listeningCopy": {
+      "ja": "テーマを選んで、聞き流しを始めましょう。何度も聞いて、自然なネパール語の感覚を身につけましょう。",
+      "en": "Choose a theme and start listening. Listen again and again to develop a natural feel for Nepali."
+    },
+    "settingsGate": "Hidden in every build. Seven consecutive version taps unlock; leaving Settings hides it again.",
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42444622845",
+    "buildInputs": {
+      "platform": "ios",
+      "submit": true
+    },
+    "buildCompletionVerified": false,
+    "otaPublished": true
+  },
+  "appa_home_review_removal_2026_11_08": {
+    "status": "Included in 2.2.1 iOS/TestFlight build; workflow started, completion not tracked",
+    "change": "Removed the home review card 思い出すほど、自分の言葉に。 and its English counterpart plus unused styles.",
+    "validation": "App A TypeScript passes; exact single-file diff reviewed.",
+    "commit": "cf3a2bd2491dfd158d1a887fd8f96c342d726180",
+    "nativeBuildStarted": true,
+    "nativeBuildVersion": "2.2.1",
+    "buildRunId": 42449724165
+  },
+  "appa_unified_letter_charts_2026_11_08": {
+    "status": "Included in 2.2.1 iOS/TestFlight build; workflow started, completion not tracked",
+    "change": "Conjuncts now use the same compact glyph-only horizontal selector, sound grid, selected-form details and shared style definitions as consonant+vowel. Removed the special large tiles, count row and front example panel. Two example words preserved inside selected conjunct details. Switching a row stops audio and resets details consistently.",
+    "validation": "App A TypeScript passes; JA/EN 30 conjunct selectors,330 sounds,60 example words; consonant/vowel363 sound routes and44 basic letter entries; 390px and320px with large text; preview inspected. No audio/content edits.",
+    "commit": "fe61434b5f9cd4d1ef4007cc5020de0c2c9adee2",
+    "nativeBuildStarted": true,
+    "previews": "聞いて話せるネパール語/画像/UIプレビュー/複合文字_スタイル統一",
+    "nativeBuildVersion": "2.2.1",
+    "buildRunId": 42449724165
+  },
+  "appa_compact_letter_charts_2026_11_08": {
+    "status": "Included in 2.2.1 iOS/TestFlight build; workflow started, completion not tracked",
+    "change": "Both consonant+vowel and conjunct selectors use a wrapped, compact overview instead of horizontal scrolling. Selector buttons minimum44pt; 11 sound cards reduced to4 columns/3 rows on standard phone widths, fewer columns on narrow screens. Retained both roman readings, all audio and two example words.",
+    "validation": "App A TypeScript; JA/EN 30 conjunct selectors/330 sounds/60 example words;33 consonants/363 vowel routes; 390px and320px/large text. Standard viewport contains all11 sound cards. Visual previews inspected.",
+    "commit": "108a60c46d9060b4fd69df7f8f0c6fb4592ac422",
+    "nativeBuildStarted": true,
+    "previews": "聞いて話せるネパール語\\画像\\UIプレビュー\\文字一覧_コンパクト",
+    "nativeBuildVersion": "2.2.1",
+    "buildRunId": 42449724165
+  },
+  "appa_vocabulary_quiz_2026_11_08": {
+    "status": "Included in 2.2.1 iOS/TestFlight build; workflow started, completion not tracked",
+    "commit": "c88bf4a9",
+    "features": [
+      "App A vocabulary cards replaced with Nepali-to-L1 and L1-to-Nepali four-choice quizzes",
+      "JA/EN; 30 themes; shuffled questions/options; continuous practice; per-direction session score",
+      "Known equivalent translations excluded from distractors; first response locked; reveal and next supported",
+      "Poster/audio mode and other apps retain existing behavior; obsolete card settings hidden for App A"
+    ],
+    "validation": [
+      "Shared, App A, App B and App C TypeScript passed",
+      "JA 2000 and EN 1998 word/direction questions; three shuffled cycles; ambiguity and state guards passed",
+      "Actual-screen browser harness: all 30 themes x both directions x JA/EN; answer/reveal/next/switch/double taps; small/landscape/large text; entitlement/empty/legacy guards passed",
+      "Home-to-category-to-quiz and back passed; previews visually reviewed"
+    ],
+    "previews": "聞いて話せるネパール語/画像/UIプレビュー/単語4択クイズ/",
+    "nativeBuildStarted": true,
+    "otaPublished": false,
+    "delivery": "Included in the 2.2.1 native build dispatched 2026-11-08; TestFlight upload configured; completion not yet verified.",
+    "nativeBuildVersion": "2.2.1",
+    "buildRunId": 42449724165
+  },
+  "appa_remove_poster_2026_11_08": {
+    "status": "Included in 2.2.1 iOS/TestFlight build; workflow started, completion not tracked",
+    "commit": "9ae30a27",
+    "changes": [
+      "Removed App A poster lessons, resource resolver and download loader from AppShell wiring",
+      "Ignore legacy overlay poster data at compose boundary",
+      "Register root poster screen only for apps supplying poster lessons; App B unchanged"
+    ],
+    "validation": [
+      "Shared/App A/App B/App C TypeScript passed",
+      "JA/EN actual-screen home/category/quiz/back checks passed",
+      "JA/EN legacy overlay poster ignored and 30 quiz themes retained"
+    ],
+    "nativeBuildStarted": true,
+    "otaPublished": false,
+    "nativeBuildVersion": "2.2.1",
+    "buildRunId": 42449724165
+  },
+  "appa_settings_order_2026_11_08": {
+    "status": "Included in 2.2.1 iOS/TestFlight build; workflow started, completion not tracked",
+    "commit": "a5ec6877",
+    "order": [
+      "文法・会話の出題方向",
+      "再生スピード",
+      "聞き流しの再生順序",
+      "聞き流しの再生回数"
+    ],
+    "validation": "Shared TypeScript and diff checks passed; four speed options remain on one row",
+    "nativeBuildStarted": true,
+    "nativeBuildVersion": "2.2.1",
+    "buildRunId": 42449724165
+  },
+  "appa_settings_speed_row_2026_11_08": {
+    "status": "Included in 2.2.1 iOS/TestFlight build; workflow started, completion not tracked",
+    "commit": "6eca37b7",
+    "change": "Playback speed 0.8/1.0/1.2/1.5 shown as equal-width buttons on one row below the label",
+    "validation": [
+      "Shared TypeScript passed",
+      "Actual Settings screen JA/EN x 320/390px x standard/1.4 text: four buttons same row, no label wrapping/overflow, touch targets >=44px",
+      "JA preview visually reviewed"
+    ],
+    "previews": "聞いて話せるネパール語/画像/UIプレビュー/設定_再生スピード/",
+    "nativeBuildStarted": true,
+    "nativeBuildVersion": "2.2.1",
+    "buildRunId": 42449724165
+  },
+  "appa_remove_romaji_setting_2026_11_08": {
+    "status": "Included in 2.2.1 iOS/TestFlight build; workflow started, completion not tracked",
+    "commit": "472a05ca",
+    "change": "Removed romanization display toggle from App A settings; font size control retained",
+    "validation": "Shared TypeScript and diff checks passed",
+    "nativeBuildStarted": true,
+    "nativeBuildVersion": "2.2.1",
+    "buildRunId": 42449724165
+  },
+  "appa_remove_rhythm_2026_11_08": {
+    "status": "Included in 2.2.1 iOS/TestFlight build; workflow started, completion not tracked",
+    "commit": "e9510680",
+    "change": "Removed home learning rhythm panel, weekly/streak/stat displays and exclusive derived values/styles; letters/grammar/vocabulary cards now follow the hero directly",
+    "validation": [
+      "Shared TypeScript and diff checks passed",
+      "JA/EN actual-screen home/category/quiz/back checks passed",
+      "Home preview visually reviewed"
+    ],
+    "previews": "聞いて話せるネパール語/画像/UIプレビュー/ホーム_学びのリズム削除/",
+    "nativeBuildStarted": true,
+    "nativeBuildVersion": "2.2.1",
+    "buildRunId": 42449724165
+  },
+  "appa_remove_home_corner_labels_2026_11_08": {
+    "status": "Included in 2.2.1 iOS/TestFlight build; workflow started, completion not tracked",
+    "commit": "bebc98ec",
+    "change": "Removed bold top-right अ क म, 01 →, क → from home letters, grammar lessons and vocabulary cards",
+    "validation": [
+      "Shared TypeScript and diff checks passed",
+      "JA/EN home/category/quiz/back verification passed",
+      "Home preview visually reviewed"
+    ],
+    "nativeBuildStarted": true,
+    "nativeBuildVersion": "2.2.1",
+    "buildRunId": 42449724165
+  },
+  "appa_build_2_2_1_2026_11_08": {
+    "status": "Existing iOS/TestFlight workflow dispatched once; in_progress at initial exact-head verification. Completion not monitored per user instruction.",
+    "version": "2.2.1",
+    "otaVersion": 1219,
+    "workflow": "ios-build-nepali.yml",
+    "inputs": {
+      "platform": "ios",
+      "submit": true
+    },
+    "includes": [
+      "Bidirectional vocabulary four-choice quiz",
+      "Vocabulary poster and obsolete settings removal",
+      "Settings order and single-row playback speeds",
+      "Home rhythm/review/corner labels removal",
+      "Unified compact consonant-vowel and conjunct charts"
+    ],
+    "buildCompletionVerified": false,
+    "commit": "b932db2390e7973197dcecf20e407f55dee603da",
+    "buildRunId": 42449724165,
+    "buildUrl": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42449724165",
+    "otaPublished": false,
+    "validation": "All included functional/UI changes already passed their targeted checks; version and run-name updated together. No content/audio payload changes; OTA remains 1219.",
+    "latestAdditionalRun": {
+      "runId": 42455418767,
+      "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42455418767",
+      "headSha": "4d53bb43d3614d762300e5252ddec237470a0b8f",
+      "status": "in_progress",
+      "submit": true,
+      "completionMonitored": false
+    }
+  },
+  "appa_unified_letters_2026_11_08": {
+    "status": "Implemented and verified; pushed e07aaf98; iOS 2.2.1/TestFlight build 42454116275 started; completion not monitored",
+    "nativeBuildStarted": true,
+    "otaChanged": false,
+    "commit": "e07aaf985268c44787332953aed8f9c7c3ac717d",
+    "cards": 4,
+    "consonantForms": 12,
+    "bareAudio": [
+      "क्",
+      "स्"
+    ],
+    "defaultExampleWords": "one natural recorded word per matching form; no forced rare examples",
+    "verification": "JA/EN 33×12 consonant forms, 30×11 conjunct forms, all sound/word audio routes, 6-section navigation and progress, 320/390 layouts",
+    "buildRunId": 42454116275,
+    "buildUrl": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42454116275"
+  },
+  "appa_grammar_clarity_2026_11_08": {
+    "status": "Published and verified OTA 1220; committed and pushed",
+    "commit": "e07aaf985268c44787332953aed8f9c7c3ac717d",
+    "reviewedThemes": 36,
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "clarifiedRules": 33,
+    "changedThemes": {
+      "ja": [
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        29,
+        31,
+        33,
+        34,
+        35,
+        36
+      ],
+      "en": [
+        2,
+        3,
+        8,
+        9,
+        10,
+        12,
+        13,
+        15,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        29,
+        31,
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "examplesPracticeAudioUnchanged": true,
+    "verification": [
+      "All 36 JA/EN rules and expanded reference views, 390px normal and 320px large text",
+      "33-rule presence, idempotence, mirrors/master sync, culture preservation",
+      "Only guide chunks differ from public 1219; core, overlays and audio unchanged"
+    ],
+    "thahaComparison": "Not implemented as a paired lesson; explained to user that थाहा हुनु (know) and थाहा पाउनु (find out) are not exact paraphrases",
+    "otaVersion": 1220,
+    "otaPublished": true,
+    "publicFilesVerified": true,
+    "publicationMethod": "Existing publish_content_ota.ps1; all 1599 immutable learning clips and 75 text chunks validated; manifest switched last"
+  },
+  "appa_navigation_2026_11_08": {
+    "status": "Committed and pushed; existing iOS 2.2.1 workflow started with TestFlight submission enabled",
+    "tabs": [
+      "ホーム",
+      "文章パズル",
+      "聞き流し",
+      "瞬間作文"
+    ],
+    "details": [
+      "Grammar and conversation unified inside Instant Composition",
+      "Dedicated puzzle tab reuses 36 themes / 720 existing exercises with distractors, drag/tap, unlimited draws and saved resume",
+      "Settings entry on home hero",
+      "Vocabulary directions moved below description above theme list, selection persists across restart; removed in-quiz direction switches"
+    ],
+    "vocabularyReview": {
+      "themes": 30,
+      "entries": 1000,
+      "perTheme": "20-40",
+      "added": 0,
+      "reason": "Existing pools support both four-choice directions; JA/EN translations populated"
+    },
+    "validation": [
+      "TypeScript shared/App A/App B/App C passed",
+      "JA/EN all 36 puzzle theme routes, solve/next/back/resume and composition grammar/conversation routes passed",
+      "All 30 vocabulary themes, both directions, answer/reveal/next and persistent selection passed",
+      "320/390 layouts and larger text passed in actual-screen DOM harness; native device not yet checked",
+      "720 puzzle distractors and 61-draw session cycles passed"
+    ],
+    "otaPublished": false,
+    "otaReason": "No content data or audio changes; these navigation/UI changes require a native build",
+    "version": "2.2.1",
+    "commit": "4d53bb43d3614d762300e5252ddec237470a0b8f",
+    "build": {
+      "runId": 42455418767,
+      "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42455418767",
+      "headSha": "4d53bb43d3614d762300e5252ddec237470a0b8f",
+      "status": "in_progress",
+      "submit": true,
+      "completionMonitored": false
+    },
+    "temporaryFilesRemoved": true
+  },
+  "appa_build_2_2_2_2026_11_08": {
+    "status": "Committed and pushed; existing workflow in progress at initial exact-head check",
+    "version": "2.2.2",
+    "workflow": "ios-build-nepali.yml",
+    "inputs": {
+      "platform": "ios",
+      "submit": true
+    },
+    "includes": "All changes from 4d53bb43, including Home / Puzzles / Listening / Instant Composition navigation and vocabulary direction selector",
+    "validation": "App version and workflow run-name match 2.2.2; functional changes already validated in previous commit",
+    "completionMonitored": false,
+    "commit": "08731dda837f95908166cd50d5b3964e29dec19a",
+    "buildRunId": 42455668349,
+    "buildUrl": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42455668349",
+    "buildCompletionVerified": false,
+    "latestAdditionalRun": {
+      "runId": 42469465861,
+      "headSha": "4f98e1168432edb830e4d4c7abb6801dbe1a9f54",
+      "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42469465861",
+      "status": "in_progress",
+      "submit": true,
+      "completionMonitored": false
+    }
+  },
+  "appa_conversation_puzzles_2026_11_08": {
+    "status": "Committed and pushed; 2.2.2 iOS/TestFlight workflow started",
+    "version": "2.2.2",
+    "tabs": [
+      "ホーム",
+      "文章パズル",
+      "聞き流し",
+      "瞬間作文",
+      "設定"
+    ],
+    "details": [
+      "Listening order and initial selection: grammar then conversation",
+      "Puzzles: grammar and conversation selectors; conversation has 30 themes / 3 levels / 1795 existing sentences; 5 single-word utterances excluded",
+      "Two real unused word choices; tap/drag board; shuffled independent per-theme/level pools; resume and next preserve the selected mode",
+      "Home top-right Settings removed; Settings restored to fifth bottom tab",
+      "Compact long prompts and short English Compose tab label"
+    ],
+    "contentPayloadChanged": false,
+    "otaPublished": false,
+    "validation": [
+      "Shared/App A/App B/App C TypeScript passed",
+      "JA/EN 1795 conversation puzzles and 720 grammar puzzles passed distractor, reading, exact model, pool isolation and three-cycle checks",
+      "Actual-screen DOM harness: JA/EN 30 themes x 3 levels, reveal/solve/next/back/resume passed",
+      "Grammar puzzle and composition regression passed",
+      "Grammar-first listening routes and level preservation passed",
+      "320/390 layouts inspected; native-device validation pending",
+      "Settings developer gate and review/request actions passed"
+    ],
+    "commit": "4f98e1168432edb830e4d4c7abb6801dbe1a9f54",
+    "build": {
+      "runId": 42469465861,
+      "headSha": "4f98e1168432edb830e4d4c7abb6801dbe1a9f54",
+      "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42469465861",
+      "status": "in_progress",
+      "submit": true,
+      "completionMonitored": false
+    },
+    "temporaryFilesRemoved": true
+  },
+  "nepaliDictionary_2026_11_08": {
+    "status": "implemented, verified, committed, pushed and OTA published; native build submitted to workflow",
+    "headwords": 988,
+    "sourceRows": 1000,
+    "searchableForms": 186,
+    "examples": 28,
+    "audioClips": 988,
+    "newAudioClips": 907,
+    "nativeVersion": "2.2.2",
+    "otaVersion": 1222,
+    "scope": "Home dictionary, Nepali/roman/JA/EN search, curated senses/forms/notes, lesson links, Hemkala audio",
+    "note": "No native-speaker audit; existing vocabulary quiz rows are unchanged.",
+    "commit": "f3437f113dc9c7bd88266176faef523888f68b3b",
+    "buildRun": 42473961750,
+    "buildUrl": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42473961750",
+    "buildStatus": "queued at initial exact-head check; completion deliberately not tracked",
+    "newAudioBytes": 10229040,
+    "otaVerified": true,
+    "nativeBuildNumber": 1072,
+    "validation": "988 entries, every source row/reading/form, 2506 audio hashes and MP3 decoding, shared/AppA/AppB/AppC TypeScript, JA/EN 320/390px at enlarged text, search/playback/back/lesson navigation, OTA validation and public hash verification",
+    "sharedLockReleased": true
+  },
+  "nepaliDictionaryExpansion_2026_11_08": {
+    "status": "implemented, verified, committed, pushed; OTA published; native build dispatched",
+    "target": "about 2000 unique headwords",
+    "home": "compact 2x2; motto typography; no card footer actions/descriptions",
+    "entries": 2089,
+    "forms": 542,
+    "examples": 52,
+    "plannedOta": 1223,
+    "nativeVersion": "2.2.3",
+    "commit": "6374ee00f2b1c27a1492734dfef19c24d819db3a",
+    "newAudio": 1049,
+    "allLearningAudio": 3555,
+    "validations": [
+      "shared/AppA/AppB/AppC TypeScript",
+      "all dictionary search keys and inflections",
+      "all 3555 audio hashes and formats",
+      "Japanese/English home and dictionary UI 320/390",
+      "OTA integrity/recovery/offline/stale-cache",
+      "75 text chunk consistency"
+    ],
+    "otaVersion": 1223,
+    "otaPublished": true,
+    "nativeBuildNumber": 1074,
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42482558909",
+    "buildInitialStatus": "in_progress",
+    "submitToTestFlight": true,
+    "buildCompletionTracked": false,
+    "scratchCleaned": true,
+    "limitations": "Native device review and native-speaker listening review are not claimed; build completion is not monitored as instructed."
+  },
+  "local_cleanup_2026_11_09": {
+    "status": "complete",
+    "candidateFiles": 2137,
+    "candidateBytes": 153345682,
+    "categories": {
+      "聞いて話せるネパール語/画像/UIプレビュー": [
+        54,
+        2194226
+      ],
+      "聞いて話せるネパール語/expo-app/assets/poster": [
+        2064,
+        17192175
+      ],
+      "聞いて話せるネパール語/dist-poster": [
+        4,
+        17448707
+      ],
+      "聞いて話せる英語/dist-packs": [
+        4,
+        87340809
+      ],
+      "superseded screenshot size": [
+        10,
+        29169765
+      ],
+      "empty placeholder": [
+        1,
+        0
+      ]
+    },
+    "scope": "generated artifacts across workspace; source materials and active app content retained",
+    "deletedFiles": 2137,
+    "deletedBytes": 153345682,
+    "removedDirectories": 87,
+    "retainedFilesHashVerified": 37938,
+    "removedTargets": [
+      "聞いて話せるネパール語/画像/UIプレビュー",
+      "聞いて話せるネパール語/expo-app/assets/poster",
+      "聞いて話せるネパール語/dist-poster",
+      "聞いて話せる英語/dist-packs",
+      "packs/audio",
+      "packs",
+      "聞いて話せるネパール語/scripts/screenshots_input",
+      "聞いて話せるネパール語/scripts/screenshots_output",
+      "聞いて話せる英語/expo-app/data/overlays",
+      "聞いて話せるネパール語/画像/スクショ/ja/*_2688x1242.png",
+      "聞いて話せるネパール語/画像/スクショ/en/*_2688x1242.png",
+      "【データをGitHubに退避 必要ならダウンロードして編集する】"
+    ],
+    "verification": "Every deleted file matched its preflight SHA-256; all 37,938 retained files unchanged; 2,064 old poster assets match published archives; all 2,452 English archive recordings match published contents. Current learning audio has no orphans.",
+    "preserved": "All app source code and build scripts, source audio, current lessons and dictionary, original workbooks/documents, current 2622x1206 screenshots and production source materials, shared dictionary, credentials and dependencies",
+    "historicalArtifactNote": "Earlier app-state and production notes may reference removed UI previews and superseded screenshot sizes. Published GitHub Release assets were not changed.",
+    "nativeBuildOrPublication": false
+  },
+  "appa_korean_2026_11_10": {
+    "status": "Korean 2.2.4 implementation complete and locally verified. Standard OTA 1224 retry and native build preparation in progress.",
+    "request": "Add Korean mother language in Settings with Korean UI and course translations",
+    "pending_previous": [
+      "separate marks and numbers cards",
+      "0–100 and large numbers with Nepali audio",
+      "remove reviewed markers"
+    ],
+    "deployment": "not yet",
+    "prepared": [
+      "safe keyed UI copy migration for 160 bilingual expressions; JA/EN behavior preserved",
+      "localize_korean.py extracts complete Korean request manifest and only assembles fully reviewed translations",
+      "Korean UI JSON (425 strings); Korean settings, engagement, reading navigation, letter categories, practice labels and dictionary search/display",
+      "reuse_korean_translations.py imports exact Nepali+Japanese matches as unreviewed; no API calls; reviewed UI imported separately"
+    ],
+    "cost": {
+      "estimateJPY": [
+        1500,
+        3000
+      ],
+      "requestedCapJPY": 3000,
+      "translationJPY": [
+        800,
+        1500
+      ],
+      "reviewJPY": [
+        500,
+        1000
+      ],
+      "audioJPY": [
+        200,
+        500
+      ],
+      "approvalReceived": false,
+      "paidTranslationStarted": false,
+      "audioEstimateUpdate": "Previous 200–500 JPY paid-audio estimate is superseded: 0 JPY within documented Azure F0 allowance; remaining monthly allowance has not been inspected.",
+      "maximumAdditionalAPIChargeJPY": 0
+    },
+    "remaining": [
+      "Complete OTA public download verification",
+      "Dispatch standard iOS/TestFlight build after commit/push",
+      "Return to Arabic after Korean build work"
+    ],
+    "modelsAvailable": [
+      "claude-sonnet-5-5",
+      "claude-opus-5-5"
+    ],
+    "externalServices": "Azure F0 Korean synthesis completed. No translation API; no paid-service fallback.",
+    "ttsVerification": {
+      "date": "2026-11-10",
+      "reference": "聞いて話せるネパール語/文法教材/音声生成_引き継ぎ_ChatGPT向け.md",
+      "resourceInHandoff": "safa-nepali-tts",
+      "tierEvidence": "Free F0 stated in user-supplied handoff; not independently verified via Azure management API or portal",
+      "region": "japaneast",
+      "liveVoicesListHTTP": 200,
+      "verifiedVoices": [
+        "ko-KR-SunHiNeural",
+        "ko-KR-InJoonNeural",
+        "ne-NP-HemkalaNeural"
+      ],
+      "recommendedKoreanVoice": "ko-KR-SunHiNeural",
+      "freeAllowanceCharactersPerMonth": 500000,
+      "allowanceScope": "Shared resource allowance across Nepali and Korean synthesis",
+      "remainingMonthlyAllowanceVerified": false,
+      "koreanAudioGenerated": true,
+      "existingVoicesPreserved": {
+        "ne": "ne-NP-HemkalaNeural standard speed",
+        "ja": "ja-JP-Neural2-B speakingRate 0.95",
+        "en": "en-US-Wavenet-F speakingRate 0.95"
+      },
+      "selectedKoreanVoice": "ko-KR-SunHiNeural",
+      "gender": "female",
+      "progress": "2328/2328 files verified against text, voice, hashes and audio decoding; no pending synthesis",
+      "audioFilesGenerated": 2328
+    },
+    "zeroCostProgress": {
+      "uiStrings": 425,
+      "reviewedUniqueTranslations": 23716,
+      "existingCourseReuseCandidates": 2415,
+      "existingCourseCandidatesReviewed": true,
+      "requestCount": 23716,
+      "translationDestinations": 68606,
+      "freeAPIKeyPresent": false,
+      "pendingQuestion": null,
+      "apiChargesInThisTurnJPY": 0,
+      "groupProgress": {
+        "examplesL1": {
+          "total": 1785,
+          "reviewed": 1785
+        },
+        "grammarL1": {
+          "total": 512,
+          "reviewed": 512
+        },
+        "wordsL1": {
+          "total": 959,
+          "reviewed": 959
+        },
+        "vocab": {
+          "total": 4755,
+          "reviewed": 4755
+        },
+        "convVocab": {
+          "total": 13031,
+          "reviewed": 13031
+        },
+        "grammarVocab": {
+          "total": 574,
+          "reviewed": 574
+        },
+        "grammarGuide": {
+          "total": 1248,
+          "reviewed": 1248
+        },
+        "grammarThemeNames": {
+          "total": 36,
+          "reviewed": 36
+        },
+        "grammarTextOnlyLabel": {
+          "total": 1,
+          "reviewed": 1
+        },
+        "contentNames": {
+          "total": 64,
+          "reviewed": 64
+        },
+        "learningPathV3": {
+          "total": 1129,
+          "reviewed": 1129
+        },
+        "lettersSounds": {
+          "total": 664,
+          "reviewed": 664
+        },
+        "nepaliDictionary": {
+          "total": 2195,
+          "reviewed": 2195
+        },
+        "app": {
+          "total": 2,
+          "reviewed": 2
+        },
+        "common": {
+          "total": 14,
+          "reviewed": 14
+        },
+        "nav": {
+          "total": 8,
+          "reviewed": 8
+        },
+        "directions": {
+          "total": 4,
+          "reviewed": 4
+        },
+        "levels": {
+          "total": 6,
+          "reviewed": 6
+        },
+        "themes": {
+          "total": 30,
+          "reviewed": 30
+        },
+        "grammarThemes": {
+          "total": 36,
+          "reviewed": 36
+        },
+        "vocabCategories": {
+          "total": 30,
+          "reviewed": 30
+        },
+        "themeScreen": {
+          "total": 9,
+          "reviewed": 9
+        },
+        "levelScreen": {
+          "total": 5,
+          "reviewed": 5
+        },
+        "listenSource": {
+          "total": 5,
+          "reviewed": 5
+        },
+        "practice": {
+          "total": 11,
+          "reviewed": 11
+        },
+        "listening": {
+          "total": 5,
+          "reviewed": 5
+        },
+        "flashcard": {
+          "total": 7,
+          "reviewed": 7
+        },
+        "settings": {
+          "total": 54,
+          "reviewed": 54
+        },
+        "home": {
+          "total": 24,
+          "reviewed": 24
+        },
+        "courseCopy": {
+          "total": 154,
+          "reviewed": 154
+        }
+      },
+      "method": "Direct in-session authorship and source review; fully recognized grammatical-label templates; no translation API"
+    },
+    "checks": [
+      "All 23,716 reviewed translations / 68,606 destinations match assembled Korean output; Nepali/romanization/audio identity unchanged",
+      "2,328 Korean recordings match text/voice/SHA/byte lengths; all decoded successfully",
+      "All 36 Korean lesson readers and 3 practice modes at 320/390px and large text",
+      "Six Korean letter categories, dictionary search/audio, all 30 vocabulary themes in both directions, grammar/conversation composition",
+      "425 Korean UI keys/placeholders, settings and seven-tap development gate",
+      "Real OTA with Korean: language-specific recordings, shared Nepali cache, offline recovery, integrity failures and rollback",
+      "Shared/App A/App B/App C TypeScript PASS",
+      "iOS Expo production bundle exported successfully (16.2 MB Hermes bundle)",
+      "JA/EN home regression; git diff --check",
+      "JA/EN: all 36 puzzle themes, solve/next/back, resume and composition navigation PASS"
+    ],
+    "limitations": [
+      "No Korean native-speaker proofreading or native-device listening/layout assessment",
+      "Azure remaining monthly allowance not independently inspected",
+      "Native 2.2.4 build not dispatched yet"
+    ],
+    "nextRequestedLanguage": {
+      "language": "ar",
+      "status": "queued after all Korean work completes",
+      "scope": "mother-language UI and course translations; standard Arabic and RTL layout",
+      "maximumAdditionalAPIChargeJPY": 0,
+      "requestedOn": "2026-11-10",
+      "audioScope": "not yet specified for Arabic"
+    },
+    "translationPlanSha256": "e1bdc8d1cdd41301e0a6e3d30283f482c4b95d61b3063f6b7142601658e05713",
+    "audioPlayback": "Existing prerecorded MP3 engine; no device TTS fallback. Nepali target repetition and romanization now independent of mother-language UI.",
+    "targetVersion": "2.2.4",
+    "temporaryCleanup": {
+      "files": 3813,
+      "bytes": 192885198,
+      "scope": "Only temporary Korean QA/export/release staging created in this work; formal masters retained"
+    },
+    "localBuildNumberPlanned": 1075,
+    "publicationRetry": "First full public-audio retrieval check failed before manifest switch. Added bounded retry for downloads and exact failed-asset reporting; second full validation running. Public manifest remains 1223 until successful switch."
+  },
+  "appa_letters_numbers_2026_11_10": {
+    "status": "implemented locally and verified; not published",
+    "categories": [
+      "start",
+      "vowels",
+      "combinations",
+      "conjuncts",
+      "marks",
+      "numbers"
+    ],
+    "numbers": {
+      "range": "0–100 inclusive",
+      "large": [
+        1000,
+        10000,
+        100000,
+        1000000,
+        10000000
+      ],
+      "count": 106,
+      "newAudio": 75,
+      "newAudioCharacters": 522,
+      "voice": "ne-NP-HemkalaNeural",
+      "rate": "0%",
+      "allExistingAudioUnchanged": true
+    },
+    "ui": "Independent signs/numbers cards; compact range picker + previous/next; removed reviewed controls/checkmarks/progress display; retained saved historical state",
+    "checks": [
+      "JA/EN full letters UI + all 106 numbers; both navigation directions; 33×12 consonants and 30×11 conjuncts; 320px large text",
+      "all 3630 audio references, SHA-256, bytes, decoding, 24kHz mono",
+      "shared/AppA/AppB/AppC TypeScript",
+      "home JA/EN 320/390px and large text",
+      "git diff --check"
+    ],
+    "limitation": "No native-device or human listening assessment; no commit/push/OTA/build yet"
+  },
+  "appa_store_screenshots_2026_11_11": {
+    "status": "Japanese 6 posters complete; 03 replaced with lessons/themes and 06 with composition/dictionary as requested; visually verified; local only",
+    "format": {
+      "width": 2622,
+      "height": 1206,
+      "mode": "RGB",
+      "transparent": false
+    },
+    "contents": [
+      "概要",
+      "文字と発音",
+      "教材とテーマ",
+      "パズルと単語",
+      "聞き流し",
+      "瞬間作文と辞書"
+    ],
+    "sourceScreens": [
+      [
+        "ホーム.jpg"
+      ],
+      [
+        "文字と発音1.jpg",
+        "文字と発音2.jpg"
+      ],
+      [
+        "文法テーマ.jpg",
+        "教材.jpg"
+      ],
+      [
+        "パズル.jpg",
+        "単語.jpg"
+      ],
+      [
+        "聞き流し.jpg"
+      ],
+      [
+        "会話テーマ.jpg",
+        "辞書.jpg"
+      ]
+    ],
+    "verifiedCounts": {
+      "grammarThemes": 34,
+      "appendices": 2,
+      "dictionaryEntries": 2089,
+      "vocabularyWords": 1000,
+      "vocabularyCategories": 30,
+      "conversationSentences": 1800,
+      "grammarSentences": 528
+    },
+    "files": [
+      {
+        "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ja\\01_概要_2622x1206.png",
+        "size": 3043013,
+        "sha256": "5bdf46d642b5a193e3e87efc44cb7fcb68b99943ec6beed8f785c42062718d0c"
+      },
+      {
+        "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ja\\02_文字と発音_2622x1206.png",
+        "size": 2596665,
+        "sha256": "46b66b170807f1ff405a36ff8c48ce2c6e529484d2b9d409df0a408193903c83"
+      },
+      {
+        "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ja\\03_教材とテーマ_2622x1206.png",
+        "size": 2487064,
+        "sha256": "c657910cb87797d1479ce83ae4fd0575c6a37bd05a7b98773785245f5fcc71bd"
+      },
+      {
+        "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ja\\04_パズルと単語_2622x1206.png",
+        "size": 2485767,
+        "sha256": "ebb4fb0cb53a28c014a491fca88e57311fdbecdb39e2d60f0cf8b16c335c6ab7"
+      },
+      {
+        "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ja\\05_聞き流し_2622x1206.png",
+        "size": 2894715,
+        "sha256": "7c9afcb48326db49816b40480038534d6a37f6b7077519ad713608560016f2ad"
+      },
+      {
+        "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ja\\06_瞬間作文と辞書_2622x1206.png",
+        "size": 2500208,
+        "sha256": "03369011358b4037adc739403f490f470a8be1fce6fc951ac122b31d28dbdc3d"
+      }
+    ],
+    "renderer": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\制作データ_20261028\\render-current.cjs",
+    "checks": [
+      "Overview visually inspected; five detailed images retain previous layout with 02–06 numbering",
+      "All six: 2622x1206 RGB/no alpha, text overflow checks passed",
+      "Original supplied JPEGs unchanged"
+    ],
+    "pricingPolicyRequested": {
+      "Japan": "free",
+      "otherCountries": "one-time purchase, JPY1480 reference",
+      "storePricingChanged": false,
+      "screenshotsPriceClaim": null
+    },
+    "remainingEarlierRequests": [
+      "Project-wide intermediate-file cleanup has not been executed; user paused work to replace screenshot inputs",
+      "Korean/Arabic store images not yet updated"
+    ],
+    "publication": "Local files only; no App Store Connect upload",
+    "cleanup": {
+      "obsoleteJapanesePostersRemoved": 4,
+      "temporaryQAReportRemoved": 1,
+      "totalRemovedBytes": 10914447,
+      "sourceScreenshotsPreserved": true,
+      "renumberedOldFilenamesAbsent": true
+    },
+    "english": {
+      "status": "complete; all six visually inspected",
+      "files": [
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\en\\01_概要_2622x1206.png",
+          "size": 3025403,
+          "sha256": "8e1b27f8ab73731bc859af94091af6f94ee849a5840a359bb421a7c1673b3766"
+        },
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\en\\02_文字と発音_2622x1206.png",
+          "size": 2581308,
+          "sha256": "e009d73f3675861209463b56baaa7ef544471b2e9ea4abc6552b50d507d7716f"
+        },
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\en\\03_教材とテーマ_2622x1206.png",
+          "size": 2450394,
+          "sha256": "c5acfda002aaca04019600cb1b9ae6204ede5328e3217a2465a3252fde6edd66"
+        },
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\en\\04_パズルと単語_2622x1206.png",
+          "size": 2368257,
+          "sha256": "d89a23ca85544bfce08c9e464468f37466dc94fe588be92bba8a6b4418051612"
+        },
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\en\\05_聞き流し_2622x1206.png",
+          "size": 3055852,
+          "sha256": "0dd141cdca183d8dbede8fc134716fc39a8300852c6e10a0320d408f63720fe6"
+        },
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\en\\06_瞬間作文と辞書_2622x1206.png",
+          "size": 2510888,
+          "sha256": "b146e9899702bcd5393818440b0821b10e1195f5f044a1ab753207094df1bbd2"
+        }
+      ],
+      "format": {
+        "width": 2622,
+        "height": 1206,
+        "mode": "RGB",
+        "transparent": false
+      },
+      "combinationsMatchJapanese": true,
+      "sourceScreens": [
+        [
+          "ホーム.jpg"
+        ],
+        [
+          "文字と発音1.jpg",
+          "文字と発音2.jpg"
+        ],
+        [
+          "文法テーマ.jpg",
+          "教材.jpg"
+        ],
+        [
+          "パズル.jpg",
+          "単語.jpg"
+        ],
+        [
+          "聞き流し.jpg"
+        ],
+        [
+          "会話テーマ.jpg",
+          "辞書.jpg"
+        ]
+      ],
+      "listeningSource": "Existing en-listening-clean.png derivative of supplied listening screenshot; volume overlay removed in prior production",
+      "checks": [
+        "6/6 visual review",
+        "Dimensions and text bounds",
+        "Original source JPEGs unchanged"
+      ],
+      "publication": "Local files only"
+    }
   }
 }

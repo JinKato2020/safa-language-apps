@@ -17,7 +17,7 @@ createDownloadResumable:(url,uri)=>({pauseAsync:async()=>{},downloadAsync:async(
 const storage={getItem:async k=>kv.get(k)??null,setItem:async(k,v)=>{if(failSet)throw Error('pointer write failed');kv.set(k,v);}};
 const models=compile(DIR+'src/content/otaModel.ts',require),compose=compile(DIR+'src/pack/compose.ts',require),appData=compile(DIR+'src/appData.ts',require);
 const actualCore=JSON.parse(source(DIR+'data/ota-baseline/core.json'));
-for(const lang of ['ja','en']){
+for(const lang of ['ja','en','ko']){
   const actualOverlay=JSON.parse(source(DIR+`data/overlays/${lang}.json`));models.validateContent(actualCore,actualOverlay,lang);
   if(actualOverlay.learningPathV3){
     const invalid=structuredClone(actualOverlay),step=invalid.learningPathV3.steps[0];step.items[1]=step.items[0];assert.throws(()=>models.validateContent(actualCore,invalid,lang));
@@ -35,13 +35,13 @@ const work=compile(DIR+'src/content/otaWork.ts',name=>name==='expo-file-system/l
 const loadOta=(bundleCore=core)=>compile(DIR+'src/content/ota.ts',name=>{
 if(name==='expo-file-system/legacy')return FS;if(name==='@react-native-async-storage/async-storage')return storage;if(name==='./otaModel')return models;if(name==='./otaWork')return work;
 if(name==='../pack/compose')return compose;if(name==='../appData')return appData;if(name==='../../app.json')return{expo:{version:'test',android:{package:'test'}}};
-if(name.includes('ota-baseline/core'))return bundleCore;if(name.includes('overlays/'))return makeOverlay(name.includes('en.json')?'en':'ja');return require(name);
+if(name.includes('ota-baseline/core'))return bundleCore;if(name.includes('overlays/'))return makeOverlay(name.includes('ko.json')?'ko':name.includes('en.json')?'en':'ja');return require(name);
 },{fetch:async url=>{requests.push(url);if(offline)throw Error('offline');const u=url.split('?')[0];if(!remote.has(u))return{ok:false,status:404};return{ok:true,text:async()=>remote.get(u).toString('utf8')};}});
 const ota=loadOta();
 function file(value,ext='json'){const raw=Buffer.isBuffer(value)?value:Buffer.from(JSON.stringify(value));const url='https://example.test/'+sha(raw)+'.'+ext;remote.set(url,raw);return{url,sha256:sha(raw),bytes:raw.length};}
 function archive(version,entries){const raw=Buffer.from(zipSync(Object.fromEntries(Object.entries(entries).map(([n,v])=>[n,Buffer.from(v)]))));return{version,zip:file(raw,'zip'),files:Object.fromEntries(Object.entries(entries).map(([n,v])=>[n,{sha256:sha(v),md5:md5(v),bytes:Buffer.byteLength(v)}]))};}
 let manifest={schema:1,version:1,core:file(core),audio:archive(1,{'1-1-1.mp3':'NE greeting','1-1.mp3':'NE identity'}),languages:{}};
-for(const lang of ['ja','en']){const o=makeOverlay(lang);delete o.grammarGuide;manifest.languages[lang]={overlay:file(o),guides:{'1':file([{type:'p',text:'Lesson'}])},audio:archive(1,{'1-1-1.mp3':lang+' greeting','1-1.mp3':lang+' identity'})};}
+for(const lang of ['ja','en','ko']){const o=makeOverlay(lang);delete o.grammarGuide;manifest.languages[lang]={overlay:file(o),guides:{'1':file([{type:'p',text:'Lesson'}])},audio:archive(1,{'1-1-1.mp3':lang+' greeting','1-1.mp3':lang+' identity'})};}
 const publish=()=>remote.set(ota.MANIFEST_URL,Buffer.from(JSON.stringify(manifest)));
 (async()=>{
 assert.equal(ota.bundledContent('ja').data.getGrammarExamples(1)[0].ne,'म विद्यार्थी हुँ।');assert.equal(requests.length,0);
@@ -64,6 +64,11 @@ disk.clear();kv.clear();downloads.length=0;manifest.version=6;manifest.audio=old
 for(const[lang,vals]of Object.entries({_core:{'1-1-1.mp3':'NE greeting','1-1.mp3':'NE identity'},ja:{'1-1-1.mp3':'ja greeting','1-1.mp3':'ja identity'}}))for(const[n,v]of Object.entries(vals))disk.set(`file:///documents/packs/${lang}/audio/${n}`,Buffer.from(v));
 publish();await ota.syncContent('ja');assert.equal(downloads.length,0,'legacy audio reused');
 await ota.syncContent('en');assert.equal(downloads.length,1,'second language shares Nepali audio');
+assert.equal(ota.bundledContent('ko').data.nativeLang,'ko');
+await ota.syncContent('ko');assert.equal(downloads.length,2,'Korean shares the same Nepali recordings');
+const korean=await ota.cachedContent('ko');assert.equal(korean.data.nativeLang,'ko');
+for(const uri of Object.values(korean.data.audio.japaneseAudio))assert(disk.get(uri).toString().startsWith('ko '),'Korean mother-language audio');
+offline=true;assert.equal((await ota.cachedContent('ko')).data.nativeLang,'ko');offline=false;
 // New app installation over an existing complete older cache, online and offline.
 const upgraded=loadOta({...core,curriculumRevision:7});
 const savedBeforeUpgrade=kv.get('@nepali_app/content_ota/ja');

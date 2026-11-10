@@ -25,6 +25,17 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Release creation failed.' }
   }
   $existing = (& $Gh release view $tag --repo $repo --json assets | ConvertFrom-Json).assets.name
+  # New mother-language archives use immutable content hashes, just like lesson chunks.
+  foreach ($archive in (Get-ChildItem -LiteralPath $work -Filter 'audio-*.zip')) {
+    if ($existing -notcontains $archive.Name) {
+      & $Gh release upload $tag $archive.FullName --repo $repo
+      if ($LASTEXITCODE -ne 0) { throw 'Mother-language audio upload failed.' }
+      $existing = @($existing) + $archive.Name
+    }
+    $check = Join-Path $work 'verify-audio.tmp'
+    Invoke-WebRequest -Uri ("https://github.com/$repo/releases/download/$tag/" + $archive.Name) -OutFile $check -UseBasicParsing
+    if ((Get-FileHash -LiteralPath $check -Algorithm SHA256).Hash -ne (Get-FileHash -LiteralPath $archive.FullName -Algorithm SHA256).Hash) { throw 'Public mother-language audio mismatch; manifest was not published.' }
+  }
   # Small pronunciation/practice clips are immutable assets independent of the
   # large legacy voice archives. Verify every clip before publishing its text.
   $audioManifestPath = Join-Path $PSScriptRoot '../文法教材/learning_audio_manifest.json'
@@ -63,13 +74,30 @@ try {
     $verified = @($clips | ForEach-Object -Parallel {
       $clip = $_
       $check = Join-Path $using:work ('verify-' + $clip.sha256 + '.tmp')
-      try {
-        Invoke-WebRequest -Uri $clip.url -OutFile $check -UseBasicParsing -ErrorAction Stop
-        if ((Get-FileHash -LiteralPath $check -Algorithm SHA256).Hash.ToLowerInvariant() -ne $clip.sha256 -or (Get-Item -LiteralPath $check).Length -ne $clip.bytes) { throw 'Public audio mismatch' }
-        $true
-      } catch { $false }
+      $downloaded = $false
+      $failure = 'Download failed'
+      for ($attempt = 1; $attempt -le 3; $attempt++) {
+        try {
+          Invoke-WebRequest -Uri $clip.url -OutFile $check -UseBasicParsing -ErrorAction Stop -TimeoutSec 30
+          $downloaded = $true
+          break
+        } catch {
+          $failure = $_.Exception.GetType().Name
+          if ($_.Exception.Response.StatusCode) { $failure += ' HTTP ' + [int]$_.Exception.Response.StatusCode }
+          if ($attempt -lt 3) { Start-Sleep -Seconds (2 * $attempt) }
+        }
+      }
+      if ($downloaded) {
+        $matches = (Get-FileHash -LiteralPath $check -Algorithm SHA256).Hash.ToLowerInvariant() -eq $clip.sha256 -and (Get-Item -LiteralPath $check).Length -eq $clip.bytes
+        if (-not $matches) { $failure = 'Public audio hash or size mismatch' }
+      } else { $matches = $false }
+      [pscustomobject]@{ Name = 'learning-' + $clip.sha256 + '.mp3'; Success = $matches; Failure = $failure }
     } -ThrottleLimit 6)
-    if ($verified.Count -ne $clips.Count -or $verified -contains $false) { throw 'Public audio verification failed; manifest was not published.' }
+    $failed = @($verified | Where-Object { -not $_.Success })
+    if ($verified.Count -ne $clips.Count -or $failed.Count) {
+      $failed | ForEach-Object { Write-Output ($_.Name + ': ' + $_.Failure) }
+      throw ('Public audio verification failed for ' + $failed.Count + ' files; manifest was not published.')
+    }
     Write-Output ('Verified pronunciation/practice clips: ' + $clips.Count)
   }
   $files = Get-ChildItem -LiteralPath $work -Filter 'content-*.json'
