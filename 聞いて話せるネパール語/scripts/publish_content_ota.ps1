@@ -78,7 +78,9 @@ try {
       $failure = 'Download failed'
       for ($attempt = 1; $attempt -le 3; $attempt++) {
         try {
-          Invoke-WebRequest -Uri $clip.url -OutFile $check -UseBasicParsing -ErrorAction Stop -TimeoutSec 30
+          $verifyUrl = $clip.url
+          if ($attempt -gt 1) { $verifyUrl += '?verify=' + [DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds() }
+          Invoke-WebRequest -Uri $verifyUrl -OutFile $check -UseBasicParsing -ErrorAction Stop -TimeoutSec 30
           $downloaded = $true
           break
         } catch {

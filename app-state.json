@@ -1742,14 +1742,26 @@
     "nativeBuildOrPublication": false
   },
   "appa_korean_2026_11_10": {
-    "status": "Korean 2.2.4 implementation complete and locally verified. Standard OTA 1224 retry and native build preparation in progress.",
+    "status": "Korean implementation complete; OTA 1224 published and public hashes verified. Standard iOS 2.2.4 (1075) build/TestFlight run in progress.",
     "request": "Add Korean mother language in Settings with Korean UI and course translations",
     "pending_previous": [
       "separate marks and numbers cards",
       "0–100 and large numbers with Nepali audio",
       "remove reviewed markers"
     ],
-    "deployment": "not yet",
+    "deployment": {
+      "otaVersion": 1224,
+      "languages": [
+        "ja",
+        "en",
+        "ko"
+      ],
+      "textChunks": 112,
+      "verifiedLearningClips": 3630,
+      "koreanSentenceRecordings": 2328,
+      "manifest": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/manifest.json",
+      "publicVerification": "all text/audio and final manifest match local hashes"
+    },
     "prepared": [
       "safe keyed UI copy migration for 160 bilingual expressions; JA/EN behavior preserved",
       "localize_korean.py extracts complete Korean request manifest and only assembles fully reviewed translations",
@@ -1780,9 +1792,8 @@
       "maximumAdditionalAPIChargeJPY": 0
     },
     "remaining": [
-      "Complete OTA public download verification",
-      "Dispatch standard iOS/TestFlight build after commit/push",
-      "Return to Arabic after Korean build work"
+      "iOS build/TestFlight completion",
+      "Return to Arabic"
     ],
     "modelsAvailable": [
       "claude-sonnet-5-5",
@@ -1965,11 +1976,11 @@
     "limitations": [
       "No Korean native-speaker proofreading or native-device listening/layout assessment",
       "Azure remaining monthly allowance not independently inspected",
-      "Native 2.2.4 build not dispatched yet"
+      "iOS build/TestFlight completion not yet verified"
     ],
     "nextRequestedLanguage": {
       "language": "ar",
-      "status": "queued after all Korean work completes",
+      "status": "queued after Korean build; user reiterated priority",
       "scope": "mother-language UI and course translations; standard Arabic and RTL layout",
       "maximumAdditionalAPIChargeJPY": 0,
       "requestedOn": "2026-11-10",
@@ -1984,10 +1995,15 @@
       "scope": "Only temporary Korean QA/export/release staging created in this work; formal masters retained"
     },
     "localBuildNumberPlanned": 1075,
-    "publicationRetry": "First full public-audio retrieval check failed before manifest switch. Added bounded retry for downloads and exact failed-asset reporting; second full validation running. Public manifest remains 1223 until successful switch."
+    "publicationRetry": "Initial public checks encountered HTTP 500 for two existing Nepali clips. Both later matched; bounded retries with fresh query on retries enabled. Final full 3,630-clip verification and publication succeeded.",
+    "commit": "8f5f6130",
+    "buildVersion": "2.2.4",
+    "buildNumber": 1075,
+    "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42859546525",
+    "buildStatus": "in progress; last observed step Build archive"
   },
   "appa_letters_numbers_2026_11_10": {
-    "status": "implemented locally and verified; not published",
+    "status": "Published in OTA 1224; shell changes included in iOS 2.2.4 (1075) build in progress",
     "categories": [
       "start",
       "vowels",
@@ -2020,7 +2036,7 @@
       "home JA/EN 320/390px and large text",
       "git diff --check"
     ],
-    "limitation": "No native-device or human listening assessment; no commit/push/OTA/build yet"
+    "limitation": "No native-device or human listening assessment; standard build currently in progress"
   },
   "appa_store_screenshots_2026_11_11": {
     "status": "Japanese 6 posters complete; 03 replaced with lessons/themes and 06 with composition/dictionary as requested; visually verified; local only",
@@ -2199,6 +2215,49 @@
         "Original source JPEGs unchanged"
       ],
       "publication": "Local files only"
+    },
+    "korean": {
+      "status": "complete; six images visually checked",
+      "files": [
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ko\\01_概要_2622x1206.png",
+          "size": 2992976,
+          "sha256": "402a37583299046f97acd2f348da46bf80e9720d228634b73520f17e04f37725"
+        },
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ko\\02_文字と発音_2622x1206.png",
+          "size": 2574084,
+          "sha256": "f64cee84d26455c6fb43d2e7ca94a5114631d7ba5cfa04bbcceb5bf98f8c4fd7"
+        },
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ko\\03_教材とテーマ_2622x1206.png",
+          "size": 2441862,
+          "sha256": "76535d9caa92a6496818d2b4191817fd62ed2d6fa3f6e056d6beb01fa37704f2"
+        },
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ko\\04_パズルと単語_2622x1206.png",
+          "size": 2360756,
+          "sha256": "c0cf0a0472017b91efada580a42217ddbae309e9ea38ecb30cfb964402e07a35"
+        },
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ko\\05_聞き流し_2622x1206.png",
+          "size": 3043162,
+          "sha256": "4a0031ed53ff4ddaf022f8c0744776904b22f8a5686764dfcbe151caa1ff472b"
+        },
+        {
+          "file": "C:\\Users\\jwpsa\\Documents\\desktop\\claude\\聞いて話せるシリーズ\\聞いて話せるネパール語\\画像\\スクショ\\ko\\06_瞬間作文と辞書_2622x1206.png",
+          "size": 2500805,
+          "sha256": "50e2dff39bc9f37e12a02570e5901d035a2ad6e6fa692a3331a16bd961acd252"
+        }
+      ],
+      "format": {
+        "width": 2622,
+        "height": 1206,
+        "mode": "RGB",
+        "transparent": false
+      },
+      "screenshots": "Existing English smartphone screenshots as requested; same six combinations as Japanese",
+      "publication": "Local only; no App Store Connect upload"
     }
   }
 }
