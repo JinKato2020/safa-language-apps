@@ -1,3 +1,4 @@
+import { isolateLtrInArabic, textDirection } from '../textDirection';
 import { useAppData } from '../AppDataContext';
 import { useLearning } from '../LearningContext';
 import { createFreePracticeSession, type PracticeStage } from '../practicePool';
@@ -23,7 +24,7 @@ type GuidePart = ReadingPart | 'practice';
 
 // **太字** を反映して描画する簡易リッチテキスト。
 function Rich({ text, style, emphasisColor, heading = false }: { text: string; style?: any; emphasisColor?: string; heading?: boolean }) {
-  const parts = text.split('**');
+  const parts = (textDirection(text) === 'rtl' ? isolateLtrInArabic(text) : text).split('**');
   return (
     <Text style={style} accessibilityRole={heading ? 'header' : undefined}>
       {parts.map((p, i) =>
@@ -241,7 +242,11 @@ export default function GrammarGuideScreen() {
             {selected === 'practice' ? <>
               <Text accessibilityRole="header" style={[styles.h, ss(22, 32)]}>{copy.exercises}</Text>
               <Text style={[styles.p, ss(16, 27)]}>{trCopy('c_8424c273139f', '練習したいものを選ぼう。1つに集中しても、途中で切り替えてもOK。', 'Choose what you want to practise. Stay with one type or switch whenever you like.')}</Text>
-              {(lang === 'ko' ? [
+              {(lang === 'ar' ? [
+                ['اختيار الصيغة', 'ركّز على تصريف الفعل أو الأداة المناسبة لهذا الموضوع.'],
+                ['اختيار المعنى', 'تدرّب على فهم معنى الجملة النيبالية.'],
+                ['ترتيب الكلمات', 'اختر الكلمات المطلوبة ورتّبها لتكوين الجملة.'],
+              ] : lang === 'ko' ? [
                 ['형태 선택', '이 테마의 동사 활용·후치사 등 형태를 집중적으로 연습해요.'],
                 ['뜻 선택', '네팔어 문장의 뜻을 이해하는 연습이에요.'],
                 ['어순 퍼즐', '필요한 단어를 골라 문장을 만들어요. 쓰지 않는 보기도 있어요.'],

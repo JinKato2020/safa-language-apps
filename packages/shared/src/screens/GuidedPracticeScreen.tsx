@@ -59,11 +59,11 @@ export default function GuidedPracticeScreen() {
   if(finished)return <ScrollView contentContainerStyle={{padding:24,gap:18,maxWidth:760,width:'100%',alignSelf:'center'}}>
     <Text style={[styles.badge,ss(14,24)]}>{trCopy('c_b286272ce6b0', '小さな一歩が、積み重なった', 'ONE SMALL STEP FORWARD')}</Text>
     <Text accessibilityRole="header" style={[styles.title,ss(26,37)]}>{trCopy('c_bec8791687cf', '今回の練習が終わりました', 'Practice set complete')}</Text>
-    <View style={[styles.card,styles.green]}><Text style={[styles.greenText,ss(36,45)]}>{items.length} {lang==='ko'?(session?.questionStages?'문제':'문장'):en?(session?.questionStages?'questions':'sentences'):(session?.questionStages?'問':'文')}</Text><Text style={[styles.body,ss(17,28)]}>{trCopy('c_6a83b7789cf0', '文の意味と語順を、見本と一緒に確認しました。ここまでの学習を保存しました。', 'You explored meanings and word order with support. Your progress is saved.')}</Text></View>
+    <View style={[styles.card,styles.green]}><Text style={[styles.greenText,ss(36,45)]}>{items.length} {lang==='ar'?(session?.questionStages?'سؤالًا':'جملة'):lang==='ko'?(session?.questionStages?'문제':'문장'):en?(session?.questionStages?'questions':'sentences'):(session?.questionStages?'問':'文')}</Text><Text style={[styles.body,ss(17,28)]}>{trCopy('c_6a83b7789cf0', '文の意味と語順を、見本と一緒に確認しました。ここまでの学習を保存しました。', 'You explored meanings and word order with support. Your progress is saved.')}</Text></View>
     <Text style={[styles.body,ss(16,27)]}>{trCopy('c_ce184a96a4c9', '明日もう一度確かめよう。見本つきでの学習を記録しています。自力で話せるかは、別の段階です。', 'Try again tomorrow. This records supported practice, not independent speaking ability.')}</Text>
     {button(trCopy('c_670866586f58', 'もとの画面に戻る', 'Back to the previous screen'),()=>nav.goBack(),true)}
   </ScrollView>;
-  const labels=lang==='ko'?['준비','① 형태 선택','② 뜻 선택','③ 어순 퍼즐']:en?['Preparation','① Choose a form','② Choose a meaning','③ Word order']:['準備','① 形を選ぶ','② 意味を選ぶ','③ 語順パズル'];
+  const labels=lang==='ar'?['التحضير','① اختيار الصيغة','② اختيار المعنى','③ ترتيب الكلمات']:lang==='ko'?['준비','① 형태 선택','② 뜻 선택','③ 어순 퍼즐']:en?['Preparation','① Choose a form','② Choose a meaning','③ Word order']:['準備','① 形を選ぶ','② 意味を選ぶ','③ 語順パズル'];
   const active=stage<=1?0:stage-1,conj=detail.conjugation;
   const solved=stage===2?revealed||choice===conj?.target.text:stage===3?revealed||choice===ex.jp:revealed||(checked&&order.map(i=>detail.words[i].text).join(' ')===detail.words.map(w=>w.text).join(' '));
   const roman=detail.words.map(w=>w.roman).join(' ');

@@ -33,6 +33,15 @@ for(const query of ['집','사는 곳','house','家','घर'])assert.equal(sear
 assert.equal(search.dictionaryTranslation(koreanHouse.senses[0],'ko'),'집');
 assert.equal(search.dictionaryTranslation({ja:'家',en:'house'},'ko'),'house');
 assert.equal(search.dictionaryPos.noun[2],'명사');
+// Arabic search accepts unvowelled input and alef variants; Nepali marks remain significant.
+const arabicHouse=structuredClone(entry('घर'));arabicHouse.senses[0].ar='مَنْزِل';
+arabicHouse.note={ja:'',en:'',ar:'الإقامة في البيت'};
+const arabicIndex=search.indexDictionary([arabicHouse]);
+for(const query of ['منزل','مَنْزِل','مـنزل','الاقامة','الإقامة','house','家','घर'])assert.equal(search.searchDictionary(arabicIndex,query)[0]?.ne,'घर',query);
+assert.equal(search.dictionaryTranslation(arabicHouse.senses[0],'ar'),'مَنْزِل');
+assert.equal(search.dictionaryTranslation({ja:'家',en:'house'},'ar'),'house');
+assert.equal(search.dictionaryPos.noun[3],'اسم');
+
 const family=search.searchDictionary(index,'',11);
 for(const ne of ['मामा','माइजू','फुपू','दाइ'])assert(family.some(e=>e.ne===ne),ne);
 assert(!family.some(e=>e.ne==='मर्नु'));

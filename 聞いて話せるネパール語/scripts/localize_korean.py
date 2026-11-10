@@ -28,7 +28,8 @@ def write(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
 
 
-def prepare():
+def prepare(language='ko'):
+    prefix = {'ko': 'korean', 'ar': 'arabic'}[language]
     english = read(DATA / 'overlays/en.json')
     japanese = read(DATA / 'overlays/ja.json')
     core = read(DATA / 'ota-baseline/core.json')
@@ -43,7 +44,7 @@ def prepare():
         # A term's Nepali context distinguishes, e.g., right-hand from correct.
         # Grammatical labels/explanations have the same meaning across many words.
         # Keep word context for glosses; retain source Nepali for full sentences.
-        contextual = path[-1] in {'ja', 'base_meaning', 'ko'} or (len(path) > 1 and path[1] in {'examplesL1', 'grammarL1', 'wordsL1'})
+        contextual = path[-1] in {'ja', 'base_meaning', language} or (len(path) > 1 and path[1] in {'examplesL1', 'grammarL1', 'wordsL1'})
         payload = {'en': en, 'ja': ja if isinstance(ja, str) else '', 'ne': ne if contextual else ''}
         key = hashlib.sha256(json.dumps({'en': en, 'ne': payload['ne']}, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:24]
         requests.setdefault(key, dict(payload, context='.'.join(map(str, path[:4]))))
@@ -78,33 +79,34 @@ def prepare():
     for i, entry in enumerate(english['nepaliDictionary']['entries']):
         root = ['overlay', 'nepaliDictionary', 'entries', i]
         for j, sense in enumerate(entry['senses']):
-            add(root + ['senses', j, 'ko'], sense['en'], sense['ja'], entry['ne'])
+            add(root + ['senses', j, language], sense['en'], sense['ja'], entry['ne'])
         if entry.get('note'):
-            add(root + ['note', 'ko'], entry['note']['en'], entry['note']['ja'], entry['ne'])
+            add(root + ['note', language], entry['note']['en'], entry['note']['ja'], entry['ne'])
         for j, example in enumerate(entry['examples']):
-            add(root + ['examples', j, 'ko'], example['en'], example['ja'], example['ne'])
+            add(root + ['examples', j, language], example['en'], example['ja'], example['ne'])
     walk(ui, ui_ja, ['ui'])
     result = {'schema': 1, 'requests': requests, 'destinations': destinations}
-    write(WORK / 'korean_translation_requests.json', result)
+    write(WORK / f'{prefix}_translation_requests.json', result)
     print(json.dumps({'requests': len(requests), 'destinations': len(destinations),
                       'englishCharacters': sum(len(r['en']) for r in requests.values()),
                       'contextCharacters': sum(len(r['ne']) + len(r['ja']) for r in requests.values())}))
     return result
 
 
-def assemble():
-    plan = prepare()
-    cache = read(WORK / 'korean_translations.json')
+def assemble(language='ko'):
+    prefix = {'ko': 'korean', 'ar': 'arabic'}[language]
+    plan = prepare(language)
+    cache = read(WORK / f'{prefix}_translations.json')
     required = set(plan['requests'])
     assert required <= set(cache['items']), f"Missing {len(required - set(cache['items']))} translations"
     for key in required:
         item = cache['items'][key]
         assert item.get('reviewed') is True, f'Unreviewed: {key}'
-        assert isinstance(item.get('ko'), str) and item['ko'].strip(), f'Empty: {key}'
+        assert isinstance(item.get(language), str) and item[language].strip(), f'Empty: {key}'
         assert item.get('source') == plan['requests'][key], f'Stale source: {key}'
         expected = set(re.findall(r'\{\{\w+\}\}', plan['requests'][key]['en']))
-        actual = set(re.findall(r'\{\{\w+\}\}', item['ko']))
-        # Korean has no English singular/plural suffix; the UI passes p1 only for English.
+        actual = set(re.findall(r'\{\{\w+\}\}', item[language]))
+        # Localized entry counts do not interpolate the English word entry/entries.
         if plan['requests'][key]['context'] == 'ui.courseCopy.c_3ec230bb4da9':
             expected.discard('{{p1}}')
         assert expected == actual, f'Placeholder mismatch: {key}'
@@ -114,15 +116,15 @@ def assemble():
         parent = output
         for key in destination['path'][:-1]:
             parent = parent[key]
-        parent[destination['path'][-1]] = cache['items'][destination['key']]['ko']
+        parent[destination['path'][-1]] = cache['items'][destination['key']][language]
     overlay = output['overlay']
-    overlay['l1'] = 'ko'
+    overlay['l1'] = language
     # These retired fields are not used by the Korean-capable shell.
     for key in ['learningPath', 'learningPathV2', 'posterLessons']:
         overlay.pop(key, None)
-    write(DATA / 'overlays/ko.json', overlay)
-    write(APP / 'expo-app/src/i18n/ko.json', output['ui'])
-    print('Assembled complete, reviewed Korean overlay and UI. Nepali text/audio retained.')
+    write(DATA / f'overlays/{language}.json', overlay)
+    write(APP / f'expo-app/src/i18n/{language}.json', output['ui'])
+    print(f'Assembled complete, reviewed {language} overlay and UI. Nepali text/audio retained.')
 
 
 if __name__ == '__main__':

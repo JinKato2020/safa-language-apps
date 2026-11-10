@@ -5,7 +5,7 @@ const ROOT=path.resolve(__dirname,'../..'),work=path.resolve(process.argv[2]||'.
 const source=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const compile=s=>ts.transpileModule(s,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
 const modules={};for(const[p,file]of[['react','react.production.js'],['react/jsx-runtime','react-jsx-runtime.production.js'],['react-dom','react-dom.production.js'],['react-dom/client','react-dom-client.production.js'],['scheduler','scheduler.production.js']])modules[p]=fs.readFileSync(path.join(path.dirname(require.resolve(p.split('/')[0]+'/package.json')),'cjs',file),'utf8');
-for(const name of ['nepaliDictionary','SettingsContext','letterPresentation','vocabularyQuiz','PuzzleBoard','puzzleDrag','practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['SettingsContext','PuzzleBoard','LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
+for(const name of ['textDirection','nepaliDictionary','SettingsContext','letterPresentation','vocabularyQuiz','PuzzleBoard','puzzleDrag','practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['SettingsContext','PuzzleBoard','LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
 for(const name of ['NepaliDictionaryScreen','VocabularyQuizScreen','SettingsScreen','VocabCategoryScreen','VocabDirectionScreen','FlashcardScreen','FreePracticeScreen','GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
 modules.entitlement=compile(source('packages/shared/src/entitlement.tsx'));
 modules.compose=compile(source('聞いて話せるネパール語/expo-app/src/pack/compose.ts'));
@@ -21,22 +21,38 @@ if(process.argv.some(a=>a.startsWith('--korean-'))){
     assert.deepEqual([...new Set(translated.match(/\{\{\w+\}\}/g)??[])].sort(),expected,`${group}.${key}`);
   }
 }
+const arabicFoundation=process.argv.includes('--arabic-foundation');
+modules.Text=compile(source('packages/shared/src/Text.tsx'));
+if(arabicFoundation){
+  strings.ar=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ar.json'));
+  overlays.ar=structuredClone(overlays.en);
+  const plan=JSON.parse(source('聞いて話せるネパール語/文法教材/arabic_translation_requests.json'));
+  const cache=JSON.parse(source('聞いて話せるネパール語/文法教材/arabic_translations.json'));
+  // Preview-only partial overlay. It is never written into app data or published.
+  for(const d of plan.destinations){
+    if(d.path[0]!=='overlay'||!cache.items[d.key]?.reviewed)continue;
+    let parent=overlays.ar;for(const k of d.path.slice(1,-1))parent=parent[k];
+    parent[d.path.at(-1)]=cache.items[d.key].ar;
+  }
+  overlays.ar.l1='ar';
+  modules.Text=compile(source('packages/shared/src/Text.tsx'));
+}
 const code=`
 const modules=${JSON.stringify(modules)},cache={},overlays=${JSON.stringify(overlays)},strings=${JSON.stringify(strings)},core=${JSON.stringify(core)};
 function require(n){if(n.startsWith('.'))n=n.split('/').pop();if(cache[n])return cache[n].exports;const m={exports:{}};cache[n]=m;if(!modules[n])throw Error('Missing '+n);new Function('require','module','exports','process',modules[n])(require,m,m.exports,{env:{NODE_ENV:'production'}});return m.exports;}
 const React=require('react'),h=React.createElement;window.caseInfo={lang:'ja',scale:1};window.route={name:'HomeTab'};window.events=[];window.failStorage=false;
 const flat=s=>Object.assign({},...(Array.isArray(s)?s.flat(Infinity):[s]).filter(Boolean));
 function css(style,view=false){const s=flat(style),out=view?{position:'relative',display:'flex',flexDirection:'column',flexShrink:0,minWidth:0,minHeight:0,borderWidth:0,borderStyle:'solid'}:{};for(const[k,v]of Object.entries(s)){
-if(k==='paddingHorizontal'){out.paddingLeft=v;out.paddingRight=v;}else if(k==='paddingVertical'){out.paddingTop=v;out.paddingBottom=v;}else if(k==='marginHorizontal'){out.marginLeft=v;out.marginRight=v;}else if(k==='marginVertical'){out.marginTop=v;out.marginBottom=v;}else if(k==='lineHeight')out[k]=v*window.caseInfo.scale+'px';else if(k==='fontSize')out[k]=v*window.caseInfo.scale;else out[k]=v;}return out;}
+if(k==='writingDirection')out.direction=v;else if(k==='paddingHorizontal'){out.paddingLeft=v;out.paddingRight=v;}else if(k==='paddingVertical'){out.paddingTop=v;out.paddingBottom=v;}else if(k==='marginHorizontal'){out.marginLeft=v;out.marginRight=v;}else if(k==='marginVertical'){out.marginTop=v;out.marginBottom=v;}else if(k==='lineHeight')out[k]=v*window.caseInfo.scale+'px';else if(k==='fontSize')out[k]=v*window.caseInfo.scale;else out[k]=v;}return out;}
 const View=React.forwardRef((p,ref)=>{const el=React.useRef(null),gesture=React.useRef(null);React.useImperativeHandle(ref,()=>({measureInWindow:cb=>{const r=el.current.getBoundingClientRect();cb(r.x,r.y,r.width,r.height);}}));React.useEffect(()=>{if(!p.onLayout)return;const r=new ResizeObserver(()=>p.onLayout({nativeEvent:{layout:{width:el.current.clientWidth,height:el.current.clientHeight}}}));r.observe(el.current);return()=>r.disconnect();},[p.onLayout]);const event=e=>({nativeEvent:{pageX:e.clientX,pageY:e.clientY}});const state=e=>({x0:gesture.current.x,y0:gesture.current.y,moveX:e.clientX,moveY:e.clientY,dx:e.clientX-gesture.current.x,dy:e.clientY-gesture.current.y,numberActiveTouches:1});return h('div',{ref:el,'data-testid':p.testID,style:{...css(p.style,true),...(p.pointerEvents==='none'?{pointerEvents:'none'}:{})},onPointerDown:e=>{if(p._pan){gesture.current={x:e.clientX,y:e.clientY,active:false};(e.target.closest('button')??el.current).setPointerCapture(e.pointerId);}},onPointerMoveCapture:e=>{if(!p._pan||!gesture.current)return;const g=state(e);if(!gesture.current.active&&p._pan.onMoveShouldSetPanResponderCapture?.(event(e),g)){gesture.current.active=true;el.current.setPointerCapture(e.pointerId);p._pan.onPanResponderGrant?.(event(e),g);}if(gesture.current.active)p._pan.onPanResponderMove?.(event(e),g);},onPointerUpCapture:e=>{if(gesture.current?.active)p._pan.onPanResponderRelease?.(event(e),state(e));p.onTouchEnd?.(event(e));gesture.current=null;},onPointerCancel:e=>{if(gesture.current?.active)p._pan.onPanResponderTerminate?.();p.onTouchCancel?.();gesture.current=null;}},p.children);});
 function Text(p){return h('span',{'data-testid':p.testID,role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...css(p.style)}},p.children);}
 function Pressable(p){const timer=React.useRef();React.useEffect(()=>()=>clearTimeout(timer.current),[]);const stop=()=>clearTimeout(timer.current);return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,'aria-selected':p.accessibilityState?.selected,disabled:p.disabled,onClick:p.onPress,onPointerDown:e=>{if(p.disabled)return;p.onPressIn?.();const event={nativeEvent:{pageX:e.clientX,pageY:e.clientY}};if(p.onLongPress)timer.current=setTimeout(()=>p.onLongPress(event),p.delayLongPress??500);},onPointerUp:stop,onPointerLeave:stop,onPointerCancel:stop,'data-testid':p.testID,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
 const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y),scrollToEnd:()=>el.current.scrollTo(0,el.current.scrollHeight)}));return h('div',{ref:el,'data-testid':p.testID,style:{scrollbarGutter:'stable',overflowY:p.horizontal||p.scrollEnabled===false?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
 const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))};
 const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode==='contain'?'contain':undefined,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
-cache['react-native']={exports:{Platform:{OS:'ios'},Alert:{alert:(...args)=>window.alerts.push(args)},Linking:{openURL:async url=>window.links.push(url)},Share:{share:async()=>{}},Switch:()=>null,PanResponder:{create:config=>({panHandlers:{_pan:config}})},AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,TextInput:p=>h('input',{'data-testid':p.testID,'aria-label':p.accessibilityLabel,value:p.value,onChange:e=>p.onChangeText(e.target.value),placeholder:p.placeholder,style:css(p.style)}),FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.length?null:p.ListEmptyComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
-cache.Text={exports:{Text}};
-cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,langs:Object.keys(strings),setLang:()=>{},copy:(key,ja,en,vars={})=>{let s=window.caseInfo.lang==='ko'?strings.ko.courseCopy[key]??en:window.caseInfo.lang==='en'?en:ja;for(const[k,v]of Object.entries(vars))s=s.split('{{'+k+'}}').join(String(v));return s;},t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).split('{{'+k+'}}').join(String(v));return s;}})}};
+cache['react-native']={exports:{Platform:{OS:'ios'},Alert:{alert:(...args)=>window.alerts.push(args)},Linking:{openURL:async url=>window.links.push(url)},Share:{share:async()=>{}},Switch:()=>null,PanResponder:{create:config=>({panHandlers:{_pan:config}})},AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,TextInput:p=>h('input',{'data-testid':p.testID,'aria-label':p.accessibilityLabel,value:p.value,onChange:e=>p.onChangeText(e.target.value),placeholder:p.placeholder,style:css(p.style)}),FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.length?null:p.ListEmptyComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x,flatten:flat},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
+if(!modules.Text)cache.Text={exports:{Text}};
+cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,langs:Object.keys(strings),setLang:()=>{},copy:(key,ja,en,vars={})=>{let s=['ko','ar'].includes(window.caseInfo.lang)?strings[window.caseInfo.lang].courseCopy[key]??en:window.caseInfo.lang==='en'?en:ja;for(const[k,v]of Object.entries(vars))s=s.split('{{'+k+'}}').join(String(v));return s;},t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).split('{{'+k+'}}').join(String(v));return s;}})}};
 cache.ModalDropdown={exports:{ModalDropdown:p=>h('span',null,p.value)}};cache['expo-application']={exports:{nativeBuildVersion:'test'}};window.alerts=[];window.links=[];window.devCalls=[];window.devAvailable=true;window.devResult='unavailable';cache.settingsDevelopment={exports:{useSettingsDevelopment:()=>window.devAvailable?{showReview:async()=>{window.devCalls.push('review');return window.devResult;},showRequest:()=>window.devCalls.push('request')}:null}};
 cache.PosterContext={exports:{usePosterLessons:()=>[]}};
 cache.AppDataContext={exports:{useAppData:()=>window.data}};
@@ -54,7 +70,7 @@ cache.grammarGuide={exports:{useGrammarGuide:()=>window.data.GRAMMAR_GUIDE,useGr
 const root=require('react-dom/client').createRoot(document.getElementById('root')),Provider=require('LearningContext').LearningProvider,SettingsProvider=require('SettingsContext').SettingsProvider;let generation=0;
 const AudioProvider=require('LearningSound').LearningAudioProvider,resolveAudio=async a=>({uri:a.url});
 const names={NepaliDictionary:'NepaliDictionaryScreen',SettingsMain:'SettingsScreen',SettingsTab:'SettingsScreen',VocabCategory:'VocabCategoryScreen',VocabDirection:'VocabDirectionScreen',Flashcard:'FlashcardScreen',HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
-function Frame(){const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['NepaliDictionary','VocabCategory','VocabDirection','Flashcard','Practice','LettersSounds','LearningPath','GrammarLibrary'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
+function Frame(){document.getElementById('root').style.direction=window.caseInfo.lang==='ar'?'rtl':'ltr';const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['NepaliDictionary','VocabCategory','VocabDirection','Flashcard','Practice','LettersSounds','LearningPath','GrammarLibrary'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
 window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];window.activeAudio=new Set();window.audioEnded=false;
 const neAudio={},neGram={},l1Audio={},l1Gram={};for(const[k,rows]of Object.entries(core.examplesNe))rows.forEach((_,i)=>{neAudio[k+'-'+(i+1)]='ne/'+k+'-'+(i+1);l1Audio[k+'-'+(i+1)]=lang+'/'+k+'-'+(i+1);});for(const[k,id]of Object.entries(core.grammarAudioRefs??Object.fromEntries(Object.entries(core.grammarNe).flatMap(([t,rows])=>rows.map((_,i)=>[t+'-'+(i+1),t+'-'+(i+1)]))))){if(id){neGram[id]='ne/'+id;l1Gram[id]=lang+'/'+id;}}
 window.data=require('compose').composePack({...core,nepaliAudio:neAudio,nepaliGrammarAudio:neGram},{...overlays[lang],nativeLang:lang,l1Audio,l1GrammarAudio:l1Gram},{version:'test'});window.data.review={iosAppId:'6771720689'};
@@ -68,6 +84,66 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(arabicFoundation){
+      for(const width of [320,390])for(const scale of [1,1.2]){
+        await page.setViewportSize({width,height:844});
+        await page.evaluate(scale=>window.boot('ar',true,{name:'GrammarLibrary'},scale),scale);
+        await page.getByTestId('study-back').waitFor();
+        assert.equal((await page.getByTestId('study-back').innerText()).trim(),'›');
+        assert((await page.getByTestId('study-back').boundingBox()).x>width/2);
+        await page.getByTestId('study-back').click();
+        assert.equal(await page.evaluate(()=>window.route.name),'MainTabs');
+        for(const route of [{name:'SettingsMain'},{name:'LettersSounds'},{name:'VocabCategory',params:{fromHome:true}}]){
+          await page.evaluate(({route,scale})=>window.boot('ar',true,route,scale),{route,scale});
+          await page.waitForTimeout(80);
+          assert(/[\u0620-\u064a]/.test(await page.locator('body').innerText()));
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),route.name);
+          await page.screenshot({path:path.join(work,`previews/${route.name}-ar-${width}-${scale}.png`)});
+        }
+        await page.evaluate(scale=>window.boot('ar',true,{name:'LettersSounds'},scale),scale);
+        for(const category of ['start','vowels','combinations','conjuncts','marks','numbers']){
+          await page.getByTestId('letters-category-'+category).click();
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`Arabic letters ${category}/${width}/${scale}`);
+          if(category==='combinations'){
+            const first=await page.getByTestId('letters-consonant-क').boundingBox(),second=await page.getByTestId('letters-consonant-ख').boundingBox();
+            assert(second.x>first.x,'Nepali alphabet order stays left-to-right');
+          }
+          await page.screenshot({path:path.join(work,`previews/letters-ar-${category}-${width}-${scale}.png`)});
+          await page.getByTestId('letters-library').click();
+        }
+        for(let themeId=1;themeId<=7;themeId++){
+          await page.evaluate(({scale,themeId})=>window.boot('ar',true,{name:'GrammarGuide',params:{themeId,title:'الموضوع '+themeId}},scale),{scale,themeId});
+          for(const label of ['القواعد الأساسية','الصيغ والمفردات','استراحة']){
+          await page.getByRole('tab',{name:label,exact:true}).click();
+          while(await page.locator('button[aria-expanded="false"]').count())await page.locator('button[aria-expanded="false"]').first().click();
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`Arabic reader ${label}/${width}/${scale}`);
+          await page.screenshot({path:path.join(work,`previews/reader-ar-${themeId}-${label}-${width}-${scale}.png`)});
+          }
+        }
+        await page.evaluate(scale=>window.boot('ar',true,{name:'Theme',params:{mode:'grammar',puzzleOnly:true,guidesOnHome:true}},scale),scale);
+        await page.getByTestId('theme-1').click();await page.getByTestId('free-bank').waitFor();
+        const question=await page.evaluate(()=>{const s=window.route.params.studySession;return require('freePractice').freePracticeQuestion(window.data,s.items[0],s.choiceSeed);});
+        for(let i=0;i<question.answerWords.length;i++)await page.getByTestId('free-token-word-'+i).click();
+        await page.getByTestId('free-feedback').waitFor();
+        const tiles=await page.locator('[data-testid^="free-remove-"]').evaluateAll(es=>es.map(e=>({x:e.getBoundingClientRect().x,y:e.getBoundingClientRect().y})));
+        for(let i=1;i<tiles.length;i++)if(Math.abs(tiles[i].y-tiles[i-1].y)<2)assert(tiles[i].x>tiles[i-1].x,'Nepali puzzle stays left-to-right inside Arabic UI');
+        assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        await page.screenshot({path:path.join(work,`previews/puzzle-ar-${width}-${scale}.png`)});
+        for(let category=1;category<=30;category++)for(const direction of ['ne2ja','ja2ne']){
+          await page.evaluate(({category,direction,scale})=>window.boot('ar',true,{name:'Flashcard',params:{categoryId:category,direction}},scale),{category,direction,scale});
+          await page.getByTestId('vocab-quiz-prompt').waitFor();
+          assert.equal(await page.locator('[data-testid^="vocab-option-"]').count(),4);
+          const target=page.getByTestId(direction==='ne2ja'?'vocab-option-0':'vocab-quiz-word');
+          assert(/[\u0620-\u064a]/.test(await target.innerText()));
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+          await page.getByTestId('vocab-quiz-reveal').click();await page.getByTestId('vocab-quiz-next').click();
+        }
+        await page.screenshot({path:path.join(work,`previews/word-quiz-ar-${width}-${scale}.png`)});
+      }
+      assert.deepEqual(errors,[]);
+      console.log('PASS Arabic foundation: real Text wrapper, right-side back/return, settings, all six letter categories, lessons 1-7 readers, LTR Nepali alphabet and puzzle inside RTL UI, 30 vocabulary categories x both directions, 320/390px at normal/large text. Partial preview only; no full Arabic course claim.');
+      return;
+    }
     if(process.argv.includes('--korean-modes')){
       for(const [width,scale]of[[390,1],[320,1.4]]){
         await page.setViewportSize({width,height:844});

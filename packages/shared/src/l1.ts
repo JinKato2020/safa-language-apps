@@ -9,7 +9,7 @@ export type L1Code = string;
 
 // 言語の表示順(全アプリ共通・ユーザー確定 2026-06-19)。初回選択/設定のプルダウンはこの順で並べる。
 // 各アプリは自分が持つ言語だけをこの順序でフィルタして表示する。ja は末尾(App Aの母語として登場)。
-export const LANG_ORDER: string[] = ['en', 'zh', 'ko', 'vi', 'ne', 'bn', 'ja'];
+export const LANG_ORDER: string[] = ['en', 'zh', 'ko', 'ar', 'vi', 'ne', 'bn', 'ja'];
 export const langOrderRank = (code: string): number => {
   const i = LANG_ORDER.indexOf(code);
   return i < 0 ? LANG_ORDER.length : i;
@@ -28,6 +28,7 @@ export interface L1Config {
 }
 
 export const L1_REGISTRY: Record<string, L1Config> = {
+  ar: { code: 'ar', name: 'العربية' },
   ne: {
     code: 'ne',
     name: 'नेपाली',

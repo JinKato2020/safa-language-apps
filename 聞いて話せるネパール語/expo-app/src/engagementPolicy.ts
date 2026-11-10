@@ -32,6 +32,7 @@ export function isStudyReturnRoute(name?: string): boolean { return ['Theme', 'V
 export function isStudyRoute(name?: string): boolean { return ['Practice', 'Flashcard', 'Listening', 'PosterAudio', 'GrammarGuide'].includes(name ?? ''); }
 
 export function requestMail(lang: string, version: string) {
+  if (lang === 'ar') return { recipients: ['contact@safa-lang.com'], subject: 'تطبيق النيبالية — اقتراح ميزة أو محتوى', body: `اكتب المحتوى أو الميزات التي ترغب في إضافتها، أو ما يحتاج إلى تحسين.\n\n\nإصدار التطبيق: ${version}\nلغة العرض: ${lang}` };
   if (lang === 'ko') return { recipients: ['contact@safa-lang.com'], subject: '네팔어 앱 — 기능·학습 자료 요청', body: `추가하고 싶은 학습 자료나 기능, 개선이 필요한 점을 적어 주세요.\n\n\n앱 버전: ${version}\n표시 언어: ${lang}` };
   const english = lang === 'en';
   return { recipients: ['contact@safa-lang.com'],

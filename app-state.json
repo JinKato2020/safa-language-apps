@@ -1,6 +1,6 @@
 {
   "_about": "App家族(聞いて話せるシリーズ)の横断状態ファイル。セッション分離の調整レイヤ。各セッションは開始時に読み、節目で更新する。安定仕様(不変)は『ポスター成果物契約.md』、本ファイルは動的状態。",
-  "updated": "2026-11-08T14:11:03+09:00",
+  "updated": "2026-11-11T03:02:35+09:00",
   "coordinationModel": {
     "mode": "session-separation + app-state.json",
     "rule": "App固有作業はApp別セッションで並行可。共有コードは sharedLock を取得した1セッションだけが編集する。司令塔(全集約)モデルは廃止(=1セッションにコンテキストが肥大して上限に達する原因だった)。真に横断的な一括処理が要る時だけ workflow で一時的に起動する。",
@@ -1742,7 +1742,7 @@
     "nativeBuildOrPublication": false
   },
   "appa_korean_2026_11_10": {
-    "status": "Korean implementation complete; OTA 1224 published and public hashes verified. Standard iOS 2.2.4 (1075) build/TestFlight run in progress.",
+    "status": "Korean OTA 1224 published; iOS 2.2.4 (1075) build and TestFlight upload completed successfully. Arabic localization resumed.",
     "request": "Add Korean mother language in Settings with Korean UI and course translations",
     "pending_previous": [
       "separate marks and numbers cards",
@@ -1791,10 +1791,7 @@
       "audioEstimateUpdate": "Previous 200–500 JPY paid-audio estimate is superseded: 0 JPY within documented Azure F0 allowance; remaining monthly allowance has not been inspected.",
       "maximumAdditionalAPIChargeJPY": 0
     },
-    "remaining": [
-      "iOS build/TestFlight completion",
-      "Return to Arabic"
-    ],
+    "remaining": [],
     "modelsAvailable": [
       "claude-sonnet-5-5",
       "claude-opus-5-5"
@@ -1975,12 +1972,11 @@
     ],
     "limitations": [
       "No Korean native-speaker proofreading or native-device listening/layout assessment",
-      "Azure remaining monthly allowance not independently inspected",
-      "iOS build/TestFlight completion not yet verified"
+      "Azure remaining monthly allowance not independently inspected"
     ],
     "nextRequestedLanguage": {
       "language": "ar",
-      "status": "queued after Korean build; user reiterated priority",
+      "status": "Arabic localization work resumed after Korean IPA build",
       "scope": "mother-language UI and course translations; standard Arabic and RTL layout",
       "maximumAdditionalAPIChargeJPY": 0,
       "requestedOn": "2026-11-10",
@@ -2000,7 +1996,7 @@
     "buildVersion": "2.2.4",
     "buildNumber": 1075,
     "buildRun": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42859546525",
-    "buildStatus": "in progress; last observed step Build archive"
+    "buildStatus": "completed successfully, including Upload to TestFlight"
   },
   "appa_letters_numbers_2026_11_10": {
     "status": "Published in OTA 1224; shell changes included in iOS 2.2.4 (1075) build in progress",
@@ -2258,6 +2254,153 @@
       },
       "screenshots": "Existing English smartphone screenshots as requested; same six combinations as Japanese",
       "publication": "Local only; no App Store Connect upload"
+    }
+  },
+  "appa_arabic_2026_11_11": {
+    "status": "Arabic foundation implemented and validated; full course translation remains in progress; not published",
+    "scope": "Arabic mother-language UI and course translations with RTL/mixed-script layout",
+    "maximumAdditionalAPIChargeJPY": 0,
+    "dependsOnKoreanBuild": "complete: 2.2.4 (1075), GitHub run 42859546525 succeeded",
+    "shipping": "Arabic is not imported into App A translation provider and is not selectable. No Arabic overlay/OTA/native build released. Korean 2.2.4 (1075)/OTA1224 remains current.",
+    "sourcePlanSha256": "c3d316fdedc73d0e1b67137c917fc162386e11e86fc9e53ba32db0d85714cf6f",
+    "reviewedUnique": 6082,
+    "totalUnique": 23716,
+    "pendingUnique": 17634,
+    "coverage": {
+      "examplesL1": {
+        "complete": 3,
+        "total": 1800
+      },
+      "grammarL1": {
+        "complete": 528,
+        "total": 528
+      },
+      "wordsL1": {
+        "complete": 1000,
+        "total": 1000
+      },
+      "vocab": {
+        "complete": 310,
+        "total": 4743
+      },
+      "convVocab": {
+        "complete": 19764,
+        "total": 45047
+      },
+      "grammarVocab": {
+        "complete": 357,
+        "total": 2584
+      },
+      "grammarGuide": {
+        "complete": 975,
+        "total": 1919
+      },
+      "grammarThemeNames": {
+        "complete": 36,
+        "total": 36
+      },
+      "grammarTextOnlyLabel": {
+        "complete": 0,
+        "total": 1
+      },
+      "contentNames": {
+        "complete": 66,
+        "total": 66
+      },
+      "learningPathV3": {
+        "complete": 730,
+        "total": 7521
+      },
+      "lettersSounds": {
+        "complete": 742,
+        "total": 742
+      },
+      "nepaliDictionary": {
+        "complete": 853,
+        "total": 2196
+      },
+      "ui": {
+        "complete": 423,
+        "total": 423
+      }
+    },
+    "completeGrammarLessonIds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "translationMethod": "Direct in-session Arabic translation/source review; finite fully matched terminology and letter templates; preserved target-language samples explicitly reviewed. No external translation API or model download.",
+    "additionalAPIChargeJPY": 0,
+    "implementation": [
+      "Arabic UI copy (425 keys, including two unchanged URLs)",
+      "Script-aware mixed Arabic/Nepali text and bidirectional isolation",
+      "RTL navigation for Arabic; LTR Nepali alphabet, reading formulas and puzzle tokens",
+      "Arabic dictionary search ignores Arabic vowel marks and tatweel, retaining Nepali vowel signs",
+      "Localized reading, learning, settings and engagement labels"
+    ],
+    "verification": [
+      "tsc shared / App A / App B / App C passed",
+      "Partial translation audit: exact source, placeholders, Arabic coverage and preserved Nepali content",
+      "Actual TSX Arabic foundation at 320/390px and 1.0/1.2 text scale: all six letter categories, lesson readers 1-7, right-side back navigation, Nepali alphabet and puzzle order, 30 vocabulary categories in both directions",
+      "JA/EN: all 36 readers, practice navigation and narrow/large text layouts passed using actual Text wrapper",
+      "KO: six letter categories, dictionary search/audio, 30 vocabulary categories in both directions and composition passed using actual Text wrapper",
+      "Dictionary validation: 2089 entries, Arabic diacritics/tatweel/alef search, Nepali vowel distinction",
+      "Scoped git diff --check passed"
+    ],
+    "remaining": [
+      "Conversation sentences",
+      "Grammar lessons 8-36 including appendices",
+      "Context-specific word meanings and grammatical notes",
+      "Remaining dictionary translations and practice text",
+      "Full Arabic content assembly, native-device RTL verification and publication"
+    ],
+    "audio": "No Arabic audio generated; no paid synthesis invoked.",
+    "sharedLockReleased": true,
+    "storeScreenshots": {
+      "status": "Six Arabic store images saved locally; existing English smartphone screenshots reused as requested",
+      "size": [
+        2622,
+        1206
+      ],
+      "mode": "RGB; no alpha",
+      "directory": "聞いて話せるネパール語/画像/スクショ/ar",
+      "files": [
+        {
+          "name": "01_概要_2622x1206.png",
+          "bytes": 3361005,
+          "sha256": "77a14187ad2497c696c3eb7995389fe5a41337c71c6a58c9c54af97c0a273f98"
+        },
+        {
+          "name": "02_文字と発音_2622x1206.png",
+          "bytes": 2988042,
+          "sha256": "4ccaf8cd2a17489f6940a548ba9622ffd2cba34c4bba543fb52a3d2dbaa7e859"
+        },
+        {
+          "name": "03_教材とテーマ_2622x1206.png",
+          "bytes": 2843894,
+          "sha256": "bd3107aa43418bb8de21a05c8edb2b1b8c66a6516764d9215f71e501ef8a8d9c"
+        },
+        {
+          "name": "04_パズルと単語_2622x1206.png",
+          "bytes": 2753787,
+          "sha256": "3d35f3d7d219c6f16d261803446ecb456d080132d006e779116c7705ca20dd8e"
+        },
+        {
+          "name": "05_聞き流し_2622x1206.png",
+          "bytes": 3380735,
+          "sha256": "794c5c4237e37c3161626aae87e983eff577c71537df15e4c84ac2c4c89b077a"
+        },
+        {
+          "name": "06_瞬間作文と辞書_2622x1206.png",
+          "bytes": 2884423,
+          "sha256": "048b538fc02a8b1d5881aaf0fa04e13f55b1d3575c967919b684ee15ee900e1b"
+        }
+      ],
+      "validation": "Checked full-resolution artwork, rendered copy bounds, dimensions/RGB and visible brand/footer pixels in every output. No App Store Connect upload."
     }
   }
 }

@@ -83,6 +83,7 @@ function Section({ title, icon, children, ss }: { title: string; icon: React.Rea
 
 // 課金導線の文言(設定画面用)。App A の母語UI=ja/en。ne はフォールバック。
 const PREMIUM_L: Record<string, { title: string; unlock: string; unlockDesc: string; unlockBtn: string; purchased: string; restore: string; restoreBtn: string }> = {
+  ar: { title: 'المزايا الكاملة', unlock: 'فتح جميع المواضيع', unlockDesc: 'شراء لمرة واحدة لفتح المواضيع من السادس فصاعدًا', unlockBtn: 'فتح', purchased: 'تم الشراء؛ جميع المواضيع متاحة', restore: 'استعادة المشتريات', restoreBtn: 'استعادة' },
   ko: { title: '프리미엄', unlock: '모든 테마 잠금 해제', unlockDesc: '한 번 구매하면 테마 6부터 모두 이용할 수 있어요', unlockBtn: '잠금 해제', purchased: '구매 완료 (모든 테마 이용 가능)', restore: '구매 복원', restoreBtn: '복원' },
   ja: { title: 'プレミアム', unlock: '全テーマを解放', unlockDesc: 'テーマ6以降をすべて利用できます(買い切り)', unlockBtn: '解放する', purchased: '購入済み(全テーマ解放)', restore: '購入を復元', restoreBtn: '復元' },
   en: { title: 'Premium', unlock: 'Unlock all themes', unlockDesc: 'Use every theme from 6 onward (one-time purchase)', unlockBtn: 'Unlock', purchased: 'Purchased (all themes unlocked)', restore: 'Restore purchases', restoreBtn: 'Restore' },
@@ -112,14 +113,18 @@ export default function SettingsScreen() {
     versionTaps.current = { count, last: now };
     if (count >= 7) { setDevelopmentUnlocked(true); versionTaps.current.count = 0; }
   };
-  const developmentCopy = lang === 'ko'
+  const developmentCopy = lang === 'ar'
+    ? { title: 'فحوص التطوير', review: 'نافذة التقييم الأصلية', request: 'دعوة لإرسال اقتراح', description: 'معاينة فورية دون تغيير تفضيلات التذكير أو مواعيده.', launch: 'تشغيل', show: 'عرض', unavailable: 'نافذة التقييم الأصلية غير متاحة', explanation: 'لا يعرض TestFlight نافذة تقييم Apple الأصلية. يمكنك فتح صفحة التقييم في App Store بدلًا منها.', failed: 'تعذّر طلب نافذة التقييم الأصلية.', store: 'فتح App Store' }
+    : lang === 'ko'
     ? { title: '개발 확인', review: '기본 평가 창', request: '요청 안내', description: '지금 바로 미리 볼 수 있어요. 안내 주기와 알림 설정은 바뀌지 않아요.', launch: '실행', show: '표시', unavailable: '기본 평가 창을 표시할 수 없어요', explanation: 'TestFlight에서는 Apple의 기본 평가 창이 표시되지 않아요. 대신 App Store의 실제 평가 페이지를 열 수 있어요.', failed: '기본 평가 창을 호출하지 못했어요.', store: 'App Store 열기' }
     : lang === 'en'
     ? { title: 'Development checks', review: 'Native rating dialog', request: 'Request invitation', description: 'Preview immediately. Reminder preferences and timing stay unchanged.', launch: 'Launch', show: 'Show', unavailable: 'Native rating dialog unavailable', explanation: 'TestFlight cannot display Apple’s native rating dialog. You can open the real App Store review page instead.', failed: 'Could not request the native rating dialog.', store: 'Open App Store' }
     : { title: '開発確認', review: '標準評価画面', request: 'リクエスト案内', description: '日数を待たずに確認できます。案内の間隔・停止設定は変更しません。', launch: '起動', show: '表示', unavailable: '標準評価画面を表示できません', explanation: 'TestFlightではAppleの標準評価画面は表示されません。App Storeの実際の評価ページで確認できます。', failed: '標準評価画面の呼び出しに失敗しました。', store: 'App Storeで確認' };
   const showPurchase = Number.isFinite(ent.freeThemes); // App A のみ true(B/C は Infinity=非表示)
   const prem = PREMIUM_L[lang] ?? PREMIUM_L.ja;
-  const freeCopy = lang === 'ko'
+  const freeCopy = lang === 'ar'
+    ? { title: 'وصول مجاني لجميع المواضيع', label: 'وصول مجاني دون انتهاء', description: 'يستمر وصولك المجاني حتى إن أصبح الوصول مدفوعًا للمستخدمين الجدد لاحقًا. التقييم وإرسال الملاحظات اختياريان.' }
+    : lang === 'ko'
     ? { title: '모든 테마 무료 이용', label: '무료 이용권 보유 · 기간 제한 없음', description: '앞으로 신규 사용자의 이용이 유료로 바뀌어도 이 이용권은 유지돼요. 평가와 의견 보내기는 선택 사항이에요.' }
     : lang === 'en'
     ? { title: 'Free launch access', label: 'All themes unlocked — no expiry', description: 'Your launch access continues after new users move to paid access. Ratings and feedback are optional.' }

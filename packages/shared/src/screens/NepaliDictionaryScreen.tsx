@@ -38,12 +38,12 @@ export default function NepaliDictionaryScreen() {
         {e.audio&&button(playing?.id===e.id?(trCopy('c_ec7502ce7fde', '停止', 'Stop')):(trCopy('c_537af8ab23b2', '発音を聞く', 'Listen')),()=>setPlaying(old=>old?.id===e.id?undefined:{id:e.id,key:Date.now()}),'dictionary-listen')}
         {playing?.id===e.id&&e.audio&&<LearningSound key={playing.key} audio={e.audio} onFinished={stop}/>}
         {e.senses.map((sense,i)=><View key={i} style={s.sense}>
-          <Text style={[s.pos,ss(12,20)]}>{e.senses.length>1?`${i+1} · `:''}{dictionaryPos[sense.pos]?.[lang==='ko'?2:en?1:0]??sense.pos}</Text>
+          <Text style={[s.pos,ss(12,20)]}>{e.senses.length>1?`${i+1} · `:''}{dictionaryPos[sense.pos]?.[lang==='ar'?3:lang==='ko'?2:en?1:0]??sense.pos}</Text>
           <Text style={[s.gloss,ss(18,28)]}>{dictionaryTranslation(sense,lang)}</Text>
           <Text style={[s.secondary,ss(13,22)]}>{en?sense.ja:sense.en}</Text>
         </View>)}
         {e.note&&<View style={s.note}><Text style={[s.noteTitle,ss(13,22)]}>{trCopy('c_b7b76e361eaf', '使い分けのポイント', 'How to use it')}</Text><Text style={[s.gloss,ss(15,25)]}>{dictionaryTranslation(e.note,lang)}</Text></View>}
-        {e.examples.map((example,i)=><View key={i} style={s.example}><Text style={[s.pos,ss(12,20)]}>{lang==='ko'?'예문':en?'Example':'用例'}</Text><Text style={[s.word,ss(20,32)]}>{example.ne}</Text><Text style={[s.gloss,ss(15,25)]}>{dictionaryTranslation(example,lang)}</Text></View>)}
+        {e.examples.map((example,i)=><View key={i} style={s.example}><Text style={[s.pos,ss(12,20)]}>{lang==='ar'?'مثال':lang==='ko'?'예문':en?'Example':'用例'}</Text><Text style={[s.word,ss(20,32)]}>{example.ne}</Text><Text style={[s.gloss,ss(15,25)]}>{dictionaryTranslation(example,lang)}</Text></View>)}
         {!!e.forms.length&&<View style={{gap:6}}><Text style={[s.pos,ss(12,20)]}>{trCopy('c_f63eedef6503', 'これらの形でも検索できます', 'Also found under these forms')}</Text><Text style={[s.gloss,ss(16,27)]}>{e.forms.join(' · ')}</Text></View>}
         {!!e.themes.length&&<View style={{gap:8}}><Text style={[s.pos,ss(12,20)]}>{trCopy('c_f6f7dcd6958a', '教材で確認', 'In your lessons')}</Text>{e.themes.map(id=>{const theme=data.GRAMMAR_THEMES.find(t=>t.id===id);return theme? <View key={id}>{button(`${id}. ${theme.name} →`,()=>{stop();nav.navigate('GrammarGuide',{themeId:id,title:theme.name});})}</View>:null;})}</View>}
       </View>}

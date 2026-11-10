@@ -2,7 +2,13 @@ import type { GuideBlock } from './grammarGuide';
 
 export type ReadingPart = 'rules' | 'reference' | 'examples' | 'breaks';
 export type ReadingGroup = { title: string; blocks: GuideBlock[]; subtitle?: string };
-export const readingCopy = (lang: string) => lang === 'ko' ? {
+export const readingCopy = (lang: string) => lang === 'ar' ? {
+  rules: 'القواعد الأساسية', reference: 'الصيغ والمفردات', examples: 'الأمثلة', breaks: 'استراحة', exercises: 'التدريبات',
+  close: 'إغلاق الدرس', practice: 'عرض الأمثلة والصوت', empty: 'جارٍ تجهيز هذا الدرس',
+  referenceHint: 'افتح الموضوع لمراجعة الصيغ وكيفية استخدام الكلمات.',
+  examplesHint: 'افتح المثال لعرض النطق والترجمة ومعاني الكلمات. للاستماع، اختر «عرض الأمثلة والصوت».',
+  extra: 'ملاحظات ومراجعة', open: 'فتح', hide: 'إغلاق',
+} : lang === 'ko' ? {
   rules: '기본 규칙', reference: '활용·어휘', examples: '예문', breaks: '잠깐 쉬어가기', exercises: '연습 문제',
   close: '학습 자료 닫기', practice: '예문과 음성 보기', empty: '학습 자료를 준비하고 있어요',
   referenceHint: '항목을 열어 활용형과 단어의 쓰임을 확인해 보세요.',
@@ -37,7 +43,7 @@ export function partitionLesson(blocks: GuideBlock[]): Record<ReadingPart, Guide
         if (/^\d+\.\s/.test(b.text)) inRules = true;
         else if (inRules) part = 'reference';
       } else {
-        part = /^(例題\d+|Exercise\s+\d+|예문\s*\d+|연습\s*\d+)$/i.test(b.text) ? 'examples' : 'reference';
+        part = /^(例題\d+|Exercise\s+\d+|예문\s*\d+|연습\s*\d+|مثال\s+[0-9٠-٩]+|تمرين\s+[0-9٠-٩]+)$/i.test(b.text) ? 'examples' : 'reference';
       }
     }
     result[part].push(b);

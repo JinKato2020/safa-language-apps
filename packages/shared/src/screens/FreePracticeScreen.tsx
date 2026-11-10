@@ -34,7 +34,7 @@ export default function FreePracticeScreen() {
   useFocusEffect(useCallback(() => { focused.current = true; return () => { focused.current = false; }; }, []));
   useLayoutEffect(() => nav.setOptions({ title: puzzleOnly ? (trCopy('c_07bb342a1c56', '文章パズル', 'Sentence puzzles')) : (trCopy('c_0a0288f7db6f', '自由に練習', 'Practice your way')) }), [nav, en, puzzleOnly, trCopy]);
   useEffect(() => { if (mode === 4 && showPuzzleIntro && learning.ready) void learning.change(state => ({ ...state, puzzleIntroSeen: true })); }, [mode, showPuzzleIntro, learning.ready, learning.change]);
-  const labels = lang === 'ko' ? ['형태 선택', '뜻 선택', '어순 퍼즐'] : en ? ['Choose a form', 'Choose a meaning', 'Word-order puzzle'] : ['形を選ぶ', '意味を選ぶ', '語順パズル'];
+  const labels = lang === 'ar' ? ['اختيار الصيغة', 'اختيار المعنى', 'ترتيب الكلمات'] : lang === 'ko' ? ['형태 선택', '뜻 선택', '어순 퍼즐'] : en ? ['Choose a form', 'Choose a meaning', 'Word-order puzzle'] : ['形を選ぶ', '意味を選ぶ', '語順パズル'];
   const solved = !!question && (revealed || (mode === 2 ? choice === question.conjugation?.target.text : mode === 3 ? choice === ex?.jp : matchesPuzzle(question.puzzleTokens, order, question.answerWords)));
   const action = (id: string, label: string, onPress: () => void, primary = false, disabled = false) => <Pressable testID={id} accessibilityRole="button" accessibilityState={{ disabled }} disabled={disabled} onPress={onPress} style={[styles.button, primary && styles.primary, disabled && styles.disabled]}><Text style={[ss(16, 25), primary ? styles.primaryText : styles.link]}>{label}</Text></Pressable>;
   async function draw(nextMode: PracticeStage, countAnswer: boolean) {

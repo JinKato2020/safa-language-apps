@@ -122,7 +122,7 @@ export function I18nProvider({ children, translations, fallbackLang, selectableL
     if (lang === 'ja') return ja;
     if (lang === 'en') return en;
     const localized = pick(translations[lang], `courseCopy.${key}`);
-    return localized == null ? (lang === 'ko' ? en : ja) : interpolate(localized, params);
+    return localized == null ? (lang === 'ko' || lang === 'ar' ? en : ja) : interpolate(localized, params);
   }, [lang, translations]);
 
   if (!loaded) return null;

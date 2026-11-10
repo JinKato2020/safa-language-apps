@@ -368,7 +368,7 @@ function EngagementPlaybackGuard({ onChange }: { onChange: (playing: boolean) =>
 }
 
 export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData, heroImages, hideModeHeaders = false, mainScreenAccessory, onRouteChanged, learningStorageKey }: AppShellProps) {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [splashDone, setSplashDone] = useState(splashShownOnce || splashSource == null);
   const defaultStackOptions = useRef(makeDefaultStackOptions(HeaderTitle, hideModeHeaders)).current;
   const { themeMode } = useSettings();
@@ -414,8 +414,8 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
   }
 
   return (
-    <SafeAreaProvider>
-      <NavigationContainer ref={navigationRef} onReady={routeChanged} onStateChange={routeChanged}>
+    <SafeAreaProvider style={lang === 'ar' ? { direction: 'rtl' } : undefined}>
+      <NavigationContainer direction={lang === 'ar' ? 'rtl' : undefined} ref={navigationRef} onReady={routeChanged} onStateChange={routeChanged}>
         <StatusBar style="dark" />
         <PosterProvider lessons={posterLessons || []} resolveUri={posterResolveUri} ensure={posterEnsure}>
           <ListeningAudioProvider>

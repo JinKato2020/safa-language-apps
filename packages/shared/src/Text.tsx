@@ -7,7 +7,17 @@
 // 小さい文字 (<=14px) は最大限スケールする (UI 要素の可読性向上)
 
 import { Text as RNText, StyleSheet, type TextProps, type TextStyle } from 'react-native';
+import { Children, isValidElement, type ReactNode } from 'react';
 import { useGlobalScaleStyle } from './SettingsContext';
+import { isolateLtrInArabic, textDirection } from './textDirection';
+
+function visibleText(children: ReactNode): string {
+  return Children.toArray(children).map(child => {
+    if (typeof child === 'string' || typeof child === 'number') return String(child);
+    if (isValidElement<{ children?: ReactNode }>(child)) return visibleText(child.props.children);
+    return '';
+  }).join('');
+}
 
 export function Text(props: TextProps) {
   const ss = useGlobalScaleStyle();
@@ -20,7 +30,17 @@ export function Text(props: TextProps) {
     const scaled = ss(oldFs, lh);
     style = { ...flat, ...scaled };
   }
-  return <RNText {...props} style={style} />;
+  const direction = textDirection(visibleText(props.children));
+  if (direction === 'rtl') {
+    // Arabic letters must remain connected; decorative tracking breaks shaping.
+    style = [style, { writingDirection: 'rtl', textAlign: flat?.textAlign === 'center' ? 'center' : 'right', letterSpacing: 0 }];
+  } else if (direction === 'ltr') {
+    style = [style, { writingDirection: 'ltr' }];
+  }
+  const children = direction === 'rtl'
+    ? Children.map(props.children, child => typeof child === 'string' ? isolateLtrInArabic(child) : child)
+    : props.children;
+  return <RNText {...props} style={style}>{children}</RNText>;
 }
 
 export default Text;

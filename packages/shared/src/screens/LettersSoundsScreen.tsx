@@ -11,18 +11,18 @@ import { prepareLetterPresentation } from '../letterPresentation';
 
 const ink = '#183c3a', teal = '#126b60', muted = '#526c67';
 const categories = [
-  { id: 'start', sections: ['start'], glyph: 'अ', ko: '시작하기', subKo: '문자의 원리 알아보기', ja: 'はじめに', en: 'Start here', subJa: '文字のしくみを知る', subEn: 'How the script works' },
-  { id: 'vowels', sections: ['vowels'], glyph: 'अ आ', ko: '모음', subKo: '11자 · 소리와 예시 단어', ja: '母音', en: 'Vowels', subJa: '11字 · 音と例単語', subEn: '11 letters · sounds & words' },
-  { id: 'combinations', sections: ['combinations'], glyph: 'कि कु', ko: '자음＋모음', subKo: '자음만＋모음 11가지', ja: '子音＋母音', en: 'Vowel combinations', subJa: '子音のみ＋母音11通り', subEn: 'Consonant only + 11 vowel forms' },
-  { id: 'conjuncts', sections: ['conjuncts'], glyph: 'क्ष त्र', ko: '결합 문자', subKo: '30형 · 모음과의 조합', ja: '複合文字', en: 'Conjuncts', subJa: '30形 · 母音との組み合わせ', subEn: '30 forms · vowel combinations' },
-  { id: 'marks', sections: ['marks'], glyph: 'ँ ं ।', ko: '기호', subKo: '코로 내는 소리·글자에 붙는 표시', ja: '記号', en: 'Signs', subJa: '鼻音・文字につく印', subEn: 'Nasal sounds & written signs' },
-  { id: 'numbers', sections: ['numbers'], glyph: '१२३', ko: '숫자', subKo: '0~100 · 천·만·큰 수', ja: '数字', en: 'Numbers', subJa: '0〜100 · 千・万・大きな数', subEn: '0–100 · thousands & beyond' },
+  { id: 'start', sections: ['start'], ar: 'ابدأ هنا', subAr: 'كيف تعمل الكتابة النيبالية', glyph: 'अ', ko: '시작하기', subKo: '문자의 원리 알아보기', ja: 'はじめに', en: 'Start here', subJa: '文字のしくみを知る', subEn: 'How the script works' },
+  { id: 'vowels', sections: ['vowels'], ar: 'الصوائت', subAr: '11 حرفًا · أصوات وكلمات', glyph: 'अ आ', ko: '모음', subKo: '11자 · 소리와 예시 단어', ja: '母音', en: 'Vowels', subJa: '11字 · 音と例単語', subEn: '11 letters · sounds & words' },
+  { id: 'combinations', sections: ['combinations'], ar: 'صامت مع صائت', subAr: 'صامت فقط + 11 صيغة بصائت', glyph: 'कि कु', ko: '자음＋모음', subKo: '자음만＋모음 11가지', ja: '子音＋母音', en: 'Vowel combinations', subJa: '子音のみ＋母音11通り', subEn: 'Consonant only + 11 vowel forms' },
+  { id: 'conjuncts', sections: ['conjuncts'], ar: 'الحروف المركّبة', subAr: '30 شكلًا مع الصوائت', glyph: 'क्ष त्र', ko: '결합 문자', subKo: '30형 · 모음과의 조합', ja: '複合文字', en: 'Conjuncts', subJa: '30形 · 母音との組み合わせ', subEn: '30 forms · vowel combinations' },
+  { id: 'marks', sections: ['marks'], ar: 'العلامات', subAr: 'الأصوات الأنفية وعلامات الكتابة', glyph: 'ँ ं ।', ko: '기호', subKo: '코로 내는 소리·글자에 붙는 표시', ja: '記号', en: 'Signs', subJa: '鼻音・文字につく印', subEn: 'Nasal sounds & written signs' },
+  { id: 'numbers', sections: ['numbers'], ar: 'الأعداد', subAr: '0–100 والأعداد الكبيرة', glyph: '१२३', ko: '숫자', subKo: '0~100 · 천·만·큰 수', ja: '数字', en: 'Numbers', subJa: '0〜100 · 千・万・大きな数', subEn: '0–100 · thousands & beyond' },
 ];
 
 export default function LettersSoundsScreen() {
   const { LETTERS_SOUNDS: source } = useAppData(), { lang , copy: trCopy } = useI18n(), ss = useScaleStyle(), nav = useNavigation();
   const en = lang === 'en';
-  const compactKorean = useWindowDimensions().width < 360 && lang === 'ko';
+  const singleColumnLibrary = useWindowDimensions().width < 360 && (lang === 'ko' || lang === 'ar');
   const data = useMemo(() => source ? prepareLetterPresentation(source, lang) : undefined, [source, lang]);
   const [section, setSection] = useState<number | null>(null), [selected, setSelected] = useState<number | null>(null), [row, setRow] = useState(0), [conjunctIndex, setConjunctIndex] = useState(0);
   const [numberGroup, setNumberGroup] = useState(0), [showNumberRanges, setShowNumberRanges] = useState(false);
@@ -68,11 +68,11 @@ export default function LettersSoundsScreen() {
   }[id] ?? fallback);
   const destination = (index: number) => {
     const target = data.sections[index], group = categories.find(c => c.sections.includes(target.id));
-    const name = lang === 'ko' ? group?.ko : en ? group?.en : group?.ja;
+    const name = lang === 'ar' ? group?.ar : lang === 'ko' ? group?.ko : en ? group?.en : group?.ja;
     return group && group.sections.length > 1 ? `${name} · ${sectionName(target.id, target.title)}` : name ?? target.title;
   };
   const exampleWords = (words: SoundSample[]) => <View style={styles.wordsCard} testID="letters-example-words"><Text style={[styles.muted, ss(12, 20)]}>{trCopy('c_2cf567a2c0ef', '例単語', 'EXAMPLE WORD')}</Text>{words.map((word, i) => <View key={word.id} style={[styles.wordRow, i > 0 && styles.wordDivider]}>
-    <Pressable testID={`letters-play-word-${i}`} accessibilityRole="button" accessibilityLabel={`${lang === 'ko' ? '단어 듣기' : en ? 'Play word' : '単語を聞く'}: ${word.ne}`} onPress={() => play(word.id, word.audio)} style={({ pressed }) => [styles.wordButton, pressed && styles.pressed]}>
+    <Pressable testID={`letters-play-word-${i}`} accessibilityRole="button" accessibilityLabel={`${lang === 'ar' ? 'استمع إلى الكلمة' : lang === 'ko' ? '단어 듣기' : en ? 'Play word' : '単語を聞く'}: ${word.ne}`} onPress={() => play(word.id, word.audio)} style={({ pressed }) => [styles.wordButton, pressed && styles.pressed]}>
       <View style={styles.wordContent}><View style={styles.wordTitleRow}><Text style={[styles.wordNe, ss(23, 35)]}>{word.ne}</Text><Text style={[styles.wordRoman, ss(14, 23)]}>{word.roman}</Text></View><Text style={[styles.body, ss(14, 23)]}>{word.meaning}</Text></View><View style={[styles.wordPlay, playing?.id === word.id && styles.tileActive]}><Text style={[styles.helpTitle, playing?.id === word.id && styles.white, ss(16, 24)]}>▶</Text></View>
     </Pressable>
   </View>)}</View>;
@@ -80,25 +80,25 @@ export default function LettersSoundsScreen() {
   return <View style={styles.root}>
     {current && <View style={styles.toolbar}>
       {textButton(trCopy('c_30e43efdc9e9', '‹ 文字の一覧', '‹ All categories'), () => move(null), false, false, 'letters-library')}
-      <Text style={[styles.toolbarLabel, ss(14, 22)]}>{lang === 'ko' ? category?.ko : en ? category?.en : category?.ja}</Text>
+      <Text style={[styles.toolbarLabel, ss(14, 22)]}>{lang === 'ar' ? category?.ar : lang === 'ko' ? category?.ko : en ? category?.en : category?.ja}</Text>
     </View>}
     <ScrollView ref={scroll} contentContainerStyle={styles.content}>
       {!current ? <>
         <View style={styles.hero}>
           <Text style={[styles.eyebrow, ss(12, 20)]}>{trCopy('c_3ca02de192bd', 'NEPALI · 文字と音', 'NEPALI SOUND STUDIO')}</Text>
-          <View style={styles.heroRow}><Text accessibilityRole="header" style={[styles.heroTitle, ss(29, 42)]}>{trCopy('c_e11331844148', '文字を、\n音で覚える。', 'See it.\nHear it. Say it.')}</Text>{!compactKorean && <View style={styles.heroGlyph}><Text style={[styles.heroLetter, ss(52, 74)]}>क</Text></View>}</View>
+          <View style={styles.heroRow}><Text accessibilityRole="header" style={[styles.heroTitle, ss(29, 42)]}>{trCopy('c_e11331844148', '文字を、\n音で覚える。', 'See it.\nHear it. Say it.')}</Text>{!singleColumnLibrary && <View style={styles.heroGlyph}><Text style={[styles.heroLetter, ss(52, 74)]}>क</Text></View>}</View>
           <Text style={[styles.heroBody, ss(15, 25)]}>{trCopy('c_4dd03e596b08', '文字をタップして、同じ画面で聞き比べ。\n気になる音は、例単語でも確かめよう。', 'Tap the letters to compare their sounds on one chart. See an example word for the selected sound.')}</Text>
         </View>
         <View style={styles.titleRow}><Text accessibilityRole="header" style={[styles.sectionTitle, ss(20, 30)]}>{trCopy('c_1c99a80d3bc4', '音のライブラリ', 'Explore the sounds')}</Text><Text style={[styles.muted, ss(13, 22)]}>{trCopy('c_91874a118b4a', '気になる文字から', 'Start anywhere')}</Text></View>
         <View style={styles.libraryGrid}>{categories.map(c => {
           const indices = data.sections.flatMap((s, i) => c.sections.includes(s.id) ? [i] : []);
           if (!indices.length) return null;
-          return <Pressable key={c.id} testID={`letters-category-${c.id}`} accessibilityRole="button" accessibilityLabel={lang === 'ko' ? c.ko : en ? c.en : c.ja}
+          return <Pressable key={c.id} testID={`letters-category-${c.id}`} accessibilityRole="button" accessibilityLabel={lang === 'ar' ? c.ar : lang === 'ko' ? c.ko : en ? c.en : c.ja}
             onPress={() => move(indices[0])}
-            style={({ pressed }) => [styles.libraryCard, compactKorean && { flexBasis: '100%' }, pressed && styles.pressed]}>
+            style={({ pressed }) => [styles.libraryCard, singleColumnLibrary && { flexBasis: '100%' }, pressed && styles.pressed]}>
             <View style={styles.titleRow}><Text style={[styles.categoryGlyph, ss(29, 46)]}>{c.glyph}</Text><Text style={[styles.muted, ss(16, 24)]}>↗</Text></View>
-            <Text style={[styles.cardTitle, ss(17, 26)]}>{lang === 'ko' ? c.ko : en ? c.en : c.ja}</Text>
-            <Text style={[styles.muted, ss(13, 22)]}>{lang === 'ko' ? c.subKo : en ? c.subEn : c.subJa}</Text>
+            <Text style={[styles.cardTitle, ss(17, 26)]}>{lang === 'ar' ? c.ar : lang === 'ko' ? c.ko : en ? c.en : c.ja}</Text>
+            <Text style={[styles.muted, ss(13, 22)]}>{lang === 'ar' ? c.subAr : lang === 'ko' ? c.subKo : en ? c.subEn : c.subJa}</Text>
           </Pressable>;
         })}</View>
       </> : <>
@@ -106,9 +106,9 @@ export default function LettersSoundsScreen() {
         <View style={styles.titleRow}><Text accessibilityRole="header" style={[styles.sectionTitle, styles.flexTitle, ss(23, 35)]}>{current.title}</Text></View>
         {current.id === 'start' && <View style={styles.helpBody}><Text style={[styles.body, ss(16, 28)]}>{current.body}</Text></View>}
         {isNumbers && <View style={styles.numberNavigation}>
-          {textButton('‹', () => { stop(); setSelected(null); setNumberGroup(Math.max(0, numberGroup - 1)); setShowNumberRanges(false); }, false, numberGroup === 0, 'letters-number-prev', trCopy('numbersPrev', '前の数字のまとまり', 'Previous number group'))}
+          {textButton(lang === 'ar' ? '›' : '‹', () => { stop(); setSelected(null); setNumberGroup(Math.max(0, numberGroup - 1)); setShowNumberRanges(false); }, false, numberGroup === 0, 'letters-number-prev', trCopy('numbersPrev', '前の数字のまとまり', 'Previous number group'))}
           <Pressable testID="letters-number-chooser" accessibilityRole="button" accessibilityState={{ expanded: showNumberRanges }} onPress={() => setShowNumberRanges(v => !v)} style={styles.numberChooser}><Text style={[styles.rangeText, ss(15, 24)]}>{numberGroups.find(g => g.id === numberGroup)?.label} {showNumberRanges ? '▴' : '▾'}</Text></Pressable>
-          {textButton('›', () => { stop(); setSelected(null); setNumberGroup(Math.min(numberGroups.length - 1, numberGroup + 1)); setShowNumberRanges(false); }, false, numberGroup === numberGroups.length - 1, 'letters-number-next', trCopy('numbersNext', '次の数字のまとまり', 'Next number group'))}
+          {textButton(lang === 'ar' ? '‹' : '›', () => { stop(); setSelected(null); setNumberGroup(Math.min(numberGroups.length - 1, numberGroup + 1)); setShowNumberRanges(false); }, false, numberGroup === numberGroups.length - 1, 'letters-number-next', trCopy('numbersNext', '次の数字のまとまり', 'Next number group'))}
         </View>}
         {isNumbers && showNumberRanges && <View style={styles.numberRanges} testID="letters-number-ranges">{numberGroups.map(g => <Pressable key={g.id} testID={`letters-number-range-${g.id}`} accessibilityRole="button" accessibilityLabel={g.label} accessibilityState={{ selected: numberGroup === g.id }} onPress={() => { stop(); setSelected(null); setNumberGroup(g.id); setShowNumberRanges(false); }} style={[styles.numberRange, numberGroup === g.id && styles.tileActive]}><Text style={[styles.rangeText, numberGroup === g.id && styles.white, ss(14, 22)]}>{g.label}</Text></Pressable>)}</View>}
         {isChart && <View style={styles.combinationPanel}>
@@ -178,9 +178,9 @@ const styles = StyleSheet.create({
   groupTabActive: { backgroundColor: teal }, groupText: { color: ink, fontWeight: '600' },
   flexTitle: { flex: 1, minWidth: 140 },
   helpTitle: { color: teal, fontWeight: '600' }, helpBody: { paddingHorizontal: 8, gap: 14 },
-  body: { color: ink }, combinationPanel: { gap: 10 }, letterGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 4 },
+  body: { color: ink }, combinationPanel: { gap: 10 }, letterGrid: { direction: 'ltr', flexDirection: 'row', flexWrap: 'wrap', gap: 4 },
   stepLabel: { color: muted, fontWeight: '700', letterSpacing: .5 },
-  soundGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  soundGrid: { direction: 'ltr', flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   numberNavigation: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   numberChooser: { flex: 1, minHeight: 48, borderRadius: 12, padding: 10, backgroundColor: '#e6eee7', alignItems: 'center', justifyContent: 'center' },
   numberRanges: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
   tileRoman: { flexShrink: 1 },
   chartRoman: { color: teal, fontWeight: '600' }, tileCue: { color: muted, position: 'absolute', right: 8, top: 5 },
   selectionCard: { borderRadius: 18, padding: 12, backgroundColor: '#eef2e9', gap: 8 },
-  selectionRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 }, selectionGlyph: { color: teal }, selectionMeaning: { flex: 1, minWidth: 110 },
+  selectionRow: { direction: 'ltr', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 }, selectionGlyph: { color: teal }, selectionMeaning: { flex: 1, minWidth: 110 },
   letterTile: { minWidth: 44, minHeight: 44, paddingHorizontal: 4, paddingVertical: 4, borderRadius: 10, borderWidth: 1, borderColor: '#ceddd2', backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' },
   tileText: { color: ink }, tileActive: { backgroundColor: teal, borderColor: teal },
   playerBar: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 18, paddingVertical: 8, minHeight: 68, backgroundColor: '#fbfcf9', borderTopWidth: 1, borderTopColor: '#dfe8e0' },
@@ -206,7 +206,7 @@ const styles = StyleSheet.create({
   wordsCard: { gap: 8 },
   wordRow: { gap: 4 }, wordDivider: { borderTopWidth: 1, borderTopColor: '#cbdac5', paddingTop: 8 },
   wordButton: { flexDirection: 'row', alignItems: 'center', gap: 10, minHeight: 56 }, wordContent: { flex: 1, minWidth: 0 },
-  wordTitleRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'baseline', columnGap: 10 },
+  wordTitleRow: { direction: 'ltr', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'baseline', columnGap: 10 },
   wordNe: { color: ink, fontWeight: '600' }, wordRoman: { color: muted },
   wordPlay: { width: 36, height: 36, borderRadius: 18, backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' },
   button: { minHeight: 48, paddingHorizontal: 14, paddingVertical: 12, borderRadius: 14, backgroundColor: '#e6eee7', alignItems: 'center', justifyContent: 'center' },
