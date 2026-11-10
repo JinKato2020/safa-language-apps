@@ -1,6 +1,6 @@
 {
   "_about": "App家族(聞いて話せるシリーズ)の横断状態ファイル。セッション分離の調整レイヤ。各セッションは開始時に読み、節目で更新する。安定仕様(不変)は『ポスター成果物契約.md』、本ファイルは動的状態。",
-  "updated": "2026-11-11T06:33:42+09:00",
+  "updated": "2026-11-11T07:10:10+09:00",
   "coordinationModel": {
     "mode": "session-separation + app-state.json",
     "rule": "App固有作業はApp別セッションで並行可。共有コードは sharedLock を取得した1セッションだけが編集する。司令塔(全集約)モデルは廃止(=1セッションにコンテキストが肥大して上限に達する原因だった)。真に横断的な一括処理が要る時だけ workflow で一時的に起動する。",
@@ -2257,18 +2257,18 @@
     }
   },
   "appa_arabic_2026_11_11": {
-    "status": "All 36 grammar lessons, 528 example sentences, grammar vocabulary and 720 practice exercises translated; Arabic full course remains incomplete and unpublished",
+    "status": "All 36 grammar lessons, 528 grammar sentences, 720 exercises, 1000 quiz words and full 2089-entry dictionary translated; remaining conversation and contextual vocabulary pending; unpublished",
     "scope": "Arabic mother-language UI and course translations with RTL/mixed-script layout",
     "maximumAdditionalAPIChargeJPY": 0,
     "dependsOnKoreanBuild": "complete: 2.2.4 (1075), GitHub run 42859546525 succeeded",
     "shipping": "Arabic is not imported into App A translation provider and is not selectable. No Arabic overlay/OTA/native build released. Korean 2.2.4 (1075)/OTA1224 remains current.",
     "sourcePlanSha256": "c3d316fdedc73d0e1b67137c917fc162386e11e86fc9e53ba32db0d85714cf6f",
-    "reviewedUnique": 8975,
+    "reviewedUnique": 13897,
     "totalUnique": 23716,
-    "pendingUnique": 14741,
+    "pendingUnique": 9819,
     "coverage": {
       "examplesL1": {
-        "complete": 429,
+        "complete": 437,
         "total": 1800
       },
       "grammarL1": {
@@ -2280,11 +2280,11 @@
         "total": 1000
       },
       "vocab": {
-        "complete": 365,
+        "complete": 3616,
         "total": 4743
       },
       "convVocab": {
-        "complete": 22092,
+        "complete": 28948,
         "total": 45047
       },
       "grammarVocab": {
@@ -2316,7 +2316,7 @@
         "total": 742
       },
       "nepaliDictionary": {
-        "complete": 890,
+        "complete": 2196,
         "total": 2196
       },
       "ui": {
@@ -2369,7 +2369,8 @@
       "Script-aware mixed Arabic/Nepali text and bidirectional isolation",
       "RTL navigation for Arabic; LTR Nepali alphabet, reading formulas and puzzle tokens",
       "Arabic dictionary search ignores Arabic vowel marks and tatweel, retaining Nepali vowel signs",
-      "Localized reading, learning, settings and engagement labels"
+      "Localized reading, learning, settings and engagement labels",
+      "Arabic dictionary input follows typed script; RTL disclosure/filter controls and example accent border."
     ],
     "verification": [
       "tsc shared / App A / App B / App C passed",
@@ -2383,12 +2384,15 @@
       "All 36 Korean readers and 3 practice modes passed after shared table-label fix. tsc:all passed.",
       "All 720 translated practice exercises: answer present, meaning choices remain distinct even ignoring Arabic vowel marks; no Nepali teaching forms lost.",
       "Source-plan, source-key, reviewed flag and nonempty destination-override rejection tests passed.",
-      "All 36 Arabic themes x all 3 practice modes x 320/390px x normal/large text: reveal/next/back and mixed-script layout passed. Full-release guard correctly rejects remaining translations."
+      "All 36 Arabic themes x all 3 practice modes x 320/390px x normal/large text: reveal/next/back and mixed-script layout passed. Full-release guard correctly rejects remaining translations.",
+      "All 2089 Arabic dictionary entries: senses/notes/examples present; Nepali teaching forms preserved; no fallback English in Arabic fields.",
+      "Arabic dictionary UI at 320/390px and 1.0/1.2 scale: script-sensitive input, Arabic diacritics/tatweel/alef search, Nepali/romanization/conjugation lookup, left disclosure, audio cleanup, category counts and back passed. Visual inspection passed.",
+      "JA/EN dictionary UI regression passed; shared/AppA/AppB TypeScript passed.",
+      "496 exact context templates checked for full-source matching, preserved Nepali text, rejected unknown prose and stable output."
     ],
     "remaining": [
-      "Remaining 1371 conversation sentences (including two source contradictions awaiting resolution)",
-      "Context-specific conversation vocabulary and grammatical notes",
-      "Remaining general vocabulary and dictionary translations",
+      "Remaining conversation sentences, including two source contradictions",
+      "Remaining general and contextual conversation vocabulary and notes",
       "Full Arabic content assembly, Arabic audio, native-device RTL verification and publication"
     ],
     "audio": "No Arabic audio generated; no paid synthesis invoked.",
@@ -2436,7 +2440,7 @@
       "validation": "Checked full-resolution artwork, rendered copy bounds, dimensions/RGB and visible brand/footer pixels in every output. No App Store Connect upload."
     },
     "completePracticeExercises": 720,
-    "contextOverrides": 56,
+    "contextOverrides": 58,
     "sourceReviewIssues": [
       {
         "sourceIndex": 55,
@@ -2453,8 +2457,12 @@
       "20020 and 21171: obligation requires -नु + पर्छ, distinct from permission -न + पाइन्छ. Existing English explanation conflates them.",
       "20387-20392: natural completed-letter wording based on Nepali and Japanese, correcting malformed English.",
       "20430 and 20436: plural authors for तपाईंहरू.",
-      "Reviewed 56 destination-specific overrides: conditional/quotative भने and भनी, active खोलिन् versus passive खोलियो, active गरेको versus passive गरिएको. Pinned to exact source-plan SHA."
+      "Reviewed 56 destination-specific overrides: conditional/quotative भने and भनी, active खोलिन् versus passive खोलियो, active गरेको versus passive गरिएको. Pinned to exact source-plan SHA.",
+      "Dictionary/context jam split: traffic congestion in all four existing conversation examples; food preserve for dictionary entry 1744.",
+      "English lesson word means English; separate UI override says Arabic. Corrected shared-key collision across eight exercises.",
+      "Context notes: मेरो derives from म, not Hindi मैं; यस is the oblique form, यसको genitive; infinitives precede सक्छु and चाहन्छु.",
+      "Legacy vocabulary reviewed against Nepali: सन् = CE year, सर्ट = shirt, साठी = sixty, हुस्सु = fog, लू = heat wave, सेल = sale, कुरौँ = let us wait; typo बेड्न in 2-2-7 is intended भेट्न (visit)."
     ],
-    "updated": "2026-11-11T06:33:42+09:00"
+    "updated": "2026-11-11T07:10:10+09:00"
   }
 }

@@ -22,8 +22,9 @@ if(process.argv.some(a=>a.startsWith('--korean-'))){
   }
 }
 const arabicFoundation=process.argv.includes('--arabic-foundation');
+const arabicDictionary=process.argv.includes('--arabic-dictionary');
 modules.Text=compile(source('packages/shared/src/Text.tsx'));
-if(arabicFoundation){
+if(arabicFoundation||arabicDictionary){
   strings.ar=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ar.json'));
   overlays.ar=structuredClone(overlays.en);
   const plan=JSON.parse(source('聞いて話せるネパール語/文法教材/arabic_translation_requests.json'));
@@ -84,6 +85,50 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(arabicDictionary){
+      for(const width of [320,390])for(const scale of [1,1.2]){
+        await page.setViewportSize({width,height:844});
+        await page.evaluate(scale=>window.boot('ar',true,{name:'NepaliDictionary'},scale),scale);
+        const coverage=await page.evaluate(()=>{
+          const entries=window.data.NEPALI_DICTIONARY.entries;
+          return {count:entries.length,missing:entries.flatMap(e=>[...e.senses,e.note,...e.examples].filter(Boolean)).filter(v=>!/[\u0620-\u064a]/.test(v.ar??'')).length};
+        });
+        assert.deepEqual(coverage,{count:2089,missing:0});
+        assert.equal(await page.getByTestId('dictionary-search').evaluate(e=>getComputedStyle(e).direction),'rtl');
+        for(const [query,expected] of [['मर्नु','يموت'],['फाल्नु','يرمي'],['लाग्नु','يشعر'],['जाम','مربّى'],['गर्छु','يفعل'],['ghar','بيت']]){
+          await page.getByTestId('dictionary-search').fill(query);
+          assert.equal(await page.getByTestId('dictionary-search').evaluate(e=>getComputedStyle(e).direction),'ltr');
+          assert((await page.getByTestId('dictionary-clear').boundingBox()).x<(await page.getByTestId('dictionary-search').boundingBox()).x);
+          const entry=page.locator('[data-testid^="dictionary-entry-"]').first();await entry.click();
+          const content=await page.getByTestId('dictionary-detail').innerText();assert(content.includes(expected),`${query}: ${content}`);
+          const glyphs=await entry.locator(':scope > span').boundingBox(),word=await entry.locator(':scope > div').boundingBox();
+          assert(glyphs.x<word.x,'Arabic entry disclosure stays on the left');
+          if(await page.getByTestId('dictionary-listen').count()){
+            await page.getByTestId('dictionary-listen').click();await page.waitForTimeout(50);
+            assert.equal(await page.evaluate(()=>window.activeAudio.size),1);
+          }
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${query}/${width}/${scale}`);
+          if(['लाग्नु','जाम'].includes(query))await page.screenshot({path:path.join(work,`previews/dictionary-ar-${query}-${width}-${scale}.png`)});
+        }
+        for(const [plain,variant]of[['مرض','مَــرَض'],['امن','آمن']]){
+          await page.getByTestId('dictionary-search').fill(plain);
+          const ids=await page.locator('[data-testid^="dictionary-entry-"]').evaluateAll(es=>es.map(e=>e.dataset.testid));assert(ids.length>0);
+          await page.getByTestId('dictionary-search').fill(variant);
+          assert.deepEqual(await page.locator('[data-testid^="dictionary-entry-"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),ids);
+          assert.equal(await page.getByTestId('dictionary-search').evaluate(e=>getComputedStyle(e).direction),'rtl');
+          assert.equal(await page.getByTestId('dictionary-search').inputValue(),variant,'Search text is never rewritten');
+          assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
+        }
+        await page.getByTestId('dictionary-search').fill('zzzz-no-match');
+        assert.equal(await page.locator('[data-testid^="dictionary-entry-"]').count(),0);
+        await page.getByTestId('dictionary-clear').click();
+        await page.getByTestId('dictionary-filters').click();await page.getByTestId('dictionary-category-11').click();
+        const expected=await page.evaluate(()=>window.data.NEPALI_DICTIONARY.entries.filter(e=>e.sources.some(s=>s.startsWith('11:'))).length);
+        assert.equal(await page.locator('[data-testid^="dictionary-entry-"]').count(),expected);
+        await page.getByTestId('study-back').click();assert.equal(await page.evaluate(()=>window.route.name),'MainTabs');
+      }
+      assert.deepEqual(errors,[]);console.log('PASS Arabic dictionary: all 2089 entries fully translated, Arabic/Nepali/romanized and conjugated search, Arabic normalization, mixed-script input alignment, left disclosure, audio cleanup, categories and back at 320/390px normal/large text. Preview only.');return;
+    }
     if(arabicFoundation){
       for(const width of [320,390])for(const scale of [1,1.2]){
         await page.setViewportSize({width,height:844});

@@ -7,12 +7,14 @@ import { useI18n } from '../i18n';
 import { useScaleStyle } from '../SettingsContext';
 import { LearningSound } from '../LearningSound';
 import { dictionaryKey, dictionaryPos, dictionaryTranslation, indexDictionary, searchDictionary, type NepaliDictionaryEntry } from '../nepaliDictionary';
+import { textDirection } from '../textDirection';
 
 const EMPTY: NepaliDictionaryEntry[] = [];
 export default function NepaliDictionaryScreen() {
   const data=useAppData(), {lang, copy: trCopy }=useI18n(), nav=useNavigation<any>(), ss=useScaleStyle(), en=lang==='en';
   const [query,setQuery]=useState(''), [category,setCategory]=useState<number>(), [selected,setSelected]=useState<string>(), [playing,setPlaying]=useState<{id:string;key:number}>();
   const [filters,setFilters]=useState(false);
+  const rtl=lang==='ar', inputDirection=textDirection(query)??(rtl?'rtl':'ltr');
   const entries=data.NEPALI_DICTIONARY?.entries??EMPTY;
   const index=useMemo(()=>indexDictionary(entries),[entries]);
   const results=useMemo(()=>searchDictionary(index,query,category),[index, query, category]);
@@ -25,7 +27,7 @@ export default function NepaliDictionaryScreen() {
   const renderItem=({item:e}:{item:NepaliDictionaryEntry})=>{
     const open=selected===e.id, matchedForm=query.trim() && dictionaryKey(e.ne)!==dictionaryKey(query) && e.forms.some(f=>dictionaryKey(f)===dictionaryKey(query));
     return <View style={[s.entry,open&&s.open]}>
-      <Pressable testID={`dictionary-entry-${e.id}`} accessibilityRole="button" accessibilityState={{expanded:open}} accessibilityLabel={`${e.ne}, ${e.senses.map(v=>dictionaryTranslation(v,lang)).join('; ')}`} onPress={()=>toggle(e.id)} style={s.entryTop}>
+      <Pressable testID={`dictionary-entry-${e.id}`} accessibilityRole="button" accessibilityState={{expanded:open}} accessibilityLabel={`${e.ne}, ${e.senses.map(v=>dictionaryTranslation(v,lang)).join('; ')}`} onPress={()=>toggle(e.id)} style={[s.entryTop,rtl&&s.rtlRow]}>
         <View style={{flex:1,gap:4}}>
           {matchedForm&&<Text style={[s.formMatch,ss(12,20)]}>{query.trim()} → {trCopy('c_090b19410db3', '基本形', 'Base form')}</Text>}
           <Text style={[s.word,ss(25,36)]}>{e.ne}</Text>
@@ -43,7 +45,7 @@ export default function NepaliDictionaryScreen() {
           <Text style={[s.secondary,ss(13,22)]}>{en?sense.ja:sense.en}</Text>
         </View>)}
         {e.note&&<View style={s.note}><Text style={[s.noteTitle,ss(13,22)]}>{trCopy('c_b7b76e361eaf', '使い分けのポイント', 'How to use it')}</Text><Text style={[s.gloss,ss(15,25)]}>{dictionaryTranslation(e.note,lang)}</Text></View>}
-        {e.examples.map((example,i)=><View key={i} style={s.example}><Text style={[s.pos,ss(12,20)]}>{lang==='ar'?'مثال':lang==='ko'?'예문':en?'Example':'用例'}</Text><Text style={[s.word,ss(20,32)]}>{example.ne}</Text><Text style={[s.gloss,ss(15,25)]}>{dictionaryTranslation(example,lang)}</Text></View>)}
+        {e.examples.map((example,i)=><View key={i} style={[s.example,rtl&&s.rtlExample]}><Text style={[s.pos,ss(12,20)]}>{lang==='ar'?'مثال':lang==='ko'?'예문':en?'Example':'用例'}</Text><Text style={[s.word,ss(20,32)]}>{example.ne}</Text><Text style={[s.gloss,ss(15,25)]}>{dictionaryTranslation(example,lang)}</Text></View>)}
         {!!e.forms.length&&<View style={{gap:6}}><Text style={[s.pos,ss(12,20)]}>{trCopy('c_f63eedef6503', 'これらの形でも検索できます', 'Also found under these forms')}</Text><Text style={[s.gloss,ss(16,27)]}>{e.forms.join(' · ')}</Text></View>}
         {!!e.themes.length&&<View style={{gap:8}}><Text style={[s.pos,ss(12,20)]}>{trCopy('c_f6f7dcd6958a', '教材で確認', 'In your lessons')}</Text>{e.themes.map(id=>{const theme=data.GRAMMAR_THEMES.find(t=>t.id===id);return theme? <View key={id}>{button(`${id}. ${theme.name} →`,()=>{stop();nav.navigate('GrammarGuide',{themeId:id,title:theme.name});})}</View>:null;})}</View>}
       </View>}
@@ -52,8 +54,8 @@ export default function NepaliDictionaryScreen() {
   return <View style={s.page}>
     <View style={s.searchArea}>
       <Text style={[s.hint,ss(13,22)]}>{trCopy('c_83237b1f08fc', 'ネパール語・ローマ字・日本語・英語で検索', 'Search Nepali, romanization, English or Japanese.')}</Text>
-      <View style={s.searchRow}><TextInput testID="dictionary-search" accessibilityLabel={trCopy('c_ce749f20b982', '辞書を検索', 'Search dictionary')} value={query} onChangeText={search} placeholder={trCopy('c_04904c289eec', 'ghar / 家 / गर्छु', 'ghar / house / गर्छु')} placeholderTextColor="#657777" autoCapitalize="none" autoCorrect={false} returnKeyType="search" style={[s.input,ss(18,28)]}/>{query.length>0&&button(trCopy('c_192b504b979f', '消去', 'Clear'),()=>search(''),'dictionary-clear')}</View>
-      <View style={s.filterRow}>
+      <View style={[s.searchRow,rtl&&s.rtlRow]}><TextInput testID="dictionary-search" accessibilityLabel={trCopy('c_ce749f20b982', '辞書を検索', 'Search dictionary')} value={query} onChangeText={search} placeholder={trCopy('c_04904c289eec', 'ghar / 家 / गर्छु', 'ghar / house / गर्छु')} placeholderTextColor="#657777" autoCapitalize="none" autoCorrect={false} returnKeyType="search" style={[s.input,ss(18,28),{writingDirection:inputDirection,textAlign:inputDirection==='rtl'?'right':'left'}]}/>{query.length>0&&button(trCopy('c_192b504b979f', '消去', 'Clear'),()=>search(''),'dictionary-clear')}</View>
+      <View style={[s.filterRow,rtl&&s.rtlRow]}>
         <Text testID="dictionary-count" accessibilityLiveRegion="polite" style={[s.hint,ss(12,20)]}>{trCopy('c_3ec230bb4da9', `${results.length}語`, `${results.length} ${results.length===1?'entry':'entries'}`, {p0: results.length, p1: results.length===1?'entry':'entries'})}</Text>
         <Pressable testID="dictionary-filters" accessibilityRole="button" accessibilityState={{expanded:filters}} onPress={()=>setFilters(v=>!v)} style={s.filterButton}><Text style={[s.buttonText,ss(13,21)]}>{category?(data.CONTENT_NAMES?.categories?.[category]??data.WORD_CATEGORIES.find(c=>c.id===category)?.name):(trCopy('c_be6e7716be36', 'カテゴリ', 'Categories'))} {filters?'−':'＋'}</Text></Pressable>
       </View>
@@ -66,6 +68,7 @@ export default function NepaliDictionaryScreen() {
   </View>;
 }
 const s=StyleSheet.create({
+  rtlRow:{direction:'ltr',flexDirection:'row-reverse'},rtlExample:{paddingLeft:0,borderLeftWidth:0,paddingRight:12,borderRightWidth:3,borderRightColor:'#72B6A5'},
   page:{flex:1,backgroundColor:'#F2F5F3'},searchArea:{padding:16,paddingBottom:8,gap:10,backgroundColor:'#F8FAF9'},
   hint:{color:'#52666C'},searchRow:{flexDirection:'row',alignItems:'center',gap:8},input:{flex:1,minWidth:0,minHeight:52,borderWidth:1,borderColor:'#A5BDB5',borderRadius:14,paddingHorizontal:14,paddingVertical:10,color:'#123039',backgroundColor:'#fff'},
   filterRow:{flexDirection:'row',alignItems:'center',justifyContent:'space-between',gap:12},filterButton:{minHeight:44,padding:10,borderRadius:10,backgroundColor:'#E3EDE8',flexShrink:1,justifyContent:'center'},categories:{gap:8,paddingVertical:3,flexDirection:'row',flexWrap:'wrap'},chip:{minHeight:44,maxWidth:'100%',borderRadius:22,paddingHorizontal:15,paddingVertical:11,backgroundColor:'#E3EDE8',justifyContent:'center'},chipOn:{backgroundColor:'#176858'},

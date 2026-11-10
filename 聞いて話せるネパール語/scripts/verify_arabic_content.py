@@ -16,7 +16,7 @@ def read(path):
     return json.loads(path.read_text(encoding='utf-8'))
 
 
-def main(partial=False, require_lessons=False, require_practice=False):
+def main(partial=False, require_lessons=False, require_practice=False, require_dictionary=False):
     path = WORK / 'arabic_translation_requests.json'
     assert hashlib.sha256(path.read_bytes()).hexdigest() == PLAN_SHA, 'Source plan changed'
     plan, cache = read(path), read(WORK / 'arabic_translations.json')
@@ -51,11 +51,12 @@ def main(partial=False, require_lessons=False, require_practice=False):
         if destination['key'] in cache['items']:
             fields[field]['complete'] += 1
             translated = destination_translation(cache, destination, 'ar')
-            if field in {'grammarGuide', 'learningPathV3'}:
+            if field in {'grammarGuide', 'learningPathV3', 'nepaliDictionary'}:
                 source = plan['requests'][destination['key']]
                 assert translated.count('**') % 2 == 0, ('Unbalanced emphasis', destination['path'])
-                nepali = set(re.findall(r'[\u0900-\u097f]+', source['en']))
-                translated_nepali = set(re.findall(r'[\u0900-\u097f]+', translated))
+                # Danda punctuation may change with Arabic quoting; teaching letters may not.
+                nepali = set(re.findall(r'[\u0900-\u0963\u0966-\u097f]+', source['en']))
+                translated_nepali = set(re.findall(r'[\u0900-\u0963\u0966-\u097f]+', translated))
                 assert not (nepali - translated_nepali), ('Missing Nepali teaching form', destination['path'], nepali - translated_nepali)
             if field == 'grammarGuide':
                 lessons[lesson]['complete'] += 1
@@ -64,12 +65,19 @@ def main(partial=False, require_lessons=False, require_practice=False):
                 for component in destination['path'][2:-1]:
                     parent = parent[component]
                 parent[destination['path'][-1]] = translated
+                # The source key is shared with the mother-language selector label.
+                # The selector says Arabic, but अंग्रेजी inside a lesson still means English.
+                if destination['path'][-1] == 'meaning' and plan['requests'][destination['key']]['en'] == 'English':
+                    assert translated == 'الإنجليزية', ('Language-label leakage into lesson', destination['path'])
             if field == 'ui':
                 value = ui
                 for component in destination['path'][1:]:
                     value = value[component]
                 assert value == destination_translation(cache, destination, 'ar'), destination['path']
     missing = len(plan['requests']) - len(cache['items'])
+    if require_dictionary:
+        assert fields['nepaliDictionary']['total'] == 2196, 'Dictionary source changed'
+        assert fields['nepaliDictionary']['complete'] == fields['nepaliDictionary']['total'], 'Incomplete dictionary'
     if require_lessons:
         assert len(lessons) == 36 and all(v['complete'] == v['total'] for v in lessons.values()), ('Incomplete lessons', dict(lessons))
         assert fields['grammarVocab']['complete'] == fields['grammarVocab']['total'], 'Incomplete grammar vocabulary'
@@ -97,5 +105,6 @@ if __name__ == '__main__':
     parser.add_argument('--partial', action='store_true')
     parser.add_argument('--require-lessons', action='store_true', help='Require all 34 grammar lessons and both appendices')
     parser.add_argument('--require-practice', action='store_true', help='Require all 720 exercises and distinct Arabic meaning options')
+    parser.add_argument('--require-dictionary', action='store_true', help='Require every dictionary sense, note and example translation')
     args = parser.parse_args()
-    main(args.partial, args.require_lessons, args.require_practice)
+    main(args.partial, args.require_lessons, args.require_practice, args.require_dictionary)
