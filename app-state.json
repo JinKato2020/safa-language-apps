@@ -2257,15 +2257,15 @@
     }
   },
   "appa_arabic_2026_11_11": {
-    "status": "All 36 grammar lessons, 528 grammar sentences, 720 exercises, 1000 quiz words and full 2089-entry dictionary translated; remaining conversation and contextual vocabulary pending; unpublished",
+    "status": "All 36 grammar lessons, 720 exercises, 1000 quiz words, 4743 general vocabulary destinations and full 2089-entry dictionary translated; conversation base meanings complete except one source ambiguity; remaining conversation sentences and context notes pending; unpublished",
     "scope": "Arabic mother-language UI and course translations with RTL/mixed-script layout",
     "maximumAdditionalAPIChargeJPY": 0,
     "dependsOnKoreanBuild": "complete: 2.2.4 (1075), GitHub run 42859546525 succeeded",
     "shipping": "Arabic is not imported into App A translation provider and is not selectable. No Arabic overlay/OTA/native build released. Korean 2.2.4 (1075)/OTA1224 remains current.",
     "sourcePlanSha256": "c3d316fdedc73d0e1b67137c917fc162386e11e86fc9e53ba32db0d85714cf6f",
-    "reviewedUnique": 13897,
+    "reviewedUnique": 17312,
     "totalUnique": 23716,
-    "pendingUnique": 9819,
+    "pendingUnique": 6404,
     "coverage": {
       "examplesL1": {
         "complete": 437,
@@ -2280,11 +2280,11 @@
         "total": 1000
       },
       "vocab": {
-        "complete": 3616,
+        "complete": 4743,
         "total": 4743
       },
       "convVocab": {
-        "complete": 28948,
+        "complete": 38549,
         "total": 45047
       },
       "grammarVocab": {
@@ -2388,11 +2388,12 @@
       "All 2089 Arabic dictionary entries: senses/notes/examples present; Nepali teaching forms preserved; no fallback English in Arabic fields.",
       "Arabic dictionary UI at 320/390px and 1.0/1.2 scale: script-sensitive input, Arabic diacritics/tatweel/alef search, Nepali/romanization/conjugation lookup, left disclosure, audio cleanup, category counts and back passed. Visual inspection passed.",
       "JA/EN dictionary UI regression passed; shared/AppA/AppB TypeScript passed.",
-      "496 exact context templates checked for full-source matching, preserved Nepali text, rejected unknown prose and stable output."
+      "496 exact context templates checked for full-source matching, preserved Nepali text, rejected unknown prose and stable output.",
+      "All 4743 general vocabulary destinations translated; full partial audit passed at 17312 reviewed unique keys, 94 contextual overrides. Source plan unchanged; lessons/practice/dictionary remain complete."
     ],
     "remaining": [
-      "Remaining conversation sentences, including two source contradictions",
-      "Remaining general and contextual conversation vocabulary and notes",
+      "1358 unique conversation translations (1363 destinations), including source contradictions",
+      "5045 contextual conversation-note translations and one ambiguous base meaning",
       "Full Arabic content assembly, Arabic audio, native-device RTL verification and publication"
     ],
     "audio": "No Arabic audio generated; no paid synthesis invoked.",
@@ -2440,7 +2441,7 @@
       "validation": "Checked full-resolution artwork, rendered copy bounds, dimensions/RGB and visible brand/footer pixels in every output. No App Store Connect upload."
     },
     "completePracticeExercises": 720,
-    "contextOverrides": 58,
+    "contextOverrides": 94,
     "sourceReviewIssues": [
       {
         "sourceIndex": 55,
@@ -2451,6 +2452,18 @@
         "sourceIndex": 278,
         "status": "pending; untranslated",
         "issue": "Nepali झल्याँस लाग्छ expresses being startled/realizing suddenly; JA/EN mean frustration. Need reconcile source/audio before releasing."
+      },
+      {
+        "sourceIndex": 475,
+        "sentenceId": "8-3-18",
+        "status": "pending source reconciliation",
+        "issue": "Restaurant sentence uses परोस् for please serve, but the source gloss/lemma is internally inconsistent (पार्नु versus परोस्). Hold base-meaning index 17039 and full sentence for source/audio reconciliation."
+      },
+      {
+        "sourceIndex": 1476,
+        "sentenceId": "25-3-11",
+        "status": "pending source reconciliation",
+        "issue": "Nepali sentence glosses लाखौँ (hundreds of thousands) with दशौँ हजार (tens of thousands). Source number mismatch; reconcile before Arabic release."
       }
     ],
     "sourceCorrectionsInArabic": [
@@ -2461,8 +2474,12 @@
       "Dictionary/context jam split: traffic congestion in all four existing conversation examples; food preserve for dictionary entry 1744.",
       "English lesson word means English; separate UI override says Arabic. Corrected shared-key collision across eight exercises.",
       "Context notes: मेरो derives from म, not Hindi मैं; यस is the oblique form, यसको genitive; infinitives precede सक्छु and चाहन्छु.",
-      "Legacy vocabulary reviewed against Nepali: सन् = CE year, सर्ट = shirt, साठी = sixty, हुस्सु = fog, लू = heat wave, सेल = sale, कुरौँ = let us wait; typo बेड्न in 2-2-7 is intended भेट्न (visit)."
+      "Legacy vocabulary reviewed against Nepali: सन् = CE year, सर्ट = shirt, साठी = sixty, हुस्सु = fog, लू = heat wave, सेल = sale, कुरौँ = let us wait; typo बेड्न in 2-2-7 is intended भेट्न (visit).",
+      "Finance and IT vocabulary: धान्नका covers expenses, कलको means of a call, ब्याजको is financial interest, चक्रवृद्धि is compound interest, आईटी is IT; general vocabulary all complete.",
+      "Contextual distinction: पर्दा curtain versus when something happens; भए past versus conditional; भन्दा comparison versus saying; धुन melody versus washing. Added destination-specific meanings.",
+      "लिए, रहे, देखिए, सके, लागे and बसे reviewed against actual sentences: conditional meanings where appropriate. सकिन in 3-3-1 is to end, not could not; बसाल्नुस् in 14-2-20 establishes a habit, not please sit down.",
+      "Corrected वृद्धावस्था from erroneous medicine to old age; को is genitive, not ablative; हुनु identity versus state distinction replaces misleading stronger/weaker assertion explanations."
     ],
-    "updated": "2026-11-11T07:10:10+09:00"
+    "updated": "2026-11-11T07:38:13+09:00"
   }
 }
