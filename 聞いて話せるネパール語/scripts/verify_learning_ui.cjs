@@ -21,7 +21,8 @@ if(process.argv.some(a=>a.startsWith('--korean-'))){
     assert.deepEqual([...new Set(translated.match(/\{\{\w+\}\}/g)??[])].sort(),expected,`${group}.${key}`);
   }
 }
-const arabicAlignment=process.argv.includes('--arabic-alignment');
+const puzzleAlignment=process.argv.includes('--puzzle-alignment');
+const arabicAlignment=process.argv.includes('--arabic-alignment')||puzzleAlignment;
 const arabicFoundation=process.argv.includes('--arabic-foundation');
 const arabicDictionary=process.argv.includes('--arabic-dictionary');
 const arabicModes=process.argv.includes('--arabic-modes');
@@ -35,6 +36,7 @@ if(arabicFoundation||arabicDictionary||arabicModes||arabicAlignment){
   modules.Text=compile(source('packages/shared/src/Text.tsx'));
 }
 if(arabicModes||arabicAlignment)modules.ListeningScreen=compile(source('packages/shared/src/screens/ListeningScreen.tsx'));
+if(puzzleAlignment)overlays.ko=JSON.parse(source('聞いて話せるネパール語/expo-app/data/overlays/ko.json'));
 if(arabicAlignment)modules.ModalDropdown=compile(source('packages/shared/src/ModalDropdown.tsx'));
 const code=`
 const modules=${JSON.stringify(modules)},cache={},overlays=${JSON.stringify(overlays)},strings=${JSON.stringify(strings)},core=${JSON.stringify(core)};
@@ -103,6 +105,31 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(puzzleAlignment){
+      for(const lang of ['ar','ja','en','ko'])for(const sourceMode of ['grammar','conversation'])for(const[width,scale]of[[390,1],[320,1.2],[768,1]]){
+        await page.setViewportSize({width,height:1024});
+        await page.evaluate(({lang,sourceMode,scale})=>window.boot(lang,true,{name:'Theme',params:{mode:sourceMode,puzzleOnly:true,guidesOnHome:true}},scale),{lang,sourceMode,scale});
+        await page.getByTestId('theme-1').click();await page.getByTestId('free-bank').waitFor();
+        const label=page.getByTestId('puzzle-answer-label'),count=page.getByTestId('puzzle-answer-count'),hint=page.getByTestId('puzzle-answer-placeholder');
+        const labelBox=await label.boundingBox(),countBox=await count.boundingBox();
+        assert(lang==='ar'?labelBox.x>countBox.x:labelBox.x<countBox.x,lang+' heading and counter order');
+        assert.equal(await count.evaluate(e=>getComputedStyle(e).direction),'ltr','The completed/total counter never reverses');
+        assert(await hint.evaluate(e=>Math.abs(e.getBoundingClientRect().right-e.parentElement.getBoundingClientRect().right)<2),lang+' hint occupies the full answer width');
+        if(lang==='ar'){
+          assert.equal(await hint.evaluate(e=>getComputedStyle(e).textAlign),'right');
+          assert.equal(await hint.evaluate(e=>getComputedStyle(e).direction),'rtl');
+        }
+        const tiles=await page.locator('[data-testid^="free-token-"]').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y};}));
+        for(let i=1;i<tiles.length;i++)if(Math.abs(tiles[i].y-tiles[i-1].y)<2)assert(tiles[i].x>tiles[i-1].x,'Nepali bank stays LTR');
+        await page.getByTestId('free-token-word-1').click();await page.getByTestId('free-token-word-0').click();
+        const selected=await page.locator('[data-testid^="free-remove-"]').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y};}));
+        assert.equal(selected.length,2);if(Math.abs(selected[0].y-selected[1].y)<2)assert(selected[1].x>selected[0].x,'Nepali answer stays LTR');
+        await page.getByTestId('free-remove-1').click();await page.getByTestId('free-remove-0').click();await hint.waitFor();
+        assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        if(lang==='ar'&&sourceMode==='grammar')await page.screenshot({path:path.join(work,'previews','puzzle-labels-ar-'+width+'.png')});
+      }
+      assert.deepEqual(errors,[]);console.log('PASS puzzle UI geometry: Arabic heading/counter and full-width right-aligned instruction; JA/EN/KO unaffected; grammar/conversation at 320/390/768px, LTR Nepali bank/answer, tap/add/remove.');return;
+    }
     if(arabicAlignment){
       // Check the exact installed renderer still uses the behavior modelled above.
       const native=source('node_modules/react-native/ReactCommon/react/renderer/textlayoutmanager/platform/ios/react/renderer/textlayoutmanager/RCTAttributedTextUtils.mm');
