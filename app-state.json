@@ -1,6 +1,6 @@
 {
   "_about": "App家族(聞いて話せるシリーズ)の横断状態ファイル。セッション分離の調整レイヤ。各セッションは開始時に読み、節目で更新する。安定仕様(不変)は『ポスター成果物契約.md』、本ファイルは動的状態。",
-  "updated": "2026-11-11T13:25:14+09:00",
+  "updated": "2026-11-11T13:31:48+09:00",
   "coordinationModel": {
     "mode": "session-separation + app-state.json",
     "rule": "App固有作業はApp別セッションで並行可。共有コードは sharedLock を取得した1セッションだけが編集する。司令塔(全集約)モデルは廃止(=1セッションにコンテキストが肥大して上限に達する原因だった)。真に横断的な一括処理が要る時だけ workflow で一時的に起動する。",
@@ -126,19 +126,15 @@
       "contentManifest": "https://content.safa-lang.com/nepali/_manifest.json",
       "latestNativeBuild": {
         "version": "2.2.5",
-        "buildNumber": 1085,
-        "sourceCommit": "468f797ccae4e3c5a6769f4ff4d9a7bd52bf4ec0",
+        "buildNumber": 1088,
+        "sourceCommit": "5f1867e8c994373d10ee4d60894d96ce9fbaa883",
         "workflow": "ios-build-nepali.yml",
-        "runId": 42954722250,
-        "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42954722250",
+        "runId": 42959796404,
+        "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42959796404",
         "platform": "ios",
         "submitToTestFlight": true,
-        "observedStatus": "in_progress",
-        "completionMonitoring": "One-time status check at user request. No failed steps observed; TestFlight upload completion/arrival not yet confirmed.",
-        "lastCheckedAt": "2026-11-11T13:12:31+09:00",
-        "archive": "success",
-        "exportIPA": "success",
-        "testFlightUpload": "in_progress since 2026-11-11T13:10:27+09:00"
+        "observedStatus": "queued",
+        "completionMonitoring": "Not monitored, per existing user instruction. Completion and TestFlight arrival not confirmed."
       }
     },
     "B_japanese": {
@@ -2686,8 +2682,8 @@
     }
   },
   "appa_arabic_puzzle_labels_2026_11_11": {
-    "updated": "2026-11-11T13:25:14+09:00",
-    "status": "implemented-verified-pending-next-native-build",
+    "updated": "2026-11-11T13:31:48+09:00",
+    "status": "Implemented and verified; requested 2.2.5 (1088) iOS/TestFlight build dispatched.",
     "report": "Arabic puzzle heading and instruction under it remain on the left.",
     "cause": "PuzzleBoard intentionally sets LTR for Nepali tiles and drag coordinates. The UI heading inherited this row direction, while the placeholder was shrink-wrapped in an LTR flex row. Text alignment alone did not position either element at the right edge.",
     "fix": "Mirror only the answer heading row for Arabic; give the instruction the full answer width. Keep Nepali token bank/answer and drag coordinates LTR; explicitly keep completed/total digits LTR.",
@@ -2697,7 +2693,19 @@
       "Existing JA/EN drag gesture tests passed: insertion, reorder, return, outside-drop cancellation and judgement.",
       "tsc:all passed; final shared tsc and scoped diff check passed; actual preview reviewed."
     ],
-    "delivery": "Not included in previously dispatched 2.2.5 (1085). No additional native build or content OTA dispatched in this follow-up.",
-    "cleanup": "Removed own .tmp-ar-puzzle outputs and temporary baseline script; retained reusable regression mode."
+    "delivery": "Included in native build 2.2.5 (1088), dispatched 2026-11-11. Also includes preceding Arabic alignment/language-picker/theme-label fixes. No content OTA change; device verification pending.",
+    "cleanup": "Removed own .tmp-ar-puzzle outputs and temporary baseline script; retained reusable regression mode.",
+    "nativeBuild": {
+      "version": "2.2.5",
+      "buildNumber": 1088,
+      "sourceCommit": "5f1867e8c994373d10ee4d60894d96ce9fbaa883",
+      "workflow": "ios-build-nepali.yml",
+      "runId": 42959796404,
+      "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42959796404",
+      "platform": "ios",
+      "submitToTestFlight": true,
+      "observedStatus": "queued",
+      "completionMonitoring": "Not monitored, per existing user instruction. Completion and TestFlight arrival not confirmed."
+    }
   }
 }
