@@ -3,7 +3,8 @@
 //  - 文言はこの画面内で ja/en/ne を自前に保持(i18n JSON 非依存=App B/C に副作用なし)。
 //  - 価格は RC offering 由来の priceString、無ければフォールバック ¥980。
 //  - 「購入を復元」必須(Apple 3.1.1)。busy 中はスピナー。
-import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Text } from '../Text';
 import { useNavigation } from '@react-navigation/native';
 import { useEntitlement } from '../entitlement';
 import { useI18n } from '../i18n';

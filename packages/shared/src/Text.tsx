@@ -37,6 +37,11 @@ export function Text(props: TextProps) {
   } else if (direction === 'ltr') {
     style = [style, { writingDirection: 'ltr' }];
   }
+  // iOS Fabric flips explicit left/right textAlign when the Text's Yoga
+  // direction is RTL (RCTAttributedTextUtils.mm). Keep this text box LTR so
+  // alignment stays physical; writingDirection above controls the script.
+  // The surrounding screen/row remains RTL, including navigation and icons.
+  style = [style, { direction: 'ltr' }];
   const children = direction === 'rtl'
     ? Children.map(props.children, child => typeof child === 'string' ? isolateLtrInArabic(child) : child)
     : props.children;

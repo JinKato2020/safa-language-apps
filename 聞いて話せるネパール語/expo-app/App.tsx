@@ -3,7 +3,7 @@
 // 初回用の教材を同梱。変更された教材・音声をハッシュ検証付きOTAで自動更新。
 
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
-import { ActivityIndicator, AppState, Pressable, Text, View } from 'react-native';
+import { ActivityIndicator, AppState, Pressable, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   AppShell,
@@ -14,6 +14,7 @@ import {
   GrammarGuideImageProvider,
   LearningAudioProvider,
   useI18n,
+  Text,
 } from '@safa/shared';
 
 import ja from './src/i18n/ja.json';

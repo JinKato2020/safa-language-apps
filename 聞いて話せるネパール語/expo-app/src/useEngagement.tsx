@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Alert, AppState, Linking, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Alert, AppState, Linking, Platform, Pressable, StyleSheet, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as StoreReview from 'expo-store-review';
 import * as MailComposer from 'expo-mail-composer';
-import { useI18n, useScaleStyle, type SettingsDevelopmentTools } from '@safa/shared';
+import { Text, useI18n, useScaleStyle, type SettingsDevelopmentTools } from '@safa/shared';
 import app from '../app.json';
 import { canRequestReview, inviteDue, isLandingRoute, isStudyReturnRoute, isStudyRoute, readEngagement, requestMail, type EngagementState } from './engagementPolicy';
 

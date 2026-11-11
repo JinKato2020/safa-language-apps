@@ -21,11 +21,12 @@ if(process.argv.some(a=>a.startsWith('--korean-'))){
     assert.deepEqual([...new Set(translated.match(/\{\{\w+\}\}/g)??[])].sort(),expected,`${group}.${key}`);
   }
 }
+const arabicAlignment=process.argv.includes('--arabic-alignment');
 const arabicFoundation=process.argv.includes('--arabic-foundation');
 const arabicDictionary=process.argv.includes('--arabic-dictionary');
 const arabicModes=process.argv.includes('--arabic-modes');
 modules.Text=compile(source('packages/shared/src/Text.tsx'));
-if(arabicFoundation||arabicDictionary||arabicModes){
+if(arabicFoundation||arabicDictionary||arabicModes||arabicAlignment){
   strings.ar=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ar.json'));
   strings.ko=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ko.json'));
   // Verify exactly the release overlay, without a preview translation fallback.
@@ -33,7 +34,8 @@ if(arabicFoundation||arabicDictionary||arabicModes){
   assert.equal(overlays.ar.l1,'ar');
   modules.Text=compile(source('packages/shared/src/Text.tsx'));
 }
-if(arabicModes)modules.ListeningScreen=compile(source('packages/shared/src/screens/ListeningScreen.tsx'));
+if(arabicModes||arabicAlignment)modules.ListeningScreen=compile(source('packages/shared/src/screens/ListeningScreen.tsx'));
+if(arabicAlignment)modules.ModalDropdown=compile(source('packages/shared/src/ModalDropdown.tsx'));
 const code=`
 const modules=${JSON.stringify(modules)},cache={},overlays=${JSON.stringify(overlays)},strings=${JSON.stringify(strings)},core=${JSON.stringify(core)};
 function require(n){if(n.startsWith('.'))n=n.split('/').pop();if(cache[n])return cache[n].exports;const m={exports:{}};cache[n]=m;if(!modules[n])throw Error('Missing '+n);new Function('require','module','exports','process',modules[n])(require,m,m.exports,{env:{NODE_ENV:'production'}});return m.exports;}
@@ -42,15 +44,24 @@ const flat=s=>Object.assign({},...(Array.isArray(s)?s.flat(Infinity):[s]).filter
 function css(style,view=false){const s=flat(style),out=view?{position:'relative',display:'flex',flexDirection:'column',flexShrink:0,minWidth:0,minHeight:0,borderWidth:0,borderStyle:'solid'}:{};for(const[k,v]of Object.entries(s)){
 if(k==='writingDirection')out.direction=v;else if(k==='paddingHorizontal'){out.paddingLeft=v;out.paddingRight=v;}else if(k==='paddingVertical'){out.paddingTop=v;out.paddingBottom=v;}else if(k==='marginHorizontal'){out.marginLeft=v;out.marginRight=v;}else if(k==='marginVertical'){out.marginTop=v;out.marginBottom=v;}else if(k==='lineHeight')out[k]=v*window.caseInfo.scale+'px';else if(k==='fontSize')out[k]=v*window.caseInfo.scale;else out[k]=v;}return out;}
 const View=React.forwardRef((p,ref)=>{const el=React.useRef(null),gesture=React.useRef(null);React.useImperativeHandle(ref,()=>({measureInWindow:cb=>{const r=el.current.getBoundingClientRect();cb(r.x,r.y,r.width,r.height);}}));React.useEffect(()=>{if(!p.onLayout)return;const r=new ResizeObserver(()=>p.onLayout({nativeEvent:{layout:{width:el.current.clientWidth,height:el.current.clientHeight}}}));r.observe(el.current);return()=>r.disconnect();},[p.onLayout]);const event=e=>({nativeEvent:{pageX:e.clientX,pageY:e.clientY}});const state=e=>({x0:gesture.current.x,y0:gesture.current.y,moveX:e.clientX,moveY:e.clientY,dx:e.clientX-gesture.current.x,dy:e.clientY-gesture.current.y,numberActiveTouches:1});return h('div',{ref:el,'data-testid':p.testID,style:{...css(p.style,true),...(p.pointerEvents==='none'?{pointerEvents:'none'}:{})},onPointerDown:e=>{if(p._pan){gesture.current={x:e.clientX,y:e.clientY,active:false};(e.target.closest('button')??el.current).setPointerCapture(e.pointerId);}},onPointerMoveCapture:e=>{if(!p._pan||!gesture.current)return;const g=state(e);if(!gesture.current.active&&p._pan.onMoveShouldSetPanResponderCapture?.(event(e),g)){gesture.current.active=true;el.current.setPointerCapture(e.pointerId);p._pan.onPanResponderGrant?.(event(e),g);}if(gesture.current.active)p._pan.onPanResponderMove?.(event(e),g);},onPointerUpCapture:e=>{if(gesture.current?.active)p._pan.onPanResponderRelease?.(event(e),state(e));p.onTouchEnd?.(event(e));gesture.current=null;},onPointerCancel:e=>{if(gesture.current?.active)p._pan.onPanResponderTerminate?.();p.onTouchCancel?.();gesture.current=null;}},p.children);});
-function Text(p){return h('span',{'data-testid':p.testID,role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...css(p.style)}},p.children);}
+// Fabric iOS swaps physical alignment for RTL Yoga nodes. CSS alone misses this bug.
+const LayoutDirection=React.createContext('ltr');
+function withLayout(Component){return React.forwardRef((p,ref)=>{const inherited=React.useContext(LayoutDirection),style=flat(typeof p.style==='function'?p.style({pressed:false}):p.style);return h(LayoutDirection.Provider,{value:style.direction&&style.direction!=='inherit'?style.direction:inherited},h(Component,{...p,ref}));});}
+function Text(p){
+  const inherited=React.useContext(LayoutDirection),s=flat(p.style),yoga=s.direction&&s.direction!=='inherit'?s.direction:inherited;
+  let alignment=s.textAlign;
+  if(${arabicAlignment}&&yoga==='rtl')alignment=alignment==='right'?'left':alignment==='left'?'right':alignment;
+  const textStyle=css(p.style);textStyle.direction=s.writingDirection??'inherit';
+  return h(LayoutDirection.Provider,{value:yoga},h('span',{'data-testid':p.testID,'data-native-text':'true','data-requested-align':s.textAlign,'data-yoga-direction':yoga,role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...textStyle,textAlign:alignment}},p.children));
+}
 function Pressable(p){const timer=React.useRef();React.useEffect(()=>()=>clearTimeout(timer.current),[]);const stop=()=>clearTimeout(timer.current);return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,'aria-selected':p.accessibilityState?.selected,disabled:p.disabled,onClick:p.onPress,onPointerDown:e=>{if(p.disabled)return;p.onPressIn?.();const event={nativeEvent:{pageX:e.clientX,pageY:e.clientY}};if(p.onLongPress)timer.current=setTimeout(()=>p.onLongPress(event),p.delayLongPress??500);},onPointerUp:stop,onPointerLeave:stop,onPointerCancel:stop,'data-testid':p.testID,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
 const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y),scrollToEnd:()=>el.current.scrollTo(0,el.current.scrollHeight)}));return h('div',{ref:el,'data-testid':p.testID,style:{scrollbarGutter:'stable',overflowY:p.horizontal||p.scrollEnabled===false?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
 const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))};
 const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode==='contain'?'contain':undefined,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
-cache['react-native']={exports:{Platform:{OS:'ios'},Alert:{alert:(...args)=>window.alerts.push(args)},Linking:{openURL:async url=>window.links.push(url)},Share:{share:async()=>{}},Switch:()=>null,PanResponder:{create:config=>({panHandlers:{_pan:config}})},AppState:{addEventListener:()=>({remove:()=>{}})},View,Text,Pressable,ScrollView,TextInput:p=>h('input',{'data-testid':p.testID,'aria-label':p.accessibilityLabel,value:p.value,onChange:e=>p.onChangeText(e.target.value),placeholder:p.placeholder,style:css(p.style)}),FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.length?null:p.ListEmptyComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x,flatten:flat},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
+cache['react-native']={exports:{Platform:{OS:'ios'},Alert:{alert:(...args)=>window.alerts.push(args)},Linking:{openURL:async url=>window.links.push(url)},Share:{share:async()=>{}},Switch:()=>null,PanResponder:{create:config=>({panHandlers:{_pan:config}})},AppState:{addEventListener:()=>({remove:()=>{}})},View:withLayout(View),Text,Pressable:withLayout(Pressable),ScrollView:withLayout(ScrollView),Modal:p=>p.visible?h('div',{role:'dialog'},p.children):null,TextInput:p=>h('input',{'data-testid':p.testID,'aria-label':p.accessibilityLabel,value:p.value,onChange:e=>p.onChangeText(e.target.value),placeholder:p.placeholder,style:css(p.style)}),FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.length?null:p.ListEmptyComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x,flatten:flat},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
 if(!modules.Text)cache.Text={exports:{Text}};
 cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,langs:Object.keys(strings),setLang:()=>{},copy:(key,ja,en,vars={})=>{let s=['ko','ar'].includes(window.caseInfo.lang)?strings[window.caseInfo.lang].courseCopy[key]??en:window.caseInfo.lang==='en'?en:ja;for(const[k,v]of Object.entries(vars))s=s.split('{{'+k+'}}').join(String(v));return s;},t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).split('{{'+k+'}}').join(String(v));return s;}})}};
-cache.ModalDropdown={exports:{ModalDropdown:p=>h('span',null,p.value)}};cache['expo-application']={exports:{nativeBuildVersion:'test'}};window.alerts=[];window.links=[];window.devCalls=[];window.devAvailable=true;window.devResult='unavailable';cache.settingsDevelopment={exports:{useSettingsDevelopment:()=>window.devAvailable?{showReview:async()=>{window.devCalls.push('review');return window.devResult;},showRequest:()=>window.devCalls.push('request')}:null}};
+if(!modules.ModalDropdown)cache.ModalDropdown={exports:{ModalDropdown:p=>h('span',null,p.value)}};cache['expo-application']={exports:{nativeBuildVersion:'test'}};window.alerts=[];window.links=[];window.devCalls=[];window.devAvailable=true;window.devResult='unavailable';cache.settingsDevelopment={exports:{useSettingsDevelopment:()=>window.devAvailable?{showReview:async()=>{window.devCalls.push('review');return window.devResult;},showRequest:()=>window.devCalls.push('request')}:null}};
 cache.PosterContext={exports:{usePosterLessons:()=>[]}};
 cache.AppDataContext={exports:{useAppData:()=>window.data}};
 const realEntitlement=require('entitlement');cache.entitlement={exports:{...realEntitlement,useEntitlement:()=>window.testEntitlement??{isPro:true,freeThemes:Infinity}}};
@@ -71,11 +82,18 @@ cache.ListeningAudioContext={exports:{useListeningAudio:()=>({active:true,isGram
 cache['react-native'].exports.Animated.Value=class{constructor(value){this.value=value;}stopAnimation(){}setValue(value){this.value=value;}};
 const names={NepaliDictionary:'NepaliDictionaryScreen',SettingsMain:'SettingsScreen',SettingsTab:'SettingsScreen',VocabCategory:'VocabCategoryScreen',VocabDirection:'VocabDirectionScreen',Flashcard:'FlashcardScreen',HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
 if(modules.ListeningScreen)names.Listening='ListeningScreen';
-function Frame(){document.getElementById('root').style.direction=window.caseInfo.lang==='ar'?'rtl':'ltr';const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['NepaliDictionary','VocabCategory','VocabDirection','Flashcard','Practice','LettersSounds','LearningPath','GrammarLibrary'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
+function Frame(){document.getElementById('root').style.direction=window.caseInfo.lang==='ar'?'rtl':'ltr';const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(LayoutDirection.Provider,{value:window.caseInfo.lang==='ar'?'rtl':'ltr'},['NepaliDictionary','VocabCategory','VocabDirection','Flashcard','Practice','LettersSounds','LearningPath','GrammarLibrary'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
 window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];window.activeAudio=new Set();window.audioEnded=false;
 const neAudio={},neGram={},l1Audio={},l1Gram={};for(const[k,rows]of Object.entries(core.examplesNe))rows.forEach((_,i)=>{neAudio[k+'-'+(i+1)]='ne/'+k+'-'+(i+1);l1Audio[k+'-'+(i+1)]=lang+'/'+k+'-'+(i+1);});for(const[k,id]of Object.entries(core.grammarAudioRefs??Object.fromEntries(Object.entries(core.grammarNe).flatMap(([t,rows])=>rows.map((_,i)=>[t+'-'+(i+1),t+'-'+(i+1)]))))){if(id){neGram[id]='ne/'+id;l1Gram[id]=lang+'/'+id;}}
 window.data=require('compose').composePack({...core,nepaliAudio:neAudio,nepaliGrammarAudio:neGram},{...overlays[lang],nativeLang:lang,l1Audio,l1GrammarAudio:l1Gram},{version:'test'});window.data.review={iosAppId:'6771720689'};
 require('react-dom').flushSync(()=>root.render(h(SettingsProvider,{storageKey:'test-settings',key:++generation},h(Provider,{storageKey:'test-study'},h(AudioProvider,{resolve:resolveAudio},h(Frame))))));await new Promise(r=>setTimeout(r,30));};
+window.textAlignmentFixture=(layout,alignment)=>{
+  window.caseInfo={lang:'ja',scale:1};const SharedText=require('Text').Text;
+  require('react-dom').flushSync(()=>root.render(h(SettingsProvider,{storageKey:'test-settings',key:++generation},h(LayoutDirection.Provider,{value:layout},h(View,{style:{direction:layout}},
+    h(SharedText,{testID:'arabic-fixture',style:alignment?{textAlign:alignment}:{}},'نص عربي ' ,h(React.Fragment,null,h(SharedText,{style:{fontWeight:'700'}},'للتعلّم'))),
+    h(Text,{testID:'raw-fixture',style:{textAlign:'right',writingDirection:'rtl'}},'نص عربي'),
+    h(SharedText,{testID:'nepali-fixture'},'म विद्यार्थी हुँ।'),h(SharedText,{testID:'roman-fixture'},'ma vidyārthī hũ'))))));
+};
 window.navigate=nav.navigate;window.boot();
 `;
 fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(work,'index.html'),'<!doctype html><meta charset="utf-8"><style>*{box-sizing:border-box}body{margin:0;font-family:Arial,"Nirmala UI","Yu Gothic UI",sans-serif}#root{height:100vh;display:flex;flex-direction:column}button{background:none;cursor:pointer}</style><div id="root"></div><script src="index.js"></script>');
@@ -85,6 +103,55 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(arabicAlignment){
+      // Check the exact installed renderer still uses the behavior modelled above.
+      const native=source('node_modules/react-native/ReactCommon/react/renderer/textlayoutmanager/platform/ios/react/renderer/textlayoutmanager/RCTAttributedTextUtils.mm');
+      assert(native.includes('textAlignment = TextAlignment::Left;')&&native.includes('textAlignment = TextAlignment::Right;'));
+      const audit=async label=>{
+        const result=await page.evaluate(()=>{
+          const all=[...document.querySelectorAll('[data-native-text]')].filter(e=>!e.parentElement.closest('[data-native-text]')&&e.getClientRects().length);
+          const arabic=all.filter(e=>/[\u0620-\u064a]/.test(e.textContent));
+          const wrong=arabic.filter(e=>{const s=getComputedStyle(e);return s.direction!=='rtl'||!['right','center'].includes(s.textAlign);}).map(e=>({text:e.textContent.slice(0,90),align:getComputedStyle(e).textAlign,dir:getComputedStyle(e).direction}));
+          return {count:arabic.length,wrong,overflow:document.documentElement.scrollWidth>innerWidth+2};
+        });
+        assert(result.count>0,label+' Arabic text');assert.deepEqual(result.wrong,[],label);assert.equal(result.overflow,false,label+' overflow');return result.count;
+      };
+      for(const layout of ['ltr','rtl'])for(const alignment of [undefined,'left','right','center']){
+        await page.evaluate(({layout,alignment})=>window.textAlignmentFixture(layout,alignment),{layout,alignment});
+        assert.equal(await page.getByTestId('raw-fixture').evaluate(e=>getComputedStyle(e).textAlign),layout==='rtl'?'left':'right','Adapter reproduces the iOS native swap');
+        assert.equal(await page.getByTestId('arabic-fixture').evaluate(e=>getComputedStyle(e).textAlign),alignment??'right');
+        assert.equal(await page.getByTestId('arabic-fixture').evaluate(e=>getComputedStyle(e).direction),'rtl');
+        for(const id of ['nepali-fixture','roman-fixture'])assert.equal(await page.getByTestId(id).evaluate(e=>getComputedStyle(e).direction),'ltr');
+      }
+      for(const lang of ['ja','en','ar']){
+        await page.evaluate(lang=>window.boot(lang,true,{name:'SettingsTab'},1),lang);
+        const label=lang==='ar'?'العربية':lang==='en'?'English':'日本語';
+        await page.getByRole('button',{name:label+' ▾',exact:true}).click();
+        const options=page.getByRole('dialog').locator('button > div > [data-native-text]');
+        assert(await options.count()>=4);
+        for(const el of await options.all())assert.equal(await el.evaluate(e=>getComputedStyle(e).textAlign),lang==='ar'?'right':'left',lang+' language labels share one alignment');
+      }
+      let checked=0;
+      for(const[width,scale]of[[390,1],[320,1.2]]){
+        await page.setViewportSize({width,height:844});
+        for(const route of [{name:'HomeTab'},{name:'Theme',params:{mode:'grammar',composition:true,guidesOnHome:true}},{name:'Theme',params:{mode:'conversation',composition:true,guidesOnHome:true}},{name:'Theme',params:{mode:'listening',grammarFirst:true}},{name:'GrammarLibrary'},{name:'SettingsTab'},{name:'LettersSounds'},{name:'VocabCategory',params:{fromHome:true}},{name:'NepaliDictionary'}]){
+          await page.evaluate(({route,scale})=>window.boot('ar',true,route,scale),{route,scale});
+          checked+=await audit(route.name+'/'+width);
+          if(['SettingsTab','GrammarLibrary'].includes(route.name))await page.screenshot({path:path.join(work,'previews',route.name+'-alignment-'+width+'.png')});
+        }
+        for(let themeId=1;themeId<=36;themeId++){
+          await page.evaluate(({themeId,scale})=>window.boot('ar',true,{name:'GrammarGuide',params:{themeId,title:'الموضوع '+themeId}},scale),{themeId,scale});
+          for(const label of ['القواعد الأساسية','الصيغ والمفردات','التدريبات','استراحة']){
+            await page.getByRole('tab',{name:label,exact:true}).click();
+            // Open collapsible forms so nested bold and mixed Nepali/Arabic text are checked too.
+            while(await page.locator('button[aria-expanded="false"]').count())await page.locator('button[aria-expanded="false"]').first().click();
+            checked+=await audit('lesson '+themeId+'/'+label+'/'+width);
+            if(themeId===1&&label==='القواعد الأساسية')await page.screenshot({path:path.join(work,'previews','lesson-alignment-'+width+'.png')});
+          }
+        }
+      }
+      assert.deepEqual(errors,[]);console.log('PASS iOS Fabric alignment model: '+checked+' Arabic text blocks across 36 lessons/all four sections, theme lists, home, settings, letters, vocabulary and dictionary at 320/390px. Device confirmation remains separate.');return;
+    }
     if(arabicDictionary){
       for(const width of [320,390])for(const scale of [1,1.2]){
         await page.setViewportSize({width,height:844});
