@@ -10,8 +10,10 @@ import coreBaseline from '../../data/ota-baseline/core.json';
 import jaBaseline from '../../data/overlays/ja.json';
 import enBaseline from '../../data/overlays/en.json';
 import koBaseline from '../../data/overlays/ko.json';
+import arBaseline from '../../data/overlays/ar.json';
 
-export const MANIFEST_URL='https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/manifest.json';
+// Same shared R2 domain as CAE; this app only reads its own prefix.
+export const MANIFEST_URL='https://content.safa-lang.com/nepali/_manifest.json';
 const ROOT=()=>`${FS.documentDirectory}content-ota/`;
 const pointerKey=(lang:string)=>`@nepali_app/content_ota/${lang}`;
 const textUri=(sha:string)=>`${ROOT()}text/${sha}.json`;
@@ -35,12 +37,12 @@ function compose(core:any,overlay:any,ne:Record<string,string>={},l1:Record<stri
 }
 export function bundledContent(lang:string):ContentSnapshot {
   const cached=bundled.get(lang);if(cached)return cached;
-  const overlay=lang==='ko'?koBaseline:lang==='en'?enBaseline:jaBaseline;
+  const overlay=lang==='ar'?arBaseline:lang==='ko'?koBaseline:lang==='en'?enBaseline:jaBaseline;
   const result={version:baselineVersion,data:compose(coreBaseline,overlay)};bundled.set(lang,result);return result;
 }
 async function fetchText(url:string,ms=12000):Promise<string>{
   const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),ms);
-  try{const r=await fetch(url,{signal:ctrl.signal});if(!r.ok)throw new Error(`Content HTTP ${r.status}`);return await r.text();}finally{clearTimeout(timer);}
+  try{const r=await fetch(url,{signal:ctrl.signal,cache:'no-store'});if(!r.ok)throw new Error(`Content HTTP ${r.status}`);return await r.text();}finally{clearTimeout(timer);}
 }
 async function readText(file:ContentFile):Promise<any>{
   const raw=await FS.readAsStringAsync(textUri(file.sha256));

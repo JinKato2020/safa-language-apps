@@ -23,21 +23,17 @@ if(process.argv.some(a=>a.startsWith('--korean-'))){
 }
 const arabicFoundation=process.argv.includes('--arabic-foundation');
 const arabicDictionary=process.argv.includes('--arabic-dictionary');
+const arabicModes=process.argv.includes('--arabic-modes');
 modules.Text=compile(source('packages/shared/src/Text.tsx'));
-if(arabicFoundation||arabicDictionary){
+if(arabicFoundation||arabicDictionary||arabicModes){
   strings.ar=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ar.json'));
-  overlays.ar=structuredClone(overlays.en);
-  const plan=JSON.parse(source('聞いて話せるネパール語/文法教材/arabic_translation_requests.json'));
-  const cache=JSON.parse(source('聞いて話せるネパール語/文法教材/arabic_translations.json'));
-  // Preview-only partial overlay. It is never written into app data or published.
-  for(const d of plan.destinations){
-    if(d.path[0]!=='overlay'||!cache.items[d.key]?.reviewed)continue;
-    let parent=overlays.ar;for(const k of d.path.slice(1,-1))parent=parent[k];
-    parent[d.path.at(-1)]=(cache.overrides?.[JSON.stringify(d.path)]??cache.items[d.key]).ar;
-  }
-  overlays.ar.l1='ar';
+  strings.ko=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ko.json'));
+  // Verify exactly the release overlay, without a preview translation fallback.
+  overlays.ar=JSON.parse(source('聞いて話せるネパール語/expo-app/data/overlays/ar.json'));
+  assert.equal(overlays.ar.l1,'ar');
   modules.Text=compile(source('packages/shared/src/Text.tsx'));
 }
+if(arabicModes)modules.ListeningScreen=compile(source('packages/shared/src/screens/ListeningScreen.tsx'));
 const code=`
 const modules=${JSON.stringify(modules)},cache={},overlays=${JSON.stringify(overlays)},strings=${JSON.stringify(strings)},core=${JSON.stringify(core)};
 function require(n){if(n.startsWith('.'))n=n.split('/').pop();if(cache[n])return cache[n].exports;const m={exports:{}};cache[n]=m;if(!modules[n])throw Error('Missing '+n);new Function('require','module','exports','process',modules[n])(require,m,m.exports,{env:{NODE_ENV:'production'}});return m.exports;}
@@ -70,7 +66,11 @@ cache.heroImages={exports:{useHeroImage:()=>1,ModeHero:()=>h('img',{src:${JSON.s
 cache.grammarGuide={exports:{useGrammarGuide:()=>window.data.GRAMMAR_GUIDE,useGrammarGuideImageResolver:()=>async()=>null}};
 const root=require('react-dom/client').createRoot(document.getElementById('root')),Provider=require('LearningContext').LearningProvider,SettingsProvider=require('SettingsContext').SettingsProvider;let generation=0;
 const AudioProvider=require('LearningSound').LearningAudioProvider,resolveAudio=async a=>({uri:a.url});
+// Listening UI adapter records requests; native playback is verified separately.
+cache.ListeningAudioContext={exports:{useListeningAudio:()=>({active:true,isGrammarSrc:window.route.params?.source==='grammar',themeId:window.route.params?.themeId??1,levelId:window.route.params?.levelId??1,index:0,playing:false,activeLang:'ne',startSession:p=>window.events.push(['listenStart',p]),togglePlay:()=>window.events.push(['listenToggle']),go:n=>window.events.push(['listenGo',n])})}};
+cache['react-native'].exports.Animated.Value=class{constructor(value){this.value=value;}stopAnimation(){}setValue(value){this.value=value;}};
 const names={NepaliDictionary:'NepaliDictionaryScreen',SettingsMain:'SettingsScreen',SettingsTab:'SettingsScreen',VocabCategory:'VocabCategoryScreen',VocabDirection:'VocabDirectionScreen',Flashcard:'FlashcardScreen',HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
+if(modules.ListeningScreen)names.Listening='ListeningScreen';
 function Frame(){document.getElementById('root').style.direction=window.caseInfo.lang==='ar'?'rtl':'ltr';const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(React.Fragment,null,['NepaliDictionary','VocabCategory','VocabDirection','Flashcard','Practice','LettersSounds','LearningPath','GrammarLibrary'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
 window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];window.activeAudio=new Set();window.audioEnded=false;
 const neAudio={},neGram={},l1Audio={},l1Gram={};for(const[k,rows]of Object.entries(core.examplesNe))rows.forEach((_,i)=>{neAudio[k+'-'+(i+1)]='ne/'+k+'-'+(i+1);l1Audio[k+'-'+(i+1)]=lang+'/'+k+'-'+(i+1);});for(const[k,id]of Object.entries(core.grammarAudioRefs??Object.fromEntries(Object.entries(core.grammarNe).flatMap(([t,rows])=>rows.map((_,i)=>[t+'-'+(i+1),t+'-'+(i+1)]))))){if(id){neGram[id]='ne/'+id;l1Gram[id]=lang+'/'+id;}}
@@ -127,7 +127,40 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         assert.equal(await page.locator('[data-testid^="dictionary-entry-"]').count(),expected);
         await page.getByTestId('study-back').click();assert.equal(await page.evaluate(()=>window.route.name),'MainTabs');
       }
-      assert.deepEqual(errors,[]);console.log('PASS Arabic dictionary: all 2089 entries fully translated, Arabic/Nepali/romanized and conjugated search, Arabic normalization, mixed-script input alignment, left disclosure, audio cleanup, categories and back at 320/390px normal/large text. Preview only.');return;
+      assert.deepEqual(errors,[]);console.log('PASS Arabic release dictionary: all 2089 entries fully translated, Arabic/Nepali/romanized and conjugated search, Arabic normalization, mixed-script input alignment, left disclosure, audio cleanup, categories and back at 320/390px normal/large text.');return;
+    }
+    if(arabicModes){
+      for(const [width,scale]of[[390,1],[320,1.4]]){
+        await page.setViewportSize({width,height:844});
+        await page.evaluate(scale=>window.boot('ar',true,{name:'HomeTab'},scale),scale);
+        assert(/[\u0620-\u064a]/.test(await page.getByTestId('home-content-grid').innerText()));
+        assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        await page.screenshot({path:path.join(work,`previews/home-ar-${width}.png`)});
+        await page.evaluate(()=>{window.testEntitlement={isPro:true,accessKind:'launch-free',freeThemes:5,restore:()=>{}};window.navigate('SettingsTab');});
+        assert((await page.locator('body').innerText()).includes('العربية'));
+        assert.equal(await page.getByText('فحوص التطوير',{exact:true}).count(),0);
+        for(let n=0;n<6;n++)await page.getByTestId('settings-version').click();
+        assert.equal(await page.getByText('فحوص التطوير',{exact:true}).count(),0);
+        await page.getByTestId('settings-version').click();await page.getByText('فحوص التطوير',{exact:true}).waitFor();
+        await page.getByRole('button',{name:'تشغيل',exact:true}).click();
+        assert.equal(await page.evaluate(()=>window.alerts.at(-1)[0]),'نافذة التقييم الأصلية غير متاحة');
+        assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        await page.screenshot({path:path.join(work,`previews/settings-ar-${width}.png`)});
+        for(const source of ['grammar','conversation']){
+          await page.evaluate(({scale})=>window.boot('ar',true,{name:'Theme',params:{mode:'listening',grammarFirst:true}},scale),{scale});
+          assert.deepEqual(await page.locator('[data-testid^="listen-source-"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['listen-source-grammar','listen-source-conversation']);
+          await page.getByTestId('listen-source-'+source).click();if(source==='conversation')await page.getByTestId('theme-level-3').click();
+          await page.getByTestId('theme-1').click();
+          await page.getByText('استماع متواصل',{exact:true}).waitFor();
+          assert((await page.locator('body').innerText()).replace(/[\u2066-\u2069]/g,'').includes('AR · العربية'));
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+          await page.screenshot({path:path.join(work,`previews/listening-ar-${source}-${width}.png`)});
+          const controls=page.locator('button');await controls.nth(0).click();await controls.nth(1).click();await controls.nth(2).click();
+          assert.deepEqual(await page.evaluate(()=>window.events.filter(e=>['listenGo','listenToggle'].includes(e[0]))),[['listenGo',-1],['listenToggle'],['listenGo',1]]);
+          assert.equal(await page.evaluate(()=>window.events.find(e=>e[0]==='listenStart')[1].source??'conversation'),source);
+        }
+      }
+      assert.deepEqual(errors,[]);console.log('PASS Arabic home, settings hidden developer controls, grammar/conversation listening UI and playback delegation at 320/390px. Native audio is not simulated as device proof.');return;
     }
     if(arabicFoundation){
       for(const width of [320,390])for(const scale of [1,1.2]){
@@ -196,9 +229,15 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           await page.getByTestId('vocab-quiz-reveal').click();await page.getByTestId('vocab-quiz-next').click();
         }
         await page.screenshot({path:path.join(work,`previews/word-quiz-ar-${width}-${scale}.png`)});
+        for(const mode of ['grammar','conversation']){
+          await page.evaluate(({mode,scale})=>window.boot('ar',true,{name:'Practice',params:{mode,themeId:1,levelId:1}},scale),{mode,scale});
+          assert(/[\u0620-\u064a]/.test(await page.locator('body').innerText()));
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+          await page.screenshot({path:path.join(work,`previews/composition-ar-${mode}-${width}-${scale}.png`)});
+        }
       }
       assert.deepEqual(errors,[]);
-      console.log('PASS Arabic foundation: real Text wrapper, right-side back/return, settings, all six letter categories, all 36 lesson readers and three practice modes, LTR Nepali alphabet and puzzle inside RTL UI, 30 vocabulary categories x both directions, 320/390px at normal/large text. Partial preview only; no full Arabic course claim.');
+      console.log('PASS Arabic release: real Text wrapper, right-side back/return, settings, all six letter categories, all 36 lesson readers and three practice modes, LTR Nepali alphabet and puzzle inside RTL UI, 30 vocabulary categories x both directions, grammar/conversation composition, 320/390px at normal/large text.');
       return;
     }
     if(process.argv.includes('--korean-modes')){

@@ -2,7 +2,7 @@
 // UI / ナビゲーション / 画面は @safa/shared に集約。
 // 初回用の教材を同梱。変更された教材・音声をハッシュ検証付きOTAで自動更新。
 
-import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 import { ActivityIndicator, AppState, Pressable, Text, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
@@ -20,8 +20,10 @@ import ja from './src/i18n/ja.json';
 import ne from './src/i18n/ne.json';
 import en from './src/i18n/en.json';
 import ko from './src/i18n/ko.json';
+import ar from './src/i18n/ar.json';
 import { bundledContent, cachedContent, syncContent, type ContentSnapshot } from './src/content/ota';
 import { scheduleContentUpdates } from './src/content/otaSchedule';
+import { createContentActivation } from './src/content/otaActivation';
 import { PurchasesProvider } from './src/PurchasesProvider';
 import { resolveGuideImage } from './src/guideImageCache';
 import { resolveLearningAudio } from './src/learningAudioCache';
@@ -40,18 +42,22 @@ const HERO_IMAGES = {
 // 母語別の教材をOTAから供給。ne表示では日本語教材を使う。
 function LearningAppShell() {
   const engagement = useEngagement();
-  return <SettingsDevelopmentProvider value={engagement.developmentTools}><AppShell learningStorageKey="@nepali_app/learning_v1" headerIconSource={headerIconSource} progressStorageKey="@nepali_app/progress_v1" tabs={['home', 'puzzle', 'listening', 'composition', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={engagement.onRouteChanged} mainScreenAccessory={<>{engagement.banner}<ContentStatus /></>} /></SettingsDevelopmentProvider>;
+  const contentRouteChanged = useContext(OtaRouteChanged);
+  const onRouteChanged = useCallback((name: string | undefined) => { engagement.onRouteChanged(name); contentRouteChanged(name); }, [engagement.onRouteChanged, contentRouteChanged]);
+  return <SettingsDevelopmentProvider value={engagement.developmentTools}><AppShell learningStorageKey="@nepali_app/learning_v1" headerIconSource={headerIconSource} progressStorageKey="@nepali_app/progress_v1" tabs={['home', 'puzzle', 'listening', 'composition', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={onRouteChanged} mainScreenAccessory={<>{engagement.banner}<ContentStatus /></>} /></SettingsDevelopmentProvider>;
 }
 
-const toPackLang = (lang: string) => (lang === 'en' || lang === 'ko' ? lang : 'ja');
+const toPackLang = (lang: string) => (['en', 'ko', 'ar'].includes(lang) ? lang : 'ja');
 
 // 初回の母語選択。並び順は全アプリ共通(English優先)。
 const LANG_OPTIONS = [
   { code: 'en', native: 'English', sub: 'English' },
   { code: 'ko', native: '한국어', sub: 'Korean' },
+  { code: 'ar', native: 'العربية', sub: 'Arabic' },
   { code: 'ja', native: '日本語', sub: 'Japanese' },
 ];
 const L1_CHOSEN_KEY = '@nepali_app/l1_chosen_v1';
+const OtaRouteChanged = createContext<(name: string | undefined) => void>(() => {});
 
 // Content is available immediately; validated OTA updates are prepared in the background.
 const OtaStatus = createContext<'preparing'|'ready'|'pending'|'offline'>('preparing');
@@ -59,25 +65,27 @@ const sessionContent: Record<string, ContentSnapshot> = {};
 function ContentStatus() {
   const status=useContext(OtaStatus), {lang}=useI18n();
   if(status==='ready')return null;
-  const copy=lang==='ko'?{preparing:'음성을 자동으로 준비하고 있어요…',pending:'새 콘텐츠가 준비됐어요. 다음 실행 때 반영돼요.',offline:'저장된 교재로 학습할 수 있어요. 연결되면 음성 업데이트를 다시 시도해요.'}:lang==='en'?{preparing:'Preparing audio automatically…',pending:'New content is ready for your next launch.',offline:'Saved lessons are available. Audio updates will retry when connected.'}:{preparing:'音声を自動で準備しています…',pending:'更新の準備ができました。次回起動時に反映します。',offline:'保存済みの教材で学習できます。接続後に自動で更新を再試行します。'};
-  return <View style={{paddingHorizontal:16,paddingVertical:8,backgroundColor:'#eff6ff'}}><Text style={{fontSize:13,lineHeight:20,color:'#1e3a8a'}}>{copy[status]}</Text></View>;
+  const copy=lang==='ar'?{preparing:'يجري تجهيز الصوت تلقائيًا…',pending:'المحتوى الجديد جاهز. سيُطبّق عند العودة إلى قائمة التعلم.',offline:'يمكنك متابعة الدروس المحفوظة. سنحاول تحديث الصوت عند عودة الاتصال.'}:lang==='ko'?{preparing:'음성을 자동으로 준비하고 있어요…',pending:'새 콘텐츠가 준비됐어요. 학습 목록으로 돌아가면 반영돼요.',offline:'저장된 교재로 학습할 수 있어요. 연결되면 음성 업데이트를 다시 시도해요.'}:lang==='en'?{preparing:'Preparing audio automatically…',pending:'New content is ready. It will appear when you return to the learning list.',offline:'Saved lessons are available. Audio updates will retry when connected.'}:{preparing:'音声を自動で準備しています…',pending:'更新の準備ができました。学習の一覧に戻ると反映します。',offline:'保存済みの教材で学習できます。接続後に自動で更新を再試行します。'};
+  return <View style={{paddingHorizontal:16,paddingVertical:8,backgroundColor:'#eff6ff'}}><Text style={{fontSize:13,lineHeight:20,color:'#1e3a8a',textAlign:lang==='ar'?'right':'left',writingDirection:lang==='ar'?'rtl':'ltr'}}>{copy[status]}</Text></View>;
 }
 function PackGate({children}:{children:ReactNode}) {
   const {lang}=useI18n(), packLang=toPackLang(lang);
   const [shown,setShown]=useState<{lang:string;snapshot:ContentSnapshot}>(()=>({lang:packLang,snapshot:bundledContent(packLang)}));
   const [status,setStatus]=useState<'preparing'|'ready'|'pending'|'offline'>('preparing');
+  const routeRef=useRef<string|undefined>(undefined);
+  const activationRef=useRef<ReturnType<typeof createContentActivation<ContentSnapshot>>|undefined>(undefined);
+  const contentRouteChanged=useCallback((name:string|undefined)=>{routeRef.current=name;activationRef.current?.routeChanged(name);},[]);
   useEffect(()=>{
     let alive=true;
     let updates:ReturnType<typeof scheduleContentUpdates>|undefined;
+    let activation:ReturnType<typeof createContentActivation<ContentSnapshot>>|undefined;
     let current=sessionContent[packLang]??bundledContent(packLang);
     const show=(snapshot:ContentSnapshot)=>{current=snapshot;sessionContent[packLang]=snapshot;if(alive)setShown(previous=>previous.lang===packLang&&previous.snapshot===snapshot?previous:{lang:packLang,snapshot});};
     const refresh=async()=>{
       try{
         const next=await syncContent(packLang);
         if(!alive)return;
-        // Same text version: attach prepared audio. Changed lessons wait for a new launch.
-        if(next.version===current.version){show(next);setStatus('ready');}
-        else setStatus('pending');
+        activation?.receive(next);
       }catch(error){if(alive)setStatus('offline');throw error;}
     };
     const start=async()=>{
@@ -85,14 +93,16 @@ function PackGate({children}:{children:ReactNode}) {
       if(!sessionContent[packLang]){const cached=await cachedContent(packLang);if(!alive)return;if(cached)current=cached;}
       if(!alive)return;show(current);
       if(Object.keys(current.data.audio.nepaliAudio).length)setStatus('ready');
+      activation=createContentActivation(current,routeRef.current,next=>{show(next);setStatus('ready');},()=>setStatus('pending'));
+      activationRef.current=activation;
       updates=scheduleContentUpdates(refresh,()=>AppState.currentState!=='background'&&AppState.currentState!=='inactive');
     };
     void start();
     const sub=AppState.addEventListener('change',value=>{if(value==='active')updates?.foreground();});
-    return()=>{alive=false;sub.remove();updates?.stop();};
+    return()=>{alive=false;sub.remove();updates?.stop();activation?.stop();if(activationRef.current===activation)activationRef.current=undefined;};
   },[packLang]);
   const visible=shown.lang===packLang?shown.snapshot:bundledContent(packLang);
-  return <OtaStatus.Provider value={status}><AppDataProvider data={visible.data}>{children}</AppDataProvider></OtaStatus.Provider>;
+  return <OtaRouteChanged.Provider value={contentRouteChanged}><OtaStatus.Provider value={status}><AppDataProvider data={visible.data}>{children}</AppDataProvider></OtaStatus.Provider></OtaRouteChanged.Provider>;
 }
 
 // 母語選択画面 (初回のみ)。どの母語も教材をすぐ開き、音声を自動準備。
@@ -147,9 +157,9 @@ export default function App() {
     <LearningAudioProvider resolve={resolveLearningAudio}>
     <PurchasesProvider>
       <I18nProvider
-        translations={{ ja, ne, en, ko }}
+        translations={{ ja, ne, en, ko, ar }}
         fallbackLang="ja"
-        selectableLangs={['en', 'ko', 'ja']}
+        selectableLangs={['en', 'ko', 'ar', 'ja']}
         storageKey="@nepali_app/lang_v1"
       >
         <SettingsProvider

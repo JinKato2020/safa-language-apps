@@ -1,10 +1,10 @@
 {
   "_core": {
-    "version": 1009,
+    "version": 1010,
     "zip": {
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-core-1009.zip",
-      "sha256": "dd36f63ba8d5ebe20f0ae952a18540ae6a1afed1a7975ba8906fc4521dfe9172",
-      "bytes": 39289890
+      "url": "https://content.safa-lang.com/nepali/audio-core-4257a7f7b1e09cc2919feeb8d3305a324fe9856400bc0da3dcd5ffb7483886c8.zip",
+      "sha256": "4257a7f7b1e09cc2919feeb8d3305a324fe9856400bc0da3dcd5ffb7483886c8",
+      "bytes": 39370506
     },
     "files": {
       "1-1-1.mp3": {
@@ -243,9 +243,9 @@
         "bytes": 36620
       },
       "1-3-16.mp3": {
-        "sha256": "569027a8abe266d57861b710e816f09bfe3279358340b2c9d702ec569c890b97",
-        "md5": "13826238bb0f26352573d8adca37cb6b",
-        "bytes": 26636
+        "sha256": "475352b0da759d22b560eebef2625bc3c4b9ec25557068fa7c08fa684b4dbbc8",
+        "md5": "59e52b072130d54a414b2232d17094d6",
+        "bytes": 39456
       },
       "1-3-17.mp3": {
         "sha256": "1acab8c8af92ecc948e4fb9e94b450deb6b47f6f096763cdacd5912f8d108035",
@@ -2993,9 +2993,9 @@
         "bytes": 28364
       },
       "18-3-7.mp3": {
-        "sha256": "01c743fe3b8650e3b42868b613c409654d5b21e16f29e8978a4c343e30fcf370",
-        "md5": "325733b2a0d0c657e0f1f59f1493ff33",
-        "bytes": 23276
+        "sha256": "1a55fc182edc18cf75b6d93b77e78733e7bc12b8d4ed341e69f206cef7e7c156",
+        "md5": "5dbf85ae092272cef735586899d4eb89",
+        "bytes": 34704
       },
       "18-3-8.mp3": {
         "sha256": "33517039869776a7bde4809c0a7c029351127c84f04c38d466544cd6c1177e6b",
@@ -4153,9 +4153,9 @@
         "bytes": 31628
       },
       "21-3-18.mp3": {
-        "sha256": "11bfad3a614e3329f0e1a7bdccc88b18805283dd6790c22dc49f473ca1ea97b5",
-        "md5": "818aa5ab70ca640187f0055256f27152",
-        "bytes": 32204
+        "sha256": "27c3b7886fa9786fd0e54e70dc4ad2a0e50e384cbb7b8cb01441406bca3edc6b",
+        "md5": "850e1e18c52ee60e7a8954c32ed291ee",
+        "bytes": 49392
       },
       "21-3-19.mp3": {
         "sha256": "57cc9406f5e8dc165bcc37f5d91fa73eda97b78ecf605c646fc2cbcd0a9abd08",
@@ -5318,9 +5318,9 @@
         "bytes": 42092
       },
       "25-3-11.mp3": {
-        "sha256": "3a9de3fff6ebbce8354a9f5c2a6e6dcc886679d26574b2c0bffeed647db47082",
-        "md5": "97d87de49284036d52587cd8f63f2ef7",
-        "bytes": 41228
+        "sha256": "9ea501b3647bff03f85ead87137e3e030293a9b64113c46c075228b141bbda51",
+        "md5": "4f29747d418a84b217590f5e47ca34a8",
+        "bytes": 53712
       },
       "25-3-12.mp3": {
         "sha256": "3926d2e93ee0d47d78ef4df27dc47ef6f25a7ecdae3406656e6ffa2855142321",
@@ -7658,9 +7658,9 @@
         "bytes": 14348
       },
       "5-2-19.mp3": {
-        "sha256": "92e7844f8f9275726a1a310d3588893bf7e5cd2b68e72472f658ccf3592b9646",
-        "md5": "09ec278b96156570c96bc7664958c48a",
-        "bytes": 17612
+        "sha256": "301643858f4744a8052289b16fb89258cb851e781b312cbeed60434891f0c0a7",
+        "md5": "5b2ca589832def242efb8b50a8d49c4b",
+        "bytes": 27504
       },
       "5-2-2.mp3": {
         "sha256": "ed390dd6ecd2a1e26884527a5bb0b99fdd8bfdb6a091eca57778a52d3a6027e8",
@@ -8653,9 +8653,9 @@
         "bytes": 39404
       },
       "8-3-18.mp3": {
-        "sha256": "ba5f75de33a53f397f43c72ccb8f81c690ddfc69f213b1fc6325a55445b6af56",
-        "md5": "20faa18576609dd983e55db320ca8dd0",
-        "bytes": 27404
+        "sha256": "0abb5832cb425c4af94e5774a5e438302e51fdda842b7ba75db3f8df38f6e345",
+        "md5": "dcb1e27a23ebde3c0bb65cabba12c013",
+        "bytes": 44208
       },
       "8-3-19.mp3": {
         "sha256": "404fcebc6387ae87882642350d7a4baf8f9f1104069b1cbd1da67d7d272170f0",
@@ -11647,14 +11647,22 @@
         "md5": "50b1f0ef636326ca479c5f1a15ffe16b",
         "bytes": 9644
       }
+    },
+    "delta": {
+      "base": 1009,
+      "zip": {
+        "url": "https://content.safa-lang.com/nepali/audio-core-delta-a82314ec7e359c4f8ba20c55edcef2c18bdfddcb8d4f3be4c4e27f7feaf420a6.zip",
+        "sha256": "a82314ec7e359c4f8ba20c55edcef2c18bdfddcb8d4f3be4c4e27f7feaf420a6",
+        "bytes": 249578
+      }
     }
   },
   "en": {
-    "version": 1009,
+    "version": 1010,
     "zip": {
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-en-1009.zip",
-      "sha256": "5be661730493bfb7b9cd45090c4bd5db49541c5bbef56e2554611f9d8db29d54",
-      "bytes": 33577314
+      "url": "https://content.safa-lang.com/nepali/audio-en-605f9a015ac79ce57eacd2469a3b27f9511ca11ac3cef4607d5c6604af8c7b6d.zip",
+      "sha256": "605f9a015ac79ce57eacd2469a3b27f9511ca11ac3cef4607d5c6604af8c7b6d",
+      "bytes": 33608706
     },
     "files": {
       "1-1-1.mp3": {
@@ -16968,9 +16976,9 @@
         "bytes": 35276
       },
       "25-3-11.mp3": {
-        "sha256": "b37bfcf1556f15402a35040d7a1ba34f4cf9eefe53cd3c9ef996afd81711449a",
-        "md5": "bc04568036bb0be998547136470a369a",
-        "bytes": 44492
+        "sha256": "ed4e7a742436a567c57a14b772cffb627378c80204bee8389b325b18e918671c",
+        "md5": "2bcaadc84e48b6dbb26e001259468cf3",
+        "bytes": 75884
       },
       "25-3-12.mp3": {
         "sha256": "afd40fcbdd921e5f3f56f5e12ee46f1846600d18451983d93a7e7cbaf62a7436",
@@ -23296,6 +23304,14 @@
         "sha256": "e11b5e1bcb919c4ef5a840f18ec7f9449d05fedf31dd251c9f4fb5c4d13b4f3f",
         "md5": "874c9d24a726f63478a2d040e395df45",
         "bytes": 7820
+      }
+    },
+    "delta": {
+      "base": 1009,
+      "zip": {
+        "url": "https://content.safa-lang.com/nepali/audio-en-delta-9e9a0dacec1a7a930139cd0ae7e26997c4a8fd3f4cdcdc8a6ec138f2514f04a2.zip",
+        "sha256": "9e9a0dacec1a7a930139cd0ae7e26997c4a8fd3f4cdcdc8a6ec138f2514f04a2",
+        "bytes": 76004
       }
     }
   },

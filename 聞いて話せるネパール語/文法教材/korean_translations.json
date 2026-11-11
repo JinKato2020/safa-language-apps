@@ -485,17 +485,6 @@
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
-    "b41e71b5e27b3ff9f189472e": {
-      "source": {
-        "en": "Rather than getting swept up in emotions, I'm skilled at analyzing situations logically and making decisions.",
-        "ja": "私は感情に流されず、論理的に状況を分析して判断を下すことが得意な方です。",
-        "ne": "म भावनामा बगेर तार्किक रूपमा परिस्थितिको विश्लेषण गरेर निर्णय लिन निपुण छु।",
-        "context": "overlay.examplesL1.1-3.15"
-      },
-      "ko": "저는 감정에 휘둘리지 않고, 논리적으로 상황을 분석해서 판단을 내리는 걸 잘하는 편이에요.",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
     "b0c494b777bb0794593ce673": {
       "source": {
         "en": "I'm determined to spend my whole life serving as a bridge between different cultures, removing misunderstandings and prejudices.",
@@ -2762,17 +2751,6 @@
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
-    "5858d1237a1b4b87c39e593f": {
-      "source": {
-        "en": "When I can't express my gratitude properly, I feel frustrated.",
-        "ja": "感謝の気持ちをうまく伝えられなくて、もどかしい。",
-        "ne": "कृतज्ञता राम्ररी व्यक्त गर्न नसक्दा झल्याँस लाग्छ।",
-        "context": "overlay.examplesL1.5-2.18"
-      },
-      "ko": "감사한 마음을 잘 전하지 못해서 답답해요.",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
     "7343a4ab7cd46908c2cd2304": {
       "source": {
         "en": "Feeling his kindness, my heart grew warm.",
@@ -4849,17 +4827,6 @@
         "context": "overlay.examplesL1.8-3.16"
       },
       "ko": "이 레스토랑은 식재료의 산지나 생산 방법에 대해 투명하게 손님에게 정보를 제공한다고 해서, 정말 믿을 수 있네요.",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
-    "bf7f25bc792e3b3c88f84f24": {
-      "source": {
-        "en": "Please serve only after everyone in the group's food is ready — bringing it out one by one ruins the dining atmosphere.",
-        "ja": "グループ全体の料理が揃ったことを確認してからサービスを開始してください。バラバラに出てくると食事の雰囲気が台無しになってしまいます。",
-        "ne": "समूहका सबैको खाना तयार भएपछि मात्र परोस्, एकएक गरी ल्याउँदा खानाको माहोल बिग्रन्छ।",
-        "context": "overlay.examplesL1.8-3.17"
-      },
-      "ko": "일행 전체 요리가 다 준비된 걸 확인하고 나서 서빙을 시작해 주세요. 따로따로 나오면 식사 분위기가 망가져 버려서요.",
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
@@ -10143,17 +10110,6 @@
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
-    "0f03e395ca8e10d5f0a5beb0": {
-      "source": {
-        "en": "I guess you can call someone who lends a hand when you're in trouble a true friend.",
-        "ja": "困っているときに手を差し伸べてくれる友人こそ、真の友達と呼べるのではないだろうか。",
-        "ne": "मुसिबतमा परेका बेला हात थाप्ने साथीलाई नै सच्चा मित्र भन्न सकिन्छ होला।",
-        "context": "overlay.examplesL1.18-3.6"
-      },
-      "ko": "힘들 때 손을 내밀어 주는 친구야말로 진정한 친구라고 부를 수 있지 않을까요?",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
     "af4b62ba0919e5613ab27a70": {
       "source": {
         "en": "It wouldn't be an exaggeration to say that most problems in human relationships arise from a lack of communication.",
@@ -12164,17 +12120,6 @@
         "context": "overlay.examplesL1.21-3.16"
       },
       "ko": "홈그라운드의 이점을 살린 팀의 전략이, 강팀을 상대로 이변을 일으켰어요.",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
-    "b5950a82269ee9a9f86e73bd": {
-      "source": {
-        "en": "A scientific training method that doesn't rely on physical punishment has become essential for developing the next generation of athletes.",
-        "ja": "体罰に頼らない科学的な指導法が、次世代のアスリート育成において不可欠となっている。",
-        "ne": "शारीरिक दण्डमा नभर्ने वैज्ञानिक प्रशिक्षण पद्धति अर्को पुस्ताका खेलाडी विकासमा अपरिहार्य भएको छ।",
-        "context": "overlay.examplesL1.21-3.17"
-      },
-      "ko": "체벌에 의존하지 않는 과학적인 지도법이, 차세대 운동선수 육성에 있어서 필수가 되고 있어요.",
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
@@ -66925,17 +66870,6 @@
       "reviewed": true,
       "origin": "reviewed-grammar-terminology; complete-label coverage"
     },
-    "2f5f7ec189f075a6995a4253": {
-      "source": {
-        "en": "negative relative participle",
-        "ja": "否定の関係分詞",
-        "ne": "",
-        "context": "overlay.convVocab.नभर्ने.contexts"
-      },
-      "ko": "부정 관계 분사",
-      "reviewed": true,
-      "origin": "reviewed-grammar-terminology; complete-label coverage"
-    },
     "2b69a178e83ba398ee7ec4a4": {
       "source": {
         "en": "compound word: अर्थ + तन्त्र",
@@ -69408,17 +69342,6 @@
         "context": "overlay.convVocab.घर.contexts"
       },
       "ko": "복수형 · घरहरू",
-      "reviewed": true,
-      "origin": "reviewed-grammar-terminology; complete-label coverage"
-    },
-    "a11dcbf79470439e2d318015": {
-      "source": {
-        "en": "imperative (third-person)",
-        "ja": "命令形（第三者向け）",
-        "ne": "",
-        "context": "overlay.convVocab.परोस्.contexts"
-      },
-      "ko": "명령 (3인칭)",
       "reviewed": true,
       "origin": "reviewed-grammar-terminology; complete-label coverage"
     },
@@ -98756,17 +98679,6 @@
         "context": "overlay.examplesL1.25-3.9"
       },
       "ko": "종교 간 대화를 늘리는 것은 편견과 오해를 없애고 서로에 대한 이해를 깊게 하는 중요한 발걸음이에요.",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
-    "d7f8d2ee08ab7c706b974f20": {
-      "source": {
-        "en": "Pashupatinath Temple is Nepal's largest Hindu pilgrimage site, and every year hundreds of thousands (tens of thousands) of pilgrims come from all over the world.",
-        "ja": "パシュパティナート寺院はネパール最大のヒンドゥー教聖地であり、毎年世界中から数十万人の巡礼者が訪れる。",
-        "ne": "पशुपतिनाथ मन्दिर नेपालको सबैभन्दा ठूलो हिन्दू तीर्थस्थल हो र प्रतिवर्ष विश्वभरबाट लाखौँ (दशौँ हजार) तीर्थयात्रीहरू आउँछन्।",
-        "context": "overlay.examplesL1.25-3.10"
-      },
-      "ko": "파슈파티나트 사원은 네팔 최대의 힌두교 순례지이며, 해마다 전 세계에서 수십만 명의 순례자가 찾아와요.",
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
@@ -156256,17 +156168,6 @@
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
-    "c4a0f1e6fea59f7fc7e943c0": {
-      "source": {
-        "en": "unfulfilled",
-        "ja": "頼る、依存する",
-        "ne": "भर्नु",
-        "context": "overlay.convVocab.नभर्ने.base_meaning"
-      },
-      "ko": "채우다",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
     "47695905628f750cab151188": {
       "source": {
         "en": "musician, composer",
@@ -167278,17 +167179,6 @@
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
-    "03594b75a0bd35d8c5f2ca50": {
-      "source": {
-        "en": "please serve",
-        "ja": "提供する・配膳する・振る舞う",
-        "ne": "पार्नु",
-        "context": "overlay.convVocab.परोस्.base_meaning"
-      },
-      "ko": "~하게 하다",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
     "c6cef3ab50116bc4a55ca67b": {
       "source": {
         "en": "when bringing",
@@ -169486,17 +169376,6 @@
         "context": "overlay.convVocab.सतह.base_meaning"
       },
       "ko": "표면",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
-    "b3b17badc26901559fac5e74": {
-      "source": {
-        "en": "swept away",
-        "ja": "流れる",
-        "ne": "बग्नु",
-        "context": "overlay.convVocab.बगेर.base_meaning"
-      },
-      "ko": "흐르다, 떠내려가다",
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
@@ -173449,17 +173328,6 @@
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
-    "0078080b11825d62d5721d8d": {
-      "source": {
-        "en": "tap",
-        "ja": "差し出す、差し伸べる",
-        "ne": "थाप्नु",
-        "context": "overlay.convVocab.थाप्ने.base_meaning"
-      },
-      "ko": "내밀다, 받치다",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
     "e7ab6b8f4c34b8847bec7f62": {
       "source": {
         "en": "they break",
@@ -174491,17 +174359,6 @@
         "context": "overlay.convVocab.विश्वभर.base_meaning"
       },
       "ko": "전 세계",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
-    "87d724588cadb7bfe6582df8": {
-      "source": {
-        "en": "millions of",
-        "ja": "十万（複数・多数を表す）",
-        "ne": "लाख",
-        "context": "overlay.convVocab.लाखौँ.base_meaning"
-      },
-      "ko": "십만",
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
@@ -186960,13 +186817,13 @@
     "661579d1359a695e80e565fc": {
       "source": {
         "en": "one hundred thousand",
-        "ja": "十万・100,000",
+        "ja": "十万",
         "ne": "लाख",
-        "context": "overlay.nepaliDictionary.entries.1849"
+        "context": "overlay.convVocab.लाखौँ.base_meaning"
       },
-      "ko": "십만 · 100,000",
+      "ko": "십만",
       "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
     },
     "fa8242aacf520d4e327e66d7": {
       "source": {
@@ -227591,17 +227448,6 @@
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
-    "7360414edccaee288a3face2": {
-      "source": {
-        "en": "expresses habitual action or general feeling",
-        "ja": "習慣・一般的感情を表す",
-        "ne": "",
-        "context": "overlay.convVocab.लाग्छ.contexts"
-      },
-      "ko": "습관적인 행동이나 일반적인 느낌을 나타내요.",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
     "f534761a7a7a2e660801fd6d": {
       "source": {
         "en": "मलाई〜लाग्छ = I think / I feel",
@@ -230404,17 +230250,6 @@
         "context": "overlay.convVocab.हात.contexts"
       },
       "ko": "여러 뜻으로 쓰여요.",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
-    "faca33b7e603bda1d6859c39": {
-      "source": {
-        "en": "हात थाप्नु = to extend a hand / offer help",
-        "ja": "हात थाप्नु=手を差し伸べる",
-        "ne": "",
-        "context": "overlay.convVocab.हात.contexts"
-      },
-      "ko": "हात थाप्नु = 손을 내밀다(받거나 요청하려고)",
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
@@ -241374,17 +241209,6 @@
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
-    "5833e02588856356dce93d12": {
-      "source": {
-        "en": "झल्याँस लाग्नु: to feel frustrated",
-        "ja": "झल्याँस लाग्नु：もどかしく感じる",
-        "ne": "",
-        "context": "overlay.convVocab.झल्याँस.contexts"
-      },
-      "ko": "보통 झल्यास्स는 ‘문득, 갑자기 정신이 번쩍’에 가까워요. ‘답답하다’라는 뜻으로 외우지 마세요.",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
     "6700d0246c38a8699912dcb9": {
       "source": {
         "en": "दयालु + पन: nominalization of adjective",
@@ -249819,17 +249643,6 @@
         "context": "overlay.convVocab.सार्थकता.contexts"
       },
       "ko": "सार्थक(의미 있는)에 ता를 붙여 명사로 만들었어요.",
-      "reviewed": true,
-      "origin": "direct-in-session-translation-and-source-check"
-    },
-    "4ae2d09b41e241a85d359cf9": {
-      "source": {
-        "en": "e-form negative = without doing ~",
-        "ja": "エ形の否定=〜せずに",
-        "ne": "",
-        "context": "overlay.convVocab.बगेर.contexts"
-      },
-      "ko": "बगेर는 ‘흘러서, 휩쓸려서’라는 연결형이며 부정형이 아니에요.",
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
     },
@@ -260876,6 +260689,379 @@
       "ko": "भीडभाड हुने는 ‘붐비는’이라는 뜻이에요.",
       "reviewed": true,
       "origin": "direct-in-session-translation-and-source-check"
+    },
+    "15464dea58507c7fe1699d10": {
+      "source": {
+        "en": "Rather than getting swept up in emotions, I'm skilled at analyzing situations logically and making decisions.",
+        "ja": "私は感情に流されず、論理的に状況を分析して判断を下すことが得意な方です。",
+        "ne": "म भावनामा नबगी तार्किक रूपमा परिस्थितिको विश्लेषण गरेर निर्णय लिन निपुण छु।",
+        "context": "overlay.examplesL1.1-3.15"
+      },
+      "ko": "저는 감정에 휘둘리지 않고, 논리적으로 상황을 분석해서 판단을 내리는 걸 잘하는 편이에요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "5b17f16137ff450c0bb42caf": {
+      "source": {
+        "en": "When I can't express my gratitude properly, I feel frustrated.",
+        "ja": "感謝の気持ちをうまく伝えられなくて、もどかしい。",
+        "ne": "कृतज्ञता राम्ररी व्यक्त गर्न नसक्दा मलाई निराशा हुन्छ।",
+        "context": "overlay.examplesL1.5-2.18"
+      },
+      "ko": "감사한 마음을 잘 전하지 못해서 답답해요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "4f0dbb04c5fcb66169f47677": {
+      "source": {
+        "en": "Please serve only after everyone in the group's food is ready — bringing it out one by one ruins the dining atmosphere.",
+        "ja": "グループ全体の料理が揃ったことを確認してからサービスを開始してください。バラバラに出てくると食事の雰囲気が台無しになってしまいます。",
+        "ne": "समूहका सबैको खाना तयार भएपछि मात्र पस्किदिनुहोस्, एकएक गरी ल्याउँदा खानाको माहोल बिग्रन्छ।",
+        "context": "overlay.examplesL1.8-3.17"
+      },
+      "ko": "일행 전체 요리가 다 준비된 걸 확인하고 나서 서빙을 시작해 주세요. 따로따로 나오면 식사 분위기가 망가져 버려서요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "6e14a24763ebc961c08addfb": {
+      "source": {
+        "en": "I guess you can call someone who lends a hand when you're in trouble a true friend.",
+        "ja": "困っているときに手を差し伸べてくれる友人こそ、真の友達と呼べるのではないだろうか。",
+        "ne": "मुसिबतमा परेका बेला सहयोग गर्ने साथीलाई नै सच्चा मित्र भन्न सकिन्छ होला।",
+        "context": "overlay.examplesL1.18-3.6"
+      },
+      "ko": "힘들 때 손을 내밀어 주는 친구야말로 진정한 친구라고 부를 수 있지 않을까요?",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "e7e67e0b22084d017107d52e": {
+      "source": {
+        "en": "A scientific training method that doesn't rely on physical punishment has become essential for developing the next generation of athletes.",
+        "ja": "体罰に頼らない科学的な指導法が、次世代のアスリート育成において不可欠となっている。",
+        "ne": "शारीरिक दण्डमा भर नपर्ने वैज्ञानिक प्रशिक्षण पद्धति अर्को पुस्ताका खेलाडी विकासमा अपरिहार्य भएको छ।",
+        "context": "overlay.examplesL1.21-3.17"
+      },
+      "ko": "체벌에 의존하지 않는 과학적인 지도법이, 차세대 운동선수 육성에 있어서 필수가 되고 있어요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "0cb0ca15d50721a6eee166c6": {
+      "source": {
+        "en": "Pashupatinath Temple is Nepal's largest Hindu pilgrimage site, and every year hundreds of thousands of pilgrims come from all over the world.",
+        "ja": "パシュパティナート寺院はネパール最大のヒンドゥー教聖地であり、毎年世界中から数十万人の巡礼者が訪れる。",
+        "ne": "पशुपतिनाथ मन्दिर नेपालको सबैभन्दा ठूलो हिन्दू तीर्थस्थल हो र प्रतिवर्ष विश्वभरबाट लाखौँ तीर्थयात्रीहरू आउँछन्।",
+        "context": "overlay.examplesL1.25-3.10"
+      },
+      "ko": "파슈파티나트 사원은 네팔 최대의 힌두교 순례지이며, 해마다 전 세계에서 수십만 명의 순례자가 찾아와요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "b060c2b545f14d787d00ebde": {
+      "source": {
+        "en": "I (the person experiencing the feeling)",
+        "ja": "私は（感情を感じる人）",
+        "ne": "म",
+        "context": "overlay.convVocab.मलाई.contexts"
+      },
+      "ko": "나는 (감정을 느끼는 사람)",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "85d0f97680e3ab6dbd443a48": {
+      "source": {
+        "en": "pronoun with लाई",
+        "ja": "代名詞＋लाई",
+        "ne": "",
+        "context": "overlay.convVocab.मलाई.contexts"
+      },
+      "ko": "대명사 + लाई",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "e48238151c2eaf773b677bd1": {
+      "source": {
+        "en": "मलाई निराशा हुन्छ means I feel frustrated; लाई marks the experiencer.",
+        "ja": "मलाई निराशा हुन्छ で「私はもどかしく感じる」。感情を感じる人に लाई を付けます。",
+        "ne": "",
+        "context": "overlay.convVocab.मलाई.contexts"
+      },
+      "ko": "मलाई निराशा हुन्छ는 ‘나는 답답함을 느껴요’예요. 감정을 느끼는 사람에 लाई를 붙여요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "0fb2941428f0d7bc7882bbdc": {
+      "source": {
+        "en": "help",
+        "ja": "助け",
+        "ne": "सहयोग",
+        "context": "overlay.convVocab.सहयोग.contexts"
+      },
+      "ko": "도움",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "c8611e053e6392a1f650e572": {
+      "source": {
+        "en": "सहयोग गर्ने साथी means a friend who helps.",
+        "ja": "सहयोग गर्ने साथी で「助けてくれる友達」。",
+        "ne": "",
+        "context": "overlay.convVocab.सहयोग.contexts"
+      },
+      "ko": "सहयोग गर्ने साथी는 ‘도와주는 친구’예요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "738acefa49c89204a643d484": {
+      "source": {
+        "en": "reliance (भर पर्नु)",
+        "ja": "頼ること（भर पर्नु）",
+        "ne": "भर पर्नु",
+        "context": "overlay.convVocab.भर.contexts"
+      },
+      "ko": "의존 (भर पर्नु)",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "6babc753bf00fb281ffebf04": {
+      "source": {
+        "en": "noun, part of an idiom",
+        "ja": "名詞・慣用表現の一部",
+        "ne": "",
+        "context": "overlay.convVocab.भर.contexts"
+      },
+      "ko": "명사 · 관용 표현의 일부",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "216b93f1daf2cb2603a3400d": {
+      "source": {
+        "en": "भर पर्नु means rely on; it is different from भर्नु, to fill.",
+        "ja": "भर पर्नु は「〜に頼る」。भर्नु「満たす」とは別の表現です。",
+        "ne": "",
+        "context": "overlay.convVocab.भर.contexts"
+      },
+      "ko": "भर पर्नु는 ‘의존하다’예요. भर्नु ‘채우다’와 다른 표현이에요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "8966d64609107546ee504895": {
+      "source": {
+        "en": "feel (in निराशा हुन्छ)",
+        "ja": "感じる（निराशा हुन्छ）",
+        "ne": "हुनु",
+        "context": "overlay.convVocab.हुन्छ.contexts"
+      },
+      "ko": "느끼다 (निराशा हुन्छ)",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "be083e28448ff332e800befd": {
+      "source": {
+        "en": "निराशा हुन्छ describes the feeling of frustration arising.",
+        "ja": "निराशा हुन्छ は感情が生じる表現です。",
+        "ne": "",
+        "context": "overlay.convVocab.हुन्छ.contexts"
+      },
+      "ko": "निराशा हुन्छ는 답답한 감정이 생기는 것을 표현해요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "2637810f7156c746c8e96db9": {
+      "source": {
+        "en": "who helps (सहयोग गर्ने)",
+        "ja": "助けてくれる（सहयोग गर्ने）",
+        "ne": "गर्नु",
+        "context": "overlay.convVocab.गर्ने.contexts"
+      },
+      "ko": "도와주는 (सहयोग गर्ने)",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "73738dbe4f68c695e063cef2": {
+      "source": {
+        "en": "verb, attributive form",
+        "ja": "動詞・名詞を修飾する形",
+        "ne": "",
+        "context": "overlay.convVocab.गर्ने.contexts"
+      },
+      "ko": "동사 · 관형형",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "1d28d41ab2a90439a2c8ccec": {
+      "source": {
+        "en": "गर्ने modifies the following noun साथी.",
+        "ja": "गर्ने は後ろの साथी を修飾します。",
+        "ne": "",
+        "context": "overlay.convVocab.गर्ने.contexts"
+      },
+      "ko": "गर्ने가 뒤의 명사 साथी를 꾸며 줘요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "b6b48f9ba423e36e292825f8": {
+      "source": {
+        "en": "not relying on (भर नपर्ने)",
+        "ja": "頼らない（भर नपर्ने）",
+        "ne": "पर्नु",
+        "context": "overlay.convVocab.नपर्ने.contexts"
+      },
+      "ko": "의존하지 않는 (भर नपर्ने)",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "7bf6e932797f8fbdd1004cd4": {
+      "source": {
+        "en": "verb, negative attributive form",
+        "ja": "動詞・否定の修飾形",
+        "ne": "",
+        "context": "overlay.convVocab.नपर्ने.contexts"
+      },
+      "ko": "동사 · 부정 관형형",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "dfc0aaf2812ab4adb799c05a": {
+      "source": {
+        "en": "भर नपर्ने modifies प्रशिक्षण पद्धति, the training method.",
+        "ja": "भर नपर्ने は後ろの प्रशिक्षण पद्धति「指導法」を説明します。",
+        "ne": "",
+        "context": "overlay.convVocab.नपर्ने.contexts"
+      },
+      "ko": "भर नपर्ने가 प्रशिक्षण पद्धति ‘훈련 방식’을 꾸며 줘요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "939cee42ef01c33a88e1702a": {
+      "source": {
+        "en": "frustration",
+        "ja": "もどかしさ",
+        "ne": "निराशा",
+        "context": "overlay.convVocab.निराशा.contexts"
+      },
+      "ko": "답답함",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "8e8cbff70aeeb5138807957f": {
+      "source": {
+        "en": "The feeling of frustration at being unable to express something.",
+        "ja": "伝えたいことが伝わらないときの落胆を表しています。",
+        "ne": "",
+        "context": "overlay.convVocab.निराशा.contexts"
+      },
+      "ko": "하고 싶은 말을 잘 전하지 못할 때 느끼는 답답함이에요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "31438040853ef676bb578bf7": {
+      "source": {
+        "en": "hundreds of thousands of",
+        "ja": "数十万人の",
+        "ne": "लाख",
+        "context": "overlay.convVocab.लाखौँ.contexts"
+      },
+      "ko": "수십만 명의",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "038cc1c5cbc400ee71163a20": {
+      "source": {
+        "en": "to flow / be swept away",
+        "ja": "流れる・流される",
+        "ne": "बग्नु",
+        "context": "overlay.convVocab.नबगी.base_meaning"
+      },
+      "ko": "흐르다, 휩쓸리다",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "76905c9523d74cc0af1376b7": {
+      "source": {
+        "en": "without being swept away by emotions",
+        "ja": "感情に流されずに",
+        "ne": "बग्नु",
+        "context": "overlay.convVocab.नबगी.contexts"
+      },
+      "ko": "감정에 휘둘리지 않고",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "5b708fc2647be4fbaa0b7ee8": {
+      "source": {
+        "en": "verb, negative converb",
+        "ja": "動詞・否定の副動詞",
+        "ne": "",
+        "context": "overlay.convVocab.नबगी.contexts"
+      },
+      "ko": "동사 · 부정 연결형",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "1f6daf9e71eba40c7ad73c5d": {
+      "source": {
+        "en": "नबगी means without being swept away; बगेर is the affirmative form.",
+        "ja": "नबगी は「流されずに」。肯定の बगेर「流されて」と区別します。",
+        "ne": "",
+        "context": "overlay.convVocab.नबगी.contexts"
+      },
+      "ko": "नबगी는 ‘휩쓸리지 않고’예요. 긍정형 बगेर ‘휩쓸려서’와 구별해요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "52376cce8abb900fd4799361": {
+      "source": {
+        "en": "to serve food",
+        "ja": "料理をよそう・配膳する",
+        "ne": "पस्किनु",
+        "context": "overlay.convVocab.पस्किदिनुहोस्.base_meaning"
+      },
+      "ko": "음식을 담아 내다",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "8653104207881cefb10ced2a": {
+      "source": {
+        "en": "please serve the food",
+        "ja": "配膳してください",
+        "ne": "पस्किनु",
+        "context": "overlay.convVocab.पस्किदिनुहोस्.contexts"
+      },
+      "ko": "음식을 내어 주세요",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "681d5da409940d3abb41bd89": {
+      "source": {
+        "en": "verb, polite request",
+        "ja": "動詞・丁寧な依頼",
+        "ne": "",
+        "context": "overlay.convVocab.पस्किदिनुहोस्.contexts"
+      },
+      "ko": "동사 · 공손한 요청",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    },
+    "2933920b0ec5355ed0d37f5f": {
+      "source": {
+        "en": "पस्किनु means serve food; दिनु adds benefit for someone and नुहोस् makes a polite request.",
+        "ja": "पस्किनु「配膳する」＋दिनु「相手のために」＋नुहोस्「丁寧な依頼」。",
+        "ne": "",
+        "context": "overlay.convVocab.पस्किदिनुहोस्.contexts"
+      },
+      "ko": "पस्किनु는 ‘음식을 내다’, दिनु는 상대를 위한 행동, नुहोस्는 공손한 요청을 나타내요.",
+      "reviewed": true,
+      "origin": "reviewed-source-correction-and-destination-preserving-migration-20261111"
+    }
+  },
+  "language": "ko",
+  "overrides": {
+    "[\"overlay\",\"nepaliDictionary\",\"entries\",1849,\"senses\",0,\"ko\"]": {
+      "sourceKey": "661579d1359a695e80e565fc",
+      "sourcePlanSha256": "ac6629df02c24a25d71f2ae77fd9506339a70b552675457e1e94395d1104fece",
+      "ko": "십만 · 100,000",
+      "reviewed": true,
+      "origin": "reviewed-destination-preserving-migration-20261111"
     }
   }
 }

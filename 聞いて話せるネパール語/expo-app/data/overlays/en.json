@@ -1641,7 +1641,7 @@
       "Religious rituals not only strengthen the unity of a community but also play the role of passing down cultural identity from generation to generation.",
       "The wave of globalization has brought changes even to traditional religious customs, and the form of faith among the younger generation has become very different from before.",
       "Promoting dialogue between different religions is an important step toward removing prejudice and misunderstanding and deepening mutual understanding.",
-      "Pashupatinath Temple is Nepal's largest Hindu pilgrimage site, and every year hundreds of thousands (tens of thousands) of pilgrims come from all over the world.",
+      "Pashupatinath Temple is Nepal's largest Hindu pilgrimage site, and every year hundreds of thousands of pilgrims come from all over the world.",
       "The conflict between strictly following religious rules and adapting to the demands of modern society is a burning problem for many devotees.",
       "It wouldn't be an exaggeration to say that myths and legends are cultural mirrors that reflect the values and worldview of a society.",
       "The attempt to transcend oneself (self-transcendence) through spiritual practice is commonly found in many religious traditions, whether in the East or the West.",
@@ -25788,6 +25788,12 @@
           "ja": "to me",
           "pos": "pronoun + postposition लाई",
           "note": "experiencer marking for sensory verbs"
+        },
+        {
+          "sentence_id": "5-2-19",
+          "ja": "I (the person experiencing the feeling)",
+          "pos": "pronoun with लाई",
+          "note": "मलाई निराशा हुन्छ means I feel frustrated; लाई marks the experiencer."
         }
       ]
     },
@@ -25836,6 +25842,12 @@
           "ja": "support/cooperation",
           "pos": "noun (predicative use)",
           "note": "used in 'सहयोग हुन्छ' meaning 'to be helpful'"
+        },
+        {
+          "sentence_id": "18-3-7",
+          "ja": "help",
+          "pos": "noun",
+          "note": "सहयोग गर्ने साथी means a friend who helps."
         }
       ]
     },
@@ -52859,6 +52871,12 @@
           "ja": "throughout",
           "pos": "noun (idiomatic expression)",
           "note": "भर नपरी = without relying on ~"
+        },
+        {
+          "sentence_id": "21-3-18",
+          "ja": "reliance (भर पर्नु)",
+          "pos": "noun, part of an idiom",
+          "note": "भर पर्नु means rely on; it is different from भर्नु, to fill."
         }
       ]
     },
@@ -59599,6 +59617,12 @@
           "sentence_id": "27-3-17",
           "ja": "happens",
           "pos": "verb, present tense, third person"
+        },
+        {
+          "sentence_id": "5-2-19",
+          "ja": "feel (in निराशा हुन्छ)",
+          "pos": "verb, present tense",
+          "note": "निराशा हुन्छ describes the feeling of frustration arising."
         }
       ]
     },
@@ -64608,12 +64632,6 @@
           "note": "मन लाग्छ = to feel like doing"
         },
         {
-          "sentence_id": "5-2-19",
-          "ja": "seems",
-          "pos": "verb: present habitual, third person singular",
-          "note": "expresses habitual action or general feeling"
-        },
-        {
           "sentence_id": "14-2-7",
           "ja": "seems",
           "pos": "verb, present tense, third person",
@@ -67201,6 +67219,12 @@
           "ja": "to do/doing",
           "pos": "verb: present participle (relative-clause usage)",
           "note": "Participial form for noun modification"
+        },
+        {
+          "sentence_id": "18-3-7",
+          "ja": "who helps (सहयोग गर्ने)",
+          "pos": "verb, attributive form",
+          "note": "गर्ने modifies the following noun साथी."
         }
       ]
     },
@@ -69901,12 +69925,6 @@
           "ja": "hand",
           "pos": "noun",
           "note": ""
-        },
-        {
-          "sentence_id": "18-3-7",
-          "ja": "hand",
-          "pos": "noun",
-          "note": "हात थाप्नु = to extend a hand / offer help"
         }
       ]
     },
@@ -89583,19 +89601,6 @@
           "ja": "when unable",
           "pos": "verb / negative conditional adverbial form",
           "note": "ना + सक्दा: when unable to do"
-        }
-      ]
-    },
-    "झल्याँस": {
-      "rom": "jhyalyas",
-      "base_form": "झल्याँस",
-      "base_meaning": "flash",
-      "contexts": [
-        {
-          "sentence_id": "5-2-19",
-          "ja": "flash",
-          "pos": "noun",
-          "note": "झल्याँस लाग्नु: to feel frustrated"
         }
       ]
     },
@@ -109325,19 +109330,6 @@
         }
       ]
     },
-    "बगेर": {
-      "rom": "bagera",
-      "base_form": "बग्नु",
-      "base_meaning": "swept away",
-      "contexts": [
-        {
-          "sentence_id": "1-3-16",
-          "ja": "swept away",
-          "pos": "verb: negative converb/adverbial form",
-          "note": "e-form negative = without doing ~"
-        }
-      ]
-    },
     "तार्किक": {
       "rom": "tarkik",
       "base_form": "तार्किक",
@@ -112458,6 +112450,12 @@
           "ja": "not necessary",
           "pos": "verb · negative relative (attributive) form",
           "note": "देखा नपर्ने = hard to appear / rarely seen"
+        },
+        {
+          "sentence_id": "21-3-18",
+          "ja": "not relying on (भर नपर्ने)",
+          "pos": "verb, negative attributive form",
+          "note": "भर नपर्ने modifies प्रशिक्षण पद्धति, the training method."
         }
       ]
     },
@@ -119893,6 +119891,12 @@
           "sentence_id": "5-3-4",
           "ja": "disappointment",
           "pos": "noun"
+        },
+        {
+          "sentence_id": "5-2-19",
+          "ja": "frustration",
+          "pos": "noun",
+          "note": "The feeling of frustration at being unable to express something."
         }
       ]
     },
@@ -122990,19 +122994,6 @@
           "ja": "transparent",
           "pos": "adjective",
           "note": "of Sanskrit origin"
-        }
-      ]
-    },
-    "परोस्": {
-      "rom": "paros",
-      "base_form": "पार्नु",
-      "base_meaning": "please serve",
-      "contexts": [
-        {
-          "sentence_id": "8-3-18",
-          "ja": "please serve",
-          "pos": "verb, imperative (polite)",
-          "note": "imperative (third-person)"
         }
       ]
     },
@@ -127112,19 +127103,6 @@
         }
       ]
     },
-    "नभर्ने": {
-      "rom": "nabharne",
-      "base_form": "भर्नु",
-      "base_meaning": "unfulfilled",
-      "contexts": [
-        {
-          "sentence_id": "21-3-18",
-          "ja": "unfulfilled",
-          "pos": "verb, negative participial form",
-          "note": "negative relative participle"
-        }
-      ]
-    },
     "वैज्ञानिक": {
       "rom": "waigyanik",
       "base_form": "वैज्ञानिक",
@@ -130249,19 +130227,6 @@
           "ja": "fallen",
           "pos": "verb – past participle, attributive form",
           "note": "to encounter difficulty"
-        }
-      ]
-    },
-    "थाप्ने": {
-      "rom": "thaapne",
-      "base_form": "थाप्नु",
-      "base_meaning": "tap",
-      "contexts": [
-        {
-          "sentence_id": "18-3-7",
-          "ja": "tap",
-          "pos": "verb · attributive form",
-          "note": "हात थाप्नु = to extend a hand / offer help"
         }
       ]
     },
@@ -135118,11 +135083,11 @@
     "लाखौँ": {
       "rom": "laakhau",
       "base_form": "लाख",
-      "base_meaning": "millions of",
+      "base_meaning": "one hundred thousand",
       "contexts": [
         {
           "sentence_id": "25-3-11",
-          "ja": "millions of",
+          "ja": "hundreds of thousands of",
           "pos": "numeral (plural form)",
           "note": "लाख + औँ meaning 'hundreds of thousands'"
         }
@@ -139915,6 +139880,32 @@
           "ja": "to say, to tell",
           "pos": "verb · polite request form",
           "note": "दिनु + honorific form"
+        }
+      ]
+    },
+    "नबगी": {
+      "rom": "nabagi",
+      "base_form": "बग्नु",
+      "base_meaning": "to flow / be swept away",
+      "contexts": [
+        {
+          "sentence_id": "1-3-16",
+          "ja": "without being swept away by emotions",
+          "pos": "verb, negative converb",
+          "note": "नबगी means without being swept away; बगेर is the affirmative form."
+        }
+      ]
+    },
+    "पस्किदिनुहोस्": {
+      "rom": "paskidinuhos",
+      "base_form": "पस्किनु",
+      "base_meaning": "to serve food",
+      "contexts": [
+        {
+          "sentence_id": "8-3-18",
+          "ja": "please serve the food",
+          "pos": "verb, polite request",
+          "note": "पस्किनु means serve food; दिनु adds benefit for someone and नुहोस् makes a polite request."
         }
       ]
     }

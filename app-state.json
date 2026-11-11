@@ -1,6 +1,6 @@
 {
   "_about": "App家族(聞いて話せるシリーズ)の横断状態ファイル。セッション分離の調整レイヤ。各セッションは開始時に読み、節目で更新する。安定仕様(不変)は『ポスター成果物契約.md』、本ファイルは動的状態。",
-  "updated": "2026-11-11T07:10:10+09:00",
+  "updated": "2026-11-11T10:52:28+09:00",
   "coordinationModel": {
     "mode": "session-separation + app-state.json",
     "rule": "App固有作業はApp別セッションで並行可。共有コードは sharedLock を取得した1セッションだけが編集する。司令塔(全集約)モデルは廃止(=1セッションにコンテキストが肥大して上限に達する原因だった)。真に横断的な一括処理が要る時だけ workflow で一時的に起動する。",
@@ -94,7 +94,9 @@
       "target": "ne",
       "l1": [
         "ja",
-        "en(整備中)"
+        "en",
+        "ko",
+        "ar"
       ],
       "prodVersion": "iOS 1.7.6 公開済",
       "poster": {
@@ -118,7 +120,10 @@
           "en母語のアプリ統合(別途。★固有9のen音声=2026-06-20生成済 gen_tts_en_kuyu.py(en-US-Chirp3-HD-Aoede)→02_ネパール語教材/00_固有/音声/_正規化/EN。教材側のApp A en動画も生成中)",
           "13時曜日/ポスター11-30の収録は将来判断"
         ]
-      }
+      },
+      "developmentVersion": "2.2.5",
+      "contentOTAVersion": 1225,
+      "contentManifest": "https://content.safa-lang.com/nepali/_manifest.json"
     },
     "B_japanese": {
       "name": "聞いて話せる日本語",
@@ -376,19 +381,19 @@
     "appRebuilt": false
   },
   "contentDeliveryPolicy_AppA": {
-    "default": "Update lessons/examples/translations/dictionary and matching theme-index.mp3 files together using existing positional reader; no app build/version bump/workflow dispatch",
+    "default": "Publish verified lessons/translations/dictionary/images and matching audio to shared Cloudflare R2; no native build/version bump for compatible content changes",
     "document": "docs/教材配信運用_ビルド不要.md",
     "nativeChanges": "Explain concrete shell change before building; use existing Claude workflow only",
-    "baselineAppVersion": "2.1.3",
+    "baselineAppVersion": "2.2.5",
     "buildMonitoring": "Do not monitor; user preference",
-    "recordingReferences": "Not required and not included in published set1202",
+    "recordingReferences": "Preserve existing positional and grammarAudioRefs contracts; verify every referenced MP3 before activation",
     "defaultThirdPerson": {
       "singular": "उहाँ",
       "plural": "उहाँहरू",
       "familiarPronounsTopic": 7,
       "verbAgreement": "respectful; same singular/plural conjugation"
     },
-    "textOnlyLessons": "Keep exercise/audio data and audio version/URLs unchanged; publish only core/overlays + catalog; zero audio redownload on cached devices",
+    "textOnlyLessons": "Publish changed hashed text chunks only; unchanged audio hashes and cached files are reused",
     "lessonDesign": "Teach concrete Nepali forms and selection rules first; contrast similar forms with short examples, including overlap and non-interchangeable uses; remove generic mother-tongue grammar definitions/study advice; preserve semantic colors, no yellow warning cards/symbols",
     "colors": {
       "rendererVersion": "2.1.5",
@@ -404,7 +409,9 @@
       "warningSymbols": false,
       "yellowCards": false
     },
-    "lessonL1Support": "Explicit Japanese/English glosses in explanations; theme number/title only in fixed top bar; no repeated body title;35/A and36/B labels retained"
+    "lessonL1Support": "Japanese/English/Korean/Arabic translations; theme number/title in fixed top bar; mixed Arabic/Nepali direction preserved",
+    "manifest": "https://content.safa-lang.com/nepali/_manifest.json",
+    "publisher": "聞いて話せるネパール語/scripts/publish_content_ota.ps1"
   },
   "appa_paired_content_update": {
     "status": "pack1211 published; theme2 here/there/over there clarified; examples/audio retained",
@@ -2257,18 +2264,18 @@
     }
   },
   "appa_arabic_2026_11_11": {
-    "status": "All core lessons/practice/dictionary/general vocabulary translated; 1794 of 1800 conversation sentences translated, six original-source issues held; contextual notes in progress; unpublished",
+    "status": "Arabic implementation complete; OTA 1225 live and verified on R2 and legacy GitHub; native 2.2.5 ready for requested build.",
     "scope": "Arabic mother-language UI and course translations with RTL/mixed-script layout",
     "maximumAdditionalAPIChargeJPY": 0,
     "dependsOnKoreanBuild": "complete: 2.2.4 (1075), GitHub run 42859546525 succeeded",
-    "shipping": "Arabic is not imported into App A translation provider and is not selectable. No Arabic overlay/OTA/native build released. Korean 2.2.4 (1075)/OTA1224 remains current.",
-    "sourcePlanSha256": "c3d316fdedc73d0e1b67137c917fc162386e11e86fc9e53ba32db0d85714cf6f",
-    "reviewedUnique": 20014,
-    "totalUnique": 23716,
-    "pendingUnique": 3702,
+    "shipping": "Four-language OTA 1225 published and public hashes verified. Arabic selection/RTL and R2 safe same-launch activation require the 2.2.5 shell, ready for build.",
+    "sourcePlanSha256": "b5e4bc972f04be1cf1607199cf19f602e7f794657a81a426b3cac423e24380cc",
+    "reviewedUnique": 23732,
+    "totalUnique": 23732,
+    "pendingUnique": 0,
     "coverage": {
       "examplesL1": {
-        "complete": 1794,
+        "complete": 1800,
         "total": 1800
       },
       "grammarL1": {
@@ -2284,8 +2291,8 @@
         "total": 4743
       },
       "convVocab": {
-        "complete": 40746,
-        "total": 45047
+        "complete": 45050,
+        "total": 45050
       },
       "grammarVocab": {
         "complete": 2584,
@@ -2391,14 +2398,32 @@
       "496 exact context templates checked for full-source matching, preserved Nepali text, rejected unknown prose and stable output.",
       "All 4743 general vocabulary destinations translated; full partial audit passed at 17312 reviewed unique keys, 94 contextual overrides. Source plan unchanged; lessons/practice/dictionary remain complete.",
       "Partial audit passed at 19144 unique translations and 95 contextual overrides: 1794/1800 conversation destinations. Reviewed numeric-source differences against Arabic number words; only intentional Latin S and 2LDK remain in translated conversation sentences.",
-      "Final checkpoint partial audit passed at 20014 reviewed keys / 3702 pending; 95 overrides; all 36 lessons, 720 exercises and dictionary remain complete. Scoped git diff --check passed. No source-plan, app-provider or release changes."
+      "Final checkpoint partial audit passed at 20014 reviewed keys / 3702 pending; 95 overrides; all 36 lessons, 720 exercises and dictionary remain complete. Scoped git diff --check passed. No source-plan, app-provider or release changes.",
+      "Partial content audit passed at 21774 reviewed keys; 1942 pending. New context-note script checks found and fixed accidental mixed-script character entries and an inherited Japanese の fragment; intended language-name labels retained.",
+      "Full Arabic audit passed: 23732 reviewed source keys, 68609 destinations, 99 context overrides; all 36 lessons, 720 exercises and 2089 dictionary entries complete.",
+      "Real four-language OTA checks passed, including Arabic offline cache and shared Nepali audio reuse; missing Arabic/Korean dictionary translations rejected.",
+      "shared/AppA/AppB TypeScript passed after Arabic provider and bundled-overlay enablement.",
+      "Actual Arabic release overlay UI passed: all 36 readers and 3 practice modes, 6 letter categories, 30 vocabulary categories in both directions, composition, and 2089-entry dictionary at 320/390px and larger text.",
+      "Arabic home/settings/listening display and control delegation passed, including development checks hidden until the seventh version tap. Native playback/device rendering still requires TestFlight device confirmation.",
+      "Expo iOS JavaScript/Hermes export completed (19.5 MB bundle) before R2 transport changes; native archive not yet started.",
+      "Final Arabic audio: all 2328 verified; pending synthesis 0",
+      "Final R2 release: 3796 files, 149 text chunks, four languages, all full/delta ZIP entries and every referenced image/audio hash verified"
     ],
     "remaining": [
-      "Six conversation sentences require original Nepali/JA/EN reconciliation (55, 278, 475, 1060, 1249, 1476)",
-      "3695 contextual conversation-note translations and one ambiguous base meaning",
-      "Full Arabic content assembly, Arabic audio, native-device RTL verification and publication"
+      "Commit/push and dispatch requested native 2.2.5 iOS/TestFlight build"
     ],
-    "audio": "No Arabic audio generated; no paid synthesis invoked.",
+    "audio": {
+      "status": "2328/2328 verified against reviewed text, fixed female voice, SHA256, MP3 24000Hz mono and full decoding; no pending synthesis",
+      "voice": "ar-SA-ZariyahNeural",
+      "voiceEvidence": "Live japaneast voices/list: Female, ar-SA, GA on 2026-11-11",
+      "tierEvidence": "User confirmed Free F0 in this chat on 2026-11-11",
+      "pendingInitialCharacters": 90290,
+      "monthlyRemaining": "Not independently inspected; no paid fallback or tier change",
+      "complete": 2328,
+      "totalUniqueSynthesis": 2239,
+      "localDuplicateCopies": 89,
+      "sourceCharacters": 90795
+    },
     "sharedLockReleased": true,
     "storeScreenshots": {
       "status": "Six Arabic store images saved locally; existing English smartphone screenshots reused as requested",
@@ -2443,40 +2468,40 @@
       "validation": "Checked full-resolution artwork, rendered copy bounds, dimensions/RGB and visible brand/footer pixels in every output. No App Store Connect upload."
     },
     "completePracticeExercises": 720,
-    "contextOverrides": 95,
+    "contextOverrides": 99,
     "sourceReviewIssues": [
       {
         "sourceIndex": 55,
-        "status": "pending; untranslated",
+        "status": "Resolved: source, four-language translations/glosses and corresponding Nepali/Arabic recordings aligned; permanent correction ledger contains hashes.",
         "issue": "Nepali भावनामा बगेर says carried away by emotion; JA/EN say not carried away. Need reconcile source/audio before releasing this sentence."
       },
       {
         "sourceIndex": 278,
-        "status": "pending; untranslated",
+        "status": "Resolved: source, four-language translations/glosses and corresponding Nepali/Arabic recordings aligned; permanent correction ledger contains hashes.",
         "issue": "Nepali झल्याँस लाग्छ expresses being startled/realizing suddenly; JA/EN mean frustration. Need reconcile source/audio before releasing."
       },
       {
         "sourceIndex": 475,
         "sentenceId": "8-3-18",
-        "status": "pending source reconciliation",
+        "status": "Resolved: source, four-language translations/glosses and corresponding Nepali/Arabic recordings aligned; permanent correction ledger contains hashes.",
         "issue": "Restaurant sentence uses परोस् for please serve, but the source gloss/lemma is internally inconsistent (पार्नु versus परोस्). Hold base-meaning index 17039 and full sentence for source/audio reconciliation."
       },
       {
         "sourceIndex": 1060,
         "sentenceId": "18-3-7",
-        "status": "pending source reconciliation",
+        "status": "Resolved: source, four-language translations/glosses and corresponding Nepali/Arabic recordings aligned; permanent correction ledger contains hashes.",
         "issue": "हात थाप्ने normally extends a receiving/begging hand; JA/EN intend lending help. Reconcile the Nepali sentence before translating/releasing. Native usage consulted: https://gorkhapatraonline.com/news/102696 . No source or audio changed."
       },
       {
         "sourceIndex": 1249,
         "sentenceId": "21-3-18",
-        "status": "pending source reconciliation",
+        "status": "Resolved: source, four-language translations/glosses and corresponding Nepali/Arabic recordings aligned; permanent correction ledger contains hashes.",
         "issue": "नभर्ने means not filling, while JA/EN intend not relying on physical punishment. Likely malformed reliance expression; original Nepali/audio needs reconciliation."
       },
       {
         "sourceIndex": 1476,
         "sentenceId": "25-3-11",
-        "status": "pending source reconciliation",
+        "status": "Resolved: source, four-language translations/glosses and corresponding Nepali/Arabic recordings aligned; permanent correction ledger contains hashes.",
         "issue": "Nepali sentence glosses लाखौँ (hundreds of thousands) with दशौँ हजार (tens of thousands). Source number mismatch; reconcile before Arabic release."
       }
     ],
@@ -2499,6 +2524,63 @@
       "Question marker के is not inherently polite; Manner expression राम्रोसँग uses adverbial सँग, not accompaniment. Corrected earlier English explanations in Arabic.",
       "भयो is simple past/change, not inherently past perfect; भएकोले is भएको + ले, not an independent कोले suffix; मात्र नभई means not only/but also; उचित हुन्छ is advisability rather than mandatory obligation."
     ],
-    "updated": "2026-11-11T08:16:54+09:00"
+    "updated": "2026-11-11T10:52:28+09:00",
+    "buildRequestedAfterCompletion": true,
+    "buildPrerequisites": [
+      "Complete translation and reconcile original-source issues",
+      "Arabic sentence recordings within free-only constraint",
+      "Assemble and enable Arabic; comprehensive content/RTL/regression verification",
+      "Publish matching text/audio and build via existing ios-build-nepali workflow"
+    ],
+    "sourceReferences": [
+      {
+        "indices": [
+          11998
+        ],
+        "url": "https://persiandict.com/lexemeen/a794283c23384e67851da1d0.html",
+        "finding": "رسید receipt derives from Persian رسیدن; corrected Arabic-origin claim."
+      },
+      {
+        "indices": [
+          12047
+        ],
+        "url": "https://en.wiktionary.org/wiki/जम्मा",
+        "finding": "Entry cites Turner 1931: Arabic جمع via Persian and Urdu."
+      }
+    ],
+    "sourceCorrectionLedger": "聞いて話せるネパール語/文法教材/conversation_source_corrections_20261111.json",
+    "targetVersion": "2.2.5",
+    "observedExistingLimitation": "Existing reference tab is empty for themes 17, 23, 33 in all four languages; this predates Arabic and was not introduced or duplicated by translation.",
+    "targetOTAVersion": 1225,
+    "otaMigration": {
+      "requested": "CAEと同じCloudflare R2方式。アラビア語とこの修正を終えてからBuild。",
+      "base": "https://content.safa-lang.com/nepali/",
+      "bucket": "safa-content",
+      "sourceReference": "../CAE/src/data/contentOta.ts and ../CAE/.github/workflows/deploy-content-cae.yml",
+      "status": "Published OTA 1225; all 3796 referenced files and both public manifests verified.",
+      "storageObserved": "safa-content 564 MB; jlpt-assets 1.38 GB; Standard. Existing shared account; no plan change.",
+      "futureNativeBuilds": "Manual workflow_dispatch only; removed content-triggered native push builds",
+      "automaticActivation": "Verified snapshot applies on a landing screen in the same launch; reader/exercise/listening stays uninterrupted",
+      "verified": [
+        "TypeScript shared/AppA/AppB PASS",
+        "Actual OTA loader: R2 URL migration preserves cached text and MP3; no-store checks PASS",
+        "Same-launch activation: defer during lesson/playback, latest complete snapshot wins, unmount cancels PASS",
+        "R2 publisher fault tests: hash rejection, resume, concurrent update protection, manifest-last and legacy mirror PASS",
+        "iOS Expo/Hermes export after R2 change: 4765 modules, 3661 assets, 19.5 MB bundle PASS"
+      ],
+      "publisher": "聞いて話せるネパール語/scripts/publish_content_ota.ps1 (R2; legacy GitHub manifest mirror; no native build)",
+      "manifestSha256": "d0fa170bbf8f9d59dcd47c6457ea6e98783e3acab6a44abeb7b2085e4bf28ecc",
+      "manifestBytes": 3199260,
+      "files": 3796,
+      "contentVersion": 1225,
+      "publishedManifest": "https://content.safa-lang.com/nepali/_manifest.json",
+      "legacyCompatibilityManifest": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-ota/manifest.json"
+    },
+    "audioProgress": "All Arabic sentences recorded; six Nepali source recordings replaced and checked; one English recording corrected while preserving Wavenet-F.",
+    "cleanup": {
+      "ownTemporaryFilesRemoved": 7638,
+      "bytesRemoved": 656872584,
+      "mastersPreserved": true
+    }
   }
 }

@@ -2,6 +2,7 @@
 import hashlib
 import json
 from pathlib import Path
+from localize_korean import destination_translation, validate_overrides
 
 APP = Path(__file__).resolve().parents[1]
 
@@ -10,7 +11,9 @@ def read(path):
 
 def verify():
     plan = read(APP/'文法教材/korean_translation_requests.json')
-    items = read(APP/'文法教材/korean_translations.json')['items']
+    cache = read(APP/'文法教材/korean_translations.json')
+    validate_overrides(plan, cache, 'ko')
+    items = cache['items']
     actual = {'overlay': read(APP/'expo-app/data/overlays/ko.json'),
               'ui': read(APP/'expo-app/src/i18n/ko.json')}
     expected = {'overlay': read(APP/'expo-app/data/overlays/en.json'),
@@ -22,7 +25,7 @@ def verify():
         parent = expected
         for key in destination['path'][:-1]:
             parent = parent[key]
-        parent[destination['path'][-1]] = items[destination['key']]['ko']
+        parent[destination['path'][-1]] = destination_translation(cache, destination, 'ko')
     expected['overlay']['l1'] = 'ko'
     for key in ['learningPath', 'learningPathV2', 'posterLessons']:
         expected['overlay'].pop(key, None)

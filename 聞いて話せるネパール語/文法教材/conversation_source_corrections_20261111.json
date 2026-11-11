@@ -1,0 +1,482 @@
+{
+  "schema": 1,
+  "date": "2026-11-11",
+  "purpose": "Reconcile six Nepali conversation sentences with their reviewed JA/EN/KO/AR meaning before Arabic release. Regenerate changed Nepali recordings and verify the changed English recording.",
+  "sentences": [
+    {
+      "id": "1-3-16",
+      "oldNe": "म भावनामा बगेर तार्किक रूपमा परिस्थितिको विश्लेषण गरेर निर्णय लिन निपुण छु।",
+      "ne": "म भावनामा नबगी तार्किक रूपमा परिस्थितिको विश्लेषण गरेर निर्णय लिन निपुण छु।",
+      "ar": "أجيد تحليل المواقف بمنطق واتخاذ القرارات دون أن أنجرف وراء العواطف.",
+      "reason": "बगेर is affirmative; नबगी supplies the intended negative converb."
+    },
+    {
+      "id": "5-2-19",
+      "oldNe": "कृतज्ञता राम्ररी व्यक्त गर्न नसक्दा झल्याँस लाग्छ।",
+      "ne": "कृतज्ञता राम्ररी व्यक्त गर्न नसक्दा मलाई निराशा हुन्छ।",
+      "ar": "أشعر بالإحباط عندما لا أستطيع التعبير عن امتناني كما ينبغي.",
+      "reason": "झल्याँस denotes a sudden awakening/realization, not frustration. Use the explicit experiencer मलाई and निराशा हुन्छ."
+    },
+    {
+      "id": "8-3-18",
+      "oldNe": "समूहका सबैको खाना तयार भएपछि मात्र परोस्, एकएक गरी ल्याउँदा खानाको माहोल बिग्रन्छ।",
+      "ne": "समूहका सबैको खाना तयार भएपछि मात्र पस्किदिनुहोस्, एकएक गरी ल्याउँदा खानाको माहोल बिग्रन्छ।",
+      "ar": "يرجى تقديم الطعام بعد أن تصبح أطباق جميع أفراد المجموعة جاهزة؛ فتقديمها واحدًا تلو الآخر يفسد أجواء الوجبة.",
+      "reason": "Use the polite serving request पस्किदिनुहोस् from पस्किनु, rather than the unrelated परोस्/पार्नु analysis."
+    },
+    {
+      "id": "18-3-7",
+      "oldNe": "मुसिबतमा परेका बेला हात थाप्ने साथीलाई नै सच्चा मित्र भन्न सकिन्छ होला।",
+      "ne": "मुसिबतमा परेका बेला सहयोग गर्ने साथीलाई नै सच्चा मित्र भन्न सकिन्छ होला।",
+      "ar": "لعل الصديق الذي يساعدك وقت الشدة هو من يستحق أن يُسمّى صديقًا حقيقيًا.",
+      "reason": "हात थाप्नु commonly describes holding out a hand to receive/ask; सहयोग गर्नु states the intended act of helping."
+    },
+    {
+      "id": "21-3-18",
+      "oldNe": "शारीरिक दण्डमा नभर्ने वैज्ञानिक प्रशिक्षण पद्धति अर्को पुस्ताका खेलाडी विकासमा अपरिहार्य भएको छ।",
+      "ne": "शारीरिक दण्डमा भर नपर्ने वैज्ञानिक प्रशिक्षण पद्धति अर्को पुस्ताका खेलाडी विकासमा अपरिहार्य भएको छ।",
+      "ar": "أصبح اعتماد أسلوب تدريب علمي لا يستند إلى العقاب البدني أمرًا ضروريًا لتنمية الجيل القادم من الرياضيين.",
+      "reason": "भर पर्नु means rely on; भर्नु means fill."
+    },
+    {
+      "id": "25-3-11",
+      "oldNe": "पशुपतिनाथ मन्दिर नेपालको सबैभन्दा ठूलो हिन्दू तीर्थस्थल हो र प्रतिवर्ष विश्वभरबाट लाखौँ (दशौँ हजार) तीर्थयात्रीहरू आउँछन्।",
+      "ne": "पशुपतिनाथ मन्दिर नेपालको सबैभन्दा ठूलो हिन्दू तीर्थस्थल हो र प्रतिवर्ष विश्वभरबाट लाखौँ तीर्थयात्रीहरू आउँछन्।",
+      "oldEn": "Pashupatinath Temple is Nepal's largest Hindu pilgrimage site, and every year hundreds of thousands (tens of thousands) of pilgrims come from all over the world.",
+      "en": "Pashupatinath Temple is Nepal's largest Hindu pilgrimage site, and every year hundreds of thousands of pilgrims come from all over the world.",
+      "ar": "معبد باشوباتيناث أكبر موقع حج هندوسي في نيبال، ويقصده كل عام مئات الآلاف من الحجاج من أنحاء العالم.",
+      "reason": "Remove the contradictory tens-of-thousands parenthesis; लाखौँ means hundreds of thousands, matching JA/KO."
+    }
+  ],
+  "contextEdits": [
+    {
+      "id": "1-3-16",
+      "remove": [
+        "बगेर"
+      ],
+      "add": {
+        "नबगी": {
+          "rom": "nabagi",
+          "base_form": "बग्नु",
+          "base_meaning": {
+            "ja": "流れる・流される",
+            "en": "to flow / be swept away",
+            "ko": "흐르다, 휩쓸리다",
+            "ar": "ينساب/ينجرف"
+          },
+          "meaning": {
+            "ja": "感情に流されずに",
+            "en": "without being swept away by emotions",
+            "ko": "감정에 휘둘리지 않고",
+            "ar": "دون الانجراف وراء العواطف"
+          },
+          "pos": {
+            "ja": "動詞・否定の副動詞",
+            "en": "verb, negative converb",
+            "ko": "동사 · 부정 연결형",
+            "ar": "فعل، صيغة ربط منفية"
+          },
+          "note": {
+            "ja": "नबगी は「流されずに」。肯定の बगेर「流されて」と区別します。",
+            "en": "नबगी means without being swept away; बगेर is the affirmative form.",
+            "ko": "नबगी는 ‘휩쓸리지 않고’예요. 긍정형 बगेर ‘휩쓸려서’와 구별해요.",
+            "ar": "नबगी تعني «دون أن ينجرف»، بخلاف बगेर التي لا تنفي الفعل."
+          }
+        }
+      }
+    },
+    {
+      "id": "5-2-19",
+      "remove": [
+        "झल्याँस",
+        "लाग्छ"
+      ],
+      "add": {
+        "मलाई": {
+          "rom": "malai",
+          "base_form": "म",
+          "base_meaning": {
+            "ja": "私に",
+            "en": "to me",
+            "ko": "나에게",
+            "ar": "لي"
+          },
+          "meaning": {
+            "ja": "私は（感情を感じる人）",
+            "en": "I (the person experiencing the feeling)",
+            "ko": "나는 (감정을 느끼는 사람)",
+            "ar": "أنا، صاحب الشعور"
+          },
+          "pos": {
+            "ja": "代名詞＋लाई",
+            "en": "pronoun with लाई",
+            "ko": "대명사 + लाई",
+            "ar": "ضمير مع लाई"
+          },
+          "note": {
+            "ja": "मलाई निराशा हुन्छ で「私はもどかしく感じる」。感情を感じる人に लाई を付けます。",
+            "en": "मलाई निराशा हुन्छ means I feel frustrated; लाई marks the experiencer.",
+            "ko": "मलाई निराशा हुन्छ는 ‘나는 답답함을 느껴요’예요. 감정을 느끼는 사람에 लाई를 붙여요.",
+            "ar": "मलाई निराशा हुन्छ تعني «أشعر بالإحباط»؛ लाई تحدد صاحب الشعور."
+          }
+        },
+        "निराशा": {
+          "rom": "nirasha",
+          "base_form": "निराशा",
+          "base_meaning": {
+            "ja": "落胆・もどかしさ",
+            "en": "disappointment / frustration",
+            "ko": "실망, 답답함",
+            "ar": "خيبة/إحباط"
+          },
+          "meaning": {
+            "ja": "もどかしさ",
+            "en": "frustration",
+            "ko": "답답함",
+            "ar": "إحباط"
+          },
+          "pos": {
+            "ja": "名詞",
+            "en": "noun",
+            "ko": "명사",
+            "ar": "اسم"
+          },
+          "note": {
+            "ja": "伝えたいことが伝わらないときの落胆を表しています。",
+            "en": "The feeling of frustration at being unable to express something.",
+            "ko": "하고 싶은 말을 잘 전하지 못할 때 느끼는 답답함이에요.",
+            "ar": "الشعور بالإحباط لعدم القدرة على التعبير عما يريد المرء قوله."
+          }
+        },
+        "हुन्छ": {
+          "rom": "huncha",
+          "base_form": "हुनु",
+          "base_meaning": {
+            "ja": "起こる・なる",
+            "en": "to happen / become",
+            "ko": "일어나다, 되다",
+            "ar": "يحدث/يصبح"
+          },
+          "meaning": {
+            "ja": "感じる（निराशा हुन्छ）",
+            "en": "feel (in निराशा हुन्छ)",
+            "ko": "느끼다 (निराशा हुन्छ)",
+            "ar": "يشعر، في निराशा हुन्छ"
+          },
+          "pos": {
+            "ja": "動詞・現在形",
+            "en": "verb, present tense",
+            "ko": "동사 · 현재형",
+            "ar": "فعل، مضارع"
+          },
+          "note": {
+            "ja": "निराशा हुन्छ は感情が生じる表現です。",
+            "en": "निराशा हुन्छ describes the feeling of frustration arising.",
+            "ko": "निराशा हुन्छ는 답답한 감정이 생기는 것을 표현해요.",
+            "ar": "निराशा हुन्छ تصف نشوء شعور بالإحباط."
+          }
+        }
+      }
+    },
+    {
+      "id": "8-3-18",
+      "remove": [
+        "परोस्"
+      ],
+      "add": {
+        "पस्किदिनुहोस्": {
+          "rom": "paskidinuhos",
+          "base_form": "पस्किनु",
+          "base_meaning": {
+            "ja": "料理をよそう・配膳する",
+            "en": "to serve food",
+            "ko": "음식을 담아 내다",
+            "ar": "يقدّم الطعام"
+          },
+          "meaning": {
+            "ja": "配膳してください",
+            "en": "please serve the food",
+            "ko": "음식을 내어 주세요",
+            "ar": "قدّموا الطعام من فضلكم"
+          },
+          "pos": {
+            "ja": "動詞・丁寧な依頼",
+            "en": "verb, polite request",
+            "ko": "동사 · 공손한 요청",
+            "ar": "فعل، طلب مهذب"
+          },
+          "note": {
+            "ja": "पस्किनु「配膳する」＋दिनु「相手のために」＋नुहोस्「丁寧な依頼」。",
+            "en": "पस्किनु means serve food; दिनु adds benefit for someone and नुहोस् makes a polite request.",
+            "ko": "पस्किनु는 ‘음식을 내다’, दिनु는 상대를 위한 행동, नुहोस्는 공손한 요청을 나타내요.",
+            "ar": "पस्किनु تعني تقديم الطعام؛ दिनु تضيف معنى الفعل لصالح شخص، وनुहोस् تجعل الطلب مهذبًا."
+          }
+        }
+      }
+    },
+    {
+      "id": "18-3-7",
+      "remove": [
+        "हात",
+        "थाप्ने"
+      ],
+      "add": {
+        "सहयोग": {
+          "rom": "sahayog",
+          "base_form": "सहयोग",
+          "base_meaning": {
+            "ja": "助け・協力",
+            "en": "help / cooperation",
+            "ko": "도움, 협력",
+            "ar": "مساعدة/تعاون"
+          },
+          "meaning": {
+            "ja": "助け",
+            "en": "help",
+            "ko": "도움",
+            "ar": "مساعدة"
+          },
+          "pos": {
+            "ja": "名詞",
+            "en": "noun",
+            "ko": "명사",
+            "ar": "اسم"
+          },
+          "note": {
+            "ja": "सहयोग गर्ने साथी で「助けてくれる友達」。",
+            "en": "सहयोग गर्ने साथी means a friend who helps.",
+            "ko": "सहयोग गर्ने साथी는 ‘도와주는 친구’예요.",
+            "ar": "सहयोग गर्ने साथी تعني «صديق يساعد»."
+          }
+        },
+        "गर्ने": {
+          "rom": "garne",
+          "base_form": "गर्नु",
+          "base_meaning": {
+            "ja": "する",
+            "en": "to do",
+            "ko": "하다",
+            "ar": "يفعل"
+          },
+          "meaning": {
+            "ja": "助けてくれる（सहयोग गर्ने）",
+            "en": "who helps (सहयोग गर्ने)",
+            "ko": "도와주는 (सहयोग गर्ने)",
+            "ar": "الذي يساعد، في सहयोग गर्ने"
+          },
+          "pos": {
+            "ja": "動詞・名詞を修飾する形",
+            "en": "verb, attributive form",
+            "ko": "동사 · 관형형",
+            "ar": "فعل، صيغة تصف اسمًا"
+          },
+          "note": {
+            "ja": "गर्ने は後ろの साथी を修飾します。",
+            "en": "गर्ने modifies the following noun साथी.",
+            "ko": "गर्ने가 뒤의 명사 साथी를 꾸며 줘요.",
+            "ar": "गर्ने تصف الاسم التالي साथी «صديق»."
+          }
+        }
+      }
+    },
+    {
+      "id": "21-3-18",
+      "remove": [
+        "नभर्ने"
+      ],
+      "add": {
+        "भर": {
+          "rom": "bhar",
+          "base_form": "भर पर्नु",
+          "base_meaning": {
+            "ja": "頼ること",
+            "en": "reliance",
+            "ko": "의존",
+            "ar": "اعتماد"
+          },
+          "meaning": {
+            "ja": "頼ること（भर पर्नु）",
+            "en": "reliance (भर पर्नु)",
+            "ko": "의존 (भर पर्नु)",
+            "ar": "الاعتماد، في भर पर्नु"
+          },
+          "pos": {
+            "ja": "名詞・慣用表現の一部",
+            "en": "noun, part of an idiom",
+            "ko": "명사 · 관용 표현의 일부",
+            "ar": "اسم، جزء من تعبير ثابت"
+          },
+          "note": {
+            "ja": "भर पर्नु は「〜に頼る」。भर्नु「満たす」とは別の表現です。",
+            "en": "भर पर्नु means rely on; it is different from भर्नु, to fill.",
+            "ko": "भर पर्नु는 ‘의존하다’예요. भर्नु ‘채우다’와 다른 표현이에요.",
+            "ar": "भर पर्नु تعني «يعتمد على»، وتختلف عن भर्नु «يملأ»."
+          }
+        },
+        "नपर्ने": {
+          "rom": "naparne",
+          "base_form": "पर्नु",
+          "base_meaning": {
+            "ja": "起こる・当たる",
+            "en": "to fall / occur",
+            "ko": "떨어지다, 생기다",
+            "ar": "يقع/يحدث"
+          },
+          "meaning": {
+            "ja": "頼らない（भर नपर्ने）",
+            "en": "not relying on (भर नपर्ने)",
+            "ko": "의존하지 않는 (भर नपर्ने)",
+            "ar": "لا يعتمد على، في भर नपर्ने"
+          },
+          "pos": {
+            "ja": "動詞・否定の修飾形",
+            "en": "verb, negative attributive form",
+            "ko": "동사 · 부정 관형형",
+            "ar": "فعل، صيغة وصفية منفية"
+          },
+          "note": {
+            "ja": "भर नपर्ने は後ろの प्रशिक्षण पद्धति「指導法」を説明します。",
+            "en": "भर नपर्ने modifies प्रशिक्षण पद्धति, the training method.",
+            "ko": "भर नपर्ने가 प्रशिक्षण पद्धति ‘훈련 방식’을 꾸며 줘요.",
+            "ar": "भर नपर्ने تصف प्रशिक्षण पद्धति «أسلوب التدريب»."
+          }
+        }
+      }
+    }
+  ],
+  "englishAudioCorrection": {
+    "method": "Existing Wavenet-F recording; contradictory parenthesis removed at verified silence boundaries; local Whisper small transcription",
+    "cutSeconds": [
+      6.43,
+      8.04
+    ],
+    "originalSha256": "cc7c744a3eb66166ad42eea9bc36984d749ca23ad122479c9b02d87696315165",
+    "editedSha256": "ed4e7a742436a567c57a14b772cffb627378c80204bee8389b325b18e918671c",
+    "transcript": "Pashupatinath Temple is Nepal's largest Hindu pilgrimage site, and every year hundreds of thousands of pilgrims come from all over the world."
+  },
+  "nepaliAudioCorrections": {
+    "1-3-16": {
+      "text": "म भावनामा नबगी तार्किक रूपमा परिस्थितिको विश्लेषण गरेर निर्णय लिन निपुण छु।",
+      "voice": "ne-NP-HemkalaNeural",
+      "rate": "0%",
+      "format": "audio-24khz-48kbitrate-mono-mp3",
+      "originalSha256": "1a09a62f751a78386d6e31948d98db9d8bceec59ea1e1fad2e38c6a6e029d6bb",
+      "editedSha256": "475352b0da759d22b560eebef2625bc3c4b9ec25557068fa7c08fa684b4dbbc8",
+      "bytes": 39456,
+      "duration": 6.576,
+      "verified": "MP3 24000Hz mono; full ffmpeg decode PASS"
+    },
+    "5-2-19": {
+      "text": "कृतज्ञता राम्ररी व्यक्त गर्न नसक्दा मलाई निराशा हुन्छ।",
+      "voice": "ne-NP-HemkalaNeural",
+      "rate": "0%",
+      "format": "audio-24khz-48kbitrate-mono-mp3",
+      "originalSha256": "2db2ccfed19bb001bfdfa417f2c6533a78408b8acb84052b550c050fe69dd84f",
+      "editedSha256": "301643858f4744a8052289b16fb89258cb851e781b312cbeed60434891f0c0a7",
+      "bytes": 27504,
+      "duration": 4.584,
+      "verified": "MP3 24000Hz mono; full ffmpeg decode PASS"
+    },
+    "8-3-18": {
+      "text": "समूहका सबैको खाना तयार भएपछि मात्र पस्किदिनुहोस्, एकएक गरी ल्याउँदा खानाको माहोल बिग्रन्छ।",
+      "voice": "ne-NP-HemkalaNeural",
+      "rate": "0%",
+      "format": "audio-24khz-48kbitrate-mono-mp3",
+      "originalSha256": "10ccdf83f6f8f30f56f7dec503745bf9bd48b40e2efe959f8a7758bf79d7fafc",
+      "editedSha256": "0abb5832cb425c4af94e5774a5e438302e51fdda842b7ba75db3f8df38f6e345",
+      "bytes": 44208,
+      "duration": 7.368,
+      "verified": "MP3 24000Hz mono; full ffmpeg decode PASS"
+    },
+    "18-3-7": {
+      "text": "मुसिबतमा परेका बेला सहयोग गर्ने साथीलाई नै सच्चा मित्र भन्न सकिन्छ होला।",
+      "voice": "ne-NP-HemkalaNeural",
+      "rate": "0%",
+      "format": "audio-24khz-48kbitrate-mono-mp3",
+      "originalSha256": "f4e5570fd6609119df2dbd1726459999bc609dec8a54ad064bd5ddc7d3161090",
+      "editedSha256": "1a55fc182edc18cf75b6d93b77e78733e7bc12b8d4ed341e69f206cef7e7c156",
+      "bytes": 34704,
+      "duration": 5.784,
+      "verified": "MP3 24000Hz mono; full ffmpeg decode PASS"
+    },
+    "21-3-18": {
+      "text": "शारीरिक दण्डमा भर नपर्ने वैज्ञानिक प्रशिक्षण पद्धति अर्को पुस्ताका खेलाडी विकासमा अपरिहार्य भएको छ।",
+      "voice": "ne-NP-HemkalaNeural",
+      "rate": "0%",
+      "format": "audio-24khz-48kbitrate-mono-mp3",
+      "originalSha256": "6dbb91a2b75acc25531fc228382a8f81598a03111e6d1f39fdee3cff62c5ffc8",
+      "editedSha256": "27c3b7886fa9786fd0e54e70dc4ad2a0e50e384cbb7b8cb01441406bca3edc6b",
+      "bytes": 49392,
+      "duration": 8.232,
+      "verified": "MP3 24000Hz mono; full ffmpeg decode PASS"
+    },
+    "25-3-11": {
+      "text": "पशुपतिनाथ मन्दिर नेपालको सबैभन्दा ठूलो हिन्दू तीर्थस्थल हो र प्रतिवर्ष विश्वभरबाट लाखौँ तीर्थयात्रीहरू आउँछन्।",
+      "voice": "ne-NP-HemkalaNeural",
+      "rate": "0%",
+      "format": "audio-24khz-48kbitrate-mono-mp3",
+      "originalSha256": "7a8e81d43fc569ddff9c15397d2b93780d889879547945b0468e95e4f2268d96",
+      "editedSha256": "9ea501b3647bff03f85ead87137e3e030293a9b64113c46c075228b141bbda51",
+      "bytes": 53712,
+      "duration": 8.952,
+      "verified": "MP3 24000Hz mono; full ffmpeg decode PASS"
+    }
+  },
+  "publishedAudioPreparation": {
+    "_core": {
+      "previousZip": {
+        "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-core-1009.zip",
+        "sha256": "dd36f63ba8d5ebe20f0ae952a18540ae6a1afed1a7975ba8906fc4521dfe9172",
+        "bytes": 39289890
+      },
+      "audioVersion": 1010,
+      "zip": {
+        "url": "https://content.safa-lang.com/nepali/audio-core-4257a7f7b1e09cc2919feeb8d3305a324fe9856400bc0da3dcd5ffb7483886c8.zip",
+        "sha256": "4257a7f7b1e09cc2919feeb8d3305a324fe9856400bc0da3dcd5ffb7483886c8",
+        "bytes": 39370506
+      },
+      "delta": {
+        "base": 1009,
+        "zip": {
+          "url": "https://content.safa-lang.com/nepali/audio-core-delta-a82314ec7e359c4f8ba20c55edcef2c18bdfddcb8d4f3be4c4e27f7feaf420a6.zip",
+          "sha256": "a82314ec7e359c4f8ba20c55edcef2c18bdfddcb8d4f3be4c4e27f7feaf420a6",
+          "bytes": 249578
+        }
+      },
+      "changedFiles": [
+        "1-3-16.mp3",
+        "18-3-7.mp3",
+        "21-3-18.mp3",
+        "25-3-11.mp3",
+        "5-2-19.mp3",
+        "8-3-18.mp3"
+      ],
+      "preservedFiles": 2322
+    },
+    "en": {
+      "previousZip": {
+        "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-en-1009.zip",
+        "sha256": "5be661730493bfb7b9cd45090c4bd5db49541c5bbef56e2554611f9d8db29d54",
+        "bytes": 33577314
+      },
+      "audioVersion": 1010,
+      "zip": {
+        "url": "https://content.safa-lang.com/nepali/audio-en-605f9a015ac79ce57eacd2469a3b27f9511ca11ac3cef4607d5c6604af8c7b6d.zip",
+        "sha256": "605f9a015ac79ce57eacd2469a3b27f9511ca11ac3cef4607d5c6604af8c7b6d",
+        "bytes": 33608706
+      },
+      "delta": {
+        "base": 1009,
+        "zip": {
+          "url": "https://content.safa-lang.com/nepali/audio-en-delta-9e9a0dacec1a7a930139cd0ae7e26997c4a8fd3f4cdcdc8a6ec138f2514f04a2.zip",
+          "sha256": "9e9a0dacec1a7a930139cd0ae7e26997c4a8fd3f4cdcdc8a6ec138f2514f04a2",
+          "bytes": 76004
+        }
+      },
+      "changedFiles": [
+        "25-3-11.mp3"
+      ],
+      "preservedFiles": 2327
+    }
+  }
+}

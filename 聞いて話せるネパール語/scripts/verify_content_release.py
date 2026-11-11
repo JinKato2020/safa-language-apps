@@ -1,15 +1,49 @@
-import argparse,hashlib,json
+import argparse,hashlib,json,zipfile
 from pathlib import Path
+from build_content_ota import BASE, inventory, assert_asset_name
 
 def read(path):return json.loads(path.read_text(encoding='utf-8'))
 def verify(folder):
     m=read(folder/'manifest.json');assert m['schema']==1
+    assert m['appId']=='nepali' and set(m['languages'])=={'ja','en','ko','ar'}
+    assert (folder/'manifest.json').read_bytes()==(folder/'_manifest.json').read_bytes()
+    assert m['files']==inventory(folder),'Release inventory mismatch'
+    referenced=set()
+    def local(entry):
+        assert entry['url'].startswith(BASE),'Content must use the shared R2 domain'
+        name=entry['url'][len(BASE):];assert_asset_name(name)
+        expected={'sha256':entry['sha256'],'size':entry['bytes']}
+        assert m['files'].get(name)==expected,('Missing/mismatched asset',name)
+        referenced.add(name)
+        return folder/name
+    def media(value):
+        if isinstance(value,dict):
+            if value.get('sha256') and ('url' in value or 'uri' in value):
+                entry={**value,'url':value.get('url',value.get('uri'))}
+                if 'bytes' not in entry:
+                    assert entry['url'].startswith(BASE)
+                    entry['bytes']=m['files'][entry['url'][len(BASE):]]['size']
+                local(entry)
+            for child in value.values():media(child)
+        elif isinstance(value,list):
+            for child in value:media(child)
+    def archive(entry):
+        for meta,delta in [(entry['zip'],False),*([(entry['delta']['zip'],True)] if entry.get('delta') else [])]:
+            with zipfile.ZipFile(local(meta)) as z:
+                names=z.namelist();assert len(names)==len(set(names)) and names
+                assert set(names)<=set(entry['files']) if delta else set(names)==set(entry['files'])
+                for name in names:
+                    assert '/' not in name and '\\' not in name
+                    raw=z.read(name);expected=entry['files'][name]
+                    assert expected=={'sha256':hashlib.sha256(raw).hexdigest(),'md5':hashlib.md5(raw).hexdigest(),'bytes':len(raw)},name
+    archive(m['audio'])
     def payload(entry):
-        p=folder/entry['url'].rsplit('/',1)[1];data=p.read_bytes()
+        p=local(entry);data=p.read_bytes()
         assert len(data)==entry['bytes'] and hashlib.sha256(data).hexdigest()==entry['sha256'],p
-        return json.loads(data)
+        value=json.loads(data);media(value);return value
     core=payload(m['core']);stats={}
     for lang,l in m['languages'].items():
+        archive(l['audio'])
         o=payload(l['overlay']);guides={k:payload(v)for k,v in l['guides'].items()}
         assert o['l1']==lang
         for a,b in [('examplesNe','examplesL1'),('grammarNe','grammarL1'),('wordsNe','wordsL1')]:
@@ -83,11 +117,12 @@ def verify(folder):
                 assert all(str(t)in guides for t in e['themes'])
                 a=e['audio'];assert a['bytes']>0 and len(a['sha256'])==64 and a['url'].startswith('https://')
                 assert all(x['ne'] and x['ja'] and x['en']for x in e['examples'])
-                if lang=='ko':
-                    assert all(s.get('ko') for s in e['senses'])
-                    assert all(x.get('ko') for x in e['examples'])
-                    if e.get('note'):assert e['note'].get('ko')
+                if lang in ('ko','ar'):
+                    assert all(s.get(lang) for s in e['senses'])
+                    assert all(x.get(lang) for x in e['examples'])
+                    if e.get('note'):assert e['note'].get(lang)
         stats[lang]={'guides':len(guides),'courseSteps':len(o.get('learningPathV3',o.get('learningPath',{})).get('steps',[])),'practiceQuestions':len(o.get('learningPathV3',{}).get('exercises',{}))*3,'audioFiles':len(l['audio']['files'])}
-    print(json.dumps({'version':m['version'],'languages':stats,'conversation':sum(map(len,core['examplesNe'].values())),'grammar':sum(map(len,core['grammarNe'].values())),'words':sum(map(len,core['wordsNe'].values()))}))
+    assert referenced==set(m['files']),'Unreferenced files must not be published'
+    print(json.dumps({'version':m['version'],'languages':stats,'conversation':sum(map(len,core['examplesNe'].values())),'grammar':sum(map(len,core['grammarNe'].values())),'words':sum(map(len,core['wordsNe'].values())),'verifiedR2Files':len(referenced)}))
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('folder',type=Path);a=p.parse_args();verify(a.folder)

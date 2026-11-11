@@ -1,6 +1,6 @@
 name: Build iOS and Android (Nepali)
 # ↓ run-name は app.json を読めない(github/inputs/varsのみ)。版はリテラル。app.json の version を上げたらここも更新。
-run-name: "App A・ネパール語・v2.2.3 (com.safa.nepali.jp) — ${{ github.event.head_commit.message || github.ref_name }}"
+run-name: "App A・ネパール語・v2.2.5 (com.safa.nepali.jp) — ${{ github.event.head_commit.message || github.ref_name }}"
 
 on:
   # 手動トリガー（プラットフォーム選択可能）
@@ -23,17 +23,8 @@ on:
           - 'both'
           - 'ios'
           - 'android'
-  # main に push されたら自動ビルド（App A 本体のみ。shared 変更では起動しない）
-  # shared を変えても App A を同時ビルドしない方針。必要なら workflow_dispatch で手動実行。
-  # コミットメッセージに [skip ci] を含めるとスキップ可能
-  push:
-    branches:
-      - main
-    paths:
-      - '聞いて話せるネパール語/expo-app/**'
-      - 'package.json'
-      - 'package-lock.json'
-      - '.github/workflows/ios-build-nepali.yml'
+  # 教材・翻訳・音声はR2へOTA配信する。pushでストアビルドを起動しない。
+  # 殻を変更してユーザーがビルドを依頼した場合だけ、従来どおり手動実行する。
 
 env:
   APP_DIR: 聞いて話せるネパール語/expo-app

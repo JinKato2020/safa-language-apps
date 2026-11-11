@@ -41,7 +41,7 @@ export function validateContent(core: any, overlay: any, lang: string) {
       if (!Array.isArray(e.themes)||!e.themes.every((id: any)=>core.grammarThemes.some((t: any)=>t.id===id))) throw new Error('Invalid dictionary lesson link');
       if (!Array.isArray(e.examples)||!e.examples.every((x: any)=>text(x.ne)&&text(x.ja)&&text(x.en))) throw new Error('Invalid dictionary example');
       if (e.note && (!text(e.note.ja)||!text(e.note.en))) throw new Error('Invalid dictionary note');
-      if (lang==='ko' && (!e.senses.every((s: any)=>text(s.ko)) || !e.examples.every((x: any)=>text(x.ko)) || (e.note && !text(e.note.ko)))) throw new Error('Missing Korean dictionary translation');
+      if (['ko','ar'].includes(lang) && (!e.senses.every((s: any)=>text(s[lang])) || !e.examples.every((x: any)=>text(x[lang])) || (e.note && !text(e.note[lang])))) throw new Error('Missing dictionary translation: '+lang);
       assertFile(e.audio);
     }
   }

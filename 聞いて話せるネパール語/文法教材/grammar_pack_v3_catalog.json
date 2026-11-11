@@ -2,16 +2,19 @@
   "schema": 1,
   "packs": [
     {
-      "audioVersion": 1009,
-      "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-en-1009.zip",
-      "audioZipBytes": 33577314,
+      "audioVersion": 1010,
+      "audioZip": "https://content.safa-lang.com/nepali/audio-en-605f9a015ac79ce57eacd2469a3b27f9511ca11ac3cef4607d5c6604af8c7b6d.zip",
+      "audioZipBytes": 33608706,
       "l1": "en",
       "name": "English",
       "nameJa": "English",
       "version": 1214,
       "access": "free",
       "sizeBytes": 5456569,
-      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1214.json"
+      "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/overlay-en-1214.json",
+      "deltaZip": "https://content.safa-lang.com/nepali/audio-en-delta-9e9a0dacec1a7a930139cd0ae7e26997c4a8fd3f4cdcdc8a6ec138f2514f04a2.zip",
+      "deltaZipBytes": 76004,
+      "deltaBaseVersion": 1009
     },
     {
       "audioVersion": 1010,
@@ -27,10 +30,13 @@
     }
   ],
   "core": {
-    "audioVersion": 1009,
-    "audioZip": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/audio-core-1009.zip",
-    "audioZipBytes": 39289890,
+    "audioVersion": 1010,
+    "audioZip": "https://content.safa-lang.com/nepali/audio-core-4257a7f7b1e09cc2919feeb8d3305a324fe9856400bc0da3dcd5ffb7483886c8.zip",
+    "audioZipBytes": 39370506,
     "url": "https://github.com/JinKato2020/safa-language-apps/releases/download/packs-appa-v2/core-1214.json",
-    "version": 1214
+    "version": 1214,
+    "deltaZip": "https://content.safa-lang.com/nepali/audio-core-delta-a82314ec7e359c4f8ba20c55edcef2c18bdfddcb8d4f3be4c4e27f7feaf420a6.zip",
+    "deltaZipBytes": 249578,
+    "deltaBaseVersion": 1009
   }
 }

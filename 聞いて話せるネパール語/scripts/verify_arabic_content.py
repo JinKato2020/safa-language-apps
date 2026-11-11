@@ -9,7 +9,7 @@ from localize_korean import validate_overrides, destination_translation
 
 APP = Path(__file__).resolve().parents[1]
 WORK = APP / '文法教材'
-PLAN_SHA = 'c3d316fdedc73d0e1b67137c917fc162386e11e86fc9e53ba32db0d85714cf6f'
+PLAN_SHA = 'b5e4bc972f04be1cf1607199cf19f602e7f794657a81a426b3cac423e24380cc'
 
 
 def read(path):
@@ -42,6 +42,10 @@ def main(partial=False, require_lessons=False, require_practice=False, require_d
     lessons = defaultdict(lambda: {'complete': 0, 'total': 0})
     practice = read(APP / 'expo-app/data/overlays/en.json')['learningPathV3'] if require_practice else None
     ui = read(APP / 'expo-app/src/i18n/ar.json')
+    expected = None if partial else {
+        'overlay': read(APP / 'expo-app/data/overlays/en.json'),
+        'ui': read(APP / 'expo-app/src/i18n/en.json'),
+    }
     for destination in plan['destinations']:
         field = 'ui' if destination['path'][0] == 'ui' else destination['path'][1]
         fields[field]['total'] += 1
@@ -51,6 +55,11 @@ def main(partial=False, require_lessons=False, require_practice=False, require_d
         if destination['key'] in cache['items']:
             fields[field]['complete'] += 1
             translated = destination_translation(cache, destination, 'ar')
+            if expected is not None:
+                parent = expected
+                for component in destination['path'][:-1]:
+                    parent = parent[component]
+                parent[destination['path'][-1]] = translated
             if field in {'grammarGuide', 'learningPathV3', 'nepaliDictionary'}:
                 source = plan['requests'][destination['key']]
                 assert translated.count('**') % 2 == 0, ('Unbalanced emphasis', destination['path'])
@@ -93,6 +102,19 @@ def main(partial=False, require_lessons=False, require_practice=False, require_d
             assert len(normalized) == len(set(normalized)), ('Ambiguous meaning options', exercise_id, choices)
     if not partial:
         assert not missing, f'Arabic release blocked: {missing} untranslated requests'
+        expected['overlay']['l1'] = 'ar'
+        for key in ['learningPath', 'learningPathV2', 'posterLessons']:
+            expected['overlay'].pop(key, None)
+        actual = {'overlay': read(APP / 'expo-app/data/overlays/ar.json'), 'ui': ui}
+        assert expected == actual, 'Release overlay differs from reviewed Arabic or changes Nepali/audio structure'
+        corrections = read(WORK / 'conversation_source_corrections_20261111.json')
+        core = read(APP / 'expo-app/data/ota-baseline/core.json')
+        examples = read(APP / 'expo-app/data/examples.json')
+        for item in corrections['sentences']:
+            group, number = item['id'].rsplit('-', 1)
+            i = int(number) - 1
+            assert core['examplesNe'][group][i] == examples[group][i]['ne'] == item['ne'], ('Source correction reverted', item['id'])
+            assert actual['overlay']['examplesL1'][group][i] == item['ar'], item['id']
     print(json.dumps({'mode': 'partial audit only' if partial else 'complete audit',
                       'reviewedUnique': len(cache['items']), 'pendingUnique': missing,
                       'completeLessons': sum(v['complete'] == v['total'] for v in lessons.values()),

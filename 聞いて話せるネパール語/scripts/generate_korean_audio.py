@@ -1,4 +1,4 @@
-"""Azure F0 Korean sentence masters, following the existing App A naming contract.
+"""Azure F0 sentence masters, following the existing App A naming contract.
 
 Default is a local dry run. --generate uses the documented F0 resource only;
 there is no paid fallback. Resumes by verified text/voice/audio hashes and copies
@@ -17,10 +17,25 @@ from xml.sax.saxutils import escape
 
 APP = Path(__file__).resolve().parents[1]
 WORK = APP / '文法教材'
-PLAN_SHA = 'e1bdc8d1cdd41301e0a6e3d30283f482c4b95d61b3063f6b7142601658e05713'
+PLAN_SHA = 'ac6629df02c24a25d71f2ae77fd9506339a70b552675457e1e94395d1104fece'
 VOICE = 'ko-KR-SunHiNeural'
 FORMAT = 'audio-24khz-48kbitrate-mono-mp3'
 MANIFEST = WORK / 'korean_audio_manifest.json'
+LANGUAGE = 'ko'
+LOCALE = 'ko-KR'
+SOURCE_NAME = 'korean'
+CHARACTER_LIMIT = 60000
+
+
+def configure(language):
+    global LANGUAGE, LOCALE, SOURCE_NAME, VOICE, PLAN_SHA, MANIFEST, CHARACTER_LIMIT
+    assert language in {'ko', 'ar'}
+    LANGUAGE = language
+    if language == 'ar':
+        LOCALE, SOURCE_NAME, VOICE = 'ar-SA', 'arabic', 'ar-SA-ZariyahNeural'
+        PLAN_SHA = 'b5e4bc972f04be1cf1607199cf19f602e7f794657a81a426b3cac423e24380cc'
+        MANIFEST = WORK / 'arabic_audio_manifest.json'
+        CHARACTER_LIMIT = 250000
 
 
 def digest(data):
@@ -37,15 +52,19 @@ def save(manifest):
     temp.replace(MANIFEST)
 
 
-def targets():
-    plan_path = WORK / 'korean_translation_requests.json'
+def targets(allow_pending_source=False):
+    plan_path = WORK / f'{SOURCE_NAME}_translation_requests.json'
     assert digest(plan_path.read_bytes()) == PLAN_SHA, 'Translation source plan changed'
     plan = read(plan_path)
-    cache = read(WORK / 'korean_translations.json')['items']
+    cache = read(WORK / f'{SOURCE_NAME}_translations.json')['items']
     output = {}
+    source_count = 0
     for d in plan['destinations']:
         p = d['path']
         if p[:2] not in [['overlay', 'examplesL1'], ['overlay', 'grammarL1']]:
+            continue
+        source_count += 1
+        if d['key'] not in cache and allow_pending_source:
             continue
         item = cache[d['key']]
         assert item.get('reviewed') is True and item['source'] == plan['requests'][d['key']]
@@ -53,8 +72,9 @@ def targets():
         assert re.fullmatch(r'\d+-\d+' if mode == 'conv' else r'\d+', p[2])
         name = f'{mode}/{p[2]}-{p[3] + 1}.mp3'
         assert name not in output
-        output[name] = item['ko']
-    assert len(output) == 2328, 'Unexpected audio identity count'
+        output[name] = item[LANGUAGE]
+    assert source_count == 2328, 'Unexpected audio identity count'
+    assert allow_pending_source or len(output) == source_count, 'Incomplete sentence translations'
     return output
 
 
@@ -71,11 +91,12 @@ def check_audio(path):
                     '-f', 'null', '-'], check=True, capture_output=True)
 
 
-def run(generate=False, limit=0, verify=False):
-    wanted = targets()
+def run(generate=False, limit=0, verify=False, allow_pending_source=False):
+    assert not (verify and allow_pending_source), 'Final verification requires all sentences'
+    wanted = targets(allow_pending_source)
     manifest = read(MANIFEST) if MANIFEST.exists() else {'schema': 1, 'voice': VOICE, 'format': FORMAT, 'items': {}}
     assert manifest['voice'] == VOICE and manifest['format'] == FORMAT
-    root = APP / 'audio/ko'
+    root = APP / 'audio' / LANGUAGE
     known = {}
     complete = set()
     for name, item in manifest['items'].items():
@@ -92,7 +113,7 @@ def run(generate=False, limit=0, verify=False):
                       'pendingUniqueTexts': len(pending_texts),
                       'pendingCharacters': sum(map(len, pending_texts)), 'voice': VOICE}), flush=True)
     if verify:
-        assert complete == set(wanted), 'Incomplete or stale Korean audio'
+        assert complete == set(wanted), 'Incomplete or stale sentence audio'
     if not generate:
         return
     env = {}
@@ -106,7 +127,7 @@ def run(generate=False, limit=0, verify=False):
     assert key and region == 'japaneast', 'Documented Azure F0 configuration is required'
     # Each paid-tier upgrade would require a deliberate external configuration
     # change. This script uses only the user-supplied F0 resource, never upgrades it.
-    assert sum(map(len, pending_texts)) <= 60000, 'Unexpected synthesis volume'
+    assert sum(map(len, pending_texts)) <= CHARACTER_LIMIT, 'Unexpected synthesis volume'
     next_request = 0.0
     generated = copied = 0
     for name, text in wanted.items():
@@ -120,7 +141,7 @@ def run(generate=False, limit=0, verify=False):
         else:
             if limit and generated >= limit:
                 break
-            body = f'<speak version="1.0" xml:lang="ko-KR"><voice name="{VOICE}">{escape(text)}</voice></speak>'.encode()
+            body = f'<speak version="1.0" xml:lang="{LOCALE}"><voice name="{VOICE}">{escape(text)}</voice></speak>'.encode()
             req = urllib.request.Request(f'https://{region}.tts.speech.microsoft.com/cognitiveservices/v1',
                 data=body, headers={'Ocp-Apim-Subscription-Key': key, 'Content-Type': 'application/ssml+xml',
                     'X-Microsoft-OutputFormat': FORMAT, 'User-Agent': 'safa-tts'}, method='POST')
@@ -161,5 +182,9 @@ if __name__ == '__main__':
     parser.add_argument('--generate', action='store_true')
     parser.add_argument('--verify', action='store_true')
     parser.add_argument('--limit', type=int, default=0)
+    parser.add_argument('--language', choices=['ko', 'ar'], default='ko')
+    parser.add_argument('--allow-pending-source', action='store_true',
+                        help='Generate reviewed sentences while other source sentences await correction; never valid for final verification')
     args = parser.parse_args()
-    run(args.generate, args.limit, args.verify)
+    configure(args.language)
+    run(args.generate, args.limit, args.verify, args.allow_pending_source)
