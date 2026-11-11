@@ -8,7 +8,7 @@ import { colors, spacing, radius } from './theme';
 export type DropdownItem<T extends string> = { value: T; label: string; sub?: string };
 
 export function ModalDropdown<T extends string>({
-  items, value, onChange, placeholder, size = 'normal', accent = colors.accentJa,
+  items, value, onChange, placeholder, size = 'normal', accent = colors.accentJa, labelAlignment = 'left',
 }: {
   items: DropdownItem<T>[];
   value: T | null;
@@ -16,6 +16,7 @@ export function ModalDropdown<T extends string>({
   placeholder?: string;
   size?: 'normal' | 'large';
   accent?: string;
+  labelAlignment?: 'left' | 'right';
 }) {
   const [open, setOpen] = useState(false);
   const current = items.find(i => i.value === value) ?? null;
@@ -28,7 +29,7 @@ export function ModalDropdown<T extends string>({
         accessibilityRole="button"
       >
         <View style={{ flex: big ? 0 : 1 }}>
-          <Text style={[big ? styles.triggerTextLarge : styles.triggerText, !current && styles.placeholder]}>
+          <Text style={[big ? styles.triggerTextLarge : styles.triggerText, !big && { textAlign: labelAlignment }, !current && styles.placeholder]}>
             {current ? current.label : (placeholder ?? '—')}
           </Text>
           {big && current?.sub ? <Text style={styles.triggerSub}>{current.sub}</Text> : null}
@@ -49,10 +50,10 @@ export function ModalDropdown<T extends string>({
                     style={[styles.option, on && { backgroundColor: colors.lineSoft }]}
                   >
                     <View style={{ flex: 1 }}>
-                      <Text style={[styles.optionText, on && { color: accent, fontWeight: '700' }]}>{it.label}</Text>
-                      {it.sub ? <Text style={styles.optionSub}>{it.sub}</Text> : null}
+                      <Text style={[styles.optionText, { textAlign: labelAlignment }, on && { color: accent, fontWeight: '700' }]}>{it.label}</Text>
+                      {it.sub ? <Text style={[styles.optionSub, { textAlign: labelAlignment }]}>{it.sub}</Text> : null}
                     </View>
-                    {on ? <Text style={[styles.check, { color: accent }]}>✓</Text> : null}
+                    <Text accessible={false} style={[styles.check, { color: accent }]}>{on ? '✓' : ''}</Text>
                   </Pressable>
                 );
               })}
@@ -71,7 +72,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.md, paddingVertical: 8, backgroundColor: colors.surface, minWidth: 120,
   },
   triggerLarge: { width: 248, paddingVertical: 16, justifyContent: 'center' },
-  triggerText: { fontSize: 14, color: colors.inkSoft },
+  triggerText: { fontSize: 14, color: colors.inkSoft, textAlign: 'left' },
   triggerTextLarge: { fontSize: 20, fontWeight: '700', color: colors.inkSoft, textAlign: 'center' },
   triggerSub: { fontSize: 12, color: colors.inkQuiet, textAlign: 'center', marginTop: 2 },
   placeholder: { color: colors.inkFaint },
@@ -80,7 +81,7 @@ const styles = StyleSheet.create({
   backdrop: { flex: 1, backgroundColor: 'rgba(0,0,0,0.35)', justifyContent: 'center', alignItems: 'center', padding: 32 },
   sheet: { width: '100%', maxWidth: 360, maxHeight: '70%', backgroundColor: colors.surface, borderRadius: radius.lg, overflow: 'hidden', paddingVertical: spacing.xs },
   option: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: spacing.lg, paddingVertical: 14 },
-  optionText: { fontSize: 16, color: colors.inkSoft },
-  optionSub: { fontSize: 12, color: colors.inkQuiet, marginTop: 2 },
-  check: { fontSize: 16, marginLeft: spacing.md },
+  optionText: { fontSize: 16, color: colors.inkSoft, textAlign: 'left' },
+  optionSub: { fontSize: 12, color: colors.inkQuiet, marginTop: 2, textAlign: 'left' },
+  check: { fontSize: 16, width: 20, textAlign: 'center', marginLeft: spacing.md },
 });

@@ -1,6 +1,6 @@
 {
   "_about": "App家族(聞いて話せるシリーズ)の横断状態ファイル。セッション分離の調整レイヤ。各セッションは開始時に読み、節目で更新する。安定仕様(不変)は『ポスター成果物契約.md』、本ファイルは動的状態。",
-  "updated": "2026-11-11T10:54:52+09:00",
+  "updated": "2026-11-11T12:14:56+09:00",
   "coordinationModel": {
     "mode": "session-separation + app-state.json",
     "rule": "App固有作業はApp別セッションで並行可。共有コードは sharedLock を取得した1セッションだけが編集する。司令塔(全集約)モデルは廃止(=1セッションにコンテキストが肥大して上限に達する原因だった)。真に横断的な一括処理が要る時だけ workflow で一時的に起動する。",
@@ -2605,5 +2605,31 @@
       "completionMonitoring": "Not monitored, per existing user instruction. TestFlight arrival and App Store publication are not confirmed."
     },
     "sourceCommit": "726f80b86b5a9e8274261c6d8fc128307803b01f"
+  },
+  "appa_language_picker_2026_11_11": {
+    "updated": "2026-11-11T12:14:56+09:00",
+    "status": "Implemented and verified; pending next native build",
+    "languageOrder": [
+      "en",
+      "ar",
+      "ja",
+      "ko"
+    ],
+    "scope": [
+      "Settings and initial language selection share the same order",
+      "All dropdown labels align left in LTR interfaces and right in Arabic; script reading direction preserved",
+      "Fixed checkmark column preserves identical label edges",
+      "Arabic/Korean theme prefixes removed only where a separate number is already displayed; appendices retain their labels",
+      "Dictionary lesson links no longer repeat the theme number"
+    ],
+    "verification": [
+      "TypeScript shared/AppA/AppB PASS",
+      "Actual ModalDropdown/Text browser rendering and selection across ja/en/ko/ar; visual review of LTR/RTL menus",
+      "All 36 theme labels across four languages checked, including both appendices",
+      "Scoped diff whitespace check PASS"
+    ],
+    "navigation": "Arabic RTL bottom navigation retained; consistent with Apple RTL guidance",
+    "reference": "https://developer.apple.com/design/human-interface-guidelines/right-to-left/",
+    "delivery": "Native UI code change; not published as content OTA. No new version bump or build dispatched in this follow-up."
   }
 }

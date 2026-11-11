@@ -8,6 +8,7 @@ import { useScaleStyle } from '../SettingsContext';
 import { LearningSound } from '../LearningSound';
 import { dictionaryKey, dictionaryPos, dictionaryTranslation, indexDictionary, searchDictionary, type NepaliDictionaryEntry } from '../nepaliDictionary';
 import { textDirection } from '../textDirection';
+import { withoutThemePrefix } from '../themeLabels';
 
 const EMPTY: NepaliDictionaryEntry[] = [];
 export default function NepaliDictionaryScreen() {
@@ -47,7 +48,7 @@ export default function NepaliDictionaryScreen() {
         {e.note&&<View style={s.note}><Text style={[s.noteTitle,ss(13,22)]}>{trCopy('c_b7b76e361eaf', '使い分けのポイント', 'How to use it')}</Text><Text style={[s.gloss,ss(15,25)]}>{dictionaryTranslation(e.note,lang)}</Text></View>}
         {e.examples.map((example,i)=><View key={i} style={[s.example,rtl&&s.rtlExample]}><Text style={[s.pos,ss(12,20)]}>{lang==='ar'?'مثال':lang==='ko'?'예문':en?'Example':'用例'}</Text><Text style={[s.word,ss(20,32)]}>{example.ne}</Text><Text style={[s.gloss,ss(15,25)]}>{dictionaryTranslation(example,lang)}</Text></View>)}
         {!!e.forms.length&&<View style={{gap:6}}><Text style={[s.pos,ss(12,20)]}>{trCopy('c_f63eedef6503', 'これらの形でも検索できます', 'Also found under these forms')}</Text><Text style={[s.gloss,ss(16,27)]}>{e.forms.join(' · ')}</Text></View>}
-        {!!e.themes.length&&<View style={{gap:8}}><Text style={[s.pos,ss(12,20)]}>{trCopy('c_f6f7dcd6958a', '教材で確認', 'In your lessons')}</Text>{e.themes.map(id=>{const theme=data.GRAMMAR_THEMES.find(t=>t.id===id);return theme? <View key={id}>{button(`${id}. ${theme.name} →`,()=>{stop();nav.navigate('GrammarGuide',{themeId:id,title:theme.name});})}</View>:null;})}</View>}
+        {!!e.themes.length&&<View style={{gap:8}}><Text style={[s.pos,ss(12,20)]}>{trCopy('c_f6f7dcd6958a', '教材で確認', 'In your lessons')}</Text>{e.themes.map(id=>{const theme=data.GRAMMAR_THEMES.find(t=>t.id===id);return theme? <View key={id}>{button(`${id}. ${withoutThemePrefix(theme.name)} →`,()=>{stop();nav.navigate('GrammarGuide',{themeId:id,title:theme.name});})}</View>:null;})}</View>}
       </View>}
     </View>;
   };

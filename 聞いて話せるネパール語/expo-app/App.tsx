@@ -49,12 +49,12 @@ function LearningAppShell() {
 
 const toPackLang = (lang: string) => (['en', 'ko', 'ar'].includes(lang) ? lang : 'ja');
 
-// 初回の母語選択。並び順は全アプリ共通(English優先)。
+// 初回選択と設定で共通の母語順。
 const LANG_OPTIONS = [
   { code: 'en', native: 'English', sub: 'English' },
-  { code: 'ko', native: '한국어', sub: 'Korean' },
   { code: 'ar', native: 'العربية', sub: 'Arabic' },
   { code: 'ja', native: '日本語', sub: 'Japanese' },
+  { code: 'ko', native: '한국어', sub: 'Korean' },
 ];
 const L1_CHOSEN_KEY = '@nepali_app/l1_chosen_v1';
 const OtaRouteChanged = createContext<(name: string | undefined) => void>(() => {});
@@ -159,7 +159,7 @@ export default function App() {
       <I18nProvider
         translations={{ ja, ne, en, ko, ar }}
         fallbackLang="ja"
-        selectableLangs={['en', 'ko', 'ar', 'ja']}
+        selectableLangs={LANG_OPTIONS.map(option => option.code)}
         storageKey="@nepali_app/lang_v1"
       >
         <SettingsProvider

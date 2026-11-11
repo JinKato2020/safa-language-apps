@@ -33,7 +33,7 @@ export function Text(props: TextProps) {
   const direction = textDirection(visibleText(props.children));
   if (direction === 'rtl') {
     // Arabic letters must remain connected; decorative tracking breaks shaping.
-    style = [style, { writingDirection: 'rtl', textAlign: flat?.textAlign === 'center' ? 'center' : 'right', letterSpacing: 0 }];
+    style = [style, { writingDirection: 'rtl', textAlign: flat?.textAlign ?? 'right', letterSpacing: 0 }];
   } else if (direction === 'ltr') {
     style = [style, { writingDirection: 'ltr' }];
   }

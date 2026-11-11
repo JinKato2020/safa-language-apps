@@ -10,7 +10,7 @@ import {
   type GapMode, type FontMode,
 } from '../SettingsContext';
 import { useI18n, type Lang } from '../i18n';
-import { L1_REGISTRY, langOrderRank } from '../l1';
+import { L1_REGISTRY } from '../l1';
 import { useAppData } from '../AppDataContext';
 import * as Application from 'expo-application';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
@@ -133,8 +133,8 @@ export default function SettingsScreen() {
   // 利用可能な言語から動的にピルを生成 (ja=日本語 / その他は L1 レジストリの自称表示)
   const langLabel = (code: Lang): string =>
     code === 'ja' ? '日本語' : (L1_REGISTRY[code]?.name ?? code);
-  // 並び順: 全アプリ共通の固定順(LANG_ORDER: en→zh→ko→vi→ne→bn→ja)。各アプリは持つ言語だけ表示。
-  const sortedLangs: Lang[] = [...langs].sort((a, b) => langOrderRank(a) - langOrderRank(b));
+  // 各アプリの selectableLangs と同じ順序で、初回選択と設定をそろえる。
+  const sortedLangs: Lang[] = langs;
   const langItems: { value: Lang; label: string }[] = sortedLangs.map(code => ({ value: code, label: langLabel(code) }));
   // 説明文もピル(ボタン)と同じ言語順で動的生成して一致させる。
   const langDescText = sortedLangs.map(langLabel).join(' / ');
@@ -253,6 +253,7 @@ export default function SettingsScreen() {
               items={langItems}
               value={lang}
               onChange={setLang}
+              labelAlignment={lang === 'ar' ? 'right' : 'left'}
             />
           ) : (
             <PillGroup<Lang>
