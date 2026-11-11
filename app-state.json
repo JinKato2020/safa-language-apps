@@ -1,6 +1,6 @@
 {
   "_about": "App家族(聞いて話せるシリーズ)の横断状態ファイル。セッション分離の調整レイヤ。各セッションは開始時に読み、節目で更新する。安定仕様(不変)は『ポスター成果物契約.md』、本ファイルは動的状態。",
-  "updated": "2026-11-11T12:44:50+09:00",
+  "updated": "2026-11-11T13:12:31+09:00",
   "coordinationModel": {
     "mode": "session-separation + app-state.json",
     "rule": "App固有作業はApp別セッションで並行可。共有コードは sharedLock を取得した1セッションだけが編集する。司令塔(全集約)モデルは廃止(=1セッションにコンテキストが肥大して上限に達する原因だった)。真に横断的な一括処理が要る時だけ workflow で一時的に起動する。",
@@ -133,8 +133,12 @@
         "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42954722250",
         "platform": "ios",
         "submitToTestFlight": true,
-        "observedStatus": "queued",
-        "completionMonitoring": "Not monitored, per existing user instruction. Build completion and TestFlight arrival are not yet confirmed."
+        "observedStatus": "in_progress",
+        "completionMonitoring": "One-time status check at user request. No failed steps observed; TestFlight upload completion/arrival not yet confirmed.",
+        "lastCheckedAt": "2026-11-11T13:12:31+09:00",
+        "archive": "success",
+        "exportIPA": "success",
+        "testFlightUpload": "in_progress since 2026-11-11T13:10:27+09:00"
       }
     },
     "B_japanese": {
@@ -2640,8 +2644,12 @@
       "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42954722250",
       "platform": "ios",
       "submitToTestFlight": true,
-      "observedStatus": "queued",
-      "completionMonitoring": "Not monitored, per existing user instruction. Build completion and TestFlight arrival are not yet confirmed."
+      "observedStatus": "in_progress",
+      "completionMonitoring": "One-time status check at user request. No failed steps observed; TestFlight upload completion/arrival not yet confirmed.",
+      "lastCheckedAt": "2026-11-11T13:12:31+09:00",
+      "archive": "success",
+      "exportIPA": "success",
+      "testFlightUpload": "in_progress since 2026-11-11T13:10:27+09:00"
     }
   },
   "appa_arabic_alignment_2026_11_11": {
@@ -2669,8 +2677,12 @@
       "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42954722250",
       "platform": "ios",
       "submitToTestFlight": true,
-      "observedStatus": "queued",
-      "completionMonitoring": "Not monitored, per existing user instruction. Build completion and TestFlight arrival are not yet confirmed."
+      "observedStatus": "in_progress",
+      "completionMonitoring": "One-time status check at user request. No failed steps observed; TestFlight upload completion/arrival not yet confirmed.",
+      "lastCheckedAt": "2026-11-11T13:12:31+09:00",
+      "archive": "success",
+      "exportIPA": "success",
+      "testFlightUpload": "in_progress since 2026-11-11T13:10:27+09:00"
     }
   }
 }
