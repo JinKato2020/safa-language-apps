@@ -1,6 +1,6 @@
 {
   "_about": "App家族(聞いて話せるシリーズ)の横断状態ファイル。セッション分離の調整レイヤ。各セッションは開始時に読み、節目で更新する。安定仕様(不変)は『ポスター成果物契約.md』、本ファイルは動的状態。",
-  "updated": "2026-11-11T10:52:28+09:00",
+  "updated": "2026-11-11T10:54:52+09:00",
   "coordinationModel": {
     "mode": "session-separation + app-state.json",
     "rule": "App固有作業はApp別セッションで並行可。共有コードは sharedLock を取得した1セッションだけが編集する。司令塔(全集約)モデルは廃止(=1セッションにコンテキストが肥大して上限に達する原因だった)。真に横断的な一括処理が要る時だけ workflow で一時的に起動する。",
@@ -123,7 +123,19 @@
       },
       "developmentVersion": "2.2.5",
       "contentOTAVersion": 1225,
-      "contentManifest": "https://content.safa-lang.com/nepali/_manifest.json"
+      "contentManifest": "https://content.safa-lang.com/nepali/_manifest.json",
+      "latestNativeBuild": {
+        "version": "2.2.5",
+        "buildNumber": 1082,
+        "sourceCommit": "726f80b86b5a9e8274261c6d8fc128307803b01f",
+        "workflow": "ios-build-nepali.yml",
+        "runId": 42942251303,
+        "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42942251303",
+        "platform": "ios",
+        "submitToTestFlight": true,
+        "observedStatus": "queued",
+        "completionMonitoring": "Not monitored, per existing user instruction. TestFlight arrival and App Store publication are not confirmed."
+      }
     },
     "B_japanese": {
       "name": "聞いて話せる日本語",
@@ -2264,11 +2276,11 @@
     }
   },
   "appa_arabic_2026_11_11": {
-    "status": "Arabic implementation complete; OTA 1225 live and verified on R2 and legacy GitHub; native 2.2.5 ready for requested build.",
+    "status": "Implemented, verified, committed/pushed; four-language OTA 1225 published on R2; requested 2.2.5 iOS/TestFlight build dispatched.",
     "scope": "Arabic mother-language UI and course translations with RTL/mixed-script layout",
     "maximumAdditionalAPIChargeJPY": 0,
     "dependsOnKoreanBuild": "complete: 2.2.4 (1075), GitHub run 42859546525 succeeded",
-    "shipping": "Four-language OTA 1225 published and public hashes verified. Arabic selection/RTL and R2 safe same-launch activation require the 2.2.5 shell, ready for build.",
+    "shipping": "OTA 1225 live with all four languages and matching recordings. Native 2.2.5 (1082) iOS build/TestFlight upload dispatched; completion deliberately not monitored.",
     "sourcePlanSha256": "b5e4bc972f04be1cf1607199cf19f602e7f794657a81a426b3cac423e24380cc",
     "reviewedUnique": 23732,
     "totalUnique": 23732,
@@ -2409,9 +2421,7 @@
       "Final Arabic audio: all 2328 verified; pending synthesis 0",
       "Final R2 release: 3796 files, 149 text chunks, four languages, all full/delta ZIP entries and every referenced image/audio hash verified"
     ],
-    "remaining": [
-      "Commit/push and dispatch requested native 2.2.5 iOS/TestFlight build"
-    ],
+    "remaining": [],
     "audio": {
       "status": "2328/2328 verified against reviewed text, fixed female voice, SHA256, MP3 24000Hz mono and full decoding; no pending synthesis",
       "voice": "ar-SA-ZariyahNeural",
@@ -2524,7 +2534,7 @@
       "Question marker के is not inherently polite; Manner expression राम्रोसँग uses adverbial सँग, not accompaniment. Corrected earlier English explanations in Arabic.",
       "भयो is simple past/change, not inherently past perfect; भएकोले is भएको + ले, not an independent कोले suffix; मात्र नभई means not only/but also; उचित हुन्छ is advisability rather than mandatory obligation."
     ],
-    "updated": "2026-11-11T10:52:28+09:00",
+    "updated": "2026-11-11T10:54:52+09:00",
     "buildRequestedAfterCompletion": true,
     "buildPrerequisites": [
       "Complete translation and reconcile original-source issues",
@@ -2581,6 +2591,19 @@
       "ownTemporaryFilesRemoved": 7638,
       "bytesRemoved": 656872584,
       "mastersPreserved": true
-    }
+    },
+    "nativeBuild": {
+      "version": "2.2.5",
+      "buildNumber": 1082,
+      "sourceCommit": "726f80b86b5a9e8274261c6d8fc128307803b01f",
+      "workflow": "ios-build-nepali.yml",
+      "runId": 42942251303,
+      "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42942251303",
+      "platform": "ios",
+      "submitToTestFlight": true,
+      "observedStatus": "queued",
+      "completionMonitoring": "Not monitored, per existing user instruction. TestFlight arrival and App Store publication are not confirmed."
+    },
+    "sourceCommit": "726f80b86b5a9e8274261c6d8fc128307803b01f"
   }
 }
