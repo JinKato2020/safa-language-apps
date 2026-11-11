@@ -1,6 +1,6 @@
 {
   "_about": "App家族(聞いて話せるシリーズ)の横断状態ファイル。セッション分離の調整レイヤ。各セッションは開始時に読み、節目で更新する。安定仕様(不変)は『ポスター成果物契約.md』、本ファイルは動的状態。",
-  "updated": "2026-11-11T12:41:01+09:00",
+  "updated": "2026-11-11T12:44:50+09:00",
   "coordinationModel": {
     "mode": "session-separation + app-state.json",
     "rule": "App固有作業はApp別セッションで並行可。共有コードは sharedLock を取得した1セッションだけが編集する。司令塔(全集約)モデルは廃止(=1セッションにコンテキストが肥大して上限に達する原因だった)。真に横断的な一括処理が要る時だけ workflow で一時的に起動する。",
@@ -126,15 +126,15 @@
       "contentManifest": "https://content.safa-lang.com/nepali/_manifest.json",
       "latestNativeBuild": {
         "version": "2.2.5",
-        "buildNumber": 1082,
-        "sourceCommit": "726f80b86b5a9e8274261c6d8fc128307803b01f",
+        "buildNumber": 1085,
+        "sourceCommit": "468f797ccae4e3c5a6769f4ff4d9a7bd52bf4ec0",
         "workflow": "ios-build-nepali.yml",
-        "runId": 42942251303,
-        "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42942251303",
+        "runId": 42954722250,
+        "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42954722250",
         "platform": "ios",
         "submitToTestFlight": true,
         "observedStatus": "queued",
-        "completionMonitoring": "Not monitored, per existing user instruction. TestFlight arrival and App Store publication are not confirmed."
+        "completionMonitoring": "Not monitored, per existing user instruction. Build completion and TestFlight arrival are not yet confirmed."
       }
     },
     "B_japanese": {
@@ -2607,8 +2607,8 @@
     "sourceCommit": "726f80b86b5a9e8274261c6d8fc128307803b01f"
   },
   "appa_language_picker_2026_11_11": {
-    "updated": "2026-11-11T12:14:56+09:00",
-    "status": "Implemented and verified; pending next native build",
+    "updated": "2026-11-11T12:44:50+09:00",
+    "status": "Implemented and verified; requested 2.2.5 (1085) iOS/TestFlight build dispatched.",
     "languageOrder": [
       "en",
       "ar",
@@ -2630,11 +2630,23 @@
     ],
     "navigation": "Arabic RTL bottom navigation retained; consistent with Apple RTL guidance",
     "reference": "https://developer.apple.com/design/human-interface-guidelines/right-to-left/",
-    "delivery": "Native UI code change; not published as content OTA. No new version bump or build dispatched in this follow-up."
+    "delivery": "Included in native build 2.2.5 (1085), dispatched 2026-11-11. No new content OTA; existing content OTA 1225 remains current. Actual iPhone verification pending.",
+    "nativeBuild": {
+      "version": "2.2.5",
+      "buildNumber": 1085,
+      "sourceCommit": "468f797ccae4e3c5a6769f4ff4d9a7bd52bf4ec0",
+      "workflow": "ios-build-nepali.yml",
+      "runId": 42954722250,
+      "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42954722250",
+      "platform": "ios",
+      "submitToTestFlight": true,
+      "observedStatus": "queued",
+      "completionMonitoring": "Not monitored, per existing user instruction. Build completion and TestFlight arrival are not yet confirmed."
+    }
   },
   "appa_arabic_alignment_2026_11_11": {
-    "updated": "2026-11-11T12:41:01+09:00",
-    "status": "implemented-verified-pending-next-native-build",
+    "updated": "2026-11-11T12:44:50+09:00",
+    "status": "Implemented and verified; requested 2.2.5 (1085) iOS/TestFlight build dispatched.",
     "report": "Arabic theme lists, lessons, UI labels and settings start on the left on iPhone.",
     "cause": "Installed RN 0.81 iOS Fabric RCTAttributedTextUtils.mm swaps explicit textAlign right to left when the paragraph Yoga layout direction is RTL. The previous browser adapter did not model this native behavior.",
     "fix": "Shared Text isolates its Yoga box with direction:ltr while preserving Arabic writingDirection:rtl and physical right alignment. Parent RTL layout/navigation remains unchanged. Explicit left/center alignment remains respected; Nepali and romanization stay LTR. AppShell, paywall, initial language choice, OTA status and engagement banner now use the same shared Text.",
@@ -2646,7 +2658,19 @@
       "Visual review of lesson/settings previews; scoped diff check passed."
     ],
     "limitation": "Native rendering source and browser regression model verified; actual iPhone appearance still needs the next build/device confirmation.",
-    "delivery": "Source change only. No version bump, native build dispatch or content OTA for this follow-up. Prior 2.2.5(1082) build predates this fix.",
-    "cleanup": "Removed own temporary baseline script and before/after browser artifacts after validation."
+    "delivery": "Included in native build 2.2.5 (1085), dispatched 2026-11-11. No new content OTA; existing content OTA 1225 remains current. Actual iPhone verification pending.",
+    "cleanup": "Removed own temporary baseline script and before/after browser artifacts after validation.",
+    "nativeBuild": {
+      "version": "2.2.5",
+      "buildNumber": 1085,
+      "sourceCommit": "468f797ccae4e3c5a6769f4ff4d9a7bd52bf4ec0",
+      "workflow": "ios-build-nepali.yml",
+      "runId": 42954722250,
+      "url": "https://github.com/JinKato2020/safa-language-apps/actions/runs/42954722250",
+      "platform": "ios",
+      "submitToTestFlight": true,
+      "observedStatus": "queued",
+      "completionMonitoring": "Not monitored, per existing user instruction. Build completion and TestFlight arrival are not yet confirmed."
+    }
   }
 }
