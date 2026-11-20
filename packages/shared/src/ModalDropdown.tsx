@@ -8,7 +8,7 @@ import { colors, spacing, radius } from './theme';
 export type DropdownItem<T extends string> = { value: T; label: string; sub?: string };
 
 export function ModalDropdown<T extends string>({
-  items, value, onChange, placeholder, size = 'normal', accent = colors.accentJa, labelAlignment = 'left',
+  items, value, onChange, placeholder, size = 'normal', accent = colors.accentJa, labelAlignment = 'left', palette,
 }: {
   items: DropdownItem<T>[];
   value: T | null;
@@ -17,29 +17,32 @@ export function ModalDropdown<T extends string>({
   size?: 'normal' | 'large';
   accent?: string;
   labelAlignment?: 'left' | 'right';
+  palette?: { surface: string; ink: string; muted: string; line: string; accent: string; soft: string };
 }) {
   const [open, setOpen] = useState(false);
   const current = items.find(i => i.value === value) ?? null;
   const big = size === 'large';
+  const ink = palette && { color: palette.ink };
+  const muted = palette && { color: palette.muted };
   return (
     <>
       <Pressable
         onPress={() => setOpen(true)}
-        style={[styles.trigger, big && styles.triggerLarge]}
+        style={[styles.trigger, big && styles.triggerLarge, palette && { backgroundColor: palette.surface, borderColor: palette.line }]}
         accessibilityRole="button"
       >
         <View style={{ flex: big ? 0 : 1 }}>
-          <Text style={[big ? styles.triggerTextLarge : styles.triggerText, !big && { textAlign: labelAlignment }, !current && styles.placeholder]}>
+          <Text style={[big ? styles.triggerTextLarge : styles.triggerText, !big && { textAlign: labelAlignment }, !current && styles.placeholder, current ? ink : muted]}>
             {current ? current.label : (placeholder ?? '—')}
           </Text>
-          {big && current?.sub ? <Text style={styles.triggerSub}>{current.sub}</Text> : null}
+          {big && current?.sub ? <Text style={[styles.triggerSub, muted]}>{current.sub}</Text> : null}
         </View>
-        <Text style={[styles.chevron, big && styles.chevronLarge]}>▾</Text>
+        <Text style={[styles.chevron, big && styles.chevronLarge, muted]}>▾</Text>
       </Pressable>
 
       <Modal visible={open} transparent animationType="fade" onRequestClose={() => setOpen(false)}>
         <Pressable style={styles.backdrop} onPress={() => setOpen(false)}>
-          <Pressable style={styles.sheet} onPress={() => {}}>
+          <Pressable style={[styles.sheet, palette && { backgroundColor: palette.surface }]} onPress={() => {}}>
             <ScrollView bounces={false}>
               {items.map(it => {
                 const on = it.value === value;
@@ -47,13 +50,13 @@ export function ModalDropdown<T extends string>({
                   <Pressable
                     key={it.value}
                     onPress={() => { onChange(it.value); setOpen(false); }}
-                    style={[styles.option, on && { backgroundColor: colors.lineSoft }]}
+                    style={[styles.option, on && { backgroundColor: palette?.soft ?? colors.lineSoft }]}
                   >
                     <View style={{ flex: 1 }}>
-                      <Text style={[styles.optionText, { textAlign: labelAlignment }, on && { color: accent, fontWeight: '700' }]}>{it.label}</Text>
-                      {it.sub ? <Text style={[styles.optionSub, { textAlign: labelAlignment }]}>{it.sub}</Text> : null}
+                      <Text style={[styles.optionText, ink, { textAlign: labelAlignment }, on && { color: palette?.accent ?? accent, fontWeight: '700' }]}>{it.label}</Text>
+                      {it.sub ? <Text style={[styles.optionSub, muted, { textAlign: labelAlignment }]}>{it.sub}</Text> : null}
                     </View>
-                    <Text accessible={false} style={[styles.check, { color: accent }]}>{on ? '✓' : ''}</Text>
+                    <Text accessible={false} style={[styles.check, { color: palette?.accent ?? accent }]}>{on ? '✓' : ''}</Text>
                   </Pressable>
                 );
               })}

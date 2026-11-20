@@ -72,10 +72,10 @@ function Text(p){
   const textStyle=css(p.style);textStyle.direction=s.writingDirection??'inherit';
   return h(LayoutDirection.Provider,{value:yoga},h('span',{'data-testid':p.testID,'data-native-text':'true','data-requested-align':s.textAlign,'data-yoga-direction':yoga,role:p.accessibilityRole==='header'?'heading':undefined,style:{whiteSpace:'pre-wrap',overflowWrap:'anywhere',...textStyle,textAlign:alignment}},p.children));
 }
-function Pressable(p){const timer=React.useRef();React.useEffect(()=>()=>clearTimeout(timer.current),[]);const stop=()=>clearTimeout(timer.current);return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,'aria-selected':p.accessibilityState?.selected,disabled:p.disabled,onClick:p.onPress,onPointerDown:e=>{if(p.disabled)return;p.onPressIn?.();const event={nativeEvent:{pageX:e.clientX,pageY:e.clientY}};if(p.onLongPress)timer.current=setTimeout(()=>p.onLongPress(event),p.delayLongPress??500);},onPointerUp:stop,onPointerLeave:stop,onPointerCancel:stop,'data-testid':p.testID,role:p.accessibilityRole==='tab'?'tab':undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
-const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y),scrollToEnd:()=>el.current.scrollTo(0,el.current.scrollHeight)}));return h('div',{ref:el,'data-testid':p.testID,style:{scrollbarGutter:'stable',overflowY:p.horizontal||p.scrollEnabled===false?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{})}},p.children));});
+function Pressable(p){const timer=React.useRef();React.useEffect(()=>()=>clearTimeout(timer.current),[]);const stop=()=>clearTimeout(timer.current);return h('button',{'aria-label':p.accessibilityLabel,'aria-expanded':p.accessibilityState?.expanded,'aria-selected':p.accessibilityState?.selected,'aria-checked':p.accessibilityState?.checked,disabled:p.disabled,onClick:p.onPress,onPointerDown:e=>{if(p.disabled)return;p.onPressIn?.();const event={nativeEvent:{pageX:e.clientX,pageY:e.clientY}};if(p.onLongPress)timer.current=setTimeout(()=>p.onLongPress(event),p.delayLongPress??500);},onPointerUp:stop,onPointerLeave:stop,onPointerCancel:stop,'data-testid':p.testID,role:['tab','radio'].includes(p.accessibilityRole)?p.accessibilityRole:undefined,style:{font:'inherit',textAlign:'left',...css(typeof p.style==='function'?p.style({pressed:false}):p.style,true)}},typeof p.children==='function'?p.children({pressed:false}):p.children);}
+const ScrollView=React.forwardRef((p,ref)=>{const el=React.useRef(null);React.useImperativeHandle(ref,()=>({scrollTo:({y})=>el.current.scrollTo(0,y),scrollToEnd:()=>el.current.scrollTo(0,el.current.scrollHeight)}));return h('div',{ref:el,'data-testid':p.testID,style:{scrollbarGutter:'stable',overflowY:p.horizontal||p.scrollEnabled===false?'hidden':'auto',overflowX:p.horizontal?'auto':'hidden',flex:p.horizontal?'0 0 auto':1,minHeight:0,...css(p.style,true)}},h('div',{style:{...css(p.contentContainerStyle,true),...(p.horizontal?{flexDirection:'row',width:'max-content'}:{}),...(flat(p.contentContainerStyle).flexGrow?{minHeight:'100%'}:{})}},p.children));});
 const heroPath=${JSON.stringify('file:///'+path.join(ROOT,'聞いて話せるネパール語/expo-app/assets/hero/grammar.jpg').replaceAll('\\','/'))};
-const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode==='contain'?'contain':undefined,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
+const Image=p=>h('img',{src:p.source===1?heroPath:p.source?.uri,style:{objectFit:p.resizeMode,...css(p.style)}});Image.resolveAssetSource=()=>({width:1200,height:400});
 cache['react-native']={exports:{Platform:{OS:'ios'},Alert:{alert:(...args)=>window.alerts.push(args)},Linking:{openURL:async url=>window.links.push(url)},Share:{share:async()=>{}},Switch:()=>null,PanResponder:{create:config=>({panHandlers:{_pan:config}})},AppState:{addEventListener:()=>({remove:()=>{}})},View:withLayout(View),Text,Pressable:withLayout(Pressable),ScrollView:withLayout(ScrollView),Modal:p=>p.visible?h('div',{role:'dialog'},p.children):null,TextInput:p=>h('input',{'data-testid':p.testID,'aria-label':p.accessibilityLabel,value:p.value,onChange:e=>p.onChangeText(e.target.value),placeholder:p.placeholder,style:css(p.style)}),FlatList:p=>h(ScrollView,{style:p.style,contentContainerStyle:p.contentContainerStyle},p.ListHeaderComponent,p.data.length?null:p.ListEmptyComponent,p.data.map((item,index)=>h(React.Fragment,{key:p.keyExtractor(item)},p.renderItem({item,index})))),Image,Animated:{View},StyleSheet:{create:x=>x,flatten:flat},useWindowDimensions:()=>({width:innerWidth,height:innerHeight,fontScale:window.caseInfo.scale})}};
 if(!modules.Text)cache.Text={exports:{Text}};
 cache.i18n={exports:{useI18n:()=>({lang:window.caseInfo.lang,langs:Object.keys(strings),setLang:()=>{},copy:(key,ja,en,vars={})=>{let s=['ko','ar'].includes(window.caseInfo.lang)?strings[window.caseInfo.lang].courseCopy[key]??en:window.caseInfo.lang==='en'?en:ja;for(const[k,v]of Object.entries(vars))s=s.split('{{'+k+'}}').join(String(v));return s;},t:(key,vars={})=>{let s=key.split('.').reduce((v,k)=>v?.[k],strings[window.caseInfo.lang])??key;for(const[k,v]of Object.entries(vars))s=String(s).split('{{'+k+'}}').join(String(v));return s;}})}};
@@ -119,7 +119,7 @@ if(modules.Announcements){
   const OriginalHome=home.default;
   home.default=function NoticeHome(){
     const {card,modal}=useAnnouncements();
-    return h(React.Fragment,null,h(OriginalHome,{accessory:card}),modal);
+    return h(React.Fragment,null,h(OriginalHome,{accessory:card}),h('div',{style:{flex:'0 0 80px'}}),modal);
   };
 }
 window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];window.activeAudio=new Set();window.audioEnded=false;
@@ -935,29 +935,41 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
     if(tabDesigns){
       const by=id=>page.getByTestId(id);
       const masthead=by('tab-masthead');
+      const minimal=by('tab-design-minimal');
+      const forest=by('tab-design-forest');
       for(const lang of ['ja','en','ko','ar']){
         await page.setViewportSize({width:320,height:690});
-        await page.evaluate(l=>window.boot(l,true,{name:'SettingsTab'},1.4),lang);
-        await masthead.waitFor();
-        assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(230, 240, 238)');
-        await page.evaluate(()=>window.navigate('HomeTab',{}));
-        assert.equal(await by('home-masthead').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(230, 240, 238)');
-        await page.evaluate(()=>window.navigate('SettingsTab',{}));
-        await by('tab-design-blueprint').click();
-        await page.waitForFunction(()=>JSON.parse(localStorage.getItem('test-settings')).tabDesign==='blueprint');
-        assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(25, 45, 53)');
+        for(const oldDesign of ['classic','blueprint']){
+          await page.evaluate(({lang,oldDesign})=>{
+            localStorage.setItem('test-settings',JSON.stringify({tabDesign:oldDesign,listenSpeed:1.5}));
+            return window.boot(lang,false,{name:'SettingsTab'},1.4);
+          },{lang,oldDesign});
+          await masthead.waitFor();
+          assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(230, 240, 238)');
+          assert.equal(await page.getByRole('radio').count(),2);
+          assert.equal(await minimal.getAttribute('aria-checked'),'true');
+          assert.deepEqual(await page.waitForFunction(()=>{
+            const {tabDesign,listenSpeed}=JSON.parse(localStorage.getItem('test-settings'));
+            return tabDesign==='minimal' ? {tabDesign,listenSpeed} : false;
+          }).then(result=>result.jsonValue()),{tabDesign:'minimal',listenSpeed:1.5});
+        }
+        await forest.click();
+        assert.equal(await forest.getAttribute('aria-checked'),'true');
+        assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(32, 56, 47)');
+        await page.waitForFunction(()=>JSON.parse(localStorage.getItem('test-settings')).tabDesign==='forest');
         await page.evaluate(l=>window.boot(l,false,{name:'SettingsTab'},1.4),lang);
-        assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(25, 45, 53)');
+        assert.equal(await forest.getAttribute('aria-checked'),'true');
         await page.evaluate(()=>window.navigate('HomeTab',{}));
-        assert.equal(await by('home-masthead').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(25, 45, 53)');
-        assert.equal(await by('home-letters').evaluate(el=>getComputedStyle(el).borderColor),'rgb(202, 216, 232)');
-        for(const [params,tab,color] of [
-          [{mode:'grammar',puzzleOnly:true,guidesOnHome:true},'puzzle-conversation','rgb(37, 28, 57)'],
-          [{mode:'listening',grammarFirst:true},'listen-source-conversation','rgb(16, 46, 45)'],
-          [{mode:'grammar',composition:true,guidesOnHome:true},'composition-conversation','rgb(16, 38, 61)'],
-        ]){
+        assert.equal(await by('home-masthead').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(32, 56, 47)');
+        assert.equal(await by('home-letters').evaluate(el=>getComputedStyle(el).borderColor),'rgb(66, 96, 82)');
+        const modes=[
+          [{mode:'grammar',puzzleOnly:true,guidesOnHome:true},'puzzle-conversation','rgb(240, 234, 251)'],
+          [{mode:'listening',grammarFirst:true},'listen-source-conversation','rgb(228, 242, 235)'],
+          [{mode:'grammar',composition:true,guidesOnHome:true},'composition-conversation','rgb(232, 240, 250)'],
+        ];
+        for(const [params,tab] of modes){
           await page.evaluate(params=>window.navigate('Theme',params),params);
-          assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),color);
+          assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(32, 56, 47)');
           await by(tab).click();
           assert.equal(await by(tab).getAttribute('aria-selected'),'true');
           assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
@@ -967,15 +979,17 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           }
         }
         await page.evaluate(()=>window.navigate('SettingsTab',{}));
-        await by('tab-design-classic').click();
-        assert.equal(await masthead.count(),0);
-        await page.evaluate(()=>window.navigate('Theme',{mode:'grammar',puzzleOnly:true,guidesOnHome:true}));
-        assert.equal(await masthead.count(),0);
+        await minimal.click();
+        assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(230, 240, 238)');
         await page.evaluate(()=>window.navigate('HomeTab',{}));
-        assert.equal(await by('home-masthead').count(),0);
+        assert.equal(await by('home-masthead').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(230, 240, 238)');
+        for(const [params,,color] of modes){
+          await page.evaluate(params=>window.navigate('Theme',params),params);
+          assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),color);
+        }
       }
       assert.deepEqual(errors,[]);
-      console.log('PASS: matching Home and Settings designs, remount persistence, four locales at 320px, live mode selectors, and no puzzle count in theme titles.');
+      console.log('PASS: Minimal and Forest in all five tabs, saved selection, legacy preference migration and four locales at 320px.');
       return;
     }
     if(homeNotices){
@@ -985,13 +999,26 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.setViewportSize({width:320,height:568});
         await page.evaluate(l=>{
           window.testNotices=[{id:'v-next',title:'Release',body:'Release details',publishedAt:1700000000000}];
+          localStorage.setItem('test-settings',JSON.stringify({tabDesign:['ko','ar'].includes(l)?'forest':'minimal'}));
           return window.boot(l,true,{name:'HomeTab'},1.4);
         },lang);
         const cards=by('home-content-grid').getByRole('button');
         assert.equal(await cards.count(),6);
-        const box=await by('home-content-grid').boundingBox();
-        assert(box.y+box.height<=488,`${lang} cards stop at ${box.y+box.height}px; available height is 488px above the tab bar`);
+        const measureHome=()=>by('learning-home').evaluate(el=>{
+          const grid=el.querySelector('[data-testid="home-content-grid"]').getBoundingClientRect();
+          const image=el.querySelector('[data-testid="home-hero-image"]').getBoundingClientRect();
+          return { padding:el.getBoundingClientRect().bottom-grid.bottom, imageHeight:image.height };
+        });
+        const small=await measureHome();
+        assert(Math.abs(small.padding-8)<=2,`${lang} compact: ${JSON.stringify(small)}`);
         assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        await page.setViewportSize({width:390,height:844});
+        await page.evaluate(()=>window.redraw());
+        await page.waitForFunction(()=>document.querySelector('[data-testid="home-letters"]').getBoundingClientRect().height>=90);
+        const tall=await measureHome();
+        assert(Math.abs(tall.padding-8)<=2&&tall.imageHeight>=155,`${lang} expanded: ${JSON.stringify(tall)}`);
+        await page.setViewportSize({width:320,height:568});
+        await page.evaluate(()=>window.redraw());
         await by('home-announcements-unread').waitFor();
         await by('home-announcements').click();
         assert.equal(await by('home-announcements-unread').count(),1,'Opening the inbox does not mark articles read');
@@ -1005,7 +1032,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.getByText('Release details',{exact:true}).waitFor();
       }
       assert.deepEqual(errors,[]);
-      console.log('PASS: all six home cards fit 320×568 with large text in four languages. Unread indicator, persistence, and direct article opening work.');
+      console.log('PASS: six home cards fit 320×568 and expand at 390×844 in four languages. Unread indicator, persistence, and direct article opening work.');
       return;
     }
     if(process.argv.includes('--home-learning-updates')){

@@ -29,6 +29,7 @@ import SettingsScreen from './screens/SettingsScreen';
 import { PosterProvider, usePosterLessons, type PosterLesson, type PosterResolver } from './PosterContext';
 import { colors } from './theme';
 import { useGlobalScaleStyle, useSettings } from './SettingsContext';
+import { tabPalette } from './tabAppearance';
 import { useI18n } from './i18n';
 import { ListeningAudioProvider, useListeningAudio } from './ListeningAudioContext';
 import type { RootStackParamList } from './types';
@@ -235,6 +236,8 @@ function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListe
   const { bottom } = useSafeAreaInsets();
   const { t } = useI18n();
   const ss = useGlobalScaleStyle();
+  const { tabDesignEnabled, tabDesign } = useSettings();
+  const forest = tabDesignEnabled && tabDesign === 'forest' ? tabPalette('home', tabDesign) : undefined;
   const list = tabs && tabs.length ? tabs : DEFAULT_TABS;
   const modeStackOptions = hideModeHeaders
     ? ({ route }: { route: { name: string } }) => ({ ...defaultStackOptions, headerShown: route.name !== 'Theme' && route.name !== 'VocabCategory' })
@@ -251,16 +254,16 @@ function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListe
     long:         { name: 'LongTab',         title: t('nav.long'),         icon: LongIcon,       render: () => <ScaffoldScreen area="chobun" /> },
     vocation:     { name: 'VocationTab',     title: t('nav.vocation'),     icon: VocationIcon,   render: () => <ScaffoldScreen area="vocation" /> },
     dict:         { name: 'DictTab',         title: t('nav.dict'),         icon: DictIcon,       render: () => <DictScreen data={dictData} /> },
-    settings:     { name: 'SettingsTab',     title: t('settings.title'),   icon: SettingsIcon,   render: () => <SafeAreaView edges={['top']} style={{ flex: 1, backgroundColor: colors.bg }}><SettingsScreen /></SafeAreaView> },
+    settings:     { name: 'SettingsTab',     title: t('settings.title'),   icon: SettingsIcon,   render: () => <SafeAreaView edges={['top']} style={{ flex: 1, backgroundColor: forest?.page ?? colors.bg }}><SettingsScreen /></SafeAreaView> },
   };
   return (
     <Tab.Navigator
       tabBar={mainScreenAccessory ? props => <View>{mainScreenAccessory}<BottomTabBar {...props} /></View> : undefined}
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: colors.ink,
-        tabBarInactiveTintColor: colors.inkFaint,
-        tabBarStyle: { backgroundColor: colors.bg, borderTopColor: colors.line, height: 64 + bottom, paddingTop: 8, paddingBottom: 8 + bottom },
+        tabBarActiveTintColor: forest?.accent ?? colors.ink,
+        tabBarInactiveTintColor: forest?.muted ?? colors.inkFaint,
+        tabBarStyle: { backgroundColor: forest?.nav ?? colors.bg, borderTopColor: forest?.line ?? colors.line, height: 64 + bottom, paddingTop: 8, paddingBottom: 8 + bottom },
         tabBarLabelStyle: { ...ss(11), fontWeight: '500' },
       }}
     >
@@ -373,11 +376,12 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
   const { t, lang } = useI18n();
   const [splashDone, setSplashDone] = useState(splashShownOnce || splashSource == null);
   const defaultStackOptions = useRef(makeDefaultStackOptions(HeaderTitle, hideModeHeaders)).current;
-  const { themeMode } = useSettings();
+  const { themeMode, tabDesignEnabled, tabDesign } = useSettings();
   const sys = useColorScheme();
   const scheme = themeMode === 'system' ? (sys ?? 'light') : themeMode;
   const navigationRef = useNavigationContainerRef<RootStackParamList>();
   const [landing, setLanding] = useState(false);
+  const [tabLanding, setTabLanding] = useState(false);
   const [audioPlaying, setAudioPlaying] = useState(false);
   const audioPlayingRef = useRef(false);
   const routeCallback = useRef(onRouteChanged);
@@ -386,6 +390,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
     if (!navigationRef.isReady()) return;
     const name = navigationRef.getCurrentRoute()?.name;
     setLanding(['Theme', 'VocabCategory', 'SettingsTab', 'SettingsMain', 'HomeTab'].includes(name ?? ''));
+    setTabLanding(['Theme', 'SettingsTab', 'HomeTab'].includes(name ?? ''));
     routeCallback.current?.(audioPlayingRef.current ? 'Listening' : name);
   }, [navigationRef]);
   const playbackChanged = useCallback((playing: boolean) => {
@@ -418,7 +423,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
   return (
     <SafeAreaProvider style={lang === 'ar' ? { direction: 'rtl' } : undefined}>
       <NavigationContainer direction={lang === 'ar' ? 'rtl' : undefined} ref={navigationRef} onReady={routeChanged} onStateChange={routeChanged}>
-        <StatusBar style="dark" />
+        <StatusBar style={tabDesignEnabled && tabDesign === 'forest' && tabLanding ? 'light' : 'dark'} />
         <PosterProvider lessons={posterLessons || []} resolveUri={posterResolveUri} ensure={posterEnsure}>
           <ListeningAudioProvider>
             {onRouteChanged && <EngagementPlaybackGuard onChange={playbackChanged} />}

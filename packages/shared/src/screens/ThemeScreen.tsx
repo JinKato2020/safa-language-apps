@@ -38,7 +38,7 @@ export default function ThemeScreen() {
   const { top } = useSafeAreaInsets();
   const isListening = mode === 'listening';
   const tab = puzzleOnly ? 'puzzle' : composition ? 'composition' : isListening && grammarFirst ? 'listening' : undefined;
-  const palette = tab && settings.tabDesignEnabled ? tabPalette(settings.tabDesign, tab) : undefined;
+  const palette = tab && settings.tabDesignEnabled ? tabPalette(tab, settings.tabDesign) : undefined;
   // Route params retain the source and level when returning from practice/playback.
   const listenSource = source ?? (grammarFirst ? 'grammar' : 'conversation');
   const effectiveSource = isListening
@@ -127,8 +127,8 @@ export default function ThemeScreen() {
   return (
     <FlatList
       testID="mode-theme-list"
-      style={[palette && { backgroundColor: palette.page }, heroSrc != null && { marginTop: top }]}
-      contentContainerStyle={styles.container}
+      style={[palette && { backgroundColor: palette.page }, heroSrc != null && !palette?.dark && { marginTop: top }]}
+      contentContainerStyle={[styles.container, palette?.dark && heroSrc != null && { paddingTop: top + spacing.lg }]}
       ListHeaderComponent={
         <>
         {palette ? <TabMasthead title={modeTitle} description={headerText} palette={palette} image={heroSrc} />
@@ -138,11 +138,11 @@ export default function ThemeScreen() {
             <Text style={[styles.modeTitle, ss(20)]}>{modeTitle}</Text>
             <Text style={[styles.desc, ss(14, 21)]}>{headerText}</Text>
           </>}
-          {(composition || puzzleOnly) && <View style={[styles.sourceToggle, palette && styles.refinedToggle]}>{(['grammar', 'conversation'] as const).map(value => <Pressable key={value} testID={`${puzzleOnly ? 'puzzle' : 'composition'}-${value}`} accessibilityRole="tab" accessibilityState={{ selected: mode === value }} style={[styles.sourceTab, mode === value && styles.sourceTabOn, palette && styles.refinedSegment, palette && { backgroundColor: mode === value ? palette.accent : palette.surface, borderColor: mode === value ? palette.accent : palette.line }]} onPress={() => navigation.setParams({ mode: value })}><Text style={[styles.sourceTabText, mode === value && styles.sourceTabTextOn, palette && mode !== value && { color: palette.ink }, ss(14)]}>{t(`nav.${value}`)}</Text></Pressable>)}</View>}
-          {puzzleOnly && learning?.error && <Text accessibilityRole="alert" style={[styles.desc, { color: '#9f1239' }]}>{trCopy('c_10a188e49af5', '保存できませんでした。テーマをタップして再試行してください。', 'Could not save. Please tap the theme to try again.')}</Text>}
+          {(composition || puzzleOnly) && <View style={[styles.sourceToggle, palette && styles.refinedToggle]}>{(['grammar', 'conversation'] as const).map(value => <Pressable key={value} testID={`${puzzleOnly ? 'puzzle' : 'composition'}-${value}`} accessibilityRole="tab" accessibilityState={{ selected: mode === value }} style={[styles.sourceTab, mode === value && styles.sourceTabOn, palette && styles.refinedSegment, palette && { backgroundColor: mode === value ? palette.accent : palette.surface, borderColor: mode === value ? palette.accent : palette.line }]} onPress={() => navigation.setParams({ mode: value })}><Text style={[styles.sourceTabText, mode === value && styles.sourceTabTextOn, palette && { color: mode === value ? palette.onAccent : palette.ink }, ss(14)]}>{t(`nav.${value}`)}</Text></Pressable>)}</View>}
+          {puzzleOnly && learning?.error && <Text accessibilityRole="alert" style={[styles.desc, { color: palette?.danger ?? '#9f1239' }]}>{trCopy('c_10a188e49af5', '保存できませんでした。テーマをタップして再試行してください。', 'Could not save. Please tap the theme to try again.')}</Text>}
           {isListening && <View style={[styles.sourceToggle, palette && styles.refinedToggle]}>
             {(grammarFirst ? ['grammar', 'conversation'] as const : ['conversation', 'grammar'] as const).map(value => <Pressable key={value} testID={`listen-source-${value}`} accessibilityRole="tab" accessibilityState={{ selected: listenSource === value }} style={[styles.sourceTab, listenSource === value && styles.sourceTabOn, palette && styles.refinedSegment, palette && { backgroundColor: listenSource === value ? palette.accent : palette.surface, borderColor: listenSource === value ? palette.accent : palette.line }]} onPress={() => navigation.setParams({ source: value })}>
-              <Text style={[styles.sourceTabText, listenSource === value && styles.sourceTabTextOn, palette && listenSource !== value && { color: palette.ink }, ss(14)]}>{t(value === 'grammar' ? 'listenSource.grammarName' : 'listenSource.convName')}</Text>
+              <Text style={[styles.sourceTabText, listenSource === value && styles.sourceTabTextOn, palette && { color: listenSource === value ? palette.onAccent : palette.ink }, ss(14)]}>{t(value === 'grammar' ? 'listenSource.grammarName' : 'listenSource.convName')}</Text>
             </Pressable>)}
           </View>}
           {showLevelPills && (

@@ -8,7 +8,7 @@ export type ListenSpeed = 0.8 | 1.0 | 1.2 | 1.5;
 export type GapMode = 'short' | 'normal' | 'long';
 export type ThemeMode = 'light' | 'dark' | 'system';
 export type FontMode = 'small' | 'medium' | 'large';
-export type TabDesign = 'classic' | 'minimal' | 'blueprint';
+export type TabDesign = 'minimal' | 'forest';
 
 // FontMode → 「強さ」係数
 // この値 delta が大きいほど、小さい文字に対してより強くスケールが効く。
@@ -98,9 +98,9 @@ type Settings = {
   setThemeMode: (m: ThemeMode) => void;
   fontMode: FontMode;
   setFontMode: (m: FontMode) => void;
+  tabDesignEnabled: boolean;
   tabDesign: TabDesign;
   setTabDesign: (design: TabDesign) => void;
-  tabDesignEnabled: boolean;
   // 学習
   autoFlip: boolean;
   setAutoFlip: (v: boolean) => void;
@@ -141,7 +141,6 @@ const BASE_DEFAULTS = {
   romaji: true,
   themeMode: 'system' as ThemeMode,
   fontMode: 'medium' as FontMode,
-  tabDesign: 'classic' as TabDesign,
   autoFlip: false,
   shuffle: false,
 };
@@ -174,7 +173,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
   const [romaji, setRomaji] = useState(D.romaji);
   const [themeMode, setThemeMode] = useState<ThemeMode>(D.themeMode);
   const [fontMode, setFontMode] = useState<FontMode>(D.fontMode);
-  const [tabDesign, setTabDesign] = useState<TabDesign>(D.tabDesign);
+  const [tabDesign, setTabDesign] = useState<TabDesign>(defaults?.tabDesign ?? 'minimal');
   const tabDesignEnabled = defaults?.tabDesign !== undefined;
   const [autoFlip, setAutoFlip] = useState(D.autoFlip);
   const [shuffle, setShuffle] = useState(D.shuffle);
@@ -207,7 +206,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
           if (typeof s.romaji === 'boolean') setRomaji(s.romaji);
           if (s.themeMode) setThemeMode(s.themeMode);
           if (s.fontMode) setFontMode(s.fontMode);
-          if (s.tabDesign === 'classic' || s.tabDesign === 'minimal' || s.tabDesign === 'blueprint') setTabDesign(s.tabDesign);
+          if (s.tabDesign === 'forest' || s.tabDesign === 'minimal') setTabDesign(s.tabDesign);
           if (typeof s.autoFlip === 'boolean') setAutoFlip(s.autoFlip);
           if (typeof s.shuffle === 'boolean') setShuffle(s.shuffle);
         }
@@ -241,7 +240,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
     setRomaji(D.romaji);
     setThemeMode(D.themeMode);
     setFontMode(D.fontMode);
-    setTabDesign(D.tabDesign);
+    setTabDesign(defaults?.tabDesign ?? 'minimal');
     setAutoFlip(D.autoFlip);
     setShuffle(D.shuffle);
   };
@@ -259,7 +258,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
         romaji, setRomaji,
         themeMode, setThemeMode,
         fontMode, setFontMode,
-        tabDesign, setTabDesign, tabDesignEnabled,
+        tabDesignEnabled, tabDesign, setTabDesign,
         autoFlip, setAutoFlip,
         shuffle, setShuffle,
         resetSettings,

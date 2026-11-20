@@ -20,8 +20,8 @@ const EMPTY = emptyStudyState();
 export default function LearningHomeScreen({ accessory }: { accessory?: ReactNode }) {
   const nav = useNavigation<any>(), { lang , copy: trCopy } = useI18n(), { top } = useSafeAreaInsets();
   const data = useAppData(), learning = useLearning(), hero = useHeroImage('grammar');
-  const { tabDesign, tabDesignEnabled } = useSettings();
-  const palette = tabDesignEnabled ? tabPalette(tabDesign, 'home') : undefined;
+  const { tabDesignEnabled, tabDesign } = useSettings();
+  const palette = tabDesignEnabled ? tabPalette('home', tabDesign) : undefined;
   const guides = useGrammarGuide(), guideCount = data.GRAMMAR_THEMES.filter(theme => guides?.[String(theme.id)]?.length).length;
   const hasCulture = Object.values(guides ?? {}).some(blocks => blocks.some(block => block.lessonSupplement?.kind === 'culture'));
   const [now, setNow] = useState(Date.now);
@@ -39,6 +39,14 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
   const state = learning?.state ?? EMPTY;
   const { width, height } = useWindowDimensions();
   const shortScreen = height < 640;
+  const room = Math.max(0, Math.min(1, (height - 640) / 180));
+  const pageInset = Math.round(12 + room * 6);
+  const pageSpacing = room > 0 ? {
+    paddingHorizontal: pageInset,
+    paddingTop: Math.round(12 + room * 10),
+    gap: Math.round(10 + room * 10),
+  } : undefined;
+  const rowStyle = [styles.tileRow, room > 0 && { minHeight: Math.round(52 + room * 40), gap: Math.round(8 + room * 6) }];
   const displaySize = width < 360 ? 21 : 25;
   const due = useMemo(() => reviewItems(state, data, now), [state, data, now]);
   const resume = state.resume && resolveStudy(data, state.resume.item) ? state.resume : undefined;
@@ -52,36 +60,48 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
   };
   const ratio = hero == null ? 3 : (() => { const asset = Image.resolveAssetSource(hero); return asset.width / asset.height; })();
 
-  const primaryColor = palette ? (tabDesign === 'blueprint' ? palette.mastAccent : palette.accent) : c.teal;
-  const primaryInk = palette && tabDesign === 'minimal' ? '#FFFFFF' : c.navy;
+  const primaryColor = palette?.accent ?? c.teal;
+  const primaryInk = palette?.onAccent ?? c.navy;
   const heroBody = <>
-      {hero != null && <View style={{ width: '100%', height: Math.min((Math.min(width, 760) - 24) / ratio, shortScreen ? 68 : 136) }}>
-        <Image source={hero} resizeMode="contain" style={{ width: '100%', height: '100%' }} accessibilityIgnoresInvertColors />
+      {hero != null && <View testID="home-hero-image" style={[styles.heroArt, {
+        minHeight: Math.min((Math.min(width, 760) - pageInset * 2) / ratio, shortScreen ? 64 : 136),
+      }]}>
+        <Image source={hero} resizeMode="cover" style={styles.heroImage} accessibilityIgnoresInvertColors />
       </View>}
 
-      <View style={[styles.heroBody, shortScreen && styles.shortHeroBody]}>
+      <View style={[styles.heroBody, shortScreen && styles.shortHeroBody, room > 0 && {
+        paddingHorizontal: Math.round(12 + room * 7), paddingVertical: Math.round(12 + room * 10),
+      }]}>
         <Text testID="home-motto" accessibilityRole="header" style={[styles.headline, { fontSize: displaySize, lineHeight: displaySize + 6 }, palette && { color: palette.mastInk }]}>
           Small steps build great <Text style={[styles.strength, palette && { color: palette.mastAccent }]}>strength.</Text>
         </Text>
-        <Pressable accessibilityRole="button" accessibilityLabel={action} onPress={start} style={({ pressed }) => [styles.primary, { backgroundColor: primaryColor }, pressed && styles.pressed]}>
+        <Pressable accessibilityRole="button" accessibilityLabel={action} onPress={start} style={({ pressed }) => [
+          styles.primary, { backgroundColor: primaryColor }, palette?.dark && { borderRadius: 99 },
+          room > 0 && { marginTop: Math.round(8 + room * 5), minHeight: Math.round(44 + room * 8) },
+          pressed && styles.pressed,
+        ]}>
           <Text style={[styles.primaryText, { color: primaryInk }]}>{action}</Text><Text accessibilityElementsHidden importantForAccessibility="no" style={[styles.arrow, { color: primaryInk }]}>↗</Text>
         </Pressable>
       </View>
   </>;
 
-  return <ScrollView testID="learning-home" style={{ backgroundColor: palette?.page ?? c.page, marginTop: top }} contentContainerStyle={styles.page}>
-    {palette ? <TabMastheadFrame palette={palette} compact testID="home-masthead">{heroBody}</TabMastheadFrame> : <View style={styles.hero}>{heroBody}</View>}
+  return <ScrollView testID="learning-home"
+    style={{ backgroundColor: palette?.page ?? c.page, marginTop: palette?.dark ? 0 : top }}
+    contentContainerStyle={[styles.page, hero != null && styles.fillPage, pageSpacing, palette?.dark && { paddingTop: top + (pageSpacing?.paddingTop ?? 12) }]}>
+    {palette
+      ? <TabMastheadFrame palette={palette} compact expand={hero != null} testID="home-masthead">{heroBody}</TabMastheadFrame>
+      : <View style={[styles.hero, hero != null && styles.expandHero]}>{heroBody}</View>}
 
-    <View testID="home-content-grid" style={[styles.grid, palette && shortScreen && styles.shortGrid]}>
-      <View style={styles.tileRow}>
+    <View testID="home-content-grid" style={[styles.grid, palette && shortScreen && styles.shortGrid, room > 0 && { gap: Math.round(8 + room * 6) }]}>
+      <View style={rowStyle}>
         <HomeTile id="home-letters" title={trCopy('c_2f46b1d4291b', '文字と音', 'Letters & sounds')} kind="letters" color="#E0EFE8" onPress={() => nav.navigate('LettersSounds')} />
         {guideCount > 0 && <HomeTile id="home-grammar-lessons" title={trCopy('c_c12a73a72dcb', '文法教材', 'Grammar')} kind="grammar" color="#E5EAF7" onPress={() => nav.navigate('GrammarLibrary')} />}
       </View>
-      <View style={styles.tileRow}>
+      <View style={rowStyle}>
         <HomeTile id="home-vocabulary" title={trCopy('c_d282e858f43a', '単語', 'Words')} kind="vocabulary" color="#ECE8F4" onPress={() => nav.navigate('VocabCategory')} />
         {!!data.NEPALI_DICTIONARY?.entries.length && <HomeTile id="home-dictionary" title={trCopy('c_df9dedb2fa8a', 'ネパール語辞書', 'Dictionary')} kind="dictionary" color="#DFEDF0" onPress={() => nav.navigate('NepaliDictionary')} />}
       </View>
-      {(hasCulture || accessory != null) && <View style={styles.tileRow}>
+      {(hasCulture || accessory != null) && <View style={rowStyle}>
         {hasCulture && <HomeTile id="home-culture-break" title={lang === 'ja' ? 'ひと休み' : readingCopy(lang).breaks} kind="culture" color="#F2E8D7" onPress={() => nav.navigate('CultureBreak')} />}
         {accessory}
       </View>}
@@ -95,14 +115,14 @@ export function HomeTile({ id, title, kind, color, onPress, unreadLabel }: {
   color: string; onPress: () => void; unreadLabel?: string;
 }) {
   const { width, height } = useWindowDimensions();
-  const { tabDesign, tabDesignEnabled } = useSettings();
-  const palette = tabDesignEnabled ? tabPalette(tabDesign, 'home') : undefined;
+  const { tabDesignEnabled, tabDesign } = useSettings();
+  const palette = tabDesignEnabled ? tabPalette('home', tabDesign) : undefined;
   const iconInk = palette?.accent ?? '#234D48';
   const compact = width < 360;
   return <Pressable testID={id} accessibilityRole="button" accessibilityLabel={unreadLabel ? `${title} · ${unreadLabel}` : title} onPress={onPress}
     style={({ pressed }) => [
       styles.tile, { backgroundColor: palette ? (pressed ? palette.soft : palette.surface) : color },
-      palette && { borderRadius: tabCardRadius, borderWidth: 1, borderColor: palette.line },
+      palette && { borderRadius: palette.dark ? 15 : tabCardRadius, borderWidth: 1, borderColor: palette.line },
       compact && styles.compactTile, height < 640 && styles.shortTile, pressed && !palette && styles.pressed,
     ]}>
     <View accessible={false} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.icon}>
@@ -115,13 +135,17 @@ export function HomeTile({ id, title, kind, color, onPress, unreadLabel }: {
       </Svg>}
     </View>
     <Text style={[styles.tileTitle, compact && styles.compactTileTitle, palette && { color: palette.ink }]}>{title}</Text>
-    {unreadLabel && <View testID={`${id}-unread`} style={styles.unreadDot} />}
+    {unreadLabel && <View testID={`${id}-unread`} style={[styles.unreadDot, palette && { backgroundColor: palette.unread }]} />}
   </Pressable>;
 }
 
 const styles = StyleSheet.create({
-  page: { padding: 12, paddingBottom: 18, gap: 10, maxWidth: 760, width: '100%', alignSelf: 'center' },
+  page: { padding: 12, paddingBottom: 8, gap: 10, maxWidth: 760, width: '100%', alignSelf: 'center' },
+  fillPage: { flexGrow: 1 },
   hero: { backgroundColor: c.navy, borderRadius: 18, overflow: 'hidden' },
+  expandHero: { flexGrow: 1 },
+  heroArt: { width: '100%', flexGrow: 1, position: 'relative', overflow: 'hidden' },
+  heroImage: { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' },
   heroBody: { padding: 12 },
   shortHeroBody: { paddingVertical: 8 },
   headline: { color: '#F5FAF8', fontWeight: '600', letterSpacing: -.5 },

@@ -16,42 +16,21 @@ import * as Application from 'expo-application';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { useEntitlement } from '../entitlement';
 import { useSettingsDevelopment } from '../settingsDevelopment';
-import { TabMasthead, tabCardRadius, tabDesignOptions, tabDesignSwatches, tabPalette, type TabPalette } from '../tabAppearance';
+import { TabMasthead, tabCardRadius, tabPalette, type TabPalette } from '../tabAppearance';
 
 const SettingsPalette = createContext<TabPalette | undefined>(undefined);
-
-const designCopy = {
-  ja: { title: 'タブのデザイン', minimal: 'ミニマル', blueprint: 'ブループリント', classic: '従来' },
-  en: { title: 'Tab design', minimal: 'Minimal', blueprint: 'Blueprint', classic: 'Classic' },
-  ko: { title: '탭 디자인', minimal: '미니멀', blueprint: '블루프린트', classic: '기본' },
-  ar: { title: 'تصميم علامات التبويب', minimal: 'بسيط', blueprint: 'مخطّط أزرق', classic: 'كلاسيكي' },
+const TAB_DESIGNS = ['minimal', 'forest'] as const satisfies readonly TabDesign[];
+const TAB_DESIGN_COPY = {
+  ja: { title: 'タブのデザイン', minimal: 'ミニマル', forest: 'フォレスト' },
+  en: { title: 'Tab design', minimal: 'Minimal', forest: 'Forest' },
+  ko: { title: '탭 디자인', minimal: '미니멀', forest: '포레스트' },
+  ar: { title: 'تصميم علامات التبويب', minimal: 'بسيط', forest: 'الغابة' },
 };
 
-function TabDesignPicker({ value, onChange, lang, palette }: {
-  value: TabDesign; onChange: (design: TabDesign) => void; lang: Lang; palette?: TabPalette;
-}) {
-  const copy = designCopy[lang as keyof typeof designCopy] ?? designCopy.ja;
-  return <View style={[styles.designPanel, palette && { backgroundColor: palette.surface, borderColor: palette.line }]}>
-    <Text accessibilityRole="header" style={[styles.designLabel, palette && { color: palette.ink }]}>{copy.title}</Text>
-    <View accessibilityRole="radiogroup" accessibilityLabel={copy.title} style={styles.designOptions}>
-      {tabDesignOptions.map(option => {
-        const active = option === value;
-        return <Pressable key={option} testID={`tab-design-${option}`} accessibilityRole="radio"
-          accessibilityState={{ checked: active }} accessibilityLabel={copy[option]} onPress={() => onChange(option)}
-          style={[styles.designOption, active && { borderColor: palette?.accent ?? '#2563EB', backgroundColor: palette?.soft ?? '#EFF6FF' }]}>
-          <View style={styles.designSwatch} accessible={false}>
-            {tabDesignSwatches[option].map(color => <View key={color} style={[styles.swatchColor, { backgroundColor: color }]} />)}
-          </View>
-          <Text style={[styles.designOptionText, active && styles.designOptionOn]}>{copy[option]}</Text>
-        </Pressable>;
-      })}
-    </View>
-  </View>;
-}
-
 function Icon({ children, size = 16 }: { children: React.ReactNode; size?: number }) {
+  const palette = useContext(SettingsPalette);
   return (
-    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={colors.inkQuiet} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={palette?.muted ?? colors.inkQuiet} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
       {children}
     </Svg>
   );
@@ -86,7 +65,7 @@ function PillGroup<T extends string | number>({ items, value, onChange, ss, sing
           }]}
           onPress={() => onChange(it.value)}
         >
-          <Text style={[styles.pillText, value === it.value && styles.pillTextOn, ss(12)]}>{it.label}</Text>
+          <Text style={[styles.pillText, value === it.value && styles.pillTextOn, palette && { color: value === it.value ? palette.onAccent : palette.ink }, ss(12)]}>{it.label}</Text>
         </Pressable>
       ))}
     </View>
@@ -130,9 +109,15 @@ const PREMIUM_L: Record<string, { title: string; unlock: string; unlockDesc: str
 
 export default function SettingsScreen() {
   const s = useSettings();
-  const palette = s.tabDesignEnabled ? tabPalette(s.tabDesign, 'settings') : undefined;
+  const palette = s.tabDesignEnabled ? tabPalette('settings', s.tabDesign) : undefined;
   const { t, lang, setLang, langs } = useI18n();
   const ss = useScaleStyle();
+  const designCopy = TAB_DESIGN_COPY[lang as keyof typeof TAB_DESIGN_COPY] ?? TAB_DESIGN_COPY.en;
+  const buttonStyle = palette?.dark ? { backgroundColor: palette.soft, borderColor: palette.line } : undefined;
+  const buttonInk = palette?.dark ? { color: palette.ink } : undefined;
+  const mutedInk = palette?.dark ? { color: palette.muted } : undefined;
+  const linkInk = palette?.dark ? { color: palette.accent } : undefined;
+  const trackColor = { false: palette?.line ?? colors.line, true: palette?.accent ?? colors.ink };
   const { version: APP_VERSION, review, vocabularyQuiz } = useAppData();
   const buildNumber = Application.nativeBuildVersion;
   const versionDisplay = buildNumber ? `${APP_VERSION} (${buildNumber})` : APP_VERSION;
@@ -243,7 +228,7 @@ export default function SettingsScreen() {
   };
 
   const ratingRow = canRate ? <Row label={t('settings.rateApp')} ss={ss}>
-    <Pressable accessibilityRole="button" onPress={onRate} style={[styles.btn, styles.testBtn]}><Text style={styles.btnText}>{t('common.open')}</Text></Pressable>
+    <Pressable accessibilityRole="button" onPress={onRate} style={[styles.btn, styles.testBtn, buttonStyle]}><Text style={[styles.btnText, buttonInk]}>{t('common.open')}</Text></Pressable>
   </Row> : null;
   const testReview = async () => {
     if (!development || !developmentUnlocked) return;
@@ -263,22 +248,54 @@ export default function SettingsScreen() {
         <Text style={styles.title}>{t('settings.title')}</Text>
         <Text style={styles.desc}>{t('settings.desc')}</Text>
       </View>}
-      {s.tabDesignEnabled && <TabDesignPicker value={s.tabDesign} onChange={s.setTabDesign} lang={lang} palette={palette} />}
+
+      {palette && (
+        <Section title={designCopy.title} icon={<EyeIcon />} ss={ss}>
+          <View accessibilityRole="radiogroup" accessibilityLabel={designCopy.title} style={styles.designChoices}>
+            {TAB_DESIGNS.map(design => {
+              const selected = design === s.tabDesign;
+              const sample = tabPalette('settings', design);
+              return (
+                <Pressable
+                  key={design}
+                  testID={`tab-design-${design}`}
+                  accessibilityRole="radio"
+                  accessibilityState={{ checked: selected }}
+                  accessibilityLabel={designCopy[design]}
+                  onPress={() => s.setTabDesign(design)}
+                  style={[styles.designChoice, {
+                    backgroundColor: selected ? palette.soft : palette.surface,
+                    borderColor: selected ? palette.accent : palette.line,
+                  }]}
+                >
+                  <View style={[styles.designSwatch, { backgroundColor: sample.masthead, borderColor: sample.edge }]}>
+                    <View style={[styles.designSwatchLine, { backgroundColor: sample.accent }]} />
+                  </View>
+                  <Text style={[styles.designLabel, ss(13), { color: palette.ink }]}>{designCopy[design]}</Text>
+                  <View style={[styles.designRadio, { borderColor: selected ? palette.accent : palette.edge }]}>
+                    {selected && <View style={[styles.designRadioDot, { backgroundColor: palette.accent }]} />}
+                  </View>
+                </Pressable>
+              );
+            })}
+          </View>
+        </Section>
+      )}
 
       {showPurchase && (
         <Section title={ent.accessKind === 'launch-free' ? freeCopy.title : prem.title} icon={<StarIcon />} ss={ss}>
           {ent.isPro ? (
-            <Row label={ent.accessKind === 'launch-free' ? freeCopy.label : prem.purchased} desc={ent.accessKind === 'launch-free' ? freeCopy.description : undefined} ss={ss}><Text style={styles.valueText}>✓</Text></Row>
+            <Row label={ent.accessKind === 'launch-free' ? freeCopy.label : prem.purchased} desc={ent.accessKind === 'launch-free' ? freeCopy.description : undefined} ss={ss}><Text style={[styles.valueText, mutedInk]}>✓</Text></Row>
           ) : (
             <Row label={prem.unlock} desc={prem.unlockDesc} ss={ss}>
-              <Pressable style={[styles.btn, styles.btnPrimary]} onPress={() => nav.navigate('Paywall')}>
-                <Text style={styles.btnTextPrimary}>{prem.unlockBtn}</Text>
+              <Pressable style={[styles.btn, styles.btnPrimary, palette?.dark && { backgroundColor: palette.accent, borderColor: palette.accent }]} onPress={() => nav.navigate('Paywall')}>
+                <Text style={[styles.btnTextPrimary, palette?.dark && { color: palette.onAccent }]}>{prem.unlockBtn}</Text>
               </Pressable>
             </Row>
           )}
           <Row label={prem.restore} ss={ss}>
-            <Pressable style={styles.btn} disabled={ent.busy} onPress={() => { ent.restore(); }}>
-              <Text style={styles.btnText}>{ent.busy ? '…' : prem.restoreBtn}</Text>
+            <Pressable style={[styles.btn, buttonStyle]} disabled={ent.busy} onPress={() => { ent.restore(); }}>
+              <Text style={[styles.btnText, buttonInk]}>{ent.busy ? '…' : prem.restoreBtn}</Text>
             </Pressable>
           </Row>
         </Section>
@@ -296,6 +313,7 @@ export default function SettingsScreen() {
               value={lang}
               onChange={setLang}
               labelAlignment={lang === 'ar' ? 'right' : 'left'}
+              palette={palette?.dark ? palette : undefined}
             />
           ) : (
             <PillGroup<Lang>
@@ -347,7 +365,7 @@ export default function SettingsScreen() {
           />
         </Row>
         <Row label={t('settings.listenLoop')} desc={t('settings.listenLoopDesc')} ss={ss}>
-          <Switch value={s.listenLoop} onValueChange={s.setListenLoop} trackColor={{ false: colors.line, true: colors.ink }} />
+          <Switch value={s.listenLoop} onValueChange={s.setListenLoop} trackColor={trackColor} />
         </Row>
         <Row label={t('settings.gap')} desc={t('settings.gapDesc')} ss={ss}>
           <PillGroup<GapMode>
@@ -365,7 +383,7 @@ export default function SettingsScreen() {
 
       <Section title={t('settings.sectionDisplay')} icon={<EyeIcon />} ss={ss}>
         {!vocabularyQuiz && <Row label={t('settings.romaji')} desc={t('settings.romajiDesc')} ss={ss}>
-          <Switch value={s.romaji} onValueChange={s.setRomaji} trackColor={{ false: colors.line, true: colors.ink }} />
+          <Switch value={s.romaji} onValueChange={s.setRomaji} trackColor={trackColor} />
         </Row>}
         <Row label={t('settings.fontSize')} desc={t('settings.fontSizeDesc')} ss={ss}>
           <PillGroup<FontMode>
@@ -383,52 +401,52 @@ export default function SettingsScreen() {
 
       {!vocabularyQuiz && <Section title={t('settings.sectionLearn')} icon={<CapIcon />} ss={ss}>
         <Row label={t('settings.autoFlip')} desc={t('settings.autoFlipDesc')} ss={ss}>
-          <Switch value={s.autoFlip} onValueChange={s.setAutoFlip} trackColor={{ false: colors.line, true: colors.ink }} />
+          <Switch value={s.autoFlip} onValueChange={s.setAutoFlip} trackColor={trackColor} />
         </Row>
         <Row label={t('settings.shuffle')} desc={t('settings.shuffleDesc')} ss={ss}>
-          <Switch value={s.shuffle} onValueChange={s.setShuffle} trackColor={{ false: colors.line, true: colors.ink }} />
+          <Switch value={s.shuffle} onValueChange={s.setShuffle} trackColor={trackColor} />
         </Row>
       </Section>}
 
       <Section title={t('settings.sectionData')} icon={<DataIcon />} ss={ss}>
         <Row label={t('settings.resetSettings')} desc={t('settings.resetSettingsDesc')} ss={ss}>
-          <Pressable style={[styles.btn, styles.btnDanger]} onPress={onReset}>
-            <Text style={styles.btnTextDanger}>{t('common.reset')}</Text>
+          <Pressable style={[styles.btn, styles.btnDanger, buttonStyle]} onPress={onReset}>
+            <Text style={[styles.btnTextDanger, palette?.dark && { color: palette.danger }]}>{t('common.reset')}</Text>
           </Pressable>
         </Row>
       </Section>
 
       <Section title={t('settings.sectionAbout')} icon={<InfoIcon />} ss={ss}>
-        <Row label={t('settings.version')} ss={ss}><Pressable testID="settings-version" accessibilityRole="button" accessibilityLabel={`${t('settings.version')} ${versionDisplay}`} onPress={tapVersion} style={{ minHeight: 44, paddingHorizontal: 8, justifyContent: 'center' }}><Text style={styles.valueText}>{versionDisplay}</Text></Pressable></Row>
+        <Row label={t('settings.version')} ss={ss}><Pressable testID="settings-version" accessibilityRole="button" accessibilityLabel={`${t('settings.version')} ${versionDisplay}`} onPress={tapVersion} style={{ minHeight: 44, paddingHorizontal: 8, justifyContent: 'center' }}><Text style={[styles.valueText, mutedInk]}>{versionDisplay}</Text></Pressable></Row>
         {!showPurchase && ratingRow}
         <Row label={t('settings.shareApp')} ss={ss}>
-          <Pressable style={styles.btn} onPress={onShare}>
-            <Text style={styles.btnText}>{t('common.share')}</Text>
+          <Pressable style={[styles.btn, buttonStyle]} onPress={onShare}>
+            <Text style={[styles.btnText, buttonInk]}>{t('common.share')}</Text>
           </Pressable>
         </Row>
         <Row label={t('settings.privacy')} ss={ss}>
-          <Pressable onPress={onPrivacy}><Text style={styles.linkText}>{t('common.open')}</Text></Pressable>
+          <Pressable onPress={onPrivacy}><Text style={[styles.linkText, linkInk]}>{t('common.open')}</Text></Pressable>
         </Row>
         {hasTerms && (
           <Row label={t('settings.terms')} ss={ss}>
-            <Pressable onPress={onTerms}><Text style={styles.linkText}>{t('common.open')}</Text></Pressable>
+            <Pressable onPress={onTerms}><Text style={[styles.linkText, linkInk]}>{t('common.open')}</Text></Pressable>
           </Row>
         )}
         <Row label={t('settings.contact')} ss={ss}>
-          <Pressable onPress={onContact}><Text style={styles.linkText}>{t('common.mail')}</Text></Pressable>
+          <Pressable onPress={onContact}><Text style={[styles.linkText, linkInk]}>{t('common.mail')}</Text></Pressable>
         </Row>
       </Section>
 
       {development && developmentUnlocked && <Section title={developmentCopy.title} icon={<DataIcon />} ss={ss}>
         <Row label={developmentCopy.review} desc={developmentCopy.description} ss={ss}>
-          <Pressable accessibilityRole="button" style={[styles.btn, styles.testBtn]} onPress={testReview}><Text style={styles.btnText}>{developmentCopy.launch}</Text></Pressable>
+          <Pressable accessibilityRole="button" style={[styles.btn, styles.testBtn, buttonStyle]} onPress={testReview}><Text style={[styles.btnText, buttonInk]}>{developmentCopy.launch}</Text></Pressable>
         </Row>
         <Row label={developmentCopy.request} ss={ss}>
-          <Pressable accessibilityRole="button" style={[styles.btn, styles.testBtn]} onPress={() => { if (developmentUnlocked) development.showRequest(); }}><Text style={styles.btnText}>{developmentCopy.show}</Text></Pressable>
+          <Pressable accessibilityRole="button" style={[styles.btn, styles.testBtn, buttonStyle]} onPress={() => { if (developmentUnlocked) development.showRequest(); }}><Text style={[styles.btnText, buttonInk]}>{developmentCopy.show}</Text></Pressable>
         </Row>
       </Section>}
 
-      <Text style={styles.versionFooter}>{t('app.name')} v{versionDisplay}</Text>
+      <Text style={[styles.versionFooter, mutedInk]}>{t('app.name')} v{versionDisplay}</Text>
     </ScrollView>
     </SettingsPalette.Provider>
   );
@@ -437,20 +455,19 @@ export default function SettingsScreen() {
 const styles = StyleSheet.create({
   container: { padding: spacing.lg, paddingBottom: spacing.xxl, maxWidth: 760, width: '100%', alignSelf: 'center' },
   head: { marginBottom: spacing.xl },
-  designPanel: { padding: 12, gap: 10, borderRadius: 15, borderWidth: 1, borderColor: colors.line, backgroundColor: colors.surface, marginBottom: 20 },
-  designLabel: { fontSize: 15, lineHeight: 23, fontWeight: '700', color: colors.ink },
-  designOptions: { flexDirection: 'row', gap: 6, alignItems: 'stretch' },
-  designOption: { flex: 1, minWidth: 0, minHeight: 55, paddingHorizontal: 4, paddingVertical: 6, alignItems: 'center', justifyContent: 'center', gap: 5, borderRadius: 9, backgroundColor: '#fff', borderWidth: 1, borderColor: colors.line },
-  designOptionText: { textAlign: 'center', fontSize: 12, lineHeight: 17, color: colors.inkMute },
-  designOptionOn: { fontWeight: '700', color: colors.ink },
-  designSwatch: { flexDirection: 'row', height: 13, width: 34, borderWidth: 1, borderColor: '#C9D1D1', borderRadius: 4, overflow: 'hidden' },
-  swatchColor: { flex: 1 },
   title: { fontSize: 28, fontWeight: '700', color: colors.ink, marginBottom: spacing.xs, letterSpacing: -0.5 },
   desc: { fontSize: 14, color: colors.inkMute, lineHeight: 21 },
   section: { marginBottom: spacing.xl },
   refinedSection: { marginBottom: 22 },
   sectionHeader: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.sm, paddingHorizontal: spacing.xs },
   sectionTitle: { fontSize: 13, fontWeight: '700', color: colors.inkQuiet, letterSpacing: 1.2, textTransform: 'uppercase' },
+  designChoices: { flexDirection: 'row', gap: 8 },
+  designChoice: { flex: 1, minHeight: 50, flexDirection: 'row', alignItems: 'center', gap: 6, padding: 8, borderWidth: 1, borderRadius: tabCardRadius },
+  designSwatch: { width: 22, height: 19, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderRadius: 5 },
+  designSwatchLine: { width: 10, height: 2, borderRadius: 1 },
+  designLabel: { flex: 1, fontWeight: '600' },
+  designRadio: { width: 14, height: 14, borderRadius: 7, borderWidth: 1, alignItems: 'center', justifyContent: 'center' },
+  designRadioDot: { width: 6, height: 6, borderRadius: 3 },
   item: {
     backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.line,
     borderRadius: radius.md, padding: spacing.md, marginBottom: spacing.xs,
