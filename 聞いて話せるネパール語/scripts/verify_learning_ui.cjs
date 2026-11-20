@@ -28,13 +28,19 @@ const arabicFoundation=process.argv.includes('--arabic-foundation');
 const arabicDictionary=process.argv.includes('--arabic-dictionary');
 const arabicModes=process.argv.includes('--arabic-modes');
 const homeNotices=process.argv.includes('--home-notices');
+const tabDesigns=process.argv.includes('--tab-designs');
 modules.Text=compile(source('packages/shared/src/Text.tsx'));
+modules.tabAppearance=compile(source('packages/shared/src/tabAppearance.tsx'));
 if(homeNotices){
   modules.Announcements=compile(source('聞いて話せるネパール語/expo-app/src/notices/Announcements.tsx'));
   for(const lang of ['ko','ar']){
     overlays[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/data/overlays/${lang}.json`));
     strings[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/src/i18n/${lang}.json`));
   }
+}
+if(tabDesigns)for(const lang of ['ko','ar']){
+  overlays[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/data/overlays/${lang}.json`));
+  strings[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/src/i18n/${lang}.json`));
 }
 if(arabicFoundation||arabicDictionary||arabicModes||arabicAlignment){
   strings.ar=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ar.json'));
@@ -119,7 +125,7 @@ if(modules.Announcements){
 window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];window.activeAudio=new Set();window.audioEnded=false;
 const neAudio={},neGram={},l1Audio={},l1Gram={};for(const[k,rows]of Object.entries(core.examplesNe))rows.forEach((_,i)=>{neAudio[k+'-'+(i+1)]='ne/'+k+'-'+(i+1);l1Audio[k+'-'+(i+1)]=lang+'/'+k+'-'+(i+1);});for(const[k,id]of Object.entries(core.grammarAudioRefs??Object.fromEntries(Object.entries(core.grammarNe).flatMap(([t,rows])=>rows.map((_,i)=>[t+'-'+(i+1),t+'-'+(i+1)]))))){if(id){neGram[id]='ne/'+id;l1Gram[id]=lang+'/'+id;}}
 window.data=require('compose').composePack({...core,nepaliAudio:neAudio,nepaliGrammarAudio:neGram},{...overlays[lang],nativeLang:lang,l1Audio,l1GrammarAudio:l1Gram},{version:'test',quizAudio});window.data.review={iosAppId:'6771720689'};
-require('react-dom').flushSync(()=>root.render(h(SettingsProvider,{storageKey:'test-settings',key:++generation},h(Provider,{storageKey:'test-study'},h(AudioProvider,{resolve:resolveAudio},h(Frame))))));await new Promise(r=>setTimeout(r,30));};
+require('react-dom').flushSync(()=>root.render(h(SettingsProvider,{storageKey:'test-settings',key:++generation,defaults:${tabDesigns || homeNotices ? "{tabDesign:'minimal'}" : 'undefined'}},h(Provider,{storageKey:'test-study'},h(AudioProvider,{resolve:resolveAudio},h(Frame))))));await new Promise(r=>setTimeout(r,30));};
 window.textAlignmentFixture=(layout,alignment)=>{
   window.caseInfo={lang:'ja',scale:1};const SharedText=require('Text').Text;
   require('react-dom').flushSync(()=>root.render(h(SettingsProvider,{storageKey:'test-settings',key:++generation},h(LayoutDirection.Provider,{value:layout},h(View,{style:{direction:layout}},
@@ -925,6 +931,52 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         console.log(`PASS ${lang}: home card order, all ${themes.length} lessons, three reader tabs, return to library/home, grammar tab examples and access limits.`);
       }
       assert.deepEqual(errors,[]);return;
+    }
+    if(tabDesigns){
+      const by=id=>page.getByTestId(id);
+      const masthead=by('tab-masthead');
+      for(const lang of ['ja','en','ko','ar']){
+        await page.setViewportSize({width:320,height:690});
+        await page.evaluate(l=>window.boot(l,true,{name:'SettingsTab'},1.4),lang);
+        await masthead.waitFor();
+        assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(230, 240, 238)');
+        await page.evaluate(()=>window.navigate('HomeTab',{}));
+        assert.equal(await by('home-masthead').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(230, 240, 238)');
+        await page.evaluate(()=>window.navigate('SettingsTab',{}));
+        await by('tab-design-blueprint').click();
+        await page.waitForFunction(()=>JSON.parse(localStorage.getItem('test-settings')).tabDesign==='blueprint');
+        assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(25, 45, 53)');
+        await page.evaluate(l=>window.boot(l,false,{name:'SettingsTab'},1.4),lang);
+        assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(25, 45, 53)');
+        await page.evaluate(()=>window.navigate('HomeTab',{}));
+        assert.equal(await by('home-masthead').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(25, 45, 53)');
+        assert.equal(await by('home-letters').evaluate(el=>getComputedStyle(el).borderColor),'rgb(202, 216, 232)');
+        for(const [params,tab,color] of [
+          [{mode:'grammar',puzzleOnly:true,guidesOnHome:true},'puzzle-conversation','rgb(37, 28, 57)'],
+          [{mode:'listening',grammarFirst:true},'listen-source-conversation','rgb(16, 46, 45)'],
+          [{mode:'grammar',composition:true,guidesOnHome:true},'composition-conversation','rgb(16, 38, 61)'],
+        ]){
+          await page.evaluate(params=>window.navigate('Theme',params),params);
+          assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),color);
+          await by(tab).click();
+          assert.equal(await by(tab).getAttribute('aria-selected'),'true');
+          assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+          if(params.puzzleOnly){
+            const first=await by('theme-1').innerText();
+            assert(!/\d+\s*(?:問|puzzles|개 퍼즐|من تدريبات)/.test(first));
+          }
+        }
+        await page.evaluate(()=>window.navigate('SettingsTab',{}));
+        await by('tab-design-classic').click();
+        assert.equal(await masthead.count(),0);
+        await page.evaluate(()=>window.navigate('Theme',{mode:'grammar',puzzleOnly:true,guidesOnHome:true}));
+        assert.equal(await masthead.count(),0);
+        await page.evaluate(()=>window.navigate('HomeTab',{}));
+        assert.equal(await by('home-masthead').count(),0);
+      }
+      assert.deepEqual(errors,[]);
+      console.log('PASS: matching Home and Settings designs, remount persistence, four locales at 320px, live mode selectors, and no puzzle count in theme titles.');
+      return;
     }
     if(homeNotices){
       const by=id=>page.getByTestId(id);

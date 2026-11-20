@@ -10,7 +10,7 @@ module.exports = ({ config }) => {
     },
     plugins: [
       ...(config.plugins ?? []),
-      ...((ios || android) ? [['expo-notifications', { mode: ios ? 'production' : 'development', defaultChannel: 'announcements' }]] : []),
+      ['./plugins/withNoticePush', { ios, android }],
     ],
     extra: { ...config.extra, nepaliNoticePushPlatforms: { ios, android } },
   };

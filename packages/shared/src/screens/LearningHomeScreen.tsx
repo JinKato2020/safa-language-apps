@@ -11,6 +11,8 @@ import { useLearning } from '../LearningContext';
 import { emptyStudyState, practiceParams, resolveStudy, reviewItems } from '../learning';
 import { useGrammarGuide } from '../grammarGuide';
 import { readingCopy } from '../grammarReading';
+import { useSettings } from '../SettingsContext';
+import { TabMastheadFrame, tabCardRadius, tabPalette } from '../tabAppearance';
 
 const c = { ink: '#123039', muted: '#52666C', navy: '#102F38', teal: '#7DE2CE', page: '#F2F5F3' };
 const EMPTY = emptyStudyState();
@@ -18,6 +20,8 @@ const EMPTY = emptyStudyState();
 export default function LearningHomeScreen({ accessory }: { accessory?: ReactNode }) {
   const nav = useNavigation<any>(), { lang , copy: trCopy } = useI18n(), { top } = useSafeAreaInsets();
   const data = useAppData(), learning = useLearning(), hero = useHeroImage('grammar');
+  const { tabDesign, tabDesignEnabled } = useSettings();
+  const palette = tabDesignEnabled ? tabPalette(tabDesign, 'home') : undefined;
   const guides = useGrammarGuide(), guideCount = data.GRAMMAR_THEMES.filter(theme => guides?.[String(theme.id)]?.length).length;
   const hasCulture = Object.values(guides ?? {}).some(blocks => blocks.some(block => block.lessonSupplement?.kind === 'culture'));
   const [now, setNow] = useState(Date.now);
@@ -32,7 +36,7 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
     const sub = AppState.addEventListener('change', value => { if (value === 'active') refresh(); });
     return () => { clearTimeout(timer); sub.remove(); };
   }, []));
-  const en = lang === 'en', state = learning?.state ?? EMPTY;
+  const state = learning?.state ?? EMPTY;
   const { width, height } = useWindowDimensions();
   const shortScreen = height < 640;
   const displaySize = width < 360 ? 21 : 25;
@@ -48,23 +52,27 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
   };
   const ratio = hero == null ? 3 : (() => { const asset = Image.resolveAssetSource(hero); return asset.width / asset.height; })();
 
-  return <ScrollView style={{ backgroundColor: c.page, marginTop: top }} contentContainerStyle={styles.page}>
-    <View style={styles.hero}>
+  const primaryColor = palette ? (tabDesign === 'blueprint' ? palette.mastAccent : palette.accent) : c.teal;
+  const primaryInk = palette && tabDesign === 'minimal' ? '#FFFFFF' : c.navy;
+  const heroBody = <>
       {hero != null && <View style={{ width: '100%', height: Math.min((Math.min(width, 760) - 24) / ratio, shortScreen ? 68 : 136) }}>
         <Image source={hero} resizeMode="contain" style={{ width: '100%', height: '100%' }} accessibilityIgnoresInvertColors />
       </View>}
 
       <View style={[styles.heroBody, shortScreen && styles.shortHeroBody]}>
-        <Text testID="home-motto" accessibilityRole="header" style={[styles.headline, { fontSize: displaySize, lineHeight: displaySize + 6 }]}>
-          Small steps build great <Text style={styles.strength}>strength.</Text>
+        <Text testID="home-motto" accessibilityRole="header" style={[styles.headline, { fontSize: displaySize, lineHeight: displaySize + 6 }, palette && { color: palette.mastInk }]}>
+          Small steps build great <Text style={[styles.strength, palette && { color: palette.mastAccent }]}>strength.</Text>
         </Text>
-        <Pressable accessibilityRole="button" accessibilityLabel={action} onPress={start} style={({ pressed }) => [styles.primary, pressed && styles.pressed]}>
-          <Text style={styles.primaryText}>{action}</Text><Text style={styles.arrow}>↗</Text>
+        <Pressable accessibilityRole="button" accessibilityLabel={action} onPress={start} style={({ pressed }) => [styles.primary, { backgroundColor: primaryColor }, pressed && styles.pressed]}>
+          <Text style={[styles.primaryText, { color: primaryInk }]}>{action}</Text><Text accessibilityElementsHidden importantForAccessibility="no" style={[styles.arrow, { color: primaryInk }]}>↗</Text>
         </Pressable>
       </View>
-    </View>
+  </>;
 
-    <View testID="home-content-grid" style={styles.grid}>
+  return <ScrollView testID="learning-home" style={{ backgroundColor: palette?.page ?? c.page, marginTop: top }} contentContainerStyle={styles.page}>
+    {palette ? <TabMastheadFrame palette={palette} compact testID="home-masthead">{heroBody}</TabMastheadFrame> : <View style={styles.hero}>{heroBody}</View>}
+
+    <View testID="home-content-grid" style={[styles.grid, palette && shortScreen && styles.shortGrid]}>
       <View style={styles.tileRow}>
         <HomeTile id="home-letters" title={trCopy('c_2f46b1d4291b', '文字と音', 'Letters & sounds')} kind="letters" color="#E0EFE8" onPress={() => nav.navigate('LettersSounds')} />
         {guideCount > 0 && <HomeTile id="home-grammar-lessons" title={trCopy('c_c12a73a72dcb', '文法教材', 'Grammar')} kind="grammar" color="#E5EAF7" onPress={() => nav.navigate('GrammarLibrary')} />}
@@ -87,10 +95,18 @@ export function HomeTile({ id, title, kind, color, onPress, unreadLabel }: {
   color: string; onPress: () => void; unreadLabel?: string;
 }) {
   const { width, height } = useWindowDimensions();
+  const { tabDesign, tabDesignEnabled } = useSettings();
+  const palette = tabDesignEnabled ? tabPalette(tabDesign, 'home') : undefined;
+  const iconInk = palette?.accent ?? '#234D48';
   const compact = width < 360;
-  return <Pressable testID={id} accessibilityRole="button" accessibilityLabel={unreadLabel ? `${title} · ${unreadLabel}` : title} onPress={onPress} style={({pressed})=>[styles.tile,{backgroundColor:color},compact&&styles.compactTile,height<640&&styles.shortTile,pressed&&styles.pressed]}>
+  return <Pressable testID={id} accessibilityRole="button" accessibilityLabel={unreadLabel ? `${title} · ${unreadLabel}` : title} onPress={onPress}
+    style={({ pressed }) => [
+      styles.tile, { backgroundColor: palette ? (pressed ? palette.soft : palette.surface) : color },
+      palette && { borderRadius: tabCardRadius, borderWidth: 1, borderColor: palette.line },
+      compact && styles.compactTile, height < 640 && styles.shortTile, pressed && !palette && styles.pressed,
+    ]}>
     <View accessible={false} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.icon}>
-      {kind==='letters' ? <Text style={styles.letterIcon}>अ</Text> : <Svg width={23} height={23} viewBox="0 0 24 24" fill="none" stroke="#234D48" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round">
+      {kind==='letters' ? <Text style={[styles.letterIcon, { color: iconInk }]}>अ</Text> : <Svg width={23} height={23} viewBox="0 0 24 24" fill="none" stroke={iconInk} strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round">
         {kind==='grammar' ? <><Path d="M12 5C8 3 5 3 2 4v15c3-1 6-1 10 1 4-2 7-2 10-1V4c-3-1-6-1-10 1Z"/><Path d="M12 5v15M5 8l4 1M5 12l4 1M15 9l4-1M15 13l4-1"/></>
           : kind==='vocabulary' ? <><Rect x="6" y="3" width="15" height="17" rx="3"/><Path d="M3 7v12a3 3 0 0 0 3 3M10 8h7M10 12h5"/></>
           : kind==='culture' ? <Path d="M3 8h13v6a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Zm13 2h2a3 3 0 0 1 0 6h-2M2 21h19M7 5V3m5 2V3"/>
@@ -98,7 +114,7 @@ export function HomeTile({ id, title, kind, color, onPress, unreadLabel }: {
           : <><Path d="M4 3h12a2 2 0 0 1 2 2v4M4 3v17M4 3a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h7M7 7h7M7 11h3"/><Circle cx="16" cy="15" r="4"/><Path d="m19 18 3 3"/></>}
       </Svg>}
     </View>
-    <Text style={[styles.tileTitle,compact&&styles.compactTileTitle]}>{title}</Text>
+    <Text style={[styles.tileTitle, compact && styles.compactTileTitle, palette && { color: palette.ink }]}>{title}</Text>
     {unreadLabel && <View testID={`${id}-unread`} style={styles.unreadDot} />}
   </Pressable>;
 }
@@ -113,6 +129,7 @@ const styles = StyleSheet.create({
   primary: { marginTop: 8, backgroundColor: c.teal, borderRadius: 11, minHeight: 44, paddingHorizontal: 12, paddingVertical: 6, flexDirection: 'row', alignItems: 'center', gap: 8 },
   primaryText: { flex: 1, color: c.navy, fontSize: 15, lineHeight: 23, fontWeight: '700' }, arrow: { color: c.navy, fontSize: 23, lineHeight: 28 },
   grid: { gap: 8 }, tileRow: { flexDirection: 'row', alignItems: 'stretch', gap: 8 },
+  shortGrid: { gap: 5 },
   tile: { flex: 1, minWidth: 0, minHeight: 52, paddingHorizontal: 11, paddingVertical: 7, borderRadius: 13, gap: 7, flexDirection: 'row', alignItems: 'center' },
   icon: { width: 23, minHeight: 24, justifyContent: 'center' }, letterIcon: { color: '#234D48', fontSize: 23, lineHeight: 29, fontWeight: '600' },
   compactTile: { paddingHorizontal: 8, gap: 5 }, compactTileTitle: { fontSize: 14, lineHeight: 19 },

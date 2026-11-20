@@ -7,14 +7,15 @@ import { useFocusEffect, useNavigation, useRoute, type RouteProp } from '@react-
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { colors, spacing, radius } from '../theme';
 import type { RootStackParamList } from '../types';
-import { useScaleStyle } from '../SettingsContext';
+import { useScaleStyle, useSettings } from '../SettingsContext';
 import { useI18n } from '../i18n';
 import { useAppData } from '../AppDataContext';
 import { useEntitlement, isLockedAt, LockBadge } from '../entitlement';
 import { useGrammarGuide } from '../grammarGuide';
 import { withoutThemePrefix } from '../themeLabels';
 import { useLearning } from '../LearningContext';
-import { conversationPuzzleItems, createConversationPuzzleSession, createFreePracticeSession } from '../practicePool';
+import { createConversationPuzzleSession, createFreePracticeSession } from '../practicePool';
+import { TabMasthead, tabPalette } from '../tabAppearance';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'Theme'>;
 type R = RouteProp<RootStackParamList, 'Theme'>;
@@ -31,10 +32,13 @@ export default function ThemeScreen() {
   const navigation = useNavigation<Nav>();
   const { t, lang , copy: trCopy } = useI18n();
   const ss = useScaleStyle();
+  const settings = useSettings();
   const { mode, source, guidesOnHome, composition, puzzleOnly, grammarFirst, levelId } = useRoute<R>().params;
   const heroSrc = useHeroImage(composition ? 'conversation' : mode);
   const { top } = useSafeAreaInsets();
   const isListening = mode === 'listening';
+  const tab = puzzleOnly ? 'puzzle' : composition ? 'composition' : isListening && grammarFirst ? 'listening' : undefined;
+  const palette = tab && settings.tabDesignEnabled ? tabPalette(settings.tabDesign, tab) : undefined;
   // Route params retain the source and level when returning from practice/playback.
   const listenSource = source ?? (grammarFirst ? 'grammar' : 'conversation');
   const effectiveSource = isListening
@@ -122,19 +126,23 @@ export default function ThemeScreen() {
 
   return (
     <FlatList
-      style={heroSrc != null ? { marginTop: top } : undefined}
+      testID="mode-theme-list"
+      style={[palette && { backgroundColor: palette.page }, heroSrc != null && { marginTop: top }]}
       contentContainerStyle={styles.container}
       ListHeaderComponent={
         <>
-        {heroSrc != null && <ModeHero source={heroSrc} />}
-        <View style={styles.head}>
-          <Text style={[styles.modeTitle, ss(20)]}>{modeTitle}</Text>
-          <Text style={[styles.desc, ss(14, 21)]}>{headerText}</Text>
-          {(composition || puzzleOnly) && <View style={styles.sourceToggle}>{(['grammar', 'conversation'] as const).map(value => <Pressable key={value} testID={`${puzzleOnly ? 'puzzle' : 'composition'}-${value}`} accessibilityRole="tab" accessibilityState={{ selected: mode === value }} style={[styles.sourceTab, mode === value && styles.sourceTabOn]} onPress={() => navigation.setParams({ mode: value })}><Text style={[styles.sourceTabText, mode === value && styles.sourceTabTextOn, ss(14)]}>{t(`nav.${value}`)}</Text></Pressable>)}</View>}
+        {palette ? <TabMasthead title={modeTitle} description={headerText} palette={palette} image={heroSrc} />
+          : heroSrc != null && <ModeHero source={heroSrc} />}
+        <View style={[styles.head, palette && styles.refinedHead]}>
+          {!palette && <>
+            <Text style={[styles.modeTitle, ss(20)]}>{modeTitle}</Text>
+            <Text style={[styles.desc, ss(14, 21)]}>{headerText}</Text>
+          </>}
+          {(composition || puzzleOnly) && <View style={[styles.sourceToggle, palette && styles.refinedToggle]}>{(['grammar', 'conversation'] as const).map(value => <Pressable key={value} testID={`${puzzleOnly ? 'puzzle' : 'composition'}-${value}`} accessibilityRole="tab" accessibilityState={{ selected: mode === value }} style={[styles.sourceTab, mode === value && styles.sourceTabOn, palette && styles.refinedSegment, palette && { backgroundColor: mode === value ? palette.accent : palette.surface, borderColor: mode === value ? palette.accent : palette.line }]} onPress={() => navigation.setParams({ mode: value })}><Text style={[styles.sourceTabText, mode === value && styles.sourceTabTextOn, palette && mode !== value && { color: palette.ink }, ss(14)]}>{t(`nav.${value}`)}</Text></Pressable>)}</View>}
           {puzzleOnly && learning?.error && <Text accessibilityRole="alert" style={[styles.desc, { color: '#9f1239' }]}>{trCopy('c_10a188e49af5', '保存できませんでした。テーマをタップして再試行してください。', 'Could not save. Please tap the theme to try again.')}</Text>}
-          {isListening && <View style={styles.sourceToggle}>
-            {(grammarFirst ? ['grammar', 'conversation'] as const : ['conversation', 'grammar'] as const).map(value => <Pressable key={value} testID={`listen-source-${value}`} accessibilityRole="tab" accessibilityState={{ selected: listenSource === value }} style={[styles.sourceTab, listenSource === value && styles.sourceTabOn]} onPress={() => navigation.setParams({ source: value })}>
-              <Text style={[styles.sourceTabText, listenSource === value && styles.sourceTabTextOn, ss(14)]}>{t(value === 'grammar' ? 'listenSource.grammarName' : 'listenSource.convName')}</Text>
+          {isListening && <View style={[styles.sourceToggle, palette && styles.refinedToggle]}>
+            {(grammarFirst ? ['grammar', 'conversation'] as const : ['conversation', 'grammar'] as const).map(value => <Pressable key={value} testID={`listen-source-${value}`} accessibilityRole="tab" accessibilityState={{ selected: listenSource === value }} style={[styles.sourceTab, listenSource === value && styles.sourceTabOn, palette && styles.refinedSegment, palette && { backgroundColor: listenSource === value ? palette.accent : palette.surface, borderColor: listenSource === value ? palette.accent : palette.line }]} onPress={() => navigation.setParams({ source: value })}>
+              <Text style={[styles.sourceTabText, listenSource === value && styles.sourceTabTextOn, palette && listenSource !== value && { color: palette.ink }, ss(14)]}>{t(value === 'grammar' ? 'listenSource.grammarName' : 'listenSource.convName')}</Text>
             </Pressable>)}
           </View>}
           {showLevelPills && (
@@ -145,10 +153,10 @@ export default function ThemeScreen() {
                   testID={`theme-level-${lv.id}`}
                   accessibilityRole="tab"
                   accessibilityState={{ selected: selectedLevel === lv.id }}
-                  style={[styles.levelPill, selectedLevel === lv.id && styles.levelPillOn]}
+                  style={[styles.levelPill, selectedLevel === lv.id && styles.levelPillOn, palette && { backgroundColor: selectedLevel === lv.id ? palette.soft : palette.surface, borderColor: selectedLevel === lv.id ? palette.edge : palette.line }]}
                   onPress={() => navigation.setParams({ levelId: lv.id })}
                 >
-                  <Text style={[styles.levelPillText, selectedLevel === lv.id && styles.levelPillTextOn, ss(13)]}>
+                  <Text style={[styles.levelPillText, selectedLevel === lv.id && styles.levelPillTextOn, palette && { color: selectedLevel === lv.id ? palette.accent : palette.muted }, ss(13)]}>
                     {(contentNames?.levels?.[lv.id] ?? t(`levels.${lv.id}`))}
                   </Text>
                 </Pressable>
@@ -174,16 +182,21 @@ export default function ThemeScreen() {
             disabled={!!puzzleOnly && (starting || !learning?.ready)}
             style={({ pressed }) => [
               styles.card,
-              pressed && styles.cardPressed,
+              palette ? [
+                styles.refinedCard, index === 0 && styles.refinedFirst, index === items.length - 1 && styles.refinedLast,
+                { borderColor: palette.line, backgroundColor: pressed ? palette.soft : palette.surface },
+              ] : pressed && styles.cardPressed,
               locked && styles.cardLocked,
             ]}
             onPress={() => (locked ? navigation.navigate('Paywall') : onPressItem(item.id))}
           >
             {/* 表示番号はリスト上の位置(=テーマ並び順)。データキーは item.id を維持。 */}
-            <Text style={styles.num}>{String(index + 1).padStart(2, '0')}</Text>
-            <Text style={[styles.name, ss(14)]}>{withoutThemePrefix(getThemeDisplayName(item.id))}</Text>
-            {puzzleOnly && <Text style={[styles.num, { width: undefined }]}>{isGrammarMode ? LEARNING_PATH?.steps.find(step => step.guideThemeId === item.id)?.items.length : conversationPuzzleItems(data, item.id, selectedLevel).length}{trCopy('c_7853465b804b', '問', ' puzzles')}</Text>}
+            {palette ? <View style={[styles.themeIndex, { backgroundColor: palette.soft }]}>
+              <Text style={[styles.refinedIndex, { color: palette.accent }]}>{String(index + 1).padStart(2, '0')}</Text>
+            </View> : <Text style={styles.num}>{String(index + 1).padStart(2, '0')}</Text>}
+            <Text style={[styles.name, palette && { color: palette.ink, fontWeight: '600' }, ss(palette ? 15 : 14)]}>{withoutThemePrefix(getThemeDisplayName(item.id))}</Text>
             {locked && <LockBadge />}
+            {palette && !locked && <Text accessible={false} style={[styles.chevron, { color: palette.accent }]}>{lang === 'ar' ? '‹' : '›'}</Text>}
             {showGuide && (
               <Pressable
                 style={({ pressed }) => [styles.guideBtn, pressed && styles.guideBtnPressed]}
@@ -203,11 +216,14 @@ export default function ThemeScreen() {
 const styles = StyleSheet.create({
   container: { padding: spacing.lg, paddingBottom: spacing.xxl, maxWidth: 760, width: '100%', alignSelf: 'center' },
   head: { marginBottom: spacing.xl },
+  refinedHead: { marginBottom: 12 },
   modeTitle: { fontSize: 20, fontWeight: '700', color: colors.accentJa, letterSpacing: 0.2, marginBottom: spacing.sm, textAlign: 'center' },
   kicker: { fontSize: 11, color: colors.inkQuiet, letterSpacing: 2, textTransform: 'uppercase', marginBottom: spacing.xs },
   title: { fontSize: 28, fontWeight: '700', color: colors.ink, marginBottom: spacing.xs, letterSpacing: -0.5 },
   desc: { fontSize: 14, color: colors.inkMute, lineHeight: 21, marginBottom: spacing.md },
   sourceToggle: { flexDirection: 'row', gap: spacing.xs, marginBottom: spacing.md },
+  refinedToggle: { gap: 6, marginBottom: 4 },
+  refinedSegment: { flex: 1, minWidth: 0, borderRadius: 11, paddingHorizontal: 10 },
   sourceTab: {
     minWidth: 92,
     minHeight: 44,
@@ -248,6 +264,12 @@ const styles = StyleSheet.create({
     marginBottom: spacing.sm,
   },
   cardPressed: { backgroundColor: colors.bgSoft, borderColor: colors.ink },
+  refinedCard: { borderRadius: 0, minHeight: 55, marginBottom: 0, borderTopWidth: 0, paddingVertical: 9, gap: 10 },
+  refinedFirst: { borderTopWidth: 1, borderTopLeftRadius: 14, borderTopRightRadius: 14 },
+  refinedLast: { borderBottomLeftRadius: 14, borderBottomRightRadius: 14 },
+  themeIndex: { width: 35, height: 31, borderRadius: 8, justifyContent: 'center', alignItems: 'center', flexShrink: 0 },
+  refinedIndex: { fontSize: 11, fontWeight: '700', fontVariant: ['tabular-nums'] },
+  chevron: { fontSize: 21, lineHeight: 26 },
   cardLocked: { opacity: 0.55 },
   num: { fontFamily: 'Courier', fontSize: 11, color: colors.inkFaint, width: 24 },
   name: { flex: 1, fontSize: 14, fontWeight: '500', color: colors.ink },

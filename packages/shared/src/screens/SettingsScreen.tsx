@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react';
+import { createContext, useCallback, useContext, useRef, useState } from 'react';
 import { Alert, Linking, Platform, Pressable, ScrollView, Share, StyleSheet, Switch, View } from 'react-native';
 import Svg, { Circle, Ellipse, Line, Path, Polygon } from 'react-native-svg';
 import { Text } from '../Text';
@@ -7,7 +7,7 @@ import { colors, spacing, radius } from '../theme';
 import {
   useSettings, useScaleStyle,
   type Direction, type NepaliRepeat, type ListenSpeed,
-  type GapMode, type FontMode,
+  type GapMode, type FontMode, type TabDesign,
 } from '../SettingsContext';
 import { useI18n, type Lang } from '../i18n';
 import { L1_REGISTRY } from '../l1';
@@ -16,6 +16,38 @@ import * as Application from 'expo-application';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { useEntitlement } from '../entitlement';
 import { useSettingsDevelopment } from '../settingsDevelopment';
+import { TabMasthead, tabCardRadius, tabDesignOptions, tabDesignSwatches, tabPalette, type TabPalette } from '../tabAppearance';
+
+const SettingsPalette = createContext<TabPalette | undefined>(undefined);
+
+const designCopy = {
+  ja: { title: 'タブのデザイン', minimal: 'ミニマル', blueprint: 'ブループリント', classic: '従来' },
+  en: { title: 'Tab design', minimal: 'Minimal', blueprint: 'Blueprint', classic: 'Classic' },
+  ko: { title: '탭 디자인', minimal: '미니멀', blueprint: '블루프린트', classic: '기본' },
+  ar: { title: 'تصميم علامات التبويب', minimal: 'بسيط', blueprint: 'مخطّط أزرق', classic: 'كلاسيكي' },
+};
+
+function TabDesignPicker({ value, onChange, lang, palette }: {
+  value: TabDesign; onChange: (design: TabDesign) => void; lang: Lang; palette?: TabPalette;
+}) {
+  const copy = designCopy[lang as keyof typeof designCopy] ?? designCopy.ja;
+  return <View style={[styles.designPanel, palette && { backgroundColor: palette.surface, borderColor: palette.line }]}>
+    <Text accessibilityRole="header" style={[styles.designLabel, palette && { color: palette.ink }]}>{copy.title}</Text>
+    <View accessibilityRole="radiogroup" accessibilityLabel={copy.title} style={styles.designOptions}>
+      {tabDesignOptions.map(option => {
+        const active = option === value;
+        return <Pressable key={option} testID={`tab-design-${option}`} accessibilityRole="radio"
+          accessibilityState={{ checked: active }} accessibilityLabel={copy[option]} onPress={() => onChange(option)}
+          style={[styles.designOption, active && { borderColor: palette?.accent ?? '#2563EB', backgroundColor: palette?.soft ?? '#EFF6FF' }]}>
+          <View style={styles.designSwatch} accessible={false}>
+            {tabDesignSwatches[option].map(color => <View key={color} style={[styles.swatchColor, { backgroundColor: color }]} />)}
+          </View>
+          <Text style={[styles.designOptionText, active && styles.designOptionOn]}>{copy[option]}</Text>
+        </Pressable>;
+      })}
+    </View>
+  </View>;
+}
 
 function Icon({ children, size = 16 }: { children: React.ReactNode; size?: number }) {
   return (
@@ -42,12 +74,16 @@ function PillGroup<T extends string | number>({ items, value, onChange, ss, sing
   singleRow?: boolean;
   ss: (fs: number, lh?: number) => { fontSize: number; lineHeight?: number };
 }) {
+  const palette = useContext(SettingsPalette);
   return (
     <View style={[styles.pillGroup, singleRow && styles.pillGroupSingleRow]}>
       {items.map(it => (
         <Pressable
           key={String(it.value)}
-          style={[styles.pill, singleRow && styles.pillSingleRow, value === it.value && styles.pillOn]}
+          style={[styles.pill, singleRow && styles.pillSingleRow, value === it.value && styles.pillOn, palette && {
+            backgroundColor: value === it.value ? palette.accent : palette.surface,
+            borderColor: value === it.value ? palette.accent : palette.line,
+          }]}
           onPress={() => onChange(it.value)}
         >
           <Text style={[styles.pillText, value === it.value && styles.pillTextOn, ss(12)]}>{it.label}</Text>
@@ -58,11 +94,12 @@ function PillGroup<T extends string | number>({ items, value, onChange, ss, sing
 }
 
 function Row({ label, desc, children, ss, fullWidthControl = false }: { label: string; desc?: string; children: React.ReactNode; fullWidthControl?: boolean; ss: (fs: number, lh?: number) => { fontSize: number; lineHeight?: number } }) {
+  const palette = useContext(SettingsPalette);
   return (
-    <View style={styles.item}>
+    <View style={[styles.item, palette && styles.refinedItem, palette && { backgroundColor: palette.surface, borderColor: palette.line }]}>
       <View style={styles.itemLabelCol}>
-        <Text style={[styles.itemLabel, ss(14)]}>{label}</Text>
-        {desc ? <Text style={[styles.itemDesc, ss(12)]}>{desc}</Text> : null}
+        <Text style={[styles.itemLabel, palette && { color: palette.ink, fontWeight: '600' }, ss(14)]}>{label}</Text>
+        {desc ? <Text style={[styles.itemDesc, palette && { color: palette.muted }, ss(12)]}>{desc}</Text> : null}
       </View>
       <View style={[styles.itemControl, fullWidthControl && styles.itemControlFullWidth]}>{children}</View>
     </View>
@@ -70,11 +107,12 @@ function Row({ label, desc, children, ss, fullWidthControl = false }: { label: s
 }
 
 function Section({ title, icon, children, ss }: { title: string; icon: React.ReactNode; children: React.ReactNode; ss: (fs: number, lh?: number) => { fontSize: number; lineHeight?: number } }) {
+  const palette = useContext(SettingsPalette);
   return (
-    <View style={styles.section}>
+    <View style={[styles.section, palette && styles.refinedSection]}>
       <View style={styles.sectionHeader}>
         {icon}
-        <Text style={[styles.sectionTitle, ss(13)]}>{title}</Text>
+        <Text style={[styles.sectionTitle, palette && { color: palette.accent, letterSpacing: 0 }, ss(13)]}>{title}</Text>
       </View>
       {children}
     </View>
@@ -92,6 +130,7 @@ const PREMIUM_L: Record<string, { title: string; unlock: string; unlockDesc: str
 
 export default function SettingsScreen() {
   const s = useSettings();
+  const palette = s.tabDesignEnabled ? tabPalette(s.tabDesign, 'settings') : undefined;
   const { t, lang, setLang, langs } = useI18n();
   const ss = useScaleStyle();
   const { version: APP_VERSION, review, vocabularyQuiz } = useAppData();
@@ -217,11 +256,14 @@ export default function SettingsScreen() {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <View style={styles.head}>
+    <SettingsPalette.Provider value={palette}>
+    <ScrollView testID="settings-scroll" style={palette && { backgroundColor: palette.page }} contentContainerStyle={styles.container}>
+      {palette ? <TabMasthead title={t('settings.title')} description={t('settings.desc')} palette={palette} />
+        : <View style={styles.head}>
         <Text style={styles.title}>{t('settings.title')}</Text>
         <Text style={styles.desc}>{t('settings.desc')}</Text>
-      </View>
+      </View>}
+      {s.tabDesignEnabled && <TabDesignPicker value={s.tabDesign} onChange={s.setTabDesign} lang={lang} palette={palette} />}
 
       {showPurchase && (
         <Section title={ent.accessKind === 'launch-free' ? freeCopy.title : prem.title} icon={<StarIcon />} ss={ss}>
@@ -388,15 +430,25 @@ export default function SettingsScreen() {
 
       <Text style={styles.versionFooter}>{t('app.name')} v{versionDisplay}</Text>
     </ScrollView>
+    </SettingsPalette.Provider>
   );
 }
 
 const styles = StyleSheet.create({
   container: { padding: spacing.lg, paddingBottom: spacing.xxl, maxWidth: 760, width: '100%', alignSelf: 'center' },
   head: { marginBottom: spacing.xl },
+  designPanel: { padding: 12, gap: 10, borderRadius: 15, borderWidth: 1, borderColor: colors.line, backgroundColor: colors.surface, marginBottom: 20 },
+  designLabel: { fontSize: 15, lineHeight: 23, fontWeight: '700', color: colors.ink },
+  designOptions: { flexDirection: 'row', gap: 6, alignItems: 'stretch' },
+  designOption: { flex: 1, minWidth: 0, minHeight: 55, paddingHorizontal: 4, paddingVertical: 6, alignItems: 'center', justifyContent: 'center', gap: 5, borderRadius: 9, backgroundColor: '#fff', borderWidth: 1, borderColor: colors.line },
+  designOptionText: { textAlign: 'center', fontSize: 12, lineHeight: 17, color: colors.inkMute },
+  designOptionOn: { fontWeight: '700', color: colors.ink },
+  designSwatch: { flexDirection: 'row', height: 13, width: 34, borderWidth: 1, borderColor: '#C9D1D1', borderRadius: 4, overflow: 'hidden' },
+  swatchColor: { flex: 1 },
   title: { fontSize: 28, fontWeight: '700', color: colors.ink, marginBottom: spacing.xs, letterSpacing: -0.5 },
   desc: { fontSize: 14, color: colors.inkMute, lineHeight: 21 },
   section: { marginBottom: spacing.xl },
+  refinedSection: { marginBottom: 22 },
   sectionHeader: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.sm, paddingHorizontal: spacing.xs },
   sectionTitle: { fontSize: 13, fontWeight: '700', color: colors.inkQuiet, letterSpacing: 1.2, textTransform: 'uppercase' },
   item: {
@@ -405,6 +457,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row', alignItems: 'center', gap: spacing.md, flexWrap: 'wrap',
   },
   itemLabelCol: { flex: 1, minWidth: 140 },
+  refinedItem: { borderRadius: tabCardRadius, paddingHorizontal: 13, paddingVertical: 11, gap: 10 },
   itemLabel: { fontSize: 14, fontWeight: '500', color: colors.ink },
   itemDesc: { fontSize: 12, color: colors.inkMute, marginTop: 2 },
   itemControl: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs, flexWrap: 'wrap', justifyContent: 'flex-end' },

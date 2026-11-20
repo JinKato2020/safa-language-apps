@@ -172,7 +172,7 @@ export default function App() {
         storageKey="@nepali_app/lang_v1"
       >
         <SettingsProvider
-          defaults={{ practiceDirection: 'ja2ne', listenDirection: 'ja2ne' }}
+          defaults={{ practiceDirection: 'ja2ne', listenDirection: 'ja2ne', tabDesign: 'minimal' }}
           storageKey="@nepali_app/settings_v2"
         >
           <FirstRunGate>
