@@ -74,3 +74,4 @@ export { default as PaywallScreen } from './screens/PaywallScreen';
 export { default as GrammarGuideScreen } from './screens/GrammarGuideScreen';
 export { LearningAudioProvider, type LearningAudioResolver } from './LearningSound';
 export type { LearningAudio } from './learning';
+export { HomeTile } from './screens/LearningHomeScreen';

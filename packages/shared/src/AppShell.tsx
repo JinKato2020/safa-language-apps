@@ -231,7 +231,7 @@ function SettingsIcon({ color, focused }: { color: string; focused: boolean }) {
   return <TabIcon color={color} focused={focused}><Circle cx={12} cy={12} r={3} /><Path d="m9 3-.5 2-2 1-2-.5-2 3 1.5 1.5v3L2.5 15l2 3 2-.5 2 1 .5 2h4l.5-2 2-1 2 .5 2-3-1.5-1.5v-3L20 9l-2-3-2 .5-2-1-.5-2z" /></TabIcon>;
 }
 
-function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListening, dictData, hideModeHeaders, mainScreenAccessory, learningHome }: { defaultStackOptions: any; progressStorageKey: string; tabs?: TabKey[]; posterInListening?: boolean; dictData?: DictData; hideModeHeaders?: boolean; mainScreenAccessory?: ReactNode; learningHome?: boolean }) {
+function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListening, dictData, hideModeHeaders, mainScreenAccessory, learningHome, learningHomeAccessory }: { defaultStackOptions: any; progressStorageKey: string; tabs?: TabKey[]; posterInListening?: boolean; dictData?: DictData; hideModeHeaders?: boolean; mainScreenAccessory?: ReactNode; learningHome?: boolean; learningHomeAccessory?: ReactNode }) {
   const { bottom } = useSafeAreaInsets();
   const { t } = useI18n();
   const ss = useGlobalScaleStyle();
@@ -240,7 +240,7 @@ function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListe
     ? ({ route }: { route: { name: string } }) => ({ ...defaultStackOptions, headerShown: route.name !== 'Theme' && route.name !== 'VocabCategory' })
     : defaultStackOptions;
   const defs = {
-    home:         { name: 'HomeTab',         title: t('nav.home'),         icon: HomeIcon,       render: () => learningHome ? <LearningHomeScreen /> : <HomeScreen storageKey={progressStorageKey} /> },
+    home:         { name: 'HomeTab',         title: t('nav.home'),         icon: HomeIcon,       render: () => learningHome ? <LearningHomeScreen accessory={learningHomeAccessory} /> : <HomeScreen storageKey={progressStorageKey} /> },
     puzzle:       { name: 'PuzzleTab',       title: t('nav.puzzle'),       icon: CardsIcon,      render: () => <PuzzleStackNav defaultStackOptions={modeStackOptions} /> },
     composition:  { name: 'CompositionTab',  title: t('nav.composition'), label: t('nav.compositionShort'), icon: ChatIcon,       render: () => <CompositionStackNav defaultStackOptions={modeStackOptions} /> },
     conversation: { name: 'ConversationTab', title: t('nav.conversation'), icon: ChatIcon,       render: () => <ConversationStackNav defaultStackOptions={modeStackOptions} /> },
@@ -354,6 +354,7 @@ export type AppShellProps = {
   hideModeHeaders?: boolean;
   /** Optional app-owned invitation above the tab bar, only on landing screens. */
   mainScreenAccessory?: ReactNode;
+  learningHomeAccessory?: ReactNode;
   onRouteChanged?: (name: string | undefined) => void;
 };
 
@@ -368,7 +369,7 @@ function EngagementPlaybackGuard({ onChange }: { onChange: (playing: boolean) =>
   return null;
 }
 
-export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData, heroImages, hideModeHeaders = false, mainScreenAccessory, onRouteChanged, learningStorageKey }: AppShellProps) {
+export function AppShell({ splashSource, posterLessons, posterResolveUri, posterEnsure, progressStorageKey, tabs, posterInListening, dictData, heroImages, hideModeHeaders = false, mainScreenAccessory, onRouteChanged, learningStorageKey, learningHomeAccessory }: AppShellProps) {
   const { t, lang } = useI18n();
   const [splashDone, setSplashDone] = useState(splashShownOnce || splashSource == null);
   const defaultStackOptions = useRef(makeDefaultStackOptions(HeaderTitle, hideModeHeaders)).current;
@@ -430,7 +431,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                 <LearningProvider storageKey={learningStorageKey}>
                 <RootStack.Navigator screenOptions={{ headerShown: false }}>
                   <RootStack.Screen name="MainTabs">
-                    {() => <MainTabs learningHome={!!learningStorageKey} defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} hideModeHeaders={hideModeHeaders} mainScreenAccessory={landing && !audioPlaying ? mainScreenAccessory : undefined} />}
+                    {() => <MainTabs learningHome={!!learningStorageKey} learningHomeAccessory={learningHomeAccessory} defaultStackOptions={defaultStackOptions} progressStorageKey={progressStorageKey} tabs={tabs} posterInListening={posterInListening} dictData={dictData} hideModeHeaders={hideModeHeaders} mainScreenAccessory={landing && !audioPlaying ? mainScreenAccessory : undefined} />}
                   </RootStack.Screen>
                   <RootStack.Screen name="Paywall" component={PaywallScreen} options={{ presentation: 'modal' }} />
                   <RootStack.Screen name="GrammarGuide" component={GrammarGuideScreen} />

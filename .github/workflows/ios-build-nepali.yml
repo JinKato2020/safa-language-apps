@@ -1,6 +1,6 @@
 name: Build iOS and Android (Nepali)
 # ↓ run-name は app.json を読めない(github/inputs/varsのみ)。版はリテラル。app.json の version を上げたらここも更新。
-run-name: "App A・ネパール語・v2.2.6 (com.safa.nepali.jp) — ${{ github.event.head_commit.message || github.ref_name }}"
+run-name: "App A・ネパール語・v2.2.7 (com.safa.nepali.jp) — ${{ github.event.head_commit.message || github.ref_name }}"
 
 on:
   # 手動トリガー（プラットフォーム選択可能）
@@ -73,6 +73,23 @@ jobs:
           APP_VERSION=$(node -p "require('./$APP_DIR/app.json').expo.version" 2>/dev/null || echo "?")
           echo "::notice title=iOS build::$APP_DIR  v$APP_VERSION  (build $BUILD_NUMBER)"
           echo "## 📦 $APP_DIR — v$APP_VERSION (iOS build $BUILD_NUMBER)" >> $GITHUB_STEP_SUMMARY
+
+      - name: Check signing profile for push capability
+        env:
+          PROFILE_B64: ${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}
+          PUSH_READY: ${{ vars.NEPALI_PUSH_BROADCAST_READY }}
+        run: |
+          PROFILE_FILE=$(mktemp)
+          trap 'rm -f "$PROFILE_FILE"' EXIT
+          printf '%s' "$PROFILE_B64" | base64 --decode > "$PROFILE_FILE"
+          APNS_MODE=$(security cms -D -i "$PROFILE_FILE" | plutil -extract Entitlements.aps-environment raw -o - - 2>/dev/null || true)
+          if [ "$APNS_MODE" = 'production' ] && [ "$PUSH_READY" = 'true' ]; then
+            echo "NEPALI_IOS_PUSH=1" >> "$GITHUB_ENV"
+          elif [ "$APNS_MODE" != 'production' ]; then
+            echo "::notice::In-app announcements enabled. The iOS profile does not include production APNs."
+          else
+            echo "::notice::In-app announcements enabled. Push sending is not configured."
+          fi
 
       - name: Expo prebuild
         working-directory: ${{ env.APP_DIR }}
@@ -289,6 +306,20 @@ jobs:
           APP_VERSION=$(node -p "require('./$APP_DIR/app.json').expo.version" 2>/dev/null || echo "?")
           echo "::notice title=Android build::$APP_DIR  v$APP_VERSION  (versionCode $VERSION_CODE)"
           echo "## 🤖 $APP_DIR — v$APP_VERSION (Android versionCode $VERSION_CODE)" >> $GITHUB_STEP_SUMMARY
+
+      - name: Configure Android push messaging when available
+        env:
+          FIREBASE_B64: ${{ secrets.NEPALI_GOOGLE_SERVICES_JSON_BASE64 }}
+          PUSH_READY: ${{ vars.NEPALI_PUSH_BROADCAST_READY }}
+        run: |
+          if [ -n "$FIREBASE_B64" ] && [ "$PUSH_READY" = 'true' ]; then
+            FIREBASE_FILE="$RUNNER_TEMP/nepali-google-services.json"
+            printf '%s' "$FIREBASE_B64" | base64 --decode > "$FIREBASE_FILE"
+            node -e 'const f=require(process.argv[1]); if(!f.client.some(c=>c.client_info.android_client_info?.package_name==="com.safa.nepali.jp")) process.exit(1)' "$FIREBASE_FILE"
+            echo "NEPALI_GOOGLE_SERVICES_FILE=$FIREBASE_FILE" >> "$GITHUB_ENV"
+          else
+            echo "::notice::In-app announcements enabled. Firebase or push sending is not configured."
+          fi
 
       - name: Expo prebuild
         working-directory: ${{ env.APP_DIR }}

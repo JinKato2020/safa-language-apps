@@ -2,7 +2,7 @@
   "expo": {
     "name": "聞いて話せるネパール語",
     "slug": "LearningNepali",
-    "version": "2.2.6",
+    "version": "2.2.7",
     "runtimeVersion": {
       "policy": "appVersion"
     },
@@ -59,6 +59,7 @@
       "./plugins/withNoMicrophone"
     ],
     "extra": {
+      "nepaliNoticesUrl": "https://safa-nepali-notices.safa-co-official.workers.dev",
       "eas": {
         "projectId": "f7a978ac-d672-46e5-9a16-1350a0e889a2"
       },

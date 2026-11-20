@@ -1,0 +1,38 @@
+name: Nepali announcements
+run-name: "Nepali announcement — ${{ inputs.action }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Preview checks the draft. Publish makes it visible and sends push only if push is true.'
+        required: true
+        default: preview
+        type: choice
+        options: [preview, publish, status]
+      message:
+        description: 'JSON with id, push, and translations (ja, en, ko, ar). Leave empty for status.'
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  announcements:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          sparse-checkout: 聞いて話せるネパール語/notifications
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Validate or publish announcement
+        env:
+          NOTICE_ACTION: ${{ inputs.action }}
+          NEPALI_ANNOUNCEMENT_JSON: ${{ inputs.message }}
+          NEPALI_NOTICE_ADMIN_TOKEN: ${{ secrets.NEPALI_NOTICE_ADMIN_TOKEN }}
+        run: node "聞いて話せるネパール語/notifications/publish.mjs" "--$NOTICE_ACTION"

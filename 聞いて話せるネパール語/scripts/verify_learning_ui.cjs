@@ -27,7 +27,15 @@ const arabicAlignment=process.argv.includes('--arabic-alignment')||puzzleAlignme
 const arabicFoundation=process.argv.includes('--arabic-foundation');
 const arabicDictionary=process.argv.includes('--arabic-dictionary');
 const arabicModes=process.argv.includes('--arabic-modes');
+const homeNotices=process.argv.includes('--home-notices');
 modules.Text=compile(source('packages/shared/src/Text.tsx'));
+if(homeNotices){
+  modules.Announcements=compile(source('聞いて話せるネパール語/expo-app/src/notices/Announcements.tsx'));
+  for(const lang of ['ko','ar']){
+    overlays[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/data/overlays/${lang}.json`));
+    strings[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/src/i18n/${lang}.json`));
+  }
+}
 if(arabicFoundation||arabicDictionary||arabicModes||arabicAlignment){
   strings.ar=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ar.json'));
   strings.ko=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ko.json'));
@@ -88,6 +96,26 @@ const names={NepaliDictionary:'NepaliDictionaryScreen',SettingsMain:'SettingsScr
 cache.CultureBreakScreen={exports:{default:require('GrammarGuideScreen').CultureBreakScreen}}; names.CultureBreak='CultureBreakScreen';
 if(modules.ListeningScreen)names.Listening='ListeningScreen';
 function Frame(){document.getElementById('root').style.direction=window.caseInfo.lang==='ar'?'rtl':'ltr';const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(LayoutDirection.Provider,{value:window.caseInfo.lang==='ar'?'rtl':'ltr'},['NepaliDictionary','VocabCategory','VocabDirection','Flashcard','Practice','LettersSounds','LearningPath','GrammarLibrary','CultureBreak'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
+if(modules.Announcements){
+  const Native=cache['react-native'].exports;
+  Native.SafeAreaView=Native.View;Native.ActivityIndicator=()=>h('span',null,'Loading');
+  const home=require('LearningHomeScreen');
+  cache['@safa/shared']={exports:{Text:require('Text').Text,HomeTile:home.HomeTile,useI18n:require('i18n').useI18n}};
+  cache.noticeApi={exports:{
+    getNotices:async(lang,id)=>window.testNotices.filter(item=>!id||item.id===id).map(item=>({...item,title:lang+' '+item.title})),
+    noticesConfigured:true,parseNotices:value=>value,toNoticeLanguage:value=>value,
+  }};
+  cache.useNoticePush={exports:{supportsNoticePush:false,useNoticePush:(_lang,open)=>{
+    window.noticeTap=open;return {status:'off',wantsPush:false,busy:false,change:()=>{}};
+  }}};
+  window.testNotices=[];
+  const useAnnouncements=require('Announcements').useAnnouncements;
+  const OriginalHome=home.default;
+  home.default=function NoticeHome(){
+    const {card,modal}=useAnnouncements();
+    return h(React.Fragment,null,h(OriginalHome,{accessory:card}),modal);
+  };
+}
 window.boot=async(lang='ja',clear=false,route={name:'HomeTab'},scale=1)=>{if(clear)localStorage.clear();window.caseInfo={lang,scale};window.route=route;window.stack=[];window.events=[];window.activeAudio=new Set();window.audioEnded=false;
 const neAudio={},neGram={},l1Audio={},l1Gram={};for(const[k,rows]of Object.entries(core.examplesNe))rows.forEach((_,i)=>{neAudio[k+'-'+(i+1)]='ne/'+k+'-'+(i+1);l1Audio[k+'-'+(i+1)]=lang+'/'+k+'-'+(i+1);});for(const[k,id]of Object.entries(core.grammarAudioRefs??Object.fromEntries(Object.entries(core.grammarNe).flatMap(([t,rows])=>rows.map((_,i)=>[t+'-'+(i+1),t+'-'+(i+1)]))))){if(id){neGram[id]='ne/'+id;l1Gram[id]=lang+'/'+id;}}
 window.data=require('compose').composePack({...core,nepaliAudio:neAudio,nepaliGrammarAudio:neGram},{...overlays[lang],nativeLang:lang,l1Audio,l1GrammarAudio:l1Gram},{version:'test',quizAudio});window.data.review={iosAppId:'6771720689'};
@@ -897,6 +925,36 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         console.log(`PASS ${lang}: home card order, all ${themes.length} lessons, three reader tabs, return to library/home, grammar tab examples and access limits.`);
       }
       assert.deepEqual(errors,[]);return;
+    }
+    if(homeNotices){
+      const by=id=>page.getByTestId(id);
+      const titles={ja:'閉じる',en:'Close',ko:'닫기',ar:'إغلاق'};
+      for(const lang of Object.keys(titles)){
+        await page.setViewportSize({width:320,height:568});
+        await page.evaluate(l=>{
+          window.testNotices=[{id:'v-next',title:'Release',body:'Release details',publishedAt:1700000000000}];
+          return window.boot(l,true,{name:'HomeTab'},1.4);
+        },lang);
+        const cards=by('home-content-grid').getByRole('button');
+        assert.equal(await cards.count(),6);
+        const box=await by('home-content-grid').boundingBox();
+        assert(box.y+box.height<=488,`${lang} cards stop at ${box.y+box.height}px; available height is 488px above the tab bar`);
+        assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
+        await by('home-announcements-unread').waitFor();
+        await by('home-announcements').click();
+        assert.equal(await by('home-announcements-unread').count(),1,'Opening the inbox does not mark articles read');
+        await by('announcement-v-next').click();
+        await page.getByText('Release details',{exact:true}).waitFor();
+        await by('home-announcements-unread').waitFor({state:'detached'});
+        await page.getByRole('button',{name:titles[lang],exact:true}).click();
+        await page.evaluate(l=>window.boot(l,false,{name:'HomeTab'}),lang);
+        assert.equal(await by('home-announcements-unread').count(),0);
+        await page.evaluate(()=>window.noticeTap('v-next'));
+        await page.getByText('Release details',{exact:true}).waitFor();
+      }
+      assert.deepEqual(errors,[]);
+      console.log('PASS: all six home cards fit 320×568 with large text in four languages. Unread indicator, persistence, and direct article opening work.');
+      return;
     }
     if(process.argv.includes('--home-learning-updates')){
       const by=id=>page.getByTestId(id);

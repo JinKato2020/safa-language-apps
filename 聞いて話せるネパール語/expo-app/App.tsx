@@ -29,6 +29,7 @@ import { PurchasesProvider } from './src/PurchasesProvider';
 import { resolveGuideImage } from './src/guideImageCache';
 import { resolveLearningAudio } from './src/learningAudioCache';
 import { useEngagement } from './src/useEngagement';
+import { useAnnouncements } from './src/notices/Announcements';
 
 // 文法「教材」(ルール解説)・文法テーマ名はOTA配信(overlayパック経由)。本体にバンドルしない。
 const headerIconSource = require('./assets/icon.png');
@@ -43,9 +44,16 @@ const HERO_IMAGES = {
 // 母語別の教材をOTAから供給。ne表示では日本語教材を使う。
 function LearningAppShell() {
   const engagement = useEngagement();
+  const announcements = useAnnouncements();
   const contentRouteChanged = useContext(OtaRouteChanged);
   const onRouteChanged = useCallback((name: string | undefined) => { engagement.onRouteChanged(name); contentRouteChanged(name); }, [engagement.onRouteChanged, contentRouteChanged]);
-  return <SettingsDevelopmentProvider value={engagement.developmentTools}><AppShell learningStorageKey="@nepali_app/learning_v1" headerIconSource={headerIconSource} progressStorageKey="@nepali_app/progress_v1" tabs={['home', 'puzzle', 'listening', 'composition', 'settings']} heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={onRouteChanged} mainScreenAccessory={<>{engagement.banner}<ContentStatus /></>} /></SettingsDevelopmentProvider>;
+  return <SettingsDevelopmentProvider value={engagement.developmentTools}>
+    <AppShell learningStorageKey="@nepali_app/learning_v1" headerIconSource={headerIconSource}
+      progressStorageKey="@nepali_app/progress_v1" tabs={['home', 'puzzle', 'listening', 'composition', 'settings']}
+      heroImages={HERO_IMAGES} hideModeHeaders onRouteChanged={onRouteChanged}
+      mainScreenAccessory={<>{engagement.banner}<ContentStatus /></>} learningHomeAccessory={announcements.card} />
+    {announcements.modal}
+  </SettingsDevelopmentProvider>;
 }
 
 const toPackLang = (lang: string) => (['en', 'ko', 'ar'].includes(lang) ? lang : 'ja');

@@ -1,0 +1,23 @@
+name = "safa-nepali-notices"
+main = "worker.mjs"
+compatibility_date = "2026-11-20"
+workers_dev = true
+preview_urls = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "safa-nepali-notices"
+database_id = "5e7abc59-f943-4ef3-88c8-3de9aecf76b6"
+
+[[ratelimits]]
+name = "REGISTRATION_LIMIT"
+namespace_id = "21072001"
+[ratelimits.simple]
+limit = 12
+period = 60
+
+[triggers]
+crons = ["* * * * *"]
+
+[observability]
+enabled = false
