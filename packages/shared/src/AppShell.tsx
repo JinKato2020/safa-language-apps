@@ -44,7 +44,7 @@ import SakubunScreen from './screens/SakubunScreen';
 import ScaffoldScreen from './screens/ScaffoldScreen';
 import DictScreen, { type DictData } from './screens/DictScreen';
 import PaywallScreen from './screens/PaywallScreen';
-import GrammarGuideScreen from './screens/GrammarGuideScreen';
+import GrammarGuideScreen, { CultureBreakScreen } from './screens/GrammarGuideScreen';
 import GrammarLibraryScreen from './screens/GrammarLibraryScreen';
 import { HeroImagesProvider, type HeroImages } from './heroImages';
 import { DesignThemeProvider } from './design';
@@ -440,6 +440,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                   {!!posterLessons?.length && <RootStack.Screen name="PosterAudio" component={PosterAudioScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />}
                   <RootStack.Screen name="NepaliDictionary" component={NepaliDictionaryScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
                   <RootStack.Screen name="GrammarLibrary" component={GrammarLibraryScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
+                  {learningStorageKey && <RootStack.Screen name="CultureBreak" component={CultureBreakScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />}
                   {/* GrammarGuide replaces itself at this root, not inside GramStack.
                       Keep MainTabs beneath it so Back returns to the existing list. */}
                   <RootStack.Screen name="Practice" component={PracticeScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined, header: learningStorageKey ? renderStudyHeader : undefined }} />

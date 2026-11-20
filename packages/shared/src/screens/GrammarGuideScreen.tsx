@@ -4,7 +4,7 @@ import { useLearning } from '../LearningContext';
 import { createFreePracticeSession, type PracticeStage } from '../practicePool';
 // 文法モードの「教材」表示画面。構造化ブロック(goal/h/p/note/table)をネイティブ描画する。
 // RootStack に登録(ヘッダー非表示)のため、自前のトップバー(✕+タイトル)を描く。
-import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Fragment, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { ScrollView, View, StyleSheet, Pressable, Image, useWindowDimensions, type ImageSourcePropType } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text } from '../Text';
@@ -14,13 +14,13 @@ import { colors, spacing, radius } from '../theme';
 import type { RootStackParamList } from '../types';
 import { useScaleStyle, useGlobalScaleStyle } from '../SettingsContext';
 import { useI18n } from '../i18n';
-import { partitionLesson, readingGroups, readingCopy, examplePreview, fallbackCultureBreak, type ReadingPart, type ReadingGroup } from '../grammarReading';
+import { partitionLesson, readingGroups, readingCopy, examplePreview, cultureBreaks, type ReadingPart, type ReadingGroup } from '../grammarReading';
 import { useGrammarGuide, useGrammarGuideImageResolver, type GuideBlock, type GuideImage } from '../grammarGuide';
 import { guidePalette, guideStep, type GuidePresentation } from '../grammarPresentation';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'GrammarGuide'>;
 type R = RouteProp<RootStackParamList, 'GrammarGuide'>;
-type GuidePart = ReadingPart | 'practice';
+type GuidePart = Exclude<ReadingPart, 'breaks'> | 'practice';
 
 // **太字** を反映して描画する簡易リッチテキスト。
 function Rich({ text, style, emphasisColor, heading = false }: { text: string; style?: any; emphasisColor?: string; heading?: boolean }) {
@@ -184,6 +184,34 @@ function ReadingAccordion({ group, example, ss, copy }: { group: ReadingGroup; e
   </View>;
 }
 
+export function CultureBreakScreen() {
+  const nav = useNavigation<NativeStackNavigationProp<RootStackParamList, 'CultureBreak'>>();
+  const { lang } = useI18n(), ss = useScaleStyle(), guide = useGrammarGuide();
+  const cards = useMemo(() => cultureBreaks(guide), [guide]);
+  const copy = readingCopy(lang);
+  const title = lang === 'ja' ? 'ひと休み' : copy.breaks;
+  const [open, setOpen] = useState<string | null>(null);
+  useLayoutEffect(() => nav.setOptions({ title }), [nav, title]);
+  return <ScrollView style={styles.root} contentContainerStyle={styles.container} testID="culture-break-library">
+    {[...cards].map(([id, blocks]) => {
+      const heading = blocks.find(b => b.type === 'h');
+      const label = heading?.type === 'h' ? heading.text.replace(/^.*?｜\s*/, '') : title;
+      const expanded = open === id;
+      return <View key={id} style={styles.accordion}>
+        <Pressable testID={`culture-story-${id}`} accessibilityRole="button" accessibilityState={{ expanded }}
+          onPress={() => setOpen(expanded ? null : id)} style={styles.accordionButton}>
+          <View style={styles.accordionHeading}>
+            <Rich text={label} style={[styles.bold, ss(17, 27), styles.flexText]} />
+            <Text style={[styles.actionText, ss(16, 24)]}>{expanded ? '−' : '+'}</Text>
+          </View>
+        </Pressable>
+        {expanded && <View style={styles.accordionBody}><LessonBlocks blocks={blocks.filter(b => b !== heading)} ss={ss} /></View>}
+      </View>;
+    })}
+    {!cards.size && <Text style={[styles.p, ss(16, 27)]}>{copy.empty}</Text>}
+  </ScrollView>;
+}
+
 export default function GrammarGuideScreen() {
   const nav = useNavigation<Nav>();
   const { themeId, title, studySession } = useRoute<R>().params;
@@ -211,12 +239,9 @@ export default function GrammarGuideScreen() {
   const scroll = useRef<ScrollView>(null);
   const guide = useGrammarGuide();
   const blocks: GuideBlock[] = (guide && guide[String(themeId)]) || [];
-  const sections = useMemo(() => {
-    const result = partitionLesson(blocks);
-    if (practiceSession && !result.breaks.length && guide) result.breaks = fallbackCultureBreak(guide, themeId);
-    return result;
-  }, [blocks, guide, themeId, !!practiceSession]);
-  const parts: GuidePart[] = practiceSession ? ['rules', 'reference', 'practice', 'breaks'] : (Object.keys(sections) as ReadingPart[]).filter(key => sections[key].length > 0);
+  const sections = useMemo(() => partitionLesson(blocks), [blocks]);
+  const readingParts = ['rules', 'reference', 'examples'] as const;
+  const parts: GuidePart[] = practiceSession ? ['rules', 'reference', 'practice'] : readingParts.filter(key => sections[key].length > 0);
   const selected = parts.includes(part) ? part : 'rules';
   const selectedBlocks = selected === 'practice' ? [] : selected === 'reference' && practiceSession ? [...sections.reference, ...sections.examples] : sections[selected];
   const groups = readingGroups(selectedBlocks, copy.extra);

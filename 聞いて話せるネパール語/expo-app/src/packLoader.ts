@@ -10,6 +10,7 @@ import { unzipSync } from 'fflate';
 import appJson from '../app.json';
 import { makeNeCore, type NeAudioMaps, type NeCoreJson } from './appData';
 import { composePack, type L1Overlay } from './pack/compose';
+import { quizAudio } from './pack/quizAudio';
 
 // ネパール語(ターゲット)コア(本文+音声)パックを置く擬似lang。catalog.core からDL。
 const CORE = '_core';
@@ -268,7 +269,7 @@ export async function loadPack(lang: string, onProgress?: ProgressFn, skipUpdate
   const { l1Audio, l1GrammarAudio } = await buildAudioMaps(lang, overlayJson);
 
   const overlay: L1Overlay = { ...toOverlay(overlayJson), l1Audio, l1GrammarAudio };
-  return composePack(makeNeCore(coreJson, neAudio), overlay, { version: appJson.expo.version, review: REVIEW });
+  return composePack(makeNeCore(coreJson, neAudio), overlay, { version: appJson.expo.version, review: REVIEW, quizAudio });
 }
 
 // ターゲット(ネ語)本文 core.json をDL/キャッシュ。catalog.core.version で版管理。

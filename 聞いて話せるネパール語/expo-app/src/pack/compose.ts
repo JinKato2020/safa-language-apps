@@ -50,6 +50,7 @@ export interface L1Overlay {
 export interface ComposeOptions {
   version: string;
   review?: { iosAppId?: string | null; androidPackage?: string | null };
+  quizAudio?: Partial<Record<string, number>>;
 }
 
 // 共通コア(ne) + 母語オーバーレイ(jp/en) を位置で結合し、従来形 AppData を構築。
@@ -75,7 +76,10 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
   for (const key of Object.keys(core.wordsNe)) {
     const nes = core.wordsNe[key];
     const l1s = overlay.wordsL1[key] ?? [];
-    WORDS[key] = nes.map((ne, i) => ({ ja: l1s[i] ?? '', ne }));
+    WORDS[key] = nes.map((ne, i) => {
+      const audio = opts.quizAudio?.[ne.trim().normalize('NFC')];
+      return { ja: l1s[i] ?? '', ne, ...(audio !== undefined && { audio }) };
+    });
   }
 
   // 文法テーマ名はL1別(overlay.grammarThemeNames)でcore.grammarThemes[].nameを上書き → OTA配信。

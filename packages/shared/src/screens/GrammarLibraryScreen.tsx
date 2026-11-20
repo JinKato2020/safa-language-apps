@@ -20,8 +20,8 @@ export default function GrammarLibraryScreen() {
     <View style={styles.intro}>
       <Text style={[styles.eyebrow, ss(12, 21)]}>GRAMMAR · STEP BY STEP</Text>
       <Text accessibilityRole="header" style={[styles.title, ss(26, 38)]}>{trCopy('c_77822b6bb059', '文のしくみを、\nひとつずつ。', 'Understand how\nNepali works.')}</Text>
-      <Text style={[styles.body, ss(15, 26)]}>{trCopy('c_57078f0e85cd', 'ルールを読み、活用や語彙を確かめ、少しずつ練習。ネパールを感じる一休みも。', 'Read the rules, explore forms and words, then practise in small steps. Each lesson also has a cultural break.')}</Text>
-      <View style={styles.tags}>{(lang === 'ar' ? ['القواعد الأساسية', 'الصيغ والمفردات', 'التدريبات', 'استراحة'] : lang === 'ko' ? ['기본 규칙', '활용·어휘', '연습 문제', '잠깐 쉬어가기'] : en ? ['Core rules', 'Forms & words', 'Practice', 'Take a break'] : ['基本ルール', '活用・語彙', '練習問題', '一休み']).map(label => <View key={label} style={styles.tag}><Text style={[styles.tagText, ss(13, 22)]}>{label}</Text></View>)}</View>
+      <Text style={[styles.body, ss(15, 26)]}>{lang === 'ar' ? 'اقرأ القواعد وتعرّف على الصيغ والمفردات، ثم تدرّب خطوة بخطوة.' : lang === 'ko' ? '규칙을 읽고 활용형과 어휘를 익힌 뒤, 조금씩 연습해 보세요.' : en ? 'Read the rules, explore forms and words, then practise in small steps.' : 'ルールを読み、活用や語彙を確かめ、少しずつ練習。'}</Text>
+      <View style={styles.tags}>{(lang === 'ar' ? ['القواعد الأساسية', 'الصيغ والمفردات', 'التدريبات'] : lang === 'ko' ? ['기본 규칙', '활용·어휘', '연습 문제'] : en ? ['Core rules', 'Forms & words', 'Practice'] : ['基本ルール', '活用・語彙', '練習問題']).map(label => <View key={label} style={styles.tag}><Text style={[styles.tagText, ss(13, 22)]}>{label}</Text></View>)}</View>
     </View>
     <Text style={[styles.caption, ss(14, 24)]}>{trCopy('c_454f5414215f', '学ぶテーマを選ぶ', 'Choose a lesson')}</Text>
     {lessons.map(theme => {

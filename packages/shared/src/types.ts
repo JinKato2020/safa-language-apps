@@ -28,6 +28,7 @@ export interface WordCategoryMeta {
 export interface Word {
   ja: string;
   ne: string;
+  audio?: number;
 }
 
 export interface GrammarThemeMeta {
@@ -81,6 +82,7 @@ export type RootStackParamList = {
   Sakubun: { themeId: number; levelId: number; startIndex?: number };
   GrammarGuide: { themeId: number; title: string; studySession?: StudySession };
   GrammarLibrary: undefined;
+  CultureBreak: undefined;
   LearningPath: undefined;
   LettersSounds: undefined;
   VocabCategory: { posterOnly?: boolean; fromHome?: boolean } | undefined;

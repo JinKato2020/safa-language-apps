@@ -1,6 +1,6 @@
-import { useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
-import { useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
+import { useFocusEffect, useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Text } from '../Text';
 import { useAppData } from '../AppDataContext';
@@ -8,6 +8,8 @@ import { useI18n } from '../i18n';
 import { useSettings, useScaleStyle } from '../SettingsContext';
 import { isLockedAt, useEntitlement } from '../entitlement';
 import { toRomaji } from '../transliterate';
+import { LearningSound } from '../LearningSound';
+import type { LearningAudio } from '../learning';
 import type { RootStackParamList } from '../types';
 import { answerVocabularyQuiz, nextVocabularyQuiz, prepareVocabularyDecks, startVocabularyQuiz, type VocabularyDeck, type VocabularyDirection } from '../vocabularyQuiz';
 
@@ -29,15 +31,33 @@ export default function VocabularyQuizScreen() {
 
 function QuizSession({ decks, initialDirection, category }: { decks: Record<VocabularyDirection, VocabularyDeck>; initialDirection: VocabularyDirection; category: string }) {
   const { t, lang , copy: trCopy } = useI18n(), en = lang === 'en', { romaji } = useSettings(), ss = useScaleStyle();
+  const { NEPALI_DICTIONARY } = useAppData();
+  const pronunciations = useMemo(() => {
+    const clips = new Map<string, LearningAudio>();
+    for (const entry of NEPALI_DICTIONARY?.entries ?? []) {
+      if (entry.audio) clips.set(entry.ne.trim().normalize('NFC'), entry.audio);
+    }
+    return clips;
+  }, [NEPALI_DICTIONARY]);
   const direction = initialDirection;
   const [sessions, setSessions] = useState(() => ({ ne2ja: startVocabularyQuiz(decks.ne2ja)!, ja2ne: startVocabularyQuiz(decks.ja2ne)! }));
   const scroll = useRef<ScrollView>(null), session = sessions[direction], question = session.question;
   const answered = !!session.response, promptIsNepali = direction === 'ne2ja';
-  const choose = (id: string | null) => setSessions(current => {
-    const next = answerVocabularyQuiz(current[direction], id);
-    return next === current[direction] ? current : { ...current, [direction]: next };
-  });
+  const audio = question.word.audio ?? pronunciations.get(question.word.ne.trim().normalize('NFC'));
+  const [playing, setPlaying] = useState<number | null>(null);
+  const playSerial = useRef(0), responseLocked = useRef(false);
+  const stop = useCallback(() => setPlaying(null), []);
+  useFocusEffect(useCallback(() => stop, [stop]));
+  const play = () => { if (audio) setPlaying(++playSerial.current); };
+  const choose = (id: string | null) => {
+    if (answered || responseLocked.current) return;
+    responseLocked.current = true;
+    setSessions(current => ({ ...current, [direction]: answerVocabularyQuiz(current[direction], id) }));
+    if (id === question.id) play();
+  };
   const nextQuestion = () => {
+    stop();
+    responseLocked.current = false;
     setSessions(current => {
       const next = nextVocabularyQuiz(decks[direction], current[direction]);
       return next === current[direction] ? current : { ...current, [direction]: next };
@@ -65,6 +85,10 @@ function QuizSession({ decks, initialDirection, category }: { decks: Record<Voca
         <Text style={[styles.feedbackWord, ss(25, 37)]}>{question.word.ne}</Text>
         {romaji && <Text style={[styles.muted, ss(14, 23)]}>{toRomaji(question.word.ne)}</Text>}
         <Text style={[styles.optionText, ss(18, 28)]}>{question.word.ja}</Text>
+        {audio && <Pressable testID="vocab-quiz-listen" accessibilityRole="button" onPress={play} style={styles.reveal}>
+          <Text style={[styles.score, ss(15, 24)]}>▶ {trCopy('c_537af8ab23b2', '発音を聞く', 'Listen')}</Text>
+        </Pressable>}
+        {playing !== null && audio && <LearningSound key={playing} audio={audio} onFinished={stop} />}
       </View>
       <Pressable testID="vocab-quiz-next" accessibilityRole="button" onPress={nextQuestion} style={({ pressed }) => [styles.next, pressed && styles.pressed]}><Text style={[styles.nextText, ss(17, 27)]}>{trCopy('c_4106a42c46c7', '次の問題へ →', 'Next question →')}</Text></Pressable>
     </> : <Pressable testID="vocab-quiz-reveal" accessibilityRole="button" onPress={() => choose(null)} style={styles.reveal}><Text style={[styles.revealText, ss(15, 24)]}>{trCopy('c_ac325df68661', '答えを見て確認', 'Show the answer')}</Text></Pressable>}

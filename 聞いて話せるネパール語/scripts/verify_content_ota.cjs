@@ -39,6 +39,7 @@ const work=compile(DIR+'src/content/otaWork.ts',name=>name==='expo-file-system/l
 const loadOta=(bundleCore=core)=>compile(DIR+'src/content/ota.ts',name=>{
 if(name==='expo-file-system/legacy')return FS;if(name==='@react-native-async-storage/async-storage')return storage;if(name==='./otaModel')return models;if(name==='./otaWork')return work;
 if(name==='../pack/compose')return compose;if(name==='../appData')return appData;if(name==='../../app.json')return{expo:{version:'test',android:{package:'test'}}};
+if(name==='../pack/quizAudio')return{quizAudio:{}};
 if(name.includes('ota-baseline/core'))return bundleCore;if(name.includes('overlays/'))return makeOverlay(name.includes('ar.json')?'ar':name.includes('ko.json')?'ko':name.includes('en.json')?'en':'ja');return require(name);
 },{fetch:async(url,options)=>{requests.push(url);requestOptions.push(options);if(offline)throw Error('offline');const u=url.split('?')[0];if(!remote.has(u))return{ok:false,status:404};return{ok:true,text:async()=>remote.get(u).toString('utf8')};}});
 const ota=loadOta();

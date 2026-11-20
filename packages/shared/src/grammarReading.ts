@@ -33,11 +33,18 @@ export const readingCopy = (lang: string) => lang === 'ar' ? {
 export function partitionLesson(blocks: GuideBlock[]): Record<ReadingPart, GuideBlock[]> {
   const result: Record<ReadingPart, GuideBlock[]> = { rules: [], reference: [], examples: [], breaks: [] };
   const boundary = blocks.findIndex(b => b.beginnerIntroEnd);
-  if (boundary < 0) { result.rules = blocks; return result; }
+  if (boundary < 0) {
+    result.rules = blocks.filter(b => b.lessonSupplement?.kind !== 'culture');
+    result.breaks = blocks.filter(b => b.lessonSupplement?.kind === 'culture');
+    return result;
+  }
   let part: ReadingPart = 'rules', inRules = false;
   blocks.forEach((b, i) => {
     if (b.beginnerIntroEnd) { part = 'reference'; return; }
-    if (b.lessonSupplement) { result.breaks.push(b); return; }
+    if (b.lessonSupplement) {
+      result[b.lessonSupplement.kind === 'culture' ? 'breaks' : 'reference'].push(b);
+      return;
+    }
     if (b.type === 'h') {
       if (i < boundary) {
         if (/^\d+\.\s/.test(b.text)) inRules = true;
@@ -51,17 +58,15 @@ export function partitionLesson(blocks: GuideBlock[]): Record<ReadingPart, Guide
   return result;
 }
 
-/** Reuse a complete authored culture card when a theme has no assigned break. */
-export function fallbackCultureBreak(guides: Record<string, GuideBlock[]>, themeId: number): GuideBlock[] {
+export function cultureBreaks(guides: Record<string, GuideBlock[]> | null): Map<string, GuideBlock[]> {
   const cards = new Map<string, GuideBlock[]>();
-  for (const blocks of Object.values(guides)) for (const b of blocks) {
+  for (const blocks of Object.values(guides ?? {})) for (const b of blocks) {
     const supplement = b.lessonSupplement;
     if (supplement?.kind === 'culture' && !cards.has(supplement.id)) {
       cards.set(supplement.id, blocks.filter(part => part.lessonSupplement?.kind === 'culture' && part.lessonSupplement.id === supplement.id));
     }
   }
-  const ids = [...cards.keys()].sort();
-  return ids.length ? cards.get(ids[(themeId - 1) % ids.length])! : [];
+  return cards;
 }
 
 export function readingGroups(blocks: GuideBlock[], fallback: string): ReadingGroup[] {

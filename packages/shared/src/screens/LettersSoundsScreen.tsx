@@ -22,11 +22,12 @@ const categories = [
 export default function LettersSoundsScreen() {
   const { LETTERS_SOUNDS: source } = useAppData(), { lang , copy: trCopy } = useI18n(), ss = useScaleStyle(), nav = useNavigation();
   const en = lang === 'en';
-  const singleColumnLibrary = useWindowDimensions().width < 360 && (lang === 'ko' || lang === 'ar');
+  const { width } = useWindowDimensions();
+  const singleColumnLibrary = width < 360 && (lang === 'ko' || lang === 'ar');
   const data = useMemo(() => source ? prepareLetterPresentation(source, lang) : undefined, [source, lang]);
   const [section, setSection] = useState<number | null>(null), [selected, setSelected] = useState<number | null>(null), [row, setRow] = useState(0), [conjunctIndex, setConjunctIndex] = useState(0);
-  const [numberGroup, setNumberGroup] = useState(0), [showNumberRanges, setShowNumberRanges] = useState(false);
-  const [playing, setPlaying] = useState<{ id: string; audio: LearningAudio; key: number } | null>(null);
+  const [playing, setPlaying] = useState<{ id: string; audio: LearningAudio; key: number; loopIndex?: number } | null>(null);
+  const [selectedNumber, setSelectedNumber] = useState<string | null>(null);
   const scroll = useRef<ScrollView>(null), serial = useRef(0);
   const stop = useCallback(() => setPlaying(null), []);
   useLayoutEffect(() => nav.setOptions({ title: trCopy('c_2f46b1d4291b', '文字と音', 'Letters & sounds') }), [nav, en, trCopy]);
@@ -39,13 +40,20 @@ export default function LettersSoundsScreen() {
   const isConjunct = current?.id === 'conjuncts';
   const isNumbers = current?.id === 'numbers';
   const numberValue = (s: { value?: number; id: string }) => s.value ?? Number(s.id.replace('digit-', ''));
-  const numberGroups = isNumbers ? [
-    ...Array.from({ length: 10 }, (_, i) => ({ id: i, label: `${i ? i * 10 + 1 : 0}–${(i + 1) * 10}`, samples: current.samples.filter(s => numberValue(s) >= (i ? i * 10 + 1 : 0) && numberValue(s) <= (i + 1) * 10) })),
-    { id: 10, label: trCopy('c_b7e52eea8abe', '大きな数', 'Large numbers'), samples: current.samples.filter(s => numberValue(s) > 100) },
-  ].filter(g => g.samples.length) : [];
+  const numbers = isNumbers ? [...current.samples].sort((a, b) => numberValue(a) - numberValue(b)) : [];
+  const counting = numbers.filter(s => numberValue(s) >= 1 && numberValue(s) <= 100);
+  const otherNumbers = numbers.filter(s => numberValue(s) === 0 || numberValue(s) > 100);
+  const canLoop = counting.length === 100 && counting.every((s, i) => numberValue(s) === i + 1 && !!s.audio);
+  const looping = playing?.loopIndex !== undefined;
+  const numberDetail = numbers.find(s => s.id === (playing?.id ?? selectedNumber));
+  const gridWidth = Math.min(width, 760) - 40;
+  const columns = Math.max(1, Math.min(10, Math.floor((gridWidth + 4) / 48)));
+  const cellWidth = Math.floor((gridWidth - 4 * (columns - 1)) / columns);
   const conjuncts = isConjunct ? current.samples.filter(s => s.audio) : [];
   const conjunct = conjuncts[conjunctIndex] ?? conjuncts[0];
-  const samples = current ? (isCombination ? data.combinations[row].samples : isConjunct ? data.conjunctCombinations?.find(r => r.consonant === conjunct?.ne)?.samples ?? (conjunct ? [conjunct] : []) : isNumbers ? (numberGroups.find(g => g.id === numberGroup) ?? numberGroups[0])?.samples ?? [] : current.samples) : [];
+  const samples = current && !isNumbers
+    ? (isCombination ? data.combinations[row].samples : isConjunct ? data.conjunctCombinations?.find(r => r.consonant === conjunct?.ne)?.samples ?? (conjunct ? [conjunct] : []) : current.samples)
+    : [];
   const selectionIndex = selected ?? (isConjunct ? Math.max(0, samples.findIndex(s => s.examples?.length)) : 0);
   const sample = samples[selectionIndex] ?? samples[0];
   const isChart = isCombination || isConjunct;
@@ -53,10 +61,33 @@ export default function LettersSoundsScreen() {
   const chartIndex = isConjunct ? conjunctIndex : row;
   const words = sample?.examples?.slice(0, 1);
   const move = (index: number | null) => {
-    stop(); setSection(index); setSelected(null); setConjunctIndex(0); setNumberGroup(0); setShowNumberRanges(false);
+    stop(); setSection(index); setSelected(null); setConjunctIndex(0); setSelectedNumber(null);
     scroll.current?.scrollTo({ y: 0, animated: false });
   };
   const play = (id: string, audio: LearningAudio) => setPlaying({ id, audio, key: ++serial.current });
+  const startLoop = () => {
+    if (counting[0]?.audio) setPlaying({ id: counting[0].id, audio: counting[0].audio, key: ++serial.current, loopIndex: 0 });
+  };
+  const finishClip = (key: number) => {
+    const nextKey = ++serial.current;
+    setPlaying(active => {
+      if (!active || active.key !== key) return active;
+      if (active.loopIndex === undefined || !canLoop) return null;
+      const loopIndex = (active.loopIndex + 1) % counting.length;
+      const next = counting[loopIndex];
+      return next.audio ? { id: next.id, audio: next.audio, key: nextKey, loopIndex } : null;
+    });
+  };
+  const numberTile = (s: typeof numbers[number], compact: boolean) => {
+    const active = playing?.id === s.id;
+    return <Pressable key={s.id} testID={`letters-play-${s.id}`} accessibilityRole="button"
+      accessibilityLabel={`${numberValue(s)}: ${s.speech ?? s.ne}, ${s.roman}`} accessibilityState={{ selected: active, disabled: !s.audio }}
+      disabled={!s.audio} onPress={() => { if (s.audio) { setSelectedNumber(s.id); play(s.id, s.audio); } }}
+      style={({ pressed }) => [styles.numberTile, compact ? { width: cellWidth } : styles.extraNumberTile, active && styles.tileActive, pressed && styles.pressed]}>
+      <Text style={[styles.tileText, active && styles.white, ss(16, 22)]}>{s.ne}</Text>
+      <Text style={[styles.muted, active && styles.white, ss(11, 16)]}>{numberValue(s).toLocaleString('en-US')}</Text>
+    </Pressable>;
+  };
   const textButton = (label: string, action: () => void, primary = false, disabled = false, testID?: string, accessibilityLabel = label) => <Pressable
     testID={testID} accessibilityLabel={accessibilityLabel} accessibilityRole="button" accessibilityState={{ disabled }} disabled={disabled} onPress={action}
     style={({ pressed }) => [styles.button, primary && styles.primary, disabled && styles.disabled, pressed && styles.pressed]}>
@@ -105,24 +136,26 @@ export default function LettersSoundsScreen() {
         {category && category.sections.length > 1 && <View style={styles.groupTabs}>{data.sections.map((s, i) => category.sections.includes(s.id) && <Pressable key={s.id} accessibilityRole="tab" accessibilityState={{ selected: section === i }} testID={`letters-section-${s.id}`} onPress={() => move(i)} style={[styles.groupTab, section === i && styles.groupTabActive]}><Text style={[styles.groupText, section === i && styles.white, ss(14, 23)]}>{sectionName(s.id, s.title)}</Text></Pressable>)}</View>}
         <View style={styles.titleRow}><Text accessibilityRole="header" style={[styles.sectionTitle, styles.flexTitle, ss(23, 35)]}>{current.title}</Text></View>
         {current.id === 'start' && <View style={styles.helpBody}><Text style={[styles.body, ss(16, 28)]}>{current.body}</Text></View>}
-        {isNumbers && <View style={styles.numberNavigation}>
-          {textButton(lang === 'ar' ? '›' : '‹', () => { stop(); setSelected(null); setNumberGroup(Math.max(0, numberGroup - 1)); setShowNumberRanges(false); }, false, numberGroup === 0, 'letters-number-prev', trCopy('numbersPrev', '前の数字のまとまり', 'Previous number group'))}
-          <Pressable testID="letters-number-chooser" accessibilityRole="button" accessibilityState={{ expanded: showNumberRanges }} onPress={() => setShowNumberRanges(v => !v)} style={styles.numberChooser}><Text style={[styles.rangeText, ss(15, 24)]}>{numberGroups.find(g => g.id === numberGroup)?.label} {showNumberRanges ? '▴' : '▾'}</Text></Pressable>
-          {textButton(lang === 'ar' ? '‹' : '›', () => { stop(); setSelected(null); setNumberGroup(Math.min(numberGroups.length - 1, numberGroup + 1)); setShowNumberRanges(false); }, false, numberGroup === numberGroups.length - 1, 'letters-number-next', trCopy('numbersNext', '次の数字のまとまり', 'Next number group'))}
-        </View>}
-        {isNumbers && showNumberRanges && <View style={styles.numberRanges} testID="letters-number-ranges">{numberGroups.map(g => <Pressable key={g.id} testID={`letters-number-range-${g.id}`} accessibilityRole="button" accessibilityLabel={g.label} accessibilityState={{ selected: numberGroup === g.id }} onPress={() => { stop(); setSelected(null); setNumberGroup(g.id); setShowNumberRanges(false); }} style={[styles.numberRange, numberGroup === g.id && styles.tileActive]}><Text style={[styles.rangeText, numberGroup === g.id && styles.white, ss(14, 22)]}>{g.label}</Text></Pressable>)}</View>}
+        {isNumbers && <>
+          {canLoop && textButton(
+            looping ? trCopy('c_ec7502ce7fde', '停止', 'Stop')
+              : lang === 'ar' ? 'تشغيل متكرر من 1 إلى 100' : lang === 'ko' ? '1~100 반복 재생' : en ? 'Loop 1–100' : '1〜100を繰り返し再生',
+            looping ? stop : startLoop, true, false, 'letters-number-loop',
+          )}
+          <Text style={[styles.stepLabel, ss(13, 22)]}>{trCopy('c_de9187178a2a', '数字をタップして読み方を聞こう', 'TAP A NUMBER TO HEAR ITS NAME')}</Text>
+          <View testID="letters-sound-chart" style={styles.numberGrid}>{counting.map(s => numberTile(s, true))}</View>
+          {otherNumbers.length > 0 && <>
+            <Text style={[styles.stepLabel, ss(13, 22)]}>{lang === 'ar' ? 'الصفر والأعداد الكبيرة' : lang === 'ko' ? '0과 큰 수' : en ? 'Zero & large numbers' : 'ゼロと大きな数'}</Text>
+            <View style={styles.numberGrid}>{otherNumbers.map(s => numberTile(s, false))}</View>
+          </>}
+        </>}
         {isChart && <View style={styles.combinationPanel}>
           <View testID={isConjunct ? 'letters-conjunct-grid' : 'letters-consonant-grid'} style={styles.letterGrid}>{chartLetters.map((letter, i) => <Pressable key={letter.id} testID={isConjunct ? `letters-conjunct-${letter.id}` : `letters-consonant-${letter.id}`} accessibilityRole="button" accessibilityLabel={`${isConjunct ? (trCopy('c_110bd970bb4f', '複合文字', 'Conjunct')) : (trCopy('c_f7ae5439c9df', '子音', 'Consonant'))} ${letter.ne}`} accessibilityState={{ selected: chartIndex === i }} onPress={() => { stop(); if (isConjunct) setConjunctIndex(i); else setRow(i); setSelected(null); }} style={[styles.letterTile, chartIndex === i && styles.tileActive]}><Text style={[styles.tileText, chartIndex === i && styles.white, ss(22, 32)]}>{letter.ne}</Text></Pressable>)}</View>
         </View>}
         {sample && <>
-          <Text style={[styles.stepLabel, ss(13, 22)]}>{isNumbers ? (trCopy('c_de9187178a2a', '数字をタップして読み方を聞こう', 'TAP A NUMBER TO HEAR ITS NAME')) : isCombination ? (trCopy('c_1a76eaaec24c', '12通り · 先頭は母音なし（音声は k・s のみ）', '12 FORMS · FIRST: NO VOWEL (AUDIO: k / s ONLY)')) : current.id === 'start' ? (trCopy('c_dd260c9ff1fb', '子音＋a ／ 母音なしを聞き比べる', 'COMPARE: WITH a / WITHOUT A VOWEL')) : isConjunct ? (trCopy('c_5cc06dafae4b', '11通りの母音付き', '11 VOWEL FORMS')) : (trCopy('c_957d0f61920b', '文字をタップして確かめよう', 'TAP A LETTER TO COMPARE'))}</Text>
+          <Text style={[styles.stepLabel, ss(13, 22)]}>{isCombination ? (trCopy('c_1a76eaaec24c', '12通り · 先頭は母音なし（音声は k・s のみ）', '12 FORMS · FIRST: NO VOWEL (AUDIO: k / s ONLY)')) : current.id === 'start' ? (trCopy('c_dd260c9ff1fb', '子音＋a ／ 母音なしを聞き比べる', 'COMPARE: WITH a / WITHOUT A VOWEL')) : isConjunct ? (trCopy('c_5cc06dafae4b', '11通りの母音付き', '11 VOWEL FORMS')) : (trCopy('c_957d0f61920b', '文字をタップして確かめよう', 'TAP A LETTER TO COMPARE'))}</Text>
           <View style={[styles.soundGrid, isChart && styles.compactSoundGrid]} testID="letters-sound-chart">{samples.map((s, i) => {
             const active = playing?.id === s.id;
-            if (isNumbers) return <Pressable key={s.id} testID={`letters-play-${s.id}`} accessibilityRole="button" accessibilityLabel={`${s.meaning}: ${s.speech}, ${s.roman}`} accessibilityState={{ selected: selectionIndex === i, disabled: !s.audio }} disabled={!s.audio} onPress={() => { setSelected(i); if (s.audio) play(s.id, s.audio); }} style={({ pressed }) => [styles.numberTile, active && styles.tileActive, pressed && styles.pressed]}>
-              <View style={styles.numberTop}><Text style={[styles.chartRoman, active && styles.white, ss(16, 24)]}>{s.ne}</Text><Text style={[styles.muted, active && styles.white, ss(12, 20)]}>{numberValue(s).toLocaleString('en-US')} {active ? '●' : '▶'}</Text></View>
-              <Text style={[styles.numberWord, active && styles.white, ss(20, 29)]}>{s.speech}</Text>
-              <Text style={[styles.chartRoman, active && styles.white, ss(13, 21)]}>{s.roman}</Text>
-            </Pressable>;
             if (!s.audio) return <Pressable key={s.id} testID={`letters-symbol-${s.id}`} accessibilityRole="button" accessibilityLabel={`${trCopy('c_361e9322db89', '文字を選ぶ', 'Select written form')}: ${s.ne}, ${s.roman}`} accessibilityState={{ selected: selectionIndex === i }} onPress={() => { stop(); setSelected(i); }} style={[styles.soundTile, isChart && styles.compactSoundTile, styles.referenceTile, selectionIndex === i && styles.soundTileSelected]}><Text style={[styles.tileText, ss(isChart ? 24 : 28, isChart ? 34 : 42)]}>{s.ne}</Text><Text style={[styles.chartRoman, styles.tileRoman, ss(isChart ? 12 : 14, isChart ? 18 : 22)]}>{s.roman}</Text><Text style={[styles.tileCue, ss(10, 16)]}>{trCopy('c_b9b20f15dc57', '文字', 'Text')}</Text></Pressable>;
             return <Pressable key={s.id} testID={`letters-play-${s.id}`} accessibilityRole="button" accessibilityLabel={`${trCopy('c_afb671b91dfe', '音を聞く', 'Play sound')}: ${s.speech ?? s.ne}`} accessibilityState={{ selected: selectionIndex === i }} onPress={() => { setSelected(i); if (s.audio) play(s.id, s.audio); }} style={({ pressed }) => [styles.soundTile, isChart && styles.compactSoundTile, current.id === 'start' && styles.pairTile, selectionIndex === i && styles.soundTileSelected, active && styles.tileActive, pressed && styles.pressed]}>
               <Text style={[styles.tileText, active && styles.white, ss(isChart ? 24 : 28, isChart ? 34 : 42)]}>{s.ne}</Text>
@@ -150,9 +183,16 @@ export default function LettersSoundsScreen() {
         </View>
       </>}
     </ScrollView>
-    {current && samples.length > 0 && <View style={styles.playerBar}>
-      <View style={styles.playerMessage}>{playing ? <LearningSound key={playing.key} audio={playing.audio} onFinished={stop}/> : <Text style={[styles.muted, ss(13, 22)]}>{trCopy('c_6df7faf395a9', '▶ のある文字・単語をタップして再生。', '▶ marks a recording. Tap to listen again.')}</Text>}</View>
-      {textButton(trCopy('c_ec7502ce7fde', '停止', 'Stop'), stop, false, !playing)}
+    {current && (samples.length > 0 || numberDetail) && <View style={styles.playerBar}>
+      <View style={styles.playerMessage}>
+        {numberDetail && <View style={styles.selectionRow} testID="letters-number-detail">
+          <Text style={[styles.tileText, ss(17, 24)]}>{numberValue(numberDetail)} · {numberDetail.speech}</Text>
+          <Text style={[styles.chartRoman, ss(13, 20)]}>{numberDetail.roman}</Text>
+        </View>}
+        {playing ? <LearningSound key={playing.key} audio={playing.audio} onFinished={() => finishClip(playing.key)}/>
+          : !isNumbers && <Text style={[styles.muted, ss(13, 22)]}>{trCopy('c_6df7faf395a9', '▶ のある文字・単語をタップして再生。', '▶ marks a recording. Tap to listen again.')}</Text>}
+      </View>
+      {(!isNumbers || playing) && textButton(trCopy('c_ec7502ce7fde', '停止', 'Stop'), stop, false, !playing, 'letters-stop')}
     </View>}
   </View>;
 }
@@ -181,14 +221,9 @@ const styles = StyleSheet.create({
   body: { color: ink }, combinationPanel: { gap: 10 }, letterGrid: { direction: 'ltr', flexDirection: 'row', flexWrap: 'wrap', gap: 4 },
   stepLabel: { color: muted, fontWeight: '700', letterSpacing: .5 },
   soundGrid: { direction: 'ltr', flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  numberNavigation: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  numberChooser: { flex: 1, minHeight: 48, borderRadius: 12, padding: 10, backgroundColor: '#e6eee7', alignItems: 'center', justifyContent: 'center' },
-  numberRanges: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
-  numberRange: { minWidth: 72, minHeight: 44, paddingHorizontal: 12, paddingVertical: 8, borderRadius: 12, backgroundColor: '#e6eee7', justifyContent: 'center', alignItems: 'center' },
-  rangeText: { color: ink, fontWeight: '600' },
-  numberTile: { flexBasis: '45%', flexGrow: 1, minWidth: 125, padding: 12, gap: 3, borderRadius: 15, borderWidth: 1, borderColor: '#d5e2d6', backgroundColor: '#fff' },
-  numberTop: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', columnGap: 8 },
-  numberWord: { color: ink, fontWeight: '600' },
+  numberGrid: { direction: 'ltr', flexDirection: 'row', flexWrap: 'wrap', gap: 4 },
+  numberTile: { minHeight: 44, paddingVertical: 3, borderRadius: 8, borderWidth: 1, borderColor: '#d5e2d6', backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' },
+  extraNumberTile: { paddingHorizontal: 8, minWidth: 64 },
   soundTile: { flexBasis: '28%', flexGrow: 1, minWidth: 80, minHeight: 72, paddingHorizontal: 10, paddingVertical: 10, flexDirection: 'row', flexWrap: 'wrap', gap: 6, borderRadius: 15, borderWidth: 1, borderColor: '#d5e2d6', backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' },
   compactSoundGrid: { gap: 6 },
   compactSoundTile: { flexBasis: '21%', minWidth: 72, minHeight: 60, paddingHorizontal: 6, paddingVertical: 5, gap: 4, borderRadius: 12 },

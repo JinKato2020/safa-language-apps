@@ -3,6 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { AppData } from '@safa/shared';
 import app from '../../app.json';
 import { composePack } from '../pack/compose';
+import { quizAudio } from '../pack/quizAudio';
 import { makeNeCore } from '../appData';
 import { textFiles, validateManifest, validateContent, type ContentFile, type ContentManifest, type AudioArchive } from './otaModel';
 import { extractAudio, hashText, workBudget } from './otaWork';
@@ -25,7 +26,7 @@ const validated=new Map<string,{sha:string;snapshot:ContentSnapshot}>();
 const bundled=new Map<string,ContentSnapshot>();
 export type ContentSnapshot={version:number;data:AppData};
 type AudioIndex={version:number;files:Record<string,string>};
-const options={version:app.expo.version,review:{iosAppId:'6771720689',androidPackage:app.expo.android.package}};
+const options={version:app.expo.version,review:{iosAppId:'6771720689',androidPackage:app.expo.android.package},quizAudio};
 
 function compose(core:any,overlay:any,ne:Record<string,string>={},l1:Record<string,string>={}):AppData {
   const maps=(files:Record<string,string>)=>{

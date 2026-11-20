@@ -73,7 +73,7 @@ export function prepareVocabularyDecks(words: Record<string, Word[]>, categoryId
           candidates.push({ id: candidate.id, text: direction === 'ne2ja' ? candidate.ja : candidate.ne });
         }
       }
-      if (candidates.length >= 3) questions.push({ id: entry.id, prompt, answer, word: { ne: entry.ne, ja: entry.ja }, candidates });
+      if (candidates.length >= 3) questions.push({ id: entry.id, prompt, answer, word: { ne: entry.ne, ja: entry.ja, ...(entry.audio !== undefined && { audio: entry.audio }) }, candidates });
     }
     return { revision, questions };
   };

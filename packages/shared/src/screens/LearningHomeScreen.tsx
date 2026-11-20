@@ -10,6 +10,7 @@ import { useAppData } from '../AppDataContext';
 import { useLearning } from '../LearningContext';
 import { emptyStudyState, practiceParams, resolveStudy, reviewItems } from '../learning';
 import { useGrammarGuide } from '../grammarGuide';
+import { readingCopy } from '../grammarReading';
 
 const c = { ink: '#123039', muted: '#52666C', navy: '#102F38', teal: '#7DE2CE', page: '#F2F5F3' };
 const EMPTY = emptyStudyState();
@@ -18,6 +19,7 @@ export default function LearningHomeScreen() {
   const nav = useNavigation<any>(), { lang , copy: trCopy } = useI18n(), { top } = useSafeAreaInsets();
   const data = useAppData(), learning = useLearning(), hero = useHeroImage('grammar');
   const guides = useGrammarGuide(), guideCount = data.GRAMMAR_THEMES.filter(theme => guides?.[String(theme.id)]?.length).length;
+  const hasCulture = Object.values(guides ?? {}).some(blocks => blocks.some(block => block.lessonSupplement?.kind === 'culture'));
   const [now, setNow] = useState(Date.now);
   useFocusEffect(useCallback(() => {
     let timer: ReturnType<typeof setTimeout>;
@@ -76,6 +78,11 @@ export default function LearningHomeScreen() {
       </View>
     </View>
 
+    {hasCulture && <Pressable testID="home-culture-break" accessibilityRole="button" onPress={() => nav.navigate('CultureBreak')}
+      style={({ pressed }) => [styles.cultureTile, pressed && styles.pressed]}>
+      <Text style={styles.tileTitle}>{lang === 'ja' ? 'ひと休み' : readingCopy(lang).breaks}</Text>
+      <Text accessible={false} style={styles.arrow}>↗</Text>
+    </Pressable>}
     {learning?.error && <Pressable accessibilityRole="button" onPress={learning.retry} style={styles.error}><Text style={styles.errorText}>{trCopy('c_70a7891dec6e', '学習記録を読み込み・保存できませんでした。タップして再試行。', 'Could not load or save progress. Tap to retry.')}</Text></Pressable>}
   </ScrollView>;
 }
@@ -108,5 +115,6 @@ const styles = StyleSheet.create({
   icon: { width: 38, height: 36, justifyContent: 'center' }, letterIcon: { color: '#234D48', fontSize: 31, lineHeight: 39, fontWeight: '600' },
   compactTile: { padding: 12 }, compactTileTitle: { fontSize: 15, lineHeight: 23 },
   tileTitle: { color: c.ink, fontSize: 17, lineHeight: 25, fontWeight: '700' },
+  cultureTile: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', minHeight: 58, paddingHorizontal: 17, borderRadius: 18, backgroundColor: '#F2E8D7' },
   error: { padding: 16, borderRadius: 14, backgroundColor: '#FCEEEF' }, errorText: { color: '#8B2945', fontSize: 13, lineHeight: 21 }, pressed: { opacity: 0.78 },
 });
