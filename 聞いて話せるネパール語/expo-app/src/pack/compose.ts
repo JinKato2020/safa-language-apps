@@ -51,6 +51,7 @@ export interface ComposeOptions {
   version: string;
   review?: { iosAppId?: string | null; androidPackage?: string | null };
   quizAudio?: Partial<Record<string, number>>;
+  puzzleAlternatives?: AppData['puzzleAlternatives'];
 }
 
 // 共通コア(ne) + 母語オーバーレイ(jp/en) を位置で結合し、従来形 AppData を構築。
@@ -103,6 +104,7 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
   };
   return {
     vocabularyQuiz: true,
+    puzzleAlternatives: opts.puzzleAlternatives,
     NEPALI_DICTIONARY: overlay.nepaliDictionary,
     LEARNING_PATH: overlay.learningPathV3 ?? overlay.learningPathV2 ?? overlay.learningPath,
     LETTERS_SOUNDS: overlay.lettersSounds,

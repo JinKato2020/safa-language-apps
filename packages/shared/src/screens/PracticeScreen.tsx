@@ -60,6 +60,7 @@ export default function PracticeScreen() {
 function ChallengePracticeScreen() {
   const contentNames = useAppData().CONTENT_NAMES;
   const data = useAppData();
+  const isNepaliComposition = data.targetLang === 'ne';
   const { LEVELS, THEMES, GRAMMAR_THEMES, getExamples, getGrammarExamples, audio, VOCAB, GRAMMAR_VOCAB, CONV_VOCAB, JP_READING, nativeLang, vocabTokenize, grammarTextOnlyLabel } = data;
   const learning = useLearning();
   const { nepaliAudio, japaneseAudio, nepaliGrammarAudio, japaneseGrammarAudio } = audio;
@@ -86,6 +87,7 @@ function ChallengePracticeScreen() {
   const [normalIndex, setIndex] = useState(startIndex ?? 0);
   const themeId = selected?.themeId ?? normalThemeId, levelId = selected?.levelId ?? normalLevelId, index = selected?.index ?? normalIndex;
   const [revealed, setRevealed] = useState(false);
+  const flipEpoch = useRef(0);
   useEffect(() => {
     setThemeId(initialThemeId); setLevelId(initialLevelId ?? 1); setIndex(startIndex ?? 0);
     setPosition(session?.position ?? 0); setAnswered(session?.answered ?? []); setFinished(false); setRevealed(false);
@@ -120,7 +122,9 @@ function ChallengePracticeScreen() {
     if (!ready || !change || !ex || finished || !sessionValid) return;
     void change(s => ({ ...s, resume: { item: current, ...(session ? { session: { ...session, position, answered } } : {}) } }));
   }, [currentKey, ex?.ne, ready, change, finished, sessionValid, session, position, answered]);
-  const isJa2Ne = practiceDirection === 'ja2ne';
+  const direction = session?.direction ?? practiceDirection;
+  const isJa2Ne = direction === 'ja2ne';
+  useEffect(() => { flipEpoch.current++; setRevealed(false); }, [direction, currentKey]);
   const audioKey = isGrammar
     ? `${themeId}-${index + 1}`
     : `${themeId}-${levelId}-${index + 1}`;
@@ -142,6 +146,7 @@ function ChallengePracticeScreen() {
 
   // テーマを跨いで次/前へ進む
   const go = (delta: number) => {
+    flipEpoch.current++;
     questionPlayer.pause(); answerPlayer.pause();
     if (session) {
       setPosition(p => Math.max(0, Math.min(session.items.length - 1, p + delta)));
@@ -245,36 +250,49 @@ function ChallengePracticeScreen() {
   // カード上で開始したジェスチャーはスワイプ無効（タップのみ）にするための ref。
   const cardSwipeBlock = useRef(false);
   const swipe = useHorizontalSwipe(
-    () => { if (!atLast && !savingRef.current) go(1); },
+    () => { if (isNepaliComposition) void advance(revealed ? 'supported' : undefined); else if (!atLast && !savingRef.current) go(1); },
     () => { if (!atFirst && !savingRef.current) go(-1); },
     cardSwipeBlock,
   );
 
-  const record = async (result: 'known' | 'again') => {
-    if (!learning?.ready || !revealed || savingRef.current || !ex) return;
+  const advance = async (result?: 'known' | 'again' | 'supported') => {
+    if (savingRef.current || !ex) return;
+    if (!learning) {
+      if (atLast) { questionPlayer.pause(); answerPlayer.pause(); setFinished(true); }
+      else go(1);
+      return;
+    }
+    if (!learning.ready) {
+      if (learning.error) learning.retry();
+      return;
+    }
+    flipEpoch.current++;
     savingRef.current = true; setSaving(true);
     const nextAnswered = [...new Set([...answered, currentKey])];
-    const complete = !!session && session.items.every(r => nextAnswered.includes(studyKey(r)));
+    const nextPosition = session?.items.findIndex(r => !nextAnswered.includes(studyKey(r))) ?? -1;
+    const complete = session ? nextPosition < 0 : isNepaliComposition && atLast;
     const saved = await learning.change(state => {
-      let next = rateStudy(state, current, result, Date.now());
-      if (complete && session) {
+      let next = result ? rateStudy(state, current, result, Date.now(), isNepaliComposition ? direction : undefined) : state;
+      if (complete) {
         next = { ...next, resume: undefined };
-        if (session.kind === 'course' && session.stepId) next.completed = { ...next.completed, [session.stepId]: stepSignature(session.items) };
+        if (session?.kind === 'course' && session.stepId) next.completed = { ...next.completed, [session.stepId]: stepSignature(session.items) };
+      } else if (session) {
+        next = { ...next, resume: { item: session.items[nextPosition], session: { ...session, position: nextPosition, answered: nextAnswered } } };
       }
       return next;
     });
     savingRef.current = false; setSaving(false);
     if (!saved) return;
-    setAnswered(nextAnswered);
+    if (session) setAnswered(nextAnswered);
     if (complete) { questionPlayer.pause(); answerPlayer.pause(); setFinished(true); }
-    else if (session) { setPosition(session.items.findIndex(r => !nextAnswered.includes(studyKey(r)))); setRevealed(false); }
+    else if (session) { questionPlayer.pause(); answerPlayer.pause(); setPosition(nextPosition); setRevealed(false); }
     else if (!atLast) go(1);
   };
 
-  if (session && (!sessionValid || finished)) return <ScrollView contentContainerStyle={styles.container}>
+  if (finished || !sessionValid) return <ScrollView contentContainerStyle={styles.container}>
     <View style={[learningStyles.card,learningStyles.green]}>
       <Text accessibilityRole="header" style={[learningStyles.title,ss(22,32)]}>{finished ? studyCopy.finish : studyCopy.unavailable}</Text>
-      {finished && <Text style={[learningStyles.body,ss(16,27)]}>{studyCopy.finishBody}</Text>}
+      {finished && !isNepaliComposition && <Text style={[learningStyles.body,ss(16,27)]}>{studyCopy.finishBody}</Text>}
       <Pressable accessibilityRole="button" style={learningStyles.primary} onPress={() => navigation.goBack()}><Text style={[learningStyles.primaryText,ss(16,24)]}>{trCopy('c_3474b9c8237c', '一覧に戻る', 'Back to list')}</Text></Pressable>
     </View>
   </ScrollView>;
@@ -304,7 +322,14 @@ function ChallengePracticeScreen() {
 
       {/* センテンスカード（タップで言語切り替え・フリップアニメ付き／スワイプ移動はしない=タップのみ） */}
       <Pressable
-        onPress={() => flip(() => setRevealed(r => !r))}
+        testID="composition-card"
+        accessibilityRole="button"
+        accessibilityLabel={displayText + ' · ' + t('practice.cardHint', {state: revealed ? t('practice.answer') : t('practice.question')})}
+        disabled={saving}
+        onPress={() => {
+          const epoch = flipEpoch.current;
+          flip(() => { if (epoch === flipEpoch.current) setRevealed(r => !r); });
+        }}
         onPressIn={() => { cardSwipeBlock.current = true; }}
         onPressOut={() => { cardSwipeBlock.current = false; }}
       >
@@ -347,16 +372,23 @@ function ChallengePracticeScreen() {
       </View>
 
       {/* スワイプで移動（左=次へ / 右=前へ） */}
-      <View style={styles.swipeHintRow}>
+      {!isNepaliComposition && <View style={styles.swipeHintRow}>
         <Text style={[styles.swipeHint, ss(11)]}>{t('common.swipeHint')}</Text>
-      </View>
+      </View>}
 
-      {learning && <View style={[learningStyles.card,learningStyles.green]}>
+      {isNepaliComposition ? <>
+        <Pressable testID="composition-next" accessibilityRole="button" disabled={saving || (learning?.ready === false && !learning.error)}
+          accessibilityState={{disabled: saving || (learning?.ready === false && !learning.error)}} style={learningStyles.primary}
+          onPress={() => void advance(revealed ? 'supported' : undefined)}>
+          <Text style={[learningStyles.primaryText,ss(16,24)]}>{t('common.next')}</Text>
+        </Pressable>
+        {learning?.error && <Text style={[learningStyles.error,ss(15,24)]}>{studyCopy.error}</Text>}
+      </> : learning && <View style={[learningStyles.card,learningStyles.green]}>
         <Text style={[learningStyles.body,ss(15,24)]}>{studyCopy.rating}</Text>
-        {!revealed && <Pressable accessibilityRole="button" style={learningStyles.primary} onPress={()=>setRevealed(true)}><Text style={[learningStyles.primaryText,ss(16,24)]}>{studyCopy.reveal}</Text></Pressable>}
+        {!revealed && <Pressable testID="composition-reveal" accessibilityRole="button" style={learningStyles.primary} onPress={()=>setRevealed(true)}><Text style={[learningStyles.primaryText,ss(16,24)]}>{studyCopy.reveal}</Text></Pressable>}
         {revealed && learning.ready && <View style={{gap:10}}>
-          <Pressable accessibilityRole="button" disabled={saving} accessibilityState={{disabled:saving}} style={learningStyles.primary} onPress={()=>record('known')}><Text style={[learningStyles.primaryText,ss(16,24)]}>{saving?studyCopy.saving:studyCopy.known}</Text></Pressable>
-          <Pressable accessibilityRole="button" disabled={saving} accessibilityState={{disabled:saving}} style={learningStyles.secondary} onPress={()=>record('again')}><Text style={[learningStyles.link,ss(16,24)]}>{studyCopy.again}</Text></Pressable>
+          <Pressable testID="composition-known" accessibilityRole="button" disabled={saving} accessibilityState={{disabled:saving}} style={learningStyles.primary} onPress={()=>advance('known')}><Text style={[learningStyles.primaryText,ss(16,24)]}>{saving?studyCopy.saving:studyCopy.known}</Text></Pressable>
+          <Pressable accessibilityRole="button" disabled={saving} accessibilityState={{disabled:saving}} style={learningStyles.secondary} onPress={()=>advance('again')}><Text style={[learningStyles.link,ss(16,24)]}>{studyCopy.again}</Text></Pressable>
         </View>}
         {learning.error && <Text style={[learningStyles.error,ss(15,24)]}>{studyCopy.error}</Text>}
       </View>}
@@ -364,7 +396,7 @@ function ChallengePracticeScreen() {
       {/* 単語と意味 (全単語を表示)
             日本語 UI: ネパール語 (デーヴァナーガリー) + ローマ字 / 意味=日本語
             ネパール語 UI: 日本語 (各 ne 単語の ja 訳) / 意味=ネパール語  */}
-      {(() => {
+      {(revealed || data.targetLang !== 'ne') && (() => {
         // 文法: sentence_id = テーマ-例題 / 会話: テーマ-レベル-例題
         const sentenceId = isGrammar
           ? `${themeId}-${index + 1}`
@@ -393,7 +425,7 @@ function ChallengePracticeScreen() {
           });
         }
         return (
-          <View style={styles.wordsSection}>
+          <View testID="composition-vocabulary" style={styles.wordsSection}>
             <View style={styles.wordHeader}>
               <Text style={styles.wordHeaderNum}>#</Text>
               <Text style={styles.wordHeaderLabel}>{t('practice.wordsHeader')}</Text>

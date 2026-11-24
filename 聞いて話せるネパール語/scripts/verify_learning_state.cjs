@@ -9,6 +9,23 @@ const ne={...core,nepaliAudio:{},nepaliGrammarAudio:{}};
 const data=compose(ne,{...overlays.ja,nativeLang:'ja'},{version:'test'});
 const m=overlays.ja.learningPath.steps[0].items[0],now=1000000,day=86400000,key=policy.studyKey(m);
 (async()=>{
+const sentence={mode:'grammar',themeId:1,index:0,ne:core.grammarNe[1][0]};
+const dueFor=(state,direction,time=now)=>policy.reviewItems(state,data,time,5,direction).length;
+let split=policy.rateStudy(policy.emptyStudyState(),sentence,'known',now,'ne2ja');
+assert.equal(dueFor(split,'ja2ne'),1);assert.equal(dueFor(split,'ne2ja'),0);
+split=policy.rateStudy(split,sentence,'again',now,'ja2ne');
+assert.equal(dueFor(split,'ja2ne'),1);assert.equal(dueFor(split,'ne2ja'),0);
+split=policy.decodeStudy(JSON.stringify(split));
+assert.equal(Object.keys(split.ratings).length,2);
+assert.equal(policy.studyActivity(split,now).today,1);
+const prior=policy.rateStudy(policy.emptyStudyState(),sentence,'again',now);
+const migrated=policy.rateStudy(policy.decodeStudy(JSON.stringify(prior)),sentence,'known',now,'ne2ja');
+const viewed=policy.rateStudy(migrated,sentence,'supported',now,'ne2ja');
+assert.equal(viewed.ratings['grammar:1:1:0:ne2ja'].result,'known');
+assert.equal(viewed.ratings['grammar:1:1:0:ne2ja'].streak,1);
+assert.equal(policy.studyActivity(viewed,now).today,1);
+assert.equal(dueFor(migrated,'ja2ne'),1);assert.equal(dueFor(migrated,'ne2ja'),0);
+assert.equal(policy.practiceParams(sentence,{kind:'review',items:[sentence],direction:'ja2ne'}).challenge,true);
 // Home activity is assessed practice, not app visits. Repeats count once per local day.
 const local=(y,m,d,h=12)=>new Date(y,m-1,d,h).getTime();
 let activity=policy.emptyStudyState();assert.equal(policy.studyActivity(activity,local(2026,11,7)).totalDays,0);

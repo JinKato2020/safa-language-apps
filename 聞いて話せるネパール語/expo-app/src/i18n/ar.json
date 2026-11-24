@@ -191,6 +191,8 @@
     "tagJa": "AR · العربية",
     "tagNe": "NE · النيبالية",
     "nonstop": "استماع متواصل",
+    "timedTranslation": "إظهار الترجمة مع صوتها",
+    "waitForTranslation": "ستظهر الترجمة عند سماعها.",
     "speed": "السرعة ×{{speed}}"
   },
   "flashcard": {

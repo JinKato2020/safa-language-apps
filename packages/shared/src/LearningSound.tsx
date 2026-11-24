@@ -12,11 +12,11 @@ export function LearningAudioProvider({ resolve, children }: {resolve: LearningA
   return <Resolver.Provider value={resolve}>{children}</Resolver.Provider>;
 }
 // Mount only the selected clip: ten samples never create ten simultaneous players.
-export function LearningSound({ audio, onFinished }: { audio: LearningAudio | number; onFinished?: () => void }) {
+export function LearningSound({ audio, onFinished }: { audio: LearningAudio | number | string; onFinished?: () => void }) {
   const resolve = useContext(Resolver), [source,setSource] = useState<AudioSource | null>(null), [error,setError] = useState(false);
   const {lang, copy: trCopy }=useI18n(), ss=useScaleStyle();
-  useEffect(()=>{if(typeof audio==='number')return;let active=true; void resolve(audio).then(value=>{if(active){setSource(value);setError(!value);}}).catch(()=>{if(active)setError(true);});return()=>{active=false;};},[resolve, audio]);
-  if(typeof audio==='number') return <Playback source={audio} onFinished={onFinished}/>;
+  useEffect(()=>{if(typeof audio!=='object')return;let active=true; void resolve(audio).then(value=>{if(active){setSource(value);setError(!value);}}).catch(()=>{if(active)setError(true);});return()=>{active=false;};},[resolve, audio]);
+  if(typeof audio!=='object') return <Playback source={audio} onFinished={onFinished}/>;
   if(error) return <Text style={[{color:'#9f1239'},ss(14,24)]}>{trCopy('c_b4c7255430d7', '音声を開けませんでした。もう一度サンプルを押してください。', 'Audio is unavailable. Tap the sample to retry.')}</Text>;
   return source ? <Playback source={source} onFinished={onFinished}/> : <Text style={ss(14,24)}>{trCopy('c_7fcd2c5691d2', '音声を準備しています…', 'Preparing audio…')}</Text>;
 }

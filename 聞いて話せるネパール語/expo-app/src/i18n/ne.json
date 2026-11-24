@@ -186,6 +186,8 @@
     "tagJa": "JA · जापानी",
     "tagNe": "NE · नेपाली",
     "nonstop": "नन्स्टप",
+    "timedTranslation": "अनुवाद आवाजसँगै देखाउनुहोस्",
+    "waitForTranslation": "अनुवादको आवाजसँगै अर्थ देखिन्छ।",
     "speed": "गति ×{{speed}}"
   },
   "flashcard": {

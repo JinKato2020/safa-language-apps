@@ -191,6 +191,8 @@
     "tagJa": "KO · 한국어",
     "tagNe": "NE · 네팔어",
     "nonstop": "연속 재생",
+    "timedTranslation": "번역을 음성에 맞춰 표시",
+    "waitForTranslation": "번역 음성이 나오면 뜻이 표시됩니다.",
     "speed": "속도 ×{{speed}}"
   },
   "flashcard": {

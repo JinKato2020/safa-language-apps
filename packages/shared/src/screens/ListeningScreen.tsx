@@ -100,13 +100,14 @@ export default function ListeningScreen() {
   const {
     listenLoop, setListenLoop,
     listenSpeed, setListenSpeed,
+    timedTranslation, setTimedTranslation,
     romaji,
   } = useSettings();
   const ss = useScaleStyle();
 
   // 音声エンジンは ListeningAudioProvider が保持。画面はその状態を表示し操作を委譲するだけ。
   const {
-    active, isGrammarSrc, themeId, levelId, index, playing, activeLang,
+    active, isGrammarSrc, themeId, levelId, index, playing, activeLang, firstLang, phase,
     startSession, togglePlay, go,
   } = useListeningAudio();
 
@@ -141,21 +142,26 @@ export default function ListeningScreen() {
 
   // 日本語の読み補助 (かな+ローマ字)。言語=ネパール語のとき日本語カードに表示。
   const reading = JP_READING?.[ex.jp];
+  const isNepaliCourse = targetLang === 'ne';
+  const showTranslation = !isNepaliCourse || !timedTranslation || phase === 'second' ||
+    activeLang === 'ja' || (phase === 'idle' && !playing);
 
   // 日本語カード: 言語=ネパール語(!isJaUI)のとき、かな(常時)+ローマ字(ローマ字設定ON時)を補助表示。
   const jaCard = (
-    <View style={[styles.card, activeLang === 'ja' && styles.cardJaActive]}>
+    <View testID="listening-translation" style={[styles.card, activeLang === 'ja' && styles.cardJaActive]}>
       <Text style={[styles.tag, activeLang === 'ja' && styles.tagJaActive, ss(11)]}>{t('listening.tagJa')}</Text>
-      <Text style={[styles.textJa, ss(20, 30)]}>{ex.jp}</Text>
-      {!isJaUI && reading?.kana ? <Text style={[styles.jaKana, ss(15, 23)]}>{reading.kana}</Text> : null}
-      {!isJaUI && romaji && reading?.romaji ? <Text style={[styles.romaji, ss(14, 22)]}>{reading.romaji}</Text> : null}
+      {showTranslation ? <>
+        <Text style={[styles.textJa, ss(20, 30)]}>{ex.jp}</Text>
+        {!isJaUI && reading?.kana ? <Text style={[styles.jaKana, ss(15, 23)]}>{reading.kana}</Text> : null}
+        {!isJaUI && romaji && reading?.romaji ? <Text style={[styles.romaji, ss(14, 22)]}>{reading.romaji}</Text> : null}
+      </> : <Text style={[styles.jaKana, ss(15, 23)]}>{t('listening.waitForTranslation')}</Text>}
     </View>
   );
 
   // ネパール語カード: ローマ字は 言語=日本語(isJaUI) かつ ローマ字設定ON のときだけ表示
   // (ネパール語話者にはネパール語ローマ字は不要なため)。
   const neCard = (
-    <View style={[styles.card, activeLang === 'ne' && styles.cardNeActive]}>
+    <View testID="listening-target" style={[styles.card, activeLang === 'ne' && styles.cardNeActive]}>
       <Text style={[styles.tag, activeLang === 'ne' && styles.tagNeActive, ss(11)]}>{t('listening.tagNe')}</Text>
       <Text style={[styles.textNe, ss(26, 38)]}>{ex.ne}</Text>
       {(targetLang === 'ne' || isJaUI) && romaji && l1.romanizeSentence ? <Text style={[styles.romaji, ss(14, 22)]}>{l1.romanizeSentence(ex.ne)}</Text> : null}
@@ -171,8 +177,7 @@ export default function ListeningScreen() {
         </Text>
       </View>
 
-      {/* UI 言語に応じて表示順を切替: ja UI は日本語が上、ne UI はネパール語が上 */}
-      {isJaUI ? <>{jaCard}{neCard}</> : <>{neCard}{jaCard}</>}
+      {(isNepaliCourse ? firstLang === 'ja' : isJaUI) ? <>{jaCard}{neCard}</> : <>{neCard}{jaCard}</>}
 
       {/* 2言語カードの真下: デジタル音量波 (再生中アニメ) */}
       <WaveBars playing={playing} />
@@ -190,6 +195,10 @@ export default function ListeningScreen() {
       </View>
 
       <View style={styles.extras}>
+        {isNepaliCourse && <Pressable testID="listening-timed-translation" accessibilityRole="switch" accessibilityState={{checked: timedTranslation}}
+          onPress={() => setTimedTranslation(!timedTranslation)} style={[styles.pill, timedTranslation && styles.pillOn]}>
+          <Text style={[styles.pillText, timedTranslation && styles.pillTextOn, ss(12)]}>{t('listening.timedTranslation')}</Text>
+        </Pressable>}
         <Pressable
           style={[styles.pill, listenLoop && styles.pillOn]}
           onPress={() => setListenLoop(!listenLoop)}

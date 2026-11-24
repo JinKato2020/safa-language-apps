@@ -12,7 +12,7 @@ import { useScaleStyle } from '../SettingsContext';
 import { learningStyles as styles } from '../LearningLaunch';
 import { learningCopy } from '../learningCopy';
 import { guidedSentence } from '../guidedPractice';
-import { practiceTaskKey, seededRandom, shuffle } from '../practicePool';
+import { practiceTaskKey, puzzleSentenceWords, seededRandom, shuffle } from '../practicePool';
 import { rateStudy, resolveStudy, studyKey, stepSignature } from '../learning';
 import type { RootStackParamList } from '../types';
 
@@ -28,9 +28,12 @@ export default function GuidedPracticeScreen() {
   const valid=items.length>0&&items.every(r=>resolveStudy(data,r));
   const ex=current&&resolveStudy(data,current);
   const detail=useMemo(()=>valid&&current?guidedSentence(data,current,session?.choiceSeed):null,[data, current, valid, session?.choiceSeed]);
-  const clip=current?.exerciseId?data.LEARNING_PATH?.exercises?.[current.exerciseId]?.audio:undefined;
+  const alternative = ex && data.puzzleAlternatives?.[ex.ne];
+  const chosenWords = order.map(i => detail?.words[i]?.text ?? '').join(' ').normalize('NFC');
+  const chosenAlternative = stage === 4 && checked && !revealed && alternative && chosenWords === puzzleSentenceWords(alternative.ne).join(' ').normalize('NFC');
+  const clip=!chosenAlternative && current?.exerciseId?data.LEARNING_PATH?.exercises?.[current.exerciseId]?.audio:undefined;
   const legacyKey=current?(current.mode==='grammar'?`${current.themeId}-${current.index+1}`:`${current.themeId}-${current.levelId??1}-${current.index+1}`):'';
-  const legacySource=current?.mode==='grammar'?data.audio.nepaliGrammarAudio[legacyKey]:data.audio.nepaliAudio[legacyKey];
+  const legacySource=chosenAlternative?alternative.audio:current?.mode==='grammar'?data.audio.nepaliGrammarAudio[legacyKey]:data.audio.nepaliAudio[legacyKey];
   const player=useAudioPlayer(source),status=useAudioPlayerStatus(player);
   useFocusEffect(useCallback(()=>()=>{try{player.pause();}catch{}},[player]));
   useEffect(()=>{let active=true;setSource(null);setAudioError(false);if(clip)void resolver(clip).then(s=>{if(active){setSource(s);setAudioError(!s);}}).catch(()=>{if(active)setAudioError(true);});else{setSource(legacySource??null);setAudioError(!legacySource);}return()=>{active=false;};},[clip, legacySource, resolver, audioAttempt]);
@@ -65,7 +68,7 @@ export default function GuidedPracticeScreen() {
   </ScrollView>;
   const labels=lang==='ar'?['التحضير','① اختيار الصيغة','② اختيار المعنى','③ ترتيب الكلمات']:lang==='ko'?['준비','① 형태 선택','② 뜻 선택','③ 어순 퍼즐']:en?['Preparation','① Choose a form','② Choose a meaning','③ Word order']:['準備','① 形を選ぶ','② 意味を選ぶ','③ 語順パズル'];
   const active=stage<=1?0:stage-1,conj=detail.conjugation;
-  const solved=stage===2?revealed||choice===conj?.target.text:stage===3?revealed||choice===ex.jp:revealed||(checked&&order.map(i=>detail.words[i].text).join(' ')===detail.words.map(w=>w.text).join(' '));
+  const solved=stage===2?revealed||choice===conj?.target.text:stage===3?revealed||choice===ex.jp:revealed||chosenAlternative||(checked&&chosenWords===detail.words.map(w=>w.text).join(' ').normalize('NFC'));
   const roman=detail.words.map(w=>w.roman).join(' ');
   const options=shuffle(detail.words.map((_,i)=>i),seededRandom((session?.choiceSeed??0)+position*31+17));
   const taskStage=session?.questionStages?.[position];
@@ -103,7 +106,7 @@ export default function GuidedPracticeScreen() {
     </>}
     {stage===4&&<>
       <Text style={[styles.body,ss(16,27)]}>{trCopy('c_1c4aa22eb3b7', '語を押して、見本の基本語順を作ろう。ネパール語では、ほかの語順が使える場合もあります。', 'Tap the words to rebuild the model’s basic order. Other orders can also be valid in Nepali.')}</Text>
-      <View style={[styles.card,styles.violet]}><Text style={[styles.title,ss(25,39)]}>{order.length?order.map(i=>detail.words[i].text).join(' '):(trCopy('c_9ad449a68c06', 'ここに文ができます', 'Your sentence appears here'))}</Text></View>
+      <Pressable disabled={!solved || !source || !status.isLoaded} accessibilityRole={solved ? 'button' : 'text'} onPress={play} style={[styles.card,styles.violet]}><Text style={[styles.title,ss(25,39)]}>{solved ? (chosenAlternative ? alternative.ne : ex.ne) : order.length ? chosenWords : (trCopy('c_9ad449a68c06', 'ここに文ができます', 'Your sentence appears here'))}</Text></Pressable>
       {!solved&&<><View style={{flexDirection:'row',flexWrap:'wrap',gap:8}}>{options.map(i=><Pressable key={i} accessibilityRole="button" accessibilityLabel={detail.words[i].text} disabled={order.includes(i)} style={[styles.secondary,{maxWidth:'100%',opacity:order.includes(i) ? .35 : 1}]} onPress={()=>{setOrder([...order,i]);setChecked(false);}}><Text style={[styles.title,ss(22,33)]}>{detail.words[i].text}</Text><Text style={[styles.body,ss(14,23)]}>{detail.words[i].roman} · {detail.words[i].meaning}</Text></Pressable>)}</View>
         {button(trCopy('c_2aff53aa7143', '最後の語を戻す', 'Undo last word'),()=>{setOrder(order.slice(0,-1));setChecked(false);},false,!order.length)}
         {button(trCopy('c_2dbc30b3fecf', '並びを確かめる', 'Check the order'),()=>setChecked(true),true,order.length!==detail.words.length)}

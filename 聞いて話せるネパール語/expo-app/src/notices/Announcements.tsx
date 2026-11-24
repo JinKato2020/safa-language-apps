@@ -109,7 +109,7 @@ export function useAnnouncements() {
     </Pressable>
   );
   const card = <HomeTile id="home-announcements" title={lang === 'en' ? 'Notices' : copy.title} kind="announcement"
-    color="#F4EAE8" onPress={() => open()} unreadLabel={hasUnread ? copy.unread : undefined} />;
+    onPress={() => open()} unreadLabel={hasUnread ? copy.unread : undefined} />;
   const modal = <Modal visible={visible} animationType="slide" onRequestClose={close} presentationStyle="pageSheet">
     <SafeAreaView style={styles.screen}>
       <View style={[styles.header, rtl && styles.rtl]}>

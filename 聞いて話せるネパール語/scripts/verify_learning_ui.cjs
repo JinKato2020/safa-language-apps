@@ -27,6 +27,7 @@ const arabicAlignment=process.argv.includes('--arabic-alignment')||puzzleAlignme
 const arabicFoundation=process.argv.includes('--arabic-foundation');
 const arabicDictionary=process.argv.includes('--arabic-dictionary');
 const arabicModes=process.argv.includes('--arabic-modes');
+const studyModes=process.argv.includes('--study-modes');
 const homeNotices=process.argv.includes('--home-notices');
 const tabDesigns=process.argv.includes('--tab-designs');
 modules.Text=compile(source('packages/shared/src/Text.tsx'));
@@ -38,7 +39,7 @@ if(homeNotices){
     strings[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/src/i18n/${lang}.json`));
   }
 }
-if(tabDesigns)for(const lang of ['ko','ar']){
+if(tabDesigns||studyModes)for(const lang of ['ko','ar']){
   overlays[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/data/overlays/${lang}.json`));
   strings[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/src/i18n/${lang}.json`));
 }
@@ -50,7 +51,7 @@ if(arabicFoundation||arabicDictionary||arabicModes||arabicAlignment){
   assert.equal(overlays.ar.l1,'ar');
   modules.Text=compile(source('packages/shared/src/Text.tsx'));
 }
-if(arabicModes||arabicAlignment)modules.ListeningScreen=compile(source('packages/shared/src/screens/ListeningScreen.tsx'));
+if(arabicModes||arabicAlignment||studyModes)modules.ListeningScreen=compile(source('packages/shared/src/screens/ListeningScreen.tsx'));
 if(puzzleAlignment)overlays.ko=JSON.parse(source('聞いて話せるネパール語/expo-app/data/overlays/ko.json'));
 if(arabicAlignment)modules.ModalDropdown=compile(source('packages/shared/src/ModalDropdown.tsx'));
 const code=`
@@ -96,7 +97,7 @@ cache.grammarGuide={exports:{useGrammarGuide:()=>window.data.GRAMMAR_GUIDE,useGr
 const root=require('react-dom/client').createRoot(document.getElementById('root')),Provider=require('LearningContext').LearningProvider,SettingsProvider=require('SettingsContext').SettingsProvider;let generation=0;
 const AudioProvider=require('LearningSound').LearningAudioProvider,resolveAudio=async a=>({uri:a.url});
 // Listening UI adapter records requests; native playback is verified separately.
-cache.ListeningAudioContext={exports:{useListeningAudio:()=>({active:true,isGrammarSrc:window.route.params?.source==='grammar',themeId:window.route.params?.themeId??1,levelId:window.route.params?.levelId??1,index:0,playing:false,activeLang:'ne',startSession:p=>window.events.push(['listenStart',p]),togglePlay:()=>window.events.push(['listenToggle']),go:n=>window.events.push(['listenGo',n])})}};
+cache.ListeningAudioContext={exports:{useListeningAudio:()=>({active:true,isGrammarSrc:window.route.params?.source==='grammar',themeId:window.route.params?.themeId??1,levelId:window.route.params?.levelId??1,index:0,playing:false,firstLang:'ne',phase:'first',activeLang:'ne',...window.listeningPhase,startSession:p=>window.events.push(['listenStart',p]),togglePlay:()=>window.events.push(['listenToggle']),go:n=>window.events.push(['listenGo',n])})}};
 cache['react-native'].exports.Animated.Value=class{constructor(value){this.value=value;}stopAnimation(){}setValue(value){this.value=value;}};
 const names={NepaliDictionary:'NepaliDictionaryScreen',SettingsMain:'SettingsScreen',SettingsTab:'SettingsScreen',VocabCategory:'VocabCategoryScreen',VocabDirection:'VocabDirectionScreen',Flashcard:'FlashcardScreen',HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
 cache.CultureBreakScreen={exports:{default:require('GrammarGuideScreen').CultureBreakScreen}}; names.CultureBreak='CultureBreakScreen';
@@ -142,6 +143,87 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
+    if(studyModes){
+      const assetModule={exports:{}};
+      const folder=path.resolve(__dirname,'../expo-app/src/pack');
+      const loadAudio=file=>{const asset=path.resolve(folder,file);assert(fs.statSync(asset).size>600);return file;};
+      new Function('require','exports',compile(source('聞いて話せるネパール語/expo-app/src/pack/puzzleAlternatives.ts')))(loadAudio,assetModule.exports);
+      const {puzzleAlternatives}=assetModule.exports;
+      const clips=Object.entries(puzzleAlternatives).map(([model,alt])=>{
+        const bag=s=>s.normalize('NFC').replace(/[।?]/gu,'').split(/\s+/u).sort();
+        assert.deepEqual(bag(model),bag(alt.ne));
+        assert.notEqual(model,alt.ne);
+        return fs.readFileSync(path.resolve(folder,alt.audio)).toString('base64');
+      });
+      await page.evaluate(async clips=>{
+        const ctx=new AudioContext();
+        try{for(const clip of clips){
+          const buffer=await ctx.decodeAudioData(Uint8Array.from(atob(clip),c=>c.charCodeAt(0)).buffer);
+          if(buffer.numberOfChannels!==1||buffer.duration<0.5||!buffer.getChannelData(0).some(v=>Math.abs(v)>0.01))throw Error('Silent or incomplete clip');
+        }}finally{await ctx.close();}
+      },clips);
+      console.log('Decoded '+clips.length+' complete, non-silent recordings.');
+      for(const lang of ['ja','en','ko','ar']){
+        const by=id=>page.getByTestId(id);
+        const listen={name:'Listening',params:{themeId:1,levelId:1}};
+        await page.evaluate(({lang,listen})=>window.boot(lang,true,listen),{lang,listen});
+        const translated=overlays[lang].examplesL1['1-1'][0];
+        const translation=by('listening-translation');
+        assert((await translation.innerText()).includes(translated));
+        await by('listening-timed-translation').click();
+        assert(!(await translation.innerText()).includes(translated));
+        await page.evaluate(()=>{window.listeningPhase={phase:'second',firstLang:'ne',activeLang:'ja'};window.redraw();});
+        await translation.getByText(translated,{exact:true}).waitFor();
+        assert.deepEqual(await page.locator('[data-testid="listening-translation"], [data-testid="listening-target"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['listening-target','listening-translation']);
+        await page.evaluate(()=>{window.listeningPhase={phase:'first',firstLang:'ja',activeLang:'ja'};window.redraw();});
+        assert.deepEqual(await page.locator('[data-testid="listening-translation"], [data-testid="listening-target"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['listening-translation','listening-target']);
+        assert((await translation.innerText()).includes(translated));
+        await page.evaluate(({lang,listen})=>{window.listeningPhase=undefined;return window.boot(lang,false,listen);},{lang,listen});
+        assert(!(await translation.innerText()).includes(translated),'timing preference survives reopening');
+        await page.evaluate(lang=>window.boot(lang,true,{name:'Practice',params:{themeId:1,mode:'grammar',challenge:true}}),lang);
+        assert.equal(await by('composition-vocabulary').count(),0);
+        const copy=await page.evaluate(lang=>require('learningCopy').learningCopy(lang),lang);
+        for(const label of [copy.rating,strings[lang].common.swipeHint,copy.known,copy.again])assert.equal(await page.getByText(label,{exact:true}).count(),0);
+        await by('composition-card').click();await by('composition-vocabulary').waitFor();
+        for(const label of [copy.rating,strings[lang].common.swipeHint,copy.known,copy.again])assert.equal(await page.getByText(label,{exact:true}).count(),0);
+        await by('composition-next').click();await by('composition-vocabulary').waitFor({state:'detached'});
+        await by('composition-next').click();await page.waitForFunction(()=>JSON.parse(localStorage.getItem('test-study')).resume.item.index===2);
+        assert.equal(await page.evaluate(()=>Object.keys(JSON.parse(localStorage.getItem('test-study')).ratings).length),1);
+        assert.equal(await by('composition-vocabulary').count(),0);
+        await page.evaluate(lang=>{
+          const prefs=JSON.parse(localStorage.getItem('test-settings'));
+          localStorage.setItem('test-settings',JSON.stringify({...prefs,practiceDirection:'ne2ja'}));
+          return window.boot(lang,false);
+        },lang);
+        await page.getByRole('button',{name:strings[lang].courseCopy?.c_534c3db39d21?.replace('{{p0}}','1')??(lang==='en'?'Review 1 sentences':'1文を復習する'),exact:true}).click();
+        assert.equal(await page.evaluate(()=>window.route.params.studySession.direction),'ne2ja');
+        await by('composition-card').click();await by('composition-vocabulary').waitFor();await by('composition-next').click();
+        await page.getByText(copy.finish,{exact:true}).waitFor();
+        const ratings=await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).ratings);
+        for(const direction of ['ja2ne','ne2ja'])assert.equal(ratings['grammar:1:1:0:'+direction].result,'supported');
+        await page.evaluate(lang=>window.boot(lang,true,{name:'Practice',params:{themeId:30,levelId:3,startIndex:19}}),lang);
+        await by('composition-card').click();await by('composition-vocabulary').waitFor();await by('composition-next').click();
+        await page.getByText(copy.finish,{exact:true}).waitFor();
+        assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).resume),undefined);
+        for(const mode of ['conversation','grammar']){
+          const result=await page.evaluate(({mode,alternatives})=>{
+            window.data.puzzleAlternatives=alternatives;
+            const path=window.data.LEARNING_PATH,ref=mode==='grammar'?path.steps.flatMap(s=>s.items).find(i=>alternatives[i.ne]):require('practicePool').conversationPuzzleItems(window.data,1,1).find(i=>alternatives[i.ne]);
+            const session={kind:'course',items:[ref],position:0,answered:[],choiceSeed:7,freePractice:{stage:4,answered:0,puzzleOnly:true}};
+            const {freePracticeQuestion,matchesPuzzle}=require('freePractice'),q=freePracticeQuestion(window.data,ref,7);
+            const alt=alternatives[ref.ne],remaining=q.puzzleTokens.filter(t=>t.id.startsWith('word-'));
+            const ids=require('practicePool').puzzleSentenceWords(alt.ne).map(w=>remaining.splice(remaining.findIndex(t=>t.text===w),1)[0].id);
+            if(!matchesPuzzle(q.puzzleTokens,ids,q.answerWords,alt.ne)||matchesPuzzle(q.puzzleTokens,[...ids].reverse(),q.answerWords,alt.ne))throw Error('answer validation');
+            window.navigate('Practice',require('learning').practiceParams(ref,session));
+            return {ids,alt};
+          },{mode,alternatives:puzzleAlternatives});
+          for(const id of result.ids)await by('free-token-'+id).click();
+          const completed=by('free-completed-sentence');assert((await completed.innerText()).includes(result.alt.ne));
+          await completed.click();await page.waitForFunction(src=>window.events.some(([k,v])=>k==='audio'&&v===src),result.alt.audio);
+        }
+      }
+      assert.deepEqual(errors,[]);console.log('PASS JA/EN/KO/AR: translation order/timing/persistence, answer-only vocabulary, grammar/conversation alternative order and matching playback.');return;
+    }
     if(puzzleAlignment){
       for(const lang of ['ar','ja','en','ko'])for(const sourceMode of ['grammar','conversation'])for(const[width,scale]of[[390,1],[320,1.2],[768,1]]){
         await page.setViewportSize({width,height:1024});
@@ -995,19 +1077,33 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
     if(homeNotices){
       const by=id=>page.getByTestId(id);
       const titles={ja:'閉じる',en:'Close',ko:'닫기',ar:'إغلاق'};
-      for(const lang of Object.keys(titles)){
+      const appearances={
+        minimal:{surface:'rgb(255, 255, 255)',line:'rgb(219, 225, 221)',radius:'12px',icon:'rgb(230, 240, 238)',ink:'rgb(32, 45, 44)',unread:'rgb(196, 37, 62)'},
+        forest:{surface:'rgb(33, 58, 47)',line:'rgb(66, 96, 82)',radius:'15px',icon:'rgb(49, 76, 62)',ink:'rgb(233, 242, 233)',unread:'rgb(255, 117, 133)'},
+      };
+      for(const [design,appearance] of Object.entries(appearances))for(const lang of Object.keys(titles)){
         await page.setViewportSize({width:320,height:568});
-        await page.evaluate(l=>{
+        await page.evaluate(({lang,design})=>{
+          localStorage.clear();
           window.testNotices=[{id:'v-next',title:'Release',body:'Release details',publishedAt:1700000000000}];
-          localStorage.setItem('test-settings',JSON.stringify({tabDesign:['ko','ar'].includes(l)?'forest':'minimal'}));
-          return window.boot(l,true,{name:'HomeTab'},1.4);
-        },lang);
+          localStorage.setItem('test-settings',JSON.stringify({tabDesign:design}));
+          return window.boot(lang,false,{name:'HomeTab'},1.4);
+        },{lang,design});
         const cards=by('home-content-grid').getByRole('button');
         assert.equal(await cards.count(),6);
+        for(const card of await cards.all()){
+          assert.deepEqual(await card.evaluate(el=>{
+            const cardStyle=getComputedStyle(el);
+            const icon=getComputedStyle(el.firstElementChild);
+            const title=getComputedStyle(el.lastElementChild);
+            return {surface:cardStyle.backgroundColor,line:cardStyle.borderColor,radius:cardStyle.borderRadius,icon:icon.backgroundColor,ink:title.color};
+          }),{surface:appearance.surface,line:appearance.line,radius:appearance.radius,icon:appearance.icon,ink:appearance.ink},`${lang} ${design} ${await card.getAttribute('data-testid')}`);
+        }
         const measureHome=()=>by('learning-home').evaluate(el=>{
           const grid=el.querySelector('[data-testid="home-content-grid"]').getBoundingClientRect();
           const image=el.querySelector('[data-testid="home-hero-image"]').getBoundingClientRect();
-          return { padding:el.getBoundingClientRect().bottom-grid.bottom, imageHeight:image.height };
+          const rows=[...el.querySelector('[data-testid="home-content-grid"]').children].map(row=>row.getBoundingClientRect().height);
+          return { padding:el.getBoundingClientRect().bottom-grid.bottom, imageHeight:image.height, rows, scrollTop:el.scrollTop };
         });
         const small=await measureHome();
         assert(Math.abs(small.padding-8)<=2,`${lang} compact: ${JSON.stringify(small)}`);
@@ -1020,6 +1116,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.setViewportSize({width:320,height:568});
         await page.evaluate(()=>window.redraw());
         await by('home-announcements-unread').waitFor();
+        assert.equal(await by('home-announcements-unread').evaluate(el=>getComputedStyle(el).backgroundColor),appearance.unread);
         await by('home-announcements').click();
         assert.equal(await by('home-announcements-unread').count(),1,'Opening the inbox does not mark articles read');
         await by('announcement-v-next').click();
@@ -1032,7 +1129,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.getByText('Release details',{exact:true}).waitFor();
       }
       assert.deepEqual(errors,[]);
-      console.log('PASS: six home cards fit 320×568 and expand at 390×844 in four languages. Unread indicator, persistence, and direct article opening work.');
+      console.log('PASS: all six cards match Minimal and Forest at 320×568 and 390×844 in four languages. Unread indicator, persistence, and direct article opening work.');
       return;
     }
     if(process.argv.includes('--home-learning-updates')){

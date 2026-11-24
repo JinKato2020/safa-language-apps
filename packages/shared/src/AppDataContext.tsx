@@ -58,6 +58,7 @@ export type AppData = {
   vocabularyQuiz?: boolean;
   NEPALI_DICTIONARY?: import('./nepaliDictionary').NepaliDictionary;
   LEARNING_PATH?: LearningPath;
+  puzzleAlternatives?: Partial<Record<string, { ne: string; audio: AudioSrc }>>;
   LETTERS_SOUNDS?: import('./learning').LettersSounds;
   CONTENT_NAMES?: { themes?: Record<string,string>; levels?: Record<string,string>; categories?: Record<string,string> };
   POSTER_LESSONS?: import('./PosterContext').PosterLesson[];

@@ -1,7 +1,8 @@
 import type { AppData } from './AppDataContext';
+import type { Direction } from './SettingsContext';
 
 export type StudyRef = { mode: 'grammar' | 'conversation'; themeId: number; levelId?: number; index: number; ne: string; exerciseId?: string };
-export type StudySession = { kind: 'course' | 'review'; items: StudyRef[]; stepId?: string; position?: number; answered?: string[]; questionStages?: (2|3|4)[]; choiceSeed?: number; freePractice?: { stage: 2|3|4; answered: number; puzzleOnly?: boolean } };
+export type StudySession = { kind: 'course' | 'review'; direction?: Direction; items: StudyRef[]; stepId?: string; position?: number; answered?: string[]; questionStages?: (2|3|4)[]; choiceSeed?: number; freePractice?: { stage: 2|3|4; answered: number; puzzleOnly?: boolean } };
 export type LearningAudio = { url: string; sha256: string; bytes: number };
 export type SoundSample = { id: string; ne: string; roman: string; meaning: string; audio: LearningAudio };
 export type LearningExercise = { ne: string; jp: string; words: {text: string; roman: string; meaning: string}[]; audio: LearningAudio; forms?: {subject: string; form: string; roman: string; meaning: string}[]; family?: string; meaningChoices?: string[]; selection?: { wordIndex: number; answer?: string; prefix?: string; prompt: string; rule: string; options: {subject: string; form: string; roman: string; meaning: string}[] } };
@@ -9,7 +10,7 @@ export type LetterSample = { id: string; ne: string; roman: string; meaning: str
 export type LetterCombination = { consonant: string; roman: string; samples: LetterSample[] };
 export type LettersSounds = { title: string; description: string; sections: {id: string; title: string; body: string; samples: LetterSample[]}[]; combinations: LetterCombination[]; conjunctCombinations?: LetterCombination[] };
 export type LearningPath = { title: string; description: string; intro: { title: string; body: string; samples?: SoundSample[] }[]; exercises?: Record<string,LearningExercise>; steps: { id: string; title: string; goal: string; guideThemeId?: number; items: StudyRef[] }[] };
-export type Rating = { item: StudyRef; result: 'again' | 'known' | 'supported'; streak: number; due: number; updated: number };
+export type Rating = { item: StudyRef; direction?: Direction; result: 'again' | 'known' | 'supported'; streak: number; due: number; updated: number };
 export type StudyState = { version: 1; introRead: boolean; puzzleIntroSeen?: boolean; lettersRead?: string[]; practicePools?: Record<string, import('./practicePool').PracticePool>; ratings: Record<string, Rating>; completed: Record<string, string>; activity?: Record<string, string[]>; resume?: { item: StudyRef; session?: StudySession } };
 export const emptyStudyState = (): StudyState => ({ version: 1, introRead: false, ratings: {}, completed: {}, activity: {} });
 export function studyDate(now: number): string {
@@ -17,6 +18,8 @@ export function studyDate(now: number): string {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 export const studyKey = (r: StudyRef) => r.exerciseId ? `exercise:${r.exerciseId}` : `${r.mode}:${r.themeId}:${r.levelId ?? 1}:${r.index}`;
+const ratingKey = (item: StudyRef, direction?: Direction) => direction ? `${studyKey(item)}:${direction}` : studyKey(item);
+const validDirection = (value: unknown) => value === 'ja2ne' || value === 'ne2ja';
 export const stepSignature = (items: StudyRef[]) => JSON.stringify(items.map(r => [studyKey(r), r.ne]));
 export function validRef(r: any): r is StudyRef {
   return !!r && ['grammar','conversation'].includes(r.mode) && Number.isInteger(r.themeId) && r.themeId > 0 && Number.isInteger(r.index) && r.index >= 0 && typeof r.ne === 'string' && !!r.ne && (r.levelId == null || (Number.isInteger(r.levelId) && r.levelId > 0)) && (r.exerciseId == null || /^[a-z0-9-]{1,60}$/.test(r.exerciseId));
@@ -38,7 +41,7 @@ export function decodeStudy(raw: string | null): StudyState {
     for(const [key,pool] of Object.entries(p.practicePools) as [string,any][])if(/^(?:\d+:[234]|conversation:\d+:\d+:4)$/.test(key)&&typeof pool?.signature==='string'&&Array.isArray(pool.remaining)&&pool.remaining.every((s: unknown)=>typeof s==='string')&&Array.isArray(pool.previous)&&pool.previous.every((s: unknown)=>typeof s==='string'))state.practicePools[key]=pool;
   }
   for (const [key, r] of Object.entries(p.ratings) as [string, any][]) {
-    if (validRef(r?.item) && key === studyKey(r.item) && ['known','again','supported'].includes(r.result) && Number.isInteger(r.streak) && r.streak >= 0 && Number.isFinite(r.due) && Number.isFinite(r.updated)) state.ratings[key] = r;
+    if (validRef(r?.item) && (r.direction === undefined || validDirection(r.direction)) && key === ratingKey(r.item, r.direction) && ['known','again','supported'].includes(r.result) && Number.isInteger(r.streak) && r.streak >= 0 && Number.isFinite(r.due) && Number.isFinite(r.updated)) state.ratings[key] = r;
   }
   for (const [key, v] of Object.entries(p.completed)) if (typeof v === 'string') state.completed[key] = v;
   if (p.activity && typeof p.activity === 'object') {
@@ -51,26 +54,31 @@ export function decodeStudy(raw: string | null): StudyState {
   } else {
     // Old installs know only each example's latest assessment. Preserve those
     // confirmed dates without inventing earlier days or counting home visits.
-    for (const [key, rating] of Object.entries(state.ratings)) {
+    for (const rating of Object.values(state.ratings)) {
       const day = studyDate(rating.updated);
-      state.activity![day] = [...(state.activity![day] ?? []), key];
+      state.activity![day] = [...new Set([...(state.activity![day] ?? []), studyKey(rating.item)])];
     }
   }
   if (validRef(p.resume?.item)) {
     const s = p.resume.session;
+    if (s?.direction !== undefined && (!validDirection(s.direction) || s.kind !== 'review' || !Array.isArray(s.items) || s.items.some((item: StudyRef) => item?.exerciseId))) return state;
     if (!s) state.resume = { item: p.resume.item };
     else if (['course','review'].includes(s.kind) && Array.isArray(s.items) && s.items.length > 0 && s.items.every(validRef) && Number.isInteger(s.position) && s.position >= 0 && s.position < s.items.length && Array.isArray(s.answered) && s.answered.every((x: unknown) => typeof x === 'string') && (s.questionStages==null||(Array.isArray(s.questionStages)&&s.questionStages.length===s.items.length&&s.questionStages.every((n: unknown)=>[2,3,4].includes(n as number))&&Number.isSafeInteger(s.choiceSeed))) && (s.freePractice==null||(s.kind==='course'&&s.items.length===1&&s.position===0&&s.answered.length===0&&[2,3,4].includes(s.freePractice.stage)&&s.questionStages?.[0]===s.freePractice.stage&&Number.isSafeInteger(s.choiceSeed)&&Number.isSafeInteger(s.freePractice.answered)&&s.freePractice.answered>=0&&studyKey(p.resume.item)===studyKey(s.items[0])&&p.resume.item.ne===s.items[0].ne))) state.resume = p.resume;
   }
   return state;
 }
-export function rateStudy(state: StudyState, item: StudyRef, result: Rating['result'], now: number): StudyState {
-  const key = studyKey(item), previous = state.ratings[key];
+export function rateStudy(state: StudyState, item: StudyRef, result: Rating['result'], now: number, direction?: Direction): StudyState {
+  const key = ratingKey(item, direction), previous = state.ratings[key];
   const same = previous?.item.ne === item.ne;
   const streak = result !== 'known' ? 0 : same && previous.result === 'known' && previous.due > now ? previous.streak : Math.min(3, (same ? previous.streak : 0) + 1);
   const days = [0, 1, 3, 7][streak];
   const due = result === 'supported' ? now + 86400000 : result === 'again' ? now : same && previous.result === 'known' && previous.due > now ? previous.due : now + days * 86400000;
   const day = studyDate(now), activity = state.activity ?? {};
-  return { ...state, activity: { ...activity, [day]: [...new Set([...(activity[day] ?? []), key])] }, ratings: { ...state.ratings, [key]: { item, result, streak, updated: now, due } } };
+  // Viewing a composition answer counts as practice. Keep any explicit prior self-assessment.
+  const rating = direction && result === 'supported' && same && previous.result !== 'supported'
+    ? { ...previous, updated: now, due: Math.max(previous.due, due) }
+    : { item, ...(direction ? { direction } : {}), result, streak, updated: now, due };
+  return { ...state, activity: { ...activity, [day]: [...new Set([...(activity[day] ?? []), studyKey(item)])] }, ratings: { ...state.ratings, [key]: rating } };
 }
 
 /** Calendar-day streaks, using local dates (including DST), not 24-hour offsets. */
@@ -89,13 +97,25 @@ export function studyActivity(state: StudyState, now: number) {
     }),
   };
 }
-export function reviewItems(state: StudyState, data: AppData, now: number, limit = 5): StudyRef[] {
-  return Object.values(state.ratings).filter(r => r.due <= now && resolveStudy(data, r.item))
-    .sort((a,b) => Number(b.result === 'again') - Number(a.result === 'again') || a.due - b.due || a.updated - b.updated)
-    .slice(0, limit).map(r => r.item);
+export function reviewItems(state: StudyState, data: AppData, now: number, limit = 5, direction?: Direction): StudyRef[] {
+  const candidates = new Map<string, Rating>();
+  for (const rating of Object.values(state.ratings)) {
+    if (!resolveStudy(data, rating.item)) continue;
+    const id = studyKey(rating.item);
+    const assessment = direction && state.ratings[ratingKey(rating.item, direction)];
+    if (assessment && assessment.item.ne === rating.item.ne) candidates.set(id, assessment);
+    else if (direction && rating.direction) {
+      // Familiar in the other direction, but never assessed in the requested direction.
+      candidates.set(id, { ...rating, result: 'supported', due: rating.updated });
+    } else if (!candidates.has(id)) candidates.set(id, rating);
+  }
+  const due = [...candidates.values()].filter(r => r.due <= now)
+    .sort((a,b) => Number(b.result === 'again') - Number(a.result === 'again') || a.due - b.due || a.updated - b.updated);
+  // Guided exercises and independent composition use different question sources.
+  return due.filter(r => !direction || !!r.item.exerciseId === !!due[0].item.exerciseId).slice(0, limit).map(r => r.item);
 }
 export function practiceParams(item: StudyRef, studySession?: StudySession) {
-  return { themeId: item.themeId, levelId: item.levelId, startIndex: item.index, mode: item.mode === 'grammar' ? 'grammar' as const : undefined, challenge: false, ...(studySession ? { studySession } : {}) };
+  return { themeId: item.themeId, levelId: item.levelId, startIndex: item.index, mode: item.mode === 'grammar' ? 'grammar' as const : undefined, challenge: !!studySession?.direction, ...(studySession ? { studySession } : {}) };
 }
 
 /** Serialize reads/writes and publish only successfully persisted states. Failed reads never overwrite saved data. */

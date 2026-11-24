@@ -191,6 +191,8 @@
     "tagJa": "JA · 日本語",
     "tagNe": "NE · ネパール語",
     "nonstop": "ノンストップ",
+    "timedTranslation": "訳は音声に合わせて表示",
+    "waitForTranslation": "訳の音声が流れると表示されます",
     "speed": "速度 ×{{speed}}"
   },
   "flashcard": {

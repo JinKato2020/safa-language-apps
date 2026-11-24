@@ -143,6 +143,7 @@ export type ListeningAudioValue = {
   levelId: number;
   index: number;
   phase: Phase;
+  firstLang: 'ja' | 'ne';
   playing: boolean;
   /** 現在ハイライトすべき言語（カード強調用） */
   activeLang: 'ja' | 'ne' | null;
@@ -173,7 +174,10 @@ export function ListeningAudioProvider({ children }: { children: ReactNode }) {
     listenSpeed,
     gap,
   } = useSettings();
-  const isJa2Ne = listenDirection === 'ja2ne';
+  const [phase, setPhase] = useState<Phase>('idle');
+  const orderAtStart = useRef(listenDirection);
+  // Apply a new preference at the next sentence boundary, including after replay.
+  const isJa2Ne = (phase === 'idle' ? listenDirection : orderAtStart.current) === 'ja2ne';
   // App A always repeats Nepali, including Korean/English UI. Preserve other apps' mapping.
   const repeatLang: 'ja' | 'ne' = targetLang === 'ne' || isJaUI ? 'ne' : 'ja';
   const firstLang: 'ja' | 'ne' = isJa2Ne ? 'ja' : 'ne';
@@ -187,7 +191,6 @@ export function ListeningAudioProvider({ children }: { children: ReactNode }) {
   const [themeId, setThemeId] = useState(0);
   const [levelId, setLevelId] = useState<number>(1);
   const [index, setIndex] = useState(0);
-  const [phase, setPhase] = useState<Phase>('idle');
   const [started, setStarted] = useState(false);
   const [playing, setPlaying] = useState(false);
   const nePlayCountRef = useRef(0);
@@ -360,6 +363,7 @@ export function ListeningAudioProvider({ children }: { children: ReactNode }) {
       return;
     }
     const firstSrc = isJa2Ne ? jaSrc : neSrc;
+    orderAtStart.current = listenDirection;
     playSrcOrSkip(firstSrc);
     nePlayCountRef.current = 0;
     finishHandledRef.current = false;
@@ -622,6 +626,7 @@ export function ListeningAudioProvider({ children }: { children: ReactNode }) {
     levelId,
     index,
     phase,
+    firstLang,
     playing,
     activeLang,
     startSession,

@@ -49,8 +49,9 @@ export function freePracticeQuestion(data: AppData, ref: StudyRef, seed: number)
   return { ...detail, puzzleTokens: shuffle(tokens, seededRandom(seed + 239)), answerWords: detail.words.map(word => word.text) };
 }
 
-export function matchesPuzzle(tokens: { id: string; text: string }[], selected: string[], expected: string[]) {
-  if (selected.length !== expected.length || new Set(selected).size !== selected.length) return false;
+export function matchesPuzzle(tokens: { id: string; text: string }[], selected: string[], expected: string[], alternative?: string) {
+  if (selected.length !== expected.length || new Set(selected).size !== selected.length || selected.some(id => id.startsWith('extra-'))) return false;
   const byId = new Map(tokens.map(token => [token.id, token.text.normalize('NFC')]));
-  return selected.every((id, i) => byId.get(id) === expected[i].normalize('NFC'));
+  const inOrder = (words: string[]) => words.length === selected.length && selected.every((id, i) => byId.get(id) === words[i].normalize('NFC'));
+  return inOrder(expected) || (!!alternative && inOrder(puzzleSentenceWords(alternative)));
 }

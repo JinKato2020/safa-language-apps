@@ -191,6 +191,8 @@
     "tagJa": "EN · English",
     "tagNe": "NE · Nepali",
     "nonstop": "Non-stop",
+    "timedTranslation": "Show translation with audio",
+    "waitForTranslation": "The translation will appear when you hear it.",
     "speed": "Speed ×{{speed}}"
   },
   "flashcard": {

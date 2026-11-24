@@ -6,6 +6,7 @@ import { Text } from '../Text';
 import { useAppData } from '../AppDataContext';
 import { useLearning } from '../LearningContext';
 import { PuzzleBoard } from '../PuzzleBoard';
+import { LearningSound } from '../LearningSound';
 import { useI18n } from '../i18n';
 import { useScaleStyle } from '../SettingsContext';
 import { createConversationPuzzleSession, createFreePracticeSession, type PracticeStage } from '../practicePool';
@@ -29,13 +30,15 @@ export default function FreePracticeScreen() {
   const question = useMemo(() => ex ? freePracticeQuestion(data, current, session.choiceSeed ?? 0) : null, [data, current, ex, session.choiceSeed]);
   const [choice, setChoice] = useState(''), [order, setOrder] = useState<string[]>([]);
   const [revealed, setRevealed] = useState(false), [saving, setSaving] = useState(false);
+  const [audioRequest, setAudioRequest] = useState(0);
   const [dragging, setDragging] = useState(false), [showPuzzleIntro] = useState(() => !learning.state.puzzleIntroSeen);
   const busy = useRef(false), focused = useRef(true);
-  useFocusEffect(useCallback(() => { focused.current = true; return () => { focused.current = false; }; }, []));
+  useFocusEffect(useCallback(() => { focused.current = true; return () => { focused.current = false; setAudioRequest(0); }; }, []));
   useLayoutEffect(() => nav.setOptions({ title: puzzleOnly ? (trCopy('c_07bb342a1c56', '文章パズル', 'Sentence puzzles')) : (trCopy('c_0a0288f7db6f', '自由に練習', 'Practice your way')) }), [nav, en, puzzleOnly, trCopy]);
   useEffect(() => { if (mode === 4 && showPuzzleIntro && learning.ready) void learning.change(state => ({ ...state, puzzleIntroSeen: true })); }, [mode, showPuzzleIntro, learning.ready, learning.change]);
   const labels = lang === 'ar' ? ['اختيار الصيغة', 'اختيار المعنى', 'ترتيب الكلمات'] : lang === 'ko' ? ['형태 선택', '뜻 선택', '어순 퍼즐'] : en ? ['Choose a form', 'Choose a meaning', 'Word-order puzzle'] : ['形を選ぶ', '意味を選ぶ', '語順パズル'];
-  const solved = !!question && (revealed || (mode === 2 ? choice === question.conjugation?.target.text : mode === 3 ? choice === ex?.jp : matchesPuzzle(question.puzzleTokens, order, question.answerWords)));
+  const alternative = ex && data.puzzleAlternatives?.[ex.ne];
+  const solved = !!question && (revealed || (mode === 2 ? choice === question.conjugation?.target.text : mode === 3 ? choice === ex?.jp : matchesPuzzle(question.puzzleTokens, order, question.answerWords, alternative?.ne)));
   const action = (id: string, label: string, onPress: () => void, primary = false, disabled = false) => <Pressable testID={id} accessibilityRole="button" accessibilityState={{ disabled }} disabled={disabled} onPress={onPress} style={[styles.button, primary && styles.primary, disabled && styles.disabled]}><Text style={[ss(16, 25), primary ? styles.primaryText : styles.link]}>{label}</Text></Pressable>;
   async function draw(nextMode: PracticeStage, countAnswer: boolean) {
     if (busy.current || !learning.ready || !ex || !current || (!conversationPuzzle && (!path || !step))) return;
@@ -59,6 +62,12 @@ export default function FreePracticeScreen() {
   const canForm = !!conj, canMeaning = question.meaningChoices.length > 1;
   const longPrompt = ex.jp.length > (en ? 90 : 45);
   const promptFont = longPrompt ? 18 : 24;
+  const usedAlternative = mode === 4 && solved && !revealed && alternative && !matchesPuzzle(question.puzzleTokens, order, question.answerWords);
+  const completedSentence = usedAlternative ? alternative.ne : ex.ne;
+  const completedRoman = usedAlternative ? order.map(id => question.puzzleTokens.find(word => word.id === id)?.roman).join(' ') : roman;
+  const modelAudio = current.exerciseId ? path?.exercises?.[current.exerciseId]?.audio
+    : current.mode === 'grammar' ? data.audio.nepaliGrammarAudio[question.sentenceId] : data.audio.nepaliAudio[question.sentenceId];
+  const completedAudio = usedAlternative ? alternative.audio : modelAudio;
   return <ScrollView scrollEnabled={!dragging} contentContainerStyle={styles.container}>
     <View style={styles.heading}><Text style={[styles.theme, ss(14, 23)]}>{title}</Text><Text testID="free-count" style={[styles.count, ss(14, 23)]}>{trCopy('c_539119ce688d', `${answered}問取り組んだ`, `${answered} practised`, {p0: answered})}</Text></View>
     {!puzzleOnly && <View style={styles.modes}>{([2, 3, 4] as const).map((stage, i) => {
@@ -84,7 +93,16 @@ export default function FreePracticeScreen() {
       {order.length === question.answerWords.length && <Text accessibilityRole="alert" style={[styles.feedback, ss(16, 26)]}>{wrongTokens ? (trCopy('c_acc2ff69718b', '語句を入れ替えてみよう。', 'Try replacing a word.')) : (trCopy('c_a3ff844d17f5', '語順を確かめよう。', 'Try a different order.'))}</Text>}
     </>}
     {solved ? <>
-      <View testID="free-feedback" style={styles.success}><Text style={[styles.link, ss(18, 29)]}>{revealed ? (trCopy('c_2d1749b3fb4f', '見本で確認しよう', 'Check the model')) : (trCopy('c_7f681918ef28', '正解！', 'That’s right!'))}</Text>{mode === 4 && <><Text style={[styles.nepali, ss(27, 41)]}>{ex.ne}</Text><Text style={[styles.muted, ss(16, 25)]}>{roman}</Text></>}</View>
+      <View testID="free-feedback" style={styles.success}>
+        <Text style={[styles.link, ss(18, 29)]}>{revealed ? (trCopy('c_2d1749b3fb4f', '見本で確認しよう', 'Check the model')) : (trCopy('c_7f681918ef28', '正解！', 'That’s right!'))}</Text>
+        {mode === 4 && <Pressable testID="free-completed-sentence" disabled={completedAudio == null}
+          accessibilityRole={completedAudio == null ? 'text' : 'button'} onPress={() => setAudioRequest(n => n + 1)}>
+          <Text style={[styles.nepali, ss(27, 41)]}>{completedSentence}</Text>
+          <Text style={[styles.muted, ss(16, 25)]}>{completedRoman}</Text>
+          {completedAudio != null && <Text style={[styles.link, ss(14, 23)]}>{t('practice.playAudio')}</Text>}
+        </Pressable>}
+        {audioRequest > 0 && completedAudio != null && <LearningSound key={audioRequest} audio={completedAudio} onFinished={() => setAudioRequest(0)}/>}
+      </View>
       {action('free-next', saving ? (trCopy('c_53c4c52fdd49', '保存中…', 'Saving…')) : (trCopy('c_7c59b5151a8f', '次の問題へ', 'Next question')), () => void draw(mode, true), true, saving || !learning.ready)}
     </> : action('free-model', trCopy('c_ac325df68661', '答えを見て確認', 'Show the answer'), () => setRevealed(true), false, saving)}
     {learning.error && <Text accessibilityRole="alert" style={[styles.error, ss(16, 26)]}>{trCopy('c_a5a1e10e48e4', '保存できませんでした。今の問題を残しています。もう一度お試しください。', 'Could not save. Your question is still here; please try again.')}</Text>}

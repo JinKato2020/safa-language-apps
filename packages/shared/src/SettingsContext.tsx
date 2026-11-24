@@ -87,6 +87,8 @@ type Settings = {
   setNepaliRepeat: (n: NepaliRepeat) => void;
   listenLoop: boolean;
   setListenLoop: (v: boolean) => void;
+  timedTranslation: boolean;
+  setTimedTranslation: (value: boolean) => void;
   listenSpeed: ListenSpeed;
   setListenSpeed: (s: ListenSpeed) => void;
   gap: GapMode;
@@ -168,6 +170,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
   const [listenDirectionExplicit, setListenDirectionExplicit] = useState(false);
   const [nepaliRepeat, setNepaliRepeat] = useState<NepaliRepeat>(D.nepaliRepeat);
   const [listenLoop, setListenLoop] = useState(D.listenLoop);
+  const [timedTranslation, setTimedTranslation] = useState(false);
   const [listenSpeed, setListenSpeed] = useState<ListenSpeed>(D.listenSpeed);
   const [gap, setGap] = useState<GapMode>(D.gap);
   const [romaji, setRomaji] = useState(D.romaji);
@@ -201,6 +204,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
           if (typeof s.listenDirectionExplicit === 'boolean') setListenDirectionExplicit(s.listenDirectionExplicit);
           if (s.nepaliRepeat) setNepaliRepeat(s.nepaliRepeat);
           if (typeof s.listenLoop === 'boolean') setListenLoop(s.listenLoop);
+          if (typeof s.timedTranslation === 'boolean') setTimedTranslation(s.timedTranslation);
           if (s.listenSpeed) setListenSpeed(s.listenSpeed);
           if (s.gap) setGap(s.gap);
           if (typeof s.romaji === 'boolean') setRomaji(s.romaji);
@@ -220,13 +224,13 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
     if (!loaded) return;
     const s = {
       vocabularyDirection, practiceDirection, listenDirection: listenDirectionRaw, listenDirectionExplicit, nepaliRepeat,
-      listenLoop, listenSpeed, gap,
+      listenLoop, listenSpeed, gap, timedTranslation,
       romaji, themeMode, fontMode,
       autoFlip, shuffle,
       ...(tabDesignEnabled && { tabDesign }),
     };
     AsyncStorage.setItem(storageKey, JSON.stringify(s)).catch(() => {});
-  }, [storageKey, loaded, vocabularyDirection, practiceDirection, listenDirectionRaw, listenDirectionExplicit, nepaliRepeat, listenLoop, listenSpeed, gap, romaji, themeMode, fontMode, autoFlip, shuffle, tabDesignEnabled, tabDesign]);
+  }, [storageKey, loaded, vocabularyDirection, practiceDirection, listenDirectionRaw, listenDirectionExplicit, nepaliRepeat, listenLoop, listenSpeed, gap, timedTranslation, romaji, themeMode, fontMode, autoFlip, shuffle, tabDesignEnabled, tabDesign]);
 
   const resetSettings = () => {
     setVocabularyDirection(D.vocabularyDirection);
@@ -235,6 +239,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
     setListenDirectionExplicit(false);
     setNepaliRepeat(D.nepaliRepeat);
     setListenLoop(D.listenLoop);
+    setTimedTranslation(false);
     setListenSpeed(D.listenSpeed);
     setGap(D.gap);
     setRomaji(D.romaji);
@@ -253,6 +258,7 @@ export function SettingsProvider({ children, defaults, storageKey = DEFAULT_STOR
         listenDirection, setListenDirection,
         nepaliRepeat, setNepaliRepeat,
         listenLoop, setListenLoop,
+        timedTranslation, setTimedTranslation,
         listenSpeed, setListenSpeed,
         gap, setGap,
         romaji, setRomaji,
