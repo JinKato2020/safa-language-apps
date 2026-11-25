@@ -34,14 +34,14 @@ export default function ThemeScreen() {
   const { t, lang , copy: trCopy } = useI18n();
   const ss = useScaleStyle();
   const settings = useSettings();
-  const { mode, source, guidesOnHome, composition, puzzleOnly, grammarFirst, levelId } = useRoute<R>().params;
+  const { mode, source, guidesOnHome, composition, puzzleOnly, levelId } = useRoute<R>().params;
   const heroSrc = useHeroImage(composition ? 'conversation' : mode);
   const { top } = useSafeAreaInsets();
   const isListening = mode === 'listening';
-  const tab = puzzleOnly ? 'puzzle' : composition ? 'composition' : isListening && grammarFirst ? 'listening' : undefined;
+  const tab = puzzleOnly ? 'puzzle' : composition ? 'composition' : isListening && guidesOnHome ? 'listening' : undefined;
   const palette = tab && settings.tabDesignEnabled ? tabPalette(tab, settings.tabDesign) : undefined;
   // Route params retain the source and level when returning from practice/playback.
-  const listenSource = source ?? (grammarFirst ? 'grammar' : 'conversation');
+  const listenSource = source ?? 'conversation';
   const effectiveSource = isListening
     ? (listenSource === 'grammar' ? 'grammar' : undefined)
     : source;

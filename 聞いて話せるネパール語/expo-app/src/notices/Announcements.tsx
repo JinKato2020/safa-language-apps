@@ -108,7 +108,7 @@ export function useAnnouncements() {
       <Text style={styles.actionText}>{label}</Text>
     </Pressable>
   );
-  const card = <HomeTile id="home-announcements" title={lang === 'en' ? 'Notices' : copy.title} kind="announcement"
+  const card = <HomeTile id="home-announcements" title={copy.title} kind="announcement" iconOnly
     onPress={() => open()} unreadLabel={hasUnread ? copy.unread : undefined} />;
   const modal = <Modal visible={visible} animationType="slide" onRequestClose={close} presentationStyle="pageSheet">
     <SafeAreaView style={styles.screen}>

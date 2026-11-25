@@ -155,24 +155,24 @@ function GrammarStackNav({ defaultStackOptions, guidesOnHome = false }: { defaul
 
 function CompositionStackNav({ defaultStackOptions }: { defaultStackOptions: any }) {
   return <CompositionStack.Navigator screenOptions={defaultStackOptions}>
-    <CompositionStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'grammar', composition: true, guidesOnHome: true }} />
+    <CompositionStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'conversation', composition: true, guidesOnHome: true }} />
     <CompositionStack.Screen name="Practice" component={PracticeScreen} options={{ header: renderStudyHeader }} />
   </CompositionStack.Navigator>;
 }
 
 function PuzzleStackNav({ defaultStackOptions }: { defaultStackOptions: any }) {
   return <PuzzleStack.Navigator screenOptions={defaultStackOptions}>
-    <PuzzleStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'grammar', puzzleOnly: true, guidesOnHome: true }} />
+    <PuzzleStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'conversation', puzzleOnly: true, guidesOnHome: true }} />
     <PuzzleStack.Screen name="Practice" component={PracticeScreen} options={{ header: renderStudyHeader }} />
   </PuzzleStack.Navigator>;
 }
 
-function ListeningStackNav({ defaultStackOptions, posterInListening, grammarFirst }: { defaultStackOptions: any; posterInListening?: boolean; grammarFirst?: boolean }) {
+function ListeningStackNav({ defaultStackOptions, posterInListening, guidesOnHome }: { defaultStackOptions: any; posterInListening?: boolean; guidesOnHome?: boolean }) {
   return (
     <ListenStack.Navigator screenOptions={defaultStackOptions}>
       {/* App B: 聞き流しタブにハブ(会話聞き流し/単語音声ポスター)を統合。ハブを初期画面に。 */}
       {posterInListening && <ListenStack.Screen name="ListeningHub" component={ListeningHubScreen} />}
-      <ListenStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'listening', grammarFirst }} />
+      <ListenStack.Screen name="Theme" component={ThemeScreen} initialParams={{ mode: 'listening', guidesOnHome }} />
       <ListenStack.Screen name="Listening" component={ListeningScreen} />
       {posterInListening && <ListenStack.Screen name="VocabCategory" component={VocabCategoryScreen} initialParams={{ posterOnly: true }} />}
       {posterInListening && <ListenStack.Screen name="PosterAudio" component={PosterAudioScreen} />}
@@ -249,7 +249,7 @@ function MainTabs({ defaultStackOptions, progressStorageKey, tabs, posterInListe
     composition:  { name: 'CompositionTab',  title: t('nav.composition'), label: t('nav.compositionShort'), icon: ChatIcon,       render: () => <CompositionStackNav defaultStackOptions={modeStackOptions} /> },
     conversation: { name: 'ConversationTab', title: t('nav.conversation'), icon: ChatIcon,       render: () => <ConversationStackNav defaultStackOptions={modeStackOptions} /> },
     grammar:      { name: 'GrammarTab',      title: t('nav.grammar'),      icon: GrammarIcon,    render: () => <GrammarStackNav defaultStackOptions={modeStackOptions} guidesOnHome={learningHome} /> },
-    listening:    { name: 'ListeningTab',    title: t('nav.listening'),    icon: HeadphonesIcon, render: () => <ListeningStackNav defaultStackOptions={modeStackOptions} posterInListening={posterInListening} grammarFirst={learningHome} /> },
+    listening:    { name: 'ListeningTab',    title: t('nav.listening'),    icon: HeadphonesIcon, render: () => <ListeningStackNav defaultStackOptions={modeStackOptions} posterInListening={posterInListening} guidesOnHome={learningHome} /> },
     vocabulary:   { name: 'VocabularyTab',   title: t('nav.vocabulary'),   icon: CardsIcon,      render: () => <VocabularyStackNav defaultStackOptions={modeStackOptions} /> },
     short:        { name: 'ShortTab',        title: t('nav.short'),        icon: ShortIcon,      render: () => <ShortStackNav defaultStackOptions={defaultStackOptions} /> },
     long:         { name: 'LongTab',         title: t('nav.long'),         icon: LongIcon,       render: () => <ScaffoldScreen area="chobun" /> },

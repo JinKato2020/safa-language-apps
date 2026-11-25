@@ -45,7 +45,8 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
     paddingTop: Math.round(12 + room * 10),
     gap: Math.round(10 + room * 10),
   } : undefined;
-  const rowStyle = [styles.tileRow, room > 0 && { minHeight: Math.round(52 + room * 40), gap: Math.round(8 + room * 6) }];
+  const gridGap = shortScreen ? 6 : Math.round(8 + room * 6);
+  const rowStyle = [styles.tileRow, { gap: gridGap, minHeight: shortScreen ? 44 : Math.round(52 + room * 40) }];
   const displaySize = width < 360 ? 21 : 25;
   const due = useMemo(() => reviewItems(state, data, now, 5, practiceDirection), [state, data, now, practiceDirection]);
   const resume = state.resume && (state.resume.session || !due.length) && resolveStudy(data, state.resume.item) ? state.resume : undefined;
@@ -70,6 +71,7 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
         <Text testID="home-motto" accessibilityRole="header" style={[styles.headline, { fontSize: displaySize, lineHeight: displaySize + 6, color: palette.mastInk }]}>
           Small steps build great <Text style={[styles.strength, { color: palette.mastAccent }]}>strength.</Text>
         </Text>
+        {accessory}
       </View>
   </>;
 
@@ -78,7 +80,7 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
     contentContainerStyle={[styles.page, hero != null && styles.fillPage, pageSpacing, palette.dark && { paddingTop: top + (pageSpacing?.paddingTop ?? 12) }]}>
     <TabMastheadFrame palette={palette} compact expand={hero != null} testID="home-masthead">{heroBody}</TabMastheadFrame>
 
-    <View testID="home-content-grid" style={[styles.grid, shortScreen && styles.shortGrid, room > 0 && { gap: Math.round(8 + room * 6) }]}>
+    <View testID="home-content-grid" style={{ gap: gridGap }}>
       <View style={rowStyle}>
         <HomeTile id="home-letters" title={trCopy('c_2f46b1d4291b', '文字と音', 'Letters & sounds')} kind="letters" onPress={() => nav.navigate('LettersSounds')} />
         {guideCount > 0 && <HomeTile id="home-grammar-lessons" title={trCopy('c_c12a73a72dcb', '文法教材', 'Grammar')} kind="grammar" onPress={() => nav.navigate('GrammarLibrary')} />}
@@ -87,11 +89,8 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
         <HomeTile id="home-vocabulary" title={trCopy('c_d282e858f43a', '単語', 'Words')} kind="vocabulary" onPress={() => nav.navigate('VocabCategory')} />
         {!!data.NEPALI_DICTIONARY?.entries.length && <HomeTile id="home-dictionary" title={trCopy('c_df9dedb2fa8a', 'ネパール語辞書', 'Dictionary')} kind="dictionary" onPress={() => nav.navigate('NepaliDictionary')} />}
       </View>
-      {(hasCulture || accessory != null) && <View style={rowStyle}>
+      <View style={rowStyle}>
         {hasCulture && <HomeTile id="home-culture-break" title={lang === 'ja' ? 'ひと休み' : readingCopy(lang).breaks} kind="culture" onPress={() => nav.navigate('CultureBreak')} />}
-        {accessory}
-      </View>}
-      <View style={[styles.tileRow, { minHeight: shortScreen ? 44 : 56 }]}>
         <HomeTile id="home-similar-sounds" title={t('similarSounds.title')} badge={t('similarSounds.newBadge')} kind="sounds" onPress={() => nav.navigate('SimilarSounds')} />
       </View>
     </View>
@@ -103,20 +102,22 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
   </ScrollView>;
 }
 
-export function HomeTile({ id, title, kind, onPress, unreadLabel, badge }: {
+export function HomeTile({ id, title, kind, onPress, unreadLabel, badge, iconOnly = false }: {
   id: string; title: string; kind: 'letters' | 'grammar' | 'vocabulary' | 'dictionary' | 'culture' | 'announcement' | 'sounds';
-  onPress: () => void; unreadLabel?: string; badge?: string;
+  onPress: () => void; unreadLabel?: string; badge?: string; iconOnly?: boolean;
 }) {
   const { width, height } = useWindowDimensions();
   const { tabDesign } = useSettings();
   const palette = tabPalette('home', tabDesign);
   const iconInk = palette.accent;
   const compact = width < 360;
+  const titleText = <Text testID={`${id}-title`} style={[styles.tileTitle, badge && styles.titleWithBadge, compact && styles.compactTileTitle, { color: palette.ink }]}>{title}</Text>;
   return <Pressable testID={id} accessibilityRole="button" accessibilityLabel={[title, badge, unreadLabel].filter(Boolean).join(' · ')} onPress={onPress}
     style={({ pressed }) => [
       styles.tile, palette.dark && styles.forestTile,
       { backgroundColor: pressed ? palette.soft : palette.surface, borderColor: pressed ? palette.edge : palette.line },
       compact && styles.compactTile, height < 640 && styles.shortTile,
+      iconOnly && styles.iconOnlyTile,
     ]}>
     <View accessible={false} accessibilityElementsHidden importantForAccessibility="no-hide-descendants"
       style={[styles.icon, compact && styles.compactIcon, palette.dark && styles.forestIcon, { backgroundColor: palette.soft }]}>
@@ -130,8 +131,10 @@ export function HomeTile({ id, title, kind, onPress, unreadLabel, badge }: {
       </Svg>}
       {unreadLabel && <View testID={`${id}-unread`} style={[styles.unreadDot, { backgroundColor: palette.unread, borderColor: palette.surface }]} />}
     </View>
-    <Text style={[styles.tileTitle, compact && styles.compactTileTitle, { color: palette.ink }]}>{title}</Text>
-    {badge && <Text testID={`${id}-badge`} style={[styles.featureBadge, { color: palette.accent, backgroundColor: palette.soft }]}>{badge}</Text>}
+    {!iconOnly && (badge ? <View style={styles.badgedTitle}>
+      {titleText}
+      <Text testID={`${id}-badge`} style={[styles.featureBadge, { color: palette.accent, backgroundColor: palette.soft }]}>{badge}</Text>
+    </View> : titleText)}
   </Pressable>;
 }
 
@@ -140,15 +143,14 @@ const styles = StyleSheet.create({
   fillPage: { flexGrow: 1 },
   heroArt: { width: '100%', flexGrow: 1, position: 'relative', overflow: 'hidden' },
   heroImage: { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' },
-  heroBody: { padding: 12 },
+  heroBody: { padding: 12, flexDirection: 'row', direction: 'ltr', alignItems: 'flex-end', gap: 10 },
   shortHeroBody: { paddingVertical: 8 },
-  headline: { fontWeight: '600', letterSpacing: -.5 },
+  headline: { flex: 1, minWidth: 0, fontWeight: '600', letterSpacing: -.5 },
   strength: { fontWeight: '800' },
   studyAction: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 12, borderWidth: 1, borderRadius: tabCardRadius },
   studyActionText: { fontSize: 14, lineHeight: 22, fontWeight: '700' },
-  grid: { gap: 8 }, tileRow: { flexDirection: 'row', alignItems: 'stretch', gap: 8 },
-  shortGrid: { gap: 5 },
-  tile: { flex: 1, minWidth: 0, minHeight: 52, paddingHorizontal: 11, paddingVertical: 7, borderWidth: 1, borderRadius: tabCardRadius, gap: 9, flexDirection: 'row', alignItems: 'center' },
+  tileRow: { flexDirection: 'row', alignItems: 'stretch' },
+  tile: { flex: 1, flexBasis: 0, minWidth: 0, minHeight: 52, paddingHorizontal: 11, paddingVertical: 7, borderWidth: 1, borderRadius: tabCardRadius, gap: 9, flexDirection: 'row', alignItems: 'center' },
   forestTile: { borderRadius: 15 },
   icon: { position: 'relative', width: 30, height: 30, borderRadius: 8, alignItems: 'center', justifyContent: 'center' },
   compactIcon: { width: 24, height: 26 },
@@ -157,8 +159,11 @@ const styles = StyleSheet.create({
   compactLetterIcon: { fontSize: 18, lineHeight: 24 },
   compactTile: { paddingHorizontal: 7, gap: 5 }, compactTileTitle: { fontSize: 14, lineHeight: 19 },
   shortTile: { minHeight: 44, paddingVertical: 3 },
+  iconOnlyTile: { flex: 0, flexBasis: 'auto', minWidth: 44, width: 44, minHeight: 44, height: 44, padding: 0, paddingHorizontal: 0, paddingVertical: 0, justifyContent: 'center' },
   tileTitle: { flex: 1, fontSize: 15, lineHeight: 20, fontWeight: '700' },
-  featureBadge: { fontSize: 11, lineHeight: 16, fontWeight: '700', borderRadius: 8, overflow: 'hidden', paddingHorizontal: 7, paddingVertical: 2 },
+  badgedTitle: { flex: 1, minWidth: 0, alignItems: 'flex-start' },
+  titleWithBadge: { flex: 0 },
+  featureBadge: { fontSize: 11, lineHeight: 16, fontWeight: '700', borderRadius: 8, overflow: 'hidden', paddingHorizontal: 7 },
   unreadDot: { position: 'absolute', top: -3, end: -3, width: 12, height: 12, borderRadius: 6, borderWidth: 2 },
   error: { padding: 16, borderWidth: 1, borderRadius: tabCardRadius },
   errorText: { fontSize: 13, lineHeight: 21 },

@@ -9,9 +9,30 @@ import { dictionaryTranslation } from '../nepaliDictionary';
 import { useScaleStyle } from '../SettingsContext';
 
 const pairs = [
+  { label: 'pānī / pani', words: ['पानी', 'पनि'], hint: 'water' },
   { label: 'k / kh', words: ['काम', 'खाम'], hint: 'breath' },
   { label: 't / th', words: ['ताल', 'थाल'], hint: 'breath' },
   { label: 'p / b', words: ['पानी', 'बानी'], hint: 'voicing' },
+  { words: ['दायाँ', 'बायाँ'] },
+  { words: ['यहाँ', 'कहाँ'] },
+  { words: ['अहिले', 'कहिले'] },
+  { words: ['हात', 'भात'] },
+  { words: ['टोपी', 'टोली'] },
+  { words: ['तातो', 'रातो'] },
+  { words: ['छिटो', 'छोटो'] },
+  { words: ['सही', 'दही'] },
+  { words: ['जानु', 'खानु'] },
+  { words: ['बस्नु', 'पस्नु'] },
+  { words: ['सुत्नु', 'सुन्नु'] },
+  { words: ['पिउनु', 'पाउनु'] },
+  { words: ['किन्नु', 'चिन्नु'] },
+  { words: ['खोल्नु', 'खेल्नु'] },
+  { words: ['बोल्नु', 'बोक्नु'] },
+  { words: ['भन्नु', 'बन्नु'] },
+  { words: ['लेख्नु', 'देख्नु'] },
+  { words: ['आलु', 'आरु'] },
+  { words: ['स्याउ', 'च्याउ'] },
+  { words: ['चुरा', 'कुरा'] },
 ] as const;
 
 export default function SimilarSoundsScreen() {
@@ -19,7 +40,7 @@ export default function SimilarSoundsScreen() {
   const { t, lang } = useI18n();
   const ss = useScaleStyle();
   const entries = useMemo(() => new Map(NEPALI_DICTIONARY?.entries.map(entry => [entry.ne, entry])), [NEPALI_DICTIONARY]);
-  const [playing, setPlaying] = useState<{ word: string; request: number }>();
+  const [playing, setPlaying] = useState<{ pair: string; word: string; request: number }>();
   const activeAudio = playing ? entries.get(playing.word)?.audio : undefined;
   const stop = useCallback(() => setPlaying(undefined), []);
   useFocusEffect(useCallback(() => stop, [stop]));
@@ -29,18 +50,22 @@ export default function SimilarSoundsScreen() {
       <Text accessibilityRole="header" style={[styles.heading, ss(25, 37)]}>{t('similarSounds.heading')}</Text>
       <Text style={[styles.body, ss(15, 24)]}>{t('similarSounds.instructions')}</Text>
     </View>
-    {pairs.map(({ label, words, hint }) => <View key={label} style={styles.pair}>
-      <Text accessibilityRole="header" style={[styles.heading, ss(19, 28)]}>{label}</Text>
-      <Text style={[styles.body, ss(14, 23)]}>{t(`similarSounds.${hint}`)}</Text>
+    {pairs.map(pair => {
+      const { words } = pair;
+      const id = words.join('-');
+      const hasHint = 'hint' in pair;
+      return <View key={id} testID={`similar-pair-${id}`} style={styles.pair}>
+      {hasHint && <><Text accessibilityRole="header" style={[styles.heading, ss(19, 28)]}>{pair.label}</Text>
+      <Text style={[styles.body, ss(14, 23)]}>{t(`similarSounds.${pair.hint}`)}</Text></>}
       <View style={styles.words}>
         {words.map(word => {
           const entry = entries.get(word);
           const meaning = entry?.senses[0] && dictionaryTranslation(entry.senses[0], lang);
-          return <Pressable key={word} testID={`similar-sound-${word}`} accessibilityRole="button"
+          return <Pressable key={word} testID={`similar-sound-${id}-${word}`} accessibilityRole="button"
             accessibilityLabel={`${t('practice.playAudio')} · ${word}${meaning ? ` · ${meaning}` : ''}`}
             accessibilityState={{ disabled: !entry?.audio }} disabled={!entry?.audio}
-            onPress={() => setPlaying(current => ({ word, request: (current?.request ?? 0) + 1 }))}
-            style={({ pressed }) => [styles.word, (pressed || playing?.word === word) && styles.active]}>
+            onPress={() => setPlaying(current => ({ pair: id, word, request: (current?.request ?? 0) + 1 }))}
+            style={({ pressed }) => [styles.word, (pressed || (playing?.pair === id && playing.word === word)) && styles.active]}>
             <Text style={[styles.heading, ss(22, 32)]}>{word}</Text>
             <Text style={[styles.body, ss(14, 22)]}>{entry?.roman}</Text>
             {meaning && <Text style={[styles.body, ss(14, 22)]}>{meaning}</Text>}
@@ -48,9 +73,10 @@ export default function SimilarSoundsScreen() {
           </Pressable>;
         })}
       </View>
-      {playing && activeAudio && words.some(word => word === playing.word) &&
+      {playing?.pair === id && activeAudio &&
         <LearningSound key={`${playing.word}-${playing.request}`} audio={activeAudio} onFinished={stop}/>}
-    </View>)}
+    </View>;
+    })}
   </ScrollView>;
 }
 

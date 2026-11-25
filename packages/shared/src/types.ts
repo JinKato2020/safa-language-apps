@@ -55,7 +55,6 @@ export type RootStackParamList = {
   Theme: {
     mode: Exclude<Mode, 'vocabulary'>;
     source?: 'grammar' | 'conversation';
-    grammarFirst?: boolean;
     levelId?: number;
     guidesOnHome?: boolean;
     composition?: boolean;

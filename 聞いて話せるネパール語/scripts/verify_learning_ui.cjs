@@ -296,7 +296,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
       let checked=0;
       for(const[width,scale]of[[390,1],[320,1.2]]){
         await page.setViewportSize({width,height:844});
-        for(const route of [{name:'HomeTab'},{name:'Theme',params:{mode:'grammar',composition:true,guidesOnHome:true}},{name:'Theme',params:{mode:'conversation',composition:true,guidesOnHome:true}},{name:'Theme',params:{mode:'listening',grammarFirst:true}},{name:'GrammarLibrary'},{name:'SettingsTab'},{name:'LettersSounds'},{name:'VocabCategory',params:{fromHome:true}},{name:'NepaliDictionary'}]){
+        for(const route of [{name:'HomeTab'},{name:'Theme',params:{mode:'grammar',composition:true,guidesOnHome:true}},{name:'Theme',params:{mode:'conversation',composition:true,guidesOnHome:true}},{name:'Theme',params:{mode:'listening',guidesOnHome:true}},{name:'GrammarLibrary'},{name:'SettingsTab'},{name:'LettersSounds'},{name:'VocabCategory',params:{fromHome:true}},{name:'NepaliDictionary'}]){
           await page.evaluate(({route,scale})=>window.boot('ar',true,route,scale),{route,scale});
           checked+=await audit(route.name+'/'+width);
           if(['SettingsTab','GrammarLibrary'].includes(route.name))await page.screenshot({path:path.join(work,'previews',route.name+'-alignment-'+width+'.png')});
@@ -376,7 +376,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
         await page.screenshot({path:path.join(work,`previews/settings-ar-${width}.png`)});
         for(const source of ['grammar','conversation']){
-          await page.evaluate(({scale})=>window.boot('ar',true,{name:'Theme',params:{mode:'listening',grammarFirst:true}},scale),{scale});
+          await page.evaluate(({scale})=>window.boot('ar',true,{name:'Theme',params:{mode:'listening',guidesOnHome:true}},scale),{scale});
           assert.deepEqual(await page.locator('[data-testid^="listen-source-"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['listen-source-conversation','listen-source-grammar']);
           await page.getByTestId('listen-source-'+source).click();if(source==='conversation')await page.getByTestId('theme-level-3').click();
           await page.getByTestId('theme-1').click();
@@ -697,9 +697,9 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         while(await page.locator('[data-testid^="free-remove-"]').count())await page.getByTestId('free-remove-0').click();
         for(let i=0;i<question.answerWords.length;i++)await page.getByTestId('free-token-word-'+i).click();await page.getByTestId('free-feedback').waitFor();
         for(const source of ['grammar','conversation']){
-          await page.evaluate(l=>window.boot(l,true,{name:'Theme',params:{mode:'listening',grammarFirst:true}}),lang);
+          await page.evaluate(l=>window.boot(l,true,{name:'Theme',params:{mode:'listening',guidesOnHome:true}}),lang);
           assert.deepEqual(await page.locator('[data-testid^="listen-source-"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['listen-source-conversation','listen-source-grammar']);
-          assert.equal(await page.getByTestId('listen-source-grammar').getAttribute('aria-selected'),'true');
+          assert.equal(await page.getByTestId('listen-source-conversation').getAttribute('aria-selected'),'true');
           await page.getByTestId('listen-source-'+source).click();if(source==='conversation')await page.getByTestId('theme-level-3').click();
           await page.getByTestId('theme-1').click();assert.equal(await page.evaluate(()=>window.route.name),'Listening');assert.equal(await page.evaluate(()=>window.route.params.source??'conversation'),source);if(source==='conversation')assert.equal(await page.evaluate(()=>window.route.params.levelId),3);
         }
@@ -1065,9 +1065,9 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         assert.equal(await by('home-masthead').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(32, 56, 47)');
         assert.equal(await by('home-letters').evaluate(el=>getComputedStyle(el).borderColor),'rgb(66, 96, 82)');
         const modes=[
-          [{mode:'grammar',puzzleOnly:true,guidesOnHome:true},'puzzle-conversation','rgb(240, 234, 251)'],
-          [{mode:'listening',grammarFirst:true},'listen-source-conversation','rgb(228, 242, 235)'],
-          [{mode:'grammar',composition:true,guidesOnHome:true},'composition-conversation','rgb(232, 240, 250)'],
+          [{mode:'conversation',puzzleOnly:true,guidesOnHome:true},'puzzle-conversation','rgb(240, 234, 251)'],
+          [{mode:'listening',guidesOnHome:true},'listen-source-conversation','rgb(228, 242, 235)'],
+          [{mode:'conversation',composition:true,guidesOnHome:true},'composition-conversation','rgb(232, 240, 250)'],
         ];
         const assertSourcePositions=async tab=>{
           const conversation=await by(tab).boundingBox();
@@ -1079,6 +1079,12 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           await page.evaluate(params=>window.navigate('Theme',params),params);
           await assertSourcePositions(tab);
           assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(32, 56, 47)');
+          assert.equal(await by(tab).getAttribute('aria-selected'),'true');
+          assert.equal(await by('theme-level-1').getAttribute('aria-selected'),'true');
+          const grammarTab=by(tab.replace(/-conversation$/,'-grammar'));
+          await grammarTab.click();
+          assert.equal(await grammarTab.getAttribute('aria-selected'),'true');
+          assert.equal(await by('theme-level-1').count(),0);
           await by(tab).click();
           assert.equal(await by(tab).getAttribute('aria-selected'),'true');
           assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
@@ -1118,16 +1124,24 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           return window.boot(lang,false,{name:'HomeTab'},1.4);
         },{lang,design});
         const cards=by('home-content-grid').getByRole('button');
-        assert.equal(await cards.count(),7);
-        assert.equal(await by('home-masthead').getByRole('button').count(),0);
+        assert.equal(await cards.count(),6);
+        const rows=await by('home-content-grid').evaluate(el=>[...el.children].map(row=>[...row.children].map(tile=>tile.getBoundingClientRect().width)));
+        assert.equal(rows.length,3);
+        for(const widths of rows)assert(widths.length===2&&Math.abs(widths[0]-widths[1])<1,JSON.stringify(rows));
+        assert.equal(await by('home-masthead').getByTestId('home-announcements').count(),1);
+        const [bell,motto]=await Promise.all([by('home-announcements').boundingBox(),by('home-motto').boundingBox()]);
+        assert(bell.x>=motto.x+motto.width&&bell.width>=44&&bell.height>=44);
         assert.equal(await by('home-similar-sounds-badge').innerText(),strings[lang].similarSounds.newBadge);
         await by('home-similar-sounds').click();
-        const pairs=[['काम','खाम'],['ताल','थाल'],['पानी','बानी']];
-        for(const word of pairs.flat()){
+        const pairs=await page.locator('[data-testid^="similar-pair-"]').evaluateAll(nodes=>nodes.map(node=>node.dataset.testid.slice('similar-pair-'.length).split('-')));
+        assert.equal(pairs.length,24);
+        assert.deepEqual(pairs[0],['पानी','पनि']);
+        for(const pair of (design==='minimal'?pairs:pairs.slice(0,1)))for(const word of pair){
           const entry=overlays[lang].nepaliDictionary.entries.find(e=>e.ne===word);
           assert(entry?.audio?.url);
-          await by('similar-sound-'+word).click();
-          await page.waitForFunction(url=>window.events.at(-1)?.[0]==='audio' && window.events.at(-1)?.[1]?.uri===url,entry.audio.url);
+          const previous=await page.evaluate(()=>window.events.length);
+          await by('similar-sound-'+pair.join('-')+'-'+word).click();
+          await page.waitForFunction(({url,previous})=>window.events.length>previous && window.events.at(-1)?.[0]==='audio' && window.events.at(-1)?.[1]?.uri===url,{url:entry.audio.url,previous});
         }
         await by('study-back').click();
         assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
@@ -1135,7 +1149,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           assert.deepEqual(await card.evaluate(el=>{
             const cardStyle=getComputedStyle(el);
             const icon=getComputedStyle(el.firstElementChild);
-            const title=getComputedStyle(el.children[1]);
+            const title=getComputedStyle(el.querySelector('[data-testid$="-title"]'));
             return {surface:cardStyle.backgroundColor,line:cardStyle.borderColor,radius:cardStyle.borderRadius,icon:icon.backgroundColor,ink:title.color};
           }),{surface:appearance.surface,line:appearance.line,radius:appearance.radius,icon:appearance.icon,ink:appearance.ink},`${lang} ${design} ${await card.getAttribute('data-testid')}`);
         }
@@ -1169,7 +1183,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.getByText('Release details',{exact:true}).waitFor();
       }
       assert.deepEqual(errors,[]);
-      console.log('PASS: all seven cards match Minimal and Forest at 320×568 and 390×844 in four languages. Pronunciation audio and announcement interactions work.');
+      console.log('PASS: six tiles and the hero bell match Minimal and Forest in four languages. All 24 sound pairs and announcement interactions work.');
       return;
     }
     if(process.argv.includes('--home-learning-updates')){
