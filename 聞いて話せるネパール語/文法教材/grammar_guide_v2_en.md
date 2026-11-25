@@ -335,8 +335,7 @@ With a person as subject, choose the appropriate form of **छ**.
 ## Theme 4｜हुन्छ: becomes / generally is (habitual, change)
 
 **Pattern and choice**
-छ versus हुन्छ
-**आज चिसो छ** (it is cold today)
+**आज चिसो छ** means “It’s cold today.” **जाडोमा चिसो हुन्छ** means “It gets cold in winter.” Use the second pattern for something that happens regularly.
 
 ### ① Start with one example
 
@@ -423,9 +422,7 @@ Being cold now and getting cold in winter take different perspectives. भयो
 ## Theme 5｜Postpositions: place, participants and relationships
 
 **Pattern and choice**
-**देखि/बाट = from**
-Their starting-point uses overlap.
- Use बाट for transport.
+Add **मा** to **घर** (house) to get **घरमा** (at home). Look after the noun to see where, with whom, from where or how far someone goes.
 
 ### ① Start with one example
 
@@ -436,6 +433,13 @@ ma gharmā baschu
 I live in a house.
 
 ### ② Nepali grammar rules
+
+| Form and reading | Meaning |
+| --- | --- |
+| घर**मा**<br>gharmā | at home |
+| साथी**सँग**<br>sāthīsãga | with a friend |
+| घर**बाट**<br>gharbāṭa | from home |
+| बजार**सम्म**<br>bajārsamma | as far as the market |
 
 ### 1. देखि and बाट: shared source meanings
 
@@ -508,7 +512,7 @@ Use सँग for an accompanying person, unlike endpoint सम्म or source
 | --- | --- | --- |
 | सँग・सित<br>sãga / sita | with, in company with | साथीसँग / sāthīsãga |
 | को साथ<br>ko sāth | with; construction differs from attached सँग | साथीको साथ / sāthīko sāth |
-| 人＋सँग＋物＋**छ**<br>person + sãga + thing + cha | possession: the thing, not the possessor, controls **छ** | मसँग कलम **छ** / masãga kalam cha |
+| person + सँग + thing + **छ**<br>person + sãga + thing + cha | possession: the thing, not the possessor, controls **छ** | मसँग कलम **छ** / masãga kalam cha |
 
 ### Direction and position
 
@@ -560,9 +564,13 @@ Distinguish म, मेरो, मलाई and मैले by their roles.
 
 ## Theme 6｜Question words and how to ask
 
-**Pattern and choice**
-Question words stay in their role
-**उहाँ घरमा हुनुहुन्छ** (he/she is at home, respectful) → **उहाँ कहाँ हुनुहुन्छ** (where is he/she, respectful)?
+**Five question words to start with**
+Choose what you want to ask and put the question word where the answer would go.
+**को**  ko  ·  who
+**के**  ke  ·  what
+**कहाँ**  kahā̃  ·  where
+**कहिले**  kahile  ·  when
+**कति**  kati  ·  how many, how much
 
 ### ① Start with one example
 
@@ -621,7 +629,7 @@ And you?
 Practice focus: Choose कहिले for time, कहाँ for place, and किन for a reason.
 
 
-### Core words and combinations with postpositions and counters
+### Basic question words
 
 | Form and reading | Information requested |
 | --- | --- |
@@ -636,7 +644,15 @@ Practice focus: Choose कहिले for time, कहाँ for place, and क
 | कुन<br>kun | which |
 | कस्तो・कस्ती・कस्ता<br>kasto / kastī / kastā | what kind, what like |
 | कत्रो・कत्री・कत्रा<br>katro / katrī / katrā | how big |
-| कत्तिको・कति＋形容詞<br>kattiko / kati + adjective | to what extent |
+| कत्तिको・कति + adjective<br>kattiko / kati + adjective | to what extent |
+| कुनचाहिँ・कुन-कुन<br>kuncāhĩ / kun-kun | which one in particular, which ones |
+
+कस्तो asks for a quality and कुन a selection; they are not interchangeable.
+
+### Questions with postpositions
+
+| Form and reading | Information requested |
+| --- | --- |
 | कसलाई<br>kaslāī | to whom, whom |
 | कसले<br>kasle | who, as marked agent |
 | कसको・कसकी・कसका<br>kasko / kaskī / kaskā | whose |
@@ -648,6 +664,13 @@ Practice focus: Choose कहिले for time, कहाँ for place, and क
 | केका लागि・केको<br>kekā lāgi / keko | for what, of what |
 | कहाँबाट・कहाँसम्म・कहाँतिर<br>kahā̃bāṭa / kahā̃samma / kahā̃tira | from where, up to where, towards where |
 | कहिलेदेखि・कहिलेसम्म<br>kahiledekhi / kahilesamma | since when, until when |
+
+कसलाई, कसले and कसको are case forms related to who; कोसँग means with whom.
+
+### Numbers, time and frequency
+
+| Form and reading | Information requested |
+| --- | --- |
 | कति वटा<br>kati vaṭā | how many objects |
 | कति जना<br>kati janā | how many people |
 | कति बजे・कति बज्यो<br>kati baje / kati bajyo | at what time, what time now |
@@ -655,9 +678,8 @@ Practice focus: Choose कहिले for time, कहाँ for place, and क
 | कति दिन・कति वर्ष<br>kati din / kati varṣa | how many days/years; also age |
 | कति पटक<br>kati paṭak | how many times |
 | कति टाढा<br>kati ṭāḍhā | how far away |
-| कुनचाहिँ・कुन-कुन<br>kuncāhĩ / kun-kun | which one in particular, which ones |
 
-कसलाई, कसले and कसको are case forms related to who; कोसँग means with whom. कति जना (how many people) counts people, कति वटा (how many items) objects, कति बजे (what time) asks clock time, and कति पटक (how many times) counts occasions. कस्तो asks for a quality and कुन a selection; they are not interchangeable.
+कति जना (how many people) counts people, कति वटा (how many items) objects, कति बजे (what time) asks clock time, and कति पटक (how many times) counts occasions.
 
 ### को
 
@@ -736,7 +758,7 @@ Practice focus: Choose कहिले for time, कहाँ for place, and क
 | Question | तपाईंको घर कत्रो **छ**?<br>tapāĩko ghar katro cha? | How big is your house? |
 | Answer | मेरो घर सानो छ।<br>mero ghar sāno cha | My house is small. |
 
-### कत्तिको・कति＋形容詞
+### कत्तिको・कति + adjective
 
 | Role | Nepali and reading | Meaning |
 | --- | --- | --- |
@@ -887,16 +909,15 @@ At the beginning of a sentence, के can mark a yes/no question rather than as
 ## Theme 7｜Pronouns, familiarity, respect and verb agreement
 
 **Pattern and choice**
-Six basic person groups
-**म, हामी, तपाईं, तपाईंहरू, उहाँ, उहाँहरू**
+To speak about someone respectfully, pair the pronoun with a respectful verb. **उहाँ** means “he” or “she” with respect, and **गर्नुहुन्छ** is the matching form of “does”.
 
 ### ① Start with one example
 
-**म काम गर्छु।**
+**उहाँ काम गर्नुहुन्छ।**
 
-ma kām garchu
+uhā̃ kām garnuhuncha
 
-I work.
+That person works.
 
 ### ② Nepali grammar rules
 
@@ -986,8 +1007,7 @@ When unsure, use तपाईं and match it with a respectful verb form.
 ## Theme 8｜Action verbs: present (do ~)
 
 **Pattern and choice**
-From -नु to the present
-**पढ्नु→पढ्छु / गर्नु→गर्छु / खानु→खान्छु**
+**पढ्नु** means “to read”. When you say “I read”, use **पढ्छु**. Compare the dictionary form with the form you use for your own actions.
 
 ### ① Start with one example
 
@@ -1056,8 +1076,7 @@ Practice focus: Present actions and routines agree with the subject: म → -�
 ## Theme 9｜Present negative (don't ~)
 
 **Pattern and choice**
-Ordinary negative stems
-**गर्छु→गर्दिनँ / पढ्छु→पढ्दिनँ**
+**गर्छु** (I do) becomes **गर्दिनँ** (I don’t do). Compare **पढ्छु** (I read) with **पढ्दिनँ** (I don’t read) and look at the ending.
 
 ### ① Start with one example
 
@@ -1275,8 +1294,7 @@ Practice focus: Completed transitive actions mark the agent with ले: म →
 ## Theme 12｜Past negative (didn't ~)
 
 **Pattern and choice**
-गर्दिनँ versus गरेनँ
-**मैले काम गरेनँ** (I did not work)
+**म काम गर्दिनँ** means “I don’t work.” For yesterday, say **मैले हिजो काम गरिनँ** (I didn’t work yesterday). Compare the endings **गर्दिनँ** and **गरिनँ**.
 
 ### ① Start with one example
 
@@ -1351,16 +1369,15 @@ The agent keeps ले in a negative completed transitive sentence.
 ## Theme 13｜Future (will ~)
 
 **Pattern and choice**
-The -नेछ future
-**गर्नु→गर्नेछु / जानु→जानेछु / पढ्नु→पढ्नेछु**
+Start with **पढ्नु** (to read). **पढ्नेछु** means “I will read”. Look for **-नेछु** when the speaker says what they will do.
 
 ### ① Start with one example
 
-**म भोलि काम गर्छु।**
+**म भोलि किताब पढ्नेछु।**
 
-ma bholi kām garchu
+ma bholi kitāb paḍhnechu
 
-I will work tomorrow.
+I will read a book tomorrow.
 
 ### ② Nepali grammar rules
 
@@ -1608,8 +1625,7 @@ Practice focus: For completion before a past reference time, use a perfect form 
 ## Theme 17｜Requests & commands (three politeness levels)
 
 **Pattern and choice**
-Respectful requests in -नुहोस्
-**बस्नु→बस्नुहोस् / गर्नु→गर्नुहोस् / हेर्नु→हेर्नुहोस्**
+**बस्नु** means “to sit”. **बस्नुहोस्** means “please sit”. Use this ending to make a polite request.
 
 ### ① Start with one example
 
@@ -1731,8 +1747,7 @@ A suggestion not to do something places न before the verb.
 ## Theme 19｜Prohibition (must not ~ / don't ~)
 
 **Pattern and choice**
-न + request form
-**न**
+Put **न** before **हेर्नुहोस्** (please look) to make **नहेर्नुहोस्** (please don’t look).
 
 ### ① Start with one example
 
@@ -1844,13 +1859,14 @@ Respectful forms: **सक्नुहुन्न/सक्नुभयो/स�
 
 **नेपाली बोल्न सक्छु** (I can speak Nepali) expresses ability; **नेपाली बोल्न जान्छु** (I know how to speak Nepali) emphasizes learned know-how. जान्नु means know and जानु go; the same-looking finite जान्छु must be interpreted in its construction.
 
-### 5. Ability, permission and desire are different
+### 5. One action, four meanings: going
 
 **Being able does not automatically mean being allowed.** Similar action forms can be followed by expressions with different functions.
 
 | Form and reading | Meaning and use |
 | --- | --- |
 | म जान सक्छु।<br>ma jāna sakchu | I can go: ability or practical possibility. |
+| जानु पर्छ।<br>jānu parcha | Going is necessary. Keep the dictionary form जानु before पर्छ. |
 | जान मिल्छ?<br>jāna milcha? | May I go? Permission or whether it is acceptable. |
 | मलाई जान मन छ।<br>malāī jāna man cha | I want to go: desire. |
 
@@ -1898,8 +1914,7 @@ Negate सक्नु to say cannot.
 ## Theme 21｜Obligation & permission (must ~ / may ~)
 
 **Pattern and choice**
-Necessity with -नु पर्छ (need to do, with a preceding verb base)
-**मलाई जानु पर्छ** (I need to go)
+**जानु** means “to go”. Add **पर्छ** to say **जानु पर्छ** (must go). **जानु पर्दैन** means “don’t have to go”.
 
 ### ① Start with one example
 
@@ -2018,6 +2033,17 @@ Practice focus: After -न, पाइन्छ means allowed, पाइँदै
 
 In this obligation pattern, पर्छ does not change for the subject's person.
 
+### Four ways to talk about going
+
+Use **जानु** before **पर्छ** for necessity. Use **जान** before **मिल्छ?** to ask permission.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| म जान सक्छु।<br>ma jāna sakchu | I can go: ability or practical possibility. |
+| जानु पर्छ।<br>jānu parcha | Going is necessary. Keep the dictionary form जानु before पर्छ. |
+| जान मिल्छ?<br>jāna milcha? | May I go? Permission or whether it is acceptable. |
+| मलाई जान मन छ।<br>malāī jāna man cha | I want to go: desire. |
+
 ## Theme 22｜Desire (want to ~)
 
 **Pattern and choice**
@@ -2088,6 +2114,17 @@ Fillings, sauces and heat levels give each plate its character. A small question
 Practice focus: For a wish, use the experiencer + लाई, a verb in -न, and मन छ. मन छ stays the same when the person changes.
 
 
+### Four ways to talk about going
+
+**मलाई जान मन छ** expresses your wish. Compare it with what you can or must do.
+
+| Form and reading | Meaning and use |
+| --- | --- |
+| म जान सक्छु।<br>ma jāna sakchu | I can go: ability or practical possibility. |
+| जानु पर्छ।<br>jānu parcha | Going is necessary. Keep the dictionary form जानु before पर्छ. |
+| जान मिल्छ?<br>jāna milcha? | May I go? Permission or whether it is acceptable. |
+| मलाई जान मन छ।<br>malāī jāna man cha | I want to go: desire. |
+
 ### A reference table for comparing personal forms
 
 | Person | Form and reading | Meaning |
@@ -2104,8 +2141,7 @@ Distinguish मन पर्छ (like; find pleasing) from मन **छ** and �
 ## Theme 23｜Adjective agreement & position
 
 **Pattern and choice**
-Attributive versus predicative
-**राम्रो किताब** (a good book)
+Compare **सानो घर** (a small house), **सानी केटी** (a little girl) and **साना घरहरू** (small houses). Notice the three endings of “small”, **o, ī, ā**.
 
 ### ① Start with one example
 
@@ -2761,8 +2797,7 @@ Practice focus: The -इन्छ form expresses what is done, without foregroun
 ## Theme 33｜Causative (make someone ~)
 
 **Pattern and choice**
-Learn causative pairs
-**खानु→खुवाउनु / सिक्नु→सिकाउनु / पढ्नु→पढाउनु**
+**सिक्नु** means “to learn” and **सिकाउनु** means “to teach”. Compare who does the action in **खानु** (to eat) and **खुवाउनु** (to feed someone).
 
 ### ① Start with one example
 
@@ -2812,16 +2847,15 @@ Practice focus: Distinguish doing from causing: हाँस्नु → हँ
 ## Theme 34｜Reported speech (said that ~)
 
 **Pattern and choice**
-Content + भन्नु
-**उहाँले «म आउँछु» भन्नुभयो** (he/she said, “I will come”)
+In this example **आफू** refers back to the person who spoke. Look for it when reporting what someone said about themselves.
 
 ### ① Start with one example
 
-**उहाँले जाँदिनँ भन्नुभयो।**
+**उहाँले आफू बिरामी भएको बताउनुभयो।**
 
-uhā̃le jā̃dinã bhannubhayo
+uhā̃le āphū birāmī bhaeko batāunubhayo
 
-She said she would not go.
+She said that she was ill.
 
 ### ② Nepali grammar rules
 
@@ -2882,11 +2916,10 @@ In direct speech, म refers to the original speaker.
 
 Indirect reporting uses आफू, self, to refer back to the subject and बिरामी, ill, + भएको to package the reported state. बताउनुभयो is the respectful past of बताउनु, tell/report.
 
-## Theme 35 (Appendix A)｜Verb forms through writing: लेख्नु
+## Theme 35 (Appendix A)｜Choose a verb and compare its forms
 
 **Pattern and choice**
-लेख्नु present and negative
-**लेख्नु→लेख्छु/लेख्दिनँ**
+In Forms & words, choose one verb. For example, **जान्छु** means “I go” and **गएँ** means “I went”. Compare what changes across five verbs.
 
 ### ① Start with one example
 
@@ -2931,11 +2964,89 @@ Future, we: लेख्नु → लेख्नेछौं.
 Past, respectful: लेख्नु → लेख्नुभयो. Mark the agent with ले.
 
 
-See topic 7 for respect/familiarity and topics 1–2 for **हो**/छ.
+### लेख्नु · lekhnu · write
 
-This appendix uses लेख्नु, to write.
+Look for **लेख्** (write) in **लेख्छु** (I write) and **लेखेँ** (I wrote). The stem stays visible.
 
-Starting from the stem लेख्, compare who writes, who wrote and who has written.
+| Situation | Nepali and reading |
+| --- | --- |
+| I · habit | म लेख्छु।<br>ma lekhchu |
+| I · present negative | म लेख्दिनँ।<br>ma lekhdinã |
+| I · past | मैले लेखेँ।<br>maile lekhẽ |
+| I · past negative | मैले लेखिनँ।<br>maile lekhinã |
+| I · future | म लेख्नेछु।<br>ma lekhnechu |
+| We · habit | हामी लेख्छौं।<br>hāmī lekhchaũ |
+| He or she · habit, respectful | उहाँ लेख्नुहुन्छ।<br>uhā̃ lekhnuhuncha |
+| He or she · past, respectful | उहाँले लेख्नुभयो।<br>uhā̃le lekhnubhayo |
+
+### गर्नु · garnu · do
+
+Compare **गर्दिनँ** (I don’t do it) and **गरिनँ** (I didn’t do it). Look for **द** in the present negative.
+
+| Situation | Nepali and reading |
+| --- | --- |
+| I · habit | म गर्छु।<br>ma garchu |
+| I · present negative | म गर्दिनँ।<br>ma gardinã |
+| I · past | मैले गरेँ।<br>maile garẽ |
+| I · past negative | मैले गरिनँ।<br>maile garinã |
+| I · future | म गर्नेछु।<br>ma garnechu |
+| We · habit | हामी गर्छौं।<br>hāmī garchaũ |
+| He or she · habit, respectful | उहाँ गर्नुहुन्छ।<br>uhā̃ garnuhuncha |
+| He or she · past, respectful | उहाँले गर्नुभयो।<br>uhā̃le garnubhayo |
+
+### खानु · khānu · eat
+
+Compare **खान्छु** (I eat) and **खाँदिनँ** (I don’t eat). The mark above **खाँ** shows that the vowel is nasalized.
+
+| Situation | Nepali and reading |
+| --- | --- |
+| I · habit | म खान्छु।<br>ma khānchu |
+| I · present negative | म खाँदिनँ।<br>ma khā̃dinã |
+| I · past | मैले खाएँ।<br>maile khāẽ |
+| I · past negative | मैले खाइनँ।<br>maile khāinã |
+| I · future | म खानेछु।<br>ma khānechu |
+| We · habit | हामी खान्छौं।<br>hāmī khānchaũ |
+| He or she · habit, respectful | उहाँ खानुहुन्छ।<br>uhā̃ khānuhuncha |
+| He or she · past, respectful | उहाँले खानुभयो।<br>uhā̃le khānubhayo |
+
+### आउनु · āunu · come
+
+**आउँछु** (I come) loses **उ** in **आएँ** (I came). The respectful past **आउनुभयो** retains **आउ**.
+
+| Situation | Nepali and reading |
+| --- | --- |
+| I · habit | म आउँछु।<br>ma āũchu |
+| I · present negative | म आउँदिनँ।<br>ma āũdinã |
+| I · past | म आएँ।<br>ma āẽ |
+| I · past negative | म आइनँ।<br>ma āinã |
+| I · future | म आउनेछु।<br>ma āunechu |
+| We · habit | हामी आउँछौं।<br>hāmī āũchaũ |
+| He or she · habit, respectful | उहाँ आउनुहुन्छ।<br>uhā̃ āunuhuncha |
+| He or she · past, respectful | उहाँ आउनुभयो।<br>uhā̃ āunubhayo |
+
+### जानु · jānu · go
+
+**जान्छु** (I go) becomes **गएँ** (I went). The past for “I” and “we” begins with **ग**. The respectful past **जानुभयो** keeps **जा**.
+
+| Situation | Nepali and reading |
+| --- | --- |
+| I · habit | म जान्छु।<br>ma jānchu |
+| I · present negative | म जाँदिनँ।<br>ma jā̃dinã |
+| I · past | म गएँ।<br>ma gaẽ |
+| I · past negative | म गइनँ।<br>ma gainã |
+| I · future | म जानेछु।<br>ma jānechu |
+| We · habit | हामी जान्छौं।<br>hāmī jānchaũ |
+| He or she · habit, respectful | उहाँ जानुहुन्छ।<br>uhā̃ jānuhuncha |
+| He or she · past, respectful | उहाँ जानुभयो।<br>uhā̃ jānubhayo |
+
+### One speaker, four ways to say “write”
+
+| Situation | Form and reading |
+| --- | --- |
+| Habit · I write | म लेख्छु।<br>ma lekhchu |
+| In progress · I am writing | म लेख्दै छु।<br>ma lekhdai chu |
+| Past · I wrote | मैले लेखेँ।<br>maile lekhẽ |
+| Future · I will write | म लेख्नेछु।<br>ma lekhnechu |
 
 ### A writing routine
 
@@ -3032,11 +3143,10 @@ Starting from the stem लेख्, compare who writes, who wrote and who has w
 
 Check the agent marker ले with completed transitive actions.
 
-## Theme 36 (Appendix B)｜Copulas through identity and location
+## Theme 36 (Appendix B)｜Identity, location and actions in progress (हुनु)
 
 **Pattern and choice**
-Three sets with one subject
-**म लेखक हुँ** (I am an author) / **म घरमा छु** (I am at home) / **म बिहान घरमा हुन्छु** (I am usually at home in the morning)
+In Forms & words, look up **हो, छ, हुन्छ** by subject. Open a verb to compare “am doing” with “was doing”.
 
 ### ① Start with one example
 
@@ -3073,6 +3183,18 @@ Compare **हुँ→होइनँ / छु→छैनँ / हुन्छ�
 In **पढ्दै छु** (I am reading) / **पढेको छु** (I have read it) / **पढेको थिएँ** (I had read it), छु/थिएँ act as auxiliaries for progression/completion.
  Their preceding verb forms distinguish these from location **घरमा छु** (I am at home).
  See topics 10, 15 and 16.
+
+After the action, change **छु** to **थिएँ** to move from “I am doing” to “I was doing”.
+
+### Find हो, छ and हुन्छ by subject
+
+The respectful form **हुनुहुन्छ** appears in all three patterns. Use the preceding words and the situation to work out its meaning.
+
+| Subject | Identity · हो | Present state or location · छ | Habit or change · हुन्छ |
+| --- | --- | --- | --- |
+| I<br>म / ma | हुँ / hũ | छु / chu | हुन्छु / hunchu |
+| we<br>हामी / hāmī | हौं / haũ | छौं / chaũ | हुन्छौं / hunchaũ |
+| You / you all / that person / those people<br>तपाईं · तपाईंहरू<br>उहाँ · उहाँहरू | हुनुहुन्छ / hunuhuncha | हुनुहुन्छ / hunuhuncha | हुनुहुन्छ / hunuhuncha |
 
 ### हुनु: three sets and matching forms
 
@@ -3129,6 +3251,51 @@ A regular location can use the हुन्छ family: म takes हुन्छ
 See topic 7 for respect/familiarity and topics 1–2 for **हो**/छ.
 
 Choose a form of हुनु according to what you mean.
+
+### लेख्नु · lekhnu · write
+
+| Situation | Nepali and reading |
+| --- | --- |
+| I · in progress now | म लेख्दै छु।<br>ma lekhdai chu |
+| I · in progress then | म लेख्दै थिएँ।<br>ma lekhdai thiẽ |
+| We · in progress now | हामी लेख्दै छौं।<br>hāmī lekhdai chaũ |
+| He or she · in progress now, respectful | उहाँ लेख्दै हुनुहुन्छ।<br>uhā̃ lekhdai hunuhuncha |
+
+### गर्नु · garnu · do
+
+| Situation | Nepali and reading |
+| --- | --- |
+| I · in progress now | म गर्दै छु।<br>ma gardai chu |
+| I · in progress then | म गर्दै थिएँ।<br>ma gardai thiẽ |
+| We · in progress now | हामी गर्दै छौं।<br>hāmī gardai chaũ |
+| He or she · in progress now, respectful | उहाँ गर्दै हुनुहुन्छ।<br>uhā̃ gardai hunuhuncha |
+
+### खानु · khānu · eat
+
+| Situation | Nepali and reading |
+| --- | --- |
+| I · in progress now | म खाँदै छु।<br>ma khā̃dai chu |
+| I · in progress then | म खाँदै थिएँ।<br>ma khā̃dai thiẽ |
+| We · in progress now | हामी खाँदै छौं।<br>hāmī khā̃dai chaũ |
+| He or she · in progress now, respectful | उहाँ खाँदै हुनुहुन्छ।<br>uhā̃ khā̃dai hunuhuncha |
+
+### आउनु · āunu · come
+
+| Situation | Nepali and reading |
+| --- | --- |
+| I · in progress now | म आउँदै छु।<br>ma āũdai chu |
+| I · in progress then | म आउँदै थिएँ।<br>ma āũdai thiẽ |
+| We · in progress now | हामी आउँदै छौं।<br>hāmī āũdai chaũ |
+| He or she · in progress now, respectful | उहाँ आउँदै हुनुहुन्छ।<br>uhā̃ āũdai hunuhuncha |
+
+### जानु · jānu · go
+
+| Situation | Nepali and reading |
+| --- | --- |
+| I · in progress now | म जाँदै छु।<br>ma jā̃dai chu |
+| I · in progress then | म जाँदै थिएँ।<br>ma jā̃dai thiẽ |
+| We · in progress now | हामी जाँदै छौं।<br>hāmī jā̃dai chaũ |
+| He or she · in progress now, respectful | उहाँ जाँदै हुनुहुन्छ।<br>uhā̃ jā̃dai hunuhuncha |
 
 ### Identifying someone
 

@@ -153465,7 +153465,7 @@
     "4": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nछ versus हुन्छ\n**आज चिसो छ** (it is cold today)",
+        "text": "**Pattern and choice**\n**आज चिसो छ** means “It’s cold today.” **जाडोमा चिसो हुन्छ** means “It gets cold in winter.” Use the second pattern for something that happens regularly.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -153865,7 +153865,7 @@
     "5": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\n**देखि/बाट = from**\nTheir starting-point uses overlap.\n Use बाट for transport.",
+        "text": "**Pattern and choice**\nAdd **मा** to **घर** (house) to get **घरमा** (at home). Look after the noun to see where, with whom, from where or how far someone goes.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -153916,6 +153916,34 @@
           "role": "plain"
         },
         "l1ExampleSupport": 1
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Form and reading",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "घर**मा**\ngharmā",
+            "at home"
+          ],
+          [
+            "साथी**सँग**\nsāthīsãga",
+            "with a friend"
+          ],
+          [
+            "घर**बाट**\ngharbāṭa",
+            "from home"
+          ],
+          [
+            "बजार**सम्म**\nbajārsamma",
+            "as far as the market"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
       },
       {
         "type": "h",
@@ -154226,7 +154254,7 @@
             "साथीको साथ / sāthīko sāth"
           ],
           [
-            "人＋सँग＋物＋**छ**\nperson + sãga + thing + cha",
+            "person + सँग + thing + **छ**\nperson + sãga + thing + cha",
             "possession: the thing, not the possessor, controls **छ**",
             "मसँग कलम **छ** / masãga kalam cha"
           ]
@@ -154464,7 +154492,7 @@
     "6": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nQuestion words stay in their role\n**उहाँ घरमा हुनुहुन्छ** (he/she is at home, respectful) → **उहाँ कहाँ हुनुहुन्छ** (where is he/she, respectful)?",
+        "text": "**Five question words to start with**\nChoose what you want to ask and put the question word where the answer would go.\n**को**  ko  ·  who\n**के**  ke  ·  what\n**कहाँ**  kahā̃  ·  where\n**कहिले**  kahile  ·  when\n**कति**  kati  ·  how many, how much",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -154731,12 +154759,11 @@
       },
       {
         "type": "h",
-        "text": "Core words and combinations with postpositions and counters",
+        "text": "Basic question words",
         "presentation": {
           "tone": "blue",
           "role": "plain"
-        },
-        "l1ExampleSupport": 1
+        }
       },
       {
         "type": "table",
@@ -154790,9 +154817,42 @@
             "how big"
           ],
           [
-            "कत्तिको・कति＋形容詞\nkattiko / kati + adjective",
+            "कत्तिको・कति + adjective\nkattiko / kati + adjective",
             "to what extent"
           ],
+          [
+            "कुनचाहिँ・कुन-कुन\nkuncāhĩ / kun-kun",
+            "which one in particular, which ones"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "p",
+        "text": "कस्तो asks for a quality and कुन a selection; they are not interchangeable.",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1
+      },
+      {
+        "type": "h",
+        "text": "Questions with postpositions",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Form and reading",
+          "Information requested"
+        ],
+        "rows": [
           [
             "कसलाई\nkaslāī",
             "to whom, whom"
@@ -154836,7 +154896,36 @@
           [
             "कहिलेदेखि・कहिलेसम्म\nkahiledekhi / kahilesamma",
             "since when, until when"
-          ],
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "p",
+        "text": "कसलाई, कसले and कसको are case forms related to who; कोसँग means with whom.",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        },
+        "l1ExampleSupport": 1
+      },
+      {
+        "type": "h",
+        "text": "Numbers, time and frequency",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Form and reading",
+          "Information requested"
+        ],
+        "rows": [
           [
             "कति वटा\nkati vaṭā",
             "how many objects"
@@ -154864,10 +154953,6 @@
           [
             "कति टाढा\nkati ṭāḍhā",
             "how far away"
-          ],
-          [
-            "कुनचाहिँ・कुन-कुन\nkuncāhĩ / kun-kun",
-            "which one in particular, which ones"
           ]
         ],
         "presentation": {
@@ -154876,7 +154961,7 @@
       },
       {
         "type": "p",
-        "text": "कसलाई, कसले and कसको are case forms related to who; कोसँग means with whom. कति जना (how many people) counts people, कति वटा (how many items) objects, कति बजे (what time) asks clock time, and कति पटक (how many times) counts occasions. कस्तो asks for a quality and कुन a selection; they are not interchangeable.",
+        "text": "कति जना (how many people) counts people, कति वटा (how many items) objects, कति बजे (what time) asks clock time, and कति पटक (how many times) counts occasions.",
         "presentation": {
           "tone": "blue",
           "role": "plain"
@@ -155237,7 +155322,7 @@
       },
       {
         "type": "h",
-        "text": "कत्तिको・कति＋形容詞",
+        "text": "कत्तिको・कति + adjective",
         "presentation": {
           "tone": "blue",
           "role": "plain"
@@ -155915,7 +156000,7 @@
     "7": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nSix basic person groups\n**म, हामी, तपाईं, तपाईंहरू, उहाँ, उहाँहरू**",
+        "text": "**Pattern and choice**\nTo speak about someone respectfully, pair the pronoun with a respectful verb. **उहाँ** means “he” or “she” with respect, and **गर्नुहुन्छ** is the matching form of “does”.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -155933,7 +156018,7 @@
       },
       {
         "type": "p",
-        "text": "**म काम गर्छु।**",
+        "text": "**उहाँ काम गर्नुहुन्छ।**",
         "presentation": {
           "tone": "green",
           "role": "example",
@@ -155942,7 +156027,7 @@
       },
       {
         "type": "p",
-        "text": "ma kām garchu",
+        "text": "uhā̃ kām garnuhuncha",
         "presentation": {
           "tone": "green",
           "role": "reading",
@@ -155951,7 +156036,7 @@
       },
       {
         "type": "p",
-        "text": "I work.",
+        "text": "That person works.",
         "presentation": {
           "tone": "green",
           "role": "translation",
@@ -156380,7 +156465,7 @@
     "8": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nFrom -नु to the present\n**पढ्नु→पढ्छु / गर्नु→गर्छु / खानु→खान्छु**",
+        "text": "**Pattern and choice**\n**पढ्नु** means “to read”. When you say “I read”, use **पढ्छु**. Compare the dictionary form with the form you use for your own actions.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -156687,7 +156772,7 @@
     "9": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nOrdinary negative stems\n**गर्छु→गर्दिनँ / पढ्छु→पढ्दिनँ**",
+        "text": "**Pattern and choice**\n**गर्छु** (I do) becomes **गर्दिनँ** (I don’t do). Compare **पढ्छु** (I read) with **पढ्दिनँ** (I don’t read) and look at the ending.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -157583,7 +157668,7 @@
     "12": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nगर्दिनँ versus गरेनँ\n**मैले काम गरेनँ** (I did not work)",
+        "text": "**Pattern and choice**\n**म काम गर्दिनँ** means “I don’t work.” For yesterday, say **मैले हिजो काम गरिनँ** (I didn’t work yesterday). Compare the endings **गर्दिनँ** and **गरिनँ**.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -157885,7 +157970,7 @@
     "13": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nThe -नेछ future\n**गर्नु→गर्नेछु / जानु→जानेछु / पढ्नु→पढ्नेछु**",
+        "text": "**Pattern and choice**\nStart with **पढ्नु** (to read). **पढ्नेछु** means “I will read”. Look for **-नेछु** when the speaker says what they will do.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -157903,7 +157988,7 @@
       },
       {
         "type": "p",
-        "text": "**म भोलि काम गर्छु।**",
+        "text": "**म भोलि किताब पढ्नेछु।**",
         "presentation": {
           "tone": "green",
           "role": "example",
@@ -157912,7 +157997,7 @@
       },
       {
         "type": "p",
-        "text": "ma bholi kām garchu",
+        "text": "ma bholi kitāb paḍhnechu",
         "presentation": {
           "tone": "green",
           "role": "reading",
@@ -157921,7 +158006,7 @@
       },
       {
         "type": "p",
-        "text": "I will work tomorrow.",
+        "text": "I will read a book tomorrow.",
         "presentation": {
           "tone": "green",
           "role": "translation",
@@ -158902,7 +158987,7 @@
     "17": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nRespectful requests in -नुहोस्\n**बस्नु→बस्नुहोस् / गर्नु→गर्नुहोस् / हेर्नु→हेर्नुहोस्**",
+        "text": "**Pattern and choice**\n**बस्नु** means “to sit”. **बस्नुहोस्** means “please sit”. Use this ending to make a polite request.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -159404,7 +159489,7 @@
     "19": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nन + request form\n**न**",
+        "text": "**Pattern and choice**\nPut **न** before **हेर्नुहोस्** (please look) to make **नहेर्नुहोस्** (please don’t look).",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -159877,7 +159962,7 @@
       },
       {
         "type": "h",
-        "text": "5. Ability, permission and desire are different",
+        "text": "5. One action, four meanings: going",
         "presentation": {
           "tone": "violet",
           "role": "plain"
@@ -159905,6 +159990,10 @@
             "I can go: ability or practical possibility."
           ],
           [
+            "जानु पर्छ।\njānu parcha",
+            "Going is necessary. Keep the dictionary form जानु before पर्छ."
+          ],
+          [
             "जान मिल्छ?\njāna milcha?",
             "May I go? Permission or whether it is acceptable."
           ],
@@ -159918,7 +160007,8 @@
           "rowTones": [
             "blue",
             "green",
-            "violet"
+            "violet",
+            "teal"
           ]
         },
         "clarityReview": "2026-11-20-5"
@@ -160130,7 +160220,7 @@
     "21": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nNecessity with -नु पर्छ (need to do, with a preceding verb base)\n**मलाई जानु पर्छ** (I need to go)",
+        "text": "**Pattern and choice**\n**जानु** means “to go”. Add **पर्छ** to say **जानु पर्छ** (must go). **जानु पर्दैन** means “don’t have to go”.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -160709,6 +160799,50 @@
           "role": "body"
         },
         "l1ExampleSupport": 1
+      },
+      {
+        "type": "h",
+        "text": "Four ways to talk about going",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Use **जानु** before **पर्छ** for necessity. Use **जान** before **मिल्छ?** to ask permission.",
+        "presentation": {
+          "tone": "teal",
+          "role": "body"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Form and reading",
+          "Meaning and use"
+        ],
+        "rows": [
+          [
+            "म जान सक्छु।\nma jāna sakchu",
+            "I can go: ability or practical possibility."
+          ],
+          [
+            "जानु पर्छ।\njānu parcha",
+            "Going is necessary. Keep the dictionary form जानु before पर्छ."
+          ],
+          [
+            "जान मिल्छ?\njāna milcha?",
+            "May I go? Permission or whether it is acceptable."
+          ],
+          [
+            "मलाई जान मन छ।\nmalāī jāna man cha",
+            "I want to go: desire."
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
       }
     ],
     "22": [
@@ -161015,6 +161149,50 @@
       },
       {
         "type": "h",
+        "text": "Four ways to talk about going",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "p",
+        "text": "**मलाई जान मन छ** expresses your wish. Compare it with what you can or must do.",
+        "presentation": {
+          "tone": "teal",
+          "role": "body"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Form and reading",
+          "Meaning and use"
+        ],
+        "rows": [
+          [
+            "म जान सक्छु।\nma jāna sakchu",
+            "I can go: ability or practical possibility."
+          ],
+          [
+            "जानु पर्छ।\njānu parcha",
+            "Going is necessary. Keep the dictionary form जानु before पर्छ."
+          ],
+          [
+            "जान मिल्छ?\njāna milcha?",
+            "May I go? Permission or whether it is acceptable."
+          ],
+          [
+            "मलाई जान मन छ।\nmalāī jāna man cha",
+            "I want to go: desire."
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
         "text": "A reference table for comparing personal forms",
         "presentation": {
           "tone": "blue",
@@ -161078,7 +161256,7 @@
     "23": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nAttributive versus predicative\n**राम्रो किताब** (a good book)",
+        "text": "**Pattern and choice**\nCompare **सानो घर** (a small house), **सानी केटी** (a little girl) and **साना घरहरू** (small houses). Notice the three endings of “small”, **o, ī, ā**.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -163737,7 +163915,7 @@
     "33": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nLearn causative pairs\n**खानु→खुवाउनु / सिक्नु→सिकाउनु / पढ्नु→पढाउनु**",
+        "text": "**Pattern and choice**\n**सिक्नु** means “to learn” and **सिकाउनु** means “to teach”. Compare who does the action in **खानु** (to eat) and **खुवाउनु** (to feed someone).",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -163930,7 +164108,7 @@
     "34": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nContent + भन्नु\n**उहाँले «म आउँछु» भन्नुभयो** (he/she said, “I will come”)",
+        "text": "**Pattern and choice**\nIn this example **आफू** refers back to the person who spoke. Look for it when reporting what someone said about themselves.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -163948,7 +164126,7 @@
       },
       {
         "type": "p",
-        "text": "**उहाँले जाँदिनँ भन्नुभयो।**",
+        "text": "**उहाँले आफू बिरामी भएको बताउनुभयो।**",
         "presentation": {
           "tone": "green",
           "role": "example",
@@ -163957,7 +164135,7 @@
       },
       {
         "type": "p",
-        "text": "uhā̃le jā̃dinã bhannubhayo",
+        "text": "uhā̃le āphū birāmī bhaeko batāunubhayo",
         "presentation": {
           "tone": "green",
           "role": "reading",
@@ -163966,7 +164144,7 @@
       },
       {
         "type": "p",
-        "text": "She said she would not go.",
+        "text": "She said that she was ill.",
         "presentation": {
           "tone": "green",
           "role": "translation",
@@ -164241,7 +164419,7 @@
     "35": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nलेख्नु present and negative\n**लेख्नु→लेख्छु/लेख्दिनँ**",
+        "text": "**Pattern and choice**\nIn Forms & words, choose one verb. For example, **जान्छु** means “I go” and **गएँ** means “I went”. Compare what changes across five verbs.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -164397,31 +164575,340 @@
         "beginnerIntroEnd": true
       },
       {
-        "type": "p",
-        "text": "See topic 7 for respect/familiarity and topics 1–2 for **हो**/छ.",
+        "type": "h",
+        "text": "लेख्नु · lekhnu · write",
         "presentation": {
-          "tone": "rose",
-          "role": "body"
-        },
-        "l1ExampleSupport": 1
+          "tone": "blue",
+          "role": "plain"
+        }
       },
       {
         "type": "p",
-        "text": "This appendix uses लेख्नु, to write.",
+        "text": "Look for **लेख्** (write) in **लेख्छु** (I write) and **लेखेँ** (I wrote). The stem stays visible.",
         "presentation": {
-          "tone": "rose",
+          "tone": "teal",
           "role": "body"
-        },
-        "l1ExampleSupport": 1
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Nepali and reading"
+        ],
+        "rows": [
+          [
+            "I · habit",
+            "म लेख्छु।\nma lekhchu"
+          ],
+          [
+            "I · present negative",
+            "म लेख्दिनँ।\nma lekhdinã"
+          ],
+          [
+            "I · past",
+            "मैले लेखेँ।\nmaile lekhẽ"
+          ],
+          [
+            "I · past negative",
+            "मैले लेखिनँ।\nmaile lekhinã"
+          ],
+          [
+            "I · future",
+            "म लेख्नेछु।\nma lekhnechu"
+          ],
+          [
+            "We · habit",
+            "हामी लेख्छौं।\nhāmī lekhchaũ"
+          ],
+          [
+            "He or she · habit, respectful",
+            "उहाँ लेख्नुहुन्छ।\nuhā̃ lekhnuhuncha"
+          ],
+          [
+            "He or she · past, respectful",
+            "उहाँले लेख्नुभयो।\nuhā̃le lekhnubhayo"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
+        "text": "गर्नु · garnu · do",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
       },
       {
         "type": "p",
-        "text": "Starting from the stem लेख्, compare who writes, who wrote and who has written.",
+        "text": "Compare **गर्दिनँ** (I don’t do it) and **गरिनँ** (I didn’t do it). Look for **द** in the present negative.",
         "presentation": {
-          "tone": "rose",
+          "tone": "teal",
           "role": "body"
-        },
-        "l1ExampleSupport": 1
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Nepali and reading"
+        ],
+        "rows": [
+          [
+            "I · habit",
+            "म गर्छु।\nma garchu"
+          ],
+          [
+            "I · present negative",
+            "म गर्दिनँ।\nma gardinã"
+          ],
+          [
+            "I · past",
+            "मैले गरेँ।\nmaile garẽ"
+          ],
+          [
+            "I · past negative",
+            "मैले गरिनँ।\nmaile garinã"
+          ],
+          [
+            "I · future",
+            "म गर्नेछु।\nma garnechu"
+          ],
+          [
+            "We · habit",
+            "हामी गर्छौं।\nhāmī garchaũ"
+          ],
+          [
+            "He or she · habit, respectful",
+            "उहाँ गर्नुहुन्छ।\nuhā̃ garnuhuncha"
+          ],
+          [
+            "He or she · past, respectful",
+            "उहाँले गर्नुभयो।\nuhā̃le garnubhayo"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
+        "text": "खानु · khānu · eat",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "p",
+        "text": "Compare **खान्छु** (I eat) and **खाँदिनँ** (I don’t eat). The mark above **खाँ** shows that the vowel is nasalized.",
+        "presentation": {
+          "tone": "teal",
+          "role": "body"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Nepali and reading"
+        ],
+        "rows": [
+          [
+            "I · habit",
+            "म खान्छु।\nma khānchu"
+          ],
+          [
+            "I · present negative",
+            "म खाँदिनँ।\nma khā̃dinã"
+          ],
+          [
+            "I · past",
+            "मैले खाएँ।\nmaile khāẽ"
+          ],
+          [
+            "I · past negative",
+            "मैले खाइनँ।\nmaile khāinã"
+          ],
+          [
+            "I · future",
+            "म खानेछु।\nma khānechu"
+          ],
+          [
+            "We · habit",
+            "हामी खान्छौं।\nhāmī khānchaũ"
+          ],
+          [
+            "He or she · habit, respectful",
+            "उहाँ खानुहुन्छ।\nuhā̃ khānuhuncha"
+          ],
+          [
+            "He or she · past, respectful",
+            "उहाँले खानुभयो।\nuhā̃le khānubhayo"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
+        "text": "आउनु · āunu · come",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "p",
+        "text": "**आउँछु** (I come) loses **उ** in **आएँ** (I came). The respectful past **आउनुभयो** retains **आउ**.",
+        "presentation": {
+          "tone": "teal",
+          "role": "body"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Nepali and reading"
+        ],
+        "rows": [
+          [
+            "I · habit",
+            "म आउँछु।\nma āũchu"
+          ],
+          [
+            "I · present negative",
+            "म आउँदिनँ।\nma āũdinã"
+          ],
+          [
+            "I · past",
+            "म आएँ।\nma āẽ"
+          ],
+          [
+            "I · past negative",
+            "म आइनँ।\nma āinã"
+          ],
+          [
+            "I · future",
+            "म आउनेछु।\nma āunechu"
+          ],
+          [
+            "We · habit",
+            "हामी आउँछौं।\nhāmī āũchaũ"
+          ],
+          [
+            "He or she · habit, respectful",
+            "उहाँ आउनुहुन्छ।\nuhā̃ āunuhuncha"
+          ],
+          [
+            "He or she · past, respectful",
+            "उहाँ आउनुभयो।\nuhā̃ āunubhayo"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
+        "text": "जानु · jānu · go",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "p",
+        "text": "**जान्छु** (I go) becomes **गएँ** (I went). The past for “I” and “we” begins with **ग**. The respectful past **जानुभयो** keeps **जा**.",
+        "presentation": {
+          "tone": "teal",
+          "role": "body"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Nepali and reading"
+        ],
+        "rows": [
+          [
+            "I · habit",
+            "म जान्छु।\nma jānchu"
+          ],
+          [
+            "I · present negative",
+            "म जाँदिनँ।\nma jā̃dinã"
+          ],
+          [
+            "I · past",
+            "म गएँ।\nma gaẽ"
+          ],
+          [
+            "I · past negative",
+            "म गइनँ।\nma gainã"
+          ],
+          [
+            "I · future",
+            "म जानेछु।\nma jānechu"
+          ],
+          [
+            "We · habit",
+            "हामी जान्छौं।\nhāmī jānchaũ"
+          ],
+          [
+            "He or she · habit, respectful",
+            "उहाँ जानुहुन्छ।\nuhā̃ jānuhuncha"
+          ],
+          [
+            "He or she · past, respectful",
+            "उहाँ जानुभयो।\nuhā̃ jānubhayo"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
+        "text": "One speaker, four ways to say “write”",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Form and reading"
+        ],
+        "rows": [
+          [
+            "Habit · I write",
+            "म लेख्छु।\nma lekhchu"
+          ],
+          [
+            "In progress · I am writing",
+            "म लेख्दै छु।\nma lekhdai chu"
+          ],
+          [
+            "Past · I wrote",
+            "मैले लेखेँ।\nmaile lekhẽ"
+          ],
+          [
+            "Future · I will write",
+            "म लेख्नेछु।\nma lekhnechu"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
       },
       {
         "type": "h",
@@ -164883,7 +165370,7 @@
     "36": [
       {
         "type": "goal",
-        "text": "**Pattern and choice**\nThree sets with one subject\n**म लेखक हुँ** (I am an author) / **म घरमा छु** (I am at home) / **म बिहान घरमा हुन्छु** (I am usually at home in the morning)",
+        "text": "**Pattern and choice**\nIn Forms & words, look up **हो, छ, हुन्छ** by subject. Open a verb to compare “am doing” with “was doing”.",
         "presentation": {
           "tone": "blue",
           "role": "body"
@@ -165024,6 +165511,62 @@
           "role": "body"
         },
         "l1ExampleSupport": 1
+      },
+      {
+        "type": "p",
+        "text": "After the action, change **छु** to **थिएँ** to move from “I am doing” to “I was doing”.",
+        "presentation": {
+          "tone": "teal",
+          "role": "body"
+        }
+      },
+      {
+        "type": "h",
+        "text": "Find हो, छ and हुन्छ by subject",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "p",
+        "text": "The respectful form **हुनुहुन्छ** appears in all three patterns. Use the preceding words and the situation to work out its meaning.",
+        "presentation": {
+          "tone": "blue",
+          "role": "body"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Subject",
+          "Identity · हो",
+          "Present state or location · छ",
+          "Habit or change · हुन्छ"
+        ],
+        "rows": [
+          [
+            "I\nम / ma",
+            "हुँ / hũ",
+            "छु / chu",
+            "हुन्छु / hunchu"
+          ],
+          [
+            "we\nहामी / hāmī",
+            "हौं / haũ",
+            "छौं / chaũ",
+            "हुन्छौं / hunchaũ"
+          ],
+          [
+            "You / you all / that person / those people\nतपाईं · तपाईंहरू\nउहाँ · उहाँहरू",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्छ / hunuhuncha",
+            "हुनुहुन्छ / hunuhuncha"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
       },
       {
         "type": "h",
@@ -165281,6 +165824,186 @@
           "role": "plain"
         },
         "l1ExampleSupport": 1
+      },
+      {
+        "type": "h",
+        "text": "लेख्नु · lekhnu · write",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Nepali and reading"
+        ],
+        "rows": [
+          [
+            "I · in progress now",
+            "म लेख्दै छु।\nma lekhdai chu"
+          ],
+          [
+            "I · in progress then",
+            "म लेख्दै थिएँ।\nma lekhdai thiẽ"
+          ],
+          [
+            "We · in progress now",
+            "हामी लेख्दै छौं।\nhāmī lekhdai chaũ"
+          ],
+          [
+            "He or she · in progress now, respectful",
+            "उहाँ लेख्दै हुनुहुन्छ।\nuhā̃ lekhdai hunuhuncha"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
+        "text": "गर्नु · garnu · do",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Nepali and reading"
+        ],
+        "rows": [
+          [
+            "I · in progress now",
+            "म गर्दै छु।\nma gardai chu"
+          ],
+          [
+            "I · in progress then",
+            "म गर्दै थिएँ।\nma gardai thiẽ"
+          ],
+          [
+            "We · in progress now",
+            "हामी गर्दै छौं।\nhāmī gardai chaũ"
+          ],
+          [
+            "He or she · in progress now, respectful",
+            "उहाँ गर्दै हुनुहुन्छ।\nuhā̃ gardai hunuhuncha"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
+        "text": "खानु · khānu · eat",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Nepali and reading"
+        ],
+        "rows": [
+          [
+            "I · in progress now",
+            "म खाँदै छु।\nma khā̃dai chu"
+          ],
+          [
+            "I · in progress then",
+            "म खाँदै थिएँ।\nma khā̃dai thiẽ"
+          ],
+          [
+            "We · in progress now",
+            "हामी खाँदै छौं।\nhāmī khā̃dai chaũ"
+          ],
+          [
+            "He or she · in progress now, respectful",
+            "उहाँ खाँदै हुनुहुन्छ।\nuhā̃ khā̃dai hunuhuncha"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
+        "text": "आउनु · āunu · come",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Nepali and reading"
+        ],
+        "rows": [
+          [
+            "I · in progress now",
+            "म आउँदै छु।\nma āũdai chu"
+          ],
+          [
+            "I · in progress then",
+            "म आउँदै थिएँ।\nma āũdai thiẽ"
+          ],
+          [
+            "We · in progress now",
+            "हामी आउँदै छौं।\nhāmī āũdai chaũ"
+          ],
+          [
+            "He or she · in progress now, respectful",
+            "उहाँ आउँदै हुनुहुन्छ।\nuhā̃ āũdai hunuhuncha"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
+      },
+      {
+        "type": "h",
+        "text": "जानु · jānu · go",
+        "presentation": {
+          "tone": "blue",
+          "role": "plain"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Situation",
+          "Nepali and reading"
+        ],
+        "rows": [
+          [
+            "I · in progress now",
+            "म जाँदै छु।\nma jā̃dai chu"
+          ],
+          [
+            "I · in progress then",
+            "म जाँदै थिएँ।\nma jā̃dai thiẽ"
+          ],
+          [
+            "We · in progress now",
+            "हामी जाँदै छौं।\nhāmī jā̃dai chaũ"
+          ],
+          [
+            "He or she · in progress now, respectful",
+            "उहाँ जाँदै हुनुहुन्छ।\nuhā̃ jā̃dai hunuhuncha"
+          ]
+        ],
+        "presentation": {
+          "tone": "blue"
+        }
       },
       {
         "type": "h",
@@ -165643,8 +166366,8 @@
     "32": "Theme 32｜Passive (be ~ed)",
     "33": "Theme 33｜Causative (make someone ~)",
     "34": "Theme 34｜Reported speech (said that ~)",
-    "35": "Theme 35 (Appendix A)｜Verb forms through writing: लेख्नु",
-    "36": "Theme 36 (Appendix B)｜Copulas through identity and location"
+    "35": "Theme 35 (Appendix A)｜Choose a verb and compare its forms",
+    "36": "Theme 36 (Appendix B)｜Identity, location and actions in progress (हुनु)"
   },
   "curriculumRevision": 1223,
   "grammarTextOnlyLabel": "Text practice (no audio)",

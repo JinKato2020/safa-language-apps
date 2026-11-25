@@ -36,12 +36,12 @@ for(const lang of ['ja','en','ko','ar']){
   }
 }
 const work=compile(DIR+'src/content/otaWork.ts',name=>name==='expo-file-system/legacy'?FS:require(name));
-const loadOta=(bundleCore=core)=>compile(DIR+'src/content/ota.ts',name=>{
+const loadOta=(bundleCore=core,bundleOverlay=makeOverlay)=>compile(DIR+'src/content/ota.ts',name=>{
 if(name==='expo-file-system/legacy')return FS;if(name==='@react-native-async-storage/async-storage')return storage;if(name==='./otaModel')return models;if(name==='./otaWork')return work;
 if(name==='../pack/compose')return compose;if(name==='../appData')return appData;if(name==='../../app.json')return{expo:{version:'test',android:{package:'test'}}};
 if(name==='../pack/quizAudio')return{quizAudio:{}};
 if(name==='../pack/puzzleAlternatives')return{puzzleAlternatives:{}};
-if(name.includes('ota-baseline/core'))return bundleCore;if(name.includes('overlays/'))return makeOverlay(name.includes('ar.json')?'ar':name.includes('ko.json')?'ko':name.includes('en.json')?'en':'ja');return require(name);
+if(name.includes('ota-baseline/core'))return bundleCore;if(name.includes('overlays/'))return bundleOverlay(name.includes('ar.json')?'ar':name.includes('ko.json')?'ko':name.includes('en.json')?'en':'ja');return require(name);
 },{fetch:async(url,options)=>{requests.push(url);requestOptions.push(options);if(offline)throw Error('offline');const u=url.split('?')[0];if(!remote.has(u))return{ok:false,status:404};return{ok:true,text:async()=>remote.get(u).toString('utf8')};}});
 const ota=loadOta();
 function file(value,ext='json'){const raw=Buffer.isBuffer(value)?value:Buffer.from(JSON.stringify(value));const url='https://example.test/'+sha(raw)+'.'+ext;remote.set(url,raw);return{url,sha256:sha(raw),bytes:raw.length};}
@@ -107,6 +107,16 @@ assert.equal(requests.length,previousRequests+1,'R2 URL migration reuses existin
 assert(requestOptions.every(o=>o.cache==='no-store'),'manifest and content checks bypass stale HTTP caches');
 // New app installation over an existing complete older cache, online and offline.
 const upgraded=loadOta({...core,curriculumRevision:7});
+const preview=loadOta({...core,curriculumRevision:6},lang=>({
+  ...makeOverlay(lang),grammarGuide:{'1':[{type:'p',text:'Bundled verb table'}]},grammarThemeNames:{'1':'Verb forms'}
+}));
+for(const lang of ['ja','en','ko','ar']){
+  for(const snapshot of [await preview.cachedContent(lang),await preview.syncContent(lang)]){
+    assert.equal(snapshot.data.GRAMMAR_GUIDE['1'][0].text,'Bundled verb table');
+    assert.equal(snapshot.data.GRAMMAR_THEMES[0].name,'Verb forms');
+    assert(Object.keys(snapshot.data.audio.japaneseAudio).length>0,'audio from the current OTA stays usable');
+  }
+}
 const savedBeforeUpgrade=kv.get('@nepali_app/content_ota/ja');
 const infoBeforeUpgrade=infoReads;
 assert.equal(await upgraded.cachedContent('ja'),null,'old cache cannot hide bundled new lessons');
@@ -115,6 +125,9 @@ offline=true;assert.equal(upgraded.bundledContent('ja').version,7);await assert.
 assert.equal(kv.get('@nepali_app/content_ota/ja'),savedBeforeUpgrade,'rejecting old cache does not erase recordings or saved pointers');
 assert.equal((await upgraded.syncContent('ja')).version,7,'older remote manifest cannot downgrade the new binary either');
 manifest.version=8;publish();assert.equal((await upgraded.syncContent('ja')).version,8);assert.equal((await upgraded.cachedContent('ja')).version,8,'newer OTA still activates normally');
+const released=(await preview.syncContent('ja')).data;
+assert.equal(released.GRAMMAR_GUIDE['1'][0].text,'Third lesson');
+assert.equal(released.GRAMMAR_THEMES[0].name,'Identity');
 const currentPointer=JSON.parse(kv.get('@nepali_app/content_ota/ja'));disk.set('file:///documents/content-ota/text/'+currentPointer.sha+'.json',Buffer.from('broken'));
 assert.equal(await upgraded.cachedContent('ja'),null,'damaged new OTA cannot fall back below bundled content');
 console.log('PASS real OTA: existing recovery/integrity checks plus installed-app upgrade, stale cache/remote rejection, offline baseline, newer OTA activation and corrupt-cache fallback.');

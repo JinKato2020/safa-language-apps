@@ -37,10 +37,12 @@ function compose(core:any,overlay:any,ne:Record<string,string>={},l1:Record<stri
   const a=maps(ne),b=maps(l1);
   return composePack(makeNeCore(core,a),{...overlay,nativeLang:overlay.l1,l1Audio:b.conv,l1GrammarAudio:b.gram},options);
 }
+function bundledOverlay(lang:string) {
+  return lang==='ar'?arBaseline:lang==='ko'?koBaseline:lang==='en'?enBaseline:jaBaseline;
+}
 export function bundledContent(lang:string):ContentSnapshot {
   const cached=bundled.get(lang);if(cached)return cached;
-  const overlay=lang==='ar'?arBaseline:lang==='ko'?koBaseline:lang==='en'?enBaseline:jaBaseline;
-  const result={version:baselineVersion,data:compose(coreBaseline,overlay)};bundled.set(lang,result);return result;
+  const result={version:baselineVersion,data:compose(coreBaseline,bundledOverlay(lang))};bundled.set(lang,result);return result;
 }
 async function fetchText(url:string,ms=12000):Promise<string>{
   const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),ms);
@@ -102,6 +104,14 @@ function audioIndex(archive:AudioArchive,lang:string):Promise<AudioIndex>{
 async function assemble(m:ContentManifest,lang:string):Promise<{core:any;overlay:any}>{
   const core=await readText(m.core),l=m.languages[lang],overlay=await readText(l.overlay);
   overlay.grammarGuide={};for(const[id,file]of Object.entries(l.guides))overlay.grammarGuide[id]=await readText(file);
+  // A build may preview edited lessons on top of its existing curriculum.
+  // Keep its guides at that revision while still activating the verified audio.
+  // The next content revision takes over both guide text and titles together.
+  if(m.version===baselineVersion){
+    const bundled=bundledOverlay(lang);
+    overlay.grammarGuide=bundled.grammarGuide;
+    overlay.grammarThemeNames=bundled.grammarThemeNames;
+  }
   validateContent(core,overlay,lang);
   for(const [archive,refs] of [[m.audio,core.grammarAudioRefs],[l.audio,overlay.grammarAudioRefs]] as [AudioArchive,Record<string,string|null>|undefined][]){
     for(const [key,rows] of Object.entries(core.examplesNe) as [string,string[]][])rows.forEach((_,i)=>{if(!archive.files[`${key}-${i+1}.mp3`])throw new Error('Missing conversation audio');});

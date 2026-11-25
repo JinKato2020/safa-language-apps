@@ -28,6 +28,7 @@ const arabicFoundation=process.argv.includes('--arabic-foundation');
 const arabicDictionary=process.argv.includes('--arabic-dictionary');
 const arabicModes=process.argv.includes('--arabic-modes');
 const studyModes=process.argv.includes('--study-modes');
+const grammarClarity=process.argv.includes('--grammar-clarity');
 const homeNotices=process.argv.includes('--home-notices');
 const tabDesigns=process.argv.includes('--tab-designs');
 modules.Text=compile(source('packages/shared/src/Text.tsx'));
@@ -39,7 +40,7 @@ if(homeNotices){
     strings[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/src/i18n/${lang}.json`));
   }
 }
-if(tabDesigns||studyModes)for(const lang of ['ko','ar']){
+if(tabDesigns||studyModes||grammarClarity)for(const lang of ['ko','ar']){
   overlays[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/data/overlays/${lang}.json`));
   strings[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/src/i18n/${lang}.json`));
 }
@@ -977,25 +978,48 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
       }
       assert.deepEqual(errors,[]);return;
     }
-    if(process.argv.includes('--grammar-clarity')){
-      for(const lang of ['ja','en'])for(const [width,scale]of[[390,1],[320,1.4]]){
+    if(grammarClarity){
+      for(const lang of ['ja','en','ko','ar'])for(const [width,scale]of[[390,1],[320,1.4]]){
+        const copy=await page.evaluate(lang=>require('grammarReading').readingCopy(lang),lang);
         await page.setViewportSize({width,height:844});await page.evaluate(({lang,scale})=>window.boot(lang,true,{name:'GrammarLibrary'},scale),{lang,scale});
-        const themes=(await page.evaluate(()=>window.data.GRAMMAR_THEMES)).filter(t=>!process.argv.includes('--changed-only')||[13,19,21,23].includes(t.id));
+        const themes=(await page.evaluate(()=>window.data.GRAMMAR_THEMES)).filter(t=>!process.argv.includes('--changed-only')||[4,5,6,7,8,9,12,13,17,19,20,21,22,23,29,33,34,35,36].includes(t.id));
         for(const theme of themes){
           await page.evaluate(({themeId,title})=>window.navigate('GrammarGuide',{themeId,title}),{themeId:theme.id,title:theme.name});
-          for(const part of [lang==='ja'?'基本ルール':'Core rules',lang==='ja'?'活用・語彙':'Forms & words']){
+          for(const part of [copy.rules,copy.reference]){
             await page.getByRole('tab',{name:part,exact:true}).click();
-            while(await page.locator('button[aria-expanded="false"]').count())await page.locator('button[aria-expanded="false"]').first().click();
+            if(part===copy.reference && [35,36].includes(theme.id)){
+              for(const [verb,past,progress] of [
+                ['लेख्नु','मैले लेखेँ।','म लेख्दै थिएँ।'],['गर्नु','मैले गरेँ।','म गर्दै थिएँ।'],
+                ['खानु','मैले खाएँ।','म खाँदै थिएँ।'],['आउनु','म आएँ।','म आउँदै थिएँ।'],['जानु','म गएँ।','म जाँदै थिएँ।'],
+              ]){
+                const toggle=page.getByRole('button',{name:new RegExp(verb+'[\\u2066-\\u2069]* ·')});
+                assert.equal(await toggle.getAttribute('aria-expanded'),'false');
+                await toggle.click();
+                await page.getByText(theme.id===35?past:progress,{exact:false}).first().waitFor();
+                assert.equal(await page.locator('button[aria-expanded="true"]').count(),1);
+                await toggle.click();
+              }
+            }
+            const collapsed=page.locator('button[aria-expanded="false"]');
+            await collapsed.evaluateAll(buttons=>buttons.forEach(button=>button.click()));
+            assert.equal(await collapsed.count(),0);
+            if(theme.id===20 && part===copy.rules || [21,22].includes(theme.id) && part===copy.reference){
+              for(const form of ['म जान सक्छु।','जानु पर्छ।','जान मिल्छ?','मलाई जान मन छ।']){
+                await page.getByText(form,{exact:false}).first().waitFor();
+              }
+            }
+            if(part===copy.rules && theme.id===13)await page.getByText('म भोलि किताब पढ्नेछु।',{exact:true}).first().waitFor();
+            if(part===copy.reference && theme.id===35)await page.getByText('म लेख्नेछु।',{exact:false}).first().waitFor();
             assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),`${lang}/${theme.id}/${width}/${part} page overflow`);
             const overflow=await page.evaluate(()=>[...document.querySelectorAll('div,span')].filter(e=>{const b=e.getBoundingClientRect();return b.width>0&&b.x>=0&&b.right>innerWidth+2;}).map(e=>e.textContent.slice(0,70)));
             assert.deepEqual(overflow,[],`${lang}/${theme.id}/${width}/${part} text overflow`);
-            if([3,21,23].includes(theme.id)&&part===(lang==='ja'?'基本ルール':'Core rules')){
+            if(['ja','en'].includes(lang)&&[3,21,23].includes(theme.id)&&part===copy.rules){
               const rule=theme.id===23?(lang==='ja'?'2. 語尾の基本：オ → イ／ア':'2. The ending pattern: o → ī / ā'):theme.id===21?(lang==='ja'?'4. पर्छ → पर्यो：必要が生じた':'4. पर्छ → पर्यो: a need arose'):(lang==='ja'?'3. मलाई＋感覚＋लाग्नु：誰がどう感じる？':'3. मलाई + sensation + लाग्नु: who feels it?');
               await page.getByRole('heading',{name:rule,exact:true}).scrollIntoViewIfNeeded();
               await page.screenshot({path:path.join(work,`previews/grammar-${lang}-${theme.id}-${width}.png`)});
             }
           }
-          await page.getByRole('button',{name:lang==='ja'?'教材を閉じる':'Close lesson',exact:true}).click();
+          await page.getByRole('button',{name:copy.close,exact:true}).click();
         }
         assert.deepEqual(errors,[]);console.log(`PASS grammar ${lang} ${width}: ${themes.length} lessons, rules and expanded references, translated tables, no horizontal text overflow.`);
       }

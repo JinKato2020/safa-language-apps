@@ -118,10 +118,11 @@ add(20, 3, 'सक्छは全員共通ではない：否定と過去', 'सक�
     '敬意形は**सक्नुहुन्न／सक्नुभयो／सक्नुभएन**（saknuhunna / saknubhayo / saknubhaena）。読むなど他動詞の完了では、動作主のमもमैलेへ変わります。',
     'Respectful forms: **सक्नुहुन्न/सक्नुभयो/सक्नुभएन** (saknuhunna / saknubhayo / saknubhaena). With a completed transitive action such as reading, म also becomes the agent form मैले.')
 
-add(20, 5, '能力・許可・希望は別の型', 'Ability, permission and desire are different',
+add(20, 5, '「行く」で比べる：可能・必要・許可・希望', 'One action, four meanings: going',
     '**できる＝必ず許可されている、ではありません。** 前の動作が似ていても、後ろの語で文の目的が変わります。',
     '**Being able does not automatically mean being allowed.** Similar action forms can be followed by expressions with different functions.',
     [('म जान सक्छु।\nma jāna sakchu', '私は行けます。能力・状況上の可能。', 'I can go: ability or practical possibility.'),
+     ('जानु पर्छ।\njānu parcha', '行く必要があります。必要な動作には जानु を使います。', 'Going is necessary. Keep the dictionary form जानु before पर्छ.'),
      ('जान मिल्छ?\njāna milcha?', '行ってもよいですか？ 許可・差し支えの有無。', 'May I go? Permission or whether it is acceptable.'),
      ('मलाई जान मन छ।\nmalāī jāna man cha', '私は行きたいです。希望。', 'I want to go: desire.')],
     '**हुन सक्छ**（huna sakcha／そうである可能性がある）は推測で、テーマ31の型です。',
