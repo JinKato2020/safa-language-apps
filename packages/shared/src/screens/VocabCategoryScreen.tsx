@@ -18,7 +18,7 @@ const GOLD = '#b08746';
 
 export default function VocabCategoryScreen() {
   const contentNames = useAppData().CONTENT_NAMES;
-  const { WORD_CATEGORIES, vocabularyQuiz } = useAppData();
+  const { WORD_CATEGORIES, vocabularyQuiz, targetLang } = useAppData();
   const { vocabularyDirection, setVocabularyDirection } = useSettings();
   const lessons = usePosterLessons();
   const ent = useEntitlement();
@@ -32,13 +32,15 @@ export default function VocabCategoryScreen() {
   const [mode, setMode] = useState<'flash' | 'poster'>(posterOnly ? 'poster' : 'flash');
   const hasPoster = lessons.length > 0;
   const showPoster = hasPoster && (posterOnly || mode === 'poster');
-  const heroSrc = useHeroImage('vocabulary');
+  const vocabularyHero = useHeroImage('vocabulary');
+  const library = targetLang === 'ne' && !posterOnly;
+  const heroSrc = library ? null : vocabularyHero;
   const { top } = useSafeAreaInsets();
 
   const Header = (
     <View style={styles.head}>
       {!posterOnly && heroSrc != null && <ModeHero source={heroSrc} />}
-      <Text style={[styles.modeTitle, ss(20)]}>{posterOnly ? t('vocab.modePoster') : t('vocab.modeTitle')}</Text>
+      {!library && <Text style={[styles.modeTitle, ss(20)]}>{posterOnly ? t('vocab.modePoster') : t('vocab.modeTitle')}</Text>}
       {hasPoster && !posterOnly && (
         <View style={styles.seg}>
           <Pressable onPress={() => setMode('flash')} style={[styles.segBtn, mode === 'flash' && styles.segOn]}>
@@ -49,7 +51,10 @@ export default function VocabCategoryScreen() {
           </Pressable>
         </View>
       )}
-      <Text testID="vocab-theme-description" style={styles.desc}>{showPoster ? t('vocab.modePosterDesc') : t('vocab.themeSelectDesc')}</Text>
+      {library ? <View style={styles.libraryIntro} testID="vocab-library-intro">
+        <Text accessibilityRole="header" style={[styles.libraryTitle, ss(26, 38)]}>{t('nav.vocabulary')}</Text>
+        <Text testID="vocab-theme-description" style={[styles.libraryBody, ss(15, 26)]}>{t('vocab.themeSelectDesc')}</Text>
+      </View> : <Text testID="vocab-theme-description" style={styles.desc}>{showPoster ? t('vocab.modePosterDesc') : t('vocab.themeSelectDesc')}</Text>}
       {vocabularyQuiz && !showPoster && !posterOnly && <View style={styles.directions}>
         {(['ne2ja', 'ja2ne'] as const).map(value => <Pressable key={value} testID={`vocab-direction-${value}`} accessibilityRole="tab" accessibilityState={{ selected: vocabularyDirection === value }} onPress={() => setVocabularyDirection(value)} style={[styles.direction, vocabularyDirection === value && styles.directionSelected]}>
           <Text style={[styles.directionText, vocabularyDirection === value && styles.directionSelectedText, ss(14, 23)]}>{t(`directions.${value}`)}</Text>
@@ -85,8 +90,8 @@ export default function VocabCategoryScreen() {
 
   return (
     <FlatList
-      style={!posterOnly && heroSrc != null ? { marginTop: route.params?.fromHome ? 0 : top } : undefined}
-      contentContainerStyle={styles.container}
+      style={library ? styles.libraryRoot : !posterOnly && heroSrc != null ? { marginTop: route.params?.fromHome ? 0 : top } : undefined}
+      contentContainerStyle={[styles.container, library && styles.libraryContainer]}
       ListHeaderComponent={Header}
       data={WORD_CATEGORIES}
       keyExtractor={(item) => String(item.id)}
@@ -97,11 +102,11 @@ export default function VocabCategoryScreen() {
           <Pressable
             testID={`vocab-category-${item.id}`}
             accessibilityRole="button"
-            style={({ pressed }) => [styles.card, pressed && styles.cardPressed, locked && styles.cardLocked]}
+            style={({ pressed }) => [styles.card, library && styles.libraryCard, pressed && styles.cardPressed, locked && styles.cardLocked]}
             onPress={() => (locked ? navigation.navigate('Paywall') : navigation.navigate('Flashcard', { categoryId: item.id, direction: vocabularyQuiz ? vocabularyDirection : 'ne2ja' }))}
           >
             <Text style={styles.num}>{String(item.id).padStart(2, '0')}</Text>
-            <Text style={styles.name}>{catName}</Text>
+            <Text style={[styles.name, library && styles.libraryName, library && ss(16, 24)]}>{catName}</Text>
             <Text style={styles.count}>{t('common.wordsCount', { count: item.wordCount })}</Text>
             {locked && <LockBadge />}
           </Pressable>
@@ -113,6 +118,13 @@ export default function VocabCategoryScreen() {
 
 const styles = StyleSheet.create({
   container: { padding: spacing.lg, paddingBottom: spacing.xxl, maxWidth: 760, width: '100%', alignSelf: 'center' },
+  libraryRoot: { backgroundColor: '#f3f5f8' },
+  libraryContainer: { padding: 20, paddingBottom: 44 },
+  libraryIntro: { padding: 22, borderRadius: 24, backgroundColor: '#e3ebf5', gap: 8 },
+  libraryTitle: { color: '#173758', fontWeight: '700' },
+  libraryBody: { color: '#304b61' },
+  libraryCard: { minHeight: 64, borderRadius: 18, borderColor: '#dce4ed' },
+  libraryName: { color: '#193b59', fontWeight: '600' },
   head: { marginBottom: spacing.lg },
   modeTitle: { fontSize: 20, fontWeight: '700', color: colors.accentJa, letterSpacing: 0.2, marginBottom: spacing.sm, textAlign: 'center' },
   desc: { fontSize: 14, color: colors.inkMute, lineHeight: 21, textAlign: 'center' },

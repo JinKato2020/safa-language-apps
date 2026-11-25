@@ -35,6 +35,7 @@ import { ListeningAudioProvider, useListeningAudio } from './ListeningAudioConte
 import type { RootStackParamList } from './types';
 import { LearningProvider } from './LearningContext';
 import LettersSoundsScreen from './screens/LettersSoundsScreen';
+import SimilarSoundsScreen from './screens/SimilarSoundsScreen';
 import NepaliDictionaryScreen from './screens/NepaliDictionaryScreen';
 import { renderStudyHeader } from './StudyHeader';
 import LearningHomeScreen from './screens/LearningHomeScreen';
@@ -451,6 +452,7 @@ export function AppShell({ splashSource, posterLessons, posterResolveUri, poster
                       Keep MainTabs beneath it so Back returns to the existing list. */}
                   <RootStack.Screen name="Practice" component={PracticeScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined, header: learningStorageKey ? renderStudyHeader : undefined }} />
                   <RootStack.Screen name="LettersSounds" component={LettersSoundsScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader }} />
+                  {learningStorageKey && <RootStack.Screen name="SimilarSounds" component={SimilarSoundsScreen} options={{ ...defaultStackOptions, headerShown: true, header: renderStudyHeader, title: t('similarSounds.title') }} />}
                   <RootStack.Screen name="LearningPath" component={LettersSoundsScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined, header: learningStorageKey ? renderStudyHeader : undefined }} />
                   <RootStack.Screen name="SettingsMain" component={SettingsScreen} options={{ ...defaultStackOptions, headerShown: true, headerTitle: undefined, headerRight: undefined, title: t('settings.title') }} />
                 </RootStack.Navigator>

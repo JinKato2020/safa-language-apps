@@ -1,7 +1,7 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Animated, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { Text } from '../Text';
-import { useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
+import { useFocusEffect, useNavigation, useRoute, type RouteProp } from '@react-navigation/native';
 import { useAudioPlayer } from 'expo-audio';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import Svg, { Line, Path, Polyline } from 'react-native-svg';
@@ -136,18 +136,32 @@ function ChallengePracticeScreen() {
   const answerAudioSrc = isJa2Ne ? neSrc : jaSrc;
   const questionPlayer = useAudioPlayer(questionAudioSrc);
   const answerPlayer = useAudioPlayer(answerAudioSrc);
+  const playbackRequest = useRef(0);
+  const stopPlayback = useCallback(() => {
+    const request = ++playbackRequest.current;
+    for (const player of [questionPlayer, answerPlayer]) {
+      try { player.pause(); } catch {}
+    }
+    return request;
+  }, [questionPlayer, answerPlayer]);
 
-  const playOnce = (player: ReturnType<typeof useAudioPlayer>) => {
+  useFocusEffect(useCallback(() => () => {
+    flipEpoch.current++;
+    stopPlayback();
+  }, [stopPlayback]));
+
+  const playOnce = async (player: ReturnType<typeof useAudioPlayer>) => {
+    const request = stopPlayback();
     try {
-      player.seekTo(0);
-      player.play();
+      await player.seekTo(0);
+      if (request === playbackRequest.current) player.play();
     } catch {}
   };
 
   // テーマを跨いで次/前へ進む
   const go = (delta: number) => {
     flipEpoch.current++;
-    questionPlayer.pause(); answerPlayer.pause();
+    stopPlayback();
     if (session) {
       setPosition(p => Math.max(0, Math.min(session.items.length - 1, p + delta)));
       setRevealed(false); return;
@@ -258,7 +272,7 @@ function ChallengePracticeScreen() {
   const advance = async (result?: 'known' | 'again' | 'supported') => {
     if (savingRef.current || !ex) return;
     if (!learning) {
-      if (atLast) { questionPlayer.pause(); answerPlayer.pause(); setFinished(true); }
+      if (atLast) { stopPlayback(); setFinished(true); }
       else go(1);
       return;
     }
@@ -267,9 +281,12 @@ function ChallengePracticeScreen() {
       return;
     }
     flipEpoch.current++;
+    stopPlayback();
     savingRef.current = true; setSaving(true);
     const nextAnswered = [...new Set([...answered, currentKey])];
-    const nextPosition = session?.items.findIndex(r => !nextAnswered.includes(studyKey(r))) ?? -1;
+    const nextPosition = isNepaliComposition && session && position + 1 < session.items.length
+      ? position + 1
+      : session?.items.findIndex(r => !nextAnswered.includes(studyKey(r))) ?? -1;
     const complete = session ? nextPosition < 0 : isNepaliComposition && atLast;
     const saved = await learning.change(state => {
       let next = result ? rateStudy(state, current, result, Date.now(), isNepaliComposition ? direction : undefined) : state;
@@ -284,8 +301,8 @@ function ChallengePracticeScreen() {
     savingRef.current = false; setSaving(false);
     if (!saved) return;
     if (session) setAnswered(nextAnswered);
-    if (complete) { questionPlayer.pause(); answerPlayer.pause(); setFinished(true); }
-    else if (session) { questionPlayer.pause(); answerPlayer.pause(); setPosition(nextPosition); setRevealed(false); }
+    if (complete) setFinished(true);
+    else if (session) { setPosition(nextPosition); setRevealed(false); }
     else if (!atLast) go(1);
   };
 
@@ -327,15 +344,28 @@ function ChallengePracticeScreen() {
         accessibilityLabel={displayText + ' · ' + t('practice.cardHint', {state: revealed ? t('practice.answer') : t('practice.question')})}
         disabled={saving}
         onPress={() => {
-          const epoch = flipEpoch.current;
-          flip(() => { if (epoch === flipEpoch.current) setRevealed(r => !r); });
+          const epoch = ++flipEpoch.current;
+          const nextRevealed = !revealed;
+          flip(() => {
+            if (epoch !== flipEpoch.current) return;
+            setRevealed(nextRevealed);
+            if (!isNepaliComposition) return;
+            const source = nextRevealed ? answerAudioSrc : questionAudioSrc;
+            if (source != null) void playOnce(nextRevealed ? answerPlayer : questionPlayer);
+            else stopPlayback();
+          });
         }}
         onPressIn={() => { cardSwipeBlock.current = true; }}
         onPressOut={() => { cardSwipeBlock.current = false; }}
       >
         {({ pressed }) => (
           <Animated.View style={[styles.sentenceCard, pressed && styles.sentenceCardPressed, animatedStyle]}>
-            <Text style={[styles.cardHint, ss(10)]}>{t('practice.cardHint', { state: revealed ? t('practice.answer') : t('practice.question') })}</Text>
+            {isNepaliComposition ? <View pointerEvents="none" style={styles.foldCorner} testID="composition-fold">
+              <Svg width={35} height={35} viewBox="0 0 35 35" accessible={false}>
+                <Path d="M0 35 L35 0 V35 Z" fill={colors.bg} />
+                <Path d="M0 35 V6 Q0 0 6 0 H35 Z" fill={revealed ? '#a7d4c2' : '#cce6db'} stroke="#a7d4c2" />
+              </Svg>
+            </View> : <Text style={[styles.cardHint, ss(10)]}>{t('practice.cardHint', { state: revealed ? t('practice.answer') : t('practice.question') })}</Text>}
             <Text style={[
               displayIsNe ? styles.neText : styles.jaText,
               ss(displayIsNe ? 30 : 26, displayIsNe ? 44 : 40),
@@ -377,11 +407,19 @@ function ChallengePracticeScreen() {
       </View>}
 
       {isNepaliComposition ? <>
-        <Pressable testID="composition-next" accessibilityRole="button" disabled={saving || (learning?.ready === false && !learning.error)}
-          accessibilityState={{disabled: saving || (learning?.ready === false && !learning.error)}} style={learningStyles.primary}
-          onPress={() => void advance(revealed ? 'supported' : undefined)}>
-          <Text style={[learningStyles.primaryText,ss(16,24)]}>{t('common.next')}</Text>
-        </Pressable>
+        <View style={styles.compositionNavigation}>
+          <Pressable testID="composition-prev" accessibilityRole="button" disabled={atFirst || saving}
+            accessibilityState={{disabled: atFirst || saving}}
+            style={[learningStyles.secondary, styles.compositionNavButton, (atFirst || saving) && styles.navDisabled]}
+            onPress={() => go(-1)}>
+            <Text style={[learningStyles.link,ss(16,24)]}>{t('common.prev')}</Text>
+          </Pressable>
+          <Pressable testID="composition-next" accessibilityRole="button" disabled={saving || (learning?.ready === false && !learning.error)}
+            accessibilityState={{disabled: saving || (learning?.ready === false && !learning.error)}} style={[learningStyles.primary, styles.compositionNavButton]}
+            onPress={() => void advance(revealed ? 'supported' : undefined)}>
+            <Text style={[learningStyles.primaryText,ss(16,24)]}>{t('common.next')}</Text>
+          </Pressable>
+        </View>
         {learning?.error && <Text style={[learningStyles.error,ss(15,24)]}>{studyCopy.error}</Text>}
       </> : learning && <View style={[learningStyles.card,learningStyles.green]}>
         <Text style={[learningStyles.body,ss(15,24)]}>{studyCopy.rating}</Text>
@@ -488,6 +526,9 @@ const styles = StyleSheet.create({
     marginBottom: spacing.lg,
   },
   sentenceCardPressed: { backgroundColor: colors.bgSoft },
+  foldCorner: { position: 'absolute', bottom: -1, right: -1 },
+  compositionNavigation: { flexDirection: 'row', gap: spacing.sm },
+  compositionNavButton: { flex: 1, minWidth: 0 },
   cardHint: { fontFamily: 'Courier', fontSize: 10, color: colors.inkFaint, letterSpacing: 1.5, marginBottom: spacing.md },
   jaText: { fontSize: 26, lineHeight: 40, color: colors.ink, textAlign: 'center', fontWeight: '400' },
   neText: { fontSize: 30, lineHeight: 44, color: colors.ink, textAlign: 'center', fontWeight: '600' },

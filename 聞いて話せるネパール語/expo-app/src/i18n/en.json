@@ -20,6 +20,14 @@
     "questionsCount": "{{count}} questions",
     "wordsCount": "{{count}} words"
   },
+  "similarSounds": {
+    "title": "Similar sounds",
+    "newBadge": "New",
+    "heading": "Compare similar sounds",
+    "instructions": "Tap the two words in turn and listen to their first sound.",
+    "breath": "In the second word, listen for a stronger puff of air after the consonant.",
+    "voicing": "Listen for the difference between p and b at the start."
+  },
   "nav": {
     "conversation": "Conversation",
     "grammar": "Grammar",

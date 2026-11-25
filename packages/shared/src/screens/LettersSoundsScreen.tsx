@@ -127,7 +127,7 @@ export default function LettersSoundsScreen() {
           return <Pressable key={c.id} testID={`letters-category-${c.id}`} accessibilityRole="button" accessibilityLabel={lang === 'ar' ? c.ar : lang === 'ko' ? c.ko : en ? c.en : c.ja}
             onPress={() => move(indices[0])}
             style={({ pressed }) => [styles.libraryCard, singleColumnLibrary && { flexBasis: '100%' }, pressed && styles.pressed]}>
-            <View style={styles.titleRow}><Text style={[styles.categoryGlyph, ss(29, 46)]}>{c.glyph}</Text><Text style={[styles.muted, ss(16, 24)]}>↗</Text></View>
+            <Text style={[styles.categoryGlyph, ss(29, 46)]}>{c.glyph}</Text>
             <Text style={[styles.cardTitle, ss(17, 26)]}>{lang === 'ar' ? c.ar : lang === 'ko' ? c.ko : en ? c.en : c.ja}</Text>
             <Text style={[styles.muted, ss(13, 22)]}>{lang === 'ar' ? c.subAr : lang === 'ko' ? c.subKo : en ? c.subEn : c.subJa}</Text>
           </Pressable>;

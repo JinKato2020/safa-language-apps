@@ -149,7 +149,7 @@ export default function ListeningScreen() {
   // 日本語カード: 言語=ネパール語(!isJaUI)のとき、かな(常時)+ローマ字(ローマ字設定ON時)を補助表示。
   const jaCard = (
     <View testID="listening-translation" style={[styles.card, activeLang === 'ja' && styles.cardJaActive]}>
-      <Text style={[styles.tag, activeLang === 'ja' && styles.tagJaActive, ss(11)]}>{t('listening.tagJa')}</Text>
+      {!isNepaliCourse && <Text style={[styles.tag, activeLang === 'ja' && styles.tagJaActive, ss(11)]}>{t('listening.tagJa')}</Text>}
       {showTranslation ? <>
         <Text style={[styles.textJa, ss(20, 30)]}>{ex.jp}</Text>
         {!isJaUI && reading?.kana ? <Text style={[styles.jaKana, ss(15, 23)]}>{reading.kana}</Text> : null}
@@ -162,7 +162,7 @@ export default function ListeningScreen() {
   // (ネパール語話者にはネパール語ローマ字は不要なため)。
   const neCard = (
     <View testID="listening-target" style={[styles.card, activeLang === 'ne' && styles.cardNeActive]}>
-      <Text style={[styles.tag, activeLang === 'ne' && styles.tagNeActive, ss(11)]}>{t('listening.tagNe')}</Text>
+      {!isNepaliCourse && <Text style={[styles.tag, activeLang === 'ne' && styles.tagNeActive, ss(11)]}>{t('listening.tagNe')}</Text>}
       <Text style={[styles.textNe, ss(26, 38)]}>{ex.ne}</Text>
       {(targetLang === 'ne' || isJaUI) && romaji && l1.romanizeSentence ? <Text style={[styles.romaji, ss(14, 22)]}>{l1.romanizeSentence(ex.ne)}</Text> : null}
     </View>

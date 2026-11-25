@@ -6,7 +6,7 @@ const source=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const compile=s=>ts.transpileModule(s,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
 const modules={};for(const[p,file]of[['react','react.production.js'],['react/jsx-runtime','react-jsx-runtime.production.js'],['react-dom','react-dom.production.js'],['react-dom/client','react-dom-client.production.js'],['scheduler','scheduler.production.js']])modules[p]=fs.readFileSync(path.join(path.dirname(require.resolve(p.split('/')[0]+'/package.json')),'cjs',file),'utf8');
 for(const name of ['textDirection','nepaliDictionary','SettingsContext','letterPresentation','vocabularyQuiz','PuzzleBoard','puzzleDrag','practicePool','freePractice','guidedPractice','LearningSound','learning','learningCopy','LearningContext','LearningLaunch','StudyHeader','themeLabels','theme','l1','transliterate','grammarReading','grammarPresentation'])modules[name]=compile(source(`packages/shared/src/${name}.${['SettingsContext','PuzzleBoard','LearningContext','LearningLaunch','LearningSound','StudyHeader'].includes(name)?'tsx':'ts'}`));
-for(const name of ['NepaliDictionaryScreen','VocabularyQuizScreen','SettingsScreen','VocabCategoryScreen','VocabDirectionScreen','FlashcardScreen','FreePracticeScreen','GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
+for(const name of ['SimilarSoundsScreen','NepaliDictionaryScreen','VocabularyQuizScreen','SettingsScreen','VocabCategoryScreen','VocabDirectionScreen','FlashcardScreen','FreePracticeScreen','GuidedPracticeScreen','ExampleStudyScreen','LearningHomeScreen','LettersSoundsScreen','PracticeScreen','GrammarGuideScreen','GrammarLibraryScreen','ThemeScreen'])modules[name]=compile(source(`packages/shared/src/screens/${name}.tsx`));
 modules.entitlement=compile(source('packages/shared/src/entitlement.tsx'));
 modules.compose=compile(source('聞いて話せるネパール語/expo-app/src/pack/compose.ts'));
 const quizAudio=Object.fromEntries([...source('聞いて話せるネパール語/expo-app/src/pack/quizAudio.ts').matchAll(/^\s*(".*"): require\(/gm)].map((match,i)=>[JSON.parse(match[1]),i+1]));
@@ -99,10 +99,10 @@ const AudioProvider=require('LearningSound').LearningAudioProvider,resolveAudio=
 // Listening UI adapter records requests; native playback is verified separately.
 cache.ListeningAudioContext={exports:{useListeningAudio:()=>({active:true,isGrammarSrc:window.route.params?.source==='grammar',themeId:window.route.params?.themeId??1,levelId:window.route.params?.levelId??1,index:0,playing:false,firstLang:'ne',phase:'first',activeLang:'ne',...window.listeningPhase,startSession:p=>window.events.push(['listenStart',p]),togglePlay:()=>window.events.push(['listenToggle']),go:n=>window.events.push(['listenGo',n])})}};
 cache['react-native'].exports.Animated.Value=class{constructor(value){this.value=value;}stopAnimation(){}setValue(value){this.value=value;}};
-const names={NepaliDictionary:'NepaliDictionaryScreen',SettingsMain:'SettingsScreen',SettingsTab:'SettingsScreen',VocabCategory:'VocabCategoryScreen',VocabDirection:'VocabDirectionScreen',Flashcard:'FlashcardScreen',HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
+const names={SimilarSounds:'SimilarSoundsScreen',NepaliDictionary:'NepaliDictionaryScreen',SettingsMain:'SettingsScreen',SettingsTab:'SettingsScreen',VocabCategory:'VocabCategoryScreen',VocabDirection:'VocabDirectionScreen',Flashcard:'FlashcardScreen',HomeTab:'LearningHomeScreen',LearningPath:'LettersSoundsScreen',LettersSounds:'LettersSoundsScreen',Practice:'PracticeScreen',GrammarGuide:'GrammarGuideScreen',GrammarLibrary:'GrammarLibraryScreen',Theme:'ThemeScreen'};
 cache.CultureBreakScreen={exports:{default:require('GrammarGuideScreen').CultureBreakScreen}}; names.CultureBreak='CultureBreakScreen';
 if(modules.ListeningScreen)names.Listening='ListeningScreen';
-function Frame(){document.getElementById('root').style.direction=window.caseInfo.lang==='ar'?'rtl':'ltr';const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(LayoutDirection.Provider,{value:window.caseInfo.lang==='ar'?'rtl':'ltr'},['NepaliDictionary','VocabCategory','VocabDirection','Flashcard','Practice','LettersSounds','LearningPath','GrammarLibrary','CultureBreak'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
+function Frame(){document.getElementById('root').style.direction=window.caseInfo.lang==='ar'?'rtl':'ltr';const[count,setCount]=React.useState(0);window.redraw=()=>setCount(x=>x+1);const name=names[window.route.name];return h(LayoutDirection.Provider,{value:window.caseInfo.lang==='ar'?'rtl':'ltr'},['SimilarSounds','NepaliDictionary','VocabCategory','VocabDirection','Flashcard','Practice','LettersSounds','LearningPath','GrammarLibrary','CultureBreak'].includes(window.route.name)?h(require('StudyHeader').default,{navigation:nav,options:{title:window.screenOptions?.title??window.route.name}}):null,name?h(require(name).default,{key:window.route.name+JSON.stringify(window.route.params??{})}):h('div',null,window.route.name));}
 if(modules.Announcements){
   const Native=cache['react-native'].exports;
   Native.SafeAreaView=Native.View;Native.ActivityIndicator=()=>h('span',null,'Loading');
@@ -169,6 +169,8 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.evaluate(({lang,listen})=>window.boot(lang,true,listen),{lang,listen});
         const translated=overlays[lang].examplesL1['1-1'][0];
         const translation=by('listening-translation');
+        assert.equal(await translation.getByText(strings[lang].listening.tagJa,{exact:true}).count(),0);
+        assert.equal(await by('listening-target').getByText(strings[lang].listening.tagNe,{exact:true}).count(),0);
         assert((await translation.innerText()).includes(translated));
         await by('listening-timed-translation').click();
         assert(!(await translation.innerText()).includes(translated));
@@ -181,12 +183,26 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.evaluate(({lang,listen})=>{window.listeningPhase=undefined;return window.boot(lang,false,listen);},{lang,listen});
         assert(!(await translation.innerText()).includes(translated),'timing preference survives reopening');
         await page.evaluate(lang=>window.boot(lang,true,{name:'Practice',params:{themeId:1,mode:'grammar',challenge:true}}),lang);
+        await by('composition-fold').waitFor();
+        assert(await by('composition-prev').isDisabled());
         assert.equal(await by('composition-vocabulary').count(),0);
         const copy=await page.evaluate(lang=>require('learningCopy').learningCopy(lang),lang);
         for(const label of [copy.rating,strings[lang].common.swipeHint,copy.known,copy.again])assert.equal(await page.getByText(label,{exact:true}).count(),0);
         await by('composition-card').click();await by('composition-vocabulary').waitFor();
+        await page.waitForFunction(()=>window.events.some(([kind,source])=>kind==='audio'&&source==='ne/1-1'));
+        await by('composition-card').click();
+        await page.waitForFunction(lang=>window.events.some(([kind,source])=>kind==='audio'&&source===lang+'/1-1'),lang);
+        assert.equal(await page.evaluate(()=>window.activeAudio.size),1);
+        await by('composition-card').click();await by('composition-vocabulary').waitFor();
         for(const label of [copy.rating,strings[lang].common.swipeHint,copy.known,copy.again])assert.equal(await page.getByText(label,{exact:true}).count(),0);
         await by('composition-next').click();await by('composition-vocabulary').waitFor({state:'detached'});
+        assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
+        await by('composition-prev').click();
+        await page.waitForFunction(()=>JSON.parse(localStorage.getItem('test-study')).resume.item.index===0);
+        assert(await by('composition-prev').isDisabled());
+        assert.equal(await by('composition-vocabulary').count(),0);
+        await by('composition-next').click();
+        await page.waitForFunction(()=>JSON.parse(localStorage.getItem('test-study')).resume.item.index===1);
         await by('composition-next').click();await page.waitForFunction(()=>JSON.parse(localStorage.getItem('test-study')).resume.item.index===2);
         assert.equal(await page.evaluate(()=>Object.keys(JSON.parse(localStorage.getItem('test-study')).ratings).length),1);
         assert.equal(await by('composition-vocabulary').count(),0);
@@ -361,7 +377,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.screenshot({path:path.join(work,`previews/settings-ar-${width}.png`)});
         for(const source of ['grammar','conversation']){
           await page.evaluate(({scale})=>window.boot('ar',true,{name:'Theme',params:{mode:'listening',grammarFirst:true}},scale),{scale});
-          assert.deepEqual(await page.locator('[data-testid^="listen-source-"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['listen-source-grammar','listen-source-conversation']);
+          assert.deepEqual(await page.locator('[data-testid^="listen-source-"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['listen-source-conversation','listen-source-grammar']);
           await page.getByTestId('listen-source-'+source).click();if(source==='conversation')await page.getByTestId('theme-level-3').click();
           await page.getByTestId('theme-1').click();
           await page.getByText('استماع متواصل',{exact:true}).waitFor();
@@ -537,14 +553,15 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
       const routes={'home-letters':'LettersSounds','home-grammar-lessons':'GrammarLibrary','home-vocabulary':'VocabCategory','home-dictionary':'NepaliDictionary'};
       for(const lang of ['ja','en'])for(const [width,scale]of[[390,1],[320,1.4]]){
         await page.setViewportSize({width,height:844});await page.evaluate(({lang,scale})=>window.boot(lang,true,{name:'HomeTab'},scale),{lang,scale});
-        const grid=page.getByTestId('home-content-grid');assert.equal(await grid.getByRole('button').count(),4);
+        const grid=page.getByTestId('home-content-grid');
+        assert.equal(await grid.getByTestId('home-similar-sounds').count(),1);
         const boxes=[];for(const id of Object.keys(routes))boxes.push(await page.getByTestId(id).boundingBox());
         assert.equal(boxes[0].y,boxes[1].y);assert.equal(boxes[2].y,boxes[3].y);assert(boxes[2].y>boxes[0].y);
         assert(boxes[1].x>=boxes[0].x+boxes[0].width);for(const b of boxes)assert(b.width>=44&&b.height>=44);
         for(const id of Object.keys(routes))assert.equal(await page.getByTestId(id).locator('span').count(),id==='home-letters'?2:1,'Title and icon only');
         const body=await page.locator('body').innerText();assert(body.includes('Small steps')&&body.includes('strength.'));
         for(const old of ['今日の5文','今日の一歩','開く→','教材を開く','単語を学ぶ','言葉を調べる'])assert(!body.includes(old),old);
-        assert(await page.getByTestId('home-motto').locator('span').evaluateAll(es=>es.every(e=>e.getBoundingClientRect().height<=parseFloat(getComputedStyle(e).lineHeight)+2)),'Motto lines never split inside a word');
+        assert(await page.getByTestId('home-motto').locator('span').evaluateAll(es=>es.every(e=>e.getClientRects().length===1)),'Motto lines never split inside a word');
         assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));
         assert(await grid.evaluate(e=>[...e.querySelectorAll('span')].every(s=>s.scrollWidth<=s.clientWidth+2)),'Titles fit their tiles');
         await grid.scrollIntoViewIfNeeded();await page.screenshot({path:path.join(work,`previews/home-grid-${lang}-${width}.png`)});
@@ -661,7 +678,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.setViewportSize({width:390,height:844});
         for(const level of [1,2,3])for(let theme=1;theme<=30;theme++){
           await page.evaluate(l=>window.boot(l,true,{name:'Theme',params:{mode:'grammar',puzzleOnly:true,guidesOnHome:true}}),lang);
-          assert.deepEqual(await page.locator('[data-testid^="puzzle-"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['puzzle-grammar','puzzle-conversation']);
+          assert.deepEqual(await page.locator('[data-testid^="puzzle-"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['puzzle-conversation','puzzle-grammar']);
           await page.getByTestId('puzzle-conversation').click();await page.getByTestId('theme-level-'+level).click();
           assert.equal(await page.locator('[data-testid^="theme-"]:not([data-testid^="theme-level-"])').count(),30);
           await page.getByTestId('theme-'+theme).click();await page.getByTestId('free-bank').waitFor();
@@ -681,7 +698,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         for(let i=0;i<question.answerWords.length;i++)await page.getByTestId('free-token-word-'+i).click();await page.getByTestId('free-feedback').waitFor();
         for(const source of ['grammar','conversation']){
           await page.evaluate(l=>window.boot(l,true,{name:'Theme',params:{mode:'listening',grammarFirst:true}}),lang);
-          assert.deepEqual(await page.locator('[data-testid^="listen-source-"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['listen-source-grammar','listen-source-conversation']);
+          assert.deepEqual(await page.locator('[data-testid^="listen-source-"]').evaluateAll(es=>es.map(e=>e.dataset.testid)),['listen-source-conversation','listen-source-grammar']);
           assert.equal(await page.getByTestId('listen-source-grammar').getAttribute('aria-selected'),'true');
           await page.getByTestId('listen-source-'+source).click();if(source==='conversation')await page.getByTestId('theme-level-3').click();
           await page.getByTestId('theme-1').click();assert.equal(await page.evaluate(()=>window.route.name),'Listening');assert.equal(await page.evaluate(()=>window.route.params.source??'conversation'),source);if(source==='conversation')assert.equal(await page.evaluate(()=>window.route.params.levelId),3);
@@ -692,7 +709,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           await page.getByTestId('theme-1').click();await page.getByTestId('free-bank').waitFor();assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));await page.screenshot({path:path.join(work,`previews/conversation-puzzle-${lang}-${width}.png`)});
         }
         await page.evaluate(l=>window.boot(l,true),lang);assert.equal(await page.getByTestId('home-settings').count(),0);
-        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: 30 conversation puzzle themes × 3 levels, distractors/reveal/next/back/resume/solve, grammar-first listening routes and 320/390 layouts.`);
+        assert.deepEqual(errors,[]);console.log(`PASS ${lang}: 30 conversation puzzle themes × 3 levels, distractors/reveal/next/back/resume/solve, conversation-left listening routes and 320/390 layouts.`);
       }
       return;
     }
@@ -745,6 +762,8 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.setViewportSize({width:390,height:844});await page.evaluate(l=>window.boot(l,true),lang);
         const ids=await page.locator('[data-testid^="home-"]').evaluateAll(es=>es.map(e=>e.dataset.testid));assert.equal(ids.indexOf('home-vocabulary'),ids.indexOf('home-grammar-lessons')+1);
         await page.getByTestId('home-vocabulary').click();assert.equal(await page.evaluate(()=>window.route.name),'VocabCategory');
+        await page.getByTestId('vocab-library-intro').waitFor();
+        assert.equal(await page.locator('img').count(),0);
         await page.getByTestId('vocab-direction-ja2ne').click();assert.equal(await page.getByTestId('vocab-direction-ja2ne').getAttribute('aria-selected'),'true');
         const directionBox=await page.getByTestId('vocab-direction-ja2ne').boundingBox(),descriptionBox=await page.getByTestId('vocab-theme-description').boundingBox();assert(directionBox.y>=descriptionBox.y+descriptionBox.height);
         await page.screenshot({path:path.join(work,`previews/vocabulary-themes-${lang}.png`)});
@@ -757,6 +776,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         for(const width of [320,390]){await page.setViewportSize({width,height:844});await page.evaluate(l=>window.boot(l,false,{name:'VocabCategory'},1.4),lang);for(const direction of ['ne2ja','ja2ne']){const box=await page.getByTestId('vocab-direction-'+direction).boundingBox();assert(box.width>=44&&box.height>=44);}assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2));}
         await page.evaluate(()=>{window.data={...window.data,vocabularyQuiz:false};window.redraw();});assert.equal(await page.locator('[data-testid^="vocab-direction-"]').count(),0,'Legacy apps do not receive quiz controls');
         await page.evaluate(()=>window.navigate('Theme',{mode:'listening'}));assert((await page.locator('body').innerText()).includes(strings[lang].themeScreen.headerListen));
+        if(strings[lang].nav.listening!==strings[lang].themeScreen.modeTitleListen)assert.equal(await page.getByText(strings[lang].themeScreen.modeTitleListen,{exact:true}).count(),0);
         assert.deepEqual(errors,[]);
       }
       console.log('PASS home vocabulary below lessons, real category/quiz/back routes, persisted directions above themes, bottom Settings route, bilingual listening introduction.');return;
@@ -1049,8 +1069,15 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           [{mode:'listening',grammarFirst:true},'listen-source-conversation','rgb(228, 242, 235)'],
           [{mode:'grammar',composition:true,guidesOnHome:true},'composition-conversation','rgb(232, 240, 250)'],
         ];
+        const assertSourcePositions=async tab=>{
+          const conversation=await by(tab).boundingBox();
+          const grammar=await by(tab.replace(/-conversation$/,'-grammar')).boundingBox();
+          assert(conversation && grammar && conversation.x+conversation.width<=grammar.x+1,
+            `${lang} ${tab}: conversation must be physically left of grammar`);
+        };
         for(const [params,tab] of modes){
           await page.evaluate(params=>window.navigate('Theme',params),params);
+          await assertSourcePositions(tab);
           assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(32, 56, 47)');
           await by(tab).click();
           assert.equal(await by(tab).getAttribute('aria-selected'),'true');
@@ -1065,8 +1092,9 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(230, 240, 238)');
         await page.evaluate(()=>window.navigate('HomeTab',{}));
         assert.equal(await by('home-masthead').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(230, 240, 238)');
-        for(const [params,,color] of modes){
+        for(const [params,tab,color] of modes){
           await page.evaluate(params=>window.navigate('Theme',params),params);
+          await assertSourcePositions(tab);
           assert.equal(await masthead.evaluate(el=>getComputedStyle(el).backgroundColor),color);
         }
       }
@@ -1090,12 +1118,24 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           return window.boot(lang,false,{name:'HomeTab'},1.4);
         },{lang,design});
         const cards=by('home-content-grid').getByRole('button');
-        assert.equal(await cards.count(),6);
+        assert.equal(await cards.count(),7);
+        assert.equal(await by('home-masthead').getByRole('button').count(),0);
+        assert.equal(await by('home-similar-sounds-badge').innerText(),strings[lang].similarSounds.newBadge);
+        await by('home-similar-sounds').click();
+        const pairs=[['काम','खाम'],['ताल','थाल'],['पानी','बानी']];
+        for(const word of pairs.flat()){
+          const entry=overlays[lang].nepaliDictionary.entries.find(e=>e.ne===word);
+          assert(entry?.audio?.url);
+          await by('similar-sound-'+word).click();
+          await page.waitForFunction(url=>window.events.at(-1)?.[0]==='audio' && window.events.at(-1)?.[1]?.uri===url,entry.audio.url);
+        }
+        await by('study-back').click();
+        assert.equal(await page.evaluate(()=>window.activeAudio.size),0);
         for(const card of await cards.all()){
           assert.deepEqual(await card.evaluate(el=>{
             const cardStyle=getComputedStyle(el);
             const icon=getComputedStyle(el.firstElementChild);
-            const title=getComputedStyle(el.lastElementChild);
+            const title=getComputedStyle(el.children[1]);
             return {surface:cardStyle.backgroundColor,line:cardStyle.borderColor,radius:cardStyle.borderRadius,icon:icon.backgroundColor,ink:title.color};
           }),{surface:appearance.surface,line:appearance.line,radius:appearance.radius,icon:appearance.icon,ink:appearance.ink},`${lang} ${design} ${await card.getAttribute('data-testid')}`);
         }
@@ -1129,7 +1169,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.getByText('Release details',{exact:true}).waitFor();
       }
       assert.deepEqual(errors,[]);
-      console.log('PASS: all six cards match Minimal and Forest at 320×568 and 390×844 in four languages. Unread indicator, persistence, and direct article opening work.');
+      console.log('PASS: all seven cards match Minimal and Forest at 320×568 and 390×844 in four languages. Pronunciation audio and announcement interactions work.');
       return;
     }
     if(process.argv.includes('--home-learning-updates')){

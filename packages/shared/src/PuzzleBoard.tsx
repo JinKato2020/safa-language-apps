@@ -34,7 +34,7 @@ function DraggableWord({ token, selected, disabled, testID, register, tap, start
       accessibilityActions={[{name:'activate'},...(earlier?[{name:'earlier',label:trCopy('c_da9485c9a6f6', '前へ移動', 'Move earlier')}]:[]),...(later?[{name:'later',label:trCopy('c_edc691a67452', '後ろへ移動', 'Move later')}]:[])]}
       onAccessibilityAction={e=>{if(e.nativeEvent.actionName==='earlier')earlier?.();else if(e.nativeEvent.actionName==='later')later?.();else if(e.nativeEvent.actionName==='activate')tap();}}
       onPressIn={()=>{suppressTap.current=false;}} onLongPress={e=>begin({x:e.nativeEvent.pageX,y:e.nativeEvent.pageY})} delayLongPress={180} onPress={()=>{if(!suppressTap.current)tap();}}
-      style={[styles.tile,selected&&styles.chosen,disabled&&styles.used]}><Text style={[styles.nepali,ss(24,36)]}>{token.text}</Text>{!selected&&!!token.roman&&<Text style={[styles.muted,ss(13,21)]}>{token.roman}</Text>}</Pressable>
+      style={[styles.tile,selected&&styles.chosen,disabled&&styles.used]}><Text style={[styles.nepali,ss(22,30)]}>{token.text}</Text>{!selected&&!!token.roman&&<Text style={[styles.muted,ss(12,17)]}>{token.roman}</Text>}</Pressable>
   </View>;
 }
 
@@ -74,5 +74,7 @@ export function PuzzleBoard({tokens,order,limit,onChange,onDragging,disabled=fal
 
 const styles=StyleSheet.create({
   board:{gap:14,position:'relative',direction:'ltr'},answer:{backgroundColor:'#f0fdfa',borderWidth:2,borderColor:'#86bdb4',padding:14,borderRadius:18,minHeight:122,gap:12},answerHeading:{flexDirection:'row',justifyContent:'space-between',gap:10},answerLabel:{color:'#126b60',fontWeight:'700'},placeholder:{color:'#62827b',paddingVertical:9},
-  cards:{flexDirection:'row',flexWrap:'wrap',gap:8},bank:{paddingVertical:8,minHeight:70},tileWrap:{maxWidth:'100%'},tile:{minHeight:48,paddingHorizontal:13,paddingVertical:8,borderWidth:1,borderColor:'#b9c6d8',backgroundColor:'#fff',borderRadius:12},chosen:{backgroundColor:'#fff',borderColor:'#126b60',borderBottomWidth:3},nepali:{color:'#153f3b',fontWeight:'600'},muted:{color:'#64748b'},used:{opacity:.28},dropActive:{borderColor:'#0f766e',backgroundColor:'#dff7ef'},returnActive:{backgroundColor:'#ede9fe',borderRadius:14},marker:{position:'absolute',width:4,borderRadius:2,backgroundColor:'#0f766e',zIndex:9},ghost:{position:'absolute',paddingHorizontal:14,paddingVertical:7,borderRadius:12,backgroundColor:'#0f766e',elevation:12,shadowColor:'#153f3b',shadowOpacity:.25,shadowRadius:8,zIndex:10},ghostText:{color:'#fff',fontWeight:'700'},
+  cards:{flexDirection:'row',flexWrap:'wrap',gap:8},bank:{paddingVertical:8,minHeight:70},tileWrap:{maxWidth:'100%'},
+  tile:{minWidth:44,minHeight:44,justifyContent:'center',alignItems:'center',paddingHorizontal:9,paddingVertical:4,borderWidth:1,borderColor:'#b9c6d8',backgroundColor:'#fff',borderRadius:9},
+  chosen:{backgroundColor:'#fff',borderColor:'#126b60',borderBottomWidth:3},nepali:{color:'#153f3b',fontWeight:'600'},muted:{color:'#64748b'},used:{opacity:.28},dropActive:{borderColor:'#0f766e',backgroundColor:'#dff7ef'},returnActive:{backgroundColor:'#ede9fe',borderRadius:14},marker:{position:'absolute',width:4,borderRadius:2,backgroundColor:'#0f766e',zIndex:9},ghost:{position:'absolute',paddingHorizontal:14,paddingVertical:7,borderRadius:12,backgroundColor:'#0f766e',elevation:12,shadowColor:'#153f3b',shadowOpacity:.25,shadowRadius:8,zIndex:10},ghostText:{color:'#fff',fontWeight:'700'},
 });

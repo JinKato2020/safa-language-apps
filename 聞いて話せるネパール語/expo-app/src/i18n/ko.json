@@ -20,6 +20,14 @@
     "questionsCount": "{{count}}문제",
     "wordsCount": "단어 {{count}}개"
   },
+  "similarSounds": {
+    "title": "비슷한 발음",
+    "newBadge": "새 기능",
+    "heading": "비슷한 소리 비교하기",
+    "instructions": "두 단어를 번갈아 눌러 첫소리를 비교해 보세요.",
+    "breath": "두 번째 단어는 자음 뒤에 숨이 더 세게 나옵니다.",
+    "voicing": "첫소리 p와 b의 차이를 들어 보세요."
+  },
   "nav": {
     "conversation": "회화",
     "grammar": "문법",

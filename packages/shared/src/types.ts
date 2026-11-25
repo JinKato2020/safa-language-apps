@@ -85,6 +85,7 @@ export type RootStackParamList = {
   CultureBreak: undefined;
   LearningPath: undefined;
   LettersSounds: undefined;
+  SimilarSounds: undefined;
   VocabCategory: { posterOnly?: boolean; fromHome?: boolean } | undefined;
   VocabDirection: { categoryId: number };
   Flashcard: { categoryId: number; direction: 'ne2ja' | 'ja2ne' };

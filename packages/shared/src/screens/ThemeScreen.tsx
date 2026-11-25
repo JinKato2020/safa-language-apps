@@ -19,6 +19,7 @@ import { TabMasthead, tabPalette } from '../tabAppearance';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'Theme'>;
 type R = RouteProp<RootStackParamList, 'Theme'>;
+const themeSources = ['conversation', 'grammar'] as const;
 
 export default function ThemeScreen() {
   const data = useAppData(), contentNames = data.CONTENT_NAMES;
@@ -72,12 +73,12 @@ export default function ThemeScreen() {
     headerText = t('themeScreen.headerConv');
   }
 
-  // 聞き流しは会話/文法トグルに依らず常に「聞き流しモード」見出し
+  // Use the same listening title for both content sources.
   let modeTitle: string;
   if (mode === 'grammar') {
     modeTitle = t('themeScreen.modeTitleGrammar');
   } else if (mode === 'listening') {
-    modeTitle = t('themeScreen.modeTitleListen');
+    modeTitle = data.targetLang === 'ne' ? t('nav.listening') : t('themeScreen.modeTitleListen');
   } else if (mode === 'sakubun') {
     modeTitle = t('sakubun.title');
   } else {
@@ -138,13 +139,19 @@ export default function ThemeScreen() {
             <Text style={[styles.modeTitle, ss(20)]}>{modeTitle}</Text>
             <Text style={[styles.desc, ss(14, 21)]}>{headerText}</Text>
           </>}
-          {(composition || puzzleOnly) && <View style={[styles.sourceToggle, palette && styles.refinedToggle]}>{(['grammar', 'conversation'] as const).map(value => <Pressable key={value} testID={`${puzzleOnly ? 'puzzle' : 'composition'}-${value}`} accessibilityRole="tab" accessibilityState={{ selected: mode === value }} style={[styles.sourceTab, mode === value && styles.sourceTabOn, palette && styles.refinedSegment, palette && { backgroundColor: mode === value ? palette.accent : palette.surface, borderColor: mode === value ? palette.accent : palette.line }]} onPress={() => navigation.setParams({ mode: value })}><Text style={[styles.sourceTabText, mode === value && styles.sourceTabTextOn, palette && { color: mode === value ? palette.onAccent : palette.ink }, ss(14)]}>{t(`nav.${value}`)}</Text></Pressable>)}</View>}
-          {puzzleOnly && learning?.error && <Text accessibilityRole="alert" style={[styles.desc, { color: palette?.danger ?? '#9f1239' }]}>{trCopy('c_10a188e49af5', '保存できませんでした。テーマをタップして再試行してください。', 'Could not save. Please tap the theme to try again.')}</Text>}
-          {isListening && <View style={[styles.sourceToggle, palette && styles.refinedToggle]}>
-            {(grammarFirst ? ['grammar', 'conversation'] as const : ['conversation', 'grammar'] as const).map(value => <Pressable key={value} testID={`listen-source-${value}`} accessibilityRole="tab" accessibilityState={{ selected: listenSource === value }} style={[styles.sourceTab, listenSource === value && styles.sourceTabOn, palette && styles.refinedSegment, palette && { backgroundColor: listenSource === value ? palette.accent : palette.surface, borderColor: listenSource === value ? palette.accent : palette.line }]} onPress={() => navigation.setParams({ source: value })}>
-              <Text style={[styles.sourceTabText, listenSource === value && styles.sourceTabTextOn, palette && { color: listenSource === value ? palette.onAccent : palette.ink }, ss(14)]}>{t(value === 'grammar' ? 'listenSource.grammarName' : 'listenSource.convName')}</Text>
-            </Pressable>)}
+          {(puzzleOnly || composition || isListening) && <View style={[styles.sourceToggle, data.targetLang === 'ne' && styles.fixedSourceOrder, palette && styles.refinedToggle]}>
+            {themeSources.map(value => {
+              const selected = (isListening ? listenSource : mode) === value;
+              const label = isListening ? (value === 'grammar' ? 'listenSource.grammarName' : 'listenSource.convName') : `nav.${value}`;
+              return <Pressable key={value} testID={`${isListening ? 'listen-source' : tab}-${value}`} accessibilityRole="tab"
+                accessibilityState={{ selected }} onPress={() => navigation.setParams(isListening ? { source: value } : { mode: value })}
+                style={[styles.sourceTab, selected && styles.sourceTabOn, palette && styles.refinedSegment,
+                  palette && { backgroundColor: selected ? palette.accent : palette.surface, borderColor: selected ? palette.accent : palette.line }]}>
+                <Text style={[styles.sourceTabText, selected && styles.sourceTabTextOn, palette && { color: selected ? palette.onAccent : palette.ink }, ss(14)]}>{t(label)}</Text>
+              </Pressable>;
+            })}
           </View>}
+          {puzzleOnly && learning?.error && <Text accessibilityRole="alert" style={[styles.desc, { color: palette?.danger ?? '#9f1239' }]}>{trCopy('c_10a188e49af5', '保存できませんでした。テーマをタップして再試行してください。', 'Could not save. Please tap the theme to try again.')}</Text>}
           {showLevelPills && (
             <View style={styles.levelPillRow}>
               {LEVELS.map(lv => (
@@ -222,6 +229,7 @@ const styles = StyleSheet.create({
   title: { fontSize: 28, fontWeight: '700', color: colors.ink, marginBottom: spacing.xs, letterSpacing: -0.5 },
   desc: { fontSize: 14, color: colors.inkMute, lineHeight: 21, marginBottom: spacing.md },
   sourceToggle: { flexDirection: 'row', gap: spacing.xs, marginBottom: spacing.md },
+  fixedSourceOrder: { direction: 'ltr' },
   refinedToggle: { gap: 6, marginBottom: 4 },
   refinedSegment: { flex: 1, minWidth: 0, borderRadius: 11, paddingHorizontal: 10 },
   sourceTab: {

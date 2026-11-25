@@ -17,7 +17,7 @@ import { TabMastheadFrame, tabCardRadius, tabPalette } from '../tabAppearance';
 const EMPTY = emptyStudyState();
 
 export default function LearningHomeScreen({ accessory }: { accessory?: ReactNode }) {
-  const nav = useNavigation<any>(), { lang , copy: trCopy } = useI18n(), { top } = useSafeAreaInsets();
+  const nav = useNavigation<any>(), { lang, t, copy: trCopy } = useI18n(), { top } = useSafeAreaInsets();
   const data = useAppData(), learning = useLearning(), hero = useHeroImage('grammar');
   const { tabDesign, practiceDirection } = useSettings();
   const palette = tabPalette('home', tabDesign);
@@ -50,12 +50,10 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
   const due = useMemo(() => reviewItems(state, data, now, 5, practiceDirection), [state, data, now, practiceDirection]);
   const resume = state.resume && (state.resume.session || !due.length) && resolveStudy(data, state.resume.item) ? state.resume : undefined;
   const action = resume ? (trCopy('c_c3e74a179b32', '前回の続きへ', 'Continue where you left off'))
-    : due.length ? (trCopy('c_534c3db39d21', `${due.length}文を復習する`, `Review ${due.length} sentences`, {p0: due.length}))
-    : (trCopy('c_0b84f22d7823', '文字と音から始める', 'Explore letters & sounds'));
+    : due.length ? trCopy('c_534c3db39d21', `${due.length}文を復習する`, `Review ${due.length} sentences`, {p0: due.length}) : null;
   const start = () => {
     if (resume) nav.navigate('Practice', practiceParams(resume.item, resume.session));
     else if (due.length) nav.navigate('Practice', practiceParams(due[0], { kind: 'review', items: due, ...(due[0].exerciseId ? {} : { direction: practiceDirection }) }));
-    else nav.navigate('LettersSounds');
   };
   const ratio = hero == null ? 3 : (() => { const asset = Image.resolveAssetSource(hero); return asset.width / asset.height; })();
 
@@ -72,13 +70,6 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
         <Text testID="home-motto" accessibilityRole="header" style={[styles.headline, { fontSize: displaySize, lineHeight: displaySize + 6, color: palette.mastInk }]}>
           Small steps build great <Text style={[styles.strength, { color: palette.mastAccent }]}>strength.</Text>
         </Text>
-        <Pressable accessibilityRole="button" accessibilityLabel={action} onPress={start} style={({ pressed }) => [
-          styles.primary, { backgroundColor: palette.accent }, palette.dark && styles.forestPrimary,
-          room > 0 && { marginTop: Math.round(8 + room * 5), minHeight: Math.round(44 + room * 8) },
-          pressed && styles.pressed,
-        ]}>
-          <Text style={[styles.primaryText, { color: palette.onAccent }]}>{action}</Text><Text accessibilityElementsHidden importantForAccessibility="no" style={[styles.arrow, { color: palette.onAccent }]}>↗</Text>
-        </Pressable>
       </View>
   </>;
 
@@ -100,21 +91,28 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
         {hasCulture && <HomeTile id="home-culture-break" title={lang === 'ja' ? 'ひと休み' : readingCopy(lang).breaks} kind="culture" onPress={() => nav.navigate('CultureBreak')} />}
         {accessory}
       </View>}
+      <View style={[styles.tileRow, { minHeight: shortScreen ? 44 : 56 }]}>
+        <HomeTile id="home-similar-sounds" title={t('similarSounds.title')} badge={t('similarSounds.newBadge')} kind="sounds" onPress={() => nav.navigate('SimilarSounds')} />
+      </View>
     </View>
+    {action && <Pressable accessibilityRole="button" accessibilityLabel={action} onPress={start}
+      style={({ pressed }) => [styles.studyAction, { backgroundColor: palette.surface, borderColor: palette.line }, pressed && styles.pressed]}>
+      <Text style={[styles.studyActionText, { color: palette.accent }]}>{action}</Text>
+    </Pressable>}
     {learning?.error && <Pressable accessibilityRole="button" onPress={learning.retry} style={[styles.error, { backgroundColor: palette.surface, borderColor: palette.line }]}><Text style={[styles.errorText, { color: palette.danger }]}>{trCopy('c_70a7891dec6e', '学習記録を読み込み・保存できませんでした。タップして再試行。', 'Could not load or save progress. Tap to retry.')}</Text></Pressable>}
   </ScrollView>;
 }
 
-export function HomeTile({ id, title, kind, onPress, unreadLabel }: {
-  id: string; title: string; kind: 'letters' | 'grammar' | 'vocabulary' | 'dictionary' | 'culture' | 'announcement';
-  onPress: () => void; unreadLabel?: string;
+export function HomeTile({ id, title, kind, onPress, unreadLabel, badge }: {
+  id: string; title: string; kind: 'letters' | 'grammar' | 'vocabulary' | 'dictionary' | 'culture' | 'announcement' | 'sounds';
+  onPress: () => void; unreadLabel?: string; badge?: string;
 }) {
   const { width, height } = useWindowDimensions();
   const { tabDesign } = useSettings();
   const palette = tabPalette('home', tabDesign);
   const iconInk = palette.accent;
   const compact = width < 360;
-  return <Pressable testID={id} accessibilityRole="button" accessibilityLabel={unreadLabel ? `${title} · ${unreadLabel}` : title} onPress={onPress}
+  return <Pressable testID={id} accessibilityRole="button" accessibilityLabel={[title, badge, unreadLabel].filter(Boolean).join(' · ')} onPress={onPress}
     style={({ pressed }) => [
       styles.tile, palette.dark && styles.forestTile,
       { backgroundColor: pressed ? palette.soft : palette.surface, borderColor: pressed ? palette.edge : palette.line },
@@ -127,11 +125,13 @@ export function HomeTile({ id, title, kind, onPress, unreadLabel }: {
           : kind==='vocabulary' ? <><Rect x="6" y="3" width="15" height="17" rx="3"/><Path d="M3 7v12a3 3 0 0 0 3 3M10 8h7M10 12h5"/></>
           : kind==='culture' ? <Path d="M3 8h13v6a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Zm13 2h2a3 3 0 0 1 0 6h-2M2 21h19M7 5V3m5 2V3"/>
           : kind==='announcement' ? <Path d="M5 17h14l-2-3V9a5 5 0 1 0-10 0v5Zm5 3a2 2 0 0 0 4 0"/>
+          : kind==='sounds' ? <Path d="M3 10v4m4-8v12m5-15v18m5-14v10m4-7v4"/>
           : <><Path d="M4 3h12a2 2 0 0 1 2 2v4M4 3v17M4 3a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h7M7 7h7M7 11h3"/><Circle cx="16" cy="15" r="4"/><Path d="m19 18 3 3"/></>}
       </Svg>}
       {unreadLabel && <View testID={`${id}-unread`} style={[styles.unreadDot, { backgroundColor: palette.unread, borderColor: palette.surface }]} />}
     </View>
     <Text style={[styles.tileTitle, compact && styles.compactTileTitle, { color: palette.ink }]}>{title}</Text>
+    {badge && <Text testID={`${id}-badge`} style={[styles.featureBadge, { color: palette.accent, backgroundColor: palette.soft }]}>{badge}</Text>}
   </Pressable>;
 }
 
@@ -144,9 +144,8 @@ const styles = StyleSheet.create({
   shortHeroBody: { paddingVertical: 8 },
   headline: { fontWeight: '600', letterSpacing: -.5 },
   strength: { fontWeight: '800' },
-  primary: { marginTop: 8, borderRadius: 11, minHeight: 44, paddingHorizontal: 12, paddingVertical: 6, flexDirection: 'row', alignItems: 'center', gap: 8 },
-  forestPrimary: { borderRadius: 99 },
-  primaryText: { flex: 1, fontSize: 15, lineHeight: 23, fontWeight: '700' }, arrow: { fontSize: 23, lineHeight: 28 },
+  studyAction: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 12, borderWidth: 1, borderRadius: tabCardRadius },
+  studyActionText: { fontSize: 14, lineHeight: 22, fontWeight: '700' },
   grid: { gap: 8 }, tileRow: { flexDirection: 'row', alignItems: 'stretch', gap: 8 },
   shortGrid: { gap: 5 },
   tile: { flex: 1, minWidth: 0, minHeight: 52, paddingHorizontal: 11, paddingVertical: 7, borderWidth: 1, borderRadius: tabCardRadius, gap: 9, flexDirection: 'row', alignItems: 'center' },
@@ -159,6 +158,7 @@ const styles = StyleSheet.create({
   compactTile: { paddingHorizontal: 7, gap: 5 }, compactTileTitle: { fontSize: 14, lineHeight: 19 },
   shortTile: { minHeight: 44, paddingVertical: 3 },
   tileTitle: { flex: 1, fontSize: 15, lineHeight: 20, fontWeight: '700' },
+  featureBadge: { fontSize: 11, lineHeight: 16, fontWeight: '700', borderRadius: 8, overflow: 'hidden', paddingHorizontal: 7, paddingVertical: 2 },
   unreadDot: { position: 'absolute', top: -3, end: -3, width: 12, height: 12, borderRadius: 6, borderWidth: 2 },
   error: { padding: 16, borderWidth: 1, borderRadius: tabCardRadius },
   errorText: { fontSize: 13, lineHeight: 21 },
