@@ -22,12 +22,7 @@
   },
   "similarSounds": {
     "title": "Similar sounds",
-    "newBadge": "New",
-    "heading": "Compare similar sounds",
-    "instructions": "Tap the two words in turn and listen for the difference.",
-    "water": "पानी means ‘water’ and पनि means ‘also’. Listen to the first vowel and notice how each word is used.",
-    "breath": "In the second word, listen for a stronger puff of air after the consonant.",
-    "voicing": "Listen for the difference between p and b at the start."
+    "newBadge": "New"
   },
   "nav": {
     "conversation": "Conversation",

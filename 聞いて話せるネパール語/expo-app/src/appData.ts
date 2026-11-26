@@ -10,6 +10,7 @@ export type NeAudioMaps = { conv: Record<string, number | string>; gram: Record<
 
 // core.json の形 (packLoader が取得して渡す)。
 export type NeCoreJson = {
+  similarSounds?: NeCore['similarSounds'];
   curriculumRevision?: number;
   themes: any[];
   levels: any[];
@@ -29,6 +30,7 @@ const EMPTY_CORE: NeCoreJson = {
 
 export function makeNeCore(core: NeCoreJson = EMPTY_CORE, audio: NeAudioMaps = { conv: {}, gram: {} }): NeCore {
   return {
+    similarSounds: core.similarSounds,
     themes: core.themes as any,
     levels: core.levels as any,
     wordCategories: core.wordCategories as any,

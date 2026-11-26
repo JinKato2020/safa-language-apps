@@ -22,12 +22,7 @@
   },
   "similarSounds": {
     "title": "似た発音",
-    "newBadge": "新機能",
-    "heading": "似た音を聴き比べる",
-    "instructions": "2つの単語を交互に押して、音の違いを聴き比べよう。",
-    "water": "पानी は「水」、पनि は「〜も」。最初の母音と、文の中での使い方に注目しよう。",
-    "breath": "右の音は、子音の直後に息が強く出ます。",
-    "voicing": "語頭の p と b を聴き比べよう。"
+    "newBadge": "新機能"
   },
   "nav": {
     "conversation": "会話",

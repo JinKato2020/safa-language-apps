@@ -9,6 +9,7 @@ import { makeNeCore } from '../appData';
 import { textFiles, validateManifest, validateContent, type ContentFile, type ContentManifest, type AudioArchive } from './otaModel';
 import { extractAudio, hashText, workBudget } from './otaWork';
 import coreBaseline from '../../data/ota-baseline/core.json';
+import bundledSounds from '../../data/similar-sounds.json';
 import jaBaseline from '../../data/overlays/ja.json';
 import enBaseline from '../../data/overlays/en.json';
 import koBaseline from '../../data/overlays/ko.json';
@@ -28,6 +29,9 @@ const bundled=new Map<string,ContentSnapshot>();
 export type ContentSnapshot={version:number;data:AppData};
 type AudioIndex={version:number;files:Record<string,string>};
 const options={version:app.expo.version,review:{iosAppId:'6771720689',androidPackage:app.expo.android.package},quizAudio,puzzleAlternatives};
+const bundledSoundWords=new Set(bundledSounds.groups.flatMap(group=>[
+  ...(group.exampleWord ? [group.exampleWord] : []), ...group.pairs.filter(pair=>!('source' in pair)).flatMap(pair=>[pair.first,pair.second])
+]));
 
 function compose(core:any,overlay:any,ne:Record<string,string>={},l1:Record<string,string>={}):AppData {
   const maps=(files:Record<string,string>)=>{
@@ -35,7 +39,20 @@ function compose(core:any,overlay:any,ne:Record<string,string>={},l1:Record<stri
     for(const [name,uri]of Object.entries(files)){const id=name.replace(/\.mp3$/,'');(id.split('-').length===3?conv:gram)[id]=uri;}return{conv,gram};
   };
   const a=maps(ne),b=maps(l1);
-  return composePack(makeNeCore(core,a),{...overlay,nativeLang:overlay.l1,l1Audio:b.conv,l1GrammarAudio:b.gram},options);
+  let dictionary=overlay.nepaliDictionary;
+  // Older content revisions predate the lesson. Supply any missing words for its bundled fallback.
+  if (core.similarSounds===undefined) {
+    const baseline=bundledOverlay(overlay.l1).nepaliDictionary;
+    if (!dictionary) dictionary=baseline;
+    else if (baseline && dictionary!==baseline) {
+      const present=new Set(dictionary.entries.map((entry: {ne:string})=>entry.ne));
+      const missing=baseline.entries.filter(entry=>bundledSoundWords.has(entry.ne) && !present.has(entry.ne));
+      if (missing.length) dictionary={...dictionary,entries:[...dictionary.entries,...missing]};
+    }
+  }
+  const resolvedCore=makeNeCore({...core,similarSounds:core.similarSounds ?? bundledSounds},a);
+  const lettersSounds=overlay.lettersSounds ?? (core.similarSounds===undefined ? bundledOverlay(overlay.l1).lettersSounds : undefined);
+  return composePack(resolvedCore,{...overlay,lettersSounds,nepaliDictionary:dictionary,nativeLang:overlay.l1,l1Audio:b.conv,l1GrammarAudio:b.gram},options);
 }
 function bundledOverlay(lang:string) {
   return lang==='ar'?arBaseline:lang==='ko'?koBaseline:lang==='en'?enBaseline:jaBaseline;

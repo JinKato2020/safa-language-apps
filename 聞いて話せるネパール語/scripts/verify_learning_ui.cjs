@@ -11,6 +11,7 @@ modules.entitlement=compile(source('packages/shared/src/entitlement.tsx'));
 modules.compose=compile(source('聞いて話せるネパール語/expo-app/src/pack/compose.ts'));
 const quizAudio=Object.fromEntries([...source('聞いて話せるネパール語/expo-app/src/pack/quizAudio.ts').matchAll(/^\s*(".*"): require\(/gm)].map((match,i)=>[JSON.parse(match[1]),i+1]));
 const core=JSON.parse(source('聞いて話せるネパール語/expo-app/data/ota-baseline/core.json'));
+core.similarSounds=JSON.parse(source('聞いて話せるネパール語/expo-app/data/similar-sounds.json'));
 const overlays={},strings={};for(const lang of ['ja','en']){overlays[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/data/overlays/${lang}.json`));strings[lang]=JSON.parse(source(`聞いて話せるネパール語/expo-app/src/i18n/${lang}.json`));}
 if(process.argv.some(a=>a.startsWith('--korean-'))){
   overlays.ko=JSON.parse(source('聞いて話せるネパール語/expo-app/data/overlays/ko.json'));strings.ko=JSON.parse(source('聞いて話せるネパール語/expo-app/src/i18n/ko.json'));
@@ -143,6 +144,10 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
   const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
   try {
     const page=await browser.newPage();page.setDefaultTimeout(6000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
+    const openSavedPractice=()=>page.evaluate(()=>{
+      const {item,session}=JSON.parse(localStorage.getItem('test-study')).resume;
+      window.navigate('Practice',require('learning').practiceParams(item,session));
+    });
     await page.goto('file:///'+path.join(work,'index.html').replaceAll('\\','/'));
     if(studyModes){
       const assetModule={exports:{}};
@@ -212,7 +217,12 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           localStorage.setItem('test-settings',JSON.stringify({...prefs,practiceDirection:'ne2ja'}));
           return window.boot(lang,false);
         },lang);
-        await page.getByRole('button',{name:strings[lang].courseCopy?.c_534c3db39d21?.replace('{{p0}}','1')??(lang==='en'?'Review 1 sentences':'1文を復習する'),exact:true}).click();
+        assert.equal(await by('learning-home').getByRole('button').count(),6,'Stored ratings add no home button');
+        await page.evaluate(()=>{
+          const {reviewItems,practiceParams}=require('learning');
+          const items=reviewItems(JSON.parse(localStorage.getItem('test-study')),window.data,Date.now(),5,'ne2ja');
+          window.navigate('Practice',practiceParams(items[0],{kind:'review',items,direction:'ne2ja'}));
+        });
         assert.equal(await page.evaluate(()=>window.route.params.studySession.direction),'ne2ja');
         await by('composition-card').click();await by('composition-vocabulary').waitFor();await by('composition-next').click();
         await page.getByText(copy.finish,{exact:true}).waitFor();
@@ -690,7 +700,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           const next=await page.evaluate(()=>window.route.params.studySession);assert.equal(next.items[0].mode,'conversation');assert.equal(next.items[0].levelId,level);assert.notEqual(next.items[0].index,ref.index);assert.equal(next.freePractice.answered,1);
           await page.getByTestId('study-back').click();assert.equal(await page.getByTestId('puzzle-conversation').getAttribute('aria-selected'),'true');assert.equal(await page.getByTestId('theme-level-'+level).getAttribute('aria-selected'),'true');
         }
-        await page.evaluate(l=>window.boot(l,false),lang);await page.getByRole('button',{name:lang==='en'?'Continue where you left off':'前回の続きへ',exact:true}).click();await page.getByTestId('free-bank').waitFor();assert.equal(await page.evaluate(()=>window.route.params.studySession.items[0].mode),'conversation');
+        await page.evaluate(l=>window.boot(l,false),lang);await openSavedPractice();await page.getByTestId('free-bank').waitFor();assert.equal(await page.evaluate(()=>window.route.params.studySession.items[0].mode),'conversation');
         const question=await page.evaluate(()=>{const s=window.route.params.studySession;return require('freePractice').freePracticeQuestion(window.data,s.items[0],s.choiceSeed);});
         await page.getByTestId('free-token-extra-0').click();for(let i=1;i<question.answerWords.length;i++)await page.getByTestId('free-token-word-'+i).click();assert.equal(await page.getByTestId('free-feedback').count(),0);
         await page.getByTestId('free-remove-0').click();await page.getByTestId('free-token-word-0').click();
@@ -735,7 +745,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
           assert.equal(await page.locator('[data-testid^="free-mode-"]').count(),0);
           await page.getByTestId('study-back').click();assert.equal(await page.evaluate(()=>window.route.name),'Theme');
         }
-        await page.evaluate(l=>window.boot(l,false),lang);await page.getByRole('button',{name:lang==='en'?'Continue where you left off':'前回の続きへ',exact:true}).click();await page.getByTestId('free-bank').waitFor();assert.equal(await page.locator('[data-testid^="free-mode-"]').count(),0,'Puzzle-only mode survives saved resume');
+        await page.evaluate(l=>window.boot(l,false),lang);await openSavedPractice();await page.getByTestId('free-bank').waitFor();assert.equal(await page.locator('[data-testid^="free-mode-"]').count(),0,'Puzzle-only mode survives saved resume');
         for(const mode of ['grammar','conversation']){
           await page.evaluate(l=>window.boot(l,true,{name:'Theme',params:{mode:'grammar',composition:true,guidesOnHome:true}}),lang);
           await page.getByTestId('composition-'+mode).click();assert.equal(await page.getByTestId('composition-'+mode).getAttribute('aria-selected'),'true');
@@ -785,7 +795,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
     if(process.argv.includes('--legacy-free-resume')){
       for(const lang of ['ja','en'])for(const position of [0,5,10]){
         await page.evaluate(({lang,position})=>{const old=require('practicePool').createPracticeSession(require('learning').emptyStudyState(),window.data.LEARNING_PATH,1,require('practicePool').seededRandom(7));old.session.position=position;old.session.answered=old.session.items.slice(0,position).map((r,i)=>require('practicePool').practiceTaskKey(old.session,r,i));old.state.resume={item:old.session.items[position],session:old.session};localStorage.setItem('test-study',JSON.stringify(old.state));return window.boot(lang,false);},{lang,position});
-        await page.getByRole('button',{name:lang==='en'?'Continue where you left off':'前回の続きへ',exact:true}).click();
+        await openSavedPractice();
         const old=await page.evaluate(()=>window.route.params.studySession),stage=old.questionStages[position];
         assert.equal(await page.getByTestId('free-mode-'+stage).getAttribute('aria-selected'),'true');
         assert.equal(await page.getByTestId('free-count').textContent(),lang==='en'?`${position} practised`:`${position}問取り組んだ`);
@@ -852,7 +862,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         const before=await session();await by('free-mode-4').click();await by('free-bank').waitFor();assert.equal((await session()).freePractice.answered,25);
         assert.equal(await by('free-hint').count(),0);assert.equal(await by('free-hints').count(),0);assert.equal(await by('free-puzzle-intro').count(),1);
         const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study'))),resumed=await session();
-        await page.evaluate(l=>window.boot(l,false),lang);await b(en?'Continue where you left off':'前回の続きへ').click();assert.deepEqual(await session(),resumed);assert.equal(await by('free-puzzle-intro').count(),0);
+        await page.evaluate(l=>window.boot(l,false),lang);await openSavedPractice();assert.deepEqual(await session(),resumed);assert.equal(await by('free-puzzle-intro').count(),0);
         assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).practicePools),saved.practicePools);
         // Rapid Next cannot count twice; changing mode does not count an abandoned question.
         await by('free-model').click();await by('free-next').evaluate(el=>{el.click();el.click();});await page.waitForFunction(()=>window.route.params.studySession.freePractice.answered===26);
@@ -895,7 +905,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await by('free-token-word-1').click();await by('free-token-word-0').click();
         const first=await by('free-remove-0').boundingBox();await drag(by('free-remove-1'),{x:first.x+1,y:first.y+first.height/2});assert.deepEqual(await labels(),[e.words[0].text,e.words[1].text]);
         await page.screenshot({path:path.join(work,`previews/puzzle-${lang}-direct-cards.png`)});
-        await page.evaluate(l=>window.boot(l,false),lang);await page.getByRole('button',{name:en?'Continue where you left off':'前回の続きへ',exact:true}).click();assert.equal(await by('free-puzzle-intro').count(),0);
+        await page.evaluate(l=>window.boot(l,false),lang);await openSavedPractice();assert.equal(await by('free-puzzle-intro').count(),0);
         assert.deepEqual(errors,[]);console.log(`PASS ${lang}: real PanResponder handlers through pointer adapter, bank insertion, reorder, return to bank, cancelled outside drop, automatic judgement and one-time intro across restart.`);
       }
       return;
@@ -1144,11 +1154,18 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.evaluate(({lang,design})=>{
           localStorage.clear();
           window.testNotices=[{id:'v-next',title:'Release',body:'Release details',publishedAt:1700000000000}];
+          const {emptyStudyState,rateStudy,reviewItems}=require('learning');
+          let study=emptyStudyState();
+          for(const item of window.data.LEARNING_PATH.steps[0].items.slice(0,5))study=rateStudy(study,item,'again',1);
+          if(reviewItems(study,window.data,Date.now()).length!==5)throw Error('Expected five reviews due');
+          study.resume={item:window.data.LEARNING_PATH.steps[0].items[0]};
+          localStorage.setItem('test-study',JSON.stringify(study));
           localStorage.setItem('test-settings',JSON.stringify({tabDesign:design}));
           return window.boot(lang,false,{name:'HomeTab'},1.4);
         },{lang,design});
         const cards=by('home-content-grid').getByRole('button');
         assert.equal(await cards.count(),6);
+        assert.equal(await by('learning-home').getByRole('button').count(),7,'With saved progress, Home shows the six cards and the notice bell');
         const rows=await by('home-content-grid').evaluate(el=>[...el.children].map(row=>[...row.children].map(tile=>tile.getBoundingClientRect().width)));
         assert.equal(rows.length,3);
         for(const widths of rows)assert(widths.length===2&&Math.abs(widths[0]-widths[1])<1,JSON.stringify(rows));
@@ -1158,11 +1175,35 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         assert.equal(await by('home-similar-sounds-badge').innerText(),strings[lang].similarSounds.newBadge);
         await by('home-similar-sounds').click();
         const pairs=await page.locator('[data-testid^="similar-pair-"]').evaluateAll(nodes=>nodes.map(node=>node.dataset.testid.slice('similar-pair-'.length).split('-')));
-        assert.equal(pairs.length,24);
-        assert.deepEqual(pairs[0],['पानी','पनि']);
+        assert.deepEqual(pairs,core.similarSounds.groups.flatMap(group=>group.pairs.map(pair=>[pair.first,pair.second])));
+        // Normalize the written i/u lengths when checking for a single spoken contrast.
+        const plainVowels=word=>word.replaceAll('ी','ि').replaceAll('ू','ु');
+        const aspirates=new Map([...'कचटतपगजडदब'].map((letter,i)=>[letter,'खछठथफघझढधभ'[i]]));
+        for(const {id:group,title,exampleWord} of core.similarSounds.groups){
+          const section=by('sound-group-'+group);
+          const heading=await section.getByRole('heading').innerText();
+          assert.equal(heading.replace(/[\u2066-\u2069]/g,''),title[lang],`${lang}: ${group}`);
+          if(exampleWord){
+            const entry=overlays[lang].nepaliDictionary.entries.find(e=>e.ne===exampleWord);
+            const before=await page.evaluate(()=>window.events.length);
+            await by('similar-sound-'+group+'-'+exampleWord).click();
+            await page.waitForFunction(({before,url})=>window.events.slice(before).some(([type,src])=>type==='audio'&&src?.uri===url),{before,url:entry.audio.url});
+          }
+          if(group!=='breath'&&group!=='breathyVoice')continue;
+          const ids=await section.locator('[data-testid^="similar-pair-"]').evaluateAll(nodes=>nodes.map(node=>node.dataset.testid));
+          for(const id of ids){
+            const [left,right]=id.slice('similar-pair-'.length).split('-').map(plainVowels);
+            assert.equal(left.length,right.length);
+            const changes=[...left].map((letter,i)=>[letter,right[i]]).filter(([a,b])=>a!==b);
+            assert.equal(changes.length,1,id);
+            assert.equal(aspirates.get(changes[0][0]),changes[0][1],id);
+          }
+        }
         for(const pair of (design==='minimal'?pairs:pairs.slice(0,1)))for(const word of pair){
-          const entry=overlays[lang].nepaliDictionary.entries.find(e=>e.ne===word);
+          const isSyllable=core.similarSounds.groups.some(g=>g.pairs.some(p=>p.first===pair[0]&&p.second===pair[1]&&p.source==='syllable'));
+          const entry=isSyllable?overlays[lang].lettersSounds.combinations.flatMap(row=>row.samples).find(s=>s.ne===word):overlays[lang].nepaliDictionary.entries.find(e=>e.ne===word);
           assert(entry?.audio?.url);
+          assert(isSyllable?entry.roman:entry.senses[0][lang]?.trim(),`Missing reading or ${lang} gloss for ${word}`);
           const previous=await page.evaluate(()=>window.events.length);
           await by('similar-sound-'+pair.join('-')+'-'+word).click();
           await page.waitForFunction(({url,previous})=>window.events.length>previous && window.events.at(-1)?.[0]==='audio' && window.events.at(-1)?.[1]?.uri===url,{url:entry.audio.url,previous});
@@ -1207,7 +1248,7 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         await page.getByText('Release details',{exact:true}).waitFor();
       }
       assert.deepEqual(errors,[]);
-      console.log('PASS: six tiles and the hero bell match Minimal and Forest in four languages. All 24 sound pairs and announcement interactions work.');
+      console.log('PASS: six tiles and the hero bell match Minimal and Forest in four languages. All configured sound pairs and announcement interactions work.');
       return;
     }
     if(process.argv.includes('--home-learning-updates')){
@@ -1312,9 +1353,9 @@ fs.writeFileSync(path.join(work,'index.js'),code);fs.writeFileSync(path.join(wor
         for(let j=0;j<15;j++){
           const ref=session.items[j],e=exercises[ref.exerciseId],stage=session.questionStages[j];rated.add(ref.exerciseId);
           if(i===0&&j===1){
-            // Returning from Home must resume the same set without drawing another five.
+            // Reopening a saved session must resume the same set without drawing another five.
             const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')));
-            await page.evaluate(l=>window.boot(l,false),lang);await b(en?'Continue where you left off':'前回の続きへ').click();
+            await page.evaluate(l=>window.boot(l,false),lang);await openSavedPractice();
             const resumed=await page.evaluate(()=>window.route.params.studySession);assert.deepEqual(resumed.items,session.items);assert.equal(resumed.position,1);
             assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('test-study')).practicePools),saved.practicePools);
           }

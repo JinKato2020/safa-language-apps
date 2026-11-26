@@ -113,6 +113,7 @@ def build(output,version,archives=None,audio_updates=None):
         raw=(json.dumps(value,ensure_ascii=False,separators=(',',':'))+'\n').encode();sha=hashlib.sha256(raw).hexdigest();name=f'content-{sha}.json';(output/name).write_bytes(raw)
         return {'sha256':sha,'bytes':len(raw),'url':BASE+name}
     core=read(APP/'expo-app/data/ota-baseline/core.json');core.pop('curriculumRevision',None)
+    core['similarSounds']=read(APP/'expo-app/data/similar-sounds.json')
     manifest={'appId':'nepali','schema':1,'version':version,'core':chunk(core),'audio':audio['_core'],'languages':{}}
     for lang in ['ja','en','ko','ar']:
         overlay=read(APP/f'expo-app/data/overlays/{lang}.json');guides=overlay.pop('grammarGuide');overlay.pop('version',None);overlay.pop('curriculumRevision',None)

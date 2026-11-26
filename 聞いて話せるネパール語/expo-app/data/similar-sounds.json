@@ -1,0 +1,292 @@
+{
+  "heading": {
+    "ja": "似た音を聴き比べる",
+    "en": "Compare similar sounds",
+    "ko": "비슷한 소리 비교하기",
+    "ar": "قارن بين الأصوات المتشابهة"
+  },
+  "instructions": {
+    "ja": "2枚のカードを交互にタップ。上に書かれた音の違いに耳をすませよう。",
+    "en": "Tap the two cards in turn. Listen for the difference shown above each pair.",
+    "ko": "두 카드를 번갈아 누르며 카드 위에 표시된 소리의 차이에 집중해 보세요.",
+    "ar": "اضغط على البطاقتين بالتناوب واستمع إلى الفرق بين الصوتين المكتوبين فوقهما."
+  },
+  "groups": [
+    {
+      "id": "breath",
+      "exampleWord": "हात",
+      "title": {
+        "ja": "息の強さを聞く（無気音・有気音）",
+        "en": "Listen for the puff of air",
+        "ko": "나오는 숨의 세기",
+        "ar": "استمع إلى قوّة خروج الهواء"
+      },
+      "hint": {
+        "ja": "ताल（tāl・湖）と थाल（thāl・大皿）を交互に聞こう。th は、舌先を上の歯から離すときに息が強く抜ける、ひとつの子音。हात（hāt・手）の h は、それだけでひとつの子音です。口の前に手を置いて t と th をまねしてみよう。",
+        "en": "Alternate between ताल (tāl, lake) and थाल (thāl, plate). In th, the tongue tip releases from the upper teeth with a puff of air. The two letters spell one consonant. In हात (hāt, hand), h is a consonant on its own. Hold your palm near your mouth and try t and th.",
+        "ko": "ताल(tāl, 호수)과 थाल(thāl, 큰 접시)을 번갈아 들어 보세요. th는 혀끝이 윗니에서 떨어지며 숨이 세게 나오는 하나의 자음이에요. हात(hāt, 손)의 h는 그 자체로 하나의 자음이에요. 손바닥을 입 앞에 대고 t와 th를 따라 해 보세요.",
+        "ar": "استمع بالتناوب إلى ताल (tāl، بحيرة) وथाल (thāl، طبق كبير). عند نطق th يبتعد طرف اللسان عن الأسنان العليا مع دفعة هواء. يرمز الحرفان معًا إلى صوت ساكن واحد. أمّا h في हात (hāt، يد) فهو صوت ساكن مستقلّ. جرّب نطق t وth وكفّك أمام فمك."
+      },
+      "pairs": [
+        {
+          "contrast": "क / ख",
+          "first": "काम",
+          "second": "खाम"
+        },
+        {
+          "contrast": "त / थ",
+          "first": "ताल",
+          "second": "थाल"
+        },
+        {
+          "contrast": "प / फ",
+          "first": "पल",
+          "second": "फल"
+        },
+        {
+          "contrast": "प / फ",
+          "first": "पुल",
+          "second": "फूल"
+        },
+        {
+          "contrast": "प / फ",
+          "first": "पर्सि",
+          "second": "फर्सी"
+        },
+        {
+          "contrast": "क / ख",
+          "first": "काकी",
+          "second": "काखी"
+        },
+        {
+          "contrast": "ट / ठ",
+          "first": "बाटो",
+          "second": "बाठो"
+        }
+      ]
+    },
+    {
+      "id": "breathyVoice",
+      "title": {
+        "ja": "声に混じる息を聞く",
+        "en": "Listen for breath in the voice",
+        "ko": "목소리에 섞이는 숨",
+        "ar": "استمع إلى النَّفَس المصاحب للصوت"
+      },
+      "hint": {
+        "ja": "बारी と भारी の出だしはどちらも声が響きます。भ では、次の母音のはじめに息が混じります。",
+        "en": "Compare बारी and भारी. Both begin with a voiced sound. With भ, listen for the breathy start of the following vowel.",
+        "ko": "बारी와 भारी는 모두 목이 울리는 소리로 시작해요. भ 다음에 오는 모음의 첫 부분에서 숨이 섞여 나오는지 들어 보세요.",
+        "ar": "تبدأ كلّ من बारी وभारी بصوت تهتزّ معه الأوتار الصوتية. مع भ تسمع نَفَسًا في بداية الحركة التالية."
+      },
+      "pairs": [
+        {
+          "contrast": "ब / भ",
+          "first": "बारी",
+          "second": "भारी"
+        },
+        {
+          "contrast": "ब / भ",
+          "first": "बेला",
+          "second": "भेला"
+        },
+        {
+          "contrast": "ब / भ",
+          "first": "बन्नु",
+          "second": "भन्नु"
+        },
+        {
+          "contrast": "ब / भ",
+          "first": "बन्दा",
+          "second": "भन्दा"
+        },
+        {
+          "contrast": "ब / भ",
+          "first": "बाँच्नु",
+          "second": "भाँच्नु"
+        },
+        {
+          "contrast": "ड / ढ",
+          "first": "डुङ्गा",
+          "second": "ढुङ्गा"
+        }
+      ]
+    },
+    {
+      "id": "tongue",
+      "title": {
+        "ja": "下の点で変わる舌の位置",
+        "en": "The dot under t and d",
+        "ko": "t와 d 아래의 점과 혀의 위치",
+        "ar": "النقطة تحت t وd وموضع اللسان"
+      },
+      "hint": {
+        "ja": "ta と ṭa を交互に聞こう。t は舌先を上の歯に、ṭ は少し奥に当てます。d と ḍ も同じ違いです。どちらにも h がある tha／ṭha、dha／ḍha では、息を出したまま舌の位置だけを変えます。最後に साथी（友人）と साठी（60）の真ん中を聞こう。",
+        "en": "Alternate ta and ṭa. Touch the upper teeth for t, then move the tongue tip farther back for ṭ. The same shift distinguishes d and ḍ. In tha/ṭha and dha/ḍha, keep the breath and change the tongue position. Then listen to the middle of साथी (friend) and साठी (sixty).",
+        "ko": "ta와 ṭa를 번갈아 들어 보세요. t는 혀끝을 윗니에 대고, ṭ는 그보다 안쪽에 대요. d와 ḍ도 같은 차이예요. tha/ṭha와 dha/ḍha는 숨을 내보내면서 혀의 위치만 바꿔 보세요. 마지막으로 साथी(친구)와 साठी(60)의 가운데 소리를 들어 보세요.",
+        "ar": "استمع إلى ta ثم ṭa. المس الأسنان العليا بطرف اللسان مع t، ثم انقله قليلًا إلى الخلف مع ṭ. وينطبق الفرق نفسه على d وḍ. مع tha وṭha أو dha وḍha، حافظ على خروج الهواء وغيّر موضع اللسان. ثم استمع إلى وسط साथी (صديق) وसाठी (ستّون)."
+      },
+      "pairs": [
+        {
+          "source": "syllable",
+          "contrast": "t / ṭ",
+          "first": "त",
+          "second": "ट"
+        },
+        {
+          "source": "syllable",
+          "contrast": "d / ḍ",
+          "first": "द",
+          "second": "ड"
+        },
+        {
+          "source": "syllable",
+          "contrast": "th / ṭh",
+          "first": "थ",
+          "second": "ठ"
+        },
+        {
+          "source": "syllable",
+          "contrast": "dh / ḍh",
+          "first": "ध",
+          "second": "ढ"
+        },
+        {
+          "contrast": "थ / ठ",
+          "first": "साथी",
+          "second": "साठी"
+        }
+      ]
+    },
+    {
+      "id": "dottedSpellings",
+      "title": {
+        "ja": "ṇ と ṣ は文字と音を結びつけよう",
+        "en": "Recognize the spellings ṇ and ṣ",
+        "ko": "ṇ과 ṣ의 표기와 소리",
+        "ar": "تعرّف إلى كتابة ṇ وṣ"
+      },
+      "hint": {
+        "ja": "ण は ṇ、ष は ṣ と書きます。日常の発音では ण が न に、ष が स に近く聞こえることがあります。ここでは文字を見ながら音を確かめよう。",
+        "en": "ण is written ṇ, and ष is written ṣ. In everyday speech, ण can sound like न, and ष like स. Look at each letter as you listen.",
+        "ko": "ण은 ṇ, ष는 ṣ로 적어요. 일상 발음에서는 ण이 न처럼, ष가 स처럼 들릴 수 있어요. 글자를 보며 소리를 확인해 보세요.",
+        "ar": "تُنقل ण إلى الحروف اللاتينية على صورة ṇ، وष على صورة ṣ. في الكلام اليومي قد تبدو ण قريبة من न، وष قريبة من स. انظر إلى كل حرف وأنت تستمع إليه."
+      },
+      "pairs": [
+        {
+          "source": "syllable",
+          "contrast": "n / ṇ",
+          "first": "न",
+          "second": "ण"
+        },
+        {
+          "source": "syllable",
+          "contrast": "s / ṣ",
+          "first": "स",
+          "second": "ष"
+        }
+      ]
+    },
+    {
+      "id": "vowelQuality",
+      "title": {
+        "ja": "अ と आ の響きを聞く",
+        "en": "Compare the vowels अ and आ",
+        "ko": "모음 अ와 आ의 차이",
+        "ar": "قارن بين الحركتين अ وआ"
+      },
+      "hint": {
+        "ja": "पनि（〜も）と पानी（水）の最初の母音を比べよう。आ では अ より口を大きく開きます。",
+        "en": "Compare the first vowel in पनि (also) and पानी (water). The mouth opens wider for आ than for अ.",
+        "ko": "पनि(~도)와 पानी(물)의 첫 모음을 비교해 보세요. आ를 소리 낼 때는 अ보다 입을 더 크게 벌려요.",
+        "ar": "قارن الحركة الأولى في पनि (أيضًا) وपानी (ماء). ينفتح الفم أكثر عند نطق आ مقارنةً بـ अ."
+      },
+      "pairs": [
+        {
+          "contrast": "अ / आ",
+          "first": "पनि",
+          "second": "पानी"
+        },
+        {
+          "contrast": "अ / आ",
+          "first": "कम",
+          "second": "काम"
+        },
+        {
+          "contrast": "अ / आ",
+          "first": "म",
+          "second": "मा"
+        },
+        {
+          "contrast": "अ / आ",
+          "first": "समान",
+          "second": "सामान"
+        },
+        {
+          "contrast": "अ / आ",
+          "first": "मर्नु",
+          "second": "मार्नु"
+        },
+        {
+          "contrast": "अ / आ",
+          "first": "झर्नु",
+          "second": "झार्नु"
+        },
+        {
+          "contrast": "अ / आ",
+          "first": "बढी",
+          "second": "बाढी"
+        },
+        {
+          "contrast": "अ / आ",
+          "first": "बफ",
+          "second": "बाफ"
+        }
+      ]
+    },
+    {
+      "id": "nasalVowel",
+      "title": {
+        "ja": "母音が鼻に響くかを聞く",
+        "en": "Listen for a nasal vowel",
+        "ko": "코로도 울리는 모음",
+        "ar": "استمع إلى رنين الحركة في الأنف"
+      },
+      "hint": {
+        "ja": "तँ の上の「ँ」は、母音が鼻にも響く印。त と交互に言ってみよう。",
+        "en": "The mark ँ in तँ means the vowel also resonates in the nose. Try alternating त and तँ.",
+        "ko": "तँ 위의 ँ 표시는 모음이 코로도 울린다는 뜻이에요. त와 तँ를 번갈아 말해 보세요.",
+        "ar": "العلامة ँ فوق तँ تعني أنّ للحركة رنينًا في الأنف أيضًا. جرّب نطق त وतँ بالتناوب."
+      },
+      "pairs": [
+        {
+          "contrast": "अ / अँ",
+          "first": "त",
+          "second": "तँ"
+        }
+      ]
+    },
+    {
+      "id": "consonantLength",
+      "title": {
+        "ja": "子音を保つ長さを聞く",
+        "en": "Listen for a longer consonant",
+        "ko": "자음을 유지하는 길이",
+        "ar": "استمع إلى مدّة الصوت الساكن"
+      },
+      "hint": {
+        "ja": "सुनिनु と सुन्निनु の真ん中に注目。न्न では舌を当てたまま n を少し長く響かせてから、次の母音に移ります。",
+        "en": "Listen to the middle of सुनिनु and सुन्निनु. In न्न the tongue holds the n sound a little longer before the next vowel.",
+        "ko": "सुनिनु와 सुन्निनु의 가운데 소리를 들어 보세요. न्न에서는 다음 모음으로 넘어가기 전에 n 소리를 조금 더 길게 유지해요.",
+        "ar": "قارن الصوت في وسط सुनिनु وसुन्निनु. عند نطق न्न يبقى اللسان في موضع النون مدّة أطول قليلًا قبل الانتقال إلى الحركة التالية."
+      },
+      "pairs": [
+        {
+          "contrast": "न / न्न",
+          "first": "सुनिनु",
+          "second": "सुन्निनु"
+        }
+      ]
+    }
+  ]
+}

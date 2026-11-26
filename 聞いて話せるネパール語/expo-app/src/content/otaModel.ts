@@ -45,6 +45,33 @@ export function validateContent(core: any, overlay: any, lang: string) {
       assertFile(e.audio);
     }
   }
+  if (core.similarSounds !== undefined) {
+    const lesson=core.similarSounds;
+    const text=(v: unknown)=>typeof v==='string' && v.trim().length>0;
+    const words=new Set(overlay.nepaliDictionary?.entries.map((e: {ne:string})=>e.ne));
+    const syllables=new Map<string,ContentFile>(overlay.lettersSounds?.combinations.flatMap((row: {samples: {ne:string;audio?:ContentFile}[]})=>row.samples.map(sample=>[sample.ne,sample.audio])));
+    const groups=new Set<string>();
+    const pairs=new Set<string>();
+    if (!text(lesson?.heading?.[lang]) || !text(lesson?.instructions?.[lang]) || !Array.isArray(lesson.groups) || !lesson.groups.length) throw new Error('Invalid similar sounds lesson: '+lang);
+    for (const group of lesson.groups) {
+      if (!text(group?.id) || groups.has(group.id) || !text(group.title?.[lang]) || !text(group.hint?.[lang]) || !Array.isArray(group.pairs) || !group.pairs.length) throw new Error('Invalid similar sounds group: '+lang);
+      groups.add(group.id);
+      if (group.exampleWord!==undefined && !words.has(group.exampleWord)) throw new Error('Invalid similar sounds example: '+group.id);
+      for (const pair of group.pairs) {
+        if (!text(pair?.contrast) || !text(pair.first) || !text(pair.second) || pair.first===pair.second) throw new Error('Invalid similar sounds pair: '+group.id);
+        if (pair.source==='syllable') {
+          for (const syllable of [pair.first,pair.second]) {
+            const audio=syllables.get(syllable);
+            if (!audio) throw new Error('Missing similar sounds syllable: '+syllable);
+            assertFile(audio);
+          }
+        } else if (pair.source!==undefined || !words.has(pair.first) || !words.has(pair.second)) throw new Error('Invalid similar sounds pair: '+group.id);
+        const key=JSON.stringify([pair.first,pair.second].sort());
+        if (pairs.has(key)) throw new Error('Repeated similar sounds pair: '+group.id);
+        pairs.add(key);
+      }
+    }
+  }
   if (overlay.learningPathV3) {
     const p=overlay.learningPathV3;
     if (!Array.isArray(p.steps) || p.steps.length!==core.grammarThemes.length || !p.exercises) throw new Error('Missing grammar practice');

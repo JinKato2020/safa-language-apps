@@ -17,8 +17,16 @@ createDownloadResumable:(url,uri)=>({pauseAsync:async()=>{},downloadAsync:async(
 const storage={getItem:async k=>kv.get(k)??null,setItem:async(k,v)=>{if(failSet)throw Error('pointer write failed');kv.set(k,v);}};
 const models=compile(DIR+'src/content/otaModel.ts',require),compose=compile(DIR+'src/pack/compose.ts',require),appData=compile(DIR+'src/appData.ts',require);
 const actualCore=JSON.parse(source(DIR+'data/ota-baseline/core.json'));
+const soundLesson=JSON.parse(source(DIR+'data/similar-sounds.json'));
+actualCore.similarSounds=soundLesson;
 for(const lang of ['ja','en','ko','ar']){
   const actualOverlay=JSON.parse(source(DIR+`data/overlays/${lang}.json`));models.validateContent(actualCore,actualOverlay,lang);
+  const incomplete=structuredClone(soundLesson);
+  delete incomplete.heading[lang];
+  assert.throws(()=>models.validateContent({...actualCore,similarSounds:incomplete},actualOverlay,lang),/Invalid similar sounds lesson/);
+  const missingSyllable=structuredClone(soundLesson);
+  missingSyllable.groups.flatMap(g=>g.pairs).find(p=>p.source==='syllable').first='missing';
+  assert.throws(()=>models.validateContent({...actualCore,similarSounds:missingSyllable},actualOverlay,lang),/Missing similar sounds syllable/);
   if(['ko','ar'].includes(lang)){
     const missingMeaning=structuredClone(actualOverlay);delete missingMeaning.nepaliDictionary.entries[0].senses[0][lang];
     assert.throws(()=>models.validateContent(actualCore,missingMeaning,lang),new RegExp('Missing dictionary translation: '+lang));
@@ -41,6 +49,7 @@ if(name==='expo-file-system/legacy')return FS;if(name==='@react-native-async-sto
 if(name==='../pack/compose')return compose;if(name==='../appData')return appData;if(name==='../../app.json')return{expo:{version:'test',android:{package:'test'}}};
 if(name==='../pack/quizAudio')return{quizAudio:{}};
 if(name==='../pack/puzzleAlternatives')return{puzzleAlternatives:{}};
+if(name.endsWith('/similar-sounds.json'))return soundLesson;
 if(name.includes('ota-baseline/core'))return bundleCore;if(name.includes('overlays/'))return bundleOverlay(name.includes('ar.json')?'ar':name.includes('ko.json')?'ko':name.includes('en.json')?'en':'ja');return require(name);
 },{fetch:async(url,options)=>{requests.push(url);requestOptions.push(options);if(offline)throw Error('offline');const u=url.split('?')[0];if(!remote.has(u))return{ok:false,status:404};return{ok:true,text:async()=>remote.get(u).toString('utf8')};}});
 const ota=loadOta();
@@ -130,5 +139,26 @@ assert.equal(released.GRAMMAR_GUIDE['1'][0].text,'Third lesson');
 assert.equal(released.GRAMMAR_THEMES[0].name,'Identity');
 const currentPointer=JSON.parse(kv.get('@nepali_app/content_ota/ja'));disk.set('file:///documents/content-ota/text/'+currentPointer.sha+'.json',Buffer.from('broken'));
 assert.equal(await upgraded.cachedContent('ja'),null,'damaged new OTA cannot fall back below bundled content');
-console.log('PASS real OTA: existing recovery/integrity checks plus installed-app upgrade, stale cache/remote rejection, offline baseline, newer OTA activation and corrupt-cache fallback.');
+// A content-only revision can replace the complete lesson and its copy on the same binary.
+const revisedSounds=structuredClone(soundLesson);
+revisedSounds.groups=[revisedSounds.groups[0]];
+revisedSounds.groups[0].pairs=[revisedSounds.groups[0].pairs[1]];
+revisedSounds.groups[0].hint.ja='更新した聴き比べのヒント';
+const dictionary=JSON.parse(source(DIR+'data/overlays/ja.json')).nepaliDictionary;
+const {first,second}=revisedSounds.groups[0].pairs[0];
+dictionary.entries=dictionary.entries.filter(entry=>[first,second,revisedSounds.groups[0].exampleWord].includes(entry.ne)).map(entry=>({...entry,themes:[]}));
+manifest.core=file({...core,similarSounds:revisedSounds});manifest.version=9;
+manifest.languages.ja.overlay=file({...makeOverlay('ja'),nepaliDictionary:dictionary});publish();
+const beforeSounds=downloads.length;
+assert.equal(upgraded.bundledContent('ja').data.similarSounds.groups.length,soundLesson.groups.length);
+const updatedSounds=(await upgraded.syncContent('ja')).data.similarSounds;
+assert.equal(updatedSounds.groups.length,1);
+assert.equal(updatedSounds.groups[0].hint.ja,revisedSounds.groups[0].hint.ja);
+assert.equal(updatedSounds.groups[0].pairs[0].first,first);
+assert.equal(downloads.length,beforeSounds,'unchanged audio archives are reused');
+offline=true;assert.equal((await upgraded.cachedContent('ja')).data.similarSounds.groups[0].hint.ja,revisedSounds.groups[0].hint.ja);offline=false;
+revisedSounds.groups[0].pairs[0].first='missing';manifest.core=file({...core,similarSounds:revisedSounds});manifest.version=10;publish();
+await assert.rejects(upgraded.syncContent('ja'),/Invalid similar sounds pair/);
+assert.equal((await upgraded.cachedContent('ja')).version,9);
+console.log('PASS real OTA: offline baseline, legacy caches, content-only lesson replacement, immutable audio reuse and corrupt update rejection.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,41 +1,25 @@
-import { useCallback, useMemo, useState, type ReactNode } from 'react';
-import { AppState, Image, Pressable, ScrollView, StyleSheet, View, useWindowDimensions } from 'react-native';
+import { type ReactNode } from 'react';
+import { Image, Pressable, ScrollView, StyleSheet, View, useWindowDimensions } from 'react-native';
 import Svg, { Path, Rect, Circle } from 'react-native-svg';
-import { useFocusEffect, useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useHeroImage } from '../heroImages';
 import { Text } from '../Text';
 import { useI18n } from '../i18n';
 import { useAppData } from '../AppDataContext';
 import { useLearning } from '../LearningContext';
-import { emptyStudyState, practiceParams, resolveStudy, reviewItems } from '../learning';
 import { useGrammarGuide } from '../grammarGuide';
 import { readingCopy } from '../grammarReading';
 import { useSettings } from '../SettingsContext';
 import { TabMastheadFrame, tabCardRadius, tabPalette } from '../tabAppearance';
 
-const EMPTY = emptyStudyState();
-
 export default function LearningHomeScreen({ accessory }: { accessory?: ReactNode }) {
   const nav = useNavigation<any>(), { lang, t, copy: trCopy } = useI18n(), { top } = useSafeAreaInsets();
   const data = useAppData(), learning = useLearning(), hero = useHeroImage('grammar');
-  const { tabDesign, practiceDirection } = useSettings();
+  const { tabDesign } = useSettings();
   const palette = tabPalette('home', tabDesign);
   const guides = useGrammarGuide(), guideCount = data.GRAMMAR_THEMES.filter(theme => guides?.[String(theme.id)]?.length).length;
   const hasCulture = Object.values(guides ?? {}).some(blocks => blocks.some(block => block.lessonSupplement?.kind === 'culture'));
-  const [now, setNow] = useState(Date.now);
-  useFocusEffect(useCallback(() => {
-    let timer: ReturnType<typeof setTimeout>;
-    const refresh = () => {
-      clearTimeout(timer); const current = Date.now(); setNow(current);
-      const tomorrow = new Date(current); tomorrow.setHours(24, 0, 1, 0);
-      timer = setTimeout(refresh, tomorrow.getTime() - current);
-    };
-    refresh();
-    const sub = AppState.addEventListener('change', value => { if (value === 'active') refresh(); });
-    return () => { clearTimeout(timer); sub.remove(); };
-  }, []));
-  const state = learning?.state ?? EMPTY;
   const { width, height } = useWindowDimensions();
   const shortScreen = height < 640;
   const room = Math.max(0, Math.min(1, (height - 640) / 180));
@@ -48,14 +32,6 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
   const gridGap = shortScreen ? 6 : Math.round(8 + room * 6);
   const rowStyle = [styles.tileRow, { gap: gridGap, minHeight: shortScreen ? 44 : Math.round(52 + room * 40) }];
   const displaySize = width < 360 ? 21 : 25;
-  const due = useMemo(() => reviewItems(state, data, now, 5, practiceDirection), [state, data, now, practiceDirection]);
-  const resume = state.resume && (state.resume.session || !due.length) && resolveStudy(data, state.resume.item) ? state.resume : undefined;
-  const action = resume ? (trCopy('c_c3e74a179b32', '前回の続きへ', 'Continue where you left off'))
-    : due.length ? trCopy('c_534c3db39d21', `${due.length}文を復習する`, `Review ${due.length} sentences`, {p0: due.length}) : null;
-  const start = () => {
-    if (resume) nav.navigate('Practice', practiceParams(resume.item, resume.session));
-    else if (due.length) nav.navigate('Practice', practiceParams(due[0], { kind: 'review', items: due, ...(due[0].exerciseId ? {} : { direction: practiceDirection }) }));
-  };
   const ratio = hero == null ? 3 : (() => { const asset = Image.resolveAssetSource(hero); return asset.width / asset.height; })();
 
   const heroBody = <>
@@ -94,10 +70,6 @@ export default function LearningHomeScreen({ accessory }: { accessory?: ReactNod
         <HomeTile id="home-similar-sounds" title={t('similarSounds.title')} badge={t('similarSounds.newBadge')} kind="sounds" onPress={() => nav.navigate('SimilarSounds')} />
       </View>
     </View>
-    {action && <Pressable accessibilityRole="button" accessibilityLabel={action} onPress={start}
-      style={({ pressed }) => [styles.studyAction, { backgroundColor: palette.surface, borderColor: palette.line }, pressed && styles.pressed]}>
-      <Text style={[styles.studyActionText, { color: palette.accent }]}>{action}</Text>
-    </Pressable>}
     {learning?.error && <Pressable accessibilityRole="button" onPress={learning.retry} style={[styles.error, { backgroundColor: palette.surface, borderColor: palette.line }]}><Text style={[styles.errorText, { color: palette.danger }]}>{trCopy('c_70a7891dec6e', '学習記録を読み込み・保存できませんでした。タップして再試行。', 'Could not load or save progress. Tap to retry.')}</Text></Pressable>}
   </ScrollView>;
 }
@@ -147,8 +119,6 @@ const styles = StyleSheet.create({
   shortHeroBody: { paddingVertical: 8 },
   headline: { flex: 1, minWidth: 0, fontWeight: '600', letterSpacing: -.5 },
   strength: { fontWeight: '800' },
-  studyAction: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 12, borderWidth: 1, borderRadius: tabCardRadius },
-  studyActionText: { fontSize: 14, lineHeight: 22, fontWeight: '700' },
   tileRow: { flexDirection: 'row', alignItems: 'stretch' },
   tile: { flex: 1, flexBasis: 0, minWidth: 0, minHeight: 52, paddingHorizontal: 11, paddingVertical: 7, borderWidth: 1, borderRadius: tabCardRadius, gap: 9, flexDirection: 'row', alignItems: 'center' },
   forestTile: { borderRadius: 15 },
@@ -167,5 +137,4 @@ const styles = StyleSheet.create({
   unreadDot: { position: 'absolute', top: -3, end: -3, width: 12, height: 12, borderRadius: 6, borderWidth: 2 },
   error: { padding: 16, borderWidth: 1, borderRadius: tabCardRadius },
   errorText: { fontSize: 13, lineHeight: 21 },
-  pressed: { opacity: 0.78 },
 });

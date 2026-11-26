@@ -22,12 +22,7 @@
   },
   "similarSounds": {
     "title": "비슷한 발음",
-    "newBadge": "새 기능",
-    "heading": "비슷한 소리 비교하기",
-    "instructions": "두 단어를 번갈아 눌러 소리의 차이를 들어 보세요.",
-    "water": "पानी는 ‘물’, पनि는 ‘~도’입니다. 첫 모음과 쓰임에 주목하세요.",
-    "breath": "두 번째 단어는 자음 뒤에 숨이 더 세게 나옵니다.",
-    "voicing": "첫소리 p와 b의 차이를 들어 보세요."
+    "newBadge": "새 기능"
   },
   "nav": {
     "conversation": "회화",

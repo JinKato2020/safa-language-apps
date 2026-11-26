@@ -3,6 +3,26 @@ from pathlib import Path
 from build_content_ota import BASE, inventory, assert_asset_name
 
 def read(path):return json.loads(path.read_text(encoding='utf-8'))
+
+def verify_similar_sounds(lesson, overlay, lang):
+    def translated(value):
+        return isinstance(value.get(lang), str) and bool(value[lang].strip())
+    assert translated(lesson['heading']) and translated(lesson['instructions'])
+    words={e['ne'] for e in overlay['nepaliDictionary']['entries'] if e.get('audio') and e['senses'][0].get(lang)}
+    syllables={s['ne'] for row in overlay['lettersSounds']['combinations'] for s in row['samples'] if s.get('audio') and s['roman']}
+    groups=lesson['groups']
+    assert groups and len({g['id'] for g in groups})==len(groups)
+    seen=set()
+    for group in groups:
+        assert group['id'] and translated(group['title']) and translated(group['hint'])
+        if 'exampleWord' in group: assert group['exampleWord'] in words
+        assert group['pairs']
+        for pair in group['pairs']:
+            key=frozenset((pair['first'],pair['second']))
+            assert pair.get('source') in (None,'syllable')
+            entries=syllables if pair.get('source')=='syllable' else words
+            assert pair['contrast'].strip() and len(key)==2 and key<=entries and key not in seen, (lang, group['id'], pair)
+            seen.add(key)
 def verify(folder):
     m=read(folder/'manifest.json');assert m['schema']==1
     assert m['appId']=='nepali' and set(m['languages'])=={'ja','en','ko','ar'}
@@ -46,6 +66,7 @@ def verify(folder):
         archive(l['audio'])
         o=payload(l['overlay']);guides={k:payload(v)for k,v in l['guides'].items()}
         assert o['l1']==lang
+        verify_similar_sounds(core['similarSounds'],o,lang)
         for a,b in [('examplesNe','examplesL1'),('grammarNe','grammarL1'),('wordsNe','wordsL1')]:
             assert set(core[a])==set(o[b])
             for key,rows in core[a].items():assert len(rows)==len(o[b][key]) and all(isinstance(s,str) and s for s in rows+o[b][key])

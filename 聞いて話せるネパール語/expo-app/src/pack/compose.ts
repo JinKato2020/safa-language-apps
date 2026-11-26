@@ -10,6 +10,7 @@ import type {
 
 // ネパール語=共通コア (学ぶ対象側)。位置順の配列で持ち、母語側と index で対応。
 export interface NeCore {
+  similarSounds?: AppData['similarSounds'];
   themes: ThemeMeta[];
   levels: LevelMeta[];
   wordCategories: WordCategoryMeta[];
@@ -104,6 +105,7 @@ export function composePack(core: NeCore, overlay: L1Overlay, opts: ComposeOptio
   };
   return {
     vocabularyQuiz: true,
+    similarSounds: core.similarSounds,
     puzzleAlternatives: opts.puzzleAlternatives,
     NEPALI_DICTIONARY: overlay.nepaliDictionary,
     LEARNING_PATH: overlay.learningPathV3 ?? overlay.learningPathV2 ?? overlay.learningPath,

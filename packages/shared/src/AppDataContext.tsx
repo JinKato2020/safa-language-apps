@@ -56,6 +56,17 @@ export type JpReading = Record<string, JpReadingEntry>;  // キー = 日本語�
 export type AppData = {
   /** App A opts into bidirectional four-choice vocabulary practice. */
   vocabularyQuiz?: boolean;
+  similarSounds?: {
+    heading: Record<string, string>;
+    instructions: Record<string, string>;
+    groups: {
+      id: string;
+      title: Record<string, string>;
+      hint: Record<string, string>;
+      exampleWord?: string;
+      pairs: { source?: 'syllable'; contrast: string; first: string; second: string }[];
+    }[];
+  };
   NEPALI_DICTIONARY?: import('./nepaliDictionary').NepaliDictionary;
   LEARNING_PATH?: LearningPath;
   puzzleAlternatives?: Partial<Record<string, { ne: string; audio: AudioSrc }>>;
